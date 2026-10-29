@@ -1,0 +1,16 @@
+family_id,source_filename,subject,credit_status,source_sha256,width,height
+astronaut,astronaut.png,Astronaut Eileen Collins,NASA; public domain,88431cd9653ccd539741b555fb0a46b61558b301d4110412b5bc28b5e3ea6cb5,512,512
+cat,chelsea.png,Chelsea the cat,Stefan van der Walt; CC0,596aa1e7cb875eb79f437e310381d26b338a81c2da23439704a73c4651e8c4bb,451,300
+coffee,coffee.png,Coffee cup,Rachel Michetti; CC0,cc02f8ca188b167c775a7101b5d767d1e71792cf762c33d6fa15a4599b5a8de7,600,400
+rocket,rocket.jpg,SpaceX Falcon 9 launch,SpaceX; public domain,c2dd0de7c538df8d111e479619b129464d0269d0ae5fd18ca91d33a7fdfea95c,640,427
+galaxies,hubble_deep_field.jpg,Hubble eXtreme Deep Field,NASA; public domain,3a19c5dd8a927a9334bb1229a6d63711b1c0c767fb27e2286e7c84a3e2c2f5f4,1000,872
+photographer,camera.png,Photographer with camera,Lav Varshney; CC0,b0793d2adda0fa6ae899c03989482bff9a42d3d5690fc7e3648f2795d730c23a,512,512
+brick,brick.png,Brick texture,CC0Textures; CC0,7966caf324f6ba843118d98f7a07746d22f6a343430add0233eca5f6eaaa8fcf,512,512
+grass,grass.png,Grass texture,Original at DeviantArt; CC0,b6b6022426b38936c43a4ac09635cd78af074e90f42ffa8227ac8b7452d39f89,512,512
+gravel,gravel.png,Gravel texture,CC0Textures; CC0,c48615b451bf1e606fbd72c0aa9f8cc0f068ab7111ef7d93bb9b0f2586440c12,512,512
+retina,retina.jpg,Retina photo,Wikimedia Commons; CC0,38a07f36f27f095e818aea7b96d34202c05176d30253c66733f2e00379e9e0e6,1411,1411
+horse,horse.png,Horse silhouette,Andreas Preuss; CC0,c7fb60789fe394c485f842291ea3b21e50d140f39d6dcb5fb9917cc178225455,400,328
+coins,coins.png,Greek coins,Brooklyn Museum Collection; no known copyright restrictions,f8d773fc9cfa6f4d8e5942dc34d0a0788fcaed2a4fefbbed0aef5398d7ef4cba,384,303
+clock,clock_motion.png,Motion-blurred clock,Stefan van der Walt; public domain,f029226b28b642e80113d86622e9b215ee067a0966feaf5e60604a1e05733955,400,300
+cell,cell.png,Cell microscopy,Quantitative phase data (qpformat); CC0,8d23a7fb81f7cc877cd09f330357fc7f595651306e84e17252f6e0a1b3f61515,550,660
+microaneurysm,microaneurysms.png,Retina lesion crop,Andreas Maier; CC0,a1e1be59aa447f8ce082f7fa809997ab369a2b137cb6c4202abc647c7ccf6456,102,102

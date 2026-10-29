@@ -1,0 +1,31 @@
+{
+  "scene_id": "middlebury2014-motorcycle",
+  "files": [
+    {
+      "file": "images/hazy-db18e9c415761740.png",
+      "scene_id": "middlebury2014-motorcycle",
+      "view": "left",
+      "exposure_id": "left",
+      "same_scene": "yes",
+      "independent_capture": "yes",
+      "preprocessing": "rectified, downsampled x4 by scikit-image",
+      "source_filename": "motorcycle_left.png",
+      "width": 741,
+      "height": 500,
+      "sha256": "db18e9c4157617403c3537a6ba355dfeafe9a7eabb6b9b94cb33f6525dd49179"
+    },
+    {
+      "file": "images/hazy-5fc913ae870e42a4.png",
+      "scene_id": "middlebury2014-motorcycle",
+      "view": "right",
+      "exposure_id": "right",
+      "same_scene": "yes",
+      "independent_capture": "yes",
+      "preprocessing": "rectified, downsampled x4 by scikit-image",
+      "source_filename": "motorcycle_right.png",
+      "width": 741,
+      "height": 500,
+      "sha256": "5fc913ae870e42a4b662314bc904d1786bcad8e2f0b9b67dba5a229406357797"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "description": "All ten within-scene pairs; no numerical alignment expectations.",
+  "known_shift_families": [],
+  "pairs": [
+    {
+      "file_a": "images/hazy-db18e9c415761740.png",
+      "file_b": "images/hazy-5fc913ae870e42a4.png",
+      "relation": "same_scene",
+      "interpretation": "independent_captures_same_scene_no_expected_transform_or_score"
+    },
+    {
+      "file_a": "images/hazy-96f746e6555be175.jpg",
+      "file_b": "images/hazy-d5a1e2071ebf162e.jpg",
+      "relation": "same_scene",
+      "interpretation": "independent_captures_same_scene_no_expected_transform_or_score"
+    },
+    {
+      "file_a": "images/hazy-96f746e6555be175.jpg",
+      "file_b": "images/hazy-13e734a59b094ac6.jpg",
+      "relation": "same_scene",
+      "interpretation": "independent_captures_same_scene_no_expected_transform_or_score"
+    },
+    {
+      "file_a": "images/hazy-d5a1e2071ebf162e.jpg",
+      "file_b": "images/hazy-13e734a59b094ac6.jpg",
+      "relation": "same_scene",
+      "interpretation": "independent_captures_same_scene_no_expected_transform_or_score"
+    },
+    {
+      "file_a": "images/hazy-5949f55d489a5640.jpg",
+      "file_b": "images/hazy-e27c2d935aced5e9.jpg",
+      "relation": "same_scene",
+      "interpretation": "independent_captures_same_scene_no_expected_transform_or_score"
+    },
+    {
+      "file_a": "images/hazy-5949f55d489a5640.jpg",
+      "file_b": "images/hazy-2643e37237d247c7.jpg",
+      "relation": "same_scene",
+      "interpretation": "independent_captures_same_scene_no_expected_transform_or_score"
+    },
+    {
+      "file_a": "images/hazy-e27c2d935aced5e9.jpg",
+      "file_b": "images/hazy-2643e37237d247c7.jpg",
+      "relation": "same_scene",
+      "interpretation": "independent_captures_same_scene_no_expected_transform_or_score"
+    },
+    {
+      "file_a": "images/hazy-06c1dd8f6e9a2b58.jpg",
+      "file_b": "images/hazy-f4be724f2e4d837a.jpg",
+      "relation": "same_scene",
+      "interpretation": "independent_captures_same_scene_no_expected_transform_or_score"
+    },
+    {
+      "file_a": "images/hazy-06c1dd8f6e9a2b58.jpg",
+      "file_b": "images/hazy-166880a0f8ce66db.jpg",
+      "relation": "same_scene",
+      "interpretation": "independent_captures_same_scene_no_expected_transform_or_score"
+    },
+    {
+      "file_a": "images/hazy-f4be724f2e4d837a.jpg",
+      "file_b": "images/hazy-166880a0f8ce66db.jpg",
+      "relation": "same_scene",
+      "interpretation": "independent_captures_same_scene_no_expected_transform_or_score"
+    }
+  ]
+}

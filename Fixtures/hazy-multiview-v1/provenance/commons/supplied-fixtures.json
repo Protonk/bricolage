@@ -1,0 +1,96 @@
+{
+  "category": "quasi-multiview",
+  "count": 9,
+  "fixtures": [
+    {
+      "source_filename": "2019_Feb_04_-_Kumbh_Mela_-_Mauni_Amavasya_Crowd_15.jpg",
+      "local_filename": "hazy-6552102bd30f.jpg",
+      "category": "quasi-multiview",
+      "scene_group": "kumbh-mauni-amavasya",
+      "source_page": "https://commons.wikimedia.org/wiki/File:2019_Feb_04_-_Kumbh_Mela_-_Mauni_Amavasya_Crowd_15.jpg",
+      "expected_author": "Michael T Balonek",
+      "expected_license": "CC BY-SA 4.0",
+      "expected_license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "source_filename": "2019_Feb_04_-_Kumbh_Mela_-_Mauni_Amavasya_Crowd_17.jpg",
+      "local_filename": "hazy-78277379220d.jpg",
+      "category": "quasi-multiview",
+      "scene_group": "kumbh-mauni-amavasya",
+      "source_page": "https://commons.wikimedia.org/wiki/File:2019_Feb_04_-_Kumbh_Mela_-_Mauni_Amavasya_Crowd_17.jpg",
+      "expected_author": "Michael T Balonek",
+      "expected_license": "CC BY-SA 4.0",
+      "expected_license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "source_filename": "Budapest_pride_20250628_142359.jpg",
+      "local_filename": "hazy-7a6682b7b0ad.jpg",
+      "category": "quasi-multiview",
+      "scene_group": "budapest-pride-1424",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Budapest_pride_20250628_142359.jpg",
+      "expected_author": "Vauia Rex",
+      "expected_license": "CC0 1.0",
+      "expected_license_url": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "source_filename": "Budapest_pride_20250628_142401.jpg",
+      "local_filename": "hazy-51450dcb6af4.jpg",
+      "category": "quasi-multiview",
+      "scene_group": "budapest-pride-1424",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Budapest_pride_20250628_142401.jpg",
+      "expected_author": "Vauia Rex",
+      "expected_license": "CC0 1.0",
+      "expected_license_url": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "source_filename": "Budapest_pride_20250628_142817.jpg",
+      "local_filename": "hazy-dab0381bcdb6.jpg",
+      "category": "quasi-multiview",
+      "scene_group": "budapest-pride-1428",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Budapest_pride_20250628_142817.jpg",
+      "expected_author": "Vauia Rex",
+      "expected_license": "CC0 1.0",
+      "expected_license_url": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "source_filename": "Budapest_pride_20250628_142820.jpg",
+      "local_filename": "hazy-147c8ad01ae8.jpg",
+      "category": "quasi-multiview",
+      "scene_group": "budapest-pride-1428",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Budapest_pride_20250628_142820.jpg",
+      "expected_author": "Vauia Rex",
+      "expected_license": "CC0 1.0",
+      "expected_license_url": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "source_filename": "Budapest_pride_20250628_143517.jpg",
+      "local_filename": "hazy-b6ad67625912.jpg",
+      "category": "quasi-multiview",
+      "scene_group": "budapest-pride-1435",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Budapest_pride_20250628_143517.jpg",
+      "expected_author": "Vauia Rex",
+      "expected_license": "CC0 1.0",
+      "expected_license_url": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "source_filename": "Budapest_pride_20250628_143521_1.jpg",
+      "local_filename": "hazy-887175ba9955.jpg",
+      "category": "quasi-multiview",
+      "scene_group": "budapest-pride-1435",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Budapest_pride_20250628_143521_1.jpg",
+      "expected_author": "Vauia Rex",
+      "expected_license": "CC0 1.0",
+      "expected_license_url": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "source_filename": "Budapest_pride_20250628_143521.jpg",
+      "local_filename": "hazy-5a3ea612c868.jpg",
+      "category": "quasi-multiview",
+      "scene_group": "budapest-pride-1435",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Budapest_pride_20250628_143521.jpg",
+      "expected_author": "Vauia Rex",
+      "expected_license": "CC0 1.0",
+      "expected_license_url": "https://creativecommons.org/publicdomain/zero/1.0/"
+    }
+  ]
+}

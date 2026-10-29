@@ -1,0 +1,11 @@
+*.DS_Store
+.build/
+.swiftpm/
+output/
+__pycache__/
+
+# Local fixture assets: ignore whole directories, regardless of file format.
+# Applies to current and future fixture sets, including nested asset files.
+/Fixtures/**/images/
+/Fixtures/**/sources/
+/Fixtures/**/previews/

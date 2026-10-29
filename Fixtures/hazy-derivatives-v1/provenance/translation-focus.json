@@ -1,0 +1,19 @@
+{
+  "description": "Translation development selection; shared origin is not a matching judgment.",
+  "families": ["astronaut", "grass", "retina"],
+  "variants": ["byte_copy", "reencode_png", "jpeg_q35", "blur_3"],
+  "diagnostics": [
+    {
+      "reference_family": "grass",
+      "floating_family": "gravel",
+      "floating_variant": "source",
+      "reason": "Different origins with repetitive texture; an estimate does not establish a match."
+    },
+    {
+      "reference_family": "retina",
+      "floating_family": "retina",
+      "floating_variant": "center_crop_85",
+      "reason": "Both prepare to 1024 square, but content scale differs; translation cannot undo that scale."
+    }
+  ]
+}

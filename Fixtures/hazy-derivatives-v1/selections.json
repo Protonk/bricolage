@@ -1,0 +1,94 @@
+{
+  "description": "Translation development selection; shared origin is not a matching judgment.",
+  "known_shift_families": [
+    "astronaut",
+    "grass",
+    "retina"
+  ],
+  "pairs": [
+    {
+      "file_a": "images/hazy-222880eab785.png",
+      "file_b": "images/hazy-ded221662b1b.png",
+      "relation": "byte_copy",
+      "interpretation": "shared_origin_not_asserted_match"
+    },
+    {
+      "file_a": "images/hazy-222880eab785.png",
+      "file_b": "images/hazy-4abda663a92b.png",
+      "relation": "reencode_png",
+      "interpretation": "shared_origin_not_asserted_match"
+    },
+    {
+      "file_a": "images/hazy-222880eab785.png",
+      "file_b": "images/hazy-e498299f5a61.jpg",
+      "relation": "jpeg_q35",
+      "interpretation": "shared_origin_not_asserted_match"
+    },
+    {
+      "file_a": "images/hazy-222880eab785.png",
+      "file_b": "images/hazy-df60636aa2de.jpg",
+      "relation": "blur_3",
+      "interpretation": "shared_origin_not_asserted_match"
+    },
+    {
+      "file_a": "images/hazy-e3f022c24a94.png",
+      "file_b": "images/hazy-a0664e6e3985.png",
+      "relation": "byte_copy",
+      "interpretation": "shared_origin_not_asserted_match"
+    },
+    {
+      "file_a": "images/hazy-e3f022c24a94.png",
+      "file_b": "images/hazy-4f08ac66a64e.png",
+      "relation": "reencode_png",
+      "interpretation": "shared_origin_not_asserted_match"
+    },
+    {
+      "file_a": "images/hazy-e3f022c24a94.png",
+      "file_b": "images/hazy-59219b4802aa.jpg",
+      "relation": "jpeg_q35",
+      "interpretation": "shared_origin_not_asserted_match"
+    },
+    {
+      "file_a": "images/hazy-e3f022c24a94.png",
+      "file_b": "images/hazy-b83d6442715c.jpg",
+      "relation": "blur_3",
+      "interpretation": "shared_origin_not_asserted_match"
+    },
+    {
+      "file_a": "images/hazy-c3f536005309.jpg",
+      "file_b": "images/hazy-83f6b703b940.jpg",
+      "relation": "byte_copy",
+      "interpretation": "shared_origin_not_asserted_match"
+    },
+    {
+      "file_a": "images/hazy-c3f536005309.jpg",
+      "file_b": "images/hazy-03f18a5beef0.png",
+      "relation": "reencode_png",
+      "interpretation": "shared_origin_not_asserted_match"
+    },
+    {
+      "file_a": "images/hazy-c3f536005309.jpg",
+      "file_b": "images/hazy-96e5b063c247.jpg",
+      "relation": "jpeg_q35",
+      "interpretation": "shared_origin_not_asserted_match"
+    },
+    {
+      "file_a": "images/hazy-c3f536005309.jpg",
+      "file_b": "images/hazy-9700c74ba7c7.jpg",
+      "relation": "blur_3",
+      "interpretation": "shared_origin_not_asserted_match"
+    },
+    {
+      "file_a": "images/hazy-e3f022c24a94.png",
+      "file_b": "images/hazy-f28b336d4c3c.png",
+      "relation": "diagnostic",
+      "interpretation": "Different origins with repetitive texture; an estimate does not establish a match."
+    },
+    {
+      "file_a": "images/hazy-c3f536005309.jpg",
+      "file_b": "images/hazy-9b94135f1eb4.jpg",
+      "relation": "diagnostic",
+      "interpretation": "Both prepare to 1024 square, but content scale differs; translation cannot undo that scale."
+    }
+  ]
+}
