@@ -39,6 +39,6 @@ def main():
         sums.append(name)
     expected_files=[str(p.relative_to(ROOT)) for p in ROOT.rglob('*') if p.is_file() and p.name != 'PACK_SHA256SUMS.txt' and not p.name.startswith('.') and '__pycache__' not in p.parts]
     assert set(expected_files)==set(sums), 'Textual sourcing-package checksum coverage mismatch'
-    print(f'CR01 sourcing check passed: {len(rs)} title-level leads; zero viewed/acquired media; {len(sums)} checksummed evidence files.')
+    print(f'Preserved CR01 sourcing pack passed: {len(rs)} title-level leads; zero viewed/acquired media in that original handoff; {len(sums)} checksummed evidence files. Current integration is checked separately by tools/integrate.py.')
 
 if __name__=='__main__': main()

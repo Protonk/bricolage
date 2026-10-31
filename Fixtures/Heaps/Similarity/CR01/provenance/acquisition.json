@@ -1,0 +1,18 @@
+{
+  "status": "complete",
+  "candidate_count": 168,
+  "preview_count": 168,
+  "visually_selected": 57,
+  "acquired_count": 57,
+  "pending_candidate_ids": [],
+  "pending_statuses": {},
+  "request_attempts": 450,
+  "complete_responses": 450,
+  "automatic_retries": 0,
+  "media_bytes": 32357084,
+  "rendition_kinds": {
+    "api_returned_rendition": 50,
+    "api_reported_unscaled_original": 7
+  },
+  "resolution_adjustments": []
+}

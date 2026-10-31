@@ -1,89 +1,117 @@
 # CR01 — Cool, repetitive rectangles
 
-**Sourcing handoff, not an integrated fixture.** Prepared 2026-10-31 for hazy's
-existing `prompt_heap` type. The 168 distinct Commons title-level leads have not
-been visually inspected; **0 accepted, 0 rejected, 0 deferred, 168 pending**.
-No preview or source media bytes were acquired here because Wikimedia hosts did
-not resolve in the sourcing runtime. No API requests or media downloads occurred.
+Integrated: **57 inputs from 168 supplied leads**. All 168 acquired previews were
+inspected: 57 accepted, 109 rejected and two deferred for possible source
+relationships. All accepted sources were acquired; none remain pending. This is
+within the supplied 50–80 planning range, below the approximate target of 65.
+The original sourcing pack is preserved unchanged in `provenance/supplied/`.
 
 > Photographs dominated by repeated rectangular cells, panels, frames or modules,
-> often in muted blues, grays, and greens. The pictured subjects may differ.
+> often in muted blues, grays and greens. The pictured subjects may differ.
 
-Target **about 65 accepted photographs**, with 50–80 an indicative band rather
-than a quota. The actual quantity depends on real preview inspection and source
-independence. Exclude obvious related captures, derivatives, invented patterns,
-and images where the grid is barely visible. Perspective, uneven repetition,
-nested or interrupted rectangles, modest color variation and some surrounding
-context are fine. Read `HEAP_INSTRUCTIONS.md` for the full handoff contract.
+CR01 is a contribution to the [Similarity heap](../README.md), using the existing
+`prompt_heap` kind. Perspective, uneven or interrupted repetition, nested cells,
+some surrounding context and modest warm accents are allowed. Known derivatives,
+related captures, synthetic imagery, single-box/window portraits and incidental
+grids are excluded. Selection uses actual thumbnail appearance and written
+judgment. Discovery buckets are search aids, not expected clusters or pair
+correctness labels. Only `images/` belongs to the comparison input pool.
 
-## Contents
+## Review and provenance
 
-- `candidates.jsonl` — **canonical**, stable `cr-0001` … `cr-0168` identities;
-  exact Commons `File:` title, file-page URL, discovery category URL and PS01
-  candidate fields, with missing values represented by JSON `null`.
-- `candidates.csv` — generated from the *union* of the JSONL fields.
-- `provenance/discovery_sources.json` and `discovery_seeds.txt` — category
-  source notes. Buckets are search aids, **not** expected clusters.
-- `provenance/prior_seed_overlap.json` — exact title checks against the three
-  previous **sourcing packages only**, not current local integrated inventories;
-  no exact overlaps found. This does **not** establish provenance independence.
-- `provenance/source_page_observations.jsonl` — three observed Commons file-page
-  text summaries, **not** raw API response bytes, media previews or final rights
-  judgments. More detailed metadata must come from the local Commons API.
-- `provenance/transport_probe.json` — environmental DNS diagnostics; no HTTP
-  status or throttling inference.
-- `provenance/baseline.json` — pinned active PS01 source-tool Git blob hashes
-  from `Protonk/hazy` commit `88832e40aada84dc7c512868f0d1497c1abcd4b1`.
-- `tools/prepare.py` — copies seven verified current acquisition/review helpers
-  from the **active** local PS01 tooling, refusing changed or missing scripts.
-  The older `provenance/supplied/tools/` is deliberately not used.
-- `requirements.txt` — matches the pinned PS01 Pillow dependency.
-- Empty `previews/`, `sources/`, and `provenance/api/` directories are ready for
-  actual media and metadata. No phantom contact sheets are supplied.
+`candidates.jsonl` is canonical; CSV contains the union of its fields. Stable
+candidate IDs, original titles, discovery URLs and supplied fields are retained.
+Initial `candidate_basis` text records discovery-era uncertainty; current
+judgments live in `screening_status`, `visual_reason` and the review log. Visual
+acceptance and acquisition status are independent facts.
 
-## Starting locally
+[Visual review](provenance/visual-review.json) records decisions from actual
+previews. [Source review](provenance/source-review.json) records file-specific
+rights evidence and possible source relationships. It excludes the related
+Paulista facade and paired library view, and defers one Bonn building and one
+Northwestern school hallway. Repeated creators and possible wider numbered
+series are documented. `source_independence_confirmed` remains null; differences
+in names, dates and hashes do not prove independence.
 
-This pack now lives at `Fixtures/Heaps/Similarity/CR01/`, alongside PS01 in the
-same Similarity heap. Its supplied files and checksum list are preserved under
-`provenance/supplied/`; `tools/check_pack.py` verifies that unchanged snapshot.
-The preparation helper uses the relocated active PS01 tools and still verifies
-their pinned Git blob hashes before copying.
+The [identity audit](provenance/identity-audit.json) compares available titles,
+Commons page IDs, original SHA-1s and acquired byte hashes against all six prior
+local fixture inventories, containing 382 inputs. No exact reuse was found. This
+is not an exhaustive investigation of upstream capture relationships.
+
+[SOURCES.md](SOURCES.md) retains individual creators, Commons file pages, terms
+URLs where supplied, and actual acquired-byte hashes. Raw API responses remain
+in `provenance/api/`. These record Commons rights statements; the collection
+assigns no new license. The sourcing runtime's original DNS failure and three
+textual file-page observations remain separate from the successful local
+preview/source requests.
+
+The [acquisition receipt](provenance/acquisition.json) records 450 complete
+responses, no transport failures and no automatic retries. All 57 sources used
+the nominal 1600px request: 50 API-returned renditions and seven API-reported
+unscaled originals within the bound. No smaller-rendition requests were needed.
+
+## Files and checks
+
+- `images/` has opaque flat filenames, byte-identical to the preserved downloads
+  in `sources/`. No local cropping, resizing or re-encoding is applied.
+- Manifests, `sources.csv` and `SHA256SUMS.txt` record source mapping, decoded
+  dimensions and source/input hashes. `batches/batch-1.txt` lists every input.
+- `prompt.json` records intent and counts. `probes.csv` is header-only and
+  `selections.json` has no expected pairs.
+- `previews/tiles/` and nine `previews/contact-NN.jpg` sheets retain all candidate
+  evidence. Three `previews/selected-NN.jpg` sheets show acquired inputs.
+- `provenance/` holds transport logs, reviews, the identity audit, import map,
+  final visual review and integration receipt.
+- `previews/hazy-cr01-v1.zip` is the local archive of inputs, sources, preview
+  evidence, metadata, credits and tools. Media and archives remain Git-ignored;
+  a checkout alone does not contain them.
+
+From the repository root, using Python with the pinned Pillow dependency:
 
 ```sh
-python3 Fixtures/Heaps/Similarity/CR01/tools/prepare.py
 python3 -m pip install -r Fixtures/Heaps/Similarity/CR01/requirements.txt
+python3 Fixtures/Heaps/Similarity/CR01/tools/integrate.py check
+python3 Fixtures/Heaps/Similarity/CR01/tools/check_pack.py
 python3 -m unittest discover -s Fixtures/Heaps/Similarity/CR01/tools -p 'test_*.py'
-export HAZY_USER_AGENT='HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib'
-python3 Fixtures/Heaps/Similarity/CR01/tools/acquire.py --stage preview --limit 1
 ```
 
-These use the active, Git-verified PS01 acquisition/review helpers rather than
-an older bundled downloader. If the local PS01 scripts differ from the pinned
-Git blob hashes, the preparation tool stops; inspect and adapt the current repo
-instead of automatically taking a stale copy.
+The integration checker verifies hashes, decoded sizes, CSV/JSON agreement,
+review and rights evidence, supplied fields, transfer receipts, batch coverage
+and empty pair expectations. Missing or changed acquired files fail visibly.
+`check_pack.py` separately verifies the unchanged original handoff, whose counts
+are historical. The experiment's pair-fixture checker does not support
+`prompt_heap`; CR01 uses its local checker. `tools/audit.py` refreshes the identity
+audit when the six prior fixture inventories are available.
 
-Review the pilot preview's actual appearance, then proceed cautiously in
-serial chunks. `tools/acquire.py` uses the API to fetch rendition URLs and
-preserves metadata, downloaded bytes, dimensions and errors; never compose
-thumbnail CDN URLs by hand. Use `tools/review.py --template` and
-`--apply <worksheet>` for visual accept/reject/defer decisions with reasons.
-The helper enforces preview evidence before a recorded visual decision. Contact
-sheets are four columns by five rows (20 images).
+## Acquisition tools
 
-For source acquisition, require individual license and provenance reviews, then
-run a one-image source pilot before continuing. If the Commons API returns a
-throttling/error response, an HTTP 200 with an incomplete body, or a decoding
-problem, stop and retain diagnostics. Do not retry automatically. Actual
-unscaled originals can exceed the requested 1600px edge: request a deliberately
-smaller 1280px rendition **through the API** if appropriate. Keep visual
-acceptance distinct from download status.
+Seven generic helpers were copied from active [PS01 tools](../PS01/tools/acquire.py),
+verified against the Git blob hashes pinned in `provenance/baseline.json`.
+`tools/prepare.py --check-only` verifies that baseline without copying. CR01's
+`audit.py` and `integrate.py` were adapted for its identity, prompt and all six
+prior fixture inventories. Archived scripts under `provenance/supplied/` retain
+the handoff; they are not the active downloader baseline.
 
-**Final integration** is the local agent's responsibility. Adapt PS01's current
-`tools/audit.py` and `tools/integrate.py` for CR01 and **all** local prior fixture
-inventories; don't copy those PS01-specific scripts unchanged. Preserve
-`kind=prompt_heap`, produce final opaque comparison input names, manifests,
-checksums and batches, retain acquired bytes and source rights evidence, and
-exclude labels for pair correctness or expected clusters. A prompt-heap shortfall
-or unresolved source remains explicit.
+Acquisition used a one-preview pilot, paced serial chunks of twelve, visual and
+source review, then a separate one-source pilot. Requests use
+`HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib`, `maxlag=5`,
+at least three seconds after each request, cached metadata and hash-checked
+media. Only API-returned media URLs are used. There are no automatic retries
+or HTTP redirects. Source acquisition requires visual, license and provenance
+review and an unchanged upstream source identity and license statement.
 
-No similarity scores have been computed; none should be used to choose members.
+Requested 320px preview and usually 1600px source edges are nominal; actual
+API-reported and decoded sizes are recorded separately. Unscaled originals must
+fit the requested bound. Larger originals never serve as fallback for missing
+renditions. A deliberately requested 1280px API rendition can be considered when
+needed, retaining each size's metadata separately.
+
+HTTP/API errors, incomplete bodies and decoding failures stop the run and leave
+a persistent error record. HTTP 200 alone does not mean success. A later attempt
+requires diagnosis and explicit acknowledgement, preserving the previous error.
+Acquisition and review share a local lock. Valid cached files are reused.
+
+Further downloads do not silently update published inputs: the checker reports
+a catalog/import mismatch. Integration builds in a new
+`previews/integration-NAME` stage and publication refuses existing outputs.
+No similarity scores were used to select these images.

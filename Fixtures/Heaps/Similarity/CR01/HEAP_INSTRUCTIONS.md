@@ -1,7 +1,9 @@
 # CR01 — Cool, repetitive rectangles: heap instructions
 
 Element: `cool-repetitive-rectangles`. Existing fixture kind: **`prompt_heap`**.
-This is a sourcing handoff, not a final fixture or proof of visual membership.
+These instructions record the sourcing handoff and its intake contract. See
+[README.md](README.md) for the current local review and integration status.
+The supplied handoff alone is not proof of visual membership.
 
 ## Intent
 

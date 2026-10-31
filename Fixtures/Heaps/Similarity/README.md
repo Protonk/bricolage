@@ -10,9 +10,9 @@ it does not define visual similarity here.
 | [RG01](RG01/README.md) | 31 / 107 | Small red accents in predominantly green outdoor photographs | Reviewed; selected sources acquired |
 | [SF01](SF01/README.md) | 48 / 142 | Small separated marks or objects across a continuous field | 59 visual accepts; 11 downloads pending after a recorded timeout |
 | [PS01](PS01/README.md) | 58 / 145 | Pale quiet upper skies above darker, detailed lower regions | Reviewed; selected sources acquired |
-| [CR01](CR01/README.md) | 0 / 168 | Cool, repetitive rectangular cells, panels or frames | Supplied sourcing pack; visual review and acquisition pending |
+| [CR01](CR01/README.md) | 57 / 168 | Cool, repetitive rectangular cells, panels or frames | Reviewed; selected sources acquired |
 
-The three integrated contributions currently provide 137 inputs. Each new
+The four integrated contributions currently provide 194 inputs. Each new
 contribution belongs to this same heap and retains its short prompt, exclusions,
 acceptable looseness, source evidence and per-image decisions. Counts are targets,
 not quotas. Download failures do not change visual acceptances.

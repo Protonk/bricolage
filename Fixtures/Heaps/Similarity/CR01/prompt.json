@@ -1,16 +1,21 @@
 {
   "element": "cool-repetitive-rectangles",
-  "id": "CR01",
-  "kind": "prompt_heap",
-  "prompt": "Photographs dominated by a repeated array of rectangular cells, frames, panels, or modules, often in cool blues, grays and muted greens.",
-  "looseness": "Allow perspective, interrupted grids, variable scale, irregular spacing, background context and modest warm accents when the rectangular repetition dominates the thumbnail.",
-  "exclusions": "Known derivatives, alternate crops, related captures or sequences, synthetic/illustrated patterns, single-object portraits, incidental background rectangles.",
+  "prompt": "Photographs visually dominated by repeated rectangular cells, panels, frames or modules, often in muted blues, grays and greens.",
+  "looseness": "Rectangles may be uneven, nested, interrupted, differently sized or in perspective. Some surrounding context and modest warm accents are allowed while repeated geometry remains conspicuous.",
+  "exclusions": "Known derivatives, alternate crops, related captures/sequences, illustrations, synthetic patterns, single boxes or window portraits, incidental background grids, and strongly colorful facades that displace the cool visual intent.",
+  "interpretation": "Visual curation only. Discovery buckets and source identities are not similarity labels or expected clusters.",
   "target_count": 65,
-  "acceptable_range": [50, 80],
+  "acceptable_range": [
+    50,
+    80
+  ],
+  "actual_count": 57,
+  "acquisition_status": "complete",
+  "pending_acquisition": [],
   "candidate_count": 168,
-  "visual_status": "pending_visual_review",
-  "visual_accept_count": 0,
-  "acquired_count": 0,
-  "actual_count": null,
-  "interpretation": "Discovery buckets are sourcing aids, not expected clusters. No numerical similarity threshold or provenance-relationship ground truth."
+  "selection_counts": {
+    "accept": 57,
+    "reject": 109,
+    "defer": 2
+  }
 }

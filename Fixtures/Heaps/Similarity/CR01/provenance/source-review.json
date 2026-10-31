@@ -1,0 +1,724 @@
+{
+  "status": "complete",
+  "review_basis": "Actual acquired previews, file-specific Commons imageinfo/extmetadata and six local fixture inventories containing 382 inputs. Visual selection is distinct from source identity checking.",
+  "relationship_reviews": [
+    {
+      "candidates": [
+        "cr-0032",
+        "cr-0040"
+      ],
+      "finding": "Same visible brise-soleil facade, creator Wilfredor and exact reported capture timestamp 2016-12-04 16:09:56. Different upstream SHA-1s do not make these independent. Retain cr-0032 and reject cr-0040 as a related representation."
+    },
+    {
+      "candidates": [
+        "cr-0007",
+        "cr-0008"
+      ],
+      "finding": "Same photographer Dietmar Rabich and Bonn parliamentary-building context, reported four minutes apart on 2017-08-20. Different named buildings are visible, but a related outing is plausible; retain cr-0008 and defer cr-0007 pending clarification. This does not establish that they share a capture."
+    },
+    {
+      "candidates": [
+        "cr-0100",
+        "cr-0101",
+        "cr-0102"
+      ],
+      "finding": "Same photographer Maryland Pride and Northwestern High School. Metadata describes different wings/floors and dates in August 2009 and August 2010; these differences do not prove independence. cr-0100 is visually rejected; retain cr-0101 and defer visually suitable cr-0102 as an unresolved same-school relationship."
+    },
+    {
+      "candidates": [
+        "cr-0128",
+        "cr-0129"
+      ],
+      "finding": "Same photographer PeaceSeekers and Universiti Malaya Library, with reported capture timestamps 2023-11-15 12:28:54 and 12:29:07. A clear paired library sequence. Retain the neutral black-journal view cr-0128; reject cr-0129, which also fails the cool palette."
+    },
+    {
+      "candidates": [
+        "cr-0008",
+        "cr-0013",
+        "cr-0017",
+        "cr-0023"
+      ],
+      "finding": "Same credited photographer Dietmar Rabich. Actual previews and descriptions show distinct Bonn, Düsseldorf, Hamburg and Seattle buildings, with reported years 2017, 2015, 2016 and 2022. No shared capture identified; metadata differences alone do not prove independence."
+    },
+    {
+      "candidates": [
+        "cr-0032",
+        "cr-0033",
+        "cr-0034",
+        "cr-0043"
+      ],
+      "finding": "Same credited photographer Wilfredor. The three Paulista-area selections show different facades and reported dates 2016-12-04, 2014-10-19 and 2016-05-27; cr-0043 is a Caracas building reported in 2013. No shared capture identified among these retained images. The matching facade/timestamp of rejected cr-0040 is handled above."
+    },
+    {
+      "candidates": [
+        "cr-0099",
+        "cr-0116"
+      ],
+      "finding": "Same credited photographer Globetrotter19. Lockers in a Semmelweis University corridor and rooftop panels at the National Institute of Oncology are visibly different settings, with reported dates 2024-05-12 and 2026-05-09. No common capture identified; independence is not proved."
+    },
+    {
+      "candidates": [
+        "cr-0067",
+        "cr-0141",
+        "cr-0142"
+      ],
+      "finding": "Creator variants Photo by Joe Mabel and Joe Mabel refer to the same photographer. Selected cr-0067 shows Harbor Island containers in 2023; selected cr-0142 shows Talking Book & Braille Library stacks in 2009. cr-0141 shares cr-0142 location and reported day, and is visually rejected. No common capture identified between the two retained images."
+    },
+    {
+      "candidates": [
+        "cr-0154"
+      ],
+      "other_fixture_candidates": [
+        "ps-0067"
+      ],
+      "finding": "Shared creator RhinoMind with PS01. Compared both acquired previews: Aarhus hotel facade versus foggy meadow. Metadata reports 2017-09-18 versus 2013-12-09; no common capture identified."
+    },
+    {
+      "candidates": [
+        "cr-0096",
+        "cr-0155",
+        "cr-0161",
+        "cr-0167"
+      ],
+      "finding": "Numbered titles or supplied notes indicate potential wider series. Only one lead for each represented series is retained; no exhaustive upstream sequence search was performed."
+    },
+    {
+      "candidates": [
+        "cr-0133"
+      ],
+      "finding": "Narrow-format library photograph. Description calls it a slim shot of library shelves and credits own work. No specific alternate crop or source image identified in the available evidence; narrow framing alone is not evidence of a derivative."
+    }
+  ],
+  "license_reviews": [
+    {
+      "candidate_id": "cr-0002",
+      "metadata_path": "provenance/api/cr-0002-preview.json",
+      "metadata_sha256": "d8ab97caed8dcab8a6166ba934b329cbc9dae7302ca53d6da17148dfa49c91f1",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "creator": "Spielvogel",
+      "copyrighted": "True",
+      "attribution_required": "false",
+      "restrictions": null
+    },
+    {
+      "candidate_id": "cr-0008",
+      "metadata_path": "provenance/api/cr-0008-preview.json",
+      "metadata_sha256": "b02873d226f228afe7fadb830347a0118852e7ab6f2b30dc617b40049e405372",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "Dietmar Rabich",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null
+    },
+    {
+      "candidate_id": "cr-0011",
+      "metadata_path": "provenance/api/cr-0011-preview.json",
+      "metadata_sha256": "2aa7836a4b027df208e9f0edaf8a9be90b6ecc662793426ddbc912776cae27d7",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "creator": "Roman Harak",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null
+    },
+    {
+      "candidate_id": "cr-0013",
+      "metadata_path": "provenance/api/cr-0013-preview.json",
+      "metadata_sha256": "e92ea23a73902f93585891f21112bdbaac75f7fa55d08f0fe6b412d99a00e8ad",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "Dietmar Rabich",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null
+    },
+    {
+      "candidate_id": "cr-0014",
+      "metadata_path": "provenance/api/cr-0014-preview.json",
+      "metadata_sha256": "09d8dd4414b20f5529d096590a5aaa66fed06c976f792c810be46009dc17159e",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0",
+      "creator": "PantheraLeo1359531",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null
+    },
+    {
+      "candidate_id": "cr-0017",
+      "metadata_path": "provenance/api/cr-0017-preview.json",
+      "metadata_sha256": "e1dc998d478fdf04bdbafdcea2475e107091e849eb64ca4c822a29796668d325",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "Dietmar Rabich",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null
+    },
+    {
+      "candidate_id": "cr-0023",
+      "metadata_path": "provenance/api/cr-0023-preview.json",
+      "metadata_sha256": "e41a648917300ccc25c86cede4b7fcb2615a7bba35212b440cdbbcab1c6c980e",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "Dietmar Rabich",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null
+    },
+    {
+      "candidate_id": "cr-0025",
+      "metadata_path": "provenance/api/cr-0025-preview.json",
+      "metadata_sha256": "5b6d1ea2a5c0bcc847c7f875d698a0c2fd22d55a6b4db755bdec3e3cc4b25029",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "creator": "Daderot",
+      "copyrighted": "True",
+      "attribution_required": "false",
+      "restrictions": null
+    },
+    {
+      "candidate_id": "cr-0026",
+      "metadata_path": "provenance/api/cr-0026-preview.json",
+      "metadata_sha256": "40dd4b698b5a6dd0c29e9a8f51b9ab10901e70d855aaf3a36b96a32bb7b400b2",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "creator": "Stephen Douglas from Manchester, United Kingdom",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null
+    },
+    {
+      "candidate_id": "cr-0028",
+      "metadata_path": "provenance/api/cr-0028-preview.json",
+      "metadata_sha256": "e9af63dbd0410727cee65af8046a8d08be46f237fed6df6c9c92bfc7b3735e22",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "creator": "Matthew Henry",
+      "copyrighted": "True",
+      "attribution_required": "false",
+      "restrictions": null
+    },
+    {
+      "candidate_id": "cr-0031",
+      "metadata_path": "provenance/api/cr-0031-preview.json",
+      "metadata_sha256": "ad4ec35214688e79167e43e256a15730a964996e4162d3e7c5cfca23fba314b6",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0",
+      "creator": "Rob Oo",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null
+    },
+    {
+      "candidate_id": "cr-0032",
+      "metadata_path": "provenance/api/cr-0032-preview.json",
+      "metadata_sha256": "ebfb40c175beed5d370f2902ee191bfd5234f2c5ad15a7b1995dd115b08e9704",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "Wilfredor",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null
+    },
+    {
+      "candidate_id": "cr-0033",
+      "metadata_path": "provenance/api/cr-0033-preview.json",
+      "metadata_sha256": "2b3213b7790b8b2c4d09a01a0e96a2a6ad3db5fe8c910e0423e8e671bb06be20",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "creator": "Wilfredor",
+      "copyrighted": "True",
+      "attribution_required": "false",
+      "restrictions": null
+    },
+    {
+      "candidate_id": "cr-0034",
+      "metadata_path": "provenance/api/cr-0034-preview.json",
+      "metadata_sha256": "7d1dbe9f67fcd42fd3110bb23a760134c455e8a620c76d581727eeeb6216c5d8",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "Wilfredor",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null
+    },
+    {
+      "candidate_id": "cr-0036",
+      "metadata_path": "provenance/api/cr-0036-preview.json",
+      "metadata_sha256": "97cb6ef7019acda0b1d22a5bad07dfd0846fd8b9231a0d31cea5f30c1c512a25",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "Matthias Süßen",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null
+    },
+    {
+      "candidate_id": "cr-0038",
+      "metadata_path": "provenance/api/cr-0038-preview.json",
+      "metadata_sha256": "961affa85edeaacd519b3cdb88480f81b2d9064640c38c606076fab18f467138",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "creator": "chuttersnap chuttersnap",
+      "copyrighted": "True",
+      "attribution_required": "false",
+      "restrictions": null
+    },
+    {
+      "candidate_id": "cr-0039",
+      "metadata_path": "provenance/api/cr-0039-preview.json",
+      "metadata_sha256": "cec1db6d7c7a2bb61eadd3d602ba546985477582b4c6f86ab95263254a04b050",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0",
+      "creator": "XoMEoX",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null
+    },
+    {
+      "candidate_id": "cr-0041",
+      "metadata_path": "provenance/api/cr-0041-preview.json",
+      "metadata_sha256": "1e98ac11e9c3eb69ddeb573037600be08542a7cfcb0dec94dc4a31d6ea014314",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "Martin Falbisoner",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null
+    },
+    {
+      "candidate_id": "cr-0043",
+      "metadata_path": "provenance/api/cr-0043-preview.json",
+      "metadata_sha256": "e137f1332b13ed3c845404728f2c88b259abf7f64ee634df597b1ffc13f84980",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "creator": "Wilfredor",
+      "copyrighted": "True",
+      "attribution_required": "false",
+      "restrictions": null
+    },
+    {
+      "candidate_id": "cr-0044",
+      "metadata_path": "provenance/api/cr-0044-preview.json",
+      "metadata_sha256": "96720bf166f833ca35a53e23278aa2fbcfc167b19891f81bc8c3d51f5fb9e9b1",
+      "license": "CC BY-SA 3.0 pl",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/pl/deed.en",
+      "creator": "Travelarz",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null
+    },
+    {
+      "candidate_id": "cr-0046",
+      "metadata_path": "provenance/api/cr-0046-preview.json",
+      "metadata_sha256": "fbc8f2f29a651a9d8627e5bddf16cb9efcfa89bc0bf3089707d86f017419ac90",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "Eduard47",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null
+    },
+    {
+      "candidate_id": "cr-0052",
+      "metadata_path": "provenance/api/cr-0052-preview.json",
+      "metadata_sha256": "1d58358529e095e4f815f04b5ecdd26955fd555ff234f0f22499b3dba88b29ed",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "creator": "Maersk Line",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null
+    },
+    {
+      "candidate_id": "cr-0053",
+      "metadata_path": "provenance/api/cr-0053-preview.json",
+      "metadata_sha256": "2d54cd88e9ae59523f2d9fa869e0dae5d7a870979a545b21e81f8a39b0d3b417",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "creator": "brewbooks",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null
+    },
+    {
+      "candidate_id": "cr-0057",
+      "metadata_path": "provenance/api/cr-0057-preview.json",
+      "metadata_sha256": "b51ca3c2d1bdfefa15bc79deafa8dc0ca92bd6fd98d9330502f02aa3ed086ffd",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "Steven Lek",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null
+    },
+    {
+      "candidate_id": "cr-0059",
+      "metadata_path": "provenance/api/cr-0059-preview.json",
+      "metadata_sha256": "8392e48f32538d49ae037044f1eac86a8d48c525ee73fca8f77bbb4dc1debeef",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "creator": "Alf van Beem",
+      "copyrighted": "True",
+      "attribution_required": "false",
+      "restrictions": null
+    },
+    {
+      "candidate_id": "cr-0062",
+      "metadata_path": "provenance/api/cr-0062-preview.json",
+      "metadata_sha256": "cf36fb6f57437f323c5d08259e0261d78a2e12b1b38324e2d046051d517d9c11",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "creator": "Frank Vincentz",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null
+    },
+    {
+      "candidate_id": "cr-0067",
+      "metadata_path": "provenance/api/cr-0067-preview.json",
+      "metadata_sha256": "1c66bd4b1b80b1a089f72ba6f69db4e44b838f2d184ffab3cdf9ea934e00f4d2",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "Photo by Joe Mabel",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null
+    },
+    {
+      "candidate_id": "cr-0070",
+      "metadata_path": "provenance/api/cr-0070-preview.json",
+      "metadata_sha256": "454183e2788d40d07dbc64a5b5da575d0436356b64436f0ebfe9570299bd04ea",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "ElyarZakirov",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null
+    },
+    {
+      "candidate_id": "cr-0072",
+      "metadata_path": "provenance/api/cr-0072-preview.json",
+      "metadata_sha256": "fae0e40cae16b18c56ccd45e7660917b7645cd4f42eaaaf06c74b10a1bdf1607",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "creator": "User:Nillerdk",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null
+    },
+    {
+      "candidate_id": "cr-0083",
+      "metadata_path": "provenance/api/cr-0083-preview.json",
+      "metadata_sha256": "e50bbf06c832a73e9103cc533ec2e81305d1ba0e1d69cda3778e70ea803e24fe",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0",
+      "creator": "Angelo DeSantis from Berkeley, US",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null
+    },
+    {
+      "candidate_id": "cr-0085",
+      "metadata_path": "provenance/api/cr-0085-preview.json",
+      "metadata_sha256": "0da9e1a6dbb7c276b1042ccd42097b86478a026d041d9bf50f00c1e174cdd6ed",
+      "license": "CC BY 2.5",
+      "license_url": "https://creativecommons.org/licenses/by/2.5",
+      "creator": "User:Nino Barbieri",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null
+    },
+    {
+      "candidate_id": "cr-0094",
+      "metadata_path": "provenance/api/cr-0094-preview.json",
+      "metadata_sha256": "f4145994ef124353b2d1a248731eef33c7e9ee6a7e6815022bcbf5b80b74509f",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "Thelmadatter",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null
+    },
+    {
+      "candidate_id": "cr-0096",
+      "metadata_path": "provenance/api/cr-0096-preview.json",
+      "metadata_sha256": "78b750b6fb0befd87afe0ab189fbba0027eb298488f19c45f2052e6f5c73a483",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "S.J. de Waard",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null
+    },
+    {
+      "candidate_id": "cr-0097",
+      "metadata_path": "provenance/api/cr-0097-preview.json",
+      "metadata_sha256": "1fc04c8fac303d600cb1df740c8a61d2754bf67e7d5d4bfd7ef481961b003baf",
+      "license": "Public domain",
+      "license_url": null,
+      "creator": "Demetri Music™",
+      "copyrighted": "False",
+      "attribution_required": "false",
+      "restrictions": null
+    },
+    {
+      "candidate_id": "cr-0099",
+      "metadata_path": "provenance/api/cr-0099-preview.json",
+      "metadata_sha256": "adf94ac1e4a56c185a00b202e8fa1fd81d2985cd8907d3c730320a5ad209181f",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "Globetrotter19",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null
+    },
+    {
+      "candidate_id": "cr-0101",
+      "metadata_path": "provenance/api/cr-0101-preview.json",
+      "metadata_sha256": "9eda5ac1f895560141f52c563c2734ecae905bd9d1baa828216f0e5effeebbd5",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "creator": "Maryland Pride",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null
+    },
+    {
+      "candidate_id": "cr-0103",
+      "metadata_path": "provenance/api/cr-0103-preview.json",
+      "metadata_sha256": "14df97cd9874933dbd5855f0de7ae6302a25a691a1caa8988ce37092489055c1",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "creator": "PCHS-NJROTC",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null
+    },
+    {
+      "candidate_id": "cr-0104",
+      "metadata_path": "provenance/api/cr-0104-preview.json",
+      "metadata_sha256": "5bd0bab5ce3cb3ca4a53b2eee0eab2dd3e840cd7536e2401faee726f409f80eb",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "creator": "Estormiz",
+      "copyrighted": "True",
+      "attribution_required": "false",
+      "restrictions": null
+    },
+    {
+      "candidate_id": "cr-0105",
+      "metadata_path": "provenance/api/cr-0105-preview.json",
+      "metadata_sha256": "197902b9ef94137362214d7305158f4f492afb45360ee3c974b9f5ca2589b67d",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0",
+      "creator": "Bearas",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null
+    },
+    {
+      "candidate_id": "cr-0106",
+      "metadata_path": "provenance/api/cr-0106-preview.json",
+      "metadata_sha256": "765005c28a2d7e02e3085292ca4adb514a0867f2ce1fbb93fce71e401bc0dbd1",
+      "license": "Public domain",
+      "license_url": null,
+      "creator": "David",
+      "copyrighted": "False",
+      "attribution_required": "false",
+      "restrictions": null
+    },
+    {
+      "candidate_id": "cr-0108",
+      "metadata_path": "provenance/api/cr-0108-preview.json",
+      "metadata_sha256": "9ab62b926fd1e19f5f665893a63b1e86f0ba14afef917746382371afadbb2192",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "DNA04",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null
+    },
+    {
+      "candidate_id": "cr-0109",
+      "metadata_path": "provenance/api/cr-0109-preview.json",
+      "metadata_sha256": "63f9af518d4b838ed8443fad6c5f2d6b01282ebb3b057006b98641d8fa2dedfd",
+      "license": "Public domain",
+      "license_url": null,
+      "creator": "Wvhoya",
+      "copyrighted": "False",
+      "attribution_required": "false",
+      "restrictions": null
+    },
+    {
+      "candidate_id": "cr-0116",
+      "metadata_path": "provenance/api/cr-0116-preview.json",
+      "metadata_sha256": "feb147cd2448116b8e114a2c46d6e7a64af775137229b153829c03d13cf99d57",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "Globetrotter19",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null
+    },
+    {
+      "candidate_id": "cr-0119",
+      "metadata_path": "provenance/api/cr-0119-preview.json",
+      "metadata_sha256": "31678dcdefecb4d0170a12884aa8ba545decc592bd198709cdf489822e449721",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "Ecori",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null
+    },
+    {
+      "candidate_id": "cr-0121",
+      "metadata_path": "provenance/api/cr-0121-preview.json",
+      "metadata_sha256": "0e598d484ff37713b007a379687c2c9de78a3f471c4c5dbd5d5e1ae664253814",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "Emptywords",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null
+    },
+    {
+      "candidate_id": "cr-0126",
+      "metadata_path": "provenance/api/cr-0126-preview.json",
+      "metadata_sha256": "a9e897dce9a4c1fab0d2225774b69cf9f55c8b8b99d0a408b836de936aeed023",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "Tiia Monto",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null
+    },
+    {
+      "candidate_id": "cr-0128",
+      "metadata_path": "provenance/api/cr-0128-preview.json",
+      "metadata_sha256": "557c67f60b94f60a6fceae063634333914371718b38b21ea96fb66000078bdc0",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0",
+      "creator": "PeaceSeekers",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null
+    },
+    {
+      "candidate_id": "cr-0133",
+      "metadata_path": "provenance/api/cr-0133-preview.json",
+      "metadata_sha256": "90f6ece818bda38ce23f02aec2edf405a8ab30284c5f47dd192e38f4ba2069c8",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "creator": "Beccahowes",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null
+    },
+    {
+      "candidate_id": "cr-0134",
+      "metadata_path": "provenance/api/cr-0134-preview.json",
+      "metadata_sha256": "30d8942a55110a8a460205b3e5ebfcc13ec0851c9bfbdb685b953219fbc2ba87",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "Juliaandradefr",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null
+    },
+    {
+      "candidate_id": "cr-0139",
+      "metadata_path": "provenance/api/cr-0139-preview.json",
+      "metadata_sha256": "8835c1f02f71910cb385bc44a5e2c7d806c59e40402bdce81a9e89617ad0b874",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0",
+      "creator": "dfulmer",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null
+    },
+    {
+      "candidate_id": "cr-0142",
+      "metadata_path": "provenance/api/cr-0142-preview.json",
+      "metadata_sha256": "a8cb6771cedf5a3088cc3e5cc484ab966e398a7d6c28b0087f2102e6afa1427b",
+      "license": "CC BY-SA 3.0",
+      "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "creator": "Joe Mabel",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null
+    },
+    {
+      "candidate_id": "cr-0152",
+      "metadata_path": "provenance/api/cr-0152-preview.json",
+      "metadata_sha256": "2ac208a2a2b2d05cb222ef9f7c321645440a375b36c8dff167b67b098e63b755",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "creator": "Mind Booster Noori",
+      "copyrighted": "True",
+      "attribution_required": "false",
+      "restrictions": null
+    },
+    {
+      "candidate_id": "cr-0154",
+      "metadata_path": "provenance/api/cr-0154-preview.json",
+      "metadata_sha256": "0ac0712ce38f77285bb15fd23b481110fe1532b5d4551ea288d6523d5e76c3d6",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "RhinoMind",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null
+    },
+    {
+      "candidate_id": "cr-0155",
+      "metadata_path": "provenance/api/cr-0155-preview.json",
+      "metadata_sha256": "9148ad0534a8d3975f17acc7badd2a525b17a802db4559a7ec208b4df7f2ca88",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "creator": "MOs810",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null
+    },
+    {
+      "candidate_id": "cr-0156",
+      "metadata_path": "provenance/api/cr-0156-preview.json",
+      "metadata_sha256": "2a66a1127db46be3def96bfc60a060f769369810d5780e3415fd6dcde2d63b40",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0",
+      "creator": "Yann Duarte from Vitória, Brasil",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null
+    },
+    {
+      "candidate_id": "cr-0161",
+      "metadata_path": "provenance/api/cr-0161-preview.json",
+      "metadata_sha256": "4d06f36c720e352c1593770a826646b46d77911e0c9d6f6a428b975e4b904225",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0",
+      "creator": "peterrieke",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null
+    },
+    {
+      "candidate_id": "cr-0167",
+      "metadata_path": "provenance/api/cr-0167-preview.json",
+      "metadata_sha256": "49cea0c88205102c2dc9a3e99737e318e07d4a36eceb321db4bb9cc6d83ac584",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "円周率３パーセント",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null
+    }
+  ],
+  "source_independence_confirmed": null,
+  "limitations": "No exhaustive upstream capture or series investigation. Exact identity checks and visible/source metadata review do not prove independence. Source rights statements are recorded from Commons, not independently established; source_independence_confirmed remains null.",
+  "reviewed_at": "2026-10-31T15:45:41.188521+00:00"
+}

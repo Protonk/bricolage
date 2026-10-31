@@ -1,0 +1,25 @@
+{
+  "status": "inspected",
+  "reviewed_at": "2026-10-31T15:54:18.202739+00:00",
+  "scope": "All 57 acquired comparison inputs inspected at contact-sheet scale using sheets rendered from the staged inputs. Published sheet bytes match the inspected staging files. Source/input media bytes were copied without local resizing or re-encoding.",
+  "input_count": 57,
+  "sheets": [
+    {
+      "path": "previews/selected-01.jpg",
+      "sha256": "24b1010155e727025f0574827cdaf20ea80282c6060efa600da0aee776af2d87"
+    },
+    {
+      "path": "previews/selected-02.jpg",
+      "sha256": "e87cb528aa8a624d5bf151b058553824a62e47aae15d97472a0a9e337cd9f10a"
+    },
+    {
+      "path": "previews/selected-03.jpg",
+      "sha256": "463102502bf471b734b90bad90c579fe0f9c565caf452887c05a7e0d0a182e58"
+    }
+  ],
+  "manifest_sha256": "df695b27cd27fa082088f5dc86cc553c158da00390aa908dfaf76a3b3448912f",
+  "visual_decisions_sha256": "0a1c118f4a25d9bc7d946c48406827be42bacb0abffef9bf4b526dea11aee9c4",
+  "decision": "Retain the 57 recorded visual accepts; no selection changes after inspecting acquired-source contact sheets.",
+  "observations": "Repeated windows, facade panels, containers, crates, lockers, solar cells, shelves, seats and boxes remain conspicuous across subjects. Perspective, partial context, warm accents and some brighter cool colors are retained as described in individual visual reasons. No broken or substituted image was evident in the sheets.",
+  "limits": "Curatorial judgment at thumbnail scale; neither membership ground truth nor proof of capture independence."
+}
