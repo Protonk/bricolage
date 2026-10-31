@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T17:16:18.890686+00:00",
+  "key": "files-003",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3ACopper+bleach.jpg%7CFile%3ASelf+traditional+folk+face+painting+%282%29.jpg%7CFile%3ACovid-19+SP+-+UTI+V.+Nova+Cachoeirinha.jpg%7CFile%3ACrate+maker.jpg%7CFile%3AEvening+pray+%28edited%29.jpg%7CFile%3ANubian+houses.jpg%7CFile%3AChild+working+selling+vegetables+in+downtown+Maracaibo.jpg%7CFile%3ASister+lighting+traditional+lamp+during+Tihar+festival+%28edited%29.jpg%7CFile%3ATea+plantation+Sri.jpg%7CFile%3ASumitra+Devi%2C+a+Garhwali+shepherd+near+Lansdowne%2C+Uttarakhand+02+-+cropped.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 73438,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 17:16:19 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-vgzz9",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "35190715-64da-4189-a298-eba1e7f83e84"
+  },
+  "sha256": "12229cede65a55391d486adc5290b81f01bb20fe630a5e34efb2d6f79119b6e0"
+}

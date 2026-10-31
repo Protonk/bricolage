@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T17:15:54.352712+00:00",
+  "key": "files-021",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3AHistoric+Pagoda+Style+Architecture+in+Kathmandu+Durbar+Square-IMG+4069.jpg%7CFile%3A2024-04-15-K%C3%B6ln-Hauptbahnhof-3956167A3956.jpg%7CFile%3A20240819+Borsigturm+03.jpg%7CFile%3AAyuntamiento%2C+Lugo%2C+Espa%C3%B1a%2C+2015-09-19%2C+DD+01.jpg%7CFile%3AKasr+Zemmour+011.jpg%7CFile%3AVenezia+-+Punta+della+Dogana+-+2024-09-24+07-52-02+001.jpg%7CFile%3AKasr+b%C3%A9ni+Kheddache+05.jpg%7CFile%3A%D0%A4%D0%B0%D1%81%D0%B0%D0%B4%D0%B0%D1%82%D0%B0+%D0%BD%D0%B0+%D0%B7%D0%B3%D1%80%D0%B0%D0%B4%D0%B0%D1%82%D0%B0+%D0%BD%D0%B0+%D0%9C%D0%A0%D0%A2.jpg%7CFile%3AArc+de+triomphe+de+Trajan+vue+2.jpg%7CFile%3ALivorno+-+Hotel+Palazzo+-+2025-09-29+20-09-38+001.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 60781,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 17:15:54 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-b5k49",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "22e8c280-71bd-4f80-99f5-ed06ef0d383e"
+  },
+  "sha256": "c592b7ec373b8ed7b6fecd846ee4292ff98a664a1cae71522ce2f40b65317446"
+}

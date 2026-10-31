@@ -1,0 +1,41 @@
+{
+  "candidate_id": "3d97169d929a444e7602",
+  "source_path": "sources/3d97169d929a444e7602.jpg",
+  "sha256": "b6a9e924819e8489d71aa59e362419c6bbbaa11447736c6318fa29a2ba96496e",
+  "bytes": 657146,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Bamberg_Hain_Hirschk%C3%A4fer_focus_stacked-20240520-RM-103648.jpg/1920px-Bamberg_Hain_Hirschk%C3%A4fer_focus_stacked-20240520-RM-103648.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-008.json",
+  "metadata_sha256": "938cca6107ca36cd3bf99777730a5c771b23d7d979d5801dd1607d74a2583785",
+  "original_sha1": "547ebe193e958a9e0369ed9ed0c9a8a517aa3208",
+  "pageid": 148860639,
+  "api_reported_width": 1600,
+  "api_reported_height": 1200,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:21:14.553042+00:00",
+    "key": "3d97169d929a444e7602",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Bamberg_Hain_Hirschk%C3%A4fer_focus_stacked-20240520-RM-103648.jpg/1920px-Bamberg_Hain_Hirschk%C3%A4fer_focus_stacked-20240520-RM-103648.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 657146,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "4e205a6ae1a5c70d2ef572f8714578a4",
+      "last-modified": "Thu, 30 Jul 2026 15:19:03 GMT",
+      "content-length": "657146",
+      "date": "Sat, 31 Oct 2026 17:21:14 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "1a1fba5c-d658-4c9c-acc5-9dd8adf694e4"
+    },
+    "sha256": "b6a9e924819e8489d71aa59e362419c6bbbaa11447736c6318fa29a2ba96496e"
+  },
+  "width": 1920,
+  "height": 1440,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

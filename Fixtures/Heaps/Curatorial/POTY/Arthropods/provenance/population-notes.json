@@ -1,0 +1,10 @@
+{
+  "basis": "Membership is the published category data page used by the gallery script. Raw category strings are preserved, including spelling errors and stale Other objects labels; no editorial reclassification.",
+  "count_by_year": {
+    "2023": 47,
+    "2024": 86,
+    "2025": 104
+  },
+  "all_entries_in_round1_all": true,
+  "category_field_disagreements": []
+}

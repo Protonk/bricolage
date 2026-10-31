@@ -1,0 +1,41 @@
+{
+  "candidate_id": "6632052ef8bf5d75555a",
+  "source_path": "sources/6632052ef8bf5d75555a.jpg",
+  "sha256": "34a234eec7f5931f0edf0d265e9f3c889fbf6185517386d014747090d9ad7b44",
+  "bytes": 180081,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Darter_August_2024-2.jpg/1920px-Darter_August_2024-2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-009.json",
+  "metadata_sha256": "a9eebce294715052ba1c2bfe711ae3d1bd4e4052649ac470ff9ae3cab1434cf2",
+  "original_sha1": "07b608239db3aab9b5a44f85c969259d061d76ad",
+  "pageid": 151643224,
+  "api_reported_width": 1600,
+  "api_reported_height": 941,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:28:57.952132+00:00",
+    "key": "6632052ef8bf5d75555a",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Darter_August_2024-2.jpg/1920px-Darter_August_2024-2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 180081,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "537ed20191701e25a683a6dd0e80f7f3",
+      "last-modified": "Sun, 13 Sep 2026 08:00:25 GMT",
+      "content-length": "180081",
+      "date": "Sat, 31 Oct 2026 17:28:58 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "fa78cdd6-7fdd-4bd4-a6b3-b391db7571e2"
+    },
+    "sha256": "34a234eec7f5931f0edf0d265e9f3c889fbf6185517386d014747090d9ad7b44"
+  },
+  "width": 1920,
+  "height": 1129,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

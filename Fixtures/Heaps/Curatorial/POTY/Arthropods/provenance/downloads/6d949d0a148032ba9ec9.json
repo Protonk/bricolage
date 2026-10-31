@@ -1,0 +1,41 @@
+{
+  "candidate_id": "6d949d0a148032ba9ec9",
+  "source_path": "sources/6d949d0a148032ba9ec9.jpg",
+  "sha256": "d8d8c7ed1e0e9615cfdd9a0e89c07b57de94b4442dba74dc1183b5df0ff21256",
+  "bytes": 637270,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Goldenrod_crab_spider_%28Misumena_vatia%29_on_African_daisy_%28Arctotis%29%2C_Ponte_de_Sor%2C_Portugal_%28approx._GPS_location%29_julesvernex2.jpg/1920px-Goldenrod_crab_spider_%28Misumena_vatia%29_on_African_daisy_%28Arctotis%29%2C_Ponte_de_Sor%2C_Portugal_%28approx._GPS_location%29_julesvernex2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-018.json",
+  "metadata_sha256": "9bd97de7726929986d951f8efe0bcb140e61294edd075f78b3b0991665009653",
+  "original_sha1": "1024242f3ba214db30510e270d26a2f1911d318d",
+  "pageid": 166825368,
+  "api_reported_width": 1553,
+  "api_reported_height": 1600,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:29:08.348489+00:00",
+    "key": "6d949d0a148032ba9ec9",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Goldenrod_crab_spider_%28Misumena_vatia%29_on_African_daisy_%28Arctotis%29%2C_Ponte_de_Sor%2C_Portugal_%28approx._GPS_location%29_julesvernex2.jpg/1920px-Goldenrod_crab_spider_%28Misumena_vatia%29_on_African_daisy_%28Arctotis%29%2C_Ponte_de_Sor%2C_Portugal_%28approx._GPS_location%29_julesvernex2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 637270,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "d31a7003db52c958684e8bef3e661df4",
+      "last-modified": "Tue, 13 Oct 2026 08:20:10 GMT",
+      "content-length": "637270",
+      "date": "Sat, 31 Oct 2026 17:29:08 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "7ec74a31-a064-4fa4-8123-bfec60882dc8"
+    },
+    "sha256": "d8d8c7ed1e0e9615cfdd9a0e89c07b57de94b4442dba74dc1183b5df0ff21256"
+  },
+  "width": 1920,
+  "height": 1978,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

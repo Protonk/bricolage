@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T17:15:39.942699+00:00",
+  "key": "files-017",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3AS-charl+richting+Alp+Sesvenna.+12-10-2024.+%28actm.%29.jpg%7CFile%3AJaipur+03-2016+20+City+Palace+complex.jpg%7CFile%3AKimotong%2C+Sud%C3%A1n+del+Sur%2C+2024-01-23%2C+DD+37.jpg%7CFile%3AHyatt+Regency+Embarcadero+Atrium%2C+San+Francisco%2C+US.jpg%7CFile%3ABank+of+America+Building+Baltimore+MD1.jpg%7CFile%3APuits+Rodolphe+01.jpg%7CFile%3AFriedenspalast+Den+Haag.jpg%7CFile%3A20230317+Laeiszhalle.jpg%7CFile%3ANoite+no+Teatro+Amazonas+%28cropped%29.jpg%7CFile%3ANew+Croton+Dam+NY1.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 65107,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 17:15:40 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-45z78",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "3d33138a-01dd-4d64-8dc7-8a2e123d1be1"
+  },
+  "sha256": "134e461538f4600254bd1ed30972bd9d435ddf7301fac86a4e43c473c6561e80"
+}

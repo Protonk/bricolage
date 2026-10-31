@@ -1,0 +1,41 @@
+{
+  "candidate_id": "9a40190108a804c45fd6",
+  "source_path": "sources/9a40190108a804c45fd6.jpg",
+  "sha256": "d7e386813b7bef73286fc26a556dc36b43cc580b07b2910468ff3ac5314f2636",
+  "bytes": 484150,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/2023-04-23_Motorsport%2C_ABB_FIA_Formula_E_World_Championship%2C_Berlin_E-Prix_2023_1DX_1445_by_Stepro.jpg/1920px-2023-04-23_Motorsport%2C_ABB_FIA_Formula_E_World_Championship%2C_Berlin_E-Prix_2023_1DX_1445_by_Stepro.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-001.json",
+  "metadata_sha256": "f19249e0b818ea7ffb79112eee0793e665ec1b4d49aad3eee6547e4c8549bde0",
+  "original_sha1": "b5c698969dc42695f28781e5ce64958562377a43",
+  "pageid": 131247432,
+  "api_reported_width": 1600,
+  "api_reported_height": 727,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:25:25.041670+00:00",
+    "key": "9a40190108a804c45fd6",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/2023-04-23_Motorsport%2C_ABB_FIA_Formula_E_World_Championship%2C_Berlin_E-Prix_2023_1DX_1445_by_Stepro.jpg/1920px-2023-04-23_Motorsport%2C_ABB_FIA_Formula_E_World_Championship%2C_Berlin_E-Prix_2023_1DX_1445_by_Stepro.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 484150,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "114f64b8be8de4d0b948696baff6e2ac",
+      "last-modified": "Wed, 05 Aug 2026 04:21:24 GMT",
+      "content-length": "484150",
+      "date": "Sat, 31 Oct 2026 17:25:25 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "927d8eba-5ec8-4b5c-b4fa-318b10d40f50"
+    },
+    "sha256": "d7e386813b7bef73286fc26a556dc36b43cc580b07b2910468ff3ac5314f2636"
+  },
+  "width": 1920,
+  "height": 872,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

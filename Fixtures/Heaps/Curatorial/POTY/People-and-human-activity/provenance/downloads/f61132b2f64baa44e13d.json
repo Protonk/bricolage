@@ -1,0 +1,41 @@
+{
+  "candidate_id": "f61132b2f64baa44e13d",
+  "source_path": "sources/f61132b2f64baa44e13d.jpg",
+  "sha256": "021bd888af0ec57842d3a15f7290be189ab26676abe9e4c8e920e8e87fed065e",
+  "bytes": 336598,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Elif_Iman.jpg/1920px-Elif_Iman.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-019.json",
+  "metadata_sha256": "5619ec4086c1318eb0fc12714da3e9ae36dc44f7315cb3fd4ecb590584d50639",
+  "original_sha1": "77db60d1d83bbeca2b3ed6f2969575ba3c1e6f3d",
+  "pageid": 171007593,
+  "api_reported_width": 1600,
+  "api_reported_height": 1067,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:29:53.523011+00:00",
+    "key": "f61132b2f64baa44e13d",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Elif_Iman.jpg/1920px-Elif_Iman.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 336598,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "966b922d2487875fd4d86baebd637e7a",
+      "last-modified": "Fri, 28 Aug 2026 09:16:10 GMT",
+      "content-length": "336598",
+      "date": "Sat, 31 Oct 2026 17:29:53 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "997b8f87-33e8-4ffc-9488-11e9bdbcdadf"
+    },
+    "sha256": "021bd888af0ec57842d3a15f7290be189ab26676abe9e4c8e920e8e87fed065e"
+  },
+  "width": 1920,
+  "height": 1280,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

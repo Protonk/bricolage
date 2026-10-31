@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T17:14:53.656020+00:00",
+  "key": "files-004",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3APortal%2C+Pitam+Niwas+Chowk%2C+City+Palace%2C+Jaipur%2C+20191218+1000+9059.jpg%7CFile%3AShell-HausBerlinmsu-2023-0I9A-8433-.jpg%7CFile%3ACour+des+Voraces+-+plan+serr%C3%A9.JPG%7CFile%3AArchitectural+Details+Balconies+and+Windows+of+Taj+Tower+Hotel%2C+Mumbai.jpg%7CFile%3AKoenigstrasse+45+in+Bad+Bergzabern+%282%29.jpg%7CFile%3APuente+Helix%2C+museo+ArtScience+y+hotel+Marina+Bay+Sands%2C+Marina+Bay%2C+Singapur%2C+2023-08-17%2C+DD+67-69+HDR.jpg%7CFile%3AMachu+Picchu%2C+Per%C3%BA%2C+2015-07-30%2C+DD+60.JPG%7CFile%3A%C3%89comus%C3%A9e+d%E2%80%99Alsace+47.jpg%7CFile%3ALos+Inv%C3%A1lidos%2C+Par%C3%ADs%2C+Francia%2C+2022-10-30%2C+DD+128-130+HDR.jpg%7CFile%3ACape+Town+%28ZA%29%2C+Wale+Street+--+2024+--+3536.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 80027,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 17:14:53 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-gjjvt",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "e3317cbe-ef5a-46f2-b54a-006859b2d8dd"
+  },
+  "sha256": "5754e09037c324d7727085b7d0dd538a9a39c84b21eb1b76e28e4d1196297e3f"
+}

@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T17:14:39.240031+00:00",
+  "key": "files-000",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3ALukmanierpass%2C+Passo+del+Lucomagno.+20-09-2022.+%28actm.%29+26.jpg%7CFile%3ASt+David%27s+Hotel+from+Cardiff+Bay+Wetlands+Reserve.jpg%7CFile%3APatio+del+Belvedere%2C+Ciudad+del+Vaticano%2C+2022-09-14%2C+DD+73-75+HDR.jpg%7CFile%3ALes+subsistances+%28noir+et+blanc%29.jpg%7CFile%3AKlimahaus+Bremerhaven+01.jpg%7CFile%3ACH.GR.Arosa+Tschuggen-Grand-Hotel+2220+16x9-R+16K.jpg%7CFile%3AMain+facade+%28fragment%29+of+Hospital+de+Santa+Cruz.+Toledo%2C+Spain.jpg%7CFile%3AFIZ+BMW%2C+M%C3%BAnich%2C+Alemania%2C+2022-10-23%2C+DD+104-106+HDR.jpg%7CFile%3AHamburg%2C+Elbphilharmonie+--+2023+--+6610+%28bw%29.jpg%7CFile%3AAtomium%2C+Bruselas%2C+B%C3%A9lgica%2C+2021-12-15%2C+DD+148-150+HDR.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 81203,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 17:14:39 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-zr5xr",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "0f9fddc5-598c-44e4-ac2b-121b0fcb9355"
+  },
+  "sha256": "8113673b92c38df4637dae82785f4bce670e53a04bdf3e9ea68d597bc268f796"
+}

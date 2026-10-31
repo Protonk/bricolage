@@ -1,0 +1,41 @@
+{
+  "candidate_id": "a638aeb4b57ff3120eae",
+  "source_path": "sources/a638aeb4b57ff3120eae.jpg",
+  "sha256": "592ce8ef7976f502029b1912adf5a1e4576ae214bb45071de880613868a13e1a",
+  "bytes": 392543,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Wredes_passage_November_2025_01.jpg/1920px-Wredes_passage_November_2025_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-023.json",
+  "metadata_sha256": "32b7d49951bd3c229ceda6288e003afecfc668c9b6e120f1a8c6d127de65e4ab",
+  "original_sha1": "2cd7c2b9ca4a7e9631b57480ccfa93e2880c45bf",
+  "pageid": 179563021,
+  "api_reported_width": 1600,
+  "api_reported_height": 591,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:27:16.711854+00:00",
+    "key": "a638aeb4b57ff3120eae",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Wredes_passage_November_2025_01.jpg/1920px-Wredes_passage_November_2025_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 392543,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "f0685ed3b52fcae6eb97d6d025bbb9c0",
+      "last-modified": "Tue, 04 Aug 2026 04:10:40 GMT",
+      "content-length": "392543",
+      "date": "Sat, 31 Oct 2026 17:27:16 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "aebb2456-ee59-4c63-8f36-55fccdbc74f2"
+    },
+    "sha256": "592ce8ef7976f502029b1912adf5a1e4576ae214bb45071de880613868a13e1a"
+  },
+  "width": 1920,
+  "height": 709,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

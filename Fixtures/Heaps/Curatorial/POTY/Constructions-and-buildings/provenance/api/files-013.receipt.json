@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T17:15:25.558929+00:00",
+  "key": "files-013",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3AOld+Arsenal+da+Marinha+and+Doca+da+Caldeirinha%2C+Cais+do+Sodr%C3%A9%2C+Lisbon%2C+Portugal+julesvernex2.jpg%7CFile%3A%D0%97%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5+%D0%B1%D1%8B%D0%B2%D1%88%D0%B5%D0%B9+%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%BE%D0%B9+%D0%94%D1%83%D0%BC%D1%8B+%D0%A3%D0%B3%D0%BB%D0%B8%D1%87.jpg%7CFile%3APa%C5%82ac+Czapskich+w+Warszawie+2021.jpg%7CFile%3AAntigua+%28Fuerteventura%2C+Spain%29%2C+Museo+de+las+Salinas+del+Carmen%2C+Kristallisierungsbecken+--+2025+--+7216.jpg%7CFile%3AMonasterio+de+El+Escorial+en+Madrid.jpg%7CFile%3ARue+des+Anes+Brules+in+St-Clair+%281%29.jpg%7CFile%3AStaszic+Palace+%2822226p%29.jpg%7CFile%3AWoningen+boven+S-charl%2C+12-10-2024.+%28actm.%29+01.jpg%7CFile%3AWesterhever+Westblick+RB.jpg%7CFile%3AJinwan+Arts+Center+dllu+01.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 80208,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 17:15:25 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-nwxvd",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "53be21c9-0d61-4811-b481-b08637878dc3"
+  },
+  "sha256": "a476dcbb21c6197b33c74d97c20649766003402a2dffbc6cff7c37719ce7a39e"
+}

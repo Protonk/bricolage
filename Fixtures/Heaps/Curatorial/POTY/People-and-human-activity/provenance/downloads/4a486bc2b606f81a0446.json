@@ -1,0 +1,41 @@
+{
+  "candidate_id": "4a486bc2b606f81a0446",
+  "source_path": "sources/4a486bc2b606f81a0446.jpg",
+  "sha256": "a9d144573086152e25a5db2dcef4ea3b0d8ffe27da7447d6b09283d83aef6981",
+  "bytes": 491746,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/2022-08-19_European_Championships_2022_%E2%80%93_Table_Tennis_by_Sandro_Halank%E2%80%93007.jpg/1920px-2022-08-19_European_Championships_2022_%E2%80%93_Table_Tennis_by_Sandro_Halank%E2%80%93007.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-012.json",
+  "metadata_sha256": "cb611f1a5eb36db2e8b053a88bdccf42420ee3b23ac8832dc56303e1f0aea37b",
+  "original_sha1": "76ae72a82f565fbc4e3a80a3ca3e9c5ae953ff43",
+  "pageid": 133523773,
+  "api_reported_width": 1600,
+  "api_reported_height": 1093,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:29:56.962765+00:00",
+    "key": "4a486bc2b606f81a0446",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/2022-08-19_European_Championships_2022_%E2%80%93_Table_Tennis_by_Sandro_Halank%E2%80%93007.jpg/1920px-2022-08-19_European_Championships_2022_%E2%80%93_Table_Tennis_by_Sandro_Halank%E2%80%93007.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 491746,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "537fe52892c82c1412eb492e0e89da12",
+      "last-modified": "Mon, 03 Aug 2026 02:05:46 GMT",
+      "content-length": "491746",
+      "date": "Sat, 31 Oct 2026 17:29:57 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "6f6de1f9-ebe9-4164-b5f7-934e5d205df5"
+    },
+    "sha256": "a9d144573086152e25a5db2dcef4ea3b0d8ffe27da7447d6b09283d83aef6981"
+  },
+  "width": 1920,
+  "height": 1311,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

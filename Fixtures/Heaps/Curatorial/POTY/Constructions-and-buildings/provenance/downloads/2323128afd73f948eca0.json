@@ -1,0 +1,41 @@
+{
+  "candidate_id": "2323128afd73f948eca0",
+  "source_path": "sources/2323128afd73f948eca0.jpg",
+  "sha256": "4dde5cf60da5a380078bfb188485dda9ec928f766fa889481f160ddaf0c9a981",
+  "bytes": 588863,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/1_Mercado_do_Bolh%C3%A3o.jpg/1920px-1_Mercado_do_Bolh%C3%A3o.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-024.json",
+  "metadata_sha256": "384899dafdc5e0faa195d7bc75322683d5bdc7d4ba2726b4463103f4b54f9361",
+  "original_sha1": "3e2dc0735c7b37cd89d9313f1f5b25e70afd3990",
+  "pageid": 153617880,
+  "api_reported_width": 1600,
+  "api_reported_height": 1067,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:22:27.916549+00:00",
+    "key": "2323128afd73f948eca0",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/1_Mercado_do_Bolh%C3%A3o.jpg/1920px-1_Mercado_do_Bolh%C3%A3o.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 588863,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "a4798cc01b7756156ced49c62648ec81",
+      "last-modified": "Sun, 23 Aug 2026 12:02:50 GMT",
+      "content-length": "588863",
+      "date": "Sat, 31 Oct 2026 06:57:30 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 hit/1",
+      "x-request-id": "0e4b83c2-396e-49ee-9a7e-5650c33d9026"
+    },
+    "sha256": "4dde5cf60da5a380078bfb188485dda9ec928f766fa889481f160ddaf0c9a981"
+  },
+  "width": 1920,
+  "height": 1280,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

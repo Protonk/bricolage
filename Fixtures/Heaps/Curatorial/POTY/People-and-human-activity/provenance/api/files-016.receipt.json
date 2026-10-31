@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T17:17:04.900166+00:00",
+  "key": "files-016",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3ATraditional+fishing+festival+46.jpg%7CFile%3AKalkkoora+Bhagavathi+Theyyam+At+Kunjimangalam+%2834%29.jpg%7CFile%3AWoman+sewing+handfans.jpg%7CFile%3AOld+woman+with+a+Yellow+Scarf.jpg%7CFile%3ABharathanatyam+by+Dr.+Janaki+Rangarajan+%2851%29.jpg%7CFile%3A05+Laal+Kach+Festival+In+Bangladesh+Kazi+Salahuddin+Razu.jpg%7CFile%3ALe+chamelier.jpg%7CFile%3AThe+Umbrella+Workshop.jpg%7CFile%3AA+Koch+woman.jpg%7CFile%3AChildren+playing+in+the+rice+mill+%28edited%29.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 68804,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 17:17:05 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-ffj5h",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "81e49f50-16e3-46f0-a13a-8a73b9148a68"
+  },
+  "sha256": "839a94bb893004129db6df8d2fac177c0dfa25b06953d682f7425b15116b934e"
+}

@@ -1,0 +1,41 @@
+{
+  "candidate_id": "d2dc06e7fe2a529f65e2",
+  "source_path": "sources/d2dc06e7fe2a529f65e2.jpg",
+  "sha256": "f3691ba9854e824be6ab21dad6b0ca7cf1c7e512e43260879f487d01ef88ae36",
+  "bytes": 1295828,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Klosterplatz_3a_in_Bielefeld_%282%29.jpg/1920px-Klosterplatz_3a_in_Bielefeld_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-023.json",
+  "metadata_sha256": "32b7d49951bd3c229ceda6288e003afecfc668c9b6e120f1a8c6d127de65e4ab",
+  "original_sha1": "be1bf0617c5cfe8a3afe068cc7f23d42e1fcbae9",
+  "pageid": 174924334,
+  "api_reported_width": 1600,
+  "api_reported_height": 1363,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:22:17.550440+00:00",
+    "key": "d2dc06e7fe2a529f65e2",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Klosterplatz_3a_in_Bielefeld_%282%29.jpg/1920px-Klosterplatz_3a_in_Bielefeld_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 1295828,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "f9a0989bea9ed267bacb05a830fb2400",
+      "last-modified": "Sat, 05 Sep 2026 18:10:12 GMT",
+      "content-length": "1295828",
+      "date": "Sat, 31 Oct 2026 17:22:17 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "8612cf50-c32f-4f21-a100-874ef55fcd03"
+    },
+    "sha256": "f3691ba9854e824be6ab21dad6b0ca7cf1c7e512e43260879f487d01ef88ae36"
+  },
+  "width": 1920,
+  "height": 1635,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

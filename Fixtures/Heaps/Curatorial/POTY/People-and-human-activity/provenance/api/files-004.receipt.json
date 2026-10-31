@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T17:16:22.427759+00:00",
+  "key": "files-004",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3AGabrielle+Aplin+03+10+2018+-1+%2827078864258%29.jpg%7CFile%3A34.+Ulica+-+TNT+Shows+-+Moving+Poles+-+20210904+1316+1954.jpg%7CFile%3AMan+talking+on+the+phone+in+Montr%C3%A9al-Pierre+Elliott+Trudeau+International+Airport+006.jpg%7CFile%3ABebe+Rexha+%40+Wiltern+06+30+2023+%2853047143292%29+%28denoised%29.jpg%7CFile%3AKaty+Perry+DNC+July+2016+%28cropped3%29+restored.jpg%7CFile%3ALathmar+Holi+2022+in+Nandgaon%2C+Uttar+Pradesh+%28edited%29.jpg%7CFile%3A783+3+%28%2B+3%29+dancers+performing+on+stage+V-P.jpg%7CFile%3ABronze+casting+at+Kunstgie%C3%9Ferei+M%C3%BCnchen+01+-+cropped.jpg%7CFile%3AUpholstering+the+seats+of+your+own+car%2C+Margarita+Island%2C+Venezuela.jpg%7CFile%3ABoardmasters2023+%2897+of+171%29+%2853120163026%29.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 62650,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 17:16:22 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-fcwnk",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "95ca8843-9e58-40d3-919d-5eefbded89aa"
+  },
+  "sha256": "21612541b5df13d817c4841541a76634444bead06cef030c3d4a04d459caa639"
+}

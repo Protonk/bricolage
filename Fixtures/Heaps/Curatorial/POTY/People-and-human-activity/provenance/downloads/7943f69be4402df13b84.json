@@ -1,0 +1,41 @@
+{
+  "candidate_id": "7943f69be4402df13b84",
+  "source_path": "sources/7943f69be4402df13b84.jpg",
+  "sha256": "9fb845e77b7fe6d40d86b772c0fb6d1f5e6c837904428a375ae5a8cc548d2238",
+  "bytes": 601033,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Nubian_houses.jpg/1920px-Nubian_houses.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-003.json",
+  "metadata_sha256": "12229cede65a55391d486adc5290b81f01bb20fe630a5e34efb2d6f79119b6e0",
+  "original_sha1": "dd3f4e35f57820524d3a057e608a2b893752bb97",
+  "pageid": 128745802,
+  "api_reported_width": 1600,
+  "api_reported_height": 1143,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:22:41.897354+00:00",
+    "key": "7943f69be4402df13b84",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Nubian_houses.jpg/1920px-Nubian_houses.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 601033,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "b64b4e9d6a7dc13c47b3bfa6713dc14e",
+      "last-modified": "Sun, 27 Sep 2026 16:45:15 GMT",
+      "content-length": "601033",
+      "date": "Sat, 31 Oct 2026 17:22:42 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "3544cd0b-708c-4ada-b709-f4562d193a0d"
+    },
+    "sha256": "9fb845e77b7fe6d40d86b772c0fb6d1f5e6c837904428a375ae5a8cc548d2238"
+  },
+  "width": 1920,
+  "height": 1371,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

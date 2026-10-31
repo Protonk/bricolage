@@ -1,0 +1,41 @@
+{
+  "candidate_id": "a717800509676f4cd143",
+  "source_path": "sources/a717800509676f4cd143.jpg",
+  "sha256": "4bfeca24539572c6f7a996432d1bea93ef354a4741b9abfbb73c4f622f86778c",
+  "bytes": 508146,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Lissabon_-_Praca_do_Comercio_-_Arcades.jpg/1280px-Lissabon_-_Praca_do_Comercio_-_Arcades.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-003.json",
+  "metadata_sha256": "dbdf0e3a205b23b512e3f0d0ac3b4764d6e15377d112906a687b0bfb3f684283",
+  "original_sha1": "1e373dcbdc63f1ee34fc7de46c01a76679ab24b6",
+  "pageid": 115375679,
+  "api_reported_width": 1107,
+  "api_reported_height": 1600,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:29:39.481364+00:00",
+    "key": "a717800509676f4cd143",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Lissabon_-_Praca_do_Comercio_-_Arcades.jpg/1280px-Lissabon_-_Praca_do_Comercio_-_Arcades.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 508146,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "4c0155ce48bfd8c58fa028920ddcaabd",
+      "last-modified": "Wed, 02 Sep 2026 13:30:39 GMT",
+      "content-length": "508146",
+      "date": "Sat, 31 Oct 2026 17:29:39 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "d50fb307-da69-4810-b220-0e412a20c176"
+    },
+    "sha256": "4bfeca24539572c6f7a996432d1bea93ef354a4741b9abfbb73c4f622f86778c"
+  },
+  "width": 1280,
+  "height": 1850,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T17:15:50.870759+00:00",
+  "key": "files-020",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3AOliver%27s+Wharf+2022-10-11.jpg%7CFile%3A20250502+Palais+Erd%C3%B6dy-F%C3%BCrstenberg+04.jpg%7CFile%3AAmphith%C3%A9%C3%A2tre+d%E2%80%99El+Jem+vue+aerienne+%282023%29+1.jpg%7CFile%3ABayerische-Staatskanzlei-M%C3%BCnchen-vom-Hofgarten-Gewitter-2025.jpg%7CFile%3AGenex+Tower+19.jpg%7CFile%3AKaiserschleuse+Ostfeuer+-+Kleiner+Glockenturm+-+Pingelturm+-+Bremerhaven+03.jpg%7CFile%3APickhubenbr%C3%BCcke%2C+Kleines+Fleet+und+St.+Katharinen+%282025%29-L1000197.jpg%7CFile%3A%D0%A1%D1%82%D0%B0%D0%BA%D0%BB%D0%B5%D1%9A%D0%B0%D0%BA%2C+%D0%91%D0%BE%D1%82%D0%B0%D0%BD%D0%B8%D1%87%D0%BA%D0%B0+%D0%B1%D0%B0%D1%88%D1%82%D0%B0+%D0%88%D0%B5%D0%B2%D1%80%D0%B5%D0%BC%D0%BE%D0%B2%D0%B0%D1%86+%28greenhouse+Jevremovac+Botanical+Garden%2C+Belgrade%2C+Serbia%29.jpg%7CFile%3A20250502+B%C3%A4ckerstra%C3%9Fe+7+Vienna+01.jpg%7CFile%3AWei%C3%9Fes+Haus%2C+agra-Park%2C+Markkleeberg%2C+1708230939%2C+ako.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 67984,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 17:15:51 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-96xwx",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "2e591774-a0ba-4627-aa18-34ce405dbb88"
+  },
+  "sha256": "e33dc1b17d728d1e02525930d52c5d2ff85c623a961c0839df609f9b1a87e7d3"
+}

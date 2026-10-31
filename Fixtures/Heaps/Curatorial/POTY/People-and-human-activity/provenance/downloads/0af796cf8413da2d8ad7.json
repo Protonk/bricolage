@@ -1,0 +1,41 @@
+{
+  "candidate_id": "0af796cf8413da2d8ad7",
+  "source_path": "sources/0af796cf8413da2d8ad7.jpg",
+  "sha256": "00bd6362e4652749a30817b37e12c2f6886d35f3d9d4cb2164a92fe5b4ee516a",
+  "bytes": 484368,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Skindred_-_2017153155639_2017-06-02_Rock_am_Ring_-_Sven_-_1D_X_II_-_0110_-_B70I6029.jpg/1920px-Skindred_-_2017153155639_2017-06-02_Rock_am_Ring_-_Sven_-_1D_X_II_-_0110_-_B70I6029.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-000.json",
+  "metadata_sha256": "b3ccf89263ff9356d9906be9f12f966f836fe9dff1b73ec03661ddd42d684505",
+  "original_sha1": "e80788d52bf36e571a26adee723659a485ad75fd",
+  "pageid": 59919711,
+  "api_reported_width": 1600,
+  "api_reported_height": 1067,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:23:09.569820+00:00",
+    "key": "0af796cf8413da2d8ad7",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Skindred_-_2017153155639_2017-06-02_Rock_am_Ring_-_Sven_-_1D_X_II_-_0110_-_B70I6029.jpg/1920px-Skindred_-_2017153155639_2017-06-02_Rock_am_Ring_-_Sven_-_1D_X_II_-_0110_-_B70I6029.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 484368,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "09c194159a5b78303be8ac82903512e4",
+      "last-modified": "Sat, 01 Aug 2026 18:12:50 GMT",
+      "content-length": "484368",
+      "date": "Sat, 31 Oct 2026 17:23:09 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "50e83915-ebc5-4c7c-87ec-dfa3acb961e6"
+    },
+    "sha256": "00bd6362e4652749a30817b37e12c2f6886d35f3d9d4cb2164a92fe5b4ee516a"
+  },
+  "width": 1920,
+  "height": 1280,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

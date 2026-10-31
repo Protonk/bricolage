@@ -1,0 +1,41 @@
+{
+  "candidate_id": "3c4acee42809cd789264",
+  "source_path": "sources/3c4acee42809cd789264.jpg",
+  "sha256": "97919bea5bfb50fce1538e66394d10e672d4a0232db69f39a6e4f19f310e3fcd",
+  "bytes": 400917,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Protaetic_cuprea_ignicollis_2023-03-22_IZE-066.jpg/1920px-Protaetic_cuprea_ignicollis_2023-03-22_IZE-066.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-001.json",
+  "metadata_sha256": "e0cd153eb885c4414f3974f81e2b48d09f10eb26733b74740146535845654934",
+  "original_sha1": "d02bf4f66b345ff11baa91fd8d1b74e58139818d",
+  "pageid": 129875024,
+  "api_reported_width": 1600,
+  "api_reported_height": 1185,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:29:01.308732+00:00",
+    "key": "3c4acee42809cd789264",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Protaetic_cuprea_ignicollis_2023-03-22_IZE-066.jpg/1920px-Protaetic_cuprea_ignicollis_2023-03-22_IZE-066.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 400917,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "99bf2b1e78134f942b7ba83099133019",
+      "last-modified": "Thu, 27 Aug 2026 05:19:06 GMT",
+      "content-length": "400917",
+      "date": "Sat, 31 Oct 2026 17:29:01 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "fd23a119-3ba4-4170-9003-6d200bcf914a"
+    },
+    "sha256": "97919bea5bfb50fce1538e66394d10e672d4a0232db69f39a6e4f19f310e3fcd"
+  },
+  "width": 1920,
+  "height": 1422,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

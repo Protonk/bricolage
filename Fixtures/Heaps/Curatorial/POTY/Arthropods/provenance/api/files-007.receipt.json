@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T17:13:38.067942+00:00",
+  "key": "files-007",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3AGr%C3%BCne+Heupferd+%28Tettigonia+viridissima%29+bei+der+H%C3%A4utung.jpg%7CFile%3AClose+wing+Mud+puddling+position+of+Cethosia+biblis+%28Drury%2C1773%29+-+Red+Lacewing.jpg%7CFile%3AClouded+yellow+Colias+croceus+Ichkeul.jpg%7CFile%3AClose+wing+mud-puddling+position+of+Charaxes+eudamippus+Doubleday%2C+1843+-+Great+Nawab+8.jpg%7CFile%3AClose+wing+mud-puddling+position+of+Prioneris+thestylis+%28Doubleday%2C+1842%29+-+Spotted+Sawtooth+1.jpg%7CFile%3ASmerinthus+ocellatus+female+-+Keila.jpg%7CFile%3ACamar%C3%B3n+%28Dasycaris+zanzibarica%29%2C+Anilao%2C+Filipinas%2C+2023-08-21%2C+DD+73.jpg%7CFile%3ACangrejo+porcelana+%28Neopetrolisthes+maculatus%29+en+una+an%C3%A9mona+alfombra+de+Mertens+%28Stichodactyla+mertensii%29%2C+Anilao%2C+Filipinas%2C+2023-08-22%2C+DD+223.jpg%7CFile%3ASphingonotus+sp+-+Haddej+-+tunisie.jpg%7CFile%3ATitanus+giganteus+MHNT.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 58884,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 17:13:38 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-r5n67",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "806cc44c-c3fd-4365-9399-b5abbce3d5ca"
+  },
+  "sha256": "711ec2c566a153c6ca61cc9183ec62c85cd19baf03ba78eae00f42f892bb771b"
+}

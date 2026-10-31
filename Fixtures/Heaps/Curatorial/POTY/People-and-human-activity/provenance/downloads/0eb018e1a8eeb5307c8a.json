@@ -1,0 +1,41 @@
+{
+  "candidate_id": "0eb018e1a8eeb5307c8a",
+  "source_path": "sources/0eb018e1a8eeb5307c8a.jpg",
+  "sha256": "ad965e0dcacf47feee8552c4ce69849050951bc1e3d1d69a91df54e507ba940b",
+  "bytes": 1088342,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Cooper_Northey_during_UCI_MTB_world_cup_in_Loudenvielle_2024.jpg/1920px-Cooper_Northey_during_UCI_MTB_world_cup_in_Loudenvielle_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-011.json",
+  "metadata_sha256": "aa190cb3dad87c447f64ddc38ad1ab0ebc93c766bb9fc0ce2035a5fbb1484c95",
+  "original_sha1": "c21cbc7c73ce687d649e79ec6040fda4c5c3c14c",
+  "pageid": 153048028,
+  "api_reported_width": 1600,
+  "api_reported_height": 1200,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:30:10.642134+00:00",
+    "key": "0eb018e1a8eeb5307c8a",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Cooper_Northey_during_UCI_MTB_world_cup_in_Loudenvielle_2024.jpg/1920px-Cooper_Northey_during_UCI_MTB_world_cup_in_Loudenvielle_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 1088342,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "e113d9e2ab4f7c851d922d898f5fecdb",
+      "last-modified": "Fri, 14 Aug 2026 02:51:52 GMT",
+      "content-length": "1088342",
+      "date": "Sat, 31 Oct 2026 17:30:10 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "8198db71-5605-4282-95e7-cdf77b937c41"
+    },
+    "sha256": "ad965e0dcacf47feee8552c4ce69849050951bc1e3d1d69a91df54e507ba940b"
+  },
+  "width": 1920,
+  "height": 1440,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

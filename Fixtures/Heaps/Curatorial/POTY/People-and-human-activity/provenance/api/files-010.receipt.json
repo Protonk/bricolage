@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T17:16:43.380670+00:00",
+  "key": "files-010",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3AA+Bonda+tribe+of+Odisha+drinking+Mahua+drink.jpg%7CFile%3ATheyyam+of+Kerala+by+Shagil+Kannur+2024+%2830%29.jpg%7CFile%3ACampamento+de+ganado+de+la+tribu+Mundari%2C+Terekeka%2C+Sud%C3%A1n+del+Sur%2C+2024-01-29%2C+DD+36.jpg%7CFile%3ATribu+Laarim%2C+Kimotong%2C+Sud%C3%A1n+del+Sur%2C+2024-01-24%2C+DD+130.jpg%7CFile%3ATanner+at+work%2C+Medina+of+Marrakesh.jpg%7CFile%3AWildlife+Photographer+Giles+Laurent+in+a+ghillie+suit.jpg%7CFile%3AWoman+with+rainbow-hued+body+makeup+%2817659375763%29.jpg%7CFile%3AEbing+Br%C3%BCcke+Arbeiter-20160907-RM-114411.jpg%7CFile%3AGotland+Grand+National+October+2023+61.jpg%7CFile%3APulitzer2018-mia-farrow-20180530-wp.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 65652,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 17:16:43 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-v9ggk",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "3fa8ea4a-41fb-4771-b1bf-851b4fdae10a"
+  },
+  "sha256": "2e38676738983485ed68ca9078c15643e3840de13eef908831be147abce855c9"
+}

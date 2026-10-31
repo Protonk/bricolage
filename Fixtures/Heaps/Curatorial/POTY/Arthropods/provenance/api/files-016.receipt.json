@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T17:14:09.962922+00:00",
+  "key": "files-016",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3AClose+wing+mud-puddling+position+of+Argynnis+childreni+Gray%2C+1831+-+Large+Silverstripe+3.jpg%7CFile%3AClose+wing+moisture+sucking+and+peeing+activity+of+Papilio+polytes+%28Linnaeus%2C+1758%29+-+Common+Mormon+%28Male%29+%282%29+WLB.jpg%7CFile%3APearl+crescent+%2830350%29.jpg%7CFile%3AMarmalade+hoverfly+%28Episyrphus+balteatus%29+male+Wengen.jpg%7CFile%3ASmall+milkweed+bug+%2830881%29.jpg%7CFile%3ANemoptera+sinuata+Nazilli.jpg%7CFile%3AEastern+amberwing+female+%2861011%29.jpg%7CFile%3AOrchard+orbweaver+%2830730s%29.jpg%7CFile%3ATransparent+burnets+%28Zygaena+purpuralis%29+on+thistle+Babadag.jpg%7CFile%3ARed+admiral+butterfly+on+purple+coneflower+in+New+York+%2811147%29.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 54807,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 17:14:10 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-7m9cg",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "79a350b3-cbb7-495c-ace0-a9087eb2052d"
+  },
+  "sha256": "9e00e9fdd168837ce27e4436792496555db2c60353381716c0ed2685b52b9e20"
+}

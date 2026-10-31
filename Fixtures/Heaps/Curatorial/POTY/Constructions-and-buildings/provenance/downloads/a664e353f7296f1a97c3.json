@@ -1,0 +1,41 @@
+{
+  "candidate_id": "a664e353f7296f1a97c3",
+  "source_path": "sources/a664e353f7296f1a97c3.jpg",
+  "sha256": "f7e1e8c1e7734d8be3ec8945071fe1f40100cd37faaaf7fdd5d6eee907d0f126",
+  "bytes": 982134,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Architectural_Details_Balconies_and_Windows_of_Taj_Tower_Hotel%2C_Mumbai.jpg/1920px-Architectural_Details_Balconies_and_Windows_of_Taj_Tower_Hotel%2C_Mumbai.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-004.json",
+  "metadata_sha256": "5754e09037c324d7727085b7d0dd538a9a39c84b21eb1b76e28e4d1196297e3f",
+  "original_sha1": "4df80242a438513cb38e19d81dff6dd74c148f6a",
+  "pageid": 143574932,
+  "api_reported_width": 1600,
+  "api_reported_height": 1322,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:29:46.667549+00:00",
+    "key": "a664e353f7296f1a97c3",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Architectural_Details_Balconies_and_Windows_of_Taj_Tower_Hotel%2C_Mumbai.jpg/1920px-Architectural_Details_Balconies_and_Windows_of_Taj_Tower_Hotel%2C_Mumbai.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 982134,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "404a2024352490197a0a11ed81459f60",
+      "last-modified": "Sat, 13 Jan 2024 01:50:01 GMT",
+      "content-length": "982134",
+      "date": "Sat, 31 Oct 2026 17:29:46 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "19b8bc1b-6461-434a-a965-f8cb18c57973"
+    },
+    "sha256": "f7e1e8c1e7734d8be3ec8945071fe1f40100cd37faaaf7fdd5d6eee907d0f126"
+  },
+  "width": 1920,
+  "height": 1587,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

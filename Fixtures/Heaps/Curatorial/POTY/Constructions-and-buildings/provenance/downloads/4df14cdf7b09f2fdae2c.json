@@ -1,0 +1,41 @@
+{
+  "candidate_id": "4df14cdf7b09f2fdae2c",
+  "source_path": "sources/4df14cdf7b09f2fdae2c.jpg",
+  "sha256": "1a9d4c8c06e7a80a82d313fd962d81f0155547b17fb3557c8e45fdcf23e127ea",
+  "bytes": 692813,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Hyatt_Regency_Embarcadero_Atrium%2C_San_Francisco%2C_US.jpg/1920px-Hyatt_Regency_Embarcadero_Atrium%2C_San_Francisco%2C_US.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-017.json",
+  "metadata_sha256": "134e461538f4600254bd1ed30972bd9d435ddf7301fac86a4e43c473c6561e80",
+  "original_sha1": "73e196f4da0a9e148e0f661e421f0d69e4ae5bad",
+  "pageid": 169788509,
+  "api_reported_width": 1600,
+  "api_reported_height": 1200,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:27:23.722160+00:00",
+    "key": "4df14cdf7b09f2fdae2c",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Hyatt_Regency_Embarcadero_Atrium%2C_San_Francisco%2C_US.jpg/1920px-Hyatt_Regency_Embarcadero_Atrium%2C_San_Francisco%2C_US.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 692813,
+    "headers": {
+      "content-type": "image/jpeg",
+      "last-modified": "Sat, 27 Jun 2026 16:09:34 GMT",
+      "content-length": "692813",
+      "date": "Sat, 31 Oct 2026 17:27:23 GMT",
+      "server": "envoy",
+      "etag": "a4fa58ef609b5c2014d47fd9aafa22aa",
+      "x-cache": "cp4044 hit, cp4044 miss",
+      "x-request-id": "b2671bfc-10b1-4c78-b363-ee66ce382128"
+    },
+    "sha256": "1a9d4c8c06e7a80a82d313fd962d81f0155547b17fb3557c8e45fdcf23e127ea"
+  },
+  "width": 1920,
+  "height": 1440,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

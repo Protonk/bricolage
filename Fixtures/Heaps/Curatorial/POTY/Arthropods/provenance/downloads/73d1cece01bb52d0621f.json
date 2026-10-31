@@ -1,0 +1,41 @@
+{
+  "candidate_id": "73d1cece01bb52d0621f",
+  "source_path": "sources/73d1cece01bb52d0621f.jpg",
+  "sha256": "29077bed606544c8a8cff550ff80b215ed7cb8a85e21bd6b0fda9140c01296db",
+  "bytes": 332095,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Kleines_Wiesenv%C3%B6gelchen_am_Morgen.jpg/1280px-Kleines_Wiesenv%C3%B6gelchen_am_Morgen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-000.json",
+  "metadata_sha256": "b834e5d95afaa83949495425bc525a6c430fe7a4ed25c6e45419eaae61cf3951",
+  "original_sha1": "852ab5a7d4558e86a94148b1bf46e822661c8aac",
+  "pageid": 106121673,
+  "api_reported_width": 1067,
+  "api_reported_height": 1600,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:21:21.548230+00:00",
+    "key": "73d1cece01bb52d0621f",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Kleines_Wiesenv%C3%B6gelchen_am_Morgen.jpg/1280px-Kleines_Wiesenv%C3%B6gelchen_am_Morgen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 332095,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "58881ce61686637a9091e17e7bb5ba8e",
+      "last-modified": "Mon, 12 Oct 2026 15:52:53 GMT",
+      "content-length": "332095",
+      "date": "Sat, 31 Oct 2026 17:21:21 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "b3085ba0-afe3-49af-8067-312a447c169c"
+    },
+    "sha256": "29077bed606544c8a8cff550ff80b215ed7cb8a85e21bd6b0fda9140c01296db"
+  },
+  "width": 1280,
+  "height": 1920,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

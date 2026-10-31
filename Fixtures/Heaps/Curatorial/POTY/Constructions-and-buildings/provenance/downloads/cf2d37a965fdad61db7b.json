@@ -1,0 +1,41 @@
+{
+  "candidate_id": "cf2d37a965fdad61db7b",
+  "source_path": "sources/cf2d37a965fdad61db7b.png",
+  "sha256": "11bdc8cad7cc387255bda398e8db8ace45fb355b200a6204b854f20e27f7a557",
+  "bytes": 4202899,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/%D0%A0%D0%BE%D0%B7%D0%BE%D0%B2%D1%8B%D0%B9_%D0%BF%D0%B0%D0%B2%D0%B8%D0%BB%D1%8C%D0%BE%D0%BD_%D0%B2_%D0%9F%D0%B0%D0%B2%D0%BB%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%BC_%D0%BF%D0%B0%D1%80%D0%BA%D0%B5_%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3_%D0%BB%D0%B5%D1%82%D0%BE_2024_02.png/1920px-%D0%A0%D0%BE%D0%B7%D0%BE%D0%B2%D1%8B%D0%B9_%D0%BF%D0%B0%D0%B2%D0%B8%D0%BB%D1%8C%D0%BE%D0%BD_%D0%B2_%D0%9F%D0%B0%D0%B2%D0%BB%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%BC_%D0%BF%D0%B0%D1%80%D0%BA%D0%B5_%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3_%D0%BB%D0%B5%D1%82%D0%BE_2024_02.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-014.json",
+  "metadata_sha256": "b0eeb3ef599d4a6081ce90363d7f26765f43c8b97979e242d35c3e8937124376",
+  "original_sha1": "c81798cab473b2a43e973bf6f3589eb870d19b9f",
+  "pageid": 152911653,
+  "api_reported_width": 1600,
+  "api_reported_height": 1060,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:27:37.407671+00:00",
+    "key": "cf2d37a965fdad61db7b",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/%D0%A0%D0%BE%D0%B7%D0%BE%D0%B2%D1%8B%D0%B9_%D0%BF%D0%B0%D0%B2%D0%B8%D0%BB%D1%8C%D0%BE%D0%BD_%D0%B2_%D0%9F%D0%B0%D0%B2%D0%BB%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%BC_%D0%BF%D0%B0%D1%80%D0%BA%D0%B5_%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3_%D0%BB%D0%B5%D1%82%D0%BE_2024_02.png/1920px-%D0%A0%D0%BE%D0%B7%D0%BE%D0%B2%D1%8B%D0%B9_%D0%BF%D0%B0%D0%B2%D0%B8%D0%BB%D1%8C%D0%BE%D0%BD_%D0%B2_%D0%9F%D0%B0%D0%B2%D0%BB%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%BC_%D0%BF%D0%B0%D1%80%D0%BA%D0%B5_%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3_%D0%BB%D0%B5%D1%82%D0%BE_2024_02.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 4202899,
+    "headers": {
+      "content-type": "image/png",
+      "etag": "02edbb51cd7c8229930af145d12c3d7e",
+      "last-modified": "Wed, 14 Oct 2026 11:12:06 GMT",
+      "content-length": "4202899",
+      "date": "Sat, 31 Oct 2026 17:27:37 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "e423dbe0-21c6-4250-b9cb-51f3e5d1ce62"
+    },
+    "sha256": "11bdc8cad7cc387255bda398e8db8ace45fb355b200a6204b854f20e27f7a557"
+  },
+  "width": 1920,
+  "height": 1272,
+  "format": "PNG",
+  "exif_orientation": 1
+}

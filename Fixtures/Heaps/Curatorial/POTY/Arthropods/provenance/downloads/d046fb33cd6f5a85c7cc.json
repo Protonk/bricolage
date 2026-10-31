@@ -1,0 +1,41 @@
+{
+  "candidate_id": "d046fb33cd6f5a85c7cc",
+  "source_path": "sources/d046fb33cd6f5a85c7cc.jpg",
+  "sha256": "729ce021b9907543c165d0d88ef8cbe6772e5433e7a14da89f70f08a34924368",
+  "bytes": 638369,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Southern_armyworm_%28Spodoptera_eridania%29%2C_eggs_2014-06-06-14.28.04_ZS_PMax_-_USGS_BIML.jpg/1920px-Southern_armyworm_%28Spodoptera_eridania%29%2C_eggs_2014-06-06-14.28.04_ZS_PMax_-_USGS_BIML.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-006.json",
+  "metadata_sha256": "731f53d30c32c8fc274f0073b0cc94347074149f6cf15308b49562ec6467a190",
+  "original_sha1": "524dc1aa29077c7646e0e5724ace880828ca23cd",
+  "pageid": 37136192,
+  "api_reported_width": 1600,
+  "api_reported_height": 1067,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:26:37.970205+00:00",
+    "key": "d046fb33cd6f5a85c7cc",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Southern_armyworm_%28Spodoptera_eridania%29%2C_eggs_2014-06-06-14.28.04_ZS_PMax_-_USGS_BIML.jpg/1920px-Southern_armyworm_%28Spodoptera_eridania%29%2C_eggs_2014-06-06-14.28.04_ZS_PMax_-_USGS_BIML.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 638369,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "24dfe3ed32d57f5c4f5dd0495fa6801c",
+      "last-modified": "Thu, 27 Aug 2026 12:45:36 GMT",
+      "content-length": "638369",
+      "date": "Sat, 31 Oct 2026 17:26:38 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "5ac24d67-37d0-4af8-9d28-3537b3255212"
+    },
+    "sha256": "729ce021b9907543c165d0d88ef8cbe6772e5433e7a14da89f70f08a34924368"
+  },
+  "width": 1920,
+  "height": 1280,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

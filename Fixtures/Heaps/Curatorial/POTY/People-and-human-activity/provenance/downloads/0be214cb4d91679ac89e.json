@@ -1,0 +1,41 @@
+{
+  "candidate_id": "0be214cb4d91679ac89e",
+  "source_path": "sources/0be214cb4d91679ac89e.jpg",
+  "sha256": "2e3a64371fc70db138185364baa77bbf93c0b2a71c7afb35c313fafd44a394a7",
+  "bytes": 703901,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Closeup_at_Gussadi_dance_performer.jpg/1920px-Closeup_at_Gussadi_dance_performer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-020.json",
+  "metadata_sha256": "54a39141090edb7ca046722b6ff9049db7e74aa58a553d479e639240d556ac63",
+  "original_sha1": "b3ba8d0c855fd4e4ec63f6776f1b8385913cf7dc",
+  "pageid": 176173666,
+  "api_reported_width": 1600,
+  "api_reported_height": 1067,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:22:45.325415+00:00",
+    "key": "0be214cb4d91679ac89e",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Closeup_at_Gussadi_dance_performer.jpg/1920px-Closeup_at_Gussadi_dance_performer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 703901,
+    "headers": {
+      "content-type": "image/jpeg",
+      "last-modified": "Sat, 29 Aug 2026 03:36:36 GMT",
+      "content-length": "703901",
+      "date": "Sat, 31 Oct 2026 15:54:48 GMT",
+      "server": "envoy",
+      "etag": "ef0fa9cf6500bfb4c29626883782f116",
+      "x-cache": "cp4044 hit, cp4044 hit/1",
+      "x-request-id": "219ecad8-cc9e-42f2-8328-85b162765d6e"
+    },
+    "sha256": "2e3a64371fc70db138185364baa77bbf93c0b2a71c7afb35c313fafd44a394a7"
+  },
+  "width": 1920,
+  "height": 1280,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

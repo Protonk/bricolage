@@ -1,0 +1,41 @@
+{
+  "candidate_id": "128aaecae138fa13faec",
+  "source_path": "sources/128aaecae138fa13faec.jpg",
+  "sha256": "5543e17c36ab33ec34876561493324d09aebed1581f01eb3d00ecfce9fb484ea",
+  "bytes": 692800,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Pickhubenbr%C3%BCcke%2C_Kleines_Fleet_und_St._Katharinen_%282025%29-L1000197.jpg/1920px-Pickhubenbr%C3%BCcke%2C_Kleines_Fleet_und_St._Katharinen_%282025%29-L1000197.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-020.json",
+  "metadata_sha256": "e33dc1b17d728d1e02525930d52c5d2ff85c623a961c0839df609f9b1a87e7d3",
+  "original_sha1": "b6a67640c01f9f7383af78ae8aa3b83268210842",
+  "pageid": 175875842,
+  "api_reported_width": 1600,
+  "api_reported_height": 1000,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:22:24.523653+00:00",
+    "key": "128aaecae138fa13faec",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Pickhubenbr%C3%BCcke%2C_Kleines_Fleet_und_St._Katharinen_%282025%29-L1000197.jpg/1920px-Pickhubenbr%C3%BCcke%2C_Kleines_Fleet_und_St._Katharinen_%282025%29-L1000197.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 692800,
+    "headers": {
+      "content-type": "image/jpeg",
+      "last-modified": "Sun, 23 Aug 2026 10:25:58 GMT",
+      "content-length": "692800",
+      "date": "Sat, 31 Oct 2026 17:22:24 GMT",
+      "server": "envoy",
+      "etag": "3e98e9efb1d593a5bdd4794af8170d7c",
+      "x-cache": "cp4044 hit, cp4044 miss",
+      "x-request-id": "aa4cf72f-8206-441e-b579-34c70615939e"
+    },
+    "sha256": "5543e17c36ab33ec34876561493324d09aebed1581f01eb3d00ecfce9fb484ea"
+  },
+  "width": 1920,
+  "height": 1200,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

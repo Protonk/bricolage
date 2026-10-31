@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T17:13:20.054247+00:00",
+  "key": "files-002",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3AWeevil+%28Cholus+cinctus%29+Anton+Valley.jpg%7CFile%3ACardinal+%28Argynnis+pandora%29+female+underside+Dobruja.jpg%7CFile%3ACangrejo+ermita%C3%B1o+%28Dardanus+calidus%29%2C+Cabo+de+Palos%2C+Espa%C3%B1a%2C+2022-07-15%2C+DD+115.jpg%7CFile%3AHairy+dragonfly+%28Brachytron+pratense%29+male+Burren.jpg%7CFile%3AEuthrix+potatoria+caterpillar+%28side+view%29+-+Keila.jpg%7CFile%3ABrenthis+ino+-+Keila.jpg%7CFile%3AHaus-Feldwespe+%28Polistes+dominula%29+Nest+focus+stack-20230607-RM-121713.jpg%7CFile%3ALestes+dryas+male+%28side+view%29+-+Kulna.jpg%7CFile%3ADwarf+birch+spinner+%28Eriogaster+arbusculae%29+cocoon+Dovrefjell.jpg%7CFile%3AMisumena+vatia+mit+Beute+auf+Lilie-20230704-RM-102430.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 74100,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 17:13:20 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-l4qrs",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "8517ceff-d768-4075-90e4-8ceb42b117e2"
+  },
+  "sha256": "e0e1c511e9e4fe8513f56a1c3e6039f3d8e47b00f77dfdf0ff9d2bd9d370ecf5"
+}

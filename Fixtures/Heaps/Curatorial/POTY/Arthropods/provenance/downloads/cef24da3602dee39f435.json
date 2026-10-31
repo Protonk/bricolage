@@ -1,0 +1,41 @@
+{
+  "candidate_id": "cef24da3602dee39f435",
+  "source_path": "sources/cef24da3602dee39f435.jpg",
+  "sha256": "58dd932df9dd2f637921df76a8a69d0e4567c51ecbd758bfc16a55ea05153bd8",
+  "bytes": 566763,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Ips_typographus_%28female%29.jpg/1920px-Ips_typographus_%28female%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-009.json",
+  "metadata_sha256": "a9eebce294715052ba1c2bfe711ae3d1bd4e4052649ac470ff9ae3cab1434cf2",
+  "original_sha1": "90a804803a25a901f59ce08ecebb466de6f2619b",
+  "pageid": 90337287,
+  "api_reported_width": 1600,
+  "api_reported_height": 1066,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:27:06.318462+00:00",
+    "key": "cef24da3602dee39f435",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Ips_typographus_%28female%29.jpg/1920px-Ips_typographus_%28female%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 566763,
+    "headers": {
+      "content-type": "image/jpeg",
+      "last-modified": "Thu, 13 Aug 2026 12:10:01 GMT",
+      "content-length": "566763",
+      "date": "Sat, 31 Oct 2026 17:27:06 GMT",
+      "server": "envoy",
+      "etag": "a12c186f741f3f95af1371fa90ec9775",
+      "x-cache": "cp4044 hit, cp4044 miss",
+      "x-request-id": "50da4994-2919-4332-b86d-6dde879f4305"
+    },
+    "sha256": "58dd932df9dd2f637921df76a8a69d0e4567c51ecbd758bfc16a55ea05153bd8"
+  },
+  "width": 1920,
+  "height": 1280,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T17:15:00.940407+00:00",
+  "key": "files-006",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3AAt+Paraty+2023+080+-+High+tide+at+Rua+da+Praia.jpg%7CFile%3ACalifornia+State+Capitol+%28top%29%2C+NW+view+up.jpg%7CFile%3AHotel+Alpenrose+-+Hohenschwangau.jpg%7CFile%3ADomplatz+11+in+St+Poelten+%282%29.jpg%7CFile%3AFront+view+of+the+Imperial+Throne+Hall+Geunjeongjeon+at+Gyeongbokgung+Palace+with+blue+sky+in+Seoul.jpg%7CFile%3ACH.VS.Zermatt+Hotel-Wellnessresort-La-Ginabelle+4747+3x2-R+11K.jpg%7CFile%3AWater+reflection+of+Hyangwonjeong+Pavilion+at+Gyeongbokgung+Palace+in+Seoul.jpg%7CFile%3A96+Grand+Rue+in+Turckheim+%281%29.jpg%7CFile%3AFront+view+of+Jibokjae+Hall+under+blue+sky+at+Gyeongbokgung+Palace+in+Seoul.jpg%7CFile%3AGawthorpe+Hall+2016+038.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 59424,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 17:15:01 GMT",
+    "server": "mw-api-ext.codfw.canary-6b87d95d98-rl8vt",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "655036f1-fe53-419c-ab71-9bf176df78f4"
+  },
+  "sha256": "64ffec51942dead724aa170bba676de4a7bef32ff31b5b2400e043ef8128262f"
+}

@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T17:15:36.291706+00:00",
+  "key": "files-016",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3AFreilichtmuseum+Beuren+-+Backhaus+aus+Sulzgries+-+Ansicht+von+Westen+-+Einheizen.jpg%7CFile%3AMaison+aux+glycines+%28Strasbourg%29.jpg%7CFile%3AMackenzie+Hall%2C+Windsor%2C+Ontario%2C+2025-06-03+02.jpg%7CFile%3ALudwigsburg+Palace+05.jpg%7CFile%3AMadam+Maries+NJ1.jpg%7CFile%3AWillistead+Manor%2C+Windsor%2C+Ontario%2C+2025-06-10.jpg%7CFile%3ACenter+for+Clinical+Sciences+Research%2C+Stanford+University+%282025%29-L1007419.jpg%7CFile%3AMelk+Abbey+%288%29.jpg%7CFile%3ASchloss+Schwetzingen+-+N%C3%B6rdlicher+Zirkelbau+02.jpg%7CFile%3ADairy+Queen+Gastonia+NC1.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 60183,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 17:15:36 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-p9dtx",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "95bcb56c-5026-461c-a545-c97074a34e90"
+  },
+  "sha256": "5a16a422c2af94741eb2255e23d4bf9418c441f76dcc2daed8cbb4581bfb4245"
+}

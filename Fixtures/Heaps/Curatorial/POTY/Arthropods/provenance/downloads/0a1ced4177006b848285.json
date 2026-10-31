@@ -1,0 +1,41 @@
+{
+  "candidate_id": "0a1ced4177006b848285",
+  "source_path": "sources/0a1ced4177006b848285.jpg",
+  "sha256": "ef59b4be36c04e148c261b3504938af3d6fb5d0d579454dc88efb9c60b481fdb",
+  "bytes": 797925,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Fly_head%2C_eyes.jpg/1920px-Fly_head%2C_eyes.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-013.json",
+  "metadata_sha256": "4cde3d9b21c79a2fbca8d5fe71dad3a80e93b23c49f527ec4f40da0ed6a5d939",
+  "original_sha1": "919e8e2a310eda605aa50682e707939346f54d57",
+  "pageid": 160096442,
+  "api_reported_width": 1600,
+  "api_reported_height": 1251,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:24:26.918984+00:00",
+    "key": "0a1ced4177006b848285",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Fly_head%2C_eyes.jpg/1920px-Fly_head%2C_eyes.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 797925,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "70e9d129959909e40cf28776e3c6eb8f",
+      "last-modified": "Sat, 15 Aug 2026 22:21:56 GMT",
+      "content-length": "797925",
+      "date": "Sat, 31 Oct 2026 17:24:27 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "7f71c8ba-d8a4-45cc-abb6-0f0097a66e29"
+    },
+    "sha256": "ef59b4be36c04e148c261b3504938af3d6fb5d0d579454dc88efb9c60b481fdb"
+  },
+  "width": 1920,
+  "height": 1501,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

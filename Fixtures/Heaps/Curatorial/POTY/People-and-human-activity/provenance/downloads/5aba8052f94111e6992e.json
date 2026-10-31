@@ -1,0 +1,41 @@
+{
+  "candidate_id": "5aba8052f94111e6992e",
+  "source_path": "sources/5aba8052f94111e6992e.jpg",
+  "sha256": "39fe15e6e88eb397a9dc37430c01468e089d7df5bbb02146551a3f8c5da25d3a",
+  "bytes": 1483124,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Man_turns_drying_chili_peppers%2C_Turkey.jpg/1920px-Man_turns_drying_chili_peppers%2C_Turkey.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-023.json",
+  "metadata_sha256": "41a8c75c28c900f92704b85493acf4c24fb3f8753bb19cb9569242d26e88794b",
+  "original_sha1": "91ce69dcc8d010fdd3f2b5cf875bfa496a8abaff",
+  "pageid": 162958997,
+  "api_reported_width": 1600,
+  "api_reported_height": 1047,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:30:21.230743+00:00",
+    "key": "5aba8052f94111e6992e",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Man_turns_drying_chili_peppers%2C_Turkey.jpg/1920px-Man_turns_drying_chili_peppers%2C_Turkey.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 1483124,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "5d6454a2514dfc703865c4716dd66e0f",
+      "last-modified": "Sat, 31 Oct 2026 12:23:27 GMT",
+      "content-length": "1483124",
+      "date": "Sat, 31 Oct 2026 17:30:21 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "523f890c-a630-4f58-86e6-f3ac96dc0d4c"
+    },
+    "sha256": "39fe15e6e88eb397a9dc37430c01468e089d7df5bbb02146551a3f8c5da25d3a"
+  },
+  "width": 1920,
+  "height": 1256,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

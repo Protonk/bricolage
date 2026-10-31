@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T17:13:23.571508+00:00",
+  "key": "files-003",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3AAmmophila+pubescens+%28two%29+-+Kulna.jpg%7CFile%3ACoenonympha+pamphilus+-+Kulna.jpg%7CFile%3ASoldadinhos.jpg%7CFile%3AHoverfly+in+rain+by+prasan+shrestha.jpg%7CFile%3AApis+dorsata+nest+on+a+tree+at+golden+hour+in+Laos.jpg%7CFile%3ABlaugr%C3%BCne+Mosaikjungfer+im+Flug-20230813-RM-144903.jpg%7CFile%3AChoc%C3%B3+grasshopper+%28Opaon+varicolor%29+male.jpg%7CFile%3AThymelicus+sylvestris+underside+-+Keila.jpg%7CFile%3ACoccinella+in+Parc+du+Bois-de-Coulonge+uncut+version.jpg%7CFile%3AShort-horned+grasshoppers+%28Rhytidochrota+risaraldae%29+mating.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 64137,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 17:13:23 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-qx56x",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "7e3bc950-5985-4f5f-8524-19782ebd221e"
+  },
+  "sha256": "69dfdda99fcc9c144c8698acb110fda8cfb8008b5c6e093c6415d3f0441db4aa"
+}

@@ -1,0 +1,41 @@
+{
+  "candidate_id": "9cda23944f65173e0a7c",
+  "source_path": "sources/9cda23944f65173e0a7c.jpg",
+  "sha256": "c6e9787cec878fa82def1b6f45759bb29e6a7cad5ed1c321f7b6acdb0f6f759f",
+  "bytes": 728875,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Devonshire_Lodge_%28Low-Martin_House%29%2C_Windsor%2C_Ontario%2C_2025-08-31_01.jpg/1920px-Devonshire_Lodge_%28Low-Martin_House%29%2C_Windsor%2C_Ontario%2C_2025-08-31_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-019.json",
+  "metadata_sha256": "6b5f59668e2038bf336635c68d6f43764bdd69d037671eba81c94bbbcacf07c0",
+  "original_sha1": "c06b13411311981a066dab94d3dbbed59ca581bc",
+  "pageid": 174099637,
+  "api_reported_width": 1600,
+  "api_reported_height": 735,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:29:15.276648+00:00",
+    "key": "9cda23944f65173e0a7c",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Devonshire_Lodge_%28Low-Martin_House%29%2C_Windsor%2C_Ontario%2C_2025-08-31_01.jpg/1920px-Devonshire_Lodge_%28Low-Martin_House%29%2C_Windsor%2C_Ontario%2C_2025-08-31_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 728875,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "e3fbda8064e96bd07986489ab45e9970",
+      "last-modified": "Mon, 19 Oct 2026 23:54:26 GMT",
+      "content-length": "728875",
+      "date": "Sat, 31 Oct 2026 10:16:29 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 hit/1",
+      "x-request-id": "0390c7a3-605a-4e8e-9e11-a752cd4280eb"
+    },
+    "sha256": "c6e9787cec878fa82def1b6f45759bb29e6a7cad5ed1c321f7b6acdb0f6f759f"
+  },
+  "width": 1920,
+  "height": 882,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

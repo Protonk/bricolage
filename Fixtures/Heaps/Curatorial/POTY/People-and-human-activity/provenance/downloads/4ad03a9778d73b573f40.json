@@ -1,0 +1,41 @@
+{
+  "candidate_id": "4ad03a9778d73b573f40",
+  "source_path": "sources/4ad03a9778d73b573f40.jpg",
+  "sha256": "ed5c0dcecb813e4273b34c7161dd4e6128df6b59c47f0e3fd8425675544f2627",
+  "bytes": 272435,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Acro-Show-Villeneuve_Infinity-Tumbling_2022-08-21.jpg/1920px-Acro-Show-Villeneuve_Infinity-Tumbling_2022-08-21.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-001.json",
+  "metadata_sha256": "f19249e0b818ea7ffb79112eee0793e665ec1b4d49aad3eee6547e4c8549bde0",
+  "original_sha1": "caaa7d30ffb779a3ea1a6425af79284bc36ff058",
+  "pageid": 124234191,
+  "api_reported_width": 1600,
+  "api_reported_height": 1067,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:25:56.761413+00:00",
+    "key": "4ad03a9778d73b573f40",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Acro-Show-Villeneuve_Infinity-Tumbling_2022-08-21.jpg/1920px-Acro-Show-Villeneuve_Infinity-Tumbling_2022-08-21.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 272435,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "6e18ea80344b494343b1e4a0f5ff4cdb",
+      "last-modified": "Sat, 01 Aug 2026 08:01:17 GMT",
+      "content-length": "272435",
+      "date": "Sat, 31 Oct 2026 17:25:56 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "155f3d40-ac3e-4f68-9e7f-2fe3361da3df"
+    },
+    "sha256": "ed5c0dcecb813e4273b34c7161dd4e6128df6b59c47f0e3fd8425675544f2627"
+  },
+  "width": 1920,
+  "height": 1280,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

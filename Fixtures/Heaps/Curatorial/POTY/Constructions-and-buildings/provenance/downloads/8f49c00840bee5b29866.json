@@ -1,0 +1,41 @@
+{
+  "candidate_id": "8f49c00840bee5b29866",
+  "source_path": "sources/8f49c00840bee5b29866.jpg",
+  "sha256": "d8f567fbaa04a80bc872a9c16172a0b0bc380a5d9e990fad0c2eb9f8e2d2b8eb",
+  "bytes": 781886,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Best_Farm_MNB_MD3.jpg/1920px-Best_Farm_MNB_MD3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-019.json",
+  "metadata_sha256": "6b5f59668e2038bf336635c68d6f43764bdd69d037671eba81c94bbbcacf07c0",
+  "original_sha1": "dd4f8dbd8e50c21a298a1fb16e63d89a963c68bb",
+  "pageid": 154688663,
+  "api_reported_width": 1600,
+  "api_reported_height": 1022,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:27:13.131551+00:00",
+    "key": "8f49c00840bee5b29866",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Best_Farm_MNB_MD3.jpg/1920px-Best_Farm_MNB_MD3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 781886,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "42f91a6980e355bdbd7b362e9e420589",
+      "last-modified": "Wed, 29 Jul 2026 12:14:15 GMT",
+      "content-length": "781886",
+      "date": "Sat, 31 Oct 2026 17:27:13 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "69679e47-ede8-4af8-9624-7b3d76fe5b80"
+    },
+    "sha256": "d8f567fbaa04a80bc872a9c16172a0b0bc380a5d9e990fad0c2eb9f8e2d2b8eb"
+  },
+  "width": 1920,
+  "height": 1226,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

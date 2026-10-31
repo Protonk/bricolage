@@ -1,0 +1,41 @@
+{
+  "candidate_id": "6048f073041b225d9c68",
+  "source_path": "sources/6048f073041b225d9c68.jpg",
+  "sha256": "7dda92c89997a5000e819b9833df4e887244a6da7c9d9102f2d40e0111a95d9f",
+  "bytes": 1289695,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Kimotong%2C_Sud%C3%A1n_del_Sur%2C_2024-01-23%2C_DD_37.jpg/1920px-Kimotong%2C_Sud%C3%A1n_del_Sur%2C_2024-01-23%2C_DD_37.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-017.json",
+  "metadata_sha256": "134e461538f4600254bd1ed30972bd9d435ddf7301fac86a4e43c473c6561e80",
+  "original_sha1": "eb1102ea488e725e2890def3f083f7a89f561aec",
+  "pageid": 145985583,
+  "api_reported_width": 1600,
+  "api_reported_height": 1067,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:22:06.849389+00:00",
+    "key": "6048f073041b225d9c68",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Kimotong%2C_Sud%C3%A1n_del_Sur%2C_2024-01-23%2C_DD_37.jpg/1920px-Kimotong%2C_Sud%C3%A1n_del_Sur%2C_2024-01-23%2C_DD_37.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 1289695,
+    "headers": {
+      "content-type": "image/jpeg",
+      "last-modified": "Thu, 08 Oct 2026 00:21:21 GMT",
+      "content-length": "1289695",
+      "date": "Sat, 31 Oct 2026 17:22:07 GMT",
+      "server": "envoy",
+      "etag": "65308d1fec6096476970430759e03f90",
+      "x-cache": "cp4044 hit, cp4044 miss",
+      "x-request-id": "e0fc2601-03af-4dff-b299-a4c8f8bf12f7"
+    },
+    "sha256": "7dda92c89997a5000e819b9833df4e887244a6da7c9d9102f2d40e0111a95d9f"
+  },
+  "width": 1920,
+  "height": 1280,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

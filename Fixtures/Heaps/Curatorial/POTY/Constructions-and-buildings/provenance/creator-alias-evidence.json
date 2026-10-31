@@ -1,0 +1,54 @@
+{
+  "user:wilfredor": {
+    "canonical_key": "wikidata:Q115464159",
+    "basis": "Artist attribution uses the same Wilfredor name in User:Wilfredor links and in Wikidata Q115464159 creator output; retained file pages identify the Creator template.",
+    "source_evidence": [
+      {
+        "candidate_id": "c37dd6e5609699373cc8",
+        "metadata_path": "provenance/api/files-001.json",
+        "metadata_sha256": "dfad3b8d53a9711edc21baab79d47acd3bed40891ed3abb34d40143ea014e7e0"
+      },
+      {
+        "candidate_id": "7bf8da314d12f51522d2",
+        "metadata_path": "provenance/api/files-003.json",
+        "metadata_sha256": "dbdf0e3a205b23b512e3f0d0ac3b4764d6e15377d112906a687b0bfb3f684283"
+      },
+      {
+        "candidate_id": "f9f6c9d9c76859e7d1ad",
+        "metadata_path": "provenance/api/files-005.json",
+        "metadata_sha256": "cec7b54488ccd061092b009ad5938af5e7bc28dfd36845dd1c86abe6a9112519"
+      },
+      {
+        "candidate_id": "d0c3b59f6f9471da2d11",
+        "metadata_path": "provenance/api/files-011.json",
+        "metadata_sha256": "ba564b5a829db9ee10beb6b6f920779036d71f4951a0fff882de0f6a3baacdaa"
+      },
+      {
+        "candidate_id": "570f8d4b1245b91396d2",
+        "metadata_path": "provenance/api/files-011.json",
+        "metadata_sha256": "ba564b5a829db9ee10beb6b6f920779036d71f4951a0fff882de0f6a3baacdaa"
+      }
+    ]
+  },
+  "name:photograph: radomianin": {
+    "canonical_key": "user:radomianin",
+    "basis": "The named photograph attribution Radomianin is the same name as the linked User:Radomianin author; Photograph is a role label.",
+    "source_evidence": [
+      {
+        "candidate_id": "30fcc69003c2f5364b26",
+        "metadata_path": "provenance/api/files-002.json",
+        "metadata_sha256": "27735bbd292db0f484e1eefba3021119a041ebc9fa599ad3407c2f3ad31ad0d7"
+      },
+      {
+        "candidate_id": "83a19222b6f6e058af37",
+        "metadata_path": "provenance/api/files-006.json",
+        "metadata_sha256": "64ffec51942dead724aa170bba676de4a7bef32ff31b5b2400e043ef8128262f"
+      },
+      {
+        "candidate_id": "884e958b37d001f768dc",
+        "metadata_path": "provenance/api/files-011.json",
+        "metadata_sha256": "ba564b5a829db9ee10beb6b6f920779036d71f4951a0fff882de0f6a3baacdaa"
+      }
+    ]
+  }
+}

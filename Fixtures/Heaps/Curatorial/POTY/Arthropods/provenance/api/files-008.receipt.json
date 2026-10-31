@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T17:13:41.636497+00:00",
+  "key": "files-008",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3A%D0%94%D1%8B%D1%85%D0%B0%D0%BB%D1%8C%D1%86%D0%B5+%D0%BA%D1%83%D0%BA%D0%BE%D0%BB%D0%BA%D0%B8+%D0%B1%D0%B0%D0%B1%D0%BE%D1%87%D0%BA%D0%B8.jpg%7CFile%3AUssher%27s+palla+%28Palla+ussheri+ussheri%29+underside+Nyamebe+Bepo.jpg%7CFile%3AScoliid+wasp+%28Megascolia+bidens%29+male+Cap+Bon+2.jpg%7CFile%3ABamberg+Hain+Hirschk%C3%A4fer+focus+stacked-20240520-RM-103648.jpg%7CFile%3ACicada+killer+%2873200%29.jpg%7CFile%3ABlack+swordtail+%28Graphium+colonna%29+Maputo.jpg%7CFile%3A%D0%96%D0%B0%D0%BB%D0%BE+%D1%88%D0%B5%D1%80%D1%88%D0%BD%D1%8F.jpg%7CFile%3ALibelule-Anax+imperator-femelle-Hamois-Luc-Viatour.jpg%7CFile%3A%D0%9F%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82+%D0%BA%D0%BE%D0%BC%D0%BD%D0%B0%D1%82%D0%BD%D0%BE%D0%B9+%D0%BC%D0%BE%D0%BB%D0%B8.jpg%7CFile%3ABlue+dasher+%2873146%29.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 61620,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 17:13:41 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-2fq8p",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "0855f629-cc44-4bac-941f-b095373239f9"
+  },
+  "sha256": "938cca6107ca36cd3bf99777730a5c771b23d7d979d5801dd1607d74a2583785"
+}

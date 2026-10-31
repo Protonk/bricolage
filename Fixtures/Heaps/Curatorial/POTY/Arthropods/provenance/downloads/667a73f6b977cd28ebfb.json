@@ -1,0 +1,41 @@
+{
+  "candidate_id": "667a73f6b977cd28ebfb",
+  "source_path": "sources/667a73f6b977cd28ebfb.jpg",
+  "sha256": "6f64e485172667dc2f0daa7441a54e36aa9b81b6b0819723f552c1b7653fec2b",
+  "bytes": 653207,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Cangrejo_ermita%C3%B1o_%28Dardanus_calidus%29%2C_Cabo_de_Palos%2C_Espa%C3%B1a%2C_2022-07-15%2C_DD_115.jpg/1920px-Cangrejo_ermita%C3%B1o_%28Dardanus_calidus%29%2C_Cabo_de_Palos%2C_Espa%C3%B1a%2C_2022-07-15%2C_DD_115.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-002.json",
+  "metadata_sha256": "e0e1c511e9e4fe8513f56a1c3e6039f3d8e47b00f77dfdf0ff9d2bd9d370ecf5",
+  "original_sha1": "56689f7e7c7f89c6908bac6f6abc720979be45e1",
+  "pageid": 131859335,
+  "api_reported_width": 1600,
+  "api_reported_height": 1067,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:21:18.094312+00:00",
+    "key": "667a73f6b977cd28ebfb",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Cangrejo_ermita%C3%B1o_%28Dardanus_calidus%29%2C_Cabo_de_Palos%2C_Espa%C3%B1a%2C_2022-07-15%2C_DD_115.jpg/1920px-Cangrejo_ermita%C3%B1o_%28Dardanus_calidus%29%2C_Cabo_de_Palos%2C_Espa%C3%B1a%2C_2022-07-15%2C_DD_115.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 653207,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "eb74cd70fbb75a73750c70189a58de84",
+      "last-modified": "Sun, 26 Jul 2026 15:52:30 GMT",
+      "content-length": "653207",
+      "date": "Sat, 31 Oct 2026 17:21:18 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "ee5467bd-be9c-4bfe-a38a-c9ad061dd60e"
+    },
+    "sha256": "6f64e485172667dc2f0daa7441a54e36aa9b81b6b0819723f552c1b7653fec2b"
+  },
+  "width": 1920,
+  "height": 1280,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

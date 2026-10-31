@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T17:14:20.807690+00:00",
+  "key": "files-019",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3ALederwanze-JR-T3-I267-2024-08-01.jpg%7CFile%3A%D0%95%D1%80%D1%82%D0%B8%D1%81+%D0%BE%D1%80%D0%BC%D0%B0%D0%BD%D1%8B+%D0%B3%D1%83%D1%81%D0%B5%D0%BD%D0%B8%D1%86%D0%B0+%D0%BD%D0%B0+%D1%82%D1%80%D0%B0%D0%B2%D0%B5.jpg%7CFile%3AClose+wing+position+of+Charaxes+bernardus+%28Fabricius%2C+1793%29+-+Tawny+Rajah+%28Male%29+%2846128%29.jpg%7CFile%3AAellopos+fadus+MHNT+CUT+2010+0+273+Manicor%C3%A9+Amazonas+Brazil+male.jpg%7CFile%3ANorthern+dog-day+cicada+shell+on+a+flower+%2853121%29.jpg%7CFile%3AAlpine+heath+%28Coenonympha+gardetta%29+male+underside+Wengen.jpg%7CFile%3AManduca+albiplaga+MHNT+CUT+2010+0+275+Amap%C3%A1+Bresil+Male.jpg%7CFile%3AMosquito+%28Ochlerotatus+annulipes%29+and+Midge+%28Culicoides+impunctatus%29+biting+human+%28me%29.jpg%7CFile%3AOpen+wing+basking+position+of+Papilio+arcturus+Westwood%2C+1842+-+Blue+Peacock.jpg%7CFile%3AClouded+sulphur+%2814019%29.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 60270,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 17:14:20 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-xskkh",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "a9270b13-adf4-4f22-ac45-86ef79c85990"
+  },
+  "sha256": "a4e8f2e27a3fe3a4c69c052f57ef0ccc71e5f09e8e098eb19b257b66fec79584"
+}

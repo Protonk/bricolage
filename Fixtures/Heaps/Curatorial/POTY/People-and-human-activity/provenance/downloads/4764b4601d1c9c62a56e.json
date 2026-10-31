@@ -1,0 +1,41 @@
+{
+  "candidate_id": "4764b4601d1c9c62a56e",
+  "source_path": "sources/4764b4601d1c9c62a56e.jpg",
+  "sha256": "5a8b34211a16e7d6160153a6c4aefa006cffbb5fa37223e5ecf1ea3c2be58fe2",
+  "bytes": 254567,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Le_chamelier.jpg/1920px-Le_chamelier.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-016.json",
+  "metadata_sha256": "839a94bb893004129db6df8d2fac177c0dfa25b06953d682f7425b15116b934e",
+  "original_sha1": "3c31302e66ab11da49bd630c4a40d620a599f2c3",
+  "pageid": 162805886,
+  "api_reported_width": 1600,
+  "api_reported_height": 1089,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:22:34.990586+00:00",
+    "key": "4764b4601d1c9c62a56e",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Le_chamelier.jpg/1920px-Le_chamelier.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 254567,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "def78f35e1599e9820441c56bf78141b",
+      "last-modified": "Fri, 09 Oct 2026 02:41:18 GMT",
+      "content-length": "254567",
+      "date": "Sat, 31 Oct 2026 17:22:35 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "b9152ebd-a9a0-4f98-942c-e024059d5687"
+    },
+    "sha256": "5a8b34211a16e7d6160153a6c4aefa006cffbb5fa37223e5ecf1ea3c2be58fe2"
+  },
+  "width": 1920,
+  "height": 1306,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

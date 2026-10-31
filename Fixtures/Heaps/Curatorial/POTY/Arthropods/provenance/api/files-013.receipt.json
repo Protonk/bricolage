@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T17:13:59.263071+00:00",
+  "key": "files-013",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3AVesikirp+perekonnast+Kiivrik+%28Daphnia%29.jpg%7CFile%3AVesilest+%28Hydrachnidia%29+k%C3%BClgvaates+mikroskoobi+all.jpg%7CFile%3AVesilest+%28Arrenurus+sp.%29.jpg%7CFile%3ALemleleediku+%28Cataclysta+lemnata%29+r%C3%B6%C3%B6vik%2C.jpg%7CFile%3AKiivrik+%28Daphnia%29.jpg%7CFile%3ACallionima+calliomenae+MHNT+CUT+2010+0+156+El+Guapo+Venezuela+male+dorsal.jpg%7CFile%3ATwo+bees+absorbing+pollen+from+an+Iceland+poppy+in+the+flower+garden+of+Gyeongju+South+Korea.jpg%7CFile%3AFly+head%2C+eyes.jpg%7CFile%3APre-pupation+stage+of+Melanitis+leda+%28Linnaeus%2C+1758%29+-+Common+Evening+Brown+%282%29+WLB.jpg%7CFile%3ACamar%C3%B3n+mantis+%28Odontodactylus+scyllarus%29%2C+Anilao%2C+Filipinas%2C+2023-08-24%2C+DD+164.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 64715,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 17:13:59 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-r5n67",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "1d520db0-37b7-424e-a46d-e26ae96b0bee"
+  },
+  "sha256": "4cde3d9b21c79a2fbca8d5fe71dad3a80e93b23c49f527ec4f40da0ed6a5d939"
+}

@@ -1,0 +1,20 @@
+{
+  "utc": "2026-10-31T17:10:33.561485+00:00",
+  "key": "gallery-2023",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Commons%3APicture+of+the+Year%2F2023%2FGallery%2FArthropods",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 323,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 17:10:33 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-6gmrn",
+    "cache-control": "private, must-revalidate, max-age=0",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 pass",
+    "content-length": "323",
+    "x-request-id": "b3c7e96c-d3f5-4c83-9918-4fc47de3ee94"
+  },
+  "sha256": "c09701299a32c4ae84a975dd3605c847610fcd91cc5bd8983c61d66681992afe"
+}

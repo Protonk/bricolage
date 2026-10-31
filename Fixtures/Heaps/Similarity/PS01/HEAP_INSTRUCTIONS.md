@@ -1,6 +1,6 @@
 # Hazy `prompt_heap` — repeatable sourcing and acquisition contract
 
-Applicable to PS01 and future loose-image heap elements. These instructions incorporate the SF01 local-agent feedback. **Do not create a new fixture kind** or introduce semantic ground-truth clusters.
+Applicable to PS01 and future visual-prompt contributions to the Similarity heap. These instructions incorporate the SF01 local-agent feedback. **Do not create a new fixture kind** for those contributions or introduce semantic ground-truth clusters. Published-source curatorial heaps have their own selection basis and validator; see [the fixture format](../../../FORMAT.md).
 
 1. **Intent first.** Include the heap identity, short visual prompt, exclusions, acceptable looseness and approximate target count. Count is a target, not a minimum. State a shortfall without padding with weak or related images.
 2. **Actual thumbnail inspection, early.** Category matches, text descriptions and search snippets are only leads. If preview bytes exist, inspect their *composition*, not just their subject. Mark `accept`, `reject`, or `defer` with a short visual reason. Unviewed leads stay `pending_visual_review`; never assign a fabricated numerical similarity threshold or a core/border/outlier label.

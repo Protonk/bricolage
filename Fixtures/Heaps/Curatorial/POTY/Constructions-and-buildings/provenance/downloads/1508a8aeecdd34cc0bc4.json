@@ -1,0 +1,41 @@
+{
+  "candidate_id": "1508a8aeecdd34cc0bc4",
+  "source_path": "sources/1508a8aeecdd34cc0bc4.jpg",
+  "sha256": "e49e902551fe83f261e3f8187ec2250478fee3b245d0de110fa242378d971908",
+  "bytes": 241106,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/2024_Solar_Eclipse_over_Cleveland_Terminal_Tower_-_53650722351.jpg/1920px-2024_Solar_Eclipse_over_Cleveland_Terminal_Tower_-_53650722351.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-010.json",
+  "metadata_sha256": "78f312242f9b0669344b71875e701756eda5b5786f39348fdae774e353bec431",
+  "original_sha1": "d46407baffedbc2830965337d75b5275d5194ba8",
+  "pageid": 147344540,
+  "api_reported_width": 1600,
+  "api_reported_height": 1067,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:22:21.116286+00:00",
+    "key": "1508a8aeecdd34cc0bc4",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/2024_Solar_Eclipse_over_Cleveland_Terminal_Tower_-_53650722351.jpg/1920px-2024_Solar_Eclipse_over_Cleveland_Terminal_Tower_-_53650722351.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 241106,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "76e6c4e7e4fa07077b9d93ca313c7781",
+      "last-modified": "Mon, 21 Sep 2026 16:31:28 GMT",
+      "content-length": "241106",
+      "date": "Sat, 31 Oct 2026 17:22:21 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "773fed95-97c4-4c87-86fa-cef9be90d840"
+    },
+    "sha256": "e49e902551fe83f261e3f8187ec2250478fee3b245d0de110fa242378d971908"
+  },
+  "width": 1920,
+  "height": 1280,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

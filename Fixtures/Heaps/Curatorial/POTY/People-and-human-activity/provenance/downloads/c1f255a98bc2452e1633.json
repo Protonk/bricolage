@@ -1,0 +1,41 @@
+{
+  "candidate_id": "c1f255a98bc2452e1633",
+  "source_path": "sources/c1f255a98bc2452e1633.jpg",
+  "sha256": "f4b7660106071e020db5a77442a3db9231b5c4000c871dcabfa5744d32207948",
+  "bytes": 660261,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Gotland_Grand_National_October_2023_61.jpg/1920px-Gotland_Grand_National_October_2023_61.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-010.json",
+  "metadata_sha256": "2e38676738983485ed68ca9078c15643e3840de13eef908831be147abce855c9",
+  "original_sha1": "71d7f0bee25002d2bc35d5d3e6b8ee3f238f26b3",
+  "pageid": 139934182,
+  "api_reported_width": 1600,
+  "api_reported_height": 1067,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:25:18.262123+00:00",
+    "key": "c1f255a98bc2452e1633",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Gotland_Grand_National_October_2023_61.jpg/1920px-Gotland_Grand_National_October_2023_61.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 660261,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "8ad345d6741ad4a9886923f1dd0f7d2f",
+      "last-modified": "Sun, 19 Jul 2026 05:24:24 GMT",
+      "content-length": "660261",
+      "date": "Sat, 31 Oct 2026 17:25:18 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "14cc7829-0376-48cb-b4bb-64647eefb549"
+    },
+    "sha256": "f4b7660106071e020db5a77442a3db9231b5c4000c871dcabfa5744d32207948"
+  },
+  "width": 1920,
+  "height": 1280,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

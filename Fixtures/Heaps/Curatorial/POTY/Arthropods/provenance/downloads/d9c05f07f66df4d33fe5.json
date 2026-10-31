@@ -1,0 +1,39 @@
+{
+  "candidate_id": "d9c05f07f66df4d33fe5",
+  "source_path": "sources/d9c05f07f66df4d33fe5.jpg",
+  "sha256": "b5ec3f8fd6cc98158f3287523311991e54865cc53d314ca07b477b58674c8d87",
+  "bytes": 522271,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Clouded_yellow_Colias_croceus_Ichkeul.jpg/1920px-Clouded_yellow_Colias_croceus_Ichkeul.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-007.json",
+  "metadata_sha256": "711ec2c566a153c6ca61cc9183ec62c85cd19baf03ba78eae00f42f892bb771b",
+  "original_sha1": "3eb7d1c6255804d6cfff3eae538d32210b3f7e2b",
+  "pageid": 148528815,
+  "api_reported_width": 1600,
+  "api_reported_height": 1066,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:24:30.403473+00:00",
+    "key": "d9c05f07f66df4d33fe5",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Clouded_yellow_Colias_croceus_Ichkeul.jpg/1920px-Clouded_yellow_Colias_croceus_Ichkeul.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 522271,
+    "headers": {
+      "content-type": "image/jpeg",
+      "content-length": "522271",
+      "server": "Thumbor/7.8.0",
+      "date": "Sat, 31 Oct 2026 17:24:32 GMT",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "76e9dcbc-cd51-4f2d-9395-097f125b7347"
+    },
+    "sha256": "b5ec3f8fd6cc98158f3287523311991e54865cc53d314ca07b477b58674c8d87"
+  },
+  "width": 1920,
+  "height": 1280,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

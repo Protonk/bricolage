@@ -1,0 +1,41 @@
+{
+  "candidate_id": "1d6f48c02108a35eb7dc",
+  "source_path": "sources/1d6f48c02108a35eb7dc.jpg",
+  "sha256": "c80e7e05bede4ee79d5c8e42f5dcc55bbf26a59d2604162f62bd98f8c3fa72ba",
+  "bytes": 974294,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Open_wing_basking_of_Chersonesia_risa_%28Doubleday%2C_1848%29_-_Common_Maplet_WLB_MG_4406.jpg/1920px-Open_wing_basking_of_Chersonesia_risa_%28Doubleday%2C_1848%29_-_Common_Maplet_WLB_MG_4406.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-011.json",
+  "metadata_sha256": "449e9c61f7a65c5bcf4b791b8ce6001b19e3900e27076b5aba8ad4f1f31c9dc1",
+  "original_sha1": "e45ca73604407139072b8939834d8957c9090809",
+  "pageid": 153995401,
+  "api_reported_width": 1600,
+  "api_reported_height": 1067,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:24:00.975955+00:00",
+    "key": "1d6f48c02108a35eb7dc",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Open_wing_basking_of_Chersonesia_risa_%28Doubleday%2C_1848%29_-_Common_Maplet_WLB_MG_4406.jpg/1920px-Open_wing_basking_of_Chersonesia_risa_%28Doubleday%2C_1848%29_-_Common_Maplet_WLB_MG_4406.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 974294,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "50d0a03486ab8b8b85e7657f1293f263",
+      "last-modified": "Wed, 24 Jun 2026 23:58:34 GMT",
+      "content-length": "974294",
+      "date": "Sat, 31 Oct 2026 17:24:01 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "0ca1a68b-ae03-45b5-a3c9-c94f26de7191"
+    },
+    "sha256": "c80e7e05bede4ee79d5c8e42f5dcc55bbf26a59d2604162f62bd98f8c3fa72ba"
+  },
+  "width": 1920,
+  "height": 1280,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

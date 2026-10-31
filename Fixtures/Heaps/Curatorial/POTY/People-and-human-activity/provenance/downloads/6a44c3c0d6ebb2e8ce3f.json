@@ -1,0 +1,41 @@
+{
+  "candidate_id": "6a44c3c0d6ebb2e8ce3f",
+  "source_path": "sources/6a44c3c0d6ebb2e8ce3f.jpg",
+  "sha256": "d297b2fe820585104a3248999e571f19b8aa998f7f1f278a935c34e763de2a3c",
+  "bytes": 344244,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Steve_Jobs_and_Macintosh_computer%2C_January_1984%2C_by_Bernard_Gotfryd_-_edited.jpg/1280px-Steve_Jobs_and_Macintosh_computer%2C_January_1984%2C_by_Bernard_Gotfryd_-_edited.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-006.json",
+  "metadata_sha256": "9ec9308a43aaaa6d0daf5b3902fc031ad177490f6532797ffdb19be60d00f746",
+  "original_sha1": "a7de3b2da7c8294b6ffa8757593692aca3692e06",
+  "pageid": 110582355,
+  "api_reported_width": 1086,
+  "api_reported_height": 1600,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:25:21.740081+00:00",
+    "key": "6a44c3c0d6ebb2e8ce3f",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Steve_Jobs_and_Macintosh_computer%2C_January_1984%2C_by_Bernard_Gotfryd_-_edited.jpg/1280px-Steve_Jobs_and_Macintosh_computer%2C_January_1984%2C_by_Bernard_Gotfryd_-_edited.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 344244,
+    "headers": {
+      "date": "Sat, 31 Oct 2026 17:09:15 GMT",
+      "etag": "0c8803b43235be2fec08823b9714690b",
+      "server": "ATS/9.2.16",
+      "content-type": "image/jpeg",
+      "last-modified": "Mon, 25 May 2026 11:29:01 GMT",
+      "content-length": "344244",
+      "x-cache": "cp4044 hit, cp4044 hit/1",
+      "x-request-id": "84690c94-202e-4fd2-ad3c-12d355cada40"
+    },
+    "sha256": "d297b2fe820585104a3248999e571f19b8aa998f7f1f278a935c34e763de2a3c"
+  },
+  "width": 1280,
+  "height": 1885,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

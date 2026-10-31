@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T17:16:32.781181+00:00",
+  "key": "files-007",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3ATribu+Lopit%2C+Imehejek%2C+Sud%C3%A1n+del+Sur%2C+2024-01-22%2C+DD+36.jpg%7CFile%3ATribu+Laarim%2C+Kimotong%2C+Sud%C3%A1n+del+Sur%2C+2024-01-24%2C+DD+51.jpg%7CFile%3ALucha+entre+clanes+de+la+tribu+Mundari%2C+Terekeka%2C+Sud%C3%A1n+del+Sur%2C+2024-01-29%2C+DD+197.jpg%7CFile%3ATribu+Laarim%2C+Kimotong%2C+Sud%C3%A1n+del+Sur%2C+2024-01-23%2C+DD+15.jpg%7CFile%3ACampamento+de+ganado+de+la+tribu+Mundari%2C+Terekeka%2C+Sud%C3%A1n+del+Sur%2C+2024-01-28%2C+DD+36.jpg%7CFile%3A%D9%81%D8%AA%D8%A7%D8%AA%D9%8A%D9%86+%D9%85%D9%86+%D8%A7%D9%84%D8%B1%D9%8A%D9%81+%D9%8A%D9%86%D9%82%D9%84%D8%A7%D9%86+%D8%A7%D9%84%D9%85%D8%A7%D8%A1+%D8%B9%D9%84%D9%89+%D8%A7%D9%84%D8%AD%D9%85%D8%A7%D8%B1.jpg%7CFile%3ATribu+Laarim%2C+Kimotong%2C+Sud%C3%A1n+del+Sur%2C+2024-01-23%2C+DD+57.jpg%7CFile%3AKathakali+of+Kerala+at+Nishagandhi+dance+festival+2024+%28135%29.jpg%7CFile%3ARickshaw-Driver-Haridwar+AB.jpg%7CFile%3AMathieu+Burgaudeau+during+time+trial+training+of+Itzulia+Basque+Country+race+-+stage+1.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 69783,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 17:16:32 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-fl5b5",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "4bfc4e3a-3053-4d7a-a218-47932191251d"
+  },
+  "sha256": "4409c665a5c529a9632536522de68708700308e4f4fb81317d97f1c065971d85"
+}

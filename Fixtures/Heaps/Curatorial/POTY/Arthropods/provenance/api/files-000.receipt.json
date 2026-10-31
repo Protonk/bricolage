@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T17:13:12.636597+00:00",
+  "key": "files-000",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3AXiphydria+camelus+female+%28side+view%29+-+Keila.jpg%7CFile%3ARice+paper+butterfly+%2816709%29.jpg%7CFile%3ALasiocampa+quercus+4th+instar+caterpillar+Keila+%28side+view%29.jpg%7CFile%3AKleines+Wiesenv%C3%B6gelchen+am+Morgen.jpg%7CFile%3AOurapteryx+yerburii+ssp.+specimens+and+male+genitalia.jpg%7CFile%3APterophorus+pentadactyla+-+Keila.jpg%7CFile%3ANeubrunn+Steinbruch+Blutrote+Heidelibelle+%28Sympetrum+sanguineum%29+8262082.jpg%7CFile%3AAphantopus+hyperantus+-+Keila.jpg%7CFile%3ACerastis+rubricosa+caterpillar+%28side+view%29+-+Keila.jpg%7CFile%3AMonarch+butterflies+%28Danaus+plexippus+plexippus%29+Piedra+Herrada+2.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 69721,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 17:13:12 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-wj6j8",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "5625775a-a550-481b-83df-43db4dd2e863"
+  },
+  "sha256": "b834e5d95afaa83949495425bc525a6c430fe7a4ed25c6e45419eaae61cf3951"
+}

@@ -1,0 +1,41 @@
+{
+  "candidate_id": "77805d17144854590f9e",
+  "source_path": "sources/77805d17144854590f9e.jpg",
+  "sha256": "6c520d3ec365471aa6e20a0539a8ffb6287edb6e2631d43a294f335824115011",
+  "bytes": 412501,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Chico_Wildflower_Century_%282025%29-104A9764.jpg/1280px-Chico_Wildflower_Century_%282025%29-104A9764.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-017.json",
+  "metadata_sha256": "9b50f100e89180ec009436a09b44072c5ec4c2e8d6bf21f4d2231f7bd1428741",
+  "original_sha1": "c03a8e8c4b36060478970ee0dd68f04f46d8db41",
+  "pageid": 164566629,
+  "api_reported_width": 1143,
+  "api_reported_height": 1600,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:22:59.269415+00:00",
+    "key": "77805d17144854590f9e",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Chico_Wildflower_Century_%282025%29-104A9764.jpg/1280px-Chico_Wildflower_Century_%282025%29-104A9764.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 412501,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "0c55420150d9d11f27b79ab1fb6e2539",
+      "last-modified": "Tue, 11 Aug 2026 07:02:09 GMT",
+      "content-length": "412501",
+      "date": "Sat, 31 Oct 2026 17:22:59 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "0fb8e004-aaae-422b-8532-be7956575ad3"
+    },
+    "sha256": "6c520d3ec365471aa6e20a0539a8ffb6287edb6e2631d43a294f335824115011"
+  },
+  "width": 1280,
+  "height": 1792,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

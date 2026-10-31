@@ -1,0 +1,41 @@
+{
+  "candidate_id": "115074cde48d0ce3e7b7",
+  "source_path": "sources/115074cde48d0ce3e7b7.jpg",
+  "sha256": "04a69858ef59c4bdabea34cdd6e080406fdb3309ba4065c3688cd4d43316a8d3",
+  "bytes": 600186,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Milano_-_Portico_dell%27Elefante_-_2024-09-27_09-41-52_001.jpg/1920px-Milano_-_Portico_dell%27Elefante_-_2024-09-27_09-41-52_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-008.json",
+  "metadata_sha256": "6db6026674904adc07eb4e966d44831c0170b47070fb116288c86a486f8a6c4b",
+  "original_sha1": "cdef40aa0de1788be90ca0f94f28b8f901481cbc",
+  "pageid": 153223884,
+  "api_reported_width": 1600,
+  "api_reported_height": 1032,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:25:14.783487+00:00",
+    "key": "115074cde48d0ce3e7b7",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Milano_-_Portico_dell%27Elefante_-_2024-09-27_09-41-52_001.jpg/1920px-Milano_-_Portico_dell%27Elefante_-_2024-09-27_09-41-52_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 600186,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "31e1b7e8bd0890eb2453693e530a5c31",
+      "last-modified": "Tue, 08 Sep 2026 06:56:10 GMT",
+      "content-length": "600186",
+      "date": "Sat, 31 Oct 2026 17:25:14 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "940a826e-bd83-4c85-90d9-f01e9f7e8e17"
+    },
+    "sha256": "04a69858ef59c4bdabea34cdd6e080406fdb3309ba4065c3688cd4d43316a8d3"
+  },
+  "width": 1920,
+  "height": 1239,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

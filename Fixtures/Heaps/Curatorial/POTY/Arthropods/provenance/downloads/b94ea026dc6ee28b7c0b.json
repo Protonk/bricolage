@@ -1,0 +1,41 @@
+{
+  "candidate_id": "b94ea026dc6ee28b7c0b",
+  "source_path": "sources/b94ea026dc6ee28b7c0b.jpg",
+  "sha256": "04c3290663221c7326ffb375accec7615dd7acae69eebdd3d37e1f11cb680a80",
+  "bytes": 419939,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Close_wing_mud-puddling_position_of_Argynnis_childreni_Gray%2C_1831_-_Large_Silverstripe_3.jpg/1920px-Close_wing_mud-puddling_position_of_Argynnis_childreni_Gray%2C_1831_-_Large_Silverstripe_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-016.json",
+  "metadata_sha256": "9e00e9fdd168837ce27e4436792496555db2c60353381716c0ed2685b52b9e20",
+  "original_sha1": "d70d3ae29b5f0e745ae52f28cd555f1092d6f69f",
+  "pageid": 148609161,
+  "api_reported_width": 1600,
+  "api_reported_height": 1067,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:21:35.636965+00:00",
+    "key": "b94ea026dc6ee28b7c0b",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Close_wing_mud-puddling_position_of_Argynnis_childreni_Gray%2C_1831_-_Large_Silverstripe_3.jpg/1920px-Close_wing_mud-puddling_position_of_Argynnis_childreni_Gray%2C_1831_-_Large_Silverstripe_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 419939,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "50fd1af8859d31ce92303160c375144f",
+      "last-modified": "Wed, 26 Aug 2026 09:12:22 GMT",
+      "content-length": "419939",
+      "date": "Sat, 31 Oct 2026 17:21:35 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "3812627a-20fc-419f-a1af-87b82a2db1df"
+    },
+    "sha256": "04c3290663221c7326ffb375accec7615dd7acae69eebdd3d37e1f11cb680a80"
+  },
+  "width": 1920,
+  "height": 1280,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

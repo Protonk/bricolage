@@ -1,0 +1,41 @@
+{
+  "candidate_id": "b20ea5ecba01566c0552",
+  "source_path": "sources/b20ea5ecba01566c0552.jpg",
+  "sha256": "86a48a9a9fb8151c2d3b86516e2787374672ac5bc6820a9af3a5deb8b9c76024",
+  "bytes": 437129,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Seaside_Sanatorium_%2840873p%29.jpg/1920px-Seaside_Sanatorium_%2840873p%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-005.json",
+  "metadata_sha256": "cec7b54488ccd061092b009ad5938af5e7bc28dfd36845dd1c86abe6a9112519",
+  "original_sha1": "c3d5adb799ad677079b532afbd0df0d691f86ad3",
+  "pageid": 146805401,
+  "api_reported_width": 1600,
+  "api_reported_height": 651,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:21:59.928722+00:00",
+    "key": "b20ea5ecba01566c0552",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Seaside_Sanatorium_%2840873p%29.jpg/1920px-Seaside_Sanatorium_%2840873p%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 437129,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "6a94db9ba944cfe1843d0e8d3a294d3f",
+      "last-modified": "Thu, 10 Sep 2026 17:18:32 GMT",
+      "content-length": "437129",
+      "date": "Sat, 31 Oct 2026 17:22:00 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "e4f4f237-59e9-47f4-86e3-978681fb6ebf"
+    },
+    "sha256": "86a48a9a9fb8151c2d3b86516e2787374672ac5bc6820a9af3a5deb8b9c76024"
+  },
+  "width": 1920,
+  "height": 781,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

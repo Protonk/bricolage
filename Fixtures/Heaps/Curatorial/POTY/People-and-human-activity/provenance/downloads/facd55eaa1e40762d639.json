@@ -1,0 +1,41 @@
+{
+  "candidate_id": "facd55eaa1e40762d639",
+  "source_path": "sources/facd55eaa1e40762d639.jpg",
+  "sha256": "bc68607b081b779c656946b32111b40199890bc0d30a9d7cab09eba40bd940af",
+  "bytes": 692484,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/La_Libert%C3%A9_guidant_le_peuple_-_Eug%C3%A8ne_Delacroix_-_Mus%C3%A9e_du_Louvre_Peintures_RF_129_-_apr%C3%A8s_restauration_2024.jpg/1920px-La_Libert%C3%A9_guidant_le_peuple_-_Eug%C3%A8ne_Delacroix_-_Mus%C3%A9e_du_Louvre_Peintures_RF_129_-_apr%C3%A8s_restauration_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-015.json",
+  "metadata_sha256": "5fa4f855e5aa6a0931d76f3fd4b5591add5779a2d74d86583ae83818cbee90fc",
+  "original_sha1": "5dad3e8c4c37a2bc5c4e3ae56e172e5622374805",
+  "pageid": 147987667,
+  "api_reported_width": 1600,
+  "api_reported_height": 1280,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:25:45.757578+00:00",
+    "key": "facd55eaa1e40762d639",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/La_Libert%C3%A9_guidant_le_peuple_-_Eug%C3%A8ne_Delacroix_-_Mus%C3%A9e_du_Louvre_Peintures_RF_129_-_apr%C3%A8s_restauration_2024.jpg/1920px-La_Libert%C3%A9_guidant_le_peuple_-_Eug%C3%A8ne_Delacroix_-_Mus%C3%A9e_du_Louvre_Peintures_RF_129_-_apr%C3%A8s_restauration_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 692484,
+    "headers": {
+      "content-type": "image/jpeg",
+      "last-modified": "Mon, 27 Jul 2026 10:13:30 GMT",
+      "content-length": "692484",
+      "date": "Fri, 30 Oct 2026 21:46:48 GMT",
+      "server": "envoy",
+      "etag": "b5b498d57c9b0f4b307127c0ba95dd64",
+      "x-cache": "cp4044 hit, cp4044 hit/4",
+      "x-request-id": "fe634456-314f-44d7-a850-08dabb289ea3"
+    },
+    "sha256": "bc68607b081b779c656946b32111b40199890bc0d30a9d7cab09eba40bd940af"
+  },
+  "width": 1920,
+  "height": 1536,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

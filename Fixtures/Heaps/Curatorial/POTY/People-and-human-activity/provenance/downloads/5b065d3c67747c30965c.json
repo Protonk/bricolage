@@ -1,0 +1,41 @@
+{
+  "candidate_id": "5b065d3c67747c30965c",
+  "source_path": "sources/5b065d3c67747c30965c.jpg",
+  "sha256": "0670fd03e9f4497094ac06d7bc402525407545c3a5e387f52948983e8f5e1836",
+  "bytes": 765052,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Human%E2%80%93canine_friendship_-_girl_hugging_her_dog_tightly_at_golden_hour_in_Laos.jpg/1280px-Human%E2%80%93canine_friendship_-_girl_hugging_her_dog_tightly_at_golden_hour_in_Laos.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-005.json",
+  "metadata_sha256": "d1e52e0fa2f3b3f4fc0e08ba660be0330688db80794c8a7911bbf6958709c39b",
+  "original_sha1": "b28a1423f9c57d80b94d1fb6c5dd7e485a9079b1",
+  "pageid": 143571500,
+  "api_reported_width": 1067,
+  "api_reported_height": 1600,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:30:31.887360+00:00",
+    "key": "5b065d3c67747c30965c",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Human%E2%80%93canine_friendship_-_girl_hugging_her_dog_tightly_at_golden_hour_in_Laos.jpg/1280px-Human%E2%80%93canine_friendship_-_girl_hugging_her_dog_tightly_at_golden_hour_in_Laos.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 765052,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "78fec39d477a5509c612912f14ead4c5",
+      "last-modified": "Wed, 26 Aug 2026 02:45:30 GMT",
+      "content-length": "765052",
+      "date": "Sat, 31 Oct 2026 17:30:32 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "6bde496d-6b90-4906-8f2b-59a1dcae4197"
+    },
+    "sha256": "0670fd03e9f4497094ac06d7bc402525407545c3a5e387f52948983e8f5e1836"
+  },
+  "width": 1280,
+  "height": 1920,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

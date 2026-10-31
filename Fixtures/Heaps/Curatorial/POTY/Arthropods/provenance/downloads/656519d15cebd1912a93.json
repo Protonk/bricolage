@@ -1,0 +1,41 @@
+{
+  "candidate_id": "656519d15cebd1912a93",
+  "source_path": "sources/656519d15cebd1912a93.jpg",
+  "sha256": "c5c25c617a089ea7031eb5640dcebf613072a500b38b852b45cbe383ab583adc",
+  "bytes": 209593,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Nemoptera_sinuata_Nazilli.jpg/1920px-Nemoptera_sinuata_Nazilli.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-016.json",
+  "metadata_sha256": "9e00e9fdd168837ce27e4436792496555db2c60353381716c0ed2685b52b9e20",
+  "original_sha1": "932d28ffdc669c2a1eeab531bcd076a93c73183a",
+  "pageid": 168647941,
+  "api_reported_width": 1600,
+  "api_reported_height": 1066,
+  "reused_complete_body_after_acknowledgement": true,
+  "response": {
+    "utc": "2026-10-31T17:19:56.710661+00:00",
+    "key": "656519d15cebd1912a93",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Nemoptera_sinuata_Nazilli.jpg/1920px-Nemoptera_sinuata_Nazilli.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 209593,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "69b8371519669d7240f8eda96255fcfb",
+      "last-modified": "Tue, 08 Sep 2026 21:16:40 GMT",
+      "content-length": "209593",
+      "date": "Sat, 31 Oct 2026 17:19:56 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "fb461949-2c8a-43e7-93c3-1042df1b80c5"
+    },
+    "sha256": "c5c25c617a089ea7031eb5640dcebf613072a500b38b852b45cbe383ab583adc"
+  },
+  "width": 1920,
+  "height": 1280,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

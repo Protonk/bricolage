@@ -1,0 +1,41 @@
+{
+  "candidate_id": "6e009b5819b43a6ac4c8",
+  "source_path": "sources/6e009b5819b43a6ac4c8.jpg",
+  "sha256": "28faed90a09a9df1d2abedb0823df0ab77465397440b749f1ebbf4966b313c68",
+  "bytes": 452247,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Close_wing_mud_pudding_position_of_Delias_hyparete_%28Linnaeus%2C_1758%29_-_Painted_Jezebel_WLB_IMG_1197.jpg/1920px-Close_wing_mud_pudding_position_of_Delias_hyparete_%28Linnaeus%2C_1758%29_-_Painted_Jezebel_WLB_IMG_1197.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-010.json",
+  "metadata_sha256": "7573b74ecd7b9f477dad8823756ca5293ab09b55d7db0e5f3659187cd8b81efd",
+  "original_sha1": "af6afa72436548a4b475e1a13774369af14e66cd",
+  "pageid": 152359840,
+  "api_reported_width": 1600,
+  "api_reported_height": 1067,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:26:30.975207+00:00",
+    "key": "6e009b5819b43a6ac4c8",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Close_wing_mud_pudding_position_of_Delias_hyparete_%28Linnaeus%2C_1758%29_-_Painted_Jezebel_WLB_IMG_1197.jpg/1920px-Close_wing_mud_pudding_position_of_Delias_hyparete_%28Linnaeus%2C_1758%29_-_Painted_Jezebel_WLB_IMG_1197.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 452247,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "db72d80899ecdf325fc9f61e1b8ac0fc",
+      "last-modified": "Wed, 19 Aug 2026 11:56:02 GMT",
+      "content-length": "452247",
+      "date": "Sat, 31 Oct 2026 17:26:31 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "882adf06-6418-4af1-8f53-a3c4bd62e121"
+    },
+    "sha256": "28faed90a09a9df1d2abedb0823df0ab77465397440b749f1ebbf4966b313c68"
+  },
+  "width": 1920,
+  "height": 1280,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

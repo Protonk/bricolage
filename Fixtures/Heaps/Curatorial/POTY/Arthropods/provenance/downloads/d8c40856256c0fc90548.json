@@ -1,0 +1,41 @@
+{
+  "candidate_id": "d8c40856256c0fc90548",
+  "source_path": "sources/d8c40856256c0fc90548.jpg",
+  "sha256": "cc331ff8d746e0b36286bfd3d42b21364b3ae97e7d5cafa3749e47dfb0b14000",
+  "bytes": 479936,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Callionima_calliomenae_MHNT_CUT_2010_0_156_El_Guapo_Venezuela_male_dorsal.jpg/1920px-Callionima_calliomenae_MHNT_CUT_2010_0_156_El_Guapo_Venezuela_male_dorsal.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-013.json",
+  "metadata_sha256": "4cde3d9b21c79a2fbca8d5fe71dad3a80e93b23c49f527ec4f40da0ed6a5d939",
+  "original_sha1": "f8bb8ed12ed2079532a89f5ab0137b199e4da34d",
+  "pageid": 62521164,
+  "api_reported_width": 1600,
+  "api_reported_height": 1096,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:21:28.444622+00:00",
+    "key": "d8c40856256c0fc90548",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Callionima_calliomenae_MHNT_CUT_2010_0_156_El_Guapo_Venezuela_male_dorsal.jpg/1920px-Callionima_calliomenae_MHNT_CUT_2010_0_156_El_Guapo_Venezuela_male_dorsal.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 479936,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "34c3b3bc5d08a776ee1cecc914e197a5",
+      "last-modified": "Sat, 26 Sep 2026 12:55:45 GMT",
+      "content-length": "479936",
+      "date": "Sat, 31 Oct 2026 17:21:28 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "a17da377-416f-4c3a-8d24-2557d34fa5b8"
+    },
+    "sha256": "cc331ff8d746e0b36286bfd3d42b21364b3ae97e7d5cafa3749e47dfb0b14000"
+  },
+  "width": 1920,
+  "height": 1315,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

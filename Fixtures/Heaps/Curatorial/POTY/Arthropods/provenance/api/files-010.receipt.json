@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T17:13:48.656703+00:00",
+  "key": "files-010",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3AClose+wing+Basking+of+Delias+eucharis+%28Drury%2C+1773%29+-+Indian+Jezebel+%28Female%29+WLB.jpg%7CFile%3AClose+wing+puddling+of+Dilipa+morgiana+%28Westwood%2C+1851%29+-+Golden+Emperor+WLB+MG+3490.jpg%7CFile%3AClose+wing+moisture+sucking+of+Appias+galba+%28Wallace%2C+1867%29+-+Indian+Orange+Albatross+WLB.jpg%7CFile%3AClose+wing+mud+pudding+position+of+Delias+hyparete+%28Linnaeus%2C+1758%29+-+Painted+Jezebel+WLB+IMG+1197.jpg%7CFile%3AMating+pair+of+Ypthima+huebneri+%28Kirby%2C+1871%29+-+Common+Four-ring+WLB.jpg%7CFile%3AClose+wing+mud-puddling+position+of+Delias+agostina+%28Hewitson%2C1852%29+-+Yellow+Jezebel.jpg%7CFile%3AMating+pair+of+Jamides+celeno+%28Cramer%2C+1775%29+-+Common+Cerulean+%282%29+WLB.jpg%7CFile%3AClose+wing+mud-puddling+position+of+Delias+pasithoe+%28Linnaeus%2C+1767%29-Red-base+Jezebel.jpg%7CFile%3AClose+wing+moisture+sucking+of+Eurema+brigitta+%28Stoll%2C+1780%29+-+Small+Grass+Yellow+%283%29+WLB.jpg%7CFile%3AClose+wing+moisture+sucking+of+Papilio+clytia+%28Linnaeus%2C+1758%29+-+Common+Mime+%28Male%29+%28+From+Dissimilis%29+WLB.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 53162,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 17:13:48 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-5m6sc",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "8b7cdbc9-4670-451d-b291-f365961a80c4"
+  },
+  "sha256": "7573b74ecd7b9f477dad8823756ca5293ab09b55d7db0e5f3659187cd8b81efd"
+}

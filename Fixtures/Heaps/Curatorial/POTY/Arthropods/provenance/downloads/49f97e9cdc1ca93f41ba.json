@@ -1,0 +1,41 @@
+{
+  "candidate_id": "49f97e9cdc1ca93f41ba",
+  "source_path": "sources/49f97e9cdc1ca93f41ba.jpg",
+  "sha256": "67d70156ff3d6a150de61ddb090a63bf90624176f0376df89f8985f47f59406d",
+  "bytes": 382017,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Close_wing_mud-puddling_position_of_Delias_pasithoe_%28Linnaeus%2C_1767%29-Red-base_Jezebel.jpg/1920px-Close_wing_mud-puddling_position_of_Delias_pasithoe_%28Linnaeus%2C_1767%29-Red-base_Jezebel.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-010.json",
+  "metadata_sha256": "7573b74ecd7b9f477dad8823756ca5293ab09b55d7db0e5f3659187cd8b81efd",
+  "original_sha1": "d4c0eafe91e125f311954c165e7b7cc904b0f1b6",
+  "pageid": 153093351,
+  "api_reported_width": 1600,
+  "api_reported_height": 1203,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:21:49.456996+00:00",
+    "key": "49f97e9cdc1ca93f41ba",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Close_wing_mud-puddling_position_of_Delias_pasithoe_%28Linnaeus%2C_1767%29-Red-base_Jezebel.jpg/1920px-Close_wing_mud-puddling_position_of_Delias_pasithoe_%28Linnaeus%2C_1767%29-Red-base_Jezebel.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 382017,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "9fe917e433d2377c51b0a19b2a060242",
+      "last-modified": "Tue, 22 Sep 2026 18:07:57 GMT",
+      "content-length": "382017",
+      "date": "Sat, 31 Oct 2026 17:21:49 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "fdda9b44-7759-4c85-bd73-67162c53e90a"
+    },
+    "sha256": "67d70156ff3d6a150de61ddb090a63bf90624176f0376df89f8985f47f59406d"
+  },
+  "width": 1920,
+  "height": 1444,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

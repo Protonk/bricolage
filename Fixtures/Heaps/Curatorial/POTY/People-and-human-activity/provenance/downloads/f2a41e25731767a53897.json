@@ -1,0 +1,41 @@
+{
+  "candidate_id": "f2a41e25731767a53897",
+  "source_path": "sources/f2a41e25731767a53897.jpg",
+  "sha256": "17cf77001e256ac3863f20f23efdbe0a631b4bee967b8ddccdd903771e1126ee",
+  "bytes": 391473,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Intramontabile_Passione.jpg/1920px-Intramontabile_Passione.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-002.json",
+  "metadata_sha256": "479e3506ee97a9333e686708f6fb86fe4ffb290fdfb9164164b819f28df1db82",
+  "original_sha1": "65f1f3cd13f0b3669c91dccc7f3eb64522c0ce4b",
+  "pageid": 128615406,
+  "api_reported_width": 1600,
+  "api_reported_height": 1095,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:30:49.116740+00:00",
+    "key": "f2a41e25731767a53897",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Intramontabile_Passione.jpg/1920px-Intramontabile_Passione.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 391473,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "59f7a51bf5e3db89ea3512e0dd496767",
+      "last-modified": "Thu, 03 Sep 2026 11:31:56 GMT",
+      "content-length": "391473",
+      "date": "Sat, 31 Oct 2026 17:30:49 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "33859cb2-f140-43dd-9021-5f6e9fa1c4f2"
+    },
+    "sha256": "17cf77001e256ac3863f20f23efdbe0a631b4bee967b8ddccdd903771e1126ee"
+  },
+  "width": 1920,
+  "height": 1314,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

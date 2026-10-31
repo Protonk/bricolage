@@ -1,0 +1,41 @@
+{
+  "candidate_id": "1d3353f716f890f43073",
+  "source_path": "sources/1d3353f716f890f43073.jpg",
+  "sha256": "d48625943297592716ef55dafb88a2346ed61d58171acb4a9c5654fb55c5c0d8",
+  "bytes": 447136,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Yoram_Taharlev_Portrait.jpg/1280px-Yoram_Taharlev_Portrait.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-012.json",
+  "metadata_sha256": "cb611f1a5eb36db2e8b053a88bdccf42420ee3b23ac8832dc56303e1f0aea37b",
+  "original_sha1": "c153fc45cfcd274add3a664a474f5dc61aa1e377",
+  "pageid": 74425032,
+  "api_reported_width": 1066,
+  "api_reported_height": 1600,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:22:38.453854+00:00",
+    "key": "1d3353f716f890f43073",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Yoram_Taharlev_Portrait.jpg/1280px-Yoram_Taharlev_Portrait.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 447136,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "0cd824773ca6bb29180eec597529219c",
+      "last-modified": "Fri, 03 Jul 2026 03:43:17 GMT",
+      "content-length": "447136",
+      "date": "Sat, 31 Oct 2026 17:22:38 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "aaac12b8-477b-46f1-93dd-d2681db96805"
+    },
+    "sha256": "d48625943297592716ef55dafb88a2346ed61d58171acb4a9c5654fb55c5c0d8"
+  },
+  "width": 1280,
+  "height": 1920,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

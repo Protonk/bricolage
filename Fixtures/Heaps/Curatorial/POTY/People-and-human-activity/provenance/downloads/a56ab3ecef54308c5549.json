@@ -1,0 +1,41 @@
+{
+  "candidate_id": "a56ab3ecef54308c5549",
+  "source_path": "sources/a56ab3ecef54308c5549.jpg",
+  "sha256": "766adc106a5bad5273a2b031cd9f5012ae39385f5311aaa718da82837f1027c0",
+  "bytes": 604220,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/A_Koch_woman.jpg/1920px-A_Koch_woman.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-016.json",
+  "metadata_sha256": "839a94bb893004129db6df8d2fac177c0dfa25b06953d682f7425b15116b934e",
+  "original_sha1": "0aea7346ea04a7a57f6bf08757e1f4f30329fe15",
+  "pageid": 162932146,
+  "api_reported_width": 1600,
+  "api_reported_height": 1067,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:30:00.417448+00:00",
+    "key": "a56ab3ecef54308c5549",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/A_Koch_woman.jpg/1920px-A_Koch_woman.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 604220,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "40d763857d5b5ba7e1c25d90d3e3d541",
+      "last-modified": "Thu, 20 Aug 2026 08:40:16 GMT",
+      "content-length": "604220",
+      "date": "Sat, 31 Oct 2026 17:30:00 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "423c9a3b-2b2f-4c0a-8502-b9bd645d69df"
+    },
+    "sha256": "766adc106a5bad5273a2b031cd9f5012ae39385f5311aaa718da82837f1027c0"
+  },
+  "width": 1920,
+  "height": 1280,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

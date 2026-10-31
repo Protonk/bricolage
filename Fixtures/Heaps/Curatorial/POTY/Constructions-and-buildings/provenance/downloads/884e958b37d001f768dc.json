@@ -1,0 +1,41 @@
+{
+  "candidate_id": "884e958b37d001f768dc",
+  "source_path": "sources/884e958b37d001f768dc.jpg",
+  "sha256": "18969b9b2d732626e978dfb2ec3f514b308229ab89c057a98890ac9efc3b3199",
+  "bytes": 649522,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Nikiszowiec%2C_courtyard_with_chimneys%2C_2024-08-09.jpg/1280px-Nikiszowiec%2C_courtyard_with_chimneys%2C_2024-08-09.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-011.json",
+  "metadata_sha256": "ba564b5a829db9ee10beb6b6f920779036d71f4951a0fff882de0f6a3baacdaa",
+  "original_sha1": "c3463ff458e6b4b20bb5135b56278198dbc04b49",
+  "pageid": 152827576,
+  "api_reported_width": 1171,
+  "api_reported_height": 1600,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:29:18.606032+00:00",
+    "key": "884e958b37d001f768dc",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Nikiszowiec%2C_courtyard_with_chimneys%2C_2024-08-09.jpg/1280px-Nikiszowiec%2C_courtyard_with_chimneys%2C_2024-08-09.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 649522,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "55ccedab464aae3d33922ba624c4fe0e",
+      "last-modified": "Sat, 30 May 2026 17:06:18 GMT",
+      "content-length": "649522",
+      "date": "Sat, 31 Oct 2026 17:29:18 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "9e651368-e149-4506-831c-54956c165d3f"
+    },
+    "sha256": "18969b9b2d732626e978dfb2ec3f514b308229ab89c057a98890ac9efc3b3199"
+  },
+  "width": 1280,
+  "height": 1749,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

@@ -1,0 +1,41 @@
+{
+  "candidate_id": "d8bca6e352c41cbe5ec8",
+  "source_path": "sources/d8bca6e352c41cbe5ec8.jpg",
+  "sha256": "9705706463d518cdf4e19c91a3709a2341c6ebc1baa0ad6dbd4720641a56a4d3",
+  "bytes": 421620,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Anna_Eriksson_in_2018.jpg/1920px-Anna_Eriksson_in_2018.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-020.json",
+  "metadata_sha256": "54a39141090edb7ca046722b6ff9049db7e74aa58a553d479e639240d556ac63",
+  "original_sha1": "1ab360d91b8554fa463dd755564e5836bf90d85c",
+  "pageid": 69910779,
+  "api_reported_width": 1600,
+  "api_reported_height": 863,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:28:13.514526+00:00",
+    "key": "d8bca6e352c41cbe5ec8",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Anna_Eriksson_in_2018.jpg/1920px-Anna_Eriksson_in_2018.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 421620,
+    "headers": {
+      "content-type": "image/jpeg",
+      "last-modified": "Sat, 29 Aug 2026 00:11:28 GMT",
+      "content-length": "421620",
+      "date": "Sat, 31 Oct 2026 17:28:13 GMT",
+      "server": "envoy",
+      "etag": "30945c8e2525f645e51516e912c846ee",
+      "x-cache": "cp4044 hit, cp4044 miss",
+      "x-request-id": "c43cff93-99d9-4185-b3ea-958fccc841cb"
+    },
+    "sha256": "9705706463d518cdf4e19c91a3709a2341c6ebc1baa0ad6dbd4720641a56a4d3"
+  },
+  "width": 1920,
+  "height": 1035,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

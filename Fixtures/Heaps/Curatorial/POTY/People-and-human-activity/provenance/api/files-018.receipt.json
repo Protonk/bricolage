@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T17:17:12.042965+00:00",
+  "key": "files-018",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3APortrait+of+a+Tunisian+Woman+from+Djerid.jpg%7CFile%3ACandlelight+Prayer+Ritual%2C+edited.jpg%7CFile%3AColor+of+Friendship.jpg%7CFile%3AUS+Army+soldier+welding+two+metal+pieces%2C+Fort+Gregg-Adams%2C+Virginia%2C+March+2025.jpg%7CFile%3AFeuerteufel+bei+einem+Perchtenlauf+in+Bayern+%28Nachtaufnahme%29.jpg%7CFile%3AUS+Marine+wearing+camo+face+paint+navigating+with+a+compass.jpg%7CFile%3AProcessione+della+desolata+-+Canosa+di+Puglia5.jpg%7CFile%3ACedar+Creek+reenactment+VA25.jpg%7CFile%3A%D8%B1%D8%A7%D8%B9+%D9%8A%D9%82%D9%88%D8%AF+%D8%AC%D9%85%D9%84%D9%87.jpg%7CFile%3AFishermen+at+Kavarathi%2C+Lakshadweep%2C+India+%28edit%29.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 62100,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 17:17:12 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-qbqfr",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "888421a2-897c-4437-97ea-0bdd285a4aab"
+  },
+  "sha256": "5495fb6bacd0539270d32eb32a0075e6829f3b0cad33496dfe99960a51121e76"
+}

@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T17:13:16.322782+00:00",
+  "key": "files-001",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3AProtaetic+cuprea+ignicollis+2023-03-22+IZE-066.jpg%7CFile%3ALeptura+quadrifasciata+female+-+Keila.jpg%7CFile%3AArgiope+spider+female+adult+on+her+web+dorsal+view+black+background+Don+Det+Laos.jpg%7CFile%3AThymelicus+lineola+underside+-+Keila.jpg%7CFile%3AArboreal+stingless+bee+nest+%28Trigona+sp.%29+Flores.jpg%7CFile%3AZygaena+lonicerae+-+Keila.jpg%7CFile%3ACoenonympha+glycerion+-+Keila.jpg%7CFile%3AGro%C3%9Fes+Ochsenauge+Paarung.jpg%7CFile%3AListspinne+%28Pisaura+mirabilis%29+focus+stacking-20230502-RM-170003.jpg%7CFile%3AOperophtera+brumata+%28caterpillar%29+focus+stacking-20230508-RM-131624.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 76735,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 17:13:16 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-s8jg4",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "8b4bacb2-89e1-4526-904e-461cb2eea7c0"
+  },
+  "sha256": "e0cd153eb885c4414f3974f81e2b48d09f10eb26733b74740146535845654934"
+}

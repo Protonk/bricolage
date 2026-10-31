@@ -1,0 +1,41 @@
+{
+  "candidate_id": "807815f3e87c07cd9ef6",
+  "source_path": "sources/807815f3e87c07cd9ef6.jpg",
+  "sha256": "59386b24e5e6b4e7c6fce6ef5911f1c5a0a2d3aa499854ca0a8a41fc3f4e0124",
+  "bytes": 845066,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Lamp_maker%2C_Medina_of_Marrakech.jpg/1920px-Lamp_maker%2C_Medina_of_Marrakech.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-008.json",
+  "metadata_sha256": "92e6ee910fa644142f4f4a700fca8e11d6977808479e259ef3fc7cb0d8384374",
+  "original_sha1": "22a6f69d3c63eb07c5818b6289632ea0d16ee2f4",
+  "pageid": 147400484,
+  "api_reported_width": 1600,
+  "api_reported_height": 1200,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:28:16.855443+00:00",
+    "key": "807815f3e87c07cd9ef6",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Lamp_maker%2C_Medina_of_Marrakech.jpg/1920px-Lamp_maker%2C_Medina_of_Marrakech.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 845066,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "32c82ed7ee5315aa0ca8a6693e344021",
+      "last-modified": "Wed, 01 Jul 2026 01:44:41 GMT",
+      "content-length": "845066",
+      "date": "Sat, 31 Oct 2026 17:28:17 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "229728ed-ff9b-41bd-9289-ddd02860d629"
+    },
+    "sha256": "59386b24e5e6b4e7c6fce6ef5911f1c5a0a2d3aa499854ca0a8a41fc3f4e0124"
+  },
+  "width": 1920,
+  "height": 1440,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

@@ -1,0 +1,41 @@
+{
+  "candidate_id": "c16a0999c6824681d985",
+  "source_path": "sources/c16a0999c6824681d985.jpg",
+  "sha256": "989f24e51dc4ce9ae483a9af5f2f8ebe986b06f36a2af8fda3b9d69d671e32eb",
+  "bytes": 1039888,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Amphitheatre_%28Alba_Fucens%29.jpg/1920px-Amphitheatre_%28Alba_Fucens%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-009.json",
+  "metadata_sha256": "a4548c598cf03eb434d3e9926095eb0b9c5b5c6b6c8b17e02bdec7919b563284",
+  "original_sha1": "199ab419a6ef3dc80bc7524869d619bcc84ac51e",
+  "pageid": 147817025,
+  "api_reported_width": 1600,
+  "api_reported_height": 1133,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:29:32.358309+00:00",
+    "key": "c16a0999c6824681d985",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Amphitheatre_%28Alba_Fucens%29.jpg/1920px-Amphitheatre_%28Alba_Fucens%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 1039888,
+    "headers": {
+      "content-type": "image/jpeg",
+      "last-modified": "Tue, 25 Aug 2026 11:00:38 GMT",
+      "content-length": "1039888",
+      "date": "Sat, 31 Oct 2026 17:29:32 GMT",
+      "server": "envoy",
+      "etag": "3f724f95d4fac610c9418b53548dacbc",
+      "x-cache": "cp4044 hit, cp4044 miss",
+      "x-request-id": "f2702ea0-b539-427e-953f-7c84422ebbbc"
+    },
+    "sha256": "989f24e51dc4ce9ae483a9af5f2f8ebe986b06f36a2af8fda3b9d69d671e32eb"
+  },
+  "width": 1920,
+  "height": 1360,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

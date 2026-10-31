@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T17:13:55.688354+00:00",
+  "key": "files-012",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3AGhost+Crab+Burrow+Mahabalipuram+Sep24+A7CR+03085.jpg%7CFile%3AClose+wing+moisture+sucking+of+Charaxes+psaphon+%28Westwood%2C+1847%29+-+Plain+Tawny+Rajah+WLB.jpg%7CFile%3AOpen+wing+position+of+Vindula+erota+%28Fabricius%2C+1793%29+-+Cruiser+butterfly+sucking+sweat+from+human+socks+ANK6537.jpg%7CFile%3AClose+wing+moisture+sucking+of+Appias+lalage+%28Doubleday%2C+1842%29+-+Spot+Puffin+%28Male%29+WLB.jpg%7CFile%3AVesilest+%28Hydrachnidia%29.jpg%7CFile%3AKarpv%C3%A4hiline0424.jpg%7CFile%3AClose+wing+Basking+of+Pareronia+hippia+%28Fabricius%2C+1787%29+-+Indian+Wanderer+Female+%28Right%29+%26+Male%28Left%29+%282%29+WLB.jpg%7CFile%3ALantern+bug+%28Pyrops+candelaria%29+Double+Haven+HK.jpg%7CFile%3ANoctua+fimbriata+%28caterpillar%29+focus+stacking-20241118-RM-211015.jpg%7CFile%3AMagevee+karpv%C3%A4hiline+%28Ostracoda%29.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 69975,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 17:13:55 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-phv9p",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "091388d5-6f38-4243-9dc4-b279a2861a55"
+  },
+  "sha256": "ceb3422248074b97a31d7f0e5664ac3997f3bf3c9a6a8c34269180a7e3a0bbc5"
+}

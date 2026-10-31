@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T17:18:12.777570+00:00",
+  "key": "creator-identity-evidence",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=User%3ACmichel67%7CUser%3AFuzheado%7CUser%3AHarald+Krichel%7CUser%3AWilfredor",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 10271,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 17:18:12 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-t5vfl",
+    "cache-control": "private, must-revalidate, max-age=0",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 pass",
+    "x-request-id": "b5a8ae37-7c7b-48d8-b691-b4ce9632c886"
+  },
+  "sha256": "25bd4823fdb63c19eeb00582b59535f5ced28bbd1ce8408ab2381d13abc13c41"
+}

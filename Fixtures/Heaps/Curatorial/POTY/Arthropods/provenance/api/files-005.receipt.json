@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T17:13:30.597987+00:00",
+  "key": "files-005",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3ACangrejo+ermita%C3%B1o+%28Dardanus+gemmatus%29+con+an%C3%A9monas+%28Calliactis+polypus%29%2C+mar+Rojo%2C+Egipto%2C+2023-04-16%2C+DD+64.jpg%7CFile%3AMantis+ootheca+in+Marine+Park+%2891115%29.jpg%7CFile%3APupae+of+the+parasitoid+Paracodrus+apterogynus.jpg%7CFile%3APistes%C3%A4%C3%A4sklase+Culiceta+annulata+tiib.jpg%7CFile%3ASchwarze+Habichtsfliege+%28Dioctria+atricapilla%29.jpg%7CFile%3AAerjalgne.jpg%7CFile%3AScapholeberis+mucronata+%28tavaline+sarvik%29.jpg%7CFile%3ATiigi+klaasiks%C3%A4%C3%A4sevastne.jpg%7CFile%3AEbakiivrik.jpg%7CFile%3AHydracarina.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 62400,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 17:13:30 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-6vffd",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "21190ef4-964a-4eab-bc70-c4ff4560353c"
+  },
+  "sha256": "c7393a714a10c01d666158c6537f6ec2cb77d2820369e207f1833085a95d7ce4"
+}

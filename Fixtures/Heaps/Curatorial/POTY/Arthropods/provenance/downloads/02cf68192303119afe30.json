@@ -1,0 +1,41 @@
+{
+  "candidate_id": "02cf68192303119afe30",
+  "source_path": "sources/02cf68192303119afe30.jpg",
+  "sha256": "b39d69919acba12026e6442164da4d551ea053bd77af8aa1f5651eef2423111a",
+  "bytes": 167238,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Pupae_of_the_parasitoid_Paracodrus_apterogynus.jpg/1920px-Pupae_of_the_parasitoid_Paracodrus_apterogynus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-005.json",
+  "metadata_sha256": "c7393a714a10c01d666158c6537f6ec2cb77d2820369e207f1833085a95d7ce4",
+  "original_sha1": "19ad27d07925c4cb8dc04fdd2bb6c1d067d55c40",
+  "pageid": 141764824,
+  "api_reported_width": 1600,
+  "api_reported_height": 900,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:24:23.648905+00:00",
+    "key": "02cf68192303119afe30",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Pupae_of_the_parasitoid_Paracodrus_apterogynus.jpg/1920px-Pupae_of_the_parasitoid_Paracodrus_apterogynus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 167238,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "6b3c31afdd4e555ee318feb676cb12d2",
+      "last-modified": "Sat, 08 Aug 2026 14:50:01 GMT",
+      "content-length": "167238",
+      "date": "Sat, 31 Oct 2026 09:12:35 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 hit/1",
+      "x-request-id": "ff80482e-11a1-45bf-9382-203e17ae707e"
+    },
+    "sha256": "b39d69919acba12026e6442164da4d551ea053bd77af8aa1f5651eef2423111a"
+  },
+  "width": 1920,
+  "height": 1080,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

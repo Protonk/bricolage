@@ -1,0 +1,41 @@
+{
+  "inventories": [
+    {
+      "path": "Heaps/Similarity/CR01/manifest.json",
+      "sha256": "df695b27cd27fa082088f5dc86cc553c158da00390aa908dfaf76a3b3448912f",
+      "inputs": 57
+    },
+    {
+      "path": "Heaps/Similarity/PS01/manifest.json",
+      "sha256": "f87e09e932310784fce7096fa34e0addbcbfdf1dda0219232d2136011f6782d3",
+      "inputs": 58
+    },
+    {
+      "path": "Heaps/Similarity/RG01/manifest.json",
+      "sha256": "8c11d19a70ae73c0a526ee05e7f9fb2c904ab39e977788395c201b94aa9d3a0c",
+      "inputs": 31
+    },
+    {
+      "path": "Heaps/Similarity/SF01/manifest.json",
+      "sha256": "29b006215f26a49b6eb774bcfeb8d29e761fd31f224bcc278b4868acbe3ca026",
+      "inputs": 48
+    },
+    {
+      "path": "Relationships/Derivatives/manifest.json",
+      "sha256": "6141c7fde28f1e2809bb1ca4df207a1ebe0788db4daaf1f489e79421fb1c038d",
+      "inputs": 183
+    },
+    {
+      "path": "Relationships/Multiviews/manifest.json",
+      "sha256": "2b77fb179dc6b3a2b537fa631f8fad528fdb2e44660a8f3e918e41a09fce5b63",
+      "inputs": 20
+    },
+    {
+      "path": "Relationships/Variants/manifest.json",
+      "sha256": "8d0fd98dd2e435661ef6d77b458050b131ed488b172204659023f080a85111df",
+      "inputs": 42
+    }
+  ],
+  "collisions": [],
+  "scope": "Existing integrated fixture manifests and source/import catalogs; exact available identities only, no visual comparison."
+}

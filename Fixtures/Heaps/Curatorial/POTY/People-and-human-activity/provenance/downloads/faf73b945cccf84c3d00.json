@@ -1,0 +1,41 @@
+{
+  "candidate_id": "faf73b945cccf84c3d00",
+  "source_path": "sources/faf73b945cccf84c3d00.jpg",
+  "sha256": "ad02edc55868ea5e57926dba19031307a60d65f648f9f7043bbbce01993e8b28",
+  "bytes": 800072,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Zara_Larsson_%40_The_Observatory_OC_05_02_2019_%2848498569766%29.jpg/1920px-Zara_Larsson_%40_The_Observatory_OC_05_02_2019_%2848498569766%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-013.json",
+  "metadata_sha256": "24c8e70ab01e8ec582d5e52a9381bd163c8e87afaa5d23d597dbaabde4c23e96",
+  "original_sha1": "6dc0df90466dd3cc5b8a769b8d3119417e7eea36",
+  "pageid": 81180419,
+  "api_reported_width": 1600,
+  "api_reported_height": 1280,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:25:53.191009+00:00",
+    "key": "faf73b945cccf84c3d00",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Zara_Larsson_%40_The_Observatory_OC_05_02_2019_%2848498569766%29.jpg/1920px-Zara_Larsson_%40_The_Observatory_OC_05_02_2019_%2848498569766%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 800072,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "58aac549e3f521dc851ac2ee6f9cb21a",
+      "last-modified": "Fri, 18 Sep 2026 08:54:18 GMT",
+      "content-length": "800072",
+      "date": "Sat, 31 Oct 2026 17:25:53 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "7dab41dc-8aeb-47a7-b4bb-3a28d49ac228"
+    },
+    "sha256": "ad02edc55868ea5e57926dba19031307a60d65f648f9f7043bbbce01993e8b28"
+  },
+  "width": 1920,
+  "height": 1536,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

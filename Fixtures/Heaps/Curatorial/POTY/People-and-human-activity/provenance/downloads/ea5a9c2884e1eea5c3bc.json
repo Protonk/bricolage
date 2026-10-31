@@ -1,0 +1,41 @@
+{
+  "candidate_id": "ea5a9c2884e1eea5c3bc",
+  "source_path": "sources/ea5a9c2884e1eea5c3bc.jpg",
+  "sha256": "ade9aa8275a2b7eb4150e2da209c518f061b4e7db20f11820ac1e06bb6f8dde0",
+  "bytes": 488457,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Handhabung%2C_Doppeldecker_H%C3%A4feli_DH-5_%28Milit%C3%A4r%29_f%C3%BCr_Aerofotogrammetrie_Aufnahmen%2C_000398822%2C_edit.jpg/1920px-Handhabung%2C_Doppeldecker_H%C3%A4feli_DH-5_%28Milit%C3%A4r%29_f%C3%BCr_Aerofotogrammetrie_Aufnahmen%2C_000398822%2C_edit.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-017.json",
+  "metadata_sha256": "9b50f100e89180ec009436a09b44072c5ec4c2e8d6bf21f4d2231f7bd1428741",
+  "original_sha1": "c74304500644f18a61edfa36ba99cb0f1e455912",
+  "pageid": 163706262,
+  "api_reported_width": 1600,
+  "api_reported_height": 1176,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:30:14.262920+00:00",
+    "key": "ea5a9c2884e1eea5c3bc",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Handhabung%2C_Doppeldecker_H%C3%A4feli_DH-5_%28Milit%C3%A4r%29_f%C3%BCr_Aerofotogrammetrie_Aufnahmen%2C_000398822%2C_edit.jpg/1920px-Handhabung%2C_Doppeldecker_H%C3%A4feli_DH-5_%28Milit%C3%A4r%29_f%C3%BCr_Aerofotogrammetrie_Aufnahmen%2C_000398822%2C_edit.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 488457,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "5776375215c851d6debe55e4c70d194b",
+      "last-modified": "Sat, 03 Oct 2026 08:36:37 GMT",
+      "content-length": "488457",
+      "date": "Sat, 31 Oct 2026 17:30:14 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "cf2e1f20-248c-412d-9129-2c81429e9e96"
+    },
+    "sha256": "ade9aa8275a2b7eb4150e2da209c518f061b4e7db20f11820ac1e06bb6f8dde0"
+  },
+  "width": 1920,
+  "height": 1411,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

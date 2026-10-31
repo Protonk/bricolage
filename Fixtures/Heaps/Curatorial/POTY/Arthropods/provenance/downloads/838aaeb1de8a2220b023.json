@@ -1,0 +1,41 @@
+{
+  "candidate_id": "838aaeb1de8a2220b023",
+  "source_path": "sources/838aaeb1de8a2220b023.jpg",
+  "sha256": "c91fc060bb57a3889ec8f322295379caec4c454c0f0002fec6785674c9d62a00",
+  "bytes": 660811,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Soldadinhos.jpg/1920px-Soldadinhos.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-003.json",
+  "metadata_sha256": "69dfdda99fcc9c144c8698acb110fda8cfb8008b5c6e093c6415d3f0441db4aa",
+  "original_sha1": "73de61483b6483a10faeedc09557fb1dcc41cbec",
+  "pageid": 49795914,
+  "api_reported_width": 1600,
+  "api_reported_height": 1071,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:29:04.740396+00:00",
+    "key": "838aaeb1de8a2220b023",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Soldadinhos.jpg/1920px-Soldadinhos.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 660811,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "01bcae32019916ed34f7185954fc45e8",
+      "last-modified": "Sat, 08 Aug 2026 03:11:57 GMT",
+      "content-length": "660811",
+      "date": "Sat, 31 Oct 2026 17:29:05 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "dae59344-6e5c-4392-b2e1-940efa79576a"
+    },
+    "sha256": "c91fc060bb57a3889ec8f322295379caec4c454c0f0002fec6785674c9d62a00"
+  },
+  "width": 1920,
+  "height": 1285,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

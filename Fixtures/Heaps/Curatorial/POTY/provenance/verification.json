@@ -1,0 +1,79 @@
+{
+  "status": "passed",
+  "contributions": [
+    {
+      "official_category": "Arthropods",
+      "validation": "passed",
+      "eligible": 237,
+      "selected": 43,
+      "acquired": 43,
+      "excluded": 194,
+      "reserve": 0,
+      "pending_review": 0,
+      "pending_acquisition": 0,
+      "shortfall": 7,
+      "failed_http_transfers": 0,
+      "post_transfer_validation_stops": 1
+    },
+    {
+      "official_category": "Constructions and buildings",
+      "validation": "passed",
+      "eligible": 248,
+      "selected": 50,
+      "acquired": 50,
+      "excluded": 40,
+      "reserve": 158,
+      "pending_review": 0,
+      "pending_acquisition": 0,
+      "shortfall": 0,
+      "failed_http_transfers": 0,
+      "post_transfer_validation_stops": 0
+    },
+    {
+      "official_category": "People and human activity",
+      "validation": "passed",
+      "eligible": 238,
+      "selected": 50,
+      "acquired": 50,
+      "excluded": 25,
+      "reserve": 163,
+      "pending_review": 0,
+      "pending_acquisition": 0,
+      "shortfall": 0,
+      "failed_http_transfers": 0,
+      "post_transfer_validation_stops": 0
+    }
+  ],
+  "combined_selected_inputs": 143,
+  "cross_contribution_identity_collisions": [],
+  "decoded_longest_edge_range": [
+    1600,
+    2373
+  ],
+  "preserved_source_bytes": 95340617,
+  "offline_unit_tests": {
+    "poty": 10,
+    "ps01": 6
+  },
+  "existing_similarity_checks": {
+    "RG01": {
+      "status": "passed",
+      "acquired": 31
+    },
+    "SF01": {
+      "status": "passed",
+      "acquired": 48,
+      "previously_pending": 11
+    },
+    "PS01": {
+      "status": "passed",
+      "acquired": 58
+    },
+    "CR01": {
+      "status": "passed",
+      "acquired": 57
+    }
+  },
+  "comparison_experiments_run": false,
+  "scope": "Offline artifact integrity and available source evidence only; no visual matching or exhaustive source-independence claim."
+}

@@ -1,0 +1,41 @@
+{
+  "candidate_id": "be62b458547c7145459f",
+  "source_path": "sources/be62b458547c7145459f.jpg",
+  "sha256": "530bbbc25b28158c5ffa74c7303ca8ca9e99ddc9252a990f1884eeed6faaed7f",
+  "bytes": 797620,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Bayerische-Staatskanzlei-M%C3%BCnchen-vom-Hofgarten-Gewitter-2025.jpg/1920px-Bayerische-Staatskanzlei-M%C3%BCnchen-vom-Hofgarten-Gewitter-2025.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-020.json",
+  "metadata_sha256": "e33dc1b17d728d1e02525930d52c5d2ff85c623a961c0839df609f9b1a87e7d3",
+  "original_sha1": "c6622577b7bb2a38a1522e7b5c95e86dfc7db456",
+  "pageid": 175660639,
+  "api_reported_width": 1600,
+  "api_reported_height": 1064,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:20:46.876514+00:00",
+    "key": "be62b458547c7145459f",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Bayerische-Staatskanzlei-M%C3%BCnchen-vom-Hofgarten-Gewitter-2025.jpg/1920px-Bayerische-Staatskanzlei-M%C3%BCnchen-vom-Hofgarten-Gewitter-2025.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 797620,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "806ed7bf438eaf8dd8415a1e394f6842",
+      "last-modified": "Thu, 27 Aug 2026 15:42:51 GMT",
+      "content-length": "797620",
+      "date": "Sat, 31 Oct 2026 17:20:47 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "bc5ac7b6-a0e1-477a-9b42-f739e4737372"
+    },
+    "sha256": "530bbbc25b28158c5ffa74c7303ca8ca9e99ddc9252a990f1884eeed6faaed7f"
+  },
+  "width": 1920,
+  "height": 1276,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

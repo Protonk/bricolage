@@ -1,0 +1,41 @@
+{
+  "candidate_id": "8fbf9aaa376758ed4cf5",
+  "source_path": "sources/8fbf9aaa376758ed4cf5.jpg",
+  "sha256": "0dce00576087494e519672853092cee784495cb5d2eabe7a4f0e7456bb82694c",
+  "bytes": 239134,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Folkloric_Tanoura_dance_performed_by_man.jpg/1920px-Folkloric_Tanoura_dance_performed_by_man.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-001.json",
+  "metadata_sha256": "f19249e0b818ea7ffb79112eee0793e665ec1b4d49aad3eee6547e4c8549bde0",
+  "original_sha1": "6efcd1c3ffb17235989e50836526a1c3604e745e",
+  "pageid": 128490442,
+  "api_reported_width": 1600,
+  "api_reported_height": 1067,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:23:13.089497+00:00",
+    "key": "8fbf9aaa376758ed4cf5",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Folkloric_Tanoura_dance_performed_by_man.jpg/1920px-Folkloric_Tanoura_dance_performed_by_man.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 239134,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "8bbb1dcaf8a3488878640eaffd4ccfe5",
+      "last-modified": "Fri, 21 Aug 2026 17:06:45 GMT",
+      "content-length": "239134",
+      "date": "Sat, 31 Oct 2026 17:23:13 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "60d8f924-8701-4c59-8ef3-481b67f1486e"
+    },
+    "sha256": "0dce00576087494e519672853092cee784495cb5d2eabe7a4f0e7456bb82694c"
+  },
+  "width": 1920,
+  "height": 1280,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

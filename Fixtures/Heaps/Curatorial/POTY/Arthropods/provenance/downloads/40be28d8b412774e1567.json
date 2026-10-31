@@ -1,0 +1,41 @@
+{
+  "candidate_id": "40be28d8b412774e1567",
+  "source_path": "sources/40be28d8b412774e1567.jpg",
+  "sha256": "8e978c5fafd682888fc66bb3a1034f2dfe5d7b7dd2bd744c3af3facdc6c9d45c",
+  "bytes": 248959,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Vesikirp_perekonnast_Kiivrik_%28Daphnia%29.jpg/1280px-Vesikirp_perekonnast_Kiivrik_%28Daphnia%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-013.json",
+  "metadata_sha256": "4cde3d9b21c79a2fbca8d5fe71dad3a80e93b23c49f527ec4f40da0ed6a5d939",
+  "original_sha1": "53e2077b58e18881f8b84118d9b553bf21acecfa",
+  "pageid": 155257015,
+  "api_reported_width": 1065,
+  "api_reported_height": 1600,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:21:11.226757+00:00",
+    "key": "40be28d8b412774e1567",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Vesikirp_perekonnast_Kiivrik_%28Daphnia%29.jpg/1280px-Vesikirp_perekonnast_Kiivrik_%28Daphnia%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 248959,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "c9cc97b01c5863fe9726982127fed6cb",
+      "last-modified": "Wed, 02 Sep 2026 17:07:18 GMT",
+      "content-length": "248959",
+      "date": "Sat, 31 Oct 2026 17:21:11 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "c8f3215a-f9d4-404a-b7d6-3d945b3603a4"
+    },
+    "sha256": "8e978c5fafd682888fc66bb3a1034f2dfe5d7b7dd2bd744c3af3facdc6c9d45c"
+  },
+  "width": 1280,
+  "height": 1923,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

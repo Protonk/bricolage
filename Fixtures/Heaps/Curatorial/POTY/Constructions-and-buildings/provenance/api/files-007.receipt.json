@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T17:15:04.449223+00:00",
+  "key": "files-007",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3AGro%C3%9Fer+Grasbrook+9+%282024%29-L1005891.jpg%7CFile%3AVia+S+Francesco+in+Padua+%282%29.jpg%7CFile%3AD%C3%BClmen%2C+Kirchspiel%2C+ehem.+Sondermunitionslager+Visbeck%2C+Bunker+26+--+2024+--+5546-50.jpg%7CFile%3ACesena+-+Piazza+del+Popolo+-+2024-09-04+20-09-36+001.jpg%7CFile%3AArt+on+Nubian+house%2C+Nagaa+Suhayl+Gharb%2C+Egypt+%282%29.jpg%7CFile%3AMuseu+do+Amanh%C3%A3+ao+anoitecer+do+Rio.jpg%7CFile%3ATraditional+hanok+house+with+wooden+doors+along+a+steeply+sloping+street+in+Bukchon+Hanok+Village+Seoul.jpg%7CFile%3ABrooklyn+Diner%2C+New+York+City+%282024%29-L1006207.jpg%7CFile%3ABangkok+-+Santichaiprakarn+Throne+Hall+at+golden+hour+Jan+2024.jpg%7CFile%3ANational+Theatre+of+Szeged.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 84580,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 17:15:04 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-xbj5w",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "af12ab32-b80c-463f-af47-6916717d00b5"
+  },
+  "sha256": "1d50d03276b8cd09223b632c47d68925ac95bc0a696fe52900a258678c03fcaa"
+}

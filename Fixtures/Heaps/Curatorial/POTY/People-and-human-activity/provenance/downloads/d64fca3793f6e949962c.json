@@ -1,0 +1,41 @@
+{
+  "candidate_id": "d64fca3793f6e949962c",
+  "source_path": "sources/d64fca3793f6e949962c.jpg",
+  "sha256": "9fefade8cec8e1719ba92bfccf44c07b1a8f13b5afaa481e6f88647bf66c3822",
+  "bytes": 585587,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/A_smiling_member_of_the_Ramnami_Samaj_%28edited%29.jpg/1920px-A_smiling_member_of_the_Ramnami_Samaj_%28edited%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-002.json",
+  "metadata_sha256": "479e3506ee97a9333e686708f6fb86fe4ffb290fdfb9164164b819f28df1db82",
+  "original_sha1": "506a68d94db0ceb7339cf50216cbe311051fedb7",
+  "pageid": 133734277,
+  "api_reported_width": 1600,
+  "api_reported_height": 1065,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:23:06.112665+00:00",
+    "key": "d64fca3793f6e949962c",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/A_smiling_member_of_the_Ramnami_Samaj_%28edited%29.jpg/1920px-A_smiling_member_of_the_Ramnami_Samaj_%28edited%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 585587,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "e2ce1f88be4cc7d57a8a0a718c8082d5",
+      "last-modified": "Sun, 09 Aug 2026 23:16:46 GMT",
+      "content-length": "585587",
+      "date": "Sat, 31 Oct 2026 17:23:06 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "6a3c4715-726f-46fc-a252-5fff3f8ad68f"
+    },
+    "sha256": "9fefade8cec8e1719ba92bfccf44c07b1a8f13b5afaa481e6f88647bf66c3822"
+  },
+  "width": 1920,
+  "height": 1277,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

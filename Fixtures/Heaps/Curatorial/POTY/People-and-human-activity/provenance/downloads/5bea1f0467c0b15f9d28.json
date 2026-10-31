@@ -1,0 +1,41 @@
+{
+  "candidate_id": "5bea1f0467c0b15f9d28",
+  "source_path": "sources/5bea1f0467c0b15f9d28.jpg",
+  "sha256": "f42426a6ebf1c74bfe83988f75edffef5719129ac5a1901c4cc306969e4437ed",
+  "bytes": 388134,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Generation_III_Extended_Cold_Weather_Clothing_System.jpg/1920px-Generation_III_Extended_Cold_Weather_Clothing_System.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-009.json",
+  "metadata_sha256": "1027fa8c2f036a2160f349d347055a799f278faccea5badb260704294e876bd9",
+  "original_sha1": "0722e335430baf135a0097c19262f0b87e0565d6",
+  "pageid": 11042293,
+  "api_reported_width": 1600,
+  "api_reported_height": 1065,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:30:03.836225+00:00",
+    "key": "5bea1f0467c0b15f9d28",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Generation_III_Extended_Cold_Weather_Clothing_System.jpg/1920px-Generation_III_Extended_Cold_Weather_Clothing_System.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 388134,
+    "headers": {
+      "content-type": "image/jpeg",
+      "last-modified": "Sun, 16 Aug 2026 01:23:36 GMT",
+      "content-length": "388134",
+      "date": "Sat, 31 Oct 2026 17:30:04 GMT",
+      "server": "envoy",
+      "etag": "511bda68836b63006ab4ba1b294e8899",
+      "x-cache": "cp4044 hit, cp4044 miss",
+      "x-request-id": "35a0b73e-b407-4381-9c1f-010ee49352fb"
+    },
+    "sha256": "f42426a6ebf1c74bfe83988f75edffef5719129ac5a1901c4cc306969e4437ed"
+  },
+  "width": 1920,
+  "height": 1278,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

@@ -1,0 +1,41 @@
+{
+  "candidate_id": "8ec3f6e6fb7a7bf3f82f",
+  "source_path": "sources/8ec3f6e6fb7a7bf3f82f.jpg",
+  "sha256": "3537922b789d202f687eb89f85d4bde6ed70afbe234eb40e693680adc6f9b2b0",
+  "bytes": 868257,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/1957_Volkswagen_Beetle%2C_export_model%2C_in_front_of_Porta_Nigra_in_Trier_2023-05-01.jpg/1920px-1957_Volkswagen_Beetle%2C_export_model%2C_in_front_of_Porta_Nigra_in_Trier_2023-05-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-002.json",
+  "metadata_sha256": "27735bbd292db0f484e1eefba3021119a041ebc9fa599ad3407c2f3ad31ad0d7",
+  "original_sha1": "aafe4605ad053e32c28d9d4621498b2364a06034",
+  "pageid": 132096928,
+  "api_reported_width": 1600,
+  "api_reported_height": 1176,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:24:49.822055+00:00",
+    "key": "8ec3f6e6fb7a7bf3f82f",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/1957_Volkswagen_Beetle%2C_export_model%2C_in_front_of_Porta_Nigra_in_Trier_2023-05-01.jpg/1920px-1957_Volkswagen_Beetle%2C_export_model%2C_in_front_of_Porta_Nigra_in_Trier_2023-05-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 868257,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "880fa3ec8336d434d4395e860940708a",
+      "last-modified": "Wed, 12 Aug 2026 08:38:48 GMT",
+      "content-length": "868257",
+      "date": "Sat, 31 Oct 2026 17:24:50 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "db9e7314-7588-416a-9e9b-c018db7b158c"
+    },
+    "sha256": "3537922b789d202f687eb89f85d4bde6ed70afbe234eb40e693680adc6f9b2b0"
+  },
+  "width": 1920,
+  "height": 1411,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

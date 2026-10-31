@@ -1,0 +1,41 @@
+{
+  "candidate_id": "119a0ca738d417c1777c",
+  "source_path": "sources/119a0ca738d417c1777c.jpg",
+  "sha256": "8ea7846f238eb2aeb2d5cb99991c7a4ea4b77fb5735a30dcda28c5d3a2f49251",
+  "bytes": 249998,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Sir_James_Dyson_CBE_FREng_FRS.jpg/1280px-Sir_James_Dyson_CBE_FREng_FRS.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-021.json",
+  "metadata_sha256": "1d3b345bc96e5c988597b0471b2911dd21ebe87d99a7fcfea38efeee3375ed3a",
+  "original_sha1": "29df13dce451a35cccee9c1b7290d6ece5998813",
+  "pageid": 43268607,
+  "api_reported_width": 1066,
+  "api_reported_height": 1600,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:25:31.719465+00:00",
+    "key": "119a0ca738d417c1777c",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Sir_James_Dyson_CBE_FREng_FRS.jpg/1280px-Sir_James_Dyson_CBE_FREng_FRS.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 249998,
+    "headers": {
+      "content-type": "image/jpeg",
+      "last-modified": "Fri, 07 Aug 2026 08:33:38 GMT",
+      "content-length": "249998",
+      "date": "Sat, 31 Oct 2026 17:25:31 GMT",
+      "server": "envoy",
+      "etag": "420e621d3e6961805bfc7e1db93698d5",
+      "x-cache": "cp4044 hit, cp4044 miss",
+      "x-request-id": "63162932-c8ea-4fa6-aee5-a4ddbf14ff1d"
+    },
+    "sha256": "8ea7846f238eb2aeb2d5cb99991c7a4ea4b77fb5735a30dcda28c5d3a2f49251"
+  },
+  "width": 1280,
+  "height": 1920,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

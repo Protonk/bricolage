@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T17:16:50.491794+00:00",
+  "key": "files-012",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3A%D0%9A%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%81+%D0%9F%D0%B8%D1%80-%D0%A1%D0%B8%D0%B4%D0%B4%D0%B8%D0%BA+4.jpg%7CFile%3A2022-08-19+European+Championships+2022+%E2%80%93+Table+Tennis+by+Sandro+Halank%E2%80%93007.jpg%7CFile%3AGotland+Grand+National+2024+128.jpg%7CFile%3ATribu+Laarim%2C+Kimotong%2C+Sud%C3%A1n+del+Sur%2C+2024-01-24%2C+DD+139.jpg%7CFile%3AFelipe+Gomes+Rio2016b.jpg%7CFile%3AR%C4%99kawka%2C+Krak%C3%B3w%2C+20230411+1601+3488.jpg%7CFile%3A20200222+FIS+NC+COC+Eisenerz+PRC+HS109+Women+Yuna+Kasai+850+4048.jpg%7CFile%3AYoram+Taharlev+Portrait.jpg%7CFile%3A1961+Cooper+T53+Donington+Park+2023+01.jpg%7CFile%3AH%C3%A9l%C3%A8ne+Carr%C3%A8re+d%E2%80%99Encausse+par+Claude+Truong-Ngoc+sept+2013.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 65224,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 17:16:50 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-kdgf6",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "454a367b-1a4e-46fe-9c8d-e4b99cdc268d"
+  },
+  "sha256": "cb611f1a5eb36db2e8b053a88bdccf42420ee3b23ac8832dc56303e1f0aea37b"
+}

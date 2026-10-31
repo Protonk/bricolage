@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T17:11:13.709441+00:00",
+  "key": "poty-gallery-script",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=MediaWiki%3APOTY-gallery.js",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 34870,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 17:11:13 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-j6g86",
+    "cache-control": "private, must-revalidate, max-age=0",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 pass",
+    "x-request-id": "a53f9fdf-e7f8-47a9-aeef-f619fe61ce2f"
+  },
+  "sha256": "275f0a294f5afab03a8a549e92f310d7120a31ae53c01c1a7e98d07586746cfe"
+}

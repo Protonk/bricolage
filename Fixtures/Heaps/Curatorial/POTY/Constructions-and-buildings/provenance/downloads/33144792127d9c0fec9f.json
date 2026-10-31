@@ -1,0 +1,41 @@
+{
+  "candidate_id": "33144792127d9c0fec9f",
+  "source_path": "sources/33144792127d9c0fec9f.jpg",
+  "sha256": "42d026f4dfae2026093d966568ed47503d6f7ec71d1433262846226daf73a6cb",
+  "bytes": 1073256,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Traditional_Kinnauri_house%2C_Sangla%2C_Himachal_Pradesh%2C_India.jpg/1920px-Traditional_Kinnauri_house%2C_Sangla%2C_Himachal_Pradesh%2C_India.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-014.json",
+  "metadata_sha256": "b0eeb3ef599d4a6081ce90363d7f26765f43c8b97979e242d35c3e8937124376",
+  "original_sha1": "b4e4c08148ca7fc5fc5814ec709da23ee91bf464",
+  "pageid": 162915802,
+  "api_reported_width": 1600,
+  "api_reported_height": 1600,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:27:20.171045+00:00",
+    "key": "33144792127d9c0fec9f",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Traditional_Kinnauri_house%2C_Sangla%2C_Himachal_Pradesh%2C_India.jpg/1920px-Traditional_Kinnauri_house%2C_Sangla%2C_Himachal_Pradesh%2C_India.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 1073256,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "d0942a5a5b5238e6118c730f9733e688",
+      "last-modified": "Fri, 18 Sep 2026 01:49:33 GMT",
+      "content-length": "1073256",
+      "date": "Sat, 31 Oct 2026 17:27:20 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "2da0401c-c61b-4b6a-8198-982333092696"
+    },
+    "sha256": "42d026f4dfae2026093d966568ed47503d6f7ec71d1433262846226daf73a6cb"
+  },
+  "width": 1920,
+  "height": 1920,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

@@ -1,0 +1,41 @@
+{
+  "candidate_id": "9ef57baae375cce8b0de",
+  "source_path": "sources/9ef57baae375cce8b0de.jpg",
+  "sha256": "6f64e7ebe443d1267f9b5d488cad46debfabef0695fec9d6fce294df649d4f2c",
+  "bytes": 720941,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Wildlife_Photographer_Giles_Laurent_in_a_ghillie_suit.jpg/1280px-Wildlife_Photographer_Giles_Laurent_in_a_ghillie_suit.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-010.json",
+  "metadata_sha256": "2e38676738983485ed68ca9078c15643e3840de13eef908831be147abce855c9",
+  "original_sha1": "9a4a2b8abc6320ff32c1bf2e8756a6856acd0df1",
+  "pageid": 120378249,
+  "api_reported_width": 1280,
+  "api_reported_height": 1600,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:28:27.309785+00:00",
+    "key": "9ef57baae375cce8b0de",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Wildlife_Photographer_Giles_Laurent_in_a_ghillie_suit.jpg/1280px-Wildlife_Photographer_Giles_Laurent_in_a_ghillie_suit.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 720941,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "f739a283ce2ddf4e8f7d1340b45175a0",
+      "last-modified": "Tue, 21 Jul 2026 11:27:44 GMT",
+      "content-length": "720941",
+      "date": "Fri, 30 Oct 2026 19:43:22 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 hit, cp4044 miss",
+      "x-request-id": "96204a32-c898-4075-877e-02b1cae93c00"
+    },
+    "sha256": "6f64e7ebe443d1267f9b5d488cad46debfabef0695fec9d6fce294df649d4f2c"
+  },
+  "width": 1280,
+  "height": 1600,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

@@ -1,0 +1,41 @@
+{
+  "candidate_id": "2719da8af825b006c6ec",
+  "source_path": "sources/2719da8af825b006c6ec.jpg",
+  "sha256": "16c50b314567b8dd504a3b417ad7e6342eb08b3a93626edbccbc673f5839ffb8",
+  "bytes": 1270583,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Maison_aux_glycines_%28Strasbourg%29.jpg/1280px-Maison_aux_glycines_%28Strasbourg%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-016.json",
+  "metadata_sha256": "5a16a422c2af94741eb2255e23d4bf9418c441f76dcc2daed8cbb4581bfb4245",
+  "original_sha1": "dc95b80961d6e1e65f5e9703aefa94d048ea6610",
+  "pageid": 164159819,
+  "api_reported_width": 969,
+  "api_reported_height": 1600,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:29:35.942062+00:00",
+    "key": "2719da8af825b006c6ec",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Maison_aux_glycines_%28Strasbourg%29.jpg/1280px-Maison_aux_glycines_%28Strasbourg%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 1270583,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "ca7bbd93609572b2a09899b658fe7a77",
+      "last-modified": "Thu, 10 Sep 2026 19:52:37 GMT",
+      "content-length": "1270583",
+      "date": "Sat, 31 Oct 2026 17:29:36 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "2312002e-92d9-497e-9cfe-d5cf410585cd"
+    },
+    "sha256": "16c50b314567b8dd504a3b417ad7e6342eb08b3a93626edbccbc673f5839ffb8"
+  },
+  "width": 1280,
+  "height": 2112,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T17:14:28.376388+00:00",
+  "key": "files-021",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3AOpen+wing+basking+position+of+Lexias+cyanipardus+%28Butler%2C+%281869%29%29+-+Great+Archduke+%28Male%29+M.jpg%7CFile%3ALive+specimen+of+Coreidae%2C+found+in+Coacalco%2C+M%C3%A9xico%2C+2025-11-21.jpg%7CFile%3A20220615+Plebejus+idas+02.jpg%7CFile%3APalpimanus+male+on+Coacalco%2C+Mexico+202511+p1.jpg%7CFile%3ACangrejo+ermita%C3%B1o+%28Dardanus+megistos%29%2C+Anilao%2C+Filipinas%2C+2023-08-23%2C+DD+198.jpg%7CFile%3AScarce+swallowtail+%28Iphiclides+podalirius+podalirius%29+Afrodisias.jpg%7CFile%3APerlmuttfalter+%28Boloria+selene%29+auf+Karde-20250713-RM-172230.jpg%7CFile%3A20220726+Aphis+farinosa+04.jpg%7CFile%3ANiobe+fritillary+%28Fabriciana+niobe+gigantea%29+underside+Babadag+2.jpg%7CFile%3ADaphnis+hypothous+hypothous+MHNT+CUT+2010+0+291+Ambon+island+Indonesia+female+dorsal.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 66324,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 17:14:28 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-8mdzg",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "7cb96166-f7c7-4fc6-ba6c-5b8cad3a2a45"
+  },
+  "sha256": "cba6758b1ce193fe9702af66518016c2b41980f3c7b56cf88873281e89b006c8"
+}

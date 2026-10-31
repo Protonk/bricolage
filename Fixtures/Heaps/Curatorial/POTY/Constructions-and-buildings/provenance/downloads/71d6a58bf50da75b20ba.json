@@ -1,0 +1,41 @@
+{
+  "candidate_id": "71d6a58bf50da75b20ba",
+  "source_path": "sources/71d6a58bf50da75b20ba.jpg",
+  "sha256": "0e00a956d241dc0d9093b3502b86f638eca482dc7d9637e3b8668652faeb2d88",
+  "bytes": 1414824,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Torhaus_der_Mainbr%C3%BCcke_in_Miltenberg.jpg/1920px-Torhaus_der_Mainbr%C3%BCcke_in_Miltenberg.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-003.json",
+  "metadata_sha256": "dbdf0e3a205b23b512e3f0d0ac3b4764d6e15377d112906a687b0bfb3f684283",
+  "original_sha1": "1b318d5293ac1dcb361119b77d114a976cdb16b7",
+  "pageid": 137464937,
+  "api_reported_width": 1599,
+  "api_reported_height": 1600,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:29:42.885955+00:00",
+    "key": "71d6a58bf50da75b20ba",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Torhaus_der_Mainbr%C3%BCcke_in_Miltenberg.jpg/1920px-Torhaus_der_Mainbr%C3%BCcke_in_Miltenberg.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 1414824,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "b2c44a17695be751716212b9a8cfc0ba",
+      "last-modified": "Fri, 28 Aug 2026 00:34:17 GMT",
+      "content-length": "1414824",
+      "date": "Sat, 31 Oct 2026 17:29:43 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "b59acc7d-cdf1-4447-8fa5-0a55d55881c0"
+    },
+    "sha256": "0e00a956d241dc0d9093b3502b86f638eca482dc7d9637e3b8668652faeb2d88"
+  },
+  "width": 1920,
+  "height": 1921,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

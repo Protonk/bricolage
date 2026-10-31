@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T17:16:25.886985+00:00",
+  "key": "files-005",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3APlay+with+a+wheel.jpg%7CFile%3AAnne-Marie-4250.jpg%7CFile%3APresident+Barack+Obama.jpg%7CFile%3AIncense+in+Vietnam.jpg%7CFile%3ABritish+singer+and+songwriter+Dua+Lipa+at+the+SWR3+New+Pop+Festival+2016.jpg%7CFile%3AEva+Nogales+in+2023+06.jpg%7CFile%3ASaddhu+at+Durbar+Square%2C+Kathmandu+%28edited%29.jpg%7CFile%3AHuman%E2%80%93canine+friendship+-+girl+hugging+her+dog+tightly+at+golden+hour+in+Laos.jpg%7CFile%3AThe+Nomads+lady.jpg%7CFile%3AAdmiring+Turkish+Lamps+on+Arab+Street.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 66746,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 17:16:26 GMT",
+    "server": "mw-api-ext.codfw.canary-6b87d95d98-rl8vt",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "fda64870-2e77-409b-8f03-0d813202d177"
+  },
+  "sha256": "d1e52e0fa2f3b3f4fc0e08ba660be0330688db80794c8a7911bbf6958709c39b"
+}

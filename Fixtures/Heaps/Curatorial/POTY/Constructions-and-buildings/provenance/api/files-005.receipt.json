@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T17:14:57.227307+00:00",
+  "key": "files-005",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3A%C3%89comus%C3%A9e+d%E2%80%99Alsace+16.jpg%7CFile%3AChapelle+armentieres+393+397+rte+nationale.jpg%7CFile%3ACape+Town+%28ZA%29%2C+Wale+Street+--+2024+--+3544.jpg%7CFile%3APiazza+della+Libert%C3%A0+-+San+Marino+-+2024+02+13+-+GT+01.jpg%7CFile%3AArc+de+Triomphe+de+l%27%C3%89toile+at+night+vertical+fix.jpg%7CFile%3AM%C3%BCnstertal+04.jpg%7CFile%3ASeaside+Sanatorium+%2840873p%29.jpg%7CFile%3AMaritimes+Museum+Hamburg+%282024%29-L1005406.jpg%7CFile%3ATrier%2C+07-12-2023+%28actm.%29+01.jpg%7CFile%3AOroville+State+Theatre+during+blue+hour+%282024%29-L1005456.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 78879,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 17:14:57 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-mkwwk",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "153e1363-bc73-497d-886d-97fd47e38dd6"
+  },
+  "sha256": "cec7b54488ccd061092b009ad5938af5e7bc28dfd36845dd1c86abe6a9112519"
+}

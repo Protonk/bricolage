@@ -1,0 +1,41 @@
+{
+  "candidate_id": "fd705471dbffa1474175",
+  "source_path": "sources/fd705471dbffa1474175.jpg",
+  "sha256": "be3a137783686d132f41a0aca64c8b0165a3eeb36b1cac38881ce2736eefea55",
+  "bytes": 628608,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/20250502_B%C3%A4ckerstra%C3%9Fe_7_Vienna_01.jpg/1920px-20250502_B%C3%A4ckerstra%C3%9Fe_7_Vienna_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-020.json",
+  "metadata_sha256": "e33dc1b17d728d1e02525930d52c5d2ff85c623a961c0839df609f9b1a87e7d3",
+  "original_sha1": "6d09a5682762d6d37e01c4e0f990f456a8ba65a3",
+  "pageid": 174932403,
+  "api_reported_width": 1600,
+  "api_reported_height": 1068,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:25:11.307998+00:00",
+    "key": "fd705471dbffa1474175",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/20250502_B%C3%A4ckerstra%C3%9Fe_7_Vienna_01.jpg/1920px-20250502_B%C3%A4ckerstra%C3%9Fe_7_Vienna_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 628608,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "8c62ebe6492b6d7e58e482e1527417e2",
+      "last-modified": "Sat, 25 Jul 2026 05:57:43 GMT",
+      "content-length": "628608",
+      "date": "Sat, 31 Oct 2026 17:25:11 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "ba429d78-b53a-4b72-ad66-266e7b2088b9"
+    },
+    "sha256": "be3a137783686d132f41a0aca64c8b0165a3eeb36b1cac38881ce2736eefea55"
+  },
+  "width": 1920,
+  "height": 1282,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

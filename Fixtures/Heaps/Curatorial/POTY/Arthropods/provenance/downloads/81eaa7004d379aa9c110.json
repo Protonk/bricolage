@@ -1,0 +1,41 @@
+{
+  "candidate_id": "81eaa7004d379aa9c110",
+  "source_path": "sources/81eaa7004d379aa9c110.jpg",
+  "sha256": "ce4eaf446fdd1a16d6b2ef5fe960663a54b69e87de6705f3251f82c78700167f",
+  "bytes": 429869,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Schwarze_Habichtsfliege_%28Dioctria_atricapilla%29.jpg/1280px-Schwarze_Habichtsfliege_%28Dioctria_atricapilla%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-005.json",
+  "metadata_sha256": "c7393a714a10c01d666158c6537f6ec2cb77d2820369e207f1833085a95d7ce4",
+  "original_sha1": "23e48692f95ec863ed0782a864abe897c8306639",
+  "pageid": 132352841,
+  "api_reported_width": 1067,
+  "api_reported_height": 1600,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:26:27.571731+00:00",
+    "key": "81eaa7004d379aa9c110",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Schwarze_Habichtsfliege_%28Dioctria_atricapilla%29.jpg/1280px-Schwarze_Habichtsfliege_%28Dioctria_atricapilla%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 429869,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "12f8bc396643dd6953cb0a5aadb33870",
+      "last-modified": "Thu, 15 Oct 2026 22:28:58 GMT",
+      "content-length": "429869",
+      "date": "Sat, 31 Oct 2026 17:26:27 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "eeb35fdf-51cb-4535-9799-f97022639332"
+    },
+    "sha256": "ce4eaf446fdd1a16d6b2ef5fe960663a54b69e87de6705f3251f82c78700167f"
+  },
+  "width": 1280,
+  "height": 1919,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

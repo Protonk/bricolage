@@ -1,0 +1,41 @@
+{
+  "candidate_id": "e9889bcab21188f64a30",
+  "source_path": "sources/e9889bcab21188f64a30.jpg",
+  "sha256": "4765a8eca63f2fef22f5cdc0ef2616e373188a88b84fc3039f5620cbac382be5",
+  "bytes": 612046,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/National_Theatre_of_Szeged.jpg/1920px-National_Theatre_of_Szeged.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-007.json",
+  "metadata_sha256": "1d50d03276b8cd09223b632c47d68925ac95bc0a696fe52900a258678c03fcaa",
+  "original_sha1": "541799ee531447e91c84b6bf8ee1354aeb8dbddb",
+  "pageid": 31279061,
+  "api_reported_width": 1600,
+  "api_reported_height": 1109,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:25:04.263807+00:00",
+    "key": "e9889bcab21188f64a30",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/National_Theatre_of_Szeged.jpg/1920px-National_Theatre_of_Szeged.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 612046,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "d11a2aadb27f4277a285f74b8dd59363",
+      "last-modified": "Mon, 28 Sep 2026 08:13:15 GMT",
+      "content-length": "612046",
+      "date": "Sat, 31 Oct 2026 17:25:04 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "4096ec17-efc4-44fa-b281-feed34735a70"
+    },
+    "sha256": "4765a8eca63f2fef22f5cdc0ef2616e373188a88b84fc3039f5620cbac382be5"
+  },
+  "width": 1920,
+  "height": 1330,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

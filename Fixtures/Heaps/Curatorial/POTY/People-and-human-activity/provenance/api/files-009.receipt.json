@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T17:16:39.841254+00:00",
+  "key": "files-009",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3ACampamento+de+ganado+de+la+tribu+Mundari%2C+Terekeka%2C+Sud%C3%A1n+del+Sur%2C+2024-01-29%2C+DD+64.jpg%7CFile%3ABeyond+the+Black%2C+European+Co-Headline+Tour%2C+Ludwigsburg+2022+%2813%29.jpg%7CFile%3ASundance+Film+Festival+2024+-+Mitzi+Akaha-104A3329.jpg%7CFile%3ATribu+Laarim%2C+Kimotong%2C+Sud%C3%A1n+del+Sur%2C+2024-01-24%2C+DD+123.jpg%7CFile%3ATribu+Lopit%2C+Imehejek%2C+Sud%C3%A1n+del+Sur%2C+2024-01-22%2C+DD+06.jpg%7CFile%3AMINUKKA%2C+the+feminine+character+of+Kathakali.jpg%7CFile%3AGeneration+III+Extended+Cold+Weather+Clothing+System.jpg%7CFile%3ATribu+Laarim%2C+Kimotong%2C+Sud%C3%A1n+del+Sur%2C+2024-01-24%2C+DD+156.jpg%7CFile%3ACampamento+de+ganado+de+la+tribu+Mundari%2C+Terekeka%2C+Sud%C3%A1n+del+Sur%2C+2024-01-28%2C+DD+157.jpg%7CFile%3ABeyond+the+Black%2C+Dancing+In+The+Dark+Tour%2C+Stuttgart+2024+%2828%29+%28cropped%29.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 65416,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 17:16:39 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-htd7w",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "3113e2d2-1155-443d-bb12-c5a93062f956"
+  },
+  "sha256": "1027fa8c2f036a2160f349d347055a799f278faccea5badb260704294e876bd9"
+}

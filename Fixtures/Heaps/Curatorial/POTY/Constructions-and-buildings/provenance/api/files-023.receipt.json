@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T17:16:01.433209+00:00",
+  "key": "files-023",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3AHumayun%E2%80%99s+Tomb+mirrored+in+still+waters%2C+with+three+pigeons+completing+the+frame+%E2%80%94+one+sipping+gently%2C+the+others+standing+guard.jpg%7CFile%3A20210611+Waldstra%C3%9Fe+44+Saarbr%C3%BCcken+02.jpg%7CFile%3AHannover+-+Anzeiger-Hochhaus+-+Fassade+%280321%29.jpg%7CFile%3AKlosterplatz+3a+in+Bielefeld+%282%29.jpg%7CFile%3AMoscow+-+2025+-+Facade+of+Big+Theatre+%281%29.jpg%7CFile%3APointe+Saint+Mathieu+-+Phare.jpg%7CFile%3AWredes+passage+November+2025+01.jpg%7CFile%3AEntrance+to+Dolmabah%C3%A7e+Palace%2C+Architectural+Panorama.jpg%7CFile%3AGrand+Kremlin+Palace+in+summer+sunset+light+2025-8.jpg%7CFile%3A%D0%A2%D0%B8%D0%BC+%D0%90%D0%BB%D0%BB%D0%B0%D0%BA%D1%83%D0%BB%D0%B8+%D0%A5%D0%B0%D0%BD%2C+%D0%A5%D0%B8%D0%B2%D0%B0+%28Allakuli+Covered+Bazaar+in+Khiva%2C+Ollo-qulixon+timi%29.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 65627,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 17:16:01 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-r78ww",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "a405eb2b-f9da-4034-976b-572c0670219a"
+  },
+  "sha256": "32b7d49951bd3c229ceda6288e003afecfc668c9b6e120f1a8c6d127de65e4ab"
+}

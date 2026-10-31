@@ -1,0 +1,41 @@
+{
+  "candidate_id": "e98942b6c050c8d070eb",
+  "source_path": "sources/e98942b6c050c8d070eb.jpg",
+  "sha256": "be10ba98ecdc5e9838709fac80d280da7c6ce41898b2287de37361ed84a4d317",
+  "bytes": 886488,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Town_Hall%2C_Yarmouth%2C_England-LCCN2002708291_-_Restoration.jpg/1920px-Town_Hall%2C_Yarmouth%2C_England-LCCN2002708291_-_Restoration.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-001.json",
+  "metadata_sha256": "dfad3b8d53a9711edc21baab79d47acd3bed40891ed3abb34d40143ea014e7e0",
+  "original_sha1": "b48aa1b32df5b60f4a490469cbd1450a3169b0dd",
+  "pageid": 130551471,
+  "api_reported_width": 1600,
+  "api_reported_height": 1180,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:27:33.920645+00:00",
+    "key": "e98942b6c050c8d070eb",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Town_Hall%2C_Yarmouth%2C_England-LCCN2002708291_-_Restoration.jpg/1920px-Town_Hall%2C_Yarmouth%2C_England-LCCN2002708291_-_Restoration.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 886488,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "f86a111ab97f48eefd9513c172fcb685",
+      "last-modified": "Mon, 21 Sep 2026 06:26:58 GMT",
+      "content-length": "886488",
+      "date": "Sat, 31 Oct 2026 17:27:34 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "3f4c68e1-22f3-45dd-a5e2-7f587c307521"
+    },
+    "sha256": "be10ba98ecdc5e9838709fac80d280da7c6ce41898b2287de37361ed84a4d317"
+  },
+  "width": 1920,
+  "height": 1416,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

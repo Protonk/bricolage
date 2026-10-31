@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T17:13:34.314042+00:00",
+  "key": "files-006",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3ASouthern+armyworm+%28Spodoptera+eridania%29%2C+eggs+2014-06-06-14.28.04+ZS+PMax+-+USGS+BIML.jpg%7CFile%3AOstracod3.jpg%7CFile%3AHydracarina2.jpg%7CFile%3ADaphnia.sp.jpg%7CFile%3ASimoOstra.jpg%7CFile%3A%D0%A1%D0%BF%D0%B0%D1%80%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5+%D0%BA%D1%82%D1%8B%D1%80%D0%B5%D0%B9.jpg%7CFile%3AGro%C3%9Fer+Blaupfeil.jpg%7CFile%3ASimocephalus3.jpg%7CFile%3AM%C3%BCtsik.jpg%7CFile%3AMosquito+larva2.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 54460,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 17:13:34 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-r5n67",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "c5184ac4-27ec-4557-91c0-a95b296df6ca"
+  },
+  "sha256": "731f53d30c32c8fc274f0073b0cc94347074149f6cf15308b49562ec6467a190"
+}

@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T17:15:18.465383+00:00",
+  "key": "files-011",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3A%C3%89comus%C3%A9e+d%E2%80%99Alsace+98.jpg%7CFile%3AWater+reflection+of+canal+houses+at+blue+hour+in+Damrak+Amsterdam+the+Netherlands.jpg%7CFile%3AGreat+Hall%2C+Washington+Union+Station+%282024%29-L1005585.jpg%7CFile%3AImperial+Hall%2C+Residenz+Munich%2C+Germany.jpg%7CFile%3ABaths+of+Maria+de+Padilla%2C+Alc%C3%A1zar+of+Seville.jpg%7CFile%3AAntiquarium%2C+M%C3%BCnchner+Residenz.jpg%7CFile%3AReception+lounge+at+Amantaka+luxury+Resort+%26+Hotel+at+blue+hour+in+Luang+Prabang+Laos.jpg%7CFile%3ANikiszowiec%2C+courtyard+with+chimneys%2C+2024-08-09.jpg%7CFile%3AColorful+canal+houses+at+golden+hour+in+Damrak+avenue+Amsterdam+the+Netherlands.jpg%7CFile%3AMysuru+Palace+-+Left+Front+Towers.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 74289,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 17:15:18 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-xfppv",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "a7927cf7-8298-46b0-94e8-8be4db419dce"
+  },
+  "sha256": "ba564b5a829db9ee10beb6b6f920779036d71f4951a0fff882de0f6a3baacdaa"
+}

@@ -1,0 +1,41 @@
+{
+  "candidate_id": "e31c7870d9ecbc52c789",
+  "source_path": "sources/e31c7870d9ecbc52c789.jpg",
+  "sha256": "a758af1a4a20d74399164a4c16cc293311b26bcb834d45535cdd0f85572ba978",
+  "bytes": 1115323,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Stage_20_Tour_de_France_2024_Col_de_la_Couillole_40.jpg/1920px-Stage_20_Tour_de_France_2024_Col_de_la_Couillole_40.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-021.json",
+  "metadata_sha256": "1d3b345bc96e5c988597b0471b2911dd21ebe87d99a7fcfea38efeee3375ed3a",
+  "original_sha1": "2bf99c7fba86c892f96c7a2b1de6714549969c6a",
+  "pageid": 150733077,
+  "api_reported_width": 1600,
+  "api_reported_height": 1191,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:30:28.309047+00:00",
+    "key": "e31c7870d9ecbc52c789",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Stage_20_Tour_de_France_2024_Col_de_la_Couillole_40.jpg/1920px-Stage_20_Tour_de_France_2024_Col_de_la_Couillole_40.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 1115323,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "f070ac4bdaff6da957867247ac14a6a2",
+      "last-modified": "Fri, 07 Aug 2026 18:27:22 GMT",
+      "content-length": "1115323",
+      "date": "Sat, 31 Oct 2026 17:30:28 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "592b636d-4c8e-45b0-87c6-a191f6542c19"
+    },
+    "sha256": "a758af1a4a20d74399164a4c16cc293311b26bcb834d45535cdd0f85572ba978"
+  },
+  "width": 1920,
+  "height": 1430,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

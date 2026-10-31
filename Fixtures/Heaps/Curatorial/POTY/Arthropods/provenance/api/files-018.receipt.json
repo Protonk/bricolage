@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T17:14:17.299639+00:00",
+  "key": "files-018",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3ATiger+bee+fly+%2872092%29.jpg%7CFile%3ATwice+stabbed+stink+bug+%2821281%29.jpg%7CFile%3AWasp+spider+%28Argiope+bruennichi%29+female+ventral+Hrdovicka.jpg%7CFile%3AGoldenrod+crab+spider+%28Misumena+vatia%29+on+African+daisy+%28Arctotis%29%2C+Ponte+de+Sor%2C+Portugal+%28approx.+GPS+location%29+julesvernex2.jpg%7CFile%3AMonarch+butterfly+male+%2852341%29.jpg%7CFile%3AClose+wing+puddling+of+Delias+pasithoe+%28Linnaeus%2C+1767%29+-+Red-base+Jezebel+WLB+MG+4879.jpg%7CFile%3AOpenwing+position+of+Parasarpa+dudu+%28Westwood%2C+-1850-%29+-+White+Commodore.jpg%7CFile%3AZabulon+skipper+%2852240%29.jpg%7CFile%3AOpen+wing+basking+of+Papilio+agenor+Linnaeus%2C+1758+-+Great+Mormon+WLB+DSC9073.jpg%7CFile%3ABlue+dasher+with+water+mites+%2871998%29.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 58968,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 17:14:17 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-tfsx2",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "61ad9b59-87e8-489b-a816-1aad581c32d7"
+  },
+  "sha256": "9bd97de7726929986d951f8efe0bcb140e61294edd075f78b3b0991665009653"
+}

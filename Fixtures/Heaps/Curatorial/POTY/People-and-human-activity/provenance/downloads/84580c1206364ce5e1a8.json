@@ -1,0 +1,41 @@
+{
+  "candidate_id": "84580c1206364ce5e1a8",
+  "source_path": "sources/84580c1206364ce5e1a8.jpg",
+  "sha256": "f021604e02652a5a44fa9469322a8797e6ed30cb2beaaff20cce839a663b15e1",
+  "bytes": 812292,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Child_working_selling_vegetables_in_downtown_Maracaibo.jpg/1920px-Child_working_selling_vegetables_in_downtown_Maracaibo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-003.json",
+  "metadata_sha256": "12229cede65a55391d486adc5290b81f01bb20fe630a5e34efb2d6f79119b6e0",
+  "original_sha1": "2e046efb90a722faab7c04616bf4d2df2c175ae5",
+  "pageid": 25186690,
+  "api_reported_width": 1600,
+  "api_reported_height": 1197,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:28:30.751236+00:00",
+    "key": "84580c1206364ce5e1a8",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Child_working_selling_vegetables_in_downtown_Maracaibo.jpg/1920px-Child_working_selling_vegetables_in_downtown_Maracaibo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 812292,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "8543a243fcd21db79bc6cf1e52f0fe92",
+      "last-modified": "Wed, 09 Sep 2026 20:17:02 GMT",
+      "content-length": "812292",
+      "date": "Sat, 31 Oct 2026 17:28:30 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "e38f8e42-e50d-4c91-b97b-c3641bbf307e"
+    },
+    "sha256": "f021604e02652a5a44fa9469322a8797e6ed30cb2beaaff20cce839a663b15e1"
+  },
+  "width": 1920,
+  "height": 1436,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

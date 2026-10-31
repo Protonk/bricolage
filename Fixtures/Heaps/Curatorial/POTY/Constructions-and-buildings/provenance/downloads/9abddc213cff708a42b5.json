@@ -1,0 +1,41 @@
+{
+  "candidate_id": "9abddc213cff708a42b5",
+  "source_path": "sources/9abddc213cff708a42b5.jpg",
+  "sha256": "09d6573d3e6746326b49319f4675d76fe22bbd055f57dfb3ac135910bf17ffa5",
+  "bytes": 1151099,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Art_on_Nubian_house%2C_Nagaa_Suhayl_Gharb%2C_Egypt_%282%29.jpg/1920px-Art_on_Nubian_house%2C_Nagaa_Suhayl_Gharb%2C_Egypt_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-007.json",
+  "metadata_sha256": "1d50d03276b8cd09223b632c47d68925ac95bc0a696fe52900a258678c03fcaa",
+  "original_sha1": "bfa986c9f7dc0a709230a78810643e0307e2e9c2",
+  "pageid": 152471678,
+  "api_reported_width": 1600,
+  "api_reported_height": 1591,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:24:57.000536+00:00",
+    "key": "9abddc213cff708a42b5",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Art_on_Nubian_house%2C_Nagaa_Suhayl_Gharb%2C_Egypt_%282%29.jpg/1920px-Art_on_Nubian_house%2C_Nagaa_Suhayl_Gharb%2C_Egypt_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 1151099,
+    "headers": {
+      "content-type": "image/jpeg",
+      "last-modified": "Mon, 07 Sep 2026 23:02:24 GMT",
+      "content-length": "1151099",
+      "date": "Sat, 31 Oct 2026 17:24:57 GMT",
+      "server": "envoy",
+      "etag": "1f817aad9ee53d3e4bfafa58e5e62d58",
+      "x-cache": "cp4044 hit, cp4044 miss",
+      "x-request-id": "73ef0805-8119-4f5c-8ac7-bdd301d805ef"
+    },
+    "sha256": "09d6573d3e6746326b49319f4675d76fe22bbd055f57dfb3ac135910bf17ffa5"
+  },
+  "width": 1920,
+  "height": 1909,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

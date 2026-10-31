@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T17:16:36.324440+00:00",
+  "key": "files-008",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3ATribu+Laarim%2C+Kimotong%2C+Sud%C3%A1n+del+Sur%2C+2024-01-25%2C+DD+30.jpg%7CFile%3ATribu+Laarim%2C+Kimotong%2C+Sud%C3%A1n+del+Sur%2C+2024-01-25%2C+DD+19.jpg%7CFile%3ATribu+Laarim%2C+Kimotong%2C+Sud%C3%A1n+del+Sur%2C+2024-01-24%2C+DD+33.jpg%7CFile%3AHonor+guard+at+Mausoleum+of+Mohammed+V%2C+Rabat%2C+Morocco.jpg%7CFile%3ALamp+maker%2C+Medina+of+Marrakech.jpg%7CFile%3ASikh+man%2C+Agra+04.jpg%7CFile%3ATribu+Laarim%2C+Kimotong%2C+Sud%C3%A1n+del+Sur%2C+2024-01-25%2C+DD+23.jpg%7CFile%3AGayle+%40+El+Rey+10+25+2023+%2853423439841%29.jpg%7CFile%3ATribu+Laarim%2C+Kimotong%2C+Sud%C3%A1n+del+Sur%2C+2024-01-23%2C+DD+52.jpg%7CFile%3AKathakali+of+Kerala+at+Nishagandhi+dance+festival+2024+%28266%29.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 59907,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 17:16:36 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-ktrpw",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "bea4fbd3-fce6-4415-a0a0-c922dbb46d9e"
+  },
+  "sha256": "92e6ee910fa644142f4f4a700fca8e11d6977808479e259ef3fc7cb0d8384374"
+}

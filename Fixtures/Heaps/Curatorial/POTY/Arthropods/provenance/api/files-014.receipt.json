@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T17:14:02.894739+00:00",
+  "key": "files-014",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3AOpen+wing+Basking+of+Coladenia+indrani+%28Moore%2C+1866%29+-+Tricolour+Pied+Flat+WLB.jpg%7CFile%3AHyles+dahlii+MHNT+CUT+2010+0+133+Corse+France+male+dorsal.jpg%7CFile%3AMulticoloured+monkey+grasshoppers+%28Homeomastax+sp.%29+Sumaco.jpg%7CFile%3AGolden+orb-weavers+%28Nephila+pilipes%29+female+and+male+Double+Haven.jpg%7CFile%3AHufeisen-Azurjungfern+%28Coenagrion+puella%29.jpg%7CFile%3AWolf+spider+%28Aglaoctenus+castaneus%29+on+web+Rio+Napo.jpg%7CFile%3AEnyo+gorgon+MHNT+CUT+2010+0+527+-+Guapi-mirim%2C+Estado+do+Rio%2C+Brazil+-+male+dorsal.jpg%7CFile%3AClose+wing+mud-puddling+position+of+Lamproptera+curius+%28Fabricius%2C+1787%29+-+White+Dragontail+%2849435%29.jpg%7CFile%3AClose+wing+mud-puddling+position+of+Papilio+helenus+%28Linnaeus%2C+1758%29+-+Red+Helen.jpg%7CFile%3AClose+wing+Basking+of+Ideopsis+similis+%28Linnaeus%2C+1758%29+-+Blue+Glassy+Tiger+WLB.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 61691,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 17:14:03 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-mz6bw",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "247a2c96-5c8c-4546-af36-b53a2ddf0436"
+  },
+  "sha256": "c615a3c820e9c3d0500de7690d0503a4e49da8f6732bea398e29195716315916"
+}

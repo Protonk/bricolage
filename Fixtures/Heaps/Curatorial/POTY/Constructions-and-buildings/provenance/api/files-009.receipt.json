@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T17:15:11.458658+00:00",
+  "key": "files-009",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3AGiza+Pyramids+during+%22Forever+is+Now%22+exhibition.jpg%7CFile%3AMyeongjeongjeon+seen+through+the+wooden+Gate+Hyehwamun+at+Changgyeonggung+Palace+in+Seoul.jpg%7CFile%3AUnion+Bank+Tower%2C+Portland+%282024%29-L1006272.jpg%7CFile%3AKelly%E2%80%99s+Olympian+Bar+%26+Diner%2C+Portland+%282024%29-L1006267.jpg%7CFile%3ANatural+History+Museum+London+South+Facade+2020+01.jpg%7CFile%3AD%C3%BClmen%2C+Kirchspiel%2C+ehem.+Sondermunitionslager+Visbeck%2C+Bunker+26+--+2024+--+5531-5.jpg%7CFile%3A%D0%A2%D1%83%D0%BB%D1%8C%D1%87%D0%B8%D0%BD.+%D0%A1%D1%82%D0%B0%D1%80%D0%B8%D0%B9+%D0%BF%D0%B0%D0%BB%D0%B0%D1%86+%28%D0%9F%D0%BE%D1%82%D0%BE%D1%86%D1%8C%D0%BA%D0%B8%D1%85%29.jpg%7CFile%3APlace+Jeanne+d%27Arc+in+Neufchateau+%282%29.jpg%7CFile%3AZernez%2C+Unterengadin%2C+Graub%C3%BCnden.+20-09-2023.+%28actm.%29+71.jpg%7CFile%3AAmphitheatre+%28Alba+Fucens%29.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 86914,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 17:15:11 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-49m55",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "ff09cc06-8bd8-4e22-b4cf-886b3168ed3e"
+  },
+  "sha256": "a4548c598cf03eb434d3e9926095eb0b9c5b5c6b6c8b17e02bdec7919b563284"
+}

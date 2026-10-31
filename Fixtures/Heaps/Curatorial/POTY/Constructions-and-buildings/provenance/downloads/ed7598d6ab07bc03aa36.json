@@ -1,0 +1,41 @@
+{
+  "candidate_id": "ed7598d6ab07bc03aa36",
+  "source_path": "sources/ed7598d6ab07bc03aa36.jpg",
+  "sha256": "8122eccd9f93ed4418b96626b5d7996097849fb38cd5e744725a557c00a8c252",
+  "bytes": 1216798,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Monasterio_de_El_Escorial_en_Madrid.jpg/1920px-Monasterio_de_El_Escorial_en_Madrid.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-013.json",
+  "metadata_sha256": "a476dcbb21c6197b33c74d97c20649766003402a2dffbc6cff7c37719ce7a39e",
+  "original_sha1": "74d6f564f04ed0dfc0eecb84eef3af046b023b27",
+  "pageid": 71515624,
+  "api_reported_width": 1600,
+  "api_reported_height": 1067,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:24:42.960662+00:00",
+    "key": "ed7598d6ab07bc03aa36",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Monasterio_de_El_Escorial_en_Madrid.jpg/1920px-Monasterio_de_El_Escorial_en_Madrid.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 1216798,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "d2f6b20a5de633774df6aeb37daf6b3e",
+      "last-modified": "Fri, 14 Aug 2026 03:58:01 GMT",
+      "content-length": "1216798",
+      "date": "Sat, 31 Oct 2026 14:23:29 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 hit/1",
+      "x-request-id": "69204126-b602-4fc7-bef7-9f5ea2134f06"
+    },
+    "sha256": "8122eccd9f93ed4418b96626b5d7996097849fb38cd5e744725a557c00a8c252"
+  },
+  "width": 1920,
+  "height": 1280,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

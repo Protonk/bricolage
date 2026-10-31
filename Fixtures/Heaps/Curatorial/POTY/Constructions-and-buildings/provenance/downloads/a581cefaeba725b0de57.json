@@ -1,0 +1,41 @@
+{
+  "candidate_id": "a581cefaeba725b0de57",
+  "source_path": "sources/a581cefaeba725b0de57.jpg",
+  "sha256": "e83398e1acfe2884e2fef28fd6d14926cb3f16d54a642647d2b70b7d5a5d7dc6",
+  "bytes": 413651,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Entrance_to_Dolmabah%C3%A7e_Palace%2C_Architectural_Panorama.jpg/1920px-Entrance_to_Dolmabah%C3%A7e_Palace%2C_Architectural_Panorama.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-023.json",
+  "metadata_sha256": "32b7d49951bd3c229ceda6288e003afecfc668c9b6e120f1a8c6d127de65e4ab",
+  "original_sha1": "2539653aaa29b8472f875c0ac00964db1f2b21a9",
+  "pageid": 176903241,
+  "api_reported_width": 1600,
+  "api_reported_height": 523,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:27:30.610170+00:00",
+    "key": "a581cefaeba725b0de57",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Entrance_to_Dolmabah%C3%A7e_Palace%2C_Architectural_Panorama.jpg/1920px-Entrance_to_Dolmabah%C3%A7e_Palace%2C_Architectural_Panorama.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 413651,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "99f1d65a088a6082d43d7515afac3ac9",
+      "last-modified": "Sun, 27 Sep 2026 08:39:16 GMT",
+      "content-length": "413651",
+      "date": "Sat, 31 Oct 2026 07:44:09 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 hit/1",
+      "x-request-id": "a2af12c6-cd8b-4974-b1d3-c7d7dc069b05"
+    },
+    "sha256": "e83398e1acfe2884e2fef28fd6d14926cb3f16d54a642647d2b70b7d5a5d7dc6"
+  },
+  "width": 1920,
+  "height": 628,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

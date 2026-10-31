@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T17:13:45.212742+00:00",
+  "key": "files-009",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3ADarter+August+2024-2.jpg%7CFile%3AEastern+amberwing+%2873102%29.jpg%7CFile%3A%D0%97%D0%B5%D0%BB%D0%B5%D0%BD%D1%8B%D0%B9+%D0%B4%D0%BE%D0%BB%D0%B3%D0%BE%D0%BD%D0%BE%D1%81%D0%B8%D0%BA.jpg%7CFile%3AClose+wing+mud-puddling+and+peeing+activity+of+Papilio+krishna+%28Moore%2C1858%29+-+Krishna+Peacock.jpg%7CFile%3ACamar%C3%B3n+%28Ancylocaris+brevicarpalis%29%2C+Zanz%C3%ADbar%2C+Tanzania%2C+2024-05-30%2C+DD+32.jpg%7CFile%3AMating+pair+of+Pseudozizeeria+maha+%28Kollar%2C+1844%29+-+Pale+Grass+Blue+%284%29+WLB.jpg%7CFile%3A%D0%9B%D0%B8%D1%87%D0%B8%D0%BD%D0%BA%D0%B0+%D0%B1%D0%BE%D0%B6%D0%BA%D0%BE%D1%80%D0%BE%D0%B2%D0%BA%D0%B8.jpg%7CFile%3AIps+typographus+%28female%29.jpg%7CFile%3AClose+wing+Basking+of+Athyma+perius+%28Linnaeus%2C+1758%29+-+Common+Sergeant+%284%29+WLB.jpg%7CFile%3AMonarch+caterpillar+%2823229%29.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 53945,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 17:13:45 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-dkpz2",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "343b68d6-152c-4a8c-bfe9-20babad2ffa4"
+  },
+  "sha256": "a9eebce294715052ba1c2bfe711ae3d1bd4e4052649ac470ff9ae3cab1434cf2"
+}

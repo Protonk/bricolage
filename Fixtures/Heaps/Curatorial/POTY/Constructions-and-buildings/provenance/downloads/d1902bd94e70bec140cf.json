@@ -1,0 +1,41 @@
+{
+  "candidate_id": "d1902bd94e70bec140cf",
+  "source_path": "sources/d1902bd94e70bec140cf.jpg",
+  "sha256": "051696ebbaa84388b2dfa3b32d3a5b3d09daf7c2247f7d238b1c7e954a9ad3a8",
+  "bytes": 428435,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Jinwan_Arts_Center_dllu_01.jpg/1920px-Jinwan_Arts_Center_dllu_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-013.json",
+  "metadata_sha256": "a476dcbb21c6197b33c74d97c20649766003402a2dffbc6cff7c37719ce7a39e",
+  "original_sha1": "0c7ef83b02ba11dfbf579bbcaba3b85a0766c074",
+  "pageid": 161428923,
+  "api_reported_width": 1600,
+  "api_reported_height": 1192,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:29:25.587531+00:00",
+    "key": "d1902bd94e70bec140cf",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Jinwan_Arts_Center_dllu_01.jpg/1920px-Jinwan_Arts_Center_dllu_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 428435,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "819546592dc29ec7aa912481c598c3d1",
+      "last-modified": "Wed, 12 Aug 2026 23:47:48 GMT",
+      "content-length": "428435",
+      "date": "Sat, 31 Oct 2026 17:29:25 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "f9e3c455-97c9-46a0-816f-168a174c63fc"
+    },
+    "sha256": "051696ebbaa84388b2dfa3b32d3a5b3d09daf7c2247f7d238b1c7e954a9ad3a8"
+  },
+  "width": 1920,
+  "height": 1430,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T17:14:13.510567+00:00",
+  "key": "files-017",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3ANorthern+flatid+planthopper+nymph+%2881276%29.jpg%7CFile%3ASpotted+longhorn+%28Rutpela+maculata%29+female+on+common+valerian+%28Valeriana+officinalis%29+Ruggeller+Riet.jpg%7CFile%3AFamiliar+bluet+%2821468%29.jpg%7CFile%3APeacock+%28Aglais+io%29+caterpillar+Ruggeller+Riet.jpg%7CFile%3ASchwalbenschwanz+%28Papilio+machaon%29+Raupe-20250724-RM-101941.jpg%7CFile%3APeacock+%28Aglais+io%29+caterpillars+on+stinging+nettle+%28Urtica+dioica%29+Ruggeller+Riet.jpg%7CFile%3ACommon+blue+%28Polyommatus+icarus%29+male+Turna.jpg%7CFile%3APipevine+swallowtail+%2872226%29.jpg%7CFile%3ATransparent+burnets+%28Zygaena+purpuralis%29+mating+Babadag.jpg%7CFile%3ASamoan+blue+tiger+%28Tirumala+hamata+melittula%29+male+underside+Upolu.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 65330,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 17:14:13 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-nrhll",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "3861ce3f-c727-40d2-a399-33b4118a68a3"
+  },
+  "sha256": "7bc3464388b1878aafaf9db836db168a130d8287ea0743d0bc0bcd011a9715f5"
+}

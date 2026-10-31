@@ -1,0 +1,41 @@
+{
+  "candidate_id": "e0aa5caef05361af50aa",
+  "source_path": "sources/e0aa5caef05361af50aa.jpg",
+  "sha256": "5088ceffecae4ecdae74b9646c36b1afbf435d3f4e0aea7aec0f71e733f0baab",
+  "bytes": 341416,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Tyler_Connolly_performing_with_Theory_of_a_Deadman%2C_Hogs_for_Hospice%2C_Leamington%2C_Ontario%2C_2025-08-01_66.jpg/1920px-Tyler_Connolly_performing_with_Theory_of_a_Deadman%2C_Hogs_for_Hospice%2C_Leamington%2C_Ontario%2C_2025-08-01_66.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-021.json",
+  "metadata_sha256": "1d3b345bc96e5c988597b0471b2911dd21ebe87d99a7fcfea38efeee3375ed3a",
+  "original_sha1": "af369fbef7fdd9d9122cd95e6ca5ed5dd132e9a5",
+  "pageid": 171514108,
+  "api_reported_width": 1600,
+  "api_reported_height": 1143,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:23:02.719307+00:00",
+    "key": "e0aa5caef05361af50aa",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Tyler_Connolly_performing_with_Theory_of_a_Deadman%2C_Hogs_for_Hospice%2C_Leamington%2C_Ontario%2C_2025-08-01_66.jpg/1920px-Tyler_Connolly_performing_with_Theory_of_a_Deadman%2C_Hogs_for_Hospice%2C_Leamington%2C_Ontario%2C_2025-08-01_66.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 341416,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "2052ccc0be249d519d9926e1fd691a67",
+      "last-modified": "Wed, 03 Jun 2026 10:35:50 GMT",
+      "content-length": "341416",
+      "date": "Sat, 31 Oct 2026 17:23:02 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "6c7ffec2-3977-470c-87b2-dc5982667b0e"
+    },
+    "sha256": "5088ceffecae4ecdae74b9646c36b1afbf435d3f4e0aea7aec0f71e733f0baab"
+  },
+  "width": 1920,
+  "height": 1371,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

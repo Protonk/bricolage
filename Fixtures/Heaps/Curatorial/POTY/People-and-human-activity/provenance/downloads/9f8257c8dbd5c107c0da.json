@@ -1,0 +1,41 @@
+{
+  "candidate_id": "9f8257c8dbd5c107c0da",
+  "source_path": "sources/9f8257c8dbd5c107c0da.jpg",
+  "sha256": "9ff4cc3cf9acd838c2909481c120c856d8e9d219d16a3e19307b74af5777cf2c",
+  "bytes": 635574,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Sikh_man%2C_Agra_04.jpg/1280px-Sikh_man%2C_Agra_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-008.json",
+  "metadata_sha256": "92e6ee910fa644142f4f4a700fca8e11d6977808479e259ef3fc7cb0d8384374",
+  "original_sha1": "2cb06b102cbf5ee2a4f15b522f3b1587bba86fb0",
+  "pageid": 22032231,
+  "api_reported_width": 1097,
+  "api_reported_height": 1600,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:27:55.675447+00:00",
+    "key": "9f8257c8dbd5c107c0da",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Sikh_man%2C_Agra_04.jpg/1280px-Sikh_man%2C_Agra_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 635574,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "28876554bad3d77dd0ec546a7e937616",
+      "last-modified": "Thu, 03 Sep 2026 06:13:11 GMT",
+      "content-length": "635574",
+      "date": "Sat, 31 Oct 2026 17:27:56 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "907cf0bb-ba8f-442b-bc46-586b999b3bdc"
+    },
+    "sha256": "9ff4cc3cf9acd838c2909481c120c856d8e9d219d16a3e19307b74af5777cf2c"
+  },
+  "width": 1280,
+  "height": 1867,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

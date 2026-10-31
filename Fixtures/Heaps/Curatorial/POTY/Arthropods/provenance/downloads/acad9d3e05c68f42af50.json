@@ -1,0 +1,41 @@
+{
+  "candidate_id": "acad9d3e05c68f42af50",
+  "source_path": "sources/acad9d3e05c68f42af50.jpg",
+  "sha256": "7423e9630c0d29ef497e52af93d58271d826f763eb79eb4f44d14b183fc60cf4",
+  "bytes": 263301,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Coccinella_in_Parc_du_Bois-de-Coulonge_uncut_version.jpg/1920px-Coccinella_in_Parc_du_Bois-de-Coulonge_uncut_version.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-003.json",
+  "metadata_sha256": "69dfdda99fcc9c144c8698acb110fda8cfb8008b5c6e093c6415d3f0441db4aa",
+  "original_sha1": "00293f4543b0aa6a342fc3b61b85274e7ba3a0bb",
+  "pageid": 137611688,
+  "api_reported_width": 1585,
+  "api_reported_height": 1600,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:26:52.004342+00:00",
+    "key": "acad9d3e05c68f42af50",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Coccinella_in_Parc_du_Bois-de-Coulonge_uncut_version.jpg/1920px-Coccinella_in_Parc_du_Bois-de-Coulonge_uncut_version.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 263301,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "6df87edb7aeb702acdaffb86380ea2d8",
+      "last-modified": "Wed, 09 Sep 2026 06:13:10 GMT",
+      "content-length": "263301",
+      "date": "Sat, 31 Oct 2026 17:26:52 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "42db3a24-dd5b-4199-9ef8-927ce1404432"
+    },
+    "sha256": "7423e9630c0d29ef497e52af93d58271d826f763eb79eb4f44d14b183fc60cf4"
+  },
+  "width": 1920,
+  "height": 1938,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

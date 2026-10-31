@@ -70,7 +70,9 @@ self-contained mechanics tests can run with `--filter ComparisonTests`.
 
 `Fixtures/Relationships/` holds Derivatives, Multiviews and Variants.
 `Fixtures/Heaps/Similarity/` holds the prompt-selected contributions to the
-current similarity heap; other heaps can have their own selection criteria.
+current similarity heap. `Fixtures/Heaps/Curatorial/POTY/` holds mechanical
+samples from three official Wikimedia Commons Picture of the Year Round 1
+categories, pooled across 2023–2025; see its README for acquisition completeness.
 
 Fixture sets use `images/` for comparison inputs and `sources/` for preserved
 source bytes. Optional `previews/` contains contact sheets, outside the input set.

@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T17:14:31.948002+00:00",
+  "key": "files-022",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3ACallionima+calliomenae+MHNT+CUT+2010+0+156+El+Guapo+Venezuela+male+ventral.jpg%7CFile%3ACallionima+calliomenae+MHNT+CUT+2010+0+156+Parque+Nacional+Henri+Pitter+%28Rancho+Grande%29%2C+Venezuela+Female+dorsal.jpg%7CFile%3ACallionima+calliomenae+MHNT+CUT+2010+0+156+Parque+Nacional+Henri+Pitter+%28Rancho+Grande%29%2C+Venezuela+Female+ventral.jpg%7CFile%3ADaphnis+hypothous+hypothous+MHNT+CUT+2010+0+291+Ambon+island+Indonesia+female+ventral.jpg%7CFile%3ADaphnis+hypothous+hypothous+MHNT+CUT+2010+0+512+Ambon+island+Indonesia+male+dorsal.jpg%7CFile%3ADaphnis+hypothous+hypothous+MHNT+CUT+2010+0+512+Ambon+island+Indonesia+male+ventral.jpg%7CFile%3AHyles+dahlii+MHNT+CUT+2010+0+133+Corse+France+male+ventral.jpg%7CFile%3AHyles+dahlii+MHNT+CUT+2010+0+133+Aritzo+Sardaigne+female+dorsal.jpg%7CFile%3AHyles+dahlii+MHNT+CUT+2010+0+133+Aritzo+Sardaigne+female+ventral.jpg%7CFile%3AEnyo+gorgon+MHNT+CUT+2010+0+527+-+Guapi-mirim%2C+Estado+do+Rio%2C+Brazil+-+male+ventral.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 78066,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 17:14:32 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-6x59m",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "d9682f10-05ff-4462-8bbc-364efd819396"
+  },
+  "sha256": "79e1c485e4bdc4da13e4a8678b4f0410f13ba4f62f285cbc17c9f7c43135f62f"
+}

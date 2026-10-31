@@ -1,0 +1,41 @@
+{
+  "candidate_id": "ff912176db94a9784936",
+  "source_path": "sources/ff912176db94a9784936.jpg",
+  "sha256": "c66402a65082fe0c986fb0030b58fa4759544f083948d4f995bda534f92476d2",
+  "bytes": 326003,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Blue_dasher_with_water_mites_%2871998%29.jpg/1920px-Blue_dasher_with_water_mites_%2871998%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-018.json",
+  "metadata_sha256": "9bd97de7726929986d951f8efe0bcb140e61294edd075f78b3b0991665009653",
+  "original_sha1": "997be61c1fa13b79958ac7152a97ae2687308f88",
+  "pageid": 172039594,
+  "api_reported_width": 1600,
+  "api_reported_height": 1216,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:21:42.503889+00:00",
+    "key": "ff912176db94a9784936",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Blue_dasher_with_water_mites_%2871998%29.jpg/1920px-Blue_dasher_with_water_mites_%2871998%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 326003,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "fc155705fb353fabd233ed90f5aa07c8",
+      "last-modified": "Wed, 12 Aug 2026 19:07:19 GMT",
+      "content-length": "326003",
+      "date": "Sat, 31 Oct 2026 17:21:42 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "a9bb33e5-5203-4b91-acd5-91b59927b9e7"
+    },
+    "sha256": "c66402a65082fe0c986fb0030b58fa4759544f083948d4f995bda534f92476d2"
+  },
+  "width": 1920,
+  "height": 1459,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

@@ -1,0 +1,41 @@
+{
+  "candidate_id": "7bf8da314d12f51522d2",
+  "source_path": "sources/7bf8da314d12f51522d2.jpg",
+  "sha256": "c3d9042977477ffe91115aa1bae2752410276abb4b3f4114e7691ffd79a7da0b",
+  "bytes": 1171196,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Autumnal_Retreat_in_Old_Quebec-_A_Canvas_of_Fading_Reds_and_Vibrant_Oranges.jpg/1920px-Autumnal_Retreat_in_Old_Quebec-_A_Canvas_of_Fading_Reds_and_Vibrant_Oranges.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-003.json",
+  "metadata_sha256": "dbdf0e3a205b23b512e3f0d0ac3b4764d6e15377d112906a687b0bfb3f684283",
+  "original_sha1": "b6737c356f3871ea55331dd057c1e3f6d1ba48bd",
+  "pageid": 123933333,
+  "api_reported_width": 1600,
+  "api_reported_height": 1067,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:25:07.740778+00:00",
+    "key": "7bf8da314d12f51522d2",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Autumnal_Retreat_in_Old_Quebec-_A_Canvas_of_Fading_Reds_and_Vibrant_Oranges.jpg/1920px-Autumnal_Retreat_in_Old_Quebec-_A_Canvas_of_Fading_Reds_and_Vibrant_Oranges.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 1171196,
+    "headers": {
+      "content-type": "image/jpeg",
+      "last-modified": "Thu, 20 Aug 2026 08:33:23 GMT",
+      "content-length": "1171196",
+      "date": "Sat, 31 Oct 2026 17:25:07 GMT",
+      "server": "envoy",
+      "etag": "96bfbbb1b6cadd7e3102d9606a88528b",
+      "x-cache": "cp4044 hit, cp4044 miss",
+      "x-request-id": "e802652e-0d25-4776-8917-6a4d3086bfdc"
+    },
+    "sha256": "c3d9042977477ffe91115aa1bae2752410276abb4b3f4114e7691ffd79a7da0b"
+  },
+  "width": 1920,
+  "height": 1280,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

@@ -1,0 +1,41 @@
+{
+  "candidate_id": "4042d273ba04a70271a1",
+  "source_path": "sources/4042d273ba04a70271a1.jpg",
+  "sha256": "5eeeac64d0dd5b771c95efa4ce0d1cdcc324d6ae755a665b93256ea0672354c7",
+  "bytes": 295231,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Parastoo_Ahmadi.jpg/1920px-Parastoo_Ahmadi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-014.json",
+  "metadata_sha256": "b2f46b98c81f6a321e60a7945c6fad62e44652f51049d5aec9057efb309788e4",
+  "original_sha1": "cd4be3cff9ac2b943da084833205f3669ffd1dd8",
+  "pageid": 157103269,
+  "api_reported_width": 1600,
+  "api_reported_height": 1067,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:28:03.141802+00:00",
+    "key": "4042d273ba04a70271a1",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Parastoo_Ahmadi.jpg/1920px-Parastoo_Ahmadi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 295231,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "227441e2d1ae46f7a82c7ba414246cea",
+      "last-modified": "Mon, 27 Jul 2026 20:50:45 GMT",
+      "content-length": "295231",
+      "date": "Sat, 31 Oct 2026 17:28:03 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "79126c3d-c08c-4278-95e5-ac149523dfb6"
+    },
+    "sha256": "5eeeac64d0dd5b771c95efa4ce0d1cdcc324d6ae755a665b93256ea0672354c7"
+  },
+  "width": 1920,
+  "height": 1280,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

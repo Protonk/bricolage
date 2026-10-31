@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T17:17:08.515178+00:00",
+  "key": "files-017",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3ADanny+Sanderson.jpg%7CFile%3AHandhabung%2C+Doppeldecker+H%C3%A4feli+DH-5+%28Milit%C3%A4r%29+f%C3%BCr+Aerofotogrammetrie+Aufnahmen%2C+000398822%2C+edit.jpg%7CFile%3APeople+of+Butte+County+%E2%80%93+Tod+Kimmelshue+%282025%29-104A8815.jpg%7CFile%3AWet+silk+training+-+US+Army+paratrooper+-+Lake+Garda%2C+Italy+-+March+2025.jpg%7CFile%3ASamarjit+by+Rudhra+Varma.jpg%7CFile%3AChico+Wildflower+Century+%282025%29-104A9764.jpg%7CFile%3ASoldier+onboard+M77+Ulv%C3%B6n+in+Lysekil+1.jpg%7CFile%3AUSS+Carl+Vinson+%28CVN+70%29+Conducts+Routine+Operations+in+the+Celebes+Sea+%288860610%29.jpg%7CFile%3AAlmabtrieb+Freiburger+Alpe+-+Anna+schm%C3%BCckt+ein+Schild+mit+dem+Namen+der+Alpe%2C+der+Max+unterst%C3%BCtzt+seine+Mama.jpg%7CFile%3ARolnicy+nad+Jeziorem+Inle+w+Mjanmie%2C+20160806+8493.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 84332,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 17:17:08 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-mkfpr",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "d8a12ff4-33c1-4d47-9803-7ea82b97fa62"
+  },
+  "sha256": "9b50f100e89180ec009436a09b44072c5ec4c2e8d6bf21f4d2231f7bd1428741"
+}

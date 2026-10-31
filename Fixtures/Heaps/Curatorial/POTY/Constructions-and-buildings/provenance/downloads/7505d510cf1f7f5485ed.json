@@ -1,0 +1,41 @@
+{
+  "candidate_id": "7505d510cf1f7f5485ed",
+  "source_path": "sources/7505d510cf1f7f5485ed.jpg",
+  "sha256": "2e86e5db1bf5624c1b673ed28d7f4c272dd3e3bbef80231eb79140fbe8a7010d",
+  "bytes": 528945,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Cour_des_Voraces_-_plan_serr%C3%A9.JPG/1280px-Cour_des_Voraces_-_plan_serr%C3%A9.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-004.json",
+  "metadata_sha256": "5754e09037c324d7727085b7d0dd538a9a39c84b21eb1b76e28e4d1196297e3f",
+  "original_sha1": "e2f28cb8a0fb9e8fb19c4a83cf7499f7cfff499b",
+  "pageid": 28060250,
+  "api_reported_width": 1064,
+  "api_reported_height": 1600,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:29:50.101252+00:00",
+    "key": "7505d510cf1f7f5485ed",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Cour_des_Voraces_-_plan_serr%C3%A9.JPG/1280px-Cour_des_Voraces_-_plan_serr%C3%A9.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 528945,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "992ed0a2ded45d545d110f179f303f61",
+      "last-modified": "Fri, 18 Sep 2026 05:16:30 GMT",
+      "content-length": "528945",
+      "date": "Sat, 31 Oct 2026 17:29:50 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "41fb4a25-4912-49aa-9374-271e40f8da05"
+    },
+    "sha256": "2e86e5db1bf5624c1b673ed28d7f4c272dd3e3bbef80231eb79140fbe8a7010d"
+  },
+  "width": 1280,
+  "height": 1925,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

@@ -1,0 +1,41 @@
+{
+  "candidate_id": "7c441cac38317414f2ba",
+  "source_path": "sources/7c441cac38317414f2ba.jpg",
+  "sha256": "48693f24036b15bc3a66ad26bd3209f051b4f27acd47ded7e5a66396aff10551",
+  "bytes": 1389453,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/D%C3%BClmen%2C_Kirchspiel%2C_ehem._Sondermunitionslager_Visbeck%2C_Laufgang_--_2023_--_6796_%28bw%29.jpg/1920px-D%C3%BClmen%2C_Kirchspiel%2C_ehem._Sondermunitionslager_Visbeck%2C_Laufgang_--_2023_--_6796_%28bw%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-001.json",
+  "metadata_sha256": "dfad3b8d53a9711edc21baab79d47acd3bed40891ed3abb34d40143ea014e7e0",
+  "original_sha1": "563ed1c3e569cc3a79dfcc3730156fcce84867cc",
+  "pageid": 130357979,
+  "api_reported_width": 1600,
+  "api_reported_height": 1067,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:21:56.411620+00:00",
+    "key": "7c441cac38317414f2ba",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/D%C3%BClmen%2C_Kirchspiel%2C_ehem._Sondermunitionslager_Visbeck%2C_Laufgang_--_2023_--_6796_%28bw%29.jpg/1920px-D%C3%BClmen%2C_Kirchspiel%2C_ehem._Sondermunitionslager_Visbeck%2C_Laufgang_--_2023_--_6796_%28bw%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 1389453,
+    "headers": {
+      "content-type": "image/jpeg",
+      "last-modified": "Sun, 02 Aug 2026 23:50:21 GMT",
+      "content-length": "1389453",
+      "date": "Sat, 31 Oct 2026 17:21:56 GMT",
+      "server": "envoy",
+      "etag": "063e3e27a4fdd2b142028c3b807ef80c",
+      "x-cache": "cp4044 hit, cp4044 miss",
+      "x-request-id": "ce5b0d2c-a350-4f7c-9654-6e27762921ba"
+    },
+    "sha256": "48693f24036b15bc3a66ad26bd3209f051b4f27acd47ded7e5a66396aff10551"
+  },
+  "width": 1920,
+  "height": 1280,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T17:16:04.907324+00:00",
+  "key": "files-024",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3AS%C3%A3o+Jorge+%28Madeira%2C+Portugal%29%2C+Ruine+einer+ehemaligen+Zuckerrohrm%C3%BChle+--+2025+--+1415.jpg%7CFile%3ABamberg+Klinikum+Parkhaus-20251112-RM-164701.jpg%7CFile%3A20201021+UrbanArt+Parcours.jpg%7CFile%3AAncona+-+Monumento+ai+caduti+di+Ancona%2C+dettagli+-+GT+ver2+-+2025-09-11+21-09-15+001.jpg%7CFile%3A1+Mercado+do+Bolh%C3%A3o.jpg%7CFile%3AVista+do+corredor+de+janelas+da+C%C3%A2mara+Municipal+de+Porto+Alegre+%28cropped%29.jpg%7CFile%3ASupremo+Tribunal+Federal+por+Henrique+Goldenstein+%2801%29.jpg%7CFile%3AMoscow+-+2025+-+Details+of+the+facade+of+the+Historical+Museum1.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 73819,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 17:16:05 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-96xwx",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "034f8c9d-4131-4c35-975a-89a41535f336"
+  },
+  "sha256": "384899dafdc5e0faa195d7bc75322683d5bdc7d4ba2726b4463103f4b54f9361"
+}

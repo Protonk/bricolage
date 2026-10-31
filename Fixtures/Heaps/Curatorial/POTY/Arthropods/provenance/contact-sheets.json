@@ -1,0 +1,69 @@
+[
+  {
+    "path": "previews/selected-01.jpg",
+    "sha256": "6e2a04a50ef0b7ce4b6e0ef4acc67f4810d66cd20fe8bee4bbf8779e42775f08",
+    "width": 1280,
+    "height": 1400,
+    "candidate_ids": [
+      "656519d15cebd1912a93",
+      "40be28d8b412774e1567",
+      "3d97169d929a444e7602",
+      "667a73f6b977cd28ebfb",
+      "73d1cece01bb52d0621f",
+      "9d16e10353db7dc3cf64",
+      "d8c40856256c0fc90548",
+      "89a4732dbefcaabd8105",
+      "b94ea026dc6ee28b7c0b",
+      "84984beb65b41069e289",
+      "ff912176db94a9784936",
+      "6ee0484b7ca9df336a81",
+      "49f97e9cdc1ca93f41ba",
+      "9433211d5ff5b8db821f",
+      "6b1228c534b9719f8f01",
+      "da7da5b4010412a8dcb4",
+      "1d6f48c02108a35eb7dc",
+      "63a32237438ede58c222",
+      "fdb3c2704f745fa40802",
+      "28d1f0d24e12ae6175a2"
+    ]
+  },
+  {
+    "path": "previews/selected-02.jpg",
+    "sha256": "7e5446e0804906031b5c5f126e9dad5eed09461658c1401e91aa804f7ea23b5f",
+    "width": 1280,
+    "height": 1400,
+    "candidate_ids": [
+      "453c0d20c46bd5af1b95",
+      "bebc04ccd188d147d2a8",
+      "02cf68192303119afe30",
+      "0a1ced4177006b848285",
+      "d9c05f07f66df4d33fe5",
+      "81eaa7004d379aa9c110",
+      "6e009b5819b43a6ac4c8",
+      "6207bf5232e69a81591a",
+      "d046fb33cd6f5a85c7cc",
+      "13ed4e3d608fd02ccde0",
+      "3fa6357510514611b66b",
+      "6719825687fa9ec5239e",
+      "acad9d3e05c68f42af50",
+      "c36038bc6751d59e6ad7",
+      "55029b0ad34feec2c0ba",
+      "549a0353a7dc31aa2941",
+      "cef24da3602dee39f435",
+      "91bee41e4078ec3512ca",
+      "925d743ecc99ae9c5cfe",
+      "6632052ef8bf5d75555a"
+    ]
+  },
+  {
+    "path": "previews/selected-03.jpg",
+    "sha256": "eb8378225381f2d66de53931000eb6e18383a1b836c8c89edfb7c3aa72675254",
+    "width": 1280,
+    "height": 280,
+    "candidate_ids": [
+      "3c4acee42809cd789264",
+      "838aaeb1de8a2220b023",
+      "6d949d0a148032ba9ec9"
+    ]
+  }
+]

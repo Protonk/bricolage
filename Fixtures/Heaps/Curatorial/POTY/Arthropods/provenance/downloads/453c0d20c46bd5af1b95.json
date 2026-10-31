@@ -1,0 +1,39 @@
+{
+  "candidate_id": "453c0d20c46bd5af1b95",
+  "source_path": "sources/453c0d20c46bd5af1b95.jpg",
+  "sha256": "a3cd75d947b9e7f58a2491e4fd4dcd6bf25733a3b32749edadda28dc06dbf8f3",
+  "bytes": 338707,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Mimetismo_letale.jpg/1920px-Mimetismo_letale.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-011.json",
+  "metadata_sha256": "449e9c61f7a65c5bcf4b791b8ce6001b19e3900e27076b5aba8ad4f1f31c9dc1",
+  "original_sha1": "4a4f26e32e9281738c1d69276d220c900a97f511",
+  "pageid": 154496715,
+  "api_reported_width": 1600,
+  "api_reported_height": 1062,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:24:14.719381+00:00",
+    "key": "453c0d20c46bd5af1b95",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Mimetismo_letale.jpg/1920px-Mimetismo_letale.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 338707,
+    "headers": {
+      "content-type": "image/jpeg",
+      "content-length": "338707",
+      "server": "Thumbor/7.8.0",
+      "date": "Sat, 31 Oct 2026 17:24:16 GMT",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "08ccf397-fb1e-490a-9297-fa6c4842bd47"
+    },
+    "sha256": "a3cd75d947b9e7f58a2491e4fd4dcd6bf25733a3b32749edadda28dc06dbf8f3"
+  },
+  "width": 1920,
+  "height": 1275,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

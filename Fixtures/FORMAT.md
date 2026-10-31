@@ -7,7 +7,7 @@ Only each leaf set's `images/` directory is comparison input. Integrated sets us
 
 ```text
 images/             Flat input files with opaque names
-sources/            Preserved source bytes, with filenames as supplied
+sources/            Preserved supplied/acquired bytes; original names in sources.csv
 batches/            batch-*.txt partition inputs; smoke.txt and medium.txt are subsets
 previews/           Optional local contact sheets, outside the comparison inputs
 provenance/         Supplied metadata and set-specific supporting material
@@ -49,8 +49,9 @@ metadata retains the original path description as provenance.
 
 `manifest.json` has `schema_version`, `fixture_id`, `kind`, `description`, and
 `images`. The provenance-led sets use `kind=derivatives` or `kind=multiview`;
-heap additions use `kind=prompt_heap` with empty pair expectations. Image records
-use these columns:
+visual-prompt heap additions use `kind=prompt_heap` with empty pair expectations.
+Published-source curatorial contributions use `kind=curatorial_heap`, also with
+empty pair expectations. Image records use these columns:
 
 ```text
 file, batch, family_id, scene_id, parents, transformation, relation_kind,
@@ -99,4 +100,38 @@ operation lineage, masks, per-piece transforms, source/prompt/generation imports
 and build verification are in its `provenance/`. Two-parent replacements and
 description-mediated generations must not be interpreted as ordinary single-source
 pixel edits. Legacy smoke/medium lists select only its six originals.
+
+## Curatorial source heaps
+
+Heap contributions may be nested below a source collection, for example
+`Heaps/Curatorial/POTY/Arthropods/`. A manifest identifies a leaf fixture set;
+its paths remain relative to that leaf, irrespective of directory depth. Existing
+Similarity tools are contribution-specific, and the experiment's relationship
+checker deliberately does not validate either heap kind. There is no shared
+fixed-depth heap traversal to change. The fixture indexes identify contributions
+and their check commands.
+
+`kind=curatorial_heap` records membership in an already published editorial
+population, followed by documented mechanical selection and provenance exclusions.
+It does not require `prompt.json` or visual acceptance judgments. POTY leaves use
+`inventory.json`, `ordering.json` and `selection.json` for the full eligible
+population, seeded ordering and per-candidate decisions. File-specific evidence,
+original-creator identity decisions, explicit exceptions, acquisition receipts,
+and POTY year/category mappings are in `provenance/`. Each leaf has its own
+source catalog, manifests, batches, checksums and independent offline check.
+
+The common image/source columns are retained. `relation_kind=curatorial_selected`
+records selection basis only. A unique `family_id` and its single `parents`
+value connect one unchanged input copy to its downloaded source; they do not
+connect different selected images. `scene_id` and optional decoded-pixel hashes are
+empty, `probes.csv` is header-only, and `selections.json` contains no pairs or
+known-shift families. No curator category is a router cluster or matching label.
+
+The target count, selected count, acquired count, exclusions, unused reserve,
+pending review/acquisition, and any exhausted-population shortfall are distinct.
+An incomplete acquisition can have a valid partial manifest; its status and
+missing selections must remain explicit. A validation pass means the recorded
+state is consistent, not that the target count was achieved. API-reported display
+dimensions may differ from decoded rendition dimensions; preserve both without
+locally changing the downloaded image.
 

@@ -1,0 +1,41 @@
+{
+  "candidate_id": "7481b0b1f39db4a9ac48",
+  "source_path": "sources/7481b0b1f39db4a9ac48.jpg",
+  "sha256": "0f3d4f0cb4fe8b5e09031c5977d4490e5d3ca6891289973533c9bfd7f237d94d",
+  "bytes": 447240,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/%D9%81%D8%A7%D8%B1%D8%B3_%D8%A7%D9%84%D8%B5%D8%AD%D8%B1%D8%A7%D8%A1_%D8%A8%D8%B9%D8%B2%D9%8A%D9%85%D8%A9_%D9%88%D8%A5%D8%B1%D8%AB_%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%D9%8A.jpg/1920px-%D9%81%D8%A7%D8%B1%D8%B3_%D8%A7%D9%84%D8%B5%D8%AD%D8%B1%D8%A7%D8%A1_%D8%A8%D8%B9%D8%B2%D9%8A%D9%85%D8%A9_%D9%88%D8%A5%D8%B1%D8%AB_%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%D9%8A.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-023.json",
+  "metadata_sha256": "41a8c75c28c900f92704b85493acf4c24fb3f8753bb19cb9569242d26e88794b",
+  "original_sha1": "55dd6febda4caaa32de4924841d503531c64fe75",
+  "pageid": 162963801,
+  "api_reported_width": 1600,
+  "api_reported_height": 1067,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:22:55.834715+00:00",
+    "key": "7481b0b1f39db4a9ac48",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/%D9%81%D8%A7%D8%B1%D8%B3_%D8%A7%D9%84%D8%B5%D8%AD%D8%B1%D8%A7%D8%A1_%D8%A8%D8%B9%D8%B2%D9%8A%D9%85%D8%A9_%D9%88%D8%A5%D8%B1%D8%AB_%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%D9%8A.jpg/1920px-%D9%81%D8%A7%D8%B1%D8%B3_%D8%A7%D9%84%D8%B5%D8%AD%D8%B1%D8%A7%D8%A1_%D8%A8%D8%B9%D8%B2%D9%8A%D9%85%D8%A9_%D9%88%D8%A5%D8%B1%D8%AB_%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%D9%8A.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 447240,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "cabd2d271224b4afc8ce016ef9a9f294",
+      "last-modified": "Wed, 22 Jul 2026 03:30:56 GMT",
+      "content-length": "447240",
+      "date": "Sat, 31 Oct 2026 17:22:56 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "87783e87-fa40-46f3-942e-9348f9686f6e"
+    },
+    "sha256": "0f3d4f0cb4fe8b5e09031c5977d4490e5d3ca6891289973533c9bfd7f237d94d"
+  },
+  "width": 1920,
+  "height": 1280,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

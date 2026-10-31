@@ -1,0 +1,41 @@
+{
+  "candidate_id": "e393acbcd69198d071ac",
+  "source_path": "sources/e393acbcd69198d071ac.jpg",
+  "sha256": "929ffff742163c236cb2c3df14708b71e62323da453fc802c73e313e2f38b197",
+  "bytes": 694376,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Woman_with_watering_can%2C_Dent_de_Man.jpg/1920px-Woman_with_watering_can%2C_Dent_de_Man.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-014.json",
+  "metadata_sha256": "b2f46b98c81f6a321e60a7945c6fad62e44652f51049d5aec9057efb309788e4",
+  "original_sha1": "e7894c6757cc897652bb6ecdcb2cfccf40721648",
+  "pageid": 147882343,
+  "api_reported_width": 1600,
+  "api_reported_height": 1067,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:22:52.352061+00:00",
+    "key": "e393acbcd69198d071ac",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Woman_with_watering_can%2C_Dent_de_Man.jpg/1920px-Woman_with_watering_can%2C_Dent_de_Man.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 694376,
+    "headers": {
+      "content-type": "image/jpeg",
+      "last-modified": "Sat, 30 May 2026 20:32:53 GMT",
+      "content-length": "694376",
+      "date": "Sat, 31 Oct 2026 17:22:52 GMT",
+      "server": "envoy",
+      "etag": "e2806e4812ecfad1d10f2b91455a0c4f",
+      "x-cache": "cp4044 hit, cp4044 miss",
+      "x-request-id": "7b778299-f736-48c6-b489-441cf168cb69"
+    },
+    "sha256": "929ffff742163c236cb2c3df14708b71e62323da453fc802c73e313e2f38b197"
+  },
+  "width": 1920,
+  "height": 1280,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

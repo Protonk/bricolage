@@ -1,0 +1,41 @@
+{
+  "candidate_id": "9608554eab7b21c5d4b0",
+  "source_path": "sources/9608554eab7b21c5d4b0.jpg",
+  "sha256": "9c4dea4c5806d25a5a0912f047dcd93608cfb6a9e92a293e8aaf6bc9243e9829",
+  "bytes": 431949,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Klimahaus_Bremerhaven_01.jpg/1920px-Klimahaus_Bremerhaven_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-000.json",
+  "metadata_sha256": "8113673b92c38df4637dae82785f4bce670e53a04bdf3e9ea68d597bc268f796",
+  "original_sha1": "b5a616b2e5ce8b998ad91e00069530dc64a171d8",
+  "pageid": 123689969,
+  "api_reported_width": 1600,
+  "api_reported_height": 1040,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:21:52.916232+00:00",
+    "key": "9608554eab7b21c5d4b0",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Klimahaus_Bremerhaven_01.jpg/1920px-Klimahaus_Bremerhaven_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 431949,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "38c5314268d758d8ec25733fdad84dc8",
+      "last-modified": "Mon, 03 Aug 2026 18:31:26 GMT",
+      "content-length": "431949",
+      "date": "Sat, 31 Oct 2026 17:21:53 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "3018e2c7-b6c7-40ba-aff6-16348c76b399"
+    },
+    "sha256": "9c4dea4c5806d25a5a0912f047dcd93608cfb6a9e92a293e8aaf6bc9243e9829"
+  },
+  "width": 1920,
+  "height": 1248,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

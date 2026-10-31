@@ -1,0 +1,41 @@
+{
+  "candidate_id": "c36038bc6751d59e6ad7",
+  "source_path": "sources/c36038bc6751d59e6ad7.jpg",
+  "sha256": "49d1aa6594962d45e5cfa41ceb06db602e999b6da41c88c510d7ea4436bdc96f",
+  "bytes": 746031,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/%D0%9F%D0%B0%D1%83%D0%BA_Xysticus_%D0%B7%D0%B0_%D0%B7%D0%B0%D0%B2%D1%82%D1%80%D0%B0%D0%BA%D0%BE%D0%BC.jpg/1920px-%D0%9F%D0%B0%D1%83%D0%BA_Xysticus_%D0%B7%D0%B0_%D0%B7%D0%B0%D0%B2%D1%82%D1%80%D0%B0%D0%BA%D0%BE%D0%BC.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-004.json",
+  "metadata_sha256": "e663a25fe98fcdabf00faa54378e0ff13da249c4407d2677fad95d52c4a507b2",
+  "original_sha1": "edfb13ece6e67519601a94d8d427300b94a88cc3",
+  "pageid": 130490324,
+  "api_reported_width": 1600,
+  "api_reported_height": 1067,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:26:55.394174+00:00",
+    "key": "c36038bc6751d59e6ad7",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/%D0%9F%D0%B0%D1%83%D0%BA_Xysticus_%D0%B7%D0%B0_%D0%B7%D0%B0%D0%B2%D1%82%D1%80%D0%B0%D0%BA%D0%BE%D0%BC.jpg/1920px-%D0%9F%D0%B0%D1%83%D0%BA_Xysticus_%D0%B7%D0%B0_%D0%B7%D0%B0%D0%B2%D1%82%D1%80%D0%B0%D0%BA%D0%BE%D0%BC.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 746031,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "64be08ece96945c94c62297b75a3f48d",
+      "last-modified": "Mon, 03 Aug 2026 12:45:10 GMT",
+      "content-length": "746031",
+      "date": "Sat, 31 Oct 2026 17:26:55 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "0ade798d-1514-4d83-ad7d-e8fdf121eb26"
+    },
+    "sha256": "49d1aa6594962d45e5cfa41ceb06db602e999b6da41c88c510d7ea4436bdc96f"
+  },
+  "width": 1920,
+  "height": 1280,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

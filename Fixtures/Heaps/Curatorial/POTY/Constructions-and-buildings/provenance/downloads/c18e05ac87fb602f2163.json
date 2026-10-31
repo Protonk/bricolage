@@ -1,0 +1,41 @@
+{
+  "candidate_id": "c18e05ac87fb602f2163",
+  "source_path": "sources/c18e05ac87fb602f2163.jpg",
+  "sha256": "6da990152e0c8674c883c4d1c00893b5ca9b33dce9ca99c6f0a882a489e1358d",
+  "bytes": 651771,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/06_2023_King_Charles_Street%2C_London_IMG_7517.jpg/1920px-06_2023_King_Charles_Street%2C_London_IMG_7517.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-018.json",
+  "metadata_sha256": "ddf115b06c2cdb1269a7d69fc987e10e2bd17142f0fdc92e277d43fb195d5ab4",
+  "original_sha1": "da591d22018112be523783746cceec037eb09de5",
+  "pageid": 133295087,
+  "api_reported_width": 1600,
+  "api_reported_height": 1032,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:22:10.460100+00:00",
+    "key": "c18e05ac87fb602f2163",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/06_2023_King_Charles_Street%2C_London_IMG_7517.jpg/1920px-06_2023_King_Charles_Street%2C_London_IMG_7517.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 651771,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "8c05cfbce59392675fb24cff040b4e96",
+      "last-modified": "Sat, 12 Sep 2026 09:36:36 GMT",
+      "content-length": "651771",
+      "date": "Sat, 31 Oct 2026 17:22:10 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "0558b528-1ef6-478e-a1de-b5c414fdfc56"
+    },
+    "sha256": "6da990152e0c8674c883c4d1c00893b5ca9b33dce9ca99c6f0a882a489e1358d"
+  },
+  "width": 1920,
+  "height": 1239,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

@@ -1,0 +1,41 @@
+{
+  "candidate_id": "f5dde5b832e0fcd927f6",
+  "source_path": "sources/f5dde5b832e0fcd927f6.jpg",
+  "sha256": "5e199f17186779d3c06e6426b61973821782a5eaee83323127b5d5f72e771a51",
+  "bytes": 734854,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Oliver%27s_Wharf_2022-10-11.jpg/1920px-Oliver%27s_Wharf_2022-10-11.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-020.json",
+  "metadata_sha256": "e33dc1b17d728d1e02525930d52c5d2ff85c623a961c0839df609f9b1a87e7d3",
+  "original_sha1": "0001ace188c34bfdaa5fad1c4bc1ba72644f5a28",
+  "pageid": 174632244,
+  "api_reported_width": 1600,
+  "api_reported_height": 1026,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:27:41.620303+00:00",
+    "key": "f5dde5b832e0fcd927f6",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Oliver%27s_Wharf_2022-10-11.jpg/1920px-Oliver%27s_Wharf_2022-10-11.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 734854,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "aa2c8cca6740e3cb58189f7e7a70c712",
+      "last-modified": "Fri, 21 Aug 2026 17:30:39 GMT",
+      "content-length": "734854",
+      "date": "Sat, 31 Oct 2026 17:27:41 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "698fefdf-21da-4e2f-9d96-3efe60fe71e4"
+    },
+    "sha256": "5e199f17186779d3c06e6426b61973821782a5eaee83323127b5d5f72e771a51"
+  },
+  "width": 1920,
+  "height": 1231,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

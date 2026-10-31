@@ -1,0 +1,41 @@
+{
+  "candidate_id": "364be1fe6226d0768078",
+  "source_path": "sources/364be1fe6226d0768078.jpg",
+  "sha256": "eb19e9287020c265ba1dc64cdfa3d6e22baf3822871fb4a5c3348f8920cab84c",
+  "bytes": 345717,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Dr_Abraham_Verghese_in_2023_06.jpg/1280px-Dr_Abraham_Verghese_in_2023_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-006.json",
+  "metadata_sha256": "9ec9308a43aaaa6d0daf5b3902fc031ad177490f6532797ffdb19be60d00f746",
+  "original_sha1": "061730114326df86dde0021241f17beed467b7fa",
+  "pageid": 136120402,
+  "api_reported_width": 1067,
+  "api_reported_height": 1600,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:27:52.218015+00:00",
+    "key": "364be1fe6226d0768078",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Dr_Abraham_Verghese_in_2023_06.jpg/1280px-Dr_Abraham_Verghese_in_2023_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 345717,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "49cf0ba33f4c87b0f7ef2fdb59c3a090",
+      "last-modified": "Wed, 05 Aug 2026 18:50:22 GMT",
+      "content-length": "345717",
+      "date": "Sat, 31 Oct 2026 17:27:52 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "9ba7056d-f018-47d0-b3b0-ed26d04c70ae"
+    },
+    "sha256": "eb19e9287020c265ba1dc64cdfa3d6e22baf3822871fb4a5c3348f8920cab84c"
+  },
+  "width": 1280,
+  "height": 1919,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

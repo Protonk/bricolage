@@ -1,0 +1,41 @@
+{
+  "candidate_id": "a90786d234ab2fb32de0",
+  "source_path": "sources/a90786d234ab2fb32de0.jpg",
+  "sha256": "c1f1b1f64d8e3b418f45e5f07dd209880fd730fecb15f613ed4b31526b5a4a8e",
+  "bytes": 677388,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Rom_%28IT%29%2C_Kolosseum_--_2024_--_0610.jpg/1920px-Rom_%28IT%29%2C_Kolosseum_--_2024_--_0610.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-008.json",
+  "metadata_sha256": "6db6026674904adc07eb4e966d44831c0170b47070fb116288c86a486f8a6c4b",
+  "original_sha1": "34ca09b3c4169e04d0ce4a188081565d6bda717c",
+  "pageid": 152009086,
+  "api_reported_width": 1600,
+  "api_reported_height": 1067,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:29:11.836895+00:00",
+    "key": "a90786d234ab2fb32de0",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Rom_%28IT%29%2C_Kolosseum_--_2024_--_0610.jpg/1920px-Rom_%28IT%29%2C_Kolosseum_--_2024_--_0610.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 677388,
+    "headers": {
+      "content-type": "image/jpeg",
+      "last-modified": "Thu, 24 Sep 2026 22:31:29 GMT",
+      "content-length": "677388",
+      "date": "Sat, 31 Oct 2026 17:29:12 GMT",
+      "server": "envoy",
+      "etag": "9c689ee7b1245bc1f11f8a149e00000a",
+      "x-cache": "cp4044 hit, cp4044 miss",
+      "x-request-id": "865c0994-7fe4-4a51-944d-0ea8b746c63c"
+    },
+    "sha256": "c1f1b1f64d8e3b418f45e5f07dd209880fd730fecb15f613ed4b31526b5a4a8e"
+  },
+  "width": 1920,
+  "height": 1280,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

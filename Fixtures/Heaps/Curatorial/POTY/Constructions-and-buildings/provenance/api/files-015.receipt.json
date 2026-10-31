@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T17:15:32.716544+00:00",
+  "key": "files-015",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3AVodno+Telecommunication+Tower.jpg%7CFile%3ABlick+vom+Leinpfad+bei+Neuenheimer+Landstra%C3%9Fe+38-2+%C3%BCber+den+Neckar+zur+Stadthalle+Heidelberg.jpg%7CFile%3AGandhi+Bhawan%2C+Chandigarh.jpg%7CFile%3AH%C3%B4tel+Fairmont+Le+Montreux+Palace+01.jpg%7CFile%3ASteinerlebnispfad+Zeilberg%2C+H%C3%BCtte+im+Wald+im+Osten.jpg%7CFile%3ASachsenheim+-+Ochsenbach+-+Dorfkern+-+Dorfstra%C3%9Fe+20+-+Ansicht+von+Osten+%281%29.jpg%7CFile%3AGewerbepark+Hochfranken+%E2%80%93+Neubau+20250427+HOF8526+RAW-Export+%28cropped%29.jpg%7CFile%3APoint+Lookout+Lighthouse+MD1.jpg%7CFile%3ARathaus-Marlow-2025-01.jpg%7CFile%3AAntigua+ciudad+de+Pompeya%2C+Italia%2C+2023-03-27%2C+DD+182-184+HDR.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 64688,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 17:15:32 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-dn7vv",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "91fe89ba-bcb6-4fd4-af75-959a4d4b7252"
+  },
+  "sha256": "70c4ab9043ef9f92ceb43b2c56bc354a5bb292ce0e6ed1bfd44b0b5bdf47cd33"
+}

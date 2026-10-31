@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T17:14:06.448930+00:00",
+  "key": "files-015",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3AClose+wing+mud-puddling+position+of+Pareronia+avatar+%28Moore%2C+1858%29+-+Pale+Wanderer+WLB.jpg%7CFile%3ASmall+pincertail+%28Onychogomphus+forcipatus+albotibialis%29+male+Nazilli.jpg%7CFile%3AOpen+wing+mud-puddling+position+of+Graphium+cloanthus+%28Westwood%2C1841%29+-+Glassy+Bluebottle.jpg%7CFile%3AClose+wing+moisture+sucking+and+peeing+activity+of+Lamproptera+curius+%28+Fabricius%2C1787%29+-+White+Dragontail.jpg%7CFile%3AClose+wing+nectaring+position+of+Graphium+macareus+%28Godart%2C+1819%29+-+Lesser+Zebra+1.jpg%7CFile%3AStriped+blue+crow+butterfly.jpg%7CFile%3AClose+wing+mud-puddling+position+of+Hestinalis+nama+%28Doubleday%2C+1844%29+-+Circe.jpg%7CFile%3AClose+wing+position+of+Charaxes+eudamippus+Doubleday%2C1843+-+Great+Nawab.jpg%7CFile%3APacific+orange+leafwing+%28Doleschallia+tongana+vomana%29+underside+Taveuni.jpg%7CFile%3AHead+Polistinae.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 55034,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 17:14:06 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-n5dwc",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "4e19542c-4da8-42b1-882d-b50d242c60ef"
+  },
+  "sha256": "066d40c79722102c5d32ef0cb82a78c1e638fb7ce13588cb443413ca095edebf"
+}

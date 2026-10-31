@@ -1,0 +1,41 @@
+{
+  "candidate_id": "3fa6357510514611b66b",
+  "source_path": "sources/3fa6357510514611b66b.jpg",
+  "sha256": "bf222b61559534d128e415c5d7db75738b6ca0cf48bedcbbcf87361ffd369eab",
+  "bytes": 174187,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Striped_blue_crow_butterfly.jpg/1920px-Striped_blue_crow_butterfly.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-015.json",
+  "metadata_sha256": "066d40c79722102c5d32ef0cb82a78c1e638fb7ce13588cb443413ca095edebf",
+  "original_sha1": "8164955fde3ebbb32d024149e8fbeeb4c6797c3e",
+  "pageid": 167738232,
+  "api_reported_width": 1600,
+  "api_reported_height": 1067,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:26:44.798838+00:00",
+    "key": "3fa6357510514611b66b",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Striped_blue_crow_butterfly.jpg/1920px-Striped_blue_crow_butterfly.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 174187,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "74d6c62b70936e7b54d8af45382e04bd",
+      "last-modified": "Sun, 06 Sep 2026 02:49:40 GMT",
+      "content-length": "174187",
+      "date": "Sat, 31 Oct 2026 17:26:45 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "3eba78ef-12a0-4c98-be9e-12b4f5428785"
+    },
+    "sha256": "bf222b61559534d128e415c5d7db75738b6ca0cf48bedcbbcf87361ffd369eab"
+  },
+  "width": 1920,
+  "height": 1280,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T17:17:19.272211+00:00",
+  "key": "files-020",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3ABombae+performing+during+Queens+and+Kings+of+Pride%2C+Windsor-Essex+Pride+Fest%2C+2025-08-09+40.jpg%7CFile%3AYoung+Tikuna+girl+from+the+Wotchima%C3%BCc%C3%BC+Indigenous+community+in+a+feathered+headdress.jpg%7CFile%3APrabhalu+Festival.jpg%7CFile%3ATam+Nakano+in+the+wrestling+ring+at+Yokohama+Arena+-+ASGQ2025.jpg%7CFile%3APorto+Alegre+por+Cristine+Huff+24.jpg%7CFile%3AAnna+Eriksson+in+2018.jpg%7CFile%3APortrait+Nepalese+hindu+priest+in+Kathmandu-070A2930.jpg%7CFile%3AAbsu%2C+Mystic+Festival+2025+21.jpg%7CFile%3ADeity+performer.jpg%7CFile%3ACloseup+at+Gussadi+dance+performer.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 51094,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 17:17:19 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-m5xr9",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "73969caa-d352-4ac9-968f-a4de20e8c9f8"
+  },
+  "sha256": "54a39141090edb7ca046722b6ff9049db7e74aa58a553d479e639240d556ac63"
+}

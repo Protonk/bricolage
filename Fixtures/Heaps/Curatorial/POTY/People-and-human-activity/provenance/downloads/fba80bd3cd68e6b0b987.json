@@ -1,0 +1,41 @@
+{
+  "candidate_id": "fba80bd3cd68e6b0b987",
+  "source_path": "sources/fba80bd3cd68e6b0b987.jpg",
+  "sha256": "bee6c5f779fa7a290168140a5493097deb0853f0d77a337e091488e1d4f9383b",
+  "bytes": 633081,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Portrait_Nepalese_hindu_priest_in_Kathmandu-070A2930.jpg/1920px-Portrait_Nepalese_hindu_priest_in_Kathmandu-070A2930.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-020.json",
+  "metadata_sha256": "54a39141090edb7ca046722b6ff9049db7e74aa58a553d479e639240d556ac63",
+  "original_sha1": "31731ec72103890b46eac94c73112f1384a0ee7f",
+  "pageid": 164055660,
+  "api_reported_width": 1600,
+  "api_reported_height": 1600,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:25:38.709382+00:00",
+    "key": "fba80bd3cd68e6b0b987",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Portrait_Nepalese_hindu_priest_in_Kathmandu-070A2930.jpg/1920px-Portrait_Nepalese_hindu_priest_in_Kathmandu-070A2930.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 633081,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "221c4f078a87ffabc833b358dec4f7c4",
+      "last-modified": "Thu, 15 Oct 2026 02:27:21 GMT",
+      "content-length": "633081",
+      "date": "Sat, 31 Oct 2026 17:25:38 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "5f80a2ed-9e5c-4ed1-a11f-5c11cd635933"
+    },
+    "sha256": "bee6c5f779fa7a290168140a5493097deb0853f0d77a337e091488e1d4f9383b"
+  },
+  "width": 1920,
+  "height": 1920,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

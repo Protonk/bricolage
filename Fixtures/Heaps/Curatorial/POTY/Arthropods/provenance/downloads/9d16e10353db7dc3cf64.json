@@ -1,0 +1,41 @@
+{
+  "candidate_id": "9d16e10353db7dc3cf64",
+  "source_path": "sources/9d16e10353db7dc3cf64.jpg",
+  "sha256": "381bcf734f8696aab4d97e8dc8e27241c5db35d5a5ca4503af8b688ef8f72d4f",
+  "bytes": 746203,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Open_wing_position_of_Lexias_dirtea_%28Fabricius%2C_1793%29_-_Dark_Archduke_%28Female%29_puddling_on_rotten_Neolamarckia_cadamba_flowerWLB.jpg/1920px-Open_wing_position_of_Lexias_dirtea_%28Fabricius%2C_1793%29_-_Dark_Archduke_%28Female%29_puddling_on_rotten_Neolamarckia_cadamba_flowerWLB.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-011.json",
+  "metadata_sha256": "449e9c61f7a65c5bcf4b791b8ce6001b19e3900e27076b5aba8ad4f1f31c9dc1",
+  "original_sha1": "3e13e7f7a5394e858f0ac0440759932ad624d46f",
+  "pageid": 128719219,
+  "api_reported_width": 1600,
+  "api_reported_height": 1067,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:21:24.915673+00:00",
+    "key": "9d16e10353db7dc3cf64",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Open_wing_position_of_Lexias_dirtea_%28Fabricius%2C_1793%29_-_Dark_Archduke_%28Female%29_puddling_on_rotten_Neolamarckia_cadamba_flowerWLB.jpg/1920px-Open_wing_position_of_Lexias_dirtea_%28Fabricius%2C_1793%29_-_Dark_Archduke_%28Female%29_puddling_on_rotten_Neolamarckia_cadamba_flowerWLB.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 746203,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "ae6a4247bac75de5b55f9c0b6c797d56",
+      "last-modified": "Sun, 25 Oct 2026 01:37:48 GMT",
+      "content-length": "746203",
+      "date": "Sat, 31 Oct 2026 17:21:25 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "8f92ca88-0882-4209-ad35-a50c455f18ef"
+    },
+    "sha256": "381bcf734f8696aab4d97e8dc8e27241c5db35d5a5ca4503af8b688ef8f72d4f"
+  },
+  "width": 1920,
+  "height": 1280,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

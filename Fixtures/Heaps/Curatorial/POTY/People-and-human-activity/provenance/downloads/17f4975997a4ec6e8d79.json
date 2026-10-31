@@ -1,0 +1,41 @@
+{
+  "candidate_id": "17f4975997a4ec6e8d79",
+  "source_path": "sources/17f4975997a4ec6e8d79.jpg",
+  "sha256": "27e97ccb5f6aea6f18805cc89331b57186f11b843ccba8508b7a8a75ba4c7531",
+  "bytes": 501750,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Tribu_Laarim%2C_Kimotong%2C_Sud%C3%A1n_del_Sur%2C_2024-01-25%2C_DD_30.jpg/1280px-Tribu_Laarim%2C_Kimotong%2C_Sud%C3%A1n_del_Sur%2C_2024-01-25%2C_DD_30.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-008.json",
+  "metadata_sha256": "92e6ee910fa644142f4f4a700fca8e11d6977808479e259ef3fc7cb0d8384374",
+  "original_sha1": "013e40cd0519ec7c587b4b77c9a76fce07e8c7ff",
+  "pageid": 145931227,
+  "api_reported_width": 1143,
+  "api_reported_height": 1600,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:22:48.991022+00:00",
+    "key": "17f4975997a4ec6e8d79",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Tribu_Laarim%2C_Kimotong%2C_Sud%C3%A1n_del_Sur%2C_2024-01-25%2C_DD_30.jpg/1280px-Tribu_Laarim%2C_Kimotong%2C_Sud%C3%A1n_del_Sur%2C_2024-01-25%2C_DD_30.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 501750,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "df1b7694d75cd286bc6efb00a493ba07",
+      "last-modified": "Tue, 21 Jul 2026 11:36:06 GMT",
+      "content-length": "501750",
+      "date": "Sat, 31 Oct 2026 17:22:49 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "d28be78c-f67d-42f8-a001-43b00e1eb368"
+    },
+    "sha256": "27e97ccb5f6aea6f18805cc89331b57186f11b843ccba8508b7a8a75ba4c7531"
+  },
+  "width": 1280,
+  "height": 1791,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T17:13:27.080760+00:00",
+  "key": "files-004",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3ALasiocampa+quercus+5th+instar+caterpillar+Keila+%28side+view%29.jpg%7CFile%3ANarrow-banded+dartwhite+%28Catasticta+flisa+postaurea%29+underside+on+Mimosa+pudica.jpg%7CFile%3ABlutrote+Heidelibelle+%28Sympetrum+sanguineum%29+-20230916-RM-123712.jpg%7CFile%3APseudaristia+oxycodia+Antioquia.jpg%7CFile%3AHummel+Cosmea-20231018-RM-170758.jpg%7CFile%3AMesamphiagrion+laterale+males+and+juvenile+male+Cuninamarca.jpg%7CFile%3AWhite-winged+forest+sylph+%28Ceratrichia+nothus+nothus%29+underside+Nyamebe+Bepo.jpg%7CFile%3A%D0%9F%D0%B0%D1%83%D0%BA+Xysticus+%D0%B7%D0%B0+%D0%B7%D0%B0%D0%B2%D1%82%D1%80%D0%B0%D0%BA%D0%BE%D0%BC.jpg%7CFile%3AGeb%C3%A4nderte+Prachtlibelle+2023-2.jpg%7CFile%3AJanetta+forester+%28Euphaedra+janetta%29+female+underside+Ankasa.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 72673,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 17:13:27 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-vl6nh",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "18afe2d9-56a2-406f-a465-c6ec88500eb0"
+  },
+  "sha256": "e663a25fe98fcdabf00faa54378e0ff13da249c4407d2677fad95d52c4a507b2"
+}

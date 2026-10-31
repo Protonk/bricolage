@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T17:16:57.650997+00:00",
+  "key": "files-014",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3AWater+reflection+of+a+boy+feeding+hay+to+a+cow+in+a+paddy+field+at+golden+hour+in+Laos.jpg%7CFile%3AWoman+with+watering+can%2C+Dent+de+Man.jpg%7CFile%3ACampamento+de+ganado+de+la+tribu+Mundari%2C+Terekeka%2C+Sud%C3%A1n+del+Sur%2C+2024-01-27%2C+DD+04.jpg%7CFile%3ACampamento+de+ganado+de+la+tribu+Mundari%2C+Terekeka%2C+Sud%C3%A1n+del+Sur%2C+2024-01-29%2C+DD+242.jpg%7CFile%3ACampamento+de+ganado+de+la+tribu+Mundari%2C+Terekeka%2C+Sud%C3%A1n+del+Sur%2C+2024-01-30%2C+DD+50.jpg%7CFile%3ACampamento+de+ganado+de+la+tribu+Mundari%2C+Terekeka%2C+Sud%C3%A1n+del+Sur%2C+2024-01-28%2C+DD+174.jpg%7CFile%3AParastoo+Ahmadi.jpg%7CFile%3AVintage+Smile.jpg%7CFile%3AWalk+Off+the+Earth+performing+at+Caesars+Windsor%2C+2025-01-03+31.jpg%7CFile%3APulitzer2018-portraits-martyna-majok-2676.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 69851,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 17:16:57 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-gfn79",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "f650102d-d54f-4137-a9f9-1f54d8ebe2a7"
+  },
+  "sha256": "b2f46b98c81f6a321e60a7945c6fad62e44652f51049d5aec9057efb309788e4"
+}

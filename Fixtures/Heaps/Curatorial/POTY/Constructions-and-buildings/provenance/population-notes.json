@@ -1,0 +1,23 @@
+{
+  "basis": "Membership is the published category data page used by the gallery script. Raw category strings are preserved, including spelling errors and stale Other objects labels; no editorial reclassification.",
+  "count_by_year": {
+    "2023": 41,
+    "2024": 78,
+    "2025": 129
+  },
+  "all_entries_in_round1_all": true,
+  "category_field_disagreements": [
+    {
+      "candidate_id": "8acf1b8ecfe11e025f8c",
+      "year": 2023,
+      "commons_title": "File:Window and door on weathered garage wall.jpg",
+      "published_category": "Other objects"
+    },
+    {
+      "candidate_id": "a93b44c39fdf4bf92c56",
+      "year": 2023,
+      "commons_title": "File:Portal, Pitam Niwas Chowk, City Palace, Jaipur, 20191218 1000 9059.jpg",
+      "published_category": "Other objects"
+    }
+  ]
+}

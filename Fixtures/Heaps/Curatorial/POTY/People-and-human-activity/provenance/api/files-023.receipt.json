@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T17:17:29.850620+00:00",
+  "key": "files-023",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3ANorderney%2C+Promenade+--+2025+--+9281.jpg%7CFile%3AThe+History+of+Apple+Pie+-+Kelly+Lee+Owens+%282013%29.jpg%7CFile%3APortrait+de+femme+en+tenue+traditionnelle+de+Berb%C3%A8re+Alg%C3%A9rien.jpg%7CFile%3AMan+turns+drying+chili+peppers%2C+Turkey.jpg%7CFile%3AEpisode+after+Battle+of+Zonnebeke+1918+Hurley+restoration.jpg%7CFile%3A%D9%81%D8%A7%D8%B1%D8%B3+%D8%A7%D9%84%D8%B5%D8%AD%D8%B1%D8%A7%D8%A1+%D8%A8%D8%B9%D8%B2%D9%8A%D9%85%D8%A9+%D9%88%D8%A5%D8%B1%D8%AB+%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%D9%8A.jpg%7CFile%3ACaretos+Lazarim%2C+Portugal.jpg%7CFile%3AAll+Souls%27+Day+celebration+01.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 70537,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 17:17:30 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-wnr4h",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "56c250ac-75e1-4316-ae6d-ce4fd795b807"
+  },
+  "sha256": "41a8c75c28c900f92704b85493acf4c24fb3f8753bb19cb9569242d26e88794b"
+}

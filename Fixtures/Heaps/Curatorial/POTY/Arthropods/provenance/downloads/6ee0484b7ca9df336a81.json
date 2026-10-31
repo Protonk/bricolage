@@ -1,0 +1,41 @@
+{
+  "candidate_id": "6ee0484b7ca9df336a81",
+  "source_path": "sources/6ee0484b7ca9df336a81.jpg",
+  "sha256": "eda2b2b04054feb75a9b085826e5a78a389e2f9962a68f816e5f39322594135e",
+  "bytes": 879334,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Peucetia_viridans%2C_Sierra_de_Guadalupe%2C_Mexico_20251108p2.jpg/1920px-Peucetia_viridans%2C_Sierra_de_Guadalupe%2C_Mexico_20251108p2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-020.json",
+  "metadata_sha256": "5af59ec0d680a88cac45668c9e944b4387ce27dc5f16c2e154a24f9dfd6b6d90",
+  "original_sha1": "f466fb375e8c57b0bab74a10951af18a2f9edb0d",
+  "pageid": 178134182,
+  "api_reported_width": 1497,
+  "api_reported_height": 1600,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:21:45.897318+00:00",
+    "key": "6ee0484b7ca9df336a81",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Peucetia_viridans%2C_Sierra_de_Guadalupe%2C_Mexico_20251108p2.jpg/1920px-Peucetia_viridans%2C_Sierra_de_Guadalupe%2C_Mexico_20251108p2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 879334,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "1f29480c3c13cc59f20a0b1110062fd6",
+      "last-modified": "Sun, 06 Sep 2026 00:07:31 GMT",
+      "content-length": "879334",
+      "date": "Sat, 31 Oct 2026 17:21:46 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "a4562fcc-bebb-49c3-b9cb-6f3e1f129622"
+    },
+    "sha256": "eda2b2b04054feb75a9b085826e5a78a389e2f9962a68f816e5f39322594135e"
+  },
+  "width": 1920,
+  "height": 2052,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

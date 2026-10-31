@@ -1,0 +1,41 @@
+{
+  "candidate_id": "f84f938c0e9fab46a2e3",
+  "source_path": "sources/f84f938c0e9fab46a2e3.jpg",
+  "sha256": "ffa7a4db4bfc6bf503b2eb757235853f19f77f83d6753b3a0b643c303e4bd91d",
+  "bytes": 594288,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Friedenspalast_Den_Haag.jpg/1920px-Friedenspalast_Den_Haag.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-017.json",
+  "metadata_sha256": "134e461538f4600254bd1ed30972bd9d435ddf7301fac86a4e43c473c6561e80",
+  "original_sha1": "e84881dd1d99eafc02a88be8884d5b7a9acb1cd8",
+  "pageid": 171361436,
+  "api_reported_width": 1600,
+  "api_reported_height": 1301,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:24:39.495542+00:00",
+    "key": "f84f938c0e9fab46a2e3",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Friedenspalast_Den_Haag.jpg/1920px-Friedenspalast_Den_Haag.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 594288,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "b231420b1713a365296a435c0797aa17",
+      "last-modified": "Thu, 23 Jul 2026 17:59:14 GMT",
+      "content-length": "594288",
+      "date": "Sat, 31 Oct 2026 17:24:39 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "35049ece-cc61-4fcc-949e-6f6c75b6c5bc"
+    },
+    "sha256": "ffa7a4db4bfc6bf503b2eb757235853f19f77f83d6753b3a0b643c303e4bd91d"
+  },
+  "width": 1920,
+  "height": 1562,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

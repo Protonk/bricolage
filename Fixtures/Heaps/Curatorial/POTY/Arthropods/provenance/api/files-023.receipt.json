@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T17:14:35.776415+00:00",
+  "key": "files-023",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3A%28Toulouse%29+Enyo+gorgon+MHNT+CUT+2010+0+527+-+Maripasoula%2C+Guyane+France+-+female+dorsal.jpg%7CFile%3A%28Toulouse%29+Enyo+gorgon+MHNT+CUT+2010+0+527+-+Maripasoula%2C+Guyane+France+-+female+ventral.jpg%7CFile%3AMarmalade+hoverfly+%28Episyrphus+balteatus%29+male+Wengen+2.jpg%7CFile%3ASamoan+blue+tiger+%28Tirumala+hamata+melittula%29+female+underside+Upolu.jpg%7CFile%3AAellopos+fadus+MHNT+CUT+2010+0+273+Rio+veruellio+Amazonas+Brazil+female.jpg%7CFile%3AManduca+albiplaga+MHNT+CUT+2010+0+275+Amap%C3%A1+Bresil+female.jpg%7CFile%3A20220526+Harmonia+axyridis+02.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 49181,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 17:14:35 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-7x8x6",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "9131a8a9-d741-403f-beb9-83d839726574"
+  },
+  "sha256": "f977027edd81d9ce44e36c2b74778f170cb2bb9245eccc4ac4146677e5f0a63f"
+}

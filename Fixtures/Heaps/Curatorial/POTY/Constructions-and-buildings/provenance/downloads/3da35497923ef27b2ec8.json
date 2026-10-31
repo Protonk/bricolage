@@ -1,0 +1,41 @@
+{
+  "candidate_id": "3da35497923ef27b2ec8",
+  "source_path": "sources/3da35497923ef27b2ec8.jpg",
+  "sha256": "71fcb52cdc894bcd9c82634b6489edf55be43b383fd85c97c0301b23a959f79c",
+  "bytes": 1105325,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B3%D0%BE%D1%84%2C_%D0%9D%D0%B8%D0%B6%D0%BD%D0%B8%D0%B9_%D0%BF%D0%B0%D1%80%D0%BA._%D0%94%D0%B2%D0%BE%D1%80%D0%B5%D1%86_%D0%9C%D0%B0%D1%80%D0%BB%D0%B8_%D0%B8_%D0%A1%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D0%BF%D1%80%D1%83%D0%B4_1.jpg/1920px-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B3%D0%BE%D1%84%2C_%D0%9D%D0%B8%D0%B6%D0%BD%D0%B8%D0%B9_%D0%BF%D0%B0%D1%80%D0%BA._%D0%94%D0%B2%D0%BE%D1%80%D0%B5%D1%86_%D0%9C%D0%B0%D1%80%D0%BB%D0%B8_%D0%B8_%D0%A1%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D0%BF%D1%80%D1%83%D0%B4_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-012.json",
+  "metadata_sha256": "2b8792d5e876d3a675dd50202e4f8a5c265fc49772176cb6183aae6f11a6ac72",
+  "original_sha1": "7f34ee6fa9f0883de8652a440005dde87352ef62",
+  "pageid": 136733626,
+  "api_reported_width": 1600,
+  "api_reported_height": 1067,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:29:22.065504+00:00",
+    "key": "3da35497923ef27b2ec8",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B3%D0%BE%D1%84%2C_%D0%9D%D0%B8%D0%B6%D0%BD%D0%B8%D0%B9_%D0%BF%D0%B0%D1%80%D0%BA._%D0%94%D0%B2%D0%BE%D1%80%D0%B5%D1%86_%D0%9C%D0%B0%D1%80%D0%BB%D0%B8_%D0%B8_%D0%A1%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D0%BF%D1%80%D1%83%D0%B4_1.jpg/1920px-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B3%D0%BE%D1%84%2C_%D0%9D%D0%B8%D0%B6%D0%BD%D0%B8%D0%B9_%D0%BF%D0%B0%D1%80%D0%BA._%D0%94%D0%B2%D0%BE%D1%80%D0%B5%D1%86_%D0%9C%D0%B0%D1%80%D0%BB%D0%B8_%D0%B8_%D0%A1%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D0%BF%D1%80%D1%83%D0%B4_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 1105325,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "5dede60c88053da92a4e5c5beaee740f",
+      "last-modified": "Wed, 14 Oct 2026 07:45:40 GMT",
+      "content-length": "1105325",
+      "date": "Sat, 31 Oct 2026 17:29:22 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "b8330fc7-7a19-4df3-81a0-594af620ad27"
+    },
+    "sha256": "71fcb52cdc894bcd9c82634b6489edf55be43b383fd85c97c0301b23a959f79c"
+  },
+  "width": 1920,
+  "height": 1280,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

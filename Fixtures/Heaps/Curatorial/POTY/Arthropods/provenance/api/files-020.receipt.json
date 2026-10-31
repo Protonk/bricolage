@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T17:14:24.618073+00:00",
+  "key": "files-020",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3AOpen+wing+basking+upon+cemented+floor+of+Bassarona+durga+%28Moore%2C+1858%29+-+Blue+Duke+WLB+IMG+4446.jpg%7CFile%3A20220702+Araschnia+levana+02.jpg%7CFile%3AHuron+sachem+%2814025%29.jpg%7CFile%3ANeoscona+oaxacensis+Coacalco+251014p1.jpg%7CFile%3ARed-legged+grasshopper+%2872625%29.jpg%7CFile%3AFork-tailed+bush+katydid+%2842143s%29.jpg%7CFile%3APseudoleon+superbus+Coacalco+20251018p1.jpg%7CFile%3APipevine+swallowtail+female+%2841733%29.jpg%7CFile%3APeucetia+viridans%2C+Sierra+de+Guadalupe%2C+Mexico+20251108p2.jpg%7CFile%3APeucetia+viridans%2C+Sierra+de+Guadalupe%2C+Mexico%2C+Nov+15+2025+p3.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 53502,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 17:14:24 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-p4pbg",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "9b6aa799-686b-4454-8acb-8bf3b2b6d312"
+  },
+  "sha256": "5af59ec0d680a88cac45668c9e944b4387ce27dc5f16c2e154a24f9dfd6b6d90"
+}

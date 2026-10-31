@@ -1,0 +1,41 @@
+{
+  "candidate_id": "d2c89d3bbc8eee51edec",
+  "source_path": "sources/d2c89d3bbc8eee51edec.jpg",
+  "sha256": "a9f57aca3cd5ad016b32f4322bdc9155bc842f54773aa1febe6260eb2712d9f9",
+  "bytes": 493089,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Jaipur_03-2016_20_City_Palace_complex.jpg/1920px-Jaipur_03-2016_20_City_Palace_complex.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-017.json",
+  "metadata_sha256": "134e461538f4600254bd1ed30972bd9d435ddf7301fac86a4e43c473c6561e80",
+  "original_sha1": "ac4de0df6ced4f16469e56c0785f7e7c5a427acd",
+  "pageid": 48911867,
+  "api_reported_width": 1600,
+  "api_reported_height": 900,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:29:28.997550+00:00",
+    "key": "d2c89d3bbc8eee51edec",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Jaipur_03-2016_20_City_Palace_complex.jpg/1920px-Jaipur_03-2016_20_City_Palace_complex.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 493089,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "5e8155dd97f8dbdb1ece869d16953c6c",
+      "last-modified": "Sun, 19 Jul 2026 00:54:09 GMT",
+      "content-length": "493089",
+      "date": "Sat, 31 Oct 2026 17:29:29 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "b4123565-2888-48b0-b849-8a1898e66d29"
+    },
+    "sha256": "a9f57aca3cd5ad016b32f4322bdc9155bc842f54773aa1febe6260eb2712d9f9"
+  },
+  "width": 1920,
+  "height": 1080,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

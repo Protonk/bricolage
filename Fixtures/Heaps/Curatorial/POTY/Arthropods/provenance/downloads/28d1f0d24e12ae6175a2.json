@@ -1,0 +1,41 @@
+{
+  "candidate_id": "28d1f0d24e12ae6175a2",
+  "source_path": "sources/28d1f0d24e12ae6175a2.jpg",
+  "sha256": "06b248098d388e3a5d6f9d9f354a679a93be2b141a7763c6494bdade861091b5",
+  "bytes": 610209,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Ventral_Golden_Orb_Weaver_Spider_Sasatgre_Oct24_A7CR_03892.jpg/1920px-Ventral_Golden_Orb_Weaver_Spider_Sasatgre_Oct24_A7CR_03892.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-011.json",
+  "metadata_sha256": "449e9c61f7a65c5bcf4b791b8ce6001b19e3900e27076b5aba8ad4f1f31c9dc1",
+  "original_sha1": "7cb60f0c938cf6777c88a1e14c3c6e120a76c1df",
+  "pageid": 154285148,
+  "api_reported_width": 1600,
+  "api_reported_height": 1600,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:24:11.262967+00:00",
+    "key": "28d1f0d24e12ae6175a2",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Ventral_Golden_Orb_Weaver_Spider_Sasatgre_Oct24_A7CR_03892.jpg/1920px-Ventral_Golden_Orb_Weaver_Spider_Sasatgre_Oct24_A7CR_03892.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 610209,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "d1ba8c67b98a68534b33789793b5699f",
+      "last-modified": "Wed, 05 Aug 2026 22:18:51 GMT",
+      "content-length": "610209",
+      "date": "Sat, 31 Oct 2026 17:24:11 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "aad519ac-2474-406c-9871-842a328e8460"
+    },
+    "sha256": "06b248098d388e3a5d6f9d9f354a679a93be2b141a7763c6494bdade861091b5"
+  },
+  "width": 1920,
+  "height": 1920,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

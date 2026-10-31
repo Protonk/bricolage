@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T17:16:29.360301+00:00",
+  "key": "files-006",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3ADr+Abraham+Verghese+in+2023+06.jpg%7CFile%3AFlo+dans+Juvs%C3%B8yla+%C3%A0+Rjukan%2C+Norv%C3%A8ge-rotated.jpg%7CFile%3AMan+playing+Brazilian+folk+music+of+Recife.jpg%7CFile%3AOhio+farmer+David+Brandt.jpg%7CFile%3APhoto+of+a+venetian+mask+in+a+studio+photo+session.jpg%7CFile%3AJorge+Amado%2C+gtfy.00010.jpg%7CFile%3ARatargul+785+retouched.jpg%7CFile%3ARowers+on+a+long+racing+pirogue+training+for+a+competition+at+sunrise+in+Don+Det+Laos.jpg%7CFile%3ASteve+Jobs+and+Macintosh+computer%2C+January+1984%2C+by+Bernard+Gotfryd+-+edited.jpg%7CFile%3ATribu+Laarim%2C+Kimotong%2C+Sud%C3%A1n+del+Sur%2C+2024-01-24%2C+DD+121.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 59945,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 17:16:29 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-6s9r5",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "85cecbd7-7519-4d82-a958-a2d89ffddb99"
+  },
+  "sha256": "9ec9308a43aaaa6d0daf5b3902fc031ad177490f6532797ffdb19be60d00f746"
+}

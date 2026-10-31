@@ -1,0 +1,1880 @@
+{
+  "seed": "hazy-poty-round1-2023-2025-v1",
+  "target": 50,
+  "official_category": "Constructions and buildings",
+  "decisions": [
+    {
+      "candidate_id": "be62b458547c7145459f",
+      "rank": 1,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "9608554eab7b21c5d4b0",
+      "rank": 2,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "7c441cac38317414f2ba",
+      "rank": 3,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "b20ea5ecba01566c0552",
+      "rank": 4,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "f4695f7fd66009d62564",
+      "rank": 5,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "6048f073041b225d9c68",
+      "rank": 6,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "c18e05ac87fb602f2163",
+      "rank": 7,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "260321dbbf1ffb81b9e3",
+      "rank": 8,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "9608554eab7b21c5d4b0"
+      ]
+    },
+    {
+      "candidate_id": "8088df745e653b57710d",
+      "rank": 9,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "d2dc06e7fe2a529f65e2",
+      "rank": 10,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "1508a8aeecdd34cc0bc4",
+      "rank": 11,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "128aaecae138fa13faec",
+      "rank": 12,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "2323128afd73f948eca0",
+      "rank": 13,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "b62279dbc2788320d896",
+      "rank": 14,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "c2ae4996c4defa81f4ab",
+      "rank": 15,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "f84f938c0e9fab46a2e3",
+      "rank": 16,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "3d9014edd02dad8ac48c",
+      "rank": 17,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "7c441cac38317414f2ba"
+      ]
+    },
+    {
+      "candidate_id": "b270fb465334c8bf1ef4",
+      "rank": 18,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "128aaecae138fa13faec"
+      ]
+    },
+    {
+      "candidate_id": "ed7598d6ab07bc03aa36",
+      "rank": 19,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "8b1b84b88b96f27c5ebd",
+      "rank": 20,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "128aaecae138fa13faec"
+      ]
+    },
+    {
+      "candidate_id": "82c5c8357a71acac9edc",
+      "rank": 21,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "128aaecae138fa13faec"
+      ]
+    },
+    {
+      "candidate_id": "073a4179352142f70d73",
+      "rank": 22,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "6048f073041b225d9c68"
+      ]
+    },
+    {
+      "candidate_id": "d01ca5313f8f62447d11",
+      "rank": 23,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "98b96fb557e5a19bfa73",
+      "rank": 24,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "d2dc06e7fe2a529f65e2"
+      ]
+    },
+    {
+      "candidate_id": "8ec3f6e6fb7a7bf3f82f",
+      "rank": 25,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "d657a925dff094ff14eb",
+      "rank": 26,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "128aaecae138fa13faec"
+      ]
+    },
+    {
+      "candidate_id": "b3b6c35036f62f54bbe7",
+      "rank": 27,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "9abddc213cff708a42b5",
+      "rank": 28,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "6d1e8df19796031884a2",
+      "rank": 29,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "e9889bcab21188f64a30",
+      "rank": 30,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "27234c77f01f95653fb0",
+      "rank": 31,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "f4695f7fd66009d62564"
+      ]
+    },
+    {
+      "candidate_id": "e1da85da80f2106d2f2f",
+      "rank": 32,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "c2ae4996c4defa81f4ab"
+      ]
+    },
+    {
+      "candidate_id": "7bf8da314d12f51522d2",
+      "rank": 33,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "fd705471dbffa1474175",
+      "rank": 34,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "115074cde48d0ce3e7b7",
+      "rank": 35,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "d00fc3e5b930455724f5",
+      "rank": 36,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "84626a7084110abbc9d1",
+      "rank": 37,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "b20ea5ecba01566c0552"
+      ]
+    },
+    {
+      "candidate_id": "8f49c00840bee5b29866",
+      "rank": 38,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "a638aeb4b57ff3120eae",
+      "rank": 39,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "33144792127d9c0fec9f",
+      "rank": 40,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "4df14cdf7b09f2fdae2c",
+      "rank": 41,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "0754a94c8e1256163696",
+      "rank": 42,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "d2dc06e7fe2a529f65e2"
+      ]
+    },
+    {
+      "candidate_id": "19542f152423c4420e77",
+      "rank": 43,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "c2ae4996c4defa81f4ab"
+      ]
+    },
+    {
+      "candidate_id": "dc8e0ecb3019b365dc13",
+      "rank": 44,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "128aaecae138fa13faec"
+      ]
+    },
+    {
+      "candidate_id": "faf3aecba251aa418445",
+      "rank": 45,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "128aaecae138fa13faec"
+      ]
+    },
+    {
+      "candidate_id": "0c01f54fbee57d220bfe",
+      "rank": 46,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "aeba808e1d0c7b427a7c",
+      "rank": 47,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "9608554eab7b21c5d4b0"
+      ]
+    },
+    {
+      "candidate_id": "d310fb1ec70ae07eb540",
+      "rank": 48,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "128aaecae138fa13faec"
+      ]
+    },
+    {
+      "candidate_id": "a581cefaeba725b0de57",
+      "rank": 49,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "e98942b6c050c8d070eb",
+      "rank": 50,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "c4561f1362be02d782d0",
+      "rank": 51,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "0c01f54fbee57d220bfe"
+      ]
+    },
+    {
+      "candidate_id": "cf2d37a965fdad61db7b",
+      "rank": 52,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "199c653a515b35b8789f",
+      "rank": 53,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "8f49c00840bee5b29866"
+      ]
+    },
+    {
+      "candidate_id": "2fb16e17644e0ef09ba9",
+      "rank": 54,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "9608554eab7b21c5d4b0"
+      ]
+    },
+    {
+      "candidate_id": "f5dde5b832e0fcd927f6",
+      "rank": 55,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "afeb03be1ac6db241174",
+      "rank": 56,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "0c01f54fbee57d220bfe"
+      ]
+    },
+    {
+      "candidate_id": "3cdfeba6b312fc3a116d",
+      "rank": 57,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "6048f073041b225d9c68"
+      ]
+    },
+    {
+      "candidate_id": "188681cc4e3bb7b9a0fc",
+      "rank": 58,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "9608554eab7b21c5d4b0"
+      ]
+    },
+    {
+      "candidate_id": "b99185eb791b114eb317",
+      "rank": 59,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "a5b094920414bcc9b0d3",
+      "rank": 60,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "d174705bb87a927bf486",
+      "rank": 61,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "6048f073041b225d9c68"
+      ]
+    },
+    {
+      "candidate_id": "947cb841f725db891923",
+      "rank": 62,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "a5b094920414bcc9b0d3"
+      ]
+    },
+    {
+      "candidate_id": "a90786d234ab2fb32de0",
+      "rank": 63,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "050be4b4e3906c9af269",
+      "rank": 64,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "6048f073041b225d9c68"
+      ]
+    },
+    {
+      "candidate_id": "0079fc8add86e70d1e09",
+      "rank": 65,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "f4695f7fd66009d62564"
+      ]
+    },
+    {
+      "candidate_id": "1946b8d92f25d2d14d2c",
+      "rank": 66,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "f5dde5b832e0fcd927f6"
+      ]
+    },
+    {
+      "candidate_id": "9cda23944f65173e0a7c",
+      "rank": 67,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "61ae13a2d73133ed05c0",
+      "rank": 68,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "8f49c00840bee5b29866"
+      ]
+    },
+    {
+      "candidate_id": "884e958b37d001f768dc",
+      "rank": 69,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "830b3fd516875cb413dd",
+      "rank": 70,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "9608554eab7b21c5d4b0"
+      ]
+    },
+    {
+      "candidate_id": "c16d5d902e4d8ea424b3",
+      "rank": 71,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "8088df745e653b57710d"
+      ]
+    },
+    {
+      "candidate_id": "3da35497923ef27b2ec8",
+      "rank": 72,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "690010a840611b0180a6",
+      "rank": 73,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "9608554eab7b21c5d4b0"
+      ]
+    },
+    {
+      "candidate_id": "d1902bd94e70bec140cf",
+      "rank": 74,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "aafe16d79abbf5fc3df6",
+      "rank": 75,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "115074cde48d0ce3e7b7"
+      ]
+    },
+    {
+      "candidate_id": "a9d82ef6800ee193ffa6",
+      "rank": 76,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "6048f073041b225d9c68"
+      ]
+    },
+    {
+      "candidate_id": "d2c89d3bbc8eee51edec",
+      "rank": 77,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "c16a0999c6824681d985",
+      "rank": 78,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "2719da8af825b006c6ec",
+      "rank": 79,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "a717800509676f4cd143",
+      "rank": 80,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "1230c26cd934567b6991",
+      "rank": 81,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "b3b6c35036f62f54bbe7"
+      ]
+    },
+    {
+      "candidate_id": "a608487b8757f4a0b4fb",
+      "rank": 82,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "6048f073041b225d9c68"
+      ]
+    },
+    {
+      "candidate_id": "a532cc97ca67aa10077f",
+      "rank": 83,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "9abddc213cff708a42b5"
+      ]
+    },
+    {
+      "candidate_id": "71d6a58bf50da75b20ba",
+      "rank": 84,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "a664e353f7296f1a97c3",
+      "rank": 85,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "7505d510cf1f7f5485ed",
+      "rank": 86,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "263aabf0d8b8578ea7e9",
+      "rank": 87,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "a638aeb4b57ff3120eae"
+      ]
+    },
+    {
+      "candidate_id": "d66b3c1035ce394db9f5",
+      "rank": 88,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "d1902bd94e70bec140cf"
+      ]
+    },
+    {
+      "candidate_id": "5e07dbb07862f8d2dc3f",
+      "rank": 89,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "d2dc06e7fe2a529f65e2"
+      ]
+    },
+    {
+      "candidate_id": "9d1cb73854a818159866",
+      "rank": 90,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "ca3aa441967ff1256d2f",
+      "rank": 91,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "8d0bef502fb9fbd7f99f",
+      "rank": 92,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "48858bb06496c18053c2",
+      "rank": 93,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "6f4d636dbb7d8f42e7b7",
+      "rank": 94,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "089750b482e41a84ce23",
+      "rank": 95,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "79876cbde999f848452b",
+      "rank": 96,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "61ef44dadf2f2d950992",
+      "rank": 97,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "e3f484f6990ae7f6fb91",
+      "rank": 98,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "60526a41aada59755c43",
+      "rank": 99,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "af1b3506a818abae9206",
+      "rank": 100,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "96b62e95cd25ed44ecd2",
+      "rank": 101,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "5f1d830bcece0248a9e0",
+      "rank": 102,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "25f5716851a6e2010c3f",
+      "rank": 103,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "0297cf754f849c3e6ff9",
+      "rank": 104,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "e9f18783fe945a32407a",
+      "rank": 105,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "7e9022ce79557ac8ebf1",
+      "rank": 106,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "8bb5cbb9d10c86a4f80d",
+      "rank": 107,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "997c9aefba13d1907f5b",
+      "rank": 108,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "c9044ea54197e5d2af60",
+      "rank": 109,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "37bd8009c56ab1867cc0",
+      "rank": 110,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "73916eb779a30028a2c5",
+      "rank": 111,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "7286506be2a5fc8334b6",
+      "rank": 112,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "a29b475c8a1079a030d8",
+      "rank": 113,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "82857489157f3e13ca5a",
+      "rank": 114,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "82c805350a08d9d1d1fe",
+      "rank": 115,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "080e257e8ac75f1b15d6",
+      "rank": 116,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "86f61854552a905dd26a",
+      "rank": 117,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "b558af05f3d03e28a7be",
+      "rank": 118,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "47e6a026141b0f61cb08",
+      "rank": 119,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "441896e9c0652db8ec05",
+      "rank": 120,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "9d143c91921ec2fed4d5",
+      "rank": 121,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "21c4ecc860b4746815ee",
+      "rank": 122,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "fd0b0ac79842dd75f205",
+      "rank": 123,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "56871d8cc12e3d527969",
+      "rank": 124,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "1667b6e6e968b99bf346",
+      "rank": 125,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "928ad5c162fa442ddef9",
+      "rank": 126,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "14ff826d56455ea07047",
+      "rank": 127,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "994c9f02513df66ff7c2",
+      "rank": 128,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "fb50a25965a5ccb3d55a",
+      "rank": 129,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "5d1a4f0a3607d43d6aa0",
+      "rank": 130,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "a2cf64d09c058ac34090",
+      "rank": 131,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "54a17817b85c43b107e3",
+      "rank": 132,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "a9585ccfaefc45616be9",
+      "rank": 133,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "e4ab37d8448c07d8622c",
+      "rank": 134,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "6e9f325b438a726daa8a",
+      "rank": 135,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "f11bea0f6f6f0fef53fc",
+      "rank": 136,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "0301d1f305ab805bae17",
+      "rank": 137,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "35c2508ecc30135e3e68",
+      "rank": 138,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "131ba8ec82dd5fc2b084",
+      "rank": 139,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "f0f769f7f055e8e6cedf",
+      "rank": 140,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "28eb018a9542bc0e7f88",
+      "rank": 141,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "35507a0e780e44d84e53",
+      "rank": 142,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "08ccec7aa05eea6aaa15",
+      "rank": 143,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "a15937e902feff93feb6",
+      "rank": 144,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "0748a7c2255e7dbcf614",
+      "rank": 145,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "9d0482741c4fca0f7e28",
+      "rank": 146,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "dc7b45c972b167752491",
+      "rank": 147,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "79908d30c024c3e6d55b",
+      "rank": 148,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "fdaff12515d720be0fc2",
+      "rank": 149,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "f9f6c9d9c76859e7d1ad",
+      "rank": 150,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "901e6882e9be0d1af22e",
+      "rank": 151,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "94f569b5febddac3aff4",
+      "rank": 152,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "410596c5e05a36183774",
+      "rank": 153,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "83a19222b6f6e058af37",
+      "rank": 154,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "bd9b0c00661d9021968d",
+      "rank": 155,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "5054970c4931e11ac44e",
+      "rank": 156,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "5cb9060e0834e49fe145",
+      "rank": 157,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "09e36110e01bba05c51c",
+      "rank": 158,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "675e1077f7c95a2dd2ce",
+      "rank": 159,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "017ee33cea40049aa5e3",
+      "rank": 160,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "4cda534bba61bd86f22f",
+      "rank": 161,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "47dee8384362d80e6617",
+      "rank": 162,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "048d26621abf1903287a",
+      "rank": 163,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "fd3d2ed01fcdb909660a",
+      "rank": 164,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "11fde66613e8277fdc52",
+      "rank": 165,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "bfdc513e1db8e19eea4e",
+      "rank": 166,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "e1e44e5c8676e1a90d8f",
+      "rank": 167,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "d5644d20be459d7e4ebf",
+      "rank": 168,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "8acf1b8ecfe11e025f8c",
+      "rank": 169,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "b8f97132b3ede38e1ee6",
+      "rank": 170,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "0041d2c7571b046b1a2f",
+      "rank": 171,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "0d7da6d8bccdd5802ec5",
+      "rank": 172,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "fb9ff68362ca16c54547",
+      "rank": 173,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "3dca2b85d3b40c681906",
+      "rank": 174,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "c3a1d3a3879ee1d49d8f",
+      "rank": 175,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "77f8306d22b1337ab712",
+      "rank": 176,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "49d458936e45369e0ddc",
+      "rank": 177,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "2864357add429870fee5",
+      "rank": 178,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "d4f24588ab058cf35327",
+      "rank": 179,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "55bbb22a52571e5da6e5",
+      "rank": 180,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "c6c4c24b27617e43b16a",
+      "rank": 181,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "b285d11a66c81d14b69d",
+      "rank": 182,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "4ed0f6853e2c6953306e",
+      "rank": 183,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "9025830d0be65b05fdb7",
+      "rank": 184,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "125ae87663d8640bf031",
+      "rank": 185,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "2ba499f886af70339c3b",
+      "rank": 186,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "756a321fa115f14c4ff7",
+      "rank": 187,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "d0c3b59f6f9471da2d11",
+      "rank": 188,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "a07fdfbaf6fa1cec4e60",
+      "rank": 189,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "c59343d2371dafe863e6",
+      "rank": 190,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "07654b6c5eb04f1567b5",
+      "rank": 191,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "f6fba89989102e54313d",
+      "rank": 192,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "904caf1386e0c6157537",
+      "rank": 193,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "1e35a8c7987c0bda1cbd",
+      "rank": 194,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "d7a42c8d59c7dd812561",
+      "rank": 195,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "00b964e5d0a98a995286",
+      "rank": 196,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "d01edb2194ba2af0ccd1",
+      "rank": 197,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "f6c3f7f4a138157668c9",
+      "rank": 198,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "5c4f3b90832bc32a60ca",
+      "rank": 199,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "766f6e4cb9791238a970",
+      "rank": 200,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "5c0a8d34342e28272b06",
+      "rank": 201,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "261e810f0242248f58b8",
+      "rank": 202,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "ad431cfde8e536decea3",
+      "rank": 203,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "9e07264bd302c73ddb05",
+      "rank": 204,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "a93b44c39fdf4bf92c56",
+      "rank": 205,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "572375b550d9441335c0",
+      "rank": 206,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "134081a1f45d2be3b664",
+      "rank": 207,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "ec16f4466d7f3957b6bb",
+      "rank": 208,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "68c1ecf685b3524ecdde",
+      "rank": 209,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "009ccf4d6919b0369261",
+      "rank": 210,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "4134a1dccff08acd9151",
+      "rank": 211,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "452924889baadcd3062a",
+      "rank": 212,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "3aaf8ef759402b331523",
+      "rank": 213,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "ec833f75e168cf20ca20",
+      "rank": 214,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "095def674f85fd05923e",
+      "rank": 215,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "256de9de8ec901119d62",
+      "rank": 216,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "2cbe8f26967c798ebc41",
+      "rank": 217,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "570f8d4b1245b91396d2",
+      "rank": 218,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "9bb02b98bcd128cf3289",
+      "rank": 219,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "b11add90ac0c3319cb04",
+      "rank": 220,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "7f97fce719b755be6ffb",
+      "rank": 221,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "c484f06bca8e46177b5b",
+      "rank": 222,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "3482d6af8405555ecafd",
+      "rank": 223,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "9bc160befe9b66d8d331",
+      "rank": 224,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "a84b7b4bbe399cd746dc",
+      "rank": 225,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "395c640fbfafb3c4b7dd",
+      "rank": 226,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "d359120ca7bc727efc3d",
+      "rank": 227,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "bf2cc1fb3bc5d2b116ce",
+      "rank": 228,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "24ee795b18ead23547b1",
+      "rank": 229,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "16662b84eb8bf80af74d",
+      "rank": 230,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "8c458c2fcbb7d0f2cec1",
+      "rank": 231,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "c6388b8c648a46421071",
+      "rank": 232,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "f8303e83d9ac237437fb",
+      "rank": 233,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "30fcc69003c2f5364b26",
+      "rank": 234,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "c37dd6e5609699373cc8",
+      "rank": 235,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "83a707e27bfbe5bfe24c",
+      "rank": 236,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "3c320063b7bb8c91b422",
+      "rank": 237,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "9ff379ef19c0da2f4077",
+      "rank": 238,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "8160ac9e6f6422267e8a",
+      "rank": 239,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "684c0d6d4eadaeb4d255",
+      "rank": 240,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "67b4fff337b3627e2d01",
+      "rank": 241,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "7c669c2a0170c392ee3a",
+      "rank": 242,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "53dbe21c74fb00868afd",
+      "rank": 243,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "a3e975b970881231c8c6",
+      "rank": 244,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "3dc12e3a0f5d90ccf0c8",
+      "rank": 245,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "ec4a99e7280adea474bb",
+      "rank": 246,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "3494edeebf9d504cb52f",
+      "rank": 247,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "371a1a0b6d72dd7e0144",
+      "rank": 248,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": []
+    }
+  ],
+  "selected": [
+    "be62b458547c7145459f",
+    "9608554eab7b21c5d4b0",
+    "7c441cac38317414f2ba",
+    "b20ea5ecba01566c0552",
+    "f4695f7fd66009d62564",
+    "6048f073041b225d9c68",
+    "c18e05ac87fb602f2163",
+    "8088df745e653b57710d",
+    "d2dc06e7fe2a529f65e2",
+    "1508a8aeecdd34cc0bc4",
+    "128aaecae138fa13faec",
+    "2323128afd73f948eca0",
+    "b62279dbc2788320d896",
+    "c2ae4996c4defa81f4ab",
+    "f84f938c0e9fab46a2e3",
+    "ed7598d6ab07bc03aa36",
+    "d01ca5313f8f62447d11",
+    "8ec3f6e6fb7a7bf3f82f",
+    "b3b6c35036f62f54bbe7",
+    "9abddc213cff708a42b5",
+    "6d1e8df19796031884a2",
+    "e9889bcab21188f64a30",
+    "7bf8da314d12f51522d2",
+    "fd705471dbffa1474175",
+    "115074cde48d0ce3e7b7",
+    "d00fc3e5b930455724f5",
+    "8f49c00840bee5b29866",
+    "a638aeb4b57ff3120eae",
+    "33144792127d9c0fec9f",
+    "4df14cdf7b09f2fdae2c",
+    "0c01f54fbee57d220bfe",
+    "a581cefaeba725b0de57",
+    "e98942b6c050c8d070eb",
+    "cf2d37a965fdad61db7b",
+    "f5dde5b832e0fcd927f6",
+    "b99185eb791b114eb317",
+    "a5b094920414bcc9b0d3",
+    "a90786d234ab2fb32de0",
+    "9cda23944f65173e0a7c",
+    "884e958b37d001f768dc",
+    "3da35497923ef27b2ec8",
+    "d1902bd94e70bec140cf",
+    "d2c89d3bbc8eee51edec",
+    "c16a0999c6824681d985",
+    "2719da8af825b006c6ec",
+    "a717800509676f4cd143",
+    "71d6a58bf50da75b20ba",
+    "a664e353f7296f1a97c3",
+    "7505d510cf1f7f5485ed",
+    "9d1cb73854a818159866"
+  ],
+  "counts": {
+    "selected": 50,
+    "excluded": 40,
+    "reserve": 158
+  }
+}

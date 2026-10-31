@@ -1,0 +1,41 @@
+{
+  "candidate_id": "4b42d387fa69b3670778",
+  "source_path": "sources/4b42d387fa69b3670778.jpg",
+  "sha256": "7f6a9e8256b31804fd2f05ac1be8a1b819f32b17cd2ec0cc0a1fff6b3a6523a0",
+  "bytes": 409928,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/20230211_Chiara_Kreuzer_850_6878.jpg/1280px-20230211_Chiara_Kreuzer_850_6878.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-000.json",
+  "metadata_sha256": "b3ccf89263ff9356d9906be9f12f966f836fe9dff1b73ec03661ddd42d684505",
+  "original_sha1": "6818e82ec768fdfa12daef7cf0a8c922c236b3b5",
+  "pageid": 128619324,
+  "api_reported_width": 1066,
+  "api_reported_height": 1600,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:30:07.199862+00:00",
+    "key": "4b42d387fa69b3670778",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/20230211_Chiara_Kreuzer_850_6878.jpg/1280px-20230211_Chiara_Kreuzer_850_6878.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 409928,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "51d2dc3d02b3d3112ca72d57c2eebc2d",
+      "last-modified": "Fri, 09 Oct 2026 02:05:54 GMT",
+      "content-length": "409928",
+      "date": "Sat, 31 Oct 2026 17:30:07 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "03db0248-8abc-46a7-81de-b9c3e4a5d724"
+    },
+    "sha256": "7f6a9e8256b31804fd2f05ac1be8a1b819f32b17cd2ec0cc0a1fff6b3a6523a0"
+  },
+  "width": 1280,
+  "height": 1920,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

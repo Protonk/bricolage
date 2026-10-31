@@ -1,0 +1,41 @@
+{
+  "candidate_id": "f4695f7fd66009d62564",
+  "source_path": "sources/f4695f7fd66009d62564.jpg",
+  "sha256": "c5b92473547e24bab5b3bc00608327e372249d5c4ae3cf278a681aad3b4032ee",
+  "bytes": 1172941,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Zernez%2C_Unterengadin%2C_Graub%C3%BCnden._20-09-2023._%28actm.%29_71.jpg/1920px-Zernez%2C_Unterengadin%2C_Graub%C3%BCnden._20-09-2023._%28actm.%29_71.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-009.json",
+  "metadata_sha256": "a4548c598cf03eb434d3e9926095eb0b9c5b5c6b6c8b17e02bdec7919b563284",
+  "original_sha1": "85d4ffe2ffed9bdff436a15c68dec8377538f71b",
+  "pageid": 146173482,
+  "api_reported_width": 1600,
+  "api_reported_height": 1067,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:22:03.375585+00:00",
+    "key": "f4695f7fd66009d62564",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Zernez%2C_Unterengadin%2C_Graub%C3%BCnden._20-09-2023._%28actm.%29_71.jpg/1920px-Zernez%2C_Unterengadin%2C_Graub%C3%BCnden._20-09-2023._%28actm.%29_71.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 1172941,
+    "headers": {
+      "content-type": "image/jpeg",
+      "last-modified": "Sun, 02 Aug 2026 15:34:38 GMT",
+      "content-length": "1172941",
+      "date": "Sat, 31 Oct 2026 17:22:03 GMT",
+      "server": "envoy",
+      "etag": "69b2131c614680b57ad7bc7c5a2988c2",
+      "x-cache": "cp4044 hit, cp4044 miss",
+      "x-request-id": "5561a7fc-a466-47ff-b37e-ec3854056737"
+    },
+    "sha256": "c5b92473547e24bab5b3bc00608327e372249d5c4ae3cf278a681aad3b4032ee"
+  },
+  "width": 1920,
+  "height": 1280,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

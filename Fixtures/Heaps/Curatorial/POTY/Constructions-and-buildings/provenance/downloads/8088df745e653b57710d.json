@@ -1,0 +1,41 @@
+{
+  "candidate_id": "8088df745e653b57710d",
+  "source_path": "sources/8088df745e653b57710d.jpg",
+  "sha256": "cca0cf6ac8d2f65ee86437c23cadab10f07ffe23c6fd5efa0926249211bb0f32",
+  "bytes": 620363,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/At_Paraty_2023_080_-_High_tide_at_Rua_da_Praia.jpg/1280px-At_Paraty_2023_080_-_High_tide_at_Rua_da_Praia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-006.json",
+  "metadata_sha256": "64ffec51942dead724aa170bba676de4a7bef32ff31b5b2400e043ef8128262f",
+  "original_sha1": "ad63670327d4cd4efeae607e3f3d93db8afa73ad",
+  "pageid": 144381822,
+  "api_reported_width": 1066,
+  "api_reported_height": 1600,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:22:13.946777+00:00",
+    "key": "8088df745e653b57710d",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/At_Paraty_2023_080_-_High_tide_at_Rua_da_Praia.jpg/1280px-At_Paraty_2023_080_-_High_tide_at_Rua_da_Praia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 620363,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "f50cd889a2312a848fac910bbf198a5d",
+      "last-modified": "Tue, 21 Jul 2026 11:12:52 GMT",
+      "content-length": "620363",
+      "date": "Sat, 31 Oct 2026 17:22:14 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "b1350557-135b-4fb8-a201-b619cf870074"
+    },
+    "sha256": "cca0cf6ac8d2f65ee86437c23cadab10f07ffe23c6fd5efa0926249211bb0f32"
+  },
+  "width": 1280,
+  "height": 1920,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

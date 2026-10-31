@@ -1,0 +1,2101 @@
+{
+  "seed": "hazy-poty-round1-2023-2025-v1",
+  "target": 50,
+  "official_category": "Arthropods",
+  "decisions": [
+    {
+      "candidate_id": "656519d15cebd1912a93",
+      "rank": 1,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "40be28d8b412774e1567",
+      "rank": 2,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "3d97169d929a444e7602",
+      "rank": 3,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "667a73f6b977cd28ebfb",
+      "rank": 4,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "73d1cece01bb52d0621f",
+      "rank": 5,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "9d16e10353db7dc3cf64",
+      "rank": 6,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "d8c40856256c0fc90548",
+      "rank": 7,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "0eb8c00ecc69ddb440f8",
+      "rank": 8,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "3d97169d929a444e7602"
+      ]
+    },
+    {
+      "candidate_id": "89a4732dbefcaabd8105",
+      "rank": 9,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "b94ea026dc6ee28b7c0b",
+      "rank": 10,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "cbc1d2f946e487389188",
+      "rank": 11,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "667a73f6b977cd28ebfb"
+      ]
+    },
+    {
+      "candidate_id": "eed4e1c994c04ae44ba6",
+      "rank": 12,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "656519d15cebd1912a93"
+      ]
+    },
+    {
+      "candidate_id": "d6ad0162a83deb54f76b",
+      "rank": 13,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "40be28d8b412774e1567"
+      ]
+    },
+    {
+      "candidate_id": "84984beb65b41069e289",
+      "rank": 14,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "b3437542f8e578fecd79",
+      "rank": 15,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "9d16e10353db7dc3cf64"
+      ]
+    },
+    {
+      "candidate_id": "ff912176db94a9784936",
+      "rank": 16,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "4bd38bd6bec27cabba5c",
+      "rank": 17,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "d8c40856256c0fc90548"
+      ]
+    },
+    {
+      "candidate_id": "f89330c61eeedc4aedc2",
+      "rank": 18,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "b94ea026dc6ee28b7c0b"
+      ]
+    },
+    {
+      "candidate_id": "7c481e4a3280b585e952",
+      "rank": 19,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "ff912176db94a9784936"
+      ]
+    },
+    {
+      "candidate_id": "65bd294f8313038abc2e",
+      "rank": 20,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "ff912176db94a9784936"
+      ]
+    },
+    {
+      "candidate_id": "757fb4b1b7c6a1e4346f",
+      "rank": 21,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "3d97169d929a444e7602"
+      ]
+    },
+    {
+      "candidate_id": "9f6e7acdb5939f4c6aae",
+      "rank": 22,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "9d16e10353db7dc3cf64"
+      ]
+    },
+    {
+      "candidate_id": "206d91f2964fcf11203a",
+      "rank": 23,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "40be28d8b412774e1567"
+      ]
+    },
+    {
+      "candidate_id": "09493a3f32ea78b4335b",
+      "rank": 24,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "656519d15cebd1912a93"
+      ]
+    },
+    {
+      "candidate_id": "b0984658514a4e371c87",
+      "rank": 25,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "ff912176db94a9784936"
+      ]
+    },
+    {
+      "candidate_id": "6ee0484b7ca9df336a81",
+      "rank": 26,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "357b0e6d4e39f001ce35",
+      "rank": 27,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "9d16e10353db7dc3cf64"
+      ]
+    },
+    {
+      "candidate_id": "f9aa116149cf947c0753",
+      "rank": 28,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "9d16e10353db7dc3cf64"
+      ]
+    },
+    {
+      "candidate_id": "2a2481936802573b6e42",
+      "rank": 29,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "d8c40856256c0fc90548"
+      ]
+    },
+    {
+      "candidate_id": "49f97e9cdc1ca93f41ba",
+      "rank": 30,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "ce714482533b80c86ca9",
+      "rank": 31,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "ff912176db94a9784936"
+      ]
+    },
+    {
+      "candidate_id": "9433211d5ff5b8db821f",
+      "rank": 32,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "2cd24dd0d3c95cfcc4dd",
+      "rank": 33,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "ff912176db94a9784936"
+      ]
+    },
+    {
+      "candidate_id": "f20c947323dce0fd58ed",
+      "rank": 34,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "9d16e10353db7dc3cf64"
+      ]
+    },
+    {
+      "candidate_id": "91be5831dcbc6db4c933",
+      "rank": 35,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "40be28d8b412774e1567"
+      ]
+    },
+    {
+      "candidate_id": "6b1228c534b9719f8f01",
+      "rank": 36,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "21569751ee0a8ce6e08d",
+      "rank": 37,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "656519d15cebd1912a93"
+      ]
+    },
+    {
+      "candidate_id": "33f56354929d69219964",
+      "rank": 38,
+      "decision": "excluded",
+      "reason": "documented_alternate_crop",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "be2c641f7b143fbbe557",
+      "rank": 39,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "656519d15cebd1912a93"
+      ]
+    },
+    {
+      "candidate_id": "eceb1756f07ddac2aaca",
+      "rank": 40,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "ff912176db94a9784936"
+      ]
+    },
+    {
+      "candidate_id": "da7da5b4010412a8dcb4",
+      "rank": 41,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "bea55ddaeb506af9f204",
+      "rank": 42,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "656519d15cebd1912a93"
+      ]
+    },
+    {
+      "candidate_id": "c02eda11d61134102ff4",
+      "rank": 43,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "656519d15cebd1912a93"
+      ]
+    },
+    {
+      "candidate_id": "358d18f2562a14a49bc2",
+      "rank": 44,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "656519d15cebd1912a93"
+      ]
+    },
+    {
+      "candidate_id": "1d6f48c02108a35eb7dc",
+      "rank": 45,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "edab5a61a1d07cb188ae",
+      "rank": 46,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "49f97e9cdc1ca93f41ba"
+      ]
+    },
+    {
+      "candidate_id": "bf90793327f6fc2b07b0",
+      "rank": 47,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "d8c40856256c0fc90548"
+      ]
+    },
+    {
+      "candidate_id": "ae77b451240ffa8e52f2",
+      "rank": 48,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "d8c40856256c0fc90548"
+      ]
+    },
+    {
+      "candidate_id": "5aaafe4ad226a74ead98",
+      "rank": 49,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "9433211d5ff5b8db821f"
+      ]
+    },
+    {
+      "candidate_id": "0632d19c24c56cfcc7d4",
+      "rank": 50,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "656519d15cebd1912a93"
+      ]
+    },
+    {
+      "candidate_id": "21f2ebe264eced2c1187",
+      "rank": 51,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "ff912176db94a9784936"
+      ]
+    },
+    {
+      "candidate_id": "e5be5eb0c757d87f18c8",
+      "rank": 52,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "40be28d8b412774e1567"
+      ]
+    },
+    {
+      "candidate_id": "63a32237438ede58c222",
+      "rank": 53,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "025d4270c29615794d07",
+      "rank": 54,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "656519d15cebd1912a93"
+      ]
+    },
+    {
+      "candidate_id": "a851ae4d3b280883bffe",
+      "rank": 55,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "3d97169d929a444e7602"
+      ]
+    },
+    {
+      "candidate_id": "0048a194c87f005e481d",
+      "rank": 56,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "49f97e9cdc1ca93f41ba"
+      ]
+    },
+    {
+      "candidate_id": "fdb3c2704f745fa40802",
+      "rank": 57,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "0977673eb3fb8f5efd04",
+      "rank": 58,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "656519d15cebd1912a93"
+      ]
+    },
+    {
+      "candidate_id": "bd38c43d13df7f014c33",
+      "rank": 59,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "40be28d8b412774e1567"
+      ]
+    },
+    {
+      "candidate_id": "28d1f0d24e12ae6175a2",
+      "rank": 60,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "eb2efe1d7f25227af7ac",
+      "rank": 61,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "d8c40856256c0fc90548"
+      ]
+    },
+    {
+      "candidate_id": "fcf0b4fcf0231064405a",
+      "rank": 62,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "656519d15cebd1912a93"
+      ]
+    },
+    {
+      "candidate_id": "60de28bfa7c9c56c8e2b",
+      "rank": 63,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "28d1f0d24e12ae6175a2"
+      ]
+    },
+    {
+      "candidate_id": "9982d2fa28e4d4dd28a6",
+      "rank": 64,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "ff912176db94a9784936"
+      ]
+    },
+    {
+      "candidate_id": "f7ceef55dda0f37673aa",
+      "rank": 65,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "40be28d8b412774e1567"
+      ]
+    },
+    {
+      "candidate_id": "453c0d20c46bd5af1b95",
+      "rank": 66,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "5f6c6a7bfd7281c15b42",
+      "rank": 67,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "656519d15cebd1912a93"
+      ]
+    },
+    {
+      "candidate_id": "bebc04ccd188d147d2a8",
+      "rank": 68,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "8a3a8ee06f4a9c36c159",
+      "rank": 69,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "d8c40856256c0fc90548"
+      ]
+    },
+    {
+      "candidate_id": "5d86024dcf5b35c39faa",
+      "rank": 70,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "656519d15cebd1912a93"
+      ]
+    },
+    {
+      "candidate_id": "f0f8c4916f27a78f0e32",
+      "rank": 71,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "40be28d8b412774e1567"
+      ]
+    },
+    {
+      "candidate_id": "798b6a16633542acef5c",
+      "rank": 72,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "9d16e10353db7dc3cf64"
+      ]
+    },
+    {
+      "candidate_id": "02cf68192303119afe30",
+      "rank": 73,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "efc46a703d5eeffbed57",
+      "rank": 74,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "9d16e10353db7dc3cf64"
+      ]
+    },
+    {
+      "candidate_id": "0e39d9d82989103d65bf",
+      "rank": 75,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "ff912176db94a9784936"
+      ]
+    },
+    {
+      "candidate_id": "33908b35d14d2d84e066",
+      "rank": 76,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "d8c40856256c0fc90548"
+      ]
+    },
+    {
+      "candidate_id": "089f6082f0c0999d4c65",
+      "rank": 77,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "1d6f48c02108a35eb7dc"
+      ]
+    },
+    {
+      "candidate_id": "7d156d1ce8b40b8afde4",
+      "rank": 78,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "3d97169d929a444e7602"
+      ]
+    },
+    {
+      "candidate_id": "45d461d06d591ddceef3",
+      "rank": 79,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "d8c40856256c0fc90548"
+      ]
+    },
+    {
+      "candidate_id": "d6e54e4330ae0be16f85",
+      "rank": 80,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "1d6f48c02108a35eb7dc"
+      ]
+    },
+    {
+      "candidate_id": "f3febe6ea9a7ff7a8f38",
+      "rank": 81,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "bebc04ccd188d147d2a8"
+      ]
+    },
+    {
+      "candidate_id": "842293470bb41ea30a16",
+      "rank": 82,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "73d1cece01bb52d0621f"
+      ]
+    },
+    {
+      "candidate_id": "91c52913dae8796355b9",
+      "rank": 83,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "9433211d5ff5b8db821f"
+      ]
+    },
+    {
+      "candidate_id": "3cdc43ac5b2641ad7349",
+      "rank": 84,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "ff912176db94a9784936"
+      ]
+    },
+    {
+      "candidate_id": "e7e1ffdf24db2c21eb19",
+      "rank": 85,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "fdb3c2704f745fa40802"
+      ]
+    },
+    {
+      "candidate_id": "b3e9d14c47514385cfa8",
+      "rank": 86,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "63a32237438ede58c222"
+      ]
+    },
+    {
+      "candidate_id": "465b126fee5a12a8e1e6",
+      "rank": 87,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "3d97169d929a444e7602"
+      ]
+    },
+    {
+      "candidate_id": "83551916962f346940f5",
+      "rank": 88,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "40be28d8b412774e1567"
+      ]
+    },
+    {
+      "candidate_id": "718434fe76454ed6fa76",
+      "rank": 89,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "9433211d5ff5b8db821f"
+      ]
+    },
+    {
+      "candidate_id": "e32d94a6bb2a28eafd14",
+      "rank": 90,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "9433211d5ff5b8db821f"
+      ]
+    },
+    {
+      "candidate_id": "44d508d7a535ef68e4e8",
+      "rank": 91,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "9433211d5ff5b8db821f"
+      ]
+    },
+    {
+      "candidate_id": "0da8403c9f84d8891402",
+      "rank": 92,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "d8c40856256c0fc90548"
+      ]
+    },
+    {
+      "candidate_id": "f91db2a492e769a5d9e8",
+      "rank": 93,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "656519d15cebd1912a93"
+      ]
+    },
+    {
+      "candidate_id": "e068b0e41a030fdbe89f",
+      "rank": 94,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "40be28d8b412774e1567"
+      ]
+    },
+    {
+      "candidate_id": "22ac7515894c023b2059",
+      "rank": 95,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "49f97e9cdc1ca93f41ba"
+      ]
+    },
+    {
+      "candidate_id": "e76be473e44bd512af46",
+      "rank": 96,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "667a73f6b977cd28ebfb"
+      ]
+    },
+    {
+      "candidate_id": "a0786da5da8df6751fb6",
+      "rank": 97,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "b94ea026dc6ee28b7c0b"
+      ]
+    },
+    {
+      "candidate_id": "43a8d7d9c87a270a14c4",
+      "rank": 98,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "ff912176db94a9784936"
+      ]
+    },
+    {
+      "candidate_id": "e05640e3290ad3796b22",
+      "rank": 99,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "656519d15cebd1912a93"
+      ]
+    },
+    {
+      "candidate_id": "34f3679d5931235c5d81",
+      "rank": 100,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "ff912176db94a9784936"
+      ]
+    },
+    {
+      "candidate_id": "16a6025df1bc3e859385",
+      "rank": 101,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "ff912176db94a9784936"
+      ]
+    },
+    {
+      "candidate_id": "eb5c44e50b71d683efea",
+      "rank": 102,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "49f97e9cdc1ca93f41ba"
+      ]
+    },
+    {
+      "candidate_id": "0a1ced4177006b848285",
+      "rank": 103,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "f81304df131cf86d3a9c",
+      "rank": 104,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "9433211d5ff5b8db821f"
+      ]
+    },
+    {
+      "candidate_id": "ad4c1890e2003cd0df55",
+      "rank": 105,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "656519d15cebd1912a93"
+      ]
+    },
+    {
+      "candidate_id": "b501c8cd6e09700da439",
+      "rank": 106,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "656519d15cebd1912a93"
+      ]
+    },
+    {
+      "candidate_id": "390b692331ccd34e8a28",
+      "rank": 107,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "ff912176db94a9784936"
+      ]
+    },
+    {
+      "candidate_id": "654c7c1b9bcd0f657501",
+      "rank": 108,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "b94ea026dc6ee28b7c0b"
+      ]
+    },
+    {
+      "candidate_id": "d9c05f07f66df4d33fe5",
+      "rank": 109,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "9c546361561af07414eb",
+      "rank": 110,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "ff912176db94a9784936"
+      ]
+    },
+    {
+      "candidate_id": "e0bd425b920d8bcdac8b",
+      "rank": 111,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "9d16e10353db7dc3cf64"
+      ]
+    },
+    {
+      "candidate_id": "a9426b714a2cd1271781",
+      "rank": 112,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "9d16e10353db7dc3cf64"
+      ]
+    },
+    {
+      "candidate_id": "5b78f0c150933fa8b786",
+      "rank": 113,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "49f97e9cdc1ca93f41ba"
+      ]
+    },
+    {
+      "candidate_id": "c2869aaba91fb248c404",
+      "rank": 114,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "656519d15cebd1912a93"
+      ]
+    },
+    {
+      "candidate_id": "d5d576ad62eea0848bbb",
+      "rank": 115,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "656519d15cebd1912a93"
+      ]
+    },
+    {
+      "candidate_id": "81eaa7004d379aa9c110",
+      "rank": 116,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "9ad618e06e9018b30b61",
+      "rank": 117,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "ff912176db94a9784936"
+      ]
+    },
+    {
+      "candidate_id": "b2ba12ef0fe58b620644",
+      "rank": 118,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "d8c40856256c0fc90548"
+      ]
+    },
+    {
+      "candidate_id": "3991fd91839e9548d1aa",
+      "rank": 119,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "d8c40856256c0fc90548"
+      ]
+    },
+    {
+      "candidate_id": "05951982f40561405a21",
+      "rank": 120,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "3d97169d929a444e7602"
+      ]
+    },
+    {
+      "candidate_id": "d1081b78030bd9774e53",
+      "rank": 121,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "6ee0484b7ca9df336a81"
+      ]
+    },
+    {
+      "candidate_id": "6e009b5819b43a6ac4c8",
+      "rank": 122,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "0a8ec9b543eb4a4fbb90",
+      "rank": 123,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "1d6f48c02108a35eb7dc"
+      ]
+    },
+    {
+      "candidate_id": "77af455c2b10e0732a61",
+      "rank": 124,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "40be28d8b412774e1567"
+      ]
+    },
+    {
+      "candidate_id": "44d0411ae63c44882954",
+      "rank": 125,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "49f97e9cdc1ca93f41ba"
+      ]
+    },
+    {
+      "candidate_id": "6207bf5232e69a81591a",
+      "rank": 126,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "c71aea3078a8aa570d22",
+      "rank": 127,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "d8c40856256c0fc90548"
+      ]
+    },
+    {
+      "candidate_id": "497703b823e8baa0b4a9",
+      "rank": 128,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "40be28d8b412774e1567"
+      ]
+    },
+    {
+      "candidate_id": "d046fb33cd6f5a85c7cc",
+      "rank": 129,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "38449d6eb3fd39ecd179",
+      "rank": 130,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "ff912176db94a9784936"
+      ]
+    },
+    {
+      "candidate_id": "13ed4e3d608fd02ccde0",
+      "rank": 131,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "fbf495d53593675337e4",
+      "rank": 132,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "6ee0484b7ca9df336a81"
+      ]
+    },
+    {
+      "candidate_id": "4c2df712f0b279f0e10a",
+      "rank": 133,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "9d16e10353db7dc3cf64"
+      ]
+    },
+    {
+      "candidate_id": "d07fbf8ed4980260ab74",
+      "rank": 134,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "656519d15cebd1912a93"
+      ]
+    },
+    {
+      "candidate_id": "480c7865d5d963ab7fc6",
+      "rank": 135,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "9433211d5ff5b8db821f"
+      ]
+    },
+    {
+      "candidate_id": "ac74c0ef918f298d6806",
+      "rank": 136,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "3d97169d929a444e7602"
+      ]
+    },
+    {
+      "candidate_id": "c61f73cf44dbb44cd6dc",
+      "rank": 137,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "656519d15cebd1912a93"
+      ]
+    },
+    {
+      "candidate_id": "152b2aa1b89cf0237d69",
+      "rank": 138,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "ff912176db94a9784936"
+      ]
+    },
+    {
+      "candidate_id": "365fad75f39554a746e7",
+      "rank": 139,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "656519d15cebd1912a93"
+      ]
+    },
+    {
+      "candidate_id": "df6e58000c764bf3986a",
+      "rank": 140,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "d8c40856256c0fc90548"
+      ]
+    },
+    {
+      "candidate_id": "1a8245aec250a49e3798",
+      "rank": 141,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "667a73f6b977cd28ebfb"
+      ]
+    },
+    {
+      "candidate_id": "dc46161261a30d2b191c",
+      "rank": 142,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "9d16e10353db7dc3cf64"
+      ]
+    },
+    {
+      "candidate_id": "91f79edf99512b0132d6",
+      "rank": 143,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "d8c40856256c0fc90548"
+      ]
+    },
+    {
+      "candidate_id": "fa5841086a207c3655a2",
+      "rank": 144,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "40be28d8b412774e1567"
+      ]
+    },
+    {
+      "candidate_id": "3ab7edc44b2293e5694f",
+      "rank": 145,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "ff912176db94a9784936"
+      ]
+    },
+    {
+      "candidate_id": "40d97af70366a8682faf",
+      "rank": 146,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "40be28d8b412774e1567"
+      ]
+    },
+    {
+      "candidate_id": "2651201f05c31ad82e6b",
+      "rank": 147,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "63a32237438ede58c222"
+      ]
+    },
+    {
+      "candidate_id": "3f6a8bc758ceb2e03599",
+      "rank": 148,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "9433211d5ff5b8db821f"
+      ]
+    },
+    {
+      "candidate_id": "b9b554328d01883f8be9",
+      "rank": 149,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "ff912176db94a9784936"
+      ]
+    },
+    {
+      "candidate_id": "3fa6357510514611b66b",
+      "rank": 150,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "68b7ddf47561031acf3a",
+      "rank": 151,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "656519d15cebd1912a93"
+      ]
+    },
+    {
+      "candidate_id": "85a5ee9452c561c8fd5e",
+      "rank": 152,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "84984beb65b41069e289"
+      ]
+    },
+    {
+      "candidate_id": "07838c7c172a59b07dc9",
+      "rank": 153,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "d8c40856256c0fc90548"
+      ]
+    },
+    {
+      "candidate_id": "7ad2dc1b8be9a9e92754",
+      "rank": 154,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "fdb3c2704f745fa40802"
+      ]
+    },
+    {
+      "candidate_id": "1af1d6fad8f2eb2e08e9",
+      "rank": 155,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "9433211d5ff5b8db821f"
+      ]
+    },
+    {
+      "candidate_id": "2f734585dc0b373ce06b",
+      "rank": 156,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "49f97e9cdc1ca93f41ba"
+      ]
+    },
+    {
+      "candidate_id": "fab1ab5cf0a65a84d457",
+      "rank": 157,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "656519d15cebd1912a93"
+      ]
+    },
+    {
+      "candidate_id": "6f2dee37f3506fcfd967",
+      "rank": 158,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "9433211d5ff5b8db821f"
+      ]
+    },
+    {
+      "candidate_id": "aa324d1916af079bba56",
+      "rank": 159,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "49f97e9cdc1ca93f41ba"
+      ]
+    },
+    {
+      "candidate_id": "6719825687fa9ec5239e",
+      "rank": 160,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "e8c331adacafc9633dfe",
+      "rank": 161,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "3d97169d929a444e7602"
+      ]
+    },
+    {
+      "candidate_id": "a7bba8d1ba8f36610147",
+      "rank": 162,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "40be28d8b412774e1567"
+      ]
+    },
+    {
+      "candidate_id": "0f5e82d9ba2438515f2b",
+      "rank": 163,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "3d97169d929a444e7602"
+      ]
+    },
+    {
+      "candidate_id": "cec6e31a31a095e35722",
+      "rank": 164,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "656519d15cebd1912a93"
+      ]
+    },
+    {
+      "candidate_id": "acad9d3e05c68f42af50",
+      "rank": 165,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "baabf5b6d2191b5c9157",
+      "rank": 166,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "6e009b5819b43a6ac4c8"
+      ]
+    },
+    {
+      "candidate_id": "4033cc5c22f49f1bf34a",
+      "rank": 167,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "9433211d5ff5b8db821f"
+      ]
+    },
+    {
+      "candidate_id": "5e38b4af1ad1b91f3c3b",
+      "rank": 168,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "667a73f6b977cd28ebfb"
+      ]
+    },
+    {
+      "candidate_id": "cebadc6956b79dcf74ca",
+      "rank": 169,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "453c0d20c46bd5af1b95"
+      ]
+    },
+    {
+      "candidate_id": "e2e9acf3472a9d485d43",
+      "rank": 170,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "73d1cece01bb52d0621f"
+      ]
+    },
+    {
+      "candidate_id": "e4b4e2baab4136ca8280",
+      "rank": 171,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "40be28d8b412774e1567"
+      ]
+    },
+    {
+      "candidate_id": "e387422223aa231f75ac",
+      "rank": 172,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "656519d15cebd1912a93"
+      ]
+    },
+    {
+      "candidate_id": "803a681e066bf60582da",
+      "rank": 173,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "fdb3c2704f745fa40802"
+      ]
+    },
+    {
+      "candidate_id": "593d22dc1b769209a698",
+      "rank": 174,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "49f97e9cdc1ca93f41ba"
+      ]
+    },
+    {
+      "candidate_id": "c36038bc6751d59e6ad7",
+      "rank": 175,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "ec05938c8b7538a4c95a",
+      "rank": 176,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "ff912176db94a9784936"
+      ]
+    },
+    {
+      "candidate_id": "55029b0ad34feec2c0ba",
+      "rank": 177,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "b125b0e2d8764a8d1611",
+      "rank": 178,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "73d1cece01bb52d0621f"
+      ]
+    },
+    {
+      "candidate_id": "549a0353a7dc31aa2941",
+      "rank": 179,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "7ef56aa720b63db2bf3f",
+      "rank": 180,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "656519d15cebd1912a93"
+      ]
+    },
+    {
+      "candidate_id": "e83eda697a03286e85f1",
+      "rank": 181,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "656519d15cebd1912a93"
+      ]
+    },
+    {
+      "candidate_id": "725513a4a6fea3dfe8aa",
+      "rank": 182,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "656519d15cebd1912a93"
+      ]
+    },
+    {
+      "candidate_id": "cef24da3602dee39f435",
+      "rank": 183,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "b466684d6fcbe0029054",
+      "rank": 184,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "3d97169d929a444e7602"
+      ]
+    },
+    {
+      "candidate_id": "09faef55627349eb5b11",
+      "rank": 185,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "0a1ced4177006b848285"
+      ]
+    },
+    {
+      "candidate_id": "a273d58b81014ea4a495",
+      "rank": 186,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "6ee0484b7ca9df336a81"
+      ]
+    },
+    {
+      "candidate_id": "d90e4c2ab2f448949990",
+      "rank": 187,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "9d16e10353db7dc3cf64"
+      ]
+    },
+    {
+      "candidate_id": "8166fb9435fd29c90fca",
+      "rank": 188,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "49f97e9cdc1ca93f41ba"
+      ]
+    },
+    {
+      "candidate_id": "edef99367bd2877f5abb",
+      "rank": 189,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "d8c40856256c0fc90548"
+      ]
+    },
+    {
+      "candidate_id": "91bee41e4078ec3512ca",
+      "rank": 190,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "925c692b644460a2402f",
+      "rank": 191,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "667a73f6b977cd28ebfb"
+      ]
+    },
+    {
+      "candidate_id": "577a51437efd4b5df83d",
+      "rank": 192,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "6ee0484b7ca9df336a81"
+      ]
+    },
+    {
+      "candidate_id": "a3d7ba2ab56bfa0fc048",
+      "rank": 193,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "9433211d5ff5b8db821f"
+      ]
+    },
+    {
+      "candidate_id": "fb6f52749bce06e6caa4",
+      "rank": 194,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "3d97169d929a444e7602"
+      ]
+    },
+    {
+      "candidate_id": "2b0d9d2c77c80fb3c93c",
+      "rank": 195,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "9d16e10353db7dc3cf64"
+      ]
+    },
+    {
+      "candidate_id": "44292338f00d6c3907aa",
+      "rank": 196,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "3d97169d929a444e7602"
+      ]
+    },
+    {
+      "candidate_id": "21bf402cdbbb34db592c",
+      "rank": 197,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "84984beb65b41069e289"
+      ]
+    },
+    {
+      "candidate_id": "cab33a95a374f9b0a2dc",
+      "rank": 198,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "49f97e9cdc1ca93f41ba"
+      ]
+    },
+    {
+      "candidate_id": "8c0e18dbd1a2d573490b",
+      "rank": 199,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "9433211d5ff5b8db821f"
+      ]
+    },
+    {
+      "candidate_id": "8456f35cd4c362433e17",
+      "rank": 200,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "9d16e10353db7dc3cf64"
+      ]
+    },
+    {
+      "candidate_id": "dd350900f768ac3d54f0",
+      "rank": 201,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "656519d15cebd1912a93"
+      ]
+    },
+    {
+      "candidate_id": "8b0cab410a211593c3f7",
+      "rank": 202,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "6ee0484b7ca9df336a81"
+      ]
+    },
+    {
+      "candidate_id": "f1d4b3cde8b788ef3ba4",
+      "rank": 203,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "9433211d5ff5b8db821f"
+      ]
+    },
+    {
+      "candidate_id": "7c73ae96d0081e4f4879",
+      "rank": 204,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "c36038bc6751d59e6ad7"
+      ]
+    },
+    {
+      "candidate_id": "925d743ecc99ae9c5cfe",
+      "rank": 205,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "dc9c1fbc6afc71297ede",
+      "rank": 206,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "40be28d8b412774e1567"
+      ]
+    },
+    {
+      "candidate_id": "14e67108036065068459",
+      "rank": 207,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "ff912176db94a9784936"
+      ]
+    },
+    {
+      "candidate_id": "61ded20ae5651538c705",
+      "rank": 208,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "d8c40856256c0fc90548"
+      ]
+    },
+    {
+      "candidate_id": "61203e26f1d25f31a654",
+      "rank": 209,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "ff912176db94a9784936"
+      ]
+    },
+    {
+      "candidate_id": "2da91cb0013709492a18",
+      "rank": 210,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "ff912176db94a9784936"
+      ]
+    },
+    {
+      "candidate_id": "6813fdf3e827e078629a",
+      "rank": 211,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "656519d15cebd1912a93"
+      ]
+    },
+    {
+      "candidate_id": "f1acc60c46ce93f0695a",
+      "rank": 212,
+      "decision": "excluded",
+      "reason": "known_related_capture_or_crop",
+      "conflicts_with": [
+        "d8c40856256c0fc90548"
+      ]
+    },
+    {
+      "candidate_id": "c6000a6e1c6621ef3e4d",
+      "rank": 213,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "40be28d8b412774e1567"
+      ]
+    },
+    {
+      "candidate_id": "e94adc5adaf1be7a1511",
+      "rank": 214,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "656519d15cebd1912a93"
+      ]
+    },
+    {
+      "candidate_id": "5091166739097a618218",
+      "rank": 215,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "656519d15cebd1912a93"
+      ]
+    },
+    {
+      "candidate_id": "6632052ef8bf5d75555a",
+      "rank": 216,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "5ebb2fa42fb33c70c803",
+      "rank": 217,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "40be28d8b412774e1567"
+      ]
+    },
+    {
+      "candidate_id": "233f6c93b2f055a6bc49",
+      "rank": 218,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "d8c40856256c0fc90548"
+      ]
+    },
+    {
+      "candidate_id": "a46af542739b0a7853c9",
+      "rank": 219,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "ff912176db94a9784936"
+      ]
+    },
+    {
+      "candidate_id": "e42dc37c9e45112365ae",
+      "rank": 220,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "d8c40856256c0fc90548"
+      ]
+    },
+    {
+      "candidate_id": "3c4acee42809cd789264",
+      "rank": 221,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "cba7dd51e396085afd71",
+      "rank": 222,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "40be28d8b412774e1567"
+      ]
+    },
+    {
+      "candidate_id": "33d18752e859977a2c1a",
+      "rank": 223,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "6207bf5232e69a81591a"
+      ]
+    },
+    {
+      "candidate_id": "f9a93f252bbe1d76a26a",
+      "rank": 224,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "49f97e9cdc1ca93f41ba"
+      ]
+    },
+    {
+      "candidate_id": "e30ca679d8df0378b4ef",
+      "rank": 225,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "9d16e10353db7dc3cf64"
+      ]
+    },
+    {
+      "candidate_id": "693e72cffcfb3eabd441",
+      "rank": 226,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "ff912176db94a9784936"
+      ]
+    },
+    {
+      "candidate_id": "33e82e48d2ce65ba2cf0",
+      "rank": 227,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "9433211d5ff5b8db821f"
+      ]
+    },
+    {
+      "candidate_id": "c3ca4f5089cef7040dbf",
+      "rank": 228,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "667a73f6b977cd28ebfb"
+      ]
+    },
+    {
+      "candidate_id": "9c6b6e10f38eeed4690c",
+      "rank": 229,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "656519d15cebd1912a93"
+      ]
+    },
+    {
+      "candidate_id": "99bfbbfcc10681f155bc",
+      "rank": 230,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "656519d15cebd1912a93"
+      ]
+    },
+    {
+      "candidate_id": "838aaeb1de8a2220b023",
+      "rank": 231,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "c102e4338daf8410aacf",
+      "rank": 232,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "3fa6357510514611b66b"
+      ]
+    },
+    {
+      "candidate_id": "0939c21402722bd4d24a",
+      "rank": 233,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "9d16e10353db7dc3cf64"
+      ]
+    },
+    {
+      "candidate_id": "c18ed0945f1cbd378f86",
+      "rank": 234,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "9433211d5ff5b8db821f"
+      ]
+    },
+    {
+      "candidate_id": "bc9d29b6c613ef22e942",
+      "rank": 235,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "49f97e9cdc1ca93f41ba"
+      ]
+    },
+    {
+      "candidate_id": "6d949d0a148032ba9ec9",
+      "rank": 236,
+      "decision": "selected",
+      "reason": "first_eligible_in_seeded_order",
+      "conflicts_with": []
+    },
+    {
+      "candidate_id": "c50f698d542ad284de03",
+      "rank": 237,
+      "decision": "excluded",
+      "reason": "creator_already_selected",
+      "conflicts_with": [
+        "656519d15cebd1912a93"
+      ]
+    }
+  ],
+  "selected": [
+    "656519d15cebd1912a93",
+    "40be28d8b412774e1567",
+    "3d97169d929a444e7602",
+    "667a73f6b977cd28ebfb",
+    "73d1cece01bb52d0621f",
+    "9d16e10353db7dc3cf64",
+    "d8c40856256c0fc90548",
+    "89a4732dbefcaabd8105",
+    "b94ea026dc6ee28b7c0b",
+    "84984beb65b41069e289",
+    "ff912176db94a9784936",
+    "6ee0484b7ca9df336a81",
+    "49f97e9cdc1ca93f41ba",
+    "9433211d5ff5b8db821f",
+    "6b1228c534b9719f8f01",
+    "da7da5b4010412a8dcb4",
+    "1d6f48c02108a35eb7dc",
+    "63a32237438ede58c222",
+    "fdb3c2704f745fa40802",
+    "28d1f0d24e12ae6175a2",
+    "453c0d20c46bd5af1b95",
+    "bebc04ccd188d147d2a8",
+    "02cf68192303119afe30",
+    "0a1ced4177006b848285",
+    "d9c05f07f66df4d33fe5",
+    "81eaa7004d379aa9c110",
+    "6e009b5819b43a6ac4c8",
+    "6207bf5232e69a81591a",
+    "d046fb33cd6f5a85c7cc",
+    "13ed4e3d608fd02ccde0",
+    "3fa6357510514611b66b",
+    "6719825687fa9ec5239e",
+    "acad9d3e05c68f42af50",
+    "c36038bc6751d59e6ad7",
+    "55029b0ad34feec2c0ba",
+    "549a0353a7dc31aa2941",
+    "cef24da3602dee39f435",
+    "91bee41e4078ec3512ca",
+    "925d743ecc99ae9c5cfe",
+    "6632052ef8bf5d75555a",
+    "3c4acee42809cd789264",
+    "838aaeb1de8a2220b023",
+    "6d949d0a148032ba9ec9"
+  ],
+  "counts": {
+    "selected": 43,
+    "excluded": 194
+  }
+}

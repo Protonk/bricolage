@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T17:16:11.914847+00:00",
+  "key": "files-001",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3AFolkloric+Tanoura+dance+performed+by+man.jpg%7CFile%3AMan+walking+through+the+Saint+Roch+neighborhood%2C+Quebec+City%2C+Province+of+Quebec%2C+Canada.jpg%7CFile%3AAcro-Show-Villeneuve+Infinity-Tumbling+2022-08-21.jpg%7CFile%3A2023-04-23+Motorsport%2C+ABB+FIA+Formula+E+World+Championship%2C+Berlin+E-Prix+2023+1DX+1445+by+Stepro.jpg%7CFile%3A29.+Ulica+-+Krakowski+Teatr+Ta%C5%84ca+-+Estra+%26+Andro+-+20160708+2652.jpg%7CFile%3AA+man+and+his+donkey+on+the+way+back+from+the+field+in+Aswan%2C+Egypt+%28edited%29.jpg%7CFile%3ACH.ZG.Zug+Boardstock+2008-07-27+Wakeboarder+27+16x9-R+4K.jpg%7CFile%3ARed+and+Gold+for+Ni%C3%B1o.jpg%7CFile%3A34.+Ulica+-+TNT+Shows+-+Moving+Poles+-+20210904+1310+1879.jpg%7CFile%3AWorking+hands.+Bizzilla%2C+or+traditional+maltese+lace-making.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 55560,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 17:16:12 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-6zszr",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "dab6a3ea-6cb2-41aa-bc6a-851240957ffe"
+  },
+  "sha256": "f19249e0b818ea7ffb79112eee0793e665ec1b4d49aad3eee6547e4c8549bde0"
+}

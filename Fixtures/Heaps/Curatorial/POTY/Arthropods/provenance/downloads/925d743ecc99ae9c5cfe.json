@@ -1,0 +1,41 @@
+{
+  "candidate_id": "925d743ecc99ae9c5cfe",
+  "source_path": "sources/925d743ecc99ae9c5cfe.jpg",
+  "sha256": "e8806c24b160616042891f9004ca5fd24c8b62334d719ee325da35b313d5f3c4",
+  "bytes": 468575,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Mosquito_%28Ochlerotatus_annulipes%29_and_Midge_%28Culicoides_impunctatus%29_biting_human_%28me%29.jpg/1920px-Mosquito_%28Ochlerotatus_annulipes%29_and_Midge_%28Culicoides_impunctatus%29_biting_human_%28me%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-019.json",
+  "metadata_sha256": "a4e8f2e27a3fe3a4c69c052f57ef0ccc71e5f09e8e098eb19b257b66fec79584",
+  "original_sha1": "4ab5f2dd458b6e6f9b8946c3c187f62a9da63e73",
+  "pageid": 58983161,
+  "api_reported_width": 1600,
+  "api_reported_height": 1111,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:28:54.458477+00:00",
+    "key": "925d743ecc99ae9c5cfe",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Mosquito_%28Ochlerotatus_annulipes%29_and_Midge_%28Culicoides_impunctatus%29_biting_human_%28me%29.jpg/1920px-Mosquito_%28Ochlerotatus_annulipes%29_and_Midge_%28Culicoides_impunctatus%29_biting_human_%28me%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 468575,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "a97d8ad2863ace2a85af6ddca6045fad",
+      "last-modified": "Wed, 23 Sep 2026 14:14:00 GMT",
+      "content-length": "468575",
+      "date": "Sat, 31 Oct 2026 17:28:54 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "65442b76-2341-450b-8997-0c44ac0413a5"
+    },
+    "sha256": "e8806c24b160616042891f9004ca5fd24c8b62334d719ee325da35b313d5f3c4"
+  },
+  "width": 1920,
+  "height": 1333,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

@@ -1,0 +1,41 @@
+{
+  "candidate_id": "58b568edb550482a0a6f",
+  "source_path": "sources/58b568edb550482a0a6f.jpg",
+  "sha256": "dabbddf737a37585df1de48a6311b17466bf3d0677044671fab52990e95c6588",
+  "bytes": 448449,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/05_Laal_Kach_Festival_In_Bangladesh_Kazi_Salahuddin_Razu.jpg/1280px-05_Laal_Kach_Festival_In_Bangladesh_Kazi_Salahuddin_Razu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-016.json",
+  "metadata_sha256": "839a94bb893004129db6df8d2fac177c0dfa25b06953d682f7425b15116b934e",
+  "original_sha1": "c2a29f1ceffb0612dc2eb5dd5f721a84283fb20a",
+  "pageid": 160644973,
+  "api_reported_width": 1066,
+  "api_reported_height": 1600,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:28:23.891004+00:00",
+    "key": "58b568edb550482a0a6f",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/05_Laal_Kach_Festival_In_Bangladesh_Kazi_Salahuddin_Razu.jpg/1280px-05_Laal_Kach_Festival_In_Bangladesh_Kazi_Salahuddin_Razu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 448449,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "c8fe5e563db0faa5364b6dbf09f1d162",
+      "last-modified": "Thu, 10 Sep 2026 05:03:44 GMT",
+      "content-length": "448449",
+      "date": "Sat, 31 Oct 2026 17:28:24 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "d52ae5ee-498c-4f86-aace-7ec0ccf9d351"
+    },
+    "sha256": "dabbddf737a37585df1de48a6311b17466bf3d0677044671fab52990e95c6588"
+  },
+  "width": 1280,
+  "height": 1920,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

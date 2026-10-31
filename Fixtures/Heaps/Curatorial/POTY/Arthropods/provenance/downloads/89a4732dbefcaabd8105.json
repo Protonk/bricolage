@@ -1,0 +1,41 @@
+{
+  "candidate_id": "89a4732dbefcaabd8105",
+  "source_path": "sources/89a4732dbefcaabd8105.jpg",
+  "sha256": "c97da91685781494204100809e41f71d8b550f661bb663a7b59ab81b61a2c1c3",
+  "bytes": 423991,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Lederwanze-JR-T3-I267-2024-08-01.jpg/1920px-Lederwanze-JR-T3-I267-2024-08-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-019.json",
+  "metadata_sha256": "a4e8f2e27a3fe3a4c69c052f57ef0ccc71e5f09e8e098eb19b257b66fec79584",
+  "original_sha1": "f3cd15ac6f9ad8f29987f6ba317a8dde6376c858",
+  "pageid": 167729505,
+  "api_reported_width": 1600,
+  "api_reported_height": 1104,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:21:32.054024+00:00",
+    "key": "89a4732dbefcaabd8105",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Lederwanze-JR-T3-I267-2024-08-01.jpg/1920px-Lederwanze-JR-T3-I267-2024-08-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 423991,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "3ebc97d9ac9fef5c84b46140ecdc92c2",
+      "last-modified": "Thu, 27 Aug 2026 07:57:01 GMT",
+      "content-length": "423991",
+      "date": "Sat, 31 Oct 2026 17:21:32 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "4a95d3b3-788f-4af9-9cb0-a720e9e07e3e"
+    },
+    "sha256": "c97da91685781494204100809e41f71d8b550f661bb663a7b59ab81b61a2c1c3"
+  },
+  "width": 1920,
+  "height": 1325,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

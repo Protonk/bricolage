@@ -1,0 +1,41 @@
+{
+  "candidate_id": "549a0353a7dc31aa2941",
+  "source_path": "sources/549a0353a7dc31aa2941.jpg",
+  "sha256": "900e1492bce4155d14a658f408c038cd2cebc29186c4eaa089467b7dcc0fdada",
+  "bytes": 545804,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Ourapteryx_yerburii_ssp._specimens_and_male_genitalia.jpg/1920px-Ourapteryx_yerburii_ssp._specimens_and_male_genitalia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-000.json",
+  "metadata_sha256": "b834e5d95afaa83949495425bc525a6c430fe7a4ed25c6e45419eaae61cf3951",
+  "original_sha1": "b2473ac81b7b073b7707fcdcf69c3a5bd4157b10",
+  "pageid": 128846191,
+  "api_reported_width": 1600,
+  "api_reported_height": 1563,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:27:02.765172+00:00",
+    "key": "549a0353a7dc31aa2941",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Ourapteryx_yerburii_ssp._specimens_and_male_genitalia.jpg/1920px-Ourapteryx_yerburii_ssp._specimens_and_male_genitalia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 545804,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "a26d6f44e939680edd252770318a5b9f",
+      "last-modified": "Wed, 08 Apr 2026 05:16:35 GMT",
+      "content-length": "545804",
+      "date": "Sat, 31 Oct 2026 17:27:02 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "9bc031a4-3952-42c3-9c22-2691d8c0ce6d"
+    },
+    "sha256": "900e1492bce4155d14a658f408c038cd2cebc29186c4eaa089467b7dcc0fdada"
+  },
+  "width": 1920,
+  "height": 1875,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

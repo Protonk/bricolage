@@ -1,0 +1,41 @@
+{
+  "candidate_id": "5d70e800b421a5e82550",
+  "source_path": "sources/5d70e800b421a5e82550.jpg",
+  "sha256": "957a30e14f1fb236d67244e91c9c081514f128b06db2029cb5a570eda19d69c8",
+  "bytes": 909833,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Vintage_Smile.jpg/1920px-Vintage_Smile.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-014.json",
+  "metadata_sha256": "b2f46b98c81f6a321e60a7945c6fad62e44652f51049d5aec9057efb309788e4",
+  "original_sha1": "89004d2c0e5667f68429b5a36114b681e5df1587",
+  "pageid": 100521629,
+  "api_reported_width": 1600,
+  "api_reported_height": 1091,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:30:17.752679+00:00",
+    "key": "5d70e800b421a5e82550",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Vintage_Smile.jpg/1920px-Vintage_Smile.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 909833,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "29be28be1ebb2e82c4eb63f50ee31156",
+      "last-modified": "Sat, 25 Jul 2026 13:29:31 GMT",
+      "content-length": "909833",
+      "date": "Sat, 31 Oct 2026 17:30:17 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "05ac3d99-dbe7-418c-b0c0-1b392067c194"
+    },
+    "sha256": "957a30e14f1fb236d67244e91c9c081514f128b06db2029cb5a570eda19d69c8"
+  },
+  "width": 1920,
+  "height": 1309,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

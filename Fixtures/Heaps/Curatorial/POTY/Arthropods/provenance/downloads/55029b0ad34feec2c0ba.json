@@ -1,0 +1,41 @@
+{
+  "candidate_id": "55029b0ad34feec2c0ba",
+  "source_path": "sources/55029b0ad34feec2c0ba.jpg",
+  "sha256": "6684935618a1262dbd5e5016fbf49dff72110c3594a65a24faf64e1c61f25588",
+  "bytes": 840211,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Open_wing_basking_position_of_Papilio_arcturus_Westwood%2C_1842_-_Blue_Peacock.jpg/1920px-Open_wing_basking_position_of_Papilio_arcturus_Westwood%2C_1842_-_Blue_Peacock.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-019.json",
+  "metadata_sha256": "a4e8f2e27a3fe3a4c69c052f57ef0ccc71e5f09e8e098eb19b257b66fec79584",
+  "original_sha1": "29b8db4a41f6dfd321056cae6f520f8dd2667534",
+  "pageid": 174877846,
+  "api_reported_width": 1600,
+  "api_reported_height": 1066,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:26:59.092298+00:00",
+    "key": "55029b0ad34feec2c0ba",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Open_wing_basking_position_of_Papilio_arcturus_Westwood%2C_1842_-_Blue_Peacock.jpg/1920px-Open_wing_basking_position_of_Papilio_arcturus_Westwood%2C_1842_-_Blue_Peacock.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 840211,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "c101ae1cdd2af002960a9b875401d700",
+      "last-modified": "Sun, 27 Sep 2026 10:35:17 GMT",
+      "content-length": "840211",
+      "date": "Sat, 31 Oct 2026 17:26:59 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "79cd0546-dfa3-4cda-a3e5-cbec75d92148"
+    },
+    "sha256": "6684935618a1262dbd5e5016fbf49dff72110c3594a65a24faf64e1c61f25588"
+  },
+  "width": 1920,
+  "height": 1280,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

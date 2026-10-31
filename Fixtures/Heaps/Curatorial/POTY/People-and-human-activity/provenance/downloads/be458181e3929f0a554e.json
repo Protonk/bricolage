@@ -1,0 +1,41 @@
+{
+  "candidate_id": "be458181e3929f0a554e",
+  "source_path": "sources/be458181e3929f0a554e.jpg",
+  "sha256": "b15b9435c8dbce5aca93abfadab807a8f91408a7f70ebba931af6020f3fede72",
+  "bytes": 674718,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Liebherr_LRB_355_H%C3%B6lzla-20160628-RM-105526.jpg/1920px-Liebherr_LRB_355_H%C3%B6lzla-20160628-RM-105526.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-015.json",
+  "metadata_sha256": "5fa4f855e5aa6a0931d76f3fd4b5591add5779a2d74d86583ae83818cbee90fc",
+  "original_sha1": "6db6a391d66b6cc0fd74963d3188526a8b159708",
+  "pageid": 113996705,
+  "api_reported_width": 1600,
+  "api_reported_height": 1252,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:30:24.753925+00:00",
+    "key": "be458181e3929f0a554e",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Liebherr_LRB_355_H%C3%B6lzla-20160628-RM-105526.jpg/1920px-Liebherr_LRB_355_H%C3%B6lzla-20160628-RM-105526.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 674718,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "9f6c0658e12f66f420d8c8cdfeda24f5",
+      "last-modified": "Sat, 26 Sep 2026 12:53:11 GMT",
+      "content-length": "674718",
+      "date": "Sat, 31 Oct 2026 17:30:24 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "7fb03538-a50f-41db-9425-65a75c417a10"
+    },
+    "sha256": "b15b9435c8dbce5aca93abfadab807a8f91408a7f70ebba931af6020f3fede72"
+  },
+  "width": 1920,
+  "height": 1503,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

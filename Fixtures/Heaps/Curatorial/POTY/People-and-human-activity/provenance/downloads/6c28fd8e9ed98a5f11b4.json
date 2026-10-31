@@ -1,0 +1,41 @@
+{
+  "candidate_id": "6c28fd8e9ed98a5f11b4",
+  "source_path": "sources/6c28fd8e9ed98a5f11b4.jpg",
+  "sha256": "e3e1037337c0ab59747ae6bbf1eaae82331c734a35e4e4777861bb4b24b87285",
+  "bytes": 534344,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Flo_dans_Juvs%C3%B8yla_%C3%A0_Rjukan%2C_Norv%C3%A8ge-rotated.jpg/1920px-Flo_dans_Juvs%C3%B8yla_%C3%A0_Rjukan%2C_Norv%C3%A8ge-rotated.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-006.json",
+  "metadata_sha256": "9ec9308a43aaaa6d0daf5b3902fc031ad177490f6532797ffdb19be60d00f746",
+  "original_sha1": "4d1ab60805adc43f4b52aa8f629a22c7db783db6",
+  "pageid": 143705778,
+  "api_reported_width": 1600,
+  "api_reported_height": 1200,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:28:06.545809+00:00",
+    "key": "6c28fd8e9ed98a5f11b4",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Flo_dans_Juvs%C3%B8yla_%C3%A0_Rjukan%2C_Norv%C3%A8ge-rotated.jpg/1920px-Flo_dans_Juvs%C3%B8yla_%C3%A0_Rjukan%2C_Norv%C3%A8ge-rotated.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 534344,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "b19531a68cdddb6eea082235720cec6a",
+      "last-modified": "Sat, 25 Jul 2026 00:45:52 GMT",
+      "content-length": "534344",
+      "date": "Sat, 31 Oct 2026 17:28:06 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "dc034f35-1f5a-4504-9aba-2a92bd1564d4"
+    },
+    "sha256": "e3e1037337c0ab59747ae6bbf1eaae82331c734a35e4e4777861bb4b24b87285"
+  },
+  "width": 1920,
+  "height": 1440,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

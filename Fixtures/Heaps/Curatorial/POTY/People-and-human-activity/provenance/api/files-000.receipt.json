@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T17:16:08.425590+00:00",
+  "key": "files-000",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3AHavana+-+Cuba+-+Man+giving+a+V+sign+-+1326.jpg%7CFile%3ACatedral%2C+Arezzo%2C+Italia%2C+2022-09-17%2C+DD+77-79+HDR.jpg%7CFile%3AMasks+in+the+rain.jpg%7CFile%3AESC2014+-+Austria+04.jpg%7CFile%3ARavi+Coltrane+at+the+Blue+Note%2C+March+7%2C+2023-L1002389.jpg%7CFile%3A20230211+Chiara+Kreuzer+850+6878.jpg%7CFile%3ASkindred+-+2017153155639+2017-06-02+Rock+am+Ring+-+Sven+-+1D+X+II+-+0110+-+B70I6029.jpg%7CFile%3APortrait+of+a+young+woman+wearing+a+gray+balaclava.jpg%7CFile%3ARally+in+support+of+Ukraine+in+Columbus%2C+Ohio%2C+United+States%2C+26+February+2022+%2851906586684%29+-+edited.jpg%7CFile%3AHamun+by+Solmaz+Daryani+1+%28Crop%29.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 74400,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 17:16:08 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-5m6sc",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "d303158d-6674-447c-81dd-4a8f1e139bcb"
+  },
+  "sha256": "b3ccf89263ff9356d9906be9f12f966f836fe9dff1b73ec03661ddd42d684505"
+}

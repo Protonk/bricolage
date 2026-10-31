@@ -1,0 +1,41 @@
+{
+  "candidate_id": "d00fc3e5b930455724f5",
+  "source_path": "sources/d00fc3e5b930455724f5.jpg",
+  "sha256": "bab44a9e37aa4f35b509ea596c9101226a6546ef45d5aaf9dec2307192220552",
+  "bytes": 468089,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Baths_of_Maria_de_Padilla%2C_Alc%C3%A1zar_of_Seville.jpg/1920px-Baths_of_Maria_de_Padilla%2C_Alc%C3%A1zar_of_Seville.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-011.json",
+  "metadata_sha256": "ba564b5a829db9ee10beb6b6f920779036d71f4951a0fff882de0f6a3baacdaa",
+  "original_sha1": "3695e4443dc3eb716dbf5214f491c8147f0072b7",
+  "pageid": 143845841,
+  "api_reported_width": 1600,
+  "api_reported_height": 1066,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:27:09.794310+00:00",
+    "key": "d00fc3e5b930455724f5",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Baths_of_Maria_de_Padilla%2C_Alc%C3%A1zar_of_Seville.jpg/1920px-Baths_of_Maria_de_Padilla%2C_Alc%C3%A1zar_of_Seville.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 468089,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "397f9cb8cfa100c8578904ec34e01c2a",
+      "last-modified": "Wed, 23 Sep 2026 03:54:00 GMT",
+      "content-length": "468089",
+      "date": "Sat, 31 Oct 2026 04:45:01 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 hit/1",
+      "x-request-id": "fa6a0e71-82a2-4318-ab03-f32f06df4f1b"
+    },
+    "sha256": "bab44a9e37aa4f35b509ea596c9101226a6546ef45d5aaf9dec2307192220552"
+  },
+  "width": 1920,
+  "height": 1280,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

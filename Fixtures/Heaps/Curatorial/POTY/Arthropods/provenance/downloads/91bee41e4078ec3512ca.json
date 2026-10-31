@@ -1,0 +1,41 @@
+{
+  "candidate_id": "91bee41e4078ec3512ca",
+  "source_path": "sources/91bee41e4078ec3512ca.jpg",
+  "sha256": "4d8f76d27ddd2b0675386d5dbe6d2360db9b33ac25e3d0619814cd7707a7f8d2",
+  "bytes": 622113,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Open_wing_basking_position_of_Lexias_cyanipardus_%28Butler%2C_%281869%29%29_-_Great_Archduke_%28Male%29_M.jpg/1920px-Open_wing_basking_position_of_Lexias_cyanipardus_%28Butler%2C_%281869%29%29_-_Great_Archduke_%28Male%29_M.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-021.json",
+  "metadata_sha256": "cba6758b1ce193fe9702af66518016c2b41980f3c7b56cf88873281e89b006c8",
+  "original_sha1": "cd31b7b30a280b68ea3bfc49c327f87797cea145",
+  "pageid": 178365419,
+  "api_reported_width": 1600,
+  "api_reported_height": 1067,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:28:51.022458+00:00",
+    "key": "91bee41e4078ec3512ca",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Open_wing_basking_position_of_Lexias_cyanipardus_%28Butler%2C_%281869%29%29_-_Great_Archduke_%28Male%29_M.jpg/1920px-Open_wing_basking_position_of_Lexias_cyanipardus_%28Butler%2C_%281869%29%29_-_Great_Archduke_%28Male%29_M.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 622113,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "f08cdb210a23537e11220f0926d14fbc",
+      "last-modified": "Wed, 14 Oct 2026 06:50:45 GMT",
+      "content-length": "622113",
+      "date": "Sat, 31 Oct 2026 17:28:51 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "9cab7833-3457-4775-8324-0b01c781d834"
+    },
+    "sha256": "4d8f76d27ddd2b0675386d5dbe6d2360db9b33ac25e3d0619814cd7707a7f8d2"
+  },
+  "width": 1920,
+  "height": 1280,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

@@ -1,0 +1,335 @@
+{
+  "basis": "Membership is the published category data page used by the gallery script. Raw category strings are preserved, including spelling errors and stale Other objects labels; no editorial reclassification.",
+  "count_by_year": {
+    "2023": 54,
+    "2024": 92,
+    "2025": 92
+  },
+  "all_entries_in_round1_all": true,
+  "category_field_disagreements": [
+    {
+      "candidate_id": "4fe2918c9e0b9eb17155",
+      "year": 2023,
+      "commons_title": "File:Havana - Cuba - Man giving a V sign - 1326.jpg",
+      "published_category": "People and human actvity"
+    },
+    {
+      "candidate_id": "7ee791aa387dd260567d",
+      "year": 2023,
+      "commons_title": "File:Catedral, Arezzo, Italia, 2022-09-17, DD 77-79 HDR.jpg",
+      "published_category": "People and human actvity"
+    },
+    {
+      "candidate_id": "2083763f3c0805bec37a",
+      "year": 2023,
+      "commons_title": "File:Masks in the rain.jpg",
+      "published_category": "People and human actvity"
+    },
+    {
+      "candidate_id": "c997c7c295cbcc02d55c",
+      "year": 2023,
+      "commons_title": "File:ESC2014 - Austria 04.jpg",
+      "published_category": "People and human actvity"
+    },
+    {
+      "candidate_id": "bd037b1e316b4738079c",
+      "year": 2023,
+      "commons_title": "File:Ravi Coltrane at the Blue Note, March 7, 2023-L1002389.jpg",
+      "published_category": "People and human actvity"
+    },
+    {
+      "candidate_id": "4b42d387fa69b3670778",
+      "year": 2023,
+      "commons_title": "File:20230211 Chiara Kreuzer 850 6878.jpg",
+      "published_category": "People and human actvity"
+    },
+    {
+      "candidate_id": "0af796cf8413da2d8ad7",
+      "year": 2023,
+      "commons_title": "File:Skindred - 2017153155639 2017-06-02 Rock am Ring - Sven - 1D X II - 0110 - B70I6029.jpg",
+      "published_category": "People and human actvity"
+    },
+    {
+      "candidate_id": "b3756e68171bc5fa771b",
+      "year": 2023,
+      "commons_title": "File:Portrait of a young woman wearing a gray balaclava.jpg",
+      "published_category": "People and human actvity"
+    },
+    {
+      "candidate_id": "2997da1aa772afe85be8",
+      "year": 2023,
+      "commons_title": "File:Rally in support of Ukraine in Columbus, Ohio, United States, 26 February 2022 (51906586684) - edited.jpg",
+      "published_category": "People and human actvity"
+    },
+    {
+      "candidate_id": "9f5fbb91af35f28e258f",
+      "year": 2023,
+      "commons_title": "File:Hamun by Solmaz Daryani 1 (Crop).jpg",
+      "published_category": "People and human actvity"
+    },
+    {
+      "candidate_id": "8fbf9aaa376758ed4cf5",
+      "year": 2023,
+      "commons_title": "File:Folkloric Tanoura dance performed by man.jpg",
+      "published_category": "People and human actvity"
+    },
+    {
+      "candidate_id": "e4266b54730512115833",
+      "year": 2023,
+      "commons_title": "File:Man walking through the Saint Roch neighborhood, Quebec City, Province of Quebec, Canada.jpg",
+      "published_category": "People and human actvity"
+    },
+    {
+      "candidate_id": "4ad03a9778d73b573f40",
+      "year": 2023,
+      "commons_title": "File:Acro-Show-Villeneuve Infinity-Tumbling 2022-08-21.jpg",
+      "published_category": "People and human actvity"
+    },
+    {
+      "candidate_id": "9a40190108a804c45fd6",
+      "year": 2023,
+      "commons_title": "File:2023-04-23 Motorsport, ABB FIA Formula E World Championship, Berlin E-Prix 2023 1DX 1445 by Stepro.jpg",
+      "published_category": "People and human actvity"
+    },
+    {
+      "candidate_id": "ca781ebc216eb8568d7e",
+      "year": 2023,
+      "commons_title": "File:29. Ulica - Krakowski Teatr Tańca - Estra & Andro - 20160708 2652.jpg",
+      "published_category": "People and human actvity"
+    },
+    {
+      "candidate_id": "0ada2f2f8d29073cb09a",
+      "year": 2023,
+      "commons_title": "File:A man and his donkey on the way back from the field in Aswan, Egypt (edited).jpg",
+      "published_category": "People and human actvity"
+    },
+    {
+      "candidate_id": "ecc9f57ccfc924c843c7",
+      "year": 2023,
+      "commons_title": "File:CH.ZG.Zug Boardstock 2008-07-27 Wakeboarder 27 16x9-R 4K.jpg",
+      "published_category": "People and human actvity"
+    },
+    {
+      "candidate_id": "e47c3aa1e1d3059a8c1b",
+      "year": 2023,
+      "commons_title": "File:Red and Gold for Niño.jpg",
+      "published_category": "People and human actvity"
+    },
+    {
+      "candidate_id": "1686b0b6fd858c75c5e0",
+      "year": 2023,
+      "commons_title": "File:34. Ulica - TNT Shows - Moving Poles - 20210904 1310 1879.jpg",
+      "published_category": "People and human actvity"
+    },
+    {
+      "candidate_id": "39e1a5635b51cde68ca4",
+      "year": 2023,
+      "commons_title": "File:Working hands. Bizzilla, or traditional maltese lace-making.jpg",
+      "published_category": "People and human actvity"
+    },
+    {
+      "candidate_id": "35f140c93addae003bdc",
+      "year": 2023,
+      "commons_title": "File:2022-05-22 50. Internationales Dixieland Festival Dresden 1DX 2056 by Stepro-2.jpg",
+      "published_category": "People and human actvity"
+    },
+    {
+      "candidate_id": "ac531e3bf0eb9c6f133b",
+      "year": 2023,
+      "commons_title": "File:Woman lighting the candles for the Festival of Lights in India (cropped).jpg",
+      "published_category": "People and human actvity"
+    },
+    {
+      "candidate_id": "76c7d7f754d14839f7b7",
+      "year": 2023,
+      "commons_title": "File:Нейрохирургическая операция в Институте Склифосовского.jpg",
+      "published_category": "People and human actvity"
+    },
+    {
+      "candidate_id": "f1250f8ac6c560d2de16",
+      "year": 2023,
+      "commons_title": "File:Jewelry designing (edited).jpg",
+      "published_category": "People and human actvity"
+    },
+    {
+      "candidate_id": "d64fca3793f6e949962c",
+      "year": 2023,
+      "commons_title": "File:A smiling member of the Ramnami Samaj (edited).jpg",
+      "published_category": "People and human actvity"
+    },
+    {
+      "candidate_id": "f2a41e25731767a53897",
+      "year": 2023,
+      "commons_title": "File:Intramontabile Passione.jpg",
+      "published_category": "People and human actvity"
+    },
+    {
+      "candidate_id": "6e3fb884000d0afb3454",
+      "year": 2023,
+      "commons_title": "File:Tribu Pana-ad of Dinagyang Festival (edited).jpg",
+      "published_category": "People and human actvity"
+    },
+    {
+      "candidate_id": "d36800ac3096db5b13eb",
+      "year": 2023,
+      "commons_title": "File:Traditional worker with coconut rope (edited).jpg",
+      "published_category": "People and human actvity"
+    },
+    {
+      "candidate_id": "3a9793922aacd984f8bc",
+      "year": 2023,
+      "commons_title": "File:Cheroot Smoking (edited).jpg",
+      "published_category": "People and human actvity"
+    },
+    {
+      "candidate_id": "19018c45ed33c41ede30",
+      "year": 2023,
+      "commons_title": "File:Crack climbing in Indian Creek, Utah.jpg",
+      "published_category": "People and human actvity"
+    },
+    {
+      "candidate_id": "70e61426bef743ba0356",
+      "year": 2023,
+      "commons_title": "File:Copper bleach.jpg",
+      "published_category": "People and human actvity"
+    },
+    {
+      "candidate_id": "2f16bd4eb991544c30e3",
+      "year": 2023,
+      "commons_title": "File:Self traditional folk face painting (2).jpg",
+      "published_category": "People and human actvity"
+    },
+    {
+      "candidate_id": "1e00894acae1cc4fc90a",
+      "year": 2023,
+      "commons_title": "File:Covid-19 SP - UTI V. Nova Cachoeirinha.jpg",
+      "published_category": "People and human actvity"
+    },
+    {
+      "candidate_id": "a08c0468a4981a1f53dc",
+      "year": 2023,
+      "commons_title": "File:Crate maker.jpg",
+      "published_category": "People and human actvity"
+    },
+    {
+      "candidate_id": "f0b84ccb7972dffed60e",
+      "year": 2023,
+      "commons_title": "File:Evening pray (edited).jpg",
+      "published_category": "People and human actvity"
+    },
+    {
+      "candidate_id": "7943f69be4402df13b84",
+      "year": 2023,
+      "commons_title": "File:Nubian houses.jpg",
+      "published_category": "People and human actvity"
+    },
+    {
+      "candidate_id": "84580c1206364ce5e1a8",
+      "year": 2023,
+      "commons_title": "File:Child working selling vegetables in downtown Maracaibo.jpg",
+      "published_category": "People and human actvity"
+    },
+    {
+      "candidate_id": "f699db20f0779d4f0a62",
+      "year": 2023,
+      "commons_title": "File:Sister lighting traditional lamp during Tihar festival (edited).jpg",
+      "published_category": "People and human actvity"
+    },
+    {
+      "candidate_id": "f10e3abd9fc9a026ed65",
+      "year": 2023,
+      "commons_title": "File:Tea plantation Sri.jpg",
+      "published_category": "People and human actvity"
+    },
+    {
+      "candidate_id": "5f9c4c76b3d8ac207f9c",
+      "year": 2023,
+      "commons_title": "File:Sumitra Devi, a Garhwali shepherd near Lansdowne, Uttarakhand 02 - cropped.jpg",
+      "published_category": "People and human actvity"
+    },
+    {
+      "candidate_id": "36c00b336c6d2c3f97d4",
+      "year": 2023,
+      "commons_title": "File:Gabrielle Aplin 03 10 2018 -1 (27078864258).jpg",
+      "published_category": "People and human actvity"
+    },
+    {
+      "candidate_id": "9d931211e15fb18560de",
+      "year": 2023,
+      "commons_title": "File:34. Ulica - TNT Shows - Moving Poles - 20210904 1316 1954.jpg",
+      "published_category": "People and human actvity"
+    },
+    {
+      "candidate_id": "f8ed0298f477844e7c22",
+      "year": 2023,
+      "commons_title": "File:Man talking on the phone in Montréal-Pierre Elliott Trudeau International Airport 006.jpg",
+      "published_category": "People and human actvity"
+    },
+    {
+      "candidate_id": "1dbff5e183c35a1e2898",
+      "year": 2023,
+      "commons_title": "File:Bebe Rexha @ Wiltern 06 30 2023 (53047143292) (denoised).jpg",
+      "published_category": "People and human actvity"
+    },
+    {
+      "candidate_id": "ce7860d4a5d1f243d643",
+      "year": 2023,
+      "commons_title": "File:Katy Perry DNC July 2016 (cropped3) restored.jpg",
+      "published_category": "People and human actvity"
+    },
+    {
+      "candidate_id": "f2d6721a268666d9038b",
+      "year": 2023,
+      "commons_title": "File:Lathmar Holi 2022 in Nandgaon, Uttar Pradesh (edited).jpg",
+      "published_category": "People and human actvity"
+    },
+    {
+      "candidate_id": "50afdc41155ef31f4adf",
+      "year": 2023,
+      "commons_title": "File:783 3 (+ 3) dancers performing on stage V-P.jpg",
+      "published_category": "People and human actvity"
+    },
+    {
+      "candidate_id": "3c435e68ed4655a355e3",
+      "year": 2023,
+      "commons_title": "File:Bronze casting at Kunstgießerei München 01 - cropped.jpg",
+      "published_category": "People and human actvity"
+    },
+    {
+      "candidate_id": "0067c15969c52e50dbd5",
+      "year": 2023,
+      "commons_title": "File:Upholstering the seats of your own car, Margarita Island, Venezuela.jpg",
+      "published_category": "People and human actvity"
+    },
+    {
+      "candidate_id": "349b425f369ecbf159ad",
+      "year": 2023,
+      "commons_title": "File:Boardmasters2023 (97 of 171) (53120163026).jpg",
+      "published_category": "People and human actvity"
+    },
+    {
+      "candidate_id": "c0d553da353e03e02b55",
+      "year": 2023,
+      "commons_title": "File:Play with a wheel.jpg",
+      "published_category": "People and human actvity"
+    },
+    {
+      "candidate_id": "b7c6384a5e0f40904fbb",
+      "year": 2023,
+      "commons_title": "File:Anne-Marie-4250.jpg",
+      "published_category": "People and human actvity"
+    },
+    {
+      "candidate_id": "02e756ac8a2d09f2c5cd",
+      "year": 2023,
+      "commons_title": "File:President Barack Obama.jpg",
+      "published_category": "People and human actvity"
+    },
+    {
+      "candidate_id": "cc08ad2419123c4b96a8",
+      "year": 2023,
+      "commons_title": "File:Incense in Vietnam.jpg",
+      "published_category": "Other objects"
+    }
+  ]
+}

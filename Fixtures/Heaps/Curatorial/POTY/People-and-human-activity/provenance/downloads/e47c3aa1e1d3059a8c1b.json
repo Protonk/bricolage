@@ -1,0 +1,41 @@
+{
+  "candidate_id": "e47c3aa1e1d3059a8c1b",
+  "source_path": "sources/e47c3aa1e1d3059a8c1b.jpg",
+  "sha256": "1ca875afd99d26fd73df5d5d3c8fca3ecec23939a05e28a49c6cd3bf0284d925",
+  "bytes": 764297,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Red_and_Gold_for_Ni%C3%B1o.jpg/1920px-Red_and_Gold_for_Ni%C3%B1o.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-001.json",
+  "metadata_sha256": "f19249e0b818ea7ffb79112eee0793e665ec1b4d49aad3eee6547e4c8549bde0",
+  "original_sha1": "37f7da44a8688854207bc98821ad2f4155ab6d58",
+  "pageid": 128922276,
+  "api_reported_width": 1600,
+  "api_reported_height": 1067,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:20:50.376155+00:00",
+    "key": "e47c3aa1e1d3059a8c1b",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Red_and_Gold_for_Ni%C3%B1o.jpg/1920px-Red_and_Gold_for_Ni%C3%B1o.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 764297,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "010af1922bc8dbbda4f7b84c4e25aa9e",
+      "last-modified": "Wed, 22 Jul 2026 00:54:20 GMT",
+      "content-length": "764297",
+      "date": "Fri, 30 Oct 2026 22:13:06 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 hit, cp4044 miss",
+      "x-request-id": "5e48bcb1-6619-4377-bba0-fa7f634ba7b9"
+    },
+    "sha256": "1ca875afd99d26fd73df5d5d3c8fca3ecec23939a05e28a49c6cd3bf0284d925"
+  },
+  "width": 1920,
+  "height": 1280,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

@@ -1,0 +1,41 @@
+{
+  "candidate_id": "84984beb65b41069e289",
+  "source_path": "sources/84984beb65b41069e289.jpg",
+  "sha256": "dd19546a0862989cfa6b4e87784770994c73f8a93059c7a9937c99e1129aa433",
+  "bytes": 208581,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Two_bees_absorbing_pollen_from_an_Iceland_poppy_in_the_flower_garden_of_Gyeongju_South_Korea.jpg/1920px-Two_bees_absorbing_pollen_from_an_Iceland_poppy_in_the_flower_garden_of_Gyeongju_South_Korea.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-013.json",
+  "metadata_sha256": "4cde3d9b21c79a2fbca8d5fe71dad3a80e93b23c49f527ec4f40da0ed6a5d939",
+  "original_sha1": "1063348215856be12947cfc18e1ebb745451e05f",
+  "pageid": 155225034,
+  "api_reported_width": 1600,
+  "api_reported_height": 1067,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:21:39.170781+00:00",
+    "key": "84984beb65b41069e289",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Two_bees_absorbing_pollen_from_an_Iceland_poppy_in_the_flower_garden_of_Gyeongju_South_Korea.jpg/1920px-Two_bees_absorbing_pollen_from_an_Iceland_poppy_in_the_flower_garden_of_Gyeongju_South_Korea.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 208581,
+    "headers": {
+      "content-type": "image/jpeg",
+      "last-modified": "Sun, 20 Sep 2026 22:50:46 GMT",
+      "content-length": "208581",
+      "date": "Sat, 31 Oct 2026 17:21:39 GMT",
+      "server": "envoy",
+      "etag": "7f9dc52930578112da356d7b556d76ff",
+      "x-cache": "cp4044 hit, cp4044 miss",
+      "x-request-id": "8a7fa667-e435-40d6-a030-6b30a36f0307"
+    },
+    "sha256": "dd19546a0862989cfa6b4e87784770994c73f8a93059c7a9937c99e1129aa433"
+  },
+  "width": 1920,
+  "height": 1280,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

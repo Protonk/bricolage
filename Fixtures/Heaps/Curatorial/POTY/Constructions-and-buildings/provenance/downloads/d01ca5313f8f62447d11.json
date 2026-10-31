@@ -1,0 +1,41 @@
+{
+  "candidate_id": "d01ca5313f8f62447d11",
+  "source_path": "sources/d01ca5313f8f62447d11.jpg",
+  "sha256": "47fd6a1dc48413740b0113d51f47cbc5a4cfa4a0651002ce574dd40e31aa6359",
+  "bytes": 485763,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/CH.GR.Arosa_Tschuggen-Grand-Hotel_2220_16x9-R_16K.jpg/1920px-CH.GR.Arosa_Tschuggen-Grand-Hotel_2220_16x9-R_16K.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-000.json",
+  "metadata_sha256": "8113673b92c38df4637dae82785f4bce670e53a04bdf3e9ea68d597bc268f796",
+  "original_sha1": "5d0dad20f1df8fe587611eaa7f04a831f685c3b1",
+  "pageid": 129670404,
+  "api_reported_width": 1600,
+  "api_reported_height": 900,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:24:46.419820+00:00",
+    "key": "d01ca5313f8f62447d11",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/CH.GR.Arosa_Tschuggen-Grand-Hotel_2220_16x9-R_16K.jpg/1920px-CH.GR.Arosa_Tschuggen-Grand-Hotel_2220_16x9-R_16K.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 485763,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "7b19595041ad4351a0835638f69b26e2",
+      "last-modified": "Fri, 07 Aug 2026 20:32:24 GMT",
+      "content-length": "485763",
+      "date": "Sat, 31 Oct 2026 17:24:46 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "cb8407bf-7d88-497f-be21-4230f3ce3deb"
+    },
+    "sha256": "47fd6a1dc48413740b0113d51f47cbc5a4cfa4a0651002ce574dd40e31aa6359"
+  },
+  "width": 1920,
+  "height": 1080,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

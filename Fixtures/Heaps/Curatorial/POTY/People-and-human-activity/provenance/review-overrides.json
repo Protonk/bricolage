@@ -1,0 +1,30 @@
+{
+  "4ef853c0a33099297007": {
+    "creator_keys": [
+      "name:oliver mark"
+    ],
+    "creator_unknown": false,
+    "creator_basis": "Cached file-page source is Creator:Oliver Mark, credit line Author © Oliver Mark and category Photographs by Oliver Mark; API Artist absent.",
+    "exclude_reason": null
+  },
+  "119a0ca738d417c1777c": {
+    "creator_keys": [],
+    "creator_unknown": true,
+    "creator_basis": "Royal Society uploader is the organizational attribution in Author; no individual original photographer identified. Preserve the credit and do not infer the photographer from an uploader account."
+  },
+  "ce7860d4a5d1f243d643": {
+    "creator_keys": [
+      "name:a. shaker/voa"
+    ],
+    "creator_unknown": false,
+    "creator_basis": "File-page description explicitly credits A. Shaker/VOA; retouched template names the original. Alternate crop remains excluded."
+  },
+  "facd55eaa1e40762d639": {
+    "creator_keys": [
+      "name:eugène delacroix",
+      "user:shonagon"
+    ],
+    "creator_unknown": false,
+    "creator_basis": "Artwork Artist is Eugène Delacroix; file-page source explicitly credits the photograph to User:Shonagon, 2024-05-02. Both original work and reproduction creators are counted; uploader is not substituted."
+  }
+}

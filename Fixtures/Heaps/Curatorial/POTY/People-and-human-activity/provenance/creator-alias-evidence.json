@@ -1,0 +1,226 @@
+{
+  "user:wilfredor": {
+    "canonical_key": "wikidata:Q115464159",
+    "basis": "Artist attribution uses the same Wilfredor name in User:Wilfredor links and in Wikidata Q115464159 creator output; retained file pages identify the Creator template.",
+    "source_evidence": [
+      {
+        "candidate_id": "e4266b54730512115833",
+        "metadata_path": "provenance/api/files-001.json",
+        "metadata_sha256": "f19249e0b818ea7ffb79112eee0793e665ec1b4d49aad3eee6547e4c8549bde0"
+      },
+      {
+        "candidate_id": "84580c1206364ce5e1a8",
+        "metadata_path": "provenance/api/files-003.json",
+        "metadata_sha256": "12229cede65a55391d486adc5290b81f01bb20fe630a5e34efb2d6f79119b6e0"
+      },
+      {
+        "candidate_id": "f8ed0298f477844e7c22",
+        "metadata_path": "provenance/api/files-004.json",
+        "metadata_sha256": "21612541b5df13d817c4841541a76634444bead06cef030c3d4a04d459caa639"
+      },
+      {
+        "candidate_id": "0067c15969c52e50dbd5",
+        "metadata_path": "provenance/api/files-004.json",
+        "metadata_sha256": "21612541b5df13d817c4841541a76634444bead06cef030c3d4a04d459caa639"
+      },
+      {
+        "candidate_id": "3717b48986bc4a289048",
+        "metadata_path": "provenance/api/files-006.json",
+        "metadata_sha256": "9ec9308a43aaaa6d0daf5b3902fc031ad177490f6532797ffdb19be60d00f746"
+      }
+    ]
+  },
+  "name:curved.kiwix": {
+    "canonical_key": "user:curved.kiwix",
+    "basis": "Explicit Original role names Curved.kiwix; another Artist field links the same spelling to User:Curved.kiwix.",
+    "source_evidence": [
+      {
+        "candidate_id": "d36800ac3096db5b13eb",
+        "metadata_path": "provenance/api/files-002.json",
+        "metadata_sha256": "479e3506ee97a9333e686708f6fb86fe4ffb290fdfb9164164b819f28df1db82"
+      },
+      {
+        "candidate_id": "f10e3abd9fc9a026ed65",
+        "metadata_path": "provenance/api/files-003.json",
+        "metadata_sha256": "12229cede65a55391d486adc5290b81f01bb20fe630a5e34efb2d6f79119b6e0"
+      }
+    ]
+  },
+  "name:anton gutmann": {
+    "canonical_key": "user:anton gutmann",
+    "basis": "Explicit Original role names Anton Gutmann in both plain and User:Anton Gutmann linked attributions.",
+    "source_evidence": [
+      {
+        "candidate_id": "3a9793922aacd984f8bc",
+        "metadata_path": "provenance/api/files-002.json",
+        "metadata_sha256": "479e3506ee97a9333e686708f6fb86fe4ffb290fdfb9164164b819f28df1db82"
+      },
+      {
+        "candidate_id": "f0b84ccb7972dffed60e",
+        "metadata_path": "provenance/api/files-003.json",
+        "metadata_sha256": "12229cede65a55391d486adc5290b81f01bb20fe630a5e34efb2d6f79119b6e0"
+      },
+      {
+        "candidate_id": "1c022e89ba662e6e5419",
+        "metadata_path": "provenance/api/files-005.json",
+        "metadata_sha256": "d1e52e0fa2f3b3f4fc0e08ba660be0330688db80794c8a7911bbf6958709c39b"
+      }
+    ]
+  },
+  "name:justin higuchi from los angeles, ca, usa": {
+    "canonical_key": "name:justin higuchi",
+    "basis": "Both Artist variants link Flickr person 39400957@N03 and display Justin Higuchi; the location suffix is not a second creator.",
+    "source_evidence": [
+      {
+        "candidate_id": "36c00b336c6d2c3f97d4",
+        "metadata_path": "provenance/api/files-004.json",
+        "metadata_sha256": "21612541b5df13d817c4841541a76634444bead06cef030c3d4a04d459caa639"
+      },
+      {
+        "candidate_id": "1dbff5e183c35a1e2898",
+        "metadata_path": "provenance/api/files-004.json",
+        "metadata_sha256": "21612541b5df13d817c4841541a76634444bead06cef030c3d4a04d459caa639"
+      },
+      {
+        "candidate_id": "905e613ff8d197a86d98",
+        "metadata_path": "provenance/api/files-008.json",
+        "metadata_sha256": "92e6ee910fa644142f4f4a700fca8e11d6977808479e259ef3fc7cb0d8384374"
+      },
+      {
+        "candidate_id": "faf73b945cccf84c3d00",
+        "metadata_path": "provenance/api/files-013.json",
+        "metadata_sha256": "24c8e70ab01e8ec582d5e52a9381bd163c8e87afaa5d23d597dbaabde4c23e96"
+      }
+    ]
+  },
+  "name:harald krichel": {
+    "canonical_key": "wikidata:Q640",
+    "basis": "Plain Artist Harald Krichel and linked Wikidata Q640 have the same name; cached User:Harald Krichel self-identifies as that photographer.",
+    "source_evidence": [
+      {
+        "candidate_id": "b7c6384a5e0f40904fbb",
+        "metadata_path": "provenance/api/files-005.json",
+        "metadata_sha256": "d1e52e0fa2f3b3f4fc0e08ba660be0330688db80794c8a7911bbf6958709c39b"
+      },
+      {
+        "candidate_id": "4cbe9805f980e9f43b88",
+        "metadata_path": "provenance/api/files-005.json",
+        "metadata_sha256": "d1e52e0fa2f3b3f4fc0e08ba660be0330688db80794c8a7911bbf6958709c39b"
+      },
+      {
+        "candidate_id": "36d3615defb8a67c54ea",
+        "metadata_path": "provenance/api/files-019.json",
+        "metadata_sha256": "5619ec4086c1318eb0fc12714da3e9ae36dc44f7315cb3fd4ecb590584d50639"
+      },
+      {
+        "candidate_id": "684bbdbc366c1a4bf266",
+        "metadata_path": "provenance/api/files-021.json",
+        "metadata_sha256": "1d3b345bc96e5c988597b0471b2911dd21ebe87d99a7fcfea38efeee3375ed3a"
+      },
+      {
+        "candidate_id": "c7092517aa2a97108dbb",
+        "metadata_path": "provenance/api/files-022.json",
+        "metadata_sha256": "e7a9dbb379c5217d94d4a73f1bcd6bad1e945f093f54d49d2072be68aee61c94"
+      }
+    ],
+    "additional_metadata_path": "provenance/api/creator-identity-evidence.json",
+    "additional_metadata_sha256": "25bd4823fdb63c19eeb00582b59535f5ced28bbd1ce8408ab2381d13abc13c41"
+  },
+  "name:cmichel67": {
+    "canonical_key": "name:christopher michel",
+    "basis": "Eva Nogales file page author Cmichel67 explicitly describes the portrait as by Christopher Michel and categorizes it as Photographs by Christopher Michel.",
+    "source_evidence": [
+      {
+        "candidate_id": "39855d22971148106db5",
+        "metadata_path": "provenance/api/files-005.json",
+        "metadata_sha256": "d1e52e0fa2f3b3f4fc0e08ba660be0330688db80794c8a7911bbf6958709c39b"
+      },
+      {
+        "candidate_id": "364be1fe6226d0768078",
+        "metadata_path": "provenance/api/files-006.json",
+        "metadata_sha256": "9ec9308a43aaaa6d0daf5b3902fc031ad177490f6532797ffdb19be60d00f746"
+      }
+    ]
+  },
+  "name:basile morin": {
+    "canonical_key": "user:basile morin",
+    "basis": "Plain Artist Basile Morin and User:Basile Morin have the same attribution name.",
+    "source_evidence": [
+      {
+        "candidate_id": "b3756e68171bc5fa771b",
+        "metadata_path": "provenance/api/files-000.json",
+        "metadata_sha256": "b3ccf89263ff9356d9906be9f12f966f836fe9dff1b73ec03661ddd42d684505"
+      },
+      {
+        "candidate_id": "5b065d3c67747c30965c",
+        "metadata_path": "provenance/api/files-005.json",
+        "metadata_sha256": "d1e52e0fa2f3b3f4fc0e08ba660be0330688db80794c8a7911bbf6958709c39b"
+      },
+      {
+        "candidate_id": "2851763194a8f674545c",
+        "metadata_path": "provenance/api/files-006.json",
+        "metadata_sha256": "9ec9308a43aaaa6d0daf5b3902fc031ad177490f6532797ffdb19be60d00f746"
+      },
+      {
+        "candidate_id": "831ad65c4e277aaed35e",
+        "metadata_path": "provenance/api/files-014.json",
+        "metadata_sha256": "b2f46b98c81f6a321e60a7945c6fad62e44652f51049d5aec9057efb309788e4"
+      }
+    ]
+  },
+  "name:andrew lih": {
+    "canonical_key": "user:fuzheado",
+    "basis": "Cached User:Fuzheado page identifies its portraits as Portraits by Andrew Lih; preserved Artist names and own-work file pages support this alias.",
+    "source_evidence": [
+      {
+        "candidate_id": "176009fa812c2ce355c3",
+        "metadata_path": "provenance/api/files-010.json",
+        "metadata_sha256": "2e38676738983485ed68ca9078c15643e3840de13eef908831be147abce855c9"
+      },
+      {
+        "candidate_id": "1cbe8cfb288df3a28c69",
+        "metadata_path": "provenance/api/files-014.json",
+        "metadata_sha256": "b2f46b98c81f6a321e60a7945c6fad62e44652f51049d5aec9057efb309788e4"
+      }
+    ],
+    "additional_metadata_path": "provenance/api/creator-identity-evidence.json",
+    "additional_metadata_sha256": "25bd4823fdb63c19eeb00582b59535f5ced28bbd1ce8408ab2381d13abc13c41"
+  },
+  "name:gotfryd, bernard, photographer": {
+    "canonical_key": "name:bernard gotfryd",
+    "basis": "Same original photographer name with surname-first catalog order; explicit Bernard Gotfryd Artist and historical file-page catalog credits are preserved.",
+    "source_evidence": [
+      {
+        "candidate_id": "cb4b13f75a1e5350249c",
+        "metadata_path": "provenance/api/files-006.json",
+        "metadata_sha256": "9ec9308a43aaaa6d0daf5b3902fc031ad177490f6532797ffdb19be60d00f746"
+      },
+      {
+        "candidate_id": "6a44c3c0d6ebb2e8ce3f",
+        "metadata_path": "provenance/api/files-006.json",
+        "metadata_sha256": "9ec9308a43aaaa6d0daf5b3902fc031ad177490f6532797ffdb19be60d00f746"
+      },
+      {
+        "candidate_id": "b866645c68d51088c6d6",
+        "metadata_path": "provenance/api/files-013.json",
+        "metadata_sha256": "24c8e70ab01e8ec582d5e52a9381bd163c8e87afaa5d23d597dbaabde4c23e96"
+      }
+    ]
+  },
+  "user:svema": {
+    "canonical_key": "name:sven mandel",
+    "basis": "The explicitly labeled Original author link User:Svema displays Sven Mandel; another Artist record uses the same name without a link.",
+    "source_evidence": [
+      {
+        "candidate_id": "0af796cf8413da2d8ad7",
+        "metadata_path": "provenance/api/files-000.json",
+        "metadata_sha256": "b3ccf89263ff9356d9906be9f12f966f836fe9dff1b73ec03661ddd42d684505"
+      },
+      {
+        "candidate_id": "87f1079923c04827cd5c",
+        "metadata_path": "provenance/api/files-021.json",
+        "metadata_sha256": "1d3b345bc96e5c988597b0471b2911dd21ebe87d99a7fcfea38efeee3375ed3a"
+      }
+    ]
+  }
+}

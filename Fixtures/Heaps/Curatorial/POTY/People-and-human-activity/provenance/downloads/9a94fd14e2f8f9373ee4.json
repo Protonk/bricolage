@@ -1,0 +1,41 @@
+{
+  "candidate_id": "9a94fd14e2f8f9373ee4",
+  "source_path": "sources/9a94fd14e2f8f9373ee4.jpg",
+  "sha256": "09c2165882d5c7f098aec7e4e310d95c8da5cdc0c621f96d30fb72ea76578d41",
+  "bytes": 830684,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Jules_passing_over_a_shadow_cast_of_window_bars%2C_Biblioteca_das_Galveias%2C_Lisbon%2C_Portugal_julesvernex2.jpg/1920px-Jules_passing_over_a_shadow_cast_of_window_bars%2C_Biblioteca_das_Galveias%2C_Lisbon%2C_Portugal_julesvernex2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-022.json",
+  "metadata_sha256": "e7a9dbb379c5217d94d4a73f1bcd6bad1e945f093f54d49d2072be68aee61c94",
+  "original_sha1": "aa5df30d3ddec07cf99a9a9b80229e25565121b6",
+  "pageid": 175443003,
+  "api_reported_width": 1294,
+  "api_reported_height": 1600,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:25:35.093836+00:00",
+    "key": "9a94fd14e2f8f9373ee4",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Jules_passing_over_a_shadow_cast_of_window_bars%2C_Biblioteca_das_Galveias%2C_Lisbon%2C_Portugal_julesvernex2.jpg/1920px-Jules_passing_over_a_shadow_cast_of_window_bars%2C_Biblioteca_das_Galveias%2C_Lisbon%2C_Portugal_julesvernex2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 830684,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "71f1f80131722a17e3f277d8b0e73f3a",
+      "last-modified": "Sat, 05 Sep 2026 08:51:37 GMT",
+      "content-length": "830684",
+      "date": "Sat, 31 Oct 2026 17:25:35 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "a8184063-c9cf-4bb9-8972-639c05b6007b"
+    },
+    "sha256": "09c2165882d5c7f098aec7e4e310d95c8da5cdc0c621f96d30fb72ea76578d41"
+  },
+  "width": 1920,
+  "height": 2373,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

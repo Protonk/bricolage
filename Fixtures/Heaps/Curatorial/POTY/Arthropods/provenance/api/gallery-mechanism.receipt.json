@@ -1,0 +1,20 @@
+{
+  "utc": "2026-10-31T17:10:41.891010+00:00",
+  "key": "gallery-mechanism",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Template%3APOTY+gallery%2F2023%7CCommons%3APicture+of+the+Year%2F2024%2FGallery%2FArthropods%7CCommons%3APicture+of+the+Year%2F2025%2FGallery%2FArthropods",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 3353,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 17:10:42 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-n5dwc",
+    "cache-control": "private, must-revalidate, max-age=0",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 pass",
+    "content-length": "3353",
+    "x-request-id": "3ca49c80-b0b7-4f60-b421-79ca6faecd9d"
+  },
+  "sha256": "838a955a3fb26f4b3cc500581a28b5767874a16f30534228ebc94a5c04f16828"
+}

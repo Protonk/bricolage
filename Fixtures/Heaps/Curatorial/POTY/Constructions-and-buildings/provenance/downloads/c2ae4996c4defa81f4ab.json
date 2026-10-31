@@ -1,0 +1,41 @@
+{
+  "candidate_id": "c2ae4996c4defa81f4ab",
+  "source_path": "sources/c2ae4996c4defa81f4ab.jpg",
+  "sha256": "b05417e22bef7d1a4b9f8a787d9178d68d5eb273d54a6def4b0013d1df2bf86d",
+  "bytes": 1045534,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/%D0%A2%D1%80%D0%B0%D0%B4%D0%B8%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D0%BD%D0%B0_%D0%BA%D1%83%D1%9C%D0%B0_%D0%B2%D0%BE_%D0%A2%D0%B0%D1%82%D0%B0%D1%80_%D0%95%D0%BB%D0%B5%D0%B2%D1%86%D0%B8.jpg/1920px-%D0%A2%D1%80%D0%B0%D0%B4%D0%B8%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D0%BD%D0%B0_%D0%BA%D1%83%D1%9C%D0%B0_%D0%B2%D0%BE_%D0%A2%D0%B0%D1%82%D0%B0%D1%80_%D0%95%D0%BB%D0%B5%D0%B2%D1%86%D0%B8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-022.json",
+  "metadata_sha256": "cbb340a38da7941d92f0768d5c8d9238bf1c60bd122c2cb8e5534a70f3932714",
+  "original_sha1": "ba226fea2191026ee749a64909f4798140cdebb9",
+  "pageid": 123635706,
+  "api_reported_width": 1600,
+  "api_reported_height": 1067,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:24:35.925481+00:00",
+    "key": "c2ae4996c4defa81f4ab",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/%D0%A2%D1%80%D0%B0%D0%B4%D0%B8%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D0%BD%D0%B0_%D0%BA%D1%83%D1%9C%D0%B0_%D0%B2%D0%BE_%D0%A2%D0%B0%D1%82%D0%B0%D1%80_%D0%95%D0%BB%D0%B5%D0%B2%D1%86%D0%B8.jpg/1920px-%D0%A2%D1%80%D0%B0%D0%B4%D0%B8%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D0%BD%D0%B0_%D0%BA%D1%83%D1%9C%D0%B0_%D0%B2%D0%BE_%D0%A2%D0%B0%D1%82%D0%B0%D1%80_%D0%95%D0%BB%D0%B5%D0%B2%D1%86%D0%B8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 1045534,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "4edf6bb6d96afe6d3af28d54e3644a44",
+      "last-modified": "Sat, 03 Oct 2026 23:38:19 GMT",
+      "content-length": "1045534",
+      "date": "Sat, 31 Oct 2026 17:24:36 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "ef950eeb-a26a-46c1-8307-0f8a58654a13"
+    },
+    "sha256": "b05417e22bef7d1a4b9f8a787d9178d68d5eb273d54a6def4b0013d1df2bf86d"
+  },
+  "width": 1920,
+  "height": 1281,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

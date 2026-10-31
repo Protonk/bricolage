@@ -1,0 +1,41 @@
+{
+  "candidate_id": "266b0d03fabeafc06e93",
+  "source_path": "sources/266b0d03fabeafc06e93.jpg",
+  "sha256": "db4bc0e572fe544853a77b281f602ba9bc702710be559fb3aa15ebf6b440ecb8",
+  "bytes": 1255279,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Colors_of_Bishwa_Ijtema.jpg/1920px-Colors_of_Bishwa_Ijtema.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-015.json",
+  "metadata_sha256": "5fa4f855e5aa6a0931d76f3fd4b5591add5779a2d74d86583ae83818cbee90fc",
+  "original_sha1": "3bfb495b20a6e38c57e1114a5428d844705f89a7",
+  "pageid": 162684635,
+  "api_reported_width": 1600,
+  "api_reported_height": 1198,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:25:42.163647+00:00",
+    "key": "266b0d03fabeafc06e93",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Colors_of_Bishwa_Ijtema.jpg/1920px-Colors_of_Bishwa_Ijtema.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 1255279,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "5a8824b2b2e3c98fc9e689530afa47ee",
+      "last-modified": "Sun, 02 Aug 2026 15:42:36 GMT",
+      "content-length": "1255279",
+      "date": "Sat, 31 Oct 2026 17:25:42 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "5ebaf294-072d-4be0-af23-20a56ef769c0"
+    },
+    "sha256": "db4bc0e572fe544853a77b281f602ba9bc702710be559fb3aa15ebf6b440ecb8"
+  },
+  "width": 1920,
+  "height": 1438,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

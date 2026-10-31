@@ -1,0 +1,41 @@
+{
+  "candidate_id": "6719825687fa9ec5239e",
+  "source_path": "sources/6719825687fa9ec5239e.jpg",
+  "sha256": "43013c63712743ba832a36077616f837e80fe2ea122483bcb90607a2f2b6ef46",
+  "bytes": 430098,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Sphingonotus_sp_-_Haddej_-_tunisie.jpg/1920px-Sphingonotus_sp_-_Haddej_-_tunisie.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-007.json",
+  "metadata_sha256": "711ec2c566a153c6ca61cc9183ec62c85cd19baf03ba78eae00f42f892bb771b",
+  "original_sha1": "a3d5c9b64a62b56984c662c551796774ec2d805c",
+  "pageid": 149606786,
+  "api_reported_width": 1600,
+  "api_reported_height": 1067,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:26:48.422775+00:00",
+    "key": "6719825687fa9ec5239e",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Sphingonotus_sp_-_Haddej_-_tunisie.jpg/1920px-Sphingonotus_sp_-_Haddej_-_tunisie.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 430098,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "3c58812bc531a627e4ecf28eb3664412",
+      "last-modified": "Wed, 14 Oct 2026 07:57:13 GMT",
+      "content-length": "430098",
+      "date": "Sat, 31 Oct 2026 17:26:48 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "451dc962-f474-476c-bb78-a123f778296b"
+    },
+    "sha256": "43013c63712743ba832a36077616f837e80fe2ea122483bcb90607a2f2b6ef46"
+  },
+  "width": 1920,
+  "height": 1280,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

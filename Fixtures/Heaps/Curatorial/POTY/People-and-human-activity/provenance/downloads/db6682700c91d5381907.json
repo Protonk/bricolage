@@ -1,0 +1,41 @@
+{
+  "candidate_id": "db6682700c91d5381907",
+  "source_path": "sources/db6682700c91d5381907.jpg",
+  "sha256": "e060becf0fd3540405c96632972890c25d9e9abed12a8f66621ea1392c4d2f8b",
+  "bytes": 255805,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/1961_Cooper_T53_Donington_Park_2023_01.jpg/1920px-1961_Cooper_T53_Donington_Park_2023_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-012.json",
+  "metadata_sha256": "cb611f1a5eb36db2e8b053a88bdccf42420ee3b23ac8832dc56303e1f0aea37b",
+  "original_sha1": "f45bc958529a347c5ab9221f0e078101f2f9eeda",
+  "pageid": 156023623,
+  "api_reported_width": 1600,
+  "api_reported_height": 1000,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:25:28.456028+00:00",
+    "key": "db6682700c91d5381907",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/1961_Cooper_T53_Donington_Park_2023_01.jpg/1920px-1961_Cooper_T53_Donington_Park_2023_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 255805,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "310778d2c86a12424f97edce2434f70d",
+      "last-modified": "Sat, 15 Aug 2026 04:08:59 GMT",
+      "content-length": "255805",
+      "date": "Sat, 31 Oct 2026 07:08:01 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 hit/1",
+      "x-request-id": "07f2c83c-55b5-405f-a223-f6ef591a2247"
+    },
+    "sha256": "e060becf0fd3540405c96632972890c25d9e9abed12a8f66621ea1392c4d2f8b"
+  },
+  "width": 1920,
+  "height": 1200,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

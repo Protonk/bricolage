@@ -1,0 +1,41 @@
+{
+  "candidate_id": "6d1e8df19796031884a2",
+  "source_path": "sources/6d1e8df19796031884a2.jpg",
+  "sha256": "6a121b90fabefc6c0885a38c1885eabc2b2790a81a137ed611e9378048d62fec",
+  "bytes": 1049512,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Blick_vom_Leinpfad_bei_Neuenheimer_Landstra%C3%9Fe_38-2_%C3%BCber_den_Neckar_zur_Stadthalle_Heidelberg.jpg/1920px-Blick_vom_Leinpfad_bei_Neuenheimer_Landstra%C3%9Fe_38-2_%C3%BCber_den_Neckar_zur_Stadthalle_Heidelberg.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-015.json",
+  "metadata_sha256": "70c4ab9043ef9f92ceb43b2c56bc354a5bb292ce0e6ed1bfd44b0b5bdf47cd33",
+  "original_sha1": "4d545077d2f9aa05c6cea8a9ac38860fc5b4a8e2",
+  "pageid": 152071235,
+  "api_reported_width": 1600,
+  "api_reported_height": 1067,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:25:00.584251+00:00",
+    "key": "6d1e8df19796031884a2",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Blick_vom_Leinpfad_bei_Neuenheimer_Landstra%C3%9Fe_38-2_%C3%BCber_den_Neckar_zur_Stadthalle_Heidelberg.jpg/1920px-Blick_vom_Leinpfad_bei_Neuenheimer_Landstra%C3%9Fe_38-2_%C3%BCber_den_Neckar_zur_Stadthalle_Heidelberg.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 1049512,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "b225ac0a63737f0a616e589746b995d8",
+      "last-modified": "Thu, 27 Aug 2026 20:44:50 GMT",
+      "content-length": "1049512",
+      "date": "Sat, 31 Oct 2026 17:25:00 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "91a526e9-b6ab-493c-bb7b-a49e8ffb2bb3"
+    },
+    "sha256": "6a121b90fabefc6c0885a38c1885eabc2b2790a81a137ed611e9378048d62fec"
+  },
+  "width": 1920,
+  "height": 1280,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

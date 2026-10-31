@@ -15,6 +15,11 @@ Fixtures/
       SF01/
       PS01/
       CR01/
+    Curatorial/
+      POTY/
+        Arthropods/
+        Constructions-and-buildings/
+        People-and-human-activity/
 ```
 
 | Location | Role |
@@ -22,12 +27,14 @@ Fixtures/
 | [Relationships](Relationships/README.md) | The chosen trio: derivation, multiple captures, and variants, with recorded source relationships and comparison probes |
 | [Heaps](Heaps/README.md) | Independently selected image pools, each with its own selection criteria |
 | [Similarity](Heaps/Similarity/README.md) | One heap assembled from collections chosen to look alike under short visual prompts |
+| [Curatorial](Heaps/Curatorial/README.md) | Published editorial populations sampled mechanically; POTY Round 1 category contributions |
 
 RG01, SF01, PS01 and CR01 belong to the same Similarity heap. They retain their
 own acquisition and review records. Their collection membership records human
 selection intent; it is not an expected router neighborhood or matching verdict.
-Another heap can occupy a sibling directory under `Heaps/` and define its own
-criteria. No additional heap is defined yet.
+Curatorial occupies a sibling directory under `Heaps/`; its POTY source collection
+contains three category contributions one level deeper. Their official category
+membership is a sourcing fact, not a similarity judgment.
 
 ## Working with the fixtures
 
@@ -36,6 +43,8 @@ criteria. No additional heap is defined yet.
 - Put a new contribution inside its intended heap. A new contribution to
   Similarity goes beside RG01, SF01, PS01 and CR01; its prompt, exclusions,
   acceptable looseness and review/acquisition status belong with that contribution.
+  Curatorial contributions can sit below their source collection. Read the
+  [POTY record](Heaps/Curatorial/POTY/README.md) for its inventories and check commands.
 - Preserve supplied records and source bytes. All media, intermediate images and
   archives stay in the leaf set's `images/`, `sources/` or `previews/` directories.
   These directories remain Git-ignored at every depth.

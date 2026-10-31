@@ -1,0 +1,41 @@
+{
+  "candidate_id": "0c01f54fbee57d220bfe",
+  "source_path": "sources/0c01f54fbee57d220bfe.jpg",
+  "sha256": "523755f55d7cb6b34db00d3f6897a756bc0bf30d29294038a75ff4eb80b28959",
+  "bytes": 993857,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Moscow_-_2025_-_Details_of_the_facade_of_the_Historical_Museum1.jpg/1920px-Moscow_-_2025_-_Details_of_the_facade_of_the_Historical_Museum1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-024.json",
+  "metadata_sha256": "384899dafdc5e0faa195d7bc75322683d5bdc7d4ba2726b4463103f4b54f9361",
+  "original_sha1": "02599256dfb763a2fa35f1c3ffe69bd31e7ba2dc",
+  "pageid": 175237109,
+  "api_reported_width": 1600,
+  "api_reported_height": 982,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:27:27.091654+00:00",
+    "key": "0c01f54fbee57d220bfe",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Moscow_-_2025_-_Details_of_the_facade_of_the_Historical_Museum1.jpg/1920px-Moscow_-_2025_-_Details_of_the_facade_of_the_Historical_Museum1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 993857,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "2ff7e810144f3e051c44bd1b54edb28f",
+      "last-modified": "Sat, 31 Oct 2026 04:11:38 GMT",
+      "content-length": "993857",
+      "date": "Sat, 31 Oct 2026 17:27:27 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "92c2c131-a250-44fa-97d7-95ed39f301f8"
+    },
+    "sha256": "523755f55d7cb6b34db00d3f6897a756bc0bf30d29294038a75ff4eb80b28959"
+  },
+  "width": 1920,
+  "height": 1178,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

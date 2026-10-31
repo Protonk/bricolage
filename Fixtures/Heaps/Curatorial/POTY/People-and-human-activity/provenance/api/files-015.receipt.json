@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T17:17:01.323674+00:00",
+  "key": "files-015",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3AMJK+68550+Margaret+Qualley+%28Berlinale+2020%29.jpg%7CFile%3AJ%27Ouvert+and+West+Indian+American+Day+Carnival+2024.jpg%7CFile%3AOliver+Mark+-+Lars+von+Trier%2C+Copenhagen+2003.jpg%7CFile%3ASinulog+Festival+%282023%29+contingents+in+street+dance+05.jpg%7CFile%3ALou+Sanz+at+SXSW+on+March+12+2024-Landscape.jpg%7CFile%3AAlyona+alyona+and+Jerry+Heil%2C+final%2C%2C+Eurovision+2024+08.jpg%7CFile%3ALiebherr+LRB+355+H%C3%B6lzla-20160628-RM-105526.jpg%7CFile%3A2024-10-31+Event%2C+Show%2C+Let%27s+Dance+STP+8366+by+Stepro-2.jpg%7CFile%3AColors+of+Bishwa+Ijtema.jpg%7CFile%3ALa+Libert%C3%A9+guidant+le+peuple+-+Eug%C3%A8ne+Delacroix+-+Mus%C3%A9e+du+Louvre+Peintures+RF+129+-+apr%C3%A8s+restauration+2024.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 77029,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 17:17:01 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-g8kxs",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "a1564628-4f43-4475-ac64-4c25dd7a710c"
+  },
+  "sha256": "5fa4f855e5aa6a0931d76f3fd4b5591add5779a2d74d86583ae83818cbee90fc"
+}

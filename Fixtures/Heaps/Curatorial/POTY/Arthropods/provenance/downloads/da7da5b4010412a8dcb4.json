@@ -1,0 +1,41 @@
+{
+  "candidate_id": "da7da5b4010412a8dcb4",
+  "source_path": "sources/da7da5b4010412a8dcb4.jpg",
+  "sha256": "c61a6dd7e0c9f3ef0ce046b072d6d32f6ed225968011bf926090999c0b32103e",
+  "bytes": 452167,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Libelule-Anax_imperator-femelle-Hamois-Luc-Viatour.jpg/1920px-Libelule-Anax_imperator-femelle-Hamois-Luc-Viatour.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-008.json",
+  "metadata_sha256": "938cca6107ca36cd3bf99777730a5c771b23d7d979d5801dd1607d74a2583785",
+  "original_sha1": "a9463be07bbb5fd44461f12b96288206a1dfbe09",
+  "pageid": 151166706,
+  "api_reported_width": 1600,
+  "api_reported_height": 1066,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:23:57.558943+00:00",
+    "key": "da7da5b4010412a8dcb4",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Libelule-Anax_imperator-femelle-Hamois-Luc-Viatour.jpg/1920px-Libelule-Anax_imperator-femelle-Hamois-Luc-Viatour.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 452167,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "1ceb52af57538eeeae9769d8b0bdb3f3",
+      "last-modified": "Sat, 26 Sep 2026 19:28:25 GMT",
+      "content-length": "452167",
+      "date": "Sat, 31 Oct 2026 17:23:57 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "c4858324-8e45-468c-9b12-37169d5a520b"
+    },
+    "sha256": "c61a6dd7e0c9f3ef0ce046b072d6d32f6ed225968011bf926090999c0b32103e"
+  },
+  "width": 1920,
+  "height": 1280,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

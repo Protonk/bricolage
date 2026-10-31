@@ -1,0 +1,41 @@
+{
+  "candidate_id": "fdb3c2704f745fa40802",
+  "source_path": "sources/fdb3c2704f745fa40802.jpg",
+  "sha256": "e042f4fd446108ff0d948d5358d2bba4fabde4b23d0f46d2671e8ff74ef6a871",
+  "bytes": 302794,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/20220526_Harmonia_axyridis_02.jpg/1920px-20220526_Harmonia_axyridis_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-023.json",
+  "metadata_sha256": "f977027edd81d9ce44e36c2b74778f170cb2bb9245eccc4ac4146677e5f0a63f",
+  "original_sha1": "5e663f67f084fcbaa9f8a15000a507515356a653",
+  "pageid": 118388246,
+  "api_reported_width": 1600,
+  "api_reported_height": 1068,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:24:07.853871+00:00",
+    "key": "fdb3c2704f745fa40802",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/20220526_Harmonia_axyridis_02.jpg/1920px-20220526_Harmonia_axyridis_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 302794,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "22bf0192174efb2d6d2351a893e4d4d4",
+      "last-modified": "Mon, 12 Oct 2026 09:40:08 GMT",
+      "content-length": "302794",
+      "date": "Sat, 31 Oct 2026 17:24:08 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "07833f2c-fa7f-4029-9db2-411410a4fc09"
+    },
+    "sha256": "e042f4fd446108ff0d948d5358d2bba4fabde4b23d0f46d2671e8ff74ef6a871"
+  },
+  "width": 1920,
+  "height": 1282,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

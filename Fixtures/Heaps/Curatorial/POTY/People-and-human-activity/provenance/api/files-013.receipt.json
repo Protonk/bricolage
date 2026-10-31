@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T17:16:54.056692+00:00",
+  "key": "files-013",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3ACotton+miller+of+K%C3%BClt%C3%BCr+Turkey.jpg%7CFile%3A20190226+FIS+NWSC+Seefeld+Ladies+CC+10km+Yulia+Belorukova+850+3815.jpg%7CFile%3AExpedition+41+Soyuz+TMA-13M+Landing+%28201411100033HQ%29.jpg%7CFile%3A2022+Tour+of+Slovenia+%28Stage+3%2C+Tadej+Poga%C4%8Dar+celebrating+victory+on+Celje+Castle+v2%29.jpg%7CFile%3AWoman+reading+Quran+during+Ramadhan+in+Cairo%2C+Egypt.jpg%7CFile%3ACelebrating+holi+festival+in+Bangladesh+50.jpg%7CFile%3AOlivia+de+Havilland%2C+actress%2C+1985+-+levels+adjustment.jpg%7CFile%3ASigmund+and+the+Sea+Monsters+Margaret+Hamilton+1973.jpg%7CFile%3ABillie+Eilish+at+Pukkelpop+Festival+-+18+AUGUST+2019+%2808%29+%28cropped%29.jpg%7CFile%3AZara+Larsson+%40+The+Observatory+OC+05+02+2019+%2848498569766%29.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 65722,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 17:16:54 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-dlxhz",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "95e04a57-8928-41b6-9735-1a7d7ac8851d"
+  },
+  "sha256": "24c8e70ab01e8ec582d5e52a9381bd163c8e87afaa5d23d597dbaabde4c23e96"
+}

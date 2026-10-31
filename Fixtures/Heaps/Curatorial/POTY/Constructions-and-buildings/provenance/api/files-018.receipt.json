@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T17:15:43.493297+00:00",
+  "key": "files-018",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3ACouple+viewing+upcoming+shows%2C+Capitol+Theatre%2C+Windsor%2C+Ontario%2C+2025-06-28.jpg%7CFile%3AKurf%C3%BCrstliches+Palais.jpg%7CFile%3APerth+County+Courthouse%2C+Stratford%2C+Ontario%2C+2025-08-04+01.jpg%7CFile%3AAzucarera+Alavesa-+Instalazioen+ikuspegi+orokorra+%28ELDE20230109465%29.jpg%7CFile%3ACN+Tower+from+Puente+de+Luz%2C+Toronto%2C+Ontario%2C+2025-08-25+01.jpg%7CFile%3A06+2023+King+Charles+Street%2C+London+IMG+7517.jpg%7CFile%3ADie+Grundschule+Kr%C3%B6tenbruck+bei+D%C3%A4mmerung+%28High+EXP-HDR%29+20250820+HOF4174+RAW-Export.jpg%7CFile%3AColumbia+Center.jpg%7CFile%3AAerial+image+of+the+Schwetzingen+Palace+and+main+parterre+%28view+from+the+west%2C+2025%29.jpg%7CFile%3ANorderney%2C+Marienh%C3%B6he+--+2025+--+9295-9.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 82753,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 17:15:43 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-wm648",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "09d8450b-9235-42b7-9254-cd2ad27afa6d"
+  },
+  "sha256": "ddf115b06c2cdb1269a7d69fc987e10e2bd17142f0fdc92e277d43fb195d5ab4"
+}

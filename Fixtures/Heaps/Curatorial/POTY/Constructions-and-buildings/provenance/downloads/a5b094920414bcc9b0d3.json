@@ -1,0 +1,41 @@
+{
+  "candidate_id": "a5b094920414bcc9b0d3",
+  "source_path": "sources/a5b094920414bcc9b0d3.jpg",
+  "sha256": "8aed1b2b5fbb936897640fae3fdef1f8834156c837c8edb5deec154293e1f33c",
+  "bytes": 894978,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Amphith%C3%A9%C3%A2tre_vue_interieur_5.jpg/1280px-Amphith%C3%A9%C3%A2tre_vue_interieur_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-022.json",
+  "metadata_sha256": "cbb340a38da7941d92f0768d5c8d9238bf1c60bd122c2cb8e5534a70f3932714",
+  "original_sha1": "ec70cccc5f87bce74c2adab635345d5c7b73cefc",
+  "pageid": 175528652,
+  "api_reported_width": 1066,
+  "api_reported_height": 1600,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:27:48.678939+00:00",
+    "key": "a5b094920414bcc9b0d3",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Amphith%C3%A9%C3%A2tre_vue_interieur_5.jpg/1280px-Amphith%C3%A9%C3%A2tre_vue_interieur_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 894978,
+    "headers": {
+      "content-type": "image/jpeg",
+      "last-modified": "Fri, 11 Sep 2026 13:44:08 GMT",
+      "content-length": "894978",
+      "date": "Sat, 31 Oct 2026 17:27:48 GMT",
+      "server": "envoy",
+      "etag": "46bc3cf6ed751319ab4a8c6dd07c66cb",
+      "x-cache": "cp4044 hit, cp4044 miss",
+      "x-request-id": "e80e4b0f-df26-47d0-a159-fc75bb701d7e"
+    },
+    "sha256": "8aed1b2b5fbb936897640fae3fdef1f8834156c837c8edb5deec154293e1f33c"
+  },
+  "width": 1280,
+  "height": 1920,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

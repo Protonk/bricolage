@@ -1,0 +1,41 @@
+{
+  "candidate_id": "ca781ebc216eb8568d7e",
+  "source_path": "sources/ca781ebc216eb8568d7e.jpg",
+  "sha256": "825ae7028f9c0f6a9b4afa70ef6e598a20bcd2608d2c04c4e4d25ddf673aff91",
+  "bytes": 587812,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/29._Ulica_-_Krakowski_Teatr_Ta%C5%84ca_-_Estra_%26_Andro_-_20160708_2652.jpg/1920px-29._Ulica_-_Krakowski_Teatr_Ta%C5%84ca_-_Estra_%26_Andro_-_20160708_2652.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-001.json",
+  "metadata_sha256": "f19249e0b818ea7ffb79112eee0793e665ec1b4d49aad3eee6547e4c8549bde0",
+  "original_sha1": "7b922f650bb13a8594fd50dc5d9d032f89ad3c3c",
+  "pageid": 56592794,
+  "api_reported_width": 1600,
+  "api_reported_height": 1217,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:25:49.669947+00:00",
+    "key": "ca781ebc216eb8568d7e",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/29._Ulica_-_Krakowski_Teatr_Ta%C5%84ca_-_Estra_%26_Andro_-_20160708_2652.jpg/1920px-29._Ulica_-_Krakowski_Teatr_Ta%C5%84ca_-_Estra_%26_Andro_-_20160708_2652.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 587812,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "f01d3b16ff6be8d5ebad429bfe13d3e6",
+      "last-modified": "Mon, 03 Aug 2026 08:11:09 GMT",
+      "content-length": "587812",
+      "date": "Sat, 31 Oct 2026 17:25:49 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "0bdc3b51-383b-4fb3-bb8b-22f37a5c869c"
+    },
+    "sha256": "825ae7028f9c0f6a9b4afa70ef6e598a20bcd2608d2c04c4e4d25ddf673aff91"
+  },
+  "width": 1920,
+  "height": 1460,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

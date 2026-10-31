@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T17:17:26.392096+00:00",
+  "key": "files-022",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3AYao+people%27s+Harvest+Festival+in+Nala+Village+-+10.jpg%7CFile%3AJules+passing+over+a+shadow+cast+of+window+bars%2C+Biblioteca+das+Galveias%2C+Lisbon%2C+Portugal+julesvernex2.jpg%7CFile%3ASimone+Barrientos-8601.jpg%7CFile%3A2025-10-31+Dresdner+Eisl%C3%B6wen+gegen+L%C3%B6wen+Frankfurt+%28Deutsche+Eishockey-Liga+2025-26%29+by+Sandro+Halank%E2%80%93136.jpg%7CFile%3ADie+letzten+Meter+zum+Gipfel.jpg%7CFile%3ASkye+Blue%2C+November+2023.jpg%7CFile%3AMajorLazer.jpg%7CFile%3AMan+at+Dundas+subway+station%2C+Toronto%2C+2008-05-06.jpg%7CFile%3ACobbler+repairing+shoes+in+old+workshop+%28Bazaar+in+Bitola%2C+Macedonia%2C+2025%29.jpg%7CFile%3AReclining+man+looming+over+New+York+City+subway+station+LCCN2017645506.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 70106,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 17:17:26 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-mkfpr",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "23cd8712-aaec-47a0-997a-274fd6ee2779"
+  },
+  "sha256": "e7a9dbb379c5217d94d4a73f1bcd6bad1e945f093f54d49d2072be68aee61c94"
+}

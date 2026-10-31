@@ -1,0 +1,41 @@
+{
+  "candidate_id": "b62279dbc2788320d896",
+  "source_path": "sources/b62279dbc2788320d896.jpg",
+  "sha256": "ba32b26045bac7746d36f5359d9a1cbe794bec64b1320877f0149518c667100b",
+  "bytes": 1207945,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Azucarera_Alavesa-_Instalazioen_ikuspegi_orokorra_%28ELDE20230109465%29.jpg/1280px-Azucarera_Alavesa-_Instalazioen_ikuspegi_orokorra_%28ELDE20230109465%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-018.json",
+  "metadata_sha256": "ddf115b06c2cdb1269a7d69fc987e10e2bd17142f0fdc92e277d43fb195d5ab4",
+  "original_sha1": "2013b16c208f26dd93d337bf8aa8bf463fe5a83c",
+  "pageid": 173568446,
+  "api_reported_width": 1069,
+  "api_reported_height": 1600,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:22:31.250605+00:00",
+    "key": "b62279dbc2788320d896",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Azucarera_Alavesa-_Instalazioen_ikuspegi_orokorra_%28ELDE20230109465%29.jpg/1280px-Azucarera_Alavesa-_Instalazioen_ikuspegi_orokorra_%28ELDE20230109465%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 1207945,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "ad2c0ab82b65465e72ed747f66efe9ae",
+      "last-modified": "Tue, 11 Aug 2026 10:40:28 GMT",
+      "content-length": "1207945",
+      "date": "Sat, 31 Oct 2026 17:22:31 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "7cd0b2f0-86f6-47df-9e24-1e2e4293a877"
+    },
+    "sha256": "ba32b26045bac7746d36f5359d9a1cbe794bec64b1320877f0149518c667100b"
+  },
+  "width": 1280,
+  "height": 1915,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

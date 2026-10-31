@@ -1,0 +1,41 @@
+{
+  "candidate_id": "9d1cb73854a818159866",
+  "source_path": "sources/9d1cb73854a818159866.jpg",
+  "sha256": "c3d4406414faa31eb44abf9884f3098e88f9396771293a4212f2dac9de7d4963",
+  "bytes": 591785,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Supremo_Tribunal_Federal_por_Henrique_Goldenstein_%2801%29.jpg/1920px-Supremo_Tribunal_Federal_por_Henrique_Goldenstein_%2801%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-024.json",
+  "metadata_sha256": "384899dafdc5e0faa195d7bc75322683d5bdc7d4ba2726b4463103f4b54f9361",
+  "original_sha1": "7f835682ef02b9bf9756d1865444c8378416daee",
+  "pageid": 178677363,
+  "api_reported_width": 1600,
+  "api_reported_height": 1067,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:30:45.733248+00:00",
+    "key": "9d1cb73854a818159866",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Supremo_Tribunal_Federal_por_Henrique_Goldenstein_%2801%29.jpg/1920px-Supremo_Tribunal_Federal_por_Henrique_Goldenstein_%2801%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 591785,
+    "headers": {
+      "content-type": "image/jpeg",
+      "last-modified": "Mon, 17 Aug 2026 06:52:50 GMT",
+      "content-length": "591785",
+      "date": "Sat, 31 Oct 2026 17:30:45 GMT",
+      "server": "envoy",
+      "etag": "93fec1616167fa29e72e053c26eb83df",
+      "x-cache": "cp4044 hit, cp4044 miss",
+      "x-request-id": "0011a882-9c4c-4022-8cdd-26ec13163714"
+    },
+    "sha256": "c3d4406414faa31eb44abf9884f3098e88f9396771293a4212f2dac9de7d4963"
+  },
+  "width": 1920,
+  "height": 1280,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

@@ -1,0 +1,41 @@
+{
+  "candidate_id": "b3b6c35036f62f54bbe7",
+  "source_path": "sources/b3b6c35036f62f54bbe7.jpg",
+  "sha256": "195023bf598e83d0c5864850c3598de28f81cb6ff5221850d19be159b7376e22",
+  "bytes": 806403,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Schw%C3%A4bisch_Hall_-_Altstadt_-_Salinenstra%C3%9Fe_-_Ansicht_von_NNW_%281%29.jpg/1920px-Schw%C3%A4bisch_Hall_-_Altstadt_-_Salinenstra%C3%9Fe_-_Ansicht_von_NNW_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-012.json",
+  "metadata_sha256": "2b8792d5e876d3a675dd50202e4f8a5c265fc49772176cb6183aae6f11a6ac72",
+  "original_sha1": "5fb1eddbc6e475b00d78ab1b822042c849ff8da9",
+  "pageid": 153313154,
+  "api_reported_width": 1600,
+  "api_reported_height": 1061,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:24:53.412271+00:00",
+    "key": "b3b6c35036f62f54bbe7",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Schw%C3%A4bisch_Hall_-_Altstadt_-_Salinenstra%C3%9Fe_-_Ansicht_von_NNW_%281%29.jpg/1920px-Schw%C3%A4bisch_Hall_-_Altstadt_-_Salinenstra%C3%9Fe_-_Ansicht_von_NNW_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 806403,
+    "headers": {
+      "content-type": "image/jpeg",
+      "last-modified": "Sat, 12 Sep 2026 16:18:21 GMT",
+      "content-length": "806403",
+      "date": "Sat, 31 Oct 2026 17:24:53 GMT",
+      "server": "envoy",
+      "etag": "f1b76bda5050035a7878598154045fe8",
+      "x-cache": "cp4044 hit, cp4044 miss",
+      "x-request-id": "b67c1554-7949-4ac1-96a7-cacae4286a6b"
+    },
+    "sha256": "195023bf598e83d0c5864850c3598de28f81cb6ff5221850d19be159b7376e22"
+  },
+  "width": 1920,
+  "height": 1273,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

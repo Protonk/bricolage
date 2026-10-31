@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T17:13:52.173760+00:00",
+  "key": "files-011",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3ACommon+buckeye+%2835663%29.jpg%7CFile%3AOpen+wing+position+of+Lexias+dirtea+%28Fabricius%2C+1793%29+-+Dark+Archduke+%28Female%29+puddling+on+rotten+Neolamarckia+cadamba+flowerWLB.jpg%7CFile%3AOpen+wing+basking+of+Chersonesia+risa+%28Doubleday%2C+1848%29+-+Common+Maplet+WLB+MG+4406.jpg%7CFile%3AVentral+Golden+Orb+Weaver+Spider+Sasatgre+Oct24+A7CR+03892.jpg%7CFile%3AMimetismo+letale.jpg%7CFile%3ABruco+di+Sfinge+dell%27Euforbia+3.jpg%7CFile%3AClose+wing+puddling+position+of+Catapaecilma+subochrea+Elwes%2C+%281893%29+-+Yellow+Tinsel.jpg%7CFile%3ALarge+milkweed+bug+%2823188%29.jpg%7CFile%3APre-pupation+stage+of+Abisara+bifasciata+%28Moore%2C+1877%29+-+Double-banded+Judy+WLB.jpg%7CFile%3AGro%C3%9Fe+Blaue+Holzbiene+Tagetes-20241026-RM-152720.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 60236,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 17:13:52 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-kklqw",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "a78ef106-3530-4f9c-803d-f2c28fa91782"
+  },
+  "sha256": "449e9c61f7a65c5bcf4b791b8ce6001b19e3900e27076b5aba8ad4f1f31c9dc1"
+}

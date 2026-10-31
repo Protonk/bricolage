@@ -1,0 +1,41 @@
+{
+  "candidate_id": "36d3615defb8a67c54ea",
+  "source_path": "sources/36d3615defb8a67c54ea.jpg",
+  "sha256": "40248f1b146b87effccef4d9269c1dc4b193408bffa4a37473162030e9ef09a4",
+  "bytes": 761414,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Erin_Kellyman-8441%2C_edit.jpg/1920px-Erin_Kellyman-8441%2C_edit.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-019.json",
+  "metadata_sha256": "5619ec4086c1318eb0fc12714da3e9ae36dc44f7315cb3fd4ecb590584d50639",
+  "original_sha1": "95f8a645c34b3965412c8d160e8291dc52597727",
+  "pageid": 171064200,
+  "api_reported_width": 1600,
+  "api_reported_height": 1256,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:27:59.640438+00:00",
+    "key": "36d3615defb8a67c54ea",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Erin_Kellyman-8441%2C_edit.jpg/1920px-Erin_Kellyman-8441%2C_edit.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 761414,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "cb590872d527a50e78d8936b59cdf417",
+      "last-modified": "Wed, 19 Aug 2026 22:21:05 GMT",
+      "content-length": "761414",
+      "date": "Sat, 31 Oct 2026 17:27:59 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "b48a8be9-9994-4449-8628-ace875b99dd4"
+    },
+    "sha256": "40248f1b146b87effccef4d9269c1dc4b193408bffa4a37473162030e9ef09a4"
+  },
+  "width": 1920,
+  "height": 1507,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

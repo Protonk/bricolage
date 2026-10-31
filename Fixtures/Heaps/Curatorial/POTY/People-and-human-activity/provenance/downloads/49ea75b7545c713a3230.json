@@ -1,0 +1,41 @@
+{
+  "candidate_id": "49ea75b7545c713a3230",
+  "source_path": "sources/49ea75b7545c713a3230.jpg",
+  "sha256": "dee93c3be822ba9414dde3990e187739dd42b629c92a6b29cd81ed9f2d2e42b6",
+  "bytes": 959978,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Deity_performer.jpg/1920px-Deity_performer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-020.json",
+  "metadata_sha256": "54a39141090edb7ca046722b6ff9049db7e74aa58a553d479e639240d556ac63",
+  "original_sha1": "75ed0b5baed1f44cb66d60e784eac5d414bc90e2",
+  "pageid": 155640095,
+  "api_reported_width": 1600,
+  "api_reported_height": 1200,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:28:20.389612+00:00",
+    "key": "49ea75b7545c713a3230",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Deity_performer.jpg/1920px-Deity_performer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 959978,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "550ea0b3f8b45d13cd8fce4fd055b164",
+      "last-modified": "Wed, 24 Jun 2026 16:44:38 GMT",
+      "content-length": "959978",
+      "date": "Sat, 31 Oct 2026 17:28:20 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "76784cdd-800e-4bed-ae5f-d2870b7b6c98"
+    },
+    "sha256": "dee93c3be822ba9414dde3990e187739dd42b629c92a6b29cd81ed9f2d2e42b6"
+  },
+  "width": 1920,
+  "height": 1440,
+  "format": "JPEG",
+  "exif_orientation": 1
+}

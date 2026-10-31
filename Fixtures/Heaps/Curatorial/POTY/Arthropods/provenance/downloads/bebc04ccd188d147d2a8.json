@@ -1,0 +1,41 @@
+{
+  "candidate_id": "bebc04ccd188d147d2a8",
+  "source_path": "sources/bebc04ccd188d147d2a8.jpg",
+  "sha256": "4e5fa94ee913c9cd5586201e37827ef173b3bdf37926fb116103c8535b406cf8",
+  "bytes": 347570,
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Hufeisen-Azurjungfern_%28Coenagrion_puella%29.jpg/1280px-Hufeisen-Azurjungfern_%28Coenagrion_puella%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "requested_edge": 1600,
+  "rendition": "api_returned_rendition",
+  "metadata_path": "provenance/api/files-014.json",
+  "metadata_sha256": "c615a3c820e9c3d0500de7690d0503a4e49da8f6732bea398e29195716315916",
+  "original_sha1": "0091ac6276c9c74bd89180046541af3e3efe4ebb",
+  "pageid": 165289994,
+  "api_reported_width": 1066,
+  "api_reported_height": 1600,
+  "reused_complete_body_after_acknowledgement": false,
+  "response": {
+    "utc": "2026-10-31T17:24:20.214941+00:00",
+    "key": "bebc04ccd188d147d2a8",
+    "kind": "source",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Hufeisen-Azurjungfern_%28Coenagrion_puella%29.jpg/1280px-Hufeisen-Azurjungfern_%28Coenagrion_puella%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+    "status": 200,
+    "response_complete": true,
+    "bytes_received": 347570,
+    "headers": {
+      "content-type": "image/jpeg",
+      "etag": "d36de795024e87505b18b6504b5ca3b0",
+      "last-modified": "Tue, 15 Sep 2026 19:53:25 GMT",
+      "content-length": "347570",
+      "date": "Sat, 31 Oct 2026 17:24:20 GMT",
+      "server": "envoy",
+      "x-cache": "cp4044 miss, cp4044 miss",
+      "x-request-id": "3063cdb2-e402-4444-acaf-ca339236c52f"
+    },
+    "sha256": "4e5fa94ee913c9cd5586201e37827ef173b3bdf37926fb116103c8535b406cf8"
+  },
+  "width": 1280,
+  "height": 1920,
+  "format": "JPEG",
+  "exif_orientation": 1
+}
