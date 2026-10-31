@@ -1,0 +1,116 @@
+{
+  "batchcomplete": true,
+  "query": {
+    "pages": [
+      {
+        "pageid": 22855716,
+        "ns": 6,
+        "title": "File:Kamenne more Vyhne 2.JPG",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "timestamp": "2012-11-25T11:17:05Z",
+            "user": "Magda.adgaM",
+            "size": 165662,
+            "width": 1024,
+            "height": 768,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Kamenne_more_Vyhne_2.JPG/330px-Kamenne_more_Vyhne_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 320,
+            "thumbheight": 240,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Kamenne_more_Vyhne_2.JPG/960px-Kamenne_more_Vyhne_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Kamenne_more_Vyhne_2.JPG/330px-Kamenne_more_Vyhne_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 320,
+              "height": 240,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Kamenne_more_Vyhne_2.JPG/960px-Kamenne_more_Vyhne_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/1/19/Kamenne_more_Vyhne_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Kamenne_more_Vyhne_2.JPG",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=22855716",
+            "sha1": "64360740a268a800402b610d174995e8f5b35410",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2012-11-25 11:17:05",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Kamenne more Vyhne 2",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "GFDL|Geology of Slovakia|Kamenné more|License migration redundant|Boulder fields|Self-published work|Boulder fields in Slovakia",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "The view on the Nature Reserve Kamenné more (Stone sea) and Štiavnické vrchy (Štiavnica Mountains).",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2007-07-22 16:30:35",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Magda.adgaM&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Magda.adgaM (page does not exist)\">Magda.adgaM</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/3.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      }
+    ]
+  }
+}

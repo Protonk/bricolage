@@ -1,0 +1,116 @@
+{
+  "batchcomplete": true,
+  "query": {
+    "pages": [
+      {
+        "pageid": 704980,
+        "ns": 6,
+        "title": "File:Group of Brewer's Blackbird.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "timestamp": "2006-04-14T21:07:14Z",
+            "user": "Wingchi",
+            "size": 1905954,
+            "width": 2048,
+            "height": 1360,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Group_of_Brewer%27s_Blackbird.jpg/330px-Group_of_Brewer%27s_Blackbird.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 320,
+            "thumbheight": 213,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Group_of_Brewer%27s_Blackbird.jpg/960px-Group_of_Brewer%27s_Blackbird.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Group_of_Brewer%27s_Blackbird.jpg/330px-Group_of_Brewer%27s_Blackbird.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 320,
+              "height": 213,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Group_of_Brewer%27s_Blackbird.jpg/960px-Group_of_Brewer%27s_Blackbird.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Group_of_Brewer%27s_Blackbird.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Group_of_Brewer%27s_Blackbird.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=704980",
+            "sha1": "6dcd6ddd41b4f53941a9f822dc386c421171a13c",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2006-04-14 21:07:14",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Group of Brewer's Blackbird",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Euphagus cyanocephalus|2004 in California|Taken with Canon EOS 300D|Flocks of birds|Icteridae of California|Self-published work|Photos by Wingchi Poon|Birds of Siskiyou County, California|United States photographs taken on 2004-12-25",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "A group of Brewer's Blackbird <i><a href=\"//commons.wikimedia.org/wiki/Euphagus_cyanocephalus\" title=\"Euphagus cyanocephalus\">Euphagus cyanocephalus</a></i> mostly facing more or less the same direction. I-5 rest area near Lake Shastina in northern California, USA.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2004-12-25",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Wingchi\" title=\"User:Wingchi\">Wing-Chi Poon</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 2.5",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 2.5",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/2.5",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-2.5",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      }
+    ]
+  }
+}

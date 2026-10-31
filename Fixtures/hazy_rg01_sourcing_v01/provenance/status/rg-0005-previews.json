@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0005",
+  "status": "preview_downloaded",
+  "canonical_title": "File:Red and Green in one.jpg",
+  "pageid": 132146225,
+  "file": "previews/candidates/rg-0005.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Red_and_Green_in_one.jpg/330px-Red_and_Green_in_one.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "ad5dfd9d34fc144900c43a7bd765e3e2bdd2fac8693436c6d598756a29ad0b6b",
+  "width": 330,
+  "height": 220,
+  "exif_orientation": 1,
+  "requested_max_edge": 320,
+  "original_width": 3119,
+  "original_height": 2079,
+  "original_sha1": "72f47066b4c8df30d367fe55d6975d96ba7b15da",
+  "creator": "<a href=\"//commons.wikimedia.org/wiki/User:Humoyun_Mehridinov\" title=\"User:Humoyun Mehridinov\">Humoyun Mehridinov</a>",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "retrieved_utc": "2026-10-31T00:29:22.939701+00:00",
+  "visual_review": "pending",
+  "source_independence": "unverified"
+}

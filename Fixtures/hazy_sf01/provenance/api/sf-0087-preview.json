@@ -1,0 +1,116 @@
+{
+  "batchcomplete": true,
+  "query": {
+    "pages": [
+      {
+        "pageid": 201185517,
+        "ns": 6,
+        "title": "File:Aerial view of Port Alaçatı, Çeşme.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "timestamp": "2026-10-06T20:44:36Z",
+            "user": "Gorkemssc",
+            "size": 430078,
+            "width": 1400,
+            "height": 933,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Aerial_view_of_Port_Ala%C3%A7at%C4%B1%2C_%C3%87e%C5%9Fme.jpg/330px-Aerial_view_of_Port_Ala%C3%A7at%C4%B1%2C_%C3%87e%C5%9Fme.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 320,
+            "thumbheight": 213,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Aerial_view_of_Port_Ala%C3%A7at%C4%B1%2C_%C3%87e%C5%9Fme.jpg/960px-Aerial_view_of_Port_Ala%C3%A7at%C4%B1%2C_%C3%87e%C5%9Fme.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Aerial_view_of_Port_Ala%C3%A7at%C4%B1%2C_%C3%87e%C5%9Fme.jpg/330px-Aerial_view_of_Port_Ala%C3%A7at%C4%B1%2C_%C3%87e%C5%9Fme.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 320,
+              "height": 213,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Aerial_view_of_Port_Ala%C3%A7at%C4%B1%2C_%C3%87e%C5%9Fme.jpg/960px-Aerial_view_of_Port_Ala%C3%A7at%C4%B1%2C_%C3%87e%C5%9Fme.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/7/71/Aerial_view_of_Port_Ala%C3%A7at%C4%B1%2C_%C3%87e%C5%9Fme.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_Port_Ala%C3%A7at%C4%B1,_%C3%87e%C5%9Fme.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=201185517",
+            "sha1": "8055e67bd957848470a13ee57423799d5d4bd737",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2026-10-06 20:44:36",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Aerial view of Port Alaçatı, Çeşme",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "CC-Zero|Self-published work|Aerial photographs of marinas|Marinas in İzmir",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Aerial view of Port Alaçatı in Çeşme, İzmir Province, Turkey",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2026-10-06",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>; also published on <a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/205019499@N03/55573780919/\">Flickr</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Gorkemssc&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Gorkemssc (page does not exist)\">Gorkemssc</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Zero, Public Domain Dedication",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      }
+    ]
+  }
+}

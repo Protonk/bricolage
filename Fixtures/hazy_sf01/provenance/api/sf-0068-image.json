@@ -1,0 +1,112 @@
+{
+  "batchcomplete": true,
+  "query": {
+    "pages": [
+      {
+        "pageid": 30876215,
+        "ns": 6,
+        "title": "File:Crowds of people on Santa Monica Beach, ca.1900 (CHS-820).jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "timestamp": "2014-01-29T20:35:13Z",
+            "user": "Fæ",
+            "size": 1930531,
+            "width": 5018,
+            "height": 3820,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Crowds_of_people_on_Santa_Monica_Beach%2C_ca.1900_%28CHS-820%29.jpg/1920px-Crowds_of_people_on_Santa_Monica_Beach%2C_ca.1900_%28CHS-820%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 1600,
+            "thumbheight": 1218,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Crowds_of_people_on_Santa_Monica_Beach%2C_ca.1900_%28CHS-820%29.jpg/3840px-Crowds_of_people_on_Santa_Monica_Beach%2C_ca.1900_%28CHS-820%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Crowds_of_people_on_Santa_Monica_Beach%2C_ca.1900_%28CHS-820%29.jpg/1920px-Crowds_of_people_on_Santa_Monica_Beach%2C_ca.1900_%28CHS-820%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 1600,
+              "height": 1218,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Crowds_of_people_on_Santa_Monica_Beach%2C_ca.1900_%28CHS-820%29.jpg/3840px-Crowds_of_people_on_Santa_Monica_Beach%2C_ca.1900_%28CHS-820%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/7/79/Crowds_of_people_on_Santa_Monica_Beach%2C_ca.1900_%28CHS-820%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Crowds_of_people_on_Santa_Monica_Beach,_ca.1900_(CHS-820).jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=30876215",
+            "sha1": "29f8c615f95a350ed381d33db2dfe05dec6d153d",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2014-01-29 20:35:13",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Crowds of people on Santa Monica Beach, ca.1900 (CHS-820)",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "PD US|People of Santa Monica, California|Glass plate negatives|History of Santa Monica, California|Template Unknown (author)|California Historical Society Collection, 1860-1960|Images from USC Digital Library uploaded by Fæ|Beaches of Santa Monica, California|PD-US missing SDC copyright status|1900 in Santa Monica, California|Structures in Santa Monica, California|Piers in Los Angeles County, California|North Beach Bath House",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "<br>\n<dl><dd><i>Crowds of people on Santa Monica Beach, ca.1900</i></dd>\n<dd>Photograph of crowds of people (mostly bathers, many with umbrellas) on the Santa Monica beach, ca.1900. A row of buildings lines the boardwalk. A pier is visible behind the people. An American flag flies from a flagpole. Legible signs include: \"Bowling alley, shooting gallery\", \"Arcadia Bath House, clean smooth safe beach, Arcadia Grill Room\"..., \"Milkshake, lemonade\"..., \"Bicycle riding prohibited on walk\".</dd></dl>\n<dl><dd><b>Call number</b>: CHS-820</dd>\n<dd><b>Filename</b>: CHS-820</dd>\n<dd><b>Coverage date</b>: circa 1900</dd>\n<dd><b>Part of collection</b>: California Historical Society Collection, 1860-1960</dd>\n<dd><b>Format</b>: glass plate negatives</dd>\n<dd><b>Type</b>: images</dd>\n<dd><b>Geographic subject (city or populated place)</b>: Santa Monica; Santa Monica</dd>\n<dd><b>Repository name</b>: USC Libraries Special Collections</dd>\n<dd><b>Accession number</b>: 820</dd>\n<dd><b>Microfiche number</b>: 1-54-</dd>\n<dd><b>Archival file</b>: chs_Volume55/CHS-820.tiff</dd>\n<dd><b>Part of subcollection</b>: Title Insurance and Trust, and C.C. Pierce Photography Collection, 1860-1960</dd>\n<dd><b>Repository address</b>: Doheny Memorial Library, Los Angeles, CA 90089-0189</dd>\n<dd><b>Geographic subject (country)</b>: USA</dd>\n<dd><b>Format (aacr2)</b>: 1 photograph : glass photonegative, b&amp;w ; 17 x 22 cm.</dd>\n<dd><b>Rights</b>: Digitally reproduced by the USC Digital Library; From the California Historical Society Collection at the University of Southern California</dd>\n<dd><b>Subject (adlf)</b>: beaches</dd>\n<dd><b>Project</b>: USC</dd>\n<dd><b>Repository email</b>: specol@usc.edu</dd>\n<dd><b>Contributing entity</b>: California Historical Society</dd>\n<dd><b>Date created</b>: circa 1900</dd>\n<dd><b>Publisher (of the digital version)</b>: University of Southern California. Libraries</dd>\n<dd><b>Format (aat)</b>: photographs</dd>\n<dd><b>Geographic subject (state)</b>: California</dd>\n<dd><b>Subject (file heading)</b>: Los Angeles County -- Santa Monica -- Beach scenes -- General</dd>\n<dd><b>Legacy record ID</b>: chs-m6659; USC-1-1-1-6774</dd>\n<dd><b>Access conditions</b>: Send requests to address or e-mail given. Phone (213) 821-2366; fax (213) 740-2343.</dd>\n<dd><b>Geographic subject (county)</b>: Los Angeles</dd>\n<dd><b>Subject (lcsh)</b>: Beaches</dd></dl>",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "circa 1900<div style=\"display: none;\">date QS:P,+1900-00-00T00:00:00Z/9,P1480,Q5727902</div> (date created)",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external free\" href=\"http://digitallibrary.usc.edu/cdm/ref/collection/p15799coll65/id/6723\">http://digitallibrary.usc.edu/cdm/ref/collection/p15799coll65/id/6723</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "Unknown author<span style=\"display: none;\">Unknown author</span>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      }
+    ]
+  }
+}

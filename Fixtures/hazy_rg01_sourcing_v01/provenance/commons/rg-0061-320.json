@@ -1,0 +1,120 @@
+{
+  "candidate_id": "rg-0061",
+  "retrieved_utc": "2026-10-31T00:36:00.177259+00:00",
+  "requested_title": "File:Emplacement camping nature.jpg",
+  "response": {
+    "batchcomplete": true,
+    "query": {
+      "pages": [
+        {
+          "pageid": 26529233,
+          "ns": 6,
+          "title": "File:Emplacement camping nature.jpg",
+          "imagerepository": "local",
+          "imageinfo": [
+            {
+              "size": 220327,
+              "width": 1000,
+              "height": 750,
+              "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Emplacement_camping_nature.jpg/330px-Emplacement_camping_nature.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "thumbwidth": 320,
+              "thumbheight": 240,
+              "responsiveUrls": {
+                "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Emplacement_camping_nature.jpg/960px-Emplacement_camping_nature.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+              },
+              "thumbattribs": {
+                "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Emplacement_camping_nature.jpg/330px-Emplacement_camping_nature.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "decoding": "async",
+                "loading": "lazy",
+                "width": 320,
+                "height": 240,
+                "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Emplacement_camping_nature.jpg/960px-Emplacement_camping_nature.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+              },
+              "url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Emplacement_camping_nature.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+              "descriptionurl": "https://commons.wikimedia.org/wiki/File:Emplacement_camping_nature.jpg",
+              "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=26529233",
+              "sha1": "4945bf981c94045c166970154e6cb93e62b6c3be",
+              "extmetadata": {
+                "DateTime": {
+                  "value": "2013-06-07 09:12:52",
+                  "source": "mediawiki-metadata",
+                  "hidden": ""
+                },
+                "ObjectName": {
+                  "value": "Emplacement camping nature",
+                  "source": "mediawiki-metadata"
+                },
+                "CommonsMetadataExtension": {
+                  "value": 1.2,
+                  "source": "extension",
+                  "hidden": ""
+                },
+                "Categories": {
+                  "value": "Apple trees|Self-published work|Campsites in France|Red tents",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "Assessments": {
+                  "value": "",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "ImageDescription": {
+                  "value": "Emplacement camping, très confort, très nature !",
+                  "source": "commons-desc-page"
+                },
+                "DateTimeOriginal": {
+                  "value": "2013-06-07 10:57:10",
+                  "source": "commons-desc-page"
+                },
+                "Credit": {
+                  "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                  "source": "commons-desc-page"
+                },
+                "Artist": {
+                  "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Campings_Sites_et_Paysages&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Campings Sites et Paysages (page does not exist)\">Campings Sites et Paysages</a>",
+                  "source": "commons-desc-page"
+                },
+                "LicenseShortName": {
+                  "value": "CC BY-SA 3.0",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "UsageTerms": {
+                  "value": "Creative Commons Attribution-Share Alike 3.0",
+                  "source": "commons-desc-page"
+                },
+                "AttributionRequired": {
+                  "value": "true",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "LicenseUrl": {
+                  "value": "https://creativecommons.org/licenses/by-sa/3.0",
+                  "source": "commons-desc-page"
+                },
+                "Copyrighted": {
+                  "value": "True",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "Restrictions": {
+                  "value": "",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "License": {
+                  "value": "cc-by-sa-3.0",
+                  "source": "commons-templates",
+                  "hidden": ""
+                }
+              },
+              "mime": "image/jpeg",
+              "mediatype": "BITMAP"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

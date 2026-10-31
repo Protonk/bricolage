@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0024",
+  "status": "preview_downloaded",
+  "canonical_title": "File:Red bench on a slope (20333299696).jpg",
+  "pageid": 74563838,
+  "file": "previews/candidates/rg-0024.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Red_bench_on_a_slope_%2820333299696%29.jpg/330px-Red_bench_on_a_slope_%2820333299696%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "6fbd3bdd9294d3609f72c92d598db7f88ce5424973bf262cfb26fc2f338c2732",
+  "width": 330,
+  "height": 220,
+  "exif_orientation": 1,
+  "requested_max_edge": 320,
+  "original_width": 4896,
+  "original_height": 3264,
+  "original_sha1": "cd935fec37361bd98141ed5227867c92d8858b2e",
+  "creator": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/75062596@N00\">Lars Plougmann</a> from United States",
+  "license": "CC BY-SA 2.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+  "retrieved_utc": "2026-10-31T00:31:35.124478+00:00",
+  "visual_review": "pending",
+  "source_independence": "unverified"
+}

@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0087",
+  "status": "preview_downloaded",
+  "canonical_title": "File:Andrew Walton 2016 (Unsplash).jpg",
+  "pageid": 61824419,
+  "file": "previews/candidates/rg-0087.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Andrew_Walton_2016_%28Unsplash%29.jpg/330px-Andrew_Walton_2016_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "384e8fb00c02798f218c4b9117ebdfde0b9fd75a0123d0cac5e8ad10008d5b9f",
+  "width": 330,
+  "height": 220,
+  "exif_orientation": 1,
+  "requested_max_edge": 320,
+  "original_width": 6000,
+  "original_height": 4000,
+  "original_sha1": "bab3074d365da78abd8dbe2707181ca42fbeae1d",
+  "creator": "Andrew Walton <a rel=\"nofollow\" class=\"external text\" href=\"https://unsplash.com/@andy_walton\">andy_walton</a>",
+  "license": "CC0",
+  "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "retrieved_utc": "2026-10-31T00:39:13.260842+00:00",
+  "visual_review": "pending",
+  "source_independence": "unverified"
+}

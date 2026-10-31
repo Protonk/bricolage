@@ -1,0 +1,112 @@
+{
+  "batchcomplete": true,
+  "query": {
+    "pages": [
+      {
+        "pageid": 160251158,
+        "ns": 6,
+        "title": "File:Aerial view of parking lot (53581689348).jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "timestamp": "2025-02-22T08:48:22Z",
+            "user": "OptimusPrimeBot",
+            "size": 4960998,
+            "width": 4800,
+            "height": 3200,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Aerial_view_of_parking_lot_%2853581689348%29.jpg/330px-Aerial_view_of_parking_lot_%2853581689348%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 320,
+            "thumbheight": 213,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Aerial_view_of_parking_lot_%2853581689348%29.jpg/960px-Aerial_view_of_parking_lot_%2853581689348%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Aerial_view_of_parking_lot_%2853581689348%29.jpg/330px-Aerial_view_of_parking_lot_%2853581689348%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 320,
+              "height": 213,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Aerial_view_of_parking_lot_%2853581689348%29.jpg/960px-Aerial_view_of_parking_lot_%2853581689348%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/2/21/Aerial_view_of_parking_lot_%2853581689348%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_parking_lot_(53581689348).jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=160251158",
+            "sha1": "1e531e085e69884575132176400b96b5431161fc",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2025-02-22 08:48:22",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Aerial view of parking lot (53581689348)",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "PD US BLM|Flickr images missing SDC creator|Flickr images reviewed by FlickreviewR 2|United States photographs taken on 2024-03-06|United States Bureau of Land Management images (review needed)|U.S. Bureau of Land Management Flickr files uploaded by OptimusPrimeBot|Files from the Bureau of Land Management Utah Flickr stream",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "The campground is near a closed-up mine. Use caution when exploring the area.\nPhoto by JD Mallory, BLM Utah.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "Taken on 6 March 2024, 14:58:07",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/blmutah/53581689348\">Aerial view of parking lot</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/blmutah/\">BLMUtah</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "batchcomplete": true,
+  "query": {
+    "pages": [
+      {
+        "pageid": 91948430,
+        "ns": 6,
+        "title": "File:Isolation - Flickr - Unhindered by Talent.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "timestamp": "2020-07-05T23:32:19Z",
+            "user": "Red panda bot",
+            "size": 3801411,
+            "width": 3456,
+            "height": 2304,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Isolation_-_Flickr_-_Unhindered_by_Talent.jpg/330px-Isolation_-_Flickr_-_Unhindered_by_Talent.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 320,
+            "thumbheight": 213,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Isolation_-_Flickr_-_Unhindered_by_Talent.jpg/960px-Isolation_-_Flickr_-_Unhindered_by_Talent.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Isolation_-_Flickr_-_Unhindered_by_Talent.jpg/330px-Isolation_-_Flickr_-_Unhindered_by_Talent.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 320,
+              "height": 213,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Isolation_-_Flickr_-_Unhindered_by_Talent.jpg/960px-Isolation_-_Flickr_-_Unhindered_by_Talent.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/1/18/Isolation_-_Flickr_-_Unhindered_by_Talent.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Isolation_-_Flickr_-_Unhindered_by_Talent.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=91948430",
+            "sha1": "91c3b0c18baa82ea225b88a3612776b483d45c37",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2020-07-05 23:32:19",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Isolation - Flickr - Unhindered by Talent",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Morris, Minnesota|Dead leaves|Files with coordinates missing SDC location of creation|Flickr images reviewed by FlickreviewR 2|United States photographs taken on 2006-05-21|Flickr files uploaded by Red panda bot|Photos in Flickr Explore",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "45.588485",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "-95.921249",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "We had a bunch of people over after yesterday's dance recital, and while we were sitting there talking I noticed this (dead) peace lily leaf was being backlit by the setting sun down at the other end of the room.  So I <i>had</i> to run down and take a few pictures quick.  Luckily no one fussed too much about my obsession...",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "Taken on 21 May 2006, 19:37",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/nicmcphee/151213209/\">Isolation</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/26406919@N00\">Nic McPhee</a> from Morris, MN, USA",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 2.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 2.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/2.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-2.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      }
+    ]
+  }
+}

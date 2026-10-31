@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0094",
+  "status": "preview_downloaded",
+  "canonical_title": "File:House on Ockham Lane, Ockham, Surrey (6501165215).jpg",
+  "pageid": 101597946,
+  "file": "previews/candidates/rg-0094.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/House_on_Ockham_Lane%2C_Ockham%2C_Surrey_%286501165215%29.jpg/330px-House_on_Ockham_Lane%2C_Ockham%2C_Surrey_%286501165215%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "dbc5649902dab7728fadc00a72d9b404d9da9c0b3b8c0b75f6f84754cb28d7a4",
+  "width": 330,
+  "height": 247,
+  "exif_orientation": 1,
+  "requested_max_edge": 320,
+  "original_width": 1600,
+  "original_height": 1200,
+  "original_sha1": "bc1efad0a1f73fa6eec9870cc21fb1a386ba48a1",
+  "creator": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/48600096354@N01\">David Howard</a> from Kingsbury, England",
+  "license": "CC BY 2.0",
+  "license_url": "https://creativecommons.org/licenses/by/2.0",
+  "retrieved_utc": "2026-10-31T00:40:02.375910+00:00",
+  "visual_review": "pending",
+  "source_independence": "unverified"
+}

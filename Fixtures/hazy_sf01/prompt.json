@@ -1,0 +1,33 @@
+{
+  "element": "speckled-fields",
+  "prompt": "Photographs filled with many small, separated marks or objects distributed across a relatively continuous visual field; thumbnail-scale speckled, dotted, scattered or lightly stippled appearance.",
+  "looseness": "Composition, hue, sparsity, density, regularity, orientation, object type and scale may vary.",
+  "exclusions": "Known derivatives, related captures/sequences, non-photographs, fabricated patterns, single dominant foreground objects.",
+  "interpretation": "Visual curation only. Discovery buckets and source identities are not similarity labels or expected clusters.",
+  "target_count": 65,
+  "acceptable_range": [
+    50,
+    80
+  ],
+  "actual_count": 48,
+  "acquisition_status": "stopped",
+  "pending_acquisition": [
+    "sf-0111",
+    "sf-0112",
+    "sf-0117",
+    "sf-0121",
+    "sf-0122",
+    "sf-0125",
+    "sf-0128",
+    "sf-0131",
+    "sf-0134",
+    "sf-0137",
+    "sf-0138"
+  ],
+  "candidate_count": 142,
+  "selection_counts": {
+    "accept": 59,
+    "reject": 82,
+    "defer": 1
+  }
+}

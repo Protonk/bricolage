@@ -1,0 +1,117 @@
+{
+  "batchcomplete": true,
+  "query": {
+    "pages": [
+      {
+        "pageid": 24920682,
+        "ns": 6,
+        "title": "File:Sand and small pebbles.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "timestamp": "2013-03-01T06:47:27Z",
+            "user": "Fæ",
+            "size": 381245,
+            "width": 1024,
+            "height": 768,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Sand_and_small_pebbles.jpg/330px-Sand_and_small_pebbles.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 320,
+            "thumbheight": 240,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Sand_and_small_pebbles.jpg/960px-Sand_and_small_pebbles.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Sand_and_small_pebbles.jpg/330px-Sand_and_small_pebbles.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 320,
+              "height": 240,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Sand_and_small_pebbles.jpg/960px-Sand_and_small_pebbles.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Sand_and_small_pebbles.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Sand_and_small_pebbles.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=24920682",
+            "sha1": "5d8d2c5129aebb1eff9918a16814ee97eb9e8dfe",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2013-03-01 06:47:27",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Sand and small pebbles",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "PD-author|Images uploaded by Fæ|Public-domain-image.com|Public-domain-image.com (check needed)|Media needing category review as of 12 October 2013|Sand textures",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "<br>\n<dl><dd>Image title: Sand and small pebbles</dd>\n<dd>Image from Public domain images website, <a rel=\"nofollow\" class=\"external free\" href=\"http://www.public-domain-image.com/full-image/textures-and-patterns-public-domain-images-pictures/sand-and-small-pebbles.jpg.html\">http://www.public-domain-image.com/full-image/textures-and-patterns-public-domain-images-pictures/sand-and-small-pebbles.jpg.html</a></dd></dl>",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "<p>Not given\n</p>\n<ul><li>Transferred by <a href=\"//commons.wikimedia.org/wiki/User:F%C3%A6\" title=\"User:Fæ\">Fæ</a> on 2013-03-01</li></ul>",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external free\" href=\"http://www.public-domain-image.com/public-domain-images-pictures-free-stock-photos/textures-and-patterns-public-domain-images-pictures/sand-and-small-pebbles.jpg\">http://www.public-domain-image.com/public-domain-images-pictures-free-stock-photos/textures-and-patterns-public-domain-images-pictures/sand-and-small-pebbles.jpg</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "Titus Tscharntke",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "This file is in public domain, not copyrighted, no rights reserved, free for any use. You can use this picture for any use including commercial purposes without the prior written permission and without fee or obligation.",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      }
+    ]
+  }
+}

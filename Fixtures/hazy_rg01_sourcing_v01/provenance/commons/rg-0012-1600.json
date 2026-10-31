@@ -1,0 +1,138 @@
+{
+  "candidate_id": "rg-0012",
+  "retrieved_utc": "2026-10-31T02:22:50.244465+00:00",
+  "requested_title": "File:2018-09-14 28 Devil's club (Oplopanax horridus) plant near Takeetna, Alaska USA.jpg",
+  "response": {
+    "batchcomplete": true,
+    "query": {
+      "pages": [
+        {
+          "pageid": 86390958,
+          "ns": 6,
+          "title": "File:2018-09-14 28 Devil's club (Oplopanax horridus) plant near Takeetna, Alaska USA.jpg",
+          "imagerepository": "local",
+          "imageinfo": [
+            {
+              "size": 9570944,
+              "width": 5598,
+              "height": 2162,
+              "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/2018-09-14_28_Devil%27s_club_%28Oplopanax_horridus%29_plant_near_Takeetna%2C_Alaska_USA.jpg/1920px-2018-09-14_28_Devil%27s_club_%28Oplopanax_horridus%29_plant_near_Takeetna%2C_Alaska_USA.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "thumbwidth": 1600,
+              "thumbheight": 618,
+              "responsiveUrls": {
+                "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/2018-09-14_28_Devil%27s_club_%28Oplopanax_horridus%29_plant_near_Takeetna%2C_Alaska_USA.jpg/3840px-2018-09-14_28_Devil%27s_club_%28Oplopanax_horridus%29_plant_near_Takeetna%2C_Alaska_USA.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+              },
+              "thumbattribs": {
+                "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/2018-09-14_28_Devil%27s_club_%28Oplopanax_horridus%29_plant_near_Takeetna%2C_Alaska_USA.jpg/1920px-2018-09-14_28_Devil%27s_club_%28Oplopanax_horridus%29_plant_near_Takeetna%2C_Alaska_USA.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "decoding": "async",
+                "loading": "lazy",
+                "width": 1600,
+                "height": 618,
+                "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/2018-09-14_28_Devil%27s_club_%28Oplopanax_horridus%29_plant_near_Takeetna%2C_Alaska_USA.jpg/3840px-2018-09-14_28_Devil%27s_club_%28Oplopanax_horridus%29_plant_near_Takeetna%2C_Alaska_USA.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+              },
+              "url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/2018-09-14_28_Devil%27s_club_%28Oplopanax_horridus%29_plant_near_Takeetna%2C_Alaska_USA.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+              "descriptionurl": "https://commons.wikimedia.org/wiki/File:2018-09-14_28_Devil%27s_club_(Oplopanax_horridus)_plant_near_Takeetna,_Alaska_USA.jpg",
+              "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=86390958",
+              "sha1": "1861ac9a74eb1df843b88befb519782fbdd5a5ef",
+              "extmetadata": {
+                "DateTime": {
+                  "value": "2020-01-28 18:55:59",
+                  "source": "mediawiki-metadata",
+                  "hidden": ""
+                },
+                "ObjectName": {
+                  "value": "2018-09-14 28 Devil's club (Oplopanax horridus) plant near Takeetna, Alaska USA",
+                  "source": "mediawiki-metadata"
+                },
+                "CommonsMetadataExtension": {
+                  "value": 1.2,
+                  "source": "extension",
+                  "hidden": ""
+                },
+                "Categories": {
+                  "value": "Oplopanax horridus|Self-published work|Information field template with formatting|Araliaceae in Alaska|Files with coordinates missing SDC location of creation|Araliaceae in the Northern Hemisphere in September 2018",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "Assessments": {
+                  "value": "",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "GPSLatitude": {
+                  "value": "62.307780",
+                  "source": "commons-desc-page"
+                },
+                "GPSLongitude": {
+                  "value": "-150.094590",
+                  "source": "commons-desc-page"
+                },
+                "GPSMapDatum": {
+                  "value": "WGS-84",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "ImageDescription": {
+                  "value": "Late in the season, the bright red berries of a Devil's club (Oplopanax horridus) plant stand out against its large green leaves and spiny stems. Taken on a treking trail near Takeetna, Alaska on September 14, 2018.",
+                  "source": "commons-desc-page"
+                },
+                "DateTimeOriginal": {
+                  "value": "2018-09-14 17:49:50",
+                  "source": "commons-desc-page"
+                },
+                "Credit": {
+                  "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                  "source": "commons-desc-page"
+                },
+                "Artist": {
+                  "value": "<a href=\"//commons.wikimedia.org/wiki/User:GRDN711\" title=\"User:GRDN711\">Gordon Leggett</a>",
+                  "source": "commons-desc-page"
+                },
+                "Attribution": {
+                  "value": "Photo: <a href=\"//commons.wikimedia.org/wiki/User_talk:GRDN711\" title=\"User talk:GRDN711\">Gordon Leggett</a> / <a href=\"//commons.wikimedia.org/wiki/Main_Page\" title=\"Main Page\">Wikimedia Commons</a>",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "LicenseShortName": {
+                  "value": "CC BY-SA 4.0",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "UsageTerms": {
+                  "value": "Creative Commons Attribution-Share Alike 4.0",
+                  "source": "commons-desc-page"
+                },
+                "AttributionRequired": {
+                  "value": "true",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "LicenseUrl": {
+                  "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                  "source": "commons-desc-page"
+                },
+                "Copyrighted": {
+                  "value": "True",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "Restrictions": {
+                  "value": "",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "License": {
+                  "value": "cc-by-sa-4.0",
+                  "source": "commons-templates",
+                  "hidden": ""
+                }
+              },
+              "mime": "image/jpeg",
+              "mediatype": "BITMAP"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "batchcomplete": true,
+  "query": {
+    "pages": [
+      {
+        "pageid": 18129792,
+        "ns": 6,
+        "title": "File:A depiction of Pebbles.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "timestamp": "2012-01-22T12:57:39Z",
+            "user": "Thamizhpparithi Maari",
+            "size": 870254,
+            "width": 2592,
+            "height": 1944,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/A_depiction_of_Pebbles.jpg/330px-A_depiction_of_Pebbles.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 320,
+            "thumbheight": 240,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/A_depiction_of_Pebbles.jpg/960px-A_depiction_of_Pebbles.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/A_depiction_of_Pebbles.jpg/330px-A_depiction_of_Pebbles.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 320,
+              "height": 240,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/A_depiction_of_Pebbles.jpg/960px-A_depiction_of_Pebbles.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/7/72/A_depiction_of_Pebbles.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:A_depiction_of_Pebbles.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=18129792",
+            "sha1": "2695e82e9d38dc7b6e2a8ccbf787fc90c2f47578",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2012-01-22 12:57:39",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "A depiction of Pebbles",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Pebbles|Self-published work|TamilWiki Media Contest|Files by User:Thamizhpparithi Maari|Template Unknown (other)|Taken with Nokia X6-00",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "This media file was uploaded as a part of the <b><a href=\"https://ta.wikipedia.org/wiki/%E0%AE%B5%E0%AE%B2%E0%AF%88%E0%AE%B5%E0%AE%BE%E0%AE%9A%E0%AE%B2%E0%AF%8D:%E0%AE%8A%E0%AE%9F%E0%AE%95%E0%AE%AA%E0%AF%8D_%E0%AE%AA%E0%AF%8B%E0%AE%9F%E0%AF%8D%E0%AE%9F%E0%AE%BF\" class=\"extiw\" title=\"ta:வலைவாசல்:ஊடகப் போட்டி\">TamilWiki Media Contest</a></b>.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2011-12-28",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Thamizhpparithi_Maari\" title=\"User:Thamizhpparithi Maari\">Thamizhpparithi Maari</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/3.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      }
+    ]
+  }
+}

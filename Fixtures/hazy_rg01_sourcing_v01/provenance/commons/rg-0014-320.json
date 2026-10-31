@@ -1,0 +1,120 @@
+{
+  "candidate_id": "rg-0014",
+  "retrieved_utc": "2026-10-31T00:30:20.972420+00:00",
+  "requested_title": "File:Tomato harvest - Flickr - judy dean.jpg",
+  "response": {
+    "batchcomplete": true,
+    "query": {
+      "pages": [
+        {
+          "pageid": 137494065,
+          "ns": 6,
+          "title": "File:Tomato harvest - Flickr - judy dean.jpg",
+          "imagerepository": "local",
+          "imageinfo": [
+            {
+              "size": 6216826,
+              "width": 2816,
+              "height": 4032,
+              "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Tomato_harvest_-_Flickr_-_judy_dean.jpg/250px-Tomato_harvest_-_Flickr_-_judy_dean.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "thumbwidth": 223,
+              "thumbheight": 320,
+              "responsiveUrls": {
+                "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Tomato_harvest_-_Flickr_-_judy_dean.jpg/500px-Tomato_harvest_-_Flickr_-_judy_dean.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+              },
+              "thumbattribs": {
+                "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Tomato_harvest_-_Flickr_-_judy_dean.jpg/250px-Tomato_harvest_-_Flickr_-_judy_dean.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "decoding": "async",
+                "loading": "lazy",
+                "width": 223,
+                "height": 320,
+                "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Tomato_harvest_-_Flickr_-_judy_dean.jpg/500px-Tomato_harvest_-_Flickr_-_judy_dean.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+              },
+              "url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Tomato_harvest_-_Flickr_-_judy_dean.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+              "descriptionurl": "https://commons.wikimedia.org/wiki/File:Tomato_harvest_-_Flickr_-_judy_dean.jpg",
+              "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=137494065",
+              "sha1": "e8f7f1ce1026d6509e7b392841efea8d19f55094",
+              "extmetadata": {
+                "DateTime": {
+                  "value": "2023-09-13 02:16:06",
+                  "source": "mediawiki-metadata",
+                  "hidden": ""
+                },
+                "ObjectName": {
+                  "value": "Tomato harvest - Flickr - judy dean",
+                  "source": "mediawiki-metadata"
+                },
+                "CommonsMetadataExtension": {
+                  "value": 1.2,
+                  "source": "extension",
+                  "hidden": ""
+                },
+                "Categories": {
+                  "value": "Solanum lycopersicum (fruit)|Flickr images reviewed by FlickreviewR 2|Photographs taken on 2023-09-07|Flickr files uploaded by Red panda bot|Photos in Flickr Explore",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "Assessments": {
+                  "value": "",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "ImageDescription": {
+                  "value": "Tomato harvest",
+                  "source": "commons-desc-page"
+                },
+                "DateTimeOriginal": {
+                  "value": "Taken on 7 September 2023, 08:19",
+                  "source": "commons-desc-page"
+                },
+                "Credit": {
+                  "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/peterscherub/53172183406/\">Tomato harvest</a>",
+                  "source": "commons-desc-page"
+                },
+                "Artist": {
+                  "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/12070225@N03\">judy dean</a> from Cotswolds, United Kingdom",
+                  "source": "commons-desc-page"
+                },
+                "LicenseShortName": {
+                  "value": "CC BY-SA 2.0",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "UsageTerms": {
+                  "value": "Creative Commons Attribution-Share Alike 2.0",
+                  "source": "commons-desc-page"
+                },
+                "AttributionRequired": {
+                  "value": "true",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "LicenseUrl": {
+                  "value": "https://creativecommons.org/licenses/by-sa/2.0",
+                  "source": "commons-desc-page"
+                },
+                "Copyrighted": {
+                  "value": "True",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "Restrictions": {
+                  "value": "",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "License": {
+                  "value": "cc-by-sa-2.0",
+                  "source": "commons-templates",
+                  "hidden": ""
+                }
+              },
+              "mime": "image/jpeg",
+              "mediatype": "BITMAP"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

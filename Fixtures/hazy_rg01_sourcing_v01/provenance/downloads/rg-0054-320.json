@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0054",
+  "status": "preview_downloaded",
+  "canonical_title": "File:Angeschlossenes, altes, rotes Fahrrad.jpg",
+  "pageid": 92994321,
+  "file": "previews/candidates/rg-0054.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Angeschlossenes%2C_altes%2C_rotes_Fahrrad.jpg/330px-Angeschlossenes%2C_altes%2C_rotes_Fahrrad.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "cd8930a0e40b6aa8da7e754e1df147d807716368e153796b22236dc140063136",
+  "width": 330,
+  "height": 247,
+  "exif_orientation": 1,
+  "requested_max_edge": 320,
+  "original_width": 4032,
+  "original_height": 3024,
+  "original_sha1": "b8deadd6adccd468aad6d821692255972510bd58",
+  "creator": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Tbsprs&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Tbsprs (page does not exist)\">Tobias Preuss</a>",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "retrieved_utc": "2026-10-31T00:35:13.334158+00:00",
+  "visual_review": "pending",
+  "source_independence": "unverified"
+}

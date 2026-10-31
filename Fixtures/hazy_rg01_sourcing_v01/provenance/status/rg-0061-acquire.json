@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0061",
+  "status": "downloaded",
+  "canonical_title": "File:Emplacement camping nature.jpg",
+  "pageid": 26529233,
+  "file": "sources/rg-0061.jpg",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Emplacement_camping_nature.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+  "sha256": "53b2e99a2960d70eb623e10f8d9bf6d112a1c0121ad4532bb9e7f79c37dd39a0",
+  "width": 1000,
+  "height": 750,
+  "exif_orientation": 1,
+  "requested_max_edge": 1600,
+  "original_width": 1000,
+  "original_height": 750,
+  "original_sha1": "4945bf981c94045c166970154e6cb93e62b6c3be",
+  "creator": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Campings_Sites_et_Paysages&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Campings Sites et Paysages (page does not exist)\">Campings Sites et Paysages</a>",
+  "license": "CC BY-SA 3.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+  "retrieved_utc": "2026-10-31T02:24:25.239327+00:00",
+  "visual_review": "see reviews.json",
+  "source_independence": "see reviews.json"
+}

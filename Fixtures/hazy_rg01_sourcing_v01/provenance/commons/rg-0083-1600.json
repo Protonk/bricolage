@@ -1,0 +1,120 @@
+{
+  "candidate_id": "rg-0083",
+  "retrieved_utc": "2026-10-31T02:25:07.711197+00:00",
+  "requested_title": "File:Bessen in Bielefeld 2024.jpg",
+  "response": {
+    "batchcomplete": true,
+    "query": {
+      "pages": [
+        {
+          "pageid": 153792275,
+          "ns": 6,
+          "title": "File:Bessen in Bielefeld 2024.jpg",
+          "imagerepository": "local",
+          "imageinfo": [
+            {
+              "size": 8987477,
+              "width": 3648,
+              "height": 5472,
+              "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Bessen_in_Bielefeld_2024.jpg/1280px-Bessen_in_Bielefeld_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "thumbwidth": 1066,
+              "thumbheight": 1600,
+              "responsiveUrls": {
+                "2": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Bessen_in_Bielefeld_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+              },
+              "thumbattribs": {
+                "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Bessen_in_Bielefeld_2024.jpg/1280px-Bessen_in_Bielefeld_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "decoding": "async",
+                "loading": "lazy",
+                "width": 1066,
+                "height": 1600,
+                "srcset": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Bessen_in_Bielefeld_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+              },
+              "url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Bessen_in_Bielefeld_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+              "descriptionurl": "https://commons.wikimedia.org/wiki/File:Bessen_in_Bielefeld_2024.jpg",
+              "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=153792275",
+              "sha1": "abe044ce7fd5f46de08d81cddf09f47673667345",
+              "extmetadata": {
+                "DateTime": {
+                  "value": "2024-10-11 12:01:01",
+                  "source": "mediawiki-metadata",
+                  "hidden": ""
+                },
+                "ObjectName": {
+                  "value": "Bessen in Bielefeld 2024",
+                  "source": "mediawiki-metadata"
+                },
+                "CommonsMetadataExtension": {
+                  "value": 1.2,
+                  "source": "extension",
+                  "hidden": ""
+                },
+                "Categories": {
+                  "value": "Self-published work|Nature of Bielefeld|2024 in Bielefeld|Red berries|Euonymus europaeus fruit in October|Euonymus europaeus in North Rhine-Westphalia|North Rhine-Westphalia photographs taken on 2024-10-02",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "Assessments": {
+                  "value": "",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "ImageDescription": {
+                  "value": "Rode bessen gezien vanaf de tramhalte Buschbachtal met als achtergrond een maisveld",
+                  "source": "commons-desc-page"
+                },
+                "DateTimeOriginal": {
+                  "value": "2024-10-02 14:45:53",
+                  "source": "commons-desc-page"
+                },
+                "Credit": {
+                  "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                  "source": "commons-desc-page"
+                },
+                "Artist": {
+                  "value": "<a href=\"//commons.wikimedia.org/wiki/User:Smiley.toerist\" title=\"User:Smiley.toerist\">Smiley.toerist</a>",
+                  "source": "commons-desc-page"
+                },
+                "LicenseShortName": {
+                  "value": "CC BY-SA 4.0",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "UsageTerms": {
+                  "value": "Creative Commons Attribution-Share Alike 4.0",
+                  "source": "commons-desc-page"
+                },
+                "AttributionRequired": {
+                  "value": "true",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "LicenseUrl": {
+                  "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                  "source": "commons-desc-page"
+                },
+                "Copyrighted": {
+                  "value": "True",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "Restrictions": {
+                  "value": "",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "License": {
+                  "value": "cc-by-sa-4.0",
+                  "source": "commons-templates",
+                  "hidden": ""
+                }
+              },
+              "mime": "image/jpeg",
+              "mediatype": "BITMAP"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

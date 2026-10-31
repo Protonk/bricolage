@@ -1,0 +1,116 @@
+{
+  "batchcomplete": true,
+  "query": {
+    "pages": [
+      {
+        "pageid": 37638004,
+        "ns": 6,
+        "title": "File:Marina being built near Bilbao, Spain (10759196943).jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "timestamp": "2015-01-02T12:55:10Z",
+            "user": "1Veertje",
+            "size": 1787299,
+            "width": 5616,
+            "height": 3744,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Marina_being_built_near_Bilbao%2C_Spain_%2810759196943%29.jpg/330px-Marina_being_built_near_Bilbao%2C_Spain_%2810759196943%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 320,
+            "thumbheight": 213,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Marina_being_built_near_Bilbao%2C_Spain_%2810759196943%29.jpg/960px-Marina_being_built_near_Bilbao%2C_Spain_%2810759196943%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Marina_being_built_near_Bilbao%2C_Spain_%2810759196943%29.jpg/330px-Marina_being_built_near_Bilbao%2C_Spain_%2810759196943%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 320,
+              "height": 213,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Marina_being_built_near_Bilbao%2C_Spain_%2810759196943%29.jpg/960px-Marina_being_built_near_Bilbao%2C_Spain_%2810759196943%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Marina_being_built_near_Bilbao%2C_Spain_%2810759196943%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Marina_being_built_near_Bilbao,_Spain_(10759196943).jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=37638004",
+            "sha1": "cdddae53a1e7e3f2d5570d7477a524272f4688cb",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2015-01-02 12:55:10",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Marina being built near Bilbao, Spain (10759196943)",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Taken with Canon EOS 5D Mark II|Photographs by User:Ikreis|Flickr images reviewed by FlickreviewR|Aerial photographs of marinas|Aerial photographs of Bilbao",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Marina being built near Bilbao, Spain",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2010-09-07 12:03",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/ikreis/10759196943/\">Marina being built near Bilbao, Spain</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/95436125@N04\">Jeroen Komen</a> from Utrecht, Netherlands",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 2.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 2.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/2.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-2.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      }
+    ]
+  }
+}

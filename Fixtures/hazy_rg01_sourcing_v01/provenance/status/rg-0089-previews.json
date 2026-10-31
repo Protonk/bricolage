@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0089",
+  "status": "preview_downloaded",
+  "canonical_title": "File:Radlett Cricket Club pavilion, Hertfordshire 1.jpg",
+  "pageid": 80772814,
+  "file": "previews/candidates/rg-0089.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Radlett_Cricket_Club_pavilion%2C_Hertfordshire_1.jpg/330px-Radlett_Cricket_Club_pavilion%2C_Hertfordshire_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "691db596cf3f28ac87e9eea844f14675869519df742fe9efdecb525d2cc47d21",
+  "width": 330,
+  "height": 186,
+  "exif_orientation": 1,
+  "requested_max_edge": 320,
+  "original_width": 4578,
+  "original_height": 2575,
+  "original_sha1": "ffc7ce070cc388a657ecadb4f4ae70fc5be80cc2",
+  "creator": "<a href=\"//commons.wikimedia.org/wiki/User:Acabashi\" title=\"User:Acabashi\">Acabashi</a>",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "retrieved_utc": "2026-10-31T00:39:27.178366+00:00",
+  "visual_review": "pending",
+  "source_independence": "unverified"
+}

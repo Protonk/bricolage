@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0048",
+  "status": "downloaded",
+  "canonical_title": "File:Traklpark 01.jpg",
+  "pageid": 132153229,
+  "file": "sources/rg-0048.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Traklpark_01.jpg/1920px-Traklpark_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "5c0c8772b89ead83b19fe40fa1af7a3dbca9ab37ce33a0556989e9d4cbde948d",
+  "width": 1920,
+  "height": 1440,
+  "exif_orientation": 1,
+  "requested_max_edge": 1600,
+  "original_width": 4896,
+  "original_height": 3672,
+  "original_sha1": "c73af360efbdd04411aa5db1691fa5264d4d32e8",
+  "creator": "<a href=\"//commons.wikimedia.org/wiki/User:Luftschiffhafen\" title=\"User:Luftschiffhafen\">Luftschiffhafen</a>",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "retrieved_utc": "2026-10-31T02:24:07.663876+00:00",
+  "visual_review": "see reviews.json",
+  "source_independence": "see reviews.json"
+}

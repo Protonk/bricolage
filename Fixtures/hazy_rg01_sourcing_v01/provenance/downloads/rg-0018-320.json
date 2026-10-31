@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0018",
+  "status": "preview_downloaded",
+  "canonical_title": "File:Green leaves of wild strawberry with small red berry on a background of gray stone.jpg",
+  "pageid": 167592497,
+  "file": "previews/candidates/rg-0018.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Green_leaves_of_wild_strawberry_with_small_red_berry_on_a_background_of_gray_stone.jpg/330px-Green_leaves_of_wild_strawberry_with_small_red_berry_on_a_background_of_gray_stone.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "d130ef444288034ea1c8b9d21b2a0cbb0b7b288bcf23acde87d197ac058da0fc",
+  "width": 330,
+  "height": 220,
+  "exif_orientation": 1,
+  "requested_max_edge": 320,
+  "original_width": 9504,
+  "original_height": 6336,
+  "original_sha1": "6fdc0fb723d269a2f2acea92d6d084dc81e01a32",
+  "creator": "Anya Chernik",
+  "license": "CC BY 2.0",
+  "license_url": "https://creativecommons.org/licenses/by/2.0",
+  "retrieved_utc": "2026-10-31T00:30:52.920616+00:00",
+  "visual_review": "pending",
+  "source_independence": "unverified"
+}

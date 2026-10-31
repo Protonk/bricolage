@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0096",
+  "status": "downloaded",
+  "canonical_title": "File:Solidaris mailbox, Uitbergen, 2022.jpg",
+  "pageid": 126409090,
+  "file": "sources/rg-0096.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Solidaris_mailbox%2C_Uitbergen%2C_2022.jpg/1920px-Solidaris_mailbox%2C_Uitbergen%2C_2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "aa7c107a517168a3110c8d13dee27975492dd5c121357079749e4bc11c2df3f5",
+  "width": 1920,
+  "height": 1277,
+  "exif_orientation": 1,
+  "requested_max_edge": 1600,
+  "original_width": 5165,
+  "original_height": 3434,
+  "original_sha1": "ac565e47ac601a77ff37e927bc7bc18e24cdd4f9",
+  "creator": "<a href=\"//commons.wikimedia.org/wiki/User:DimiTalen\" title=\"User:DimiTalen\">DimiTalen</a>",
+  "license": "CC0",
+  "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "retrieved_utc": "2026-10-31T02:25:48.607807+00:00",
+  "visual_review": "see reviews.json",
+  "source_independence": "see reviews.json"
+}

@@ -1,0 +1,117 @@
+{
+  "batchcomplete": true,
+  "query": {
+    "pages": [
+      {
+        "pageid": 5123683,
+        "ns": 6,
+        "title": "File:Grazing sheep from The Powerhouse Museum Collection.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "timestamp": "2008-11-03T06:07:04Z",
+            "user": "Privatemusings",
+            "size": 614590,
+            "width": 1024,
+            "height": 769,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Grazing_sheep_from_The_Powerhouse_Museum_Collection.jpg/330px-Grazing_sheep_from_The_Powerhouse_Museum_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 320,
+            "thumbheight": 240,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Grazing_sheep_from_The_Powerhouse_Museum_Collection.jpg/960px-Grazing_sheep_from_The_Powerhouse_Museum_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Grazing_sheep_from_The_Powerhouse_Museum_Collection.jpg/330px-Grazing_sheep_from_The_Powerhouse_Museum_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 320,
+              "height": 240,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Grazing_sheep_from_The_Powerhouse_Museum_Collection.jpg/960px-Grazing_sheep_from_The_Powerhouse_Museum_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Grazing_sheep_from_The_Powerhouse_Museum_Collection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Grazing_sheep_from_The_Powerhouse_Museum_Collection.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=5123683",
+            "sha1": "ea508e757b3d60e564e2f1bc5116d18f9f757e7b",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2008-11-03 06:07:04",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Grazing sheep from The Powerhouse Museum Collection",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "PD Old|Flickr images from Powerhouse Museum|Template Unknown (author)|CC-PD-Mark|Sheep in Australia|Black and white photographs of Australia in the 1900s|PD-old missing SDC copyright status|Grazing sheep",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "<p>'<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/powerhouse_museum/sets/72157605177272357/\">Rural Life</a>' Pictures from The Powerhouse Museum\n</p>\n<table style=\"width:100%; border:1px solid black; background:#e0ffe0; padding:0;\">\n\n<tbody><tr>\n<td align=\"left\">\n</td>\n<td>This file was posted to <a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/powerhouse_museum/\">Flickr</a> by <b><a href=\"//commons.wikimedia.org/wiki/Category:Images_from_the_Powerhouse_Museum\" title=\"Category:Images from the Powerhouse Museum\">The Powerhouse Museum</a></b> (See <a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20081122051326/http://www.powerhousemuseum.com/commons/\">the archive of their website</a> for further information).\n<p>Many thanks to the Powerhouse Museum for helping release this wonderful material.\n</p>\n<hr>\n<p><small>This tag does not indicate the copyright status of the attached work. A normal copyright tag is still required. See <a href=\"//commons.wikimedia.org/wiki/Commons:Licensing\" title=\"Commons:Licensing\">Commons:Licensing</a> for more information.</small>\n</p>\n</td></tr></tbody></table>",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "circa 1900<div style=\"display: none;\">date QS:P,+1900-00-00T00:00:00Z/9,P1480,Q5727902</div>",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "The Powerhouse Museum",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "Unknown author<span style=\"display: none;\">Unknown author</span>",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "Author died more than 70 years ago - public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      }
+    ]
+  }
+}

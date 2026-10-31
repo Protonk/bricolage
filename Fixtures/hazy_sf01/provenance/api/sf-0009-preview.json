@@ -1,0 +1,103 @@
+{
+  "batchcomplete": true,
+  "query": {
+    "pages": [
+      {
+        "pageid": 19101415,
+        "ns": 6,
+        "title": "File:Summer Lake Area Hayfield (Lake County, Oregon scenic images) (lakDA0053).jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "timestamp": "2012-04-15T20:05:45Z",
+            "user": "Smallbot",
+            "size": 26894,
+            "width": 488,
+            "height": 324,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Summer_Lake_Area_Hayfield_%28Lake_County%2C_Oregon_scenic_images%29_%28lakDA0053%29.jpg/330px-Summer_Lake_Area_Hayfield_%28Lake_County%2C_Oregon_scenic_images%29_%28lakDA0053%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 320,
+            "thumbheight": 212,
+            "responsiveUrls": {
+              "2": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Summer_Lake_Area_Hayfield_%28Lake_County%2C_Oregon_scenic_images%29_%28lakDA0053%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Summer_Lake_Area_Hayfield_%28Lake_County%2C_Oregon_scenic_images%29_%28lakDA0053%29.jpg/330px-Summer_Lake_Area_Hayfield_%28Lake_County%2C_Oregon_scenic_images%29_%28lakDA0053%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 320,
+              "height": 212,
+              "srcset": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Summer_Lake_Area_Hayfield_%28Lake_County%2C_Oregon_scenic_images%29_%28lakDA0053%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Summer_Lake_Area_Hayfield_%28Lake_County%2C_Oregon_scenic_images%29_%28lakDA0053%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Summer_Lake_Area_Hayfield_(Lake_County,_Oregon_scenic_images)_(lakDA0053).jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=19101415",
+            "sha1": "5aaef4118bf6b2991cbf7700eea7bef0a2bfeb0e",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2012-04-15 20:05:45",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Summer Lake Area Hayfield (Lake County, Oregon scenic images) (lakDA0053)",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Attribution only license|Images from Oregon Historical County Records Guide|Round hay bales in Oregon|Scenic images of Lake County, Oregon|Clouds in Lake County, Oregon|Agriculture in Lake County, Oregon",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "A hayfield along Highway 31 north of Summer Lake.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2009-09",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://sos.oregon.gov/archives/records/county/Pages/scenic-images.aspx\">Oregon Historical County Records Guide</a>: <a rel=\"nofollow\" class=\"external text\" href=\"https://sos.oregon.gov/archives/records/county/Pages/scenic-images-new.aspx?county=lake\">Link</a> <a rel=\"nofollow\" class=\"external text\" href=\"https://sos.oregon.gov/archives/records/county/scenicimages/lakDA0053.jpg\">Direct</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "Gary Halvorson, Oregon State Archives",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "<table style=\"margin:1em 0; border-collapse:collapse; border:1px solid #aaa; border-left:.7em solid #608EC2; background:#FBFCFF\">\n<tbody><tr>\n<td style=\"border:none; padding:2px 0px 2px 0.9em; text-align:center; font-size:larger; width:100px;\"><b>Oregon Historical County Records Guide</b>\n</td>\n<td style=\"border:none; padding:.25em .9em; width:100%\">This low-resolution photograph originates from the <a rel=\"nofollow\" class=\"external text\" href=\"https://sos.oregon.gov/archives/records/county/Pages/scenic-images.aspx\">Oregon Historical County Records Guide</a>, a collection of over 4000 photos from the state of <a href=\"https://en.wikipedia.org/wiki/Oregon\" class=\"extiw\" title=\"w:Oregon\">Oregon</a>.\n<p><b>License to reuse.</b>\n</p><p>The 72 dpi JPEG images displayed in the Oregon Historical County Records Guide may be used free of charge without permission provided that the photo credit \"Gary Halvorson, Oregon State Archives\" is given. Use of the photos implies agreement to the following terms and conditions.\n</p>\n<ol><li>The images are taken for use in the copyrighted Oregon Blue Book and other state publications.</li>\n<li>The Oregon State Archives holds custody of the photos and sets conditions of use.</li>\n<li>The photos may be used in Web sites and other personal or commercial activities.</li>\n<li>Derivative works are allowed.</li></ol>\n<p>High-resolution photos may be licensed from the <a rel=\"nofollow\" class=\"external text\" href=\"https://sos.oregon.gov/archives/records/county/Pages/buy-images.aspx\">Oregon State Archives</a>.\n</p><p>All photos from the collection are found in the source-category <a href=\"//commons.wikimedia.org/wiki/Category:Images_from_Oregon_Historical_County_Records_Guide\" title=\"Category:Images from Oregon Historical County Records Guide\">Category:Images from Oregon Historical County Records Guide</a>.\n</p>\n</td></tr></tbody></table>\n<table class=\"layouttemplate licensetpl\" lang=\"en\" dir=\"ltr\" cellpadding=\"0\" style=\"width: 100%; clear: both; margin: 0.5em auto; background-color: var(--background-color-success-subtle, #dff2eb); color: var(--color-base, #202122); border-width: var(--border-width-thick, 2px); border-style: solid; border-color: var(--border-color-success, #099979); border-spacing: 8px; box-sizing: border-box;\">\n<tbody><tr>\n<td style=\"width:90px;\" rowspan=\"3\"><span typeof=\"mw:File\"><span title=\"©\"><img alt=\"©\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Green_copyright.svg/120px-Green_copyright.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"64\" height=\"64\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Green_copyright.svg/250px-Green_copyright.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"197\" data-file-height=\"197\"></span></span>\n</td>\n<td>The copyright holder of this file allows anyone to use it <b>for any purpose, provided that</b> the copyright holder is properly attributed. Redistribution, derivative work, commercial use, and all other use is permitted.\n</td></tr>\n<tr style=\"text-align:center;\">\n<td><div style=\"font-weight: bold;display:inline;\">Attribution: <div style=\"font-size: larger;display:inline;\" class=\"licensetpl_attr\"><a rel=\"nofollow\" class=\"external text\" href=\"https://sos.oregon.gov/archives/records/county/Pages/scenic-images.aspx\">Gary Halvorson, Oregon State Archives</a></div></div>\n<p><span class=\"licensetpl_short\" style=\"display:none;\">Attribution</span>\n</p>\n</td></tr></tbody></table>",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "Attribution",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Attribution": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://sos.oregon.gov/archives/records/county/Pages/scenic-images.aspx\">Gary Halvorson, Oregon State Archives</a>",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      }
+    ]
+  }
+}

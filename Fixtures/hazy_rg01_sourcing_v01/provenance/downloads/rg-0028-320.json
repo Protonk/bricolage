@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0028",
+  "status": "preview_downloaded",
+  "canonical_title": "File:Red Tractor.jpg",
+  "pageid": 89115170,
+  "file": "previews/candidates/rg-0028.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Red_Tractor.jpg/330px-Red_Tractor.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "0b042fd78c4c8dd4c835ba933ff314c66d99a5f650e0afc1461ce54d20393285",
+  "width": 330,
+  "height": 220,
+  "exif_orientation": 1,
+  "requested_max_edge": 320,
+  "original_width": 5315,
+  "original_height": 3543,
+  "original_sha1": "f290e0295f6f26ac7808e10d6e073c3b2efdbd5f",
+  "creator": "<a href=\"//commons.wikimedia.org/wiki/User:Myousry6666\" title=\"User:Myousry6666\">Myousry6666</a>",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "retrieved_utc": "2026-10-31T00:32:04.320381+00:00",
+  "visual_review": "pending",
+  "source_independence": "unverified"
+}

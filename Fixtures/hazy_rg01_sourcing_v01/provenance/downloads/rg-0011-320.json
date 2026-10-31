@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0011",
+  "status": "preview_downloaded",
+  "canonical_title": "File:Natural apple.jpg",
+  "pageid": 135473239,
+  "file": "previews/candidates/rg-0011.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Natural_apple.jpg/250px-Natural_apple.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "047280b4b95caa4c85b8ea302748807a599864c2ed6d71d6d7408c4e274ef4f0",
+  "width": 250,
+  "height": 333,
+  "exif_orientation": 1,
+  "requested_max_edge": 320,
+  "original_width": 1932,
+  "original_height": 2576,
+  "original_sha1": "0470d2de4105a0b0f5b420193c2c1c5ff630a8ea",
+  "creator": "<a href=\"//commons.wikimedia.org/wiki/User:Gugalcrom123\" title=\"User:Gugalcrom123\">Gugalcrom123</a>",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "retrieved_utc": "2026-10-31T00:30:04.515703+00:00",
+  "visual_review": "pending",
+  "source_independence": "unverified"
+}

@@ -1,0 +1,138 @@
+{
+  "candidate_id": "rg-0049",
+  "retrieved_utc": "2026-10-31T02:24:10.919280+00:00",
+  "requested_title": "File:Red benches at Jardim do Coreto, Praça Doutor António Padinha, Tavira, Portugal julesvernex2.jpg",
+  "response": {
+    "batchcomplete": true,
+    "query": {
+      "pages": [
+        {
+          "pageid": 154052221,
+          "ns": 6,
+          "title": "File:Red benches at Jardim do Coreto, Praça Doutor António Padinha, Tavira, Portugal julesvernex2.jpg",
+          "imagerepository": "local",
+          "imageinfo": [
+            {
+              "size": 31557358,
+              "width": 5301,
+              "height": 7741,
+              "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Red_benches_at_Jardim_do_Coreto%2C_Pra%C3%A7a_Doutor_Ant%C3%B3nio_Padinha%2C_Tavira%2C_Portugal_julesvernex2.jpg/1280px-Red_benches_at_Jardim_do_Coreto%2C_Pra%C3%A7a_Doutor_Ant%C3%B3nio_Padinha%2C_Tavira%2C_Portugal_julesvernex2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "thumbwidth": 1096,
+              "thumbheight": 1600,
+              "responsiveUrls": {
+                "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Red_benches_at_Jardim_do_Coreto%2C_Pra%C3%A7a_Doutor_Ant%C3%B3nio_Padinha%2C_Tavira%2C_Portugal_julesvernex2.jpg/3840px-Red_benches_at_Jardim_do_Coreto%2C_Pra%C3%A7a_Doutor_Ant%C3%B3nio_Padinha%2C_Tavira%2C_Portugal_julesvernex2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+              },
+              "thumbattribs": {
+                "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Red_benches_at_Jardim_do_Coreto%2C_Pra%C3%A7a_Doutor_Ant%C3%B3nio_Padinha%2C_Tavira%2C_Portugal_julesvernex2.jpg/1280px-Red_benches_at_Jardim_do_Coreto%2C_Pra%C3%A7a_Doutor_Ant%C3%B3nio_Padinha%2C_Tavira%2C_Portugal_julesvernex2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "decoding": "async",
+                "loading": "lazy",
+                "width": 1096,
+                "height": 1600,
+                "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Red_benches_at_Jardim_do_Coreto%2C_Pra%C3%A7a_Doutor_Ant%C3%B3nio_Padinha%2C_Tavira%2C_Portugal_julesvernex2.jpg/3840px-Red_benches_at_Jardim_do_Coreto%2C_Pra%C3%A7a_Doutor_Ant%C3%B3nio_Padinha%2C_Tavira%2C_Portugal_julesvernex2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+              },
+              "url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Red_benches_at_Jardim_do_Coreto%2C_Pra%C3%A7a_Doutor_Ant%C3%B3nio_Padinha%2C_Tavira%2C_Portugal_julesvernex2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+              "descriptionurl": "https://commons.wikimedia.org/wiki/File:Red_benches_at_Jardim_do_Coreto,_Pra%C3%A7a_Doutor_Ant%C3%B3nio_Padinha,_Tavira,_Portugal_julesvernex2.jpg",
+              "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=154052221",
+              "sha1": "19a8c832358d6372746e9df0d64360043f7bf871",
+              "extmetadata": {
+                "DateTime": {
+                  "value": "2024-10-18 18:34:00",
+                  "source": "mediawiki-metadata",
+                  "hidden": ""
+                },
+                "ObjectName": {
+                  "value": "Red benches at Jardim do Coreto, Praça Doutor António Padinha, Tavira, Portugal julesvernex2",
+                  "source": "mediawiki-metadata"
+                },
+                "CommonsMetadataExtension": {
+                  "value": 1.2,
+                  "source": "extension",
+                  "hidden": ""
+                },
+                "Categories": {
+                  "value": "Taken with Sony ILCE-7RM2|Red benches|Uploaded with LrMediaWiki|Files with coordinates missing SDC location of creation|Images by User:Julesvernex2|Portugal images by Julesvernex2|PPL1 images by Julesvernex2|Praça Doutor António Padinha|Architecture images by Julesvernex2|Sigma 14-24mm f2.8 DG DN Art (E-mount) images by Julesvernex2|Taken with Sigma 14-24mm F2.8 DG DN Art|Gardens in Tavira",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "Assessments": {
+                  "value": "",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "GPSLatitude": {
+                  "value": "37.126129",
+                  "source": "commons-desc-page"
+                },
+                "GPSLongitude": {
+                  "value": "-7.649296",
+                  "source": "commons-desc-page"
+                },
+                "GPSMapDatum": {
+                  "value": "WGS-84",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "ImageDescription": {
+                  "value": "Red benches at Jardim do Coreto, Praça Doutor António Padinha, Tavira, Portugal",
+                  "source": "commons-desc-page"
+                },
+                "DateTimeOriginal": {
+                  "value": "2020-06-24 12:36:23",
+                  "source": "commons-desc-page"
+                },
+                "Credit": {
+                  "value": "<ul><li>Own work</li>\n<li><a rel=\"nofollow\" class=\"external free\" href=\"http://julesvernex2.com\">http://julesvernex2.com</a></li></ul>",
+                  "source": "commons-desc-page"
+                },
+                "Artist": {
+                  "value": "<a href=\"//commons.wikimedia.org/wiki/User:Julesvernex2\" title=\"User:Julesvernex2\">Jules Verne Times Two</a>",
+                  "source": "commons-desc-page"
+                },
+                "Permission": {
+                  "value": "<ul><li><b>In print media:</b>\n<dl><dd>On the picture/In the picture credits: <b>Photo: Jules Verne Times Two / julesvernex2.com / CC-BY-SA-4.0 / <a rel=\"nofollow\" class=\"external free\" href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">https://creativecommons.org/licenses/by-sa/4.0/deed.en</a></b></dd>\n<dd>If a mention in this form is not possible, please contact me <i>before a planned use</i>.</dd></dl></li>\n<li><b>In online media:</b>\n<dl><dd>On the picture/In the picture credits: <b>Photo: Jules Verne Times Two / julesvernex2.com / CC-BY-SA-4.0</b> (linked to: <a rel=\"nofollow\" class=\"external free\" href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">https://creativecommons.org/licenses/by-sa/4.0/deed.en</a>)</dd>\n<dd>If possible, please also link to: <b><a rel=\"nofollow\" class=\"external free\" href=\"http://julesvernex2.com\">http://julesvernex2.com</a></b></dd>\n<dd>A license notice by hovering over the image is not sufficient, as this is not displayed e.g. during mobile access. The license notice must always be visible.</dd></dl></li>\n<li><b>For fellow Wikimedia editors:</b>\n<dl><dd>Please do not overwrite this file.</dd>\n<dd>For derivative works, you can use the <a href=\"//commons.wikimedia.org/wiki/Template:Derived_from\" title=\"Template:Derived from\"><span style=\"font-family:monospace,monospace;\">{{Derived from}}</span></a> or <a href=\"//commons.wikimedia.org/wiki/Template:Extracted_from\" title=\"Template:Extracted from\"><span style=\"font-family:monospace,monospace;\">{{Extracted from}}</span></a> templates.</dd>\n<dd>For improving the image, please contact us so that further editing can be done from the original raw file.</dd></dl></li></ul>\n<p><br>\n</p><p><br>\nPlease send an email to <i>verne@julesvernex2.com</i> if you:\n</p>\n<ul><li>require an address for sending a specimen copy,</li>\n<li>want to use the photo for a fee, i.e. not under the license specified,</li>\n<li>have further questions on license-compliant use.</li></ul>",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "LicenseShortName": {
+                  "value": "CC BY-SA 4.0",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "UsageTerms": {
+                  "value": "Creative Commons Attribution-Share Alike 4.0",
+                  "source": "commons-desc-page"
+                },
+                "AttributionRequired": {
+                  "value": "true",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "LicenseUrl": {
+                  "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                  "source": "commons-desc-page"
+                },
+                "Copyrighted": {
+                  "value": "True",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "Restrictions": {
+                  "value": "",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "License": {
+                  "value": "cc-by-sa-4.0",
+                  "source": "commons-templates",
+                  "hidden": ""
+                }
+              },
+              "mime": "image/jpeg",
+              "mediatype": "BITMAP"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

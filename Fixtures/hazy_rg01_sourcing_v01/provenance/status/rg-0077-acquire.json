@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0077",
+  "status": "downloaded",
+  "canonical_title": "File:Autumn berries (265928588).jpg",
+  "pageid": 48116708,
+  "file": "sources/rg-0077.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Autumn_berries_%28265928588%29.jpg/1920px-Autumn_berries_%28265928588%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "4faf56b776c06ff24debea1a57055989aab5df333d8921b61cab7f2ae89f1e56",
+  "width": 1920,
+  "height": 1280,
+  "exif_orientation": 1,
+  "requested_max_edge": 1600,
+  "original_width": 3504,
+  "original_height": 2336,
+  "original_sha1": "9f840fd6262ea583b10c8a8e40b247a80d428e62",
+  "creator": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/37663331@N00\">Gary J. Wood</a> from Toronto, ON, Canada",
+  "license": "CC BY-SA 2.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+  "retrieved_utc": "2026-10-31T02:24:54.948136+00:00",
+  "visual_review": "see reviews.json",
+  "source_independence": "see reviews.json"
+}

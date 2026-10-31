@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0073",
+  "status": "preview_downloaded",
+  "canonical_title": "File:Red Gate and Tree - geograph.org.uk - 293541.jpg",
+  "pageid": 12333731,
+  "file": "previews/candidates/rg-0073.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Red_Gate_and_Tree_-_geograph.org.uk_-_293541.jpg/330px-Red_Gate_and_Tree_-_geograph.org.uk_-_293541.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "960e158d8f326eecc3822ca64ab1d65e1e503db3275910413342d3c2e2c7d60f",
+  "width": 330,
+  "height": 247,
+  "exif_orientation": 1,
+  "requested_max_edge": 320,
+  "original_width": 640,
+  "original_height": 480,
+  "original_sha1": "9e7e58419d1f31af74003028ed1fdb8cd78bbbcd",
+  "creator": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/profile/4558\">Michael Patterson</a>",
+  "license": "CC BY-SA 2.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+  "retrieved_utc": "2026-10-31T00:37:30.958783+00:00",
+  "visual_review": "pending",
+  "source_independence": "unverified"
+}

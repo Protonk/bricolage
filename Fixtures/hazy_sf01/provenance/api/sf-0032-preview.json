@@ -1,0 +1,116 @@
+{
+  "batchcomplete": true,
+  "query": {
+    "pages": [
+      {
+        "pageid": 185308323,
+        "ns": 6,
+        "title": "File:American Herring Gulls Larus smithsonianus Vancouver Island, many juveniles 7208.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "timestamp": "2026-03-01T20:06:45Z",
+            "user": "ImagePerson",
+            "size": 6098055,
+            "width": 4676,
+            "height": 2441,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/American_Herring_Gulls_Larus_smithsonianus_Vancouver_Island%2C_many_juveniles_7208.jpg/330px-American_Herring_Gulls_Larus_smithsonianus_Vancouver_Island%2C_many_juveniles_7208.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 320,
+            "thumbheight": 167,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/American_Herring_Gulls_Larus_smithsonianus_Vancouver_Island%2C_many_juveniles_7208.jpg/960px-American_Herring_Gulls_Larus_smithsonianus_Vancouver_Island%2C_many_juveniles_7208.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/American_Herring_Gulls_Larus_smithsonianus_Vancouver_Island%2C_many_juveniles_7208.jpg/330px-American_Herring_Gulls_Larus_smithsonianus_Vancouver_Island%2C_many_juveniles_7208.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 320,
+              "height": 167,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/American_Herring_Gulls_Larus_smithsonianus_Vancouver_Island%2C_many_juveniles_7208.jpg/960px-American_Herring_Gulls_Larus_smithsonianus_Vancouver_Island%2C_many_juveniles_7208.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/6/6d/American_Herring_Gulls_Larus_smithsonianus_Vancouver_Island%2C_many_juveniles_7208.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:American_Herring_Gulls_Larus_smithsonianus_Vancouver_Island,_many_juveniles_7208.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=185308323",
+            "sha1": "30812e3ac8e26df26491f42b65ab1d2b92472fe7",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2026-03-01 20:06:45",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "American Herring Gulls Larus smithsonianus Vancouver Island, many juveniles 7208",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Beaches|Vancouver Island|Flocks of birds|Self-published work|Coastal shorelines of Canada|Birds of Vancouver Island|Larus smithsonianus (flocks)",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "American Herring Gulls Larus smithsonianus Vancouver Island, many juveniles",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2016-09-20 10:58:33",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:ImagePerson&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:ImagePerson (page does not exist)\">ImagePerson</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      }
+    ]
+  }
+}

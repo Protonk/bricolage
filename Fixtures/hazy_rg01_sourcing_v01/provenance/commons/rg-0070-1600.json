@@ -1,0 +1,134 @@
+{
+  "candidate_id": "rg-0070",
+  "retrieved_utc": "2026-10-31T02:24:28.477330+00:00",
+  "requested_title": "File:Coldwood - geograph.org.uk - 1263958.jpg",
+  "response": {
+    "batchcomplete": true,
+    "query": {
+      "pages": [
+        {
+          "pageid": 13985586,
+          "ns": 6,
+          "title": "File:Coldwood - geograph.org.uk - 1263958.jpg",
+          "imagerepository": "local",
+          "imageinfo": [
+            {
+              "size": 200462,
+              "width": 640,
+              "height": 426,
+              "thumburl": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Coldwood_-_geograph.org.uk_-_1263958.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+              "thumbwidth": 1600,
+              "thumbheight": 1065,
+              "thumbattribs": {
+                "src": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Coldwood_-_geograph.org.uk_-_1263958.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+                "decoding": "async",
+                "loading": "lazy",
+                "width": 1600,
+                "height": 1065
+              },
+              "url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Coldwood_-_geograph.org.uk_-_1263958.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+              "descriptionurl": "https://commons.wikimedia.org/wiki/File:Coldwood_-_geograph.org.uk_-_1263958.jpg",
+              "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=13985586",
+              "sha1": "9c23b996737ea327de67cf496efa2f4890cfdaa6",
+              "extmetadata": {
+                "DateTime": {
+                  "value": "2011-02-26 23:02:28",
+                  "source": "mediawiki-metadata",
+                  "hidden": ""
+                },
+                "ObjectName": {
+                  "value": "Coldwood - geograph.org.uk - 1263958",
+                  "source": "mediawiki-metadata"
+                },
+                "CommonsMetadataExtension": {
+                  "value": 1.2,
+                  "source": "extension",
+                  "hidden": ""
+                },
+                "Categories": {
+                  "value": "Taken with Panasonic Lumix DMC-TZ3|Village signs|Images from Geograph Britain and Ireland|Information field template with formatting|Images by Graham Horn|Red gates|Stone walls in County Galway|Gates in County Galway|Coldwood",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "Assessments": {
+                  "value": "",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "GPSLatitude": {
+                  "value": "53.256610",
+                  "source": "commons-desc-page"
+                },
+                "GPSLongitude": {
+                  "value": "-8.812200",
+                  "source": "commons-desc-page"
+                },
+                "GPSMapDatum": {
+                  "value": "WGS-84",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "ImageDescription": {
+                  "value": "Coldwood village, 6 km WNW of <a href=\"https://en.wikipedia.org/wiki/Craughwell\" class=\"extiw\" title=\"w:Craughwell\">Craughwell</a>, County Galway, Ireland. The entrance to the village has a stone monument, and a hand-painted sign saying \"Start the golden mile of Coldwood\".  The village is pretty, but I would say nothing exceptional, and I didn't find another sign saying the end of the golden mile.  It does, however, still have a separate village feel rather than the linear sprawl of houses seen elsewhere.",
+                  "source": "commons-desc-page"
+                },
+                "DateTimeOriginal": {
+                  "value": "2009-04-05",
+                  "source": "commons-desc-page"
+                },
+                "Credit": {
+                  "value": "From <a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/photo/1263958\">geograph.org.uk</a>",
+                  "source": "commons-desc-page"
+                },
+                "Artist": {
+                  "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/profile/10124\">Graham Horn</a>",
+                  "source": "commons-desc-page"
+                },
+                "Attribution": {
+                  "value": "Graham Horn",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "LicenseShortName": {
+                  "value": "CC BY-SA 2.0",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "UsageTerms": {
+                  "value": "Creative Commons Attribution-Share Alike 2.0",
+                  "source": "commons-desc-page"
+                },
+                "AttributionRequired": {
+                  "value": "true",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "LicenseUrl": {
+                  "value": "https://creativecommons.org/licenses/by-sa/2.0",
+                  "source": "commons-desc-page"
+                },
+                "Copyrighted": {
+                  "value": "True",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "Restrictions": {
+                  "value": "",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "License": {
+                  "value": "cc-by-sa-2.0",
+                  "source": "commons-templates",
+                  "hidden": ""
+                }
+              },
+              "mime": "image/jpeg",
+              "mediatype": "BITMAP"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

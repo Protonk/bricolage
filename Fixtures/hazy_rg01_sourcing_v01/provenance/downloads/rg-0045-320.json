@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0045",
+  "status": "preview_downloaded",
+  "canonical_title": "File:Red bench - 4 October 2026.jpg",
+  "pageid": 201013764,
+  "file": "previews/candidates/rg-0045.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Red_bench_-_4_October_2026.jpg/330px-Red_bench_-_4_October_2026.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "41f9c5b0be9b6c4885568f08932fe15fb1efe911220407e15bb1ff9587f81fdb",
+  "width": 330,
+  "height": 220,
+  "exif_orientation": 1,
+  "requested_max_edge": 320,
+  "original_width": 4945,
+  "original_height": 3301,
+  "original_sha1": "b2be32544cbecd442bad7a1953cc65c1126b70a0",
+  "creator": "<a href=\"//commons.wikimedia.org/wiki/User:Aethonatic\" title=\"User:Aethonatic\">Aethonatic</a>",
+  "license": "CC0",
+  "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "retrieved_utc": "2026-10-31T00:34:05.041842+00:00",
+  "visual_review": "pending",
+  "source_independence": "unverified"
+}

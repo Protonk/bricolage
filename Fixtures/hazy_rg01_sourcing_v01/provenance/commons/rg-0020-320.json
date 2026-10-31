@@ -1,0 +1,120 @@
+{
+  "candidate_id": "rg-0020",
+  "retrieved_utc": "2026-10-31T00:31:02.726379+00:00",
+  "requested_title": "File:Dragonfly on a leaf.jpg",
+  "response": {
+    "batchcomplete": true,
+    "query": {
+      "pages": [
+        {
+          "pageid": 33951855,
+          "ns": 6,
+          "title": "File:Dragonfly on a leaf.jpg",
+          "imagerepository": "local",
+          "imageinfo": [
+            {
+              "size": 205334,
+              "width": 1024,
+              "height": 1024,
+              "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Dragonfly_on_a_leaf.jpg/330px-Dragonfly_on_a_leaf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "thumbwidth": 320,
+              "thumbheight": 320,
+              "responsiveUrls": {
+                "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Dragonfly_on_a_leaf.jpg/960px-Dragonfly_on_a_leaf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+              },
+              "thumbattribs": {
+                "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Dragonfly_on_a_leaf.jpg/330px-Dragonfly_on_a_leaf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "decoding": "async",
+                "loading": "lazy",
+                "width": 320,
+                "height": 320,
+                "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Dragonfly_on_a_leaf.jpg/960px-Dragonfly_on_a_leaf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+              },
+              "url": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Dragonfly_on_a_leaf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+              "descriptionurl": "https://commons.wikimedia.org/wiki/File:Dragonfly_on_a_leaf.jpg",
+              "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=33951855",
+              "sha1": "443ed216f4c607836bb812f8450e39f135655998",
+              "extmetadata": {
+                "DateTime": {
+                  "value": "2014-07-13 11:04:38",
+                  "source": "mediawiki-metadata",
+                  "hidden": ""
+                },
+                "ObjectName": {
+                  "value": "Dragonfly on a leaf",
+                  "source": "mediawiki-metadata"
+                },
+                "CommonsMetadataExtension": {
+                  "value": 1.2,
+                  "source": "extension",
+                  "hidden": ""
+                },
+                "Categories": {
+                  "value": "Taken with Nikon D3200|Images with watermarks|Square photographs|Self-published work|Uploaded with Mobile/iOS|Photographs taken on 2014-07-12|Unidentified Libellulidae",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "Assessments": {
+                  "value": "",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "ImageDescription": {
+                  "value": "Red Dragonfly",
+                  "source": "commons-desc-page"
+                },
+                "DateTimeOriginal": {
+                  "value": "12 July 2014 (according to <span lang=\"en\" dir=\"ltr\"><a href=\"https://en.wikipedia.org/wiki/Exif\" class=\"extiw\" title=\"en:Exif\">Exif</a></span> data)",
+                  "source": "commons-desc-page"
+                },
+                "Credit": {
+                  "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                  "source": "commons-desc-page"
+                },
+                "Artist": {
+                  "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Jerilile&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Jerilile (page does not exist)\">jerilile</a>",
+                  "source": "commons-desc-page"
+                },
+                "LicenseShortName": {
+                  "value": "CC BY-SA 3.0",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "UsageTerms": {
+                  "value": "Creative Commons Attribution-Share Alike 3.0",
+                  "source": "commons-desc-page"
+                },
+                "AttributionRequired": {
+                  "value": "true",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "LicenseUrl": {
+                  "value": "https://creativecommons.org/licenses/by-sa/3.0",
+                  "source": "commons-desc-page"
+                },
+                "Copyrighted": {
+                  "value": "True",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "Restrictions": {
+                  "value": "",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "License": {
+                  "value": "cc-by-sa-3.0",
+                  "source": "commons-templates",
+                  "hidden": ""
+                }
+              },
+              "mime": "image/jpeg",
+              "mediatype": "BITMAP"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

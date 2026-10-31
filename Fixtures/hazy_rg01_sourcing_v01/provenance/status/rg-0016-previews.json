@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0016",
+  "status": "preview_downloaded",
+  "canonical_title": "File:Shrubs with red berries.jpg",
+  "pageid": 24891383,
+  "file": "previews/candidates/rg-0016.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Shrubs_with_red_berries.jpg/330px-Shrubs_with_red_berries.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "23543a63a86b193ff1743728611d6b9e62edb245ad3338c3c1fb2d961451c4cd",
+  "width": 330,
+  "height": 247,
+  "exif_orientation": 1,
+  "requested_max_edge": 320,
+  "original_width": 1280,
+  "original_height": 960,
+  "original_sha1": "1eaf4180b05dc6fe3d010e1f66b4303e8b57c77d",
+  "creator": "Rosendahl",
+  "license": "Public domain",
+  "license_url": null,
+  "retrieved_utc": "2026-10-31T00:30:39.747574+00:00",
+  "visual_review": "pending",
+  "source_independence": "unverified"
+}

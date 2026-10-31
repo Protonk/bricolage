@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0015",
+  "status": "preview_downloaded",
+  "canonical_title": "File:Red berries.jpg",
+  "pageid": 3490525,
+  "file": "previews/candidates/rg-0015.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Red_berries.jpg/330px-Red_berries.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "2a0254f25d9fed0f7a8047433a00d28d94820aed3893a9517be159c0ef633ccd",
+  "width": 330,
+  "height": 285,
+  "exif_orientation": 1,
+  "requested_max_edge": 320,
+  "original_width": 1410,
+  "original_height": 1218,
+  "original_sha1": "df928e79a16c0d6cad8d32ad7452882be3ac7e36",
+  "creator": "<a href=\"//commons.wikimedia.org/wiki/User:Dvortygirl\" title=\"User:Dvortygirl\">Dvortygirl</a>",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "retrieved_utc": "2026-10-31T00:30:31.734316+00:00",
+  "visual_review": "pending",
+  "source_independence": "unverified"
+}

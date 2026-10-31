@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0081",
+  "status": "preview_downloaded",
+  "canonical_title": "File:Berries of Canaan Valley 2021a.jpg",
+  "pageid": 116761472,
+  "file": "previews/candidates/rg-0081.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Berries_of_Canaan_Valley_2021a.jpg/330px-Berries_of_Canaan_Valley_2021a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "d61e7fe837b234f15bb90179eb761e0259425a1e32f13bd0bc4adcf479e4056f",
+  "width": 330,
+  "height": 220,
+  "exif_orientation": 1,
+  "requested_max_edge": 320,
+  "original_width": 6240,
+  "original_height": 4160,
+  "original_sha1": "11d7fd94b3e8e3e0e95149ebe7615f0df92b7d47",
+  "creator": "<a href=\"//commons.wikimedia.org/wiki/User:Antony-22\" title=\"User:Antony-22\">Antony-22</a>",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "retrieved_utc": "2026-10-31T00:38:26.969280+00:00",
+  "visual_review": "pending",
+  "source_independence": "unverified"
+}

@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0033",
+  "status": "preview_downloaded",
+  "canonical_title": "File:Red mailbox (1106765119).jpg",
+  "pageid": 80620825,
+  "file": "previews/candidates/rg-0033.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Red_mailbox_%281106765119%29.jpg/250px-Red_mailbox_%281106765119%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "eee2681745b9cdcff2ca0ca2d09ff4e1b2162b9f1ede5705214c68f30618a7c9",
+  "width": 250,
+  "height": 375,
+  "exif_orientation": 1,
+  "requested_max_edge": 320,
+  "original_width": 2304,
+  "original_height": 3456,
+  "original_sha1": "25a49c5a9de417105241191e70ce060eacbaaf37",
+  "creator": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/93755244@N00\">Håkan Dahlström</a> from Malmö, Sweden",
+  "license": "CC BY 2.0",
+  "license_url": "https://creativecommons.org/licenses/by/2.0",
+  "retrieved_utc": "2026-10-31T00:32:39.759612+00:00",
+  "visual_review": "pending",
+  "source_independence": "unverified"
+}

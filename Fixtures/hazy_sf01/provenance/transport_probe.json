@@ -1,0 +1,9 @@
+{
+  "utc": "2026-10-31T02:41:47.887415+00:00",
+  "stage": "local DNS test, before contacting Commons API or media host",
+  "host": "commons.wikimedia.org",
+  "http_status": null,
+  "retried": false,
+  "error": "gaierror",
+  "detail": "[Errno -3] Temporary failure in name resolution"
+}

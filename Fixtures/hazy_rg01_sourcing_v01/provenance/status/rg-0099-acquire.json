@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0099",
+  "status": "downloaded",
+  "canonical_title": "File:2023-06-04 15 54 20 Green and red fire hydrant at the southeast end of Westwood Drive in the Mountainview section of Ewing Township, Mercer County, New Jersey.jpg",
+  "pageid": 132665871,
+  "file": "sources/rg-0099.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/2023-06-04_15_54_20_Green_and_red_fire_hydrant_at_the_southeast_end_of_Westwood_Drive_in_the_Mountainview_section_of_Ewing_Township%2C_Mercer_County%2C_New_Jersey.jpg/1280px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "e947a70363edf4e211112e0d9441ae7ea1e8830338a9afa05e2f81a2b7d5fc93",
+  "width": 1280,
+  "height": 1707,
+  "exif_orientation": 1,
+  "requested_max_edge": 1600,
+  "original_width": 3024,
+  "original_height": 4032,
+  "original_sha1": "c4301c8ccdfad2c17aae2e9ad1c40146b1c2f921",
+  "creator": "<a href=\"//commons.wikimedia.org/wiki/User:Famartin\" title=\"User:Famartin\">Famartin</a>",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "retrieved_utc": "2026-10-31T02:26:08.234709+00:00",
+  "visual_review": "see reviews.json",
+  "source_independence": "see reviews.json"
+}

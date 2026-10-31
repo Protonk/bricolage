@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0085",
+  "status": "downloaded",
+  "canonical_title": "File:Firethorn Pyracantha Wolves Lane Wood Green London England 01.jpg",
+  "pageid": 138606653,
+  "file": "sources/rg-0085.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Firethorn_Pyracantha_Wolves_Lane_Wood_Green_London_England_01.jpg/1280px-Firethorn_Pyracantha_Wolves_Lane_Wood_Green_London_England_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "fd0386aec08fb51da2ac3d9e72616f913da076301b63fc631b014a426dac30c9",
+  "width": 1280,
+  "height": 1707,
+  "exif_orientation": 1,
+  "requested_max_edge": 1600,
+  "original_width": 3456,
+  "original_height": 4608,
+  "original_sha1": "4e5bae814598560921fe71a20daab06a0619edd9",
+  "creator": "<a href=\"//commons.wikimedia.org/wiki/User:Acabashi\" title=\"User:Acabashi\">Acabashi</a>",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "retrieved_utc": "2026-10-31T02:25:28.563238+00:00",
+  "visual_review": "see reviews.json",
+  "source_independence": "see reviews.json"
+}

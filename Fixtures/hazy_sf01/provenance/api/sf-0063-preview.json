@@ -1,0 +1,129 @@
+{
+  "batchcomplete": true,
+  "query": {
+    "pages": [
+      {
+        "pageid": 151570836,
+        "ns": 6,
+        "title": "File:Sun Ray Shopping Center.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "timestamp": "2024-08-17T23:50:15Z",
+            "user": "Eóin",
+            "size": 3160251,
+            "width": 4000,
+            "height": 2250,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Sun_Ray_Shopping_Center.jpg/330px-Sun_Ray_Shopping_Center.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 320,
+            "thumbheight": 180,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Sun_Ray_Shopping_Center.jpg/960px-Sun_Ray_Shopping_Center.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Sun_Ray_Shopping_Center.jpg/330px-Sun_Ray_Shopping_Center.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 320,
+              "height": 180,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Sun_Ray_Shopping_Center.jpg/960px-Sun_Ray_Shopping_Center.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Sun_Ray_Shopping_Center.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Sun_Ray_Shopping_Center.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=151570836",
+            "sha1": "dcffce809aecfdb964267d8eb98dff6e178ba3fd",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2024-08-17 23:50:15",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Sun Ray Shopping Center",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Self-published work|Shops in Saint Paul, Minnesota|Aerial photographs of Saint Paul, Minnesota|Parking lots in Minnesota|Files with coordinates missing SDC location of creation|Interstate 94 in Saint Paul, Minnesota|2024 aerial photographs of the United States|Aerial photographs of car parks|United States photographs taken on 2024-07-06|July 2024 in Saint Paul, Minnesota|Taken with DJI FC3682|Photos from unmanned aerial vehicles of the United States|Eastview-Conway-Battle Creek-Highwood, Saint Paul",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "44.951322",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "-93.006719",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "The Sun Ray Shopping Center on the East Side of Saint Paul, Minnesota. Construction for the Gold Line is visible between the parking lot and Interstate 94.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "Taken on 6 July 2024, 13:38:51",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:E%C3%B3in\" class=\"mw-redirect\" title=\"User:Eóin\">Eóin</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      }
+    ]
+  }
+}

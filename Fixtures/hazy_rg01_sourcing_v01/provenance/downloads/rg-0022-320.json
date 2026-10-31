@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0022",
+  "status": "preview_downloaded",
+  "canonical_title": "File:Ladybut on a leaf.jpg",
+  "pageid": 119533780,
+  "file": "previews/candidates/rg-0022.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Ladybut_on_a_leaf.jpg/330px-Ladybut_on_a_leaf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "7988f2a08bd9703bb51ef544a21fa4037f7075c50bbf13b1f295c1fdee03ca41",
+  "width": 330,
+  "height": 278,
+  "exif_orientation": 1,
+  "requested_max_edge": 320,
+  "original_width": 2909,
+  "original_height": 2450,
+  "original_sha1": "c93207062417f6f44cda18cc4be69e563022a1b4",
+  "creator": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Yabqnoc6fty&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Yabqnoc6fty (page does not exist)\">Matias Senger</a>",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "retrieved_utc": "2026-10-31T00:31:20.451212+00:00",
+  "visual_review": "pending",
+  "source_independence": "unverified"
+}

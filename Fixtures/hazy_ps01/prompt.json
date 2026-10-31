@@ -1,0 +1,21 @@
+{
+  "element": "pale-skies-dark-lower-halves",
+  "prompt": "Photographs with a comparatively pale, broadly continuous sky occupying a substantial upper region and a darker, more detailed or silhouetted lower region.",
+  "looseness": "Horizon height, boundary sharpness, fog density, foreground texture and subject matter may vary; slightly blue or pink-gray skies are allowed.",
+  "exclusions": "Known derivatives, crops, related captures/sequences, synthetic imagery, dominant close-up subjects, saturated sunsets, and fog/cloud subjects without the light-upper/dark-lower composition.",
+  "interpretation": "Visual curation only. Discovery buckets and source identities are not similarity labels or expected clusters.",
+  "target_count": 65,
+  "acceptable_range": [
+    50,
+    80
+  ],
+  "actual_count": 58,
+  "acquisition_status": "complete",
+  "pending_acquisition": [],
+  "candidate_count": 145,
+  "selection_counts": {
+    "accept": 58,
+    "reject": 85,
+    "defer": 2
+  }
+}

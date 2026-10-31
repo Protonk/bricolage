@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0057",
+  "status": "preview_downloaded",
+  "canonical_title": "File:Red Bike, Kalamazoo, Michigan.JPG",
+  "pageid": 47049989,
+  "file": "previews/candidates/rg-0057.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Red_Bike%2C_Kalamazoo%2C_Michigan.JPG/330px-Red_Bike%2C_Kalamazoo%2C_Michigan.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "ffcb6ecdd13ba5c885815d1b2243f132d8fb3c8828cfeb94ae73b8562f47e5d9",
+  "width": 330,
+  "height": 247,
+  "exif_orientation": 1,
+  "requested_max_edge": 320,
+  "original_width": 4608,
+  "original_height": 3456,
+  "original_sha1": "73787f51a7ec8d8de250c773fe71212de75aeead",
+  "creator": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:SydneySmith&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:SydneySmith (page does not exist)\">SydneySmith</a>",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "retrieved_utc": "2026-10-31T00:35:35.086592+00:00",
+  "visual_review": "pending",
+  "source_independence": "unverified"
+}

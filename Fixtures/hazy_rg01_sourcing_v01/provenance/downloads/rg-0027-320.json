@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0027",
+  "status": "preview_downloaded",
+  "canonical_title": "File:Old rusty tractor parked in a serene field.jpg",
+  "pageid": 187270281,
+  "file": "previews/candidates/rg-0027.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Old_rusty_tractor_parked_in_a_serene_field.jpg/250px-Old_rusty_tractor_parked_in_a_serene_field.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "90b0e00df114a3ead4ff9d0657d79c53c7dbeee7ca9b5b7955efb430f58ccb02",
+  "width": 250,
+  "height": 375,
+  "exif_orientation": 1,
+  "requested_max_edge": 320,
+  "original_width": 4016,
+  "original_height": 6016,
+  "original_sha1": "bae596479b093fcbad52d45c46ac85c8a9243181",
+  "creator": "<a href=\"//commons.wikimedia.org/wiki/User:Shixart1985\" title=\"User:Shixart1985\">Shixart1985</a>",
+  "license": "CC BY 2.0",
+  "license_url": "https://creativecommons.org/licenses/by/2.0",
+  "retrieved_utc": "2026-10-31T00:31:57.777600+00:00",
+  "visual_review": "pending",
+  "source_independence": "unverified"
+}

@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "images": 31,
+  "sources": 31,
+  "pairs": 0,
+  "assets": 62,
+  "kind": "prompt_heap",
+  "visual_review": "All 107 previews and all 31 final selected images inspected on contact sheets; per-candidate reasons in reviews.json.",
+  "downloader_tests": 5,
+  "requests": 276,
+  "http_status_counts": {
+    "200": 276
+  },
+  "response_body_bytes": 21548523,
+  "source_independence": "No duplicate or shared capture identified in this bounded review; not proven.",
+  "remaining_shortfall": "31 selected versus original approximate target of 70."
+}

@@ -1,0 +1,10 @@
+{
+  "prompt": "A salient red object within a predominantly green outdoor environment.",
+  "scale": "Small warm-colored things in big green places.",
+  "human_presence": "Incidental people allowed; people should not be primary subjects.",
+  "selection": "Visual impression, retaining original framing and colors. No semantic core/border/outlier labels.",
+  "source_independence": "Duplicate and shared-capture screening is an exclusion check, not a guide to similarity; independence is not proven.",
+  "requested_count": "approximately 70, potentially 50–80",
+  "actual_count": 31,
+  "shortfall": "The supplied 107 leads yielded 31 visual selections, 69 rejections and 7 deferred warm-color fallbacks. No additional search was performed."
+}

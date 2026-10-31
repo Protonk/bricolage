@@ -68,7 +68,7 @@ self-contained mechanics tests can run with `--filter ComparisonTests`.
 
 ## Local fixture assets
 
-Both fixture sets use `images/` for comparison inputs and `sources/` for preserved
+Fixture sets use `images/` for comparison inputs and `sources/` for preserved
 source bytes. Optional `previews/` contains contact sheets, outside the input set.
 Git ignores these entire directories for every fixture set, including nested files
 and unknown or absent extensions. Keep future image assets in those locations.

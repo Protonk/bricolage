@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0037",
+  "status": "preview_downloaded",
+  "canonical_title": "File:Banc Jardin botanique Bayonne.JPG",
+  "pageid": 26130327,
+  "file": "previews/candidates/rg-0037.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Banc_Jardin_botanique_Bayonne.JPG/330px-Banc_Jardin_botanique_Bayonne.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "4ba51064283c3beae4d1a5a267915436c4e259ebcd799b2054daf044a7353532",
+  "width": 330,
+  "height": 186,
+  "exif_orientation": 1,
+  "requested_max_edge": 320,
+  "original_width": 1920,
+  "original_height": 1080,
+  "original_sha1": "25aba7f4ff7a000c96f1fcc2f74189f253200703",
+  "creator": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Clagab&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Clagab (page does not exist)\">Clagab</a>",
+  "license": "CC BY-SA 3.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+  "retrieved_utc": "2026-10-31T00:33:06.671211+00:00",
+  "visual_review": "pending",
+  "source_independence": "unverified"
+}

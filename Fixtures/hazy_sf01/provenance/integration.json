@@ -1,0 +1,33 @@
+{
+  "status": "passed",
+  "kind": "prompt_heap",
+  "images": 48,
+  "sources": 48,
+  "assets": 96,
+  "pairs": 0,
+  "evidence": {
+    "previews": 142,
+    "visually_selected": 59,
+    "acquired": 48,
+    "pending": 11,
+    "acquisition_status": "stopped",
+    "status": "passed"
+  },
+  "stage": "previews/integration-reviewed",
+  "created": [
+    "images",
+    "manifest.json",
+    "manifest.csv",
+    "sources.csv",
+    "SOURCES.md",
+    "prompt.json",
+    "probes.csv",
+    "selections.json",
+    "batches",
+    "SHA256SUMS.txt",
+    "provenance/import-map.json",
+    "previews/selected-01.jpg",
+    "previews/selected-02.jpg",
+    "previews/selected-03.jpg"
+  ]
+}

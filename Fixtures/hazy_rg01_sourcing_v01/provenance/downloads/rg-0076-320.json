@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0076",
+  "status": "preview_downloaded",
+  "canonical_title": "File:Pasture at Ysgubor-wen - geograph.org.uk - 994740.jpg",
+  "pageid": 13694172,
+  "file": "previews/candidates/rg-0076.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Pasture_at_Ysgubor-wen_-_geograph.org.uk_-_994740.jpg/330px-Pasture_at_Ysgubor-wen_-_geograph.org.uk_-_994740.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "c88bf7b7f104404c8277bf03f24119ddd75896a725ad7041c4e52bf8163eb657",
+  "width": 330,
+  "height": 220,
+  "exif_orientation": 1,
+  "requested_max_edge": 320,
+  "original_width": 640,
+  "original_height": 427,
+  "original_sha1": "3bbdf4a1a388e501de4aabcf4678725ec74cf6a8",
+  "creator": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/profile/10124\">Graham Horn</a>",
+  "license": "CC BY-SA 2.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+  "retrieved_utc": "2026-10-31T00:37:51.198742+00:00",
+  "visual_review": "pending",
+  "source_independence": "unverified"
+}

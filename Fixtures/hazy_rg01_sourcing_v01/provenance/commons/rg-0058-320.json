@@ -1,0 +1,129 @@
+{
+  "candidate_id": "rg-0058",
+  "retrieved_utc": "2026-10-31T00:35:38.410482+00:00",
+  "requested_title": "File:-mypubliclandsroadtrip 2016- Our Camping Picks, Wisconsin Islands (27818718472).jpg",
+  "response": {
+    "batchcomplete": true,
+    "query": {
+      "pages": [
+        {
+          "pageid": 161704929,
+          "ns": 6,
+          "title": "File:-mypubliclandsroadtrip 2016- Our Camping Picks, Wisconsin Islands (27818718472).jpg",
+          "imagerepository": "local",
+          "imageinfo": [
+            {
+              "size": 3111847,
+              "width": 3264,
+              "height": 2448,
+              "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/-mypubliclandsroadtrip_2016-_Our_Camping_Picks%2C_Wisconsin_Islands_%2827818718472%29.jpg/330px--mypubliclandsroadtrip_2016-_Our_Camping_Picks%2C_Wisconsin_Islands_%2827818718472%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "thumbwidth": 320,
+              "thumbheight": 240,
+              "responsiveUrls": {
+                "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/-mypubliclandsroadtrip_2016-_Our_Camping_Picks%2C_Wisconsin_Islands_%2827818718472%29.jpg/960px--mypubliclandsroadtrip_2016-_Our_Camping_Picks%2C_Wisconsin_Islands_%2827818718472%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+              },
+              "thumbattribs": {
+                "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/-mypubliclandsroadtrip_2016-_Our_Camping_Picks%2C_Wisconsin_Islands_%2827818718472%29.jpg/330px--mypubliclandsroadtrip_2016-_Our_Camping_Picks%2C_Wisconsin_Islands_%2827818718472%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "decoding": "async",
+                "loading": "lazy",
+                "width": 320,
+                "height": 240,
+                "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/-mypubliclandsroadtrip_2016-_Our_Camping_Picks%2C_Wisconsin_Islands_%2827818718472%29.jpg/960px--mypubliclandsroadtrip_2016-_Our_Camping_Picks%2C_Wisconsin_Islands_%2827818718472%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+              },
+              "url": "https://upload.wikimedia.org/wikipedia/commons/f/f4/-mypubliclandsroadtrip_2016-_Our_Camping_Picks%2C_Wisconsin_Islands_%2827818718472%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+              "descriptionurl": "https://commons.wikimedia.org/wiki/File:-mypubliclandsroadtrip_2016-_Our_Camping_Picks,_Wisconsin_Islands_(27818718472).jpg",
+              "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=161704929",
+              "sha1": "6bc68117483893c4c6755adef6bf14839376aa0a",
+              "extmetadata": {
+                "DateTime": {
+                  "value": "2025-03-11 06:44:23",
+                  "source": "mediawiki-metadata",
+                  "hidden": ""
+                },
+                "ObjectName": {
+                  "value": "-mypubliclandsroadtrip 2016- Our Camping Picks, Wisconsin Islands (27818718472)",
+                  "source": "mediawiki-metadata"
+                },
+                "CommonsMetadataExtension": {
+                  "value": 1.2,
+                  "source": "extension",
+                  "hidden": ""
+                },
+                "Categories": {
+                  "value": "PD US BLM|Protected areas of Door County, Wisconsin|Red tents|Files with coordinates missing SDC location of creation|Tents in Wisconsin|United States photographs taken on 2015-09-05|Flickr images reviewed by FlickreviewR 2|U.S. Bureau of Land Management Flickr files uploaded by OptimusPrimeBot|Flickr images missing SDC published in",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "Assessments": {
+                  "value": "",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "GPSLatitude": {
+                  "value": "43.535633",
+                  "source": "commons-desc-page"
+                },
+                "GPSLongitude": {
+                  "value": "-89.465461",
+                  "source": "commons-desc-page"
+                },
+                "GPSMapDatum": {
+                  "value": "WGS-84",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "ImageDescription": {
+                  "value": "Set up camp on an island for the Great American Campout tonight! #mypubliclandsroadtrip\nThe BLM Eastern States manages about 500 islands in Wisconsin and northeastern Minnesota. The unique island habitat and wildlife provide endless opportunities for photography and birdwatching, from the boat or shore. Many of these public islands are lesser known and visited recreational treasures, making them perfect for those looking for tranquil and peaceful camping environments. Find a quiet fishing spot on a smaller island; then camp overnight for a stunning sunrise over the water.",
+                  "source": "commons-desc-page"
+                },
+                "DateTimeOriginal": {
+                  "value": "Taken on 5 September 2015, 08:31:31",
+                  "source": "commons-desc-page"
+                },
+                "Credit": {
+                  "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/mypubliclands/27818718472\">#mypubliclandsroadtrip 2016: Our Camping Picks, Wisconsin Islands</a>",
+                  "source": "commons-desc-page"
+                },
+                "Artist": {
+                  "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/mypubliclands/\">mypubliclands</a>",
+                  "source": "commons-desc-page"
+                },
+                "LicenseShortName": {
+                  "value": "Public domain",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "UsageTerms": {
+                  "value": "Public domain",
+                  "source": "commons-desc-page"
+                },
+                "AttributionRequired": {
+                  "value": "false",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "Copyrighted": {
+                  "value": "False",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "Restrictions": {
+                  "value": "",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "License": {
+                  "value": "pd",
+                  "source": "commons-templates",
+                  "hidden": ""
+                }
+              },
+              "mime": "image/jpeg",
+              "mediatype": "BITMAP"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

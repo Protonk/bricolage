@@ -1,0 +1,116 @@
+{
+  "batchcomplete": true,
+  "query": {
+    "pages": [
+      {
+        "pageid": 120744143,
+        "ns": 6,
+        "title": "File:Boulders-5198, Dingle Peninsula, Co. Kerry, Ireland.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "timestamp": "2022-07-19T06:35:28Z",
+            "user": "Maoileann",
+            "size": 763471,
+            "width": 1920,
+            "height": 1080,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Boulders-5198%2C_Dingle_Peninsula%2C_Co._Kerry%2C_Ireland.jpg/330px-Boulders-5198%2C_Dingle_Peninsula%2C_Co._Kerry%2C_Ireland.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 320,
+            "thumbheight": 180,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Boulders-5198%2C_Dingle_Peninsula%2C_Co._Kerry%2C_Ireland.jpg/960px-Boulders-5198%2C_Dingle_Peninsula%2C_Co._Kerry%2C_Ireland.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Boulders-5198%2C_Dingle_Peninsula%2C_Co._Kerry%2C_Ireland.jpg/330px-Boulders-5198%2C_Dingle_Peninsula%2C_Co._Kerry%2C_Ireland.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 320,
+              "height": 180,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Boulders-5198%2C_Dingle_Peninsula%2C_Co._Kerry%2C_Ireland.jpg/960px-Boulders-5198%2C_Dingle_Peninsula%2C_Co._Kerry%2C_Ireland.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Boulders-5198%2C_Dingle_Peninsula%2C_Co._Kerry%2C_Ireland.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Boulders-5198,_Dingle_Peninsula,_Co._Kerry,_Ireland.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=120744143",
+            "sha1": "563540c40c16f31f044071f3cebeea47d6c47072",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2022-07-19 06:35:28",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Boulders-5198, Dingle Peninsula, Co. Kerry, Ireland",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Stones in Ireland|Sandstone in Ireland|Boulders in Ireland|Sand in Ireland|Coastal erosion in Ireland|Clouds and blue sky in Ireland|Vegetated dunes in Ireland|Remote views of mountains in Ireland|Mount Brandon|Beenoskee|Beach erosion|Marine algae|Seashells|Dingle Way|Light and shadow|Tralee Bay|Old Red Sandstone in Ireland|Mountains with clouds in Ireland|Self-published work|Views from beaches|Beaches in spring|Sand beaches with rocks|Algae of Ireland|Algae on beaches|Coastal dunes of Ireland|Intertidal boulder fields in Ireland|Spring in County Kerry|Rock beaches in the Republic of Ireland|Calamagrostis arenaria (habitat)|White clouds with blue sky background|Shells on beaches|Cloud shapes|Rocks on sand|Beaches at low tide|Old Red Sandstone - close ups|Erosion at sand dune cliffs|Old Red Sandstone boulders|Low tide in County Kerry|Rocks with algae|Close-up photographs of algae|Close-up photographs of rocks|Aughacasla Strand",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Low tide on Aughacasla Beach on the shores of Tralee Bay, east of Castlegregory, with Beenoskee in the background and Mt Brandon in the distance.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2022-04-15 10:15:34",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Maoileann\" title=\"User:Maoileann\">Maoileann</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      }
+    ]
+  }
+}

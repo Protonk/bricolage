@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0100",
+  "status": "preview_downloaded",
+  "canonical_title": "File:2015 Madeira Samsung (182).jpg",
+  "pageid": 44364403,
+  "file": "previews/candidates/rg-0100.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/2015_Madeira_Samsung_%28182%29.jpg/330px-2015_Madeira_Samsung_%28182%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "03d464cf0fa27e6b6cbd64d96745fd4bc8aada0c3d5190b51dd27df6f25768e5",
+  "width": 330,
+  "height": 186,
+  "exif_orientation": 1,
+  "requested_max_edge": 320,
+  "original_width": 5312,
+  "original_height": 2988,
+  "original_sha1": "c951b77d5ef257ab4755d60ea1e56aef5bce954c",
+  "creator": "<a href=\"//commons.wikimedia.org/wiki/User:Mattes\" title=\"User:Mattes\">Mattes</a>",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "retrieved_utc": "2026-10-31T00:40:43.845906+00:00",
+  "visual_review": "pending",
+  "source_independence": "unverified"
+}

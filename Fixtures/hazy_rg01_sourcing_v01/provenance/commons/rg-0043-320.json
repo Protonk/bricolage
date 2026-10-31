@@ -1,0 +1,133 @@
+{
+  "candidate_id": "rg-0043",
+  "retrieved_utc": "2026-10-31T00:33:47.621631+00:00",
+  "requested_title": "File:Red curved benches with Angsana trees near the Singapore Marriott Tang Plaza tower.jpg",
+  "response": {
+    "batchcomplete": true,
+    "query": {
+      "pages": [
+        {
+          "pageid": 74763649,
+          "ns": 6,
+          "title": "File:Red curved benches with Angsana trees near the Singapore Marriott Tang Plaza tower.jpg",
+          "imagerepository": "local",
+          "imageinfo": [
+            {
+              "size": 11681899,
+              "width": 4215,
+              "height": 6322,
+              "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Red_curved_benches_with_Angsana_trees_near_the_Singapore_Marriott_Tang_Plaza_tower.jpg/250px-Red_curved_benches_with_Angsana_trees_near_the_Singapore_Marriott_Tang_Plaza_tower.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "thumbwidth": 213,
+              "thumbheight": 320,
+              "responsiveUrls": {
+                "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Red_curved_benches_with_Angsana_trees_near_the_Singapore_Marriott_Tang_Plaza_tower.jpg/500px-Red_curved_benches_with_Angsana_trees_near_the_Singapore_Marriott_Tang_Plaza_tower.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+              },
+              "thumbattribs": {
+                "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Red_curved_benches_with_Angsana_trees_near_the_Singapore_Marriott_Tang_Plaza_tower.jpg/250px-Red_curved_benches_with_Angsana_trees_near_the_Singapore_Marriott_Tang_Plaza_tower.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "decoding": "async",
+                "loading": "lazy",
+                "width": 213,
+                "height": 320,
+                "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Red_curved_benches_with_Angsana_trees_near_the_Singapore_Marriott_Tang_Plaza_tower.jpg/500px-Red_curved_benches_with_Angsana_trees_near_the_Singapore_Marriott_Tang_Plaza_tower.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+              },
+              "url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Red_curved_benches_with_Angsana_trees_near_the_Singapore_Marriott_Tang_Plaza_tower.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+              "descriptionurl": "https://commons.wikimedia.org/wiki/File:Red_curved_benches_with_Angsana_trees_near_the_Singapore_Marriott_Tang_Plaza_tower.jpg",
+              "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=74763649",
+              "sha1": "62883d34e79501c43fa443f927cf400fe59158f6",
+              "extmetadata": {
+                "DateTime": {
+                  "value": "2018-11-30 12:23:30",
+                  "source": "mediawiki-metadata",
+                  "hidden": ""
+                },
+                "ObjectName": {
+                  "value": "Red curved benches with Angsana trees near the Singapore Marriott Tang Plaza tower",
+                  "source": "mediawiki-metadata"
+                },
+                "CommonsMetadataExtension": {
+                  "value": 1.2,
+                  "source": "extension",
+                  "hidden": ""
+                },
+                "Categories": {
+                  "value": "Pterocarpus indicus|Taken with Canon EOS 5D Mark IV and Canon EF 11-24mm F4L USM|Skyscrapers in Singapore|Orchard Road, Singapore|Self-published work|Singapore photographs taken on 2018-06-13|Red benches|Curved benches|Files with coordinates missing SDC location of creation|Gray clouds|Photographs by Basile Morin|Singapore Marriott Hotel",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "Assessments": {
+                  "value": "quality",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "GPSLatitude": {
+                  "value": "1.305078",
+                  "source": "commons-desc-page"
+                },
+                "GPSLongitude": {
+                  "value": "103.832032",
+                  "source": "commons-desc-page"
+                },
+                "GPSMapDatum": {
+                  "value": "WGS-84",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "ImageDescription": {
+                  "value": "Red curved benches and <i>Pterocarpus indicus</i> (Angsana trees) in front of the Singapore Marriott Tang Plaza tower, under grey clouds, at the crossing of Paterson Road and Orchard Road, Singapore",
+                  "source": "commons-desc-page"
+                },
+                "DateTimeOriginal": {
+                  "value": "2018-06-13 14:18:29",
+                  "source": "commons-desc-page"
+                },
+                "Credit": {
+                  "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                  "source": "commons-desc-page"
+                },
+                "Artist": {
+                  "value": "<a href=\"//commons.wikimedia.org/wiki/User:Basile_Morin\" title=\"User:Basile Morin\">Basile Morin</a>",
+                  "source": "commons-desc-page"
+                },
+                "LicenseShortName": {
+                  "value": "CC BY-SA 4.0",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "UsageTerms": {
+                  "value": "Creative Commons Attribution-Share Alike 4.0",
+                  "source": "commons-desc-page"
+                },
+                "AttributionRequired": {
+                  "value": "true",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "LicenseUrl": {
+                  "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                  "source": "commons-desc-page"
+                },
+                "Copyrighted": {
+                  "value": "True",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "Restrictions": {
+                  "value": "",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "License": {
+                  "value": "cc-by-sa-4.0",
+                  "source": "commons-templates",
+                  "hidden": ""
+                }
+              },
+              "mime": "image/jpeg",
+              "mediatype": "BITMAP"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

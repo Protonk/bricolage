@@ -1,0 +1,130 @@
+{
+  "batchcomplete": true,
+  "query": {
+    "pages": [
+      {
+        "pageid": 4371946,
+        "ns": 6,
+        "title": "File:Aerial of Bogense Harbour.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "timestamp": "2008-07-13T13:40:05Z",
+            "user": "File Upload Bot (Magnus Manske)",
+            "size": 48845,
+            "width": 600,
+            "height": 399,
+            "thumburl": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Aerial_of_Bogense_Harbour.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "thumbwidth": 1600,
+            "thumbheight": 1064,
+            "thumbattribs": {
+              "src": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Aerial_of_Bogense_Harbour.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 1600,
+              "height": 1064
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Aerial_of_Bogense_Harbour.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Aerial_of_Bogense_Harbour.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=4371946",
+            "sha1": "19e8778a55e59ac7449ccf4cb8bade425e85696e",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2008-07-13 13:40:05",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Aerial of Bogense Harbour",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Aerial photographs of Denmark|GFDL|License migration completed|Bogense Havn|Files with coordinates missing SDC location of creation|Aerial photographs of marinas|Transferred by User:DaWiki2Commons",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "55.566860",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "10.078330",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Left: Bogense old harbour. Right: Bogense marina with beach",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "1 July 2007 (original upload)",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "Transferred from <a class=\"external text\" data-mw-original-href=\"http://da.wikipedia.org\" href=\"https://da.wikipedia.org\">da.wikipedia</a>; transferred to Commons by <a href=\"//commons.wikimedia.org/wiki/User:DaWiki2Commons\" title=\"User:DaWiki2Commons\">User:DaWiki2Commons</a> using <a rel=\"nofollow\" class=\"external text\" href=\"http://tools.wikimedia.de/~magnus/commonshelper.php\">CommonsHelper</a>.",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "Original uploader was <a href=\"https://da.wikipedia.org/wiki/User:Frank5400\" class=\"extiw\" title=\"da:User:Frank5400\">Frank5400</a> at <a class=\"external text\" data-mw-original-href=\"http://da.wikipedia.org\" href=\"https://da.wikipedia.org\">da.wikipedia</a>",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "Released under the <a href=\"//commons.wikimedia.org/wiki/GNU_Free_Documentation_License\" class=\"mw-redirect\" title=\"GNU Free Documentation License\">GNU Free Documentation License</a>.",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "http://creativecommons.org/licenses/by-sa/3.0/",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      }
+    ]
+  }
+}

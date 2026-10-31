@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0082",
+  "status": "preview_downloaded",
+  "canonical_title": "File:Berry Bush Bonanza (49598285577).jpg",
+  "pageid": 124359623,
+  "file": "previews/candidates/rg-0082.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Berry_Bush_Bonanza_%2849598285577%29.jpg/330px-Berry_Bush_Bonanza_%2849598285577%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "98f4c451540f4f50676ea12a74f2a65430a1027efe180f1c7b3f4c5421efa9aa",
+  "width": 330,
+  "height": 211,
+  "exif_orientation": 1,
+  "requested_max_edge": 320,
+  "original_width": 3198,
+  "original_height": 2048,
+  "original_sha1": "1e5170333d796a53deae72e3841cb691239abe1e",
+  "creator": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/94359914@N06\">John Brighenti</a> from Rockville, MD, United States",
+  "license": "CC BY 2.0",
+  "license_url": "https://creativecommons.org/licenses/by/2.0",
+  "retrieved_utc": "2026-10-31T00:38:35.872151+00:00",
+  "visual_review": "pending",
+  "source_independence": "unverified"
+}

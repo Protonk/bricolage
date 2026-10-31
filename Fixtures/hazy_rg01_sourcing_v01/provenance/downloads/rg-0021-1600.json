@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0021",
+  "status": "downloaded",
+  "canonical_title": "File:Ladybird on leaf.jpg",
+  "pageid": 18106682,
+  "file": "sources/rg-0021.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Ladybird_on_leaf.jpg/1920px-Ladybird_on_leaf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "5aaee714c274c408ab8a5bade50f4b033adc2fe1a849f35d777e38cafe5cbdd2",
+  "width": 1920,
+  "height": 1440,
+  "exif_orientation": 1,
+  "requested_max_edge": 1600,
+  "original_width": 3648,
+  "original_height": 2736,
+  "original_sha1": "514a0d2cb1b844e9dd4fea16f6427cc5e01fcba3",
+  "creator": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Vook&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Vook (page does not exist)\">Vook</a>",
+  "license": "CC BY-SA 3.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+  "retrieved_utc": "2026-10-31T02:23:22.443183+00:00",
+  "visual_review": "see reviews.json",
+  "source_independence": "see reviews.json"
+}

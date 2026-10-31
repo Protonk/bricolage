@@ -1,0 +1,116 @@
+{
+  "batchcomplete": true,
+  "query": {
+    "pages": [
+      {
+        "pageid": 179235575,
+        "ns": 6,
+        "title": "File:Grassland Guardians of Warrandyte.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "timestamp": "2025-12-01T05:59:18Z",
+            "user": "Nathannn20",
+            "size": 5401094,
+            "width": 3840,
+            "height": 2160,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Grassland_Guardians_of_Warrandyte.jpg/330px-Grassland_Guardians_of_Warrandyte.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 320,
+            "thumbheight": 180,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Grassland_Guardians_of_Warrandyte.jpg/960px-Grassland_Guardians_of_Warrandyte.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Grassland_Guardians_of_Warrandyte.jpg/330px-Grassland_Guardians_of_Warrandyte.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 320,
+              "height": 180,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Grassland_Guardians_of_Warrandyte.jpg/960px-Grassland_Guardians_of_Warrandyte.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/7/78/Grassland_Guardians_of_Warrandyte.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Grassland_Guardians_of_Warrandyte.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=179235575",
+            "sha1": "0186083e9ac38c921376afcf295e4fb1395d4613",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2025-12-01 05:59:18",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Grassland Guardians of Warrandyte",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Warrandyte State Park|Self-published work|Uploaded via Campaign:wsc-int|Wildlife and nature images from Wiki Science Competition 2025|Images from Wiki Science Competition 2025 in the rest of the world",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "This photograph captures a broad hillside in Warrandyte State Park, Melbourne, where a large group of kangaroos spreads naturally across the landscape. The animals graze among dry, golden grasses, their forms blending into the muted tones of the terrain. Several scattered trees rise from the slope, adding depth and structure to the scene, while patches of green vegetation break the continuity of the hillside. The kangaroos appear undisturbed and well-adapted to their environment, illustrating the calm coexistence of native wildlife and the park’s rugged grassland ecosystem. The image highlights the ecological character of Warrandyte, where open space, subtle vegetation, and iconic Australian fauna converge.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2025-04-22 15:08:08",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Nathannn20&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Nathannn20 (page does not exist)\">Nathannn20</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      }
+    ]
+  }
+}

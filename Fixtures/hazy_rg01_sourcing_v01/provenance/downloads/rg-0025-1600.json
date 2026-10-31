@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0025",
+  "status": "downloaded",
+  "canonical_title": "File:Brookmill Park, red benches - geograph.org.uk - 4078270.jpg",
+  "pageid": 126235996,
+  "file": "sources/rg-0025.jpg",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Brookmill_Park%2C_red_benches_-_geograph.org.uk_-_4078270.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+  "sha256": "672fbd299114821dd6e43a4938140349ef5a3a77263a3097140e57d27fc6dab2",
+  "width": 640,
+  "height": 480,
+  "exif_orientation": 1,
+  "requested_max_edge": 1600,
+  "original_width": 640,
+  "original_height": 480,
+  "original_sha1": "782ef96aa6252e0e00b2e9a1ebd750c93086019e",
+  "creator": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/profile/6597\">Stephen Craven</a> <span class=\"mw-valign-text-top noprint\" typeof=\"mw:File/Frameless\"><a href=\"//commons.wikimedia.org/wiki/File:Brookmill_Park,_red_benches_-_geograph.org.uk_-_4078270.jpg#P170\" title=\"Edit this at Structured Data on Commons\"><img alt=\"Edit this at Structured Data on Commons\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"10\" height=\"10\" class=\"mw-file-element\" data-file-width=\"20\" data-file-height=\"20\"></a></span>",
+  "license": "CC BY-SA 2.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+  "retrieved_utc": "2026-10-31T02:23:38.857395+00:00",
+  "visual_review": "see reviews.json",
+  "source_independence": "see reviews.json"
+}

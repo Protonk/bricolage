@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0030",
+  "status": "preview_downloaded",
+  "canonical_title": "File:Casas de Plaza Río de Janeiro en la Ciudad de México.jpg",
+  "pageid": 51884134,
+  "file": "previews/candidates/rg-0030.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Casas_de_Plaza_R%C3%ADo_de_Janeiro_en_la_Ciudad_de_M%C3%A9xico.jpg/330px-Casas_de_Plaza_R%C3%ADo_de_Janeiro_en_la_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "40b66d6a324537d178e94d8325aaa5512f6ff52045c819bd21591a215c66f352",
+  "width": 330,
+  "height": 220,
+  "exif_orientation": 1,
+  "requested_max_edge": 320,
+  "original_width": 5184,
+  "original_height": 3456,
+  "original_sha1": "1914df17b3eb640b77dbd8b472752a1170aa2d35",
+  "creator": "<a href=\"//commons.wikimedia.org/wiki/User:LEG95\" title=\"User:LEG95\">LEG95</a>",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "retrieved_utc": "2026-10-31T00:32:18.996294+00:00",
+  "visual_review": "pending",
+  "source_independence": "unverified"
+}

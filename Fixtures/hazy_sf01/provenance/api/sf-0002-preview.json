@@ -1,0 +1,112 @@
+{
+  "batchcomplete": true,
+  "query": {
+    "pages": [
+      {
+        "pageid": 80260081,
+        "ns": 6,
+        "title": "File:Amish Country Byway - Marshmallow Hay Bales in Field - NARA - 7716912.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "timestamp": "2019-07-08T16:06:35Z",
+            "user": "US National Archives bot",
+            "size": 2856829,
+            "width": 3008,
+            "height": 2000,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Amish_Country_Byway_-_Marshmallow_Hay_Bales_in_Field_-_NARA_-_7716912.jpg/330px-Amish_Country_Byway_-_Marshmallow_Hay_Bales_in_Field_-_NARA_-_7716912.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 320,
+            "thumbheight": 213,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Amish_Country_Byway_-_Marshmallow_Hay_Bales_in_Field_-_NARA_-_7716912.jpg/960px-Amish_Country_Byway_-_Marshmallow_Hay_Bales_in_Field_-_NARA_-_7716912.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Amish_Country_Byway_-_Marshmallow_Hay_Bales_in_Field_-_NARA_-_7716912.jpg/330px-Amish_Country_Byway_-_Marshmallow_Hay_Bales_in_Field_-_NARA_-_7716912.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 320,
+              "height": 213,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Amish_Country_Byway_-_Marshmallow_Hay_Bales_in_Field_-_NARA_-_7716912.jpg/960px-Amish_Country_Byway_-_Marshmallow_Hay_Bales_in_Field_-_NARA_-_7716912.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Amish_Country_Byway_-_Marshmallow_Hay_Bales_in_Field_-_NARA_-_7716912.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Amish_Country_Byway_-_Marshmallow_Hay_Bales_in_Field_-_NARA_-_7716912.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=80260081",
+            "sha1": "eb7fd94efd84a70646d212f6ad46b0001c8443b6",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2019-07-08 16:06:35",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "<div class=\"fn\">\n<i>Amish Country Byway - Marshmallow Hay Bales in Field</i></div>",
+                "source": "commons-desc-page"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Images from the National Archives and Records Administration|Media contributed by the National Archives and Records Administration|PD US DOT|Artworks without Wikidata item|Round hay bales in Ohio|October 2005 in Ohio|United States photographs taken on 2005-10-15|US National Archives series: Digital Photographs Relating to America's Byways|US National Archives series: Digital Photographs Relating to America's Byways - Ohio|Amish Country Byway|US National Archives location: other",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Artist": {
+                "value": "<div class=\"fn value\">\nS. Clyde</div>",
+                "source": "commons-desc-page"
+              },
+              "ImageDescription": {
+                "value": "<div class=\"description\">\n<ul><li><b>Scope and content:</b>  The original finding aid described this photograph as:</li></ul>\n<p>Original Caption: Nearing Winesburg, plastic covered white round hay bales resemble huge marshmallows in a row on a cleared hayfield US beside 62.\n</p><p>Location: Near Winesburg, Ohio (40.620° N 81.681° W)\n</p>\nStatus: Public domain. Photo by S. Clyde</div>",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "Taken on 15 October 2005, 07:42 (according to <span lang=\"en\" dir=\"ltr\"><a href=\"https://en.wikipedia.org/wiki/Exif\" class=\"extiw\" title=\"en:Exif\">Exif</a></span> data)",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a href=\"https://en.wikipedia.org/wiki/U.S._National_Archives_and_Records_Administration\" class=\"extiw\" title=\"en:U.S. National Archives and Records Administration\">U.S. National Archives and Records Administration</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      }
+    ]
+  }
+}

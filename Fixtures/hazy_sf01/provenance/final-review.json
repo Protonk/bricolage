@@ -1,0 +1,19 @@
+{
+  "status": "reviewed",
+  "images": 48,
+  "review": "Inspected all three contact sheets generated from the final acquired source bytes. Compositions agree with the accepted preview judgments; no further selection changes. This is visual curation, not pairwise ground truth.",
+  "sheets": [
+    {
+      "path": "previews/selected-01.jpg",
+      "sha256": "1a34c34214dcea47e44e79539d3c7e6aba842ce794d8013946ed869a8b7cfcdf"
+    },
+    {
+      "path": "previews/selected-02.jpg",
+      "sha256": "2495f433d8bb7673ca40fa9839b8b41099756ff53865be13b6c86bd2fa76b4fa"
+    },
+    {
+      "path": "previews/selected-03.jpg",
+      "sha256": "fc637f1a16ba485b361374424fc811a2287c4f5694141e5e67cde51107c48495"
+    }
+  ]
+}

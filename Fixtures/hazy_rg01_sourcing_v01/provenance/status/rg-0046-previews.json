@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0046",
+  "status": "preview_downloaded",
+  "canonical_title": "File:Remich, banc rouge.jpg",
+  "pageid": 79825138,
+  "file": "previews/candidates/rg-0046.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Remich%2C_banc_rouge.jpg/330px-Remich%2C_banc_rouge.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "5baa7366519bf9c7f5ffe923e19946f6557716dc4a9447ea3e4bd2e9be11e39f",
+  "width": 330,
+  "height": 247,
+  "exif_orientation": 1,
+  "requested_max_edge": 320,
+  "original_width": 3648,
+  "original_height": 2736,
+  "original_sha1": "4e4b3af0f7673ee648a1cb0114b6482a4c6ca776",
+  "creator": "<a href=\"//commons.wikimedia.org/wiki/User:GilPe\" title=\"User:GilPe\">GilPe</a>",
+  "license": "CC BY-SA 3.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+  "retrieved_utc": "2026-10-31T00:34:12.338488+00:00",
+  "visual_review": "pending",
+  "source_independence": "unverified"
+}

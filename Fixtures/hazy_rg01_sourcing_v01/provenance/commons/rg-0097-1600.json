@@ -1,0 +1,129 @@
+{
+  "candidate_id": "rg-0097",
+  "retrieved_utc": "2026-10-31T02:25:52.482920+00:00",
+  "requested_title": "File:Coffee garden in Muğla (2842621632).jpg",
+  "response": {
+    "batchcomplete": true,
+    "query": {
+      "pages": [
+        {
+          "pageid": 24773643,
+          "ns": 6,
+          "title": "File:Coffee garden in Muğla (2842621632).jpg",
+          "imagerepository": "local",
+          "imageinfo": [
+            {
+              "size": 614896,
+              "width": 1280,
+              "height": 960,
+              "thumburl": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Coffee_garden_in_Mu%C4%9Fla_%282842621632%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+              "thumbwidth": 1600,
+              "thumbheight": 1200,
+              "thumbattribs": {
+                "src": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Coffee_garden_in_Mu%C4%9Fla_%282842621632%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+                "decoding": "async",
+                "loading": "lazy",
+                "width": 1600,
+                "height": 1200
+              },
+              "url": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Coffee_garden_in_Mu%C4%9Fla_%282842621632%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+              "descriptionurl": "https://commons.wikimedia.org/wiki/File:Coffee_garden_in_Mu%C4%9Fla_(2842621632).jpg",
+              "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=24773643",
+              "sha1": "72fea60f2fd3c1d43a56563f06658c56b32c8c43",
+              "extmetadata": {
+                "DateTime": {
+                  "value": "2013-02-21 06:41:59",
+                  "source": "mediawiki-metadata",
+                  "hidden": ""
+                },
+                "ObjectName": {
+                  "value": "Coffee garden in Muğla (2842621632)",
+                  "source": "mediawiki-metadata"
+                },
+                "CommonsMetadataExtension": {
+                  "value": 1.2,
+                  "source": "extension",
+                  "hidden": ""
+                },
+                "Categories": {
+                  "value": "Taken with Sony DSC-P52|Outdoor seats|Menteşe|Cafés in Turkey|Flickr images reviewed by File Upload Bot (Magnus Manske)|Red chairs|Files with coordinates missing SDC location of creation|2005 in Menteşe|Files from mwanasimba Flickr stream",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "Assessments": {
+                  "value": "",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "GPSLatitude": {
+                  "value": "37.212831",
+                  "source": "commons-desc-page"
+                },
+                "GPSLongitude": {
+                  "value": "28.367385",
+                  "source": "commons-desc-page"
+                },
+                "GPSMapDatum": {
+                  "value": "WGS-84",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "ImageDescription": {
+                  "value": "Coffee garden in Muğla",
+                  "source": "commons-desc-page"
+                },
+                "DateTimeOriginal": {
+                  "value": "2005-07-30 12:09",
+                  "source": "commons-desc-page"
+                },
+                "Credit": {
+                  "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/mwanasimba/2842621632/\">Coffee garden in Muğla</a>",
+                  "source": "commons-desc-page"
+                },
+                "Artist": {
+                  "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/30273175@N06\">mwanasimba</a> from La Réunion",
+                  "source": "commons-desc-page"
+                },
+                "LicenseShortName": {
+                  "value": "CC BY-SA 2.0",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "UsageTerms": {
+                  "value": "Creative Commons Attribution-Share Alike 2.0",
+                  "source": "commons-desc-page"
+                },
+                "AttributionRequired": {
+                  "value": "true",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "LicenseUrl": {
+                  "value": "https://creativecommons.org/licenses/by-sa/2.0",
+                  "source": "commons-desc-page"
+                },
+                "Copyrighted": {
+                  "value": "True",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "Restrictions": {
+                  "value": "",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "License": {
+                  "value": "cc-by-sa-2.0",
+                  "source": "commons-templates",
+                  "hidden": ""
+                }
+              },
+              "mime": "image/jpeg",
+              "mediatype": "BITMAP"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

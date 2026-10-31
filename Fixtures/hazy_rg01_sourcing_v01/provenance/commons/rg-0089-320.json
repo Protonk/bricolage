@@ -1,0 +1,133 @@
+{
+  "candidate_id": "rg-0089",
+  "retrieved_utc": "2026-10-31T00:39:23.564230+00:00",
+  "requested_title": "File:Radlett Cricket Club pavilion, Hertfordshire 1.jpg",
+  "response": {
+    "batchcomplete": true,
+    "query": {
+      "pages": [
+        {
+          "pageid": 80772814,
+          "ns": 6,
+          "title": "File:Radlett Cricket Club pavilion, Hertfordshire 1.jpg",
+          "imagerepository": "local",
+          "imageinfo": [
+            {
+              "size": 9655291,
+              "width": 4578,
+              "height": 2575,
+              "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Radlett_Cricket_Club_pavilion%2C_Hertfordshire_1.jpg/330px-Radlett_Cricket_Club_pavilion%2C_Hertfordshire_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "thumbwidth": 320,
+              "thumbheight": 180,
+              "responsiveUrls": {
+                "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Radlett_Cricket_Club_pavilion%2C_Hertfordshire_1.jpg/960px-Radlett_Cricket_Club_pavilion%2C_Hertfordshire_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+              },
+              "thumbattribs": {
+                "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Radlett_Cricket_Club_pavilion%2C_Hertfordshire_1.jpg/330px-Radlett_Cricket_Club_pavilion%2C_Hertfordshire_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "decoding": "async",
+                "loading": "lazy",
+                "width": 320,
+                "height": 180,
+                "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Radlett_Cricket_Club_pavilion%2C_Hertfordshire_1.jpg/960px-Radlett_Cricket_Club_pavilion%2C_Hertfordshire_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+              },
+              "url": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Radlett_Cricket_Club_pavilion%2C_Hertfordshire_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+              "descriptionurl": "https://commons.wikimedia.org/wiki/File:Radlett_Cricket_Club_pavilion,_Hertfordshire_1.jpg",
+              "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=80772814",
+              "sha1": "ffc7ce070cc388a657ecadb4f4ae70fc5be80cc2",
+              "extmetadata": {
+                "DateTime": {
+                  "value": "2019-07-25 13:58:45",
+                  "source": "mediawiki-metadata",
+                  "hidden": ""
+                },
+                "ObjectName": {
+                  "value": "Radlett Cricket Club pavilion, Hertfordshire 1",
+                  "source": "mediawiki-metadata"
+                },
+                "CommonsMetadataExtension": {
+                  "value": 1.2,
+                  "source": "extension",
+                  "hidden": ""
+                },
+                "Categories": {
+                  "value": "2019 in cricket|Photographs with aspect ratio of 16:9|Self-published work|White fences in the United Kingdom|Railings in Hertfordshire|Gables in Hertfordshire|Red umbrellas|Summer 2019 in the United Kingdom|United Kingdom photographs taken on 2019-07-23|Cricket pavilions in Hertfordshire|July 2019 in Hertfordshire|Radlett Cricket Club|Balconies in Hertfordshire|Files with coordinates missing SDC location of creation (51° N, 1° W)|Umbrellas in England|Patio umbrellas in England|Tables in England|Acabashi photos: buildings in Hertfordshire|Acabashi photos: cricket in Hertfordshire|Radlett photos taken with Canon PowerShot SX60 HS",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "Assessments": {
+                  "value": "",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "GPSLatitude": {
+                  "value": "51.676310",
+                  "source": "commons-desc-page"
+                },
+                "GPSLongitude": {
+                  "value": "-0.310243",
+                  "source": "commons-desc-page"
+                },
+                "GPSMapDatum": {
+                  "value": "WGS-84",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "ImageDescription": {
+                  "value": "Radlett Cricket Club pavilion during a  July 2019 Tuesday public 45-over <a href=\"https://en.wikipedia.org/wiki/Minor_Counties_of_English_and_Welsh_cricket\" class=\"extiw\" title=\"en:Minor Counties of English and Welsh cricket\">Minor Counties</a> cricket match between <a href=\"https://en.wikipedia.org/wiki/Hertfordshire_County_Cricket_Club\" class=\"extiw\" title=\"en:Hertfordshire County Cricket Club\">Hertfordshire County Cricket Club</a> and <a href=\"https://en.wikipedia.org/wiki/Berkshire_County_Cricket_Club\" class=\"extiw\" title=\"en:Berkshire County Cricket Club\">Berkshire County Cricket Club</a>, at the <a href=\"https://en.wikipedia.org/wiki/Radlett\" class=\"extiw\" title=\"en:Radlett\">Radlett</a> Cricket Club ground in <a href=\"https://en.wikipedia.org/wiki/Hertfordshire\" class=\"extiw\" title=\"en:Hertfordshire\">Hertfordshire</a>, England. The game was part of the  <a rel=\"nofollow\" class=\"external text\" href=\"http://hcc60.play-cricket.com/website/website/league_table/82891\">elimination stage</a> for the 2019 <a rel=\"nofollow\" class=\"external text\" href=\"http://hcc60.play-cricket.com/\">National 60+ / 70+ County Cricket Championship</a> between <a rel=\"nofollow\" class=\"external text\" href=\"http://hertsover50.play-cricket.com/website/web_pages/132168\">Hertfordshire 50+ - 60+ 1st XI</a><a rel=\"nofollow\" class=\"external autonumber\" href=\"http://www.hertscricket.org/\">[1]</a> and <a rel=\"nofollow\" class=\"external text\" href=\"http://www.berkshirecountycricketclub.org/teams/142027/match-centre/1-1867950\">Berkshire Cricket Board 60+ 1st XI</a>.<br><br><b>Mobile device view</b>: Wikimedia (as at July 2019) makes it difficult to immediately view photo groups related to this image. To see its most relevant allied photos, click on <a href=\"//commons.wikimedia.org/wiki/Category:Radlett_Cricket_Club\" title=\"Category:Radlett Cricket Club\">Radlett Cricket Club</a>, and this uploader's <a href=\"//commons.wikimedia.org/wiki/Category:Acabashi_photos:_cricket\" title=\"Category:Acabashi photos: cricket\">Cricket photos</a>. You can add a beta click-through 'categories' button to the very bottom of photo-pages you view by going to settings... three-bar icon top left.<br><b>Desktop view</b>: Wikimedia (as at July 2019) makes it difficult to immediately view the helpful category links where you can find images related to this one in a variety of ways; for these go to the very bottom of the page.<br><br>This image is one of a series of date and/or subject allied consecutive photographs kept in progression or location by file name number and/or time marking.<br><b>Camera</b>: <a href=\"https://en.wikipedia.org/wiki/Canon_PowerShot_SX60_HS\" class=\"extiw\" title=\"w:Canon PowerShot SX60 HS\">Canon PowerShot SX60 HS</a><br><b>Software</b>: File lens-corrected, optimized, perhaps cropped, with <a href=\"https://en.wikipedia.org/wiki/DxO_PhotoLab\" class=\"extiw\" title=\"en:DxO PhotoLab\">DxO PhotoLab 2 Elite</a>, and likely further optimized with <a href=\"https://en.wikipedia.org/wiki/Adobe_Photoshop#CS2\" class=\"extiw\" title=\"en:Adobe Photoshop\">Adobe Photoshop CS2</a>.",
+                  "source": "commons-desc-page"
+                },
+                "DateTimeOriginal": {
+                  "value": "2019-07-23 13:32:16",
+                  "source": "commons-desc-page"
+                },
+                "Credit": {
+                  "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                  "source": "commons-desc-page"
+                },
+                "Artist": {
+                  "value": "<a href=\"//commons.wikimedia.org/wiki/User:Acabashi\" title=\"User:Acabashi\">Acabashi</a>",
+                  "source": "commons-desc-page"
+                },
+                "LicenseShortName": {
+                  "value": "CC BY-SA 4.0",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "UsageTerms": {
+                  "value": "Creative Commons Attribution-Share Alike 4.0",
+                  "source": "commons-desc-page"
+                },
+                "AttributionRequired": {
+                  "value": "true",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "LicenseUrl": {
+                  "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                  "source": "commons-desc-page"
+                },
+                "Copyrighted": {
+                  "value": "True",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "Restrictions": {
+                  "value": "",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "License": {
+                  "value": "cc-by-sa-4.0",
+                  "source": "commons-templates",
+                  "hidden": ""
+                }
+              },
+              "mime": "image/jpeg",
+              "mediatype": "BITMAP"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

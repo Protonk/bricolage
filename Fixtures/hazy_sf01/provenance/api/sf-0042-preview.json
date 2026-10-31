@@ -1,0 +1,134 @@
+{
+  "batchcomplete": true,
+  "query": {
+    "pages": [
+      {
+        "pageid": 12281938,
+        "ns": 6,
+        "title": "File:Chalamain Gap - geograph.org.uk - 262412.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "timestamp": "2010-12-12T15:20:02Z",
+            "user": "GeographBot",
+            "size": 121037,
+            "width": 640,
+            "height": 480,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Chalamain_Gap_-_geograph.org.uk_-_262412.jpg/330px-Chalamain_Gap_-_geograph.org.uk_-_262412.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 320,
+            "thumbheight": 240,
+            "responsiveUrls": {
+              "2": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Chalamain_Gap_-_geograph.org.uk_-_262412.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Chalamain_Gap_-_geograph.org.uk_-_262412.jpg/330px-Chalamain_Gap_-_geograph.org.uk_-_262412.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 320,
+              "height": 240,
+              "srcset": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Chalamain_Gap_-_geograph.org.uk_-_262412.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Chalamain_Gap_-_geograph.org.uk_-_262412.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Chalamain_Gap_-_geograph.org.uk_-_262412.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=12281938",
+            "sha1": "c5ad85fad2dc03824c0cb86fd7e16860e3dcad2d",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2010-12-12 15:20:02",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Chalamain Gap - geograph.org.uk - 262412",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Taken with Nikon Coolpix 5200|Images from Geograph Britain and Ireland|Lairig Ghru|Boulder fields|Information field template with formatting|United Kingdom photographs taken on 2006-04-06|Frost erosion|Images from Geograph Britain and Ireland missing SDC coordinates of the point of view|Images by Angus|Chalamain Gap",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "57.124600",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "-3.714000",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Chalamain Gap Looking into the glacial overflow channel of Chalamain Gap, from the edge of the Lairig Ghru pass. The gap is a narrow defile with steep, broken crags on both sides and is littered with boulders fallen from the crags due to frost action.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2006-04-06",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "From <a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/photo/262412\">geograph.org.uk</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/profile/8070\">Angus</a>",
+                "source": "commons-desc-page"
+              },
+              "Attribution": {
+                "value": "Angus",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 2.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 2.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/2.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-2.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "candidate_id": "rg-0081",
+  "retrieved_utc": "2026-10-31T00:38:21.911422+00:00",
+  "requested_title": "File:Berries of Canaan Valley 2021a.jpg",
+  "response": {
+    "batchcomplete": true,
+    "query": {
+      "pages": [
+        {
+          "pageid": 116761472,
+          "ns": 6,
+          "title": "File:Berries of Canaan Valley 2021a.jpg",
+          "imagerepository": "local",
+          "imageinfo": [
+            {
+              "size": 8404051,
+              "width": 6240,
+              "height": 4160,
+              "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Berries_of_Canaan_Valley_2021a.jpg/330px-Berries_of_Canaan_Valley_2021a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "thumbwidth": 320,
+              "thumbheight": 213,
+              "responsiveUrls": {
+                "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Berries_of_Canaan_Valley_2021a.jpg/960px-Berries_of_Canaan_Valley_2021a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+              },
+              "thumbattribs": {
+                "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Berries_of_Canaan_Valley_2021a.jpg/330px-Berries_of_Canaan_Valley_2021a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "decoding": "async",
+                "loading": "lazy",
+                "width": 320,
+                "height": 213,
+                "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Berries_of_Canaan_Valley_2021a.jpg/960px-Berries_of_Canaan_Valley_2021a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+              },
+              "url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Berries_of_Canaan_Valley_2021a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+              "descriptionurl": "https://commons.wikimedia.org/wiki/File:Berries_of_Canaan_Valley_2021a.jpg",
+              "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=116761472",
+              "sha1": "11d7fd94b3e8e3e0e95149ebe7615f0df92b7d47",
+              "extmetadata": {
+                "DateTime": {
+                  "value": "2022-04-09 03:00:13",
+                  "source": "mediawiki-metadata",
+                  "hidden": ""
+                },
+                "ObjectName": {
+                  "value": "Berries of Canaan Valley 2021a",
+                  "source": "mediawiki-metadata"
+                },
+                "CommonsMetadataExtension": {
+                  "value": 1.2,
+                  "source": "extension",
+                  "hidden": ""
+                },
+                "Categories": {
+                  "value": "Canaan Valley National Wildlife Refuge|Self-published work|Files with coordinates missing SDC location of creation|Red berries|Media by Antony-22|Crataegus laevigata (fruit)",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "Assessments": {
+                  "value": "",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "GPSLatitude": {
+                  "value": "39.025105",
+                  "source": "commons-desc-page"
+                },
+                "GPSLongitude": {
+                  "value": "-79.427132",
+                  "source": "commons-desc-page"
+                },
+                "GPSMapDatum": {
+                  "value": "WGS-84",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "ImageDescription": {
+                  "value": "Berries on a tree along the Freeland Boardwalk Trail in <a href=\"https://en.wikipedia.org/wiki/Canaan_Valley_National_Wildlife_Refuge\" class=\"extiw\" title=\"w:Canaan Valley National Wildlife Refuge\">Canaan Valley National Wildlife Refuge</a> in West Virginia in 2021",
+                  "source": "commons-desc-page"
+                },
+                "DateTimeOriginal": {
+                  "value": "2021-09-02 16:28:17",
+                  "source": "commons-desc-page"
+                },
+                "Credit": {
+                  "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                  "source": "commons-desc-page"
+                },
+                "Artist": {
+                  "value": "<a href=\"//commons.wikimedia.org/wiki/User:Antony-22\" title=\"User:Antony-22\">Antony-22</a>",
+                  "source": "commons-desc-page"
+                },
+                "LicenseShortName": {
+                  "value": "CC BY-SA 4.0",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "UsageTerms": {
+                  "value": "Creative Commons Attribution-Share Alike 4.0",
+                  "source": "commons-desc-page"
+                },
+                "AttributionRequired": {
+                  "value": "true",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "LicenseUrl": {
+                  "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                  "source": "commons-desc-page"
+                },
+                "Copyrighted": {
+                  "value": "True",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "Restrictions": {
+                  "value": "",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "License": {
+                  "value": "cc-by-sa-4.0",
+                  "source": "commons-templates",
+                  "hidden": ""
+                }
+              },
+              "mime": "image/jpeg",
+              "mediatype": "BITMAP"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "batchcomplete": true,
+  "query": {
+    "pages": [
+      {
+        "pageid": 57071477,
+        "ns": 6,
+        "title": "File:2017-03-11 Migratory storks resting in Rahat.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "timestamp": "2017-03-13T19:57:14Z",
+            "user": "BACbKA",
+            "size": 1556957,
+            "width": 5218,
+            "height": 2609,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/2017-03-11_Migratory_storks_resting_in_Rahat.jpg/330px-2017-03-11_Migratory_storks_resting_in_Rahat.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 320,
+            "thumbheight": 160,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/2017-03-11_Migratory_storks_resting_in_Rahat.jpg/960px-2017-03-11_Migratory_storks_resting_in_Rahat.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/2017-03-11_Migratory_storks_resting_in_Rahat.jpg/330px-2017-03-11_Migratory_storks_resting_in_Rahat.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 320,
+              "height": 160,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/2017-03-11_Migratory_storks_resting_in_Rahat.jpg/960px-2017-03-11_Migratory_storks_resting_in_Rahat.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/8/81/2017-03-11_Migratory_storks_resting_in_Rahat.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:2017-03-11_Migratory_storks_resting_in_Rahat.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=57071477",
+            "sha1": "f080aeea0a0ed6a09cc8d2d4d2379cb6e9f827b1",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2017-03-13 19:57:14",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "2017-03-11 Migratory storks resting in Rahat",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Rahat|Flocks of birds|Self-published work|Ciconia ciconia in flight|Ciconiiformes of Israel|Ciconia ciconia migration|Israel photographs taken on 2017-03-11|Ciconia ciconia roosts|Ciconia ciconia at dump sites",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Hundreds of <a href=\"https://en.wikipedia.org/wiki/List_of_birds_of_Israel#Storks\" class=\"extiw\" title=\"w:List of birds of Israel\">migratory storks</a> resting in <a href=\"https://en.wikipedia.org/wiki/Rahat\" class=\"extiw\" title=\"w:Rahat\">Rahat</a> (<a href=\"https://en.wikipedia.org/wiki/Negev\" class=\"extiw\" title=\"w:Negev\">Negev</a>, <a href=\"https://en.wikipedia.org/wiki/Israel\" class=\"extiw\" title=\"w:Israel\">Israel</a>).",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "Taken on 11 March 2017, 13:33:42",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:BACbKA\" title=\"User:BACbKA\">BACbKA</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      }
+    ]
+  }
+}

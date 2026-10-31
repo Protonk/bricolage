@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0070",
+  "status": "downloaded",
+  "canonical_title": "File:Coldwood - geograph.org.uk - 1263958.jpg",
+  "pageid": 13985586,
+  "file": "sources/rg-0070.jpg",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Coldwood_-_geograph.org.uk_-_1263958.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+  "sha256": "39d5bf96521900edcff03e7bad0e9f67b50d192168671a25771ba2e4ad1bae80",
+  "width": 640,
+  "height": 426,
+  "exif_orientation": 1,
+  "requested_max_edge": 1600,
+  "original_width": 640,
+  "original_height": 426,
+  "original_sha1": "9c23b996737ea327de67cf496efa2f4890cfdaa6",
+  "creator": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/profile/10124\">Graham Horn</a>",
+  "license": "CC BY-SA 2.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+  "retrieved_utc": "2026-10-31T02:24:32.829767+00:00",
+  "visual_review": "see reviews.json",
+  "source_independence": "see reviews.json"
+}

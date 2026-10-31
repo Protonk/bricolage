@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0034",
+  "status": "preview_downloaded",
+  "canonical_title": "File:Red mailbox in South Korea.jpg",
+  "pageid": 92993561,
+  "file": "previews/candidates/rg-0034.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Red_mailbox_in_South_Korea.jpg/250px-Red_mailbox_in_South_Korea.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "7aed2bed396a47326a5fd64a870f096835a0e973aeb15d69d33ba80d0d49808d",
+  "width": 250,
+  "height": 333,
+  "exif_orientation": 1,
+  "requested_max_edge": 320,
+  "original_width": 3024,
+  "original_height": 4032,
+  "original_sha1": "ef6bf779e774bc88428b0930b3a78f69d5d56cab",
+  "creator": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Tbsprs&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Tbsprs (page does not exist)\">Tobias Preuss</a>",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "retrieved_utc": "2026-10-31T00:32:46.655271+00:00",
+  "visual_review": "pending",
+  "source_independence": "unverified"
+}

@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0009",
+  "status": "downloaded",
+  "canonical_title": "File:DFC 6057 A vibrant red hibiscus in full bloom its delicate petals and yellow-tipped stamen contrasting against lush green foliage.jpg",
+  "pageid": 202080557,
+  "file": "sources/rg-0009.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/DFC_6057_A_vibrant_red_hibiscus_in_full_bloom_its_delicate_petals_and_yellow-tipped_stamen_contrasting_against_lush_green_foliage.jpg/1920px-DFC_6057_A_vibrant_red_hibiscus_in_full_bloom_its_delicate_petals_and_yellow-tipped_stamen_contrasting_against_lush_green_foliage.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "f6ac9f55c9d9880f60d244aa30214a2227dce2bd89045ba9abc6717dffc170eb",
+  "width": 1920,
+  "height": 1280,
+  "exif_orientation": 1,
+  "requested_max_edge": 1600,
+  "original_width": 5568,
+  "original_height": 3712,
+  "original_sha1": "45eff35d5be00ffbc50faf20fae2b61847bf27d8",
+  "creator": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/PattayaPatrol/\">PattayaPatrol</a>",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "retrieved_utc": "2026-10-31T02:22:46.999465+00:00",
+  "visual_review": "see reviews.json",
+  "source_independence": "see reviews.json"
+}

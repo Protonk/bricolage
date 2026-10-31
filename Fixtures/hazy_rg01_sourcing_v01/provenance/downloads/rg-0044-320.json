@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0044",
+  "status": "preview_downloaded",
+  "canonical_title": "File:Red bench (7932110410).jpg",
+  "pageid": 25617366,
+  "file": "previews/candidates/rg-0044.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Red_bench_%287932110410%29.jpg/250px-Red_bench_%287932110410%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "ecf8b3e12fa8cbf2ad2b670b1b083e6968747bec692dd8c22cfc1e6d4384dfaf",
+  "width": 250,
+  "height": 366,
+  "exif_orientation": 1,
+  "requested_max_edge": 320,
+  "original_width": 2314,
+  "original_height": 3390,
+  "original_sha1": "dfc09c13b9e8182253c39981f96c9811632eae03",
+  "creator": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/51890898@N03\">Guillaume Speurt</a> from Vilnius, Lithuania",
+  "license": "CC BY-SA 2.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+  "retrieved_utc": "2026-10-31T00:33:58.460062+00:00",
+  "visual_review": "pending",
+  "source_independence": "unverified"
+}

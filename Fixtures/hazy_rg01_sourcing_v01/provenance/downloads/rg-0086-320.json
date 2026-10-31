@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0086",
+  "status": "preview_downloaded",
+  "canonical_title": "File:Bayberry (14293533218).jpg",
+  "pageid": 42787869,
+  "file": "previews/candidates/rg-0086.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Bayberry_%2814293533218%29.jpg/330px-Bayberry_%2814293533218%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "120391e02d078b02cef1cfc5a4cd1f56dced9813b4f38c694d4184800adea270",
+  "width": 330,
+  "height": 186,
+  "exif_orientation": 1,
+  "requested_max_edge": 320,
+  "original_width": 4032,
+  "original_height": 2272,
+  "original_sha1": "b8f914ae99eb4d77f84b03a4cc9ea56c056409e0",
+  "creator": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/7656600@N06\">coniferconifer</a> from japan",
+  "license": "CC BY 2.0",
+  "license_url": "https://creativecommons.org/licenses/by/2.0",
+  "retrieved_utc": "2026-10-31T00:39:06.600242+00:00",
+  "visual_review": "pending",
+  "source_independence": "unverified"
+}

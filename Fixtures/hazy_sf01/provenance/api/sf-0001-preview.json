@@ -1,0 +1,112 @@
+{
+  "batchcomplete": true,
+  "query": {
+    "pages": [
+      {
+        "pageid": 80259810,
+        "ns": 6,
+        "title": "File:Amish Country Byway - Bales of Hay in Field - NARA - 7716994.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "timestamp": "2019-07-08T16:00:19Z",
+            "user": "US National Archives bot",
+            "size": 7106085,
+            "width": 3390,
+            "height": 2274,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Amish_Country_Byway_-_Bales_of_Hay_in_Field_-_NARA_-_7716994.jpg/330px-Amish_Country_Byway_-_Bales_of_Hay_in_Field_-_NARA_-_7716994.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 320,
+            "thumbheight": 215,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Amish_Country_Byway_-_Bales_of_Hay_in_Field_-_NARA_-_7716994.jpg/960px-Amish_Country_Byway_-_Bales_of_Hay_in_Field_-_NARA_-_7716994.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Amish_Country_Byway_-_Bales_of_Hay_in_Field_-_NARA_-_7716994.jpg/330px-Amish_Country_Byway_-_Bales_of_Hay_in_Field_-_NARA_-_7716994.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 320,
+              "height": 215,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Amish_Country_Byway_-_Bales_of_Hay_in_Field_-_NARA_-_7716994.jpg/960px-Amish_Country_Byway_-_Bales_of_Hay_in_Field_-_NARA_-_7716994.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Amish_Country_Byway_-_Bales_of_Hay_in_Field_-_NARA_-_7716994.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Amish_Country_Byway_-_Bales_of_Hay_in_Field_-_NARA_-_7716994.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=80259810",
+            "sha1": "82ebfbcb15a0ae400117b1ee7fac9f70e7b346ab",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2019-07-08 16:00:19",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "<div class=\"fn\">\n<i>Amish Country Byway - Bales of Hay in Field</i></div>",
+                "source": "commons-desc-page"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Images from the National Archives and Records Administration|Media contributed by the National Archives and Records Administration|PD US DOT|Artworks without Wikidata item|Template Unknown (author)|Round hay bales in Ohio|US National Archives series: Digital Photographs Relating to America's Byways|US National Archives series: Digital Photographs Relating to America's Byways - Ohio|US National Archives location: other",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Artist": {
+                "value": "<div class=\"fn value\">\nUnknown author<span style=\"display: none;\">Unknown author</span> or not provided</div>",
+                "source": "commons-desc-page"
+              },
+              "ImageDescription": {
+                "value": "<div class=\"description\">\n<ul><li><b>Scope and content:</b>  The original finding aid described this photograph as:</li></ul>\n<p>Original Caption: This farmer has proof of a good day's work with his harvest neatly rolled into rounded bales.\n</p><p>Location: Ohio (40.590° N 81.763° W)\n</p>\nStatus: Public domain. Courtesy of Amish Country Byway</div>",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "1995 – 2013",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a href=\"https://en.wikipedia.org/wiki/U.S._National_Archives_and_Records_Administration\" class=\"extiw\" title=\"en:U.S. National Archives and Records Administration\">U.S. National Archives and Records Administration</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      }
+    ]
+  }
+}

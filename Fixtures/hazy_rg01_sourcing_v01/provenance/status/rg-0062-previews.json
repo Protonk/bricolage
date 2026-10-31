@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0062",
+  "status": "preview_downloaded",
+  "canonical_title": "File:Hilleberg Anaris two person ridge tent.jpg",
+  "pageid": 133375943,
+  "file": "previews/candidates/rg-0062.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Hilleberg_Anaris_two_person_ridge_tent.jpg/330px-Hilleberg_Anaris_two_person_ridge_tent.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "5d47d8b9793cec8294575e81eb4d64ab104bd64bf3e40adf9ff75cf1c9f4d987",
+  "width": 330,
+  "height": 209,
+  "exif_orientation": 1,
+  "requested_max_edge": 320,
+  "original_width": 4800,
+  "original_height": 3035,
+  "original_sha1": "06de44ad8efad3be99c765bbe04efa6af0bb7431",
+  "creator": "Robbie Morrison (<a href=\"//commons.wikimedia.org/wiki/User:RobbieIanMorrison\" title=\"User:RobbieIanMorrison\">RobbieIanMorrison</a>)",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0",
+  "retrieved_utc": "2026-10-31T00:36:10.963249+00:00",
+  "visual_review": "pending",
+  "source_independence": "unverified"
+}

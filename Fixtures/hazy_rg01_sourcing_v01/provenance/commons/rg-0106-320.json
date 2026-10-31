@@ -1,0 +1,138 @@
+{
+  "candidate_id": "rg-0106",
+  "retrieved_utc": "2026-10-31T00:41:20.809979+00:00",
+  "requested_title": "File:Beaufort Hill Woodland, Southern Reservoir - geograph.org.uk - 579083.jpg",
+  "response": {
+    "batchcomplete": true,
+    "query": {
+      "pages": [
+        {
+          "pageid": 13103859,
+          "ns": 6,
+          "title": "File:Beaufort Hill Woodland, Southern Reservoir - geograph.org.uk - 579083.jpg",
+          "imagerepository": "local",
+          "imageinfo": [
+            {
+              "size": 99527,
+              "width": 640,
+              "height": 480,
+              "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Beaufort_Hill_Woodland%2C_Southern_Reservoir_-_geograph.org.uk_-_579083.jpg/330px-Beaufort_Hill_Woodland%2C_Southern_Reservoir_-_geograph.org.uk_-_579083.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "thumbwidth": 320,
+              "thumbheight": 240,
+              "responsiveUrls": {
+                "2": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Beaufort_Hill_Woodland%2C_Southern_Reservoir_-_geograph.org.uk_-_579083.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+              },
+              "thumbattribs": {
+                "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Beaufort_Hill_Woodland%2C_Southern_Reservoir_-_geograph.org.uk_-_579083.jpg/330px-Beaufort_Hill_Woodland%2C_Southern_Reservoir_-_geograph.org.uk_-_579083.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "decoding": "async",
+                "loading": "lazy",
+                "width": 320,
+                "height": 240,
+                "srcset": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Beaufort_Hill_Woodland%2C_Southern_Reservoir_-_geograph.org.uk_-_579083.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+              },
+              "url": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Beaufort_Hill_Woodland%2C_Southern_Reservoir_-_geograph.org.uk_-_579083.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+              "descriptionurl": "https://commons.wikimedia.org/wiki/File:Beaufort_Hill_Woodland,_Southern_Reservoir_-_geograph.org.uk_-_579083.jpg",
+              "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=13103859",
+              "sha1": "444877f68439b00afda93f279a60750e01ba5685",
+              "extmetadata": {
+                "DateTime": {
+                  "value": "2011-02-06 09:25:25",
+                  "source": "mediawiki-metadata",
+                  "hidden": ""
+                },
+                "ObjectName": {
+                  "value": "Beaufort Hill Woodland, Southern Reservoir - geograph.org.uk - 579083",
+                  "source": "mediawiki-metadata"
+                },
+                "CommonsMetadataExtension": {
+                  "value": 1.2,
+                  "source": "extension",
+                  "hidden": ""
+                },
+                "Categories": {
+                  "value": "Images from Geograph Britain and Ireland|United Kingdom photographs taken on 2007-10-05|Information field template with formatting|Orange lifebuoys|Lifebuoys in Wales|Images by Kev Griffin|Beaufort reservoirs, Blaenau Gwent",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "Assessments": {
+                  "value": "",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "GPSLatitude": {
+                  "value": "51.798960",
+                  "source": "commons-desc-page"
+                },
+                "GPSLongitude": {
+                  "value": "-3.197700",
+                  "source": "commons-desc-page"
+                },
+                "GPSMapDatum": {
+                  "value": "WGS-84",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "ImageDescription": {
+                  "value": "Beaufort Hill Woodland, Southern Reservoir",
+                  "source": "commons-desc-page"
+                },
+                "DateTimeOriginal": {
+                  "value": "2007-10-05",
+                  "source": "commons-desc-page"
+                },
+                "Credit": {
+                  "value": "From <a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/photo/579083\">geograph.org.uk</a>",
+                  "source": "commons-desc-page"
+                },
+                "Artist": {
+                  "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/profile/11967\">Kev Griffin</a>",
+                  "source": "commons-desc-page"
+                },
+                "Attribution": {
+                  "value": "Kev Griffin",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "LicenseShortName": {
+                  "value": "CC BY-SA 2.0",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "UsageTerms": {
+                  "value": "Creative Commons Attribution-Share Alike 2.0",
+                  "source": "commons-desc-page"
+                },
+                "AttributionRequired": {
+                  "value": "true",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "LicenseUrl": {
+                  "value": "https://creativecommons.org/licenses/by-sa/2.0",
+                  "source": "commons-desc-page"
+                },
+                "Copyrighted": {
+                  "value": "True",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "Restrictions": {
+                  "value": "",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "License": {
+                  "value": "cc-by-sa-2.0",
+                  "source": "commons-templates",
+                  "hidden": ""
+                }
+              },
+              "mime": "image/jpeg",
+              "mediatype": "BITMAP"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "batchcomplete": true,
+  "query": {
+    "pages": [
+      {
+        "pageid": 160242908,
+        "ns": 6,
+        "title": "File:Hasle Havn asv2024-07 img06.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "timestamp": "2025-02-22T05:59:52Z",
+            "user": "A.Savin",
+            "size": 12380096,
+            "width": 6653,
+            "height": 4990,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Hasle_Havn_asv2024-07_img06.jpg/330px-Hasle_Havn_asv2024-07_img06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 320,
+            "thumbheight": 240,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Hasle_Havn_asv2024-07_img06.jpg/960px-Hasle_Havn_asv2024-07_img06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Hasle_Havn_asv2024-07_img06.jpg/330px-Hasle_Havn_asv2024-07_img06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 320,
+              "height": 240,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Hasle_Havn_asv2024-07_img06.jpg/960px-Hasle_Havn_asv2024-07_img06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/8/87/Hasle_Havn_asv2024-07_img06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Hasle_Havn_asv2024-07_img06.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=160242908",
+            "sha1": "a0b976f7063e2410399dada8df2d424927d80c54",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2025-02-22 05:59:52",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Hasle Havn asv2024-07 img06",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "FAL|Hasle Havn|Marinas in Denmark|Moles in Denmark|Aerial photographs of coasts of Denmark|Photographs by A.Savin taken in 2024|Taken with DJI FC8482|Aerial photographs of marinas|Photographs by A.Savin/Denmark|2024 in Bornholm|Photos from unmanned aerial vehicles in Denmark|Aerial photographs of Bornholm",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "55.183583",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "14.699917",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Aerial photo of sea port and the town of Hasle, island of Bornholm, Denmark",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2024-07-11",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<b><span class=\"plainlinks\"><a class=\"external text\" href=\"https://commons.wikimedia.org/wiki/User:A.Savin\">A.Savin</a></span></b>",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "<div style=\"background:#DDFFFF\">\n<p><b><a href=\"https://en.wikipedia.org/wiki/en:Free_Art_License\" class=\"extiw\" title=\"w:en:Free Art License\">Free Art License</a></b>. Correct attribution is «<i><b>A.Savin, Wikipedia</b></i>». Free usage of the photo, no need to ask for approval.\n</p>\n<hr>\n<p><b><a href=\"https://en.wikipedia.org/wiki/ru:%D0%9B%D0%B8%D1%86%D0%B5%D0%BD%D0%B7%D0%B8%D1%8F_Free_Art\" class=\"extiw\" title=\"w:ru:Лицензия Free Art\">Лицензия Свободное искусство</a></b>. Корректное указание авторства — «<i><b>А.Савин, Википедия</b></i>». Использование фотографии бесплатно, согласование не требуется.\n</p>\n<hr>\n<p><b><a href=\"https://en.wikipedia.org/wiki/de:Lizenz_Freie_Kunst\" class=\"extiw\" title=\"w:de:Lizenz Freie Kunst\">Lizenz Freie Kunst</a></b>. Korrekte Autorenkennzeichnung ist «<i><b>A.Savin, Wikipedia</b></i>». Nutzung des Fotos kostenlos, Anfrage nicht erforderlich.\n</p>\n</div>",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "FAL",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Free Art License",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "http://artlibre.org/licence/lal/en",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      }
+    ]
+  }
+}

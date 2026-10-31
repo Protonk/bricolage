@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0013",
+  "status": "preview_downloaded",
+  "canonical_title": "File:A view of Lake Roosevelt (6ca5b353-e862-478a-b503-2a1e78697786).jpg",
+  "pageid": 118942245,
+  "file": "previews/candidates/rg-0013.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/A_view_of_Lake_Roosevelt_%286ca5b353-e862-478a-b503-2a1e78697786%29.jpg/330px-A_view_of_Lake_Roosevelt_%286ca5b353-e862-478a-b503-2a1e78697786%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "c070af9b6315778df27760ddc03c85de325f5f284ee47843cd3d0dfd5f27288d",
+  "width": 330,
+  "height": 220,
+  "exif_orientation": 1,
+  "requested_max_edge": 320,
+  "original_width": 3888,
+  "original_height": 2592,
+  "original_sha1": "62069f1d3ec57fe4850d03d1022ccc398c4f3426",
+  "creator": "NPS",
+  "license": "Public domain",
+  "license_url": null,
+  "retrieved_utc": "2026-10-31T00:30:17.743706+00:00",
+  "visual_review": "pending",
+  "source_independence": "unverified"
+}

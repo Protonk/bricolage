@@ -53,20 +53,25 @@ registration request. It does not estimate rotation, scale, or perspective, or
 provide a similarity score. A transform can be unhelpful even when the API returns
 one; inspect the images and overlay.
 
-The two [fixture sets](../../Fixtures/README.md) share one structure and manifest schema:
+The three provenance-led [fixture sets](../../Fixtures/README.md) share one structure and manifest schema:
 `hazy-derivatives-v1` contains the original 183-image derivative corpus;
 `hazy-multiview-v1` contains the motorcycle pair, nine personal photographs, and
-nine Commons crowd photographs: 20 images in eight scene or sequence groups.
+nine Commons crowd photographs: 20 images in eight scene or sequence groups;
+`hazy-meme-fixtures-v0` adds 42 variant inputs with staged construction provenance,
+two-parent replacements, and unchanged supplied description-mediated generations.
 They check repeatable behavior and illustrate limitations; they do not establish
 general matching quality.
 
 ## Fixture checks and exploration
 
 The experiment's Swift tests include all 12 byte-copy pairs, lossless PNG preparation checks,
-preparation of all 203 inputs, and known shifts derived temporarily from three
+preparation of the 203 derivative/multiview inputs, and known shifts derived temporarily from three
 derivative fixtures. It checks the multiview scene groups and the three personal
 photos with EXIF orientation 6. Existing generated cases still cover transparency,
 overlay mechanics, and errors. Test outputs are temporary; source images stay intact.
+The variants set has its own build/validation command and passes the shared Python
+fixture checker; it is not part of the fixed Swift test inventory. Its varied
+compositions do not imply that translation registration is applicable.
 
 The developer tools use Python 3.9+ with no third-party packages. Build the
 experiment before running comparisons. The default binary is

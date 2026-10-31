@@ -1,0 +1,133 @@
+{
+  "candidate_id": "rg-0036",
+  "retrieved_utc": "2026-10-31T00:32:56.732713+00:00",
+  "requested_title": "File:Reflection of Light.jpg",
+  "response": {
+    "batchcomplete": true,
+    "query": {
+      "pages": [
+        {
+          "pageid": 90537135,
+          "ns": 6,
+          "title": "File:Reflection of Light.jpg",
+          "imagerepository": "local",
+          "imageinfo": [
+            {
+              "size": 3294283,
+              "width": 3616,
+              "height": 2247,
+              "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Reflection_of_Light.jpg/330px-Reflection_of_Light.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "thumbwidth": 320,
+              "thumbheight": 199,
+              "responsiveUrls": {
+                "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Reflection_of_Light.jpg/960px-Reflection_of_Light.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+              },
+              "thumbattribs": {
+                "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Reflection_of_Light.jpg/330px-Reflection_of_Light.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "decoding": "async",
+                "loading": "lazy",
+                "width": 320,
+                "height": 199,
+                "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Reflection_of_Light.jpg/960px-Reflection_of_Light.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+              },
+              "url": "https://upload.wikimedia.org/wikipedia/commons/3/37/Reflection_of_Light.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+              "descriptionurl": "https://commons.wikimedia.org/wiki/File:Reflection_of_Light.jpg",
+              "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=90537135",
+              "sha1": "fee4aceec9757568d134eab10698f72af4e53bd2",
+              "extmetadata": {
+                "DateTime": {
+                  "value": "2020-05-22 12:41:13",
+                  "source": "mediawiki-metadata",
+                  "hidden": ""
+                },
+                "ObjectName": {
+                  "value": "Reflection of Light",
+                  "source": "mediawiki-metadata"
+                },
+                "CommonsMetadataExtension": {
+                  "value": 1.2,
+                  "source": "extension",
+                  "hidden": ""
+                },
+                "Categories": {
+                  "value": "Reflections|Self-published work|Files with coordinates missing SDC location of creation|Water Reflection in Stockholm",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "Assessments": {
+                  "value": "",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "GPSLatitude": {
+                  "value": "59.184489",
+                  "source": "commons-desc-page"
+                },
+                "GPSLongitude": {
+                  "value": "17.820500",
+                  "source": "commons-desc-page"
+                },
+                "GPSMapDatum": {
+                  "value": "WGS-84",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "ImageDescription": {
+                  "value": "Photo of a water reflection with cloudy sky, a house, trees, long grass helms and leaves. \n<p>This attractive nature image was created by Santrina HUYNH. This casual pond teaches us a wisdom. Life looks like a water mirror with reflection of our inner thoughts. All hidden things will be exposed in the light eventually.\n</p>\nThe blue sky, the red house and the green trees offer a freedom in nature.",
+                  "source": "commons-desc-page"
+                },
+                "DateTimeOriginal": {
+                  "value": "2020-05-22",
+                  "source": "commons-desc-page"
+                },
+                "Credit": {
+                  "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                  "source": "commons-desc-page"
+                },
+                "Artist": {
+                  "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Santrina&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Santrina (page does not exist)\">Santrina HUYNH</a>",
+                  "source": "commons-desc-page"
+                },
+                "LicenseShortName": {
+                  "value": "CC BY-SA 4.0",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "UsageTerms": {
+                  "value": "Creative Commons Attribution-Share Alike 4.0",
+                  "source": "commons-desc-page"
+                },
+                "AttributionRequired": {
+                  "value": "true",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "LicenseUrl": {
+                  "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                  "source": "commons-desc-page"
+                },
+                "Copyrighted": {
+                  "value": "True",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "Restrictions": {
+                  "value": "",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "License": {
+                  "value": "cc-by-sa-4.0",
+                  "source": "commons-templates",
+                  "hidden": ""
+                }
+              },
+              "mime": "image/jpeg",
+              "mediatype": "BITMAP"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

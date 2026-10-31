@@ -1,0 +1,186 @@
+# Source candidates transcribed from Wikimedia Commons category file listings
+# and individually returned Wikimedia Commons file pages (2026-10-30).
+# Each section is an actual discovery page, not a synthetic image URL.
+# Text within sections is the exact displayed Commons file title (without File:).
+
+[https://commons.wikimedia.org/wiki/Category:Mist_above_water_surfaces | water_mist]
+A beautiful morning in Bath North Carolina - panoramio.jpg
+A lightly misted lake with tall grass and a few trees still standing in the shallows near its bank. (422661e5-1dd8-b71b-0be7-0122a4c8cff2).jpg
+A misty morning II ( at the river).jpg
+A Window to the Misty Lake (5087004050).jpg
+Aerial view of the Montargil Reservoir filled with mist at sunrise, Montargil Reservoir, Portugal julesvernex2.jpg
+Ain Drahem Bni Mtir Welja Dam 03.jpg
+Alone On The Ocean (Unsplash).jpg
+Arctic Sea fog at Garths Voe - geograph.org.uk - 1739454.jpg
+Auke Fog Bay 19.jpg
+Aurlandsfjord.jpg
+Autumn Mist by the Lake.JPG
+Autumn morning on the Oxford Canal - geograph.org.uk - 594229.jpg
+Aušta prie Neries.JPG
+Bann River at Portadown under a sea of mist - geograph.org.uk - 1093173.jpg
+Big Moose Lake NY USA.JPG
+Birkerød Lake (Rudersdal Municipality).jpg
+Bontecou Lake sunrise clouds.jpg
+Break Of Dawn.jpg
+Bridge over the North Saskatchewan River in Edmonton, at dawn.jpg
+Bridge with fog.jpg
+
+[https://commons.wikimedia.org/wiki/Category:Sea_Fog | sea_fog]
+Eisberge im Seenebel vor Grönland.jpg
+Golden Gate (23811194984).jpg
+Küstenlandschaften 2 (25208322096).jpg
+NDS WATTENMEER Fedderwadersiel -Seenebel bei aufkommender Flut.jpg
+Niebla en Mallorca (6980319875).jpg
+Seenebel auf Spiekeroog 02.jpg
+Seenebel in Laboe.jpg
+Sylt seenebel.jpg
+
+[https://commons.wikimedia.org/wiki/Category:Misty_mornings_in_the_United_States | misty_morning]
+A misty morning at Halls Mill Covered Bridge.jpg
+Boxborough farmstand in mist - Flickr - Muffet.jpg
+Bull Shoals Lake Misty Morning - panoramio.jpg
+Cabin in the Mist (7177646877).jpg
+Early morning at Goleta Beach (2754602664).jpg
+Foggy Maine Coastline (Unsplash).jpg
+Foggy morning on Beverly Beach, Oregon (53966590165).jpg
+Foggy Santa Cruz, field with barbed wire fence, California, USA (3073143387).jpg
+Foggy Sunrise over Seedskadee National Wildlife Refuge (21355263813).jpg
+HM 10-5-20 Misty morning at the lake.jpg
+Lake Quinault - Misty Morning - Flickr - rachel thecat.jpg
+Mistic Steamboat Island - panoramio.jpg
+Misty Autumn Morning on the Connecticut River at Bellows Falls, Vermont - panoramio.jpg
+Misty Moody Morning (183676399).jpeg
+Misty morning battlefield (24180547675).jpg
+Misty morning on New York Bay.jpg
+Misty winter morning at Goose Neck Cove, Newport, RI.jpg
+Salt marsh in a tidal river estuary.jpg
+Seney National Wildlife Refuge - Landscape (9704252306).jpg
+SK Misty Meadow Morning (13513849374).jpg
+Sunrise over marsh in Big Stone County, MN (5450740273).jpg
+
+[https://commons.wikimedia.org/wiki/Category:Landscapes_in_fog | general_landscape]
+Abgeerntetes Maisfeld & aufsteigender Herbstnebel bei Elmendorf (2024).jpg
+A belt of fog (9694313520).jpg
+A foggy afternoon on the way to Sandakpur Ilam Nepal.jpg
+A Foggy Day in As-Samu.jpg
+A misty day in nature (33545035115).jpg
+Atardecer en Extremadura.jpg
+Bodensee - Ufer im Nebel.JPG
+Cemetery road.jpg
+Cold weather.jpg
+Dawn 5738389.jpg
+Depressing path in the twilight.jpg
+Descente-brouillard-gard.jpg
+Dunst.jpg
+Durdle Door shrouded in fog - panoramio.jpg
+Early morning fog.jpg
+El camí a Conesa sota la boira.jpg
+Elizabeth Castle in mist Jersey.jpg
+Fog and meadow.JPG
+Fog at the foothills of the mountains, Магла.JPG
+Fog covering Lake Michaelson.jpg
+Fog In Desertland (Unsplash).jpg
+Fog on Nandi Hills.jpg
+Fog over the road. Tula reg. Russia. Туман над дорогой. Тульская обл. Россия - panoramio.jpg
+Fog&Rocks.jpg
+Foggy Lake (Goygol).jpg
+Foggy Landscape near Lake Contance (39634829964).jpg
+
+[https://commons.wikimedia.org/wiki/Category:Forests_in_fog | forest_ridges]
+2025-03-20 Pine forest on Mtatsminda Range in fog.jpg
+Above Lake Ranamese.jpg
+Beech forest (76313223).jpg
+Chřibský vrch, Česká Kamenice 2017-07 01.jpg
+Dark side of biladi.jpg
+Fog in eucalyptus forest.jpg
+Foggy Bohemia sunrise (52873160744).jpg
+Foggy Forest (256920249).jpeg
+Morning walk, Chaldon Caterham (7306484814).jpg
+Pines in Nathia Gali.jpg
+Sri Lanka cloud forest, tall trees in fog.jpg
+Vernio, salita al Monte Casciaio da est, nebbia tra i faggi.jpg
+
+[https://commons.wikimedia.org/wiki/Category:Cityscapes_in_fog | urban_silhouette]
+2025-03-20 View of Zemo Vake in fog.jpg
+Blue Cityfogscape (24382932290).jpg
+City in a sky (10964308564).jpg
+Foggy Downtown Edmonton (16205932080).jpg
+Oriental Pearl Tower and Huangpu River (8366833039).jpg
+Portsmouth and Fratton in the Sea Fog - 55128733656.jpg
+View of Dubai Marina Skyline on a foggy day.png
+
+[https://commons.wikimedia.org/wiki/Category:Fog_on_roads | road_open_space]
+Brouillard sur la route de Baganté.jpg
+Car In Fog (Unsplash 5YW-OjzHXjw).jpg
+Fahrradweg im Nebel.jpg
+Mahendra Highway.jpg
+Transmission Gully Motorway driving in fog.jpg
+
+[https://commons.wikimedia.org/wiki/Category:Fog_in_the_United_States | general_fog]
+Boatsinfog.jpg
+Early morning fog at the Davis Bayou National Park.jpg
+Fossil hills shrouded in fog (89cf68e9-9c42-46cb-9d8e-1ab6065e81cc).jpg
+Heavy fog in the woods (Unsplash).jpg
+Looking down a foggy road.jpg
+Low clouds over Lake Chelan (5c249b3d1a6a4c609f5a29682cc178ce).JPG
+Misty Day in Woods.jpg
+The fossil hills on a foggy morning (fda0fdbb-53ec-4b7e-818a-82fd04761b45).jpg
+
+[https://commons.wikimedia.org/wiki/Category:Overcast | overcast]
+20260211 Gorgan skyline.jpg
+20260211 Mahdirajeh hill.jpg
+Bapatla Beach View 2017.jpg
+Bellingham Bay, August 2021.jpg
+Boat on cloudy water.jpg
+Calm and Oppressive (33181468458).jpg
+Castle In Fog (165351439).jpeg
+Clouds on a hill (Unsplash).jpg
+Clouds over Papaver field.jpg
+Clouds over the mountains (Unsplash).jpg
+Clouds-cloudy-field-meadow (23696833484).jpg
+
+[https://commons.wikimedia.org/wiki/Category:Misty_mornings_in_California | california_morning]
+Inverness - foggy morning (53705882544).jpg
+Lake Arrowhead foggy morning (53281568672).jpg
+Lake Henshaw at sunrise.jpg
+Petaluma ghost pond (53700454300).jpg
+Santa Barbara Airport at Dawn (54242898636).jpg
+
+[https://commons.wikimedia.org/wiki/Category:Sea_of_fog | sea_of_fog]
+Cold Morning in Bromo.jpg
+HochgratketteNebel.jpg
+Roncegno.jpg
+Sea of fog in Funchal, Madeira (rare climatic event) - IMG20220710071916.jpg
+
+[https://commons.wikimedia.org/wiki/Category:Texas_Coastal_Bend | open_horizon]
+Cloudscape at dawn on the Texas Coastal Plain.jpg
+Low fog at sunrise - Texas Coastal Bend.jpg
+Morning on the Prarie.jpg
+Texas Coastal Plain.jpg
+
+[https://commons.wikimedia.org/wiki/Category:Misty_mornings | misty_morning]
+A quiet winter morning.jpg
+Breath of the Mountains.jpg
+Foggy November morning.jpg
+Windräder im Morgenlicht.jpg
+
+[https://commons.wikimedia.org/wiki/File:Dark_cloudy_coastline_(Unsplash).jpg | file_page]
+Dark cloudy coastline (Unsplash).jpg
+[https://commons.wikimedia.org/wiki/File:Foggy_tree_lines_(Unsplash).jpg | file_page]
+Foggy tree lines (Unsplash).jpg
+[https://commons.wikimedia.org/wiki/File:Foggy_forest.jpg | file_page]
+Foggy forest.jpg
+[https://commons.wikimedia.org/wiki/File:Foggy_night_at_the_parking_lot.jpg | file_page]
+Foggy night at the parking lot.jpg
+[https://commons.wikimedia.org/wiki/File:White_rock_BC.jpg | file_page]
+White rock BC.jpg
+[https://commons.wikimedia.org/wiki/File:Rocky_Shoreline_at_Dusk.jpg | file_page]
+Rocky Shoreline at Dusk.jpg
+[https://commons.wikimedia.org/wiki/File:Valley_Vista_under_Cloudy_Sky.jpg | file_page]
+Valley Vista under Cloudy Sky.jpg
+[https://commons.wikimedia.org/wiki/File:Sunrise_with_early_morning_fog.jpg | file_page]
+Sunrise with early morning fog.jpg
+[https://commons.wikimedia.org/wiki/File:Ocean_wave_crashing_on_rocky_coastline_with_a_sailboat_in_the_distance,_Canidelo,_Vila_Nova_de_Gaia,_Porto,_Portugal,_January_2024_(53523297650).jpg | file_page]
+Ocean wave crashing on rocky coastline with a sailboat in the distance, Canidelo, Vila Nova de Gaia, Porto, Portugal, January 2024 (53523297650).jpg
+[https://commons.wikimedia.org/wiki/File:Clouds_Over_Mount_Kilimanjaro_(Unsplash).jpg | file_page]
+Clouds Over Mount Kilimanjaro (Unsplash).jpg

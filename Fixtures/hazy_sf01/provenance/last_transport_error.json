@@ -1,0 +1,16 @@
+{
+  "utc": "2026-10-31T03:15:48.565089+00:00",
+  "candidate_id": "sf-0111",
+  "kind": "image",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/236_Sheep_graze_in_Horseshoe_Basin%2C_Pasayten_Wilderness%2C_Okanogan_Nat%27l_Forest_1966_%2836042439862%29.jpg/1920px-236_Sheep_graze_in_Horseshoe_Basin%2C_Pasayten_Wilderness%2C_Okanogan_Nat%27l_Forest_1966_%2836042439862%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "status": 200,
+  "headers": {
+    "content-type": "image/jpeg",
+    "content-length": "522662",
+    "server": "Thumbor/7.8.0",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "9cd8c2d3-b853-4054-a85c-4368bc029ac6"
+  },
+  "error_type": "TimeoutError",
+  "error": "The read operation timed out"
+}

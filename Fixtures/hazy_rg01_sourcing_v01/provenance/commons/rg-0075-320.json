@@ -1,0 +1,138 @@
+{
+  "candidate_id": "rg-0075",
+  "retrieved_utc": "2026-10-31T00:37:40.791848+00:00",
+  "requested_title": "File:Red Gate Farm - geograph.org.uk - 34940.jpg",
+  "response": {
+    "batchcomplete": true,
+    "query": {
+      "pages": [
+        {
+          "pageid": 9167714,
+          "ns": 6,
+          "title": "File:Red Gate Farm - geograph.org.uk - 34940.jpg",
+          "imagerepository": "local",
+          "imageinfo": [
+            {
+              "size": 130576,
+              "width": 640,
+              "height": 480,
+              "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Red_Gate_Farm_-_geograph.org.uk_-_34940.jpg/330px-Red_Gate_Farm_-_geograph.org.uk_-_34940.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "thumbwidth": 320,
+              "thumbheight": 240,
+              "responsiveUrls": {
+                "2": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Red_Gate_Farm_-_geograph.org.uk_-_34940.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+              },
+              "thumbattribs": {
+                "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Red_Gate_Farm_-_geograph.org.uk_-_34940.jpg/330px-Red_Gate_Farm_-_geograph.org.uk_-_34940.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "decoding": "async",
+                "loading": "lazy",
+                "width": 320,
+                "height": 240,
+                "srcset": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Red_Gate_Farm_-_geograph.org.uk_-_34940.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+              },
+              "url": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Red_Gate_Farm_-_geograph.org.uk_-_34940.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+              "descriptionurl": "https://commons.wikimedia.org/wiki/File:Red_Gate_Farm_-_geograph.org.uk_-_34940.jpg",
+              "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=9167714",
+              "sha1": "ecc81d67b688c622efe23bc0f817433d749556d8",
+              "extmetadata": {
+                "DateTime": {
+                  "value": "2010-01-30 16:33:01",
+                  "source": "mediawiki-metadata",
+                  "hidden": ""
+                },
+                "ObjectName": {
+                  "value": "Red Gate Farm - geograph.org.uk - 34940",
+                  "source": "mediawiki-metadata"
+                },
+                "CommonsMetadataExtension": {
+                  "value": 1.2,
+                  "source": "extension",
+                  "hidden": ""
+                },
+                "Categories": {
+                  "value": "Taken with Nikon Coolpix 4500|Thurleigh|Images from Geograph Britain and Ireland|Images from Geograph Britain and Ireland needing category review|Information field template with formatting|Farms in Bedfordshire|Images by Kokai|Red gates|United Kingdom photographs taken on 2005-08-07|Images from Geograph Britain and Ireland missing SDC coordinates of the point of view",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "Assessments": {
+                  "value": "",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "GPSLatitude": {
+                  "value": "52.197000",
+                  "source": "commons-desc-page"
+                },
+                "GPSLongitude": {
+                  "value": "-0.460000",
+                  "source": "commons-desc-page"
+                },
+                "GPSMapDatum": {
+                  "value": "WGS-84",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "ImageDescription": {
+                  "value": "Red Gate Farm. From a footpath to the north-east.",
+                  "source": "commons-desc-page"
+                },
+                "DateTimeOriginal": {
+                  "value": "2005-08-07",
+                  "source": "commons-desc-page"
+                },
+                "Credit": {
+                  "value": "From <a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/photo/34940\">geograph.org.uk</a>",
+                  "source": "commons-desc-page"
+                },
+                "Artist": {
+                  "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/profile/1039\">Kokai</a>",
+                  "source": "commons-desc-page"
+                },
+                "Attribution": {
+                  "value": "Kokai",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "LicenseShortName": {
+                  "value": "CC BY-SA 2.0",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "UsageTerms": {
+                  "value": "Creative Commons Attribution-Share Alike 2.0",
+                  "source": "commons-desc-page"
+                },
+                "AttributionRequired": {
+                  "value": "true",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "LicenseUrl": {
+                  "value": "https://creativecommons.org/licenses/by-sa/2.0",
+                  "source": "commons-desc-page"
+                },
+                "Copyrighted": {
+                  "value": "True",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "Restrictions": {
+                  "value": "",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "License": {
+                  "value": "cc-by-sa-2.0",
+                  "source": "commons-templates",
+                  "hidden": ""
+                }
+              },
+              "mime": "image/jpeg",
+              "mediatype": "BITMAP"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "candidate_id": "rg-0098",
+  "retrieved_utc": "2026-10-31T00:40:25.267255+00:00",
+  "requested_title": "File:Descanso no fim de tarde (4997334604).jpg",
+  "response": {
+    "batchcomplete": true,
+    "query": {
+      "pages": [
+        {
+          "pageid": 45191665,
+          "ns": 6,
+          "title": "File:Descanso no fim de tarde (4997334604).jpg",
+          "imagerepository": "local",
+          "imageinfo": [
+            {
+              "size": 2452988,
+              "width": 3648,
+              "height": 2736,
+              "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Descanso_no_fim_de_tarde_%284997334604%29.jpg/330px-Descanso_no_fim_de_tarde_%284997334604%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "thumbwidth": 320,
+              "thumbheight": 240,
+              "responsiveUrls": {
+                "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Descanso_no_fim_de_tarde_%284997334604%29.jpg/960px-Descanso_no_fim_de_tarde_%284997334604%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+              },
+              "thumbattribs": {
+                "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Descanso_no_fim_de_tarde_%284997334604%29.jpg/330px-Descanso_no_fim_de_tarde_%284997334604%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "decoding": "async",
+                "loading": "lazy",
+                "width": 320,
+                "height": 240,
+                "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Descanso_no_fim_de_tarde_%284997334604%29.jpg/960px-Descanso_no_fim_de_tarde_%284997334604%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+              },
+              "url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Descanso_no_fim_de_tarde_%284997334604%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+              "descriptionurl": "https://commons.wikimedia.org/wiki/File:Descanso_no_fim_de_tarde_(4997334604).jpg",
+              "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=45191665",
+              "sha1": "ab702799ff89fb36dd811e3c3531fcf05e307017",
+              "extmetadata": {
+                "DateTime": {
+                  "value": "2015-11-23 10:42:15",
+                  "source": "mediawiki-metadata",
+                  "hidden": ""
+                },
+                "ObjectName": {
+                  "value": "Descanso no fim de tarde (4997334604)",
+                  "source": "mediawiki-metadata"
+                },
+                "CommonsMetadataExtension": {
+                  "value": 1.2,
+                  "source": "extension",
+                  "hidden": ""
+                },
+                "Categories": {
+                  "value": "Paraty|Monobloc (chair)|Flickr images reviewed by FlickreviewR|Red chairs|2 dogs|Photographs by Pedro Henrique Ponchio",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "Assessments": {
+                  "value": "",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "ImageDescription": {
+                  "value": "Descanso no fim de tarde",
+                  "source": "commons-desc-page"
+                },
+                "DateTimeOriginal": {
+                  "value": "2009-11-01 17:12",
+                  "source": "commons-desc-page"
+                },
+                "Credit": {
+                  "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/18877859@N00/4997334604/\">Descanso no fim de tarde</a>",
+                  "source": "commons-desc-page"
+                },
+                "Artist": {
+                  "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/18877859@N00\">Pedro Henrique Ponchio</a> from São Paulo, Brazil",
+                  "source": "commons-desc-page"
+                },
+                "LicenseShortName": {
+                  "value": "CC BY 2.0",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "UsageTerms": {
+                  "value": "Creative Commons Attribution 2.0",
+                  "source": "commons-desc-page"
+                },
+                "AttributionRequired": {
+                  "value": "true",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "LicenseUrl": {
+                  "value": "https://creativecommons.org/licenses/by/2.0",
+                  "source": "commons-desc-page"
+                },
+                "Copyrighted": {
+                  "value": "True",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "Restrictions": {
+                  "value": "",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "License": {
+                  "value": "cc-by-2.0",
+                  "source": "commons-templates",
+                  "hidden": ""
+                }
+              },
+              "mime": "image/jpeg",
+              "mediatype": "BITMAP"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

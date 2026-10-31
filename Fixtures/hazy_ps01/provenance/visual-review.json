@@ -1,0 +1,727 @@
+[
+  {
+    "candidate_id": "ps-0001",
+    "decision": "accept",
+    "visual_reason": "Large quiet pale sky occupies the upper region above a darker textured band of marsh, trees and water."
+  },
+  {
+    "candidate_id": "ps-0002",
+    "decision": "accept",
+    "visual_reason": "Pale cloudy upper sky contrasts with a dark, detailed shore and reeds; thin branches interrupt but do not erase the split."
+  },
+  {
+    "candidate_id": "ps-0003",
+    "decision": "reject",
+    "visual_reason": "Featureless mist and dark water gradient with heavy black borders; little lower-region structure remains legible."
+  },
+  {
+    "candidate_id": "ps-0004",
+    "decision": "reject",
+    "visual_reason": "Dark overhanging foliage frames the upper image while bright mist fills the center; no broad pale-upper/dark-lower division."
+  },
+  {
+    "candidate_id": "ps-0005",
+    "decision": "reject",
+    "visual_reason": "Strong orange sunrise glow and dramatic sunlit fog dominate the composition."
+  },
+  {
+    "candidate_id": "ps-0006",
+    "decision": "reject",
+    "visual_reason": "Sky and water have similar pale values; dark hills form a middle strip rather than a darker lower region."
+  },
+  {
+    "candidate_id": "ps-0007",
+    "decision": "reject",
+    "visual_reason": "Sky and water merge into a nearly uniform quiet gradient; the tiny boat does not provide a detailed dark lower region."
+  },
+  {
+    "candidate_id": "ps-0008",
+    "decision": "accept",
+    "visual_reason": "Quiet pale upper sky sits over a darker blue, textured snowy landscape with a thin mist band."
+  },
+  {
+    "candidate_id": "ps-0009",
+    "decision": "reject",
+    "visual_reason": "Dark upper background and bright central fog reverse or interrupt the requested light-upper/dark-lower relationship."
+  },
+  {
+    "candidate_id": "ps-0010",
+    "decision": "accept",
+    "visual_reason": "Large quiet pale sky opens between dark mountain walls above a dark water foreground."
+  },
+  {
+    "candidate_id": "ps-0011",
+    "decision": "accept",
+    "visual_reason": "Broad light sky above darker trees, buildings and their water reflections; mild blue tone remains acceptable."
+  },
+  {
+    "candidate_id": "ps-0012",
+    "decision": "reject",
+    "visual_reason": "Trees occupy most of the upper frame and bright water reflections dominate the bottom; little broad sky is visible."
+  },
+  {
+    "candidate_id": "ps-0013",
+    "decision": "accept",
+    "visual_reason": "Broad pale sky above darker riverbank vegetation, water and layered wooded hills."
+  },
+  {
+    "candidate_id": "ps-0014",
+    "decision": "reject",
+    "visual_reason": "Bright orange water reflection fills much of the lower image and the sky is only a thin upper strip."
+  },
+  {
+    "candidate_id": "ps-0015",
+    "decision": "accept",
+    "visual_reason": "A substantial pale sky above a darker treeline, shoreline and dock; bright water adds permitted lower-region variation."
+  },
+  {
+    "candidate_id": "ps-0016",
+    "decision": "reject",
+    "visual_reason": "Large dark trees fill the upper frame while luminous mist and reflected sunlight brighten the lower half."
+  },
+  {
+    "candidate_id": "ps-0017",
+    "decision": "reject",
+    "visual_reason": "Detailed, high-contrast streaked clouds and bright reflections compete with the requested quiet pale upper region."
+  },
+  {
+    "candidate_id": "ps-0018",
+    "decision": "accept",
+    "visual_reason": "Broad quiet pale-blue sky contrasts with the darker wooded shore and deep blue water below."
+  },
+  {
+    "candidate_id": "ps-0019",
+    "decision": "accept",
+    "visual_reason": "Calm light blue-to-cream sky above a darker detailed river valley and bridge; snow introduces lower highlights."
+  },
+  {
+    "candidate_id": "ps-0020",
+    "decision": "accept",
+    "visual_reason": "Large subdued pale warm sky above a darker, intricate riverbank and bridge foreground; the warm tone is not strongly saturated."
+  },
+  {
+    "candidate_id": "ps-0021",
+    "decision": "reject",
+    "visual_reason": "Bright icebergs occupy the middle and lower view, disrupting a darker lower-region relationship."
+  },
+  {
+    "candidate_id": "ps-0022",
+    "decision": "reject",
+    "visual_reason": "Large foreground bridge cuts across and dominates the upper image."
+  },
+  {
+    "candidate_id": "ps-0023",
+    "decision": "reject",
+    "visual_reason": "Tall near rock walls occupy both upper sides, leaving only a small cloudy window instead of a broad pale sky."
+  },
+  {
+    "candidate_id": "ps-0024",
+    "decision": "accept",
+    "visual_reason": "Continuous pale foggy sky above a darker textured shore and water; soft low-contrast boundary is retained."
+  },
+  {
+    "candidate_id": "ps-0025",
+    "decision": "reject",
+    "visual_reason": "Sky, distant mountains and water have similar light-blue values; no convincing darker lower half at thumbnail scale."
+  },
+  {
+    "candidate_id": "ps-0026",
+    "decision": "reject",
+    "visual_reason": "Large dark, highly textured cloud bank and vivid blue sky dominate the upper image."
+  },
+  {
+    "candidate_id": "ps-0027",
+    "decision": "accept",
+    "visual_reason": "Broad pale foggy sky above a darker textured beach and shoreline; the small walker does not dominate."
+  },
+  {
+    "candidate_id": "ps-0028",
+    "decision": "accept",
+    "visual_reason": "Large quiet white-gray sky above a subtly darker sandy shore with dark groynes; retained as a soft low-contrast variation."
+  },
+  {
+    "candidate_id": "ps-0029",
+    "decision": "reject",
+    "visual_reason": "A large pale covered bridge dominates and crosses the upper/lower division."
+  },
+  {
+    "candidate_id": "ps-0030",
+    "decision": "accept",
+    "visual_reason": "Broad blank pale fog above a dark detailed farmstand, field and pumpkins; the left tree only partly interrupts the upper region."
+  },
+  {
+    "candidate_id": "ps-0031",
+    "decision": "accept",
+    "visual_reason": "Pale upper fog above darker wooded banks, rocks and water; a soft irregular division remains visible."
+  },
+  {
+    "candidate_id": "ps-0032",
+    "decision": "reject",
+    "visual_reason": "Tall trees and close foliage fill much of the upper frame, leaving only a small pale opening."
+  },
+  {
+    "candidate_id": "ps-0033",
+    "decision": "reject",
+    "visual_reason": "Dark upper trees and luminous lower surf and mist interrupt the desired division."
+  },
+  {
+    "candidate_id": "ps-0034",
+    "decision": "reject",
+    "visual_reason": "Pale fog fills most of the frame around a narrow treeline; too little darker, detailed lower region."
+  },
+  {
+    "candidate_id": "ps-0035",
+    "decision": "reject",
+    "visual_reason": "Busy, dark-edged clouds dominate the sky and contrast poorly with the similarly toned surf below."
+  },
+  {
+    "candidate_id": "ps-0036",
+    "decision": "reject",
+    "visual_reason": "Strong orange sky dominates rather than a subdued pale upper region."
+  },
+  {
+    "candidate_id": "ps-0037",
+    "decision": "reject",
+    "visual_reason": "Strongly saturated orange sky and solar disc dominate the image."
+  },
+  {
+    "candidate_id": "ps-0038",
+    "decision": "accept",
+    "visual_reason": "Substantial pale blue-gray sky above dark wooded banks and a detailed water/shore foreground; reflections add lower highlights."
+  },
+  {
+    "candidate_id": "ps-0039",
+    "decision": "accept",
+    "visual_reason": "Broad pale hazy sky above darker forest, shoreline and grass; a near tree frames the left edge without erasing the division."
+  },
+  {
+    "candidate_id": "ps-0040",
+    "decision": "accept",
+    "visual_reason": "Broad pale foggy sky behind a tree above a darker textured tidal shore; retained with the tree interrupting the boundary."
+  },
+  {
+    "candidate_id": "ps-0041",
+    "decision": "reject",
+    "visual_reason": "Narrow sky in a panoramic view and a bright mirrored river below; little broad dark lower region."
+  },
+  {
+    "candidate_id": "ps-0042",
+    "decision": "reject",
+    "visual_reason": "Strongly processed-looking golden mist and reflections dominate, with dark upper cloud and no broad quiet pale sky."
+  },
+  {
+    "candidate_id": "ps-0043",
+    "decision": "accept",
+    "visual_reason": "Pale lightly clouded upper sky above darker, detailed woods, fencing and pasture."
+  },
+  {
+    "candidate_id": "ps-0044",
+    "decision": "reject",
+    "visual_reason": "Postcard borders and writing plus tall masts interrupt the small sky region; no broad quiet upper field."
+  },
+  {
+    "candidate_id": "ps-0045",
+    "decision": "accept",
+    "visual_reason": "Large continuous pale foggy sky above darker rocks, houses and textured inlet water."
+  },
+  {
+    "candidate_id": "ps-0046",
+    "decision": "reject",
+    "visual_reason": "Dark blue, conspicuously textured cloudscape dominates; the upper region is not pale and quiet."
+  },
+  {
+    "candidate_id": "ps-0047",
+    "decision": "reject",
+    "visual_reason": "Strong orange light and reflections dominate both halves."
+  },
+  {
+    "candidate_id": "ps-0048",
+    "decision": "reject",
+    "visual_reason": "Wooded hillside fills the frame with no substantial sky region."
+  },
+  {
+    "candidate_id": "ps-0049",
+    "decision": "reject",
+    "visual_reason": "Intense yellow-orange sun and glow dominate the upper image."
+  },
+  {
+    "candidate_id": "ps-0050",
+    "decision": "accept",
+    "visual_reason": "Broad quiet pale sky above a darker textured harvested field and bare treeline."
+  },
+  {
+    "candidate_id": "ps-0051",
+    "decision": "accept",
+    "visual_reason": "Quiet pale upper sky and layered haze above a darker detailed hillside town; retained as an uneven boundary variation."
+  },
+  {
+    "candidate_id": "ps-0052",
+    "decision": "reject",
+    "visual_reason": "Near tree trunks and canopy fill the upper image; fog is a small opening along the path."
+  },
+  {
+    "candidate_id": "ps-0053",
+    "decision": "reject",
+    "visual_reason": "A single large foreground evergreen dominates most of the frame height."
+  },
+  {
+    "candidate_id": "ps-0054",
+    "decision": "reject",
+    "visual_reason": "A single large central tree dominates the composition rather than a broad upper/lower landscape split."
+  },
+  {
+    "candidate_id": "ps-0055",
+    "decision": "reject",
+    "visual_reason": "Sky is only a thin top strip; most of the image is a similarly textured misty field."
+  },
+  {
+    "candidate_id": "ps-0056",
+    "decision": "reject",
+    "visual_reason": "Pale fog at left and dark trees at right produce primarily a vertical division."
+  },
+  {
+    "candidate_id": "ps-0057",
+    "decision": "reject",
+    "visual_reason": "Dark canopy fills the upper-left while bright grass and path occupy the lower-right; no broad pale upper region."
+  },
+  {
+    "candidate_id": "ps-0058",
+    "decision": "accept",
+    "visual_reason": "Large quiet white-gray fog and sky above darker sloping, textured mountainsides."
+  },
+  {
+    "candidate_id": "ps-0059",
+    "decision": "accept",
+    "visual_reason": "Pale hazy upper field and faint distant ridges above dark detailed rooftops; retained as a layered-haze variation."
+  },
+  {
+    "candidate_id": "ps-0060",
+    "decision": "accept",
+    "visual_reason": "Broad quiet pale-blue fog above dark silhouetted trees and textured foreground."
+  },
+  {
+    "candidate_id": "ps-0061",
+    "decision": "reject",
+    "visual_reason": "A prominent near hiker dominates the foreground; the composition centers that close subject rather than the broad landscape split."
+  },
+  {
+    "candidate_id": "ps-0062",
+    "decision": "reject",
+    "visual_reason": "Dark ridges sit at the top above a large bright fog-filled lower region, reversing the desired arrangement."
+  },
+  {
+    "candidate_id": "ps-0063",
+    "decision": "accept",
+    "visual_reason": "Broad pale hazy sky above darker detailed cliffs, grass and shoreline water."
+  },
+  {
+    "candidate_id": "ps-0064",
+    "decision": "accept",
+    "visual_reason": "Quiet pale upper sky and mist above dark textured fields and low tree silhouettes."
+  },
+  {
+    "candidate_id": "ps-0065",
+    "decision": "accept",
+    "visual_reason": "Large uninterrupted pale foggy sky above a narrow but detailed darker band of fields and distant buildings."
+  },
+  {
+    "candidate_id": "ps-0066",
+    "decision": "accept",
+    "visual_reason": "Broad pale fog and sky above darker textured tidal ground, with a faint distant castle at the transition."
+  },
+  {
+    "candidate_id": "ps-0067",
+    "decision": "accept",
+    "visual_reason": "Large white-gray sky above dark green textured pasture and a faint treeline."
+  },
+  {
+    "candidate_id": "ps-0068",
+    "decision": "reject",
+    "visual_reason": "Sky is a thin strip above large detailed mountains; the upper region is not a broad quiet pale field."
+  },
+  {
+    "candidate_id": "ps-0069",
+    "decision": "accept",
+    "visual_reason": "Pale cloud and fog above a dark, highly textured sloping rock and vegetation foreground."
+  },
+  {
+    "candidate_id": "ps-0070",
+    "decision": "accept",
+    "visual_reason": "Quiet warm pale sky and mist above dark grass, fencing and distant silhouettes."
+  },
+  {
+    "candidate_id": "ps-0071",
+    "decision": "accept",
+    "visual_reason": "Large pale foggy upper region above dark textured rock slopes; thin tree silhouettes interrupt the soft boundary."
+  },
+  {
+    "candidate_id": "ps-0072",
+    "decision": "accept",
+    "visual_reason": "Broad pale foggy sky above darker roadway, snow edges and a small car."
+  },
+  {
+    "candidate_id": "ps-0073",
+    "decision": "accept",
+    "visual_reason": "Large continuous pale-gray fog above a darker, detailed diagonal rock slope."
+  },
+  {
+    "candidate_id": "ps-0074",
+    "decision": "accept",
+    "visual_reason": "Broad pale sky above darker wooded shore and gray lake reflections, with a soft foggy boundary."
+  },
+  {
+    "candidate_id": "ps-0075",
+    "decision": "accept",
+    "visual_reason": "Large pale warm cloud-and-sky field above darker layered hills and textured distant land."
+  },
+  {
+    "candidate_id": "ps-0076",
+    "decision": "reject",
+    "visual_reason": "Dark near pines flank a narrow foggy corridor; insufficient broad quiet upper sky."
+  },
+  {
+    "candidate_id": "ps-0077",
+    "decision": "reject",
+    "visual_reason": "Tall near trunks and branches dominate the upper region instead of a broad quiet sky."
+  },
+  {
+    "candidate_id": "ps-0078",
+    "decision": "reject",
+    "visual_reason": "Large twisted foreground trees dominate the image."
+  },
+  {
+    "candidate_id": "ps-0079",
+    "decision": "reject",
+    "visual_reason": "Dense full-height tree trunks fill the scene; no substantial sky region."
+  },
+  {
+    "candidate_id": "ps-0080",
+    "decision": "accept",
+    "visual_reason": "Broad pale foggy upper field with thin tree silhouettes above a dark textured path; the small walker does not dominate."
+  },
+  {
+    "candidate_id": "ps-0081",
+    "decision": "reject",
+    "visual_reason": "A full-height wall of tree trunks produces vertical structure without the required broad upper/lower division."
+  },
+  {
+    "candidate_id": "ps-0082",
+    "decision": "reject",
+    "visual_reason": "Aerial mist and tree patches fill the frame with similar texture and tone; no distinct pale upper sky field."
+  },
+  {
+    "candidate_id": "ps-0083",
+    "decision": "accept",
+    "visual_reason": "Pale foggy upper sky above darker conifers, textured rocks and scrub below."
+  },
+  {
+    "candidate_id": "ps-0084",
+    "decision": "accept",
+    "visual_reason": "Broad pale sky and fog above a dark detailed woodland floor; fine branch silhouettes partly interrupt the upper field."
+  },
+  {
+    "candidate_id": "ps-0085",
+    "decision": "reject",
+    "visual_reason": "Tall foreground trunks and canopy dominate the narrow portrait composition; no broad quiet sky opening."
+  },
+  {
+    "candidate_id": "ps-0086",
+    "decision": "reject",
+    "visual_reason": "Full-height tree trunks and foliage dominate; no broad quiet upper sky field."
+  },
+  {
+    "candidate_id": "ps-0087",
+    "decision": "reject",
+    "visual_reason": "Dense tree trunks and canopy fill the upper frame above the forest path."
+  },
+  {
+    "candidate_id": "ps-0088",
+    "decision": "accept",
+    "visual_reason": "Broad pale foggy sky above a darker detailed city and earthy hillside foreground."
+  },
+  {
+    "candidate_id": "ps-0089",
+    "decision": "reject",
+    "visual_reason": "Dark brown night sky above luminous buildings lacks the pale upper field; metadata also identifies a recolored derivative."
+  },
+  {
+    "candidate_id": "ps-0090",
+    "decision": "reject",
+    "visual_reason": "Strongly saturated blue sky dominates rather than a pale quiet upper field."
+  },
+  {
+    "candidate_id": "ps-0091",
+    "decision": "reject",
+    "visual_reason": "Dark brown night sky and a large near building dominate; no pale upper region."
+  },
+  {
+    "candidate_id": "ps-0092",
+    "decision": "accept",
+    "visual_reason": "Large pale gray sky above darker city silhouettes and textured water; spires interrupt but preserve the division."
+  },
+  {
+    "candidate_id": "ps-0093",
+    "decision": "reject",
+    "visual_reason": "Panoramic urban detail dominates with only a thin sky strip; bright fog is primarily at the left edge."
+  },
+  {
+    "candidate_id": "ps-0094",
+    "decision": "reject",
+    "visual_reason": "Dark towers rise through the upper region above a bright fog-filled lower region, reversing the desired arrangement."
+  },
+  {
+    "candidate_id": "ps-0095",
+    "decision": "reject",
+    "visual_reason": "Busy dark-edged clouds and a tall close road cutting constrain the small upper sky field."
+  },
+  {
+    "candidate_id": "ps-0096",
+    "decision": "reject",
+    "visual_reason": "A large close car dominates the lower composition as the main subject."
+  },
+  {
+    "candidate_id": "ps-0097",
+    "decision": "reject",
+    "visual_reason": "Tall dark pines frame a narrow pale corridor and the bright path; no broad pale upper field."
+  },
+  {
+    "candidate_id": "ps-0098",
+    "decision": "accept",
+    "visual_reason": "Broad pale hazy sky above darker road and scattered trees; a large but open-branched tree interrupts the right side."
+  },
+  {
+    "candidate_id": "ps-0099",
+    "decision": "accept",
+    "visual_reason": "Large pale foggy upper region above a dark textured roadside cutting, barriers and roadway."
+  },
+  {
+    "candidate_id": "ps-0100",
+    "decision": "accept",
+    "visual_reason": "Broad quiet pale-gray sky above darker rippled water and beach, with small boats at the transition."
+  },
+  {
+    "candidate_id": "ps-0101",
+    "decision": "reject",
+    "visual_reason": "Tall misted trees occupy the upper field while pale reflections fill the lower water; weak light-upper/dark-lower division."
+  },
+  {
+    "candidate_id": "ps-0102",
+    "decision": "accept",
+    "visual_reason": "Large quiet pale sky above darker distant hill silhouettes, fog bands and textured grassland."
+  },
+  {
+    "candidate_id": "ps-0103",
+    "decision": "reject",
+    "visual_reason": "Dense full-height thin tree trunks dominate the composition; no broad open upper sky field."
+  },
+  {
+    "candidate_id": "ps-0104",
+    "decision": "reject",
+    "visual_reason": "Dark overhead trees frame a similarly gray roadway; insufficient pale upper sky."
+  },
+  {
+    "candidate_id": "ps-0105",
+    "decision": "reject",
+    "visual_reason": "Bright cloud reflections fill most of the lower water, weakening the required darker lower region."
+  },
+  {
+    "candidate_id": "ps-0106",
+    "decision": "reject",
+    "visual_reason": "Forest trunks and branches fill the entire upper scene without a substantial sky field."
+  },
+  {
+    "candidate_id": "ps-0107",
+    "decision": "defer",
+    "visual_reason": "Pale sky and dark foreground fit, but the same visible fossil hills, NPS source and reported day link this to ps-0102; retain ps-0102 and defer this possible related capture."
+  },
+  {
+    "candidate_id": "ps-0108",
+    "decision": "reject",
+    "visual_reason": "Two near trees and their intricate branches dominate the upper composition rather than a broad quiet sky."
+  },
+  {
+    "candidate_id": "ps-0109",
+    "decision": "accept",
+    "visual_reason": "Broad subdued gray cloud-and-sky field above darker detailed fields and roadside foreground."
+  },
+  {
+    "candidate_id": "ps-0110",
+    "decision": "reject",
+    "visual_reason": "Large high-contrast cloud against strong blue sky dominates; the upper region is not a quiet pale field."
+  },
+  {
+    "candidate_id": "ps-0111",
+    "decision": "accept",
+    "visual_reason": "Broad subdued light-gray cloud cover above darker detailed shrubs, path and distant water."
+  },
+  {
+    "candidate_id": "ps-0112",
+    "decision": "reject",
+    "visual_reason": "Strongly contrasted, richly textured cloud pattern and sunbeams dominate the upper region."
+  },
+  {
+    "candidate_id": "ps-0113",
+    "decision": "reject",
+    "visual_reason": "Dramatic dark-edged storm cloud texture fills almost the entire panoramic frame."
+  },
+  {
+    "candidate_id": "ps-0114",
+    "decision": "accept",
+    "visual_reason": "Quiet pale-gray fog above dark, detailed wooded hills and faint castle forms."
+  },
+  {
+    "candidate_id": "ps-0115",
+    "decision": "accept",
+    "visual_reason": "Large pale cloud-and-fog field above darker textured wooded hills, with an irregular boundary."
+  },
+  {
+    "candidate_id": "ps-0116",
+    "decision": "reject",
+    "visual_reason": "Dark, swirling storm-cloud texture dominates the large sky region."
+  },
+  {
+    "candidate_id": "ps-0117",
+    "decision": "reject",
+    "visual_reason": "Dramatic dark clouds and bright golden gaps dominate the upper image."
+  },
+  {
+    "candidate_id": "ps-0118",
+    "decision": "reject",
+    "visual_reason": "Strongly modeled storm clouds and golden light dominate rather than a quiet pale upper field."
+  },
+  {
+    "candidate_id": "ps-0119",
+    "decision": "reject",
+    "visual_reason": "A single stilted building and its reflection dominate an otherwise nearly uniform blue field."
+  },
+  {
+    "candidate_id": "ps-0120",
+    "decision": "accept",
+    "visual_reason": "Pale gray sky above darker water, docks and wooded shoreline; retained as a quiet panoramic variation."
+  },
+  {
+    "candidate_id": "ps-0121",
+    "decision": "reject",
+    "visual_reason": "Intense golden sunlight, starburst and strongly saturated colors dominate the scene."
+  },
+  {
+    "candidate_id": "ps-0122",
+    "decision": "accept",
+    "visual_reason": "Quiet pale blue fog above darker tree silhouettes, pond reflections and banks; retained despite dark vignetted edges."
+  },
+  {
+    "candidate_id": "ps-0123",
+    "decision": "reject",
+    "visual_reason": "Strong golden-orange light and repeated haze bands fill the image without a quiet pale upper sky."
+  },
+  {
+    "candidate_id": "ps-0124",
+    "decision": "reject",
+    "visual_reason": "Aerial terrain at left and bright fog at right form a mostly vertical division; no sky field."
+  },
+  {
+    "candidate_id": "ps-0125",
+    "decision": "reject",
+    "visual_reason": "Strong saturated blue sky above bright white low clouds reverses the desired light/dark relationship."
+  },
+  {
+    "candidate_id": "ps-0126",
+    "decision": "reject",
+    "visual_reason": "Large dark mountains surround only a thin pale sky strip; the upper field is not broad and quiet."
+  },
+  {
+    "candidate_id": "ps-0127",
+    "decision": "accept",
+    "visual_reason": "Large pale continuous sky and haze above a darker, detailed town and green foreground."
+  },
+  {
+    "candidate_id": "ps-0128",
+    "decision": "reject",
+    "visual_reason": "Strong orange horizon glow and large dark cloud shapes dominate the upper scene."
+  },
+  {
+    "candidate_id": "ps-0129",
+    "decision": "reject",
+    "visual_reason": "Intense orange sky and bright solar disc dominate the image."
+  },
+  {
+    "candidate_id": "ps-0130",
+    "decision": "reject",
+    "visual_reason": "Dramatic dark clouds and strongly colored horizon light dominate the upper image."
+  },
+  {
+    "candidate_id": "ps-0131",
+    "decision": "reject",
+    "visual_reason": "Strongly saturated golden-orange sky dominates rather than a subdued pale field."
+  },
+  {
+    "candidate_id": "ps-0132",
+    "decision": "accept",
+    "visual_reason": "Quiet pale gray sky and lightly layered distant haze above darker textured forest and ridge silhouettes."
+  },
+  {
+    "candidate_id": "ps-0133",
+    "decision": "reject",
+    "visual_reason": "Layered ridges and textured low clouds occupy nearly all the upper view, leaving very little quiet sky."
+  },
+  {
+    "candidate_id": "ps-0134",
+    "decision": "reject",
+    "visual_reason": "A large foreground tree and strong golden sun dominate the composition."
+  },
+  {
+    "candidate_id": "ps-0135",
+    "decision": "defer",
+    "visual_reason": "Pale sky and darker wooded ridges fit, but the same photographer, consecutive reported winter mornings and similar ridge setting raise an unresolved possible session relationship with ps-0132; retain ps-0132 pending further source review."
+  },
+  {
+    "candidate_id": "ps-0136",
+    "decision": "reject",
+    "visual_reason": "Dramatic dark, heavily textured cloudscape dominates the upper field."
+  },
+  {
+    "candidate_id": "ps-0137",
+    "decision": "accept",
+    "visual_reason": "Large quiet pale sky and fog above darker textured conifer treelines with a soft layered boundary."
+  },
+  {
+    "candidate_id": "ps-0138",
+    "decision": "reject",
+    "visual_reason": "Large full-height near trunks and dense tree structure fill the frame without a broad quiet sky region."
+  },
+  {
+    "candidate_id": "ps-0139",
+    "decision": "reject",
+    "visual_reason": "Black night sky and isolated orange lamps dominate; no pale upper region."
+  },
+  {
+    "candidate_id": "ps-0140",
+    "decision": "reject",
+    "visual_reason": "Dark storm cloud and prominent pier arches dominate the upper frame, with only a narrow bright horizon strip."
+  },
+  {
+    "candidate_id": "ps-0141",
+    "decision": "accept",
+    "visual_reason": "Broad pale subdued pink-gray sky above darker, detailed pebbled shoreline and rocks."
+  },
+  {
+    "candidate_id": "ps-0142",
+    "decision": "reject",
+    "visual_reason": "The actual photograph is filled by detailed hills and vegetation; no sky is visible despite its title and description."
+  },
+  {
+    "candidate_id": "ps-0143",
+    "decision": "reject",
+    "visual_reason": "Intense golden sun and saturated warm glow dominate the scene."
+  },
+  {
+    "candidate_id": "ps-0144",
+    "decision": "accept",
+    "visual_reason": "Broad pale blue-gray sky above darker textured rocks and water, with bright surf adding lower-region variation."
+  },
+  {
+    "candidate_id": "ps-0145",
+    "decision": "accept",
+    "visual_reason": "Broad pale subdued cloud cover above dark textured vegetation and a low snowy mountain ridge."
+  }
+]

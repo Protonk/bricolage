@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0107",
+  "status": "preview_downloaded",
+  "canonical_title": "File:Lifebuoy, Castle Semple Loch - geograph.org.uk - 582263.jpg",
+  "pageid": 13119492,
+  "file": "previews/candidates/rg-0107.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Lifebuoy%2C_Castle_Semple_Loch_-_geograph.org.uk_-_582263.jpg/330px-Lifebuoy%2C_Castle_Semple_Loch_-_geograph.org.uk_-_582263.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "5f3e291c4f8f5f7ce3e26285fada098532f2af0bc5c9959ddc9dccc16832f9fe",
+  "width": 330,
+  "height": 247,
+  "exif_orientation": 1,
+  "requested_max_edge": 320,
+  "original_width": 640,
+  "original_height": 480,
+  "original_sha1": "d4a0ebda102e680af9e346401f054242d7a162eb",
+  "creator": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/profile/7544\">wfmillar</a>",
+  "license": "CC BY-SA 2.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+  "retrieved_utc": "2026-10-31T00:41:32.586595+00:00",
+  "visual_review": "pending",
+  "source_independence": "unverified"
+}

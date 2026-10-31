@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0097",
+  "status": "preview_downloaded",
+  "canonical_title": "File:Coffee garden in Muğla (2842621632).jpg",
+  "pageid": 24773643,
+  "file": "previews/candidates/rg-0097.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Coffee_garden_in_Mu%C4%9Fla_%282842621632%29.jpg/330px-Coffee_garden_in_Mu%C4%9Fla_%282842621632%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "004be547f6a1590c02f8db2211af7d12107360b70a15d30640b737c66bbffbb6",
+  "width": 330,
+  "height": 247,
+  "exif_orientation": 1,
+  "requested_max_edge": 320,
+  "original_width": 1280,
+  "original_height": 960,
+  "original_sha1": "72fea60f2fd3c1d43a56563f06658c56b32c8c43",
+  "creator": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/30273175@N06\">mwanasimba</a> from La Réunion",
+  "license": "CC BY-SA 2.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+  "retrieved_utc": "2026-10-31T00:40:21.999490+00:00",
+  "visual_review": "pending",
+  "source_independence": "unverified"
+}

@@ -1,0 +1,133 @@
+{
+  "candidate_id": "rg-0100",
+  "retrieved_utc": "2026-10-31T00:40:40.479415+00:00",
+  "requested_title": "File:2015 Madeira Samsung (182).jpg",
+  "response": {
+    "batchcomplete": true,
+    "query": {
+      "pages": [
+        {
+          "pageid": 44364403,
+          "ns": 6,
+          "title": "File:2015 Madeira Samsung (182).jpg",
+          "imagerepository": "local",
+          "imageinfo": [
+            {
+              "size": 7547015,
+              "width": 5312,
+              "height": 2988,
+              "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/2015_Madeira_Samsung_%28182%29.jpg/330px-2015_Madeira_Samsung_%28182%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "thumbwidth": 320,
+              "thumbheight": 180,
+              "responsiveUrls": {
+                "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/2015_Madeira_Samsung_%28182%29.jpg/960px-2015_Madeira_Samsung_%28182%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+              },
+              "thumbattribs": {
+                "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/2015_Madeira_Samsung_%28182%29.jpg/330px-2015_Madeira_Samsung_%28182%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "decoding": "async",
+                "loading": "lazy",
+                "width": 320,
+                "height": 180,
+                "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/2015_Madeira_Samsung_%28182%29.jpg/960px-2015_Madeira_Samsung_%28182%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+              },
+              "url": "https://upload.wikimedia.org/wikipedia/commons/b/b1/2015_Madeira_Samsung_%28182%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+              "descriptionurl": "https://commons.wikimedia.org/wiki/File:2015_Madeira_Samsung_(182).jpg",
+              "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=44364403",
+              "sha1": "c951b77d5ef257ab4755d60ea1e56aef5bce954c",
+              "extmetadata": {
+                "DateTime": {
+                  "value": "2015-10-21 08:03:43",
+                  "source": "mediawiki-metadata",
+                  "hidden": ""
+                },
+                "ObjectName": {
+                  "value": "2015 Madeira Samsung (182)",
+                  "source": "mediawiki-metadata"
+                },
+                "CommonsMetadataExtension": {
+                  "value": 1.2,
+                  "source": "extension",
+                  "hidden": ""
+                },
+                "Categories": {
+                  "value": "Artificial flowers|Faial (Santana)|Self-published work|Flower garlands|Uploaded with Commonist|Files of Portugal with bad file names|Green and red objects|Shadows of objects|Files with coordinates missing SDC location of creation|User:Mattes/Contributions/Topics/Portugal|File uploads by User:Mattes (flat)|Work by Mattes 2015|Absence of people in Portugal|User:Mattes/Contributions/Geolocation/OK",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "Assessments": {
+                  "value": "",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "GPSLatitude": {
+                  "value": "32.789722",
+                  "source": "commons-desc-page"
+                },
+                "GPSLongitude": {
+                  "value": "-16.852778",
+                  "source": "commons-desc-page"
+                },
+                "GPSMapDatum": {
+                  "value": "WGS-84",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "ImageDescription": {
+                  "value": "<span class=\"mw-image-border\" typeof=\"mw:File\"><a href=\"//commons.wikimedia.org/wiki/File:Flag_of_Portugal.svg\" class=\"mw-file-description\" title=\"Portugal\"><img alt=\"Portugal\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Portugal.svg/40px-Flag_of_Portugal.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"22\" height=\"15\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Portugal.svg/60px-Flag_of_Portugal.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"600\" data-file-height=\"400\"></a></span> <a href=\"//commons.wikimedia.org/wiki/Portugal\" title=\"Portugal\"><span title=\"country in Southwestern Europe\">Portugal</span></a> ▷ <a href=\"https://en.wikipedia.org/wiki/en:Madeira\" class=\"extiw\" title=\"w:en:Madeira\"><span title=\"Autonomous Region of Portugal in the archipelago of Madeira\">Madeira</span></a> ▷ Faial",
+                  "source": "commons-desc-page"
+                },
+                "DateTimeOriginal": {
+                  "value": "2015-09-16",
+                  "source": "commons-desc-page"
+                },
+                "Credit": {
+                  "value": "<span class=\"int-own-work\">Self-photographed</span>",
+                  "source": "commons-desc-page"
+                },
+                "Artist": {
+                  "value": "<a href=\"//commons.wikimedia.org/wiki/User:Mattes\" title=\"User:Mattes\">Mattes</a>",
+                  "source": "commons-desc-page"
+                },
+                "LicenseShortName": {
+                  "value": "CC BY-SA 4.0",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "UsageTerms": {
+                  "value": "Creative Commons Attribution-Share Alike 4.0",
+                  "source": "commons-desc-page"
+                },
+                "AttributionRequired": {
+                  "value": "true",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "LicenseUrl": {
+                  "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                  "source": "commons-desc-page"
+                },
+                "Copyrighted": {
+                  "value": "True",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "Restrictions": {
+                  "value": "",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "License": {
+                  "value": "cc-by-sa-4.0",
+                  "source": "commons-templates",
+                  "hidden": ""
+                }
+              },
+              "mime": "image/jpeg",
+              "mediatype": "BITMAP"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

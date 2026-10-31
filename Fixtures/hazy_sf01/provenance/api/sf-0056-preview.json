@@ -1,0 +1,129 @@
+{
+  "batchcomplete": true,
+  "query": {
+    "pages": [
+      {
+        "pageid": 77142663,
+        "ns": 6,
+        "title": "File:BassettPlace-US62-Int10-ElPasoAerial (37228766574).jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "timestamp": "2019-03-06T22:06:11Z",
+            "user": "Formulanone",
+            "size": 3017478,
+            "width": 2400,
+            "height": 1600,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/BassettPlace-US62-Int10-ElPasoAerial_%2837228766574%29.jpg/330px-BassettPlace-US62-Int10-ElPasoAerial_%2837228766574%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 320,
+            "thumbheight": 213,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/BassettPlace-US62-Int10-ElPasoAerial_%2837228766574%29.jpg/960px-BassettPlace-US62-Int10-ElPasoAerial_%2837228766574%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/BassettPlace-US62-Int10-ElPasoAerial_%2837228766574%29.jpg/330px-BassettPlace-US62-Int10-ElPasoAerial_%2837228766574%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 320,
+              "height": 213,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/BassettPlace-US62-Int10-ElPasoAerial_%2837228766574%29.jpg/960px-BassettPlace-US62-Int10-ElPasoAerial_%2837228766574%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/e/e1/BassettPlace-US62-Int10-ElPasoAerial_%2837228766574%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:BassettPlace-US62-Int10-ElPasoAerial_(37228766574).jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=77142663",
+            "sha1": "d7531bde5b446a3ffba7c9d77e9951a435961dc6",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2019-03-06 22:06:11",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "BassettPlace-US62-Int10-ElPasoAerial (37228766574)",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "U.S. Route 62 in Texas|Shopping malls in Texas|Aerial photographs of El Paso, Texas|Aerial photographs of shopping malls in the United States|Files with coordinates missing SDC location of creation|Flickr images reviewed by FlickreviewR 2|Aerial photographs of car parks",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "31.783920",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "-106.410660",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "BassettPlace-US62-Int10-ElPasoAerial",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2014-09-12 15:27",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/formulanone/37228766574/\">BassettPlace-US62-Int10-ElPasoAerial</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/30552029@N00\">formulanone</a> from Huntsville, United States",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 2.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 2.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/2.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-2.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      }
+    ]
+  }
+}

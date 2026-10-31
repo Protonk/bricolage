@@ -1,0 +1,25 @@
+{
+  "status": "inspected",
+  "reviewed_at": "2026-10-31T13:27:09.610372+00:00",
+  "scope": "All 58 acquired inputs inspected at contact-sheet scale after normalization, using sheets rendered from the staged comparison inputs. Published sheet bytes match the inspected staging files.",
+  "input_count": 58,
+  "sheets": [
+    {
+      "path": "previews/selected-01.jpg",
+      "sha256": "1276ddd9e5b4dc2d4f1fd8ccd95158b8e85d33cb43995d9c206baaedd0dedd04"
+    },
+    {
+      "path": "previews/selected-02.jpg",
+      "sha256": "d245d9d4d6dc162f403f56f27d725427f9518c468b767b9eb111f36ff9dbdafb"
+    },
+    {
+      "path": "previews/selected-03.jpg",
+      "sha256": "3c8a8f942d01d39b856ef3397851102ee32f9110d3855a83a30cec531fe76d21"
+    }
+  ],
+  "manifest_sha256": "f87e09e932310784fce7096fa34e0addbcbfdf1dda0219232d2136011f6782d3",
+  "visual_decisions_sha256": "43ff93c5e3ae985a1860c54bfe32c859877c71db1face9f578648cd52b6ae3bc",
+  "decision": "Retain the 58 prior visual accepts; no selection changes after inspecting the acquired sources.",
+  "observations": "The selection spans clear sky bands, fog-softened boundaries, reflections, pale snow or water, and textured lower regions. Borderline contrasts and sky texture remain as described in each candidate visual_reason. No broken or substituted image was evident in the final sheets.",
+  "limits": "Curatorial judgment at thumbnail scale; neither membership ground truth nor proof of capture independence."
+}

@@ -1,0 +1,593 @@
+{
+  "version": 1,
+  "coordinate_frame": "oriented, sRGB, white-flattened prepared RGB canvas; top-left origin; half-open integer crop boxes; polygon vertices are pixel coordinates",
+  "preparation": {
+    "max_edge": 1600,
+    "comic_native": true,
+    "resampler": "LANCZOS",
+    "working_space": "sRGB",
+    "mode": "RGB",
+    "untagged_assumption": "sRGB",
+    "alpha_background": "white"
+  },
+  "font": {
+    "path": "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+    "sha256": "d72db21f9242aedd6b917d8549ad5921766b24d5f8d0becfda2ff4c620b3c2e0",
+    "index": 0,
+    "source": "macOS supplied Arial Bold; not redistributed"
+  },
+  "png": {
+    "compress_level": 9,
+    "optimize": false
+  },
+  "post": {
+    "canvas": [
+      1080,
+      1080
+    ],
+    "slot": [
+      90,
+      285,
+      990,
+      885
+    ],
+    "background": "#f1f2f4",
+    "padding": "#dce0e4",
+    "display_name": "Fixture User",
+    "handle": "@fixture_user",
+    "text": "Had to share this.",
+    "name_size": 36,
+    "handle_size": 24,
+    "post_size": 36,
+    "footer_size": 24
+  },
+  "degradation": {
+    "downscale": [
+      540,
+      540
+    ],
+    "down_resampler": "LANCZOS",
+    "jpeg_quality": 35,
+    "jpeg_subsampling": 2,
+    "jpeg_optimize": false,
+    "jpeg_progressive": false,
+    "upscale": [
+      1080,
+      1080
+    ],
+    "up_resampler": "BILINEAR"
+  },
+  "v01": {
+    "canvas": [
+      1080,
+      1080
+    ],
+    "angle_clockwise_degrees": 17,
+    "rotation_resampler": "BICUBIC",
+    "slot": [
+      108,
+      80,
+      972,
+      1000
+    ],
+    "corner_fill": "#303238",
+    "frame": "#17181b",
+    "stamp": "WASTED",
+    "stamp_size": 160,
+    "stamp_center": [
+      540,
+      740
+    ],
+    "stamp_color": "#e53935",
+    "stroke_width": 7,
+    "stroke_fill": "#17181b"
+  },
+  "v04": {
+    "canvas": [
+      1080,
+      1080
+    ],
+    "slot": [
+      40,
+      250,
+      1040,
+      830
+    ],
+    "bands": [
+      [
+        0,
+        0,
+        1080,
+        250
+      ],
+      [
+        0,
+        830,
+        1080,
+        1080
+      ]
+    ],
+    "captions": [
+      "WHEN THE PLAN",
+      "MEETS REALITY"
+    ],
+    "font_size": 100,
+    "background": "#17181b",
+    "padding": "#303238",
+    "text_color": "white"
+  },
+  "v05": {
+    "canvas": [
+      1080,
+      720
+    ],
+    "slots": [
+      [
+        40,
+        170,
+        520,
+        650
+      ],
+      [
+        560,
+        170,
+        1040,
+        650
+      ]
+    ],
+    "caption_rectangles": [
+      [
+        40,
+        35,
+        520,
+        150
+      ],
+      [
+        560,
+        35,
+        1040,
+        150
+      ]
+    ],
+    "captions": [
+      "PLAN",
+      "RESULT"
+    ],
+    "font_size": 80,
+    "background": "#17181b",
+    "padding": "#303238",
+    "text_color": "white",
+    "piece_order": [
+      1,
+      0
+    ]
+  },
+  "donors": {
+    "cat_head": {
+      "source": "m06",
+      "crop": [
+        370,
+        510,
+        640,
+        810
+      ],
+      "polygon": [
+        [
+          0,
+          5
+        ],
+        [
+          90,
+          55
+        ],
+        [
+          225,
+          0
+        ],
+        [
+          245,
+          105
+        ],
+        [
+          269,
+          185
+        ],
+        [
+          210,
+          260
+        ],
+        [
+          125,
+          299
+        ],
+        [
+          35,
+          230
+        ],
+        [
+          5,
+          130
+        ]
+      ]
+    },
+    "cat_body": {
+      "source": "m06",
+      "crop": [
+        365,
+        510,
+        750,
+        1230
+      ],
+      "polygon": [
+        [
+          0,
+          5
+        ],
+        [
+          90,
+          55
+        ],
+        [
+          225,
+          0
+        ],
+        [
+          250,
+          140
+        ],
+        [
+          300,
+          270
+        ],
+        [
+          345,
+          380
+        ],
+        [
+          384,
+          485
+        ],
+        [
+          330,
+          620
+        ],
+        [
+          315,
+          660
+        ],
+        [
+          185,
+          690
+        ],
+        [
+          90,
+          719
+        ],
+        [
+          65,
+          570
+        ],
+        [
+          30,
+          490
+        ],
+        [
+          75,
+          370
+        ],
+        [
+          50,
+          230
+        ],
+        [
+          5,
+          130
+        ]
+      ]
+    },
+    "coffee": {
+      "source": "m05",
+      "crop": [
+        250,
+        70,
+        1310,
+        1140
+      ],
+      "polygon": [
+        [
+          0,
+          190
+        ],
+        [
+          130,
+          80
+        ],
+        [
+          550,
+          0
+        ],
+        [
+          1000,
+          50
+        ],
+        [
+          1059,
+          170
+        ],
+        [
+          960,
+          430
+        ],
+        [
+          860,
+          960
+        ],
+        [
+          720,
+          1069
+        ],
+        [
+          500,
+          1050
+        ],
+        [
+          390,
+          890
+        ],
+        [
+          330,
+          700
+        ],
+        [
+          130,
+          660
+        ],
+        [
+          50,
+          500
+        ]
+      ]
+    }
+  },
+  "sources": {
+    "m01": {
+      "post_crop": [
+        20,
+        1075,
+        642,
+        1592
+      ],
+      "v01_crop": [
+        20,
+        1075,
+        642,
+        1592
+      ],
+      "reaction_crop": [
+        215,
+        1670,
+        410,
+        1875
+      ],
+      "pieces": [
+        [
+          20,
+          540,
+          642,
+          1058
+        ],
+        [
+          20,
+          1075,
+          642,
+          1592
+        ]
+      ],
+      "replacement": {
+        "donor": "cat_body",
+        "target": [
+          290,
+          1390,
+          415,
+          1560
+        ]
+      }
+    },
+    "m02": {
+      "post_crop": [
+        160,
+        300,
+        1030,
+        1510
+      ],
+      "v01_crop": null,
+      "reaction_crop": [
+        260,
+        390,
+        760,
+        1300
+      ],
+      "pieces": [
+        [
+          200,
+          380,
+          800,
+          880
+        ],
+        [
+          250,
+          890,
+          930,
+          1450
+        ]
+      ],
+      "replacement": {
+        "donor": "cat_head",
+        "target": [
+          255,
+          490,
+          435,
+          700
+        ]
+      }
+    },
+    "m03": {
+      "post_crop": [
+        200,
+        100,
+        1450,
+        1000
+      ],
+      "v01_crop": null,
+      "reaction_crop": [
+        450,
+        140,
+        1050,
+        800
+      ],
+      "pieces": [
+        [
+          250,
+          150,
+          1050,
+          550
+        ],
+        [
+          280,
+          560,
+          1100,
+          970
+        ]
+      ],
+      "replacement": {
+        "donor": "cat_head",
+        "target": [
+          520,
+          170,
+          970,
+          650
+        ]
+      }
+    },
+    "m04": {
+      "post_crop": [
+        320,
+        200,
+        1600,
+        1200
+      ],
+      "v01_crop": null,
+      "reaction_crop": [
+        450,
+        200,
+        1250,
+        800
+      ],
+      "pieces": [
+        [
+          300,
+          100,
+          1250,
+          700
+        ],
+        [
+          700,
+          720,
+          1600,
+          1200
+        ]
+      ],
+      "replacement": {
+        "donor": "cat_body",
+        "target": [
+          1260,
+          700,
+          1600,
+          1200
+        ],
+        "patch_from": [
+          900,
+          700,
+          1240,
+          1200
+        ]
+      }
+    },
+    "m05": {
+      "post_crop": [
+        150,
+        150,
+        1450,
+        1200
+      ],
+      "v01_crop": null,
+      "reaction_crop": [
+        550,
+        150,
+        1250,
+        1120
+      ],
+      "pieces": [
+        [
+          250,
+          120,
+          1300,
+          610
+        ],
+        [
+          500,
+          630,
+          1200,
+          1140
+        ]
+      ],
+      "replacement": {
+        "donor": "cat_body",
+        "target": [
+          600,
+          210,
+          1230,
+          1130
+        ]
+      }
+    },
+    "m06": {
+      "post_crop": [
+        180,
+        350,
+        1150,
+        1570
+      ],
+      "v01_crop": null,
+      "reaction_crop": [
+        240,
+        390,
+        850,
+        1090
+      ],
+      "pieces": [
+        [
+          300,
+          480,
+          800,
+          840
+        ],
+        [
+          350,
+          850,
+          900,
+          1300
+        ]
+      ],
+      "replacement": {
+        "donor": "coffee",
+        "target": [
+          370,
+          500,
+          690,
+          825
+        ]
+      }
+    }
+  }
+}

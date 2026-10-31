@@ -1,0 +1,133 @@
+{
+  "candidate_id": "rg-0077",
+  "retrieved_utc": "2026-10-31T00:37:54.420141+00:00",
+  "requested_title": "File:Autumn berries (265928588).jpg",
+  "response": {
+    "batchcomplete": true,
+    "query": {
+      "pages": [
+        {
+          "pageid": 48116708,
+          "ns": 6,
+          "title": "File:Autumn berries (265928588).jpg",
+          "imagerepository": "local",
+          "imageinfo": [
+            {
+              "size": 3146774,
+              "width": 3504,
+              "height": 2336,
+              "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Autumn_berries_%28265928588%29.jpg/330px-Autumn_berries_%28265928588%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "thumbwidth": 320,
+              "thumbheight": 213,
+              "responsiveUrls": {
+                "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Autumn_berries_%28265928588%29.jpg/960px-Autumn_berries_%28265928588%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+              },
+              "thumbattribs": {
+                "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Autumn_berries_%28265928588%29.jpg/330px-Autumn_berries_%28265928588%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "decoding": "async",
+                "loading": "lazy",
+                "width": 320,
+                "height": 213,
+                "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Autumn_berries_%28265928588%29.jpg/960px-Autumn_berries_%28265928588%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+              },
+              "url": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Autumn_berries_%28265928588%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+              "descriptionurl": "https://commons.wikimedia.org/wiki/File:Autumn_berries_(265928588).jpg",
+              "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=48116708",
+              "sha1": "9f840fd6262ea583b10c8a8e40b247a80d428e62",
+              "extmetadata": {
+                "DateTime": {
+                  "value": "2016-04-11 00:29:44",
+                  "source": "mediawiki-metadata",
+                  "hidden": ""
+                },
+                "ObjectName": {
+                  "value": "Autumn berries (265928588)",
+                  "source": "mediawiki-metadata"
+                },
+                "CommonsMetadataExtension": {
+                  "value": 1.2,
+                  "source": "extension",
+                  "hidden": ""
+                },
+                "Categories": {
+                  "value": "Flickr images reviewed by FlickreviewR|October 2006 in Toronto|Adoxaceae in Canada|Files with coordinates missing SDC location of creation|Red berries|Unidentified fruit|Unidentified Viburnum|Files from Gary J. Wood Flickr stream|Canada photographs taken on 2006-10-09|Unidentified Dipsacales in Canada|Flora of Black Creek Pioneer Village",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "Assessments": {
+                  "value": "",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "GPSLatitude": {
+                  "value": "43.774263",
+                  "source": "commons-desc-page"
+                },
+                "GPSLongitude": {
+                  "value": "-79.517641",
+                  "source": "commons-desc-page"
+                },
+                "GPSMapDatum": {
+                  "value": "WGS-84",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "ImageDescription": {
+                  "value": "Autumn Berries",
+                  "source": "commons-desc-page"
+                },
+                "DateTimeOriginal": {
+                  "value": "Taken on 9 October 2006, 11:43",
+                  "source": "commons-desc-page"
+                },
+                "Credit": {
+                  "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/garyjwood/265928588/\">Autumn Berries</a>",
+                  "source": "commons-desc-page"
+                },
+                "Artist": {
+                  "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/37663331@N00\">Gary J. Wood</a> from Toronto, ON, Canada",
+                  "source": "commons-desc-page"
+                },
+                "LicenseShortName": {
+                  "value": "CC BY-SA 2.0",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "UsageTerms": {
+                  "value": "Creative Commons Attribution-Share Alike 2.0",
+                  "source": "commons-desc-page"
+                },
+                "AttributionRequired": {
+                  "value": "true",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "LicenseUrl": {
+                  "value": "https://creativecommons.org/licenses/by-sa/2.0",
+                  "source": "commons-desc-page"
+                },
+                "Copyrighted": {
+                  "value": "True",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "Restrictions": {
+                  "value": "",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "License": {
+                  "value": "cc-by-sa-2.0",
+                  "source": "commons-templates",
+                  "hidden": ""
+                }
+              },
+              "mime": "image/jpeg",
+              "mediatype": "BITMAP"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

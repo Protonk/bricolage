@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0105",
+  "status": "preview_downloaded",
+  "canonical_title": "File:Lifebuoy at Chellow Dene (2nd October 2010).jpg",
+  "pageid": 11662054,
+  "file": "previews/candidates/rg-0105.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Lifebuoy_at_Chellow_Dene_%282nd_October_2010%29.jpg/250px-Lifebuoy_at_Chellow_Dene_%282nd_October_2010%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "14f78eedc1c82b04ace976b22c3c1abbf3a491a1f5e640a27b2aaffd4684ff39",
+  "width": 250,
+  "height": 339,
+  "exif_orientation": 1,
+  "requested_max_edge": 320,
+  "original_width": 1811,
+  "original_height": 2454,
+  "original_sha1": "6fa22ba499f4d81ad34c765414ad6ef7c4ec7fc9",
+  "creator": "Flickr user:Tim Green aka atouch",
+  "license": "CC BY 2.0",
+  "license_url": "https://creativecommons.org/licenses/by/2.0",
+  "retrieved_utc": "2026-10-31T00:41:17.442913+00:00",
+  "visual_review": "pending",
+  "source_independence": "unverified"
+}

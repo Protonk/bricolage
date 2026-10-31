@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0006",
+  "status": "preview_downloaded",
+  "canonical_title": "File:A Hibiscus in Lush Embrace.jpg",
+  "pageid": 167525262,
+  "file": "previews/candidates/rg-0006.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/A_Hibiscus_in_Lush_Embrace.jpg/330px-A_Hibiscus_in_Lush_Embrace.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "d844d8daa98015af918c58ff06010ca3a48c2215accc7c9799643d34892ed18c",
+  "width": 330,
+  "height": 247,
+  "exif_orientation": 1,
+  "requested_max_edge": 320,
+  "original_width": 4032,
+  "original_height": 3024,
+  "original_sha1": "d5a8ea9f4f72686eee64d616f74c327824d97886",
+  "creator": "<a href=\"//commons.wikimedia.org/wiki/User:Derk29\" title=\"User:Derk29\">Derk29</a>",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "retrieved_utc": "2026-10-31T00:29:29.784953+00:00",
+  "visual_review": "pending",
+  "source_independence": "unverified"
+}

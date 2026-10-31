@@ -1,0 +1,129 @@
+{
+  "batchcomplete": true,
+  "query": {
+    "pages": [
+      {
+        "pageid": 200569417,
+        "ns": 6,
+        "title": "File:DSC 6369 Tranquil shoreline with small boats bobbing on calm blue water and green hills in the background.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "timestamp": "2026-09-29T11:53:08Z",
+            "user": "PattayaPatrol",
+            "size": 17810523,
+            "width": 6048,
+            "height": 4024,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/DSC_6369_Tranquil_shoreline_with_small_boats_bobbing_on_calm_blue_water_and_green_hills_in_the_background.jpg/330px-DSC_6369_Tranquil_shoreline_with_small_boats_bobbing_on_calm_blue_water_and_green_hills_in_the_background.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 320,
+            "thumbheight": 213,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/DSC_6369_Tranquil_shoreline_with_small_boats_bobbing_on_calm_blue_water_and_green_hills_in_the_background.jpg/960px-DSC_6369_Tranquil_shoreline_with_small_boats_bobbing_on_calm_blue_water_and_green_hills_in_the_background.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/DSC_6369_Tranquil_shoreline_with_small_boats_bobbing_on_calm_blue_water_and_green_hills_in_the_background.jpg/330px-DSC_6369_Tranquil_shoreline_with_small_boats_bobbing_on_calm_blue_water_and_green_hills_in_the_background.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 320,
+              "height": 213,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/DSC_6369_Tranquil_shoreline_with_small_boats_bobbing_on_calm_blue_water_and_green_hills_in_the_background.jpg/960px-DSC_6369_Tranquil_shoreline_with_small_boats_bobbing_on_calm_blue_water_and_green_hills_in_the_background.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/DSC_6369_Tranquil_shoreline_with_small_boats_bobbing_on_calm_blue_water_and_green_hills_in_the_background.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:DSC_6369_Tranquil_shoreline_with_small_boats_bobbing_on_calm_blue_water_and_green_hills_in_the_background.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=200569417",
+            "sha1": "68bfe230389b672148df0f7cee64db2bb725b5bb",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2026-09-29 11:53:08",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "DSC 6369 Tranquil shoreline with small boats bobbing on calm blue water and green hills in the background",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Files with coordinates missing SDC location of creation|Flickr images reviewed by FlickreviewR 2|Klet Kaeo",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "12.763063",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "100.885116",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "<p>This photo depicts a beautiful beach scene with a calm body of water. Several boats are floating on the water, with some closer to the shore and others further out. The boats are scattered across the scene, with some positioned closer to the left side, others in the middle, and a few more towards the right side of the image.\n</p>\nIn addition to the boats, there are a few people enjoying the beach and the water. Some of them are closer to the left side of the image, while others are scattered throughout the scene. The combination of the boats, people, and the serene beach atmosphere creates a picturesque and relaxing scene.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2024-12-05 10:57:21",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/194424926@N05/54184550549\">Flickr</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/PattayaPatrol/\">PattayaPatrol</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      }
+    ]
+  }
+}

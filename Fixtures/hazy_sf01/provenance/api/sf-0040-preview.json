@@ -1,0 +1,134 @@
+{
+  "batchcomplete": true,
+  "query": {
+    "pages": [
+      {
+        "pageid": 9323388,
+        "ns": 6,
+        "title": "File:Boulders above Coire Scamadal - geograph.org.uk - 217461.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "timestamp": "2010-01-31T20:22:54Z",
+            "user": "GeographBot",
+            "size": 40996,
+            "width": 640,
+            "height": 480,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Boulders_above_Coire_Scamadal_-_geograph.org.uk_-_217461.jpg/330px-Boulders_above_Coire_Scamadal_-_geograph.org.uk_-_217461.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 320,
+            "thumbheight": 240,
+            "responsiveUrls": {
+              "2": "https://upload.wikimedia.org/wikipedia/commons/7/73/Boulders_above_Coire_Scamadal_-_geograph.org.uk_-_217461.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Boulders_above_Coire_Scamadal_-_geograph.org.uk_-_217461.jpg/330px-Boulders_above_Coire_Scamadal_-_geograph.org.uk_-_217461.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 320,
+              "height": 240,
+              "srcset": "https://upload.wikimedia.org/wikipedia/commons/7/73/Boulders_above_Coire_Scamadal_-_geograph.org.uk_-_217461.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/7/73/Boulders_above_Coire_Scamadal_-_geograph.org.uk_-_217461.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Boulders_above_Coire_Scamadal_-_geograph.org.uk_-_217461.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=9323388",
+            "sha1": "73adff2f549b7791f4c3a7a941a701ce4b13a84a",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2010-01-31 20:22:54",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Boulders above Coire Scamadal - geograph.org.uk - 217461",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Taken with Canon Digital IXUS 400|Trotternish|Images from Geograph Britain and Ireland|Boulder fields|Information field template with formatting|Images by John Allan|United Kingdom photographs taken on 2006-08-11",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "57.516100",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "-6.186000",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Boulders above Coire Scamadal. Boulders strewn from the crag above. On the Trotternish Ridge north of the Storr, just at the point of climbing into the cloud at 1,700ft.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2006-08-11",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "From <a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/photo/217461\">geograph.org.uk</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/profile/3863\">John Allan</a>",
+                "source": "commons-desc-page"
+              },
+              "Attribution": {
+                "value": "John Allan",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 2.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 2.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/2.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-2.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      }
+    ]
+  }
+}

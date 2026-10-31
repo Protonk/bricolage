@@ -1,0 +1,712 @@
+[
+  {
+    "candidate_id": "sf-0001",
+    "decision": "reject",
+    "visual_reason": "One prominent foreground bale and a broad sky dominate; distant bales do not fill the field at thumbnail scale."
+  },
+  {
+    "candidate_id": "sf-0002",
+    "decision": "reject",
+    "visual_reason": "White bales form a narrow line beside a road; most of the composition is road, grass and sky."
+  },
+  {
+    "candidate_id": "sf-0003",
+    "decision": "reject",
+    "visual_reason": "Foreground gate interrupts the field and dominates the scattered-bale pattern."
+  },
+  {
+    "candidate_id": "sf-0004",
+    "decision": "reject",
+    "visual_reason": "One large foreground bale dominates the view."
+  },
+  {
+    "candidate_id": "sf-0005",
+    "decision": "accept",
+    "visual_reason": "Numerous separated bales recede across a continuous green field; the scattered pattern remains visible."
+  },
+  {
+    "candidate_id": "sf-0006",
+    "decision": "reject",
+    "visual_reason": "A few large foreground bales and extensive sky outweigh the small distributed marks."
+  },
+  {
+    "candidate_id": "sf-0007",
+    "decision": "reject",
+    "visual_reason": "Too few tiny bales in a narrow field band; sky and foreground vegetation dominate."
+  },
+  {
+    "candidate_id": "sf-0008",
+    "decision": "accept",
+    "visual_reason": "Many small separated bales dot a broad brown field; flowers at the bottom do not hide the pattern."
+  },
+  {
+    "candidate_id": "sf-0009",
+    "decision": "reject",
+    "visual_reason": "Large foreground bale and expansive sky dominate a narrow band of distant bales."
+  },
+  {
+    "candidate_id": "sf-0010",
+    "decision": "reject",
+    "visual_reason": "Tractor and large foreground bale dominate."
+  },
+  {
+    "candidate_id": "sf-0011",
+    "decision": "reject",
+    "visual_reason": "Foreground metal gate dominates and interrupts the field pattern."
+  },
+  {
+    "candidate_id": "sf-0012",
+    "decision": "accept",
+    "visual_reason": "Repeated separated bales distributed over a wide continuous stubble field, with perspective variation."
+  },
+  {
+    "candidate_id": "sf-0013",
+    "decision": "reject",
+    "visual_reason": "Bales form one stacked row beside a cart; not distributed over the visual field."
+  },
+  {
+    "candidate_id": "sf-0014",
+    "decision": "reject",
+    "visual_reason": "One compact stack of bales dominates; no scattered field."
+  },
+  {
+    "candidate_id": "sf-0015",
+    "decision": "reject",
+    "visual_reason": "Large foreground flowers and only a few distant bales."
+  },
+  {
+    "candidate_id": "sf-0016",
+    "decision": "accept",
+    "visual_reason": "Scattered white bales punctuate a sloping field; surrounding mountains remain context."
+  },
+  {
+    "candidate_id": "sf-0017",
+    "decision": "reject",
+    "visual_reason": "Large adjacent wrapped bales form a close foreground row."
+  },
+  {
+    "candidate_id": "sf-0018",
+    "decision": "reject",
+    "visual_reason": "One compact block of stacked bales dominates the foreground."
+  },
+  {
+    "candidate_id": "sf-0019",
+    "decision": "reject",
+    "visual_reason": "Only a few large umbrellas along the bottom; sky and hillside dominate."
+  },
+  {
+    "candidate_id": "sf-0020",
+    "decision": "accept",
+    "visual_reason": "Numerous small umbrellas and people scatter across a continuous beach seen from above."
+  },
+  {
+    "candidate_id": "sf-0021",
+    "decision": "accept",
+    "visual_reason": "Small separated yellow umbrellas and people repeat across a sand field."
+  },
+  {
+    "candidate_id": "sf-0022",
+    "decision": "accept",
+    "visual_reason": "Tiny repeated beach fixtures dot the sand in an overhead view; water and trees form borders."
+  },
+  {
+    "candidate_id": "sf-0023",
+    "decision": "reject",
+    "visual_reason": "Two large foreground gulls are the principal subjects."
+  },
+  {
+    "candidate_id": "sf-0024",
+    "decision": "defer",
+    "visual_reason": "Shoreline birds fit loosely, but same photographer, island beach and day as sf-0036; defer this related view and retain sf-0036, whose scattered pattern is clearer."
+  },
+  {
+    "candidate_id": "sf-0025",
+    "decision": "accept",
+    "visual_reason": "Many separate birds distributed across grass and sky; several larger birds do not erase the overall scattered pattern."
+  },
+  {
+    "candidate_id": "sf-0026",
+    "decision": "accept",
+    "visual_reason": "Numerous small white birds make a dense stippled pattern over a continuous green field."
+  },
+  {
+    "candidate_id": "sf-0027",
+    "decision": "accept",
+    "visual_reason": "Small separated dark birds scatter across a continuous muddy bank around a shallow puddle."
+  },
+  {
+    "candidate_id": "sf-0028",
+    "decision": "accept",
+    "visual_reason": "Many separate gull silhouettes are scattered over a continuous pale water field in a historical photograph."
+  },
+  {
+    "candidate_id": "sf-0029",
+    "decision": "reject",
+    "visual_reason": "Birds are confined to a thin distant horizon band; most of the image is empty sky and water."
+  },
+  {
+    "candidate_id": "sf-0030",
+    "decision": "accept",
+    "visual_reason": "Many tiny separated bird marks trace a loose curve across a continuous cloud field; a sparse, ordered variation."
+  },
+  {
+    "candidate_id": "sf-0031",
+    "decision": "reject",
+    "visual_reason": "A few large birds and branching foreground limbs dominate."
+  },
+  {
+    "candidate_id": "sf-0032",
+    "decision": "reject",
+    "visual_reason": "Birds occupy one narrow shoreline strip, with waves and scenery dominating the image."
+  },
+  {
+    "candidate_id": "sf-0033",
+    "decision": "accept",
+    "visual_reason": "Many small bird marks are scattered across a continuous reflective silt field in the lower half."
+  },
+  {
+    "candidate_id": "sf-0034",
+    "decision": "reject",
+    "visual_reason": "One standing heron and broad horizontal landscape bands dominate; few separated marks."
+  },
+  {
+    "candidate_id": "sf-0035",
+    "decision": "accept",
+    "visual_reason": "Separated dark bird forms repeat across a continuous grass field with moderate scale variation."
+  },
+  {
+    "candidate_id": "sf-0036",
+    "decision": "accept",
+    "visual_reason": "Numerous separated birds distributed over a broad sand field; retain this clearer pattern instead of the related sf-0024 view."
+  },
+  {
+    "candidate_id": "sf-0037",
+    "decision": "reject",
+    "visual_reason": "Large overlapping cranes form the main foreground subject, rather than small marks across a field."
+  },
+  {
+    "candidate_id": "sf-0038",
+    "decision": "accept",
+    "visual_reason": "Two loose formations of tiny dark bird marks cross a continuous blue sky; sparse ordered variation."
+  },
+  {
+    "candidate_id": "sf-0039",
+    "decision": "accept",
+    "visual_reason": "Small isolated rocks stipple a continuous green hillside fading into mist."
+  },
+  {
+    "candidate_id": "sf-0040",
+    "decision": "accept",
+    "visual_reason": "Many small rock marks are scattered across a continuous grassy slope below the crags."
+  },
+  {
+    "candidate_id": "sf-0041",
+    "decision": "accept",
+    "visual_reason": "Many rounded stones repeat across a broad sandy field, with visible gaps and scale variation."
+  },
+  {
+    "candidate_id": "sf-0042",
+    "decision": "reject",
+    "visual_reason": "Large enclosing rock walls and a snow channel dominate; little distributed small-mark field."
+  },
+  {
+    "candidate_id": "sf-0043",
+    "decision": "accept",
+    "visual_reason": "Numerous dark stones make a dense irregular pattern across a continuous dry ground plane."
+  },
+  {
+    "candidate_id": "sf-0044",
+    "decision": "reject",
+    "visual_reason": "Large near rocks, a distant lake and broad landscape bands dominate; weak distributed-mark impression."
+  },
+  {
+    "candidate_id": "sf-0045",
+    "decision": "reject",
+    "visual_reason": "Touching rubble forms a continuous rock mass below forest, rather than separated marks across a field."
+  },
+  {
+    "candidate_id": "sf-0046",
+    "decision": "reject",
+    "visual_reason": "Closely touching angular rubble fills the view as a rough surface; separated small marks are weak."
+  },
+  {
+    "candidate_id": "sf-0047",
+    "decision": "reject",
+    "visual_reason": "Foreground stones merge into a dense shoreline surface; water and perspective dominate the composition."
+  },
+  {
+    "candidate_id": "sf-0048",
+    "decision": "accept",
+    "visual_reason": "Repeated isolated pale rocks dot continuous green ground beneath an open sky."
+  },
+  {
+    "candidate_id": "sf-0049",
+    "decision": "reject",
+    "visual_reason": "Several very large foreground boulders dominate and overlap, with little continuous field."
+  },
+  {
+    "candidate_id": "sf-0050",
+    "decision": "reject",
+    "visual_reason": "Touching foreground boulders form a continuous rocky mass beneath extensive sky."
+  },
+  {
+    "candidate_id": "sf-0051",
+    "decision": "accept",
+    "visual_reason": "Small separated cars repeat across a largely continuous pale rooftop parking surface."
+  },
+  {
+    "candidate_id": "sf-0052",
+    "decision": "reject",
+    "visual_reason": "Large shopping-center buildings dominate; cars occupy peripheral bands."
+  },
+  {
+    "candidate_id": "sf-0053",
+    "decision": "reject",
+    "visual_reason": "Cliff and broad terrain dominate; parked vehicles are a tiny distant strip."
+  },
+  {
+    "candidate_id": "sf-0054",
+    "decision": "accept",
+    "visual_reason": "Many small cars densely stipple the parking surface in regular rows."
+  },
+  {
+    "candidate_id": "sf-0055",
+    "decision": "reject",
+    "visual_reason": "Cars form a narrow diagonal band amid broad empty runway, field and sky."
+  },
+  {
+    "candidate_id": "sf-0056",
+    "decision": "reject",
+    "visual_reason": "Large buildings and street blocks dominate the aerial composition."
+  },
+  {
+    "candidate_id": "sf-0057",
+    "decision": "accept",
+    "visual_reason": "Repeated separated cars dot a snowy parking surface; background buildings supply context."
+  },
+  {
+    "candidate_id": "sf-0058",
+    "decision": "accept",
+    "visual_reason": "Very many tiny cars create dense repeated marks over a continuous aerial field."
+  },
+  {
+    "candidate_id": "sf-0059",
+    "decision": "reject",
+    "visual_reason": "Mostly empty pavement with only a few large nearby cars."
+  },
+  {
+    "candidate_id": "sf-0060",
+    "decision": "reject",
+    "visual_reason": "Broad factory roofs and surrounding landscape dominate the small car marks."
+  },
+  {
+    "candidate_id": "sf-0061",
+    "decision": "accept",
+    "visual_reason": "Rows of small cars scatter across a broad parking surface, with the racetrack as context."
+  },
+  {
+    "candidate_id": "sf-0062",
+    "decision": "accept",
+    "visual_reason": "Dense small light vehicles create regular dotted rows on a dark surface."
+  },
+  {
+    "candidate_id": "sf-0063",
+    "decision": "accept",
+    "visual_reason": "Small cars are spread across the parking plane; buildings frame the field of marks."
+  },
+  {
+    "candidate_id": "sf-0064",
+    "decision": "reject",
+    "visual_reason": "Mostly empty pavement with very few cars and large surrounding buildings."
+  },
+  {
+    "candidate_id": "sf-0065",
+    "decision": "reject",
+    "visual_reason": "Vehicles resolve as narrow edge bands around large uninterrupted grass rectangles."
+  },
+  {
+    "candidate_id": "sf-0066",
+    "decision": "accept",
+    "visual_reason": "Many separate cars repeat across pavement in an oblique view with visible gaps."
+  },
+  {
+    "candidate_id": "sf-0067",
+    "decision": "reject",
+    "visual_reason": "Large shopping-center roof, road and skyline dominate; car marks are confined to narrow bands."
+  },
+  {
+    "candidate_id": "sf-0068",
+    "decision": "accept",
+    "visual_reason": "Small people and umbrellas densely stipple the beach in a historical photograph."
+  },
+  {
+    "candidate_id": "sf-0069",
+    "decision": "accept",
+    "visual_reason": "Many tiny people form a dense colored field surrounding a central festival structure."
+  },
+  {
+    "candidate_id": "sf-0070",
+    "decision": "accept",
+    "visual_reason": "Overhead view shows many separated people across a dark field, with irregular spacing."
+  },
+  {
+    "candidate_id": "sf-0071",
+    "decision": "reject",
+    "visual_reason": "A few large overlapping leaves dominate the close-up."
+  },
+  {
+    "candidate_id": "sf-0072",
+    "decision": "reject",
+    "visual_reason": "One large foreground leaf is the subject against a blurred background."
+  },
+  {
+    "candidate_id": "sf-0073",
+    "decision": "reject",
+    "visual_reason": "Leaves form a compact tangled heap rather than separated marks across a field."
+  },
+  {
+    "candidate_id": "sf-0074",
+    "decision": "reject",
+    "visual_reason": "A single snow-covered branch and leaf cluster dominates."
+  },
+  {
+    "candidate_id": "sf-0075",
+    "decision": "reject",
+    "visual_reason": "Leaves collect in a narrow overlapping rim around a large empty reflection."
+  },
+  {
+    "candidate_id": "sf-0076",
+    "decision": "accept",
+    "visual_reason": "Many leaf shapes repeat over visible green ground; loose overlap adds dense variation."
+  },
+  {
+    "candidate_id": "sf-0077",
+    "decision": "accept",
+    "visual_reason": "Scattered small fruits and leaf shapes punctuate continuous dark ground."
+  },
+  {
+    "candidate_id": "sf-0078",
+    "decision": "accept",
+    "visual_reason": "Repeated orange leaf marks spread across pale pavement, changing scale with perspective."
+  },
+  {
+    "candidate_id": "sf-0079",
+    "decision": "reject",
+    "visual_reason": "Single isolated leaf portrait."
+  },
+  {
+    "candidate_id": "sf-0080",
+    "decision": "reject",
+    "visual_reason": "Single large frosted leaf dominates the close-up."
+  },
+  {
+    "candidate_id": "sf-0081",
+    "decision": "reject",
+    "visual_reason": "A few large overlapping leaves fill the close view; little continuous ground separates small marks."
+  },
+  {
+    "candidate_id": "sf-0082",
+    "decision": "reject",
+    "visual_reason": "Large branching tree structure and one foreground leaf dominate."
+  },
+  {
+    "candidate_id": "sf-0083",
+    "decision": "reject",
+    "visual_reason": "Leaves form a compact heap beside a tree rather than scattered marks."
+  },
+  {
+    "candidate_id": "sf-0084",
+    "decision": "accept",
+    "visual_reason": "Small boats repeat as separated light marks across dark harbor water; shore provides context."
+  },
+  {
+    "candidate_id": "sf-0085",
+    "decision": "accept",
+    "visual_reason": "Rows of small white boats punctuate continuous blue water, with broader landscape context."
+  },
+  {
+    "candidate_id": "sf-0086",
+    "decision": "reject",
+    "visual_reason": "Buildings and large empty water regions dominate; boat marks are peripheral and tiny."
+  },
+  {
+    "candidate_id": "sf-0087",
+    "decision": "reject",
+    "visual_reason": "Large buildings and road structures dominate the harbor view."
+  },
+  {
+    "candidate_id": "sf-0088",
+    "decision": "accept",
+    "visual_reason": "Many small boats dot dark water in regular rows, below a wooded shoreline."
+  },
+  {
+    "candidate_id": "sf-0089",
+    "decision": "reject",
+    "visual_reason": "Boats form a very narrow distant strip within a broad urban shoreline view."
+  },
+  {
+    "candidate_id": "sf-0090",
+    "decision": "reject",
+    "visual_reason": "Large adjacent foreground boats fill the frame."
+  },
+  {
+    "candidate_id": "sf-0091",
+    "decision": "reject",
+    "visual_reason": "Only a few foreground boats beneath extensive empty sky."
+  },
+  {
+    "candidate_id": "sf-0092",
+    "decision": "accept",
+    "visual_reason": "Many small white boats form clearly separated regular marks across dark water."
+  },
+  {
+    "candidate_id": "sf-0093",
+    "decision": "accept",
+    "visual_reason": "Repeated small boats stipple the marina water in rows, bordered by land."
+  },
+  {
+    "candidate_id": "sf-0094",
+    "decision": "accept",
+    "visual_reason": "Many separated light boats dot a blue-water basin; city and island frame the pattern."
+  },
+  {
+    "candidate_id": "sf-0095",
+    "decision": "reject",
+    "visual_reason": "Few isolated boats occupy a small part of a shoreline landscape."
+  },
+  {
+    "candidate_id": "sf-0096",
+    "decision": "reject",
+    "visual_reason": "Town, coastline and sky dominate; small boats barely register."
+  },
+  {
+    "candidate_id": "sf-0097",
+    "decision": "accept",
+    "visual_reason": "Repeated small white boats dot dark water in rows with gaps between the marks."
+  },
+  {
+    "candidate_id": "sf-0098",
+    "decision": "reject",
+    "visual_reason": "Empty marina pontoons make long lines, with no field of separated boat marks."
+  },
+  {
+    "candidate_id": "sf-0099",
+    "decision": "reject",
+    "visual_reason": "Boats are confined to a compact cluster; large surrounding water and shore regions dominate."
+  },
+  {
+    "candidate_id": "sf-0100",
+    "decision": "reject",
+    "visual_reason": "City and broad water dominate; boats occupy only a small distant harbor patch."
+  },
+  {
+    "candidate_id": "sf-0101",
+    "decision": "reject",
+    "visual_reason": "A few large stones arranged as labeled specimens rather than many small scattered marks."
+  },
+  {
+    "candidate_id": "sf-0102",
+    "decision": "reject",
+    "visual_reason": "A small deliberately arranged central cluster of large stones."
+  },
+  {
+    "candidate_id": "sf-0103",
+    "decision": "accept",
+    "visual_reason": "Many small pale gravel marks speckle a continuous ground surface."
+  },
+  {
+    "candidate_id": "sf-0104",
+    "decision": "accept",
+    "visual_reason": "Small stones scatter over sand, varying from sparse separated marks to a dense band."
+  },
+  {
+    "candidate_id": "sf-0105",
+    "decision": "accept",
+    "visual_reason": "Photographic magnification shows many pale rounded sand grains separated by dark gaps."
+  },
+  {
+    "candidate_id": "sf-0106",
+    "decision": "reject",
+    "visual_reason": "Stones form one compact central heap, leaving the surrounding sand mostly empty."
+  },
+  {
+    "candidate_id": "sf-0107",
+    "decision": "accept",
+    "visual_reason": "Separated stones dot a continuous sand field with a gradual perspective change."
+  },
+  {
+    "candidate_id": "sf-0108",
+    "decision": "accept",
+    "visual_reason": "Many tiny mixed-color gravel marks form a dense irregular speckled ground field."
+  },
+  {
+    "candidate_id": "sf-0109",
+    "decision": "accept",
+    "visual_reason": "Fine light and dark sand and pebble marks fill the frame as a dense photographic stipple."
+  },
+  {
+    "candidate_id": "sf-0110",
+    "decision": "reject",
+    "visual_reason": "Sheep form a compact roadside group amid rocks and distant landscape."
+  },
+  {
+    "candidate_id": "sf-0111",
+    "decision": "accept",
+    "visual_reason": "Many small sheep scatter across a green slope, with forest and mountains as context."
+  },
+  {
+    "candidate_id": "sf-0112",
+    "decision": "accept",
+    "visual_reason": "Separated pale sheep repeatedly dot green pasture at varying distances."
+  },
+  {
+    "candidate_id": "sf-0113",
+    "decision": "reject",
+    "visual_reason": "Two large nearby sheep and a narrow receding flock dominate instead of a spread field of small marks."
+  },
+  {
+    "candidate_id": "sf-0114",
+    "decision": "reject",
+    "visual_reason": "Few sheep occupy a small band within broad foreground and distant landscape."
+  },
+  {
+    "candidate_id": "sf-0115",
+    "decision": "reject",
+    "visual_reason": "A large sheep face fills the foreground."
+  },
+  {
+    "candidate_id": "sf-0116",
+    "decision": "reject",
+    "visual_reason": "Few animals sit in a narrow field band; fence, rocks and sky dominate."
+  },
+  {
+    "candidate_id": "sf-0117",
+    "decision": "accept",
+    "visual_reason": "Repeated separated sheep punctuate a continuous pasture, with no single animal dominating."
+  },
+  {
+    "candidate_id": "sf-0118",
+    "decision": "reject",
+    "visual_reason": "One large central tree dominates; only a few sheep appear at its base."
+  },
+  {
+    "candidate_id": "sf-0119",
+    "decision": "reject",
+    "visual_reason": "Main flock forms a compact cluster with a thin distant line across mostly empty grass; also flagged as possibly related to sf-0113."
+  },
+  {
+    "candidate_id": "sf-0120",
+    "decision": "reject",
+    "visual_reason": "A few large foreground sheep dominate the hillside view."
+  },
+  {
+    "candidate_id": "sf-0121",
+    "decision": "accept",
+    "visual_reason": "Many small white sheep dot a continuous dark pasture in a historical photograph."
+  },
+  {
+    "candidate_id": "sf-0122",
+    "decision": "accept",
+    "visual_reason": "Numerous separated sheep and small rocks mark a broad green hillside; mountains supply context."
+  },
+  {
+    "candidate_id": "sf-0123",
+    "decision": "reject",
+    "visual_reason": "A single prominent sheep and large near rocks dominate the misty landscape."
+  },
+  {
+    "candidate_id": "sf-0124",
+    "decision": "reject",
+    "visual_reason": "Large central tree dominates, with only a few sheep around it."
+  },
+  {
+    "candidate_id": "sf-0125",
+    "decision": "accept",
+    "visual_reason": "Small separated white animals punctuate a continuous brown slope; the wooded edge provides context."
+  },
+  {
+    "candidate_id": "sf-0126",
+    "decision": "reject",
+    "visual_reason": "Very few sheep occupy a narrow foreground field within a layered landscape."
+  },
+  {
+    "candidate_id": "sf-0127",
+    "decision": "reject",
+    "visual_reason": "Overlapping foreground sheep form a compact flock rather than small separated field marks."
+  },
+  {
+    "candidate_id": "sf-0128",
+    "decision": "accept",
+    "visual_reason": "Many dark and pale sheep repeat across a continuous brown field in loose rows."
+  },
+  {
+    "candidate_id": "sf-0129",
+    "decision": "reject",
+    "visual_reason": "Shells form one deliberately arranged foreground pile against an extensive seascape."
+  },
+  {
+    "candidate_id": "sf-0130",
+    "decision": "reject",
+    "visual_reason": "Large adjacent foreground boulders dominate beneath broad empty sky."
+  },
+  {
+    "candidate_id": "sf-0131",
+    "decision": "accept",
+    "visual_reason": "Small separated shells and pebbles scatter over pale sand with a soft perspective change."
+  },
+  {
+    "candidate_id": "sf-0132",
+    "decision": "reject",
+    "visual_reason": "Two large foreground shells are the main subject."
+  },
+  {
+    "candidate_id": "sf-0133",
+    "decision": "reject",
+    "visual_reason": "Single shell in a hand."
+  },
+  {
+    "candidate_id": "sf-0134",
+    "decision": "accept",
+    "visual_reason": "Many small shell shapes create a dense irregular light-and-dark speckle across the frame."
+  },
+  {
+    "candidate_id": "sf-0135",
+    "decision": "reject",
+    "visual_reason": "Large foreground rocks and an extended ridge dominate the landscape."
+  },
+  {
+    "candidate_id": "sf-0136",
+    "decision": "reject",
+    "visual_reason": "Bare trees and their shadows form long intersecting lines rather than small separated dotted marks."
+  },
+  {
+    "candidate_id": "sf-0137",
+    "decision": "accept",
+    "visual_reason": "Many small orange and green tree crowns form a dense field of repeated photographic marks."
+  },
+  {
+    "candidate_id": "sf-0138",
+    "decision": "accept",
+    "visual_reason": "Small separated grazing animals dot a continuous pale slope, with scattered trees adding larger marks."
+  },
+  {
+    "candidate_id": "sf-0139",
+    "decision": "reject",
+    "visual_reason": "Trees form a few compact distant groups along a narrow horizon band."
+  },
+  {
+    "candidate_id": "sf-0140",
+    "decision": "reject",
+    "visual_reason": "Continuous woodland color bands dominate rather than separated small marks on a continuous field."
+  },
+  {
+    "candidate_id": "sf-0141",
+    "decision": "reject",
+    "visual_reason": "A few large central trees and a foreground fence dominate."
+  },
+  {
+    "candidate_id": "sf-0142",
+    "decision": "reject",
+    "visual_reason": "Bright sun and broad dark field dominate, with trees confined to the horizon."
+  }
+]

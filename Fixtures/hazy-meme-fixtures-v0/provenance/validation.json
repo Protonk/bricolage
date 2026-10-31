@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "reviewed_stage": "previews/build-reviewed",
+  "reproduced_stage": "previews/build-reproduced",
+  "identical_primary_inputs": 42,
+  "identical_artifacts": 242,
+  "identical_metadata": [
+    "manifest.json",
+    "manifest.csv",
+    "probes.csv",
+    "selections.json",
+    "SHA256SUMS.txt"
+  ],
+  "visual_review": {
+    "reviewer": "assistant visual inspection",
+    "scope": "All 42 inputs and six stage sheets; final footer and two-panel layout revised and re-inspected.",
+    "replacements": "All six visible, outside-mask pixel equality passed. Hard cutout edges are intentional.",
+    "generations": "Imported unchanged; differing content and unknown generation settings retained."
+  },
+  "limitation": "Exact local rendering reproduction requires the recorded Pillow, font, encoder and color-management versions."
+}

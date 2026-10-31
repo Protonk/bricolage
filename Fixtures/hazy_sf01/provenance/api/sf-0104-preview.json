@@ -1,0 +1,116 @@
+{
+  "batchcomplete": true,
+  "query": {
+    "pages": [
+      {
+        "pageid": 51439324,
+        "ns": 6,
+        "title": "File:Beach-sand-stones-pebbles (23959011919).jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "timestamp": "2016-09-16T04:42:39Z",
+            "user": "Vanished Account Byeznhpyxeuztibuo",
+            "size": 3437788,
+            "width": 1920,
+            "height": 1280,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Beach-sand-stones-pebbles_%2823959011919%29.jpg/330px-Beach-sand-stones-pebbles_%2823959011919%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 320,
+            "thumbheight": 213,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Beach-sand-stones-pebbles_%2823959011919%29.jpg/960px-Beach-sand-stones-pebbles_%2823959011919%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Beach-sand-stones-pebbles_%2823959011919%29.jpg/330px-Beach-sand-stones-pebbles_%2823959011919%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 320,
+              "height": 213,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Beach-sand-stones-pebbles_%2823959011919%29.jpg/960px-Beach-sand-stones-pebbles_%2823959011919%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Beach-sand-stones-pebbles_%2823959011919%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Beach-sand-stones-pebbles_(23959011919).jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=51439324",
+            "sha1": "f20df90bf8eb76c89d1c393fc9ec0bbd3237d966",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2016-09-16 04:42:39",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Beach-sand-stones-pebbles (23959011919)",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "CC-Zero|Pebbles|Flickr images reviewed by FlickreviewR|Close-up photographs of sand",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "beach-sand-stones-pebbles",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2016-01-11 18:20",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/137643065@N06/23959011919/\">beach-sand-stones-pebbles</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/137643065@N06\">www.Pixel.la Free Stock Photos</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Zero, Public Domain Dedication",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      }
+    ]
+  }
+}

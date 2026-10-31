@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0088",
+  "status": "preview_downloaded",
+  "canonical_title": "File:Baldwin Wallace Tree with Berries (10240439473).jpg",
+  "pageid": 63323953,
+  "file": "previews/candidates/rg-0088.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Baldwin_Wallace_Tree_with_Berries_%2810240439473%29.jpg/330px-Baldwin_Wallace_Tree_with_Berries_%2810240439473%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "e1b4bcae1261cfe6b73b05b2b619926fa299128c93b546ee836d07637bddb800",
+  "width": 330,
+  "height": 223,
+  "exif_orientation": 1,
+  "requested_max_edge": 320,
+  "original_width": 4822,
+  "original_height": 3264,
+  "original_sha1": "d833ce633c00dd88d5dff01655696b5b11806399",
+  "creator": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/62091376@N03\">Erik Drost</a>",
+  "license": "CC BY 2.0",
+  "license_url": "https://creativecommons.org/licenses/by/2.0",
+  "retrieved_utc": "2026-10-31T00:39:20.234718+00:00",
+  "visual_review": "pending",
+  "source_independence": "unverified"
+}

@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0019",
+  "status": "downloaded",
+  "canonical_title": "File:Red dragonfly on a leaf.jpg",
+  "pageid": 69492408,
+  "file": "sources/rg-0019.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Red_dragonfly_on_a_leaf.jpg/1920px-Red_dragonfly_on_a_leaf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "deac898e36457201c0d908e41f1f2f984d0960d9330ea2efcb206c9184b75bed",
+  "width": 1920,
+  "height": 1080,
+  "exif_orientation": 1,
+  "requested_max_edge": 1600,
+  "original_width": 5556,
+  "original_height": 3125,
+  "original_sha1": "0488f250917e8f9ce4226e06a85e46b72ab2de77",
+  "creator": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:RadioactivePratik&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:RadioactivePratik (page does not exist)\">RadioactivePratik</a>",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "retrieved_utc": "2026-10-31T02:23:15.774586+00:00",
+  "visual_review": "see reviews.json",
+  "source_independence": "see reviews.json"
+}

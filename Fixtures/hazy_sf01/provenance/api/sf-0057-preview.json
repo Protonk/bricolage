@@ -1,0 +1,129 @@
+{
+  "batchcomplete": true,
+  "query": {
+    "pages": [
+      {
+        "pageid": 44777940,
+        "ns": 6,
+        "title": "File:Downtown East Minneapolis, 2013 (17219525849).jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "timestamp": "2015-11-04T18:11:21Z",
+            "user": "Tony Webster",
+            "size": 5799646,
+            "width": 2448,
+            "height": 3264,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Downtown_East_Minneapolis%2C_2013_%2817219525849%29.jpg/250px-Downtown_East_Minneapolis%2C_2013_%2817219525849%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 240,
+            "thumbheight": 320,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Downtown_East_Minneapolis%2C_2013_%2817219525849%29.jpg/500px-Downtown_East_Minneapolis%2C_2013_%2817219525849%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Downtown_East_Minneapolis%2C_2013_%2817219525849%29.jpg/250px-Downtown_East_Minneapolis%2C_2013_%2817219525849%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 240,
+              "height": 320,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Downtown_East_Minneapolis%2C_2013_%2817219525849%29.jpg/500px-Downtown_East_Minneapolis%2C_2013_%2817219525849%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Downtown_East_Minneapolis%2C_2013_%2817219525849%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Downtown_East_Minneapolis,_2013_(17219525849).jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=44777940",
+            "sha1": "5ac8337fe786fcabc7d68b2b0e2df3c9b5f59238",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2015-11-04 18:11:21",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Downtown East Minneapolis, 2013 (17219525849)",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Hubert H. Humphrey Metrodome|Star Tribune|Downtown East, Minneapolis|Flickr images reviewed by FlickreviewR|Aerial photographs of Minneapolis|Winter in Minnesota|February 2013 in Minnesota|2013 aerial photographs of the United States|Files with coordinates missing SDC location of creation|United States photographs taken on 2013-02-04|February 2013 in Minneapolis|Parking lots in Minneapolis|Aerial photographs of car parks|Photographs by Tony Webster|Flickr images missing SDC published in",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "44.977500",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "-93.262667",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "A surface parking lot, the old Star Tribune building, and the Metrodome back in February 2013.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "Taken on 4 February 2013, 12:50",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/diversey/17219525849/\">Downtown East Minneapolis, 2013</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/87296837@N00\">Tony Webster</a> from San Francisco, California",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY 2.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 2.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/2.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-2.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      }
+    ]
+  }
+}

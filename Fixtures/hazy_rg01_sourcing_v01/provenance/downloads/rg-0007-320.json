@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0007",
+  "status": "preview_downloaded",
+  "canonical_title": "File:Crimson Beauty in Bloom.jpg",
+  "pageid": 201792819,
+  "file": "previews/candidates/rg-0007.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Crimson_Beauty_in_Bloom.jpg/250px-Crimson_Beauty_in_Bloom.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "b9355e3b24ee6bbffa54522e207289ca1bc6fa46a8cae9b99443d690ffaf1dec",
+  "width": 250,
+  "height": 444,
+  "exif_orientation": 1,
+  "requested_max_edge": 320,
+  "original_width": 720,
+  "original_height": 1280,
+  "original_sha1": "7f83abe4eb6490ddf188b79f655986940697356a",
+  "creator": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Ramani_Marimuthu&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Ramani Marimuthu (page does not exist)\">Ramani Marimuthu</a>",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "retrieved_utc": "2026-10-31T00:29:37.086998+00:00",
+  "visual_review": "pending",
+  "source_independence": "unverified"
+}

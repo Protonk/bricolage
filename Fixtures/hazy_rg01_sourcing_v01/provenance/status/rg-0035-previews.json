@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0035",
+  "status": "preview_downloaded",
+  "canonical_title": "File:NEILS RED COVERED BRIDGE.jpg",
+  "pageid": 23364828,
+  "file": "previews/candidates/rg-0035.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/NEILS_RED_COVERED_BRIDGE.jpg/330px-NEILS_RED_COVERED_BRIDGE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "8309736e2d2119a6653a670db57b7a1b03354a03efeb26dbdc5d4cb215f7fc97",
+  "width": 330,
+  "height": 213,
+  "exif_orientation": 1,
+  "requested_max_edge": 320,
+  "original_width": 5352,
+  "original_height": 3451,
+  "original_sha1": "3694079eea9831ab4880d11fadd84a5d736d2944",
+  "creator": "<a href=\"//commons.wikimedia.org/wiki/User:KLOTZ\" title=\"User:KLOTZ\">JERRYE &amp; ROY KLOTZ MD</a>",
+  "license": "CC BY-SA 3.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+  "retrieved_utc": "2026-10-31T00:32:53.379127+00:00",
+  "visual_review": "pending",
+  "source_independence": "unverified"
+}

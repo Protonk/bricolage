@@ -1,0 +1,120 @@
+{
+  "candidate_id": "rg-0085",
+  "retrieved_utc": "2026-10-31T02:25:22.964151+00:00",
+  "requested_title": "File:Firethorn Pyracantha Wolves Lane Wood Green London England 01.jpg",
+  "response": {
+    "batchcomplete": true,
+    "query": {
+      "pages": [
+        {
+          "pageid": 138606653,
+          "ns": 6,
+          "title": "File:Firethorn Pyracantha Wolves Lane Wood Green London England 01.jpg",
+          "imagerepository": "local",
+          "imageinfo": [
+            {
+              "size": 18407846,
+              "width": 3456,
+              "height": 4608,
+              "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Firethorn_Pyracantha_Wolves_Lane_Wood_Green_London_England_01.jpg/1280px-Firethorn_Pyracantha_Wolves_Lane_Wood_Green_London_England_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "thumbwidth": 1200,
+              "thumbheight": 1600,
+              "responsiveUrls": {
+                "2": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Firethorn_Pyracantha_Wolves_Lane_Wood_Green_London_England_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+              },
+              "thumbattribs": {
+                "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Firethorn_Pyracantha_Wolves_Lane_Wood_Green_London_England_01.jpg/1280px-Firethorn_Pyracantha_Wolves_Lane_Wood_Green_London_England_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "decoding": "async",
+                "loading": "lazy",
+                "width": 1200,
+                "height": 1600,
+                "srcset": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Firethorn_Pyracantha_Wolves_Lane_Wood_Green_London_England_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+              },
+              "url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Firethorn_Pyracantha_Wolves_Lane_Wood_Green_London_England_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+              "descriptionurl": "https://commons.wikimedia.org/wiki/File:Firethorn_Pyracantha_Wolves_Lane_Wood_Green_London_England_01.jpg",
+              "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=138606653",
+              "sha1": "4e5bae814598560921fe71a20daab06a0619edd9",
+              "extmetadata": {
+                "DateTime": {
+                  "value": "2023-10-08 11:49:13",
+                  "source": "mediawiki-metadata",
+                  "hidden": ""
+                },
+                "ObjectName": {
+                  "value": "Firethorn Pyracantha Wolves Lane Wood Green London England 01",
+                  "source": "mediawiki-metadata"
+                },
+                "CommonsMetadataExtension": {
+                  "value": 1.2,
+                  "source": "extension",
+                  "hidden": ""
+                },
+                "Categories": {
+                  "value": "Pyracantha|Wood Green, London|Self-published work|October 2023 in London|United Kingdom photographs taken on 2023-10-07|Rosaceae in London|Amygdaloideae in the Northern Hemisphere in October|Red berries|Acabashi photos: flora|2023 in the London Borough of Haringey|Photographs of London by Acabashi|London N22|London green spaces and flora photos taken with Canon PowerShot SX60 HS",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "Assessments": {
+                  "value": "",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "ImageDescription": {
+                  "value": "<i>Pyracantha</i> (Firethorn), on Wolves Lane in Wood Green, London, England.<br>To see its most relevant allied photos, click  on <a href=\"//commons.wikimedia.org/wiki/Category:Tottenham\" title=\"Category:Tottenham\">Tottenham</a>, and this uploader's <a href=\"//commons.wikimedia.org/wiki/Category:Acabashi_photos:_flora\" title=\"Category:Acabashi photos: flora\">Flora photos</a>. <b>Wikimedia</b> (2023) makes it difficult to immediately view the helpful category links where you can find images related to this one in a variety of ways; for these go to the very bottom of the page.<br>This image is one of a series of date and/or subject allied consecutive photographs kept in progression or location by file name number and/or time marking.<br><b>Camera</b>: <a href=\"https://en.wikipedia.org/wiki/Canon_PowerShot_SX60_HS\" class=\"extiw\" title=\"w:Canon PowerShot SX60 HS\">Canon PowerShot SX60 HS</a><br><b>Software</b>: File lens-corrected, optimized, perhaps cropped, with <a href=\"https://en.wikipedia.org/wiki/DxO_PhotoLab\" class=\"extiw\" title=\"en:DxO PhotoLab\">DxO PhotoLab 6 Elite</a>.",
+                  "source": "commons-desc-page"
+                },
+                "DateTimeOriginal": {
+                  "value": "2023-10-07 12:59:10",
+                  "source": "commons-desc-page"
+                },
+                "Credit": {
+                  "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                  "source": "commons-desc-page"
+                },
+                "Artist": {
+                  "value": "<a href=\"//commons.wikimedia.org/wiki/User:Acabashi\" title=\"User:Acabashi\">Acabashi</a>",
+                  "source": "commons-desc-page"
+                },
+                "LicenseShortName": {
+                  "value": "CC BY-SA 4.0",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "UsageTerms": {
+                  "value": "Creative Commons Attribution-Share Alike 4.0",
+                  "source": "commons-desc-page"
+                },
+                "AttributionRequired": {
+                  "value": "true",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "LicenseUrl": {
+                  "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                  "source": "commons-desc-page"
+                },
+                "Copyrighted": {
+                  "value": "True",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "Restrictions": {
+                  "value": "",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "License": {
+                  "value": "cc-by-sa-4.0",
+                  "source": "commons-templates",
+                  "hidden": ""
+                }
+              },
+              "mime": "image/jpeg",
+              "mediatype": "BITMAP"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

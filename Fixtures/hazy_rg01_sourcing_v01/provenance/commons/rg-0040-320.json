@@ -1,0 +1,120 @@
+{
+  "candidate_id": "rg-0040",
+  "retrieved_utc": "2026-10-31T00:33:25.015196+00:00",
+  "requested_title": "File:Beautiful People's Pond.jpg",
+  "response": {
+    "batchcomplete": true,
+    "query": {
+      "pages": [
+        {
+          "pageid": 71201057,
+          "ns": 6,
+          "title": "File:Beautiful People's Pond.jpg",
+          "imagerepository": "local",
+          "imageinfo": [
+            {
+              "size": 2036756,
+              "width": 3840,
+              "height": 2160,
+              "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Beautiful_People%27s_Pond.jpg/330px-Beautiful_People%27s_Pond.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "thumbwidth": 320,
+              "thumbheight": 180,
+              "responsiveUrls": {
+                "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Beautiful_People%27s_Pond.jpg/960px-Beautiful_People%27s_Pond.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+              },
+              "thumbattribs": {
+                "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Beautiful_People%27s_Pond.jpg/330px-Beautiful_People%27s_Pond.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "decoding": "async",
+                "loading": "lazy",
+                "width": 320,
+                "height": 180,
+                "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Beautiful_People%27s_Pond.jpg/960px-Beautiful_People%27s_Pond.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+              },
+              "url": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Beautiful_People%27s_Pond.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+              "descriptionurl": "https://commons.wikimedia.org/wiki/File:Beautiful_People%27s_Pond.jpg",
+              "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=71201057",
+              "sha1": "543a08ca73001a5d85e97b90e5bf0ab5be89c512",
+              "extmetadata": {
+                "DateTime": {
+                  "value": "2018-07-30 12:27:18",
+                  "source": "mediawiki-metadata",
+                  "hidden": ""
+                },
+                "ObjectName": {
+                  "value": "Beautiful People's Pond",
+                  "source": "mediawiki-metadata"
+                },
+                "CommonsMetadataExtension": {
+                  "value": 1.2,
+                  "source": "extension",
+                  "hidden": ""
+                },
+                "Categories": {
+                  "value": "Park benches|Self-published work|Red benches|Taken with Xolo Era 4K",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "Assessments": {
+                  "value": "",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "ImageDescription": {
+                  "value": "this is a picture of near People's Pond",
+                  "source": "commons-desc-page"
+                },
+                "DateTimeOriginal": {
+                  "value": "2016-12-10 15:32:58",
+                  "source": "commons-desc-page"
+                },
+                "Credit": {
+                  "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                  "source": "commons-desc-page"
+                },
+                "Artist": {
+                  "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Shreya_Malakar&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Shreya Malakar (page does not exist)\">Shreya Malakar</a>",
+                  "source": "commons-desc-page"
+                },
+                "LicenseShortName": {
+                  "value": "CC BY-SA 4.0",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "UsageTerms": {
+                  "value": "Creative Commons Attribution-Share Alike 4.0",
+                  "source": "commons-desc-page"
+                },
+                "AttributionRequired": {
+                  "value": "true",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "LicenseUrl": {
+                  "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                  "source": "commons-desc-page"
+                },
+                "Copyrighted": {
+                  "value": "True",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "Restrictions": {
+                  "value": "",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "License": {
+                  "value": "cc-by-sa-4.0",
+                  "source": "commons-templates",
+                  "hidden": ""
+                }
+              },
+              "mime": "image/jpeg",
+              "mediatype": "BITMAP"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

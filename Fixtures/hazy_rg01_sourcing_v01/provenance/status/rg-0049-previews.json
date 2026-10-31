@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0049",
+  "status": "preview_downloaded",
+  "canonical_title": "File:Red benches at Jardim do Coreto, Praça Doutor António Padinha, Tavira, Portugal julesvernex2.jpg",
+  "pageid": 154052221,
+  "file": "previews/candidates/rg-0049.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Red_benches_at_Jardim_do_Coreto%2C_Pra%C3%A7a_Doutor_Ant%C3%B3nio_Padinha%2C_Tavira%2C_Portugal_julesvernex2.jpg/250px-Red_benches_at_Jardim_do_Coreto%2C_Pra%C3%A7a_Doutor_Ant%C3%B3nio_Padinha%2C_Tavira%2C_Portugal_julesvernex2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "e700c5e3db2d85951fedbab08aa4010656eccc8c0ee30107670b62577a2206a0",
+  "width": 250,
+  "height": 365,
+  "exif_orientation": 1,
+  "requested_max_edge": 320,
+  "original_width": 5301,
+  "original_height": 7741,
+  "original_sha1": "19a8c832358d6372746e9df0d64360043f7bf871",
+  "creator": "<a href=\"//commons.wikimedia.org/wiki/User:Julesvernex2\" title=\"User:Julesvernex2\">Jules Verne Times Two</a>",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "retrieved_utc": "2026-10-31T00:34:35.464533+00:00",
+  "visual_review": "pending",
+  "source_independence": "unverified"
+}

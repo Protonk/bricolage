@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0040",
+  "status": "downloaded",
+  "canonical_title": "File:Beautiful People's Pond.jpg",
+  "pageid": 71201057,
+  "file": "sources/rg-0040.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Beautiful_People%27s_Pond.jpg/1920px-Beautiful_People%27s_Pond.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "06c830112779aa661910bf22afc1928bd3717f5416e9ad72e916d7dd13e37caa",
+  "width": 1920,
+  "height": 1080,
+  "exif_orientation": 1,
+  "requested_max_edge": 1600,
+  "original_width": 3840,
+  "original_height": 2160,
+  "original_sha1": "543a08ca73001a5d85e97b90e5bf0ab5be89c512",
+  "creator": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Shreya_Malakar&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Shreya Malakar (page does not exist)\">Shreya Malakar</a>",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "retrieved_utc": "2026-10-31T02:23:58.958975+00:00",
+  "visual_review": "see reviews.json",
+  "source_independence": "see reviews.json"
+}

@@ -1,0 +1,675 @@
+{
+  "review_basis": "Actual downloaded previews, file-specific Commons imageinfo/extmetadata and available local fixture inventories. Discovery categories do not establish selection or source independence.",
+  "relationship_reviews": [
+    {
+      "candidates": [
+        "sf-0001",
+        "sf-0002"
+      ],
+      "finding": "Same named NARA Amish Country Byway series; both visually rejected. No independence claim."
+    },
+    {
+      "candidates": [
+        "sf-0024",
+        "sf-0036"
+      ],
+      "finding": "Same credited photographer, Moucha Island beach and reported capture day. Related capture cannot be excluded. Retain sf-0036 for its clearer scattered-bird field; defer sf-0024."
+    },
+    {
+      "candidates": [
+        "sf-0057",
+        "sf-0064"
+      ],
+      "finding": "Same photographer and Minneapolis context, but distinct visible surroundings and reported capture years. sf-0064 is visually rejected; only sf-0057 enters the heap."
+    },
+    {
+      "candidates": [
+        "sf-0113",
+        "sf-0119"
+      ],
+      "finding": "Same creator, Pester Plateau description and reported timestamp. Possible related capture/crop; both visually rejected."
+    },
+    {
+      "candidates": [
+        "sf-0020",
+        "sf-0021"
+      ],
+      "finding": "Both credited to Cocoa Beach. Different umbrella arrangements and compositions; metadata credits different authors and capture dates. No matching capture identified, but those differences do not prove independence."
+    },
+    {
+      "candidates": [
+        "sf-0039",
+        "sf-0040"
+      ],
+      "finding": "Same reported day; differing mountain locations, creators and visible terrain. No common capture identified. Date coincidence or difference alone is not an independence test."
+    },
+    {
+      "candidates": [
+        "sf-0054",
+        "sf-0058",
+        "sf-0062",
+        "sf-0093"
+      ],
+      "finding": "Repeated creator formulanone. Reviewed all four previews and file descriptions: car park, scrapyard, parked Hyundai rows and marina have distinct arrangements; metadata reports different capture dates. No shared capture identified; a comprehensive upstream series audit was not performed."
+    },
+    {
+      "candidates": [
+        "sf-0008"
+      ],
+      "other_fixture_candidates": [
+        "rg-0096"
+      ],
+      "finding": "Repeated creator DimiTalen: SF hayfield and RG Solidaris mailbox show different scenes and reported years. No shared capture identified."
+    },
+    {
+      "candidates": [
+        "sf-0033"
+      ],
+      "other_fixture_candidates": [
+        "rg-0049"
+      ],
+      "finding": "Repeated creator Jules Verne Times Two: SF Lisbon shoreline birds and RG Tavira garden bench have distinct scenes. No shared capture identified."
+    },
+    {
+      "candidates": [
+        "sf-0068",
+        "sf-0121"
+      ],
+      "finding": "Unknown photographer credits remain null, not a shared author identity. Separate archival descriptions show Santa Monica beach crowds and Australian pastoral sheep; no common source identified."
+    }
+  ],
+  "license_reviews": [
+    {
+      "candidate_id": "sf-0005",
+      "metadata_path": "provenance/api/sf-0005-preview.json",
+      "metadata_sha256": "9ebcd0d30255b48e76e226f87a8401f26bca1c46c07d002702e8925afa1dbb66",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "creator": "PookieFugglestein",
+      "copyrighted": "True",
+      "attribution_required": "false"
+    },
+    {
+      "candidate_id": "sf-0008",
+      "metadata_path": "provenance/api/sf-0008-preview.json",
+      "metadata_sha256": "77973311ddc7089f6ec822ad6494b475d29350883991ff6db6ea06f3ea21afc9",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "creator": "DimiTalen",
+      "copyrighted": "True",
+      "attribution_required": "false"
+    },
+    {
+      "candidate_id": "sf-0012",
+      "metadata_path": "provenance/api/sf-0012-preview.json",
+      "metadata_sha256": "497f15504d50d8c87445c8972dff519206972d97d18940b052c246ffd9fb5a7a",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "creator": "Oast House Archive",
+      "copyrighted": "True",
+      "attribution_required": "true"
+    },
+    {
+      "candidate_id": "sf-0016",
+      "metadata_path": "provenance/api/sf-0016-preview.json",
+      "metadata_sha256": "b48a0637f35d6922d1e1f0171fb5ae8cb988fd2d2b2ab3bfac4d3332e6fdc3b9",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "creator": "Sergey Ashmarin",
+      "copyrighted": "True",
+      "attribution_required": "true"
+    },
+    {
+      "candidate_id": "sf-0020",
+      "metadata_path": "provenance/api/sf-0020-preview.json",
+      "metadata_sha256": "e19e35f8e40c99f8191d968cfe135f063d13958ff13bf254f41c7248842ca9b2",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "creator": "Mikael Cho mikael",
+      "copyrighted": "True",
+      "attribution_required": "false"
+    },
+    {
+      "candidate_id": "sf-0021",
+      "metadata_path": "provenance/api/sf-0021-preview.json",
+      "metadata_sha256": "0f9d9542f7e90ec1f5ea611dd1a12258a600bd052ae4e4e26a76f6ce2963db9f",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "creator": "Annie Spratt anniespratt",
+      "copyrighted": "True",
+      "attribution_required": "false"
+    },
+    {
+      "candidate_id": "sf-0022",
+      "metadata_path": "provenance/api/sf-0022-preview.json",
+      "metadata_sha256": "9556f3dacab75cde4877d7a0fa60a147a35d1732fd99a9080ebea66ff209ef82",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "creator": "Benjamin Voros vorosbenisop",
+      "copyrighted": "True",
+      "attribution_required": "false"
+    },
+    {
+      "candidate_id": "sf-0025",
+      "metadata_path": "provenance/api/sf-0025-preview.json",
+      "metadata_sha256": "6dddf93a391b3431c279d04dd76f91428390e01ad24d5d5a359f8049ebbc3eff",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "BACbKA",
+      "copyrighted": "True",
+      "attribution_required": "true"
+    },
+    {
+      "candidate_id": "sf-0026",
+      "metadata_path": "provenance/api/sf-0026-preview.json",
+      "metadata_sha256": "3b8109f9bcdc4be2a676b51d99119d0b04ded6f16aa0ed0e4a8b293fb47c5a6b",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "creator": "Darren Kirby from Nanaimo, Canada",
+      "copyrighted": "True",
+      "attribution_required": "true"
+    },
+    {
+      "candidate_id": "sf-0027",
+      "metadata_path": "provenance/api/sf-0027-preview.json",
+      "metadata_sha256": "d3e202b18cb30e38180d8de7866ed2d1f61c2052f364a96a78d004155db5092d",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "Bärbel Miemietz",
+      "copyrighted": "True",
+      "attribution_required": "true"
+    },
+    {
+      "candidate_id": "sf-0028",
+      "metadata_path": "provenance/api/sf-0028-preview.json",
+      "metadata_sha256": "c3d1e94f24bb719ed61369d4115da15b2acac2166522c716886a7d7309bc1e76",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0",
+      "creator": "Collins, Tudor Washington, 1898-1970, photographer",
+      "copyrighted": "True",
+      "attribution_required": "true"
+    },
+    {
+      "candidate_id": "sf-0030",
+      "metadata_path": "provenance/api/sf-0030-preview.json",
+      "metadata_sha256": "f2563d3dc1a9f692d9ad8f01546f129f84f602b36e062e6d79725979230e30ee",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0",
+      "creator": "Maya Maceka",
+      "copyrighted": "True",
+      "attribution_required": "true"
+    },
+    {
+      "candidate_id": "sf-0033",
+      "metadata_path": "provenance/api/sf-0033-preview.json",
+      "metadata_sha256": "d1ceba86188f323fbabf6c9ac1e266d47446380389725bfd7102d9829ecc9727",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "Jules Verne Times Two",
+      "copyrighted": "True",
+      "attribution_required": "true"
+    },
+    {
+      "candidate_id": "sf-0035",
+      "metadata_path": "provenance/api/sf-0035-preview.json",
+      "metadata_sha256": "83a2b57b4a4d34fbe0c1293d8b98985494ffad387eef3e7f7657aab84fc54ec0",
+      "license": "CC BY-SA 2.5",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.5",
+      "creator": "Wing-Chi Poon",
+      "copyrighted": "True",
+      "attribution_required": "true"
+    },
+    {
+      "candidate_id": "sf-0036",
+      "metadata_path": "provenance/api/sf-0036-preview.json",
+      "metadata_sha256": "09b4324513e64e3c1e1c9e7ad44cbd50f41ac554bfc601915ff12c663861e355",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "Anai171",
+      "copyrighted": "True",
+      "attribution_required": "true"
+    },
+    {
+      "candidate_id": "sf-0038",
+      "metadata_path": "provenance/api/sf-0038-preview.json",
+      "metadata_sha256": "63f2ed0fdd284bd91972a41182b65defd040607350700029c2b8f1f386efd111",
+      "license": "CC BY-SA 2.5",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.5",
+      "creator": "Andreas Trepte",
+      "copyrighted": "True",
+      "attribution_required": "true"
+    },
+    {
+      "candidate_id": "sf-0039",
+      "metadata_path": "provenance/api/sf-0039-preview.json",
+      "metadata_sha256": "068497ad0461f728e67d389edaf00b00c13389c1d0208094e2281ac1344c95b3",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "creator": "Sharon Loxton",
+      "copyrighted": "True",
+      "attribution_required": "true"
+    },
+    {
+      "candidate_id": "sf-0040",
+      "metadata_path": "provenance/api/sf-0040-preview.json",
+      "metadata_sha256": "cfabdde78bc801b9663f35fcdae8a830276aa0d45b9fc44009708ef6d26a9361",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "creator": "John Allan",
+      "copyrighted": "True",
+      "attribution_required": "true"
+    },
+    {
+      "candidate_id": "sf-0041",
+      "metadata_path": "provenance/api/sf-0041-preview.json",
+      "metadata_sha256": "4b312c14bd654598bb895d829c1f8af4242c208a7d633c0e3ac6e019e07d34b2",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "creator": "AinAnepaio",
+      "copyrighted": "True",
+      "attribution_required": "true"
+    },
+    {
+      "candidate_id": "sf-0043",
+      "metadata_path": "provenance/api/sf-0043-preview.json",
+      "metadata_sha256": "951045a0281c7f7dc94fa9c1de2b6c6b5b128b1546a18e6f5454dd2638040195",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "Ziad Isam",
+      "copyrighted": "True",
+      "attribution_required": "true"
+    },
+    {
+      "candidate_id": "sf-0048",
+      "metadata_path": "provenance/api/sf-0048-preview.json",
+      "metadata_sha256": "716428da3a7fa95ce7c006dc48a97a949159ff13c7cf334085aa3a62906322af",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "creator": "Reinhard Hurt",
+      "copyrighted": "True",
+      "attribution_required": "true"
+    },
+    {
+      "candidate_id": "sf-0051",
+      "metadata_path": "provenance/api/sf-0051-preview.json",
+      "metadata_sha256": "a95a15d9322127ebb401082b44851d07212d471a4c4ee16089915e83e671d10e",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0",
+      "creator": "Marek Ślusarczyk (Tupungato) Photo portfolio",
+      "copyrighted": "True",
+      "attribution_required": "true"
+    },
+    {
+      "candidate_id": "sf-0054",
+      "metadata_path": "provenance/api/sf-0054-preview.json",
+      "metadata_sha256": "83a7aa7cbb383670a4d43a7b5599e2e70696c9badb884de5a19e7065896c10ab",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "creator": "formulanone",
+      "copyrighted": "True",
+      "attribution_required": "true"
+    },
+    {
+      "candidate_id": "sf-0057",
+      "metadata_path": "provenance/api/sf-0057-preview.json",
+      "metadata_sha256": "4a4177fbf6f7efc1c51e1b6dbb904c7d5c4637d81cf9ceaa5ac63bf9603bc04b",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0",
+      "creator": "Tony Webster from San Francisco, California",
+      "copyrighted": "True",
+      "attribution_required": "true"
+    },
+    {
+      "candidate_id": "sf-0058",
+      "metadata_path": "provenance/api/sf-0058-preview.json",
+      "metadata_sha256": "436debb919d226bbb704917515aa4b177a672336df00db7967d834dcf810205d",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "creator": "formulanone",
+      "copyrighted": "True",
+      "attribution_required": "true"
+    },
+    {
+      "candidate_id": "sf-0061",
+      "metadata_path": "provenance/api/sf-0061-preview.json",
+      "metadata_sha256": "5d1efe2d8b65c0d94b29a6c976c03179451d6a7cf5c6034aa798953e7932e9e2",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "creator": "Jsjessee",
+      "copyrighted": "True",
+      "attribution_required": "true"
+    },
+    {
+      "candidate_id": "sf-0062",
+      "metadata_path": "provenance/api/sf-0062-preview.json",
+      "metadata_sha256": "b30f7cf97b9f83c75d25d0d858f54ec89cbdeb6e6970f5c58e15092a200e2f83",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "creator": "formulanone",
+      "copyrighted": "True",
+      "attribution_required": "true"
+    },
+    {
+      "candidate_id": "sf-0063",
+      "metadata_path": "provenance/api/sf-0063-preview.json",
+      "metadata_sha256": "eec1fa57295e4e4ffeebbaeaf127734ab41ebb6dff0814b00d1063acf0dfd5e7",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0",
+      "creator": "Eóin",
+      "copyrighted": "True",
+      "attribution_required": "true"
+    },
+    {
+      "candidate_id": "sf-0066",
+      "metadata_path": "provenance/api/sf-0066-preview.json",
+      "metadata_sha256": "ab0392892b24eee667da88c3ba7edbfccb3a071295dc765572f90499dd90a8e6",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "creator": "Dolev",
+      "copyrighted": "True",
+      "attribution_required": "true"
+    },
+    {
+      "candidate_id": "sf-0068",
+      "metadata_path": "provenance/api/sf-0068-preview.json",
+      "metadata_sha256": "bdf4b3086f1eabf8ac6675fe6c04880a3b4b72e85bb666989cc3076d6a800797",
+      "license": "Public domain",
+      "license_url": null,
+      "creator": null,
+      "copyrighted": "False",
+      "attribution_required": "false"
+    },
+    {
+      "candidate_id": "sf-0069",
+      "metadata_path": "provenance/api/sf-0069-preview.json",
+      "metadata_sha256": "8a348315f528e2162c9dd8b3aea2fb23000b79d6feee3486afbdc142d35d4e64",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "Amdadphoto",
+      "copyrighted": "True",
+      "attribution_required": "true"
+    },
+    {
+      "candidate_id": "sf-0070",
+      "metadata_path": "provenance/api/sf-0070-preview.json",
+      "metadata_sha256": "bc5c689cdb07ccdc1179191eb9dbbbefe4c6475f752430928e719d360e36fabe",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "Mahinur11",
+      "copyrighted": "True",
+      "attribution_required": "true"
+    },
+    {
+      "candidate_id": "sf-0076",
+      "metadata_path": "provenance/api/sf-0076-preview.json",
+      "metadata_sha256": "18d451db629c8d8222d979c44f70d9bdb8698abb39a4c19fae9f5b956bafc945",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "Benjamin D. Esham (bdesham)",
+      "copyrighted": "True",
+      "attribution_required": "true"
+    },
+    {
+      "candidate_id": "sf-0077",
+      "metadata_path": "provenance/api/sf-0077-preview.json",
+      "metadata_sha256": "b3a7afd294ce82106126312ccc8207328842a5fe82a95fad93bba0db3a5285b4",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0",
+      "creator": "Shixart1985",
+      "copyrighted": "True",
+      "attribution_required": "true"
+    },
+    {
+      "candidate_id": "sf-0078",
+      "metadata_path": "provenance/api/sf-0078-preview.json",
+      "metadata_sha256": "1b02905e05fed18ae6f8feda0ca2b37ad8a2264ff8db5fa47d909f0d4a92e9a0",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "Mark Schellhase",
+      "copyrighted": "True",
+      "attribution_required": "true"
+    },
+    {
+      "candidate_id": "sf-0084",
+      "metadata_path": "provenance/api/sf-0084-preview.json",
+      "metadata_sha256": "8dd1d1a043c716d5d8bd5704cd09d326ef6aea5eb9004eab7b231b93208aebc4",
+      "license": "CC BY-SA 3.0",
+      "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "creator": "Original uploader was Frank5400 at da.wikipedia",
+      "copyrighted": "True",
+      "attribution_required": "true"
+    },
+    {
+      "candidate_id": "sf-0085",
+      "metadata_path": "provenance/api/sf-0085-preview.json",
+      "metadata_sha256": "d169b56cecf820a1b04c178d8d7bd8d01c342cc6457b16cc2c5ce3cf2182d476",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "creator": "Beauwell",
+      "copyrighted": "True",
+      "attribution_required": "false"
+    },
+    {
+      "candidate_id": "sf-0088",
+      "metadata_path": "provenance/api/sf-0088-preview.json",
+      "metadata_sha256": "047633a31158198cae5a5e549dee88a9cc9c2b28003acb8db035e933d2283d47",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "Joneikifi",
+      "copyrighted": "True",
+      "attribution_required": "true"
+    },
+    {
+      "candidate_id": "sf-0092",
+      "metadata_path": "provenance/api/sf-0092-preview.json",
+      "metadata_sha256": "d8cb9fc9fda802621b4cc45602a91938777ae13427d21188f7087201843f39de",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "Barbara van Cleve",
+      "copyrighted": "True",
+      "attribution_required": "true"
+    },
+    {
+      "candidate_id": "sf-0093",
+      "metadata_path": "provenance/api/sf-0093-preview.json",
+      "metadata_sha256": "6b19757c516d53d1d104edeccf4642c24f60aefc006d34e729d522741f76553b",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "creator": "formulanone",
+      "copyrighted": "True",
+      "attribution_required": "true"
+    },
+    {
+      "candidate_id": "sf-0094",
+      "metadata_path": "provenance/api/sf-0094-preview.json",
+      "metadata_sha256": "2981c7bb4af54a80510a2dfa71d6c74198bd5a7371c6213e1d804870d1bb1359",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0",
+      "creator": "Anthony Quintano from Mount Laurel, United States",
+      "copyrighted": "True",
+      "attribution_required": "true"
+    },
+    {
+      "candidate_id": "sf-0097",
+      "metadata_path": "provenance/api/sf-0097-preview.json",
+      "metadata_sha256": "ac645f7e9eff113da43541f82fc4d3fe237fda4ecd379a44c4fb890914ff1b69",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "GPlantam",
+      "copyrighted": "True",
+      "attribution_required": "true"
+    },
+    {
+      "candidate_id": "sf-0103",
+      "metadata_path": "provenance/api/sf-0103-preview.json",
+      "metadata_sha256": "d522feed22c8ab1ef6f71e6f21d9e73a4696c8f605e16e27e26543b540df22b3",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "creator": "Francisco losoya",
+      "copyrighted": "True",
+      "attribution_required": "true"
+    },
+    {
+      "candidate_id": "sf-0104",
+      "metadata_path": "provenance/api/sf-0104-preview.json",
+      "metadata_sha256": "a34942a687956d039b907fa068f66ef3c301b7c6eb6f49f9c957d1a2de8c9e16",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "creator": "www.Pixel.la Free Stock Photos",
+      "copyrighted": "True",
+      "attribution_required": "false"
+    },
+    {
+      "candidate_id": "sf-0105",
+      "metadata_path": "provenance/api/sf-0105-preview.json",
+      "metadata_sha256": "9903bcfa2be835b674a69f3f0e0643920ae097f13affd925064d953cf8b28f29",
+      "license": "Public domain",
+      "license_url": null,
+      "creator": "D. E. Hart - Chopperxs at en.wikipedia",
+      "copyrighted": "False",
+      "attribution_required": "false"
+    },
+    {
+      "candidate_id": "sf-0107",
+      "metadata_path": "provenance/api/sf-0107-preview.json",
+      "metadata_sha256": "ff01278b9667af1e1f7b4353b934d0373b3dc68a42b73e766e7f2225a06cd1cf",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "creator": "Barelyhere",
+      "copyrighted": "True",
+      "attribution_required": "false"
+    },
+    {
+      "candidate_id": "sf-0108",
+      "metadata_path": "provenance/api/sf-0108-preview.json",
+      "metadata_sha256": "54454203d5c22bcdd5ca51e962ccf4b059e18ae18ae4259112b967a435a1cee4",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "creator": "Paul The Writer",
+      "copyrighted": "True",
+      "attribution_required": "false"
+    },
+    {
+      "candidate_id": "sf-0109",
+      "metadata_path": "provenance/api/sf-0109-preview.json",
+      "metadata_sha256": "713e1c0b8f4bf0e61df0a44a6317962095a4057eaa13ef055c204cd69a676d37",
+      "license": "Public domain",
+      "license_url": null,
+      "creator": "Titus Tscharntke",
+      "copyrighted": "False",
+      "attribution_required": "false"
+    },
+    {
+      "candidate_id": "sf-0111",
+      "metadata_path": "provenance/api/sf-0111-preview.json",
+      "metadata_sha256": "298c0f4255ece5f6d596d61724f57cfab608d878b1d274815228175a120b3fda",
+      "license": "Public domain",
+      "license_url": null,
+      "creator": "U.S. Forest Service- Pacific Northwest Region",
+      "copyrighted": "False",
+      "attribution_required": "false"
+    },
+    {
+      "candidate_id": "sf-0112",
+      "metadata_path": "provenance/api/sf-0112-preview.json",
+      "metadata_sha256": "8be339e11e2e1e33af85104cc1680c3ca3a83676aa92c02a6ec3260b470df461",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "creator": "Mat Fascione",
+      "copyrighted": "True",
+      "attribution_required": "true"
+    },
+    {
+      "candidate_id": "sf-0117",
+      "metadata_path": "provenance/api/sf-0117-preview.json",
+      "metadata_sha256": "3e99256a9cc4762635bc1b89aca43ad6838fc31b8c28054d0a60b23a34749b1a",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "creator": "W.carter",
+      "copyrighted": "True",
+      "attribution_required": "false"
+    },
+    {
+      "candidate_id": "sf-0121",
+      "metadata_path": "provenance/api/sf-0121-preview.json",
+      "metadata_sha256": "01ae11cfdc494600f9c786dc09f1c25bcaea16d0a94c34cf0ccc176f1fe8d8ae",
+      "license": "Public domain",
+      "license_url": null,
+      "creator": null,
+      "copyrighted": "False",
+      "attribution_required": "false"
+    },
+    {
+      "candidate_id": "sf-0122",
+      "metadata_path": "provenance/api/sf-0122-preview.json",
+      "metadata_sha256": "5bd319e5068f33b4e4aabd57fd4c00458446882d680e862c96985e676adb4001",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "SAYYAD ALI6",
+      "copyrighted": "True",
+      "attribution_required": "true"
+    },
+    {
+      "candidate_id": "sf-0125",
+      "metadata_path": "provenance/api/sf-0125-preview.json",
+      "metadata_sha256": "cc27e35f35351f5954f0092ab40db970195489ce2b3fc7a676f4814dcbb82161",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "creator": "Bill Nicholls",
+      "copyrighted": "True",
+      "attribution_required": "true"
+    },
+    {
+      "candidate_id": "sf-0128",
+      "metadata_path": "provenance/api/sf-0128-preview.json",
+      "metadata_sha256": "8aaa8627535595e6ff38e292e12eb3192d753f965ca6c005c135715485c4000d",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "Vitaliy VK",
+      "copyrighted": "True",
+      "attribution_required": "true"
+    },
+    {
+      "candidate_id": "sf-0131",
+      "metadata_path": "provenance/api/sf-0131-preview.json",
+      "metadata_sha256": "017a911a6a78603b5a881343e3d2f4a022e4555b27b48765f57955ed511089a8",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "Dietmar Rabich",
+      "copyrighted": "True",
+      "attribution_required": "true"
+    },
+    {
+      "candidate_id": "sf-0134",
+      "metadata_path": "provenance/api/sf-0134-preview.json",
+      "metadata_sha256": "04b89f17e03bb3013dc0f24d60e442e46b4a1f3287e3933902d4c390f939c316",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "Chris Olszewski",
+      "copyrighted": "True",
+      "attribution_required": "true"
+    },
+    {
+      "candidate_id": "sf-0137",
+      "metadata_path": "provenance/api/sf-0137-preview.json",
+      "metadata_sha256": "57e4e7fff538b14c7bb218a6576cf43c73d9c8fbd143dc4ab27cc7b426cc5de1",
+      "license": "Public domain",
+      "license_url": null,
+      "creator": "Pacific Southwest Region 5",
+      "copyrighted": "False",
+      "attribution_required": "false"
+    },
+    {
+      "candidate_id": "sf-0138",
+      "metadata_path": "provenance/api/sf-0138-preview.json",
+      "metadata_sha256": "3b2645ca3872918ad45d7bc467499ec6daaae926d66be6900eb31ab5880df13e",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "Nathannn20",
+      "copyrighted": "True",
+      "attribution_required": "true"
+    }
+  ],
+  "source_independence_confirmed": null,
+  "limitations": "No exhaustive upstream capture/series investigation. Different source IDs, hashes, dates or photographers do not prove independence. Original supplied claims and prior DNS failure evidence are retained under provenance/supplied and transport_probe.json; current HTTP results are separate."
+}

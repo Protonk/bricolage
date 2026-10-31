@@ -1,0 +1,133 @@
+{
+  "candidate_id": "rg-0022",
+  "retrieved_utc": "2026-10-31T00:31:16.243695+00:00",
+  "requested_title": "File:Ladybut on a leaf.jpg",
+  "response": {
+    "batchcomplete": true,
+    "query": {
+      "pages": [
+        {
+          "pageid": 119533780,
+          "ns": 6,
+          "title": "File:Ladybut on a leaf.jpg",
+          "imagerepository": "local",
+          "imageinfo": [
+            {
+              "size": 1462427,
+              "width": 2909,
+              "height": 2450,
+              "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Ladybut_on_a_leaf.jpg/330px-Ladybut_on_a_leaf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "thumbwidth": 320,
+              "thumbheight": 270,
+              "responsiveUrls": {
+                "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Ladybut_on_a_leaf.jpg/960px-Ladybut_on_a_leaf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+              },
+              "thumbattribs": {
+                "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Ladybut_on_a_leaf.jpg/330px-Ladybut_on_a_leaf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "decoding": "async",
+                "loading": "lazy",
+                "width": 320,
+                "height": 270,
+                "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Ladybut_on_a_leaf.jpg/960px-Ladybut_on_a_leaf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+              },
+              "url": "https://upload.wikimedia.org/wikipedia/commons/2/22/Ladybut_on_a_leaf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+              "descriptionurl": "https://commons.wikimedia.org/wiki/File:Ladybut_on_a_leaf.jpg",
+              "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=119533780",
+              "sha1": "c93207062417f6f44cda18cc4be69e563022a1b4",
+              "extmetadata": {
+                "DateTime": {
+                  "value": "2022-06-20 22:56:08",
+                  "source": "mediawiki-metadata",
+                  "hidden": ""
+                },
+                "ObjectName": {
+                  "value": "Ladybut on a leaf",
+                  "source": "mediawiki-metadata"
+                },
+                "CommonsMetadataExtension": {
+                  "value": 1.2,
+                  "source": "extension",
+                  "hidden": ""
+                },
+                "Categories": {
+                  "value": "Self-published work|Files with coordinates missing SDC location of creation|Images from Wiki Loves Earth 2022 in Switzerland|Images from Wiki Loves Switzerland 2022 - close-up|Nature of Zurich (Switzerland)",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "Assessments": {
+                  "value": "",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "GPSLatitude": {
+                  "value": "47.359704",
+                  "source": "commons-desc-page"
+                },
+                "GPSLongitude": {
+                  "value": "8.487277",
+                  "source": "commons-desc-page"
+                },
+                "GPSMapDatum": {
+                  "value": "WGS-84",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "ImageDescription": {
+                  "value": "A red ladybug on a leaf in Zurich.",
+                  "source": "commons-desc-page"
+                },
+                "DateTimeOriginal": {
+                  "value": "2020-06-13 12:45:25",
+                  "source": "commons-desc-page"
+                },
+                "Credit": {
+                  "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                  "source": "commons-desc-page"
+                },
+                "Artist": {
+                  "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Yabqnoc6fty&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Yabqnoc6fty (page does not exist)\">Matias Senger</a>",
+                  "source": "commons-desc-page"
+                },
+                "LicenseShortName": {
+                  "value": "CC BY-SA 4.0",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "UsageTerms": {
+                  "value": "Creative Commons Attribution-Share Alike 4.0",
+                  "source": "commons-desc-page"
+                },
+                "AttributionRequired": {
+                  "value": "true",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "LicenseUrl": {
+                  "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                  "source": "commons-desc-page"
+                },
+                "Copyrighted": {
+                  "value": "True",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "Restrictions": {
+                  "value": "",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "License": {
+                  "value": "cc-by-sa-4.0",
+                  "source": "commons-templates",
+                  "hidden": ""
+                }
+              },
+              "mime": "image/jpeg",
+              "mediatype": "BITMAP"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

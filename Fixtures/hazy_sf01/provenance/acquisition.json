@@ -1,0 +1,30 @@
+{
+  "status": "stopped",
+  "preview_count": 142,
+  "visually_selected": 59,
+  "acquired_count": 48,
+  "pending_candidate_ids": [
+    "sf-0111",
+    "sf-0112",
+    "sf-0117",
+    "sf-0121",
+    "sf-0122",
+    "sf-0125",
+    "sf-0128",
+    "sf-0131",
+    "sf-0134",
+    "sf-0137",
+    "sf-0138"
+  ],
+  "stop_record": "provenance/last_transport_error.json",
+  "stop_record_sha256": "3916546bc84c126dae203879b967cad66959b7cc684e83b07493c2c5838dcfaf",
+  "reason": "sf-0111 returned HTTP 200 headers, then the image body read timed out. No HTTP access/rate-limit response or Retry-After was received. Cause is unproven; machine sleep, local connectivity and remote delivery cannot be distinguished from these diagnostics. No retry was attempted.",
+  "request_attempts": 382,
+  "complete_responses": 381,
+  "automatic_retries": 0,
+  "media_bytes": 37280389,
+  "acquisition_kinds": {
+    "commons_rendition": 36,
+    "api_unscaled_original": 12
+  }
+}

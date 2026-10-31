@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0068",
+  "status": "preview_downloaded",
+  "canonical_title": "File:3893. Pskovo - Pechorsky Monastery. Gate to the garden.jpg",
+  "pageid": 82427117,
+  "file": "previews/candidates/rg-0068.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/3893._Pskovo_-_Pechorsky_Monastery._Gate_to_the_garden.jpg/330px-3893._Pskovo_-_Pechorsky_Monastery._Gate_to_the_garden.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "a0d41e153e6182e962ab71975754fc31092da2e2d25990d01a8ab05d7564eaea",
+  "width": 330,
+  "height": 247,
+  "exif_orientation": 1,
+  "requested_max_edge": 320,
+  "original_width": 3070,
+  "original_height": 2302,
+  "original_sha1": "24140a0161d58c11ca8aba697fa02bd718b79b11",
+  "creator": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:GAlexandrova&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:GAlexandrova (page does not exist)\">GAlexandrova</a>",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "retrieved_utc": "2026-10-31T00:36:52.893309+00:00",
+  "visual_review": "pending",
+  "source_independence": "unverified"
+}

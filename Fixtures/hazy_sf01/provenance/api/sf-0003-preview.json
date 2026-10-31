@@ -1,0 +1,130 @@
+{
+  "batchcomplete": true,
+  "query": {
+    "pages": [
+      {
+        "pageid": 51941079,
+        "ns": 6,
+        "title": "File:Foggy grasslands (9816823626).jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "timestamp": "2016-09-30T15:03:55Z",
+            "user": "Fæ",
+            "size": 4043215,
+            "width": 4748,
+            "height": 3162,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Foggy_grasslands_%289816823626%29.jpg/330px-Foggy_grasslands_%289816823626%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 320,
+            "thumbheight": 213,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Foggy_grasslands_%289816823626%29.jpg/960px-Foggy_grasslands_%289816823626%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Foggy_grasslands_%289816823626%29.jpg/330px-Foggy_grasslands_%289816823626%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 320,
+              "height": 213,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Foggy_grasslands_%289816823626%29.jpg/960px-Foggy_grasslands_%289816823626%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/1/10/Foggy_grasslands_%289816823626%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Foggy_grasslands_(9816823626).jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=51941079",
+            "sha1": "731d17e9eb3e9d91350d8083b74d9aa625fc54a2",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2016-09-30 15:03:55",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Foggy grasslands (9816823626)",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Missisquoi National Wildlife Refuge|PD US FWS|Photos uploaded from Flickr by Fæ using a script|Flickr images reviewed by FlickreviewR|Round hay bales in the United States|Files with coordinates missing SDC location of creation|Files from the United States Fish and Wildlife Service Northeast Region Flickr stream",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "44.917411",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "-73.124206",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Steam rises at Missisquoi National Wildlife Refuge.<br>\n<p><br>\nPhoto Credit: Ken Sturm/USFWS<br>\n<br>\n<a rel=\"nofollow\" class=\"external free\" data-mw-original-href=\"http://www.fws.gov/refuge/missisquoi/\" href=\"https://www.fws.gov/refuge/missisquoi/\">http://www.fws.gov/refuge/missisquoi/</a><br>\n</p>\n<a rel=\"nofollow\" class=\"external free\" data-mw-original-href=\"http://www.fws.gov/northeast\" href=\"https://www.fws.gov/northeast\">http://www.fws.gov/northeast</a>",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2013-09-19 07:21:12",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external free\" href=\"https://www.flickr.com/photos/usfwsnortheast/9816823626/\">https://www.flickr.com/photos/usfwsnortheast/9816823626/</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/43322816@N08\">U. S. Fish and Wildlife Service - Northeast Region</a>",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "At the time of upload, the image license was automatically confirmed using the Flickr <a href=\"https://en.wikipedia.org/wiki/API\" class=\"extiw\" title=\"en:API\">API</a>. For more information see <a href=\"//commons.wikimedia.org/wiki/User:F%C3%A6/Flickr_API_detail\" title=\"User:Fæ/Flickr API detail\">Flickr API detail</a>.",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      }
+    ]
+  }
+}

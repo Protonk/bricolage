@@ -1,0 +1,116 @@
+{
+  "batchcomplete": true,
+  "query": {
+    "pages": [
+      {
+        "pageid": 41281182,
+        "ns": 6,
+        "title": "File:Afternoon landscape with sheep and shepherds at the Pester Plateau in Serbia.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "timestamp": "2015-06-30T07:00:27Z",
+            "user": "Zcvetkovic",
+            "size": 9870726,
+            "width": 4288,
+            "height": 2848,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Afternoon_landscape_with_sheep_and_shepherds_at_the_Pester_Plateau_in_Serbia.jpg/330px-Afternoon_landscape_with_sheep_and_shepherds_at_the_Pester_Plateau_in_Serbia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 320,
+            "thumbheight": 213,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Afternoon_landscape_with_sheep_and_shepherds_at_the_Pester_Plateau_in_Serbia.jpg/960px-Afternoon_landscape_with_sheep_and_shepherds_at_the_Pester_Plateau_in_Serbia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Afternoon_landscape_with_sheep_and_shepherds_at_the_Pester_Plateau_in_Serbia.jpg/330px-Afternoon_landscape_with_sheep_and_shepherds_at_the_Pester_Plateau_in_Serbia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 320,
+              "height": 213,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Afternoon_landscape_with_sheep_and_shepherds_at_the_Pester_Plateau_in_Serbia.jpg/960px-Afternoon_landscape_with_sheep_and_shepherds_at_the_Pester_Plateau_in_Serbia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/2/24/Afternoon_landscape_with_sheep_and_shepherds_at_the_Pester_Plateau_in_Serbia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Afternoon_landscape_with_sheep_and_shepherds_at_the_Pester_Plateau_in_Serbia.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=41281182",
+            "sha1": "7955ad3ac272f75bdab1523eba0b62a83e066004",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2015-06-30 07:00:27",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Afternoon landscape with sheep and shepherds at the Pester Plateau in Serbia",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Pešter|Pramenka|Self-published work|Sheep in Serbia|Images from Wiki Loves Earth 2015 in Serbia|Images from Wiki Loves Earth 2015|Uploaded via Campaign:wle-rs|Sheep of the Balkans|Images from Wiki Loves Earth missing SDC location of creation|Grazing sheep|Production of Sjenica cheese",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Panoramic scenes of the Pester plateau, karst region in southwestern Serbia. It situated in the area of Raska. The most part of Pešter is located in the municipality of Sjenica. The relief of Pester Plateau is characterized by low, hilly terrain, streams of clean water and vast meadows that are used for grazing sheep and cattle. Pester field is a region of outstanding natural value. A part of Pester is the Uvac River Canyon. In the canyon of the river Uvac nests large colony of eagles, vultures - Gyps fulvus.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2015-06-16 07:54:24",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Zcvetkovic&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Zcvetkovic (page does not exist)\">Zcvetkovic</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/3.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      }
+    ]
+  }
+}

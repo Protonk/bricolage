@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0001",
+  "status": "preview_downloaded",
+  "canonical_title": "File:Red flower with green leaves.jpg",
+  "pageid": 94433030,
+  "file": "previews/candidates/rg-0001.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Red_flower_with_green_leaves.jpg/330px-Red_flower_with_green_leaves.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "bbd5c7c7faae2f08a966bc0841f1345125485d133b72fcd7c29eacb4a12ebc64",
+  "width": 330,
+  "height": 247,
+  "exif_orientation": 1,
+  "requested_max_edge": 320,
+  "original_width": 5184,
+  "original_height": 3888,
+  "original_sha1": "d9ef28879a594f7e30e090bac8cb1983b7ce9d3e",
+  "creator": "<a href=\"//commons.wikimedia.org/wiki/User:Peachyeung316\" title=\"User:Peachyeung316\">Peachyeung316</a>",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "retrieved_utc": "2026-10-31T00:27:22.400666+00:00",
+  "visual_review": "pending",
+  "source_independence": "unverified"
+}

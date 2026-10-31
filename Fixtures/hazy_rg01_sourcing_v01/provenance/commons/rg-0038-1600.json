@@ -1,0 +1,134 @@
+{
+  "candidate_id": "rg-0038",
+  "retrieved_utc": "2026-10-31T02:23:48.740291+00:00",
+  "requested_title": "File:Eyrignac Manor-red bench.JPG",
+  "response": {
+    "batchcomplete": true,
+    "query": {
+      "pages": [
+        {
+          "pageid": 3451983,
+          "ns": 6,
+          "title": "File:Eyrignac Manor-red bench.JPG",
+          "imagerepository": "local",
+          "imageinfo": [
+            {
+              "size": 829697,
+              "width": 1712,
+              "height": 2288,
+              "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Eyrignac_Manor-red_bench.JPG/1280px-Eyrignac_Manor-red_bench.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "thumbwidth": 1197,
+              "thumbheight": 1600,
+              "responsiveUrls": {
+                "2": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Eyrignac_Manor-red_bench.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+              },
+              "thumbattribs": {
+                "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Eyrignac_Manor-red_bench.JPG/1280px-Eyrignac_Manor-red_bench.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "decoding": "async",
+                "loading": "lazy",
+                "width": 1197,
+                "height": 1600,
+                "srcset": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Eyrignac_Manor-red_bench.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+              },
+              "url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Eyrignac_Manor-red_bench.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+              "descriptionurl": "https://commons.wikimedia.org/wiki/File:Eyrignac_Manor-red_bench.JPG",
+              "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=3451983",
+              "sha1": "8d5380f01cf041edc41b970ad143e501947dabb4",
+              "extmetadata": {
+                "DateTime": {
+                  "value": "2008-01-25 15:21:52",
+                  "source": "mediawiki-metadata",
+                  "hidden": ""
+                },
+                "ObjectName": {
+                  "value": "Eyrignac Manor-red bench",
+                  "source": "mediawiki-metadata"
+                },
+                "CommonsMetadataExtension": {
+                  "value": 1.2,
+                  "source": "extension",
+                  "hidden": ""
+                },
+                "Categories": {
+                  "value": "Taken with Nikon Coolpix 4600|Jardins du manoir d'Eyrignac|Self-published work|PD-self|Benches in Dordogne|Wooden outdoor benches|Red benches|Files with coordinates missing SDC location of creation|Empty benches in France|Photos by TwoWings (PD-self)",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "Assessments": {
+                  "value": "",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "GPSLatitude": {
+                  "value": "44.950000",
+                  "source": "commons-desc-page"
+                },
+                "GPSLongitude": {
+                  "value": "1.300000",
+                  "source": "commons-desc-page"
+                },
+                "GPSMapDatum": {
+                  "value": "WGS-84",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "ImageDescription": {
+                  "value": "Red bench in the gardens of Eyrignac Manor, in Dordogne (France)",
+                  "source": "commons-desc-page"
+                },
+                "DateTimeOriginal": {
+                  "value": "2007-08-21",
+                  "source": "commons-desc-page"
+                },
+                "Credit": {
+                  "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                  "source": "commons-desc-page"
+                },
+                "Artist": {
+                  "value": "<a href=\"//commons.wikimedia.org/wiki/User:TwoWings\" title=\"User:TwoWings\">TwoWings</a>",
+                  "source": "commons-desc-page"
+                },
+                "Permission": {
+                  "value": "<a href=\"//commons.wikimedia.org/wiki/User:TwoWings/Note\" title=\"User:TwoWings/Note\">English</a> |",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "LicenseShortName": {
+                  "value": "Public domain",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "UsageTerms": {
+                  "value": "Public domain",
+                  "source": "commons-desc-page"
+                },
+                "AttributionRequired": {
+                  "value": "false",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "Copyrighted": {
+                  "value": "False",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "Restrictions": {
+                  "value": "",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "License": {
+                  "value": "pd",
+                  "source": "commons-templates",
+                  "hidden": ""
+                }
+              },
+              "mime": "image/jpeg",
+              "mediatype": "BITMAP"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

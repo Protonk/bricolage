@@ -1,0 +1,122 @@
+{
+  "sources": [
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Mist_above_water_surfaces",
+      "bucket": "water_mist",
+      "count": 20
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Sea_Fog",
+      "bucket": "sea_fog",
+      "count": 8
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Misty_mornings_in_the_United_States",
+      "bucket": "misty_morning",
+      "count": 21
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Landscapes_in_fog",
+      "bucket": "general_landscape",
+      "count": 26
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Forests_in_fog",
+      "bucket": "forest_ridges",
+      "count": 12
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Cityscapes_in_fog",
+      "bucket": "urban_silhouette",
+      "count": 7
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Fog_on_roads",
+      "bucket": "road_open_space",
+      "count": 5
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Fog_in_the_United_States",
+      "bucket": "general_fog",
+      "count": 8
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Overcast",
+      "bucket": "overcast",
+      "count": 11
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Misty_mornings_in_California",
+      "bucket": "california_morning",
+      "count": 5
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Sea_of_fog",
+      "bucket": "sea_of_fog",
+      "count": 4
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Texas_Coastal_Bend",
+      "bucket": "open_horizon",
+      "count": 4
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Misty_mornings",
+      "bucket": "misty_morning",
+      "count": 4
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Dark_cloudy_coastline_(Unsplash).jpg",
+      "bucket": "file_page",
+      "count": 1
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Foggy_tree_lines_(Unsplash).jpg",
+      "bucket": "file_page",
+      "count": 1
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Foggy_forest.jpg",
+      "bucket": "file_page",
+      "count": 1
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Foggy_night_at_the_parking_lot.jpg",
+      "bucket": "file_page",
+      "count": 1
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:White_rock_BC.jpg",
+      "bucket": "file_page",
+      "count": 1
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Rocky_Shoreline_at_Dusk.jpg",
+      "bucket": "file_page",
+      "count": 1
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Valley_Vista_under_Cloudy_Sky.jpg",
+      "bucket": "file_page",
+      "count": 1
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Sunrise_with_early_morning_fog.jpg",
+      "bucket": "file_page",
+      "count": 1
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Ocean_wave_crashing_on_rocky_coastline_with_a_sailboat_in_the_distance,_Canidelo,_Vila_Nova_de_Gaia,_Porto,_Portugal,_January_2024_(53523297650).jpg",
+      "bucket": "file_page",
+      "count": 1
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Clouds_Over_Mount_Kilimanjaro_(Unsplash).jpg",
+      "bucket": "file_page",
+      "count": 1
+    }
+  ],
+  "total_candidates": 145,
+  "source_kind": "Wikimedia Commons category/file pages",
+  "date": "2026-10-30"
+}

@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0075",
+  "status": "preview_downloaded",
+  "canonical_title": "File:Red Gate Farm - geograph.org.uk - 34940.jpg",
+  "pageid": 9167714,
+  "file": "previews/candidates/rg-0075.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Red_Gate_Farm_-_geograph.org.uk_-_34940.jpg/330px-Red_Gate_Farm_-_geograph.org.uk_-_34940.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "7e1e6cc377824751d320f26c7cedc5d7f4b1e0dc13fae1d26216d5b377eb791a",
+  "width": 330,
+  "height": 247,
+  "exif_orientation": 1,
+  "requested_max_edge": 320,
+  "original_width": 640,
+  "original_height": 480,
+  "original_sha1": "ecc81d67b688c622efe23bc0f817433d749556d8",
+  "creator": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/profile/1039\">Kokai</a>",
+  "license": "CC BY-SA 2.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+  "retrieved_utc": "2026-10-31T00:37:44.153704+00:00",
+  "visual_review": "pending",
+  "source_independence": "unverified"
+}

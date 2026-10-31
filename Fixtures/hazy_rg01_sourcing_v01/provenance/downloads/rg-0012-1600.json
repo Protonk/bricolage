@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0012",
+  "status": "downloaded",
+  "canonical_title": "File:2018-09-14 28 Devil's club (Oplopanax horridus) plant near Takeetna, Alaska USA.jpg",
+  "pageid": 86390958,
+  "file": "sources/rg-0012.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/2018-09-14_28_Devil%27s_club_%28Oplopanax_horridus%29_plant_near_Takeetna%2C_Alaska_USA.jpg/1920px-2018-09-14_28_Devil%27s_club_%28Oplopanax_horridus%29_plant_near_Takeetna%2C_Alaska_USA.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "850223972ac9b978ec5116179655269604d9e401dae56b48fbb6b3e088b5cef6",
+  "width": 1920,
+  "height": 742,
+  "exif_orientation": 1,
+  "requested_max_edge": 1600,
+  "original_width": 5598,
+  "original_height": 2162,
+  "original_sha1": "1861ac9a74eb1df843b88befb519782fbdd5a5ef",
+  "creator": "<a href=\"//commons.wikimedia.org/wiki/User:GRDN711\" title=\"User:GRDN711\">Gordon Leggett</a>",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "retrieved_utc": "2026-10-31T02:22:53.947957+00:00",
+  "visual_review": "see reviews.json",
+  "source_independence": "see reviews.json"
+}

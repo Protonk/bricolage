@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0095",
+  "status": "preview_downloaded",
+  "canonical_title": "File:Rød postkasse.jpg",
+  "pageid": 31469767,
+  "file": "previews/candidates/rg-0095.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/R%C3%B8d_postkasse.jpg/250px-R%C3%B8d_postkasse.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "eab893e6e1e06b9e85495f8e253bd2065e9fec0a20512368cacef9b032e49429",
+  "width": 250,
+  "height": 375,
+  "exif_orientation": 1,
+  "requested_max_edge": 320,
+  "original_width": 2304,
+  "original_height": 3456,
+  "original_sha1": "91b97f8cffaf52e5c2de87332ac59600c1779b38",
+  "creator": "<a href=\"//commons.wikimedia.org/wiki/User:%C3%98yvind_Holmstad\" title=\"User:Øyvind Holmstad\">Øyvind Holmstad</a>",
+  "license": "CC BY-SA 3.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+  "retrieved_utc": "2026-10-31T00:40:08.871332+00:00",
+  "visual_review": "pending",
+  "source_independence": "unverified"
+}

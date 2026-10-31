@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0101",
+  "status": "preview_downloaded",
+  "canonical_title": "File:Mycena cf. acicula.jpg",
+  "pageid": 201367322,
+  "file": "previews/candidates/rg-0101.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Mycena_cf._acicula.jpg/330px-Mycena_cf._acicula.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "befd6ac255ee50a85c775c7ea34c22cf0871a03868e4c4b1fa9373424e9e17b2",
+  "width": 330,
+  "height": 220,
+  "exif_orientation": 1,
+  "requested_max_edge": 320,
+  "original_width": 6000,
+  "original_height": 4000,
+  "original_sha1": "0497390424f63e84a009e8514ec679263ab1a0ea",
+  "creator": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Mar_Mkrtchyan&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Mar Mkrtchyan (page does not exist)\">Mar Mkrtchyan</a>",
+  "license": "CC0",
+  "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "retrieved_utc": "2026-10-31T00:40:50.451890+00:00",
+  "visual_review": "pending",
+  "source_independence": "unverified"
+}

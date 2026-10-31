@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0090",
+  "status": "preview_downloaded",
+  "canonical_title": "File:Red Umbrella (14428439970).jpg",
+  "pageid": 112990161,
+  "file": "previews/candidates/rg-0090.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Red_Umbrella_%2814428439970%29.jpg/330px-Red_Umbrella_%2814428439970%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "2199d4d6fbf0ab7ac095129b05e2a059d2115b32d75b99da5406790404c85ba2",
+  "width": 330,
+  "height": 226,
+  "exif_orientation": 1,
+  "requested_max_edge": 320,
+  "original_width": 5600,
+  "original_height": 3843,
+  "original_sha1": "2854446baa6cf57168f50b5d5f55d234e56be6cb",
+  "creator": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/21862224@N00\">.hd.</a>",
+  "license": "CC BY-SA 2.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+  "retrieved_utc": "2026-10-31T00:39:33.950556+00:00",
+  "visual_review": "pending",
+  "source_independence": "unverified"
+}

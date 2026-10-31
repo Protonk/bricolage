@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0053",
+  "status": "preview_downloaded",
+  "canonical_title": "File:Bicycle in Sri Lanka 2023-11-08.jpg",
+  "pageid": 140441976,
+  "file": "previews/candidates/rg-0053.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Bicycle_in_Sri_Lanka_2023-11-08.jpg/330px-Bicycle_in_Sri_Lanka_2023-11-08.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "9dd49495e8549fce01d1dc0e565200caac0a8bef4f8d16d036b722728bed750e",
+  "width": 330,
+  "height": 247,
+  "exif_orientation": 1,
+  "requested_max_edge": 320,
+  "original_width": 4032,
+  "original_height": 3024,
+  "original_sha1": "c8bcc3b1396a831303d31e0975fdd6003eaa4718",
+  "creator": "<a href=\"//commons.wikimedia.org/wiki/User:Muunaa-Selva\" title=\"User:Muunaa-Selva\">Muunaa-Selva</a>",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0",
+  "retrieved_utc": "2026-10-31T00:35:04.169728+00:00",
+  "visual_review": "pending",
+  "source_independence": "unverified"
+}

@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0039",
+  "status": "preview_downloaded",
+  "canonical_title": "File:Bench in Bruno-Kreisky-Park 03.jpg",
+  "pageid": 45010200,
+  "file": "previews/candidates/rg-0039.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Bench_in_Bruno-Kreisky-Park_03.jpg/330px-Bench_in_Bruno-Kreisky-Park_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "12b696a540e6c2e23c3b047df59fb359288ab7b8161b3928e22e0367d6a3c281",
+  "width": 330,
+  "height": 197,
+  "exif_orientation": 1,
+  "requested_max_edge": 320,
+  "original_width": 4713,
+  "original_height": 2804,
+  "original_sha1": "8e792c64b94e32ca96f47fe0c83eb45ed4b8d112",
+  "creator": "<a href=\"//commons.wikimedia.org/wiki/User:Herzi_Pinki\" title=\"User:Herzi Pinki\">Herzi Pinki</a>",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "retrieved_utc": "2026-10-31T00:33:21.644504+00:00",
+  "visual_review": "pending",
+  "source_independence": "unverified"
+}

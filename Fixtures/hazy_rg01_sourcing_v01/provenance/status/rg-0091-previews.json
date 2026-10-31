@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0091",
+  "status": "preview_downloaded",
+  "canonical_title": "File:Red red (on explore at July 16, 2025) - Flickr - Sandor Somkuti.jpg",
+  "pageid": 171532154,
+  "file": "previews/candidates/rg-0091.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Red_red_%28on_explore_at_July_16%2C_2025%29_-_Flickr_-_Sandor_Somkuti.jpg/330px-Red_red_%28on_explore_at_July_16%2C_2025%29_-_Flickr_-_Sandor_Somkuti.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "7d7aa7254bd6766bb068ea098504185dae942377f9ea3423649d1601cd1c43ba",
+  "width": 330,
+  "height": 220,
+  "exif_orientation": 1,
+  "requested_max_edge": 320,
+  "original_width": 4727,
+  "original_height": 3151,
+  "original_sha1": "f9ab3b54d0bf327d26045106fa49e0521fafafec",
+  "creator": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/7926079@N03\">Sandor Somkuti</a> from Wien, Österreich",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "retrieved_utc": "2026-10-31T00:39:41.912827+00:00",
+  "visual_review": "pending",
+  "source_independence": "unverified"
+}

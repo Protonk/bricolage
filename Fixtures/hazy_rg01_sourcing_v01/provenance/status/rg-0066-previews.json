@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0066",
+  "status": "preview_downloaded",
+  "canonical_title": "File:A very red garden gate - geograph.org.uk - 890009.jpg",
+  "pageid": 13577822,
+  "file": "previews/candidates/rg-0066.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/A_very_red_garden_gate_-_geograph.org.uk_-_890009.jpg/330px-A_very_red_garden_gate_-_geograph.org.uk_-_890009.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "c05eff4c5972f81dd2eabf1c2d3b5893c6452b9b8ee08d925c28dc6deee67900",
+  "width": 330,
+  "height": 239,
+  "exif_orientation": 1,
+  "requested_max_edge": 320,
+  "original_width": 640,
+  "original_height": 463,
+  "original_sha1": "5a528620ae38ab0683ce70e00944effd1d18ddfb",
+  "creator": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/profile/14840\">Evelyn Simak</a>",
+  "license": "CC BY-SA 2.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+  "retrieved_utc": "2026-10-31T00:36:39.859795+00:00",
+  "visual_review": "pending",
+  "source_independence": "unverified"
+}

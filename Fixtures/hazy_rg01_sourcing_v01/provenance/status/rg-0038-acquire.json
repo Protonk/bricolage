@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0038",
+  "status": "downloaded",
+  "canonical_title": "File:Eyrignac Manor-red bench.JPG",
+  "pageid": 3451983,
+  "file": "sources/rg-0038.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Eyrignac_Manor-red_bench.JPG/1280px-Eyrignac_Manor-red_bench.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "b4aeb1e90a6cb610db626dd6e4b6918b1857a2ae1e35c5e3c4290068cad41fef",
+  "width": 1280,
+  "height": 1711,
+  "exif_orientation": 1,
+  "requested_max_edge": 1600,
+  "original_width": 1712,
+  "original_height": 2288,
+  "original_sha1": "8d5380f01cf041edc41b970ad143e501947dabb4",
+  "creator": "<a href=\"//commons.wikimedia.org/wiki/User:TwoWings\" title=\"User:TwoWings\">TwoWings</a>",
+  "license": "Public domain",
+  "license_url": null,
+  "retrieved_utc": "2026-10-31T02:23:52.258325+00:00",
+  "visual_review": "see reviews.json",
+  "source_independence": "see reviews.json"
+}

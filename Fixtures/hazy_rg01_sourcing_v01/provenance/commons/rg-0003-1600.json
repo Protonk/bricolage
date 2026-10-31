@@ -1,0 +1,120 @@
+{
+  "candidate_id": "rg-0003",
+  "retrieved_utc": "2026-10-31T02:16:13.180873+00:00",
+  "requested_title": "File:A Red Flower with a green background and broad leaves.jpg",
+  "response": {
+    "batchcomplete": true,
+    "query": {
+      "pages": [
+        {
+          "pageid": 132645012,
+          "ns": 6,
+          "title": "File:A Red Flower with a green background and broad leaves.jpg",
+          "imagerepository": "local",
+          "imageinfo": [
+            {
+              "size": 2015804,
+              "width": 2560,
+              "height": 1920,
+              "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/A_Red_Flower_with_a_green_background_and_broad_leaves.jpg/1920px-A_Red_Flower_with_a_green_background_and_broad_leaves.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "thumbwidth": 1600,
+              "thumbheight": 1200,
+              "responsiveUrls": {
+                "2": "https://upload.wikimedia.org/wikipedia/commons/1/1c/A_Red_Flower_with_a_green_background_and_broad_leaves.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+              },
+              "thumbattribs": {
+                "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/A_Red_Flower_with_a_green_background_and_broad_leaves.jpg/1920px-A_Red_Flower_with_a_green_background_and_broad_leaves.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "decoding": "async",
+                "loading": "lazy",
+                "width": 1600,
+                "height": 1200,
+                "srcset": "https://upload.wikimedia.org/wikipedia/commons/1/1c/A_Red_Flower_with_a_green_background_and_broad_leaves.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+              },
+              "url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/A_Red_Flower_with_a_green_background_and_broad_leaves.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+              "descriptionurl": "https://commons.wikimedia.org/wiki/File:A_Red_Flower_with_a_green_background_and_broad_leaves.jpg",
+              "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=132645012",
+              "sha1": "fa6a255352d282f30eebf63c5b59274c810fd3fa",
+              "extmetadata": {
+                "DateTime": {
+                  "value": "2023-06-04 06:13:03",
+                  "source": "mediawiki-metadata",
+                  "hidden": ""
+                },
+                "ObjectName": {
+                  "value": "A Red Flower with a green background and broad leaves",
+                  "source": "mediawiki-metadata"
+                },
+                "CommonsMetadataExtension": {
+                  "value": 1.2,
+                  "source": "extension",
+                  "hidden": ""
+                },
+                "Categories": {
+                  "value": "Red flowers|Self-published work",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "Assessments": {
+                  "value": "",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "ImageDescription": {
+                  "value": "A Red Flower with a green background and broad leaves in Naalya Kampala Uganda.",
+                  "source": "commons-desc-page"
+                },
+                "DateTimeOriginal": {
+                  "value": "2023-06-02 18:37:07",
+                  "source": "commons-desc-page"
+                },
+                "Credit": {
+                  "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                  "source": "commons-desc-page"
+                },
+                "Artist": {
+                  "value": "<a href=\"//commons.wikimedia.org/wiki/User:Emma_Oruk\" title=\"User:Emma Oruk\">Emma Oruk</a>",
+                  "source": "commons-desc-page"
+                },
+                "LicenseShortName": {
+                  "value": "CC BY-SA 4.0",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "UsageTerms": {
+                  "value": "Creative Commons Attribution-Share Alike 4.0",
+                  "source": "commons-desc-page"
+                },
+                "AttributionRequired": {
+                  "value": "true",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "LicenseUrl": {
+                  "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                  "source": "commons-desc-page"
+                },
+                "Copyrighted": {
+                  "value": "True",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "Restrictions": {
+                  "value": "",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "License": {
+                  "value": "cc-by-sa-4.0",
+                  "source": "commons-templates",
+                  "hidden": ""
+                }
+              },
+              "mime": "image/jpeg",
+              "mediatype": "BITMAP"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

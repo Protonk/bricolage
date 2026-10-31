@@ -1,0 +1,25 @@
+{
+  "status": "complete",
+  "stage": "previews/build-reviewed",
+  "created": [
+    "images",
+    "batches",
+    "manifest.json",
+    "manifest.csv",
+    "probes.csv",
+    "selections.json",
+    "SHA256SUMS.txt",
+    "provenance/construction.json",
+    "previews/stages",
+    "previews/review"
+  ],
+  "validation": {
+    "images": 42,
+    "sources": 6,
+    "local_variants": 30,
+    "supplied_generations": 6,
+    "probes": 54,
+    "retained_artifacts": 242,
+    "outside_mask_checks": 6
+  }
+}

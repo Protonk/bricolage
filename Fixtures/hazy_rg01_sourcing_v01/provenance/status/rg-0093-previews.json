@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0093",
+  "status": "preview_downloaded",
+  "canonical_title": "File:Sjöbergen-koloniområde7.jpg",
+  "pageid": 34224847,
+  "file": "previews/candidates/rg-0093.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Sj%C3%B6bergen-koloniomr%C3%A5de7.jpg/250px-Sj%C3%B6bergen-koloniomr%C3%A5de7.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "4e1acdd2c52e7ac0dd8630503c8bfc2af148cbae6472a0c5ab82a660564597cf",
+  "width": 250,
+  "height": 362,
+  "exif_orientation": 1,
+  "requested_max_edge": 320,
+  "original_width": 1157,
+  "original_height": 1675,
+  "original_sha1": "ec681339b19515d358e12ed6b3242c2d062686a0",
+  "creator": "<a href=\"//commons.wikimedia.org/wiki/User:Jolliro\" title=\"User:Jolliro\">Kerstin Namuth</a>",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "retrieved_utc": "2026-10-31T00:39:55.372266+00:00",
+  "visual_review": "pending",
+  "source_independence": "unverified"
+}

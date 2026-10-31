@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0036",
+  "status": "preview_downloaded",
+  "canonical_title": "File:Reflection of Light.jpg",
+  "pageid": 90537135,
+  "file": "previews/candidates/rg-0036.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Reflection_of_Light.jpg/330px-Reflection_of_Light.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "9e0018b002e9cdcda47cfe363112b3210647a0aa0899905d13adcdcd95977f6a",
+  "width": 330,
+  "height": 205,
+  "exif_orientation": 1,
+  "requested_max_edge": 320,
+  "original_width": 3616,
+  "original_height": 2247,
+  "original_sha1": "fee4aceec9757568d134eab10698f72af4e53bd2",
+  "creator": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Santrina&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Santrina (page does not exist)\">Santrina HUYNH</a>",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "retrieved_utc": "2026-10-31T00:33:00.072276+00:00",
+  "visual_review": "pending",
+  "source_independence": "unverified"
+}

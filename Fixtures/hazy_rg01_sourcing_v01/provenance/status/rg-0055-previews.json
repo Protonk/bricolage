@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0055",
+  "status": "preview_downloaded",
+  "canonical_title": "File:2018-04-29-Altes Fahrrad Durbuy-8593.jpg",
+  "pageid": 68669949,
+  "file": "previews/candidates/rg-0055.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/2018-04-29-Altes_Fahrrad_Durbuy-8593.jpg/330px-2018-04-29-Altes_Fahrrad_Durbuy-8593.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "be90fae2997776a0215d231b79c5b88228d861e89d74c6756c74b1b5fc936b88",
+  "width": 330,
+  "height": 220,
+  "exif_orientation": 1,
+  "requested_max_edge": 320,
+  "original_width": 5418,
+  "original_height": 3612,
+  "original_sha1": "af87f1d8d5c366f8ac50a23c8f8c1dc4c210ad9f",
+  "creator": "<a href=\"//commons.wikimedia.org/wiki/User:Superbass\" title=\"User:Superbass\">Superbass</a>",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "retrieved_utc": "2026-10-31T00:35:20.245865+00:00",
+  "visual_review": "pending",
+  "source_independence": "unverified"
+}

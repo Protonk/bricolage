@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0014",
+  "status": "preview_downloaded",
+  "canonical_title": "File:Tomato harvest - Flickr - judy dean.jpg",
+  "pageid": 137494065,
+  "file": "previews/candidates/rg-0014.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Tomato_harvest_-_Flickr_-_judy_dean.jpg/250px-Tomato_harvest_-_Flickr_-_judy_dean.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "893287ab3ab241d68a53083c51a2f09dac02e0061472565b748cf169d578c718",
+  "width": 250,
+  "height": 358,
+  "exif_orientation": 1,
+  "requested_max_edge": 320,
+  "original_width": 2816,
+  "original_height": 4032,
+  "original_sha1": "e8f7f1ce1026d6509e7b392841efea8d19f55094",
+  "creator": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/12070225@N03\">judy dean</a> from Cotswolds, United Kingdom",
+  "license": "CC BY-SA 2.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+  "retrieved_utc": "2026-10-31T00:30:24.287725+00:00",
+  "visual_review": "pending",
+  "source_independence": "unverified"
+}

@@ -1,13 +1,28 @@
 # hazy fixture sets
 
-There are two sets, using the same schema and directory structure:
+The three provenance-led sets use the same schema and directory structure:
 
 | Set | Inputs | Purpose | Focus / probes / full |
 |---|---:|---|---:|
 | [hazy-derivatives-v1](hazy-derivatives-v1/README.md) | 183 | Original synthetic-derivative corpus, renamed from `hazy-fixtures-v1` | 14 / 115 / 190 pairs |
 | [hazy-multiview-v1](hazy-multiview-v1/README.md) | 20 | Motorcycle pair, nine personal photos, nine Commons crowd photos; eight scene/sequence groups | 16 / 44 / 44 pairs |
+| [hazy-meme-fixtures-v0](hazy-meme-fixtures-v0/README.md) | 42 | Variants: six originals, 30 constructed alterations, six supplied description-mediated generations | 15 / 54 / 54 pairs |
 
-Only `images/` is comparison input. Both sets contain:
+Three prompt-led heap additions retain their own acquisition and screening records:
+
+| Addition | Inputs / supplied leads | Visual prompt |
+|---|---:|---|
+| [RG01](hazy_rg01_sourcing_v01/README.md) | 31 / 107 | Small red accents in green outdoor photographs |
+| [SF01](hazy_sf01/README.md) | 48 / 142 | Many small separated marks or objects across a continuous visual field |
+| [PS01](hazy_ps01/README.md) | 58 / 145 | Pale quiet upper skies above darker, more detailed lower regions |
+
+Visual selection is a curatorial judgment, not source-family membership or a
+router cluster label. These additions record `kind=prompt_heap`, have no expected pairs,
+and use fixture-local validators; the existing experiment checker does not
+support that kind. Discovery buckets are not expected clusters. SF01 has 11 further visual
+selections awaiting acquisition after a recorded transport timeout.
+
+Only `images/` is comparison input. The three sets contain:
 
 ```text
 images/             Flat input files with opaque names
@@ -52,7 +67,9 @@ metadata retains the original path description as provenance.
 ## Shared schema, version 1
 
 `manifest.json` has `schema_version`, `fixture_id`, `kind`, `description`, and
-`images`. `kind` is `derivatives` or `multiview`. Image records use these columns:
+`images`. The provenance-led sets use `kind=derivatives` or `kind=multiview`;
+heap additions use `kind=prompt_heap` with empty pair expectations. Image records
+use these columns:
 
 ```text
 file, batch, family_id, scene_id, parents, transformation, relation_kind,
@@ -63,7 +80,9 @@ pixels_rgb_sha256
 - Paths are relative to the fixture-set root. Width and height are stored-file
   dimensions, before EXIF orientation; orientation is recorded explicitly.
 - `family_id` identifies one source asset and its derivatives. Separate captures
-  have separate family IDs even when they show the same scene. Composites have an
+  have separate family IDs even when they show the same scene. For the variants
+  set's supplied generations, a family instead records derivation through a
+  description prompt, with no asserted pixel correspondence. Composites have an
   empty family ID and pipe-separated `parents` identifying their source families.
 - `scene_id` groups independent captures of a scene or short sequence. It is empty for the
   derivative corpus, whose supplied labels establish source derivation. Neither
@@ -74,7 +93,7 @@ pixels_rgb_sha256
   Empty means no such hash was supplied or computed, as in the multiview set.
   It is not a hash of hazy's Apple-prepared pixels.
 
-`sources.csv` uses identical columns in both sets. `family_id` connects an image's
+`sources.csv` uses identical columns in all three sets. `family_id` connects an image's
 parent to its source; `source_filename` names its `sources/` file. The remaining
 fields record scene, subject, credit, byte hash, stored dimensions, orientation,
 source URL, preprocessing, physical view/exposure when supplied, and original
@@ -92,7 +111,13 @@ a Vision similarity score or transform.
 
 `selections.json` contains a description, explicit `pairs` using the probe columns,
 and `known_shift_families`. The latter is used only by tests that create temporary
-controlled shifts; it is empty for the independently captured multiview set.
+controlled shifts; it is empty for the multiview and variants sets.
+
+The variants set retains the shared `kind=derivatives` convention. Richer recipes,
+operation lineage, masks, per-piece transforms, source/prompt/generation imports,
+and build verification are in its `provenance/`. Two-parent replacements and
+description-mediated generations must not be interpreted as ordinary single-source
+pixel edits. Legacy smoke/medium lists select only its six originals.
 
 ## Use
 
@@ -101,6 +126,7 @@ From the repository root:
 ```sh
 python3 Experiments/AppleVisionTranslation/Tools/fixtures.py check
 python3 Experiments/AppleVisionTranslation/Tools/fixtures.py check --fixtures Fixtures/hazy-multiview-v1
+python3 Experiments/AppleVisionTranslation/Tools/fixtures.py check --fixtures Fixtures/hazy-meme-fixtures-v0
 swift build --package-path Experiments/AppleVisionTranslation
 mkdir -p output
 python3 Experiments/AppleVisionTranslation/Tools/fixtures.py run --output output/derivatives-focus
@@ -109,4 +135,4 @@ python3 Experiments/AppleVisionTranslation/Tools/fixtures.py run --fixtures Fixt
 
 Use `--selection probes` or `--selection full` to expand a run. Each output must
 be new. The default set remains `hazy-derivatives-v1`. The same validator and runner
-read either set; the Swift comparison API receives only the selected image files.
+read all three sets; the Swift comparison API receives only the selected image files.

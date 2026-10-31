@@ -1,0 +1,132 @@
+{
+  "continue": {
+    "iistart": "2022-03-20T21:46:42Z",
+    "continue": "||"
+  },
+  "query": {
+    "pages": [
+      {
+        "pageid": 116245134,
+        "ns": 6,
+        "title": "File:Parking lot, Gross-Gerau (P1090665).jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "timestamp": "2022-09-24T16:01:58Z",
+            "user": "MB-one",
+            "size": 3160776,
+            "width": 2304,
+            "height": 1444,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Parking_lot%2C_Gross-Gerau_%28P1090665%29.jpg/330px-Parking_lot%2C_Gross-Gerau_%28P1090665%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 320,
+            "thumbheight": 201,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Parking_lot%2C_Gross-Gerau_%28P1090665%29.jpg/960px-Parking_lot%2C_Gross-Gerau_%28P1090665%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Parking_lot%2C_Gross-Gerau_%28P1090665%29.jpg/330px-Parking_lot%2C_Gross-Gerau_%28P1090665%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 320,
+              "height": 201,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Parking_lot%2C_Gross-Gerau_%28P1090665%29.jpg/960px-Parking_lot%2C_Gross-Gerau_%28P1090665%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/7/74/Parking_lot%2C_Gross-Gerau_%28P1090665%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Parking_lot,_Gross-Gerau_(P1090665).jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=116245134",
+            "sha1": "13426e783671f6a1b0901a37aae71f8aeee40ec6",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2022-09-24 16:01:58",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Parking lot, Gross-Gerau (P1090665)",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "GFDL|September 2021 in Germany|License migration redundant|Self-published work|Car parks in Hesse|CC-BY-SA-2.0+|Uploaded with LrMediaWiki|User MB-one supported by Wikimedia Deutschland/Lightroom|Aerial photographs of car parks|2021 aerial photographs of Hesse|Aerial photographs from airplanes over Germany|Taken with Panasonic Lumix DMC-G5 and Panasonic Lumix G Vario HD 14-140mm F4.0-5.8 Asph Mega OIS|Aerial photographs of the Riedbahn railway line|Aerial photographs of Groß-Gerau",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "quality",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "49.908220",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "8.500060",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Aerial photograph of a parking lot in Groß-Gerau <span class=\"mw-valign-text-top noprint\" typeof=\"mw:File/Frameless\"><a href=\"//commons.wikimedia.org/wiki/File:Parking_lot,_Gross-Gerau_(P1090665).jpg#ooui-php-4\" title=\"Edit this at Structured Data on Commons\"><img alt=\"Edit this at Structured Data on Commons\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"10\" height=\"10\" class=\"mw-file-element\" data-file-width=\"20\" data-file-height=\"20\"></a></span>",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2021-09-11 16:15:10",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:MB-one\" title=\"User:MB-one\">Matti Blume</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      }
+    ]
+  }
+}

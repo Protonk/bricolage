@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0104",
+  "status": "preview_downloaded",
+  "canonical_title": "File:A lifebuoy at Lauder golf course - geograph.org.uk - 897749.jpg",
+  "pageid": 13577762,
+  "file": "previews/candidates/rg-0104.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/A_lifebuoy_at_Lauder_golf_course_-_geograph.org.uk_-_897749.jpg/250px-A_lifebuoy_at_Lauder_golf_course_-_geograph.org.uk_-_897749.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "cf33806a5d4e73eca9d74545be7c7e71b43990f4bdc034675b6153ed5e64af5d",
+  "width": 250,
+  "height": 369,
+  "exif_orientation": 1,
+  "requested_max_edge": 320,
+  "original_width": 425,
+  "original_height": 627,
+  "original_sha1": "07afbc3cd15ff3b2d45d0efa60cbb4896e4365f7",
+  "creator": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/profile/6638\">Walter Baxter</a>",
+  "license": "CC BY-SA 2.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+  "retrieved_utc": "2026-10-31T00:41:10.870184+00:00",
+  "visual_review": "pending",
+  "source_independence": "unverified"
+}

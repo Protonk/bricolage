@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0098",
+  "status": "preview_downloaded",
+  "canonical_title": "File:Descanso no fim de tarde (4997334604).jpg",
+  "pageid": 45191665,
+  "file": "previews/candidates/rg-0098.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Descanso_no_fim_de_tarde_%284997334604%29.jpg/330px-Descanso_no_fim_de_tarde_%284997334604%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "4a292dc5887093cb5163de173e05662ef6fc65cf8084ca533e66f82ba1c8e671",
+  "width": 330,
+  "height": 247,
+  "exif_orientation": 1,
+  "requested_max_edge": 320,
+  "original_width": 3648,
+  "original_height": 2736,
+  "original_sha1": "ab702799ff89fb36dd811e3c3531fcf05e307017",
+  "creator": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/18877859@N00\">Pedro Henrique Ponchio</a> from São Paulo, Brazil",
+  "license": "CC BY 2.0",
+  "license_url": "https://creativecommons.org/licenses/by/2.0",
+  "retrieved_utc": "2026-10-31T00:40:29.343774+00:00",
+  "visual_review": "pending",
+  "source_independence": "unverified"
+}

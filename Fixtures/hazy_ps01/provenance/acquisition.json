@@ -1,0 +1,33 @@
+{
+  "status": "complete",
+  "candidate_count": 145,
+  "preview_count": 145,
+  "visually_selected": 58,
+  "acquired_count": 58,
+  "pending_candidate_ids": [],
+  "pending_statuses": {},
+  "request_attempts": 408,
+  "complete_responses": 408,
+  "automatic_retries": 0,
+  "media_bytes": 23628069,
+  "rendition_kinds": {
+    "api_reported_unscaled_original": 10,
+    "api_returned_rendition": 48
+  },
+  "resolution_adjustments": [
+    {
+      "candidate_id": "ps-0019",
+      "initial_metadata_path": "provenance/api/ps-0019-source.json",
+      "acquired_metadata_path": "provenance/api/ps-0019-source-1280.json",
+      "requested_max_edge": 1280,
+      "reason": "Explicit smaller API rendition request after the nominal 1600 request offered an unscaled original outside the bound."
+    },
+    {
+      "candidate_id": "ps-0122",
+      "initial_metadata_path": "provenance/api/ps-0122-source.json",
+      "acquired_metadata_path": "provenance/api/ps-0122-source-1280.json",
+      "requested_max_edge": 1280,
+      "reason": "Explicit smaller API rendition request after the nominal 1600 request offered an unscaled original outside the bound."
+    }
+  ]
+}

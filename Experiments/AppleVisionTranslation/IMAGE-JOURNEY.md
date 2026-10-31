@@ -129,7 +129,7 @@ controlled transformations, not independent photographs of the same scene.
 
 [Tools/fixtures.py](Tools/fixtures.py) validates asset hashes, agreement of
 CSV/JSON manifests, source copies, probe references and identity labels, and batch
-membership for either [fixture set](../../Fixtures/README.md), using one shared schema.
+membership for the three provenance-led [fixture sets](../../Fixtures/README.md), using one shared schema.
 It does not recompute the supplied Pillow pixel hashes; multiview pixel-hash fields
 are empty because none were computed under that convention. Its optional runner
 passes only file paths to the existing CLI; family and scene labels are joined

@@ -1,0 +1,120 @@
+{
+  "candidate_id": "rg-0042",
+  "retrieved_utc": "2026-10-31T00:33:40.883796+00:00",
+  "requested_title": "File:Red Bench in Lumbini, Nepal-IMG 7308.jpg",
+  "response": {
+    "batchcomplete": true,
+    "query": {
+      "pages": [
+        {
+          "pageid": 182935398,
+          "ns": 6,
+          "title": "File:Red Bench in Lumbini, Nepal-IMG 7308.jpg",
+          "imagerepository": "local",
+          "imageinfo": [
+            {
+              "size": 14172329,
+              "width": 5153,
+              "height": 3435,
+              "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Red_Bench_in_Lumbini%2C_Nepal-IMG_7308.jpg/330px-Red_Bench_in_Lumbini%2C_Nepal-IMG_7308.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "thumbwidth": 320,
+              "thumbheight": 213,
+              "responsiveUrls": {
+                "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Red_Bench_in_Lumbini%2C_Nepal-IMG_7308.jpg/960px-Red_Bench_in_Lumbini%2C_Nepal-IMG_7308.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+              },
+              "thumbattribs": {
+                "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Red_Bench_in_Lumbini%2C_Nepal-IMG_7308.jpg/330px-Red_Bench_in_Lumbini%2C_Nepal-IMG_7308.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "decoding": "async",
+                "loading": "lazy",
+                "width": 320,
+                "height": 213,
+                "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Red_Bench_in_Lumbini%2C_Nepal-IMG_7308.jpg/960px-Red_Bench_in_Lumbini%2C_Nepal-IMG_7308.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+              },
+              "url": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Red_Bench_in_Lumbini%2C_Nepal-IMG_7308.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+              "descriptionurl": "https://commons.wikimedia.org/wiki/File:Red_Bench_in_Lumbini,_Nepal-IMG_7308.jpg",
+              "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=182935398",
+              "sha1": "931b96478978dcb4426655633260ee4ccb302eed",
+              "extmetadata": {
+                "DateTime": {
+                  "value": "2026-02-02 08:40:01",
+                  "source": "mediawiki-metadata",
+                  "hidden": ""
+                },
+                "ObjectName": {
+                  "value": "Red Bench in Lumbini, Nepal-IMG 7308",
+                  "source": "mediawiki-metadata"
+                },
+                "CommonsMetadataExtension": {
+                  "value": 1.2,
+                  "source": "extension",
+                  "hidden": ""
+                },
+                "Categories": {
+                  "value": "Lumbini|Photos by Bijay chaurasia|Red benches|Uploaded with LrMediaWiki",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "Assessments": {
+                  "value": "quality",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "ImageDescription": {
+                  "value": "Red Bench in Lumbini, Nepal",
+                  "source": "commons-desc-page"
+                },
+                "DateTimeOriginal": {
+                  "value": "2021-03-21",
+                  "source": "commons-desc-page"
+                },
+                "Credit": {
+                  "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                  "source": "commons-desc-page"
+                },
+                "Artist": {
+                  "value": "<bdi>Bijay Chaurasia</bdi>",
+                  "source": "commons-desc-page"
+                },
+                "LicenseShortName": {
+                  "value": "CC BY-SA 4.0",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "UsageTerms": {
+                  "value": "Creative Commons Attribution-Share Alike 4.0",
+                  "source": "commons-desc-page"
+                },
+                "AttributionRequired": {
+                  "value": "true",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "LicenseUrl": {
+                  "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                  "source": "commons-desc-page"
+                },
+                "Copyrighted": {
+                  "value": "True",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "Restrictions": {
+                  "value": "",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "License": {
+                  "value": "cc-by-sa-4.0",
+                  "source": "commons-templates",
+                  "hidden": ""
+                }
+              },
+              "mime": "image/jpeg",
+              "mediatype": "BITMAP"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0004",
+  "status": "preview_downloaded",
+  "canonical_title": "File:Red flower with green leaves in the grass.jpg",
+  "pageid": 24919146,
+  "file": "previews/candidates/rg-0004.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Red_flower_with_green_leaves_in_the_grass.jpg/330px-Red_flower_with_green_leaves_in_the_grass.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "9d6fb8002061d81a5275bcd5c93b0504562246ec544d1ceae7e403eadd5dd4f0",
+  "width": 330,
+  "height": 247,
+  "exif_orientation": 1,
+  "requested_max_edge": 320,
+  "original_width": 1280,
+  "original_height": 960,
+  "original_sha1": "f68942beefb1206ff2386c74d19f27f73bc38052",
+  "creator": "Rosendahl",
+  "license": "Public domain",
+  "license_url": null,
+  "retrieved_utc": "2026-10-31T00:29:14.716867+00:00",
+  "visual_review": "pending",
+  "source_independence": "unverified"
+}

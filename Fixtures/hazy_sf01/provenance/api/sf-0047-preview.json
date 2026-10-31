@@ -1,0 +1,134 @@
+{
+  "batchcomplete": true,
+  "query": {
+    "pages": [
+      {
+        "pageid": 9244862,
+        "ns": 6,
+        "title": "File:Shore near Jura Forest - geograph.org.uk - 134677.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "timestamp": "2010-01-31T06:07:13Z",
+            "user": "GeographBot",
+            "size": 210118,
+            "width": 640,
+            "height": 480,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Shore_near_Jura_Forest_-_geograph.org.uk_-_134677.jpg/330px-Shore_near_Jura_Forest_-_geograph.org.uk_-_134677.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 320,
+            "thumbheight": 240,
+            "responsiveUrls": {
+              "2": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Shore_near_Jura_Forest_-_geograph.org.uk_-_134677.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Shore_near_Jura_Forest_-_geograph.org.uk_-_134677.jpg/330px-Shore_near_Jura_Forest_-_geograph.org.uk_-_134677.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 320,
+              "height": 240,
+              "srcset": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Shore_near_Jura_Forest_-_geograph.org.uk_-_134677.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Shore_near_Jura_Forest_-_geograph.org.uk_-_134677.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Shore_near_Jura_Forest_-_geograph.org.uk_-_134677.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=9244862",
+            "sha1": "14fb91c00a4d0f0bf82e98a6a3aee9f4df32b3bb",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2010-01-31 06:07:13",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Shore near Jura Forest - geograph.org.uk - 134677",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Coasts of Jura|Craighouse|Images from Geograph Britain and Ireland|Boulder fields|Information field template with formatting|Photographs by Patrick Mackie|United Kingdom photographs taken on 2006-03-08|Intertidal boulder fields|March 2006 in Argyll and Bute|Images from Geograph Britain and Ireland missing SDC coordinates of the point of view",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "55.857700",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "-5.941000",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Shore near Jura Forest. View north towards Knockrome",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2006-03-08",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "From <a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/photo/134677\">geograph.org.uk</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/profile/2208\">Patrick Mackie</a>",
+                "source": "commons-desc-page"
+              },
+              "Attribution": {
+                "value": "Patrick Mackie",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 2.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 2.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/2.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-2.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      }
+    ]
+  }
+}

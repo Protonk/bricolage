@@ -1,0 +1,10 @@
+{
+  "probe_kind": "local_dns_only",
+  "attempted_endpoint": "https://commons.wikimedia.org/w/api.php?action=query&meta=siteinfo&format=json",
+  "result": "failed_before_http",
+  "http_status": null,
+  "error_type": "URLError",
+  "error": "[Errno -3] Temporary failure in name resolution",
+  "image_bytes_acquired": false,
+  "interpretation": "Local environment DNS could not resolve Wikimedia. Not evidence of Wikimedia HTTP rate limiting or image delivery."
+}

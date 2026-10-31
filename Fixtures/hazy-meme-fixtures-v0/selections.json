@@ -1,0 +1,96 @@
+{
+  "description": "Every treatment, all supplied generations, comic composite, donor and shared-wrapper diagnostics.",
+  "pairs": [
+    {
+      "file_a": "images/00b2aade4c21698e9fa2.png",
+      "file_b": "images/a2df1d6825dd62da4aba.png",
+      "relation": "same_origin_v01",
+      "interpretation": "source → constructed v01; no expected score, alignment, or membership"
+    },
+    {
+      "file_a": "images/00b2aade4c21698e9fa2.png",
+      "file_b": "images/8c5567fb613b24947e41.png",
+      "relation": "same_origin_v02",
+      "interpretation": "source → constructed v02; no expected score, alignment, or membership"
+    },
+    {
+      "file_a": "images/00b2aade4c21698e9fa2.png",
+      "file_b": "images/bbd7e65944005e403ea8.png",
+      "relation": "diagnostic",
+      "interpretation": "source → constructed v03; no expected score, alignment, or membership"
+    },
+    {
+      "file_a": "images/00b2aade4c21698e9fa2.png",
+      "file_b": "images/9c31b7b3ab132944bb10.png",
+      "relation": "same_origin_v04",
+      "interpretation": "source → constructed v04; no expected score, alignment, or membership"
+    },
+    {
+      "file_a": "images/00b2aade4c21698e9fa2.png",
+      "file_b": "images/fd9e552d75d8ea19827b.png",
+      "relation": "same_origin_v05",
+      "interpretation": "source → constructed v05; no expected score, alignment, or membership"
+    },
+    {
+      "file_a": "images/00b2aade4c21698e9fa2.png",
+      "file_b": "images/6af582dc8ad4c8703375.png",
+      "relation": "diagnostic",
+      "interpretation": "source → description prompt → supplied generation; no asserted pixel correspondence; no expected score, alignment, or membership"
+    },
+    {
+      "file_a": "images/8c5567fb613b24947e41.png",
+      "file_b": "images/bbd7e65944005e403ea8.png",
+      "relation": "diagnostic",
+      "interpretation": "same crop, fictional wrapper and degradation; local donor replacement differs; no expected score, alignment, or membership"
+    },
+    {
+      "file_a": "images/31a5fac17a1c3486dbe3.jpg",
+      "file_b": "images/bbd7e65944005e403ea8.png",
+      "relation": "diagnostic",
+      "interpretation": "m06 supplied cutout pixels in two-parent composite; no expected score, alignment, or membership"
+    },
+    {
+      "file_a": "images/81500b64335eac35f94c.jpeg",
+      "file_b": "images/2794850f80a15e110fe6.png",
+      "relation": "diagnostic",
+      "interpretation": "source → description prompt → supplied generation; no asserted pixel correspondence; no expected score, alignment, or membership"
+    },
+    {
+      "file_a": "images/df29e1bc21332002d3ae.jpg",
+      "file_b": "images/e89230c71ec68caf2fe4.png",
+      "relation": "diagnostic",
+      "interpretation": "source → description prompt → supplied generation; no asserted pixel correspondence; no expected score, alignment, or membership"
+    },
+    {
+      "file_a": "images/bf952cf10d92c74573f3.jpg",
+      "file_b": "images/8ba199a1a464b15aa003.png",
+      "relation": "diagnostic",
+      "interpretation": "source → description prompt → supplied generation; no asserted pixel correspondence; no expected score, alignment, or membership"
+    },
+    {
+      "file_a": "images/5311481555ce900b9ddb.jpg",
+      "file_b": "images/92299a6d1e835badc98e.png",
+      "relation": "diagnostic",
+      "interpretation": "source → description prompt → supplied generation; no asserted pixel correspondence; no expected score, alignment, or membership"
+    },
+    {
+      "file_a": "images/31a5fac17a1c3486dbe3.jpg",
+      "file_b": "images/e7eea8b2aec4a1fc9bef.png",
+      "relation": "diagnostic",
+      "interpretation": "source → description prompt → supplied generation; no asserted pixel correspondence; no expected score, alignment, or membership"
+    },
+    {
+      "file_a": "images/a2df1d6825dd62da4aba.png",
+      "file_b": "images/e7e83cedb7c92c3de91b.png",
+      "relation": "diagnostic",
+      "interpretation": "distinct sources with shared v01 treatment; no expected score, alignment, or membership"
+    },
+    {
+      "file_a": "images/8c5567fb613b24947e41.png",
+      "file_b": "images/f02ea15194cace3a2335.png",
+      "relation": "diagnostic",
+      "interpretation": "distinct sources with shared v02 treatment; no expected score, alignment, or membership"
+    }
+  ],
+  "known_shift_families": []
+}

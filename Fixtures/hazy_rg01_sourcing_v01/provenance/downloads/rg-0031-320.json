@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0031",
+  "status": "preview_downloaded",
+  "canonical_title": "File:Green grass meets red steel.jpg",
+  "pageid": 122713169,
+  "file": "previews/candidates/rg-0031.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Green_grass_meets_red_steel.jpg/330px-Green_grass_meets_red_steel.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "9fc2be29cff9b66465de79dc6a4cfcb341bf1604d46e32488c21a33b021036da",
+  "width": 330,
+  "height": 220,
+  "exif_orientation": 1,
+  "requested_max_edge": 320,
+  "original_width": 4229,
+  "original_height": 2814,
+  "original_sha1": "03a5775772a03006ca6cb46fc43a135d891bdb9e",
+  "creator": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Mark_Rickus&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Mark Rickus (page does not exist)\">Mark Rickus</a>",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "retrieved_utc": "2026-10-31T00:32:26.033177+00:00",
+  "visual_review": "pending",
+  "source_independence": "unverified"
+}

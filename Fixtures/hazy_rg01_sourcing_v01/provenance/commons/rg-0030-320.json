@@ -1,0 +1,120 @@
+{
+  "candidate_id": "rg-0030",
+  "retrieved_utc": "2026-10-31T00:32:14.486852+00:00",
+  "requested_title": "File:Casas de Plaza Río de Janeiro en la Ciudad de México.jpg",
+  "response": {
+    "batchcomplete": true,
+    "query": {
+      "pages": [
+        {
+          "pageid": 51884134,
+          "ns": 6,
+          "title": "File:Casas de Plaza Río de Janeiro en la Ciudad de México.jpg",
+          "imagerepository": "local",
+          "imageinfo": [
+            {
+              "size": 7699248,
+              "width": 5184,
+              "height": 3456,
+              "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Casas_de_Plaza_R%C3%ADo_de_Janeiro_en_la_Ciudad_de_M%C3%A9xico.jpg/330px-Casas_de_Plaza_R%C3%ADo_de_Janeiro_en_la_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "thumbwidth": 320,
+              "thumbheight": 213,
+              "responsiveUrls": {
+                "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Casas_de_Plaza_R%C3%ADo_de_Janeiro_en_la_Ciudad_de_M%C3%A9xico.jpg/960px-Casas_de_Plaza_R%C3%ADo_de_Janeiro_en_la_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+              },
+              "thumbattribs": {
+                "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Casas_de_Plaza_R%C3%ADo_de_Janeiro_en_la_Ciudad_de_M%C3%A9xico.jpg/330px-Casas_de_Plaza_R%C3%ADo_de_Janeiro_en_la_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "decoding": "async",
+                "loading": "lazy",
+                "width": 320,
+                "height": 213,
+                "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Casas_de_Plaza_R%C3%ADo_de_Janeiro_en_la_Ciudad_de_M%C3%A9xico.jpg/960px-Casas_de_Plaza_R%C3%ADo_de_Janeiro_en_la_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+              },
+              "url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Casas_de_Plaza_R%C3%ADo_de_Janeiro_en_la_Ciudad_de_M%C3%A9xico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+              "descriptionurl": "https://commons.wikimedia.org/wiki/File:Casas_de_Plaza_R%C3%ADo_de_Janeiro_en_la_Ciudad_de_M%C3%A9xico.jpg",
+              "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=51884134",
+              "sha1": "1914df17b3eb640b77dbd8b472752a1170aa2d35",
+              "extmetadata": {
+                "DateTime": {
+                  "value": "2016-09-29 15:28:28",
+                  "source": "mediawiki-metadata",
+                  "hidden": ""
+                },
+                "ObjectName": {
+                  "value": "Casas de Plaza Río de Janeiro en la Ciudad de México",
+                  "source": "mediawiki-metadata"
+                },
+                "CommonsMetadataExtension": {
+                  "value": 1.2,
+                  "source": "extension",
+                  "hidden": ""
+                },
+                "Categories": {
+                  "value": "Self-published work|Plaza Río de Janeiro, Mexico City|Buildings in Colonia Roma|Colonia Roma street photos taken during Semana i 2016",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "Assessments": {
+                  "value": "",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "ImageDescription": {
+                  "value": "Photo of houses taken from the Plaza Rio de Janeiro. Trees on the left side and a tree on the right side. Street between the houses and the Plaza. Red car parked on the left side.",
+                  "source": "commons-desc-page"
+                },
+                "DateTimeOriginal": {
+                  "value": "2016-09-27 09:10:29",
+                  "source": "commons-desc-page"
+                },
+                "Credit": {
+                  "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                  "source": "commons-desc-page"
+                },
+                "Artist": {
+                  "value": "<a href=\"//commons.wikimedia.org/wiki/User:LEG95\" title=\"User:LEG95\">LEG95</a>",
+                  "source": "commons-desc-page"
+                },
+                "LicenseShortName": {
+                  "value": "CC BY-SA 4.0",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "UsageTerms": {
+                  "value": "Creative Commons Attribution-Share Alike 4.0",
+                  "source": "commons-desc-page"
+                },
+                "AttributionRequired": {
+                  "value": "true",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "LicenseUrl": {
+                  "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                  "source": "commons-desc-page"
+                },
+                "Copyrighted": {
+                  "value": "True",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "Restrictions": {
+                  "value": "",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "License": {
+                  "value": "cc-by-sa-4.0",
+                  "source": "commons-templates",
+                  "hidden": ""
+                }
+              },
+              "mime": "image/jpeg",
+              "mediatype": "BITMAP"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

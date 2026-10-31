@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0084",
+  "status": "downloaded",
+  "canonical_title": "File:Canada Dogwood with berries (d592ef6d-6abb-4668-b9ab-f228db9b84f3).JPG",
+  "pageid": 114349237,
+  "file": "sources/rg-0084.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Canada_Dogwood_with_berries_%28d592ef6d-6abb-4668-b9ab-f228db9b84f3%29.JPG/1920px-Canada_Dogwood_with_berries_%28d592ef6d-6abb-4668-b9ab-f228db9b84f3%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "058229abb29d5e77af69b3c2127a4379826615de769672698820320557fe21c0",
+  "width": 1920,
+  "height": 1440,
+  "exif_orientation": 1,
+  "requested_max_edge": 1600,
+  "original_width": 4032,
+  "original_height": 3024,
+  "original_sha1": "ee075f4488037f77ccea8f3ed09753bf57436242",
+  "creator": "NPS",
+  "license": "Public domain",
+  "license_url": null,
+  "retrieved_utc": "2026-10-31T02:25:19.724724+00:00",
+  "visual_review": "see reviews.json",
+  "source_independence": "see reviews.json"
+}

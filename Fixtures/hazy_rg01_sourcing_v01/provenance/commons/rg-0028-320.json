@@ -1,0 +1,120 @@
+{
+  "candidate_id": "rg-0028",
+  "retrieved_utc": "2026-10-31T00:32:01.002306+00:00",
+  "requested_title": "File:Red Tractor.jpg",
+  "response": {
+    "batchcomplete": true,
+    "query": {
+      "pages": [
+        {
+          "pageid": 89115170,
+          "ns": 6,
+          "title": "File:Red Tractor.jpg",
+          "imagerepository": "local",
+          "imageinfo": [
+            {
+              "size": 6207295,
+              "width": 5315,
+              "height": 3543,
+              "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Red_Tractor.jpg/330px-Red_Tractor.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "thumbwidth": 320,
+              "thumbheight": 213,
+              "responsiveUrls": {
+                "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Red_Tractor.jpg/960px-Red_Tractor.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+              },
+              "thumbattribs": {
+                "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Red_Tractor.jpg/330px-Red_Tractor.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "decoding": "async",
+                "loading": "lazy",
+                "width": 320,
+                "height": 213,
+                "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Red_Tractor.jpg/960px-Red_Tractor.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+              },
+              "url": "https://upload.wikimedia.org/wikipedia/commons/1/14/Red_Tractor.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+              "descriptionurl": "https://commons.wikimedia.org/wiki/File:Red_Tractor.jpg",
+              "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=89115170",
+              "sha1": "f290e0295f6f26ac7808e10d6e073c3b2efdbd5f",
+              "extmetadata": {
+                "DateTime": {
+                  "value": "2020-04-13 20:44:31",
+                  "source": "mediawiki-metadata",
+                  "hidden": ""
+                },
+                "ObjectName": {
+                  "value": "Red Tractor",
+                  "source": "mediawiki-metadata"
+                },
+                "CommonsMetadataExtension": {
+                  "value": 1.2,
+                  "source": "extension",
+                  "hidden": ""
+                },
+                "Categories": {
+                  "value": "Egypt in the 2010s|Images from Wiki Loves Africa 2020|Self-published work|Tractors in Egypt|Images from Wiki Loves Africa 2020 to check|Images from Wiki Loves Africa 2020 in Egypt|Maintenance for Wiki Loves Africa 2020|Red Belarus tractors",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "Assessments": {
+                  "value": "",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "ImageDescription": {
+                  "value": "A Farmer Riding on a Red Tractor - Fayoum - Egypt",
+                  "source": "commons-desc-page"
+                },
+                "DateTimeOriginal": {
+                  "value": "2012-01-13 16:50:47",
+                  "source": "commons-desc-page"
+                },
+                "Credit": {
+                  "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                  "source": "commons-desc-page"
+                },
+                "Artist": {
+                  "value": "<a href=\"//commons.wikimedia.org/wiki/User:Myousry6666\" title=\"User:Myousry6666\">Myousry6666</a>",
+                  "source": "commons-desc-page"
+                },
+                "LicenseShortName": {
+                  "value": "CC BY-SA 4.0",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "UsageTerms": {
+                  "value": "Creative Commons Attribution-Share Alike 4.0",
+                  "source": "commons-desc-page"
+                },
+                "AttributionRequired": {
+                  "value": "true",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "LicenseUrl": {
+                  "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                  "source": "commons-desc-page"
+                },
+                "Copyrighted": {
+                  "value": "True",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "Restrictions": {
+                  "value": "",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "License": {
+                  "value": "cc-by-sa-4.0",
+                  "source": "commons-templates",
+                  "hidden": ""
+                }
+              },
+              "mime": "image/jpeg",
+              "mediatype": "BITMAP"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

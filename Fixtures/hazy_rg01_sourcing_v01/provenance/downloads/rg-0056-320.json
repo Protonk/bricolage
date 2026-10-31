@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0056",
+  "status": "preview_downloaded",
+  "canonical_title": "File:Red bicycle (27478994856).jpg",
+  "pageid": 68677759,
+  "file": "previews/candidates/rg-0056.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Red_bicycle_%2827478994856%29.jpg/330px-Red_bicycle_%2827478994856%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "feee25e30629007e79779552f50d3d38e2aef418ee2481804a1838c79677c149",
+  "width": 330,
+  "height": 220,
+  "exif_orientation": 1,
+  "requested_max_edge": 320,
+  "original_width": 5274,
+  "original_height": 3516,
+  "original_sha1": "e51016f8c986509339d1431ac44a7ec1899bce0f",
+  "creator": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/9706002@N06\">Randy Landicho</a>",
+  "license": "CC BY 2.0",
+  "license_url": "https://creativecommons.org/licenses/by/2.0",
+  "retrieved_utc": "2026-10-31T00:35:27.009546+00:00",
+  "visual_review": "pending",
+  "source_independence": "unverified"
+}

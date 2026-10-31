@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0102",
+  "status": "preview_downloaded",
+  "canonical_title": "File:Orange mushroom.jpg",
+  "pageid": 4426310,
+  "file": "previews/candidates/rg-0102.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Orange_mushroom.jpg/330px-Orange_mushroom.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "772acfe8aa790588f7f242de3b8dee037df6018f8553cfd4647bd1aedaba6d0c",
+  "width": 330,
+  "height": 220,
+  "exif_orientation": 1,
+  "requested_max_edge": 320,
+  "original_width": 4368,
+  "original_height": 2912,
+  "original_sha1": "bfc46c9851c26dacbd1a28778da84121b9b3ed97",
+  "creator": "<a href=\"//commons.wikimedia.org/wiki/User:Dschwen\" title=\"User:Dschwen\">Daniel Schwen</a>",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "retrieved_utc": "2026-10-31T00:40:57.241168+00:00",
+  "visual_review": "pending",
+  "source_independence": "unverified"
+}

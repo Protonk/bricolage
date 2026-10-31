@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0071",
+  "status": "preview_downloaded",
+  "canonical_title": "File:Casa da Mainha (1).jpg",
+  "pageid": 91792264,
+  "file": "previews/candidates/rg-0071.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Casa_da_Mainha_%281%29.jpg/250px-Casa_da_Mainha_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "72cd3f6f1456eb71404b57b120445fb144da0b10c3225396b3022ea05f75630f",
+  "width": 250,
+  "height": 375,
+  "exif_orientation": 1,
+  "requested_max_edge": 320,
+  "original_width": 3648,
+  "original_height": 5472,
+  "original_sha1": "cae54ded93fb433d379733726cbbc38a65e240f4",
+  "creator": "<a href=\"//commons.wikimedia.org/wiki/User:Joseolgon\" title=\"User:Joseolgon\">Joseolgon</a>",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "retrieved_utc": "2026-10-31T00:37:16.080179+00:00",
+  "visual_review": "pending",
+  "source_independence": "unverified"
+}

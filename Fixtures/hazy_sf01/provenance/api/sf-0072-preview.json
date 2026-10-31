@@ -1,0 +1,129 @@
+{
+  "batchcomplete": true,
+  "query": {
+    "pages": [
+      {
+        "pageid": 128527600,
+        "ns": 6,
+        "title": "File:Dried Leaves & Snow.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "timestamp": "2023-02-08T17:17:11Z",
+            "user": "Iurieph",
+            "size": 6083727,
+            "width": 4012,
+            "height": 6016,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Dried_Leaves_%26_Snow.jpg/250px-Dried_Leaves_%26_Snow.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 213,
+            "thumbheight": 320,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Dried_Leaves_%26_Snow.jpg/500px-Dried_Leaves_%26_Snow.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Dried_Leaves_%26_Snow.jpg/250px-Dried_Leaves_%26_Snow.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 213,
+              "height": 320,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Dried_Leaves_%26_Snow.jpg/500px-Dried_Leaves_%26_Snow.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/7/70/Dried_Leaves_%26_Snow.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Dried_Leaves_%26_Snow.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=128527600",
+            "sha1": "53755156f9f2cca0e9cb6ee256ff7755977f780b",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2023-02-08 17:17:11",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Dried Leaves & Snow",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "CC-Zero|Dead leaves|Flickr images missing SDC creator|Files with coordinates missing SDC location of creation|Flickr images reviewed by FlickreviewR 2|Flickr images missing SDC published in",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "47.039056",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "28.877477",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Dried Leaves &amp; Snow",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2022-01-23 14:30:39",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external free\" href=\"https://www.flickr.com/photos/194158583@N08/51838610570/\">https://www.flickr.com/photos/194158583@N08/51838610570/</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "iurie.ph",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Zero, Public Domain Dedication",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      }
+    ]
+  }
+}

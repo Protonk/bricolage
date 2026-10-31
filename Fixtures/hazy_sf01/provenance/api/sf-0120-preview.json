@@ -1,0 +1,129 @@
+{
+  "batchcomplete": true,
+  "query": {
+    "pages": [
+      {
+        "pageid": 170236688,
+        "ns": 6,
+        "title": "File:Grazing sheep dot a verdant hillside under a brooding sky, with soft, rolling terrain evoking rural calm near Laneshaw Bridge, Colne, UK.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "timestamp": "2025-07-17T17:27:37Z",
+            "user": "Orbitalscreams",
+            "size": 13680715,
+            "width": 3735,
+            "height": 2806,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Grazing_sheep_dot_a_verdant_hillside_under_a_brooding_sky%2C_with_soft%2C_rolling_terrain_evoking_rural_calm_near_Laneshaw_Bridge%2C_Colne%2C_UK.jpg/330px-Grazing_sheep_dot_a_verdant_hillside_under_a_brooding_sky%2C_with_soft%2C_rolling_terrain_evoking_rural_calm_near_Laneshaw_Bridge%2C_Colne%2C_UK.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 320,
+            "thumbheight": 240,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Grazing_sheep_dot_a_verdant_hillside_under_a_brooding_sky%2C_with_soft%2C_rolling_terrain_evoking_rural_calm_near_Laneshaw_Bridge%2C_Colne%2C_UK.jpg/960px-Grazing_sheep_dot_a_verdant_hillside_under_a_brooding_sky%2C_with_soft%2C_rolling_terrain_evoking_rural_calm_near_Laneshaw_Bridge%2C_Colne%2C_UK.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Grazing_sheep_dot_a_verdant_hillside_under_a_brooding_sky%2C_with_soft%2C_rolling_terrain_evoking_rural_calm_near_Laneshaw_Bridge%2C_Colne%2C_UK.jpg/330px-Grazing_sheep_dot_a_verdant_hillside_under_a_brooding_sky%2C_with_soft%2C_rolling_terrain_evoking_rural_calm_near_Laneshaw_Bridge%2C_Colne%2C_UK.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 320,
+              "height": 240,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Grazing_sheep_dot_a_verdant_hillside_under_a_brooding_sky%2C_with_soft%2C_rolling_terrain_evoking_rural_calm_near_Laneshaw_Bridge%2C_Colne%2C_UK.jpg/960px-Grazing_sheep_dot_a_verdant_hillside_under_a_brooding_sky%2C_with_soft%2C_rolling_terrain_evoking_rural_calm_near_Laneshaw_Bridge%2C_Colne%2C_UK.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/d/db/Grazing_sheep_dot_a_verdant_hillside_under_a_brooding_sky%2C_with_soft%2C_rolling_terrain_evoking_rural_calm_near_Laneshaw_Bridge%2C_Colne%2C_UK.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Grazing_sheep_dot_a_verdant_hillside_under_a_brooding_sky,_with_soft,_rolling_terrain_evoking_rural_calm_near_Laneshaw_Bridge,_Colne,_UK.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=170236688",
+            "sha1": "8ece60b0c8e3cd3615ce4f3a763e31fedfbd9c95",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2025-07-17 17:27:37",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Grazing sheep dot a verdant hillside under a brooding sky, with soft, rolling terrain evoking rural calm near Laneshaw Bridge, Colne, UK",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Protected areas of England|Self-published work|Images from Wiki Loves Earth missing SDC depicts|Files with coordinates missing SDC location of creation (53° N, 3° W)|Images from Wiki Loves Earth missing SDC location of creation|Images from Wiki Loves Earth 2025|Images from Wiki Loves Earth 2025 in the United Kingdom|Images from Wiki Loves Earth 2025 in England|Uploaded via Campaign:wle-gb-eng",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "53.837986",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "-2.039369",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Grazing sheep dot a verdant hillside under a brooding sky, with soft, rolling terrain evoking rural calm near Laneshaw Bridge, Colne, UK.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2020-06-21 17:04:06",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Orbitalscreams&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Orbitalscreams (page does not exist)\">Orbitalscreams</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      }
+    ]
+  }
+}

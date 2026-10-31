@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0059",
+  "status": "preview_downloaded",
+  "canonical_title": "File:A tent set in a Kuroyuri-taira, Japan, Summer, 2004.jpg",
+  "pageid": 633786,
+  "file": "previews/candidates/rg-0059.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/A_tent_set_in_a_Kuroyuri-taira%2C_Japan%2C_Summer%2C_2004.jpg/330px-A_tent_set_in_a_Kuroyuri-taira%2C_Japan%2C_Summer%2C_2004.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "e3b863bc038b71ba82de7c467f7f80b747621565093732627863617123ea6192",
+  "width": 330,
+  "height": 247,
+  "exif_orientation": 1,
+  "requested_max_edge": 320,
+  "original_width": 2304,
+  "original_height": 1728,
+  "original_sha1": "a86dc38a19fc963a6c484240bcdf7751e1d28803",
+  "creator": "<a href=\"//commons.wikimedia.org/wiki/User:Kumaapr9\" title=\"User:Kumaapr9\">Kumaapr9</a>",
+  "license": "CC BY-SA 3.0",
+  "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "retrieved_utc": "2026-10-31T00:35:50.063956+00:00",
+  "visual_review": "pending",
+  "source_independence": "unverified"
+}

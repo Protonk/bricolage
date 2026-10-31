@@ -1,0 +1,138 @@
+{
+  "candidate_id": "rg-0107",
+  "retrieved_utc": "2026-10-31T00:41:28.138370+00:00",
+  "requested_title": "File:Lifebuoy, Castle Semple Loch - geograph.org.uk - 582263.jpg",
+  "response": {
+    "batchcomplete": true,
+    "query": {
+      "pages": [
+        {
+          "pageid": 13119492,
+          "ns": 6,
+          "title": "File:Lifebuoy, Castle Semple Loch - geograph.org.uk - 582263.jpg",
+          "imagerepository": "local",
+          "imageinfo": [
+            {
+              "size": 145164,
+              "width": 640,
+              "height": 480,
+              "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Lifebuoy%2C_Castle_Semple_Loch_-_geograph.org.uk_-_582263.jpg/330px-Lifebuoy%2C_Castle_Semple_Loch_-_geograph.org.uk_-_582263.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "thumbwidth": 320,
+              "thumbheight": 240,
+              "responsiveUrls": {
+                "2": "https://upload.wikimedia.org/wikipedia/commons/d/df/Lifebuoy%2C_Castle_Semple_Loch_-_geograph.org.uk_-_582263.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+              },
+              "thumbattribs": {
+                "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Lifebuoy%2C_Castle_Semple_Loch_-_geograph.org.uk_-_582263.jpg/330px-Lifebuoy%2C_Castle_Semple_Loch_-_geograph.org.uk_-_582263.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "decoding": "async",
+                "loading": "lazy",
+                "width": 320,
+                "height": 240,
+                "srcset": "https://upload.wikimedia.org/wikipedia/commons/d/df/Lifebuoy%2C_Castle_Semple_Loch_-_geograph.org.uk_-_582263.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+              },
+              "url": "https://upload.wikimedia.org/wikipedia/commons/d/df/Lifebuoy%2C_Castle_Semple_Loch_-_geograph.org.uk_-_582263.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+              "descriptionurl": "https://commons.wikimedia.org/wiki/File:Lifebuoy,_Castle_Semple_Loch_-_geograph.org.uk_-_582263.jpg",
+              "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=13119492",
+              "sha1": "d4a0ebda102e680af9e346401f054242d7a162eb",
+              "extmetadata": {
+                "DateTime": {
+                  "value": "2011-02-06 14:17:08",
+                  "source": "mediawiki-metadata",
+                  "hidden": ""
+                },
+                "ObjectName": {
+                  "value": "Lifebuoy, Castle Semple Loch - geograph.org.uk - 582263",
+                  "source": "mediawiki-metadata"
+                },
+                "CommonsMetadataExtension": {
+                  "value": 1.2,
+                  "source": "extension",
+                  "hidden": ""
+                },
+                "Categories": {
+                  "value": "Taken with Canon Digital IXUS 700|Castle Semple Loch|Images from Geograph Britain and Ireland|Information field template with formatting|Orange lifebuoys|United Kingdom photographs taken on 2007-10-09|Lifebuoys in Scotland|Images by wfmillar",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "Assessments": {
+                  "value": "",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "GPSLatitude": {
+                  "value": "55.800890",
+                  "source": "commons-desc-page"
+                },
+                "GPSLongitude": {
+                  "value": "-4.606200",
+                  "source": "commons-desc-page"
+                },
+                "GPSMapDatum": {
+                  "value": "WGS-84",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "ImageDescription": {
+                  "value": "Lifebuoy, Castle Semple Loch",
+                  "source": "commons-desc-page"
+                },
+                "DateTimeOriginal": {
+                  "value": "2007-10-09",
+                  "source": "commons-desc-page"
+                },
+                "Credit": {
+                  "value": "From <a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/photo/582263\">geograph.org.uk</a>",
+                  "source": "commons-desc-page"
+                },
+                "Artist": {
+                  "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/profile/7544\">wfmillar</a>",
+                  "source": "commons-desc-page"
+                },
+                "Attribution": {
+                  "value": "wfmillar",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "LicenseShortName": {
+                  "value": "CC BY-SA 2.0",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "UsageTerms": {
+                  "value": "Creative Commons Attribution-Share Alike 2.0",
+                  "source": "commons-desc-page"
+                },
+                "AttributionRequired": {
+                  "value": "true",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "LicenseUrl": {
+                  "value": "https://creativecommons.org/licenses/by-sa/2.0",
+                  "source": "commons-desc-page"
+                },
+                "Copyrighted": {
+                  "value": "True",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "Restrictions": {
+                  "value": "",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "License": {
+                  "value": "cc-by-sa-2.0",
+                  "source": "commons-templates",
+                  "hidden": ""
+                }
+              },
+              "mime": "image/jpeg",
+              "mediatype": "BITMAP"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

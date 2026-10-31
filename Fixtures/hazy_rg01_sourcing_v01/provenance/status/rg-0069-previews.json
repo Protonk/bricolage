@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0069",
+  "status": "preview_downloaded",
+  "canonical_title": "File:Chateau de la Barge, Grézieu-la-Varenne.jpg",
+  "pageid": 21203265,
+  "file": "previews/candidates/rg-0069.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Chateau_de_la_Barge%2C_Gr%C3%A9zieu-la-Varenne.jpg/330px-Chateau_de_la_Barge%2C_Gr%C3%A9zieu-la-Varenne.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "cf3866e2f3871f2bf76dd04eaa24cf219e8ce4667fab3d590e651637bf202743",
+  "width": 330,
+  "height": 219,
+  "exif_orientation": 1,
+  "requested_max_edge": 320,
+  "original_width": 4928,
+  "original_height": 3264,
+  "original_sha1": "74e796c444fdf710e667d230bf04d5bc10ecf06d",
+  "creator": "<a href=\"//commons.wikimedia.org/wiki/User:Ldelmas\" title=\"User:Ldelmas\">Laurent Delmas</a>",
+  "license": "CC BY-SA 3.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+  "retrieved_utc": "2026-10-31T00:37:00.046842+00:00",
+  "visual_review": "pending",
+  "source_independence": "unverified"
+}

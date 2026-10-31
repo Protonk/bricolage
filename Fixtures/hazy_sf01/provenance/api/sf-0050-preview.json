@@ -1,0 +1,116 @@
+{
+  "batchcomplete": true,
+  "query": {
+    "pages": [
+      {
+        "pageid": 40444885,
+        "ns": 6,
+        "title": "File:На плато Кукисвумчорр.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "timestamp": "2015-05-25T16:26:54Z",
+            "user": "- Meellaira Ahr -",
+            "size": 269162,
+            "width": 960,
+            "height": 640,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/%D0%9D%D0%B0_%D0%BF%D0%BB%D0%B0%D1%82%D0%BE_%D0%9A%D1%83%D0%BA%D0%B8%D1%81%D0%B2%D1%83%D0%BC%D1%87%D0%BE%D1%80%D1%80.jpg/330px-%D0%9D%D0%B0_%D0%BF%D0%BB%D0%B0%D1%82%D0%BE_%D0%9A%D1%83%D0%BA%D0%B8%D1%81%D0%B2%D1%83%D0%BC%D1%87%D0%BE%D1%80%D1%80.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 320,
+            "thumbheight": 213,
+            "responsiveUrls": {
+              "2": "https://upload.wikimedia.org/wikipedia/commons/e/e8/%D0%9D%D0%B0_%D0%BF%D0%BB%D0%B0%D1%82%D0%BE_%D0%9A%D1%83%D0%BA%D0%B8%D1%81%D0%B2%D1%83%D0%BC%D1%87%D0%BE%D1%80%D1%80.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/%D0%9D%D0%B0_%D0%BF%D0%BB%D0%B0%D1%82%D0%BE_%D0%9A%D1%83%D0%BA%D0%B8%D1%81%D0%B2%D1%83%D0%BC%D1%87%D0%BE%D1%80%D1%80.jpg/330px-%D0%9D%D0%B0_%D0%BF%D0%BB%D0%B0%D1%82%D0%BE_%D0%9A%D1%83%D0%BA%D0%B8%D1%81%D0%B2%D1%83%D0%BC%D1%87%D0%BE%D1%80%D1%80.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 320,
+              "height": 213,
+              "srcset": "https://upload.wikimedia.org/wikipedia/commons/e/e8/%D0%9D%D0%B0_%D0%BF%D0%BB%D0%B0%D1%82%D0%BE_%D0%9A%D1%83%D0%BA%D0%B8%D1%81%D0%B2%D1%83%D0%BC%D1%87%D0%BE%D1%80%D1%80.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/%D0%9D%D0%B0_%D0%BF%D0%BB%D0%B0%D1%82%D0%BE_%D0%9A%D1%83%D0%BA%D0%B8%D1%81%D0%B2%D1%83%D0%BC%D1%87%D0%BE%D1%80%D1%80.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:%D0%9D%D0%B0_%D0%BF%D0%BB%D0%B0%D1%82%D0%BE_%D0%9A%D1%83%D0%BA%D0%B8%D1%81%D0%B2%D1%83%D0%BC%D1%87%D0%BE%D1%80%D1%80.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=40444885",
+            "sha1": "abea16e2ba507f20723193e82e938a0735c874ff",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2015-05-25 16:26:54",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "На плато Кукисвумчорр",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Khibiny Massif|Boulder fields|Self-published work|Low-resolution images from Wiki Loves Earth 2015 in Russia|Images from Wiki Loves Earth 2015 in Russia|Images from Wiki Loves Earth 2015|Uploaded via Campaign:wle-ru|Russia photographs taken on 2014-09-03|Images from Wiki Loves Earth missing SDC depicts|Images from Wiki Loves Earth missing SDC location of creation|Protected areas of Russia with known IDs|Protected areas of Russia/5100013",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Хибины,",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "Taken on 3 September 2014",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:-_Meellaira_Ahr_-&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:- Meellaira Ahr - (page does not exist)\">- Meellaira Ahr -</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      }
+    ]
+  }
+}

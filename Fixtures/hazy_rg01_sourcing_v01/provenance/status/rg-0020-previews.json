@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0020",
+  "status": "preview_downloaded",
+  "canonical_title": "File:Dragonfly on a leaf.jpg",
+  "pageid": 33951855,
+  "file": "previews/candidates/rg-0020.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Dragonfly_on_a_leaf.jpg/330px-Dragonfly_on_a_leaf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "30b48c181b4963a2208a3fffb41a8b03ec563f8a437d1244dc51d58088f3e746",
+  "width": 330,
+  "height": 330,
+  "exif_orientation": 1,
+  "requested_max_edge": 320,
+  "original_width": 1024,
+  "original_height": 1024,
+  "original_sha1": "443ed216f4c607836bb812f8450e39f135655998",
+  "creator": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Jerilile&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Jerilile (page does not exist)\">jerilile</a>",
+  "license": "CC BY-SA 3.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+  "retrieved_utc": "2026-10-31T00:31:06.470044+00:00",
+  "visual_review": "pending",
+  "source_independence": "unverified"
+}

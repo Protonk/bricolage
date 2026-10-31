@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0003",
+  "status": "preview_downloaded",
+  "canonical_title": "File:A Red Flower with a green background and broad leaves.jpg",
+  "pageid": 132645012,
+  "file": "previews/candidates/rg-0003.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/A_Red_Flower_with_a_green_background_and_broad_leaves.jpg/330px-A_Red_Flower_with_a_green_background_and_broad_leaves.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "208d5b7c86ffb9f1bb5febdfc2a437d340e0aa7bdeeb815ec20487e323f48743",
+  "width": 330,
+  "height": 247,
+  "exif_orientation": 1,
+  "requested_max_edge": 320,
+  "original_width": 2560,
+  "original_height": 1920,
+  "original_sha1": "fa6a255352d282f30eebf63c5b59274c810fd3fa",
+  "creator": "<a href=\"//commons.wikimedia.org/wiki/User:Emma_Oruk\" title=\"User:Emma Oruk\">Emma Oruk</a>",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "retrieved_utc": "2026-10-31T00:29:06.857516+00:00",
+  "visual_review": "pending",
+  "source_independence": "unverified"
+}

@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0042",
+  "status": "preview_downloaded",
+  "canonical_title": "File:Red Bench in Lumbini, Nepal-IMG 7308.jpg",
+  "pageid": 182935398,
+  "file": "previews/candidates/rg-0042.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Red_Bench_in_Lumbini%2C_Nepal-IMG_7308.jpg/330px-Red_Bench_in_Lumbini%2C_Nepal-IMG_7308.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "0b8a730eecc97d484f1b9f29f4b65dec5c00ffa816729b0030f9fabb3d1c4a30",
+  "width": 330,
+  "height": 220,
+  "exif_orientation": 1,
+  "requested_max_edge": 320,
+  "original_width": 5153,
+  "original_height": 3435,
+  "original_sha1": "931b96478978dcb4426655633260ee4ccb302eed",
+  "creator": "<bdi>Bijay Chaurasia</bdi>",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "retrieved_utc": "2026-10-31T00:33:44.384038+00:00",
+  "visual_review": "pending",
+  "source_independence": "unverified"
+}

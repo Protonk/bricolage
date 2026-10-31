@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0063",
+  "status": "preview_downloaded",
+  "canonical_title": "File:Naturpark Gantrisch 017.jpg",
+  "pageid": 60235497,
+  "file": "previews/candidates/rg-0063.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Naturpark_Gantrisch_017.jpg/330px-Naturpark_Gantrisch_017.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "b7e247e8d1a1e00838dfbfe82b3b2aabd246b1efa4c045a2f5098ae33c24079a",
+  "width": 330,
+  "height": 220,
+  "exif_orientation": 1,
+  "requested_max_edge": 320,
+  "original_width": 3000,
+  "original_height": 2000,
+  "original_sha1": "4bdb703277789a2118e2cd888160517328905d24",
+  "creator": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Heaven_721&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Heaven 721 (page does not exist)\">Heaven 721</a>",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "retrieved_utc": "2026-10-31T00:36:18.474358+00:00",
+  "visual_review": "pending",
+  "source_independence": "unverified"
+}

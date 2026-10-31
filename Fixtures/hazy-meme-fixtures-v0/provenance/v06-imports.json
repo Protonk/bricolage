@@ -1,0 +1,263 @@
+{
+  "schema_version": 1,
+  "variant_id": "v06",
+  "status": "all_six_supplied",
+  "primary_input_count_after_build": 42,
+  "source_count": 6,
+  "local_variant_count": 30,
+  "supplied_generation_count": 6,
+  "items": [
+    {
+      "source_id": "m01",
+      "variant_id": "v06",
+      "status": "supplied",
+      "source_file": "sources/01-comic.png",
+      "source_sha256": "d3313628fa257196542095a69cd494a36183aac8aba1adf5a04dedf827d4dda2",
+      "prompt_file": "provenance/prompts/m01.md",
+      "prompt_sha256": "1d82684bcb6e5986985c8947c3f4f0f32ac7a7d0c294914076b1bb80705d3ae0",
+      "supplied_image_file": "previews/supplied-v06/m01.png",
+      "supplied_image_sha256": "e0ab39069a0b53806be068a407896c9d9e54d025df523841858f999f5016eefe",
+      "uploaded_filename": "Pacific Island Survival Comic.png",
+      "uploaded_library_file_id": "libfile_0fa1008e33148191a04abd46ae22c42a",
+      "width": 941,
+      "height": 1672,
+      "format": "PNG",
+      "mode": "RGBA",
+      "exif_orientation": 1,
+      "size_bytes": 2466147,
+      "relation_kind": "description_mediated_generation",
+      "description_origin": "Assistant description in the fixture-preparation conversation; complete text preserved.",
+      "generation_origin": "User-supplied image associated with this description.",
+      "generation_metadata": {
+        "model": null,
+        "model_version": null,
+        "seed": null,
+        "settings": null,
+        "internal_prompt": null,
+        "full_session_instructions": null,
+        "attempt_count": null,
+        "selection_history": null
+      },
+      "rights": {
+        "status": "not_supplied",
+        "note": "Original-source CC0 dedication is not assigned to this generated output."
+      },
+      "local_import": {
+        "operation": "byte_copy",
+        "preprocessing": "none",
+        "final_input_path": null
+      },
+      "spatial_correspondence": null
+    },
+    {
+      "source_id": "m02",
+      "variant_id": "v06",
+      "status": "supplied",
+      "source_file": "sources/02-action.jpeg",
+      "source_sha256": "6ffa7509608ba71eb207f0771f8a3a2d24eeddecc3838009214f92ffd27d1abc",
+      "prompt_file": "provenance/prompts/m02.md",
+      "prompt_sha256": "9c836fed9c1411f991e28a389e8fa10c0f8230816505de462fcf712fe1cdc12d",
+      "supplied_image_file": "previews/supplied-v06/m02.png",
+      "supplied_image_sha256": "f4999abbc67cffd8ca407b561117f9710656b76b0f9a3c5cbba56beb08cd482c",
+      "uploaded_filename": "Skateboarder Midair in Sunlit Park.png",
+      "uploaded_library_file_id": "libfile_4f3eca26b67c8191bb2cfb6d54f229f9",
+      "width": 1024,
+      "height": 1536,
+      "format": "PNG",
+      "mode": "RGBA",
+      "exif_orientation": 1,
+      "size_bytes": 3322157,
+      "relation_kind": "description_mediated_generation",
+      "description_origin": "Assistant description in the fixture-preparation conversation; complete text preserved.",
+      "generation_origin": "User-supplied image associated with this description.",
+      "generation_metadata": {
+        "model": null,
+        "model_version": null,
+        "seed": null,
+        "settings": null,
+        "internal_prompt": null,
+        "full_session_instructions": null,
+        "attempt_count": null,
+        "selection_history": null
+      },
+      "rights": {
+        "status": "not_supplied",
+        "note": "Original-source CC0 dedication is not assigned to this generated output."
+      },
+      "local_import": {
+        "operation": "byte_copy",
+        "preprocessing": "none",
+        "final_input_path": null
+      },
+      "spatial_correspondence": null
+    },
+    {
+      "source_id": "m03",
+      "variant_id": "v06",
+      "status": "supplied",
+      "source_file": "sources/03-portrait.jpg",
+      "source_sha256": "50b3f431675b55d53fefa13451d734af13988c43585a5236c39b2644a47a4f07",
+      "prompt_file": "provenance/prompts/m03.md",
+      "prompt_sha256": "bf72ccdd95498dfc37c104ea5a148af7a53bdd79420b8187dc6fb083ed43d947",
+      "supplied_image_file": "previews/supplied-v06/m03.png",
+      "supplied_image_sha256": "bbda406ae56ad06ee79e4527dd718145e98ccb2b08dddf157be607de35b6eb03",
+      "uploaded_filename": "Sunlit Reflection in a Cozy Interior.png",
+      "uploaded_library_file_id": "libfile_3f3f54ed8b488191a6bab284cb5f8881",
+      "width": 1536,
+      "height": 1024,
+      "format": "PNG",
+      "mode": "RGBA",
+      "exif_orientation": 1,
+      "size_bytes": 2304453,
+      "relation_kind": "description_mediated_generation",
+      "description_origin": "Assistant description in the fixture-preparation conversation; complete text preserved.",
+      "generation_origin": "User-supplied image associated with this description.",
+      "generation_metadata": {
+        "model": null,
+        "model_version": null,
+        "seed": null,
+        "settings": null,
+        "internal_prompt": null,
+        "full_session_instructions": null,
+        "attempt_count": null,
+        "selection_history": null
+      },
+      "rights": {
+        "status": "not_supplied",
+        "note": "Original-source CC0 dedication is not assigned to this generated output."
+      },
+      "local_import": {
+        "operation": "byte_copy",
+        "preprocessing": "none",
+        "final_input_path": null
+      },
+      "spatial_correspondence": null
+    },
+    {
+      "source_id": "m04",
+      "variant_id": "v06",
+      "status": "supplied",
+      "source_file": "sources/04-landscape.jpg",
+      "source_sha256": "b624d7038316f9081970000791bae44446e90b87d90b1b090a44125fd874a77a",
+      "prompt_file": "provenance/prompts/m04.md",
+      "prompt_sha256": "497f0a946d9e800b2db4a8dce4f533e478b1f050e53082d713e09ab36a1da2d0",
+      "supplied_image_file": "previews/supplied-v06/m04.png",
+      "supplied_image_sha256": "034e51c0abe43384defb6de1b83fc1884485bd7699a2906814c66da6804b3177",
+      "uploaded_filename": "Hiker Over a Snowy Mountain Lake.png",
+      "uploaded_library_file_id": "libfile_3c9a25a7cc2c8191a1fd5e82aca61215",
+      "width": 1536,
+      "height": 1024,
+      "format": "PNG",
+      "mode": "RGBA",
+      "exif_orientation": 1,
+      "size_bytes": 3502791,
+      "relation_kind": "description_mediated_generation",
+      "description_origin": "Assistant description in the fixture-preparation conversation; complete text preserved.",
+      "generation_origin": "User-supplied image associated with this description.",
+      "generation_metadata": {
+        "model": null,
+        "model_version": null,
+        "seed": null,
+        "settings": null,
+        "internal_prompt": null,
+        "full_session_instructions": null,
+        "attempt_count": null,
+        "selection_history": null
+      },
+      "rights": {
+        "status": "not_supplied",
+        "note": "Original-source CC0 dedication is not assigned to this generated output."
+      },
+      "local_import": {
+        "operation": "byte_copy",
+        "preprocessing": "none",
+        "final_input_path": null
+      },
+      "spatial_correspondence": null
+    },
+    {
+      "source_id": "m05",
+      "variant_id": "v06",
+      "status": "supplied",
+      "source_file": "sources/05-coffee.jpg",
+      "source_sha256": "e839b91d2f8698a6fdc33a6a2f6053c25cad0f7d042f6d2dfef99f20ec4bb3e0",
+      "prompt_file": "provenance/prompts/m05.md",
+      "prompt_sha256": "ac6003d7c3cc3d3543be32783553396ea30bb474858b4dfc793698b0c87e155b",
+      "supplied_image_file": "previews/supplied-v06/m05.png",
+      "supplied_image_sha256": "8bcc3d1854b903cd7d4c4f02b8cab06c103bb2fe7e3b9176427dca9e654a01c3",
+      "uploaded_filename": "Steamy Morning French Press and Kitchen Jars.png",
+      "uploaded_library_file_id": "libfile_224e818197f4819184e52d52469b1c22",
+      "width": 1536,
+      "height": 1024,
+      "format": "PNG",
+      "mode": "RGBA",
+      "exif_orientation": 1,
+      "size_bytes": 2594606,
+      "relation_kind": "description_mediated_generation",
+      "description_origin": "Assistant description in the fixture-preparation conversation; complete text preserved.",
+      "generation_origin": "User-supplied image associated with this description.",
+      "generation_metadata": {
+        "model": null,
+        "model_version": null,
+        "seed": null,
+        "settings": null,
+        "internal_prompt": null,
+        "full_session_instructions": null,
+        "attempt_count": null,
+        "selection_history": null
+      },
+      "rights": {
+        "status": "not_supplied",
+        "note": "Original-source CC0 dedication is not assigned to this generated output."
+      },
+      "local_import": {
+        "operation": "byte_copy",
+        "preprocessing": "none",
+        "final_input_path": null
+      },
+      "spatial_correspondence": null
+    },
+    {
+      "source_id": "m06",
+      "variant_id": "v06",
+      "status": "supplied",
+      "source_file": "sources/06-cat.jpg",
+      "source_sha256": "38373a25c4bfe65a71f9ded73b5e7b8ff486b33548d92c4fa4e4a7ad16094fcc",
+      "prompt_file": "provenance/prompts/m06.md",
+      "prompt_sha256": "96cd871a7bed10e767df268c29ddb8bf849edf87d494d7f4a3983fc60dd79058",
+      "supplied_image_file": "previews/supplied-v06/m06.png",
+      "supplied_image_sha256": "81ef4c507881a7dea48c22a725a0dc480337f0b41ea81643b113ddb86e234622",
+      "uploaded_filename": "Ginger Cat on Weathered Wall.png",
+      "uploaded_library_file_id": "libfile_fe288d659ff4819185fa4dc711db1983",
+      "width": 1024,
+      "height": 1536,
+      "format": "PNG",
+      "mode": "RGBA",
+      "exif_orientation": 1,
+      "size_bytes": 3204903,
+      "relation_kind": "description_mediated_generation",
+      "description_origin": "Assistant description in the fixture-preparation conversation; complete text preserved.",
+      "generation_origin": "User-supplied image associated with this description.",
+      "generation_metadata": {
+        "model": null,
+        "model_version": null,
+        "seed": null,
+        "settings": null,
+        "internal_prompt": null,
+        "full_session_instructions": null,
+        "attempt_count": null,
+        "selection_history": null
+      },
+      "rights": {
+        "status": "not_supplied",
+        "note": "Original-source CC0 dedication is not assigned to this generated output."
+      },
+      "local_import": {
+        "operation": "byte_copy",
+        "preprocessing": "none",
+        "final_input_path": null
+      },
+      "spatial_correspondence": null
+    }
+  ]
+}

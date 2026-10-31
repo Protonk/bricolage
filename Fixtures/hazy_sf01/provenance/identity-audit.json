@@ -1,0 +1,42 @@
+{
+  "status": "passed",
+  "inventories": [
+    {
+      "fixture": "hazy-derivatives-v1",
+      "inputs": 183,
+      "sources": 15,
+      "manifest_sha256": "6141c7fde28f1e2809bb1ca4df207a1ebe0788db4daaf1f489e79421fb1c038d"
+    },
+    {
+      "fixture": "hazy-multiview-v1",
+      "inputs": 20,
+      "sources": 20,
+      "manifest_sha256": "2b77fb179dc6b3a2b537fa631f8fad528fdb2e44660a8f3e918e41a09fce5b63"
+    },
+    {
+      "fixture": "hazy-meme-fixtures-v0",
+      "inputs": 42,
+      "sources": 6,
+      "manifest_sha256": "8d0fd98dd2e435661ef6d77b458050b131ed488b172204659023f080a85111df"
+    },
+    {
+      "fixture": "hazy_rg01_sourcing_v01",
+      "inputs": 31,
+      "sources": 31,
+      "manifest_sha256": "8c11d19a70ae73c0a526ee05e7f9fb2c904ab39e977788395c201b94aa9d3a0c"
+    }
+  ],
+  "candidates": 142,
+  "accepted": 59,
+  "acquired": 48,
+  "available_previous_identities": {
+    "title": 46,
+    "pageid": 31,
+    "original_sha1": 37,
+    "byte_sha256": 264
+  },
+  "collisions_with_previous": [],
+  "duplicate_candidate_identities": [],
+  "blocking_collisions": [],
+  "limitations": "Exact identity checks only. Different titles, hashes, dates or creators do not establish capture independence. Prior upstream SHA-1/page IDs are compared where locally available; no claim of complete upstream inventories. Visual and possible-sequence review is recorded separately in provenance/source-review.json."
+}

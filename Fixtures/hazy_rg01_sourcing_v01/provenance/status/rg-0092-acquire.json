@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0092",
+  "status": "downloaded",
+  "canonical_title": "File:Ratargul Md. Akhlas Uddin 1.jpg",
+  "pageid": 79596134,
+  "file": "sources/rg-0092.jpg",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Ratargul_Md._Akhlas_Uddin_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+  "sha256": "7cf68925c99c7944c4f5f4e5f1c5195ca7b92e04188c43d168c49994a2f4d943",
+  "width": 1024,
+  "height": 683,
+  "exif_orientation": 1,
+  "requested_max_edge": 1600,
+  "original_width": 1024,
+  "original_height": 683,
+  "original_sha1": "e652d1da6938cfcea2e6afba3d00e2cb0a2372f4",
+  "creator": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Md._Akhlas_Uddin&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Md. Akhlas Uddin (page does not exist)\">Md. Akhlas Uddin</a>",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "retrieved_utc": "2026-10-31T02:25:35.230944+00:00",
+  "visual_review": "see reviews.json",
+  "source_independence": "see reviews.json"
+}

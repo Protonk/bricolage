@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0041",
+  "status": "preview_downloaded",
+  "canonical_title": "File:Pamplona - Parque de la Media Luna 01.jpg",
+  "pageid": 83805093,
+  "file": "previews/candidates/rg-0041.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Pamplona_-_Parque_de_la_Media_Luna_01.jpg/330px-Pamplona_-_Parque_de_la_Media_Luna_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "2594661733cc9a05886cf86353cf8a62742d5030dbd1d2dab003d6a9fdf0c59c",
+  "width": 330,
+  "height": 247,
+  "exif_orientation": 1,
+  "requested_max_edge": 320,
+  "original_width": 2048,
+  "original_height": 1536,
+  "original_sha1": "d74afcd198731a9eda33b58d290c216b471b8d0b",
+  "creator": "<a href=\"//commons.wikimedia.org/wiki/User:Zarateman\" title=\"User:Zarateman\">Zarateman</a>",
+  "license": "CC0",
+  "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "retrieved_utc": "2026-10-31T00:33:36.236826+00:00",
+  "visual_review": "pending",
+  "source_independence": "unverified"
+}

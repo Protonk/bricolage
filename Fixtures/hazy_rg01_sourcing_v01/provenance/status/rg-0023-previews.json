@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0023",
+  "status": "preview_downloaded",
+  "canonical_title": "File:Red Bench.JPG",
+  "pageid": 12561016,
+  "file": "previews/candidates/rg-0023.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Red_Bench.JPG/330px-Red_Bench.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "b1965f751ade312c873f1428f54957ba63eadd31332bbc58cb233c2322a3baa3",
+  "width": 330,
+  "height": 220,
+  "exif_orientation": 1,
+  "requested_max_edge": 320,
+  "original_width": 3456,
+  "original_height": 2304,
+  "original_sha1": "9ad03e426205b19d60a226b553be362754efec64",
+  "creator": "<a href=\"//commons.wikimedia.org/wiki/User:Strider52\" title=\"User:Strider52\">Strider52</a>",
+  "license": "CC0",
+  "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "retrieved_utc": "2026-10-31T00:31:27.527356+00:00",
+  "visual_review": "pending",
+  "source_independence": "unverified"
+}

@@ -1,0 +1,129 @@
+{
+  "batchcomplete": true,
+  "query": {
+    "pages": [
+      {
+        "pageid": 93321859,
+        "ns": 6,
+        "title": "File:It‘s cold outside ❄️ - Flickr - Rosmarie Voegtli.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "timestamp": "2020-08-20T03:29:24Z",
+            "user": "Red panda bot",
+            "size": 5435105,
+            "width": 3024,
+            "height": 3024,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/It%E2%80%98s_cold_outside_%E2%9D%84%EF%B8%8F_-_Flickr_-_Rosmarie_Voegtli.jpg/330px-It%E2%80%98s_cold_outside_%E2%9D%84%EF%B8%8F_-_Flickr_-_Rosmarie_Voegtli.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 320,
+            "thumbheight": 320,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/It%E2%80%98s_cold_outside_%E2%9D%84%EF%B8%8F_-_Flickr_-_Rosmarie_Voegtli.jpg/960px-It%E2%80%98s_cold_outside_%E2%9D%84%EF%B8%8F_-_Flickr_-_Rosmarie_Voegtli.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/It%E2%80%98s_cold_outside_%E2%9D%84%EF%B8%8F_-_Flickr_-_Rosmarie_Voegtli.jpg/330px-It%E2%80%98s_cold_outside_%E2%9D%84%EF%B8%8F_-_Flickr_-_Rosmarie_Voegtli.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 320,
+              "height": 320,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/It%E2%80%98s_cold_outside_%E2%9D%84%EF%B8%8F_-_Flickr_-_Rosmarie_Voegtli.jpg/960px-It%E2%80%98s_cold_outside_%E2%9D%84%EF%B8%8F_-_Flickr_-_Rosmarie_Voegtli.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/9/98/It%E2%80%98s_cold_outside_%E2%9D%84%EF%B8%8F_-_Flickr_-_Rosmarie_Voegtli.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:It%E2%80%98s_cold_outside_%E2%9D%84%EF%B8%8F_-_Flickr_-_Rosmarie_Voegtli.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=93321859",
+            "sha1": "1705e9c157739860a196bd133a9d44af570aea20",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2020-08-20 03:29:24",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "It‘s cold outside ❄️ - Flickr - Rosmarie Voegtli",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Meltingen|Dead leaves|Files with coordinates missing SDC location of creation|Photographs taken on 2019-12-04|Flickr images reviewed by FlickreviewR 2|Flickr files uploaded by Red panda bot|Photos in Flickr Explore",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "47.382122",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "7.573592",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Our Daily Challenge: Frost, Frosty or Frosted",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "Taken on 4 December 2019, 11:00",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/rvoegtli/49171901601/\">It‘s cold outside ❄️</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/94212497@N00\">Rosmarie Voegtli</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY 2.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 2.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/2.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-2.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      }
+    ]
+  }
+}

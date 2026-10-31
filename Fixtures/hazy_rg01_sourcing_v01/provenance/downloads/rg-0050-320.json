@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0050",
+  "status": "preview_downloaded",
+  "canonical_title": "File:Banc, allée de l'hôpital, Vichy (2).jpg",
+  "pageid": 136659425,
+  "file": "previews/candidates/rg-0050.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Banc%2C_all%C3%A9e_de_l%27h%C3%B4pital%2C_Vichy_%282%29.jpg/330px-Banc%2C_all%C3%A9e_de_l%27h%C3%B4pital%2C_Vichy_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "bccd368ce84071f9e2597b3e41cebc1c627c7253eb419194b528ab733d83d09a",
+  "width": 330,
+  "height": 247,
+  "exif_orientation": 1,
+  "requested_max_edge": 320,
+  "original_width": 4032,
+  "original_height": 3024,
+  "original_sha1": "e36b34e7c92c4f37c42bd97889ca6a0fc0bd7c4a",
+  "creator": "<a href=\"//commons.wikimedia.org/wiki/User:TCY\" title=\"User:TCY\">TCY</a>",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "retrieved_utc": "2026-10-31T00:34:43.488784+00:00",
+  "visual_review": "pending",
+  "source_independence": "unverified"
+}

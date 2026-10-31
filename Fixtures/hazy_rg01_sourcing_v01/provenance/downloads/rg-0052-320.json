@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0052",
+  "status": "preview_downloaded",
+  "canonical_title": "File:Bicycle & village road.jpg",
+  "pageid": 91439857,
+  "file": "previews/candidates/rg-0052.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Bicycle_%26_village_road.jpg/330px-Bicycle_%26_village_road.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "01c99d6b598c38cd47221bb3cd9206315d91e918ab2b563bdd08aa3ffff9ae2d",
+  "width": 330,
+  "height": 247,
+  "exif_orientation": 1,
+  "requested_max_edge": 320,
+  "original_width": 4000,
+  "original_height": 3000,
+  "original_sha1": "1a988eae4929c4812b4e2f5596256baaa68239d4",
+  "creator": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Nitai_Chandra&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Nitai Chandra (page does not exist)\">Nitai Chandra</a>",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "retrieved_utc": "2026-10-31T00:34:57.630102+00:00",
+  "visual_review": "pending",
+  "source_independence": "unverified"
+}

@@ -1,0 +1,116 @@
+{
+  "batchcomplete": true,
+  "query": {
+    "pages": [
+      {
+        "pageid": 97134065,
+        "ns": 6,
+        "title": "File:Bahia Marina em visão aérea.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "timestamp": "2020-11-29T19:10:33Z",
+            "user": "Luan",
+            "size": 139068,
+            "width": 941,
+            "height": 529,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Bahia_Marina_em_vis%C3%A3o_a%C3%A9rea.jpg/330px-Bahia_Marina_em_vis%C3%A3o_a%C3%A9rea.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 320,
+            "thumbheight": 180,
+            "responsiveUrls": {
+              "2": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Bahia_Marina_em_vis%C3%A3o_a%C3%A9rea.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Bahia_Marina_em_vis%C3%A3o_a%C3%A9rea.jpg/330px-Bahia_Marina_em_vis%C3%A3o_a%C3%A9rea.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 320,
+              "height": 180,
+              "srcset": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Bahia_Marina_em_vis%C3%A3o_a%C3%A9rea.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Bahia_Marina_em_vis%C3%A3o_a%C3%A9rea.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Bahia_Marina_em_vis%C3%A3o_a%C3%A9rea.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=97134065",
+            "sha1": "e054583f23d4345df3441025ccc11145182cf194",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2020-11-29 19:10:33",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Bahia Marina em visão aérea",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "2010 in Bahia|Images from Fotos GOVBA|Bahia Marina|Extracted images|Aerial photographs of Salvador (Bahia)|Aerial photographs of marinas|Flickr files uploaded by User:Luan",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "<p>Porto de Salvador\n</p>\nFoto Manu Dias/AGECOM",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2010-02-09 16:32",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/agecombahia/4362159753/\">Porto de Salvador</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/37885263@N05\">Fotos GOVBA</a> from Bahia/Brasil",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY 2.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 2.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/2.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-2.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      }
+    ]
+  }
+}

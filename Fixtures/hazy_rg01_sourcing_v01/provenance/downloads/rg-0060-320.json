@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0060",
+  "status": "preview_downloaded",
+  "canonical_title": "File:Campsite at Mystic Beach, Vancouver Island, Canada.jpg",
+  "pageid": 70636373,
+  "file": "previews/candidates/rg-0060.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Campsite_at_Mystic_Beach%2C_Vancouver_Island%2C_Canada.jpg/330px-Campsite_at_Mystic_Beach%2C_Vancouver_Island%2C_Canada.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "b73a7c1ab3ea2d529e18b9277f7d0dbc6643680a42f202db4ad5f9a921634529",
+  "width": 330,
+  "height": 181,
+  "exif_orientation": 1,
+  "requested_max_edge": 320,
+  "original_width": 5036,
+  "original_height": 2757,
+  "original_sha1": "0011c6d85a444b52dd09bdd0c8689120ca7690bd",
+  "creator": "<a href=\"//commons.wikimedia.org/wiki/User:Podzemnik\" title=\"User:Podzemnik\">Michal Klajban</a>",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "retrieved_utc": "2026-10-31T00:35:56.841553+00:00",
+  "visual_review": "pending",
+  "source_independence": "unverified"
+}

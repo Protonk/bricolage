@@ -1,0 +1,116 @@
+{
+  "batchcomplete": true,
+  "query": {
+    "pages": [
+      {
+        "pageid": 69333185,
+        "ns": 6,
+        "title": "File:Grazing sheep in Kumrat Valley.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "timestamp": "2018-05-21T10:34:25Z",
+            "user": "SAYYAD ALI6",
+            "size": 87180,
+            "width": 960,
+            "height": 649,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Grazing_sheep_in_Kumrat_Valley.jpg/330px-Grazing_sheep_in_Kumrat_Valley.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 320,
+            "thumbheight": 216,
+            "responsiveUrls": {
+              "2": "https://upload.wikimedia.org/wikipedia/commons/1/14/Grazing_sheep_in_Kumrat_Valley.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Grazing_sheep_in_Kumrat_Valley.jpg/330px-Grazing_sheep_in_Kumrat_Valley.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 320,
+              "height": 216,
+              "srcset": "https://upload.wikimedia.org/wikipedia/commons/1/14/Grazing_sheep_in_Kumrat_Valley.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/1/14/Grazing_sheep_in_Kumrat_Valley.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Grazing_sheep_in_Kumrat_Valley.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=69333185",
+            "sha1": "ecd6d25d46d6b48306a2aa3acf766ea5be1982d8",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2018-05-21 10:34:25",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Grazing sheep in Kumrat Valley",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Self-published work|Images from Wiki Loves Earth 2018|Montane meadows|Sheep in Pakistan|Uploaded via Campaign:wle-pk|Images from Wiki Loves Earth 2018 in Pakistan|Pakistan photographs taken on 2018-05-21|WLE 2016 Pakistan unreviewed|Images from Wiki Loves Earth missing SDC depicts|Images from Wiki Loves Earth missing SDC location of creation|Grazing sheep|Meadows in Kumrat Valley",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "The picture has been taken in my home district Kumrat Valley Northern Pakistan.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2018-05-21",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:SAYYAD_ALI6&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:SAYYAD ALI6 (page does not exist)\">SAYYAD ALI6</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      }
+    ]
+  }
+}

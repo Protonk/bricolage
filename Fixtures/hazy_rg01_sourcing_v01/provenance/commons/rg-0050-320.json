@@ -1,0 +1,133 @@
+{
+  "candidate_id": "rg-0050",
+  "retrieved_utc": "2026-10-31T00:34:38.861395+00:00",
+  "requested_title": "File:Banc, allée de l'hôpital, Vichy (2).jpg",
+  "response": {
+    "batchcomplete": true,
+    "query": {
+      "pages": [
+        {
+          "pageid": 136659425,
+          "ns": 6,
+          "title": "File:Banc, allée de l'hôpital, Vichy (2).jpg",
+          "imagerepository": "local",
+          "imageinfo": [
+            {
+              "size": 8809516,
+              "width": 4032,
+              "height": 3024,
+              "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Banc%2C_all%C3%A9e_de_l%27h%C3%B4pital%2C_Vichy_%282%29.jpg/330px-Banc%2C_all%C3%A9e_de_l%27h%C3%B4pital%2C_Vichy_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "thumbwidth": 320,
+              "thumbheight": 240,
+              "responsiveUrls": {
+                "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Banc%2C_all%C3%A9e_de_l%27h%C3%B4pital%2C_Vichy_%282%29.jpg/960px-Banc%2C_all%C3%A9e_de_l%27h%C3%B4pital%2C_Vichy_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+              },
+              "thumbattribs": {
+                "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Banc%2C_all%C3%A9e_de_l%27h%C3%B4pital%2C_Vichy_%282%29.jpg/330px-Banc%2C_all%C3%A9e_de_l%27h%C3%B4pital%2C_Vichy_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "decoding": "async",
+                "loading": "lazy",
+                "width": 320,
+                "height": 240,
+                "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Banc%2C_all%C3%A9e_de_l%27h%C3%B4pital%2C_Vichy_%282%29.jpg/960px-Banc%2C_all%C3%A9e_de_l%27h%C3%B4pital%2C_Vichy_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+              },
+              "url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Banc%2C_all%C3%A9e_de_l%27h%C3%B4pital%2C_Vichy_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+              "descriptionurl": "https://commons.wikimedia.org/wiki/File:Banc,_all%C3%A9e_de_l%27h%C3%B4pital,_Vichy_(2).jpg",
+              "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=136659425",
+              "sha1": "e36b34e7c92c4f37c42bd97889ca6a0fc0bd7c4a",
+              "extmetadata": {
+                "DateTime": {
+                  "value": "2023-08-30 16:59:52",
+                  "source": "mediawiki-metadata",
+                  "hidden": ""
+                },
+                "ObjectName": {
+                  "value": "Banc, allée de l'hôpital, Vichy (2)",
+                  "source": "mediawiki-metadata"
+                },
+                "CommonsMetadataExtension": {
+                  "value": 1.2,
+                  "source": "extension",
+                  "hidden": ""
+                },
+                "Categories": {
+                  "value": "Self-published work|Wooden benches in France|Red benches|Uploaded with Mobile/Android|Files with coordinates missing SDC location of creation|Auvergne-Rhône-Alpes photographs taken on 2023-08-30|Benches in Vichy|Centre hospitalier de Vichy",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "Assessments": {
+                  "value": "",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "GPSLatitude": {
+                  "value": "46.124614",
+                  "source": "commons-desc-page"
+                },
+                "GPSLongitude": {
+                  "value": "3.437084",
+                  "source": "commons-desc-page"
+                },
+                "GPSMapDatum": {
+                  "value": "WGS-84",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "ImageDescription": {
+                  "value": "Banc dans l'allée menant à l'hôpital à Vichy",
+                  "source": "commons-desc-page"
+                },
+                "DateTimeOriginal": {
+                  "value": "30 August 2023 (according to <span lang=\"en\" dir=\"ltr\"><a href=\"https://en.wikipedia.org/wiki/Exif\" class=\"extiw\" title=\"en:Exif\">Exif</a></span> data)",
+                  "source": "commons-desc-page"
+                },
+                "Credit": {
+                  "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                  "source": "commons-desc-page"
+                },
+                "Artist": {
+                  "value": "<a href=\"//commons.wikimedia.org/wiki/User:TCY\" title=\"User:TCY\">TCY</a>",
+                  "source": "commons-desc-page"
+                },
+                "LicenseShortName": {
+                  "value": "CC BY-SA 4.0",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "UsageTerms": {
+                  "value": "Creative Commons Attribution-Share Alike 4.0",
+                  "source": "commons-desc-page"
+                },
+                "AttributionRequired": {
+                  "value": "true",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "LicenseUrl": {
+                  "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                  "source": "commons-desc-page"
+                },
+                "Copyrighted": {
+                  "value": "True",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "Restrictions": {
+                  "value": "",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "License": {
+                  "value": "cc-by-sa-4.0",
+                  "source": "commons-templates",
+                  "hidden": ""
+                }
+              },
+              "mime": "image/jpeg",
+              "mediatype": "BITMAP"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "candidate_id": "rg-0101",
+  "retrieved_utc": "2026-10-31T00:40:47.110175+00:00",
+  "requested_title": "File:Mycena cf. acicula.jpg",
+  "response": {
+    "batchcomplete": true,
+    "query": {
+      "pages": [
+        {
+          "pageid": 201367322,
+          "ns": 6,
+          "title": "File:Mycena cf. acicula.jpg",
+          "imagerepository": "local",
+          "imageinfo": [
+            {
+              "size": 524150,
+              "width": 6000,
+              "height": 4000,
+              "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Mycena_cf._acicula.jpg/330px-Mycena_cf._acicula.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "thumbwidth": 320,
+              "thumbheight": 213,
+              "responsiveUrls": {
+                "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Mycena_cf._acicula.jpg/960px-Mycena_cf._acicula.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+              },
+              "thumbattribs": {
+                "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Mycena_cf._acicula.jpg/330px-Mycena_cf._acicula.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "decoding": "async",
+                "loading": "lazy",
+                "width": 320,
+                "height": 213,
+                "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Mycena_cf._acicula.jpg/960px-Mycena_cf._acicula.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+              },
+              "url": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Mycena_cf._acicula.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+              "descriptionurl": "https://commons.wikimedia.org/wiki/File:Mycena_cf._acicula.jpg",
+              "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=201367322",
+              "sha1": "0497390424f63e84a009e8514ec679263ab1a0ea",
+              "extmetadata": {
+                "DateTime": {
+                  "value": "2026-10-09 07:30:51",
+                  "source": "mediawiki-metadata",
+                  "hidden": ""
+                },
+                "ObjectName": {
+                  "value": "Mycena cf. acicula",
+                  "source": "mediawiki-metadata"
+                },
+                "CommonsMetadataExtension": {
+                  "value": 1.2,
+                  "source": "extension",
+                  "hidden": ""
+                },
+                "Categories": {
+                  "value": "CC-Zero|Creative Commons CC0 1.0 Universal Public Domain Dedication missing SDC copyright license|Self-published work|Self-published work missing SDC copyright license|Forests in Lori Province|Images from Wiki Loves Forest in Armenia",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "Assessments": {
+                  "value": "",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "ImageDescription": {
+                  "value": "<br>\n<table style=\"width:100%; clear: both; text-align: center; margin: 0.5em auto; background-color: var(--background-color-interactive-subtle, #f9f9f9); color: inherit; border: 2px solid var(--border-color-muted, #e0e0e0);\" dir=\"ltr\" lang=\"\" class=\"layouttemplate partnershiptemplate\" role=\"presentation\">\n<tbody><tr>\n<td style=\"width:60px;\"><span typeof=\"mw:File\"><a href=\"https://en.wikipedia.org/wiki/hy:%D5%8E%D5%AB%D6%84%D5%AB%D5%B6%D5%A1%D5%AD%D5%A1%D5%A3%D5%AB%D5%AE:%D5%8E%D5%AB%D6%84%D5%AB%D5%B6_%D5%BD%D5%AB%D6%80%D5%B8%D6%82%D5%B4_%D5%A7_%D5%A1%D5%B6%D5%BF%D5%A1%D5%BC%D5%B6%D5%A5%D6%80\" title=\"Վիքին սիրում է անտառներ\"><img alt=\"Վիքին սիրում է անտառներ\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/%D5%8E%D5%AB%D6%84%D5%AB%D5%B6_%D5%BD%D5%AB%D6%80%D5%B8%D6%82%D5%B4_%D5%A7_%D5%A1%D5%B6%D5%BF%D5%A1%D5%BC%D5%B6%D5%A5%D6%80_%D5%B6%D5%A1%D5%AD%D5%A1%D5%A3%D5%AE%D5%AB_%D5%BA%D5%A1%D5%BF%D5%AF%D5%A5%D6%80%D5%A1%D5%B6%D5%AB%D5%B7.png/60px-%D5%8E%D5%AB%D6%84%D5%AB%D5%B6_%D5%BD%D5%AB%D6%80%D5%B8%D6%82%D5%B4_%D5%A7_%D5%A1%D5%B6%D5%BF%D5%A1%D5%BC%D5%B6%D5%A5%D6%80_%D5%B6%D5%A1%D5%AD%D5%A1%D5%A3%D5%AE%D5%AB_%D5%BA%D5%A1%D5%BF%D5%AF%D5%A5%D6%80%D5%A1%D5%B6%D5%AB%D5%B7.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"60\" height=\"59\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/%D5%8E%D5%AB%D6%84%D5%AB%D5%B6_%D5%BD%D5%AB%D6%80%D5%B8%D6%82%D5%B4_%D5%A7_%D5%A1%D5%B6%D5%BF%D5%A1%D5%BC%D5%B6%D5%A5%D6%80_%D5%B6%D5%A1%D5%AD%D5%A1%D5%A3%D5%AE%D5%AB_%D5%BA%D5%A1%D5%BF%D5%AF%D5%A5%D6%80%D5%A1%D5%B6%D5%AB%D5%B7.png/120px-%D5%8E%D5%AB%D6%84%D5%AB%D5%B6_%D5%BD%D5%AB%D6%80%D5%B8%D6%82%D5%B4_%D5%A7_%D5%A1%D5%B6%D5%BF%D5%A1%D5%BC%D5%B6%D5%A5%D6%80_%D5%B6%D5%A1%D5%AD%D5%A1%D5%A3%D5%AE%D5%AB_%D5%BA%D5%A1%D5%BF%D5%AF%D5%A5%D6%80%D5%A1%D5%B6%D5%AB%D5%B7.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"2104\" data-file-height=\"2077\"></a></span>\n</td>\n<td>Այս լուսանկարը վերբեռնվել է <a href=\"https://en.wikipedia.org/wiki/hy:%D5%8E%D5%AB%D6%84%D5%AB%D5%B6%D5%A1%D5%AD%D5%A1%D5%A3%D5%AB%D5%AE:%D5%8E%D5%AB%D6%84%D5%AB%D5%B6_%D5%BD%D5%AB%D6%80%D5%B8%D6%82%D5%B4_%D5%A7_%D5%A1%D5%B6%D5%BF%D5%A1%D5%BC%D5%B6%D5%A5%D6%80\" class=\"extiw\" title=\"w:hy:Վիքինախագիծ:Վիքին սիրում է անտառներ\"><b>«Վիքին սիրում է անտառներ»</b></a> լուսանկարչական մրցույթի շրջանակներում։<br>This image was uploaded as part of <a href=\"https://en.wikipedia.org/wiki/hy:%D5%8E%D5%AB%D6%84%D5%AB%D5%B6%D5%A1%D5%AD%D5%A1%D5%A3%D5%AB%D5%AE:%D5%8E%D5%AB%D6%84%D5%AB%D5%B6_%D5%BD%D5%AB%D6%80%D5%B8%D6%82%D5%B4_%D5%A7_%D5%A1%D5%B6%D5%BF%D5%A1%D5%BC%D5%B6%D5%A5%D6%80\" class=\"extiw\" title=\"w:hy:Վիքինախագիծ:Վիքին սիրում է անտառներ\"><b>«Wiki Loves Forest in Armenia»</b></a>․\n</td></tr></tbody></table>\nClose-up photograph of a small orange mushroom growing among green moss. The mushroom has a slender yellowish stem and a striated orange cap. It resembles Mycena acicula, but the species identification is unconfirmed.",
+                  "source": "commons-desc-page"
+                },
+                "DateTimeOriginal": {
+                  "value": "2026-10-03 13:57:42",
+                  "source": "commons-desc-page"
+                },
+                "Credit": {
+                  "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                  "source": "commons-desc-page"
+                },
+                "Artist": {
+                  "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Mar_Mkrtchyan&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Mar Mkrtchyan (page does not exist)\">Mar Mkrtchyan</a>",
+                  "source": "commons-desc-page"
+                },
+                "LicenseShortName": {
+                  "value": "CC0",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "UsageTerms": {
+                  "value": "Creative Commons Zero, Public Domain Dedication",
+                  "source": "commons-desc-page"
+                },
+                "AttributionRequired": {
+                  "value": "false",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "LicenseUrl": {
+                  "value": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+                  "source": "commons-desc-page"
+                },
+                "Copyrighted": {
+                  "value": "True",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "Restrictions": {
+                  "value": "",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "License": {
+                  "value": "cc0",
+                  "source": "commons-templates",
+                  "hidden": ""
+                }
+              },
+              "mime": "image/jpeg",
+              "mediatype": "BITMAP"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

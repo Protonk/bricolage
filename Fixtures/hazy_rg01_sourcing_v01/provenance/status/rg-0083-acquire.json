@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0083",
+  "status": "downloaded",
+  "canonical_title": "File:Bessen in Bielefeld 2024.jpg",
+  "pageid": 153792275,
+  "file": "sources/rg-0083.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Bessen_in_Bielefeld_2024.jpg/1280px-Bessen_in_Bielefeld_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "ef95f136b8935110f10ebedd9c6ec2a4c308dcc85854aca9c7b2d5e24ee75974",
+  "width": 1280,
+  "height": 1920,
+  "exif_orientation": 1,
+  "requested_max_edge": 1600,
+  "original_width": 3648,
+  "original_height": 5472,
+  "original_sha1": "abe044ce7fd5f46de08d81cddf09f47673667345",
+  "creator": "<a href=\"//commons.wikimedia.org/wiki/User:Smiley.toerist\" title=\"User:Smiley.toerist\">Smiley.toerist</a>",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "retrieved_utc": "2026-10-31T02:25:13.095427+00:00",
+  "visual_review": "see reviews.json",
+  "source_independence": "see reviews.json"
+}

@@ -1,0 +1,128 @@
+{
+  "description": "Original Commons category or individual file-page discovery sources. Counts are leads, not reviews.",
+  "total_candidates": 142,
+  "buckets": [
+    {
+      "discovery_bucket": "bales",
+      "count": 9
+    },
+    {
+      "discovery_bucket": "bales-england",
+      "count": 6
+    },
+    {
+      "discovery_bucket": "bales-norway",
+      "count": 3
+    },
+    {
+      "discovery_bucket": "beach-umbrellas",
+      "count": 4
+    },
+    {
+      "discovery_bucket": "birds-beaches",
+      "count": 2
+    },
+    {
+      "discovery_bucket": "birds-flocks",
+      "count": 14
+    },
+    {
+      "discovery_bucket": "boulders",
+      "count": 12
+    },
+    {
+      "discovery_bucket": "cars",
+      "count": 17
+    },
+    {
+      "discovery_bucket": "distant-crowds",
+      "count": 3
+    },
+    {
+      "discovery_bucket": "fallen-leaves",
+      "count": 13
+    },
+    {
+      "discovery_bucket": "marinas",
+      "count": 17
+    },
+    {
+      "discovery_bucket": "pebbles",
+      "count": 2
+    },
+    {
+      "discovery_bucket": "pebbles-and-sand",
+      "count": 7
+    },
+    {
+      "discovery_bucket": "sheep-pasture",
+      "count": 19
+    },
+    {
+      "discovery_bucket": "shells",
+      "count": 6
+    },
+    {
+      "discovery_bucket": "trees-grassland",
+      "count": 1
+    },
+    {
+      "discovery_bucket": "trees-scattered",
+      "count": 7
+    }
+  ],
+  "discovery_urls": [
+    "https://commons.wikimedia.org/wiki/Category:Aerial_photographs_of_car_parks",
+    "https://commons.wikimedia.org/wiki/Category:Aerial_photographs_of_marinas",
+    "https://commons.wikimedia.org/wiki/Category:Birds_on_beaches",
+    "https://commons.wikimedia.org/wiki/Category:Boulder_fields",
+    "https://commons.wikimedia.org/wiki/Category:Close-up_photographs_of_sand",
+    "https://commons.wikimedia.org/wiki/Category:Dead_leaves",
+    "https://commons.wikimedia.org/wiki/Category:Flocks_of_birds",
+    "https://commons.wikimedia.org/wiki/Category:Grazing_sheep",
+    "https://commons.wikimedia.org/wiki/Category:Kingoldrum",
+    "https://commons.wikimedia.org/wiki/Category:Kirkmabreck",
+    "https://commons.wikimedia.org/wiki/Category:Pebbles",
+    "https://commons.wikimedia.org/wiki/Category:Round_hay_bales_in_England",
+    "https://commons.wikimedia.org/wiki/Category:Round_hay_bales_in_Norway",
+    "https://commons.wikimedia.org/wiki/Category:Round_hay_bales_in_the_United_States",
+    "https://commons.wikimedia.org/wiki/Category:Shells_on_beaches",
+    "https://commons.wikimedia.org/wiki/File:%D0%92%D1%8B%D0%BF%D0%B0%D1%81_%D1%81%D1%82%D0%B0%D0%B4%D0%B0_%D0%BE%D0%B2%D0%B5%D1%86_%D0%BD%D0%B0_%D1%81%D0%BA%D0%BE%D1%88%D0%B5%D0%BD%D0%BD%D0%BE%D0%BC_%D0%BF%D0%BE%D0%BB%D0%B5.jpg",
+    "https://commons.wikimedia.org/wiki/File:12_Parking_garage_rooftop_in_Chicago_-_many_cars_in_a_car_park.jpg",
+    "https://commons.wikimedia.org/wiki/File:Aerial_view_of_dry_trees_(Unsplash).jpg",
+    "https://commons.wikimedia.org/wiki/File:Aerial_view_of_parking_lot_(53581689348).jpg",
+    "https://commons.wikimedia.org/wiki/File:Beach_umbrellas.JPG",
+    "https://commons.wikimedia.org/wiki/File:Boats_in_the_Marina.jpg",
+    "https://commons.wikimedia.org/wiki/File:Boats_on_the_water.jpg",
+    "https://commons.wikimedia.org/wiki/File:Clarity_from_above_(Unsplash).jpg",
+    "https://commons.wikimedia.org/wiki/File:Cocoa_Beach_vibes_(Unsplash).jpg",
+    "https://commons.wikimedia.org/wiki/File:Crowds_of_people_on_Santa_Monica_Beach,_ca.1900_(CHS-820).jpg",
+    "https://commons.wikimedia.org/wiki/File:Crumbled_stone_on_sand.jpg",
+    "https://commons.wikimedia.org/wiki/File:DSC_6369_Tranquil_shoreline_with_small_boats_bobbing_on_calm_blue_water_and_green_hills_in_the_background.jpg",
+    "https://commons.wikimedia.org/wiki/File:Dead_Trees_on_a_parched_landscape_(30896474392).jpg",
+    "https://commons.wikimedia.org/wiki/File:Empty_beach_from_above_1_(Unsplash).jpg",
+    "https://commons.wikimedia.org/wiki/File:Fallen_Leaves.jpg",
+    "https://commons.wikimedia.org/wiki/File:Fallen_aspen_leaves_covered_with_snow.jpg",
+    "https://commons.wikimedia.org/wiki/File:Fallen_autumn_leaves.jpg",
+    "https://commons.wikimedia.org/wiki/File:Fallen_autumn_leaves_are_scattered_on_the_surface_of_a_puddle,_reflecting_a_cloudy_sky_above.jpg",
+    "https://commons.wikimedia.org/wiki/File:Fallen_fruits_and_leaves_scattered_on_the_ground_during_autumn_season.jpg",
+    "https://commons.wikimedia.org/wiki/File:Festival_From_Above.jpg",
+    "https://commons.wikimedia.org/wiki/File:Festival_of_nets_and_muddy_joy.jpg",
+    "https://commons.wikimedia.org/wiki/File:Field_with_sheep_and_scattered_trees_-_geograph.org.uk_-_3736076.jpg",
+    "https://commons.wikimedia.org/wiki/File:Floral_meadows_with_flocks_of_sheep.jpg",
+    "https://commons.wikimedia.org/wiki/File:Grassland_Guardians_of_Warrandyte.jpg",
+    "https://commons.wikimedia.org/wiki/File:Grazing_sheep_dot_a_verdant_hillside_under_a_brooding_sky,_with_soft,_rolling_terrain_evoking_rural_calm_near_Laneshaw_Bridge,_Colne,_UK.jpg",
+    "https://commons.wikimedia.org/wiki/File:Hay_Bales_in_Field.jpg",
+    "https://commons.wikimedia.org/wiki/File:Heather,_rough_grassland_and_scattered_trees._-_geograph.org.uk_-_205695.jpg",
+    "https://commons.wikimedia.org/wiki/File:Pebbles_on_sand.JPG",
+    "https://commons.wikimedia.org/wiki/File:Round_hay_bales_on_a_field,_with_hawkweed_in_the_foreground,_near_Durnal,_Yvoir,_2025.jpg",
+    "https://commons.wikimedia.org/wiki/File:Sand_and_Gravel.jpg",
+    "https://commons.wikimedia.org/wiki/File:Sand_and_small_pebbles.jpg",
+    "https://commons.wikimedia.org/wiki/File:Savanna_(242734021).jpeg",
+    "https://commons.wikimedia.org/wiki/File:Sheep_On_A_Hillside_(Unsplash).jpg",
+    "https://commons.wikimedia.org/wiki/File:Sheep_on_hill.jpg",
+    "https://commons.wikimedia.org/wiki/File:Sheep_on_the_hillside_-_geograph.org.uk_-_8387712.jpg",
+    "https://commons.wikimedia.org/wiki/File:Sunrise_over_grassland_in_Uganda.jpg",
+    "https://commons.wikimedia.org/wiki/File:View_of_many_sheep_along_hillside_(AM_79138-1).jpg"
+  ]
+}

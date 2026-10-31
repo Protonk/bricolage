@@ -1,0 +1,22 @@
+{
+  "candidate_id": "rg-0026",
+  "status": "preview_downloaded",
+  "canonical_title": "File:Old red tractor parked on a dirt road surrounded by greenery.jpg",
+  "pageid": 191542175,
+  "file": "previews/candidates/rg-0026.jpg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Old_red_tractor_parked_on_a_dirt_road_surrounded_by_greenery.jpg/330px-Old_red_tractor_parked_on_a_dirt_road_surrounded_by_greenery.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sha256": "dc7e6aa736968a7d22ce039a4c6f839b5f1a9665ef1b2b98f37204a0f7346faa",
+  "width": 330,
+  "height": 220,
+  "exif_orientation": 1,
+  "requested_max_edge": 320,
+  "original_width": 6016,
+  "original_height": 4016,
+  "original_sha1": "609d05dbe477c0ff536c908d7ef997e876b9723b",
+  "creator": "<a href=\"//commons.wikimedia.org/wiki/User:Shixart1985\" title=\"User:Shixart1985\">Shixart1985</a>",
+  "license": "CC BY 2.0",
+  "license_url": "https://creativecommons.org/licenses/by/2.0",
+  "retrieved_utc": "2026-10-31T00:31:49.918473+00:00",
+  "visual_review": "pending",
+  "source_independence": "unverified"
+}
