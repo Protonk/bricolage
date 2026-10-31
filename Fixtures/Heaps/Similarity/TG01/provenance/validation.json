@@ -1,0 +1,46 @@
+{
+  "status": "passed",
+  "checked_at": "2026-10-31T18:39:53.641582+00:00",
+  "fixture": {
+    "images": 31,
+    "sources": 31,
+    "assets": 62,
+    "previews": 152,
+    "pairs": 0,
+    "pending": 0
+  },
+  "checks": [
+    "TG01 integrate.py build, publish and check",
+    "TG01 minimum_gate.py --strict-publish",
+    "TG01 prepare.py --check-only: seven pinned helpers and recorded local adaptations",
+    "TG01 check_pack.py: 18 checksum-listed files plus original checksum file preserved",
+    "17 offline unit tests: transport, cache size separation, publication floor and nonadjacent duplicate identities",
+    "Exact identity audit: ten prior inventories, 582 inputs, no collisions",
+    "All 19 setup-file SHA-256 values rechecked before disposal"
+  ],
+  "previous_similarity_validators": [
+    {
+      "contribution": "RG01",
+      "images": 31,
+      "status": "passed"
+    },
+    {
+      "contribution": "SF01",
+      "images": 48,
+      "pending": 11,
+      "acquisition_status": "stopped",
+      "status": "passed"
+    },
+    {
+      "contribution": "PS01",
+      "images": 58,
+      "status": "passed"
+    },
+    {
+      "contribution": "CR01",
+      "images": 57,
+      "status": "passed"
+    }
+  ],
+  "router_or_comparison_experiment_run": false
+}

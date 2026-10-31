@@ -11,11 +11,13 @@ it does not define visual similarity here.
 | [SF01](SF01/README.md) | 48 / 142 | Small separated marks or objects across a continuous field | 59 visual accepts; 11 downloads pending after a recorded timeout |
 | [PS01](PS01/README.md) | 58 / 145 | Pale quiet upper skies above darker, detailed lower regions | Reviewed; selected sources acquired |
 | [CR01](CR01/README.md) | 57 / 168 | Cool, repetitive rectangular cells, panels or frames | Reviewed; selected sources acquired |
+| [TG01](TG01/README.md) | 31 / 152 | Dense interlaced, overlapping plant growth | Reviewed; selected sources acquired |
 
-The four integrated contributions currently provide 194 inputs. Each new
+The five integrated contributions currently provide 225 inputs. Each new
 contribution belongs to this same heap and retains its short prompt, exclusions,
 acceptable looseness, source evidence and per-image decisions. Counts are targets,
-not quotas. Download failures do not change visual acceptances.
+not quotas; TG01 additionally enforces its supplied 30-input publication minimum.
+Download failures do not change visual acceptances.
 
 These are human-selected collections, not semantic router cluster names,
 membership ground truth, disjoint partitions or expected pair results. Images

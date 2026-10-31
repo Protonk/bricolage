@@ -1,0 +1,8 @@
+[
+  {
+    "candidate_id": "tg-0029",
+    "initial_metadata_path": "provenance/api/tg-0029-preview-640.json",
+    "initial_result": "API returned a 900x744 unscaled original outside the nominal 640 bound; media was not requested.",
+    "explicit_followup": "Separate nominal 320px API request, preserving initial metadata."
+  }
+]

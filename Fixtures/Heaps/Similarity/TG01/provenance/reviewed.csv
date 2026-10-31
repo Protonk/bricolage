@@ -1,0 +1,153 @@
+candidate_id,decision,visual_reason
+tg-0001,reject,"Two broad upright trunks dominate; the surrounding leaves do not form a dense, hard-to-follow tangle."
+tg-0002,accept,"Looping woody vines cross and pile over one another through the centre, with a fine irregular branch mesh behind."
+tg-0003,reject,Widely spaced trunks and an open forest floor read as a woodland view rather than interlaced growth.
+tg-0004,reject,A single trunk and one large curved vine dominate the otherwise separable leafy canopy.
+tg-0005,reject,A few thick vines cross clearly separated trunks; the individual structures remain easy to follow.
+tg-0006,reject,"The main trunk and one wrapped vine are a distinct central subject, rather than a confused mesh."
+tg-0007,reject,Open ground and a receding woodland view outweigh the localized looping vines at the left edge.
+tg-0008,accept,"Numerous irregular vines and narrow stems overlap vertically and diagonally, filling the frame with layered growth."
+tg-0009,reject,One thick looped limb against open sky is an isolated structural subject.
+tg-0010,reject,The broad foreground trunk and exposed ground dominate a relatively sparse vine arrangement.
+tg-0011,reject,"An isolated, orderly braid of woody stems stands against a wall and open foreground."
+tg-0012,accept,Dense overlapping foliage and crossing fine branches fill the view; boundaries repeatedly disappear into the canopy.
+tg-0013,reject,A single pale trunk remains dominant beneath a small number of individually traceable vines.
+tg-0014,reject,A few large hanging loops are individually traceable in front of a separate forest background.
+tg-0015,accept,"Dense narrow stems, diagonal limbs and layered foliage overlap across the frame with ambiguous boundaries."
+tg-0016,reject,One isolated circular vine is the clear subject against foliage.
+tg-0017,reject,A dominant diagonal limb and a few thick vines remain separable above open ground.
+tg-0018,reject,"The composition is a woodland view with distinct trunks, rocks and sky; tangled roots occupy only a small base."
+tg-0019,reject,A large foreground loop dominates over separated upright trunks and open forest floor.
+tg-0020,reject,A dominant diagonal trunk crosses bright sky; the structure is sparse and readily followed.
+tg-0021,reject,One broad looping vine stands separately around a clear upright trunk.
+tg-0022,accept,Numerous crossing vines and thin stems form a dense irregular mesh through the dark leafy frame.
+tg-0023,reject,One trunk with a few large wrapped loops dominates a relatively open woodland scene.
+tg-0024,reject,One pale trunk and its orderly wrapping vine remain the clear subject despite thin background stems.
+tg-0025,reject,A broad upright trunk remains dominant; its few hanging vines do not confuse the main boundaries.
+tg-0026,accept,Thick and fine pale stems cross repeatedly into a frame-filling tangled canopy with obscured paths.
+tg-0027,reject,A small number of thick looping limbs around one trunk are easily followed above open ground.
+tg-0028,reject,Two trunk surfaces and a small climbing leaf stem read as distinct botanical subjects.
+tg-0029,reject,One broad U-shaped vine bundle is the clear foreground subject; its path is easy to follow against the separate woodland background.
+tg-0030,reject,"An isolated long trunk leads the composition, with a few widely spaced hanging vines."
+tg-0031,reject,Close botanical portrait of a single leaf runner against trunk bark.
+tg-0032,reject,A straight orderly leaf runner beside a broad trunk is the dominant subject.
+tg-0033,accept,"Layered leaves, crossing branches and trailing fine stems fill the upward view with overlapping growth."
+tg-0034,reject,A massive central trunk dominates a few thick wrapped vines.
+tg-0035,reject,A handful of separated diagonal woody strips cross a broad plain trunk.
+tg-0036,reject,One broad straight trunk and a narrow adjacent vine bundle remain distinct subjects.
+tg-0037,reject,Mist and separated tree silhouettes dominate; hanging vines leave large open areas.
+tg-0038,reject,One large U-shaped woody loop is isolated clearly in the foreground.
+tg-0039,reject,One spiral trunk forms an isolated portrait in front of open woodland.
+tg-0040,accept,Multiple irregular curling vines interlace with fine branches and layered foliage throughout the frame.
+tg-0041,reject,Isolated palm silhouette against broad blue sky and open foreground.
+tg-0042,reject,A straight leaf-covered trunk is a clearly bounded botanical portrait.
+tg-0043,reject,A broad diagonal trunk covered in leaves remains the dominant single structure.
+tg-0044,reject,Sparse climbing leaves on one trunk form an isolated close botanical subject.
+tg-0045,reject,One upright trunk with a hanging leaf covering remains easy to separate from its surroundings.
+tg-0046,reject,A broad moss-covered trunk surface dominates; a few fine runners do not create an interlaced composition.
+tg-0047,reject,One leaning trunk and a simple leaf runner are isolated against soft background foliage.
+tg-0048,reject,A single straight trunk carries an orderly line of leaves.
+tg-0049,accept,"Layered foliage, fine roots and crossing leafy stems overlap around several trunks, obscuring individual plant boundaries across the view."
+tg-0050,reject,A single leafy runner against exposed litter and a rock reads as a plant portrait.
+tg-0051,reject,Large distinct patterned leaves line one straight trunk in an orderly column.
+tg-0052,reject,One trunk surface and a narrow fern runner form a simple isolated subject.
+tg-0053,reject,A clear path and ivy-covered arch organize an open woodland view rather than a dense tangle.
+tg-0054,accept,"Fine bare branches and hanging tangled growth overlap densely across the central and lower frame, making individual stems hard to trace."
+tg-0055,reject,An isolated cluster of sharply separated flowers is the clear subject.
+tg-0056,reject,An isolated flower close-up has a clear subject and blurred background.
+tg-0057,reject,One sharply focused flower and adjacent buds are distinct botanical subjects.
+tg-0058,reject,A short vertical flower cluster fills the image as a botanical portrait.
+tg-0059,reject,One large isolated white flower dominates the composition.
+tg-0060,accept,"Thin stems, leaves and brambles cross in many directions through nearly the entire view, with repeated occlusion."
+tg-0061,reject,An open field and horizon dominate the central view; brambles only frame its edges.
+tg-0062,reject,A distinct pink leaf spray is isolated against greener background growth.
+tg-0063,reject,One focused flower and a few buds stand apart from a blurred background.
+tg-0064,reject,A woodland landscape with open foreground and spaced trunks outweighs the low ground growth.
+tg-0065,reject,A straight path and neatly bounded hedges organize the scene.
+tg-0066,reject,Broad open sky and horizon dominate above a low band of brambles.
+tg-0067,reject,A metal gate and open pasture remain major clear structures; the bramble mass sits mainly beside them.
+tg-0068,reject,A single orderly stem of large separated leaves is the subject.
+tg-0069,reject,The upward portrait is organized around one broad ivy-covered trunk and its recognizable crown.
+tg-0070,reject,One large Y-shaped trunk with ivy remains the dominant structure rather than a confused interlaced mesh.
+tg-0071,reject,Separated ivy-covered trunks form distinct upright columns beneath open sky.
+tg-0072,reject,"An isolated urban tree, surrounding buildings and street dominate the scene."
+tg-0073,reject,A single large tree and its broad trunk are framed as a portrait above a clear stony base.
+tg-0074,reject,One distinctly bounded ivy mass is isolated between bare trunks and blue sky.
+tg-0075,reject,A single narrow ivy runner lies against a broad bark surface.
+tg-0076,reject,A clearly bounded leaf-covered trunk is isolated against a blurred urban background.
+tg-0077,reject,Several thin ivy stems remain individually traceable against broad exposed bark.
+tg-0078,reject,A roadside tree is isolated in a wider woodland setting with an open path.
+tg-0079,reject,One straight trunk remains the dominant form beneath its fine ivy covering.
+tg-0080,reject,Widely separated trunks and a readable sloping woodland floor organize the landscape.
+tg-0081,reject,A single column of ivy-covered trunk stands distinctly against bright open background.
+tg-0082,reject,"One isolated tree, a road and the horizon outweigh plant entanglement."
+tg-0083,accept,"Overlapping ivy leaves and crisscrossing fine stems fill the close view, hiding the supporting structure and confusing plant boundaries."
+tg-0084,reject,Separated trunks and a clear stream occupy much of the view; exposed roots remain localized and traceable.
+tg-0085,reject,One isolated thick root with a central opening is a simple sculptural subject.
+tg-0086,reject,A single tree base with readable radial roots stands beside a clear street background.
+tg-0087,accept,"Numerous suspended woody roots and vines cross diagonally and vertically through layered foliage, forming an irregular overlapping web."
+tg-0088,reject,Separated upright root spikes emerge distinctly from a broad leaf-litter surface.
+tg-0089,reject,One broad pale trunk and a few thick roots dominate the close view.
+tg-0090,reject,An isolated tree and an exposed soil bank organize the scene; the root network is a narrow band.
+tg-0091,reject,A small number of clearly traceable radial roots spread from one trunk over open ground.
+tg-0092,reject,A few large arching roots remain distinctly outlined against a broad bank and open path.
+tg-0093,accept,"Many overlapping thick and thin roots fill the view, crossing and merging into an irregular tightly packed mesh."
+tg-0094,accept,"Branching roots of several thicknesses cross and overlap across the bank between trunks, with fine roots repeatedly obscuring larger boundaries."
+tg-0095,reject,Separated trunks and root bases form distinct islands in a broad reflective water surface.
+tg-0096,reject,A few low roots are clearly separated against grass around one tree base.
+tg-0097,reject,One distinctive curved tree and root base are isolated as a portrait within open woodland.
+tg-0098,reject,"A tree silhouette, open water and horizon dominate the landscape."
+tg-0099,accept,"Multiple roots, fine runners and leaves overlap across the wall, creating a dense irregular network throughout the frame."
+tg-0100,reject,One root runs distinctly beside paving and a clearly bounded trunk base.
+tg-0101,reject,A single large fluted trunk with mostly parallel buttress roots is the dominant simple form.
+tg-0102,accept,"A dense upturned root mesh, fine branches and moss interweave through most of the close woodland view."
+tg-0103,reject,Two separated root stumps stand as distinct objects on an open forest floor.
+tg-0104,accept,"Thick twisted roots repeatedly cross, fold and occlude each other across the close foreground, obscuring individual paths."
+tg-0105,accept,A tangled uprooted root mass and crossing fine branches dominate the middle and foreground with multiple irregular overlaps.
+tg-0106,reject,One broad root plate with large solid wood surfaces reads as a single object above open ground.
+tg-0107,accept,Closely framed gnarled roots twist across one another with deep occlusions and ambiguous boundaries throughout.
+tg-0108,reject,A soil-and-stone root plate dominates; fine exposed roots are mostly a sparse outline.
+tg-0109,accept,"A close root mass fills most of the frame with many folded woody forms, deep gaps and overlapping boundaries that are hard to trace."
+tg-0110,accept,Numerous thick and fine exposed roots and branches cross through the dominant root crown in an irregular overlapping structure.
+tg-0111,reject,Broad upright trunk surfaces dominate a few separately traceable climbing roots.
+tg-0112,accept,A dense lattice of interlaced roots fills the close upward view with repeated crossings and occlusions.
+tg-0113,accept,"Fine branches and vines crisscross densely around coarser twisted growth, filling the frame with overlapping lines."
+tg-0114,reject,One large tree with a recognizable radiating crown is framed as a portrait above a riverbank.
+tg-0115,reject,One massive trunk and a person dominate the view; small attached roots remain secondary.
+tg-0116,reject,One towering trunk and a person at its base form an isolated tree portrait; its mostly parallel roots read as one column.
+tg-0117,accept,"Overlapping trunks, crossing roots, fine vines and leaves fill the close frame with irregular occlusions at several depths."
+tg-0118,accept,A dense canopy of thin hanging roots overlaps and converges across the entire view; individual strands are hard to isolate.
+tg-0119,reject,A single broad tree trunk remains dominant within a wider rainforest view.
+tg-0120,reject,One clearly bounded tree and a few wrapped roots stand above open ground.
+tg-0121,reject,A single wrapped trunk and a prominent walkway railing organize the scene.
+tg-0122,reject,One tree-root exhibit is isolated within a clearly visible museum interior.
+tg-0123,accept,"The close interior view is filled by branching, overlapping roots and irregular openings, with boundaries repeatedly merging into the woody mesh."
+tg-0124,reject,One broad upright trunk and a small number of traceable wrapped vines form an isolated subject.
+tg-0125,reject,"Fits the dense-growth composition, but excluded after provenance review as a probable related view of tg-0117: both show a distinctive leaning fig sheath with elongated openings and a hanging root bundle in the Everglades. Exact subject identity is not proven; retaining both is not justified."
+tg-0126,reject,"A building facade, concrete fence and road dominate; growth remains a covering on the architecture."
+tg-0127,accept,"Dense roots, vines and crossing woody branches cover most of the frame above and through a partly obscured ruin."
+tg-0128,reject,A distinct building and open grassy foreground dominate sparse climbing plants.
+tg-0129,reject,A few separated fallen limbs cross a readable forest floor; the structure remains open and easy to trace.
+tg-0130,reject,A doorway and three separated upright trunks form a simple architectural composition.
+tg-0131,reject,"A smooth flower-covered mound, masonry and open sky dominate without a visible interlaced plant network."
+tg-0132,reject,A broad wall and a clear opening remain major structures; surrounding foliage frames the architecture.
+tg-0133,reject,"A regular pergola, upright supports and open walkway dominate sparse climbing stems."
+tg-0134,reject,"A satellite dish, fence and distinct flowering shrub organize the scene rather than intertwined growth."
+tg-0135,reject,Large plain wall areas remain open between separately traceable vine runners.
+tg-0136,reject,Sparse vine tracery frames a broad empty wall; individual runs remain easy to separate.
+tg-0137,reject,A clearly bounded leaf spray is framed by stone and ground rather than a dense interlaced field.
+tg-0138,reject,A small isolated leafy twig is the focused subject against blurred branches and sky.
+tg-0139,reject,"A broad building facade, fence and street dominate the vegetation."
+tg-0140,accept,"Thick and fine woody strands cross and overlap across the close frame, with the root web dominating the bark behind."
+tg-0141,reject,"A mostly flat vine tracery remains individually outlined against a plain wall, with little layering or occlusion."
+tg-0142,accept,"Numerous thin curling stems cross and loop in many directions throughout the frame, repeatedly obscuring one another."
+tg-0143,reject,"An open riverbank landscape, water and horizon outweigh the low tangled growth."
+tg-0144,reject,A clearly outlined building and street scene dominate its thin plant covering.
+tg-0145,reject,Large collapsed roof surfaces remain the dominant structures despite surrounding overgrowth.
+tg-0146,reject,An orderly fence grid and sunset dominate one isolated small vine.
+tg-0147,reject,Open water fills much of the landscape; vegetation forms a distant shoreline band.
+tg-0148,reject,An isolated mangrove tree is clearly bounded against open water and sky.
+tg-0149,reject,A clear water channel and separate tree groups organize the landscape; root tangles remain localized along its edges.
+tg-0150,reject,Broad open water and a narrow distant line of trees dominate the landscape.
+tg-0151,reject,"Separated tall reed stalks stand against open water, sky and buildings rather than forming a dense confusing field."
+tg-0152,accept,"Dense dry reed stems and crossing narrow leaves overlap across most of the frame, with individual boundaries disappearing into the lower growth."

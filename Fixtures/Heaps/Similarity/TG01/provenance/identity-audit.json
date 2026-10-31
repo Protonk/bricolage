@@ -1,0 +1,78 @@
+{
+  "status": "passed",
+  "inventories": [
+    {
+      "fixture": "hazy-derivatives-v1",
+      "inputs": 183,
+      "sources": 15,
+      "manifest_sha256": "6141c7fde28f1e2809bb1ca4df207a1ebe0788db4daaf1f489e79421fb1c038d"
+    },
+    {
+      "fixture": "hazy-multiview-v1",
+      "inputs": 20,
+      "sources": 20,
+      "manifest_sha256": "2b77fb179dc6b3a2b537fa631f8fad528fdb2e44660a8f3e918e41a09fce5b63"
+    },
+    {
+      "fixture": "hazy-meme-fixtures-v0",
+      "inputs": 42,
+      "sources": 6,
+      "manifest_sha256": "8d0fd98dd2e435661ef6d77b458050b131ed488b172204659023f080a85111df"
+    },
+    {
+      "fixture": "hazy_rg01_sourcing_v01",
+      "inputs": 31,
+      "sources": 31,
+      "manifest_sha256": "8c11d19a70ae73c0a526ee05e7f9fb2c904ab39e977788395c201b94aa9d3a0c"
+    },
+    {
+      "fixture": "hazy_sf01",
+      "inputs": 48,
+      "sources": 48,
+      "manifest_sha256": "29b006215f26a49b6eb774bcfeb8d29e761fd31f224bcc278b4868acbe3ca026"
+    },
+    {
+      "fixture": "hazy_ps01",
+      "inputs": 58,
+      "sources": 58,
+      "manifest_sha256": "f87e09e932310784fce7096fa34e0addbcbfdf1dda0219232d2136011f6782d3"
+    },
+    {
+      "fixture": "hazy_cr01",
+      "inputs": 57,
+      "sources": 57,
+      "manifest_sha256": "df695b27cd27fa082088f5dc86cc553c158da00390aa908dfaf76a3b3448912f"
+    },
+    {
+      "fixture": "poty-Arthropods",
+      "inputs": 43,
+      "sources": 43,
+      "manifest_sha256": "7ebd088010f0652629a6b37d79100f5a3eb1edc2a1bc62768509abc1357f0ef2"
+    },
+    {
+      "fixture": "poty-Constructions-and-buildings",
+      "inputs": 50,
+      "sources": 50,
+      "manifest_sha256": "42523610eee11c7d6193b865a5edc86c6c2e0b7ffce999b1093c9e0f2f0284e9"
+    },
+    {
+      "fixture": "poty-People-and-human-activity",
+      "inputs": 50,
+      "sources": 50,
+      "manifest_sha256": "1db0e952023b49cd6d75c4d7822c776a13da9bf90305974b85451191cb7aa4fd"
+    }
+  ],
+  "candidates": 152,
+  "accepted": 31,
+  "acquired": 31,
+  "available_previous_identities": {
+    "title": 352,
+    "pageid": 337,
+    "original_sha1": 343,
+    "byte_sha256": 570
+  },
+  "collisions_with_previous": [],
+  "duplicate_candidate_identities": [],
+  "blocking_collisions": [],
+  "limitations": "Exact identity checks only. Different titles, hashes, dates or creators do not establish capture independence. Prior upstream SHA-1/page IDs are compared where locally available; no claim of complete upstream inventories. Visual and possible-sequence review is recorded separately in provenance/source-review.json."
+}

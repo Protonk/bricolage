@@ -1,0 +1,112 @@
+{
+  "source": "Wikimedia Commons category media lists accessed through read-only web retrieval, 2026-10-31. Entries are title-level leads and have not been visually inspected.",
+  "groups": [
+    {
+      "bucket": "lianas",
+      "category": "Lianas",
+      "discovery_url": "https://commons.wikimedia.org/wiki/Category:Lianas",
+      "candidate_count": 26,
+      "basis": "Commons category media listing, read via web. Exact File titles are leads, not inspected previews.",
+      "visual_review": "pending"
+    },
+    {
+      "bucket": "rainforest_lianas",
+      "category": "Rainforest lianas",
+      "discovery_url": "https://commons.wikimedia.org/wiki/Category:Rainforest_lianas",
+      "candidate_count": 14,
+      "basis": "Commons category media listing, read via web. Exact File titles are leads, not inspected previews.",
+      "visual_review": "pending"
+    },
+    {
+      "bucket": "vines_on_trees",
+      "category": "Vines on trees",
+      "discovery_url": "https://commons.wikimedia.org/wiki/Category:Vines_on_trees",
+      "candidate_count": 14,
+      "basis": "Commons category media listing, read via web. Exact File titles are leads, not inspected previews.",
+      "visual_review": "pending"
+    },
+    {
+      "bucket": "blackberry_thickets",
+      "category": "Rubus fruticosus",
+      "discovery_url": "https://commons.wikimedia.org/wiki/Category:Rubus_fruticosus",
+      "candidate_count": 10,
+      "basis": "Commons category media listing, read via web. Exact File titles are leads, not inspected previews.",
+      "visual_review": "pending"
+    },
+    {
+      "bucket": "rubus_other",
+      "category": "Rubus",
+      "discovery_url": "https://commons.wikimedia.org/wiki/Category:Rubus",
+      "candidate_count": 4,
+      "basis": "Commons category media listing, read via web. Exact File titles are leads, not inspected previews.",
+      "visual_review": "pending"
+    },
+    {
+      "bucket": "ivy_trees",
+      "category": "Hedera helix on trees",
+      "discovery_url": "https://commons.wikimedia.org/wiki/Category:Hedera_helix_on_trees",
+      "candidate_count": 15,
+      "basis": "Commons category media listing, read via web. Exact File titles are leads, not inspected previews.",
+      "visual_review": "pending"
+    },
+    {
+      "bucket": "tree_roots",
+      "category": "Tree roots",
+      "discovery_url": "https://commons.wikimedia.org/wiki/Category:Tree_roots",
+      "candidate_count": 18,
+      "basis": "Commons category media listing, read via web. Exact File titles are leads, not inspected previews.",
+      "visual_review": "pending"
+    },
+    {
+      "bucket": "fallen_root_mats",
+      "category": "Roots of fallen trees",
+      "discovery_url": "https://commons.wikimedia.org/wiki/Category:Roots_of_fallen_trees",
+      "candidate_count": 9,
+      "basis": "Commons category media listing, read via web. Exact File titles are leads, not inspected previews.",
+      "visual_review": "pending"
+    },
+    {
+      "bucket": "strangler_figs",
+      "category": "Strangler figs",
+      "discovery_url": "https://commons.wikimedia.org/wiki/Category:Strangler_figs",
+      "candidate_count": 15,
+      "basis": "Commons category media listing, read via web. Exact File titles are leads, not inspected previews.",
+      "visual_review": "pending"
+    },
+    {
+      "bucket": "overgrown_structures",
+      "category": "Overgrown structures",
+      "discovery_url": "https://commons.wikimedia.org/wiki/Category:Overgrown_structures",
+      "candidate_count": 9,
+      "basis": "Commons category media listing, read via web. Exact File titles are leads, not inspected previews.",
+      "visual_review": "pending"
+    },
+    {
+      "bucket": "climbing_plants",
+      "category": "Climbing plants",
+      "discovery_url": "https://commons.wikimedia.org/wiki/Category:Climbing_plants",
+      "candidate_count": 12,
+      "basis": "Commons category media listing, read via web. Exact File titles are leads, not inspected previews.",
+      "visual_review": "pending"
+    },
+    {
+      "bucket": "mangrove_growth",
+      "category": "Mangroves",
+      "discovery_url": "https://commons.wikimedia.org/wiki/Category:Mangroves",
+      "candidate_count": 4,
+      "basis": "Commons category media listing, read via web. Exact File titles are leads, not inspected previews.",
+      "visual_review": "pending"
+    },
+    {
+      "bucket": "reed_tangles",
+      "category": "Reedbeds",
+      "discovery_url": "https://commons.wikimedia.org/wiki/Category:Reedbeds",
+      "candidate_count": 2,
+      "basis": "Commons category media listing, read via web. Exact File titles are leads, not inspected previews.",
+      "visual_review": "pending"
+    }
+  ],
+  "total_distinct_leads": 152,
+  "site_access": "Web-indexed Commons text, plus one failed network/DNS probe in package runtime. No API metadata or media successfully obtained.",
+  "note": "Discovery buckets are search aids, not source families, a fixed sampling mix, or expected similarity clusters."
+}

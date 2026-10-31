@@ -1,0 +1,8 @@
+{
+  "basis": "Pinned active PS01 remains unchanged. TG01 allows an explicit nominal 640px preview request, separate metadata/partial names per size; source and stop/decode safeguards unchanged. chunks uses 640 for new previews. prepare verifies these local hashes in addition to all pinned source blobs. receipt distinguishes decode-stop events from HTTP attempts and records preview size evidence. receipt also distinguishes a completed under-floor review with no source acquisition from transport incompleteness. Explicit 480px preview requests are also supported for portrait bucket overshoot at 640; never automatically substituted.",
+  "sha256": {
+    "acquire.py": "0c3cb5f8d9e360c24d335dcc341e9b866cf4f7f13da3010bd2a7464a57f98c37",
+    "chunks.py": "82128cd6beb6fb2ab3d791c6b956ad863f554ee2e0f208f29262e313fcb94a3e",
+    "receipt.py": "7c9de6cda8e1d2bc7f14aafd74fcaadb8425f7a97a81ee8182ac93dd638b7b6c"
+  }
+}

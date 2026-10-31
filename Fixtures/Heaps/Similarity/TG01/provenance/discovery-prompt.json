@@ -1,0 +1,22 @@
+{
+  "element": "tangles-of-growth",
+  "contribution_id": "TG01",
+  "heap": "Similarity",
+  "kind": "prompt_heap",
+  "prompt": "Photographs dominated by dense, irregular plant growth in which branches, stems, vines, roots, leaves or grasses interweave, overlap and occlude one another, confusing the boundaries of individual structures at thumbnail scale.",
+  "exclusions": "Known derivatives and alternate captures; illustrations, composites, synthetic imagery; isolated tree portraits, flower macros, neat trimmed hedges, and scenes where a path, horizon, building or single trunk dominates more than the tangled growth.",
+  "looseness": "Lush green or dry brown, winter leafless or leafy, near or medium distance, fine-meshed or coarse, with some artificial structures or surrounding scene permitted if growth remains dominant. No numerical similarity threshold or expected pair labels.",
+  "target_count": 65,
+  "planning_range": [
+    50,
+    80
+  ],
+  "minimum_viable_final_input_count": 30,
+  "under_minimum_policy": "Abandon this contribution if final viable, independently screened and successfully acquired inputs are fewer than 30; do not pad, preserve discovery/review/acquisition evidence. Unresolved transport failures are incomplete, not a visual rejection or automatic abandonment.",
+  "candidate_count": 152,
+  "visual_review_status": "pending",
+  "visually_accepted": 0,
+  "acquired": 0,
+  "actual_count": null,
+  "source_baseline_commit": "f94e3c57655c3983e1875507836877a5263e9f00"
+}

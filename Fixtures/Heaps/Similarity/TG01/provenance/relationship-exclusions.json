@@ -1,0 +1,26 @@
+[
+  {
+    "candidate_ids": [
+      "tg-0117",
+      "tg-0125"
+    ],
+    "retained": "tg-0117",
+    "excluded": "tg-0125",
+    "initial_visual_decision": "accept",
+    "initial_visual_reason": "Crossing thin vines, root strands, branches and layered leaves fill the dense scene around one pale leaning limb.",
+    "final_decision": "reject",
+    "confidence": "probable shared subject, not confirmed",
+    "reason": "Fits the dense-growth composition, but excluded after provenance review as a probable related view of tg-0117: both show a distinctive leaning fig sheath with elongated openings and a hanging root bundle in the Everglades. Exact subject identity is not proven; retaining both is not justified.",
+    "evidence": [
+      {
+        "path": "previews/tiles/tg-0117.jpg",
+        "sha256": "fd24a6d6cb27a02125e9f6368714f7ed4f30060bd759aaf1c12a2c920cc6e74f"
+      },
+      {
+        "path": "previews/tiles/tg-0125.jpg",
+        "sha256": "082536522c99060164007ee5b8169cdaa1b7a89e54a95ce7403fe7596f07d3d8"
+      }
+    ],
+    "review_basis": "Both full acquired previews inspected side by side; both metadata descriptions identify Everglades National Park, dated 2007 and 2021. Different dates and photographers do not establish unrelated subjects."
+  }
+]

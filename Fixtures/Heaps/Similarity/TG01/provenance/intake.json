@@ -1,0 +1,28 @@
+{
+  "source_directory": "Fixtures/hazy_tg01",
+  "preserved_directory": "provenance/supplied",
+  "files": {
+    "requirements.txt": "2fb67a89f878a64338707b683cfa2718066c7003c1d217571fddc3bcf6cf248d",
+    "prompt.json": "e0b2af66edfe087fcfa83c82c1ffd02aecab22f2479ac97d42553274435b731a",
+    "HEAP_INSTRUCTIONS.md": "0610a8078d134aa3795550b16e1d9776c7e6ccd68128a54fe481fc0ca0ac1cd6",
+    "README.md": "e91667af498e2d741ebb5619c6f3491d53e528dd2763e123ac68a5d287ab231b",
+    "candidates.csv": "263ad4b71a0a65be990ef196b2c0de2e01a827089df33893d21bd548ce111ab5",
+    "candidates.jsonl": "8da52a81fa88b02ad956533dede470484f69523d32c027e8e7f083bb58a36691",
+    "PACK_SHA256SUMS.txt": "109ad698636937d8a2190cf3470a348e9dda56cc06c7021a7a79cc42188181a3",
+    "tools/check_pack.py": "a7694497a736d252cdd241227b22d17d3d695128b5a7d6ae6754879d56d83fb5",
+    "tools/test_minimum_gate.py": "8aa42c9c035e71e9a9387132e7f0e5edf85d0d65d8d778e8c95fee2cd443bd28",
+    "tools/minimum_gate.py": "359adb289e282eba45eca11a5425737cdc204e1e17a69ff1803624573950f52b",
+    "tools/prepare.py": "38b0dde16c8c63ecb412bc0fc3565e568c3957b30af3e58ea302d7b9fd068745",
+    "provenance/possible_sequences.jsonl": "6eb5c2a08027adc00f9c5ba40b1c7dc5faa19ef61f1df2951e08c2e52080c2dc",
+    "provenance/prior_seed_overlap.json": "f20ef96475e880850b119d335d3b9ab03e1a4ef95888dd216e566abbe607327c",
+    "provenance/source_page_observations.jsonl": "43ee5d9e255ba680cc2e4958673f64ac52463d1c46121a029a05d86605a5f205",
+    "provenance/discovery_sources.json": "4c12a9163f464fa47596112db95c1ed70eda6f8021cbe0edec1a2851929e6b37",
+    "provenance/review_template.csv": "9270a6eb9309cce7a64536f1d58cec5ac2424562a192599794c4b2b72b84654c",
+    "provenance/baseline.json": "e08968737bcb01065597ceefe2cf46b3cbf3bb49a94fbe5d87e8615288480560",
+    "provenance/discovery_seeds.txt": "beb6d41d77bab39d3f4c2ab29359a44e61c66a882c56bdb2294c651f6a9dfc8f",
+    "provenance/transport_probe.json": "57eca28932c3ad15b59b516548df40a5542dde36b01f05fec4d62f9b5754c2b3"
+  },
+  "setup_disposed": true,
+  "disposed_at": "2026-10-31T18:39:53.641385+00:00",
+  "disposal_basis": "All 19 setup files rehashed against the unchanged preserved copy after successful publication and full offline validation; no new setup files found."
+}

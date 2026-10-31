@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-31",
+  "test": "single MediaWiki API siteinfo request with project-identifying User-Agent",
+  "attempted": true,
+  "response_received": false,
+  "http_status": null,
+  "error_type": "environment_dns",
+  "error": "URLError: [Errno -3] Temporary failure in name resolution",
+  "known_requests_reaching_wikimedia": null,
+  "preview_files_acquired": 0,
+  "source_files_acquired": 0,
+  "api_responses_acquired": 0,
+  "automatic_retries": 0,
+  "note": "This is a DNS resolution failure in the sourcing environment, not evidence of rate limiting. Source metadata remains unknown; no image bytes viewed."
+}

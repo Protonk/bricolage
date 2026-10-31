@@ -1,0 +1,22 @@
+{
+  "comparison_basis": "Four earlier sourcing ZIP candidate catalogs (RG01, SF01, PS01, CR01), exact supplied Commons File: title only; not complete integrated source inventories.",
+  "result": {
+    "hazy_rg01_sourcing_v01.zip": {
+      "sourcing_leads": 107,
+      "exact_title_overlap": []
+    },
+    "hazy_sf01_sourcing_v01.zip": {
+      "sourcing_leads": 142,
+      "exact_title_overlap": []
+    },
+    "hazy_ps01_sourcing_v01.zip": {
+      "sourcing_leads": 145,
+      "exact_title_overlap": []
+    },
+    "hazy_cr01_sourcing_v01.zip": {
+      "sourcing_leads": 168,
+      "exact_title_overlap": []
+    }
+  },
+  "limitations": "No exact title match does not prove independence. Local integrator must compare source IDs/hashes and published inventories for all preceding fixtures, including Relationships and CR01."
+}

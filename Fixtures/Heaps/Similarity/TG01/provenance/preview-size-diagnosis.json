@@ -1,0 +1,58 @@
+{
+  "cases": [
+    {
+      "candidate_id": "tg-0023",
+      "failed_request_nominal_edge": 320,
+      "api_display_dimensions": [
+        144,
+        320
+      ],
+      "decoded_dimensions": [
+        250,
+        555
+      ],
+      "status": 200,
+      "body_complete": true,
+      "retained_body": "previews/partials/tg-0023-preview.part",
+      "retained_sha256": "f0c7bd646af9002bb2623396d703ff4dd853470dd19824e72817c982c853fc0c",
+      "diagnosis": "API-returned URL names a 250px-wide thumbnail; decoded aspect ratio matches original 1816x4032. Small portrait bucket exceeds the conservative nominal edge tolerance. No corruption or transport failure observed.",
+      "resolution": "Keep failed body and metadata intact; explicitly request nominal 640px preview with separate cache/partial path and acknowledge latch. All original stop and 1.5x size guards remain."
+    },
+    {
+      "candidate_id": "tg-0124",
+      "failed_request_nominal_edge": 640,
+      "api_display_dimensions": [
+        332,
+        640
+      ],
+      "decoded_dimensions": [
+        500,
+        964
+      ],
+      "status": 200,
+      "body_complete": true,
+      "retained_body": "previews/partials/tg-0124-preview-640.part",
+      "retained_sha256": "592f3b7e2cd19ddfb52b362a3d855c778e3e1c7684cbd0f902756cbb2b5dec9c",
+      "diagnosis": "500px API-returned thumbnail bucket at the original 1344x2592 aspect ratio is four pixels over the 1.5x nominal-edge bound. Full decode succeeded; no transport corruption observed.",
+      "resolution": "Retain body and metadata; explicitly request 480px with its own cache/partial paths after acknowledging stop. Same size and full-decode guards remain."
+    },
+    {
+      "candidate_id": "tg-0152",
+      "failed_request_nominal_edge": 640,
+      "api_display_dimensions": [
+        537,
+        640
+      ],
+      "decoded_dimensions": [
+        960,
+        1145
+      ],
+      "status": 200,
+      "body_complete": true,
+      "retained_body": "previews/partials/tg-0152-preview-640.part",
+      "retained_sha256": "ccacdc5f5009e1036b50f57ae0086097c6e1988f54a31bc0ec0f94d23939db24",
+      "diagnosis": "API chose a 960px-wide bucket for a 1677x2000 portrait. Complete JPEG decodes at 960x1145, outside the nominal-edge tolerance. No corruption observed.",
+      "resolution": "Preserve failed body and metadata; explicitly request 480px under the unchanged guard after acknowledgment."
+    }
+  ]
+}
