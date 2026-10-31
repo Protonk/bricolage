@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T23:02:02.878629+00:00",
+  "key": "metadata-1600-ranks-0051-0060",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3AAPF-TV-Fun-402C-Motherboard-00.jpg%7CFile%3AAPF-TV-Fun-402C-Motherboard-01.jpg%7CFile%3AAPF-TV-Fun-402C-Motherboard-02.jpg%7CFile%3AAPF-TV-Fun-402C-Motherboard-03.jpg%7CFile%3AAPF-TV-Fun-402C-Paddle-Controllers.jpg%7CFile%3AAction-Max-Casing-Bottom.jpg%7CFile%3AAction-Max-Casing-Top.jpg%7CFile%3AAction-Max-Console-BL.jpg%7CFile%3AAction-Max-Console-BR.jpg%7CFile%3AAction-Max-Console-Bottom-Flat.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 58566,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 23:02:03 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-mpzx9",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "84071c37-8e4a-4d94-bef7-5ae8e22c4721"
+  },
+  "sha256": "469a6f0bc40c272f7101c161a27ab9151296a2e481fbdbd7945be188295f1ade"
+}

@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T23:02:21.758614+00:00",
+  "key": "metadata-1600-ranks-0101-0110",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3AApple-Bandai-Pippin-Atmark-Motherboard-1.jpg%7CFile%3AApple-Bandai-Pippin-Atmark-Motherboard-2.jpg%7CFile%3AApple-Bandai-Pippin-Atmark-Motherboard-3.jpg%7CFile%3AApple-Bandai-Pippin-Atmark-Motherboard-4.jpg%7CFile%3AApple-Bandai-Pippin-Atmark-Motherboard-5.jpg%7CFile%3AApple-MacBook-2007-Motherboard-Bottom.jpg%7CFile%3AApple-MacBook-2007-Motherboard.jpg%7CFile%3AApple-eMac-Bottom.jpg%7CFile%3AApple-eMac-FL+%28transparent%29.png%7CFile%3AApple-eMac-FL.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 59383,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 23:02:21 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-gkfsp",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "87cbaa14-092b-4a45-8020-4bdc0d9b6246"
+  },
+  "sha256": "0bdb59c71388e42db484eee5fb74ceb3f27b341430cc9b1702818c41d5efa4cc"
+}

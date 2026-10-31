@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T23:02:28.799448+00:00",
+  "key": "metadata-1600-ranks-0121-0130",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3AAtari-2600-Four-Switch-Black-Console-02.jpg%7CFile%3AAtari-2600-Four-Switch-Black-Console-03.jpg%7CFile%3AAtari-2600-Four-Switch-Black-Console-04.jpg%7CFile%3AAtari-2600-Four-Switch-Black-Console-05.jpg%7CFile%3AAtari-2600-Four-Switch-Motherboard-01.jpg%7CFile%3AAtari-2600-Four-Switch-Motherboard-02.jpg%7CFile%3AAtari-2600-Four-Switch-Motherboard-03.jpg%7CFile%3AAtari-2600-Four-Switch-Motherboard-04.jpg%7CFile%3AAtari-2600-Four-Switch-Motherboard-Flat.jpg%7CFile%3AAtari-2600-Heavy-Sixer-FL.png&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 57548,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 23:02:28 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-dplc6",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "2b969eaa-feae-4c33-9928-eba697836ce8"
+  },
+  "sha256": "c50bbe9fffe9a1c4321834b67d8d530ba7b3892738a666989e9ef501f1189c15"
+}

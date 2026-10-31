@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T23:02:32.504389+00:00",
+  "key": "metadata-1600-ranks-0131-0136",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3AAtari-2600-Jr-BL.jpg%7CFile%3AAtari-2600-Jr-FL.png%7CFile%3AAtari-2600-Wood-4Sw-Set.jpg%7CFile%3AAtari-2600-Wood-4Sw-Set.png%7CFile%3ADualShock+2.jpg%7CFile%3APlayStation2-DualShock2.png&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 34611,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 23:02:32 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-zhzvd",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "f12a5a51-0a7b-43ad-b864-731ec07918c5"
+  },
+  "sha256": "8baefbf1c34caccac26de2e47c98112ca2b212e0b0df2c03ddd763955078eab4"
+}

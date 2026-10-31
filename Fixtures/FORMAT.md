@@ -133,6 +133,13 @@ separate artist, engraver/lithographer, publisher, digitizer and uploader roles.
 Different plates from one publication are permitted; work keys record duplicate
 exclusions, not source families or expected relationships.
 
+Evan-Amos-Uploads uses this same kind for an exhaustive direct-category import,
+minus three exact user exclusions. It enumerates every File identity without
+sampling, creator limits or deduplication. Related files and prior-fixture overlaps
+remain included; technical or rights problems are independent pending/blocked
+acquisition states, not selection exclusions. Completion requires every included
+File identity to have a validated acquired input.
+
 Cross-fixture identity audits record the prior leaves they covered and their
 manifest/catalog hashes. An offline recheck uses that recorded coverage so a new
 contribution does not invalidate an older historical audit; missing or changed

@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T23:02:25.263218+00:00",
+  "key": "metadata-1600-ranks-0111-0120",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3AApple-eMac-Side-wPorts.jpg%7CFile%3AApple-iPhone-6S-Plus-Inside.jpg%7CFile%3AApple-iPod-Shuffle-Display.jpg%7CFile%3AAscii-PlayStation-Grip-Controller.jpg%7CFile%3AAsciiware-AsciiPad-Super-Nintendo-Controller.jpg%7CFile%3AAtari-2600-AC-Adapter.jpg%7CFile%3AAtari-2600-CD4050BCN.jpg%7CFile%3AAtari-2600-CPU-mos-c010745.jpg%7CFile%3AAtari-2600-Driving-Controller.jpg%7CFile%3AAtari-2600-Four-Switch-Black-Console-01.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 55817,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 23:02:25 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-g88bd",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "1fc533cc-abbc-4995-a0d6-e69a8176ad07"
+  },
+  "sha256": "1aae3e734d84769289186c44be7539a55e73f010c4ddec2a94ee91f3dcac56e0"
+}

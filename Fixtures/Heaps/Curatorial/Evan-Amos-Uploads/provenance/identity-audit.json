@@ -1,0 +1,2434 @@
+{
+  "status": "reported",
+  "inventories": [
+    {
+      "fixture": "Heaps/Curatorial/Botanical-Illustrations",
+      "inputs": 149,
+      "sources": 149,
+      "manifest_sha256": "0ff8e4fe91aa98f2143fa7c34203bd5e0e0a7978e0b7fa8cb0bd53ac0f54f713",
+      "source_catalog_sha256": "b7c8b9f9ea1c67b6dd8087cc8e808111f597786681a0453e06afe99e0047c4ce",
+      "import_map_sha256": "88afa1783e791694e0d4c0d02750135ea5da64755ea48decdf0cce89724da0d3"
+    },
+    {
+      "fixture": "Heaps/Curatorial/POTY/Arthropods",
+      "inputs": 43,
+      "sources": 43,
+      "manifest_sha256": "7ebd088010f0652629a6b37d79100f5a3eb1edc2a1bc62768509abc1357f0ef2",
+      "source_catalog_sha256": "98c59b36725496fd8c2e500ab9a93792bb668eae5683d0e740c1f2854c336066",
+      "import_map_sha256": "2ca055bb3871c8fdc2ddf7491180220cc6e9d3e87fda47f64d1bd1aa8d01c08b"
+    },
+    {
+      "fixture": "Heaps/Curatorial/POTY/Constructions-and-buildings",
+      "inputs": 50,
+      "sources": 50,
+      "manifest_sha256": "42523610eee11c7d6193b865a5edc86c6c2e0b7ffce999b1093c9e0f2f0284e9",
+      "source_catalog_sha256": "9c444e320aa0c8b390490e61c62f038a4d0fa84ba5108231fe29e0752bf30e1b",
+      "import_map_sha256": "079664a38267cdb88fbd0fbd134208103fc303c8b446f423d29d9a2a4c11490e"
+    },
+    {
+      "fixture": "Heaps/Curatorial/POTY/People-and-human-activity",
+      "inputs": 50,
+      "sources": 50,
+      "manifest_sha256": "1db0e952023b49cd6d75c4d7822c776a13da9bf90305974b85451191cb7aa4fd",
+      "source_catalog_sha256": "8740bb5d5f12d32b7f79ed477ed8b55e2a8a4f0d675d2c0284aad5bfbb782623",
+      "import_map_sha256": "d51fa6062db2c5a967450c0cbb9015ed6d1ca72f95d1f5139c2cf905628cf354"
+    },
+    {
+      "fixture": "Heaps/Curatorial/US-Army-SSI",
+      "inputs": 150,
+      "sources": 150,
+      "manifest_sha256": "515abd34be4ee7405678d771c477c8a6c72caa04d01671090533ddaacda934e6",
+      "source_catalog_sha256": "86d6f09473ae2e1a4809da0752d1036367d8452b00d96a8da43b16a1e501d3f7",
+      "import_map_sha256": "984c7257fa5a71ac0d2bf24cd7cc8d73087529e72f5041eb8d3b290848f8aeff"
+    },
+    {
+      "fixture": "Heaps/Similarity/BSP01",
+      "inputs": 68,
+      "sources": 68,
+      "manifest_sha256": "7eb43cbd99438215076cb09f618eb47c544ac4b4e63769a265739e818545a812",
+      "source_catalog_sha256": "2b286eb82c8a87fb0236e1fe49bd311596aa2616b18e68435f18d1c4085e2e93",
+      "import_map_sha256": "8348ceb7cac6a7e4ee9aebb1209bd94b2a90dfd4de3d40d2ffc88a6b4923fe1c"
+    },
+    {
+      "fixture": "Heaps/Similarity/CR01",
+      "inputs": 57,
+      "sources": 57,
+      "manifest_sha256": "df695b27cd27fa082088f5dc86cc553c158da00390aa908dfaf76a3b3448912f",
+      "source_catalog_sha256": "86ec9c1b5546563b2f805b98f9d5066996430596adb5d61b0b007232807649e7",
+      "import_map_sha256": "e44ed7336c6b64bcd48185d7c31556a0428b9a464291313363600b1fb17c5c71"
+    },
+    {
+      "fixture": "Heaps/Similarity/PS01",
+      "inputs": 58,
+      "sources": 58,
+      "manifest_sha256": "f87e09e932310784fce7096fa34e0addbcbfdf1dda0219232d2136011f6782d3",
+      "source_catalog_sha256": "3b04a4fe575b884b3bfea37a4b916743becf118a84fa4032db92b642db86052a",
+      "import_map_sha256": "bdde0a86669cba3d4b454409cca8e2495179b1371cd7849b7325f48e34317099"
+    },
+    {
+      "fixture": "Heaps/Similarity/RG01",
+      "inputs": 31,
+      "sources": 31,
+      "manifest_sha256": "8c11d19a70ae73c0a526ee05e7f9fb2c904ab39e977788395c201b94aa9d3a0c",
+      "source_catalog_sha256": "d843cce70abcce1c268226c02ebfef911663149408c0cdc3bfdb95ac1ee76c0d",
+      "import_map_sha256": "412af33192adbc940b992f2dac5541f423e66f7e0c5fcf0a669e7133e6eec5fa"
+    },
+    {
+      "fixture": "Heaps/Similarity/SF01",
+      "inputs": 48,
+      "sources": 48,
+      "manifest_sha256": "29b006215f26a49b6eb774bcfeb8d29e761fd31f224bcc278b4868acbe3ca026",
+      "source_catalog_sha256": "02d8ee2a441dd22cdf6f7a68607b2f294fefaece1612e168bbc6cf68562fb6c6",
+      "import_map_sha256": "7f1515d13fc81673216e33c78fd22d3b97a84064c03546207b4a0b750062f4a3"
+    },
+    {
+      "fixture": "Heaps/Similarity/TG01",
+      "inputs": 31,
+      "sources": 31,
+      "manifest_sha256": "d1c8c6361e8f7d25e6c68af8f87aac9c9b8b42f31688a9324f7ad6da53ec0365",
+      "source_catalog_sha256": "7f335bba606207fff3a3d3820cdd6a8acdb42d3fb1ef0256db5a868c83f9f83d",
+      "import_map_sha256": "14ba0d2f318745c63ef7e19454026cc7708601fd5e961b1a9e2476db810d51df"
+    },
+    {
+      "fixture": "Relationships/Derivatives",
+      "inputs": 183,
+      "sources": 15,
+      "manifest_sha256": "6141c7fde28f1e2809bb1ca4df207a1ebe0788db4daaf1f489e79421fb1c038d",
+      "source_catalog_sha256": "e43c7abfdefd193c19ea40c0e8436c6a377c91c6c6f1887550d074bfb5a4517c"
+    },
+    {
+      "fixture": "Relationships/Multiviews",
+      "inputs": 20,
+      "sources": 20,
+      "manifest_sha256": "2b77fb179dc6b3a2b537fa631f8fad528fdb2e44660a8f3e918e41a09fce5b63",
+      "source_catalog_sha256": "c123fc2c8a85f546f8aaa04a0aee85d056abf225ea1d5a0f0243fddf64e5e594"
+    },
+    {
+      "fixture": "Relationships/Variants",
+      "inputs": 42,
+      "sources": 6,
+      "manifest_sha256": "8d0fd98dd2e435661ef6d77b458050b131ed488b172204659023f080a85111df",
+      "source_catalog_sha256": "9ce08683d44dc925062232d7887629b3a5bfff1b50cabeda32a8e31b5074a67e",
+      "source_manifest_sha256": "aa50cfc091c9ff7027b8f7f81b03af8f4020240cfa52b9370c96a45cb8f71b80"
+    }
+  ],
+  "previous_inputs": 980,
+  "available_previous_identities": {
+    "title": 750,
+    "pageid": 735,
+    "original_sha1": 741,
+    "byte_sha256": 968
+  },
+  "checked": [
+    {
+      "candidate_id": "c90395c31f2e0460e701",
+      "identities": {
+        "title": [
+          "File:12in-LP-Vinyl-Record-Macro-Grooves.jpg"
+        ],
+        "pageid": [
+          "56260321"
+        ],
+        "original_sha1": [
+          "13066ddb840fd0edc705d1355a26db24f3285fc1"
+        ],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "6fc1caf8a7dc4b6faa64",
+      "identities": {
+        "title": [
+          "File:12in-Vinyl-LP-Record-Angle.jpg"
+        ],
+        "pageid": [
+          "56260127"
+        ],
+        "original_sha1": [
+          "75e5aeb559b652cedadc3250ad632f921fc22d6c"
+        ],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "983fa271c8f693a345e4",
+      "identities": {
+        "title": [
+          "File:3DO-FZ-1-Console-BL.jpg"
+        ],
+        "pageid": [
+          "36703865"
+        ],
+        "original_sha1": [
+          "288f84b5247b8c401ea41998a6aeb92ec47038ed"
+        ],
+        "byte_sha256": [
+          "19a91a1bc929024b89d5e0d0a69977cd227e4c86dd2f83bd4ccfcc4bcb9d2b2e"
+        ]
+      }
+    },
+    {
+      "candidate_id": "c47a960f77dbe63b43f5",
+      "identities": {
+        "title": [
+          "File:3DO-FZ-1-Console-BR.jpg"
+        ],
+        "pageid": [
+          "36703867"
+        ],
+        "original_sha1": [
+          "db458de4870f983ad2b1f7ce7da87ae9d86c6803"
+        ],
+        "byte_sha256": [
+          "714364d31cf4727f68808562b8eac8066974b5ab7cc1410bcc7e71ab361767c4"
+        ]
+      }
+    },
+    {
+      "candidate_id": "ddae63d2353ae518db66",
+      "identities": {
+        "title": [
+          "File:3DO-FZ-1-Console-FL.jpg"
+        ],
+        "pageid": [
+          "36703870"
+        ],
+        "original_sha1": [
+          "1db4427fe821ddedd03708299edc5a02b66004b4"
+        ],
+        "byte_sha256": [
+          "2862cdf8b614e33205d90b63fb4d5bb21ba0f65eb3418c71784ff0d20fa5e944"
+        ]
+      }
+    },
+    {
+      "candidate_id": "00565e50e46bceb18402",
+      "identities": {
+        "title": [
+          "File:3DO-FZ-1-Console-FL.png"
+        ],
+        "pageid": [
+          "92260564"
+        ],
+        "original_sha1": [
+          "c5ee4a5c5a9557db40f87f4a035d6e7541ce270e"
+        ],
+        "byte_sha256": [
+          "0b0bcb9052e749bacdf1753fcfe689707fff7b36e52e2b7b528d6bc7a17b3a73"
+        ]
+      }
+    },
+    {
+      "candidate_id": "22709af4bd385c283be9",
+      "identities": {
+        "title": [
+          "File:3DO-FZ-1-Console-FR.jpg"
+        ],
+        "pageid": [
+          "36703871"
+        ],
+        "original_sha1": [
+          "19760be1f177155e7bc1cb56d04572cf162207a6"
+        ],
+        "byte_sha256": [
+          "0512527e317c7a8a5a21d3460b3d6f4f926eae365c1e956a17b31213e763d7f7"
+        ]
+      }
+    },
+    {
+      "candidate_id": "0506ac77116a630e2234",
+      "identities": {
+        "title": [
+          "File:3DO-FZ-10-Console-BL.jpg"
+        ],
+        "pageid": [
+          "36701224"
+        ],
+        "original_sha1": [
+          "5988f61358e7d21b8876cea6b656da149242777c"
+        ],
+        "byte_sha256": [
+          "1138e0106c3be2be5ce7675f5d861ea3c282d4d319c23d2e544ddd4c4eda99fe"
+        ]
+      }
+    },
+    {
+      "candidate_id": "4738b60d183afdd52bb2",
+      "identities": {
+        "title": [
+          "File:3DO-FZ-10-Console-BR.jpg"
+        ],
+        "pageid": [
+          "36701229"
+        ],
+        "original_sha1": [
+          "7d54b7a11313c193f23ca91ab2e17f85dc5536c0"
+        ],
+        "byte_sha256": [
+          "6e5bead1b9e5827bbb48e98a2e5aadfff54e5989329baee7259c3c88879238d0"
+        ]
+      }
+    },
+    {
+      "candidate_id": "d1eb44c5da1370515c94",
+      "identities": {
+        "title": [
+          "File:3DO-FZ-10-Console-FL.jpg"
+        ],
+        "pageid": [
+          "36701232"
+        ],
+        "original_sha1": [
+          "f268c6d5b6e65a3e8484bfd22b68c8662ee654bb"
+        ],
+        "byte_sha256": [
+          "2a21c6e55f0ccbda94e721f1a6aaad71c2b716ebdc798095a3994eb6e80761a5"
+        ]
+      }
+    },
+    {
+      "candidate_id": "d7ca033863e9562a4a55",
+      "identities": {
+        "title": [
+          "File:3DO-FZ-10-Console-FR.jpg"
+        ],
+        "pageid": [
+          "36701237"
+        ],
+        "original_sha1": [
+          "3495ba0d81e936206d8a5fb04baaa353c3c82a46"
+        ],
+        "byte_sha256": [
+          "572b7ed5c16d6d171cfe7937f3d4b9fe8a56856138f0d6fef3b53d3b2db8f40d"
+        ]
+      }
+    },
+    {
+      "candidate_id": "356f811589c94550ef2e",
+      "identities": {
+        "title": [
+          "File:3DO-Goldstar-Console-BL.jpg"
+        ],
+        "pageid": [
+          "36718462"
+        ],
+        "original_sha1": [
+          "d1486d753aeb34c6377a848316700b018a78601b"
+        ],
+        "byte_sha256": [
+          "97885f357235fb4467f08923c1f91b7867b2e5d9f86cbd1b0e02045f29ba0892"
+        ]
+      }
+    },
+    {
+      "candidate_id": "c82ebd22eadefaaae5e7",
+      "identities": {
+        "title": [
+          "File:3DO-Goldstar-Console-BR.jpg"
+        ],
+        "pageid": [
+          "36718464"
+        ],
+        "original_sha1": [
+          "1043eaffc81be67a71fa552deb1e6f9b30a2c845"
+        ],
+        "byte_sha256": [
+          "c83739b0f90f477bc7e918184b15cbd7509651b6c373d2f942e3d8f1b259de68"
+        ]
+      }
+    },
+    {
+      "candidate_id": "93f4d5a06653ad20ff78",
+      "identities": {
+        "title": [
+          "File:3DO-Goldstar-Console-FL.jpg"
+        ],
+        "pageid": [
+          "36718465"
+        ],
+        "original_sha1": [
+          "5ffdddc848fd7d3a3b8e072aa3e2a5a9672f91fc"
+        ],
+        "byte_sha256": [
+          "3643ab6cf8306d43444380d93205127f3d76324f7b1e16c18b46e3f7bd845f19"
+        ]
+      }
+    },
+    {
+      "candidate_id": "462abfa4ca302960d988",
+      "identities": {
+        "title": [
+          "File:3DO-Goldstar-Console-FR.jpg"
+        ],
+        "pageid": [
+          "36718469"
+        ],
+        "original_sha1": [
+          "8f00f404ca7ec452a5de0f47ac610ba94df5c6b5"
+        ],
+        "byte_sha256": [
+          "a6fe38ac6e0a06bcdf426de3d25a6deb54a941775577476b5ff8156bd4106909"
+        ]
+      }
+    },
+    {
+      "candidate_id": "7e842edeb7ebe664a1a5",
+      "identities": {
+        "title": [
+          "File:3DO-TRY-Console-BL.jpg"
+        ],
+        "pageid": [
+          "36699906"
+        ],
+        "original_sha1": [
+          "6ab83b187d6403f1f46cf978cdac19c9a147e63e"
+        ],
+        "byte_sha256": [
+          "6d35d3930634c72cf486b55cfcc09d23ceed99c5180aee48266ed2da5728925b"
+        ]
+      }
+    },
+    {
+      "candidate_id": "2358415ed791dcffde8a",
+      "identities": {
+        "title": [
+          "File:3DO-TRY-Console-BR.jpg"
+        ],
+        "pageid": [
+          "36699905"
+        ],
+        "original_sha1": [
+          "9c54ffe175f77b16ed78702e9e5a6019fd28729b"
+        ],
+        "byte_sha256": [
+          "519701e6ff3eb00aac3ef0e7194a68368041ba4928973c90bb7c0d8e671a4899"
+        ]
+      }
+    },
+    {
+      "candidate_id": "ed13f63b1a051180a643",
+      "identities": {
+        "title": [
+          "File:3DO-TRY-Console-FL.jpg"
+        ],
+        "pageid": [
+          "36699908"
+        ],
+        "original_sha1": [
+          "5ef0989223563c4cb1b28bcceb302b03fdf836fe"
+        ],
+        "byte_sha256": [
+          "3e31c007a33ae3210e26aba687638613a6d4323f8838312448eaaee35825f259"
+        ]
+      }
+    },
+    {
+      "candidate_id": "b61cccabedf4c05fa7fe",
+      "identities": {
+        "title": [
+          "File:3DO-TRY-Console-FR.jpg"
+        ],
+        "pageid": [
+          "36699909"
+        ],
+        "original_sha1": [
+          "35c1505ea2c92183209f04889e3b7fae89242438"
+        ],
+        "byte_sha256": [
+          "0b519d87323f12a07c117be24638e1022de190b46b8ec665cc1bbef93ba4b49c"
+        ]
+      }
+    },
+    {
+      "candidate_id": "ef293896fe5f763e765c",
+      "identities": {
+        "title": [
+          "File:6-Pack-Chicken-Eggs.jpg"
+        ],
+        "pageid": [
+          "36734840"
+        ],
+        "original_sha1": [
+          "6ac047f1ec28dedae042d067067ccd76bbb78253"
+        ],
+        "byte_sha256": [
+          "cdece04eec5a62c62f7f2e31c004f08abd9c7aa6ed57ac8916241eb45352c7be"
+        ]
+      }
+    },
+    {
+      "candidate_id": "10071388dc43b7768044",
+      "identities": {
+        "title": [
+          "File:Action-Max-Casing-Bottom.jpg"
+        ],
+        "pageid": [
+          "56586287"
+        ],
+        "original_sha1": [
+          "e6d1feb658cb5a7b4324d97e0cdc98e624f23c8f"
+        ],
+        "byte_sha256": [
+          "db59eb3642e5e6fcff1ee72a92f6954a48878a712e5b4054dd667998ef1a88be"
+        ]
+      }
+    },
+    {
+      "candidate_id": "763958f84461e3635d15",
+      "identities": {
+        "title": [
+          "File:Action-Max-Casing-Top.jpg"
+        ],
+        "pageid": [
+          "56586293"
+        ],
+        "original_sha1": [
+          "93e1f2a525af3328b078673208502594c0e93b73"
+        ],
+        "byte_sha256": [
+          "2f4efaf458db2d85ee73e5e745e01c42b9daa97a29d28967299b190a2a1fb0e6"
+        ]
+      }
+    },
+    {
+      "candidate_id": "23fad2d7f26d8f49334e",
+      "identities": {
+        "title": [
+          "File:Action-Max-Console-BL.jpg"
+        ],
+        "pageid": [
+          "41367632"
+        ],
+        "original_sha1": [
+          "ddaf3e5c4217704f9fcf407b9a24887501150906"
+        ],
+        "byte_sha256": [
+          "3c2016f983bc5f66f6e5f7cad27c1bac800bd2eda62a638e3f27d8f19eb1b61e"
+        ]
+      }
+    },
+    {
+      "candidate_id": "0ed4c986e65064f17b37",
+      "identities": {
+        "title": [
+          "File:Action-Max-Console-Bottom-Flat.jpg"
+        ],
+        "pageid": [
+          "56586299"
+        ],
+        "original_sha1": [
+          "14c15ecfeb8099c196bbd46c422f89a24bd42471"
+        ],
+        "byte_sha256": [
+          "2bf61a50df47b4377056d5de069fb5964b030c03ae6175fa80da316717b64534"
+        ]
+      }
+    },
+    {
+      "candidate_id": "ff23439d7b9b5dab9271",
+      "identities": {
+        "title": [
+          "File:Action-Max-Console-BR.jpg"
+        ],
+        "pageid": [
+          "41367668"
+        ],
+        "original_sha1": [
+          "43cf112f7893a07c72c02c550abc53a608e959ab"
+        ],
+        "byte_sha256": [
+          "7aa895a7fd03f827c97331d0a3a6cba630a7202703c26b7bc045f4f763a70c60"
+        ]
+      }
+    },
+    {
+      "candidate_id": "ff2606f2eb8825077ce2",
+      "identities": {
+        "title": [
+          "File:Action-Max-Console-Casing-Top-wMotherboard.jpg"
+        ],
+        "pageid": [
+          "56586305"
+        ],
+        "original_sha1": [
+          "f98e5b68274d9e299d5be8c66dcb7da96269d0a7"
+        ],
+        "byte_sha256": [
+          "76b027c9065cf619630fe5616befac638f70d02485189cdb2628fcf196a50292"
+        ]
+      }
+    },
+    {
+      "candidate_id": "ff08ac72f2c4a6d4c2de",
+      "identities": {
+        "title": [
+          "File:Action-Max-Console-FL.jpg"
+        ],
+        "pageid": [
+          "41367732"
+        ],
+        "original_sha1": [
+          "ae18e11615fb20b0becde4ce40e626f622a8c1f8"
+        ],
+        "byte_sha256": [
+          "5d4f4ed6e3faf8431823e1b8f4c1a6a9fe19800b037419fd970f98ca70417d38"
+        ]
+      }
+    },
+    {
+      "candidate_id": "660610c732e231adf7a4",
+      "identities": {
+        "title": [
+          "File:Action-Max-Console-FR.jpg"
+        ],
+        "pageid": [
+          "41367736"
+        ],
+        "original_sha1": [
+          "b71b7b9ff8430c7b9129da9bc7c0a3a31ede58a4"
+        ],
+        "byte_sha256": [
+          "2440737f5aaa4ef53db21521757148326f6c3bb93258a238086e664a8290f0d6"
+        ]
+      }
+    },
+    {
+      "candidate_id": "dda6f4d5337795508a8b",
+      "identities": {
+        "title": [
+          "File:Action-Max-Console-Opened.jpg"
+        ],
+        "pageid": [
+          "56586309"
+        ],
+        "original_sha1": [
+          "9ec79e0a303197ac6a64ba91cd78282aa7f5a8ae"
+        ],
+        "byte_sha256": [
+          "4e46c4f411bb0605d9f79ccc2bacce66aeccdef4f69ee000bfdcb7207690029a"
+        ]
+      }
+    },
+    {
+      "candidate_id": "47b21a15905f4d6c74b0",
+      "identities": {
+        "title": [
+          "File:Action-Max-Gun-FL.jpg"
+        ],
+        "pageid": [
+          "41367751"
+        ],
+        "original_sha1": [
+          "56cd4f012e0530b6e596444384572f715f36e811"
+        ],
+        "byte_sha256": [
+          "ef8bbd659f244e865c4799c1167275fffa8e25f25255302524be157871a814f4"
+        ]
+      }
+    },
+    {
+      "candidate_id": "1be4f01592dec0d3f094",
+      "identities": {
+        "title": [
+          "File:Action-Max-Gun-FR.jpg"
+        ],
+        "pageid": [
+          "41367762"
+        ],
+        "original_sha1": [
+          "e4783767016b70f9cc05dacd4e6bc94f71c16299"
+        ],
+        "byte_sha256": [
+          "d0529679ab990ef10cccfb396bfc3a3289538559a47e144daefabc53746b6cfc"
+        ]
+      }
+    },
+    {
+      "candidate_id": "b0c8a836dae19afd7ee5",
+      "identities": {
+        "title": [
+          "File:Action-Max-Motherboard-Flat-Bottom.jpg"
+        ],
+        "pageid": [
+          "56586324"
+        ],
+        "original_sha1": [
+          "d8b7c8bd8aa503f60887b57e67dd372b79826d6a"
+        ],
+        "byte_sha256": [
+          "fe8a32787ab0f8196cebb90d084feda0718bdaabb2ef6ff39fcbd03fbb1198e8"
+        ]
+      }
+    },
+    {
+      "candidate_id": "73ced739827420fcff78",
+      "identities": {
+        "title": [
+          "File:Action-Max-Motherboard-Flat-Top.jpg"
+        ],
+        "pageid": [
+          "56586332"
+        ],
+        "original_sha1": [
+          "95314b06ef0954eee75a32f8a27d9fbd0b29e8e8"
+        ],
+        "byte_sha256": [
+          "89959e7b9e754ff09789e3f5442014ddcc7e2a5cb2124fbcc264c8bdb2b7518a"
+        ]
+      }
+    },
+    {
+      "candidate_id": "a69a7394e6164e9b76e8",
+      "identities": {
+        "title": [
+          "File:Action-Max-Motherboard.jpg"
+        ],
+        "pageid": [
+          "56586320"
+        ],
+        "original_sha1": [
+          "e058c064eb6781bf887904fb29f64d70ffcf7f6a"
+        ],
+        "byte_sha256": [
+          "9a3de300b4aa5a976bd3c247beb967f1470e54a45a71629bb2022b784c2259cd"
+        ]
+      }
+    },
+    {
+      "candidate_id": "626d8de41a1e29bd989f",
+      "identities": {
+        "title": [
+          "File:Action-Max-Power-Supply.jpg"
+        ],
+        "pageid": [
+          "57507759"
+        ],
+        "original_sha1": [
+          "e4744afd521c6df32c042a36a94cd05fc41d245c"
+        ],
+        "byte_sha256": [
+          "1115d21b5f90d64af8329424c85905c2dc382c40ef531c4de49fca4c4ee63c2c"
+        ]
+      }
+    },
+    {
+      "candidate_id": "564fe1023ac597a39427",
+      "identities": {
+        "title": [
+          "File:Action-Max-Red-Light.jpg"
+        ],
+        "pageid": [
+          "41367791"
+        ],
+        "original_sha1": [
+          "ebfe64da89b71ac35e1782f0c2474ecba379e4e9"
+        ],
+        "byte_sha256": [
+          "b0dfe831d16b7f60d695493afaa3986198121b6941aff17c6b96e4f9b1b6e297"
+        ]
+      }
+    },
+    {
+      "candidate_id": "7d3a8fdcb3cc4d7e0418",
+      "identities": {
+        "title": [
+          "File:Action-Max-Set-FL.jpg"
+        ],
+        "pageid": [
+          "41367813"
+        ],
+        "original_sha1": [
+          "23512df4b1a942ce5c35876bb7f43d39d7a1a2e8"
+        ],
+        "byte_sha256": [
+          "a0a5e73985484cc20c10befe5d6865aec54545357894c679bc7c42ff95d95433"
+        ]
+      }
+    },
+    {
+      "candidate_id": "b8e2afebde6607a4af5d",
+      "identities": {
+        "title": [
+          "File:Action-Max-Set-FR.jpg"
+        ],
+        "pageid": [
+          "41367816"
+        ],
+        "original_sha1": [
+          "6c1787ce4fa8f32f78498a96d509cae54f32c34b"
+        ],
+        "byte_sha256": [
+          "34cf75714ccf4e3ca06ed2cac015abd34aaaec274363869e900ed519b3ea40cb"
+        ]
+      }
+    },
+    {
+      "candidate_id": "628927bad3f1fb912575",
+      "identities": {
+        "title": [
+          "File:Action-Max-Stereo-Headphones.jpg"
+        ],
+        "pageid": [
+          "56586369"
+        ],
+        "original_sha1": [
+          "9060f4b93e0c3dece0e280cb724a9065746291e9"
+        ],
+        "byte_sha256": [
+          "0aecf9340eccd037202998627719d6e3eb21b8839abb68a5163c9f0421b52d6e"
+        ]
+      }
+    },
+    {
+      "candidate_id": "ed99db783df5469d0806",
+      "identities": {
+        "title": [
+          "File:Amstrad-GX4000-Casing-Bottom.jpg"
+        ],
+        "pageid": [
+          "56458984"
+        ],
+        "original_sha1": [
+          "337d9b0656fe7690117f10f3a169abef40b949f5"
+        ],
+        "byte_sha256": [
+          "6ea18a5d5379b027628edf46b8733b5020ab4a67ee9748a725ed7d5d6c47ade5"
+        ]
+      }
+    },
+    {
+      "candidate_id": "718da10046994da9ce3a",
+      "identities": {
+        "title": [
+          "File:Amstrad-GX4000-Casing-Top.jpg"
+        ],
+        "pageid": [
+          "56458986"
+        ],
+        "original_sha1": [
+          "4f4322462c3a05addcdcaeec30bf222e93b797d0"
+        ],
+        "byte_sha256": [
+          "5337794668a689da1ae70912eec2fbf1f0414692cc7a5c5a40a94fb3ffd74a12"
+        ]
+      }
+    },
+    {
+      "candidate_id": "60b35d37c51ac4a1e341",
+      "identities": {
+        "title": [
+          "File:Amstrad-GX4000-Console-Back-Flat.jpg"
+        ],
+        "pageid": [
+          "56457560"
+        ],
+        "original_sha1": [
+          "13775e3c2ea6e64853bbdd93b98ff83d292cc14e"
+        ],
+        "byte_sha256": [
+          "6f5fb96419aeeb22e767c4929d866243f8b61f5bef89bae785773c3b547a25cf"
+        ]
+      }
+    },
+    {
+      "candidate_id": "8fed968e71d938c62c4c",
+      "identities": {
+        "title": [
+          "File:Amstrad-GX4000-Console-BL.jpg"
+        ],
+        "pageid": [
+          "43544189"
+        ],
+        "original_sha1": [
+          "f17199a20eb8cc242ba3d47d8e17a2a435f07a1b"
+        ],
+        "byte_sha256": [
+          "562a92cefbfafb7534d6abf4b52cd8018998b7753301d34beab52eae3d118a98"
+        ]
+      }
+    },
+    {
+      "candidate_id": "e66a16ebb68558ad48c6",
+      "identities": {
+        "title": [
+          "File:Amstrad-GX4000-Console-BR.jpg"
+        ],
+        "pageid": [
+          "43544193"
+        ],
+        "original_sha1": [
+          "c9f87883605317e49413dba81f53378d4ceb3c3b"
+        ],
+        "byte_sha256": [
+          "3c16010cd081d5fbc9540ce778131fa2c20d9a9e3d4c30fa4049a34f208f78a5"
+        ]
+      }
+    },
+    {
+      "candidate_id": "1129497fb54a457d4dfb",
+      "identities": {
+        "title": [
+          "File:Amstrad-GX4000-Console-FL.jpg"
+        ],
+        "pageid": [
+          "43544197"
+        ],
+        "original_sha1": [
+          "eec87f6c2cc07409c88109ef22176567c57d2a5f"
+        ],
+        "byte_sha256": [
+          "e94ca7866796fe782f2a7f7e7bb67e17651ffdb9add4507fb759c22c82a6672d"
+        ]
+      }
+    },
+    {
+      "candidate_id": "5f79ff41918e15aec445",
+      "identities": {
+        "title": [
+          "File:Amstrad-GX4000-Console-Flat-Bottom.jpg"
+        ],
+        "pageid": [
+          "56457563"
+        ],
+        "original_sha1": [
+          "e4c7ee651c7a570f272e4817c0a6fdc1a6b3ad35"
+        ],
+        "byte_sha256": [
+          "4ab384303ce394dae697f25abc30f9dfee2b7763ce5a2c3e99d993d90e6df6b4"
+        ]
+      }
+    },
+    {
+      "candidate_id": "f853d4bb28e4dd6b2a71",
+      "identities": {
+        "title": [
+          "File:Amstrad-GX4000-Console-FR.jpg"
+        ],
+        "pageid": [
+          "43544200"
+        ],
+        "original_sha1": [
+          "bafa87b815fe8a7b7240748a6617f477ae637087"
+        ],
+        "byte_sha256": [
+          "511acc712fa5f5da8f62f6bd829e071aa1ab13d8787dd8416556415c56caa38a"
+        ]
+      }
+    },
+    {
+      "candidate_id": "817c2c43d5400b04c12f",
+      "identities": {
+        "title": [
+          "File:Amstrad-GX4000-Console-Front-Flat.jpg"
+        ],
+        "pageid": [
+          "56457569"
+        ],
+        "original_sha1": [
+          "5c21665533be6daca05bdf2940db602a9beae759"
+        ],
+        "byte_sha256": [
+          "3733e988027f2b7f6f27b746cf73dfd60232dee86e8fdcae6ca7e594b54ae8d4"
+        ]
+      }
+    },
+    {
+      "candidate_id": "5873a33b0142709779b4",
+      "identities": {
+        "title": [
+          "File:Amstrad-GX4000-Console-Set.jpg"
+        ],
+        "pageid": [
+          "18276973"
+        ],
+        "original_sha1": [
+          "8fcd298f05a3125a2914956af6e21672f41fdb22"
+        ],
+        "byte_sha256": [
+          "7825991b98534d3effe2c267b821b6297c170a6779414223018addc502ab046d"
+        ]
+      }
+    },
+    {
+      "candidate_id": "958229792463b0860020",
+      "identities": {
+        "title": [
+          "File:Amstrad-GX4000-Console-Set.png"
+        ],
+        "pageid": [
+          "18276976"
+        ],
+        "original_sha1": [
+          "51a021ba262904244af478b205a18ca7a3a5ca53"
+        ],
+        "byte_sha256": [
+          "07e0f4eb77d4c6bdafc58a87c8a3875c1fc2954ac5fde95c21d2da31d9dd584a"
+        ]
+      }
+    },
+    {
+      "candidate_id": "6fc873b80d343958fa44",
+      "identities": {
+        "title": [
+          "File:Amstrad-GX4000-Controller-Back.jpg"
+        ],
+        "pageid": [
+          "56457594"
+        ],
+        "original_sha1": [
+          "fcfdb933169a6c1ec186692bbaba59dcb1a2661e"
+        ],
+        "byte_sha256": [
+          "968e61a7bc64644984a4500c81f0f2241513e779d54a6847bc8ceb88879cb506"
+        ]
+      }
+    },
+    {
+      "candidate_id": "2440c26a812056b080aa",
+      "identities": {
+        "title": [
+          "File:Amstrad-GX4000-Controller-BR.jpg"
+        ],
+        "pageid": [
+          "56457606"
+        ],
+        "original_sha1": [
+          "1cdff1e319ffc6b18ada14d9cf4919f1044a2158"
+        ],
+        "byte_sha256": [
+          "487ed4589b0b1eab145e2bcbfdac49152d8516c590c28e1a49c5617275c9edfd"
+        ]
+      }
+    },
+    {
+      "candidate_id": "ec0e7f70a03f3e7c5bdf",
+      "identities": {
+        "title": [
+          "File:Amstrad-GX4000-Controller-FL.jpg"
+        ],
+        "pageid": [
+          "43546031"
+        ],
+        "original_sha1": [
+          "8ce77a2524eab8e3f2af0d12257834f66741f0f3"
+        ],
+        "byte_sha256": [
+          "606f42990e6cca4fcf8a79a78d09349a855d3bd00d32e002aa57855e0b188e21"
+        ]
+      }
+    },
+    {
+      "candidate_id": "d3eebbf7fbe3c8d15ec2",
+      "identities": {
+        "title": [
+          "File:Amstrad-GX4000-Controller-FR.jpg"
+        ],
+        "pageid": [
+          "43546035"
+        ],
+        "original_sha1": [
+          "a096b4ab8e5788310e8f34908dbf03bf59339a53"
+        ],
+        "byte_sha256": [
+          "6cae2eb9d7d87ac40c7d316185eada0ed505604bb7464fc81408c0c325cf2bcc"
+        ]
+      }
+    },
+    {
+      "candidate_id": "b2f66fe01289d8a8fdc7",
+      "identities": {
+        "title": [
+          "File:Amstrad-GX4000-Controller-Open-Back.jpg"
+        ],
+        "pageid": [
+          "56457615"
+        ],
+        "original_sha1": [
+          "f644e83c7c502c01e0392f0daeb49aa3676e919e"
+        ],
+        "byte_sha256": [
+          "a04e06907d7583f96b0af7debf7171e7ae9591a945e748e1df019f8414cc3d00"
+        ]
+      }
+    },
+    {
+      "candidate_id": "5b0780a305cd6adb7453",
+      "identities": {
+        "title": [
+          "File:Amstrad-GX4000-Controller-Open-Inside.jpg"
+        ],
+        "pageid": [
+          "56457630"
+        ],
+        "original_sha1": [
+          "548fb853c91683cfbd18cd0f0289b2afa4258534"
+        ],
+        "byte_sha256": [
+          "97166bbf8c352fdf583e828571870ae89b3671218a0c6a97a8cdcaa0718a87ee"
+        ]
+      }
+    },
+    {
+      "candidate_id": "3cef46a20d2a5255c4bc",
+      "identities": {
+        "title": [
+          "File:Amstrad-GX4000-Motherboard-BL.jpg"
+        ],
+        "pageid": [
+          "56457797"
+        ],
+        "original_sha1": [
+          "c8f832eff5d3751d355790fe46fe803d2c4944c9"
+        ],
+        "byte_sha256": [
+          "0f02df2716e6740b12ba90e9a51fbd6d2e3c3f4c7938844abca7d101f8bf7ed7"
+        ]
+      }
+    },
+    {
+      "candidate_id": "fef6a063022b692966fd",
+      "identities": {
+        "title": [
+          "File:Amstrad-GX4000-Motherboard-BR.jpg"
+        ],
+        "pageid": [
+          "56457809"
+        ],
+        "original_sha1": [
+          "e40f7f952a63194a1812497fad8288895f3c96a9"
+        ],
+        "byte_sha256": [
+          "d6a6d205f9f733084cd43c6bd48b68f751ecf150efd6d0e87e3d7b989c555b15"
+        ]
+      }
+    },
+    {
+      "candidate_id": "a967bc861eac92523477",
+      "identities": {
+        "title": [
+          "File:Amstrad-GX4000-Motherboard-FL.jpg"
+        ],
+        "pageid": [
+          "56457813"
+        ],
+        "original_sha1": [
+          "18a75f7c6fbacaef31fdc8241944df8227512248"
+        ],
+        "byte_sha256": [
+          "d7b140cff4687b98324a78943d41e4d8e4dc2b5796854021d980009bea87e2cc"
+        ]
+      }
+    },
+    {
+      "candidate_id": "c0813df57eda858c030d",
+      "identities": {
+        "title": [
+          "File:Amstrad-GX4000-Motherboard-Flat-Bottom.jpg"
+        ],
+        "pageid": [
+          "56457823"
+        ],
+        "original_sha1": [
+          "721640c61027539500361fc9afd8524e7c681afa"
+        ],
+        "byte_sha256": [
+          "743585d132e9c275d7067fc699ea323d8d3c8ae28d19fc3a92180ed9a4013614"
+        ]
+      }
+    },
+    {
+      "candidate_id": "4ae42e96b13a59ac517b",
+      "identities": {
+        "title": [
+          "File:Amstrad-GX4000-Motherboard-Flat-Top.jpg"
+        ],
+        "pageid": [
+          "56457828"
+        ],
+        "original_sha1": [
+          "b7863b659ca29829e05ba8541aa3788e53086b1b"
+        ],
+        "byte_sha256": [
+          "dd71df70f27337023ee987938b7f95f97054a4f754d6acc119487b7bec2db34d"
+        ]
+      }
+    },
+    {
+      "candidate_id": "cee74ca6abf067a339c1",
+      "identities": {
+        "title": [
+          "File:Amstrad-GX4000-Motherboard-FR.jpg"
+        ],
+        "pageid": [
+          "56457840"
+        ],
+        "original_sha1": [
+          "5e3605ae400c16ef8748c37b51e24acc8e1cf144"
+        ],
+        "byte_sha256": [
+          "8dbbfca91a716ba43dff9af34f68adf2f6bb92de1739285e07ac8471be3136dc"
+        ]
+      }
+    },
+    {
+      "candidate_id": "a1ccfc79e5b18ba5d4aa",
+      "identities": {
+        "title": [
+          "File:Amstrad-GX4000-Power-Supply.jpg"
+        ],
+        "pageid": [
+          "56458205"
+        ],
+        "original_sha1": [
+          "5769d8c5671d87d0f778af6bd7cf3b516e4fd82c"
+        ],
+        "byte_sha256": [
+          "6cfa3144f215612682051c3c0996d42ad48bca953ba22c1514ccff0fa1db332a"
+        ]
+      }
+    },
+    {
+      "candidate_id": "5cd0ebd2d93286c5b40b",
+      "identities": {
+        "title": [
+          "File:AntiStatic-Wrist-Guard.jpg"
+        ],
+        "pageid": [
+          "71267780"
+        ],
+        "original_sha1": [
+          "986798073f316d344379a3e689c4173e2ea49677"
+        ],
+        "byte_sha256": [
+          "ba0758582bb4d694bd62e73bfefe3b1b425d72e6fb21a503d7c5c2c7ac1a0484"
+        ]
+      }
+    },
+    {
+      "candidate_id": "88406086fbb36319960d",
+      "identities": {
+        "title": [
+          "File:APF-M1000-FL.jpg"
+        ],
+        "pageid": [
+          "45579774"
+        ],
+        "original_sha1": [
+          "d3ca4f0250031906ca74e9b5fa612ef8d03fcdd0"
+        ],
+        "byte_sha256": [
+          "2f1b1641d04c123f6a281edb3aa163fc1c8fbb2b64e563a1f69dac9791567045"
+        ]
+      }
+    },
+    {
+      "candidate_id": "3019a3a51fa99e8b9f1b",
+      "identities": {
+        "title": [
+          "File:APF-M1000-Motherboard-BL.jpg"
+        ],
+        "pageid": [
+          "45579787"
+        ],
+        "original_sha1": [
+          "57cb5e140b6f4f7b6bc9b43e1e7409a257297817"
+        ],
+        "byte_sha256": [
+          "e67f6b41cf7491b27bbd49b1231cc243b3182fb3a600342861f697f7f6f8826b"
+        ]
+      }
+    },
+    {
+      "candidate_id": "4840945c9f9275bf7f38",
+      "identities": {
+        "title": [
+          "File:APF-M1000-Motherboard-BR.jpg"
+        ],
+        "pageid": [
+          "45579792"
+        ],
+        "original_sha1": [
+          "fef0f459616b1204355ee80a6ab621bd93acdd98"
+        ],
+        "byte_sha256": [
+          "0bb5336729389a678043476201a030086380c7a6626c0b771e81106b27d41c69"
+        ]
+      }
+    },
+    {
+      "candidate_id": "0196a1ccaa7aa9b2ad10",
+      "identities": {
+        "title": [
+          "File:APF-M1000-Motherboard-FL.jpg"
+        ],
+        "pageid": [
+          "45579796"
+        ],
+        "original_sha1": [
+          "466290b6f1e0ba2a9eb5e8e57eb87d313ca734e6"
+        ],
+        "byte_sha256": [
+          "3bdb8aaa23affa11028c036d3bebba4264ad16661ee5ef154eadeb500893ca90"
+        ]
+      }
+    },
+    {
+      "candidate_id": "b194a864591d20ba9641",
+      "identities": {
+        "title": [
+          "File:APF-M1000-Motherboard-FR.jpg"
+        ],
+        "pageid": [
+          "45579800"
+        ],
+        "original_sha1": [
+          "e309453798de7e40f5f4ea84387666310d380e36"
+        ],
+        "byte_sha256": [
+          "0f4ec919e095db5673f7e9aa7215f81380b9591bf6978ea01943f7d12bf55a85"
+        ]
+      }
+    },
+    {
+      "candidate_id": "2d6291034954d6414f3c",
+      "identities": {
+        "title": [
+          "File:APF-MP1000-Console-01.jpg"
+        ],
+        "pageid": [
+          "69898436"
+        ],
+        "original_sha1": [
+          "cdb9c7a7b22c4bbf445495a4f4c51c968213b275"
+        ],
+        "byte_sha256": [
+          "783ae8afb6e6b8cdc45493a9aeeabe971062c47c92cc8582c749d501855b4789"
+        ]
+      }
+    },
+    {
+      "candidate_id": "d86d49043bd5d6e6d49d",
+      "identities": {
+        "title": [
+          "File:APF-MP1000-Console-02.jpg"
+        ],
+        "pageid": [
+          "69898461"
+        ],
+        "original_sha1": [
+          "a4d9ac3b6ff1ede7b1216e614c5a5d8ae523d697"
+        ],
+        "byte_sha256": [
+          "32334f8372108381a80ead383e40f64fa782780b4b07200a84f312b59e2f44e8"
+        ]
+      }
+    },
+    {
+      "candidate_id": "564adf9a75cd3e2fad51",
+      "identities": {
+        "title": [
+          "File:APF-MP1000-Console-03.jpg"
+        ],
+        "pageid": [
+          "69898468"
+        ],
+        "original_sha1": [
+          "0a2eb90eb15a241289be17bc6766f9f4db7aa7f7"
+        ],
+        "byte_sha256": [
+          "36b8cec2396c713f4b07175d6d5a7913f7472402969a386ec5cf7a9fe3424aa7"
+        ]
+      }
+    },
+    {
+      "candidate_id": "f3f9ddc669e130feba78",
+      "identities": {
+        "title": [
+          "File:APF-MP1000-Console-04.jpg"
+        ],
+        "pageid": [
+          "69898480"
+        ],
+        "original_sha1": [
+          "3b7cc73c4cb2c559966d7b79978cf7c3afc7eeef"
+        ],
+        "byte_sha256": [
+          "c82213a5e8902746c978924a782e4d17610affdd1f9df31f22a4316a92a18b50"
+        ]
+      }
+    },
+    {
+      "candidate_id": "9c7d87035c11ba1971b1",
+      "identities": {
+        "title": [
+          "File:APF-MP1000-Console-BL.jpg"
+        ],
+        "pageid": [
+          "45579812"
+        ],
+        "original_sha1": [
+          "c907f069a301192230bf49098e0af89c942514c1"
+        ],
+        "byte_sha256": [
+          "5354a338e969c7531c3573145caa10a88ff540f70ee435d3d89f2e155f401ff6"
+        ]
+      }
+    },
+    {
+      "candidate_id": "58433c0c8b56efd4050a",
+      "identities": {
+        "title": [
+          "File:APF-MP1000-Console-BR-Bare.jpg"
+        ],
+        "pageid": [
+          "45579821"
+        ],
+        "original_sha1": [
+          "4e186bcbb9d975148f82a18a7c9678c8840eb0ae"
+        ],
+        "byte_sha256": [
+          "6c06ef9ed2bcb0baa7c72ca323e1f53dde19cf8e3bfd21865e4ea252c510a107"
+        ]
+      }
+    },
+    {
+      "candidate_id": "cc322ead1e777f1592d5",
+      "identities": {
+        "title": [
+          "File:APF-MP1000-Console-BR.jpg"
+        ],
+        "pageid": [
+          "45579814"
+        ],
+        "original_sha1": [
+          "44d7a023692340e612b96b301ee4281d91d16eac"
+        ],
+        "byte_sha256": [
+          "6611b57715a316a6004901b9638ba433e507d78dd556ae608f62452dbe6e4183"
+        ]
+      }
+    },
+    {
+      "candidate_id": "2239a8b42dd367829132",
+      "identities": {
+        "title": [
+          "File:APF-MP1000-Console-FL-Bare.jpg"
+        ],
+        "pageid": [
+          "45579831"
+        ],
+        "original_sha1": [
+          "956881c17820fba280711056979f440c327dad07"
+        ],
+        "byte_sha256": [
+          "506dcb8eb4fb9d168f70eb4ace9c3d9747dc763c402eb86daf1e81e71dae8525"
+        ]
+      }
+    },
+    {
+      "candidate_id": "d49b546c62bc3a378ca3",
+      "identities": {
+        "title": [
+          "File:APF-MP1000-Console-FL.jpg"
+        ],
+        "pageid": [
+          "45579827"
+        ],
+        "original_sha1": [
+          "daf43ffc6105508896d2146317b142a20c8db421"
+        ],
+        "byte_sha256": [
+          "5b6ccadc43b8645c420fc70e01095b74348f96ede6e23a27f7be1e41233b3474"
+        ]
+      }
+    },
+    {
+      "candidate_id": "bec15c02ca66f7548161",
+      "identities": {
+        "title": [
+          "File:APF-MP1000-Console-FR.jpg"
+        ],
+        "pageid": [
+          "45579833"
+        ],
+        "original_sha1": [
+          "7b9b1eaecb33c9174ebc932f43ad1d655b9794f2"
+        ],
+        "byte_sha256": [
+          "78eb655ffa3d70eba7d89f3f38f4d2531286ac31723afef2638b2e0e292227d6"
+        ]
+      }
+    },
+    {
+      "candidate_id": "f63da7dd08fc6581bc4c",
+      "identities": {
+        "title": [
+          "File:APF-MP1000-Controller-01.jpg"
+        ],
+        "pageid": [
+          "69898513"
+        ],
+        "original_sha1": [
+          "457388196af1354d93e2efb889a7c3dfb2f3a1d8"
+        ],
+        "byte_sha256": [
+          "2340efb287ad6089bd6680075f3488e9b263019079e60a18355e298a4634b2fc"
+        ]
+      }
+    },
+    {
+      "candidate_id": "f25bbe929c7c2062d8b0",
+      "identities": {
+        "title": [
+          "File:APF-MP1000-Controller-02.jpg"
+        ],
+        "pageid": [
+          "69898518"
+        ],
+        "original_sha1": [
+          "717ec69442dde393bfccffcff32ac258fadce270"
+        ],
+        "byte_sha256": [
+          "a3851181c036b290c60cf89363ad8c0cb316a79c85502a6aea196555b77699bc"
+        ]
+      }
+    },
+    {
+      "candidate_id": "171fab2008bdbd9a5538",
+      "identities": {
+        "title": [
+          "File:APF-MP1000-Controller-03.jpg"
+        ],
+        "pageid": [
+          "69898520"
+        ],
+        "original_sha1": [
+          "6401f0d0e03532ed9867a48a99e438c9a25c46f6"
+        ],
+        "byte_sha256": [
+          "16b5e328b3db2fb7ad8d8ae1224d147c695a678cccdf504f372518981f223657"
+        ]
+      }
+    },
+    {
+      "candidate_id": "efa32189ca93e8575ff8",
+      "identities": {
+        "title": [
+          "File:APF-MP1000-Controller-04.jpg"
+        ],
+        "pageid": [
+          "69898528"
+        ],
+        "original_sha1": [
+          "cc580887bf3b49cd49b044c98864551e0ce566df"
+        ],
+        "byte_sha256": [
+          "01e848b4766d780ea41c07f7e7c473fe2e819fab3758f8f73a52f2793492eb1b"
+        ]
+      }
+    },
+    {
+      "candidate_id": "8c1e6b3965336a7e70b5",
+      "identities": {
+        "title": [
+          "File:APF-MP1000-FL.jpg"
+        ],
+        "pageid": [
+          "45579767"
+        ],
+        "original_sha1": [
+          "b7179b799f7e1a19eba2f427670622726ca289a0"
+        ],
+        "byte_sha256": [
+          "5bbac46d1ddf74035bd94ad47347efa45ace5cba69e990eace880a807686a2a8"
+        ]
+      }
+    },
+    {
+      "candidate_id": "fe5649408249601498e1",
+      "identities": {
+        "title": [
+          "File:APF-MP1000-Motherboard-Flat.jpg"
+        ],
+        "pageid": [
+          "69898568"
+        ],
+        "original_sha1": [
+          "e0b098d2ce970a3506c6511229af042e1c91ef80"
+        ],
+        "byte_sha256": [
+          "242ccfbaeb7c5d3d8ed32255933e5e770314dc68bc3b41b19c5a8ece24b0073f"
+        ]
+      }
+    },
+    {
+      "candidate_id": "a7ce0e44de6060ee5787",
+      "identities": {
+        "title": [
+          "File:APF-MP1000-Power-Supply.jpg"
+        ],
+        "pageid": [
+          "69898554"
+        ],
+        "original_sha1": [
+          "4431fafa9a29458b9d834c4b0e7785c141110379"
+        ],
+        "byte_sha256": [
+          "1cc44db142fb9600b5801d58757b4f77cfa2106e39e62e30abf26029a99c7e03"
+        ]
+      }
+    },
+    {
+      "candidate_id": "5e9d16409f16b324844c",
+      "identities": {
+        "title": [
+          "File:APF-TV-Fun-402C-Console-01.jpg"
+        ],
+        "pageid": [
+          "80643678"
+        ],
+        "original_sha1": [
+          "ec8ee851552abfb0741ffccfa10bc7f01fc594a8"
+        ],
+        "byte_sha256": [
+          "b84f064afbcc582424b6cfeb99c88a53c64798ced7aa0747ceaec509c3e849b2"
+        ]
+      }
+    },
+    {
+      "candidate_id": "3b68a29445446d8627f7",
+      "identities": {
+        "title": [
+          "File:APF-TV-Fun-402C-Console-02.jpg"
+        ],
+        "pageid": [
+          "80643725"
+        ],
+        "original_sha1": [
+          "5ca43c95a7addd326e4d131725e0edd0b1932ab1"
+        ],
+        "byte_sha256": [
+          "ed2fe10d35d920b6b922204580c6569ef5e2cb699a08be8d9bc2b2f6101b8844"
+        ]
+      }
+    },
+    {
+      "candidate_id": "dd99d76dd792cd2f475a",
+      "identities": {
+        "title": [
+          "File:APF-TV-Fun-402C-Console-03.jpg"
+        ],
+        "pageid": [
+          "80643728"
+        ],
+        "original_sha1": [
+          "fac74973203c9dd7d592cac9d9e50bda69398dac"
+        ],
+        "byte_sha256": [
+          "f90138718378e6f22861d90c5a4fddfeb2e10b344592d187de14f8bfba69215a"
+        ]
+      }
+    },
+    {
+      "candidate_id": "78268c3d4e98b9300b10",
+      "identities": {
+        "title": [
+          "File:APF-TV-Fun-402C-Console-04.jpg"
+        ],
+        "pageid": [
+          "80643729"
+        ],
+        "original_sha1": [
+          "9535d825f7b0dbf422c6105740929af743013e8c"
+        ],
+        "byte_sha256": [
+          "c0be9439f5cee9273ddb629d83a9638a1c14f69bd358b8dbbc7ab4730e3cadd7"
+        ]
+      }
+    },
+    {
+      "candidate_id": "57ce157881396b383149",
+      "identities": {
+        "title": [
+          "File:APF-TV-Fun-402C-Console-05.jpg"
+        ],
+        "pageid": [
+          "80643730"
+        ],
+        "original_sha1": [
+          "28a912b9cbf4e9cd9e28af316c925794d21b6078"
+        ],
+        "byte_sha256": [
+          "d40e5b3d7355dc8e863648180b3f0788297da7b9146ee249af3356d36b802a75"
+        ]
+      }
+    },
+    {
+      "candidate_id": "14658c0c2bbe995a6d37",
+      "identities": {
+        "title": [
+          "File:APF-TV-Fun-402C-Console-06.jpg"
+        ],
+        "pageid": [
+          "80643731"
+        ],
+        "original_sha1": [
+          "694ed1c9e563647c9f6d077c21f0f918b3027e1a"
+        ],
+        "byte_sha256": [
+          "0efde5b3f90eade667a4d2d0f7cc93073f5216860f25dca146815392e7ee81c2"
+        ]
+      }
+    },
+    {
+      "candidate_id": "b2cc21258bb780e26118",
+      "identities": {
+        "title": [
+          "File:APF-TV-Fun-402C-Console-07.jpg"
+        ],
+        "pageid": [
+          "80643736"
+        ],
+        "original_sha1": [
+          "e03b40733e9ed6c84960fff3a436d0063cbc1e49"
+        ],
+        "byte_sha256": [
+          "ea27c3f0656c40b436bc308595cc087b77c70f1d568bbe3e52560e26cadcbc18"
+        ]
+      }
+    },
+    {
+      "candidate_id": "b906d7f8d4690e7cbd14",
+      "identities": {
+        "title": [
+          "File:APF-TV-Fun-402C-Light-Gun.jpg"
+        ],
+        "pageid": [
+          "80643742"
+        ],
+        "original_sha1": [
+          "c510c75f0aac27b2bfa3cddbdf8c2cb036e0bc72"
+        ],
+        "byte_sha256": [
+          "df7aaca7c2daf8b3d26215e783d5dca4e731ab2a17e7a0a8241b4ec224c3b4d3"
+        ]
+      }
+    },
+    {
+      "candidate_id": "fdeccc6713508e2380db",
+      "identities": {
+        "title": [
+          "File:APF-TV-Fun-402C-Motherboard-00.jpg"
+        ],
+        "pageid": [
+          "80643753"
+        ],
+        "original_sha1": [
+          "b2f944f209937ea1c7bf61803688b65e737ffe64"
+        ],
+        "byte_sha256": [
+          "c3a024fcfd1b66decc1fc333dc9a01eab42b230f68e7367038e0cc7d0ed6fb8f"
+        ]
+      }
+    },
+    {
+      "candidate_id": "65bd67545e5f713d187f",
+      "identities": {
+        "title": [
+          "File:APF-TV-Fun-402C-Motherboard-01.jpg"
+        ],
+        "pageid": [
+          "80643761"
+        ],
+        "original_sha1": [
+          "a7e3f7160230a006e0cf4a0d667fd42cf486c22e"
+        ],
+        "byte_sha256": [
+          "8f6797f53b6959ed0a49a6fd9786d4483d90343ac82a1066bcbc6ea3f83b1a0f"
+        ]
+      }
+    },
+    {
+      "candidate_id": "46b87e765655bd0adefd",
+      "identities": {
+        "title": [
+          "File:APF-TV-Fun-402C-Motherboard-02.jpg"
+        ],
+        "pageid": [
+          "80643772"
+        ],
+        "original_sha1": [
+          "f14d44f387fe1437eecbfd2ff5e954c632fc5168"
+        ],
+        "byte_sha256": [
+          "37d1efbbeb7f900420c12622dcfd6ba50a6cff6d055e485e0d3ba8fe72d0170d"
+        ]
+      }
+    },
+    {
+      "candidate_id": "f71dbbcbe11e2bedbcb2",
+      "identities": {
+        "title": [
+          "File:APF-TV-Fun-402C-Motherboard-03.jpg"
+        ],
+        "pageid": [
+          "80643775"
+        ],
+        "original_sha1": [
+          "dfe1a0587d05aa409c7714f7fdc01db75733d6be"
+        ],
+        "byte_sha256": [
+          "c22293d717eef55efc798f45de767f4d74f0e53738a3806fb7228825e258fc5c"
+        ]
+      }
+    },
+    {
+      "candidate_id": "baf3ad4b22779857d5d0",
+      "identities": {
+        "title": [
+          "File:APF-TV-Fun-402C-Paddle-Controllers.jpg"
+        ],
+        "pageid": [
+          "80643781"
+        ],
+        "original_sha1": [
+          "0c62909ad651c6f7b1bf2990f4ac6e7844fccffc"
+        ],
+        "byte_sha256": [
+          "2f01e05f09a1ca3fa26c497b0471943b12b509540742ef149f59da3bdda0ffd3"
+        ]
+      }
+    },
+    {
+      "candidate_id": "91a886e7f6ecc7144c67",
+      "identities": {
+        "title": [
+          "File:Apple-Airport-Extreme-80211g-WiFi-Card.jpg"
+        ],
+        "pageid": [
+          "71468922"
+        ],
+        "original_sha1": [
+          "f8eca3b94cdd78fab5bc1af9482f9fa883ea245a"
+        ],
+        "byte_sha256": [
+          "75063f2236c18979fb495cba581bd48c87d1d809f975c914e52da86c2bec86e7"
+        ]
+      }
+    },
+    {
+      "candidate_id": "78ca27dee1097c6a65db",
+      "identities": {
+        "title": [
+          "File:Apple-Bandai-Pippin-Atmark-Motherboard-1.jpg"
+        ],
+        "pageid": [
+          "161881150"
+        ],
+        "original_sha1": [
+          "69405be384b1c0b14e75ce885e50df317f180ba3"
+        ],
+        "byte_sha256": [
+          "fa428e83f7edf62a5f6fd88acddec69d5e665340bda8290c6473ca2f273f0442"
+        ]
+      }
+    },
+    {
+      "candidate_id": "a670efc71a6374b6d6b8",
+      "identities": {
+        "title": [
+          "File:Apple-Bandai-Pippin-Atmark-Motherboard-2.jpg"
+        ],
+        "pageid": [
+          "161881200"
+        ],
+        "original_sha1": [
+          "a2856d9fe2cc8d7de92a2dabd1ec61ef01a1dd03"
+        ],
+        "byte_sha256": [
+          "1c2905b36a6ac0a3034b65273e568658a69c406226db586abf488ac365826a82"
+        ]
+      }
+    },
+    {
+      "candidate_id": "0758854bb92d9529f2a0",
+      "identities": {
+        "title": [
+          "File:Apple-Bandai-Pippin-Atmark-Motherboard-3.jpg"
+        ],
+        "pageid": [
+          "161881216"
+        ],
+        "original_sha1": [
+          "a657b529eb71e2e374163792c7a21c60796239b2"
+        ],
+        "byte_sha256": [
+          "1c8732b960b7c1cfec7ceeab9ded30c41d98b7361a0f66f4f631adc981babde1"
+        ]
+      }
+    },
+    {
+      "candidate_id": "dc52826127ef18e84d3c",
+      "identities": {
+        "title": [
+          "File:Apple-Bandai-Pippin-Atmark-Motherboard-4.jpg"
+        ],
+        "pageid": [
+          "161881232"
+        ],
+        "original_sha1": [
+          "5d49ba0a249dae43eeffab8de89c3a3428315243"
+        ],
+        "byte_sha256": [
+          "d246e972ea2b417633618fa0d1bef87b269c023e4a30150426eda348c96613d9"
+        ]
+      }
+    },
+    {
+      "candidate_id": "0f283c587db1d9d8595c",
+      "identities": {
+        "title": [
+          "File:Apple-Bandai-Pippin-Atmark-Motherboard-5.jpg"
+        ],
+        "pageid": [
+          "161881262"
+        ],
+        "original_sha1": [
+          "343ed1571e50bbc456810199622f79b861669fcb"
+        ],
+        "byte_sha256": [
+          "473487e15cc7dafc7fe947a35479baa6c4b8723b82d093c6cf7b835416723eac"
+        ]
+      }
+    },
+    {
+      "candidate_id": "0dc3987688dae1e613a0",
+      "identities": {
+        "title": [
+          "File:Apple-eMac-Bottom.jpg"
+        ],
+        "pageid": [
+          "39075906"
+        ],
+        "original_sha1": [
+          "e1861779e9df9adcc2fd903da81acd9518fffb76"
+        ],
+        "byte_sha256": [
+          "8a665f1846f38f03f38a2abf80e71d36f96de97f63b33f62598e150a6203f043"
+        ]
+      }
+    },
+    {
+      "candidate_id": "7a6142a4d7bbcbbb2a54",
+      "identities": {
+        "title": [
+          "File:Apple-eMac-FL (transparent).png"
+        ],
+        "pageid": [
+          "156118207"
+        ],
+        "original_sha1": [
+          "6ba6a6ba520df965c6a4194d4c1105cdebce8451"
+        ],
+        "byte_sha256": [
+          "4d9e27956da97fa3a355d76db49a299206c52285c79ebad0d7a6a095173b28d9"
+        ]
+      }
+    },
+    {
+      "candidate_id": "5d54a28846cc6e14c10f",
+      "identities": {
+        "title": [
+          "File:Apple-eMac-FL.jpg"
+        ],
+        "pageid": [
+          "39075910"
+        ],
+        "original_sha1": [
+          "22a515c4382bea6ae0a22edf87cde09033dccc4b"
+        ],
+        "byte_sha256": [
+          "b4a8fecc429b8bcfd1caa2c57bf9161823eb87af59e0da1bd6640dc1eff816ca"
+        ]
+      }
+    },
+    {
+      "candidate_id": "43847b7258f44222c3a3",
+      "identities": {
+        "title": [
+          "File:Apple-eMac-Side-wPorts.jpg"
+        ],
+        "pageid": [
+          "39075918"
+        ],
+        "original_sha1": [
+          "0f60ebe6cc7731203607074b8985c0cb046447c2"
+        ],
+        "byte_sha256": [
+          "b751958975f4052a0c20019dbe3469ec87ca68392270705d3ddd8aa1f4ea68b7"
+        ]
+      }
+    },
+    {
+      "candidate_id": "b198a7bba07a500ea004",
+      "identities": {
+        "title": [
+          "File:Apple-iPhone-6S-Plus-Inside.jpg"
+        ],
+        "pageid": [
+          "83726756"
+        ],
+        "original_sha1": [
+          "79b2d5c533565fee2d517caf07aa6e546585e262"
+        ],
+        "byte_sha256": [
+          "1798728413827d0a83608b938b3c102eaab06b8388e7b18ddb58ff7be1ae655d"
+        ]
+      }
+    },
+    {
+      "candidate_id": "2855c38ef28973b8744a",
+      "identities": {
+        "title": [
+          "File:Apple-iPod-Shuffle-Display.jpg"
+        ],
+        "pageid": [
+          "71475155"
+        ],
+        "original_sha1": [
+          "652a6ccccfb793a6bc09ad7066cefc92f369306e"
+        ],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "e3d71207a035fa89ee43",
+      "identities": {
+        "title": [
+          "File:Apple-MacBook-2007-Motherboard-Bottom.jpg"
+        ],
+        "pageid": [
+          "71468905"
+        ],
+        "original_sha1": [
+          "4b93136ca101350b235199b3eae61ef57b436742"
+        ],
+        "byte_sha256": [
+          "8b9aee922b240b51209bae9f196bdd5a6be918daa01a15e3e8e0e78a0427b90d"
+        ]
+      }
+    },
+    {
+      "candidate_id": "00320d05511c5ed844dc",
+      "identities": {
+        "title": [
+          "File:Apple-MacBook-2007-Motherboard.jpg"
+        ],
+        "pageid": [
+          "71468896"
+        ],
+        "original_sha1": [
+          "1335f8e2785a4cf06e1a14d05787754e469d2991"
+        ],
+        "byte_sha256": [
+          "ec21e9e4a3562727b868a15bc0e40cb55e9bec9fa40ec9d93b7d597389e192af"
+        ]
+      }
+    },
+    {
+      "candidate_id": "c95618dff627f5254d4f",
+      "identities": {
+        "title": [
+          "File:Ascii-PlayStation-Grip-Controller.jpg"
+        ],
+        "pageid": [
+          "83726632"
+        ],
+        "original_sha1": [
+          "60780020b870e4183044f579783182c6dbf9b886"
+        ],
+        "byte_sha256": [
+          "b549d864290b9000df361cc37856d87159f399107a8e00cb81b3feed32c80009"
+        ]
+      }
+    },
+    {
+      "candidate_id": "0fd4e8857a7d2f45628d",
+      "identities": {
+        "title": [
+          "File:Asciiware-AsciiPad-Super-Nintendo-Controller.jpg"
+        ],
+        "pageid": [
+          "81254602"
+        ],
+        "original_sha1": [
+          "c0db91fadc9ad3abf493afed1a157496e0099382"
+        ],
+        "byte_sha256": [
+          "a5f95a28736ecf9c7c49b67c2b6cc19ee608b994378d5aca55ce1c25de246e23"
+        ]
+      }
+    },
+    {
+      "candidate_id": "3208a258076b822496be",
+      "identities": {
+        "title": [
+          "File:Atari-2600-AC-Adapter.jpg"
+        ],
+        "pageid": [
+          "81841680"
+        ],
+        "original_sha1": [
+          "fb64ef4e4c1d420531befa97ec55c69754dd780d"
+        ],
+        "byte_sha256": [
+          "735734a6bf6c89ab6a77ea2f2acff5809cc1f71340d359c1c3a24e134a8db5a5"
+        ]
+      }
+    },
+    {
+      "candidate_id": "2baebc4709614f7030e9",
+      "identities": {
+        "title": [
+          "File:Atari-2600-CD4050BCN.jpg"
+        ],
+        "pageid": [
+          "161142040"
+        ],
+        "original_sha1": [
+          "f8a72fe8ea53767a098673a9ca8f7ce5cce7e4d8"
+        ],
+        "byte_sha256": [
+          "18dcd64d5fda1d577e9b19c853ea9f12489cbf729d7b0cc88e1b9d033024bea4"
+        ]
+      }
+    },
+    {
+      "candidate_id": "3d82333cbee1a9fcf5cd",
+      "identities": {
+        "title": [
+          "File:Atari-2600-CPU-mos-c010745.jpg"
+        ],
+        "pageid": [
+          "161141472"
+        ],
+        "original_sha1": [
+          "b872271ebf5b9cf3897666b7cf4a241d30493b6d"
+        ],
+        "byte_sha256": [
+          "4c1009879e80bbb6ebfe72890e9bddf8505e440e18330f83d60ea346bf8a7fa7"
+        ]
+      }
+    },
+    {
+      "candidate_id": "f283b54a20465b33c955",
+      "identities": {
+        "title": [
+          "File:Atari-2600-Driving-Controller.jpg"
+        ],
+        "pageid": [
+          "81841696"
+        ],
+        "original_sha1": [
+          "31930d072f851555161ce227cdd389947ca630bf"
+        ],
+        "byte_sha256": [
+          "66497834334066b57f216be759e57b6a5a91cf3a8b6b578d275e4bfef4f35a4d"
+        ]
+      }
+    },
+    {
+      "candidate_id": "bacb9996502bcd0e9a60",
+      "identities": {
+        "title": [
+          "File:Atari-2600-Four-Switch-Black-Console-01.jpg"
+        ],
+        "pageid": [
+          "81841723"
+        ],
+        "original_sha1": [
+          "400601f7fd104d359b73a185f67f4ee8513b358d"
+        ],
+        "byte_sha256": [
+          "3c576d7bfae97294db727f6dbb6a9b3f23be2e59d4e90ef5318306c9758ad909"
+        ]
+      }
+    },
+    {
+      "candidate_id": "a2f1a5ad1503a78115a6",
+      "identities": {
+        "title": [
+          "File:Atari-2600-Four-Switch-Black-Console-02.jpg"
+        ],
+        "pageid": [
+          "81841727"
+        ],
+        "original_sha1": [
+          "ca8d215738e20e95f8470cab294338751ec1ad7d"
+        ],
+        "byte_sha256": [
+          "3897bbdcf53e82c1303cdabf0b23381dd0ba9c48bf0bdce563536d41b567d634"
+        ]
+      }
+    },
+    {
+      "candidate_id": "a0fa5cce5a9a2ee20d8a",
+      "identities": {
+        "title": [
+          "File:Atari-2600-Four-Switch-Black-Console-03.jpg"
+        ],
+        "pageid": [
+          "81841752"
+        ],
+        "original_sha1": [
+          "e0d4fd93780ad72042a6144c69357ff3904818ff"
+        ],
+        "byte_sha256": [
+          "ca10f5152ebd3ecae61f5b16c8b9daa55ddd9096b436432c3366f96c5963f013"
+        ]
+      }
+    },
+    {
+      "candidate_id": "c4410ab205c18eb08ccd",
+      "identities": {
+        "title": [
+          "File:Atari-2600-Four-Switch-Black-Console-04.jpg"
+        ],
+        "pageid": [
+          "81841768"
+        ],
+        "original_sha1": [
+          "e7bc320c6f1367104adf1974d74fa9254c523445"
+        ],
+        "byte_sha256": [
+          "dbbb975fee3acd2cd28e36f180ba9b5b736b0e2e65f588b0af3d437c0f00a2bc"
+        ]
+      }
+    },
+    {
+      "candidate_id": "703d05821d7983402c12",
+      "identities": {
+        "title": [
+          "File:Atari-2600-Four-Switch-Black-Console-05.jpg"
+        ],
+        "pageid": [
+          "81841780"
+        ],
+        "original_sha1": [
+          "d43397b1ec9265041c8eb12e0028d3de9d2f2c39"
+        ],
+        "byte_sha256": [
+          "5b3b19cf6ed4fd56fa4b8618bbdba1629a0e105454a86b7e35c429146e7570d9"
+        ]
+      }
+    },
+    {
+      "candidate_id": "ff670a89b5db8dd91d33",
+      "identities": {
+        "title": [
+          "File:Atari-2600-Four-Switch-Motherboard-01.jpg"
+        ],
+        "pageid": [
+          "81843885"
+        ],
+        "original_sha1": [
+          "5adf512a8ab5465127f54c2af8241c908735ce59"
+        ],
+        "byte_sha256": [
+          "775c6247cd9fa2826900a4efa0fa231624e23553c302765fd10782cef9e1f80b"
+        ]
+      }
+    },
+    {
+      "candidate_id": "d4581b21d35e56a5c871",
+      "identities": {
+        "title": [
+          "File:Atari-2600-Four-Switch-Motherboard-02.jpg"
+        ],
+        "pageid": [
+          "81843897"
+        ],
+        "original_sha1": [
+          "e86a472df4ed62a7f72bce695ac40c62314c9f68"
+        ],
+        "byte_sha256": [
+          "fa32ee3ed8df67f0eba8b08ac8da1f1eb4da52eb58a78f809a8872c39ce5bbf8"
+        ]
+      }
+    },
+    {
+      "candidate_id": "d03f668d302db17016d5",
+      "identities": {
+        "title": [
+          "File:Atari-2600-Four-Switch-Motherboard-03.jpg"
+        ],
+        "pageid": [
+          "81843899"
+        ],
+        "original_sha1": [
+          "4b01ea9d00747a65a4c106403eabb40597580d33"
+        ],
+        "byte_sha256": [
+          "09e75c8f3330712931cd679b5d1425827c3b040916c2f562d6493c2ddbf9856a"
+        ]
+      }
+    },
+    {
+      "candidate_id": "f1a53ec7ac548c0e85d2",
+      "identities": {
+        "title": [
+          "File:Atari-2600-Four-Switch-Motherboard-04.jpg"
+        ],
+        "pageid": [
+          "81843904"
+        ],
+        "original_sha1": [
+          "054b500baf89986d7d42486aeba556c84b59bb37"
+        ],
+        "byte_sha256": [
+          "e981934b873e5f2361e0e0e0de44f921c7daaaccae457303bdb18b9af3e0c3da"
+        ]
+      }
+    },
+    {
+      "candidate_id": "0d079259cee31ee70e0a",
+      "identities": {
+        "title": [
+          "File:Atari-2600-Four-Switch-Motherboard-Flat.jpg"
+        ],
+        "pageid": [
+          "81844022"
+        ],
+        "original_sha1": [
+          "55028570f38b96ddb1c290dd3a0d07d4c886579f"
+        ],
+        "byte_sha256": [
+          "4850d8af762b00902925bd412997b69d6689ab960cb5cd8d9c04b0e58250c0e7"
+        ]
+      }
+    },
+    {
+      "candidate_id": "24c0853b0168df55381d",
+      "identities": {
+        "title": [
+          "File:Atari-2600-Heavy-Sixer-FL.png"
+        ],
+        "pageid": [
+          "18549122"
+        ],
+        "original_sha1": [
+          "e8ec28420f69d87c8f514a54ecbb7fa1a5c8f0c7"
+        ],
+        "byte_sha256": [
+          "aefe38a8c9250ef1b2bc7c540dfc003554f71b99d57c60896b9fbb9140d74cc0"
+        ]
+      }
+    },
+    {
+      "candidate_id": "1396b3beb26e854f1cea",
+      "identities": {
+        "title": [
+          "File:Atari-2600-Jr-BL.jpg"
+        ],
+        "pageid": [
+          "36945750"
+        ],
+        "original_sha1": [
+          "765e0d038e19c04428bd3276a1860e6350849198"
+        ],
+        "byte_sha256": [
+          "6165002ccd70acc6b4a624b7a450cf28b5aece8237e8c1766c19105ef402cb7c"
+        ]
+      }
+    },
+    {
+      "candidate_id": "819a7f8ab533ef9dced9",
+      "identities": {
+        "title": [
+          "File:Atari-2600-Jr-FL.png"
+        ],
+        "pageid": [
+          "91121240"
+        ],
+        "original_sha1": [
+          "e1d07a8ac8333e61e6358289df115da3951d11b5"
+        ],
+        "byte_sha256": [
+          "e75d0751df34ad1e2448a4bc122628a5cd42bb00985e8211393f283ce99dc32c"
+        ]
+      }
+    },
+    {
+      "candidate_id": "25605aa022c312b1b63a",
+      "identities": {
+        "title": [
+          "File:Atari-2600-Wood-4Sw-Set.jpg"
+        ],
+        "pageid": [
+          "14517499"
+        ],
+        "original_sha1": [
+          "1a2d1fe8e9851525fc02f89d863dd118a8a4b02f"
+        ],
+        "byte_sha256": [
+          "a62d761a35da3468ddaded602e971c3587f49bdfd0cbef3dfb717d39e4c7232b"
+        ]
+      }
+    },
+    {
+      "candidate_id": "ed206e551e127f08db8f",
+      "identities": {
+        "title": [
+          "File:Atari-2600-Wood-4Sw-Set.png"
+        ],
+        "pageid": [
+          "38731073"
+        ],
+        "original_sha1": [
+          "f2baafd18621edd139ecf5d3a9742da064e4be3e"
+        ],
+        "byte_sha256": [
+          "25eacb057cf15378db2af9a28fa7abfd5d6e0d4cf901b2286ff5fc4f42b959e3"
+        ]
+      }
+    },
+    {
+      "candidate_id": "4dc1b340b7dff5bdec4d",
+      "identities": {
+        "title": [
+          "File:DualShock 2.jpg"
+        ],
+        "pageid": [
+          "12421488"
+        ],
+        "original_sha1": [
+          "5823034105ff1d1a248ff87274cf3f21968b1185"
+        ],
+        "byte_sha256": [
+          "8a12b435eb933d1a1ac761ca8ebe9cc93d0865ad5016c99cdece2cca77fc2ed2"
+        ]
+      }
+    },
+    {
+      "candidate_id": "9b64d2df2f9da6ee2599",
+      "identities": {
+        "title": [
+          "File:PlayStation2-DualShock2.png"
+        ],
+        "pageid": [
+          "12421501"
+        ],
+        "original_sha1": [
+          "734e16f9311e8661f7ce44a7661de853f0a63c5c"
+        ],
+        "byte_sha256": [
+          "fdf4f003dfc9fd339c9e66d094de1e7dd6f11a4c6f1585cb51665bafc3fb4d16"
+        ]
+      }
+    }
+  ],
+  "collisions_with_previous": [],
+  "included_overlaps": [],
+  "policy": "Reporting only: exact-category membership is not reduced by prior fixture overlaps.",
+  "limitations": "Exact identities only; title matching is conservative and case-folded. Original SHA-1/page IDs are compared where locally available. No exact match does not establish distinct works, independent origins, or complete prior upstream coverage."
+}

@@ -1,0 +1,25 @@
+{
+  "utc": "2026-10-31T23:00:44.021691+00:00",
+  "source_folder": "Fixtures/Evan-Amos-Uploads-handoff",
+  "source_files": {
+    "ACQUISITION.md": "c25d65130ef6eb4b87d04f2b2854b9357c56c7787a7516e94e29be0479e3262a",
+    "CHECKS.md": "c4940a82603123282db727be360ea567664767279366872b978eb39cdcec8ed0",
+    "EXCLUSIONS.txt": "3daaa251e193113be3dc3c6efde8d196dfe3faa09455441db8ef8295be273ce6",
+    "README.md": "5e0ba9c6455989057a8ae9bb64cbad4af660c43a8b848a0dad72d5e4725dfab6",
+    "SCOPE.md": "d12f3d206da40681181086b7203b06089d242e5f3e81d9593c78d0b4c1731133"
+  },
+  "baseline_commit": "311320286739c88a303e67c5869f210e66e4dac5",
+  "authorization": "User commissioned every direct category File member minus the three exact supplied exclusions; acquisition, validation and local commit authorized.",
+  "reference_tools": [
+    "POTY/tools",
+    "US-Army-SSI/tools",
+    "Botanical-Illustrations/tools"
+  ],
+  "setup_cleanup": {
+    "utc": "2026-10-31T23:09:57.908586+00:00",
+    "removed_redundant_folder": "Fixtures/Evan-Amos-Uploads-handoff",
+    "preserved_in": "provenance/supplied",
+    "file_count": 5,
+    "method": "Verified complete filename set, byte equality and intake hashes before removing redundant handoff files."
+  }
+}

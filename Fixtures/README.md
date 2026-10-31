@@ -24,6 +24,7 @@ Fixtures/
         People-and-human-activity/
       US-Army-SSI/
       Botanical-Illustrations/
+      Evan-Amos-Uploads/
 ```
 
 | Location | Role |
@@ -31,7 +32,7 @@ Fixtures/
 | [Relationships](Relationships/README.md) | The chosen trio: derivation, multiple captures, and variants, with recorded source relationships and comparison probes |
 | [Heaps](Heaps/README.md) | Independently selected image pools, each with its own selection criteria |
 | [Similarity](Heaps/Similarity/README.md) | One heap assembled from collections chosen to look alike under short visual prompts |
-| [Curatorial](Heaps/Curatorial/README.md) | Published source populations sampled mechanically; POTY Round 1 categories, US Army SSI and Botanical Illustrations category membership |
+| [Curatorial](Heaps/Curatorial/README.md) | Published populations with mechanical sampling or exhaustive membership rules; see each contribution |
 
 RG01, SF01, PS01, CR01, TG01 and BSP01 belong to the same Similarity heap. They retain their
 own acquisition and review records. Their collection membership records human
@@ -46,6 +47,10 @@ pending; later selections are provisional. It has no sub-heaps.
 another single leaf, using 709 frozen direct-category File entries and a target
 of 150 distinct works. It has 149 acquired inputs, one pending transfer, and
 14 earlier unresolved selection cases; later selections remain provisional.
+[Evan-Amos-Uploads](Heaps/Curatorial/Evan-Amos-Uploads/README.md) imports all
+136 frozen direct category members minus three exact supplied exclusions,
+all 133 other File identities are acquired and validated, with zero pending.
+Related views and formats remain included without sampling or deduplication.
 
 ## Working with the fixtures
 
@@ -83,6 +88,7 @@ tools; restore local media before running checks that need it.
 | `hazy_bsp01` | `Heaps/Similarity/BSP01` |
 | `US-Army-SSI-handoff` (instruction package) | `Heaps/Curatorial/US-Army-SSI/provenance/supplied` |
 | `Botanical-Illustrations-handoff` (instruction package) | `Heaps/Curatorial/Botanical-Illustrations/provenance/supplied` |
+| `Evan-Amos-Uploads-handoff` (instruction package) | `Heaps/Curatorial/Evan-Amos-Uploads/provenance/supplied` |
 
 Active commands and links use the current locations. Preserved supplied files,
 completed run records and existing ZIP snapshots retain their creation-time

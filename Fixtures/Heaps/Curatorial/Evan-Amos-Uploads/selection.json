@@ -1,0 +1,967 @@
+{
+  "policy": "Every frozen direct File member except exactly matching supplied titles; no sampling, creator cap, deduplication or substitutions.",
+  "category": "Category:Media uploaded by Evan Amos",
+  "user_exclusions": [
+    "File:12in-Vinyl-LP-Record-Angle.jpg",
+    "File:12in-LP-Vinyl-Record-Macro-Grooves.jpg",
+    "File:Apple-iPod-Shuffle-Display.jpg"
+  ],
+  "absent_exclusion_titles": [],
+  "included": [
+    "983fa271c8f693a345e4",
+    "c47a960f77dbe63b43f5",
+    "ddae63d2353ae518db66",
+    "00565e50e46bceb18402",
+    "22709af4bd385c283be9",
+    "0506ac77116a630e2234",
+    "4738b60d183afdd52bb2",
+    "d1eb44c5da1370515c94",
+    "d7ca033863e9562a4a55",
+    "356f811589c94550ef2e",
+    "c82ebd22eadefaaae5e7",
+    "93f4d5a06653ad20ff78",
+    "462abfa4ca302960d988",
+    "7e842edeb7ebe664a1a5",
+    "2358415ed791dcffde8a",
+    "ed13f63b1a051180a643",
+    "b61cccabedf4c05fa7fe",
+    "ef293896fe5f763e765c",
+    "88406086fbb36319960d",
+    "3019a3a51fa99e8b9f1b",
+    "4840945c9f9275bf7f38",
+    "0196a1ccaa7aa9b2ad10",
+    "b194a864591d20ba9641",
+    "2d6291034954d6414f3c",
+    "d86d49043bd5d6e6d49d",
+    "564adf9a75cd3e2fad51",
+    "f3f9ddc669e130feba78",
+    "9c7d87035c11ba1971b1",
+    "58433c0c8b56efd4050a",
+    "cc322ead1e777f1592d5",
+    "2239a8b42dd367829132",
+    "d49b546c62bc3a378ca3",
+    "bec15c02ca66f7548161",
+    "f63da7dd08fc6581bc4c",
+    "f25bbe929c7c2062d8b0",
+    "171fab2008bdbd9a5538",
+    "efa32189ca93e8575ff8",
+    "8c1e6b3965336a7e70b5",
+    "fe5649408249601498e1",
+    "a7ce0e44de6060ee5787",
+    "5e9d16409f16b324844c",
+    "3b68a29445446d8627f7",
+    "dd99d76dd792cd2f475a",
+    "78268c3d4e98b9300b10",
+    "57ce157881396b383149",
+    "14658c0c2bbe995a6d37",
+    "b2cc21258bb780e26118",
+    "b906d7f8d4690e7cbd14",
+    "fdeccc6713508e2380db",
+    "65bd67545e5f713d187f",
+    "46b87e765655bd0adefd",
+    "f71dbbcbe11e2bedbcb2",
+    "baf3ad4b22779857d5d0",
+    "10071388dc43b7768044",
+    "763958f84461e3635d15",
+    "23fad2d7f26d8f49334e",
+    "ff23439d7b9b5dab9271",
+    "0ed4c986e65064f17b37",
+    "ff2606f2eb8825077ce2",
+    "ff08ac72f2c4a6d4c2de",
+    "660610c732e231adf7a4",
+    "dda6f4d5337795508a8b",
+    "47b21a15905f4d6c74b0",
+    "1be4f01592dec0d3f094",
+    "b0c8a836dae19afd7ee5",
+    "73ced739827420fcff78",
+    "a69a7394e6164e9b76e8",
+    "626d8de41a1e29bd989f",
+    "564fe1023ac597a39427",
+    "7d3a8fdcb3cc4d7e0418",
+    "b8e2afebde6607a4af5d",
+    "628927bad3f1fb912575",
+    "ed99db783df5469d0806",
+    "718da10046994da9ce3a",
+    "8fed968e71d938c62c4c",
+    "e66a16ebb68558ad48c6",
+    "60b35d37c51ac4a1e341",
+    "1129497fb54a457d4dfb",
+    "f853d4bb28e4dd6b2a71",
+    "5f79ff41918e15aec445",
+    "817c2c43d5400b04c12f",
+    "5873a33b0142709779b4",
+    "958229792463b0860020",
+    "2440c26a812056b080aa",
+    "6fc873b80d343958fa44",
+    "ec0e7f70a03f3e7c5bdf",
+    "d3eebbf7fbe3c8d15ec2",
+    "b2f66fe01289d8a8fdc7",
+    "5b0780a305cd6adb7453",
+    "3cef46a20d2a5255c4bc",
+    "fef6a063022b692966fd",
+    "a967bc861eac92523477",
+    "cee74ca6abf067a339c1",
+    "c0813df57eda858c030d",
+    "4ae42e96b13a59ac517b",
+    "a1ccfc79e5b18ba5d4aa",
+    "5cd0ebd2d93286c5b40b",
+    "91a886e7f6ecc7144c67",
+    "78ca27dee1097c6a65db",
+    "a670efc71a6374b6d6b8",
+    "0758854bb92d9529f2a0",
+    "dc52826127ef18e84d3c",
+    "0f283c587db1d9d8595c",
+    "e3d71207a035fa89ee43",
+    "00320d05511c5ed844dc",
+    "0dc3987688dae1e613a0",
+    "7a6142a4d7bbcbbb2a54",
+    "5d54a28846cc6e14c10f",
+    "43847b7258f44222c3a3",
+    "b198a7bba07a500ea004",
+    "c95618dff627f5254d4f",
+    "0fd4e8857a7d2f45628d",
+    "3208a258076b822496be",
+    "2baebc4709614f7030e9",
+    "3d82333cbee1a9fcf5cd",
+    "f283b54a20465b33c955",
+    "bacb9996502bcd0e9a60",
+    "a2f1a5ad1503a78115a6",
+    "a0fa5cce5a9a2ee20d8a",
+    "c4410ab205c18eb08ccd",
+    "703d05821d7983402c12",
+    "ff670a89b5db8dd91d33",
+    "d4581b21d35e56a5c871",
+    "d03f668d302db17016d5",
+    "f1a53ec7ac548c0e85d2",
+    "0d079259cee31ee70e0a",
+    "24c0853b0168df55381d",
+    "1396b3beb26e854f1cea",
+    "819a7f8ab533ef9dced9",
+    "25605aa022c312b1b63a",
+    "ed206e551e127f08db8f",
+    "4dc1b340b7dff5bdec4d",
+    "9b64d2df2f9da6ee2599"
+  ],
+  "decisions": [
+    {
+      "candidate_id": "c90395c31f2e0460e701",
+      "rank": 1,
+      "frozen_title": "File:12in-LP-Vinyl-Record-Macro-Grooves.jpg",
+      "decision": "excluded_by_user"
+    },
+    {
+      "candidate_id": "6fc1caf8a7dc4b6faa64",
+      "rank": 2,
+      "frozen_title": "File:12in-Vinyl-LP-Record-Angle.jpg",
+      "decision": "excluded_by_user"
+    },
+    {
+      "candidate_id": "983fa271c8f693a345e4",
+      "rank": 3,
+      "frozen_title": "File:3DO-FZ-1-Console-BL.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "c47a960f77dbe63b43f5",
+      "rank": 4,
+      "frozen_title": "File:3DO-FZ-1-Console-BR.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "ddae63d2353ae518db66",
+      "rank": 5,
+      "frozen_title": "File:3DO-FZ-1-Console-FL.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "00565e50e46bceb18402",
+      "rank": 6,
+      "frozen_title": "File:3DO-FZ-1-Console-FL.png",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "22709af4bd385c283be9",
+      "rank": 7,
+      "frozen_title": "File:3DO-FZ-1-Console-FR.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "0506ac77116a630e2234",
+      "rank": 8,
+      "frozen_title": "File:3DO-FZ-10-Console-BL.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "4738b60d183afdd52bb2",
+      "rank": 9,
+      "frozen_title": "File:3DO-FZ-10-Console-BR.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "d1eb44c5da1370515c94",
+      "rank": 10,
+      "frozen_title": "File:3DO-FZ-10-Console-FL.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "d7ca033863e9562a4a55",
+      "rank": 11,
+      "frozen_title": "File:3DO-FZ-10-Console-FR.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "356f811589c94550ef2e",
+      "rank": 12,
+      "frozen_title": "File:3DO-Goldstar-Console-BL.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "c82ebd22eadefaaae5e7",
+      "rank": 13,
+      "frozen_title": "File:3DO-Goldstar-Console-BR.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "93f4d5a06653ad20ff78",
+      "rank": 14,
+      "frozen_title": "File:3DO-Goldstar-Console-FL.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "462abfa4ca302960d988",
+      "rank": 15,
+      "frozen_title": "File:3DO-Goldstar-Console-FR.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "7e842edeb7ebe664a1a5",
+      "rank": 16,
+      "frozen_title": "File:3DO-TRY-Console-BL.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "2358415ed791dcffde8a",
+      "rank": 17,
+      "frozen_title": "File:3DO-TRY-Console-BR.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "ed13f63b1a051180a643",
+      "rank": 18,
+      "frozen_title": "File:3DO-TRY-Console-FL.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "b61cccabedf4c05fa7fe",
+      "rank": 19,
+      "frozen_title": "File:3DO-TRY-Console-FR.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "ef293896fe5f763e765c",
+      "rank": 20,
+      "frozen_title": "File:6-Pack-Chicken-Eggs.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "88406086fbb36319960d",
+      "rank": 21,
+      "frozen_title": "File:APF-M1000-FL.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "3019a3a51fa99e8b9f1b",
+      "rank": 22,
+      "frozen_title": "File:APF-M1000-Motherboard-BL.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "4840945c9f9275bf7f38",
+      "rank": 23,
+      "frozen_title": "File:APF-M1000-Motherboard-BR.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "0196a1ccaa7aa9b2ad10",
+      "rank": 24,
+      "frozen_title": "File:APF-M1000-Motherboard-FL.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "b194a864591d20ba9641",
+      "rank": 25,
+      "frozen_title": "File:APF-M1000-Motherboard-FR.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "2d6291034954d6414f3c",
+      "rank": 26,
+      "frozen_title": "File:APF-MP1000-Console-01.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "d86d49043bd5d6e6d49d",
+      "rank": 27,
+      "frozen_title": "File:APF-MP1000-Console-02.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "564adf9a75cd3e2fad51",
+      "rank": 28,
+      "frozen_title": "File:APF-MP1000-Console-03.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "f3f9ddc669e130feba78",
+      "rank": 29,
+      "frozen_title": "File:APF-MP1000-Console-04.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "9c7d87035c11ba1971b1",
+      "rank": 30,
+      "frozen_title": "File:APF-MP1000-Console-BL.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "58433c0c8b56efd4050a",
+      "rank": 31,
+      "frozen_title": "File:APF-MP1000-Console-BR-Bare.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "cc322ead1e777f1592d5",
+      "rank": 32,
+      "frozen_title": "File:APF-MP1000-Console-BR.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "2239a8b42dd367829132",
+      "rank": 33,
+      "frozen_title": "File:APF-MP1000-Console-FL-Bare.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "d49b546c62bc3a378ca3",
+      "rank": 34,
+      "frozen_title": "File:APF-MP1000-Console-FL.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "bec15c02ca66f7548161",
+      "rank": 35,
+      "frozen_title": "File:APF-MP1000-Console-FR.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "f63da7dd08fc6581bc4c",
+      "rank": 36,
+      "frozen_title": "File:APF-MP1000-Controller-01.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "f25bbe929c7c2062d8b0",
+      "rank": 37,
+      "frozen_title": "File:APF-MP1000-Controller-02.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "171fab2008bdbd9a5538",
+      "rank": 38,
+      "frozen_title": "File:APF-MP1000-Controller-03.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "efa32189ca93e8575ff8",
+      "rank": 39,
+      "frozen_title": "File:APF-MP1000-Controller-04.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "8c1e6b3965336a7e70b5",
+      "rank": 40,
+      "frozen_title": "File:APF-MP1000-FL.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "fe5649408249601498e1",
+      "rank": 41,
+      "frozen_title": "File:APF-MP1000-Motherboard-Flat.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "a7ce0e44de6060ee5787",
+      "rank": 42,
+      "frozen_title": "File:APF-MP1000-Power-Supply.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "5e9d16409f16b324844c",
+      "rank": 43,
+      "frozen_title": "File:APF-TV-Fun-402C-Console-01.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "3b68a29445446d8627f7",
+      "rank": 44,
+      "frozen_title": "File:APF-TV-Fun-402C-Console-02.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "dd99d76dd792cd2f475a",
+      "rank": 45,
+      "frozen_title": "File:APF-TV-Fun-402C-Console-03.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "78268c3d4e98b9300b10",
+      "rank": 46,
+      "frozen_title": "File:APF-TV-Fun-402C-Console-04.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "57ce157881396b383149",
+      "rank": 47,
+      "frozen_title": "File:APF-TV-Fun-402C-Console-05.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "14658c0c2bbe995a6d37",
+      "rank": 48,
+      "frozen_title": "File:APF-TV-Fun-402C-Console-06.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "b2cc21258bb780e26118",
+      "rank": 49,
+      "frozen_title": "File:APF-TV-Fun-402C-Console-07.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "b906d7f8d4690e7cbd14",
+      "rank": 50,
+      "frozen_title": "File:APF-TV-Fun-402C-Light-Gun.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "fdeccc6713508e2380db",
+      "rank": 51,
+      "frozen_title": "File:APF-TV-Fun-402C-Motherboard-00.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "65bd67545e5f713d187f",
+      "rank": 52,
+      "frozen_title": "File:APF-TV-Fun-402C-Motherboard-01.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "46b87e765655bd0adefd",
+      "rank": 53,
+      "frozen_title": "File:APF-TV-Fun-402C-Motherboard-02.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "f71dbbcbe11e2bedbcb2",
+      "rank": 54,
+      "frozen_title": "File:APF-TV-Fun-402C-Motherboard-03.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "baf3ad4b22779857d5d0",
+      "rank": 55,
+      "frozen_title": "File:APF-TV-Fun-402C-Paddle-Controllers.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "10071388dc43b7768044",
+      "rank": 56,
+      "frozen_title": "File:Action-Max-Casing-Bottom.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "763958f84461e3635d15",
+      "rank": 57,
+      "frozen_title": "File:Action-Max-Casing-Top.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "23fad2d7f26d8f49334e",
+      "rank": 58,
+      "frozen_title": "File:Action-Max-Console-BL.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "ff23439d7b9b5dab9271",
+      "rank": 59,
+      "frozen_title": "File:Action-Max-Console-BR.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "0ed4c986e65064f17b37",
+      "rank": 60,
+      "frozen_title": "File:Action-Max-Console-Bottom-Flat.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "ff2606f2eb8825077ce2",
+      "rank": 61,
+      "frozen_title": "File:Action-Max-Console-Casing-Top-wMotherboard.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "ff08ac72f2c4a6d4c2de",
+      "rank": 62,
+      "frozen_title": "File:Action-Max-Console-FL.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "660610c732e231adf7a4",
+      "rank": 63,
+      "frozen_title": "File:Action-Max-Console-FR.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "dda6f4d5337795508a8b",
+      "rank": 64,
+      "frozen_title": "File:Action-Max-Console-Opened.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "47b21a15905f4d6c74b0",
+      "rank": 65,
+      "frozen_title": "File:Action-Max-Gun-FL.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "1be4f01592dec0d3f094",
+      "rank": 66,
+      "frozen_title": "File:Action-Max-Gun-FR.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "b0c8a836dae19afd7ee5",
+      "rank": 67,
+      "frozen_title": "File:Action-Max-Motherboard-Flat-Bottom.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "73ced739827420fcff78",
+      "rank": 68,
+      "frozen_title": "File:Action-Max-Motherboard-Flat-Top.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "a69a7394e6164e9b76e8",
+      "rank": 69,
+      "frozen_title": "File:Action-Max-Motherboard.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "626d8de41a1e29bd989f",
+      "rank": 70,
+      "frozen_title": "File:Action-Max-Power-Supply.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "564fe1023ac597a39427",
+      "rank": 71,
+      "frozen_title": "File:Action-Max-Red-Light.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "7d3a8fdcb3cc4d7e0418",
+      "rank": 72,
+      "frozen_title": "File:Action-Max-Set-FL.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "b8e2afebde6607a4af5d",
+      "rank": 73,
+      "frozen_title": "File:Action-Max-Set-FR.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "628927bad3f1fb912575",
+      "rank": 74,
+      "frozen_title": "File:Action-Max-Stereo-Headphones.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "ed99db783df5469d0806",
+      "rank": 75,
+      "frozen_title": "File:Amstrad-GX4000-Casing-Bottom.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "718da10046994da9ce3a",
+      "rank": 76,
+      "frozen_title": "File:Amstrad-GX4000-Casing-Top.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "8fed968e71d938c62c4c",
+      "rank": 77,
+      "frozen_title": "File:Amstrad-GX4000-Console-BL.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "e66a16ebb68558ad48c6",
+      "rank": 78,
+      "frozen_title": "File:Amstrad-GX4000-Console-BR.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "60b35d37c51ac4a1e341",
+      "rank": 79,
+      "frozen_title": "File:Amstrad-GX4000-Console-Back-Flat.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "1129497fb54a457d4dfb",
+      "rank": 80,
+      "frozen_title": "File:Amstrad-GX4000-Console-FL.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "f853d4bb28e4dd6b2a71",
+      "rank": 81,
+      "frozen_title": "File:Amstrad-GX4000-Console-FR.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "5f79ff41918e15aec445",
+      "rank": 82,
+      "frozen_title": "File:Amstrad-GX4000-Console-Flat-Bottom.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "817c2c43d5400b04c12f",
+      "rank": 83,
+      "frozen_title": "File:Amstrad-GX4000-Console-Front-Flat.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "5873a33b0142709779b4",
+      "rank": 84,
+      "frozen_title": "File:Amstrad-GX4000-Console-Set.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "958229792463b0860020",
+      "rank": 85,
+      "frozen_title": "File:Amstrad-GX4000-Console-Set.png",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "2440c26a812056b080aa",
+      "rank": 86,
+      "frozen_title": "File:Amstrad-GX4000-Controller-BR.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "6fc873b80d343958fa44",
+      "rank": 87,
+      "frozen_title": "File:Amstrad-GX4000-Controller-Back.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "ec0e7f70a03f3e7c5bdf",
+      "rank": 88,
+      "frozen_title": "File:Amstrad-GX4000-Controller-FL.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "d3eebbf7fbe3c8d15ec2",
+      "rank": 89,
+      "frozen_title": "File:Amstrad-GX4000-Controller-FR.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "b2f66fe01289d8a8fdc7",
+      "rank": 90,
+      "frozen_title": "File:Amstrad-GX4000-Controller-Open-Back.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "5b0780a305cd6adb7453",
+      "rank": 91,
+      "frozen_title": "File:Amstrad-GX4000-Controller-Open-Inside.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "3cef46a20d2a5255c4bc",
+      "rank": 92,
+      "frozen_title": "File:Amstrad-GX4000-Motherboard-BL.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "fef6a063022b692966fd",
+      "rank": 93,
+      "frozen_title": "File:Amstrad-GX4000-Motherboard-BR.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "a967bc861eac92523477",
+      "rank": 94,
+      "frozen_title": "File:Amstrad-GX4000-Motherboard-FL.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "cee74ca6abf067a339c1",
+      "rank": 95,
+      "frozen_title": "File:Amstrad-GX4000-Motherboard-FR.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "c0813df57eda858c030d",
+      "rank": 96,
+      "frozen_title": "File:Amstrad-GX4000-Motherboard-Flat-Bottom.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "4ae42e96b13a59ac517b",
+      "rank": 97,
+      "frozen_title": "File:Amstrad-GX4000-Motherboard-Flat-Top.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "a1ccfc79e5b18ba5d4aa",
+      "rank": 98,
+      "frozen_title": "File:Amstrad-GX4000-Power-Supply.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "5cd0ebd2d93286c5b40b",
+      "rank": 99,
+      "frozen_title": "File:AntiStatic-Wrist-Guard.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "91a886e7f6ecc7144c67",
+      "rank": 100,
+      "frozen_title": "File:Apple-Airport-Extreme-80211g-WiFi-Card.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "78ca27dee1097c6a65db",
+      "rank": 101,
+      "frozen_title": "File:Apple-Bandai-Pippin-Atmark-Motherboard-1.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "a670efc71a6374b6d6b8",
+      "rank": 102,
+      "frozen_title": "File:Apple-Bandai-Pippin-Atmark-Motherboard-2.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "0758854bb92d9529f2a0",
+      "rank": 103,
+      "frozen_title": "File:Apple-Bandai-Pippin-Atmark-Motherboard-3.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "dc52826127ef18e84d3c",
+      "rank": 104,
+      "frozen_title": "File:Apple-Bandai-Pippin-Atmark-Motherboard-4.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "0f283c587db1d9d8595c",
+      "rank": 105,
+      "frozen_title": "File:Apple-Bandai-Pippin-Atmark-Motherboard-5.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "e3d71207a035fa89ee43",
+      "rank": 106,
+      "frozen_title": "File:Apple-MacBook-2007-Motherboard-Bottom.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "00320d05511c5ed844dc",
+      "rank": 107,
+      "frozen_title": "File:Apple-MacBook-2007-Motherboard.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "0dc3987688dae1e613a0",
+      "rank": 108,
+      "frozen_title": "File:Apple-eMac-Bottom.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "7a6142a4d7bbcbbb2a54",
+      "rank": 109,
+      "frozen_title": "File:Apple-eMac-FL (transparent).png",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "5d54a28846cc6e14c10f",
+      "rank": 110,
+      "frozen_title": "File:Apple-eMac-FL.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "43847b7258f44222c3a3",
+      "rank": 111,
+      "frozen_title": "File:Apple-eMac-Side-wPorts.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "b198a7bba07a500ea004",
+      "rank": 112,
+      "frozen_title": "File:Apple-iPhone-6S-Plus-Inside.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "2855c38ef28973b8744a",
+      "rank": 113,
+      "frozen_title": "File:Apple-iPod-Shuffle-Display.jpg",
+      "decision": "excluded_by_user"
+    },
+    {
+      "candidate_id": "c95618dff627f5254d4f",
+      "rank": 114,
+      "frozen_title": "File:Ascii-PlayStation-Grip-Controller.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "0fd4e8857a7d2f45628d",
+      "rank": 115,
+      "frozen_title": "File:Asciiware-AsciiPad-Super-Nintendo-Controller.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "3208a258076b822496be",
+      "rank": 116,
+      "frozen_title": "File:Atari-2600-AC-Adapter.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "2baebc4709614f7030e9",
+      "rank": 117,
+      "frozen_title": "File:Atari-2600-CD4050BCN.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "3d82333cbee1a9fcf5cd",
+      "rank": 118,
+      "frozen_title": "File:Atari-2600-CPU-mos-c010745.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "f283b54a20465b33c955",
+      "rank": 119,
+      "frozen_title": "File:Atari-2600-Driving-Controller.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "bacb9996502bcd0e9a60",
+      "rank": 120,
+      "frozen_title": "File:Atari-2600-Four-Switch-Black-Console-01.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "a2f1a5ad1503a78115a6",
+      "rank": 121,
+      "frozen_title": "File:Atari-2600-Four-Switch-Black-Console-02.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "a0fa5cce5a9a2ee20d8a",
+      "rank": 122,
+      "frozen_title": "File:Atari-2600-Four-Switch-Black-Console-03.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "c4410ab205c18eb08ccd",
+      "rank": 123,
+      "frozen_title": "File:Atari-2600-Four-Switch-Black-Console-04.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "703d05821d7983402c12",
+      "rank": 124,
+      "frozen_title": "File:Atari-2600-Four-Switch-Black-Console-05.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "ff670a89b5db8dd91d33",
+      "rank": 125,
+      "frozen_title": "File:Atari-2600-Four-Switch-Motherboard-01.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "d4581b21d35e56a5c871",
+      "rank": 126,
+      "frozen_title": "File:Atari-2600-Four-Switch-Motherboard-02.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "d03f668d302db17016d5",
+      "rank": 127,
+      "frozen_title": "File:Atari-2600-Four-Switch-Motherboard-03.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "f1a53ec7ac548c0e85d2",
+      "rank": 128,
+      "frozen_title": "File:Atari-2600-Four-Switch-Motherboard-04.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "0d079259cee31ee70e0a",
+      "rank": 129,
+      "frozen_title": "File:Atari-2600-Four-Switch-Motherboard-Flat.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "24c0853b0168df55381d",
+      "rank": 130,
+      "frozen_title": "File:Atari-2600-Heavy-Sixer-FL.png",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "1396b3beb26e854f1cea",
+      "rank": 131,
+      "frozen_title": "File:Atari-2600-Jr-BL.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "819a7f8ab533ef9dced9",
+      "rank": 132,
+      "frozen_title": "File:Atari-2600-Jr-FL.png",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "25605aa022c312b1b63a",
+      "rank": 133,
+      "frozen_title": "File:Atari-2600-Wood-4Sw-Set.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "ed206e551e127f08db8f",
+      "rank": 134,
+      "frozen_title": "File:Atari-2600-Wood-4Sw-Set.png",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "4dc1b340b7dff5bdec4d",
+      "rank": 135,
+      "frozen_title": "File:DualShock 2.jpg",
+      "decision": "included"
+    },
+    {
+      "candidate_id": "9b64d2df2f9da6ee2599",
+      "rank": 136,
+      "frozen_title": "File:PlayStation2-DualShock2.png",
+      "decision": "included"
+    }
+  ],
+  "counts": {
+    "included": 133,
+    "excluded_by_user": 3
+  }
+}

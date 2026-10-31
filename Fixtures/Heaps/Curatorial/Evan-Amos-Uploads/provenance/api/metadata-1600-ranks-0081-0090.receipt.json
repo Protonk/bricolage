@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T23:02:14.478388+00:00",
+  "key": "metadata-1600-ranks-0081-0090",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3AAmstrad-GX4000-Console-FR.jpg%7CFile%3AAmstrad-GX4000-Console-Flat-Bottom.jpg%7CFile%3AAmstrad-GX4000-Console-Front-Flat.jpg%7CFile%3AAmstrad-GX4000-Console-Set.jpg%7CFile%3AAmstrad-GX4000-Console-Set.png%7CFile%3AAmstrad-GX4000-Controller-BR.jpg%7CFile%3AAmstrad-GX4000-Controller-Back.jpg%7CFile%3AAmstrad-GX4000-Controller-FL.jpg%7CFile%3AAmstrad-GX4000-Controller-FR.jpg%7CFile%3AAmstrad-GX4000-Controller-Open-Back.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 59086,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 23:02:14 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-ch2wz",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "6ba6d332-a4c9-4abe-80a1-5d1194027506"
+  },
+  "sha256": "f45c02a51949ec1adeab8c4465c4f2fd0cef2b35db3583080ad74d2413d8cfa8"
+}

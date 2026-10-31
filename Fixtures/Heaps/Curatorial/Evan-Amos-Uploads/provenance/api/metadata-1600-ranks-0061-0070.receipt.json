@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T23:02:06.825315+00:00",
+  "key": "metadata-1600-ranks-0061-0070",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3AAction-Max-Console-Casing-Top-wMotherboard.jpg%7CFile%3AAction-Max-Console-FL.jpg%7CFile%3AAction-Max-Console-FR.jpg%7CFile%3AAction-Max-Console-Opened.jpg%7CFile%3AAction-Max-Gun-FL.jpg%7CFile%3AAction-Max-Gun-FR.jpg%7CFile%3AAction-Max-Motherboard-Flat-Bottom.jpg%7CFile%3AAction-Max-Motherboard-Flat-Top.jpg%7CFile%3AAction-Max-Motherboard.jpg%7CFile%3AAction-Max-Power-Supply.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 60734,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 23:02:06 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-5lhw7",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "bd8665a2-c66a-42ee-b821-16e0905ad8cb"
+  },
+  "sha256": "c173c01f1d36c8d25d1c6b491b2e73c0afab059c8a172c584cc0a01cb1d1b726"
+}

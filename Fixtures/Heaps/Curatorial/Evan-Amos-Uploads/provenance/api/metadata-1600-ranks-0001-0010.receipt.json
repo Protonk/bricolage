@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T23:01:45.189430+00:00",
+  "key": "metadata-1600-ranks-0001-0010",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3A12in-LP-Vinyl-Record-Macro-Grooves.jpg%7CFile%3A12in-Vinyl-LP-Record-Angle.jpg%7CFile%3A3DO-FZ-1-Console-BL.jpg%7CFile%3A3DO-FZ-1-Console-BR.jpg%7CFile%3A3DO-FZ-1-Console-FL.jpg%7CFile%3A3DO-FZ-1-Console-FL.png%7CFile%3A3DO-FZ-1-Console-FR.jpg%7CFile%3A3DO-FZ-10-Console-BL.jpg%7CFile%3A3DO-FZ-10-Console-BR.jpg%7CFile%3A3DO-FZ-10-Console-FL.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 54732,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 23:01:45 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-g6srq",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "5d87f7a4-3ff6-466c-b425-4f7211439a10"
+  },
+  "sha256": "50c27bb99270beb9166f8d8a9822b458f9894779dfd34a13e2ff5381ca6d440c"
+}

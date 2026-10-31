@@ -80,6 +80,9 @@ See its README for the frozen PetScan population, pending selection and offline 
 [Botanical Illustrations](Fixtures/Heaps/Curatorial/Botanical-Illustrations/README.md)
 is one direct-category contribution with 150 selected works and 149 acquired
 inputs. One transfer and 14 earlier selection cases remain pending.
+[Evan-Amos category uploads](Fixtures/Heaps/Curatorial/Evan-Amos-Uploads/README.md)
+imports every direct File member of its source category except three supplied
+exclusions: all 133 included files are acquired, retaining related views and formats.
 
 Fixture sets use `images/` for comparison inputs and `sources/` for preserved
 source bytes. Optional `previews/` contains contact sheets, outside the input set.

@@ -1,0 +1,49 @@
+{
+  "validation": "passed",
+  "kind": "curatorial_heap",
+  "expected_pairs": 0,
+  "status": "complete",
+  "category": "Category:Media uploaded by Evan Amos",
+  "members": 136,
+  "included": 133,
+  "excluded_by_user": 3,
+  "absent_exclusion_titles": [],
+  "metadata_entries": 136,
+  "resolved_page_ids": 136,
+  "identity_discrepancies": [],
+  "acquired": 133,
+  "pending": 0,
+  "pending_by_cause": {},
+  "pending_items": [],
+  "active_stop_latch": false,
+  "failed_transfers": 0,
+  "post_transfer_validation_stops": 0,
+  "automatic_retries": 0,
+  "acquired_formats": {
+    "JPEG": 126,
+    "PNG": 7
+  },
+  "requested_edges": {
+    "1600": 133
+  },
+  "alpha_inputs": 7,
+  "roles": {
+    "original_creator": {
+      "Evan-Amos": 133
+    },
+    "digital_modifier": {
+      "unknown": 131,
+      "Gunnar.offel": 2
+    },
+    "copyright_holder": {
+      "unknown": 133
+    },
+    "uploader_current_file_revision": {
+      "Evan-Amos": 127,
+      "Gunnar.offel": 2,
+      "David Fuchs": 1,
+      "Renamed user e16667ca7f2b1131113425a583e5647f": 2,
+      "Predazord Gaohunter Silver": 1
+    }
+  }
+}
