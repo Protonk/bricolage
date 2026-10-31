@@ -1,0 +1,22 @@
+{
+  "repository": "Protonk/hazy",
+  "baseline_commit": "6f789b0c36246aaa697dbee800e9c1e6c82d56f0",
+  "baseline_path": "Fixtures/Heaps/Similarity/PS01/tools",
+  "destination": "Fixtures/Heaps/Similarity/BSP01",
+  "reference_current_leaf": "Fixtures/Heaps/Similarity/TG01",
+  "verified_at": "2026-10-31",
+  "access_method": "Authorized GitHub connector; current active text/tools confirmed; Git-ignored image bytes unavailable",
+  "active_tool_git_blob_sha1": {
+    "common.py": "256352467528a5ad5b8b00724e73e877965f0ffa",
+    "acquire.py": "c8341298be8478df3ef15d854cda6b2545a78dfb",
+    "review.py": "a8b851834a6b308ca0873b42eafc0db11ab1ea89",
+    "status.py": "913dce8050781ede47526e3ecaea1fd3b21a8958",
+    "test_acquire.py": "4eeb680eaea64082b24b11c5e8c299904bdf6522",
+    "chunks.py": "64039f199ca6fe46dcd6a3d7f05624e4b77502e3",
+    "receipt.py": "bd0af909aa802baec4c9654ec33ca818e16b02aa",
+    "check_prior.py": "c231a5d9bfc5f415be2a87b02dff14ac7e8f5fd1",
+    "audit.py": "fbce087963731c93c174878284650d3db42985c0",
+    "integrate.py": "8fd9ecda9bc041436a8dc9331089be259cdaab22"
+  },
+  "handoff_note": "Seven generic helpers may be verified/copied from active PS01. Local audit/integrate scripts must be adapted for BSP01 and all prior inventories; do not copy archived provenance/supplied tools unchanged."
+}

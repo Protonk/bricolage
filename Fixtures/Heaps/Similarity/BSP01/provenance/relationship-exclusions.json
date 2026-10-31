@@ -1,0 +1,219 @@
+[
+  {
+    "candidate_ids": [
+      "bsp-0046",
+      "bsp-0066"
+    ],
+    "retained": "bsp-0046",
+    "excluded": "bsp-0066",
+    "confidence": "documented allied series/outing; exact physical panel identity unconfirmed",
+    "reason": "Both tank photographs credit Acabashi, identify Hatfield Broad Oak, and were taken on 2018-08-23 at 16:41:27 and 17:03:56. Both descriptions explicitly identify an allied consecutive photographic series. Retain only bsp-0046 conservatively; no claim that the panels are pixel-identical.",
+    "initial_visual_decision": "accept",
+    "initial_visual_reason": "A broad blue coating region has deeply irregular edges and openings against an orange-brown field, dominating the close surface.",
+    "final_decision": "reject",
+    "evidence": [
+      {
+        "path": "previews/tiles/bsp-0046.jpg",
+        "sha256": "2dcb513c31a4a46ec506a472954633b27c58f43236f0c1fbcec15d3b9a2035ff"
+      },
+      {
+        "path": "provenance/api/bsp-0046-preview-480.json",
+        "sha256": "2d5e53e96bda2392941df3791e2ec32ca1796070dc2f467f44f9cd99eab5293c"
+      },
+      {
+        "path": "previews/tiles/bsp-0066.jpg",
+        "sha256": "45aadb0274244eb481086d59ac8a9528bb761a868864a01d27b4daeea2d428c7"
+      },
+      {
+        "path": "provenance/api/bsp-0066-preview-480.json",
+        "sha256": "4ade16a3c320b8c57a97baca36f3569e458fc340527b3bb64eedc62c63d32634"
+      }
+    ]
+  },
+  {
+    "candidate_ids": [
+      "bsp-0073",
+      "bsp-0075"
+    ],
+    "retained": "bsp-0073",
+    "excluded": "bsp-0075",
+    "confidence": "probable related wall/capture sequence",
+    "reason": "Numbered Peeling paint 1/2 photographs credit Daniel Schwen, share the date 2008-05-28 and NYC subway context, and show matching olive/blue-gray painted wall construction. Retain bsp-0073; exact crop or pixel relationship is not asserted.",
+    "initial_visual_decision": "accept",
+    "initial_visual_reason": "An olive coating recedes into a large uneven blue-gray exposed area, with ragged edges and smaller islands across the close surface.",
+    "final_decision": "reject",
+    "evidence": [
+      {
+        "path": "previews/tiles/bsp-0073.jpg",
+        "sha256": "da17d268abc0632c96d4bbf8bce1e110225e004298fba87fcaedc2473b106846"
+      },
+      {
+        "path": "provenance/api/bsp-0073-preview-480.json",
+        "sha256": "a025956140a347081312793897b583c64359e43c141bdf4c08216f7973eca735"
+      },
+      {
+        "path": "previews/tiles/bsp-0075.jpg",
+        "sha256": "b0f33a3525559a036b3349cd9900440d2c8765b489156c862054baca5d1d435d"
+      },
+      {
+        "path": "provenance/api/bsp-0075-preview-480.json",
+        "sha256": "34102002454afea8cf5f7af995b477fdd3dcf9b62927720fdf11f9edd28a57c0"
+      }
+    ]
+  },
+  {
+    "candidate_ids": [
+      "bsp-0076",
+      "bsp-0078"
+    ],
+    "retained": "bsp-0076",
+    "excluded": "bsp-0078",
+    "confidence": "strong related-capture evidence",
+    "reason": "Both credit Si Griffiths, show red/gray peeling wood, and were captured on 2009-09-06 at 11:04:40 and 11:04:52. Retain bsp-0076 as one representative of this closely related capture sequence.",
+    "initial_visual_decision": "accept",
+    "initial_visual_reason": "A broad gray coating tears into ragged islands against orange-red wood, with prominent uneven boundaries across the frame.",
+    "final_decision": "reject",
+    "evidence": [
+      {
+        "path": "previews/tiles/bsp-0076.jpg",
+        "sha256": "30c613ff79f107c09204fdf69611bac848b7bca99d08745c7f91bf9d97bdc1ce"
+      },
+      {
+        "path": "provenance/api/bsp-0076-preview-480.json",
+        "sha256": "5a42d67e90dfc9ec5c7af029503df9d17d93798d2078c794a411dbcca7cdcf1f"
+      },
+      {
+        "path": "previews/tiles/bsp-0078.jpg",
+        "sha256": "c375af8da29a44014dae25c3b9ee2f4c28af5437edeb118c17b96184900a46f0"
+      },
+      {
+        "path": "provenance/api/bsp-0078-preview-480.json",
+        "sha256": "07fefe8dcbcfc214b38649a104509507bef38d06c7ec455224d50d16497b2c24"
+      }
+    ]
+  },
+  {
+    "candidate_ids": [
+      "bsp-0085",
+      "bsp-0086"
+    ],
+    "retained": "bsp-0085",
+    "excluded": "bsp-0086",
+    "confidence": "visually established alternate treatment/crop of the same surface image",
+    "reason": "The pale torn-poster outline, rust holes and broad curved exposed region match directly between the previews; bsp-0086 changes coloration and framing. Both credit Marek Slusarczyk/Tupungato with date 2010-10-12. Retain bsp-0085 only.",
+    "initial_visual_decision": "accept",
+    "initial_visual_reason": "Broad pale and dark reddish regions fragment and merge across the close surface with conspicuous ragged boundaries.",
+    "final_decision": "reject",
+    "evidence": [
+      {
+        "path": "previews/tiles/bsp-0085.jpg",
+        "sha256": "b139c7a9e5d02b75c40da58e50e38fdcfc9c010e31db88a68e0df69319ab1f3b"
+      },
+      {
+        "path": "provenance/api/bsp-0085-preview-480.json",
+        "sha256": "23f5c29836924b428cd3c10594f4d77db5f2ee15414ec153b8dbf6409dbee79d"
+      },
+      {
+        "path": "previews/tiles/bsp-0086.jpg",
+        "sha256": "af926a2e78e79f7ca8e3c0951153e7886acbf93771217823dc086d2b9370db66"
+      },
+      {
+        "path": "provenance/api/bsp-0086-preview-480.json",
+        "sha256": "35dc71e24363548af766d9bc9595d985671cbdd33a1cfafaaad521f3b6aff27e"
+      }
+    ]
+  },
+  {
+    "candidate_ids": [
+      "bsp-0085",
+      "bsp-0108"
+    ],
+    "retained": "bsp-0085",
+    "excluded": "bsp-0108",
+    "confidence": "probable related gate/texture series; exact shared panel unconfirmed",
+    "reason": "Both credit Marek Slusarczyk/Tupungato on 2010-10-12 and describe a rusty metal gate urban-decay texture. Alongside the established alternate treatment bsp-0086, the evidence does not establish a separate physical source for bsp-0108. Retain only bsp-0085 conservatively from this likely related source group.",
+    "initial_visual_decision": "accept",
+    "initial_visual_reason": "Large red, pale and dark regions peel and fragment across the surface around a narrow blue band.",
+    "final_decision": "reject",
+    "evidence": [
+      {
+        "path": "previews/tiles/bsp-0085.jpg",
+        "sha256": "b139c7a9e5d02b75c40da58e50e38fdcfc9c010e31db88a68e0df69319ab1f3b"
+      },
+      {
+        "path": "provenance/api/bsp-0085-preview-480.json",
+        "sha256": "23f5c29836924b428cd3c10594f4d77db5f2ee15414ec153b8dbf6409dbee79d"
+      },
+      {
+        "path": "previews/tiles/bsp-0108.jpg",
+        "sha256": "6f332c0ea45039e49f92e3e6c0c96519354c86648304bfd760a5f82a3437b1d8"
+      },
+      {
+        "path": "provenance/api/bsp-0108-preview-480.json",
+        "sha256": "5a6a15acec72fbfc479555fb10caf2d23d4f8bd634c4593788027affa7ca9de9"
+      }
+    ]
+  },
+  {
+    "candidate_ids": [
+      "bsp-0068",
+      "bsp-0109"
+    ],
+    "retained": "bsp-0068",
+    "excluded": "bsp-0109",
+    "confidence": "closely related Toronto photographic outing; same exact surface unconfirmed",
+    "reason": "Both credit Sergiu Dumitriu, describe decaying painted surfaces in Toronto, and were taken on 2012-05-20 at 10:43 and 11:04 within the adjacent Flickr series. Retain bsp-0068 conservatively rather than treating related outing photographs as independent sources.",
+    "initial_visual_decision": "accept",
+    "initial_visual_reason": "Broad dark corrosion splits and bleeds into pale coating regions with ragged boundaries and broken islands.",
+    "final_decision": "reject",
+    "evidence": [
+      {
+        "path": "previews/tiles/bsp-0068.jpg",
+        "sha256": "b862c94dc6f26cc85dab76135f9e7f4d73c3a2b0f6255ca2648a19a67d86952c"
+      },
+      {
+        "path": "provenance/api/bsp-0068-preview-480.json",
+        "sha256": "66004a745cc7fac02bc4144a6c1f7114657d104bdbc1617f0c93c54bfcecccd2"
+      },
+      {
+        "path": "previews/tiles/bsp-0109.jpg",
+        "sha256": "d693b01bb2e85a893446aa6dee98df6277813e622413938373b822b5dff78e1d"
+      },
+      {
+        "path": "provenance/api/bsp-0109-preview-480.json",
+        "sha256": "2304cef7ab36636f8840cfcd48cf5d5e85824701c46225b9cde906b9205d94a3"
+      }
+    ]
+  },
+  {
+    "candidate_ids": [
+      "bsp-0112",
+      "bsp-0113"
+    ],
+    "retained": "bsp-0112",
+    "excluded": "bsp-0113",
+    "confidence": "probable numbered capture sequence; exact shared object unconfirmed",
+    "reason": "Korrosion Bild 1 and Bild 4 share creator Neukollner, date 2017-11-03 and the same generic Rusty description. Their numbered series does not establish separate physical sources. Retain bsp-0112 conservatively; do not assert a pixel or exact-subject match.",
+    "initial_visual_decision": "accept",
+    "initial_visual_reason": "A broad brown stain bleeds into turquoise with irregular fringes and scattered satellite regions across the close panel.",
+    "final_decision": "reject",
+    "evidence": [
+      {
+        "path": "previews/tiles/bsp-0112.jpg",
+        "sha256": "ac2395caa35e8faf81d37fa3a1fa57fd29a277c53234484a2205a558cd43dfe3"
+      },
+      {
+        "path": "provenance/api/bsp-0112-preview-480.json",
+        "sha256": "7fdf1900699c733186a29a47b9fd519702bd3cf9697f1af09a92ade721ee4ff8"
+      },
+      {
+        "path": "previews/tiles/bsp-0113.jpg",
+        "sha256": "2c28942e259a7fb290e75fa3e5a2efb3926a43664609069b91cae8413a93b5df"
+      },
+      {
+        "path": "provenance/api/bsp-0113-preview-480.json",
+        "sha256": "7cf4aabb80fb06e1f28d36796cdf781b0b785fe517f9834721cdfe2eb29fcd68"
+      }
+    ]
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "prior_sources": {
+    "rg01": 107,
+    "sf01": 142,
+    "ps01": 145,
+    "cr01": 168,
+    "tg01": 152
+  },
+  "comparison": "casefolded exact File titles in five prior sourcing packages; not an integrated-inventory or related-capture check",
+  "hits": [],
+  "hit_count": 0,
+  "within_curation_duplicates": [
+    {
+      "filename": "Algal Bloom.jpg",
+      "bucket": "algal_blooms"
+    }
+  ]
+}

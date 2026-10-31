@@ -1,0 +1,11 @@
+{
+  "kind": "one_transport_probe",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&meta=siteinfo",
+  "status": "network_error_before_http_response",
+  "http_status": null,
+  "exception_type": "ConnectionError",
+  "exception_summary": "HTTPSConnectionPool(host='commons.wikimedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&format=json&meta=siteinfo (Caused by NameResolutionError(\"HTTPSConnection(host='commons.wikimedia.org', port=443): Failed to resolve 'commons.wikimedia.org' ([Errno -3] Temporary failure in name resolution)\"))",
+  "image_downloaded": false,
+  "media_inspected": false,
+  "retries": 0
+}

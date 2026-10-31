@@ -1,0 +1,50 @@
+{
+  "status": "complete",
+  "candidate_count": 185,
+  "preview_count": 185,
+  "visually_selected": 68,
+  "acquired_count": 68,
+  "pending_candidate_ids": [],
+  "pending_statuses": {},
+  "request_attempts": 511,
+  "complete_responses": 511,
+  "decode_stops": 1,
+  "automatic_retries": 0,
+  "media_bytes": 58682581,
+  "rendition_kinds": {
+    "api_returned_rendition": 52,
+    "api_reported_unscaled_original": 16
+  },
+  "initial_visual_fits": 77,
+  "eligible_selected": 68,
+  "excluded_after_visual_fit": 9,
+  "preview_size_diagnosis": "provenance/preview-size-diagnosis.json",
+  "preview_requested_edges": {
+    "320": 1,
+    "480": 183,
+    "640": 1
+  },
+  "resolution_adjustments": [
+    {
+      "candidate_id": "bsp-0060",
+      "initial_metadata_path": "provenance/api/bsp-0060-source.json",
+      "acquired_metadata_path": "provenance/api/bsp-0060-source-1280.json",
+      "requested_max_edge": 1280,
+      "reason": "Explicit smaller API rendition request after the nominal 1600 request offered an unscaled original outside the bound."
+    },
+    {
+      "candidate_id": "bsp-0079",
+      "initial_metadata_path": "provenance/api/bsp-0079-source.json",
+      "acquired_metadata_path": "provenance/api/bsp-0079-source-1280.json",
+      "requested_max_edge": 1280,
+      "reason": "Explicit smaller API rendition request after the nominal 1600 request offered an unscaled original outside the bound."
+    },
+    {
+      "candidate_id": "bsp-0097",
+      "initial_metadata_path": "provenance/api/bsp-0097-source.json",
+      "acquired_metadata_path": "provenance/api/bsp-0097-source-1280.json",
+      "requested_max_edge": 1280,
+      "reason": "Explicit smaller API rendition request after the nominal 1600 request offered an unscaled original outside the bound."
+    }
+  ]
+}

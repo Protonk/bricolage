@@ -1,0 +1,85 @@
+{
+  "status": "passed",
+  "checked_at": "2026-10-31T19:39:00.067238+00:00",
+  "checks": [
+    {
+      "command": [
+        "python3",
+        "Fixtures/Heaps/Similarity/BSP01/tools/check_pack.py"
+      ],
+      "exit_code": 0,
+      "output": "Preserved supplied BSP01 pack OK: 185 unseen Commons leads; 30-image floor; 18 verified text/evidence files.\n"
+    },
+    {
+      "command": [
+        "python3",
+        "Fixtures/Heaps/Similarity/BSP01/tools/prepare.py",
+        "--check-only"
+      ],
+      "exit_code": 0,
+      "output": "7 pinned PS01 source scripts verified (local adaptations checked separately); 0 not yet copied.\n"
+    },
+    {
+      "command": [
+        "python3",
+        "Fixtures/Heaps/Similarity/BSP01/tools/integrate.py",
+        "check"
+      ],
+      "exit_code": 0,
+      "output": "{\n  \"fixture\": {\n    \"status\": \"passed\",\n    \"kind\": \"prompt_heap\",\n    \"images\": 68,\n    \"sources\": 68,\n    \"assets\": 136,\n    \"pairs\": 0\n  },\n  \"evidence\": {\n    \"previews\": 185,\n    \"initial_visual_fits\": 77,\n    \"visually_selected\": 68,\n    \"acquired\": 68,\n    \"pending\": 0,\n    \"acquisition_status\": \"complete\",\n    \"status\": \"passed\"\n  }\n}\n"
+    },
+    {
+      "command": [
+        "python3",
+        "Fixtures/Heaps/Similarity/BSP01/tools/minimum_gate.py",
+        "--strict-publish"
+      ],
+      "exit_code": 0,
+      "output": "{\n  \"status\": \"count_gate_met_full_review_still_required\",\n  \"minimum\": 30,\n  \"candidates\": 185,\n  \"pending_visual\": 0,\n  \"accepted\": 68,\n  \"verified_acquired\": 68,\n  \"deferrals\": 0\n}\n"
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "Fixtures/Heaps/Similarity/BSP01/tools",
+        "-p",
+        "test_*.py"
+      ],
+      "exit_code": 0,
+      "output": "....../opt/homebrew/Cellar/python@3.14/3.14.9/Frameworks/Python.framework/Versions/3.14/lib/python3.14/tempfile.py:538: ResourceWarning: Implicitly cleaning up <HTTPError 429: 'limited'>\n  _warnings.warn(self.warn_message, ResourceWarning)\n............\n----------------------------------------------------------------------\nRan 18 tests in 0.037s\n\nOK\n"
+    }
+  ],
+  "prior_similarity_checks_this_intake": [
+    {
+      "contribution": "RG01",
+      "status": "passed",
+      "acquired": 31
+    },
+    {
+      "contribution": "SF01",
+      "status": "passed",
+      "acquired": 48
+    },
+    {
+      "contribution": "PS01",
+      "status": "passed",
+      "acquired": 58
+    },
+    {
+      "contribution": "CR01",
+      "status": "passed",
+      "acquired": 57
+    },
+    {
+      "contribution": "TG01",
+      "status": "passed",
+      "acquired": 31
+    }
+  ],
+  "prior_partial_status": "SF01 retains its existing 11 pending downloads and recorded timeout; its validator passed without altering it.",
+  "comparisons_run": false,
+  "router_run": false
+}

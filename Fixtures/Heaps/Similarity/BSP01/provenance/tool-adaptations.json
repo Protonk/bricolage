@@ -1,0 +1,9 @@
+{
+  "basis": "Pinned active PS01 helpers verified first. Deliberate local adaptations reuse TG01: separate caches/partials for explicit preview sizes 320/480/640; unchanged bounds and stop/acknowledgment rules; receipt distinguishes decode validation stops from HTTP attempts and enforces below-floor closure. BSP01 chunks explicitly request nominal 480px previews after the 320px pilot, applying TG01 thumbnail-bucket lessons. Audit adds TG01, covering eleven prior contributions. Integration retains BSP01 prompt and original count fields with a 30-input floor. Source eligibility also requires final screening acceptance, retaining the initial visual-fit axis on provenance/rights exclusions. Integration preserves explicit attribution and source credits. Status, receipt and prompt counts distinguish initial visual fits from final eligible selections and excluded fits.",
+  "sha256": {
+    "acquire.py": "35b9d0b4b599e353bb9b0e2ea439db8d5bc5abedada312c75ef8087b78df2c91",
+    "chunks.py": "8a0304f232a7e0de473deb548a7b4e70204a65f619249599f2e9f5a1afc98af5",
+    "receipt.py": "d213984ef6cbee791deb1151eee40b61adc475ef7b5ed8183631af51b4634469",
+    "status.py": "67bdd1b44bf324900874b493039726bd7244c2496080cbed4c29cdf2e0b0aa63"
+  }
+}

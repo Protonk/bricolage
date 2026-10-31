@@ -1,0 +1,22 @@
+{
+  "cases": [
+    {
+      "candidate_id": "bsp-0083",
+      "failed_request_nominal_edge": 480,
+      "api_display_dimensions": [
+        332,
+        480
+      ],
+      "decoded_dimensions": [
+        500,
+        722
+      ],
+      "status": 200,
+      "body_complete": true,
+      "retained_body": "previews/partials/bsp-0083-preview-480.part",
+      "retained_sha256": "af9e7370f9d74878ed1d969df1be686b7461c8b3be44239931919cb589ea4f60",
+      "diagnosis": "API-returned 500px-wide thumbnail bucket decodes fully at the original 1860x2686 aspect ratio, two pixels above the 1.5x nominal-edge guard. No transport corruption observed.",
+      "resolution": "Retain failed body and metadata; explicitly acknowledge the stop and request a 640px preview with distinct cache/partial paths. Same full-decode and size guards remain."
+    }
+  ]
+}

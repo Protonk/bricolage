@@ -1,0 +1,186 @@
+candidate_id,decision,visual_reason
+bsp-0001,accept,"Pale, dark and orange lichen regions merge and break into ragged islands across most of the rock surface; the patchwork dominates the close view."
+bsp-0002,accept,A broad ragged orange region and pale surrounding patches spread across the close stone surface; irregular boundaries dominate.
+bsp-0003,accept,Pale gray and yellowish regions merge and fade irregularly across the otherwise dark rock surface in the close view.
+bsp-0004,reject,Numerous small separate dark dots dominate the pale surface; the impression is discrete speckling rather than merging patch regions.
+bsp-0005,reject,A raised dark lichen tuft is isolated as a botanical object against rock rather than a spreading surface pattern.
+bsp-0006,accept,"Broad green, pink and gray regions interlock and break into irregular islands across most of the visible slab."
+bsp-0007,accept,Pale blue-gray areas coalesce around ragged reddish and dark islands across the entire surface.
+bsp-0008,accept,A connected yellow-green coating breaks into irregular gray islands and torn edges across the close rock face.
+bsp-0009,accept,"Yellow-green colonies join into irregular patches and fragment around exposed gray rock, making patch boundaries conspicuous across the foreground."
+bsp-0010,reject,A mostly uniform fine-speckled rock face and surrounding rubble dominate; distinct spreading regions are not the organizing feature.
+bsp-0011,reject,An isolated boulder and distant mountain landscape dominate over the incidental surface patches.
+bsp-0012,reject,Small isolated pale and orange spots remain discrete across the rock rather than merging into larger regions.
+bsp-0013,reject,A sloping rocky shoreline and water organize the wider view; yellow patches remain incidental along the rock strata.
+bsp-0014,accept,"Yellow-green regions coalesce and fade into gray-black areas across the close rock face, with irregular boundaries filling the view."
+bsp-0015,accept,A broad orange area fragments around pale and dark exposed regions across most of the foreground surface.
+bsp-0016,reject,One marked stone is isolated among pebbles with sea and horizon behind; the wider object scene outweighs its small patch.
+bsp-0017,reject,"Distinct upright rock forms, sky and foreground slab dominate the composition more than the surface coating."
+bsp-0018,accept,Pale gray regions spread and fragment across the dark close rock surfaces; the mottled boundaries dominate despite intervening cracks.
+bsp-0019,reject,"A clearly outlined outcrop and surrounding flowers form a conventional scene, with patching secondary to the rock layers."
+bsp-0020,accept,Broad orange coatings merge and break around gray and pale islands across nearly the entire rock field.
+bsp-0021,reject,The overhanging rock silhouette and coastal setting dominate its comparatively uniform surface covering.
+bsp-0022,reject,"One rounded boulder is presented as an isolated object, with a mostly uniform fine mottled covering."
+bsp-0023,reject,"A stone wall, surrounding field and horizon dominate the landscape; the yellow covering is incidental."
+bsp-0024,reject,"Separate rounded pale colonies remain distinct spots against broad red gaps, rather than forming merging patch regions."
+bsp-0025,accept,"Broad yellow, orange, pale green and gray regions merge, fragment and interlock across the entire close surface."
+bsp-0026,reject,"The surface is mostly uniform fine granular speckling, with no conspicuous merging or spreading regions."
+bsp-0027,accept,Yellow-green coatings merge and break into ragged gray islands across most of the layered rock face.
+bsp-0028,reject,Two separate pale-coated stones stand as distinct objects against dark ground; their outlines dominate.
+bsp-0029,accept,"A pale irregular coating coalesces across a dark rough surface and breaks into uneven islands, with green fringes along its boundaries."
+bsp-0030,reject,"A trunk covered in raised, branching lichen tufts is an isolated botanical subject rather than a field of patch boundaries."
+bsp-0031,reject,A lichen-draped branch and wider moorland scene dominate; the growth reads as trailing strands.
+bsp-0032,reject,"Raised yellow cups and lobes are photographed as individual botanical structures, not spreading surface regions."
+bsp-0033,reject,Close raised lichen lobes and a shallow focus plane emphasize botanical structures rather than continuous patch boundaries.
+bsp-0034,reject,"The image is a designed cover with large typography and logos over a photograph, rather than an uncomposited patch photograph."
+bsp-0035,reject,Separated orange bead-like spots dominate a fairly uniform granular stone surface.
+bsp-0036,reject,One trunk and a localized pale growth patch are framed as a tree portrait; the wider surface pattern is secondary.
+bsp-0037,reject,Three isolated lichen specimens sit on a plain background; there is no spreading surface field.
+bsp-0038,accept,"Large white, orange and dark-gray regions merge and interrupt one another across the close surface with ragged boundaries."
+bsp-0039,reject,Small separate lichen tufts sit on a wall edge against a blurred building; the view emphasizes isolated specimens.
+bsp-0040,reject,A nearly uniform green frilly texture fills the frame without conspicuous boundaries between spreading regions.
+bsp-0041,reject,A single rock surrounded by shrubs is the main object; its localized orange marks are secondary.
+bsp-0042,accept,Broad pale colonies coalesce and fragment around dark exposed stone and greener areas across the close rock field.
+bsp-0043,accept,A large irregular green-gray region with a ragged dark and pale fringe merges toward adjacent patches across the surface.
+bsp-0044,reject,"Pipes, cables and a two-tone wall dominate; rust and peeling are confined to a narrow strip and lower edge."
+bsp-0045,accept,Torn coating boundaries and irregular exposed brick regions dominate the close wall view; the small number plate remains incidental.
+bsp-0046,accept,"Large pink, white, brown and greenish regions peel, bleed and break into islands throughout the frame."
+bsp-0047,reject,"A complete fence, building and street organize the scene; the mostly linear paint wear is incidental."
+bsp-0048,reject,"Uniform blue paint breaks into many fine horizontal chips and cracks, emphasizing repeated narrow lines rather than broad irregular regions."
+bsp-0049,reject,Straight parallel painted wood stripes dominate; the wear follows narrow lines without conspicuous irregular regions.
+bsp-0050,accept,"Large dark, pale green and pinkish areas bleed and fragment across the wall; thin pipes do not outweigh the spreading stains."
+bsp-0051,accept,Ragged pale coating boundaries reveal broad red-brick regions and fragmented green bands across the surface; pipes remain secondary.
+bsp-0052,reject,"A child, doorway and barred window organize the street facade; damaged surface patches are incidental."
+bsp-0053,accept,"Dark coating islands and pale exposed areas interlock across the close oblique surface, with torn curling boundaries throughout."
+bsp-0054,reject,"Nearly uniform vertical wood grain and seams dominate, with only a few small isolated paint remnants."
+bsp-0055,reject,A regular red stripe and thin branching cracks dominate; spreading patch regions are limited and incidental.
+bsp-0056,reject,"A recognizable room corner and fireplace dominate, with localized peeling confined mainly to one wall."
+bsp-0057,reject,A mostly uniform pale wall and straight borders outweigh the small scattered flakes.
+bsp-0058,reject,A broad uniform brick wall has only a few isolated damaged spots; the surrounding architecture remains dominant.
+bsp-0059,accept,"A large rust-colored region opens through ragged pale coating, with torn islands and fading neighboring areas filling the close view."
+bsp-0060,accept,Blue coating fragments into irregular flakes and islands around exposed brown areas throughout the close surface.
+bsp-0061,accept,Pale coating breaks into ragged brown openings and a larger exposed region across the whole close surface.
+bsp-0062,reject,"A long walkway, canopy and canal dominate; weathered paint is confined to one narrow column."
+bsp-0063,reject,A doorway and printed wallpaper patterns dominate an interior scene; peeling is only a localized edge effect.
+bsp-0064,accept,The pale coating fragments into ragged red-brick islands across most of the wall; a small plant provides secondary context.
+bsp-0065,reject,Uniform vertical wood boards dominate many tiny separate paper remnants; there are no broad merging patch regions.
+bsp-0066,reject,"A broad blue coating region has deeply irregular edges and openings against an orange-brown field, dominating the close surface. Excluded after provenance review: Both tank photographs credit Acabashi, identify Hatfield Broad Oak, and were taken on 2018-08-23 at 16:41:27 and 17:03:56. Both descriptions explicitly identify an allied consecutive photographic series. Retain only bsp-0046 conservatively; no claim that the panels are pixel-identical."
+bsp-0067,reject,A nearly uniform white coating is divided by narrow polygonal cracks; linework dominates over changes between surface regions.
+bsp-0068,accept,A dark-green region meets and bleeds into a broad orange-red mottled area with fragmented irregular boundaries across the frame.
+bsp-0069,reject,A narrow chipped edge and an out-of-focus patterned background organize the composition; the patch field is confined to a small strip.
+bsp-0070,accept,Large pale coating regions tear back into a connected blue field with ragged lobes and isolated remnants throughout.
+bsp-0071,reject,"A whole door, masonry surround and straight architectural boundaries dominate relatively minor paint wear."
+bsp-0072,accept,A broad orange coating recedes along a ragged dark lower region and breaks into smaller dark openings across the surface.
+bsp-0073,accept,"An olive coating opens into a broad irregular blue-gray region and smaller connected fragments, with peeling boundaries prominent throughout."
+bsp-0074,accept,"Large irregular red regions emerge through curling olive coating, breaking into uneven islands across the close panel surface."
+bsp-0075,reject,"An olive coating recedes into a large uneven blue-gray exposed area, with ragged edges and smaller islands across the close surface. Excluded after provenance review: Numbered Peeling paint 1/2 photographs credit Daniel Schwen, share the date 2008-05-28 and NYC subway context, and show matching olive/blue-gray painted wall construction. Retain bsp-0073; exact crop or pixel relationship is not asserted."
+bsp-0076,accept,Irregular gray and dark exposed regions break through red coating across the wood; a small hinge remains secondary.
+bsp-0077,reject,Fine parallel wood lines and narrow flakes form a mostly uniform striped texture rather than broad merging regions.
+bsp-0078,reject,"A broad gray coating tears into ragged islands against orange-red wood, with prominent uneven boundaries across the frame. Excluded after provenance review: Both credit Si Griffiths, show red/gray peeling wood, and were captured on 2009-09-06 at 11:04:40 and 11:04:52. Retain bsp-0076 as one representative of this closely related capture sequence."
+bsp-0079,accept,"Blue, yellow and dark areas bleed and merge across the close metal surface around a narrow seam."
+bsp-0080,reject,"Blue and pale coating regions fragment and fade into one another along ragged boundaries, with larger white and yellow areas providing context. Excluded after rights review: Commons metadata reports CC BY 2.0, while the author description prohibits resharing/distribution. The conflict is not resolved by the supplied evidence; exclude from source acquisition rather than assume redistribution permission."
+bsp-0081,accept,"Large dark, gray, yellow and red regions overlap and break into irregular islands across the entire weathered surface."
+bsp-0082,accept,"Pale, reddish, dark and greenish coating regions recede and fragment across the worn boards; a few small leaves remain incidental."
+bsp-0083,accept,Broad brown and orange corrosion regions merge and peel across the close panel behind narrow ribs; the patch boundaries remain dominant.
+bsp-0084,reject,Regular separated radiator bars form a repeated-line pattern with relatively uniform surfaces.
+bsp-0085,accept,"Large pale remnants, brown exposed areas and smaller islands interlock across the entire peeling surface."
+bsp-0086,reject,"Broad pale and dark reddish regions fragment and merge across the close surface with conspicuous ragged boundaries. Excluded after provenance review: The pale torn-poster outline, rust holes and broad curved exposed region match directly between the previews; bsp-0086 changes coloration and framing. Both credit Marek Slusarczyk/Tupungato with date 2010-10-12. Retain bsp-0085 only."
+bsp-0087,reject,Distinct sheets and material objects with straight outlines organize the composition rather than spreading regions across one field.
+bsp-0088,accept,"A broad rusty red area bleeds into yellow and gray regions across the close surface, with uneven fading boundaries."
+bsp-0089,reject,"Mostly uniform brown abrasion, horizontal bands and regularly placed fasteners dominate over any distinct patch regions."
+bsp-0090,reject,A separately framed labeled panel and many tiny pale flecks dominate; the marks remain sparse and discrete.
+bsp-0091,accept,A broad red-brown region spreads and fades into yellow across the metal face; small fasteners remain secondary.
+bsp-0092,reject,Strong fence rails and a textured wall dominate the scene; irregular surface regions are incidental.
+bsp-0093,accept,Large gray and brown coating islands merge and fragment across an orange field with ragged layered boundaries.
+bsp-0094,reject,Dense crossing scratches and a broad lighting or tonal gradient dominate; distinct spreading material regions are not clear.
+bsp-0095,accept,"Broad brown, orange and pale gray areas bleed and peel into one another across the close corroded surface."
+bsp-0096,accept,Large green coating remnants fragment into ragged islands across a red-brown exposed field.
+bsp-0097,accept,Orange and dark-brown regions spread and merge around irregular darker islands throughout the mottled surface.
+bsp-0098,reject,A whole window grille and mostly intact wall dominate; corrosion follows their architectural edges.
+bsp-0099,accept,"Pale, brown and bluish regions fade into one another across the surface, with a broad irregular corroded area and smaller fragments."
+bsp-0100,reject,A distinct stamped mechanical panel and fairly uniform rust speckling dominate over changes between broad surface regions.
+bsp-0101,accept,Red and dark-purple regions bleed around an irregular pale opening across the close metal face; shallow ribs remain secondary.
+bsp-0102,accept,"Layered reddish, gray and pale coating regions tear and fragment across the entire close surface."
+bsp-0103,reject,Small orange specks remain mostly discrete on a broadly uniform dark surface.
+bsp-0104,reject,A nearly homogeneous red-brown texture with fine parallel marks lacks conspicuous spreading regions.
+bsp-0105,accept,A pale coating coalesces into larger areas and breaks into irregular green openings across the surface.
+bsp-0106,reject,"A mostly uniform muted patina and fine scratches dominate, with little separation into broader spreading regions."
+bsp-0107,reject,Repeated narrow vertical streaks and a straight seam dominate rather than irregular spreading patch regions.
+bsp-0108,reject,"Large red, pale and dark regions peel and fragment across the surface around a narrow blue band. Excluded after provenance review: Both credit Marek Slusarczyk/Tupungato on 2010-10-12 and describe a rusty metal gate urban-decay texture. Alongside the established alternate treatment bsp-0086, the evidence does not establish a separate physical source for bsp-0108. Retain only bsp-0085 conservatively from this likely related source group."
+bsp-0109,reject,"Broad dark corrosion splits and bleeds into pale coating regions with ragged boundaries and broken islands. Excluded after provenance review: Both credit Sergiu Dumitriu, describe decaying painted surfaces in Toronto, and were taken on 2012-05-20 at 10:43 and 11:04 within the adjacent Flickr series. Retain bsp-0068 conservatively rather than treating related outing photographs as independent sources."
+bsp-0110,reject,"Fine polygonal cracking across a nearly uniform pale area dominates, with staining largely confined to a narrow edge."
+bsp-0111,reject,"A crumpled printed notice, lettering and strong cast shadow dominate rather than spreading surface regions."
+bsp-0112,accept,"A large rust region eats irregularly into the pale painted field and its lettering, with fragmented edges and smaller rusty islands."
+bsp-0113,reject,"A broad brown stain bleeds into turquoise with irregular fringes and scattered satellite regions across the close panel. Excluded after provenance review: Korrosion Bild 1 and Bild 4 share creator Neukollner, date 2017-11-03 and the same generic Rusty description. Their numbered series does not establish separate physical sources. Retain bsp-0112 conservatively; do not assert a pixel or exact-subject match."
+bsp-0114,accept,A yellow coating tears back into a broad orange exposed region and smaller irregular remnants throughout the lower surface.
+bsp-0115,accept,Blue and pale coating remnants form ragged connected regions and smaller islands across a broad rusty-brown field.
+bsp-0116,reject,Two prominent bolts and many small discrete dark specks dominate a largely uniform yellow surface.
+bsp-0117,reject,"A train, platform and station columns dominate; surface discoloration is incidental."
+bsp-0118,reject,"A whole railway carriage, building and lawn dominate the scene rather than its weathered coating."
+bsp-0119,reject,"The wide view is organized by a parking structure, street and sky, with stains too incidental to define it."
+bsp-0120,reject,"Bridge masonry, structural edges and a plaque dominate sparse rust streaks."
+bsp-0121,reject,A single suspended rusted object and an architectural background dominate; no continuous patch field organizes the view.
+bsp-0122,reject,"People, a boat and a waterfront scene dominate relatively uniform green water."
+bsp-0123,accept,A broad pale surface film breaks into dark-water islands and ragged openings across most of the pond view; shoreline context is secondary.
+bsp-0124,accept,A broad brown region spreads and feathers into paler water along an uneven diagonal boundary through most of the close water view.
+bsp-0125,reject,A hand holding bright algae is the dominant isolated subject against otherwise uniform water.
+bsp-0126,reject,Reflected vegetation and many small separate surface flecks dominate; broad merging regions are not conspicuous.
+bsp-0127,accept,A pale film spreads across the foreground water and breaks into large dark openings with irregular edges; trees provide secondary context.
+bsp-0128,reject,"A wide pond, sky and treeline dominate a mostly uniform green surface covering."
+bsp-0129,reject,A wide reflective pond and trees organize the landscape without conspicuous irregular surface regions.
+bsp-0130,reject,"Reeds, treeline and sky frame a largely uniform pond surface rather than a spreading patch field."
+bsp-0131,reject,Repeated separate bubbles and a blurred flower dominate instead of merging material regions.
+bsp-0132,accept,"Broad bright-green mats and darker open areas merge and fold across most of the close water surface, with irregular boundaries."
+bsp-0133,accept,Large pale-blue and yellowish swirls spread into dark water across the foreground; the distant city band remains secondary.
+bsp-0134,reject,"A tree, reeds, open water and broad sky dominate a distant band of surface growth."
+bsp-0135,accept,"Mottled green and ochre regions merge and break apart across the water surface, with irregular feathered edges."
+bsp-0136,reject,Separate rounded plant tufts and stems dominate rather than merging surface regions.
+bsp-0137,reject,A coastal landscape dominates; the distant narrow surface band does not organize the image as patchwork.
+bsp-0138,reject,"A broad nearly uniform plant-covered pond and shoreline dominate, with little irregular internal patch breakup."
+bsp-0139,reject,"Boats, masts and the marina scene dominate over the largely uniform green water."
+bsp-0140,accept,Broad yellow-green surface regions fragment into ragged islands across darker water through most of the foreground.
+bsp-0141,reject,"Feathered salmon-colored regions spread and branch across a continuous dark-green field; coastal context remains at the margin. Excluded after rights review: API rights metadata supplies only a generic Attribution label, no license URL, UsageTerms, Copyrighted or AttributionRequired statement. The retained metadata does not establish the applicable reuse terms satisfactorily; exclude without downloading the source."
+bsp-0142,accept,Merging and curling green films form irregular regions across the water below the contextual board.
+bsp-0143,accept,"Irregular pale-green surface regions spread, merge and fragment across most of the water field."
+bsp-0144,reject,"A largely uniform pink wedge bounded by the grassy bank dominates, with insufficient internal merging or fragmented patch structure."
+bsp-0145,reject,"The pond, reeds, rocks and shoreline scene dominates over the faint surface films."
+bsp-0146,accept,Green surface coverage breaks into ragged openings and mottled pale boundary regions across the image.
+bsp-0147,accept,Broad orange and yellow regions merge and form lobed boundaries around dark open patches across the surface.
+bsp-0148,accept,A peeling surface film creates broad connected regions and torn irregular openings; the small finger supplies context.
+bsp-0149,reject,A hand-held detached piece and the distant shore dominate as objects and scene.
+bsp-0150,accept,Dark-green and pale regions spread irregularly across a rough continuous surface with ragged mottled boundaries.
+bsp-0151,reject,Hanging strands and submerged branching structures dominate as discrete forms rather than surface patchwork.
+bsp-0152,reject,People and a wide landscape dominate; the surface patches are contextual.
+bsp-0153,reject,A broad shoreline landscape and largely uniform green bank dominate.
+bsp-0154,reject,The masonry arch and repeated brick structure dominate over the thin deposits.
+bsp-0155,accept,Broad pale and green regions interlock and fragment with ragged irregular boundaries across the wall surface.
+bsp-0156,accept,Large peeling regions merge and break into smaller islands across the wall; the pipe and sign provide limited context.
+bsp-0157,reject,An isolated fibrous mound is the dominant subject rather than spreading regions across a surface.
+bsp-0158,reject,Columns and repeated ceiling beams dominate the architectural composition.
+bsp-0159,reject,Many small fibrous tufts form a relatively uniform carpet rather than broad merging or fragmenting regions.
+bsp-0160,reject,A central coin and discrete projecting crystals dominate as objects.
+bsp-0161,reject,The bridge structure dominates; staining is a small localized contextual detail.
+bsp-0162,reject,The stair supports and structural junction dominate over the surrounding surface deposits.
+bsp-0163,reject,"The poster, panel divisions and wall context dominate over the subdued surface staining."
+bsp-0164,accept,"Purple, ochre and pale deposits spread in irregular interlocking regions across the continuous rough surface around a depression."
+bsp-0165,reject,A hot pool in a wide landscape dominates rather than irregular patchwork across a continuous field.
+bsp-0166,reject,An isolated sculptural geothermal mound dominates the image.
+bsp-0167,reject,An individual crusted rock is the dominant object rather than a spreading surface field.
+bsp-0168,reject,Discrete stones and pebbles dominate rather than merging surface regions.
+bsp-0169,reject,Separate large boulders and vegetation dominate the scene.
+bsp-0170,reject,"The smooth modeled forms and background show a synthetic object rendering, outside the supplied photographic prompt."
+bsp-0171,reject,A deep volcanic landscape and plume dominate; deposits are contextual bands.
+bsp-0172,reject,"The stream, rocks and grass dominate the scene rather than continuous surface patchwork."
+bsp-0173,reject,Separate raised yellow mounds dominate as objects rather than merging surface regions.
+bsp-0174,reject,"A few linear cracks across uniformly fine speckled pavement dominate, without broad irregular regions."
+bsp-0175,reject,Regular parallel grooves dominate the surface rather than irregular spreading regions.
+bsp-0176,reject,Uniform fine granular texture lacks broad merging or fragmenting regions.
+bsp-0177,reject,Mostly uniform fine surface texture lacks distinct irregular regional boundaries.
+bsp-0178,accept,Broad gray and pale regions interlock and fragment into smaller islands with torn irregular edges across the wall.
+bsp-0179,reject,An isolated leaf-shaped imprint dominates as a recognizable discrete mark.
+bsp-0180,reject,Uniformly scattered fine grains dominate rather than broad irregular regions.
+bsp-0181,reject,Repeated masonry courses dominate over the slight discoloration near the base.
+bsp-0182,reject,A single small isolated drip stands against an otherwise largely uniform wall; its boundary and satellites do not dominate the field.
+bsp-0183,accept,"A large irregular corroded region branches into satellite patches across a blue continuous surface, with ragged raised boundaries."
+bsp-0184,reject,"Writing, a wheel and the car body dominate over the narrow corroded strip."
+bsp-0185,reject,The wheel and car-body context dominate over the localized corrosion along the arch.

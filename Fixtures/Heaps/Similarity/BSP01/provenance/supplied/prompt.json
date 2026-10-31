@@ -1,0 +1,21 @@
+{
+  "element": "blotches-stains-spreading-patches",
+  "kind": "prompt_heap",
+  "heap": "Similarity",
+  "addition_id": "BSP01",
+  "prompt": "Photographs visually dominated by irregular regions that spread, merge, fragment or recede across a surface or field, with mottled, ragged, feathered, branching or torn boundaries; visible materials and subjects may be unrelated.",
+  "exclusions": "Known derivatives or related captures; illustrations, diagrams, synthetic textures; isolated objects, intact uniform surfaces, evenly repeated dots, distinct individual spots without patch merging, compositions dominated by architecture, horizon, people or a single large object rather than irregular patches.",
+  "looseness": "Patches can be microscopic-looking or broad, high or low contrast, natural or manufactured, colorful or near monochrome; retain both contextual photographs and nearly abstract close views when the patchwork is visually conspicuous. A single central stain may fit if its boundary and satellite spread dominate.",
+  "interpretation": "Curatorial visual resemblance only, no channel thresholds, semantic clusters, expected pairs, or membership ground truth. Discovery categories are search routes, not target groups.",
+  "target_count": 65,
+  "acceptable_range": [
+    50,
+    80
+  ],
+  "minimum_viable_final_input_count": 30,
+  "publication_rule": "Below 30 validated, independently screened, rights-reviewed acquired inputs after completed screening: abandon rather than pad. If 30+ accepted but acquisition fails or remains pending: incomplete_acquisition, never turn transport failure into visual rejection.",
+  "candidate_count": 185,
+  "visual_decisions_count": 0,
+  "acquired_count": 0,
+  "status": "sourcing_handoff_unreviewed"
+}

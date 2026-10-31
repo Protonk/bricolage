@@ -16,6 +16,7 @@ Fixtures/
       PS01/
       CR01/
       TG01/
+      BSP01/
     Curatorial/
       POTY/
         Arthropods/
@@ -30,7 +31,7 @@ Fixtures/
 | [Similarity](Heaps/Similarity/README.md) | One heap assembled from collections chosen to look alike under short visual prompts |
 | [Curatorial](Heaps/Curatorial/README.md) | Published editorial populations sampled mechanically; POTY Round 1 category contributions |
 
-RG01, SF01, PS01, CR01 and TG01 belong to the same Similarity heap. They retain their
+RG01, SF01, PS01, CR01, TG01 and BSP01 belong to the same Similarity heap. They retain their
 own acquisition and review records. Their collection membership records human
 selection intent; it is not an expected router neighborhood or matching verdict.
 Curatorial occupies a sibling directory under `Heaps/`; its POTY source collection
@@ -42,7 +43,7 @@ membership is a sourcing fact, not a similarity judgment.
 - Open the relevant role or heap README, then the leaf set's README for its
   prompt or relationship, status, provenance and check command.
 - Put a new contribution inside its intended heap. A new contribution to
-  Similarity goes beside RG01, SF01, PS01, CR01 and TG01; its prompt, exclusions,
+  Similarity goes beside RG01, SF01, PS01, CR01, TG01 and BSP01; its prompt, exclusions,
   acceptable looseness and review/acquisition status belong with that contribution.
   Curatorial contributions can sit below their source collection. Read the
   [POTY record](Heaps/Curatorial/POTY/README.md) for its inventories and check commands.
@@ -70,6 +71,7 @@ tools; restore local media before running checks that need it.
 | `hazy_ps01` | `Heaps/Similarity/PS01` |
 | `hazy_cr01` | `Heaps/Similarity/CR01` |
 | `hazy_tg01` | `Heaps/Similarity/TG01` |
+| `hazy_bsp01` | `Heaps/Similarity/BSP01` |
 
 Active commands and links use the current locations. Preserved supplied files,
 completed run records and existing ZIP snapshots retain their creation-time

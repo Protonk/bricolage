@@ -1,0 +1,28 @@
+[
+  {
+    "candidate_id": "bsp-0080",
+    "initial_visual_decision": "accept",
+    "initial_visual_reason": "Blue and pale coating regions fragment and fade into one another along ragged boundaries, with larger white and yellow areas providing context.",
+    "final_decision": "reject",
+    "reason": "Commons metadata reports CC BY 2.0, while the author description prohibits resharing/distribution. The conflict is not resolved by the supplied evidence; exclude from source acquisition rather than assume redistribution permission.",
+    "evidence": [
+      {
+        "path": "provenance/api/bsp-0080-preview-480.json",
+        "sha256": "b3c4c95688785f2bd2d1c7ac8814ccb8adef9e285cb32375c16d341cf04fc651"
+      }
+    ]
+  },
+  {
+    "candidate_id": "bsp-0141",
+    "initial_visual_decision": "accept",
+    "initial_visual_reason": "Feathered salmon-colored regions spread and branch across a continuous dark-green field; coastal context remains at the margin.",
+    "final_decision": "reject",
+    "reason": "API rights metadata supplies only a generic Attribution label, no license URL, UsageTerms, Copyrighted or AttributionRequired statement. The retained metadata does not establish the applicable reuse terms satisfactorily; exclude without downloading the source.",
+    "evidence": [
+      {
+        "path": "provenance/api/bsp-0141-preview-480.json",
+        "sha256": "57664a2a33d21753737a38a3f0d1818349916c9bc3b2085d66302fc191d9a8ce"
+      }
+    ]
+  }
+]

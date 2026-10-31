@@ -1,0 +1,1437 @@
+{
+  "status": "complete",
+  "uploader_basis": "MediaWiki imageinfo.user for the current file version; recorded separately from reported artist/creator, not a claim about the first upload.",
+  "review_basis": "All 185 downloaded previews actually inspected: 77 visual fits, seven related-capture exclusions and two rights exclusions, 68 final eligible selections. Each selected file metadata reviewed. No creator cap or manual category balancing. Supplied discovery buckets are not semantic clusters.",
+  "license_reviews": [
+    {
+      "candidate_id": "bsp-0001",
+      "metadata_path": "provenance/api/bsp-0001-preview.json",
+      "metadata_sha256": "ec7a2a843a6418528510e21d6ecedc4c98ee2441cacb4d1efb411e789b9cb9d4",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "creator": "Churnice",
+      "reported_artist": "Churnice",
+      "attribution_credit": "Churnice",
+      "uploader": "Churnice",
+      "credit": "Own work",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null,
+      "capture_time_reported": "2013-03-18 17:05:38",
+      "review": "File-specific Commons metadata reports CC BY-SA 3.0 with terms at https://creativecommons.org/licenses/by-sa/3.0. Reported artist and source credit are retained; this records Commons rights evidence, not independent authentication of the external source."
+    },
+    {
+      "candidate_id": "bsp-0002",
+      "metadata_path": "provenance/api/bsp-0002-preview-480.json",
+      "metadata_sha256": "dd92354a19f43036ab23730278b36ddfceb0c1a5490ecbfd27e1cc6635fdeb24",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "creator": "Tiia Monto",
+      "reported_artist": "Tiia Monto",
+      "attribution_credit": "Tiia Monto",
+      "uploader": "Kulmalukko",
+      "credit": "Own work",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null,
+      "capture_time_reported": "2016-08-22",
+      "review": "File-specific Commons metadata reports CC BY-SA 3.0 with terms at https://creativecommons.org/licenses/by-sa/3.0. Reported artist and source credit are retained; this records Commons rights evidence, not independent authentication of the external source."
+    },
+    {
+      "candidate_id": "bsp-0003",
+      "metadata_path": "provenance/api/bsp-0003-preview-480.json",
+      "metadata_sha256": "26f34d8e45c61c10d6ba7f5280b7f1af1a757ba7790cd7a06f517753f9565ef5",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "creator": "CLange2411",
+      "reported_artist": "CLange2411",
+      "attribution_credit": "CLange2411",
+      "uploader": "CLange2411",
+      "credit": "Own work",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null,
+      "capture_time_reported": "2010-07-11",
+      "review": "File-specific Commons metadata reports CC BY-SA 3.0 with terms at https://creativecommons.org/licenses/by-sa/3.0. Reported artist and source credit are retained; this records Commons rights evidence, not independent authentication of the external source."
+    },
+    {
+      "candidate_id": "bsp-0006",
+      "metadata_path": "provenance/api/bsp-0006-preview-480.json",
+      "metadata_sha256": "0634e925459a88e95b256e4515b776de3e2d3623abfce85278a49a72d1e63e23",
+      "license": "Public domain",
+      "license_url": null,
+      "creator": "Bureau of Land Management Oregon and Washington",
+      "reported_artist": "Bureau of Land Management Oregon and Washington",
+      "attribution_credit": "Bureau of Land Management Oregon and Washington",
+      "uploader": "Holly Cheng",
+      "credit": "Colorful Stone",
+      "copyrighted": "False",
+      "attribution_required": "false",
+      "restrictions": null,
+      "capture_time_reported": "2013-08-22 10:25",
+      "review": "File-specific Commons metadata reports Public domain; no license URL supplied. Metadata reports License=pd, Copyrighted=False and AttributionRequired=false. Reported artist and source credit are retained; this records Commons rights evidence, not independent authentication of the external source."
+    },
+    {
+      "candidate_id": "bsp-0007",
+      "metadata_path": "provenance/api/bsp-0007-preview-480.json",
+      "metadata_sha256": "23c84b470a29616c0ee48439642ef76fe6ed418e4fc3a4179078fdc3bbed70c0",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0",
+      "creator": "Liese Coulter, CSIRO",
+      "reported_artist": "Liese Coulter, CSIRO",
+      "attribution_credit": "Liese Coulter, CSIRO",
+      "uploader": "File Upload Bot (99of9)",
+      "credit": "http://www.scienceimage.csiro.au/image/11295",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null,
+      "capture_time_reported": "2010-05-12",
+      "review": "File-specific Commons metadata reports CC BY 3.0 with terms at https://creativecommons.org/licenses/by/3.0. Reported artist and source credit are retained; this records Commons rights evidence, not independent authentication of the external source."
+    },
+    {
+      "candidate_id": "bsp-0008",
+      "metadata_path": "provenance/api/bsp-0008-preview-480.json",
+      "metadata_sha256": "045d05a3d13f95b4ba2e7974aaaa28cd79e2b382726c2ae89ca706251c7c77cf",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "creator": "Andrnator",
+      "reported_artist": "Andrnator",
+      "attribution_credit": "Andrnator",
+      "uploader": "Andrnator",
+      "credit": "Own work",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null,
+      "capture_time_reported": "2010-08-25 11:18:51",
+      "review": "File-specific Commons metadata reports CC BY-SA 3.0 with terms at https://creativecommons.org/licenses/by-sa/3.0. Reported artist and source credit are retained; this records Commons rights evidence, not independent authentication of the external source."
+    },
+    {
+      "candidate_id": "bsp-0009",
+      "metadata_path": "provenance/api/bsp-0009-preview-480.json",
+      "metadata_sha256": "4d39b33ec722cd9b5d730e7bddd03c66acdc2c68cb771df06dd28141ede3733d",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "Burkhard Mücke",
+      "reported_artist": "Burkhard Mücke",
+      "attribution_credit": "Burkhard Mücke",
+      "uploader": "Pimpinellus",
+      "credit": "Own work",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null,
+      "capture_time_reported": "2019-08-23 10:23:19",
+      "review": "File-specific Commons metadata reports CC BY-SA 4.0 with terms at https://creativecommons.org/licenses/by-sa/4.0. Reported artist and source credit are retained; this records Commons rights evidence, not independent authentication of the external source."
+    },
+    {
+      "candidate_id": "bsp-0014",
+      "metadata_path": "provenance/api/bsp-0014-preview-480.json",
+      "metadata_sha256": "57b527dc9f2df1dd296c2694609a9e5d401992895cc146ba1b6b843130b64171",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "Ivan Ruggiero",
+      "reported_artist": "Ivan Ruggiero",
+      "attribution_credit": "Ivan Ruggiero",
+      "uploader": "Ivanbranco",
+      "credit": "Own work",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null,
+      "capture_time_reported": "2025-08-23 13:33:47",
+      "review": "File-specific Commons metadata reports CC BY-SA 4.0 with terms at https://creativecommons.org/licenses/by-sa/4.0. Reported artist and source credit are retained; this records Commons rights evidence, not independent authentication of the external source."
+    },
+    {
+      "candidate_id": "bsp-0015",
+      "metadata_path": "provenance/api/bsp-0015-preview-480.json",
+      "metadata_sha256": "dda0091a229b0f5a5e5588938e59277ce9a89e038b383b4fad2cf193e17cb51e",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "creator": "brewbooks from near Seattle, USA",
+      "reported_artist": "brewbooks from near Seattle, USA",
+      "attribution_credit": "brewbooks from near Seattle, USA",
+      "uploader": "Josve05a",
+      "credit": "Lichen at Bodega Bay",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null,
+      "capture_time_reported": "2012-03-17 15:54",
+      "review": "File-specific Commons metadata reports CC BY-SA 2.0 with terms at https://creativecommons.org/licenses/by-sa/2.0. Reported artist and source credit are retained; this records Commons rights evidence, not independent authentication of the external source."
+    },
+    {
+      "candidate_id": "bsp-0018",
+      "metadata_path": "provenance/api/bsp-0018-preview-480.json",
+      "metadata_sha256": "6a385345788f4fa7014ab207f34ee5dd52e8268815b203a6f073b8e0523cea72",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0",
+      "creator": null,
+      "reported_artist": "Dr Mary Gillham Archive Project",
+      "attribution_credit": "Dr Mary Gillham Archive Project",
+      "uploader": "Artix Kreiger 2",
+      "credit": "Lichen on newly-lithified rock. Little San Salvador",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null,
+      "capture_time_reported": "1979",
+      "review": "File-specific Commons metadata reports CC BY 2.0 with terms at https://creativecommons.org/licenses/by/2.0. Reported artist and source credit are retained; this records Commons rights evidence, not independent authentication of the external source. Artist names an archive/project or repository; individual creator remains unknown and its requested repository credit is preserved."
+    },
+    {
+      "candidate_id": "bsp-0020",
+      "metadata_path": "provenance/api/bsp-0020-preview-480.json",
+      "metadata_sha256": "1d7386190f1d782f96e5aa5504aeb0f4d0e2367115dce18252c0345056e00706",
+      "license": "Public domain",
+      "license_url": null,
+      "creator": "JalalV",
+      "reported_artist": "JalalV",
+      "attribution_credit": "JalalV",
+      "uploader": "JalalV",
+      "credit": "Own work",
+      "copyrighted": "False",
+      "attribution_required": "false",
+      "restrictions": null,
+      "capture_time_reported": null,
+      "review": "File-specific Commons metadata reports Public domain; no license URL supplied. Metadata reports License=pd, Copyrighted=False and AttributionRequired=false. Reported artist and source credit are retained; this records Commons rights evidence, not independent authentication of the external source."
+    },
+    {
+      "candidate_id": "bsp-0025",
+      "metadata_path": "provenance/api/bsp-0025-preview-480.json",
+      "metadata_sha256": "941cfccc463917e848642a5655471c73f8142fa0ff28e4d21eaf8f0972db9e66",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "Tomascastelazo",
+      "reported_artist": "Tomascastelazo",
+      "attribution_credit": "Tomascastelazo",
+      "uploader": "Tomascastelazo",
+      "credit": "Own work",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null,
+      "capture_time_reported": "2015-07-26 18:20:09",
+      "review": "File-specific Commons metadata reports CC BY-SA 4.0 with terms at https://creativecommons.org/licenses/by-sa/4.0. Reported artist and source credit are retained; this records Commons rights evidence, not independent authentication of the external source."
+    },
+    {
+      "candidate_id": "bsp-0027",
+      "metadata_path": "provenance/api/bsp-0027-preview-480.json",
+      "metadata_sha256": "5d3f173ff1987e05b3bc7b0839ffe69e24ae0cc7876264947411e6aeb1d11e9d",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "creator": "Andrnator",
+      "reported_artist": "Andrnator",
+      "attribution_credit": "Andrnator",
+      "uploader": "Andrnator",
+      "credit": "Own work",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null,
+      "capture_time_reported": "2013-05-10 17:05:46",
+      "review": "File-specific Commons metadata reports CC BY-SA 3.0 with terms at https://creativecommons.org/licenses/by-sa/3.0. Reported artist and source credit are retained; this records Commons rights evidence, not independent authentication of the external source."
+    },
+    {
+      "candidate_id": "bsp-0029",
+      "metadata_path": "provenance/api/bsp-0029-preview-480.json",
+      "metadata_sha256": "96653dab0a4ed57c6521c2e49081a96f92a1e607072b527409e65bc3bd2ab9b3",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0",
+      "creator": "David Elliott from UK",
+      "reported_artist": "David Elliott from UK",
+      "attribution_credit": "David Elliott from UK",
+      "uploader": "Fabe56",
+      "credit": "Lichen and moss",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null,
+      "capture_time_reported": "2014-02-02 14:43",
+      "review": "File-specific Commons metadata reports CC BY 2.0 with terms at https://creativecommons.org/licenses/by/2.0. Reported artist and source credit are retained; this records Commons rights evidence, not independent authentication of the external source."
+    },
+    {
+      "candidate_id": "bsp-0038",
+      "metadata_path": "provenance/api/bsp-0038-preview-480.json",
+      "metadata_sha256": "a1d759d4dad27d856b28f4963f302e7b1395a27902123de0252c8ce42fc9559b",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "Andrea Bonifazi",
+      "reported_artist": "Andrea Bonifazi",
+      "attribution_credit": "Andrea Bonifazi",
+      "uploader": "Andrea Bonifazi",
+      "credit": "Own work",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null,
+      "capture_time_reported": "2019-05-10 11:31:02",
+      "review": "File-specific Commons metadata reports CC BY-SA 4.0 with terms at https://creativecommons.org/licenses/by-sa/4.0. Reported artist and source credit are retained; this records Commons rights evidence, not independent authentication of the external source."
+    },
+    {
+      "candidate_id": "bsp-0042",
+      "metadata_path": "provenance/api/bsp-0042-preview-480.json",
+      "metadata_sha256": "01967c668e86366893326882dac2ad9fc4a1eda045e283fa366a37a72efca4da",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "creator": "Chris Hunkeler from Carlsbad, California, USA",
+      "reported_artist": "Chris Hunkeler from Carlsbad, California, USA",
+      "attribution_credit": "Chris Hunkeler from Carlsbad, California, USA",
+      "uploader": "Matlin",
+      "credit": "Lichen, Moss and Rock",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null,
+      "capture_time_reported": "2012-01-20 08:28",
+      "review": "File-specific Commons metadata reports CC BY-SA 2.0 with terms at https://creativecommons.org/licenses/by-sa/2.0. Reported artist and source credit are retained; this records Commons rights evidence, not independent authentication of the external source."
+    },
+    {
+      "candidate_id": "bsp-0043",
+      "metadata_path": "provenance/api/bsp-0043-preview-480.json",
+      "metadata_sha256": "83b7f1a44ecfe6c1260d23127a785ef8e21a36d75d36a6b264f64f73085fba0b",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "Nativeplants garden",
+      "reported_artist": "Nativeplants garden",
+      "attribution_credit": "Nativeplants garden",
+      "uploader": "Nativeplants garden",
+      "credit": "Own work",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null,
+      "capture_time_reported": "1 October 2023 (according to Exif data)",
+      "review": "File-specific Commons metadata reports CC BY-SA 4.0 with terms at https://creativecommons.org/licenses/by-sa/4.0. Reported artist and source credit are retained; this records Commons rights evidence, not independent authentication of the external source."
+    },
+    {
+      "candidate_id": "bsp-0045",
+      "metadata_path": "provenance/api/bsp-0045-preview-480.json",
+      "metadata_sha256": "da518fdbac0296d0f9620811f3e9092db6c40121b15980008aaafc2b26e8e7bf",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "Acabashi",
+      "reported_artist": "Acabashi",
+      "attribution_credit": "Acabashi",
+      "uploader": "Acabashi",
+      "credit": "Own work",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null,
+      "capture_time_reported": "2016-08-11 17:50:12",
+      "review": "File-specific Commons metadata reports CC BY-SA 4.0 with terms at https://creativecommons.org/licenses/by-sa/4.0. Reported artist and source credit are retained; this records Commons rights evidence, not independent authentication of the external source."
+    },
+    {
+      "candidate_id": "bsp-0046",
+      "metadata_path": "provenance/api/bsp-0046-preview-480.json",
+      "metadata_sha256": "2d5e53e96bda2392941df3791e2ec32ca1796070dc2f467f44f9cd99eab5293c",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "Acabashi",
+      "reported_artist": "Acabashi",
+      "attribution_credit": "Acabashi",
+      "uploader": "Acabashi",
+      "credit": "Own work",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null,
+      "capture_time_reported": "2018-08-23 16:41:27",
+      "review": "File-specific Commons metadata reports CC BY-SA 4.0 with terms at https://creativecommons.org/licenses/by-sa/4.0. Reported artist and source credit are retained; this records Commons rights evidence, not independent authentication of the external source."
+    },
+    {
+      "candidate_id": "bsp-0050",
+      "metadata_path": "provenance/api/bsp-0050-preview-480.json",
+      "metadata_sha256": "8a58e32c90bb53ef2dc74e54c4383130aad404b16118f7b8413ad5c237f74411",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "Roman Eisele",
+      "reported_artist": "Roman Eisele",
+      "attribution_credit": "Roman Eisele",
+      "uploader": "Aristeas",
+      "credit": "Own work",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null,
+      "capture_time_reported": "Taken on 13 February 2026, 16:39:57",
+      "review": "File-specific Commons metadata reports CC BY-SA 4.0 with terms at https://creativecommons.org/licenses/by-sa/4.0. Reported artist and source credit are retained; this records Commons rights evidence, not independent authentication of the external source."
+    },
+    {
+      "candidate_id": "bsp-0051",
+      "metadata_path": "provenance/api/bsp-0051-preview-480.json",
+      "metadata_sha256": "1b6a1a4f1c1412148f0359464fb0a53171e5a85c08f9993eb8f4ff1e8ade89aa",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "ImagePerson",
+      "reported_artist": "ImagePerson",
+      "attribution_credit": "ImagePerson",
+      "uploader": "ImagePerson",
+      "credit": "Own work",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null,
+      "capture_time_reported": "2014-12-11 13:00:45",
+      "review": "File-specific Commons metadata reports CC BY-SA 4.0 with terms at https://creativecommons.org/licenses/by-sa/4.0. Reported artist and source credit are retained; this records Commons rights evidence, not independent authentication of the external source."
+    },
+    {
+      "candidate_id": "bsp-0053",
+      "metadata_path": "provenance/api/bsp-0053-preview-480.json",
+      "metadata_sha256": "379aa3b14cb5372e761cd0ef349b917ccf5690a053a0ae50a13cc5e875d2a986",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0",
+      "creator": "Alhan Keser",
+      "reported_artist": "Alhan Keser",
+      "attribution_credit": "Alhan Keser",
+      "uploader": "DarwIn",
+      "credit": "Imported from 500px (archived version) by the Archive Team. (detail page)",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null,
+      "capture_time_reported": "23 November 2012, 14:14:51 (UTC)",
+      "review": "File-specific Commons metadata reports CC BY 3.0 with terms at https://creativecommons.org/licenses/by/3.0. Reported artist and source credit are retained; this records Commons rights evidence, not independent authentication of the external source."
+    },
+    {
+      "candidate_id": "bsp-0059",
+      "metadata_path": "provenance/api/bsp-0059-preview-480.json",
+      "metadata_sha256": "7b5829dbc369dd57e00aca419a3136b200f4d3bd6bb4e4e2b013523c57cff2b8",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "creator": "Sillyputtyenemies",
+      "reported_artist": "Sillyputtyenemies",
+      "attribution_credit": "Sillyputtyenemies",
+      "uploader": "Sillyputtyenemies",
+      "credit": "Own work",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null,
+      "capture_time_reported": "2009-03-31",
+      "review": "File-specific Commons metadata reports CC BY-SA 3.0 with terms at https://creativecommons.org/licenses/by-sa/3.0. Reported artist and source credit are retained; this records Commons rights evidence, not independent authentication of the external source."
+    },
+    {
+      "candidate_id": "bsp-0060",
+      "metadata_path": "provenance/api/bsp-0060-preview-480.json",
+      "metadata_sha256": "eab1da101d88fda7df2b7a6d97a5171a9558945b79d47de4c44cad67f10b1736",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "creator": "Antony Stanley from Gloucester, UK",
+      "reported_artist": "Antony Stanley from Gloucester, UK",
+      "attribution_credit": "Antony Stanley from Gloucester, UK",
+      "uploader": "File Upload Bot (Magnus Manske)",
+      "credit": "Flecks Of Paint, Essaouira",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null,
+      "capture_time_reported": "2010-11-20 15:38",
+      "review": "File-specific Commons metadata reports CC BY-SA 2.0 with terms at https://creativecommons.org/licenses/by-sa/2.0. Reported artist and source credit are retained; this records Commons rights evidence, not independent authentication of the external source."
+    },
+    {
+      "candidate_id": "bsp-0061",
+      "metadata_path": "provenance/api/bsp-0061-preview-480.json",
+      "metadata_sha256": "e70798c2b11bb69a249c337c6b2cc53e89a8c74237fa79756d363ba5d36d4823",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0",
+      "creator": "Pink Sherbet Photography from USA",
+      "reported_artist": "Pink Sherbet Photography from USA",
+      "attribution_credit": "D Sharon Pruitt / Pink Sherbet Photography",
+      "uploader": "LasPo rocks",
+      "credit": "Grunge 328-13",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null,
+      "capture_time_reported": "2011-03-26 13:01",
+      "review": "File-specific Commons metadata reports CC BY 2.0 with terms at https://creativecommons.org/licenses/by/2.0. Reported artist and source credit are retained; this records Commons rights evidence, not independent authentication of the external source. bsp-0091 requests D Sharon Pruitt attribution; both raw Artist links identify the same Flickr account 40645538@N00, so both retain that personal name plus the account name."
+    },
+    {
+      "candidate_id": "bsp-0064",
+      "metadata_path": "provenance/api/bsp-0064-preview-480.json",
+      "metadata_sha256": "a742afbaf19042878d8b42b156da1511d05785270ad82cee11056cadbc687391",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "ImagePerson",
+      "reported_artist": "ImagePerson",
+      "attribution_credit": "ImagePerson",
+      "uploader": "ImagePerson",
+      "credit": "Own work",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null,
+      "capture_time_reported": "2015-06-25 15:00:56",
+      "review": "File-specific Commons metadata reports CC BY-SA 4.0 with terms at https://creativecommons.org/licenses/by-sa/4.0. Reported artist and source credit are retained; this records Commons rights evidence, not independent authentication of the external source."
+    },
+    {
+      "candidate_id": "bsp-0068",
+      "metadata_path": "provenance/api/bsp-0068-preview-480.json",
+      "metadata_sha256": "66004a745cc7fac02bc4144a6c1f7114657d104bdbc1617f0c93c54bfcecccd2",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "creator": "Sergiu Dumitriu",
+      "reported_artist": "Sergiu Dumitriu",
+      "attribution_credit": "Sergiu Dumitriu",
+      "uploader": "Юрий Д.К.",
+      "credit": "Fireflower",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null,
+      "capture_time_reported": "2012-05-20 11:04",
+      "review": "File-specific Commons metadata reports CC BY-SA 2.0 with terms at https://creativecommons.org/licenses/by-sa/2.0. Reported artist and source credit are retained; this records Commons rights evidence, not independent authentication of the external source."
+    },
+    {
+      "candidate_id": "bsp-0070",
+      "metadata_path": "provenance/api/bsp-0070-preview-480.json",
+      "metadata_sha256": "af877e057efc98d890ed3f999e0b9b2526eb1ab48b25040c1c9d75b20304eb72",
+      "license": "CC BY-SA 3.0",
+      "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "creator": "Johan",
+      "reported_artist": "Johan",
+      "attribution_credit": "Johan",
+      "uploader": "Johan~commonswiki",
+      "credit": "Own work",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null,
+      "capture_time_reported": "2006-07-20",
+      "review": "File-specific Commons metadata reports CC BY-SA 3.0 with terms at http://creativecommons.org/licenses/by-sa/3.0/. Reported artist and source credit are retained; this records Commons rights evidence, not independent authentication of the external source."
+    },
+    {
+      "candidate_id": "bsp-0072",
+      "metadata_path": "provenance/api/bsp-0072-preview-480.json",
+      "metadata_sha256": "45376cb1715e160cf5c705fc6b9315e9fea5cd0814200d36e4da3fe3d848318d",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "creator": "Bianca",
+      "reported_artist": "Bianca",
+      "attribution_credit": "Bianca",
+      "uploader": "Юрий Д.К.",
+      "credit": "https://www.flickr.com/photos/bianquita1/16498757684/",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null,
+      "capture_time_reported": "2015-01-01",
+      "review": "File-specific Commons metadata reports CC BY-SA 2.0 with terms at https://creativecommons.org/licenses/by-sa/2.0. Reported artist and source credit are retained; this records Commons rights evidence, not independent authentication of the external source."
+    },
+    {
+      "candidate_id": "bsp-0073",
+      "metadata_path": "provenance/api/bsp-0073-preview-480.json",
+      "metadata_sha256": "a025956140a347081312793897b583c64359e43c141bdf4c08216f7973eca735",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "Daniel Schwen",
+      "reported_artist": "Daniel Schwen",
+      "attribution_credit": "Daniel Schwen",
+      "uploader": "Dschwen",
+      "credit": "Own work",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null,
+      "capture_time_reported": "2008-05-28",
+      "review": "File-specific Commons metadata reports CC BY-SA 4.0 with terms at https://creativecommons.org/licenses/by-sa/4.0. Reported artist and source credit are retained; this records Commons rights evidence, not independent authentication of the external source."
+    },
+    {
+      "candidate_id": "bsp-0074",
+      "metadata_path": "provenance/api/bsp-0074-preview-480.json",
+      "metadata_sha256": "f0005b19b1d919109630d17aa9be23f88cc5be48db1eeb588da094fa308f9d98",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "creator": "Si Griffiths",
+      "reported_artist": "Si Griffiths",
+      "attribution_credit": "Si Griffiths",
+      "uploader": "Si Griffiths",
+      "credit": "Own work",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null,
+      "capture_time_reported": "2005-04-16 11:14:23",
+      "review": "File-specific Commons metadata reports CC BY-SA 3.0 with terms at https://creativecommons.org/licenses/by-sa/3.0. Reported artist and source credit are retained; this records Commons rights evidence, not independent authentication of the external source."
+    },
+    {
+      "candidate_id": "bsp-0076",
+      "metadata_path": "provenance/api/bsp-0076-preview-480.json",
+      "metadata_sha256": "5a42d67e90dfc9ec5c7af029503df9d17d93798d2078c794a411dbcca7cdcf1f",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "creator": "Si Griffiths",
+      "reported_artist": "Si Griffiths",
+      "attribution_credit": "Si Griffiths",
+      "uploader": "Si Griffiths",
+      "credit": "Own work",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null,
+      "capture_time_reported": "2009-09-06 11:04:40",
+      "review": "File-specific Commons metadata reports CC BY-SA 3.0 with terms at https://creativecommons.org/licenses/by-sa/3.0. Reported artist and source credit are retained; this records Commons rights evidence, not independent authentication of the external source."
+    },
+    {
+      "candidate_id": "bsp-0079",
+      "metadata_path": "provenance/api/bsp-0079-preview-480.json",
+      "metadata_sha256": "5809494180a791281f8a47a207090f69ed7e7a20e9329793594e341c1bee743e",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "creator": "Johnathan Nightingale",
+      "reported_artist": "Johnathan Nightingale",
+      "attribution_credit": "Johnathan Nightingale",
+      "uploader": "Юрий Д.К.",
+      "credit": "https://www.flickr.com/photos/johnath/6494992289/",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null,
+      "capture_time_reported": "Taken on 27 November 2011, 15:56:28",
+      "review": "File-specific Commons metadata reports CC BY-SA 2.0 with terms at https://creativecommons.org/licenses/by-sa/2.0. Reported artist and source credit are retained; this records Commons rights evidence, not independent authentication of the external source."
+    },
+    {
+      "candidate_id": "bsp-0081",
+      "metadata_path": "provenance/api/bsp-0081-preview-480.json",
+      "metadata_sha256": "f97be6194c8384510f827f6704d7afd96b52a542d770f3f0ed0708a393af1ee7",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "creator": "Nikodem Nijaki",
+      "reported_artist": "Nikodem Nijaki",
+      "attribution_credit": "Nikodem Nijaki",
+      "uploader": "Nikodem Nijaki",
+      "credit": "Own work",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null,
+      "capture_time_reported": "2014-03-27 11:22:02",
+      "review": "File-specific Commons metadata reports CC BY-SA 3.0 with terms at https://creativecommons.org/licenses/by-sa/3.0. Reported artist and source credit are retained; this records Commons rights evidence, not independent authentication of the external source."
+    },
+    {
+      "candidate_id": "bsp-0082",
+      "metadata_path": "provenance/api/bsp-0082-preview-480.json",
+      "metadata_sha256": "2c4df8bc6716b10ecf982907f2db548fe32c1f4985cad3404a2019b874242e2a",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "creator": "Gilles San Martin from Namur, Belgium",
+      "reported_artist": "Gilles San Martin from Namur, Belgium",
+      "attribution_credit": "Gilles San Martin from Namur, Belgium",
+      "uploader": "Юрий Д.К.",
+      "credit": "Urban flora",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null,
+      "capture_time_reported": "Taken on 23 October 2019, 09:33",
+      "review": "File-specific Commons metadata reports CC BY-SA 2.0 with terms at https://creativecommons.org/licenses/by-sa/2.0. Reported artist and source credit are retained; this records Commons rights evidence, not independent authentication of the external source."
+    },
+    {
+      "candidate_id": "bsp-0083",
+      "metadata_path": "provenance/api/bsp-0083-preview-640.json",
+      "metadata_sha256": "bbb77889d3b86c26c1ef30e8c66a9131993b431e65ffe6860b8e1dfb8a5ae908",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "Friedrich Haag",
+      "reported_artist": "Friedrich Haag",
+      "attribution_credit": "Friedrich Haag",
+      "uploader": "F. Riedelio",
+      "credit": "Self-photographed",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null,
+      "capture_time_reported": "Taken on 12.06.2016 16:30:21",
+      "review": "File-specific Commons metadata reports CC BY-SA 4.0 with terms at https://creativecommons.org/licenses/by-sa/4.0. Reported artist and source credit are retained; this records Commons rights evidence, not independent authentication of the external source."
+    },
+    {
+      "candidate_id": "bsp-0085",
+      "metadata_path": "provenance/api/bsp-0085-preview-480.json",
+      "metadata_sha256": "23f5c29836924b428cd3c10594f4d77db5f2ee15414ec153b8dbf6409dbee79d",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0",
+      "creator": "Marek Ślusarczyk (Tupungato) Photo portfolio",
+      "reported_artist": "Marek Ślusarczyk (Tupungato) Photo portfolio",
+      "attribution_credit": "Marek Ślusarczyk (Tupungato) Photo portfolio",
+      "uploader": "Tupungato",
+      "credit": "Own work",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null,
+      "capture_time_reported": "2010-10-12",
+      "review": "File-specific Commons metadata reports CC BY 3.0 with terms at https://creativecommons.org/licenses/by/3.0. Reported artist and source credit are retained; this records Commons rights evidence, not independent authentication of the external source."
+    },
+    {
+      "candidate_id": "bsp-0088",
+      "metadata_path": "provenance/api/bsp-0088-preview-480.json",
+      "metadata_sha256": "e7edc8bf8413a61c2e0dd2a3e10b0170f0bf35d45ffa941607d21663ec967c6c",
+      "license": "Public domain",
+      "license_url": null,
+      "creator": "Georges Grondin",
+      "reported_artist": "Georges Grondin",
+      "attribution_credit": "Georges Grondin",
+      "uploader": "Fæ",
+      "credit": "http://www.public-domain-image.com/public-domain-images-pictures-free-stock-photos/textures-and-patterns-public-domain-images-pictures/concrete-texture-public-domain-images-pictures/crete-texture-rusty.jpg",
+      "copyrighted": "False",
+      "attribution_required": "false",
+      "restrictions": null,
+      "capture_time_reported": null,
+      "review": "File-specific Commons metadata reports Public domain; no license URL supplied. Metadata reports License=pd, Copyrighted=False and AttributionRequired=false. Reported artist and source credit are retained; this records Commons rights evidence, not independent authentication of the external source."
+    },
+    {
+      "candidate_id": "bsp-0091",
+      "metadata_path": "provenance/api/bsp-0091-preview-480.json",
+      "metadata_sha256": "1bad6ca9e79510967e99f49f6dff922774ae7764b743d3c877181661a4f9a3c9",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0",
+      "creator": "Pink Sherbet Photography from Utah, USA",
+      "reported_artist": "Pink Sherbet Photography from Utah, USA",
+      "attribution_credit": "D Sharon Pruitt / Pink Sherbet Photography",
+      "uploader": "Wilfredor",
+      "credit": "Orange Rusted Metal Texture",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null,
+      "capture_time_reported": "2012-01-05 12:24",
+      "review": "File-specific Commons metadata reports CC BY 2.0 with terms at https://creativecommons.org/licenses/by/2.0. Reported artist and source credit are retained; this records Commons rights evidence, not independent authentication of the external source. bsp-0091 requests D Sharon Pruitt attribution; both raw Artist links identify the same Flickr account 40645538@N00, so both retain that personal name plus the account name."
+    },
+    {
+      "candidate_id": "bsp-0093",
+      "metadata_path": "provenance/api/bsp-0093-preview-480.json",
+      "metadata_sha256": "24b501d7314cb82d385f14bc2358bc28d50c892fa5f3eb85ff0208121d218677",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0",
+      "creator": "Jose Luis Cernadas Iglesias",
+      "reported_artist": "Jose Luis Cernadas Iglesias",
+      "attribution_credit": "Jose Luis Cernadas Iglesias",
+      "uploader": "Flickr upload bot",
+      "credit": "originally posted to Flickr as 781-Oxido",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null,
+      "capture_time_reported": "2009-07-03 13:06:44",
+      "review": "File-specific Commons metadata reports CC BY 2.0 with terms at https://creativecommons.org/licenses/by/2.0. Reported artist and source credit are retained; this records Commons rights evidence, not independent authentication of the external source."
+    },
+    {
+      "candidate_id": "bsp-0095",
+      "metadata_path": "provenance/api/bsp-0095-preview-480.json",
+      "metadata_sha256": "58ccc834139d79ec705ae08d995d2256a73858c4121713f61093bc8232792eb4",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "creator": "Oxfordian Kissuth",
+      "reported_artist": "Oxfordian Kissuth",
+      "attribution_credit": "Oxfordian Kissuth",
+      "uploader": "Oxfordian Kissuth",
+      "credit": "Own work",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null,
+      "capture_time_reported": "2010-09-01",
+      "review": "File-specific Commons metadata reports CC BY-SA 3.0 with terms at https://creativecommons.org/licenses/by-sa/3.0. Reported artist and source credit are retained; this records Commons rights evidence, not independent authentication of the external source."
+    },
+    {
+      "candidate_id": "bsp-0096",
+      "metadata_path": "provenance/api/bsp-0096-preview-480.json",
+      "metadata_sha256": "4a4c0513b3f53983653551d17f5e59f3a98c1e0fa3d04c35ae41eb0c89689bdd",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "creator": "Si Griffiths",
+      "reported_artist": "Si Griffiths",
+      "attribution_credit": "Si Griffiths",
+      "uploader": "Si Griffiths",
+      "credit": "Own work",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null,
+      "capture_time_reported": "2005-04-17 11:19:30",
+      "review": "File-specific Commons metadata reports CC BY-SA 3.0 with terms at https://creativecommons.org/licenses/by-sa/3.0. Reported artist and source credit are retained; this records Commons rights evidence, not independent authentication of the external source."
+    },
+    {
+      "candidate_id": "bsp-0097",
+      "metadata_path": "provenance/api/bsp-0097-preview-480.json",
+      "metadata_sha256": "1db76cf3d3a7f944cf59fe996a5bab4f85322a73b54c6668161de5d295f84a1a",
+      "license": "CC BY-SA 3.0",
+      "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "creator": "Roger McLassus",
+      "reported_artist": "Roger McLassus",
+      "attribution_credit": "Roger McLassus",
+      "uploader": "BetacommandBot",
+      "credit": "Picture taken and uploaded by Roger McLassus.",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null,
+      "capture_time_reported": "2006-01-14",
+      "review": "File-specific Commons metadata reports CC BY-SA 3.0 with terms at http://creativecommons.org/licenses/by-sa/3.0/. Reported artist and source credit are retained; this records Commons rights evidence, not independent authentication of the external source."
+    },
+    {
+      "candidate_id": "bsp-0099",
+      "metadata_path": "provenance/api/bsp-0099-preview-480.json",
+      "metadata_sha256": "ccd08f9b94c5a930985624195c6832209a71253a7f6b0a873e9213b0cb4f80cd",
+      "license": "Public domain",
+      "license_url": null,
+      "creator": "Georges Grondin",
+      "reported_artist": "Georges Grondin",
+      "attribution_credit": "Georges Grondin",
+      "uploader": "Fæ",
+      "credit": "http://www.public-domain-image.com/public-domain-images-pictures-free-stock-photos/textures-and-patterns-public-domain-images-pictures/rust-texture-public-domain-images-pictures/rust-on-metal.jpg",
+      "copyrighted": "False",
+      "attribution_required": "false",
+      "restrictions": null,
+      "capture_time_reported": null,
+      "review": "File-specific Commons metadata reports Public domain; no license URL supplied. Metadata reports License=pd, Copyrighted=False and AttributionRequired=false. Reported artist and source credit are retained; this records Commons rights evidence, not independent authentication of the external source."
+    },
+    {
+      "candidate_id": "bsp-0101",
+      "metadata_path": "provenance/api/bsp-0101-preview-480.json",
+      "metadata_sha256": "be665bb0f62c9d081bda80365976f24586540c5c5ee703c014f8a480f6d6e2d7",
+      "license": "CC BY 2.5 dk",
+      "license_url": "https://creativecommons.org/licenses/by/2.5/dk/deed.en",
+      "creator": "Karin Beate Nøsterud",
+      "reported_artist": "Karin Beate Nøsterud",
+      "attribution_credit": "Karin Beate Nøsterud",
+      "uploader": "Fæ",
+      "credit": "Nordic Co-operation website (norden.org), http://www.norden.org/en/news-and-events/images/places/norway/rust/view",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null,
+      "capture_time_reported": "27 September 2010 (according to Exif data)\n\nTransferred on 2013-03-04 by Fæ",
+      "review": "File-specific Commons metadata reports CC BY 2.5 dk with terms at https://creativecommons.org/licenses/by/2.5/dk/deed.en. Reported artist and source credit are retained; this records Commons rights evidence, not independent authentication of the external source."
+    },
+    {
+      "candidate_id": "bsp-0102",
+      "metadata_path": "provenance/api/bsp-0102-preview-480.json",
+      "metadata_sha256": "3bdb717dc607b1526a8d48addee42eb5c393e9f150c4e11e64aa6e5152ea63a8",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0",
+      "creator": "Théo from England",
+      "reported_artist": "Théo from England",
+      "attribution_credit": "Théo from England",
+      "uploader": "FlickrLickr",
+      "credit": "Flickr.com - image description page",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null,
+      "capture_time_reported": "2004-11-01 10:43:14",
+      "review": "File-specific Commons metadata reports CC BY 2.0 with terms at https://creativecommons.org/licenses/by/2.0. Reported artist and source credit are retained; this records Commons rights evidence, not independent authentication of the external source."
+    },
+    {
+      "candidate_id": "bsp-0105",
+      "metadata_path": "provenance/api/bsp-0105-preview-480.json",
+      "metadata_sha256": "d4d7a347ab74814524e2c8f5db09ea20b32b500bef5fd6c6c2aa51a633835c0a",
+      "license": "Public domain",
+      "license_url": null,
+      "creator": null,
+      "reported_artist": "Public Domain Images",
+      "attribution_credit": "Public Domain Images",
+      "uploader": "Fæ",
+      "credit": "http://www.public-domain-image.com/public-domain-images-pictures-free-stock-photos/textures-and-patterns-public-domain-images-pictures/rust-texture-public-domain-images-pictures/rusty-green-background.jpg",
+      "copyrighted": "False",
+      "attribution_required": "false",
+      "restrictions": null,
+      "capture_time_reported": null,
+      "review": "File-specific Commons metadata reports Public domain; no license URL supplied. Metadata reports License=pd, Copyrighted=False and AttributionRequired=false. Reported artist and source credit are retained; this records Commons rights evidence, not independent authentication of the external source. Artist names an archive/project or repository; individual creator remains unknown and its requested repository credit is preserved."
+    },
+    {
+      "candidate_id": "bsp-0112",
+      "metadata_path": "provenance/api/bsp-0112-preview-480.json",
+      "metadata_sha256": "7fdf1900699c733186a29a47b9fd519702bd3cf9697f1af09a92ade721ee4ff8",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "Neuköllner",
+      "reported_artist": "Neuköllner",
+      "attribution_credit": "Neuköllner",
+      "uploader": "Neuköllner",
+      "credit": "Own work",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null,
+      "capture_time_reported": "2017-11-03",
+      "review": "File-specific Commons metadata reports CC BY-SA 4.0 with terms at https://creativecommons.org/licenses/by-sa/4.0. Reported artist and source credit are retained; this records Commons rights evidence, not independent authentication of the external source."
+    },
+    {
+      "candidate_id": "bsp-0114",
+      "metadata_path": "provenance/api/bsp-0114-preview-480.json",
+      "metadata_sha256": "85c6b01b19aa9384ded6b0d84c0c29a5f5bae324c76414af9b95048f685addbb",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "LBM1948",
+      "reported_artist": "LBM1948",
+      "attribution_credit": "LBM1948",
+      "uploader": "LBM1948",
+      "credit": "Own work",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null,
+      "capture_time_reported": "2013-06-13 19:44:22",
+      "review": "File-specific Commons metadata reports CC BY-SA 4.0 with terms at https://creativecommons.org/licenses/by-sa/4.0. Reported artist and source credit are retained; this records Commons rights evidence, not independent authentication of the external source."
+    },
+    {
+      "candidate_id": "bsp-0115",
+      "metadata_path": "provenance/api/bsp-0115-preview-480.json",
+      "metadata_sha256": "c537862bc585a0eba4d75803cade6c3e28905e4f2abb1194eb74ab548cc979a0",
+      "license": "CC BY-SA 3.0",
+      "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "creator": "Adamantios",
+      "reported_artist": "Adamantios",
+      "attribution_credit": "Adamantios",
+      "uploader": "Adamantios",
+      "credit": "Own work",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null,
+      "capture_time_reported": "early 1990date QS:P,+1990-00-00T00:00:00Z/9,P4241,Q40719727",
+      "review": "File-specific Commons metadata reports CC BY-SA 3.0 with terms at http://creativecommons.org/licenses/by-sa/3.0/. Reported artist and source credit are retained; this records Commons rights evidence, not independent authentication of the external source."
+    },
+    {
+      "candidate_id": "bsp-0123",
+      "metadata_path": "provenance/api/bsp-0123-preview-480.json",
+      "metadata_sha256": "36ba3ef0facb2a12e23e4e396cb7e33cf5c3337956b1bb5ebe11f97be4559e29",
+      "license": "Public domain",
+      "license_url": null,
+      "creator": "Zahm Gary, U.S. Fish and Wildlife Service",
+      "reported_artist": "Zahm Gary, U.S. Fish and Wildlife Service",
+      "attribution_credit": "Zahm Gary, U.S. Fish and Wildlife Service",
+      "uploader": "Fæ",
+      "credit": "http://www.public-domain-image.com/public-domain-images-pictures-free-stock-photos/nature-landscapes-public-domain-images-pictures/wetlands-and-swamps-public-domain-images-pictures/algae-accumulation-kesterson-national-wildlife-refuge.jpg",
+      "copyrighted": "False",
+      "attribution_required": "false",
+      "restrictions": null,
+      "capture_time_reported": null,
+      "review": "File-specific Commons metadata reports Public domain; no license URL supplied. Metadata reports License=pd, Copyrighted=False and AttributionRequired=false. Reported artist and source credit are retained; this records Commons rights evidence, not independent authentication of the external source."
+    },
+    {
+      "candidate_id": "bsp-0124",
+      "metadata_path": "provenance/api/bsp-0124-preview-480.json",
+      "metadata_sha256": "6f6f1472fa5a2e2bb663f0547e776ef125871025a7f7faec88fa445c0829df48",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "creator": "Marufish",
+      "reported_artist": "Marufish",
+      "attribution_credit": "Marufish",
+      "uploader": "FlickreviewR",
+      "credit": "Flickr",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null,
+      "capture_time_reported": "2004-08-10",
+      "review": "File-specific Commons metadata reports CC BY-SA 2.0 with terms at https://creativecommons.org/licenses/by-sa/2.0. Reported artist and source credit are retained; this records Commons rights evidence, not independent authentication of the external source."
+    },
+    {
+      "candidate_id": "bsp-0127",
+      "metadata_path": "provenance/api/bsp-0127-preview-480.json",
+      "metadata_sha256": "8522739cda9a7bc5206a8827c8b53dd26447661f02ded34b6bb69758591dfaa1",
+      "license": "Public domain",
+      "license_url": null,
+      "creator": "Ted Rozumalski",
+      "reported_artist": "Ted Rozumalski",
+      "attribution_credit": "Ted Rozumalski",
+      "uploader": "US National Archives bot",
+      "credit": "U.S. National Archives and Records Administration",
+      "copyrighted": "False",
+      "attribution_required": "false",
+      "restrictions": null,
+      "capture_time_reported": "July 1973date QS:P571,+1973-07-00T00:00:00Z/10",
+      "review": "File-specific Commons metadata reports Public domain; no license URL supplied. Metadata reports License=pd, Copyrighted=False and AttributionRequired=false. Reported artist and source credit are retained; this records Commons rights evidence, not independent authentication of the external source."
+    },
+    {
+      "candidate_id": "bsp-0132",
+      "metadata_path": "provenance/api/bsp-0132-preview-480.json",
+      "metadata_sha256": "dac2b67582c9842c55489ed61c810a3ba604d6947173e0b043d3d50438fcb8ff",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "Thayne Tuason",
+      "reported_artist": "Thayne Tuason",
+      "attribution_credit": "Thayne Tuason",
+      "uploader": "ThayneT",
+      "credit": "Own work",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null,
+      "capture_time_reported": "2005-03-07 14:27:25",
+      "review": "File-specific Commons metadata reports CC BY-SA 4.0 with terms at https://creativecommons.org/licenses/by-sa/4.0. Reported artist and source credit are retained; this records Commons rights evidence, not independent authentication of the external source."
+    },
+    {
+      "candidate_id": "bsp-0133",
+      "metadata_path": "provenance/api/bsp-0133-preview-480.json",
+      "metadata_sha256": "cfd486019f5d85914a8c9d5b2614fa52d0bc07f1ddac50e1833fe912683b2f5e",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "Ximonic (Simo Räsänen)",
+      "reported_artist": "Ximonic (Simo Räsänen)",
+      "attribution_credit": "Ximonic (Simo Räsänen)",
+      "uploader": "Ximonic",
+      "credit": "Own work",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null,
+      "capture_time_reported": "2021-06-08 21:37:06",
+      "review": "File-specific Commons metadata reports CC BY-SA 4.0 with terms at https://creativecommons.org/licenses/by-sa/4.0. Reported artist and source credit are retained; this records Commons rights evidence, not independent authentication of the external source."
+    },
+    {
+      "candidate_id": "bsp-0135",
+      "metadata_path": "provenance/api/bsp-0135-preview-480.json",
+      "metadata_sha256": "9101cb3967de1cf0ca73f6f9e453aec298556c3c1cdeab0d966f68dd4d44a5a8",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "creator": "Ronja Addams-Moring",
+      "reported_artist": "Ronja Addams-Moring",
+      "attribution_credit": "Ronja Addams-Moring",
+      "uploader": "Ronja Addams-Moring",
+      "credit": "Own work",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null,
+      "capture_time_reported": "2007-08-10",
+      "review": "File-specific Commons metadata reports CC BY-SA 3.0 with terms at https://creativecommons.org/licenses/by-sa/3.0. Reported artist and source credit are retained; this records Commons rights evidence, not independent authentication of the external source."
+    },
+    {
+      "candidate_id": "bsp-0140",
+      "metadata_path": "provenance/api/bsp-0140-preview-480.json",
+      "metadata_sha256": "efa9c3040b2db2b846ad3d1a11f8e8efaae532b440199f02af258d8e882eb692",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "Nincologne",
+      "reported_artist": "Nincologne",
+      "attribution_credit": "Nincologne",
+      "uploader": "Nincologne",
+      "credit": "Own work",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null,
+      "capture_time_reported": "2014-07-31 16:58:41",
+      "review": "File-specific Commons metadata reports CC BY-SA 4.0 with terms at https://creativecommons.org/licenses/by-sa/4.0. Reported artist and source credit are retained; this records Commons rights evidence, not independent authentication of the external source."
+    },
+    {
+      "candidate_id": "bsp-0142",
+      "metadata_path": "provenance/api/bsp-0142-preview-480.json",
+      "metadata_sha256": "8e12f1108eeeb956a5505508f06a8258ddb5aa580596f0ec44e8bf4f2b701cbb",
+      "license": "Public domain",
+      "license_url": null,
+      "creator": "NPS",
+      "reported_artist": "NPS",
+      "attribution_credit": "NPS",
+      "uploader": "BMacZeroBot",
+      "credit": "NPGallery",
+      "copyrighted": "False",
+      "attribution_required": "false",
+      "restrictions": null,
+      "capture_time_reported": null,
+      "review": "File-specific Commons metadata reports Public domain; no license URL supplied. Metadata reports License=pd, Copyrighted=False and AttributionRequired=false. Reported artist and source credit are retained; this records Commons rights evidence, not independent authentication of the external source."
+    },
+    {
+      "candidate_id": "bsp-0143",
+      "metadata_path": "provenance/api/bsp-0143-preview-480.json",
+      "metadata_sha256": "cf31627528fff26fe0d2a542eed4d89f2404e9fcb03c380589d48fb65ec0350c",
+      "license": "Public domain",
+      "license_url": null,
+      "creator": "NPS",
+      "reported_artist": "NPS",
+      "attribution_credit": "NPS",
+      "uploader": "BMacZeroBot",
+      "credit": "NPGallery",
+      "copyrighted": "False",
+      "attribution_required": "false",
+      "restrictions": null,
+      "capture_time_reported": "Taken on 21 May 2016",
+      "review": "File-specific Commons metadata reports Public domain; no license URL supplied. Metadata reports License=pd, Copyrighted=False and AttributionRequired=false. Reported artist and source credit are retained; this records Commons rights evidence, not independent authentication of the external source."
+    },
+    {
+      "candidate_id": "bsp-0146",
+      "metadata_path": "provenance/api/bsp-0146-preview-480.json",
+      "metadata_sha256": "9baadb55adc38cd92c47ae38ac1589990067d7bb3c16625c5888f7f608a256bc",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "Rhododendrites",
+      "reported_artist": "Rhododendrites",
+      "attribution_credit": "Rhododendrites",
+      "uploader": "Rhododendrites",
+      "credit": "Own work",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null,
+      "capture_time_reported": "2020-04-19 12:32:47",
+      "review": "File-specific Commons metadata reports CC BY-SA 4.0 with terms at https://creativecommons.org/licenses/by-sa/4.0. Reported artist and source credit are retained; this records Commons rights evidence, not independent authentication of the external source."
+    },
+    {
+      "candidate_id": "bsp-0147",
+      "metadata_path": "provenance/api/bsp-0147-preview-480.json",
+      "metadata_sha256": "45a7ae5fb944c709f1854385afa53ef30c0fd652e825fe258b93908e48537e3d",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "creator": "Avenue",
+      "reported_artist": "Avenue",
+      "attribution_credit": "Avenue",
+      "uploader": "Avenue",
+      "credit": "Own work",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null,
+      "capture_time_reported": "2009-03-14",
+      "review": "File-specific Commons metadata reports CC BY-SA 3.0 with terms at https://creativecommons.org/licenses/by-sa/3.0. Reported artist and source credit are retained; this records Commons rights evidence, not independent authentication of the external source."
+    },
+    {
+      "candidate_id": "bsp-0148",
+      "metadata_path": "provenance/api/bsp-0148-preview-480.json",
+      "metadata_sha256": "0c009fec66f879d531712ef8d0750edc846e8fc6ecb8bdda45b8530fdd441bc0",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "creator": "Rhetos",
+      "reported_artist": "Rhetos",
+      "attribution_credit": "Rhetos",
+      "uploader": "Rhetos",
+      "credit": "Own work",
+      "copyrighted": "True",
+      "attribution_required": "false",
+      "restrictions": null,
+      "capture_time_reported": "2023-07-07 19:53:05",
+      "review": "File-specific Commons metadata reports CC0 with terms at http://creativecommons.org/publicdomain/zero/1.0/deed.en. Reported artist and source credit are retained; this records Commons rights evidence, not independent authentication of the external source."
+    },
+    {
+      "candidate_id": "bsp-0150",
+      "metadata_path": "provenance/api/bsp-0150-preview-480.json",
+      "metadata_sha256": "42903e072861180d719af4b8df82a44d32cf327ec4ad975366dcaf109b6fc995",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "creator": "Aleksey Nagovitsyn (User:Alnagov)",
+      "reported_artist": "Aleksey Nagovitsyn (User:Alnagov)",
+      "attribution_credit": "Aleksey Nagovitsyn (User:Alnagov)",
+      "uploader": "Alnagov",
+      "credit": "Own work",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null,
+      "capture_time_reported": "2011-08-22",
+      "review": "File-specific Commons metadata reports CC BY-SA 3.0 with terms at https://creativecommons.org/licenses/by-sa/3.0. Reported artist and source credit are retained; this records Commons rights evidence, not independent authentication of the external source."
+    },
+    {
+      "candidate_id": "bsp-0155",
+      "metadata_path": "provenance/api/bsp-0155-preview-480.json",
+      "metadata_sha256": "071cdff980f6d14df0f754a70111ed6c676e48420dc33963cd1384373db4b6ae",
+      "license": "Public domain",
+      "license_url": null,
+      "creator": "User:Mattes",
+      "reported_artist": "User:Mattes",
+      "attribution_credit": "User:Mattes",
+      "uploader": "Wikipeder",
+      "credit": "Own work",
+      "copyrighted": "False",
+      "attribution_required": "false",
+      "restrictions": null,
+      "capture_time_reported": "Taken on 22 October 2006",
+      "review": "File-specific Commons metadata reports Public domain; no license URL supplied. Metadata reports License=pd, Copyrighted=False and AttributionRequired=false. Reported artist and source credit are retained; this records Commons rights evidence, not independent authentication of the external source."
+    },
+    {
+      "candidate_id": "bsp-0156",
+      "metadata_path": "provenance/api/bsp-0156-preview-480.json",
+      "metadata_sha256": "12e178992f1c77c91d4b4953b4c6241a596c18e1a7c8dec01b3d5e79fde26399",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "Olybrius",
+      "reported_artist": "Olybrius",
+      "attribution_credit": "Olybrius",
+      "uploader": "Olybrius",
+      "credit": "Self-photographed",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null,
+      "capture_time_reported": "Taken on 5 October 2016, 17:12:53",
+      "review": "File-specific Commons metadata reports CC BY-SA 4.0 with terms at https://creativecommons.org/licenses/by-sa/4.0. Reported artist and source credit are retained; this records Commons rights evidence, not independent authentication of the external source."
+    },
+    {
+      "candidate_id": "bsp-0164",
+      "metadata_path": "provenance/api/bsp-0164-preview-480.json",
+      "metadata_sha256": "140fa6d230aed09a3abed24ec5c016d6cf1f1b2f0a83f6dcc1ddf815ab9335b7",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "Natalka Ukraine",
+      "reported_artist": "Natalka Ukraine",
+      "attribution_credit": "Natalka Ukraine",
+      "uploader": "Natalka Ukraine",
+      "credit": "Own work",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null,
+      "capture_time_reported": "2023-04-08",
+      "review": "File-specific Commons metadata reports CC BY-SA 4.0 with terms at https://creativecommons.org/licenses/by-sa/4.0. Reported artist and source credit are retained; this records Commons rights evidence, not independent authentication of the external source."
+    },
+    {
+      "candidate_id": "bsp-0178",
+      "metadata_path": "provenance/api/bsp-0178-preview-480.json",
+      "metadata_sha256": "bef25ffc951f4a78f3e35494b9cb292a89952e004bbedf722271ef647b3d0921",
+      "license": "Public domain",
+      "license_url": null,
+      "creator": "Georges Grondin",
+      "reported_artist": "Georges Grondin",
+      "attribution_credit": "Georges Grondin",
+      "uploader": "Fæ",
+      "credit": "http://www.public-domain-image.com/public-domain-images-pictures-free-stock-photos/textures-and-patterns-public-domain-images-pictures/concrete-texture-public-domain-images-pictures/painted-conrete.jpg",
+      "copyrighted": "False",
+      "attribution_required": "false",
+      "restrictions": null,
+      "capture_time_reported": null,
+      "review": "File-specific Commons metadata reports Public domain; no license URL supplied. Metadata reports License=pd, Copyrighted=False and AttributionRequired=false. Reported artist and source credit are retained; this records Commons rights evidence, not independent authentication of the external source."
+    },
+    {
+      "candidate_id": "bsp-0183",
+      "metadata_path": "provenance/api/bsp-0183-preview-480.json",
+      "metadata_sha256": "a403764612bf61e9638859e8a2613a7d685cc57e5e4ea8bf9cb9e81cedbb7f98",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "creator": "Rookuzz.. from Groningen, Netherlands",
+      "reported_artist": "Rookuzz.. from Groningen, Netherlands",
+      "attribution_credit": "Rookuzz.. from Groningen, Netherlands",
+      "uploader": "Victorgrigas",
+      "credit": "Blue bubbles-2",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "restrictions": null,
+      "capture_time_reported": "2006-07-11 15:50",
+      "review": "File-specific Commons metadata reports CC BY-SA 2.0 with terms at https://creativecommons.org/licenses/by-sa/2.0. Reported artist and source credit are retained; this records Commons rights evidence, not independent authentication of the external source."
+    }
+  ],
+  "relationship_reviews": [
+    {
+      "candidates": [
+        "bsp-0008",
+        "bsp-0027"
+      ],
+      "finding": "Same reported creator Andrnator, but metadata identifies Gorgany/Doboshanka in 2010 and Pip Ivan/Chornohora in 2013; inspected rock faces differ. No specific shared capture established. Both retained, without an independence assertion.",
+      "evidence": [
+        {
+          "path": "provenance/api/bsp-0008-preview-480.json",
+          "sha256": "045d05a3d13f95b4ba2e7974aaaa28cd79e2b382726c2ae89ca706251c7c77cf"
+        },
+        {
+          "path": "provenance/api/bsp-0027-preview-480.json",
+          "sha256": "5d3f173ff1987e05b3bc7b0839ffe69e24ae0cc7876264947411e6aeb1d11e9d"
+        }
+      ]
+    },
+    {
+      "candidates": [
+        "bsp-0044",
+        "bsp-0045"
+      ],
+      "finding": "Same creator Acabashi, but metadata identifies a Broadstairs pub wall on 2016-08-06 and a St Peters Road wall on 2016-08-11; inspected wall structures differ. bsp-0044 is visually rejected and only bsp-0045 retained. Author boilerplate mentions normal upstream RAW conversion, optimization and possible cropping; no alternate crop asset is identified in this inventory.",
+      "evidence": [
+        {
+          "path": "provenance/api/bsp-0044-preview-480.json",
+          "sha256": "7ba94604bce4c015bf4710e112baa02d602f63373e3935f5c32eb9c68f22152f"
+        },
+        {
+          "path": "provenance/api/bsp-0045-preview-480.json",
+          "sha256": "da518fdbac0296d0f9620811f3e9092db6c40121b15980008aaafc2b26e8e7bf"
+        }
+      ]
+    },
+    {
+      "candidates": [
+        "bsp-0067",
+        "bsp-0068",
+        "bsp-0109",
+        "bsp-0110",
+        "bsp-0111",
+        "bsp-0116"
+      ],
+      "finding": "Sergiu Dumitriu Toronto painted surfaces from 2012-05-20, 10:43–11:04. Only 0068 retained; 0109 excluded as probable related capture after visual acceptance, the others rejected visually.",
+      "evidence": [
+        {
+          "path": "provenance/api/bsp-0067-preview-480.json",
+          "sha256": "d333f2e52384054808f2766c7beeb90ce3beab1ea5a767a0cdecfc494f5409f6"
+        },
+        {
+          "path": "provenance/api/bsp-0068-preview-480.json",
+          "sha256": "66004a745cc7fac02bc4144a6c1f7114657d104bdbc1617f0c93c54bfcecccd2"
+        },
+        {
+          "path": "provenance/api/bsp-0109-preview-480.json",
+          "sha256": "2304cef7ab36636f8840cfcd48cf5d5e85824701c46225b9cde906b9205d94a3"
+        },
+        {
+          "path": "provenance/api/bsp-0110-preview-480.json",
+          "sha256": "e2c8b185cd21487129c0b58f6a15487aaeaf3217c4105cb5a8242a962b228da7"
+        },
+        {
+          "path": "provenance/api/bsp-0111-preview-480.json",
+          "sha256": "fe4943e47e53f395aaafb5e0387815be7892170d5ca6339461190b320480b74d"
+        },
+        {
+          "path": "provenance/api/bsp-0116-preview-480.json",
+          "sha256": "d42b7c6092106d79f16ac1dd4bb298112fff3a183c3af0c19a3587f51fd8e354"
+        }
+      ]
+    },
+    {
+      "candidates": [
+        "bsp-0128",
+        "bsp-0129",
+        "bsp-0130",
+        "bsp-0134"
+      ],
+      "finding": "Dwight Burdette pond scenes from Michigan, 2012-05-25 through 2012-06-12, with different named roads. All rejected visually; no related candidate enters the inputs.",
+      "evidence": [
+        {
+          "path": "provenance/api/bsp-0128-preview-480.json",
+          "sha256": "b58feb782b324ef3c3c9a58f4f792d0d19778e2216fbe89ffb146052c29ca22f"
+        },
+        {
+          "path": "provenance/api/bsp-0129-preview-480.json",
+          "sha256": "1fd60a1184a8caa8a367b5d197c7a5fa6a0de99af17e430b46beb2d4c9f3feee"
+        },
+        {
+          "path": "provenance/api/bsp-0130-preview-480.json",
+          "sha256": "380b6136885ded765122260f6d3939ba5cb9b3626ce01d977b6b086a2b8d43bd"
+        },
+        {
+          "path": "provenance/api/bsp-0134-preview-480.json",
+          "sha256": "8955b1785ffd89e95cf0521309e541457b99abc2e9d44fc2fa4a3614cbe7933b"
+        }
+      ]
+    },
+    {
+      "candidates": [
+        "bsp-0135",
+        "bsp-0145"
+      ],
+      "finding": "Ronja Addams-Moring, same Sipoo locality/date 2007-08-10 and bloom descriptions. Only 0135 visually accepted; 0145 rejected as contextual pond scene. No second related capture enters.",
+      "evidence": [
+        {
+          "path": "provenance/api/bsp-0135-preview-480.json",
+          "sha256": "9101cb3967de1cf0ca73f6f9e453aec298556c3c1cdeab0d966f68dd4d44a5a8"
+        },
+        {
+          "path": "provenance/api/bsp-0145-preview-480.json",
+          "sha256": "19b1b9c9b90b7acd2d3c9a9fb0eca2f97ce636aa05e27f9674a0c986344fd2e8"
+        }
+      ]
+    },
+    {
+      "candidates": [
+        "bsp-0148",
+        "bsp-0149"
+      ],
+      "finding": "Rhetos captions explicitly link the same Wangerooge location across different years. Captions say two years while reported dates are 2023/2022; uncertainty retained. Only 0148 visually accepted; 0149 is a detached hand-held object and rejected.",
+      "evidence": [
+        {
+          "path": "provenance/api/bsp-0148-preview-480.json",
+          "sha256": "0c009fec66f879d531712ef8d0750edc846e8fc6ecb8bdda45b8530fdd441bc0"
+        },
+        {
+          "path": "provenance/api/bsp-0149-preview-480.json",
+          "sha256": "5c71ff6e689f850f6d7b6d9de9bd45aad326ec26a31998f12fe7a6928c4f789d"
+        }
+      ]
+    },
+    {
+      "candidates": [
+        "bsp-0183",
+        "bsp-0184"
+      ],
+      "finding": "Supplied thematic-category flag checked. 0183 is Rookuzz, 2006-07-11; 0184 is Stiopa, 2025-07-19, with different visible car surfaces. Only 0183 accepted; no relationship asserted from a shared category.",
+      "evidence": [
+        {
+          "path": "provenance/api/bsp-0183-preview-480.json",
+          "sha256": "a403764612bf61e9638859e8a2613a7d685cc57e5e4ea8bf9cb9e81cedbb7f98"
+        },
+        {
+          "path": "provenance/api/bsp-0184-preview-480.json",
+          "sha256": "dad001fac59436151aaf571fe4a8d965270266a5a54cb90208d6bf8ccc2e070e"
+        }
+      ]
+    },
+    {
+      "candidates": [
+        "bsp-0074",
+        "bsp-0076",
+        "bsp-0078",
+        "bsp-0096"
+      ],
+      "finding": "Si Griffiths. 0076/0078 same red/gray wooden surface sequence 12 seconds apart in 2009; 0078 excluded. 0074 and 0096 are reported 2005-04-16 and 2005-04-17 and show different corrugated/flat surfaces. No specific shared physical object established for those retained images; photographer reuse alone is not an exclusion.",
+      "evidence": [
+        {
+          "path": "provenance/api/bsp-0074-preview-480.json",
+          "sha256": "f0005b19b1d919109630d17aa9be23f88cc5be48db1eeb588da094fa308f9d98"
+        },
+        {
+          "path": "provenance/api/bsp-0076-preview-480.json",
+          "sha256": "5a42d67e90dfc9ec5c7af029503df9d17d93798d2078c794a411dbcca7cdcf1f"
+        },
+        {
+          "path": "provenance/api/bsp-0078-preview-480.json",
+          "sha256": "07fefe8dcbcfc214b38649a104509507bef38d06c7ec455224d50d16497b2c24"
+        },
+        {
+          "path": "provenance/api/bsp-0096-preview-480.json",
+          "sha256": "4a4c0513b3f53983653551d17f5e59f3a98c1e0fa3d04c35ae41eb0c89689bdd"
+        }
+      ]
+    },
+    {
+      "candidates": [
+        "bsp-0051",
+        "bsp-0064"
+      ],
+      "finding": "ImagePerson: Ottawa paper mill 2014-12-11 and abandoned building 2015-06-25. No specific shared surface established; both retained, without an independence assertion.",
+      "evidence": [
+        {
+          "path": "provenance/api/bsp-0051-preview-480.json",
+          "sha256": "1b6a1a4f1c1412148f0359464fb0a53171e5a85c08f9993eb8f4ff1e8ade89aa"
+        },
+        {
+          "path": "provenance/api/bsp-0064-preview-480.json",
+          "sha256": "a742afbaf19042878d8b42b156da1511d05785270ad82cee11056cadbc687391"
+        }
+      ]
+    },
+    {
+      "candidates": [
+        "bsp-0088",
+        "bsp-0099",
+        "bsp-0178"
+      ],
+      "finding": "Georges Grondin via public-domain-image.com. Different inspected paint boundaries; capture dates and locations unknown. No specific shared surface established; different images are not proof of independence.",
+      "evidence": [
+        {
+          "path": "provenance/api/bsp-0088-preview-480.json",
+          "sha256": "e7edc8bf8413a61c2e0dd2a3e10b0170f0bf35d45ffa941607d21663ec967c6c"
+        },
+        {
+          "path": "provenance/api/bsp-0099-preview-480.json",
+          "sha256": "ccd08f9b94c5a930985624195c6832209a71253a7f6b0a873e9213b0cb4f80cd"
+        },
+        {
+          "path": "provenance/api/bsp-0178-preview-480.json",
+          "sha256": "bef25ffc951f4a78f3e35494b9cb292a89952e004bbedf722271ef647b3d0921"
+        }
+      ]
+    },
+    {
+      "candidates": [
+        "bsp-0061",
+        "bsp-0091",
+        "bsp-0107"
+      ],
+      "finding": "Pink Sherbet / D Sharon Pruitt: 0061 reports 2011-03-26 and 0091 2012-01-05; different inspected surfaces. 0107 visually rejected for linear streaks. Artist hyperlinks identify same account; attribution request preserved. No specific shared surface established between the two retained images.",
+      "evidence": [
+        {
+          "path": "provenance/api/bsp-0061-preview-480.json",
+          "sha256": "e70798c2b11bb69a249c337c6b2cc53e89a8c74237fa79756d363ba5d36d4823"
+        },
+        {
+          "path": "provenance/api/bsp-0091-preview-480.json",
+          "sha256": "1bad6ca9e79510967e99f49f6dff922774ae7764b743d3c877181661a4f9a3c9"
+        },
+        {
+          "path": "provenance/api/bsp-0107-preview-480.json",
+          "sha256": "8e332198f7c5620aa2363b8f34fb3f7a7ece06f7985f298fa22e580eacd9b463"
+        }
+      ]
+    },
+    {
+      "candidates": [
+        "bsp-0142",
+        "bsp-0143"
+      ],
+      "finding": "Both credit NPS/NPGallery, with distinct NPGallery asset UUIDs and different inspected water surfaces; 0142 capture date unknown, 0143 reports 2016-05-21. Agency reuse alone does not establish a common capture; both retained with unknown individual photographers.",
+      "evidence": [
+        {
+          "path": "provenance/api/bsp-0142-preview-480.json",
+          "sha256": "8e12f1108eeeb956a5505508f06a8258ddb5aa580596f0ec44e8bf4f2b701cbb"
+        },
+        {
+          "path": "provenance/api/bsp-0143-preview-480.json",
+          "sha256": "cf31627528fff26fe0d2a542eed4d89f2404e9fcb03c380589d48fb65ec0350c"
+        }
+      ]
+    },
+    {
+      "candidates": [
+        "bsp-0045",
+        "bsp-0046"
+      ],
+      "finding": "Acabashi: Broadstairs wall in 2016 and Hatfield Broad Oak tank in 2018 are different stated settings and inspected materials. 0066 excluded relative to 0046 as probable related outing. No specific shared object between 0045 and 0046 established.",
+      "evidence": [
+        {
+          "path": "provenance/api/bsp-0045-preview-480.json",
+          "sha256": "da518fdbac0296d0f9620811f3e9092db6c40121b15980008aaafc2b26e8e7bf"
+        },
+        {
+          "path": "provenance/api/bsp-0046-preview-480.json",
+          "sha256": "2d5e53e96bda2392941df3791e2ec32ca1796070dc2f467f44f9cd99eab5293c"
+        }
+      ]
+    }
+  ],
+  "limitations": "Commons statements are retained, not independently authenticated. Missing individual authors, dates and locations remain unknown. Exact identities and inspected evidence cannot prove capture independence. Known/probable relationships excluded conservatively; no expected matching pairs."
+}

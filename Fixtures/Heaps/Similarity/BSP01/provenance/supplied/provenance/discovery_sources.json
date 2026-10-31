@@ -1,0 +1,111 @@
+{
+  "source": "Wikimedia Commons category media lists browsed 2026-10-31; title-level leads, not verified previews.",
+  "groups": [
+    {
+      "bucket": "lichen_rocks",
+      "category": "Lichen on rocks",
+      "discovery_url": "https://commons.wikimedia.org/wiki/Category:Lichen_on_rocks",
+      "candidate_count": 28,
+      "basis": "File titles transcribed from Commons category listing via read-only web browsing; actual image composition, license, and independence unverified.",
+      "visual_review": "pending"
+    },
+    {
+      "bucket": "lichen_varied",
+      "category": "Lichens",
+      "discovery_url": "https://commons.wikimedia.org/wiki/Category:Lichens",
+      "candidate_count": 15,
+      "basis": "File titles transcribed from Commons category listing via read-only web browsing; actual image composition, license, and independence unverified.",
+      "visual_review": "pending"
+    },
+    {
+      "bucket": "peeling_paint",
+      "category": "Peeling paint",
+      "discovery_url": "https://commons.wikimedia.org/wiki/Category:Peeling_paint",
+      "candidate_count": 23,
+      "basis": "File titles transcribed from Commons category listing via read-only web browsing; actual image composition, license, and independence unverified.",
+      "visual_review": "pending"
+    },
+    {
+      "bucket": "decayed_painted_surfaces",
+      "category": "Decaying painted surfaces",
+      "discovery_url": "https://commons.wikimedia.org/wiki/Category:Decaying_painted_surfaces",
+      "candidate_count": 16,
+      "basis": "File titles transcribed from Commons category listing via read-only web browsing; actual image composition, license, and independence unverified.",
+      "visual_review": "pending"
+    },
+    {
+      "bucket": "rusty_textures",
+      "category": "Rusty textures",
+      "discovery_url": "https://commons.wikimedia.org/wiki/Category:Rusty_textures",
+      "candidate_count": 26,
+      "basis": "File titles transcribed from Commons category listing via read-only web browsing; actual image composition, license, and independence unverified.",
+      "visual_review": "pending"
+    },
+    {
+      "bucket": "rusty_painted_surfaces",
+      "category": "Rusty painted surfaces",
+      "discovery_url": "https://commons.wikimedia.org/wiki/Category:Rusty_painted_surfaces",
+      "candidate_count": 8,
+      "basis": "File titles transcribed from Commons category listing via read-only web browsing; actual image composition, license, and independence unverified.",
+      "visual_review": "pending"
+    },
+    {
+      "bucket": "rust_stains",
+      "category": "Rust stains",
+      "discovery_url": "https://commons.wikimedia.org/wiki/Category:Rust_stains",
+      "candidate_count": 5,
+      "basis": "File titles transcribed from Commons category listing via read-only web browsing; actual image composition, license, and independence unverified.",
+      "visual_review": "pending"
+    },
+    {
+      "bucket": "algal_blooms",
+      "category": "Algal blooms",
+      "discovery_url": "https://commons.wikimedia.org/wiki/Category:Algal_blooms",
+      "candidate_count": 23,
+      "basis": "File titles transcribed from Commons category listing via read-only web browsing; actual image composition, license, and independence unverified.",
+      "visual_review": "pending"
+    },
+    {
+      "bucket": "algal_mats",
+      "category": "Algal mats",
+      "discovery_url": "https://commons.wikimedia.org/wiki/Category:Algal_mats",
+      "candidate_count": 9,
+      "basis": "File titles transcribed from Commons category listing via read-only web browsing; actual image composition, license, and independence unverified.",
+      "visual_review": "pending"
+    },
+    {
+      "bucket": "efflorescence",
+      "category": "Efflorescence",
+      "discovery_url": "https://commons.wikimedia.org/wiki/Category:Efflorescence",
+      "candidate_count": 10,
+      "basis": "File titles transcribed from Commons category listing via read-only web browsing; actual image composition, license, and independence unverified.",
+      "visual_review": "pending"
+    },
+    {
+      "bucket": "mineral_deposits",
+      "category": "Mineral deposits",
+      "discovery_url": "https://commons.wikimedia.org/wiki/Category:Mineral_deposits",
+      "candidate_count": 10,
+      "basis": "File titles transcribed from Commons category listing via read-only web browsing; actual image composition, license, and independence unverified.",
+      "visual_review": "pending"
+    },
+    {
+      "bucket": "concrete_surfaces",
+      "category": "Concrete textures",
+      "discovery_url": "https://commons.wikimedia.org/wiki/Category:Concrete_textures",
+      "candidate_count": 9,
+      "basis": "File titles transcribed from Commons category listing via read-only web browsing; actual image composition, license, and independence unverified.",
+      "visual_review": "pending"
+    },
+    {
+      "bucket": "rust_bubbles",
+      "category": "Rust bubbles",
+      "discovery_url": "https://commons.wikimedia.org/wiki/Category:Rust_bubbles",
+      "candidate_count": 3,
+      "basis": "File titles transcribed from Commons category listing via read-only web browsing; actual image composition, license, and independence unverified.",
+      "visual_review": "pending"
+    }
+  ],
+  "total_distinct_leads": 185,
+  "source_list_ambiguities": "Some distinct titles may be alternate captures, not yet established."
+}
