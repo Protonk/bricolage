@@ -22,6 +22,11 @@ It is not the router architecture or the future portable API.
   can rely on. Update the portability ledger when that handoff changes.
 - Keep experiment documentation consistent with code. Report meaningful changes,
   focused checks, and remaining uncertainty in plain language.
+- Handle local Git logistics. When requested work reaches a completed, checked
+  stopping point, stage and commit its changes on the current appropriate branch;
+  `main` is fine when no separate branch is needed. Preserve unrelated work and
+  do not leave completed task changes uncommitted. Leave pushing to the user
+  unless explicitly asked to push.
 - Use the supplied fixtures. Do not search for or acquire a corpus. Put image
   assets only in a fixture set's `images/`, `sources/`, or `previews/` directory;
   all contents of those directories are Git-ignored regardless of type. Do not
