@@ -76,6 +76,7 @@ tools; restore local media before running checks that need it.
 | `hazy_cr01` | `Heaps/Similarity/CR01` |
 | `hazy_tg01` | `Heaps/Similarity/TG01` |
 | `hazy_bsp01` | `Heaps/Similarity/BSP01` |
+| `US-Army-SSI-handoff` (instruction package) | `Heaps/Curatorial/US-Army-SSI/provenance/supplied` |
 
 Active commands and links use the current locations. Preserved supplied files,
 completed run records and existing ZIP snapshots retain their creation-time

@@ -16,7 +16,20 @@
   "selected": 150,
   "acquired": 150,
   "first_unresolved_rank": 35,
-  "original_handoff_disposition": "Retained unchanged at source_directory; preserved copy remains in provenance/supplied.",
+  "original_handoff_disposition": "Redundant setup directory removed after byte and SHA-256 verification against the already committed provenance/supplied copies.",
   "target": 150,
-  "pending_blocks_selection": false
+  "pending_blocks_selection": false,
+  "handoff_cleanup": {
+    "utc": "2026-10-31T22:05:46.896866+00:00",
+    "former_directory": "Fixtures/US-Army-SSI-handoff",
+    "preserved_directory": "Fixtures/Heaps/Curatorial/US-Army-SSI/provenance/supplied",
+    "verified_files": {
+      "CHECKS.md": "1025bc455509eacaa0a1e50d590d31bacd4708684ccd744b5e84b7695954eafc",
+      "INSTRUCTIONS.md": "b0b99702025f98ccf835ef7f36761fccba2493e9a4f8cb7a674c0f76bdbafeec",
+      "PETSCAN_QUERY.json": "53a0ed72ef6669b855daacc0cdd8d6092a8ecb792c234b9e9231dac1952f1955",
+      "README.md": "7f864aa08b7632ed08da68541f39c0c9d61d49086da1b3036696343e0e67cdaf"
+    },
+    "verified_against_commit": "ae0849dca857b91f7b0d5a5a3d23185547136f82",
+    "result": "All four files matched committed copies; duplicate files and empty setup directory removed."
+  }
 }

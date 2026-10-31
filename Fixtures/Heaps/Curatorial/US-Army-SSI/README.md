@@ -37,7 +37,10 @@ in reviewed reserve. Decisions and the user's instructions are recorded in
 ## Population and ordering
 
 The supplied handoff is preserved byte-for-byte in `provenance/supplied/`, with
-hashes in `provenance/intake.json`. Its depth-five PetScan query covers the File
+hashes in `provenance/intake.json`. The redundant `Fixtures/US-Army-SSI-handoff/`
+setup folder was removed after verifying all four files against these committed
+copies; the intake record retains its historical location and cleanup receipt.
+Its depth-five PetScan query covers the File
 namespace under **Shoulder Sleeve Insignia of the United States Army (SSI)** and
 descendants. There was no recursive client-side category crawl.
 
