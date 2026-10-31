@@ -2085,7 +2085,8 @@
     "rights_basis": null,
     "creator_basis": "Institutional attribution as reported in Commons Artist; individual designer and renderer not identified.",
     "inspection_evidence": "previews/review-evidence/ranks-0080-0099.jpg",
-    "inspection_sha256": "1e75a32f8e0a47ea381fb59ba6dbebd007ce7db46b5a01018b5bc2892a81470c"
+    "inspection_sha256": "1e75a32f8e0a47ea381fb59ba6dbebd007ce7db46b5a01018b5bc2892a81470c",
+    "pending_policy_reference": "provenance/scope-questions.json"
   },
   "04b10d9b97414c1bf64b": {
     "candidate_id": "04b10d9b97414c1bf64b",
@@ -2813,8 +2814,8 @@
     "reviewed_at": "2026-10-31T20:44:08.624090+00:00",
     "decision": "pending",
     "design_key": null,
-    "design_basis": "Own-work SPAM VIII CORPS 2 DIV drawing: file description identifies Spanish–American War corps/division but does not establish shoulder-sleeve use. Do not assert that this historical corps badge is an SSI from descendant-category membership alone. Awaiting user clarification whether unverified SSI candidates should be excluded with uncertainty or remain pending.",
-    "reason": "Own-work SPAM VIII CORPS 2 DIV drawing: file description identifies Spanish–American War corps/division but does not establish shoulder-sleeve use. Do not assert that this historical corps badge is an SSI from descendant-category membership alone. Awaiting user clarification whether unverified SSI candidates should be excluded with uncertainty or remain pending.",
+    "design_basis": "Own-work SPAM VIII CORPS 2 DIV drawing: file description identifies Spanish–American War corps/division but does not establish shoulder-sleeve use. Do not assert that this historical corps badge is an SSI from descendant-category membership alone. User instructed that unverified SSI candidates remain pending; shoulder-sleeve-use evidence remains unresolved.",
+    "reason": "Own-work SPAM VIII CORPS 2 DIV drawing: file description identifies Spanish–American War corps/division but does not establish shoulder-sleeve use. Do not assert that this historical corps badge is an SSI from descendant-category membership alone. User instructed that unverified SSI candidates remain pending; shoulder-sleeve-use evidence remains unresolved.",
     "metadata_path": "provenance/api/preview-480-ranks-0031-0040.json",
     "metadata_sha256": "ffd7b0c9c84ebd10c042ec7f3426b91babca946781dc8ef24b16130230aec3a8",
     "reported_artist": "TexasBob85",
@@ -2829,7 +2830,8 @@
     "rights_basis": null,
     "creator_basis": "Reported Artist retained separately; original designer/creator versus digital renderer not assigned without explicit evidence.",
     "inspection_evidence": "previews/review-evidence/ranks-0021-0040.jpg",
-    "inspection_sha256": "1a97888393fc300e4833475bca80e6de3ab8970848a503ea080abe347e0e0e3f"
+    "inspection_sha256": "1a97888393fc300e4833475bca80e6de3ab8970848a503ea080abe347e0e0e3f",
+    "pending_policy_reference": "provenance/scope-questions.json"
   },
   "5195eb3169791830aca8": {
     "candidate_id": "5195eb3169791830aca8",
@@ -2973,7 +2975,8 @@
     "rights_basis": null,
     "creator_basis": "Reported Artist retained separately; original designer/creator versus digital renderer not assigned without explicit evidence.",
     "inspection_evidence": "previews/review-evidence/ranks-0120-0139.jpg",
-    "inspection_sha256": "4bf89a5e7ef4502f6820549ec1892809e3be82dbe02a3df843d2d7461a9ca0dc"
+    "inspection_sha256": "4bf89a5e7ef4502f6820549ec1892809e3be82dbe02a3df843d2d7461a9ca0dc",
+    "pending_policy_reference": "provenance/scope-questions.json"
   },
   "3cf43535775e372cfa2b": {
     "candidate_id": "3cf43535775e372cfa2b",
@@ -3093,7 +3096,8 @@
     "rights_basis": null,
     "creator_basis": "Institutional attribution as reported in Commons Artist; individual designer and renderer not identified.",
     "inspection_evidence": "previews/review-evidence/ranks-0120-0139.jpg",
-    "inspection_sha256": "4bf89a5e7ef4502f6820549ec1892809e3be82dbe02a3df843d2d7461a9ca0dc"
+    "inspection_sha256": "4bf89a5e7ef4502f6820549ec1892809e3be82dbe02a3df843d2d7461a9ca0dc",
+    "pending_policy_reference": "provenance/scope-questions.json"
   },
   "179851645e6bdf6c9d86": {
     "candidate_id": "179851645e6bdf6c9d86",
@@ -3477,7 +3481,8 @@
     "rights_basis": null,
     "creator_basis": "Reported Artist retained separately; original designer/creator versus digital renderer not assigned without explicit evidence.",
     "inspection_evidence": "previews/review-evidence/ranks-0140-0159.jpg",
-    "inspection_sha256": "2a2f042f283d075c4b98896ddafd4e8d5db4d5635db0ff9368779ed440181d48"
+    "inspection_sha256": "2a2f042f283d075c4b98896ddafd4e8d5db4d5635db0ff9368779ed440181d48",
+    "pending_policy_reference": "provenance/scope-questions.json"
   },
   "326467113e7940c73abc": {
     "candidate_id": "326467113e7940c73abc",
@@ -3629,8 +3634,8 @@
     "reviewed_at": "2026-10-31T20:45:36.472406+00:00",
     "decision": "pending",
     "design_key": null,
-    "design_basis": "Title identifies Fourth Army CSIB and graphic is a four-leaf device on red square; retained description supplies no SSI identification. Keep equivalence to Fourth Army shoulder-sleeve design unresolved until additional evidence or scope clarification.",
-    "reason": "Title identifies Fourth Army CSIB and graphic is a four-leaf device on red square; retained description supplies no SSI identification. Keep equivalence to Fourth Army shoulder-sleeve design unresolved until additional evidence or scope clarification.",
+    "design_basis": "Title identifies Fourth Army CSIB and graphic is a four-leaf device on red square; retained description supplies no SSI identification. Keep equivalence to Fourth Army shoulder-sleeve design unresolved until additional evidence establishes it; user instructed that unverified SSI candidates remain pending.",
+    "reason": "Title identifies Fourth Army CSIB and graphic is a four-leaf device on red square; retained description supplies no SSI identification. Keep equivalence to Fourth Army shoulder-sleeve design unresolved until additional evidence establishes it; user instructed that unverified SSI candidates remain pending.",
     "metadata_path": "provenance/api/preview-480-ranks-0151-0160.json",
     "metadata_sha256": "d0f63ab50cbd0fadfb16f10ab0d8ed9f1386e581dd95e00b0d838ae8fadd5249",
     "reported_artist": "Mykola Hirniak",
@@ -3645,7 +3650,8 @@
     "rights_basis": null,
     "creator_basis": "Reported Artist retained separately; original designer/creator versus digital renderer not assigned without explicit evidence.",
     "inspection_evidence": "previews/review-evidence/ranks-0140-0159.jpg",
-    "inspection_sha256": "2a2f042f283d075c4b98896ddafd4e8d5db4d5635db0ff9368779ed440181d48"
+    "inspection_sha256": "2a2f042f283d075c4b98896ddafd4e8d5db4d5635db0ff9368779ed440181d48",
+    "pending_policy_reference": "provenance/scope-questions.json"
   },
   "bc0b6baaa81c9df459ff": {
     "candidate_id": "bc0b6baaa81c9df459ff",
@@ -3835,6 +3841,7 @@
     "license_url": null,
     "restrictions": "",
     "rights_basis": null,
-    "creator_basis": "Institutional attribution as reported in Commons Artist; individual designer and renderer not identified."
+    "creator_basis": "Institutional attribution as reported in Commons Artist; individual designer and renderer not identified.",
+    "pending_policy_reference": "provenance/scope-questions.json"
   }
 }

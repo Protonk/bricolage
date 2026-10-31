@@ -16,8 +16,10 @@ selection basis is Commons category membership, not an award or visual prompt.
 The fixed order is held at **rank 35**, `File:SPAM_VIII_CORPS_2_DIV.png`.
 Its file page identifies a Spanish–American War corps/division drawing but does
 not establish shoulder-sleeve use. The handoff permits exclusion of demonstrably
-out-of-scope files; clarification is pending on whether unverified SSI status
-should itself be an exclusion. No later candidate has been substituted silently.
+out-of-scope files. The user has directed that unverified SSI candidates remain
+**pending**, so the ordered selection stays held until the source evidence is
+resolved. This policy decision is recorded in `provenance/scope-questions.json`.
+No later candidate has been substituted silently.
 This is an unresolved selection, not an exhausted-population shortfall.
 
 Independent reviews through rank 160 are preserved: 134 provisionally eligible
