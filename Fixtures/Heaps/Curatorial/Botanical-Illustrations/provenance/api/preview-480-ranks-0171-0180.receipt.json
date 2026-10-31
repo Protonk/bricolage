@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T22:20:21.354197+00:00",
+  "key": "preview-480-ranks-0171-0180",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3AFuchs_aron_und_gro%C3%9F_schlangenkraut.jpg%7CFile%3ABodleian-Library-MS-Sherard-244_00031_f-25-Lithospermurn-apulum.jpg%7CFile%3AThe_Gardens%27_bulletin%3B_Straits_Settlements_%2812191623084%29.jpg%7CFile%3AArbres-1_-_insects_in_trees_etc_-_Public_domain_book_illustration_%28visual_explanation%2C_informative_drawing%2C_plate%29_from_Larousse_du_XX%C3%A8me_si%C3%A8cle_1932.jpg%7CFile%3ADr._Hope%27s_elementa_botanici_%28%28178%3F%29%29_%2820898477650%29.jpg%7CFile%3A%E6%A4%8D%E7%89%A9%E5%AD%B8%E5%8D%B7%E5%85%AD%E5%9C%963.jpg%7CFile%3AAmento.jpg%7CFile%3AEden-_or%2C_a_compleat_body_of_gardening_Fleuron_T032413-54.png%7CFile%3ABodleian-Library-MS-Sherard-244_00138_f-132-Melissa-altissima.jpg%7CFile%3APicea_pungens_%28as_Picea_parryana%29_-_Charles_Edward_Faxon.png&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=480&iiurlheight=480&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 58850,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 22:20:21 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-wv5wj",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "17edc732-0dd7-420e-aff3-6b176cb4cea9"
+  },
+  "sha256": "55e176224264754f1b06af37de22c2db4b7d925c8dc9b2989f85c6dc37749650"
+}

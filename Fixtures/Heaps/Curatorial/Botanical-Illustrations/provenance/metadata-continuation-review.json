@@ -1,0 +1,15 @@
+{
+  "utc": "2026-10-31T22:53:25.396957+00:00",
+  "metadata_path": "provenance/api/preview-640-ranks-0076-0076.json",
+  "metadata_sha256": "4e8b4fba5bfb255e7ab17762eabd4d10ecf9a43939429595510ab6fed196c937",
+  "continuation": {
+    "iistart": "2019-04-14T23:10:37Z",
+    "continue": "||revisions"
+  },
+  "current_file_timestamp": "2019-10-26T21:59:46Z",
+  "current_page_revision": 1083228465,
+  "basis": "Imageinfo default iilimit=1 returns the current file revision. The singleton offers an older upload-history timestamp; the requested current imageinfo and file-page revision content are both present. No history continuation was requested; no population or current evidence is omitted.",
+  "documentation": "https://www.mediawiki.org/wiki/API:Imageinfo",
+  "failed_publication_stage": "previews/integration-stage-sgqi2p9u",
+  "published_before_diagnosis": false
+}

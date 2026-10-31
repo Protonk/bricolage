@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T22:26:15.118322+00:00",
+  "key": "source-1600-ranks-0151-0160",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3AMonodora_minor.jpg%7CFile%3ACommon_Wormwood_-_Botanologia%2C_the_English_Herbal%2C_or%2C_History_of_Plants.png%7CFile%3AA_compleat_body_of_husbandry_Fleuron_T107754-10.png%7CFile%3ABodleian-Library-MS-Sherard-244_00073_f-67-Veronica-agrestis.jpg%7CFile%3AThe_American_educator%3B_completely_remodelled_and_rewritten_from_original_text_of_the_New_practical_reference_library%2C_with_new_plans_and_additional_material_%281919%29_%2814598420948%29.jpg%7CFile%3AJacobi_Petiveri_Opera%2C_historiam_naturalem_spectantia%3B_OR%2C_Gazophylacium_Fleuron_T115581-2.png%7CFile%3APlate_CLXXXIII_N528_w1150_%2832986910041%29.jpg%7CFile%3ABodleian-Library-MS-Sherard-244_00088_f-82-Scrophularia-peregrine.jpg%7CFile%3AAdelia_Sarah_Gates_%282%29.jpg%7CFile%3A%C3%96sterreichische_botanische_Zeitschrift_%281878%29_%2814782612772%29.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 78847,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 22:26:15 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-kdkxt",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "a4aab305-d716-461c-a6c9-8163b176fc8a"
+  },
+  "sha256": "6b13e7dd58f76e43ddd85bf1371c65dc93262d17248b18ff30e9a87f66e0ca52"
+}

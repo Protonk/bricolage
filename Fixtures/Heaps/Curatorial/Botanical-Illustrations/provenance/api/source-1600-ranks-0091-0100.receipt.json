@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T22:25:53.953647+00:00",
+  "key": "source-1600-ranks-0091-0100",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3ASchool_and_family_charts%2C_No._XXI._botanical-_economical_uses_of_plants_%28c.1890%29_print_in_high_resolution_by_Marcius_Willson_and_Norman_A._Calkins._Original_from_Library_of_Congress._Digitally_enhanced_by_rawpixel.jpg%7CFile%3AMeyers_Konversations-Lexikon_Bd._17_1897_%28136870256%29.jpg%7CFile%3AOrchidaceae_Illustration_by_H._A._Wood.jpg%7CFile%3AAugustus_Knapp.jpg%7CFile%3AHistorja_naturalna_-_zoologja%2C_botanika%2C_mineralogja_1906_%28100830125%29.jpg%7CFile%3ABodleian-Library-MS-Sherard-244_00096_f-90-Celsia-orientalis.jpg%7CFile%3ALegume%2C_struttura.jpg%7CFile%3ABodleian-Library-MS-Sherard-244_00091_f-85-Scrophularia-filicifolia.jpg%7CFile%3AJacobi_Petiveri_Opera%2C_historiam_naturalem_spectantia%3B_OR%2C_Gazophylacium_Fleuron_T115581-29.png%7CFile%3ABodleian-Library-MS-Sherard-244_00166_f-160-Salvia-viridis.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 54850,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 22:25:54 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-fj845",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "13ed0fc8-cc77-4905-a114-7cd76f9a0470"
+  },
+  "sha256": "020bd9ef74b930e965725f56885375900b8ccb4ab14dbecde300b3528ae5cbb9"
+}

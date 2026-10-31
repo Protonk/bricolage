@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T22:25:33.142697+00:00",
+  "key": "source-1600-ranks-0031-0040",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3APlante_planche_-_Plants%2C_botanical_illustrations_-_Public_domain_illustration_from_Larousse_du_XX%C3%A8me_si%C3%A8cle_1932.jpg%7CFile%3ABodleian-Library-MS-Sherard-244_00095_f-89-Scrophularia-caesia.jpg%7CFile%3AFranz_Joseph_M%C3%A4rter_Sweet_potato_1797.jpg%7CFile%3AThe_World_book_-_organized_knowledge_in_story_and_picture_%281918%29_%2814784169733%29.jpg%7CFile%3APrha_chlumn%C3%AD_a_vrbina_obecn%C3%A1_%E2%80%93_Jenny_Schermaul_1888.jpg%7CFile%3ABodleian-Library-MS-Sherard-244_00155_f-149-Phlomis-fruticosa.jpg%7CFile%3ABodleian-Library-MS-Sherard-244_00201_f-195-Statice-sinuata.jpg%7CFile%3AThe_%22Bryologia%22_of_the_Survey_of_the_49th_parallet_of_latitude_%281864%29_%2820232608459%29.jpg%7CFile%3ABodleian-Library-MS-Sherard-244_00023_f-17-Convolvulus-evolvuloides.jpg%7CFile%3ABodleian-Library-MS-Sherard-244_00009_f-3.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 66055,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 22:25:33 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-mbxkw",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "eb647ed6-b66f-4d5e-a3cd-8912255a13aa"
+  },
+  "sha256": "c5abaa942975ce4c0e0dc667c176652297dc39f20f94493adc937e4521652fee"
+}

@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T22:34:53.725541+00:00",
+  "key": "preview-640-ranks-0136-0136",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3AAlexanders_-_Botanologia%2C_the_English_Herbal%2C_or%2C_History_of_Plants_1710.png&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=640&iiurlheight=640&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 3936,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 22:34:53 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-qr7zm",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "91e5504d-dfd2-4850-b8f4-fc2f68f3d1fd"
+  },
+  "sha256": "6f68292a5a7e9a9914d4e443dcb5d4df62c68fea8f72b7b48b8296f9f2b3bf22"
+}

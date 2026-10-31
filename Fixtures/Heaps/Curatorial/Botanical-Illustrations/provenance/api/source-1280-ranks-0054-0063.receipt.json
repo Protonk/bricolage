@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T22:41:04.636753+00:00",
+  "key": "source-1280-ranks-0054-0063",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3AGalbulo.jpg%7CFile%3ABodleian-Library-MS-Sherard-244_00169_f-163-Salvia-Sibthorpii.jpg%7CFile%3ACapsula%2C_tipologie.jpg%7CFile%3APistillo.jpg%7CFile%3ACondylocarpon_rauwolfiae.jpg%7CFile%3AFlying_seeds_2.jpg%7CFile%3ABodleian-Library-MS-Sherard-244_00184_f-178-Lysimachia-atro-purpurea.jpg%7CFile%3ABodleian-Library-MS-Sherard-244_00127_f-121-Nepeta-italica.jpg%7CFile%3AWeinmannia_sylvicola_%2848752717063%29_%28cropped%29.jpg%7CFile%3AFoglia_composta.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1280&iiurlheight=1280&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 53987,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 22:41:04 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-mz6bw",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "93606059-0520-4ae9-b9c8-2a22f0901090"
+  },
+  "sha256": "df17ce1eb9d579e775ad07a5e73e7bdde7d149282b20e09e0314d56cb1b8525d"
+}

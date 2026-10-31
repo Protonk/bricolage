@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T22:50:47.482439+00:00",
+  "key": "source-1280-ranks-0157-0166",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3APlate_CLXXXIII_N528_w1150_%2832986910041%29.jpg%7CFile%3ABodleian-Library-MS-Sherard-244_00088_f-82-Scrophularia-peregrine.jpg%7CFile%3AAdelia_Sarah_Gates_%282%29.jpg%7CFile%3A%C3%96sterreichische_botanische_Zeitschrift_%281878%29_%2814782612772%29.jpg%7CFile%3ADrupa.jpg%7CFile%3AEtude_de_feuilles_diverses.jpg%7CFile%3AThunbergia_bicolor_botanical_illustration.jpg%7CFile%3ABulletin_des_sciences_BHL5492415.jpg%7CFile%3ADeyrolle_422013.jpg%7CFile%3A%E6%A4%8D%E7%89%A9%E5%AD%B8%E5%8D%B7%E5%9B%9B%E5%9C%963.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1280&iiurlheight=1280&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 63541,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 22:50:47 GMT",
+    "server": "mw-api-ext.codfw.canary-6b87d95d98-n6sjm",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "19bc624f-a8a7-4253-9c88-af8b0943000f"
+  },
+  "sha256": "3007c624dba7e8e5ded5839ff6806fe771ef3b6e565514e8e373e0cc5a2e874d"
+}

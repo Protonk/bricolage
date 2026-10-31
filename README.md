@@ -77,6 +77,9 @@ categories, pooled across 2023–2025; see its README for acquisition completene
 category membership with 150 acquired shoulder-sleeve insignia designs. Eight
 earlier candidates remain pending, with later selections explicitly provisional.
 See its README for the frozen PetScan population, pending selection and offline checks.
+[Botanical Illustrations](Fixtures/Heaps/Curatorial/Botanical-Illustrations/README.md)
+is one direct-category contribution with 150 selected works and 149 acquired
+inputs. One transfer and 14 earlier selection cases remain pending.
 
 Fixture sets use `images/` for comparison inputs and `sources/` for preserved
 source bytes. Optional `previews/` contains contact sheets, outside the input set.

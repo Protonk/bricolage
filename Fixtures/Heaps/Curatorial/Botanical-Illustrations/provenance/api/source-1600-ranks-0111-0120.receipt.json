@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T22:26:01.136807+00:00",
+  "key": "source-1600-ranks-0111-0120",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3ABodleian-Library-MS-Sherard-244_00001_p-i-.jpg%7CFile%3A%22Mapou_Pear%22%2C_Brazil_LCCN2003663626.jpg%7CFile%3ABodleian-Library-MS-Sherard-244_00057_f-51-Hyoscyamus-albus.jpg%7CFile%3AAnnales_des_Sciences_Naturelles_Botaniques_%2817786854363%29.jpg%7CFile%3AIllustration_of_Greenland_Flora%3B_1745_%28p._42%2C_A_Description_of_Greenland%2C_Hans_Egede%29.png%7CFile%3ABodleian-Library-MS-Sherard-244_00168_f-162-Salvia-Forskaelei.jpg%7CFile%3A%E6%A4%8D%E7%89%A9%E5%AD%B8%E5%8D%B7%E5%85%AD%E5%9C%962.jpg%7CFile%3AA_complete_body_of_planting_and_gardening_Fleuron_T100906-41.png%7CFile%3ABodleian-Library-MS-Sherard-244_00156_f-150-Phlomis-samia.jpg%7CFile%3AWinifred_Boys-Smith_Plate_V_Textbook_of_elementary_botany.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 53379,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 22:26:01 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-4jwd9",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "c8cf9265-b725-401a-a45e-4376a213f89f"
+  },
+  "sha256": "8c85500223c76fab2f1b02d10f3be02c09ac3e42f12045d47bb7eb9354586772"
+}

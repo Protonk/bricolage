@@ -127,7 +127,16 @@ and uploader roles remain separate, with no creator cap or visual-prompt size fl
 Explicit pending cases can remain unresolved while later candidates are selected
 provisionally in the same fixed order. Reaching the acquisition target does not
 resolve those cases; the selection ledger retains them and marks affected later
-selections for reconciliation.
+selections for reconciliation. Botanical-Illustrations uses this same single-leaf
+format for direct category membership, with distinct plate/artwork keys and
+separate artist, engraver/lithographer, publisher, digitizer and uploader roles.
+Different plates from one publication are permitted; work keys record duplicate
+exclusions, not source families or expected relationships.
+
+Cross-fixture identity audits record the prior leaves they covered and their
+manifest/catalog hashes. An offline recheck uses that recorded coverage so a new
+contribution does not invalidate an older historical audit; missing or changed
+covered evidence still fails. A new publication audits all current prior leaves.
 
 The common image/source columns are retained. `relation_kind=curatorial_selected`
 records selection basis only. A unique `family_id` and its single `parents`

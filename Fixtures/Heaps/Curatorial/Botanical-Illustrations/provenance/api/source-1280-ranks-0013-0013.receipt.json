@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T22:30:32.259532+00:00",
+  "key": "source-1280-ranks-0013-0013",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3AGartenflora_%28Taf._193%29_%287535909314%29.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1280&iiurlheight=1280&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 5550,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 22:30:32 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-brcl2",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "15c3fc38-dc2e-42d7-ab4b-fa436f39aaaa"
+  },
+  "sha256": "9c68c3016002cac2d733e0baaba6d27173f6dcc59cefe16e4c9333c97f7601e5"
+}

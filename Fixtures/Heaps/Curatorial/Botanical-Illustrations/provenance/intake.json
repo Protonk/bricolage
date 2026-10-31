@@ -1,0 +1,23 @@
+{
+  "utc": "2026-10-31T22:15:40.393384+00:00",
+  "source_folder": "Fixtures/Botanical-Illustrations-handoff",
+  "source_files": {
+    "CHECKS.md": "665127576ad74b4f6433317e8b8e5e9386c661902c4c5268a847750b5ef77fa4",
+    "INSTRUCTIONS.md": "d5e81957f157f17dfecd9c47c24f7321855b593256b0afa2754d0d6b4cb78adb",
+    "PETSCAN_QUERY.json": "f7dfeaf4b3f598d1cfeff84493193ac9bc6f4e3e7e61da348580c008b47d4781",
+    "README.md": "de020eeee2013409a6f0095365231cf5302eddee9e888de0a35aa78e4475b493"
+  },
+  "baseline_commit": "20df8b0",
+  "authorization": "Commissioned Botanical Illustrations intake with Safari export authorized in conversation.",
+  "source_category": "Botanical illustrations",
+  "depth": 0,
+  "scouting_count": 659,
+  "actual_export_count": 709,
+  "setup_cleanup": {
+    "utc": "2026-10-31T22:49:45.301530+00:00",
+    "removed_redundant_folder": "Fixtures/Botanical-Illustrations-handoff",
+    "method": "Verified complete four-file name set, byte equality and intake SHA-256 for every preserved supplied copy before removing redundant setup files.",
+    "preserved_in": "provenance/supplied",
+    "file_count": 4
+  }
+}

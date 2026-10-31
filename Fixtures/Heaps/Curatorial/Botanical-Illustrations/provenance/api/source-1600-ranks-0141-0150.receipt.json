@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T22:26:11.616754+00:00",
+  "key": "source-1600-ranks-0141-0150",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3AEscola_Secund%C3%A1ria_S%C3%A1_de_Miranda%2C_Braga_%2816%29.jpg%7CFile%3ABodleian-Library-MS-Sherard-244_00064_f-58-Verbascum-phlomoides.jpg%7CFile%3AA_new_gardener%27s_dictionary%3B_or_the_whole_art_of_gardening_Fleuron_T155110-16.png%7CFile%3AGymnosperm_ovule_fertilization.svg%7CFile%3AWeinmannia_sylvicola_%2848752717063%29.jpg%7CFile%3ABodleian-Library-MS-Sherard-244_00028_f-22-Cressa-cretica.jpg%7CFile%3AAchenio.jpg%7CFile%3APlate_20_Cryptogamia_-_Conversations_on_Botany-1st_edition.tiff%7CFile%3ABodleian-Library-MS-Sherard-244_00010_f-4-Fraxinus-Ornus.jpg%7CFile%3A54_of_%27Wanderings%2C_South_and_East_..._With_two_maps_and_forty-seven_wood_engravings_executed_under_the_direction_of_Edward_Whymper%2C_from_sketches_by_the_author%2C_native_drawings%2C_etc%27_%2811279969306%29.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 54221,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 22:26:11 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-gthc7",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "72242ea5-2307-4c2a-951d-0bdc472c9207"
+  },
+  "sha256": "67b991bca2fb108cf067eacf237b5c689fac55ed77d6ac1856736119b0862107"
+}

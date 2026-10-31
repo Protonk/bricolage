@@ -1,0 +1,290 @@
+{
+  "method": "Safari accessibility UI: saved existing HTML Page Source, changed only Output format to JSON in the same form, submitted once, saved JSON Page Source",
+  "user_authorization": "User authorized the open Safari PetScan results for this Botanical Illustrations intake.",
+  "browser_initial_url": "https://petscan.toolforge.org/?project=wikimedia&language=commons&categories=Botanical+illustrations&depth=0&ns%5B6%5D=1&output_limit=5000&doit=1&format=html&utm_source=chatgpt.com",
+  "psid": 58483581,
+  "executed_form_action": "https://petscan.toolforge.org/",
+  "executed_form_method": "POST",
+  "export_reported_query_url": "https://petscan.toolforge.org/?wikidata%5Fsource%5Fsites=&cb%5Flabels%5Fyes%5Fl=1&maxlinks=&outlinks%5Fno=&edits%5Bflagged%5D=both&manual%5Flist=&sitelinks%5Fyes=&links%5Fto%5Fno=&after=&ns%5B6%5D=1&larger=&min%5Fstatements=&language=commons&wpiu=any&talk%5Fpage%5Fexists=both&since%5Frev0=&max%5Fidentifiers=&show%5Fsoft%5Fredirects=both&file%5Fmedia%5Ftypes=&smaller=&manual%5Flist%5Fwiki=&max%5Fage=&search%5Fquery=&langs%5Flabels%5Fany=&referrer%5Furl=&categories=Botanical%20illustrations&combination=subset&min%5Fsitelink%5Fcount=&created%5Fby=&show%5Fdisambiguation%5Fpages=both&common%5Fwiki=auto&interface%5Flanguage=en&output%5Flimit=5000&sparql%5Fserver=wikidata&outlinks%5Fyes=&search%5Fmax%5Fresults=500&before=&edits%5Bbots%5D=both&search%5Fwiki=&cb%5Flabels%5Fno%5Fl=1&labels%5Fany=&ores%5Ftype=any&sortby=none&search%5Ffilter=&sitelinks%5Fno=&active%5Ftab=tab%5Foutput&negcats=&referrer%5Fname=&ores%5Fprediction=any&source%5Fcombination=&labels%5Fyes=&labels%5Fno=&doit=Do%20it%21&depth=0&ores%5Fprob%5Ffrom=&edits%5Banons%5D=both&namespace%5Fconversion=keep&wikidata%5Fitem=no&show%5Fredirects=both&wikidata%5Fprop%5Fitem%5Fuse=&max%5Fsitelink%5Fcount=&langs%5Flabels%5Fyes=&wikidata%5Flabel%5Flanguage=&cb%5Flabels%5Fany%5Fl=1&format=json&project=wikimedia&max%5Fstatements=&outlinks%5Fany=&min%5Fidentifiers=&langs%5Flabels%5Fno=&page%5Fimage=any&common%5Fwiki%5Fother=&ores%5Fprob%5Fto=&output%5Fcompatability=catscan&sortorder=ascending&minlinks=&rxp%5Ffilter=&templates%5Fany=&min%5Fredlink%5Fcount=1&links%5Fto%5Fall=&templates%5Fyes=&pagepile=&subpage%5Ffilter=either&sitelinks%5Fany=&templates%5Fno=&links%5Fto%5Fany=&sparql=",
+  "export_reported_parameters": {
+    "wikidata_source_sites": [
+      ""
+    ],
+    "cb_labels_yes_l": [
+      "1"
+    ],
+    "maxlinks": [
+      ""
+    ],
+    "outlinks_no": [
+      ""
+    ],
+    "edits[flagged]": [
+      "both"
+    ],
+    "manual_list": [
+      ""
+    ],
+    "sitelinks_yes": [
+      ""
+    ],
+    "links_to_no": [
+      ""
+    ],
+    "after": [
+      ""
+    ],
+    "ns[6]": [
+      "1"
+    ],
+    "larger": [
+      ""
+    ],
+    "min_statements": [
+      ""
+    ],
+    "language": [
+      "commons"
+    ],
+    "wpiu": [
+      "any"
+    ],
+    "talk_page_exists": [
+      "both"
+    ],
+    "since_rev0": [
+      ""
+    ],
+    "max_identifiers": [
+      ""
+    ],
+    "show_soft_redirects": [
+      "both"
+    ],
+    "file_media_types": [
+      ""
+    ],
+    "smaller": [
+      ""
+    ],
+    "manual_list_wiki": [
+      ""
+    ],
+    "max_age": [
+      ""
+    ],
+    "search_query": [
+      ""
+    ],
+    "langs_labels_any": [
+      ""
+    ],
+    "referrer_url": [
+      ""
+    ],
+    "categories": [
+      "Botanical illustrations"
+    ],
+    "combination": [
+      "subset"
+    ],
+    "min_sitelink_count": [
+      ""
+    ],
+    "created_by": [
+      ""
+    ],
+    "show_disambiguation_pages": [
+      "both"
+    ],
+    "common_wiki": [
+      "auto"
+    ],
+    "interface_language": [
+      "en"
+    ],
+    "output_limit": [
+      "5000"
+    ],
+    "sparql_server": [
+      "wikidata"
+    ],
+    "outlinks_yes": [
+      ""
+    ],
+    "search_max_results": [
+      "500"
+    ],
+    "before": [
+      ""
+    ],
+    "edits[bots]": [
+      "both"
+    ],
+    "search_wiki": [
+      ""
+    ],
+    "cb_labels_no_l": [
+      "1"
+    ],
+    "labels_any": [
+      ""
+    ],
+    "ores_type": [
+      "any"
+    ],
+    "sortby": [
+      "none"
+    ],
+    "search_filter": [
+      ""
+    ],
+    "sitelinks_no": [
+      ""
+    ],
+    "active_tab": [
+      "tab_output"
+    ],
+    "negcats": [
+      ""
+    ],
+    "referrer_name": [
+      ""
+    ],
+    "ores_prediction": [
+      "any"
+    ],
+    "source_combination": [
+      ""
+    ],
+    "labels_yes": [
+      ""
+    ],
+    "labels_no": [
+      ""
+    ],
+    "doit": [
+      "Do it!"
+    ],
+    "depth": [
+      "0"
+    ],
+    "ores_prob_from": [
+      ""
+    ],
+    "edits[anons]": [
+      "both"
+    ],
+    "namespace_conversion": [
+      "keep"
+    ],
+    "wikidata_item": [
+      "no"
+    ],
+    "show_redirects": [
+      "both"
+    ],
+    "wikidata_prop_item_use": [
+      ""
+    ],
+    "max_sitelink_count": [
+      ""
+    ],
+    "langs_labels_yes": [
+      ""
+    ],
+    "wikidata_label_language": [
+      ""
+    ],
+    "cb_labels_any_l": [
+      "1"
+    ],
+    "format": [
+      "json"
+    ],
+    "project": [
+      "wikimedia"
+    ],
+    "max_statements": [
+      ""
+    ],
+    "outlinks_any": [
+      ""
+    ],
+    "min_identifiers": [
+      ""
+    ],
+    "langs_labels_no": [
+      ""
+    ],
+    "page_image": [
+      "any"
+    ],
+    "common_wiki_other": [
+      ""
+    ],
+    "ores_prob_to": [
+      ""
+    ],
+    "output_compatability": [
+      "catscan"
+    ],
+    "sortorder": [
+      "ascending"
+    ],
+    "minlinks": [
+      ""
+    ],
+    "rxp_filter": [
+      ""
+    ],
+    "templates_any": [
+      ""
+    ],
+    "min_redlink_count": [
+      "1"
+    ],
+    "links_to_all": [
+      ""
+    ],
+    "templates_yes": [
+      ""
+    ],
+    "pagepile": [
+      ""
+    ],
+    "subpage_filter": [
+      "either"
+    ],
+    "sitelinks_any": [
+      ""
+    ],
+    "templates_no": [
+      ""
+    ],
+    "links_to_any": [
+      ""
+    ],
+    "sparql": [
+      ""
+    ]
+  },
+  "reported_browser_count": 709,
+  "export_rows": 709,
+  "unique_pageids": 709,
+  "unique_titles": 709,
+  "full_html_identity_sequence_matches_export": true,
+  "output_limit": 5000,
+  "http_status": null,
+  "http_headers": null,
+  "limitations": "Safari Page Source saves, not instrumented HTTP receipts. Browser status/headers and original generation time are unknown. Saved source bytes have not been edited. The UI verifies wikidata_item=no means Do not add Wikidata items, not an item-existence filter.",
+  "browser_restored": "Back to original loaded query/results, HTML output, unchanged 5000 limit and Categories tab; no second query submission.",
+  "html_file": "provenance/population/petscan-58483581-loaded.html",
+  "html_sha256": "dec79bf8ad569a6839f6b3f054f90fe793eb08c1110ff2e2dda4977d1f953174",
+  "html_bytes": 466201,
+  "html_saved_at": "2026-10-31T22:14:29.462595+00:00",
+  "export_file": "provenance/population/petscan-58483581-export.json",
+  "export_sha256": "b81b6dd71398a4582140c42e8bb6cd265b5ba1963e057418e92c1784b2d0b8c4",
+  "export_bytes": 118053,
+  "export_saved_at": "2026-10-31T22:14:53.789442+00:00"
+}

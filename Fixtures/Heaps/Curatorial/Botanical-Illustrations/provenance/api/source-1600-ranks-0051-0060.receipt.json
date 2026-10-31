@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T22:25:39.965372+00:00",
+  "key": "source-1600-ranks-0051-0060",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3ABodleian-Library-MS-Sherard-244_00186_f-180-Lysimachia-anagalloides.jpg%7CFile%3ASkelding-Violets-and-White-Clover-1883.jpg%7CFile%3ATree_fork_wood_grain_anatomy%2C_Slater_and_Ennos_2015.png%7CFile%3AGalbulo.jpg%7CFile%3ABodleian-Library-MS-Sherard-244_00169_f-163-Salvia-Sibthorpii.jpg%7CFile%3ACapsula%2C_tipologie.jpg%7CFile%3APistillo.jpg%7CFile%3ACondylocarpon_rauwolfiae.jpg%7CFile%3AFlying_seeds_2.jpg%7CFile%3ABodleian-Library-MS-Sherard-244_00184_f-178-Lysimachia-atro-purpurea.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 49998,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 22:25:40 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-g88bd",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "479114f8-5aeb-4b7d-920b-2bb5f92901f1"
+  },
+  "sha256": "665e99c214f46faf4c2c3725dac4d460793d872fecbeb12442752a8adb0f2567"
+}

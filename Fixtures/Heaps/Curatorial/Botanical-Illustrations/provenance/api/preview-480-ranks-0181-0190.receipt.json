@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T22:20:25.272920+00:00",
+  "key": "preview-480-ranks-0181-0190",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3APomo%2C_struttura.jpg%7CFile%3A%E6%A4%8D%E7%89%A9%E5%AD%B8%E5%8D%B7%E5%85%AD%E5%9C%9611.jpg%7CFile%3AAdelia_Sarah_Gates_%283%29.jpg%7CFile%3ASt._Nicholas_%28serial%29_%281873%29_%2814587450269%29.jpg%7CFile%3AJean-Fr%C3%A9d%C3%A9ric_Oberlin-Fiche_p%C3%A9dagogique_sur_les_esp%C3%A8ces_exotiques_%283%29.jpg%7CFile%3APanax_notoginseng.png%7CFile%3A%E6%A4%8D%E7%89%A9%E5%AD%B8%E5%8D%B7%E4%B8%89%E5%9C%9615.jpg%7CFile%3AZ_naszej_przyrody_-_obrazy_z_zycia_zwierzat_i_roslin_krajowych_1915_%2890654835%29.jpg%7CFile%3ASchool_and_family_charts%2C_No._XXII._Botanical-_economical_uses_of_plants_%281890%29_print_in_high_resolution_by_Marcius_Willson_and_Norman_A._Calkins._Original_from_Library_of_Congress._Digitally_enhanced_by_rawpixel.jpg%7CFile%3ACactus_Growths_Of_The_Desert_-_Pg-501.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=480&iiurlheight=480&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 57489,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 22:20:25 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-l5zc2",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "69bc37ee-b04c-45b7-b5fe-b186e409f3ad"
+  },
+  "sha256": "dd17ae0dbc9aed3c109aac6dab623fab5f5c88f06edcf87888f47a40c396179b"
+}

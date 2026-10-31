@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T22:20:29.238046+00:00",
+  "key": "preview-480-ranks-0191-0200",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3A%E6%A4%8D%E7%89%A9%E5%AD%B8%E5%8D%B7%E5%9B%9B%E5%9C%964.jpg%7CFile%3ARelation_d%27un_voyage_fait_en_1695_10.jpg%7CFile%3AThe_civil_and_natural_history_of_Jamaica_Fleuron_T089758-25.png%7CFile%3AJacobi_Petiveri_Opera%2C_historiam_naturalem_spectantia%3B_OR%2C_Gazophylacium_Fleuron_T115581-31.png%7CFile%3A%E6%A4%8D%E7%89%A9%E5%AD%B8%E5%8D%B7%E5%9B%9B%E5%9C%967.jpg%7CFile%3AMagdalena_Funck%2C_watercolor%2C_Sonnen_Bl%C3%BCme_%28sunflower%29%2C_p.478.png%7CFile%3ABodleian-Library-MS-Sherard-244_00078_f-72-Antirrhinum-micranthum.jpg%7CFile%3AJacobi_Petiveri_Opera%2C_historiam_naturalem_spectantia%3B_OR%2C_Gazophylacium_Fleuron_T115581-7.png%7CFile%3ANoce%2C_struttura.jpg%7CFile%3ABodleian-Library-MS-Sherard-244_00040_f-34-Anchusa-parviflora.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=480&iiurlheight=480&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 50949,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 22:20:29 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-hqd64",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "a58cef8d-668e-4b9a-b05b-28729ec279d9"
+  },
+  "sha256": "446f9fe3421e113d7ea30bebb853b30f3671a383a6c17c9a72137134a06dbf49"
+}

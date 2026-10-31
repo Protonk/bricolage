@@ -13,7 +13,7 @@ def normalized(value):
     return unquote(value).removeprefix('File:').replace('_', ' ').casefold().strip()
 
 
-def audit():
+def audit(fixture_names=None):
     root = ssi.ROOT
     fixtures = root.parents[2]
     previous = {k: {} for k in ('title', 'pageid', 'original_sha1', 'byte_sha256')}
@@ -32,6 +32,8 @@ def audit():
         if not (leaf / 'sources.csv').is_file():
             continue
         name = str(leaf.relative_to(fixtures))
+        if fixture_names is not None and name not in fixture_names:
+            continue
         manifest = ssi.read(path)
         with (leaf / 'sources.csv').open(newline='') as stream:
             sources = list(csv.DictReader(stream))
@@ -67,6 +69,9 @@ def audit():
                 add('title', row['upstream_title'], name + '/' + row['file'])
                 add('original_sha1', hashlib.sha1((leaf / row['file']).read_bytes()).hexdigest(), name + '/' + row['file'])
         inventories.append(record)
+
+    if fixture_names is not None:
+        ssi.require({r['fixture'] for r in inventories} == set(fixture_names), 'Recorded audit fixture is missing')
 
     selected = set(ssi.selection()['selected'])
     collisions = []

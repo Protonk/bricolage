@@ -1,0 +1,22 @@
+# Completion checks and reporting — Botanical illustrations
+
+**End state:** A single `Fixtures/Heaps/Curatorial/Botanical-Illustrations/` leaf, peer to POTY and US-Army-SSI (if already integrated), containing a mechanically selected sample aiming for **150 distinct botanical plates/artworks**. Not 150 attractive pictures handpicked for resemblance, and not a collection split by illustrator or source work.
+
+## Offline validation gates
+
+1. **Frozen scope.** Verify the exact executed PetScan query was `Botanical illustrations`, File namespace, depth 0; raw response bytes, timestamp, SHA-256 and complete File-page identity list exist. `inventory.json` reproduces the snapshot with a documented duplicate/redirect policy and without silent truncation. Never substitute 659 as the observed PetScan count unless it actually returned that count.
+2. **Replayable selection.** Recompute candidate IDs, fixed seeded ordering and the complete accept/exclude ledger offline. `selection.json` accounts for examined ranks, exclusions, unused reserve, target/actual selected, and pending cases. No manual aesthetic rerolls; no author cap. Different plates from the same volume may legitimately coexist.
+3. **Distinct work checks.** Explicit same-artwork reprints/scans/crops are not selected twice. A different File title, format, artist string, or plate scan is not automatically a distinct illustration. Potentially related plates and review decisions have traceable candidate IDs and evidence; suspected duplicates that cannot be resolved remain deferred or excluded rather than asserted unique.
+4. **Rights and identity.** Original author/engraver/publisher/upload roles are distinct where evidence permits; missing values stay null. Preserve raw Commons license claims including public-domain declarations without URLs. Original file identity (title, page ID, original SHA-1 and MIME) is distinct from acquired rendition URL, actual format and SHA-256. Prior-fixture exact-overlap audit reports *coverage*, not a proof of independence.
+5. **Format/renditions.** Test a raster-original case and, if the selected population contains one, an SVG-original / Commons-provided PNG-rendition case. Check actual decoded dimensions, byte limits, alpha preservation, original and rendition identities, and no local cropping or conversion. Reject arbitrary multipage PDF/DjVu extraction and oversized original fallback.
+6. **Transport and caching.** Test HTTP 429 / `Retry-After`, `maxlag` under HTTP 200, interrupted HTTP 200 bodies, failed decode, cache hash mismatch, explicit smaller-rendition request and the persistent stop/acknowledge flow. Completed files are not silently downloaded again. The checker distinguishes selected from acquired and unavailable media.
+7. **Leaf integrity.** `manifest.json` says `kind=curatorial_heap`; records use `relation_kind=curatorial_selected`, empty pair expectations, no `prompt.json`, no nested sub-heaps. Every `images/` input matches exactly one byte-identical `sources/` file and all manifest paths/hashes/dimensions agree. CSV, batch files, rights/source catalogs and download receipts validate locally. Git ignores images, sources, previews and archives.
+8. **Repository consistency.** The new Curatorial index points to the single leaf and states actual counts. Existing POTY and Similarity fixtures remain unchanged; relevant offline checks still pass. Do not claim tests ran unless run.
+
+## Stop/shortfall behavior
+
+A target of **150** is a sampling aim, not permission to weaken eligibility or duplicate-work checks. If it cannot be reached from the frozen direct category, record the shortfall, exhaustion and available reserves. Do not silently expand the PetScan depth or supplement it from another botanical category. The earlier **30-image minimum belongs to visual-prompt Similarity contributions**, not automatically to this Curatorial one. An unresolved download failure keeps selected images selected but records pending acquisition explicitly.
+
+Final report in a few sentences or a short table: exported File-page count (versus category-page scouting count, if different), unique resolved File identities, examined/selected/excluded/reserve, acquired/pending, duplicate-work cases, rights/provenance gaps, unusual rendition handling, download failures, offline tests and result, output path, Git commit SHA, and which assets remain local because they are ignored by Git.
+
+A successful run is a **reproducible population sample**, not a similarity benchmark or assessment of botanical art quality.

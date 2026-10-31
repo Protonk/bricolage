@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T22:20:17.580627+00:00",
+  "key": "preview-480-ranks-0161-0170",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3ADrupa.jpg%7CFile%3AEtude_de_feuilles_diverses.jpg%7CFile%3AThunbergia_bicolor_botanical_illustration.jpg%7CFile%3ABulletin_des_sciences_BHL5492415.jpg%7CFile%3ADeyrolle_422013.jpg%7CFile%3A%E6%A4%8D%E7%89%A9%E5%AD%B8%E5%8D%B7%E5%9B%9B%E5%9C%963.jpg%7CFile%3AVl%C4%8D%C3%AD_m%C3%A1k_a_hlav%C3%A1%C4%8Dek_letn%C3%AD_%E2%80%93_Jenny_Schermaulov%C3%A9_1888.jpg%7CFile%3ATarascon%2Cch%C3%A2teau%2Capothicairerie_h%C3%B4pital_St_Nicolas2.jpg%7CFile%3ASchool_and_family_charts%2C_No._XIX._Botanical-_forms_of_leaves%2C_stems%2C_roots%2C_and_flowers_%281890%29_print_in_high_resolution_by_Marcius_Willson_and_Norman_A._Calkins._Original_from_Library_of_Congress._Digitally_enhanced_by_rawpixel.jpg%7CFile%3ADr._Hope%27s_elementa_botanici_%28%28178%3F%29%29_%2821094222811%29.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=480&iiurlheight=480&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 58818,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 22:20:17 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-m5xr9",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "737b94dd-9f86-459a-9f10-07aaea53d794"
+  },
+  "sha256": "33a483c2d2354b28e982442b948587b4b1fdccdf884348b27c415ef7d9b4eaf2"
+}

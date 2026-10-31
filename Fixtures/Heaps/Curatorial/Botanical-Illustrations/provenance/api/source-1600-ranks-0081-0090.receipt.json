@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T22:25:50.422023+00:00",
+  "key": "source-1600-ranks-0081-0090",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3AAdolphe_Millot_fruits_B.jpg%7CFile%3ABambus...Wortelboom...Durioens.jpg%7CFile%3ABodleian-Library-MS-Sherard-244_00049_f-43-Borago-cretica.jpg%7CFile%3ABodleian-Library-MS-Sherard-244_00079_f-73-Antirrhinum-albifrons.jpg%7CFile%3AAnemiaceae.jpg%7CFile%3A%E6%A4%8D%E7%89%A9%E5%AD%B8%E5%8D%B7%E4%B8%89%E5%9C%961.jpg%7CFile%3ASt._Nicholas_%28serial%29_%281873%29_%2814770942091%29.jpg%7CFile%3AA_new_gardener%27s_dictionary%3B_or_the_whole_art_of_gardening_Fleuron_T155110-7.png%7CFile%3AA_synopsis_of_natural_history-_embracing_the_natural_history_of_animals%2C_with_human_and_general_animal_physiology%2C_botany%2C_vegetable_physiology_and_geology_%281839%29_%2814804203063%29.jpg%7CFile%3A%E6%A4%8D%E7%89%A9%E5%AD%B8%E5%8D%B7%E4%B8%89%E5%9C%9618.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 59427,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 22:25:50 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-kjwv2",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "8731ff13-389d-427e-aa58-866cf75a5da2"
+  },
+  "sha256": "00755cb62566d80e5f8b17268568e5cfb289e966ffe74624d6d255f98874351c"
+}

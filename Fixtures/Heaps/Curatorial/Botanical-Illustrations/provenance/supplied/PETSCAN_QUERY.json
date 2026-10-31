@@ -1,0 +1,30 @@
+{
+  "purpose": "One mechanically sampled Curatorial leaf from direct Commons botanical-illustration File pages. No category recursion and no local arbitrary visual selection.",
+  "query_parameters": {
+    "project": "wikimedia",
+    "language": "commons",
+    "categories": "Botanical illustrations",
+    "depth": "0",
+    "ns[6]": "1",
+    "output_limit": "5000",
+    "doit": "1"
+  },
+  "export_format": "json",
+  "query_url_json": "https://petscan.wmcloud.org/?project=wikimedia&language=commons&categories=Botanical+illustrations&depth=0&ns%5B6%5D=1&output_limit=5000&doit=1&format=json",
+  "query_url_html": "https://petscan.wmcloud.org/?project=wikimedia&language=commons&categories=Botanical+illustrations&depth=0&ns%5B6%5D=1&output_limit=5000&doit=1&format=html",
+  "source_category_url": "https://commons.wikimedia.org/wiki/Category:Botanical_illustrations",
+  "scouting_observation": {
+    "date": "2026-10-31",
+    "direct_file_count_displayed": 659,
+    "immediate_subcategories_displayed": 43,
+    "basis": "Commons category page as browsed, not a PetScan export or immutable inventory"
+  },
+  "reported_pet_scan_result_count": null,
+  "actual_export_count": null,
+  "snapshot_timestamp_utc": null,
+  "raw_response_sha256": null,
+  "target_selected": 150,
+  "expected_candidate_namespace": 6,
+  "scope_note": "Depth 0 means direct category File members; expansion to descendants must be explicitly re-commissioned and recorded as a different snapshot.",
+  "output_limit_note": "Ensure the full result is exported and detect truncation. The limit is a guard, not a sampling device."
+}

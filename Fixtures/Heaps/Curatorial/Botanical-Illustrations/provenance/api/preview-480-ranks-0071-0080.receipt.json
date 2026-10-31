@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T22:19:43.112841+00:00",
+  "key": "preview-480-ranks-0071-0080",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3ADie_Musci_der_Flora_von_Buitenzorg_-_zugleich_Laubmoosflora_von_Java_%281900-1922.%29_%2820310695404%29.jpg%7CFile%3ANight-blowing_cereus.jpg%7CFile%3ABodleian-Library-MS-Sherard-244_00087_f-81-Antirrhinum-genistifolium.jpg%7CFile%3AThe_phanerogams_of_the_Juan_Fernandez_Islands_%2820106352134%29.jpg%7CFile%3ADenkschriften_der_Kaiserlichen_Akademie_der_Wissenschaften_-_Mathematisch-Naturwissenschaftliche_Classe_%281864%29_%2820843277632%29.jpg%7CFile%3ABeautiful_monstrosities_%283%29.png%7CFile%3AGymnosperm_developing_seed.svg%7CFile%3ABodleian-Library-MS-Sherard-244_00017_f-11-Convolvulus-Scammonia.jpg%7CFile%3A%E6%A4%8D%E7%89%A9%E5%AD%B8%E5%8D%B7%E5%85%AD%E5%9C%9617.jpg%7CFile%3ABodleian-Library-MS-Sherard-244_00056_f-50-Echium-creticum.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=480&iiurlheight=480&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 67715,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 22:19:43 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-g4h4h",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "b67852f7-6c72-403d-ba93-848d4ae8cb63"
+  },
+  "sha256": "931ccf29ee370acb7fd81da5db5d6bc8ca20ec0eab123d6b0266d47cbfd727a8"
+}

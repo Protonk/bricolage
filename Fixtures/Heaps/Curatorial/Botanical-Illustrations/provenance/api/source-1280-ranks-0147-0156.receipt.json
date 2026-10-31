@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T22:50:43.988035+00:00",
+  "key": "source-1280-ranks-0147-0156",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3AAchenio.jpg%7CFile%3APlate_20_Cryptogamia_-_Conversations_on_Botany-1st_edition.tiff%7CFile%3ABodleian-Library-MS-Sherard-244_00010_f-4-Fraxinus-Ornus.jpg%7CFile%3A54_of_%27Wanderings%2C_South_and_East_..._With_two_maps_and_forty-seven_wood_engravings_executed_under_the_direction_of_Edward_Whymper%2C_from_sketches_by_the_author%2C_native_drawings%2C_etc%27_%2811279969306%29.jpg%7CFile%3AMonodora_minor.jpg%7CFile%3ACommon_Wormwood_-_Botanologia%2C_the_English_Herbal%2C_or%2C_History_of_Plants.png%7CFile%3AA_compleat_body_of_husbandry_Fleuron_T107754-10.png%7CFile%3ABodleian-Library-MS-Sherard-244_00073_f-67-Veronica-agrestis.jpg%7CFile%3AThe_American_educator%3B_completely_remodelled_and_rewritten_from_original_text_of_the_New_practical_reference_library%2C_with_new_plans_and_additional_material_%281919%29_%2814598420948%29.jpg%7CFile%3AJacobi_Petiveri_Opera%2C_historiam_naturalem_spectantia%3B_OR%2C_Gazophylacium_Fleuron_T115581-2.png&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1280&iiurlheight=1280&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 68926,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 22:50:44 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-5lb7f",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "69f00a60-76e4-436e-bcf2-972a988a5665"
+  },
+  "sha256": "60f1ae00c41f3fe6e5b8e956836b3c236d32bf0537a4a78d4fe12e5211919fc8"
+}

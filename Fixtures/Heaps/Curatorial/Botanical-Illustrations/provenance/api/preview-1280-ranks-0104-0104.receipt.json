@@ -1,0 +1,20 @@
+{
+  "utc": "2026-10-31T22:30:39.148343+00:00",
+  "key": "preview-1280-ranks-0104-0104",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3A%E6%A4%8D%E7%89%A9%E5%AD%B8%E5%8D%B7%E5%85%AD%E5%9C%968.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1280&iiurlheight=1280&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 3252,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 22:30:39 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-vl6nh",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "content-length": "3252",
+    "x-request-id": "7508953e-6fe3-492b-8ef9-48302ed55c87"
+  },
+  "sha256": "0d84f682615ffd27e2de030013fc22bca9a98a78571a766c15249b16afdcc5a6"
+}

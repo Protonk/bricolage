@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T22:50:40.375440+00:00",
+  "key": "source-1280-ranks-0123-0132",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3AGartenflora_%28Taf._185%29_%287535896888%29.jpg%7CFile%3AA_flora_of_Manila_%281912%29_%2820537283750%29.jpg%7CFile%3ASheet_of_flowers_and_leaves%29_-_on_stone_by_J._Ackerman_LCCN2015645694.jpg%7CFile%3ACalice_sepali.jpg%7CFile%3ABodleian-Library-MS-Sherard-244_00025_f-19-Convolvulus-Cneorum.jpg%7CFile%3AWheat_bran_structure.gif%7CFile%3AHolunder_aus_dem_Gart_der_Gesundheit.png%7CFile%3ABodleian-Library-MS-Sherard-244_00062_f-56-Solanum-sodomeum.jpg%7CFile%3AMagdalena_Funck%2C_watercolor_flower%2C_Gef%C3%BClte_Fe%C3%BCer_Lilia_%28lily%29%2C_p._198.png%7CFile%3ABodleian-Library-MS-Sherard-244_00012_f-6-Cynanchum-acutum.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1280&iiurlheight=1280&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 52948,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 22:50:40 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-p9dtx",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "1f5c6e3c-dc06-4a7e-ba26-6b843b8a146a"
+  },
+  "sha256": "1762ef6c57b8a7443fcb8e940cf02775b240e100fb40ce519534f9a0d7dc08be"
+}

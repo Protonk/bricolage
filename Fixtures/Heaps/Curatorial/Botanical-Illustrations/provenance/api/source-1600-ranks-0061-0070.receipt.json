@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T22:25:43.397030+00:00",
+  "key": "source-1600-ranks-0061-0070",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3ABodleian-Library-MS-Sherard-244_00127_f-121-Nepeta-italica.jpg%7CFile%3AWeinmannia_sylvicola_%2848752717063%29_%28cropped%29.jpg%7CFile%3AFoglia_composta.jpg%7CFile%3AHierschzunge_aus_dem_Gart_der_Gesundheit.png%7CFile%3ABodleian-Library-MS-Sherard-244_00007_f-1-Styrax-officinale.jpg%7CFile%3A%22Capivard_at_the_foot_of_a_Bananier%22_LCCN2003663628.jpg%7CFile%3ABodleian-Library-MS-Sherard-244_00019_f-13-Convolvulus-althaeoides.jpg%7CFile%3AOvario_infero_e_ovario_supero.jpg%7CFile%3ANew_improvements_of_planting_and_gardening_Fleuron_T039871-8.png%7CFile%3ANuts_Fig_leaves_-_Ainsworth_William_Francis_-_1870.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 47290,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 22:25:43 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-bfhtb",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "d3008dfd-a00e-40a6-82d2-0a822752cbd8"
+  },
+  "sha256": "837ddfed0a2743a4d166711c5f8b0272d85a00f67cd1704df6fb1146e30dd37e"
+}

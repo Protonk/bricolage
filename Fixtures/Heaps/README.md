@@ -8,7 +8,7 @@ inputs; placing them in one heap does not assert pairwise similarity or dissimil
 | Heap | Selection basis |
 |---|---|
 | [Similarity](Similarity/README.md) | Collections chosen to look alike under short visual prompts, across potentially different subjects |
-| [Curatorial](Curatorial/README.md) | Mechanical samples from published source populations: POTY Round 1 categories and Commons US Army SSI category membership |
+| [Curatorial](Curatorial/README.md) | Mechanical samples from published source populations: POTY Round 1 categories, Commons US Army SSI and Botanical Illustrations category membership |
 
 The `Heaps/` level imposes no common visual criterion. The provenance-led trio lives
 separately under [Relationships](../Relationships/README.md).
@@ -21,7 +21,9 @@ Contributions may be grouped under a source collection: Curatorial → POTY →
 official category. Directory depth does not change leaf-local paths or asset
 ignore rules. Validators are identified by each contribution's README.
 US-Army-SSI is a single Curatorial leaf beside POTY, with 150 acquired inputs,
-explicit pending cases and its own offline validator.
+explicit pending cases and its own offline validator. Botanical-Illustrations
+is another direct Curatorial leaf, with 149 of 150 selected works acquired,
+one pending transfer, a distinct-work review and its own offline validator. Each README separates selected, acquired and pending counts.
 
 See [the fixture index](../README.md) for intake locations and
 [FORMAT.md](../FORMAT.md) for the existing manifest and asset conventions.

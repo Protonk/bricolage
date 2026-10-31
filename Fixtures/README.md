@@ -23,6 +23,7 @@ Fixtures/
         Constructions-and-buildings/
         People-and-human-activity/
       US-Army-SSI/
+      Botanical-Illustrations/
 ```
 
 | Location | Role |
@@ -30,7 +31,7 @@ Fixtures/
 | [Relationships](Relationships/README.md) | The chosen trio: derivation, multiple captures, and variants, with recorded source relationships and comparison probes |
 | [Heaps](Heaps/README.md) | Independently selected image pools, each with its own selection criteria |
 | [Similarity](Heaps/Similarity/README.md) | One heap assembled from collections chosen to look alike under short visual prompts |
-| [Curatorial](Heaps/Curatorial/README.md) | Published source populations sampled mechanically; POTY Round 1 categories and Commons US Army SSI membership |
+| [Curatorial](Heaps/Curatorial/README.md) | Published source populations sampled mechanically; POTY Round 1 categories, US Army SSI and Botanical Illustrations category membership |
 
 RG01, SF01, PS01, CR01, TG01 and BSP01 belong to the same Similarity heap. They retain their
 own acquisition and review records. Their collection membership records human
@@ -41,6 +42,10 @@ membership is a sourcing fact, not a similarity judgment.
 The [US-Army-SSI leaf](Heaps/Curatorial/US-Army-SSI/README.md) sits beside POTY:
 150 acquired inputs from 1,641 frozen PetScan results. Eight earlier cases remain
 pending; later selections are provisional. It has no sub-heaps.
+[Botanical Illustrations](Heaps/Curatorial/Botanical-Illustrations/README.md) is
+another single leaf, using 709 frozen direct-category File entries and a target
+of 150 distinct works. It has 149 acquired inputs, one pending transfer, and
+14 earlier unresolved selection cases; later selections remain provisional.
 
 ## Working with the fixtures
 
@@ -77,6 +82,7 @@ tools; restore local media before running checks that need it.
 | `hazy_tg01` | `Heaps/Similarity/TG01` |
 | `hazy_bsp01` | `Heaps/Similarity/BSP01` |
 | `US-Army-SSI-handoff` (instruction package) | `Heaps/Curatorial/US-Army-SSI/provenance/supplied` |
+| `Botanical-Illustrations-handoff` (instruction package) | `Heaps/Curatorial/Botanical-Illustrations/provenance/supplied` |
 
 Active commands and links use the current locations. Preserved supplied files,
 completed run records and existing ZIP snapshots retain their creation-time

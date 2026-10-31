@@ -1,0 +1,20 @@
+{
+  "utc": "2026-10-31T22:38:12.815683+00:00",
+  "key": "preview-640-ranks-0159-0159",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3AAdelia_Sarah_Gates_%282%29.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=640&iiurlheight=640&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 3222,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 22:38:13 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-2dhqp",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "content-length": "3222",
+    "x-request-id": "6bb96f19-e0cf-46ce-9dbe-62db89df7b11"
+  },
+  "sha256": "96d8efeb95d55f126a0b0c6636d5325fae330d445ff602071814762221ef06fc"
+}

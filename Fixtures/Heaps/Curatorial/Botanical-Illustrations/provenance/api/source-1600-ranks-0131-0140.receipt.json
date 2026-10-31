@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T22:26:08.133986+00:00",
+  "key": "source-1600-ranks-0131-0140",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3AMagdalena_Funck%2C_watercolor_flower%2C_Gef%C3%BClte_Fe%C3%BCer_Lilia_%28lily%29%2C_p._198.png%7CFile%3ABodleian-Library-MS-Sherard-244_00012_f-6-Cynanchum-acutum.jpg%7CFile%3ABodleian-Library-MS-Sherard-244_00008_f-2.jpg%7CFile%3AA_compleat_body_of_husbandry_Fleuron_T127634-10.png%7CFile%3AZ_naszej_przyrody_-_obrazy_z_zycia_zwierzat_i_roslin_krajowych_1915_%2890652897%29.jpg%7CFile%3AAlexanders_-_Botanologia%2C_the_English_Herbal%2C_or%2C_History_of_Plants_1710.png%7CFile%3ABodleian-Library-MS-Sherard-244_00131_f-125-Sideritis-romana.jpg%7CFile%3ABodleian-Library-MS-Sherard-244_00189_f-183-Plantago-albicans.jpg%7CFile%3AFlora_Britanica-_sive%2C_synopsis_methodica_stirpium_Britanicarum_Fleuron_T035615-32.png%7CFile%3AThe_compleat_herbal%3B_or%2C_family_physician_Fleuron_T124837-31.png&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 52393,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 22:26:08 GMT",
+    "server": "mw-api-ext.codfw.canary-6b87d95d98-w5c9q",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "5e1c2619-6552-4a44-a1cd-e6e790308c91"
+  },
+  "sha256": "759ebaa39960dfbe18d51df4e57122d71d7bc5e395e26863d2c72bfcfc9ab100"
+}

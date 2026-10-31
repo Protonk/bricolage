@@ -1,0 +1,122 @@
+[
+  {
+    "candidate_id": "2d1e12880e89ac98d73b",
+    "metadata_path": "provenance/api/preview-480-ranks-0151-0160.json",
+    "metadata_sha256": "870346a20f768861af7310224be2f20f69b76d7b70472b6e4a0b1dcc727ce174",
+    "linked_titles": [
+      "File:Cintractia solida formerly Ustilago solida.jpg",
+      "File:Glomus australe fornerly Endogone australis.jpg"
+    ],
+    "linked_inventory_candidates": [
+      "98b1d6b4a9d03bd791f3",
+      "a77935093b740bbc86b8"
+    ],
+    "raw_passages": [
+      "{{Image extracted|1=Cintractia solida formerly Ustilago solida.jpg|2=Glomus australe fornerly Endogone australis.jpg}}"
+    ]
+  },
+  {
+    "candidate_id": "48c66c07f0c144fc144f",
+    "metadata_path": "provenance/api/preview-480-ranks-0151-0160.json",
+    "metadata_sha256": "870346a20f768861af7310224be2f20f69b76d7b70472b6e4a0b1dcc727ce174",
+    "linked_titles": [
+      "File:Österreichische botanische Zeitschrift (1878) (14782612772)-7+8-3.jpg"
+    ],
+    "linked_inventory_candidates": [],
+    "raw_passages": [
+      "{{Image extracted|1=Österreichische botanische Zeitschrift (1878) (14782612772)-7+8-3.jpg}}"
+    ]
+  },
+  {
+    "candidate_id": "4be18d090764dfa198bd",
+    "metadata_path": "provenance/api/preview-480-ranks-0111-0120.json",
+    "metadata_sha256": "74063b2b637f813f24629b6d0bb227b44aac67d6b50ac997e344b8d198451c74",
+    "linked_titles": [
+      "File:\"Mapou Pear\", Brazil LCCN2003663626.tif"
+    ],
+    "linked_inventory_candidates": [],
+    "raw_passages": [
+      "<gallery>\n\"Mapou Pear\", Brazil LCCN2003663626.tif|<div style=\"text-align:center\">tif<br>1,331 × 1,536</div>\n</gallery>"
+    ]
+  },
+  {
+    "candidate_id": "6678cc60b9b1b25ba7fa",
+    "metadata_path": "provenance/api/preview-480-ranks-0111-0120.json",
+    "metadata_sha256": "74063b2b637f813f24629b6d0bb227b44aac67d6b50ac997e344b8d198451c74",
+    "linked_titles": [
+      "File:Beschryving van Oud-Groenland of eigentlyk van de zoogenaamde Straat Davis (microform) - behelzende deszelfs natuurlyke historie, standsgelegenheid, gedaante, grensscheidingen, veld-gewassen, dieren, (20625722981).jpg",
+      "File:[[File:Beschryving van Oud-Groenland of eigentlyk van de zoogenaamde Straat Davis (microform) - behelzende deszelfs natuurlyke historie, standsgelegenheid, gedaante, grensscheidingen, veld-gewassen, dieren, (20625722981).jpg"
+    ],
+    "linked_inventory_candidates": [],
+    "raw_passages": [
+      "[[File:Beschryving van Oud-Groenland of eigentlyk van de zoogenaamde Straat Davis (microform) - behelzende deszelfs natuurlyke historie, standsgelegenheid, gedaante, grensscheidingen, veld-gewassen, dieren, (20625722981).jpg|100px]]",
+      "{{extracted from|Hans Egede, A Description of Greenland, London 1745 (IA descriptionofgre00eged).djvu|page=69}}"
+    ]
+  },
+  {
+    "candidate_id": "88dad9abbe93ca0ed048",
+    "metadata_path": "provenance/api/preview-480-ranks-0061-0070.json",
+    "metadata_sha256": "8497056db448e5e00a7ac9e1ab33b3040968bf708856cda07d3ada08ec6d77a3",
+    "linked_titles": [
+      "File:\"Capivard at the foot of a Bananier\" LCCN2003663628.tif"
+    ],
+    "linked_inventory_candidates": [],
+    "raw_passages": [
+      "<gallery>\n\"Capivard at the foot of a Bananier\" LCCN2003663628.tif|<div style=\"text-align:center\">tif<br>1,131 × 1,536</div>\n</gallery>"
+    ]
+  },
+  {
+    "candidate_id": "8b3ca1e03c66e072cad0",
+    "metadata_path": "provenance/api/preview-480-ranks-0041-0050.json",
+    "metadata_sha256": "6ce3fe9c050369fda87c886d84cdc7aca5c965dc431e3617bc3d5b79500e17e3",
+    "linked_titles": [
+      "File:\"Unknown fruit\", Brazil LCCN2003663627.tif"
+    ],
+    "linked_inventory_candidates": [],
+    "raw_passages": [
+      "<gallery>\n\"Unknown fruit\", Brazil LCCN2003663627.tif|<div style=\"text-align:center\">tif<br>1,161 × 1,536</div>\n</gallery>"
+    ]
+  },
+  {
+    "candidate_id": "97442cebf9095a1427da",
+    "metadata_path": "provenance/api/preview-480-ranks-0141-0150.json",
+    "metadata_sha256": "b0cfaa8686d0badcefca5c7bbea63575bdd77d38191351edfe6d0f14092c54fc",
+    "linked_titles": [
+      "File:Weinmannia sylvicola (48752717063) (cropped).jpg"
+    ],
+    "linked_inventory_candidates": [
+      "9c408c0051c1eef67d12"
+    ],
+    "raw_passages": [
+      "{{Image extracted|1=Weinmannia sylvicola (48752717063) (cropped).jpg}}"
+    ]
+  },
+  {
+    "candidate_id": "9c408c0051c1eef67d12",
+    "metadata_path": "provenance/api/preview-480-ranks-0061-0070.json",
+    "metadata_sha256": "8497056db448e5e00a7ac9e1ab33b3040968bf708856cda07d3ada08ec6d77a3",
+    "linked_titles": [
+      "File:Weinmannia sylvicola (48752717063).jpg"
+    ],
+    "linked_inventory_candidates": [
+      "97442cebf9095a1427da"
+    ],
+    "raw_passages": [
+      "{{Extracted from|1=Weinmannia sylvicola (48752717063).jpg}}"
+    ]
+  },
+  {
+    "candidate_id": "bc8d7967de2f7b2b0e0c",
+    "metadata_path": "provenance/api/preview-480-ranks-0121-0130.json",
+    "metadata_sha256": "f1c0e366b583b4328d6c0ad049099f8447a790cef1bdf025b213c7795bec0d14",
+    "linked_titles": [
+      "File:Sheet of flowers and leaves) - on stone by J. Ackerman LCCN2015645694.tif"
+    ],
+    "linked_inventory_candidates": [
+      "c67420b020a45f36ed63"
+    ],
+    "raw_passages": [
+      "<gallery>\nSheet of flowers and leaves) - on stone by J. Ackerman LCCN2015645694.tif|<div style=\"text-align:center\">tif<br>4,348 × 5,812</div>\n</gallery>"
+    ]
+  }
+]

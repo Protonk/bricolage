@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T22:20:02.285500+00:00",
+  "key": "preview-480-ranks-0121-0130",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3ABodleian-Library-MS-Sherard-244_00052_f-46-Echium-plantagineum.jpg%7CFile%3AJean-Fr%C3%A9d%C3%A9ric_Oberlin-Fiche_p%C3%A9dagogique_sur_les_esp%C3%A8ces_exotiques_%284%29.jpg%7CFile%3AGartenflora_%28Taf._185%29_%287535896888%29.jpg%7CFile%3AA_flora_of_Manila_%281912%29_%2820537283750%29.jpg%7CFile%3ASheet_of_flowers_and_leaves%29_-_on_stone_by_J._Ackerman_LCCN2015645694.jpg%7CFile%3ACalice_sepali.jpg%7CFile%3ABodleian-Library-MS-Sherard-244_00025_f-19-Convolvulus-Cneorum.jpg%7CFile%3AWheat_bran_structure.gif%7CFile%3AHolunder_aus_dem_Gart_der_Gesundheit.png%7CFile%3ABodleian-Library-MS-Sherard-244_00062_f-56-Solanum-sodomeum.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=480&iiurlheight=480&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 55884,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 22:20:02 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-xdhhl",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "03f35182-2e7d-4417-9867-e45ffc5d2e0b"
+  },
+  "sha256": "f1c0e366b583b4328d6c0ad049099f8447a790cef1bdf025b213c7795bec0d14"
+}

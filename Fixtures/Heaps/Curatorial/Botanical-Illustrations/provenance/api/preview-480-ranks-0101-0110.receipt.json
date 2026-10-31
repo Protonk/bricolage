@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T22:19:54.630158+00:00",
+  "key": "preview-480-ranks-0101-0110",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3AJacobi_Petiveri_Opera%2C_historiam_naturalem_spectantia%3B_OR%2C_Gazophylacium_Fleuron_T115581-20.png%7CFile%3ACanadian_wild_flowers_worth_knowing_%28microform%29_%281917%29_%2820463984229%29.jpg%7CFile%3ASchool_and_family_charts%2C_No._XX._botanical-_forms_of_leaves%2C_stems%2C_roots%2C_and_flowers%3B_botany%3B_the_classication_of_plants_%28c.1890%29_print_in_high_resolution_by_Marcius_Willson_and_Norman_A._Calkins._Original_from_Library_of_Congress.jpg%7CFile%3A%E6%A4%8D%E7%89%A9%E5%AD%B8%E5%8D%B7%E5%85%AD%E5%9C%968.jpg%7CFile%3ABodleian-Library-MS-Sherard-244_00132_f-126-Lamium-rugosum.jpg%7CFile%3ABodleian-Library-MS-Sherard-244_00194_f-188-Statice-alliacea.jpg%7CFile%3ACamerarius_1586.jpg%7CFile%3AAnnales_des_Sciences_Naturelles_Botaniques_%2817787190433%29.jpg%7CFile%3ARacemo.jpg%7CFile%3AMonardes_Tobacco_1574.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=480&iiurlheight=480&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 61560,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 22:19:54 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-phv9p",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "48f42e42-fb29-45b8-8d5b-a973a3152081"
+  },
+  "sha256": "ad711b402427a8edd94b7413c615b14633db8d84fca6f5d1503e695a3c5e6363"
+}

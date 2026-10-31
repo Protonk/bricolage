@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T22:25:26.178669+00:00",
+  "key": "source-1600-ranks-0011-0020",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3AFruitbomen_en_kruiden_op_Java%2C_1596%2C_RP-P-OB-80.265.jpg%7CFile%3AGens_de_l%27alpe_Mus%C3%A9e_dauphinois_2020_abc74_colportage.jpg%7CFile%3AGartenflora_%28Taf._193%29_%287535909314%29.jpg%7CFile%3ABullettino_%2820500771942%29.jpg%7CFile%3AErdgeschichte%2C_Silur_Landschaft%2C_Aquarell.png%7CFile%3AOnoclea_Sensibilis_Una_Leonora_Foster.jpg%7CFile%3AHistoire_g%C3%A9n%C3%A9rale_des_voyages%2C_ou%2C_Nouvelle_collection_de_toutes_les_relations_de_voyages_par_mer_et_par_terrepos%C3%A9es_sur_les_observations_les_plus_autentiques_%281746%29_%2814759353696%29.jpg%7CFile%3AArbres_d%27ornement-2_-_ornamental_trees_in_colour_-_Public_domain_book_illustration_%28visual_explanation%2C_informative_drawing%2C_plate%29_from_Larousse_du_XX%C3%A8me_si%C3%A8cle_1932.jpg%7CFile%3ABodleian-Library-MS-Sherard-244_00119_f-113-Satureja-Thymbra.jpg%7CFile%3ABodleian-Library-MS-Sherard-244_00181_f-175-Primula-vulgaris.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 83291,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 22:25:26 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-jsb4s",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "03d97816-f9d6-4a88-a564-cfab2eb406f5"
+  },
+  "sha256": "46567e67e58c5bfb5a9eb255e9d897efe1f1b6166baee5a04a435b65dabda294"
+}

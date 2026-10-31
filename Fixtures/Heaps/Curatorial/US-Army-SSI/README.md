@@ -105,7 +105,10 @@ The exact-identity audit covers the 12 prior integrated sets (681 inputs), check
 available supplied/canonical titles, page IDs, curid URLs, upstream SHA-1s and
 acquired SHA-256s. No exact conflicts were found. Coverage and snapshot hashes are
 in `provenance/identity-audit.json`; this does not prove complete provenance
-independence or identify undocumented design relationships.
+independence or identify undocumented design relationships. Offline rechecks use
+that recorded set of 12 prior leaves; adding a newer contribution does not expand
+this historical audit. Missing or changed covered evidence still fails. A fresh
+publication audits all current prior leaves.
 
 ## Local files and checks
 
@@ -141,9 +144,11 @@ python3 -m unittest discover -s Fixtures/Heaps/Curatorial/US-Army-SSI/tools -p '
 The checker reconstructs the population/order, replays exclusions and provisional
 selection, and verifies review/API/receipt identities, credits, SVG/raster handling,
 decoded attributes, checksums, byte equality, source catalogs, batches and empty
-pair expectations. All 23 SSI tests, six existing Similarity validators, and
+pair expectations. The original 23 SSI tests, six existing Similarity validators, and
 three POTY leaf checks passed; results are recorded in `provenance/checks.json`.
-No shared traversal or manifest-kind change was required.
+No shared traversal or manifest-kind change was required. A subsequent audit
+coverage regression test checks that adding a newer leaf preserves the historical
+receipt while changed or missing covered catalogs are detected.
 
 `ssi.py` retains bounded metadata/media commands and explicit
 `acknowledge --diagnosis` handling. Acknowledgement preserves failure evidence

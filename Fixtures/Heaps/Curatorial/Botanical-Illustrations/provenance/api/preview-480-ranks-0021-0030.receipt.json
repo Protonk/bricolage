@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T22:15:57.487630+00:00",
+  "key": "preview-480-ranks-0021-0030",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3AEleven_single_flowers%2C_all_with_a_different_shape_or_form._C_Wellcome_V0044570.jpg%7CFile%3APlantes_m%C3%A9dicinales_planche_2_-_Medicinal_plants%2C_medical_herbs%2C_botanical_illustrations%2C_plate_2_-_Public_domain_illustration_from_Larousse_du_XX%C3%A8me_si%C3%A8cle_1932.jpg%7CFile%3ADeyrolle_421991.jpg%7CFile%3AMA_I597728_TePapa_Puawananga-Clematis-indivisa_full.jpg%7CFile%3AA_curious_herbal%2C_containing_five_hundred_cuts%2C_of_the_most_useful_plants%2C_which_are_now_used_in_the_practice_of_physick_Fleuron_T083979-47.png%7CFile%3ABlue_pincushion_and_running_postman.png%7CFile%3ACaloglossa_leprieurii_%28Mont.%29_J.Ag._N259_w1150.jpg%7CFile%3A%E6%A4%8D%E7%89%A9%E5%AD%B8%E5%8D%B7%E4%B8%89%E5%9C%9620.jpg%7CFile%3ABodleian-Library-MS-Sherard-244_00140_f-134-Origanum-simplex.jpg%7CFile%3ASpolia_botanica_-_LM-LP-Bot-SB-1_053.tiff&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=480&iiurlheight=480&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 54667,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 22:15:57 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-lmwfk",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "bf679df5-7a91-4d64-9aba-63343efe7fbe"
+  },
+  "sha256": "ebac2c96d5682f6edd9bb3ed7959ce4765d8d6d77e338c4e93f5c2290846fc68"
+}

@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T22:50:36.918748+00:00",
+  "key": "source-1280-ranks-0109-0118",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3ARacemo.jpg%7CFile%3AMonardes_Tobacco_1574.jpg%7CFile%3ABodleian-Library-MS-Sherard-244_00001_p-i-.jpg%7CFile%3A%22Mapou_Pear%22%2C_Brazil_LCCN2003663626.jpg%7CFile%3ABodleian-Library-MS-Sherard-244_00057_f-51-Hyoscyamus-albus.jpg%7CFile%3AAnnales_des_Sciences_Naturelles_Botaniques_%2817786854363%29.jpg%7CFile%3AIllustration_of_Greenland_Flora%3B_1745_%28p._42%2C_A_Description_of_Greenland%2C_Hans_Egede%29.png%7CFile%3ABodleian-Library-MS-Sherard-244_00168_f-162-Salvia-Forskaelei.jpg%7CFile%3A%E6%A4%8D%E7%89%A9%E5%AD%B8%E5%8D%B7%E5%85%AD%E5%9C%962.jpg%7CFile%3AA_complete_body_of_planting_and_gardening_Fleuron_T100906-41.png&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1280&iiurlheight=1280&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 54115,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 22:50:37 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-xdhhl",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "0cea23eb-f2a1-4b37-804a-0c88cedf5c5c"
+  },
+  "sha256": "932b6f12f37d9d3fe446c447cc236d9110c119917fb39d32d7e51c564369aacc"
+}
