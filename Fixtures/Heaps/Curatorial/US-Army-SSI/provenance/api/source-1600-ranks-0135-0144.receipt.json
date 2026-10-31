@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T21:50:17.093408+00:00",
+  "key": "source-1600-ranks-0135-0144",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3AVIII_CORPS_SSI.gif%7CFile%3A321st_Sustainment_Brigade.jpg%7CFile%3AUS_50th_Infantry_Division_SVG.svg%7CFile%3A23rd_Infantry_Division_CSIB.png%7CFile%3ASIG_Center_SSI.gif%7CFile%3AMus%C3%A9e_du_d%C3%A9barquement_d%27Arromanches_-_insignes_des_unit%C3%A9s_du_D-Day_03.jpg%7CFile%3ACalifornia_State_University_Sacramento_AROTC_SSI.jpg%7CFile%3ASoldiers%2C_Iraqi_national_policemen_distribute_school_supplies_in_Baghdad_DVIDS157198.jpg%7CFile%3A8MBSSI.svg%7CFile%3A15MPBdeSSI.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 46838,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 21:50:17 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-42p2x",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "e5f3e343-9a26-4678-aa1e-f382b7d50e84"
+  },
+  "sha256": "c7564b6ad4d199b7b5ae7fabd35dd3892a3a922c35f93a2c51e23c8b75674c95"
+}

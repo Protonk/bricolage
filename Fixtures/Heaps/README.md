@@ -20,8 +20,8 @@ are not comparison inputs. There is no duplicated top-level image directory.
 Contributions may be grouped under a source collection: Curatorial → POTY →
 official category. Directory depth does not change leaf-local paths or asset
 ignore rules. Validators are identified by each contribution's README.
-US-Army-SSI is a single Curatorial leaf beside POTY, with its own partial-state
-records and offline validator.
+US-Army-SSI is a single Curatorial leaf beside POTY, with 150 acquired inputs,
+explicit pending cases and its own offline validator.
 
 See [the fixture index](../README.md) for intake locations and
 [FORMAT.md](../FORMAT.md) for the existing manifest and asset conventions.

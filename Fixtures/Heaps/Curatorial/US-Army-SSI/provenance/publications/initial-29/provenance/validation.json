@@ -1,0 +1,84 @@
+{
+  "validation": "passed",
+  "kind": "curatorial_heap",
+  "pairs": 0,
+  "status": "partial",
+  "target": 200,
+  "raw_listings": 1641,
+  "unique_file_identities": 1641,
+  "reviewed_entries": 160,
+  "selected": 29,
+  "acquired": 29,
+  "excluded": 5,
+  "reserve": 0,
+  "pending_selection": 1607,
+  "unreviewed_entries": 1481,
+  "reviewed_decisions": {
+    "eligible": 134,
+    "exclude": 19,
+    "pending": 7
+  },
+  "pending_acquisition": 0,
+  "pending_acquisition_ids": [],
+  "exclusions_by_reason": {
+    "out_of_scope_event_photograph": 2,
+    "out_of_scope_qualification_tab": 1,
+    "out_of_scope_award_tab": 1,
+    "out_of_scope_standalone_tab": 1
+  },
+  "unresolved_review_ids": [
+    "3e5dc0967d0f1e22350f",
+    "2dc3a3681e15c0baae18",
+    "fb61c9a3292fda67af2d",
+    "c2e85fdd2fea6afa70b9",
+    "811d2a4a275d264c3d1e",
+    "161f61e6cd24554919d5",
+    "d7ebb3b1b75855252f56"
+  ],
+  "exhausted_population_shortfall": null,
+  "transport_failures": 1,
+  "post_transfer_validation_stops": 2,
+  "automatic_retries": 0,
+  "concentration": {
+    "original_creator": {
+      "United States Army Institute of Heraldry": 2,
+      "US Army Cyber Command (ARCYBER)": 1,
+      "U.S. Army": 7,
+      "US Army": 7,
+      "United States Army": 6,
+      "unknown": 5,
+      "U.S. Army Center Of Military History": 1
+    },
+    "designer": {
+      "unknown": 29
+    },
+    "digital_renderer": {
+      "Fvasconcellos": 1,
+      "unknown": 25,
+      "KCope91": 1,
+      "Futurhit12": 1,
+      "Noclador": 1
+    },
+    "uploader_current_file_revision": {
+      "Fvasconcellos": 1,
+      "Tsubasa-Minoru": 1,
+      "File Upload Bot (Magnus Manske)": 2,
+      "Nobunaga24": 4,
+      "MGA73bot2": 1,
+      "Thadius856": 1,
+      "Jsbikehike": 1,
+      "KCope91": 1,
+      "Iazyges": 1,
+      "Erwin Lindemann": 3,
+      "Sonaz": 1,
+      "Kwasura": 1,
+      "Hawkeye7": 2,
+      "Coldstreamer20": 3,
+      "Monkeybait": 1,
+      "Futurhit12": 1,
+      "EclecticArkie": 1,
+      "SGT141": 2,
+      "Noclador": 1
+    }
+  }
+}

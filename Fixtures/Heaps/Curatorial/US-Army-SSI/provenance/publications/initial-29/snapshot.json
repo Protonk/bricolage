@@ -1,0 +1,40 @@
+{
+  "utc": "2026-10-31T21:45:23.187523+00:00",
+  "basis_commit": "216f81b",
+  "files": {
+    "manifest.json": "da707b5ae96d9034c47c27668d3355ab2bb4ee4e396919be05afce7ee0e1090f",
+    "manifest.csv": "420a94ef519649218808dec153c4ad75b4aff3b4e3db30452d55fcba592cb714",
+    "sources.csv": "35c492ac00905bace4b8bddf3c61a842b3011e4cc88012028e2effd3d4210bdd",
+    "SOURCES.md": "e2f50a47d144944dcdd7bd2aca8a8f236571a8b600beada6e6ddf96529986f9b",
+    "SHA256SUMS.txt": "49588e6d3f32d61598d0a8c05b6c4ce79c5e15f81926bc0d2e898a82c1c23baa",
+    "selection.json": "9421fec6300f3feaeea198ae3b136f66175a0bee46126f714e42f8990f431a76",
+    "selections.json": "f802df790c97a86b0dad7eb42a3f3b69537af88068088c5ad4acc67d2c754162",
+    "probes.csv": "934d1c8a60d8d714d3854a938d9dc87c13f1d7be65c935f9de0f3ca937e2e9d9",
+    "README.md": "085a743d092eab3355baacdfe6b4b677b1fb88350558be1933d0200e1dce9071",
+    "batches/batch-1.txt": "eeb46f936c165bf1fa3c00a901361a4b61a9043f96e579de95260d883156091a",
+    "batches/medium.txt": "b84349eaa25f46e32f883e49ad58c27aba0d7e0db36ddfed92652bbb1d903e78",
+    "batches/smoke.txt": "a57e3ca2b2b285cd48d025b546ac6657d10cb36ba899eb5432726a27c1c9659c",
+    "provenance/acquisition.json": "2ade018aa9d3d8bc542695b870338f9d44b5451b23989e0ff2ce50b5abaa848d",
+    "provenance/validation.json": "2024bc6da262e765b751a2fea4f16a07f121a6e43ec500ef731655990fc970ef",
+    "provenance/checks.json": "c14e89810d208de4b3145358c25e34494a25448df8a020626703052e5f1fac4e",
+    "provenance/import-map.json": "852d735c3e5d80e45994b6a38283c3b6f863b9b0370404ee39e7946ba3cb2001",
+    "provenance/contact-sheets.json": "5e89d0b3bd3233ec2e2bc02585e70bc844d798291674b09cbb0a304e42377228",
+    "provenance/design-review.json": "5bafe68653dbcddf89ff1a76b14e253fd9b6a71800a6084e53515d61eee8d571",
+    "provenance/scope-questions.json": "abc865ebc1292f369efefd0dcd030b6dfedbd062fa5195fc4450132572a6d838",
+    "provenance/intake.json": "bd5f7e86957c2019f0c75a1020e4641f206602496e9e3befb0272db462d90a6c",
+    "provenance/identity-audit.json": "4cd08bc08120f65d5f60c41ca8ae66616bcd63e8ebc20405e16654c9faea3382"
+  },
+  "contact_sheets": [
+    {
+      "original_path": "previews/selected-01.jpg",
+      "preserved_path": "previews/publications/initial-29/selected-01.jpg",
+      "sha256": "9545402bc12da9d49bfc8174ebddbf0f7fbb854f992a49eb8ce33c0bad0b22a3"
+    },
+    {
+      "original_path": "previews/selected-02.jpg",
+      "preserved_path": "previews/publications/initial-29/selected-02.jpg",
+      "sha256": "e38a01bfd4b2d7769171c2864148675ac31dde8e2dcfb932a732a9fd291ca081"
+    }
+  ],
+  "notes": "Historical 29-input publication records; embedded paths retain their creation-time leaf meaning. Source and input bytes remain at their original paths."
+}

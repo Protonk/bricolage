@@ -73,10 +73,10 @@ self-contained mechanics tests can run with `--filter ComparisonTests`.
 current similarity heap. `Fixtures/Heaps/Curatorial/POTY/` holds mechanical
 samples from three official Wikimedia Commons Picture of the Year Round 1
 categories, pooled across 2023–2025; see its README for acquisition completeness.
-`Fixtures/Heaps/Curatorial/US-Army-SSI/` is one partial contribution from Commons
-category membership: 29 acquired shoulder-sleeve insignia designs, with its
-200-design intake held at an unresolved scope case. See its README for the frozen
-PetScan population, pending selection and offline checks.
+`Fixtures/Heaps/Curatorial/US-Army-SSI/` is one contribution from Commons
+category membership with 150 acquired shoulder-sleeve insignia designs. Eight
+earlier candidates remain pending, with later selections explicitly provisional.
+See its README for the frozen PetScan population, pending selection and offline checks.
 
 Fixture sets use `images/` for comparison inputs and `sources/` for preserved
 source bytes. Optional `previews/` contains contact sheets, outside the input set.

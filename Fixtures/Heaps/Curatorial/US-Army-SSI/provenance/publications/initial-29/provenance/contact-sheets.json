@@ -1,0 +1,47 @@
+[
+  {
+    "path": "previews/selected-01.jpg",
+    "sha256": "9545402bc12da9d49bfc8174ebddbf0f7fbb854f992a49eb8ce33c0bad0b22a3",
+    "width": 1280,
+    "height": 1400,
+    "candidate_ids": [
+      "b99739fbabb9ae4cac62",
+      "421137c73b20c08fff44",
+      "36032654faf0344a47f7",
+      "60c34c8110251c95493f",
+      "bae198483f59efcfaf9f",
+      "2c9969016923c43a09b8",
+      "4cb678402cabbcbe9f6e",
+      "4657e1b2c241666376b7",
+      "6244701ad7633b273172",
+      "19dd4e6b9cb7dfe7492a",
+      "b9ae8bc429e4483c75e0",
+      "3b1be7dcf44eb1b722d7",
+      "f459bc9798f15b5bfb30",
+      "470a58d5f1f0d48183e9",
+      "1f9ea6211bf8656b6bb8",
+      "6ee0a19781a815f0c0c3",
+      "0cde11eeb0b9be3bb72f",
+      "64350387262258d14903",
+      "cc64e0ee11d4873b71b6",
+      "0b1f16cfeffde4d8a466"
+    ]
+  },
+  {
+    "path": "previews/selected-02.jpg",
+    "sha256": "e38a01bfd4b2d7769171c2864148675ac31dde8e2dcfb932a732a9fd291ca081",
+    "width": 1280,
+    "height": 840,
+    "candidate_ids": [
+      "7003048246e92d80e9b2",
+      "ea9763b67d31b96acefc",
+      "04e1e11efccb8572c66a",
+      "b538e93c88e56f10f1fc",
+      "94e85c93ccfe72e6bc37",
+      "325c8e159ff038d2f86f",
+      "3b56dd615550bc1bc522",
+      "7c8a6698463e56a01a31",
+      "bf1f70e77956884aa132"
+    ]
+  }
+]

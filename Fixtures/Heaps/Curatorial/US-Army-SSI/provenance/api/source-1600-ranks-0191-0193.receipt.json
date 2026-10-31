@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T21:57:15.944469+00:00",
+  "key": "source-1600-ranks-0191-0193",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3ARedcatcher.png%7CFile%3A8th_Inf_Div_1.jpg%7CFile%3A357th_Air_%26_Missile_Defense_Detachment_SSI.svg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 10654,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 21:57:16 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-tghj9",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "95e0175f-31f9-48b4-9c13-5ad3b28dc66a"
+  },
+  "sha256": "3487e2ef394696d90a3b5cae0998a02211734afb3bf3c95f298f26aaddd6035e"
+}

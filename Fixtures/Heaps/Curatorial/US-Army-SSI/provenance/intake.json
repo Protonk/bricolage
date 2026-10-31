@@ -10,11 +10,13 @@
   "baseline_commit": "d5656df1e67e61a28903d7cec2bc1d475375bf57",
   "transport_baseline": "Fixtures/Heaps/Curatorial/POTY/tools/transport.py",
   "transport_baseline_sha256": "54dd4d96d2308b53919b885558b17356088060b99b1456937402e991a0a45a05",
-  "status": "partial_publication",
+  "status": "target_acquired_selection_provisional",
   "population_count": 1641,
   "browser_export": "provenance/population/browser-export.json",
-  "selected": 29,
-  "acquired": 29,
+  "selected": 150,
+  "acquired": 150,
   "first_unresolved_rank": 35,
-  "original_handoff_disposition": "Retained unchanged at source_directory; the intake is incomplete."
+  "original_handoff_disposition": "Retained unchanged at source_directory; preserved copy remains in provenance/supplied.",
+  "target": 150,
+  "pending_blocks_selection": false
 }

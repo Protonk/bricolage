@@ -124,6 +124,10 @@ population is Commons category membership, not an award/editorial selection;
 its full PetScan export, stable file ordering and distinct-design decisions are
 retained locally. Design keys support duplicate exclusions only. Creator/renderer
 and uploader roles remain separate, with no creator cap or visual-prompt size floor.
+Explicit pending cases can remain unresolved while later candidates are selected
+provisionally in the same fixed order. Reaching the acquisition target does not
+resolve those cases; the selection ledger retains them and marks affected later
+selections for reconciliation.
 
 The common image/source columns are retained. `relation_kind=curatorial_selected`
 records selection basis only. A unique `family_id` and its single `parents`

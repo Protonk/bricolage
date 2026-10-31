@@ -1,0 +1,31 @@
+{
+  "status": "policy_recorded_scope_evidence_unresolved",
+  "first_blocking_rank": 35,
+  "question": "Exclude candidates whose SSI status cannot be verified with recorded reasons, or retain them as pending and hold the ordered selection?",
+  "basis": "The handoff excludes demonstrably out-of-scope files but does not resolve treatment of historical corps badges whose file pages lack shoulder-sleeve-use evidence.",
+  "independent_work": "Metadata cached for the first 300 ranks and scope/design reviews recorded for the first 160; only the accepted prefix is selected/acquired.",
+  "unresolved_ranks": [
+    35,
+    82,
+    89,
+    125,
+    130,
+    146,
+    153
+  ],
+  "notes": "Rank 82 needs alternate-size preview acquisition. Ranks 89/125 are standalone organizational band tabs; 130/146/153 need SSI versus other-insignia evidence. Later ranks 219 and 267 are also Spanish-American War corps-badge drawings, not yet reviewed.",
+  "external_research": {
+    "status": "unavailable",
+    "urls": [
+      "https://history.army.mil/portals/143/Images/Publications/catalog/60-7.pdf",
+      "https://history.army.mil/Publications/Publications-Catalog/The-American-Soldier-Print-Set-2/"
+    ],
+    "result": "Web lookup returned HTTP 403; no authoritative document body was obtained or relied upon to resolve the case. Search snippets are not treated as sufficient evidence."
+  },
+  "user_decision": {
+    "recorded_at_utc": "2026-10-31T21:34:12.599010+00:00",
+    "instruction": "Retain them as pending.",
+    "policy": "Retain unverified SSI candidates as pending; hold the fixed ordered selection at the first unresolved candidate.",
+    "selection_effect": "No exclusions or substitutions added; 29 selected and acquired, first unresolved rank 35."
+  }
+}

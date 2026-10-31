@@ -1,9 +1,9 @@
 {
-  "status": "policy_recorded_scope_evidence_unresolved",
-  "first_blocking_rank": 35,
+  "status": "continue_with_explicit_pending",
+  "first_blocking_rank": null,
   "question": "Exclude candidates whose SSI status cannot be verified with recorded reasons, or retain them as pending and hold the ordered selection?",
   "basis": "The handoff excludes demonstrably out-of-scope files but does not resolve treatment of historical corps badges whose file pages lack shoulder-sleeve-use evidence.",
-  "independent_work": "Metadata cached for the first 300 ranks and scope/design reviews recorded for the first 160; only the accepted prefix is selected/acquired.",
+  "independent_work": "Metadata cached for the first 300 ranks; reviews recorded through rank 199. Fixed selection reaches 150 designs at rank 193 while retaining eight earlier pending candidates.",
   "unresolved_ranks": [
     35,
     82,
@@ -11,9 +11,10 @@
     125,
     130,
     146,
-    153
+    153,
+    166
   ],
-  "notes": "Rank 82 needs alternate-size preview acquisition. Ranks 89/125 are standalone organizational band tabs; 130/146/153 need SSI versus other-insignia evidence. Later ranks 219 and 267 are also Spanish-American War corps-badge drawings, not yet reviewed.",
+  "notes": "Rank 82 needs alternate-size preview evidence. Other pending cases require SSI/design attribution evidence. Rank 166 repeats the unresolved Fourth Army emblem at rank 153. Rank 197 has conflicting SFAB unit identities but falls after the target cutoff and remains unused reserve. Historical references to ranks 219/267 were sourcing leads, not completed reviews.",
   "external_research": {
     "status": "unavailable",
     "urls": [
@@ -22,10 +23,21 @@
     ],
     "result": "Web lookup returned HTTP 403; no authoritative document body was obtained or relied upon to resolve the case. Search snippets are not treated as sufficient evidence."
   },
+  "prior_user_decisions": [
+    {
+      "recorded_at_utc": "2026-10-31T21:34:12.599010+00:00",
+      "instruction": "Retain them as pending.",
+      "policy": "Retain unverified SSI candidates as pending; hold the fixed ordered selection at the first unresolved candidate.",
+      "selection_effect": "No exclusions or substitutions added; 29 selected and acquired, first unresolved rank 35."
+    }
+  ],
   "user_decision": {
-    "recorded_at_utc": "2026-10-31T21:34:12.599010+00:00",
-    "instruction": "Retain them as pending.",
-    "policy": "Retain unverified SSI candidates as pending; hold the fixed ordered selection at the first unresolved candidate.",
-    "selection_effect": "No exclusions or substitutions added; 29 selected and acquired, first unresolved rank 35."
-  }
+    "recorded_at_utc": "2026-10-31T21:45:50.702637+00:00",
+    "instruction": "I want you to churn through those until you reach a heap size of about 150.",
+    "target": 150,
+    "policy": "Continue fixed ordering past explicit pending cases; retain unresolved candidates as pending and mark later selections provisional. No reroll or silent exclusion."
+  },
+  "reviewed_pending_in_reserve": [
+    197
+  ]
 }

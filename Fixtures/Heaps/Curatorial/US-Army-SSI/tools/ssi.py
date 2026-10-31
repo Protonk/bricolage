@@ -7,7 +7,7 @@ from PIL import Image,ImageDraw,ImageFont,ImageOps
 from transport import Client,StopAcquisition,dump,append,sha,safe,utc
 ROOT=Path(__file__).resolve().parents[1]
 EXT={'JPEG':'jpg','PNG':'png','GIF':'gif','WEBP':'webp','TIFF':'tif'}
-TARGET=200
+TARGET=150
 
 def read(p):return json.loads(p.read_text())
 def require(ok,message):
@@ -44,12 +44,13 @@ def evidence(stage='preview',edge=480):
  return out
 
 def selection():
- reviews=read(ROOT/'provenance/design-review.json') if (ROOT/'provenance/design-review.json').exists() else {};ev=evidence();selected=[];ledger=[];designs={};identities={};blocked=False
+ reviews=read(ROOT/'provenance/design-review.json') if (ROOT/'provenance/design-review.json').exists() else {};ev=evidence();selected=[];ledger=[];designs={};identities={};blocked=False;unresolved=[];provisional=[]
  for rank,cid in enumerate(order(),1):
   r=reviews.get(cid);state='pending';reason='design_or_rights_review_pending';conflicts=[]
-  if blocked:reason='earlier_candidate_pending'
+  if blocked:reason='earlier_candidate_unreviewed'
   elif len(selected)>=TARGET:state='reserve';reason='target_reached'
-  elif not r or r['decision']=='pending':blocked=True
+  elif not r:blocked=True
+  elif r['decision']=='pending':reason='explicit_pending_review';unresolved.append(cid)
   elif r['decision']=='exclude':state='excluded';reason=r['reason'];conflicts=r.get('conflicts_with',[])
   else:
    require(r['decision']=='eligible' and r['design_key'] and r['design_basis'] and r['rights_basis'],'Missing acceptance evidence')
@@ -59,9 +60,10 @@ def selection():
    elif r['design_key'] in designs:state='excluded';reason='design_already_selected';conflicts=[designs[r['design_key']]]
    else:
     state='selected';reason='first_eligible_distinct_design_in_seeded_order';selected.append(cid);designs[r['design_key']]=cid
+    if unresolved:provisional.append(cid)
     for k in keys:identities[k]=cid
-  ledger.append(dict(candidate_id=cid,rank=rank,decision=state,reason=reason,conflicts_with=conflicts))
- return dict(target=TARGET,seed=read(ROOT/'ordering.json')['seed'],snapshot_sha256=read(ROOT/'inventory.json')['snapshot_sha256'],selected=selected,decisions=ledger,counts={s:sum(r['decision']==s for r in ledger) for s in ['selected','excluded','reserve','pending']})
+  ledger.append(dict(candidate_id=cid,rank=rank,decision=state,reason=reason,conflicts_with=conflicts,provisional=cid in provisional))
+ return dict(target=TARGET,seed=read(ROOT/'ordering.json')['seed'],snapshot_sha256=read(ROOT/'inventory.json')['snapshot_sha256'],pending_policy='Explicit pending decisions do not block later reviewed candidates; later selections remain provisional. Unreviewed gaps still require review.',unresolved_prior_candidates=unresolved,provisional_selected=provisional,selected=selected,decisions=ledger,counts={s:sum(r['decision']==s for r in ledger) for s in ['selected','excluded','reserve','pending']})
 
 def dimensions(path,edge):
  with Image.open(path) as im:

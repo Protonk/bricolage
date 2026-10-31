@@ -8,7 +8,7 @@ selection prompt, aesthetic balancing or similarity measurement is applied.
 | Source collection | Contributions | Current selection |
 |---|---|---|
 | [Wikimedia Commons POTY](POTY/README.md) | Arthropods; Constructions and buildings; People and human activity | Complete acquisition: 43 / 50 / 50 inputs from the full 2023–2025 Round 1 category lists; Arthropods has a seven-image shortfall |
-| [US Army shoulder-sleeve insignia](US-Army-SSI/README.md) | One leaf, no sub-heaps; Commons category membership via PetScan depth 5 | Partial: 29 selected and acquired of a 200-design target; 1,641 frozen File identities; ordered selection held at an unresolved historical-badge scope case |
+| [US Army shoulder-sleeve insignia](US-Army-SSI/README.md) | One leaf, no sub-heaps; Commons category membership via PetScan depth 5 | Target reached: 150 selected and acquired from 1,641 frozen File identities; eight earlier cases remain pending, with later selections provisional |
 
 Curatorial is the heap, POTY is the source collection, and the three category
 directories are independent leaf fixture sets. US-Army-SSI is itself a leaf beside

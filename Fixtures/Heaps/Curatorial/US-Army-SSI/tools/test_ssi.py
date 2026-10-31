@@ -32,9 +32,18 @@ class SelectionTests(unittest.TestCase):
  def test_design_repeat_excluded_but_shared_creator_allowed(self):
   result=self.run_selection({'a':self.eligible('one'),'b':self.eligible('one'),'c':self.eligible('two')})
   self.assertEqual(result['selected'],['a','c']);self.assertEqual(result['decisions'][1]['reason'],'design_already_selected');self.assertEqual(result['decisions'][1]['conflicts_with'],['a'])
- def test_unresolved_earlier_rank_blocks_later_acceptance(self):
+ def test_unreviewed_gap_requires_review(self):
   result=self.run_selection({'a':self.eligible('one'),'c':self.eligible('two')})
-  self.assertEqual(result['selected'],['a']);self.assertEqual(result['decisions'][2]['reason'],'earlier_candidate_pending')
+  self.assertEqual(result['selected'],['a']);self.assertEqual(result['decisions'][2]['reason'],'earlier_candidate_unreviewed')
+ def test_explicit_pending_is_retained_and_later_selection_is_provisional(self):
+  result=self.run_selection({'a':self.eligible('one'),'b':{'decision':'pending'},'c':self.eligible('two')})
+  self.assertEqual(result['selected'],['a','c']);self.assertEqual(result['decisions'][1]['decision'],'pending')
+  self.assertEqual(result['unresolved_prior_candidates'],['b']);self.assertEqual(result['provisional_selected'],['c'])
+ def test_resolving_pending_reconciles_fixed_order_at_target(self):
+  with patch.object(ssi,'TARGET',2):
+   before=self.run_selection({'a':self.eligible('one'),'b':{'decision':'pending'},'c':self.eligible('two')})
+   after=self.run_selection({'a':self.eligible('one'),'b':self.eligible('three'),'c':self.eligible('two')})
+  self.assertEqual(before['selected'],['a','c']);self.assertEqual(after['selected'],['a','b']);self.assertEqual(after['decisions'][2]['decision'],'reserve')
 
 class RenditionTests(unittest.TestCase):
  def rendition(self,original_mime):

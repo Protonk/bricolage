@@ -93,10 +93,14 @@ def summary():
     pending = [cid for cid in chosen['selected'] if cid not in acquired]
     events = [json.loads(line) for line in (root / 'provenance/http_log.jsonl').read_text().splitlines()]
     status = 'partial' if chosen['counts']['pending'] or pending else 'complete'
+    if len(acquired) == ssi.TARGET and not pending:
+        status = 'provisional' if chosen['unresolved_prior_candidates'] else 'complete'
     if (root / 'provenance/last_transport_error.json').exists():
         status = 'stopped'
     counts = chosen['counts']
     return dict(status=status, target=ssi.TARGET, raw_listings=len(ssi.order()), unique_file_identities=len(ssi.order()),
+                target_acquired=len(acquired) == ssi.TARGET,
+                provisional_selected=len(chosen['provisional_selected']),
                 reviewed_entries=len(reviews), selected=len(chosen['selected']), acquired=len(acquired),
                 excluded=counts['excluded'], reserve=counts['reserve'], pending_selection=counts['pending'],
                 unreviewed_entries=len(ssi.order())-len(reviews),
@@ -263,9 +267,29 @@ def check(artifacts=None):
     return dict(validation='passed', kind='curatorial_heap', pairs=0, **summary())
 
 
-def build():
+def replacement_snapshot(expected_sha, preserved):
     root = ssi.ROOT
-    require(not (root / 'manifest.json').exists(), 'Published set already exists; refusing overwrite')
+    require(expected_sha and preserved, 'Published set already exists; explicit manifest hash and preserved publication required')
+    require(sha(root / 'manifest.json') == expected_sha, 'Published manifest changed')
+    backup = safe(root, preserved)
+    snapshot = read(backup / 'snapshot.json')
+    require(sha(backup / 'manifest.json') == expected_sha == snapshot['files']['manifest.json'], 'Preserved manifest differs')
+    expected = dict(snapshot['files'])
+    for name, digest in snapshot['files'].items():
+        require(sha(safe(backup, name)) == digest, 'Preserved publication changed: '+name)
+    for row in read(root / 'manifest.json')['images']:
+        require(sha(safe(root, row['file'])) == row['byte_sha256'], 'Existing input changed')
+        expected[row['file']] = row['byte_sha256']
+    for row in snapshot['contact_sheets']:
+        require(sha(safe(root, row['preserved_path'])) == row['sha256'], 'Preserved contact sheet changed')
+        expected[row['original_path']] = row['sha256']
+    return expected
+
+
+def build(replace_manifest_sha=None, preserved_publication=None):
+    root = ssi.ROOT
+    replacing = (root / 'manifest.json').exists()
+    expected = replacement_snapshot(replace_manifest_sha, preserved_publication) if replacing else {}
     require(read(root / 'selection.json') == ssi.selection(), 'Explicitly record selection before building')
     stage = Path(tempfile.mkdtemp(prefix='integration-stage-', dir=root / 'previews'))
     imported = imports()
@@ -293,13 +317,20 @@ def build():
     dump(stage / 'provenance/validation.json', result)
     # Check every destination before publishing. A failed stage stays local for diagnosis.
     generated = [p for p in stage.rglob('*') if p.is_file()]
+    if replacing:
+        old_inputs = {r['file'] for r in read(root / 'manifest.json')['images']}
+        require(old_inputs <= {r['file'] for r in rows}, 'Replacement would remove published inputs; reconcile explicitly first')
     for path in generated:
         dest = root / path.relative_to(stage)
-        require(not dest.exists() or (dest.name == 'identity-audit.json' and dest.read_bytes() == path.read_bytes()), 'Existing published artifact: '+str(dest))
+        if dest.exists():
+            relative = str(path.relative_to(stage))
+            require((replacing and relative in expected and sha(dest) == expected[relative]) or
+                    (not replacing and dest.name == 'identity-audit.json' and dest.read_bytes() == path.read_bytes()),
+                    'Existing published artifact changed or unpreserved: '+str(dest))
     for path in generated:
         dest = root / path.relative_to(stage)
         dest.parent.mkdir(parents=True, exist_ok=True)
-        if not dest.exists():
+        if replacing or not dest.exists():
             path.replace(dest)
     shutil.rmtree(stage)
     result = check()
@@ -309,13 +340,15 @@ def build():
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('command', choices=['build', 'check', 'list'])
+    parser.add_argument('--replace-manifest-sha')
+    parser.add_argument('--preserved-publication')
     args = parser.parse_args()
     lock = ssi.ROOT / 'previews/intake.lock'
     lock.parent.mkdir(parents=True, exist_ok=True)
     with lock.open('a') as stream:
         fcntl.flock(stream, fcntl.LOCK_EX | fcntl.LOCK_NB)
         if args.command == 'build':
-            build()
+            build(args.replace_manifest_sha, args.preserved_publication)
         elif args.command == 'check':
             print(json.dumps(check(), indent=2))
         else:

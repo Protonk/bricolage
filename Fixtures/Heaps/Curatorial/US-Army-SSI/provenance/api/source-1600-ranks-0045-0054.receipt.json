@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T21:49:45.375222+00:00",
+  "key": "source-1600-ranks-0045-0054",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3A2nd_Armored_BCT%2C_1st_Infantry_Division_Badge.png%7CFile%3ASixth_Army_Group%2C_Seventh_Army%2C_XXI_Corps_insignia_composite.png%7CFile%3AElectrical_substation_in_Oubaidy_DVIDS169327.jpg%7CFile%3A3rd_Sustainment_Command_CSIB.svg%7CFile%3AMilitary_Intelligence_Readiness_Command_Shoulder_Sleeve_Insignia.png%7CFile%3A38SustainBdeSSI.jpg%7CFile%3A6th_US_Armored_Division_SSI.svg%7CFile%3A173AirborneBCTSSI.jpg%7CFile%3AUS_Army_81st_Infantry_Division_SSI.svg%7CFile%3A425TransBdeSSI.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 47928,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 21:49:45 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-ksgnk",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "cba1f88f-9c44-419a-90df-94e18ca9542f"
+  },
+  "sha256": "cf7ec250f2a73b60f5132a79ade72334223d4f6ffa86f548f1e8c2ce1203c5f1"
+}

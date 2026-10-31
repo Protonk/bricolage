@@ -6,6 +6,7 @@ from unittest.mock import patch
 
 import integrate
 import ssi
+from transport import dump, sha
 
 
 class IntegrationTests(unittest.TestCase):
@@ -42,6 +43,26 @@ class IntegrationTests(unittest.TestCase):
             (root / 'Divisions/manifest.json').write_text('{}')
             with patch.object(ssi, 'ROOT', root), self.assertRaisesRegex(ValueError, 'Unexpected child fixture'):
                 integrate.check()
+
+    def test_replacement_requires_preserved_snapshot_and_unchanged_input(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp).resolve() / 'Curatorial/US-Army-SSI'
+            backup = root / 'provenance/publications/old'
+            backup.mkdir(parents=True)
+            (root / 'images').mkdir()
+            image = root / 'images/a.png'
+            image.write_bytes(b'unchanged source copy')
+            manifest = dict(images=[dict(file='images/a.png', byte_sha256=sha(image))])
+            dump(root / 'manifest.json', manifest)
+            dump(backup / 'manifest.json', manifest)
+            digest = sha(root / 'manifest.json')
+            dump(backup / 'snapshot.json', dict(files={'manifest.json': digest}, contact_sheets=[]))
+            with patch.object(ssi, 'ROOT', root):
+                expected = integrate.replacement_snapshot(digest, 'provenance/publications/old')
+                self.assertEqual(expected['images/a.png'], sha(image))
+                image.write_bytes(b'changed')
+                with self.assertRaisesRegex(ValueError, 'Existing input changed'):
+                    integrate.replacement_snapshot(digest, 'provenance/publications/old')
 
 
 if __name__ == '__main__':

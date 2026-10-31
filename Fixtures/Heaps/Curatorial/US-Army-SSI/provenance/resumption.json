@@ -1,0 +1,17 @@
+{
+  "request": "I want you to churn through those until you reach a heap size of about 150.",
+  "recorded_at_utc": "2026-10-31T21:54:29.043297+00:00",
+  "previous_publication": "provenance/publications/initial-29",
+  "previous_manifest_sha256": "da707b5ae96d9034c47c27668d3355ab2bb4ee4e396919be05afce7ee0e1090f",
+  "previous_commit": "216f81b",
+  "target": 150,
+  "pending_policy": "Keep explicit unresolved candidates pending and continue the fixed order; mark later selected candidates provisional.",
+  "selection_cutoff_rank": 193,
+  "selected": 150,
+  "excluded": 35,
+  "pending_before_cutoff": 8,
+  "reserve": 1448,
+  "publication_status": "target_acquired_selection_provisional",
+  "preservation": "Original inventory, seed and source/input bytes retained. Prior publication metadata and contact sheets preserved before replacement.",
+  "completed_at_utc": "2026-10-31T21:59:14.708491+00:00"
+}

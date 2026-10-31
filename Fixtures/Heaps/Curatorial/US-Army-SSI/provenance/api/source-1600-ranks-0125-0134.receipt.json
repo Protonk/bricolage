@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T21:50:13.529989+00:00",
+  "key": "source-1600-ranks-0125-0134",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3AUS_Army_Eighth_Infantry_Division_Band_Tab_%28Woodland%29.svg%7CFile%3A8SustainCmdSSI.svg%7CFile%3A21st_cav_div.jpg%7CFile%3A49th_GRP.png%7CFile%3A3_MEB_SSI.jpg%7CFile%3AUnited_States_Army_Training_Center_Badge.jpg%7CFile%3AShoulder_patch-_2nd_Infantry_Division_-_DPLA_-_7cfc5740b714300be5c7fd6f237929b2.jpeg%7CFile%3AEastern_Defense_Command_SSI.png%7CFile%3A593rd_Expeditionary_Sustainment_Command.png%7CFile%3AUnited_States_Army_Infantry_School_SSI_%281964-2015%29.gif&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 47783,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 21:50:13 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-c6k5l",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "4a1a8f83-b6e1-422e-85b9-361c76f8c440"
+  },
+  "sha256": "36bc067b2d4b4652b928ed379a9df5e35b839ab0d0677ca635e42e6d41fbb11b"
+}

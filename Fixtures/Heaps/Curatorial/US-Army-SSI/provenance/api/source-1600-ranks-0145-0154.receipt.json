@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T21:50:20.775805+00:00",
+  "key": "source-1600-ranks-0145-0154",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3A199th_brigade.svg%7CFile%3A48th_Chemical_Brigade_Logo.png%7CFile%3A139th_MED_BDE.svg%7CFile%3AUS_Army_Eighty-Eighth_Army_Band_SSI_%28Urban%29.svg%7CFile%3AU.S._Army_Engineer_Center_and_Fort_Leonard_Wood_SSI.jpg%7CFile%3AAAFCE_patch_1.jpg%7CFile%3A39th_US_Armored_Division_SSI.svg%7CFile%3A3rd_Armd_Div.jpg%7CFile%3AFourth_United_States_Army_CSIB.svg%7CFile%3A12AvnBdeSSI.png&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 42622,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 21:50:20 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-69fq5",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "53d09d38-f587-4288-8f99-250afa7273e6"
+  },
+  "sha256": "c3ad5c68d332bf2ab5ca76bae24d4771fdfbcd53d763fbf32217acd63e601e4c"
+}

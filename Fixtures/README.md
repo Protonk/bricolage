@@ -39,8 +39,8 @@ Curatorial occupies a sibling directory under `Heaps/`; its POTY source collecti
 contains three category contributions one level deeper. Their official category
 membership is a sourcing fact, not a similarity judgment.
 The [US-Army-SSI leaf](Heaps/Curatorial/US-Army-SSI/README.md) sits beside POTY:
-29 acquired inputs in a partial 200-design intake from 1,641 frozen PetScan results.
-Its ordered selection is held at an unresolved scope case; it has no sub-heaps.
+150 acquired inputs from 1,641 frozen PetScan results. Eight earlier cases remain
+pending; later selections are provisional. It has no sub-heaps.
 
 ## Working with the fixtures
 
