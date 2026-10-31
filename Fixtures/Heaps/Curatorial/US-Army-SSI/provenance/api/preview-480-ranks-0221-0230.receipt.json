@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T20:26:40.032784+00:00",
+  "key": "preview-480-ranks-0221-0230",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3A75RangerRegtSSI.jpg%7CFile%3A32nd_Support_Command_SSI.png%7CFile%3A15th_US_Army_SSI.svg%7CFile%3ARanger_Tab.svg%7CFile%3AUnited_States_Army_Ordnance_Center_and_School_SSI.gif%7CFile%3A4th-inf-logo-lrg.svg%7CFile%3AUSA_-_256_INF_BDE.png%7CFile%3AUS_103rd_Infantry_Division.svg%7CFile%3A1st_ID_Sustainment_Brigade_%281idsb%29_DUI.png%7CFile%3AInsignia_USA_Army_2nd_Cavalry_Regiment_V2.svg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=480&iiurlheight=480&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 48132,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 20:26:40 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-wsh2w",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "3b5d11e6-c851-48de-8a98-4b0619dde0e7"
+  },
+  "sha256": "4407bec07fa5c192cf1e31003c8c926534f1843cd34fe56722db39aaf1022a7a"
+}

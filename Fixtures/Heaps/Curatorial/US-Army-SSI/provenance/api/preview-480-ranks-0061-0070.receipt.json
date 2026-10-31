@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T20:25:36.797124+00:00",
+  "key": "preview-480-ranks-0061-0070",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3AUS_87th_Infantry_Division.png%7CFile%3A20th_US_Armored_Division_SSI.svg%7CFile%3A130thEngineerBrigadePatch.jpg%7CFile%3AArmyAntiAircraftCom.png%7CFile%3AArizona_National_Guard_shares_knowledge_with_Kazakhstan_unit%3B_worldly_view_with_People_To_People_International_delegation_120911-Z-GT565-005.jpg%7CFile%3AUS_347th_RSG_patch.png%7CFile%3A94ADABdeSSI.png%7CFile%3AV_Armored_Corps.png%7CFile%3A31ADABdeSSI.gif%7CFile%3A91st_Infantry_Division.patch.png&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=480&iiurlheight=480&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 45232,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 20:25:37 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-xg4wd",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "90968ce6-e643-4371-972d-107d0cffaf2e"
+  },
+  "sha256": "d13b710d929140c87aa99f470a9bcb3593dabe265c69b0f35cd0f724eb755e3c"
+}

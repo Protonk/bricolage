@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T20:32:16.480454+00:00",
+  "key": "preview-640-ranks-0030-0030",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3A108th_ADA_Bde_patch.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=640&iiurlheight=640&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 2946,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 20:32:16 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-4dc8j",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "bc4611c2-37b2-4604-a7a5-59acce631852"
+  },
+  "sha256": "01ace79253d9d0fbad1cfe7d5524dbdab8e19a5bb253f88d5a486679c3b32129"
+}

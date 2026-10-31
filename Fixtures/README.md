@@ -22,6 +22,7 @@ Fixtures/
         Arthropods/
         Constructions-and-buildings/
         People-and-human-activity/
+      US-Army-SSI/
 ```
 
 | Location | Role |
@@ -29,7 +30,7 @@ Fixtures/
 | [Relationships](Relationships/README.md) | The chosen trio: derivation, multiple captures, and variants, with recorded source relationships and comparison probes |
 | [Heaps](Heaps/README.md) | Independently selected image pools, each with its own selection criteria |
 | [Similarity](Heaps/Similarity/README.md) | One heap assembled from collections chosen to look alike under short visual prompts |
-| [Curatorial](Heaps/Curatorial/README.md) | Published editorial populations sampled mechanically; POTY Round 1 category contributions |
+| [Curatorial](Heaps/Curatorial/README.md) | Published source populations sampled mechanically; POTY Round 1 categories and Commons US Army SSI membership |
 
 RG01, SF01, PS01, CR01, TG01 and BSP01 belong to the same Similarity heap. They retain their
 own acquisition and review records. Their collection membership records human
@@ -37,6 +38,9 @@ selection intent; it is not an expected router neighborhood or matching verdict.
 Curatorial occupies a sibling directory under `Heaps/`; its POTY source collection
 contains three category contributions one level deeper. Their official category
 membership is a sourcing fact, not a similarity judgment.
+The [US-Army-SSI leaf](Heaps/Curatorial/US-Army-SSI/README.md) sits beside POTY:
+29 acquired inputs in a partial 200-design intake from 1,641 frozen PetScan results.
+Its ordered selection is held at an unresolved scope case; it has no sub-heaps.
 
 ## Working with the fixtures
 

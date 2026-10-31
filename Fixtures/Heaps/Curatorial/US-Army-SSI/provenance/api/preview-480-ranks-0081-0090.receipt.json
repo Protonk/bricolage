@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T20:25:44.720032+00:00",
+  "key": "preview-480-ranks-0081-0090",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3A505_Sig_Bde_SSI.png%7CFile%3AUS_Army_Medical_Research_and_Development_Command_SSI_858x1523px_%28from_TIOH%29.png%7CFile%3A24_Infantry_Division_SSI.svg%7CFile%3A189_Infantry_Bde_SSI.jpg%7CFile%3AArmy_Strategic_Defense_Command_SSI.jpg%7CFile%3AU.S._Army_1st_Infantry_Division_CSIB.png%7CFile%3AUS_Army_Presidents_100_Metal_Tab.png%7CFile%3AU.S._Arctic_Tab.png%7CFile%3AUS_Army_Reserve_100th_Army_Band_Tab.png%7CFile%3A59th_Ordnance_Brigade_Shoulder_Sleeve_Insignia.svg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=480&iiurlheight=480&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 52914,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 20:25:44 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-xg4wd",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "c0996d76-6a3f-4ffb-abc7-a0b0525d7517"
+  },
+  "sha256": "d8aebc8920e35606c4c2ad526b7596d8214d4fce6e507609c54fe25aa2996491"
+}

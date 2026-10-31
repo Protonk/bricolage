@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T20:25:25.188616+00:00",
+  "key": "preview-480-ranks-0031-0040",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3AUS_11th_Infantry_Division.png%7CFile%3A300MIBdeSSI.gif%7CFile%3ASouthern_Defense_Command_SSI.jpg%7CFile%3AU.S._Army_Arctic_Tab.png%7CFile%3ASPAM_VIII_CORPS_2_DIV.png%7CFile%3A818th_MED_BDE.jpg%7CFile%3AUS_94th_Infantry_Division.png%7CFile%3A4th_Maneuver_Enhancement_Brigade_SSI.jpg%7CFile%3A207th_MI_Bde_Patch.jpg%7CFile%3AUS_Army_52nd_Air_Defense_Artillery_Brigade_SSI.png&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=480&iiurlheight=480&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 39486,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 20:25:25 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-bgxsv",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "820f3416-f4f3-489b-9f4f-1fcdcbc8369d"
+  },
+  "sha256": "ffd7b0c9c84ebd10c042ec7f3426b91babca946781dc8ef24b16130230aec3a8"
+}

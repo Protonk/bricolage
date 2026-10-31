@@ -1,0 +1,20 @@
+{
+  "utc": "2026-10-31T20:32:07.506119+00:00",
+  "key": "preview-640-ranks-0026-0026",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3A11thACR_patch.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=640&iiurlheight=640&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 2939,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 20:32:07 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-24bmc",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "content-length": "2939",
+    "x-request-id": "c707a3c6-f3a9-48de-a790-1483e0f73d8e"
+  },
+  "sha256": "fbbbed099302ca254bceb89275fee9ebd3f715db002fb99145218d7453bf80fd"
+}

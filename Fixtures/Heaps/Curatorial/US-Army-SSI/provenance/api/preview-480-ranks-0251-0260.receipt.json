@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T20:26:51.356902+00:00",
+  "key": "preview-480-ranks-0251-0260",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3AInsignia_of_the_11th_Signal_Brigade_%28Desert_Thunderbirds%29.svg%7CFile%3AXVIII_Airborne_Corps_CSIB.png%7CFile%3A7th_MED_BDE.jpg%7CFile%3AKansas_Army_National_Guard_SSI.jpg%7CFile%3A76_Inf_Div_SSI.svg%7CFile%3A15th_Sustainment_Brigade_SSI.svg%7CFile%3A103rd_Infantry_Division_SSI.svg%7CFile%3ASpecialForcesTabMetal.jpg%7CFile%3A36_Sus_Bde_SSI.jpg%7CFile%3A66avnbdessi.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=480&iiurlheight=480&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 47444,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 20:26:51 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-5czp6",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "95f8e395-438b-41d2-9a36-a04e3cec46b6"
+  },
+  "sha256": "1e2d33dd7707fa3e2922c5be01403b6382e86de94365749042993881c7218be6"
+}

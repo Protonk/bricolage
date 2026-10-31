@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T20:26:55.733303+00:00",
+  "key": "preview-480-ranks-0261-0270",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3AAirborne_Black_and_Yellow_Tab.jpg%7CFile%3AUS_Army_Financial_Management_Command_SSI.png%7CFile%3ADistinctive_unit_insignia_of_the_16th_Infantry_Regiment_%28United_States%29.svg%7CFile%3AUS9THDIV.gif%7CFile%3A8th_Inf_Div_Honor_Guard_DUI.jpg%7CFile%3A926EngrBdeSSI.jpg%7CFile%3ASPAM_II_CORPS_2_DIV.png%7CFile%3A307th_MED_BDE.jpg%7CFile%3A525thBattlefield.svg%7CFile%3AU.S._Army_Special_Operations_Aviation_Command_SSI_%282013-2015%29.png&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=480&iiurlheight=480&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 45129,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 20:26:55 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-ldctx",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "007c9239-e52f-442a-9e88-6f8b4db0655d"
+  },
+  "sha256": "4708dc329ba885eda5a0c7c9b7aad2ff6ccaa70c30965d5b5d86ec7401ce63a6"
+}

@@ -111,7 +111,7 @@ checker deliberately does not validate either heap kind. There is no shared
 fixed-depth heap traversal to change. The fixture indexes identify contributions
 and their check commands.
 
-`kind=curatorial_heap` records membership in an already published editorial
+`kind=curatorial_heap` records membership in an already published source
 population, followed by documented mechanical selection and provenance exclusions.
 It does not require `prompt.json` or visual acceptance judgments. POTY leaves use
 `inventory.json`, `ordering.json` and `selection.json` for the full eligible
@@ -119,6 +119,11 @@ population, seeded ordering and per-candidate decisions. File-specific evidence,
 original-creator identity decisions, explicit exceptions, acquisition receipts,
 and POTY year/category mappings are in `provenance/`. Each leaf has its own
 source catalog, manifests, batches, checksums and independent offline check.
+US-Army-SSI uses the same kind in one leaf directly under Curatorial. Its source
+population is Commons category membership, not an award/editorial selection;
+its full PetScan export, stable file ordering and distinct-design decisions are
+retained locally. Design keys support duplicate exclusions only. Creator/renderer
+and uploader roles remain separate, with no creator cap or visual-prompt size floor.
 
 The common image/source columns are retained. `relation_kind=curatorial_selected`
 records selection basis only. A unique `family_id` and its single `parents`

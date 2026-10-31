@@ -1,0 +1,20 @@
+{
+  "utc": "2026-10-31T20:32:00.681007+00:00",
+  "key": "preview-640-ranks-0012-0012",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3A82nd_Abn_Div_patch.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=640&iiurlheight=640&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 2708,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 20:32:00 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-mpzx9",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "content-length": "2708",
+    "x-request-id": "7f17cea6-894f-4799-96f9-47b1eff58698"
+  },
+  "sha256": "a16baa06cab2c2dc8c4be20f517a58540f02d3a3b5e8cd6120adae6be9249e32"
+}

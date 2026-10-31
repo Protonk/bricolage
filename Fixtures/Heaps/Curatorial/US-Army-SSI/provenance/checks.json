@@ -1,0 +1,97 @@
+{
+  "performed_at_utc": "2026-10-31 20:50:25 UTC",
+  "status": "passed",
+  "ssi_tests": 20,
+  "poty_tests": 10,
+  "ps01_tests": 6,
+  "commands": [
+    {
+      "name": "ssi",
+      "command": "/private/tmp/hazy-fixtures-env/bin/python -m unittest discover -s Fixtures/Heaps/Curatorial/US-Army-SSI/tools -p 'test_*.py'",
+      "exit_code": 0,
+      "output": "....................\n----------------------------------------------------------------------\nRan 20 tests in 0.090s\n\nOK\n"
+    },
+    {
+      "name": "rg01",
+      "command": "/private/tmp/hazy-fixtures-env/bin/python Fixtures/Heaps/Similarity/RG01/provenance/heap.py check",
+      "exit_code": 0,
+      "output": "{\n  \"images\": 31,\n  \"sources\": 31,\n  \"pairs\": 0,\n  \"assets\": 62,\n  \"kind\": \"prompt_heap\"\n}\n"
+    },
+    {
+      "name": "SF01",
+      "command": "/private/tmp/hazy-fixtures-env/bin/python Fixtures/Heaps/Similarity/SF01/tools/integrate.py check",
+      "exit_code": 0,
+      "output": "{\n  \"fixture\": {\n    \"status\": \"passed\",\n    \"kind\": \"prompt_heap\",\n    \"images\": 48,\n    \"sources\": 48,\n    \"assets\": 96,\n    \"pairs\": 0\n  },\n  \"evidence\": {\n    \"previews\": 142,\n    \"visually_selected\": 59,\n    \"acquired\": 48,\n    \"pending\": 11,\n    \"acquisition_status\": \"stopped\",\n    \"status\": \"passed\"\n  }\n}\n"
+    },
+    {
+      "name": "PS01",
+      "command": "/private/tmp/hazy-fixtures-env/bin/python Fixtures/Heaps/Similarity/PS01/tools/integrate.py check",
+      "exit_code": 0,
+      "output": "{\n  \"fixture\": {\n    \"status\": \"passed\",\n    \"kind\": \"prompt_heap\",\n    \"images\": 58,\n    \"sources\": 58,\n    \"assets\": 116,\n    \"pairs\": 0\n  },\n  \"evidence\": {\n    \"previews\": 145,\n    \"visually_selected\": 58,\n    \"acquired\": 58,\n    \"pending\": 0,\n    \"acquisition_status\": \"complete\",\n    \"status\": \"passed\"\n  }\n}\n"
+    },
+    {
+      "name": "CR01",
+      "command": "/private/tmp/hazy-fixtures-env/bin/python Fixtures/Heaps/Similarity/CR01/tools/integrate.py check",
+      "exit_code": 0,
+      "output": "{\n  \"fixture\": {\n    \"status\": \"passed\",\n    \"kind\": \"prompt_heap\",\n    \"images\": 57,\n    \"sources\": 57,\n    \"assets\": 114,\n    \"pairs\": 0\n  },\n  \"evidence\": {\n    \"previews\": 168,\n    \"visually_selected\": 57,\n    \"acquired\": 57,\n    \"pending\": 0,\n    \"acquisition_status\": \"complete\",\n    \"status\": \"passed\"\n  }\n}\n"
+    },
+    {
+      "name": "TG01",
+      "command": "/private/tmp/hazy-fixtures-env/bin/python Fixtures/Heaps/Similarity/TG01/tools/integrate.py check",
+      "exit_code": 0,
+      "output": "{\n  \"fixture\": {\n    \"status\": \"passed\",\n    \"kind\": \"prompt_heap\",\n    \"images\": 31,\n    \"sources\": 31,\n    \"assets\": 62,\n    \"pairs\": 0\n  },\n  \"evidence\": {\n    \"previews\": 152,\n    \"visually_selected\": 31,\n    \"acquired\": 31,\n    \"pending\": 0,\n    \"acquisition_status\": \"complete\",\n    \"status\": \"passed\"\n  }\n}\n"
+    },
+    {
+      "name": "BSP01",
+      "command": "/private/tmp/hazy-fixtures-env/bin/python Fixtures/Heaps/Similarity/BSP01/tools/integrate.py check",
+      "exit_code": 0,
+      "output": "{\n  \"fixture\": {\n    \"status\": \"passed\",\n    \"kind\": \"prompt_heap\",\n    \"images\": 68,\n    \"sources\": 68,\n    \"assets\": 136,\n    \"pairs\": 0\n  },\n  \"evidence\": {\n    \"previews\": 185,\n    \"initial_visual_fits\": 77,\n    \"visually_selected\": 68,\n    \"acquired\": 68,\n    \"pending\": 0,\n    \"acquisition_status\": \"complete\",\n    \"status\": \"passed\"\n  }\n}\n"
+    },
+    {
+      "name": "poty",
+      "command": "/private/tmp/hazy-fixtures-env/bin/python Fixtures/Heaps/Curatorial/POTY/tools/integrate.py check",
+      "exit_code": 0,
+      "output": "{\"validation\": \"passed\", \"kind\": \"curatorial_heap\", \"pairs\": 0, \"status\": \"complete\", \"official_category\": \"Arthropods\", \"eligible\": 237, \"by_year\": {\"2023\": 47, \"2024\": 86, \"2025\": 104}, \"selected\": 43, \"acquired\": 43, \"excluded\": 194, \"pending_review\": 0, \"pending_acquisition\": 0, \"reserve\": 0, \"target\": 50, \"completed_http_responses\": 76, \"failed_http_transfers\": 0, \"post_transfer_validation_stops\": 1, \"automatic_retries\": 0, \"shortfall\": 7, \"selected_unknown_creators\": 0, \"published_uploader_counts\": {\"Charlesjsharp\": 1, \"Janeklass\": 1, \"Ermell\": 1, \"Poco a poco\": 1, \"Sven Damerow\": 1, \"Anitava Roy\": 1, \"Archaeodontosaurus\": 1, \"Johannes Robalotoff\": 1, \"MaheshBaruahwildlife\": 1, \"Basile Morin\": 1, \"Rhododendrites\": 1, \"Cvmontuy\": 1, \"Atanu Bose Photography\": 1, \"Iifar\": 2, \"Ankit0908\": 1, \"Lviatour\": 1, \"SVKMBFLY\": 1, \"Alexander Klepnev\": 1, \"FlocciNivis\": 1, \"Tagooty\": 1, \"Maurizio Carlini\": 1, \"Stephan Sprinz\": 1, \"Enno Merivee\": 1, \"Fedaro\": 1, \"El Golli Mohamed\": 1, \"Carsten Siegel\": 1, \"Thamblyok\": 1, \"Gribkov\": 1, \"Jacopo Werther\": 1, \"Ivan ideia\": 1, \"Prasan Shrestha\": 1, \"Skander zarrad\": 1, \"Wilfredor\": 1, \"Shapomacro\": 1, \"Subhendukhan\": 1, \"Tiouraren\": 1, \"Sumanbhowmik1992\": 1, \"Dunpharlain\": 1, \"Alvesgaspar\": 1, \"MathKnight\": 1, \"Léo Merçon\": 1, \"Julesvernex2\": 1}, \"latest_revision_uploader_counts\": {\"Charlesjsharp\": 1, \"Janeklass\": 1, \"Ermell\": 1, \"Poco a poco\": 1, \"Sven Damerow\": 1, \"Anitava Roy\": 1, \"Archaeodontosaurus\": 1, \"Johannes Robalotoff\": 1, \"MaheshBaruahwildlife\": 1, \"Basile Morin\": 1, \"Rhododendrites\": 1, \"Cvmontuy\": 1, \"Atanu Bose Photography\": 1, \"Iifar\": 2, \"Ankit0908\": 1, \"Lviatour\": 1, \"SVKMBFLY\": 1, \"Alexander Klepnev\": 1, \"FlocciNivis\": 1, \"Tagooty\": 1, \"Maurizio Carlini\": 1, \"Stephan Sprinz\": 1, \"Enno Merivee\": 1, \"Fedaro\": 1, \"El Golli Mohamed\": 1, \"Carsten Siegel\": 1, \"Thamblyok\": 1, \"Gribkov\": 1, \"Jacopo Werther\": 1, \"Ivan ideia\": 1, \"Prasan Shrestha\": 1, \"Skander zarrad\": 1, \"Wilfredor\": 1, \"Shapomacro\": 1, \"Subhendukhan\": 1, \"Tiouraren\": 1, \"Sumanbhowmik1992\": 1, \"Dunpharlain\": 1, \"Alvesgaspar\": 1, \"MathKnight\": 1, \"Léo Merçon\": 1, \"Julesvernex2\": 1}, \"pending_candidate_ids\": []}\n{\"validation\": \"passed\", \"kind\": \"curatorial_heap\", \"pairs\": 0, \"status\": \"complete\", \"official_category\": \"Constructions and buildings\", \"eligible\": 248, \"by_year\": {\"2023\": 41, \"2024\": 78, \"2025\": 129}, \"selected\": 50, \"acquired\": 50, \"excluded\": 40, \"pending_review\": 0, \"pending_acquisition\": 0, \"reserve\": 158, \"target\": 50, \"completed_http_responses\": 75, \"failed_http_transfers\": 0, \"post_transfer_validation_stops\": 0, \"automatic_retries\": 0, \"shortfall\": 0, \"selected_unknown_creators\": 0, \"published_uploader_counts\": {\"Tuxyso\": 1, \"Llez\": 1, \"XRay\": 1, \"Rhododendrites\": 1, \"Agnes Monkelbaan\": 1, \"Poco a poco\": 1, \"Alexander-93\": 1, \"Mike Peel\": 1, \"Tournasol7\": 1, \"Ser Amantio di Nicolao\": 1, \"Frank Schulenburg\": 1, \"Afsalgado\": 1, \"Theklan\": 1, \"Kiril Simeonovski\": 1, \"Der Wolf im Wald\": 1, \"Zvonimir Stamenov\": 1, \"Roy Egloff\": 1, \"Palauenc05\": 1, \"Aristeas\": 1, \"PetarM\": 1, \"Plozessor\": 1, \"MrPanyGoff\": 1, \"Wilfredor\": 1, \"FlocciNivis\": 1, \"Terragio67\": 1, \"Юрий Д.К.\": 2, \"Acroterion\": 1, \"ArildV\": 1, \"UnpetitproleX\": 1, \"W.carter\": 1, \"Julian Lupyan\": 1, \"Adam Cuerden\": 1, \"Никонико962\": 1, \"The Cosmonaut\": 1, \"Красный\": 1, \"Skander zarrad\": 1, \"A. Öztas\": 1, \"Crisco 1492\": 1, \"Radomianin\": 1, \"Игорь Гордеев\": 1, \"Dllu\": 1, \"A.Savin\": 1, \"PaestumPaestum\": 1, \"Gzen92\": 1, \"Imehling\": 1, \"Milseburg\": 1, \"IM3847\": 1, \"Ig0r\": 1, \"Falcão Alado\": 1}, \"latest_revision_uploader_counts\": {\"Tuxyso\": 1, \"Llez\": 1, \"XRay\": 1, \"Rhododendrites\": 1, \"Agnes Monkelbaan\": 1, \"Poco a poco\": 1, \"Alexander-93\": 1, \"Mike Peel\": 1, \"Tournasol7\": 1, \"Ser Amantio di Nicolao\": 1, \"Frank Schulenburg\": 1, \"Afsalgado\": 1, \"Theklan\": 1, \"Kiril Simeonovski\": 1, \"Der Wolf im Wald\": 1, \"Zvonimir Stamenov\": 1, \"Roy Egloff\": 1, \"Palauenc05\": 1, \"Aristeas\": 1, \"PetarM\": 1, \"Plozessor\": 1, \"MrPanyGoff\": 1, \"Wilfredor\": 1, \"FlocciNivis\": 1, \"Terragio67\": 1, \"Юрий Д.К.\": 2, \"Acroterion\": 1, \"ArildV\": 1, \"UnpetitproleX\": 1, \"W.carter\": 1, \"Julian Lupyan\": 1, \"Adam Cuerden\": 1, \"Никонико962\": 1, \"The Cosmonaut\": 1, \"Красный\": 1, \"Skander zarrad\": 1, \"A. Öztas\": 1, \"Crisco 1492\": 1, \"Radomianin\": 1, \"Игорь Гордеев\": 1, \"Dllu\": 1, \"A.Savin\": 1, \"PaestumPaestum\": 1, \"Gzen92\": 1, \"Imehling\": 1, \"Milseburg\": 1, \"I.Mahesh\": 1, \"Ig0r\": 1, \"Falcão Alado\": 1}, \"pending_candidate_ids\": []}\n{\"validation\": \"passed\", \"kind\": \"curatorial_heap\", \"pairs\": 0, \"status\": \"complete\", \"official_category\": \"People and human activity\", \"eligible\": 238, \"by_year\": {\"2023\": 54, \"2024\": 92, \"2025\": 92}, \"selected\": 50, \"acquired\": 50, \"excluded\": 25, \"pending_review\": 0, \"pending_acquisition\": 0, \"reserve\": 163, \"target\": 50, \"completed_http_responses\": 75, \"failed_http_transfers\": 0, \"post_transfer_validation_stops\": 0, \"automatic_retries\": 0, \"shortfall\": 0, \"selected_unknown_creators\": 3, \"published_uploader_counts\": {\"Herbertkikoy\": 1, \"Fawzi Demmane\": 1, \"DanielTahar\": 1, \"Summering2018\": 1, \"I.Mahesh\": 1, \"Poco a poco\": 1, \"FBilula\": 1, \"Salah Eddine Demmane\": 1, \"Frank Schulenburg\": 1, \"Crisco 1492\": 1, \"Aristeas\": 1, \"Svema\": 1, \"Mohamed Khalil90\": 1, \"ArildV\": 1, \"W.carter\": 1, \"Stepro\": 1, \"Julian Herzog\": 1, \"Royal Society uploader\": 1, \"Julesvernex2\": 1, \"Bijay Chaurasia\": 1, \"Rusho127\": 1, \"Shonagon\": 1, \"Jakubhal\": 1, \"Tm\": 2, \"Roy Egloff\": 1, \"Cmichel67\": 1, \"Yann\": 4, \"Subsidiary account\": 1, \"Mattijohannes\": 1, \"PetarM\": 1, \"Mpamidimarthi\": 1, \"Salahuddinrazu\": 1, \"Giles Laurent\": 1, \"Wilfredor\": 1, \"Elshad Iman (Elşad İman)\": 1, \"Sandro Halank\": 1, \"Nayeem01771031233\": 1, \"Schierbecker\": 1, \"Granada\": 1, \"Shougissime\": 1, \"EMMAN A. FORONDA\": 1, \"Rotadefterim\": 1, \"Ermell\": 1, \"Kallerna\": 1, \"Basile Morin\": 1, \"Simobati1978\": 1}, \"latest_revision_uploader_counts\": {\"Herbertkikoy\": 1, \"Fawzi Demmane\": 1, \"DanielTahar\": 1, \"Summering2018\": 1, \"I.Mahesh\": 1, \"Poco a poco\": 1, \"FBilula\": 1, \"Salah Eddine Demmane\": 1, \"Frank Schulenburg\": 1, \"Crisco 1492\": 1, \"Aristeas\": 1, \"Svema\": 1, \"Mohamed Khalil90\": 1, \"ArildV\": 1, \"天然ガス\": 1, \"Stepro\": 1, \"Julian Herzog\": 1, \"Royal Society uploader\": 1, \"Julesvernex2\": 1, \"Bijay Chaurasia\": 1, \"Rusho127\": 1, \"Shonagon\": 1, \"Jakubhal\": 1, \"Tm\": 2, \"Roy Egloff\": 1, \"Cmichel67\": 1, \"Yann\": 4, \"Subsidiary account\": 1, \"Mattijohannes\": 1, \"PetarM\": 1, \"Mpamidimarthi\": 1, \"Salahuddinrazu\": 1, \"Giles Laurent\": 1, \"Wilfredor\": 1, \"Elshad Iman (Elşad İman)\": 1, \"Sandro Halank\": 1, \"Radomianin\": 1, \"Schierbecker\": 1, \"Granada\": 1, \"Shougissime\": 1, \"EMMAN A. FORONDA\": 1, \"Rotadefterim\": 1, \"Ermell\": 1, \"Kallerna\": 1, \"Basile Morin\": 1, \"Simobati1978\": 1}, \"pending_candidate_ids\": []}\n"
+    },
+    {
+      "name": "ssi-publication",
+      "command": "/private/tmp/hazy-fixtures-env/bin/python Fixtures/Heaps/Curatorial/US-Army-SSI/tools/integrate.py check",
+      "exit_code": 0,
+      "output": "{\n  \"validation\": \"passed\",\n  \"kind\": \"curatorial_heap\",\n  \"pairs\": 0,\n  \"status\": \"partial\",\n  \"target\": 200,\n  \"raw_listings\": 1641,\n  \"unique_file_identities\": 1641,\n  \"reviewed_entries\": 160,\n  \"selected\": 29,\n  \"acquired\": 29,\n  \"excluded\": 5,\n  \"reserve\": 0,\n  \"pending_selection\": 1607,\n  \"unreviewed_entries\": 1481,\n  \"reviewed_decisions\": {\n    \"eligible\": 134,\n    \"exclude\": 19,\n    \"pending\": 7\n  },\n  \"pending_acquisition\": 0,\n  \"pending_acquisition_ids\": [],\n  \"exclusions_by_reason\": {\n    \"out_of_scope_event_photograph\": 2,\n    \"out_of_scope_qualification_tab\": 1,\n    \"out_of_scope_award_tab\": 1,\n    \"out_of_scope_standalone_tab\": 1\n  },\n  \"unresolved_review_ids\": [\n    \"3e5dc0967d0f1e22350f\",\n    \"2dc3a3681e15c0baae18\",\n    \"fb61c9a3292fda67af2d\",\n    \"c2e85fdd2fea6afa70b9\",\n    \"811d2a4a275d264c3d1e\",\n    \"161f61e6cd24554919d5\",\n    \"d7ebb3b1b75855252f56\"\n  ],\n  \"exhausted_population_shortfall\": null,\n  \"transport_failures\": 1,\n  \"post_transfer_validation_stops\": 2,\n  \"automatic_retries\": 0,\n  \"concentration\": {\n    \"original_creator\": {\n      \"United States Army Institute of Heraldry\": 2,\n      \"US Army Cyber Command (ARCYBER)\": 1,\n      \"U.S. Army\": 7,\n      \"US Army\": 7,\n      \"United States Army\": 6,\n      \"unknown\": 5,\n      \"U.S. Army Center Of Military History\": 1\n    },\n    \"designer\": {\n      \"unknown\": 29\n    },\n    \"digital_renderer\": {\n      \"Fvasconcellos\": 1,\n      \"unknown\": 25,\n      \"KCope91\": 1,\n      \"Futurhit12\": 1,\n      \"Noclador\": 1\n    },\n    \"uploader_current_file_revision\": {\n      \"Fvasconcellos\": 1,\n      \"Tsubasa-Minoru\": 1,\n      \"File Upload Bot (Magnus Manske)\": 2,\n      \"Nobunaga24\": 4,\n      \"MGA73bot2\": 1,\n      \"Thadius856\": 1,\n      \"Jsbikehike\": 1,\n      \"KCope91\": 1,\n      \"Iazyges\": 1,\n      \"Erwin Lindemann\": 3,\n      \"Sonaz\": 1,\n      \"Kwasura\": 1,\n      \"Hawkeye7\": 2,\n      \"Coldstreamer20\": 3,\n      \"Monkeybait\": 1,\n      \"Futurhit12\": 1,\n      \"EclecticArkie\": 1,\n      \"SGT141\": 2,\n      \"Noclador\": 1\n    }\n  }\n}\n"
+    },
+    {
+      "name": "poty-tests",
+      "command": "/private/tmp/hazy-fixtures-env/bin/python -m unittest discover -s Fixtures/Heaps/Curatorial/POTY/tools -p 'test_*.py'",
+      "exit_code": 0,
+      "output": "..........\n----------------------------------------------------------------------\nRan 10 tests in 0.037s\n\nOK\n"
+    },
+    {
+      "name": "ps01-tests",
+      "command": "/private/tmp/hazy-fixtures-env/bin/python -m unittest discover -s Fixtures/Heaps/Similarity/PS01/tools -p 'test_*.py'",
+      "exit_code": 0,
+      "output": "......\n----------------------------------------------------------------------\nRan 6 tests in 0.020s\n\nOK\n"
+    },
+    {
+      "name": "ssi-discovery",
+      "command": "/private/tmp/hazy-fixtures-env/bin/python Fixtures/Heaps/Curatorial/US-Army-SSI/tools/integrate.py list",
+      "exit_code": 0,
+      "output": "US-Army-SSI curatorial_heap\n"
+    },
+    {
+      "name": "tracked-whitespace",
+      "command": "git diff --check",
+      "exit_code": 0,
+      "output": ""
+    }
+  ],
+  "router_or_comparison_runs": 0,
+  "scope": "Validated partial SSI publication and all six existing Similarity leaves plus all three POTY leaves. No experiment was run.",
+  "final_staged_checks": {
+    "whitespace_command": "git diff --cached --check",
+    "exit_code": 0,
+    "staged_text_evidence_files": 345,
+    "staged_media_or_python_cache_files": 0,
+    "generated_csv_line_endings": "LF; CSV values unchanged; raw source/export evidence untouched",
+    "publication_check_after_csv_normalization": "passed"
+  }
+}

@@ -1,0 +1,290 @@
+{
+  "method": "Safari accessibility UI: saved existing HTML page source, selected JSON and limit 10000 in the same form, submitted once, saved JSON Page Source",
+  "user_authorization": "User explicitly authorized navigating the already-filled Safari PetScan results to seed this intake after the CLI redirect stop.",
+  "browser_initial_url": "https://petscan.toolforge.org/?psid=58481052",
+  "psid": 58481052,
+  "executed_form_action": "https://petscan.toolforge.org/",
+  "executed_form_method": "POST",
+  "export_reported_query_url": "https://petscan.toolforge.org/?source%5Fcombination=&outlinks%5Fyes=&page%5Fimage=any&sitelinks%5Fany=&file%5Fmedia%5Ftypes=&doit=Do%20it%21&cb%5Flabels%5Fno%5Fl=1&project=wikimedia&wikidata%5Flabel%5Flanguage=&namespace%5Fconversion=keep&min%5Fidentifiers=&negcats=&ores%5Ftype=any&links%5Fto%5Fall=&max%5Fsitelink%5Fcount=&wikidata%5Fsource%5Fsites=&templates%5Fno=&max%5Fage=&active%5Ftab=tab%5Foutput&smaller=&since%5Frev0=&common%5Fwiki%5Fother=&referrer%5Furl=&sitelinks%5Fyes=&wpiu=any&show%5Fsoft%5Fredirects=both&search%5Fwiki=&langs%5Flabels%5Fno=&format=json&search%5Ffilter=&talk%5Fpage%5Fexists=both&edits%5Bbots%5D=both&common%5Fwiki=auto&after=&templates%5Fany=&wikidata%5Fitem=no&wikidata%5Fprop%5Fitem%5Fuse=&max%5Fstatements=&output%5Flimit=10000&search%5Fmax%5Fresults=500&larger=&edits%5Bflagged%5D=both&minlinks=&sparql=&language=commons&manual%5Flist%5Fwiki=&langs%5Flabels%5Fyes=&show%5Fdisambiguation%5Fpages=both&labels%5Fno=&ores%5Fprediction=any&categories=Shoulder%5FSleeve%5FInsignia%5Fof%5Fthe%5FUnited%5FStates%5FArmy%5F%28SSI%29&outlinks%5Fno=&max%5Fidentifiers=&cb%5Flabels%5Fyes%5Fl=1&created%5Fby=&min%5Fsitelink%5Fcount=&before=&links%5Fto%5Fany=&referrer%5Fname=&combination=subset&ores%5Fprob%5Fto=&ores%5Fprob%5Ffrom=&templates%5Fyes=&edits%5Banons%5D=both&show%5Fredirects=both&rxp%5Ffilter=&outlinks%5Fany=&depth=5&cb%5Flabels%5Fany%5Fl=1&subpage%5Ffilter=either&langs%5Flabels%5Fany=&sitelinks%5Fno=&ns%5B6%5D=1&search%5Fquery=&links%5Fto%5Fno=&output%5Fcompatability=catscan&min%5Fredlink%5Fcount=1&min%5Fstatements=&labels%5Fyes=&interface%5Flanguage=en&maxlinks=&manual%5Flist=&labels%5Fany=&sortby=none&pagepile=&sortorder=ascending&sparql%5Fserver=wikidata",
+  "export_reported_parameters": {
+    "source_combination": [
+      ""
+    ],
+    "outlinks_yes": [
+      ""
+    ],
+    "page_image": [
+      "any"
+    ],
+    "sitelinks_any": [
+      ""
+    ],
+    "file_media_types": [
+      ""
+    ],
+    "doit": [
+      "Do it!"
+    ],
+    "cb_labels_no_l": [
+      "1"
+    ],
+    "project": [
+      "wikimedia"
+    ],
+    "wikidata_label_language": [
+      ""
+    ],
+    "namespace_conversion": [
+      "keep"
+    ],
+    "min_identifiers": [
+      ""
+    ],
+    "negcats": [
+      ""
+    ],
+    "ores_type": [
+      "any"
+    ],
+    "links_to_all": [
+      ""
+    ],
+    "max_sitelink_count": [
+      ""
+    ],
+    "wikidata_source_sites": [
+      ""
+    ],
+    "templates_no": [
+      ""
+    ],
+    "max_age": [
+      ""
+    ],
+    "active_tab": [
+      "tab_output"
+    ],
+    "smaller": [
+      ""
+    ],
+    "since_rev0": [
+      ""
+    ],
+    "common_wiki_other": [
+      ""
+    ],
+    "referrer_url": [
+      ""
+    ],
+    "sitelinks_yes": [
+      ""
+    ],
+    "wpiu": [
+      "any"
+    ],
+    "show_soft_redirects": [
+      "both"
+    ],
+    "search_wiki": [
+      ""
+    ],
+    "langs_labels_no": [
+      ""
+    ],
+    "format": [
+      "json"
+    ],
+    "search_filter": [
+      ""
+    ],
+    "talk_page_exists": [
+      "both"
+    ],
+    "edits[bots]": [
+      "both"
+    ],
+    "common_wiki": [
+      "auto"
+    ],
+    "after": [
+      ""
+    ],
+    "templates_any": [
+      ""
+    ],
+    "wikidata_item": [
+      "no"
+    ],
+    "wikidata_prop_item_use": [
+      ""
+    ],
+    "max_statements": [
+      ""
+    ],
+    "output_limit": [
+      "10000"
+    ],
+    "search_max_results": [
+      "500"
+    ],
+    "larger": [
+      ""
+    ],
+    "edits[flagged]": [
+      "both"
+    ],
+    "minlinks": [
+      ""
+    ],
+    "sparql": [
+      ""
+    ],
+    "language": [
+      "commons"
+    ],
+    "manual_list_wiki": [
+      ""
+    ],
+    "langs_labels_yes": [
+      ""
+    ],
+    "show_disambiguation_pages": [
+      "both"
+    ],
+    "labels_no": [
+      ""
+    ],
+    "ores_prediction": [
+      "any"
+    ],
+    "categories": [
+      "Shoulder_Sleeve_Insignia_of_the_United_States_Army_(SSI)"
+    ],
+    "outlinks_no": [
+      ""
+    ],
+    "max_identifiers": [
+      ""
+    ],
+    "cb_labels_yes_l": [
+      "1"
+    ],
+    "created_by": [
+      ""
+    ],
+    "min_sitelink_count": [
+      ""
+    ],
+    "before": [
+      ""
+    ],
+    "links_to_any": [
+      ""
+    ],
+    "referrer_name": [
+      ""
+    ],
+    "combination": [
+      "subset"
+    ],
+    "ores_prob_to": [
+      ""
+    ],
+    "ores_prob_from": [
+      ""
+    ],
+    "templates_yes": [
+      ""
+    ],
+    "edits[anons]": [
+      "both"
+    ],
+    "show_redirects": [
+      "both"
+    ],
+    "rxp_filter": [
+      ""
+    ],
+    "outlinks_any": [
+      ""
+    ],
+    "depth": [
+      "5"
+    ],
+    "cb_labels_any_l": [
+      "1"
+    ],
+    "subpage_filter": [
+      "either"
+    ],
+    "langs_labels_any": [
+      ""
+    ],
+    "sitelinks_no": [
+      ""
+    ],
+    "ns[6]": [
+      "1"
+    ],
+    "search_query": [
+      ""
+    ],
+    "links_to_no": [
+      ""
+    ],
+    "output_compatability": [
+      "catscan"
+    ],
+    "min_redlink_count": [
+      "1"
+    ],
+    "min_statements": [
+      ""
+    ],
+    "labels_yes": [
+      ""
+    ],
+    "interface_language": [
+      "en"
+    ],
+    "maxlinks": [
+      ""
+    ],
+    "manual_list": [
+      ""
+    ],
+    "labels_any": [
+      ""
+    ],
+    "sortby": [
+      "none"
+    ],
+    "pagepile": [
+      ""
+    ],
+    "sortorder": [
+      "ascending"
+    ],
+    "sparql_server": [
+      "wikidata"
+    ]
+  },
+  "export_file": "provenance/population/petscan-58481052-export.json",
+  "export_sha256": "5ecf1eaf7a6983c72a086b5a9b8c99b7611d2d832e02e6f5364cde2ba5be4328",
+  "export_bytes": 221479,
+  "export_saved_at": "2026-10-31T20:22:27.548933+00:00",
+  "html_file": "provenance/population/petscan-58481052-loaded.html",
+  "html_sha256": "09f6e360a88a9d8c65474bef3b9c73290e821754abadf96f62f39081cef8494d",
+  "html_bytes": 889760,
+  "html_saved_at": "2026-10-31T20:21:22.073533+00:00",
+  "reported_browser_count": 1641,
+  "export_rows": 1641,
+  "unique_pageids": 1641,
+  "unique_titles": 1641,
+  "full_html_identity_sequence_matches_export": true,
+  "output_limit": 10000,
+  "http_status": null,
+  "http_headers": null,
+  "limitations": "Safari Page Source saves, not instrumented HTTP receipts. Browser request headers/status and original result generation time were not captured. JSON has its own query URL and runtime. No response bytes have been edited. wikidata_item=no was inspected in UI: Do not add Wikidata items, not a filter excluding pages with items.",
+  "browser_restored": "Back to PSID 58481052, HTML output, original blank limit and Categories tab; no second query submission."
+}

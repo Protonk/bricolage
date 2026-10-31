@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T20:24:47.062985+00:00",
+  "key": "preview-480-ranks-0001-0010",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3A44th_Medical_Command_SSI.svg%7CFile%3AUSAR_Cyber_Protection_Brigade_Emblem.png%7CFile%3AImage-218th_Infantry_Brigade.gif%7CFile%3A194th_Armored_Brigade_SSI_%281966-2015%29.jpg%7CFile%3AIX_Corps_insignia.gif%7CFile%3AIraqi_National_Police_Officer_meeting_in_Baghdad%2C_Iraq_DVIDS164276.jpg%7CFile%3A75th_Ranger_Regiment_SSI_%281984-2015%29.svg%7CFile%3AXV_CORPS_SSI.gif%7CFile%3A244avnbdessi.jpg%7CFile%3AIII_Armored_Corps_Insignia.svg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=480&iiurlheight=480&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 44139,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 20:24:47 GMT",
+    "server": "mw-api-ext.codfw.canary-6b87d95d98-zzrfw",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "09221f39-a3e2-4c8f-9d55-14c860ba4b08"
+  },
+  "sha256": "7b037d45a715f65a48aeac73a0bd1d54f453d1ce47b84db030cc01f6d00d225f"
+}

@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T20:26:28.241038+00:00",
+  "key": "preview-480-ranks-0191-0200",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3ARedcatcher.png%7CFile%3A8th_Inf_Div_1.jpg%7CFile%3A357th_Air_%26_Missile_Defense_Detachment_SSI.svg%7CFile%3A83rd_Infantry_Division_SSI.svg%7CFile%3A2nd_Sig_Bde_patch_1.jpg%7CFile%3AGreenland_Base_Command_-_Emblem.png%7CFile%3A1SFAB.png%7CFile%3ASecond_United_States_Army_CSIB.svg%7CFile%3A79_Infantry_Brigade_Combat_Team_insignia.svg%7CFile%3A4-2_SHIELD_2008_Flag.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=480&iiurlheight=480&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 38370,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 20:26:28 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-jrrfs",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "d0ef8d9a-c61b-4bd1-8dff-5dc83368ba04"
+  },
+  "sha256": "dc9618c4148f91b6f2e57816affafe80df0dfd437634e070f3cd38e1f50c9d54"
+}

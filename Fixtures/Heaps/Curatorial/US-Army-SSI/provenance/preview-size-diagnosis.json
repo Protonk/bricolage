@@ -1,0 +1,38 @@
+{
+  "cases": [
+    {
+      "candidate_id": "51c6e139ca5a3b25f505",
+      "rank": 74,
+      "requested_edge": 480,
+      "api_display_dimensions": [
+        333,
+        480
+      ],
+      "decoded_dimensions": [
+        500,
+        721
+      ],
+      "retained_body": "previews/partials/51c6e139ca5a3b25f505-preview-480.part",
+      "retained_sha256": "dd99067ff092055fe1203520ab3d886ffe1d6e9baf1c837ea8e7240e8b5db05f",
+      "diagnosis": "Complete single-frame GIF; API-returned 500px bucket is one pixel beyond the unchanged 1.5x nominal bound. No transport corruption.",
+      "resolution": "Explicit separate 640px API preview request; retain original response and body. Subsequent preview batches also explicitly use 640px; preserve initial 480 metadata."
+    },
+    {
+      "candidate_id": "aaead9ae2984ab44e139",
+      "rank": 80,
+      "requested_edge": 640,
+      "api_display_dimensions": [
+        580,
+        640
+      ],
+      "decoded_dimensions": [
+        960,
+        1059
+      ],
+      "retained_body": "previews/partials/aaead9ae2984ab44e139-preview-640.part",
+      "retained_sha256": "5f00804869bba4449e9364252d44f0e7e8ef1ffc4acdc6d8227591b8f797719c",
+      "diagnosis": "Complete single-frame PNG from SVG; API-returned 960px-width bucket exceeds unchanged 960px longest-edge guard. Full decode succeeds; body unchanged.",
+      "resolution": "Explicit separate 1280px API preview request; no automatic retry and no changed size guard. Later previews use this nominal request."
+    }
+  ]
+}

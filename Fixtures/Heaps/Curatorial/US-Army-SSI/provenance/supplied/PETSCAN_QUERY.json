@@ -1,0 +1,22 @@
+{
+  "purpose": "Freeze the full Wikimedia Commons US Army shoulder-sleeve insignia File population, inclusive of category descendants; no client-side category recursion.",
+  "query_parameters": {
+    "project": "wikimedia",
+    "language": "commons",
+    "categories": "Shoulder Sleeve Insignia of the United States Army (SSI)",
+    "depth": "5",
+    "ns[6]": "1",
+    "output_limit": "10000",
+    "doit": "1"
+  },
+  "export_format": "json",
+  "query_url_json": "https://petscan.wmcloud.org/?project=wikimedia&language=commons&categories=Shoulder+Sleeve+Insignia+of+the+United+States+Army+%28SSI%29&depth=5&ns%5B6%5D=1&output_limit=10000&doit=1&format=json",
+  "query_url_html": "https://petscan.wmcloud.org/?project=wikimedia&language=commons&categories=Shoulder+Sleeve+Insignia+of+the+United+States+Army+%28SSI%29&depth=5&ns%5B6%5D=1&output_limit=10000&doit=1&format=html",
+  "reported_prior_result_count": 1641,
+  "reported_prior_result_count_source": "User reported PetScan result count in the conversation; not independently fetched or frozen by this handoff.",
+  "actual_export_count": null,
+  "snapshot_timestamp_utc": null,
+  "raw_response_sha256": null,
+  "expected_candidate_namespace": 6,
+  "output_limit_note": "Output limit is a guard against truncation, not a selection filter. Verify full results and preserve the exact request and response."
+}

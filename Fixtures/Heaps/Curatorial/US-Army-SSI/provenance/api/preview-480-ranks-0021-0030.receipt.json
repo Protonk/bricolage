@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T20:25:21.354592+00:00",
+  "key": "preview-480-ranks-0021-0030",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3AUnited_States_Army_Cyber_School_SSI.jpg%7CFile%3A59_Ord_Bde_SSI.png%7CFile%3AVI_Service_Command.jpg%7CFile%3AEmblem_of_1st_Signal_Brigade_%28United_States%29.svg%7CFile%3AAirborne_and_Ranger_Training_Brigade_SSI.png%7CFile%3A11thACR_patch.jpg%7CFile%3A210FiresBdeSSI.jpg%7CFile%3AUnited_States_Army_Central_CSIB.svg%7CFile%3A263ADABdeSSI.gif%7CFile%3A108th_ADA_Bde_patch.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=480&iiurlheight=480&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 38478,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 20:25:21 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-w4mpk",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "d7257e35-1ee1-4ede-a1b7-3e90ebcf9a98"
+  },
+  "sha256": "5424e068fa374e5ead3db548bf6196ca7475ea97050fa8b728dd9161584002b5"
+}

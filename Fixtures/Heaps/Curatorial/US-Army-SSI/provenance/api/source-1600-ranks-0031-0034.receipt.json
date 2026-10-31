@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T20:45:02.626180+00:00",
+  "key": "source-1600-ranks-0031-0034",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3AUS_11th_Infantry_Division.png%7CFile%3A300MIBdeSSI.gif%7CFile%3ASouthern_Defense_Command_SSI.jpg%7CFile%3AU.S._Army_Arctic_Tab.png&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 14626,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 20:45:02 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-fcwnk",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "f53bb3dd-ffbc-4cec-8d74-8a5a4e009ae2"
+  },
+  "sha256": "9298ebb3474579cf69b7f4460cca0f2a203eed8c9c08cc575a7e774605db1a18"
+}

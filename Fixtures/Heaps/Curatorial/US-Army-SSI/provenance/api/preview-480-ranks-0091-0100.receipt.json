@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T20:25:48.378857+00:00",
+  "key": "preview-480-ranks-0091-0100",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3A73rdInfantryBrigade.svg%7CFile%3ASpecial_Troops_Battalion%2C_4BDE%2C_1ID_COA.png%7CFile%3A1stInfDivArtyDUI.png%7CFile%3A111EngrBdeSSI.jpg%7CFile%3AXXII_Corps_SSI.svg%7CFile%3AUSA_-_221_MP_Bde.png%7CFile%3A19thESCshoulder.svg%7CFile%3ANY_State_Area_Command_SSI.svg%7CFile%3ASapper_Tab.png%7CFile%3AUSFA_patch_redbkgd.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=480&iiurlheight=480&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 40218,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 20:25:48 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-jl6w2",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "27f83c4b-2dfb-4181-9a93-e9c196d0509a"
+  },
+  "sha256": "34bffd2ca242e651ae8eb6e41b2cd49b241816c1e2b4fc34563a1d7eef29c252"
+}

@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T20:26:59.919383+00:00",
+  "key": "preview-480-ranks-0271-0280",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3A3rd_Army_patch.jpg%7CFile%3A112th_MED_BDE.jpg%7CFile%3AUS_Army_National_Guard_Regional_Training_Institute_Shoulder_Sleeve_Insignia.png%7CFile%3A12th_Army_Group.svg%7CFile%3AUS_Army_Eighth_Infantry_Division_Band_SSI_%28Desert%29.svg%7CFile%3A311_Sig_Cmd_SSI.png%7CFile%3AI_Armored_Corps_SSI.jpg%7CFile%3AMilitary_District_of_Washington_CSIB.png%7CFile%3ASOCFortBraggSSI.gif%7CFile%3AUS_Army_Combat_Developments_Command_SSI_2026-05-24.svg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=480&iiurlheight=480&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 41799,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 20:27:00 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-5h4vf",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "66eb6620-7b52-434f-9d2e-eb82692ad28a"
+  },
+  "sha256": "84dcba55e47d8dd35ed7cf679f602e1dd96b45b40b311949cef0abfe9b83c376"
+}

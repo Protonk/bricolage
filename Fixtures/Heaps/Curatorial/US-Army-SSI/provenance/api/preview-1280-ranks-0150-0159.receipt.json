@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T20:40:09.845475+00:00",
+  "key": "preview-1280-ranks-0150-0159",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3AAAFCE_patch_1.jpg%7CFile%3A39th_US_Armored_Division_SSI.svg%7CFile%3A3rd_Armd_Div.jpg%7CFile%3AFourth_United_States_Army_CSIB.svg%7CFile%3A12AvnBdeSSI.png%7CFile%3A67th_Infantry_Brigade_SSI.svg%7CFile%3A3_Corps_Shoulder_Sleeve_Insignia.svg%7CFile%3A013-Airborne-Div-SSI.png%7CFile%3A7_Airborne_Ranger_Battalion_Shoulder_Sleeve_Insignia.svg%7CFile%3A256_INF_BDE_SSI.gif&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1280&iiurlheight=1280&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 47823,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 20:40:10 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-xdhhl",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "0009cbf8-dc00-44dc-a6c9-20e4a6ad0bde"
+  },
+  "sha256": "f8181ab36a57b9127eb5f9b5bc2676035f1aae2bae9d87ad386be2f07250a539"
+}
