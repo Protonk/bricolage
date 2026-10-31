@@ -1,0 +1,13 @@
+{
+  "attempted": "DNS resolution only; no HTTP requests",
+  "date": "2026-10-31",
+  "results": {
+    "commons.wikimedia.org": "DNS gaierror Temporary failure in name resolution",
+    "upload.wikimedia.org": "DNS gaierror Temporary failure in name resolution"
+  },
+  "preview_files_acquired": 0,
+  "media_requests": 0,
+  "api_requests": 0,
+  "error_type": "environment_dns",
+  "note": "This diagnostic pertains to sourcing runtime, not user local machine. It did not trigger a Commons 429 or API maxlag."
+}

@@ -2,6 +2,7 @@
 
 Read [README.md](README.md) before substantial work. Follow the relevant track:
 
+- Fixture design, organization and intake: [Fixtures](Fixtures/README.md).
 - Router: [Horizontal Gene Transfer](Research/Router/HORIZONTAL-GENE-TRANSFER.md)
   and [Backwards Induction](Research/Router/BACKWARDS-INDUCTION.md).
 - Framework boundary and portability: [Research/Portability](Research/Portability/README.md)

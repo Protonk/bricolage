@@ -119,7 +119,7 @@ and prepare to 1024×576; three portrait images store 960×1706 and prepare to
 thumbnails. This upstream resizing precedes hazy's own decoding and preparation.
 No expected Vision translation or matching judgment is attached to a scene label.
 
-The [derivative focused selection](../../Fixtures/hazy-derivatives-v1/selections.json) uses astronaut,
+The [derivative focused selection](../../Fixtures/Relationships/Derivatives/selections.json) uses astronaut,
 grass, and retina for distinctive structure, repetitive texture, and downsampling.
 The tests prepare each original, write temporary working PNGs, and move content
 17 pixels right and 9 down on a same-size white canvas. Expected alignment is

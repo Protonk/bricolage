@@ -1,0 +1,20 @@
+Web-viewed Wikimedia Commons category pages, 2026-10-31.
+Every candidate in candidates.jsonl was explicitly listed by title in a category page's media list.
+These are acquisition leads. No actual media were downloaded or viewed.
+
+https://commons.wikimedia.org/wiki/Category:Facades_with_windows_as_central_element
+https://commons.wikimedia.org/wiki/Category:Facade_textures
+https://commons.wikimedia.org/wiki/Category:Stacks_of_shipping_containers
+https://commons.wikimedia.org/wiki/Category:Stacks_of_crates
+https://commons.wikimedia.org/wiki/Category:School_lockers
+https://commons.wikimedia.org/wiki/Category:Solar_cell_panels_on_roofs
+https://commons.wikimedia.org/wiki/Category:Stacks_(shelves)
+https://commons.wikimedia.org/wiki/Category:Tile_facades
+https://commons.wikimedia.org/wiki/Category:Seat_numbers_in_stadiums
+https://commons.wikimedia.org/wiki/Category:Stacks_of_boxes
+https://commons.wikimedia.org/wiki/Category:Stacks_of_containers
+
+Web-viewed individual file-page text:
+https://commons.wikimedia.org/wiki/File:Shipping_container_pattern_(Unsplash).jpg
+https://commons.wikimedia.org/wiki/File:School_lockers_JSG.jpg
+https://commons.wikimedia.org/wiki/File:Rectangular_plastic_shipping_crates_in_an_Italian_recycling_plant.jpg

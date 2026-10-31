@@ -28,7 +28,7 @@ final class FixtureTests: XCTestCase {
     private let fixtures = URL(fileURLWithPath: #filePath)
         .deletingLastPathComponent().deletingLastPathComponent().deletingLastPathComponent()
         .appendingPathComponent("../../Fixtures").standardizedFileURL
-    private var corpus: URL { fixtures.appendingPathComponent("hazy-derivatives-v1") }
+    private var corpus: URL { fixtures.appendingPathComponent("Relationships/Derivatives") }
     private var entries: [Entry] = []
     private var directory: URL!
 
@@ -58,7 +58,7 @@ final class FixtureTests: XCTestCase {
     }
 
     func testMultiviewInputsKeepSceneGroupsAndApplyOrientation() throws {
-        let root = fixtures.appendingPathComponent("hazy-multiview-v1")
+        let root = fixtures.appendingPathComponent("Relationships/Multiviews")
         let images = try JSONDecoder().decode(Manifest.self, from: Data(contentsOf:
             root.appendingPathComponent("manifest.json"))).images
         XCTAssertEqual(images.count, 20)

@@ -1,0 +1,16 @@
+{
+  "element": "cool-repetitive-rectangles",
+  "id": "CR01",
+  "kind": "prompt_heap",
+  "prompt": "Photographs dominated by a repeated array of rectangular cells, frames, panels, or modules, often in cool blues, grays and muted greens.",
+  "looseness": "Allow perspective, interrupted grids, variable scale, irregular spacing, background context and modest warm accents when the rectangular repetition dominates the thumbnail.",
+  "exclusions": "Known derivatives, alternate crops, related captures or sequences, synthetic/illustrated patterns, single-object portraits, incidental background rectangles.",
+  "target_count": 65,
+  "acceptable_range": [50, 80],
+  "candidate_count": 168,
+  "visual_status": "pending_visual_review",
+  "visual_accept_count": 0,
+  "acquired_count": 0,
+  "actual_count": null,
+  "interpretation": "Discovery buckets are sourcing aids, not expected clusters. No numerical similarity threshold or provenance-relationship ground truth."
+}

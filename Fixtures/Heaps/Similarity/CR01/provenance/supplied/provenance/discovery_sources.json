@@ -1,0 +1,67 @@
+{
+  "source": "Wikimedia Commons category listings accessed 2026-10-31 via web retrieval; titles seen in page media lists, not individually image-viewed.",
+  "groups": [
+    {
+      "bucket": "window_facades",
+      "category": "Facades with windows as central element",
+      "discovery_url": "https://commons.wikimedia.org/wiki/Category:Facades_with_windows_as_central_element",
+      "leads": 28
+    },
+    {
+      "bucket": "facade_textures",
+      "category": "Facade textures",
+      "discovery_url": "https://commons.wikimedia.org/wiki/Category:Facade_textures",
+      "leads": 15
+    },
+    {
+      "bucket": "container_stacks",
+      "category": "Stacks of shipping containers",
+      "discovery_url": "https://commons.wikimedia.org/wiki/Category:Stacks_of_shipping_containers",
+      "leads": 27
+    },
+    {
+      "bucket": "crates",
+      "category": "Stacks of crates",
+      "discovery_url": "https://commons.wikimedia.org/wiki/Category:Stacks_of_crates",
+      "leads": 19
+    },
+    {
+      "bucket": "school_lockers",
+      "category": "School lockers",
+      "discovery_url": "https://commons.wikimedia.org/wiki/Category:School_lockers",
+      "leads": 20
+    },
+    {
+      "bucket": "solar_arrays",
+      "category": "Solar cell panels on roofs",
+      "discovery_url": "https://commons.wikimedia.org/wiki/Category:Solar_cell_panels_on_roofs",
+      "leads": 17
+    },
+    {
+      "bucket": "library_stacks",
+      "category": "Stacks (shelves)",
+      "discovery_url": "https://commons.wikimedia.org/wiki/Category:Stacks_(shelves)",
+      "leads": 16
+    },
+    {
+      "bucket": "tile_facades",
+      "category": "Tile facades",
+      "discovery_url": "https://commons.wikimedia.org/wiki/Category:Tile_facades",
+      "leads": 12
+    },
+    {
+      "bucket": "stadium_seats",
+      "category": "Seat numbers in stadiums",
+      "discovery_url": "https://commons.wikimedia.org/wiki/Category:Seat_numbers_in_stadiums",
+      "leads": 10
+    },
+    {
+      "bucket": "box_stacks",
+      "category": "Stacks of boxes",
+      "discovery_url": "https://commons.wikimedia.org/wiki/Category:Stacks_of_boxes",
+      "leads": 4
+    }
+  ],
+  "source_count": 168,
+  "site_access": "Read-only search/category pages, no Commons API calls, no media download. DNS resolution to Wikimedia hosts was unavailable from source-package runtime."
+}

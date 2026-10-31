@@ -1,0 +1,17 @@
+{
+  "comparison_basis": "Three prior sourcing-pack candidate catalogs, exact commons_title only; not local integrated inventories; absence does not prove independent captures.",
+  "packs": {
+    "hazy_rg01_sourcing_v01.zip": {
+      "previous_candidates": 107,
+      "exact_title_overlaps": []
+    },
+    "hazy_sf01_sourcing_v01.zip": {
+      "previous_candidates": 142,
+      "exact_title_overlaps": []
+    },
+    "hazy_ps01_sourcing_v01.zip": {
+      "previous_candidates": 145,
+      "exact_title_overlaps": []
+    }
+  }
+}

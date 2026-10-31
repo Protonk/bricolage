@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Check either fixture set or run local comparisons. Python standard library only."""
+"""Check a provenance relationship set or run local comparisons. Standard library only."""
 import argparse
 from collections import Counter, defaultdict
 import csv
@@ -13,8 +13,8 @@ import sys
 
 EXPERIMENT = Path(__file__).resolve().parents[1]
 REPO = EXPERIMENT.parents[1]
-CORPUS = REPO / "Fixtures/hazy-derivatives-v1"
-MULTIVIEW = REPO / "Fixtures/hazy-multiview-v1"
+CORPUS = REPO / "Fixtures/Relationships/Derivatives"
+MULTIVIEW = REPO / "Fixtures/Relationships/Multiviews"
 
 
 def require(condition, message):

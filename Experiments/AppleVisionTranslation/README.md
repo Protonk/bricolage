@@ -81,16 +81,16 @@ an existing parent.
 
 ```sh
 python3 Experiments/AppleVisionTranslation/Tools/fixtures.py check
-python3 Experiments/AppleVisionTranslation/Tools/fixtures.py check --fixtures Fixtures/hazy-multiview-v1
+python3 Experiments/AppleVisionTranslation/Tools/fixtures.py check --fixtures Fixtures/Relationships/Multiviews
 swift build --package-path Experiments/AppleVisionTranslation
 mkdir -p output
 python3 Experiments/AppleVisionTranslation/Tools/fixtures.py run --output output/fixture-focus
 python3 Experiments/AppleVisionTranslation/Tools/fixtures.py run --selection full --output output/fixture-full
-python3 Experiments/AppleVisionTranslation/Tools/fixtures.py run --fixtures Fixtures/hazy-multiview-v1 --output output/multiview-focus
+python3 Experiments/AppleVisionTranslation/Tools/fixtures.py run --fixtures Fixtures/Relationships/Multiviews --output output/multiview-focus
 python3 -m unittest discover -s Experiments/AppleVisionTranslation/Tools
 ```
 
-The default [focused selection](../../Fixtures/hazy-derivatives-v1/selections.json) uses astronaut,
+The default [focused selection](../../Fixtures/Relationships/Derivatives/selections.json) uses astronaut,
 grass, and retina originals with byte copies, PNG re-encodes, strong JPEG
 compression, and blur. Two diagnostic pairs add grass versus gravel and retina
 versus its center crop: 14 comparisons across 17 existing files. These cover
@@ -107,7 +107,7 @@ For the default derivative set, `--selection probes` runs the 115 supplied pairs
 those probes, the remaining single-source variants, each composite against both
 parents, and singleton self-comparisons. All 183 inputs are covered without an
 all-pairs search. Batch lists are checked for consistency; hazy has no batch-import
-or grouping feature yet. With `--fixtures Fixtures/hazy-multiview-v1`, probes/full
+or grouping feature yet. With `--fixtures Fixtures/Relationships/Multiviews`, probes/full
 run 44 pairs: 16 within groups and 28 between group representatives. Three pairs
 between Budapest sequences are labeled ambiguous diagnostics because they share
 an event and nearby surroundings. `family_id` means one source and its derivatives;

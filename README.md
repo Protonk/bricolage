@@ -14,7 +14,7 @@ The router is specified but not implemented.
 | [Research/Router](Research/Router/README.md) | Router requirements and design research |
 | [Research/Portability](Research/Portability/README.md) | Parallel research into framework handoffs and an eventual shared API on macOS and Linux |
 | [Experiments/AppleVisionTranslation](Experiments/AppleVisionTranslation/README.md) | Working macOS translation channel experiment, with its own Swift package, CLI, tests, and tools |
-| [Fixtures](Fixtures/README.md) | Versioned descriptions and provenance; image assets remain local and Git-ignored |
+| [Fixtures](Fixtures/README.md) | Provenance relationship sets and separately selected image heaps; media remains local and Git-ignored |
 
 There is no root Swift package or router executable. The existing code lives in
 an explicitly named experiment so its structure cannot be mistaken for the
@@ -67,6 +67,10 @@ a fresh checkout contains only their descriptions and checksums. The seven
 self-contained mechanics tests can run with `--filter ComparisonTests`.
 
 ## Local fixture assets
+
+`Fixtures/Relationships/` holds Derivatives, Multiviews and Variants.
+`Fixtures/Heaps/Similarity/` holds the prompt-selected contributions to the
+current similarity heap; other heaps can have their own selection criteria.
 
 Fixture sets use `images/` for comparison inputs and `sources/` for preserved
 source bytes. Optional `previews/` contains contact sheets, outside the input set.
