@@ -27,9 +27,9 @@ def clean(v):
 
 def norm(s):return s.replace('_',' ').removeprefix('File:')
 
-def order():return read(ROOT/'ordering.json')['candidate_ids']
+def order():return read(ROOT/'provenance/intake/ordering.json')['candidate_ids']
 
-def candidates():return {r['candidate_id']:r for r in read(ROOT/'inventory.json')['candidates']}
+def candidates():return {r['candidate_id']:r for r in read(ROOT/'provenance/intake/inventory.json')['candidates']}
 
 def metadata_path(stage,edge,start,end):return f'provenance/api/{stage}-{edge}-ranks-{start:04d}-{end:04d}.json'
 
@@ -170,11 +170,11 @@ def population(fetch=False):
  return dict(leaf=ROOT.name,depth=0,method='Direct categorymembers File union by page ID; all continuations exhausted',categories=[r['title']for r in conf['categories']],category_counts=counts,actual_count=len(rows),responses=responses,candidate_id_algorithm='First 20 hex SHA-256 of UTF-8 hazy-curatorial-triplet-v1 + LF + leaf slug + LF + exact frozen File title',candidates=rows)
 
 def freeze():
- require(not(ROOT/'inventory.json').exists(),'Population already frozen')
+ require(not(ROOT/'provenance/intake/inventory.json').exists(),'Population already frozen')
  try:inventory=population(True)
  except ValueError as error:Client(ROOT).stop(dict(utc=utc(),kind='population-validation',error=str(error)))
- dump(ROOT/'inventory.json',inventory);seed=config()['seed'];dump(ROOT/'ordering.json',dict(seed=seed,algorithm='Ascending SHA-256 of UTF-8 seed + LF + candidate ID; tie-break candidate ID',candidate_ids=ordered(inventory['candidates'],seed)))
- dump(ROOT/'selection.json',selection());print(ROOT.name,inventory['category_counts'],'unique',inventory['actual_count'],flush=True)
+ dump(ROOT/'provenance/intake/inventory.json',inventory);seed=config()['seed'];dump(ROOT/'provenance/intake/ordering.json',dict(seed=seed,algorithm='Ascending SHA-256 of UTF-8 seed + LF + candidate ID; tie-break candidate ID',candidate_ids=ordered(inventory['candidates'],seed)))
+ dump(ROOT/'provenance/intake/selection.json',selection());print(ROOT.name,inventory['category_counts'],'unique',inventory['actual_count'],flush=True)
 
 def selection():
  technical=read(ROOT/'provenance/technical-exclusions.json')if(ROOT/'provenance/technical-exclusions.json').exists()else{}
@@ -198,7 +198,7 @@ def selection():
     if unresolved:provisional.append(cid)
     for k in keys:identities[k]=cid
   ledger.append(dict(candidate_id=cid,rank=rank,decision=state,reason=reason,conflicts_with=conflicts,provisional=cid in provisional))
- return dict(target=TARGET,seed=config()['seed'],inventory_sha256=sha(ROOT/'inventory.json'),pending_policy='Explicit defer advances provisionally; unreviewed gaps block selection; source transfer failures never replace selections.',selected=chosen,unresolved_prior_candidates=unresolved,provisional_selected=provisional,decisions=ledger,counts={s:sum(r['decision']==s for r in ledger)for s in ['selected','excluded','deferred','reserve','unreviewed']})
+ return dict(target=TARGET,seed=config()['seed'],inventory_sha256=sha(ROOT/'provenance/intake/inventory.json'),pending_policy='Explicit defer advances provisionally; unreviewed gaps block selection; source transfer failures never replace selections.',selected=chosen,unresolved_prior_candidates=unresolved,provisional_selected=provisional,decisions=ledger,counts={s:sum(r['decision']==s for r in ledger)for s in ['selected','excluded','deferred','reserve','unreviewed']})
 
 def record_reviews(sheet,values):
  records=read(ROOT/'provenance/work-review.json')if(ROOT/'provenance/work-review.json').exists()else{};ev=evidence();ids=[];sheet_path=safe(ROOT,sheet);require(sheet_path.is_file(),'Missing inspected sheet')
@@ -212,7 +212,7 @@ def record_reviews(sheet,values):
   require(page.get('pageid')==candidates()[cid]['category_pageid'],'Frozen/resolved identity differs; explicit reconciliation needed')
   records[cid]=r;ids.append(cid)
  dump(ROOT/'provenance/work-review.json',records);append(ROOT/'provenance/inspection-log.jsonl',dict(utc=utc(),candidate_ids=ids,evidence=sheet,sha256=sha(sheet_path),purpose='Thumbnail scope and documented object/work repetition only; no aesthetic or similarity screening.'))
- dump(ROOT/'selection.json',selection());print('Recorded',len(ids),'reviews;',selection()['counts'])
+ dump(ROOT/'provenance/intake/selection.json',selection());print('Recorded',len(ids),'reviews;',selection()['counts'])
 
 def network_action(function,*args):
  try:return function(*args)
@@ -233,7 +233,7 @@ def main(root=None):
   elif a.command=='sheets':sheets(a.start,a.end)
   elif a.command=='review':record_reviews(a.sheet,json.load(sys.stdin))
   elif a.command=='acknowledge':Client(ROOT).acknowledge(a.diagnosis)
-  elif a.command=='select':dump(ROOT/'selection.json',selection());print(selection()['counts'])
+  elif a.command=='select':dump(ROOT/'provenance/intake/selection.json',selection());print(selection()['counts'])
   else:
    import three_category_publish as publish
    publish.run(sys.modules[__name__],a.command)

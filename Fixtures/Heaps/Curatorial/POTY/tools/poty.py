@@ -110,16 +110,16 @@ def initialize():
         rows = inventory(root, category)
         value = dict(official_category=category, years=list(YEARS), complete=True, candidates=rows,
                      basis='Complete category data.json pages used by the published Round 1 gallery; raw records preserved.')
-        if (root / 'inventory.json').exists():
-            require(read(root / 'inventory.json') == value, 'Existing inventory changed')
-        dump(root / 'inventory.json', value)
-        dump(root / 'ordering.json', dict(seed=SEED, algorithm='Ascending SHA-256 of UTF-8 seed + LF + official category + LF + candidate_id; ID tie break.',
+        if (root / 'provenance/intake/inventory.json').exists():
+            require(read(root / 'provenance/intake/inventory.json') == value, 'Existing inventory changed')
+        dump(root / 'provenance/intake/inventory.json', value)
+        dump(root / 'provenance/intake/ordering.json', dict(seed=SEED, algorithm='Ascending SHA-256 of UTF-8 seed + LF + official category + LF + candidate_id; ID tie break.',
                                           candidate_ids=ordering(rows, category)))
         print(category, len(rows), Counter(r['year'] for r in rows), flush=True)
 
 
 def metadata(root):
-    rows = read(root / 'inventory.json')['candidates']
+    rows = read(root / 'provenance/intake/inventory.json')['candidates']
     client = Client(root)
     # Fixed small batches preserve query identity across resumes and avoid URL-size limits.
     for offset in range(0, len(rows), 10):
@@ -159,7 +159,7 @@ def review_rows(root):
     """Extract evidence only. Creator attribution decisions are supplied separately."""
     metas = metadata_records(root)
     result = []
-    for row in read(root / 'inventory.json')['candidates']:
+    for row in read(root / 'provenance/intake/inventory.json')['candidates']:
         found = metas.get(norm(row['commons_title']))
         if not found:
             continue
@@ -190,7 +190,7 @@ def export_review(root):
 
 
 def choose(root):
-    inv = read(root / 'inventory.json')
+    inv = read(root / 'provenance/intake/inventory.json')
     rows = inv['candidates']
     ordered = ordering(rows, inv['official_category'])
     evidence = {r['candidate_id']: r for r in review_rows(root)}
@@ -236,7 +236,7 @@ def choose(root):
 
 
 def select(root):
-    dump(root / 'selection.json', choose(root))
+    dump(root / 'provenance/intake/selection.json', choose(root))
 
 
 def dimensions(path):
@@ -249,8 +249,8 @@ def dimensions(path):
 
 
 def acquire(root, limit, reuse_complete_body=False):
-    require(read(root / 'selection.json') == choose(root), 'Stale selection')
-    selected = read(root / 'selection.json')['selected']
+    require(read(root / 'provenance/intake/selection.json') == choose(root), 'Stale selection')
+    selected = read(root / 'provenance/intake/selection.json')['selected']
     evidence = {r['candidate_id']: r for r in review_rows(root)}
     metas = metadata_records(root)
     client = Client(root)

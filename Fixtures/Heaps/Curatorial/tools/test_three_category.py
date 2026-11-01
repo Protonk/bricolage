@@ -9,7 +9,7 @@ import three_category as t
 
 class SelectionTests(unittest.TestCase):
  def setUp(self):
-  temp=tempfile.TemporaryDirectory();self.addCleanup(temp.cleanup);self.root=Path(temp.name)/'Rocks-in-Thin-Section';self.root.mkdir();(self.root/'provenance').mkdir();t.dump(self.root/'inventory.json',{'test':True})
+  temp=tempfile.TemporaryDirectory();self.addCleanup(temp.cleanup);self.root=Path(temp.name)/'Rocks-in-Thin-Section';self.root.mkdir();(self.root/'provenance').mkdir();t.dump(self.root/'provenance/intake/inventory.json',{'test':True})
   self.ids=['a','b','c'];self.reviews={cid:dict(visual_decision='accept',provenance_decision='accept',rights_decision='accept',reason='viewed in scope',work_key=None)for cid in self.ids}
   self.ev={cid:dict(page=dict(pageid=i,imageinfo=[dict(sha1=str(i))]))for i,cid in enumerate(self.ids)}
   for attr,value in [('ROOT',self.root),('TARGET',2)]:p=patch.object(t,attr,value);p.start();self.addCleanup(p.stop)

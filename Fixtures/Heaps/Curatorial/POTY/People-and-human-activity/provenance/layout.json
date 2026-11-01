@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "migration": "Fixtures/provenance/layout-2026-11",
+  "baseline_commit": "fd04a3ed21a6cb706a486418997dc6e4ba1e7ff2",
+  "relocations": {
+    "inventory.json": "provenance/intake/inventory.json",
+    "ordering.json": "provenance/intake/ordering.json",
+    "selection.json": "provenance/intake/selection.json"
+  }
+}

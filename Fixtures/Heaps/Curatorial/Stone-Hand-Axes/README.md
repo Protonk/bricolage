@@ -1,5 +1,43 @@
 # Stone Hand Axes
 
+## Purpose and basis
+
+Fixed-order sample of three direct Commons categories, with thumbnail scope and documented work/specimen exclusions. No expected matches.
+Fixture ID: `hazy-stone-hand-axes-v1`; kind: `curatorial_heap`.
+
+## Completeness
+
+The published manifest contains **50 inputs**. The detailed record below
+retains the original selection counts, pending cases and acquisition limitations.
+The layout migration changes no membership or completion status.
+
+## Contents
+
+This leaf follows the [shared fixture format](../../../FORMAT.md).
+`images/`, `sources/`, `previews/` and `batches/` retain their roles. Live commands
+and dependencies are in `tools/`; the [evidence index](provenance/README.md)
+locates intake/construction records, receipts and preserved packages.
+
+## Validation
+
+From the repository root, using Python 3.14.x:
+
+```sh
+.venv/bin/python -m pip install -r Fixtures/Heaps/Curatorial/Stone-Hand-Axes/tools/requirements.txt
+.venv/bin/python Fixtures/Heaps/Curatorial/Stone-Hand-Axes/tools/check.py
+```
+
+The check is offline and includes the shared layout check and the existing
+specialized validators. `--metadata-only` omits media and specialized checks.
+
+## Limitations
+
+Selection and source relationships retain their recorded scope; they are not
+similarity scores or additional matching assertions. Technical/provenance
+uncertainties and partial acquisitions remain documented below.
+
+## Detailed record
+
 **50 selected images, all 50 acquired and validated. Three earlier cases remain
 deferred, so 33 later selections are provisional.** This is one Curatorial leaf,
 combining three direct Commons category lists without recursive descent.
@@ -20,7 +58,7 @@ The frozen lists contain 147 **Stone hand axes**, 61 **Acheulean hand axes**, an
 every membership and original row is retained. Each category's last response has
 no continuation. The supplied scouting counts are not treated as the inventory.
 
-`ordering.json` preserves the seed `hazy-curatorial-stone-hand-axes-v1` and full
+`provenance/intake/ordering.json` preserves the seed `hazy-curatorial-stone-hand-axes-v1` and full
 hash ordering. IDs are the first 20 hex digits of SHA-256 of UTF-8
 `hazy-curatorial-triplet-v1` + LF + leaf slug + LF + exact frozen title. Order is
 ascending SHA-256 of seed + LF + candidate ID, with ID tie-break. The first 50
@@ -28,7 +66,7 @@ eligible candidates are reached at rank 71. Reviews extend through rank 80,
 including reserve; reserve decisions do not change that cutoff. There are no
 artist caps, category quotas, aesthetic balancing or similarity scores.
 
-## Scope and uncertainty
+### Scope and uncertainty
 
 Actual thumbnails were inspected for prehistoric hand axes/bifaces, including
 archaeological drawings, damaged artifacts, multi-view plates and close museum
@@ -58,7 +96,7 @@ visual, provenance and rights decisions remain separate in `provenance/`.
 File-specific claims and credits are in [SOURCES.md](SOURCES.md); they are
 recorded source evidence, not independent authentication.
 
-## Acquisition and checks
+### Acquisition and checks
 
 The shared [three-category tools](../tools/README.md) adapt the active Commons
 workflow. Requests are serial, cached and paced by at least three seconds, with
@@ -95,8 +133,8 @@ comparison experiment was run.
 From the repository root, with Pillow 12.0.0 installed:
 
 ```sh
-python3 Fixtures/Heaps/Curatorial/Stone-Hand-Axes/tools/intake.py check
-python3 -m unittest discover -s Fixtures/Heaps/Curatorial/tools -p 'test_*.py'
+.venv/bin/python Fixtures/Heaps/Curatorial/Stone-Hand-Axes/tools/intake.py check
+.venv/bin/python -m unittest discover -s Fixtures/Heaps/Curatorial/tools -p 'test_*.py'
 ```
 
 The offline check replays population, order and decisions; verifies raw API and

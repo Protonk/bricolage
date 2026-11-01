@@ -1,5 +1,43 @@
 # Ex Libris
 
+## Purpose and basis
+
+Fixed-order sample of three direct Commons categories, with thumbnail scope and documented work/specimen exclusions. No expected matches.
+Fixture ID: `hazy-ex-libris-v1`; kind: `curatorial_heap`.
+
+## Completeness
+
+The published manifest contains **50 inputs**. The detailed record below
+retains the original selection counts, pending cases and acquisition limitations.
+The layout migration changes no membership or completion status.
+
+## Contents
+
+This leaf follows the [shared fixture format](../../../FORMAT.md).
+`images/`, `sources/`, `previews/` and `batches/` retain their roles. Live commands
+and dependencies are in `tools/`; the [evidence index](provenance/README.md)
+locates intake/construction records, receipts and preserved packages.
+
+## Validation
+
+From the repository root, using Python 3.14.x:
+
+```sh
+.venv/bin/python -m pip install -r Fixtures/Heaps/Curatorial/Ex-Libris/tools/requirements.txt
+.venv/bin/python Fixtures/Heaps/Curatorial/Ex-Libris/tools/check.py
+```
+
+The check is offline and includes the shared layout check and the existing
+specialized validators. `--metadata-only` omits media and specialized checks.
+
+## Limitations
+
+Selection and source relationships retain their recorded scope; they are not
+similarity scores or additional matching assertions. Technical/provenance
+uncertainties and partial acquisitions remain documented below.
+
+## Detailed record
+
 **50 selected images, all 50 acquired and validated. Eight earlier cases remain
 deferred, so 40 later selections are provisional.** This is one Curatorial leaf,
 combining three direct Commons category lists without recursive descent.
@@ -18,7 +56,7 @@ The frozen lists contain 122 **Ex libris**, 127 **19th-century ex libris**, and
 every membership and raw category row is retained. Each last response has no
 continuation. Scouting counts are not treated as the fetched inventory.
 
-`ordering.json` preserves the seed `hazy-curatorial-ex-libris-v1` and complete
+`provenance/intake/ordering.json` preserves the seed `hazy-curatorial-ex-libris-v1` and complete
 hash ordering. IDs are the first 20 hex digits of SHA-256 of UTF-8
 `hazy-curatorial-triplet-v1` + LF + leaf slug + LF + exact frozen title. Order is
 ascending SHA-256 of seed + LF + candidate ID, with ID tie-break. The first 50
@@ -26,7 +64,7 @@ eligible candidates are reached at rank 65. Reviews extend through rank 80,
 including reserve; reserve reviews do not change the cutoff. There are no
 artist caps, category quotas, aesthetic balancing or similarity scores.
 
-## Scope, relationships and uncertainty
+### Scope, relationships and uncertainty
 
 Actual thumbnails were inspected for identifiable bookplates or printed
 ownership emblems. Heraldry, woodcuts, modern graphic designs, simple library
@@ -65,7 +103,7 @@ Commons permission-ticket references are preserved. Unknown designers remain
 null; owners, book authors, publishers, digitizers and uploaders are not silently
 assigned as artists. See [SOURCES.md](SOURCES.md) and raw file-page revisions.
 
-## Acquisition and checks
+### Acquisition and checks
 
 The shared [three-category tools](../tools/README.md) adapt the active Commons
 workflow. Requests are serial, cached and paced by at least three seconds, with
@@ -101,8 +139,8 @@ comparison experiment was run.
 From the repository root, with Pillow 12.0.0 installed:
 
 ```sh
-python3 Fixtures/Heaps/Curatorial/Ex-Libris/tools/intake.py check
-python3 -m unittest discover -s Fixtures/Heaps/Curatorial/tools -p 'test_*.py'
+.venv/bin/python Fixtures/Heaps/Curatorial/Ex-Libris/tools/intake.py check
+.venv/bin/python -m unittest discover -s Fixtures/Heaps/Curatorial/tools -p 'test_*.py'
 ```
 
 The offline check replays population, order and decisions; verifies raw API and

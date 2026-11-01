@@ -87,10 +87,10 @@ def check_reviews():
 
 
 def check(artifacts=None):
- root=e.ROOT;out=artifacts or root;require(read(root/'inventory.json')==e.population(),'Population replay differs')
- conf=e.config();ordering=read(root/'ordering.json');require(ordering['seed']==conf['seed']and ordering['candidate_ids']==e.ordered(read(root/'inventory.json')['candidates'],conf['seed']),'Ordering differs')
+ root=e.ROOT;out=artifacts or root;require(read(root/'provenance/intake/inventory.json')==e.population(),'Population replay differs')
+ conf=e.config();ordering=read(root/'provenance/intake/ordering.json');require(ordering['seed']==conf['seed']and ordering['candidate_ids']==e.ordered(read(root/'provenance/intake/inventory.json')['candidates'],conf['seed']),'Ordering differs')
  for name,digest in read(root/'provenance/intake.json')['source_files'].items():require(sha(root/'provenance/supplied'/name)==digest,'Changed handoff')
- require(read(root/'selection.json')==e.selection(),'Selection differs');check_reviews();diagnostic_check()
+ require(read(root/'provenance/intake/selection.json')==e.selection(),'Selection differs');check_reviews();diagnostic_check()
  technical=read(root/'provenance/technical-exclusions.json')if(root/'provenance/technical-exclusions.json').exists()else{}
  for cid,r in technical.items():
   ev=e.evidence()[cid];require(r['metadata_path']==ev['metadata_path']and r['metadata_sha256']==sha(root/r['metadata_path']),'Technical evidence changed');require(r['original_mime']==ev['page']['imageinfo'][0]['mime'],'Unsupported-media MIME differs');require(r['visual_review']=='not_performed','Unviewed media has fabricated visual review')

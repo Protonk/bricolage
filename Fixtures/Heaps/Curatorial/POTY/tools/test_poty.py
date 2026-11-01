@@ -119,7 +119,7 @@ class SelectionTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as name:
             root = Path(name)
             ids = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
-            transport.dump(root / 'inventory.json', dict(official_category='Arthropods', candidates=[dict(candidate_id=cid) for cid in ids]))
+            transport.dump(root / 'provenance/intake/inventory.json', dict(official_category='Arthropods', candidates=[dict(candidate_id=cid) for cid in ids]))
             ev = [dict(candidate_id=cid, pageid=i + 1, original_sha1=f'hash{i}', license='CC0', published_uploader='Same uploader') for i, cid in enumerate(ids)]
             ev[2]['original_sha1'] = ev[0]['original_sha1']
             decisions = {cid: dict(creator_keys=[], relationship_keys=[], exclude_reason=None) for cid in ids}

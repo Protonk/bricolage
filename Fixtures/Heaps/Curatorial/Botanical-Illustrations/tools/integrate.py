@@ -231,7 +231,7 @@ def check(artifacts=None):
     population.check(root)
     check_diagnostics(root)
     chosen = botanical.selection()
-    require(read(root / 'selection.json') == chosen, 'Selection does not replay')
+    require(read(root / 'provenance/intake/selection.json') == chosen, 'Selection does not replay')
     reviews = read(root / 'provenance/work-review.json')
     relationships.check_selected(chosen['selected'])
     require(read(output / 'provenance/alternate-file-evidence.json') == relationships.evidence(), 'Alternate-file evidence differs')
@@ -362,7 +362,7 @@ def build(replace_manifest_sha=None, preserved_publication=None):
     root = botanical.ROOT
     replacing = (root / 'manifest.json').exists()
     expected = replacement_snapshot(replace_manifest_sha, preserved_publication) if replacing else {}
-    require(read(root / 'selection.json') == botanical.selection(), 'Explicitly record selection before building')
+    require(read(root / 'provenance/intake/selection.json') == botanical.selection(), 'Explicitly record selection before building')
     stage = Path(tempfile.mkdtemp(prefix='integration-stage-', dir=root / 'previews'))
     imported = imports()
     rows, sources = records(imported)

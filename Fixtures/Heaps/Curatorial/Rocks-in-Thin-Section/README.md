@@ -1,5 +1,43 @@
 # Rocks in Thin Section
 
+## Purpose and basis
+
+Fixed-order sample of three direct Commons categories, with thumbnail scope and documented work/specimen exclusions. No expected matches.
+Fixture ID: `hazy-rocks-in-thin-section-v1`; kind: `curatorial_heap`.
+
+## Completeness
+
+The published manifest contains **50 inputs**. The detailed record below
+retains the original selection counts, pending cases and acquisition limitations.
+The layout migration changes no membership or completion status.
+
+## Contents
+
+This leaf follows the [shared fixture format](../../../FORMAT.md).
+`images/`, `sources/`, `previews/` and `batches/` retain their roles. Live commands
+and dependencies are in `tools/`; the [evidence index](provenance/README.md)
+locates intake/construction records, receipts and preserved packages.
+
+## Validation
+
+From the repository root, using Python 3.14.x:
+
+```sh
+.venv/bin/python -m pip install -r Fixtures/Heaps/Curatorial/Rocks-in-Thin-Section/tools/requirements.txt
+.venv/bin/python Fixtures/Heaps/Curatorial/Rocks-in-Thin-Section/tools/check.py
+```
+
+The check is offline and includes the shared layout check and the existing
+specialized validators. `--metadata-only` omits media and specialized checks.
+
+## Limitations
+
+Selection and source relationships retain their recorded scope; they are not
+similarity scores or additional matching assertions. Technical/provenance
+uncertainties and partial acquisitions remain documented below.
+
+## Detailed record
+
 **50 selected images, all 50 acquired and validated. Selection remains provisional
 around one earlier deferred rights case.** This is one leaf of the Curatorial
 heap, combining three direct Commons category lists without recursive descent.
@@ -20,14 +58,14 @@ page-ID union has 530 entries; every membership and original row is retained.
 The last response for each category has no continuation. The supplied scouting
 counts are not used as the inventory.
 
-`ordering.json` records the handoff seed `hazy-curatorial-rocks-in-thin-section-v1`
+`provenance/intake/ordering.json` records the handoff seed `hazy-curatorial-rocks-in-thin-section-v1`
 and the complete hash ordering. IDs are the first 20 hex digits of SHA-256 of
 UTF-8 `hazy-curatorial-triplet-v1` + LF + leaf slug + LF + exact frozen title.
 Ordering is ascending SHA-256 of seed + LF + candidate ID, with ID tie-break.
 The first 50 eligible candidates are reached at rank 55. Reviews extend through
 rank 60, including reviewed reserve; reserve review does not change the cutoff.
 
-## Scope and uncertainty
+### Scope and uncertainty
 
 Actual thumbnail sheets were inspected for microscope-scale rock microstructure
 and documented repeated specimens/views, not beauty, resemblance or typicality.
@@ -52,7 +90,7 @@ credits are in [SOURCES.md](SOURCES.md); reported Artist, photographer, original
 creator, digitizer and current file-version uploader remain separate. Source
 claims are recorded, not independently authenticated.
 
-## Acquisition and checks
+### Acquisition and checks
 
 The active Commons transport was adapted into the narrowly scoped
 [three-category tools](../tools/README.md). Requests are serial and cached, with
@@ -84,8 +122,8 @@ No router or comparison experiment was run.
 From the repository root, with Pillow 12.0.0 installed:
 
 ```sh
-python3 Fixtures/Heaps/Curatorial/Rocks-in-Thin-Section/tools/intake.py check
-python3 -m unittest discover -s Fixtures/Heaps/Curatorial/tools -p 'test_*.py'
+.venv/bin/python Fixtures/Heaps/Curatorial/Rocks-in-Thin-Section/tools/intake.py check
+.venv/bin/python -m unittest discover -s Fixtures/Heaps/Curatorial/tools -p 'test_*.py'
 ```
 
 The offline check replays population, order and decisions; verifies API evidence,

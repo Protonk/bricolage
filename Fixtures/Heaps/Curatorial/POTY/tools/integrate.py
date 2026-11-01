@@ -23,7 +23,7 @@ def read_csv(path):
 
 
 def imports(root):
-    inv = {r['candidate_id']: r for r in read(root / 'inventory.json')['candidates']}
+    inv = {r['candidate_id']: r for r in read(root / 'provenance/intake/inventory.json')['candidates']}
     ev = {r['candidate_id']: r for r in review_rows(root)}
     review = read(root / 'provenance/provenance-review.json')
     result = []
@@ -67,7 +67,7 @@ def records(imported):
 
 def summary(root):
     selection = choose(root)
-    inv = read(root / 'inventory.json')
+    inv = read(root / 'provenance/intake/inventory.json')
     acquired = imports(root)
     ev = {r['candidate_id']: r for r in review_rows(root)}
     selected = selection['selected']
@@ -118,7 +118,7 @@ def sheets(root, imported):
 
 
 def build(root):
-    require(read(root / 'selection.json') == choose(root), 'Selection changed; explicitly select first')
+    require(read(root / 'provenance/intake/selection.json') == choose(root), 'Selection changed; explicitly select first')
     imported = imports(root)
     rows, sources = records(imported)
     for item in imported:
@@ -132,7 +132,7 @@ def build(root):
             shutil.copyfile(source, dest)
     for directory in ('images', 'sources', 'batches'):
         (root / directory).mkdir(exist_ok=True)
-    category = read(root / 'inventory.json')['official_category']
+    category = read(root / 'provenance/intake/inventory.json')['official_category']
     dump(root / 'manifest.json', dict(schema_version=1, fixture_id='hazy-poty-' + slug(category).lower() + '-v1',
                                      kind='curatorial_heap', description=f'POTY Round 1 {category}, 2023–2025; seeded selection, no expected matches.', images=rows))
     csv_write(root / 'manifest.csv', rows, IMAGE_FIELDS)
@@ -175,7 +175,7 @@ def check_api(root, relative):
 
 
 def check(root):
-    inv = read(root / 'inventory.json')
+    inv = read(root / 'provenance/intake/inventory.json')
     category = inv['official_category']
     require(category in CATEGORIES and inv['years'] == list(YEARS) and inv['complete'], 'Invalid population scope')
     require(inv['candidates'] == inventory(root, category), 'Inventory differs from category data')
@@ -188,10 +188,10 @@ def check(root):
     used_api.update(r['metadata_path'] for r in ev)
     for relative in used_api:
         check_api(root, relative)
-    require(read(root / 'ordering.json')['seed'] == SEED, 'Seed changed')
-    require(read(root / 'ordering.json')['candidate_ids'] == ordering(inv['candidates'], category), 'Ordering changed')
+    require(read(root / 'provenance/intake/ordering.json')['seed'] == SEED, 'Seed changed')
+    require(read(root / 'provenance/intake/ordering.json')['candidate_ids'] == ordering(inv['candidates'], category), 'Ordering changed')
     chosen = choose(root)
-    require(read(root / 'selection.json') == chosen, 'Selection does not replay')
+    require(read(root / 'provenance/intake/selection.json') == chosen, 'Selection does not replay')
     review = read(root / 'provenance/provenance-review.json')
     require(review == derive(root), 'Provenance decisions do not reproduce from source evidence and explicit overrides')
     aliases = read(root / 'provenance/creator-aliases.json')

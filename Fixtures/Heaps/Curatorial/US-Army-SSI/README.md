@@ -1,5 +1,43 @@
 # US Army shoulder-sleeve insignia
 
+## Purpose and basis
+
+Distinct US Army shoulder-sleeve insignia designs from a frozen Commons PetScan category population; seeded file ordering and documented exclusions; no expected matches.
+Fixture ID: `hazy-us-army-ssi-v1`; kind: `curatorial_heap`.
+
+## Completeness
+
+The published manifest contains **150 inputs**. The detailed record below
+retains the original selection counts, pending cases and acquisition limitations.
+The layout migration changes no membership or completion status.
+
+## Contents
+
+This leaf follows the [shared fixture format](../../../FORMAT.md).
+`images/`, `sources/`, `previews/` and `batches/` retain their roles. Live commands
+and dependencies are in `tools/`; the [evidence index](provenance/README.md)
+locates intake/construction records, receipts and preserved packages.
+
+## Validation
+
+From the repository root, using Python 3.14.x:
+
+```sh
+.venv/bin/python -m pip install -r Fixtures/Heaps/Curatorial/US-Army-SSI/tools/requirements.txt
+.venv/bin/python Fixtures/Heaps/Curatorial/US-Army-SSI/tools/check.py
+```
+
+The check is offline and includes the shared layout check and the existing
+specialized validators. `--metadata-only` omits media and specialized checks.
+
+## Limitations
+
+Selection and source relationships retain their recorded scope; they are not
+similarity scores or additional matching assertions. Technical/provenance
+uncertainties and partial acquisitions remain documented below.
+
+## Detailed record
+
 **Target reached: 150 selected and acquired inputs. Selection remains provisional
 around eight unresolved earlier candidates.** This is one leaf of the
 [Curatorial heap](../README.md), beside POTY, with no sub-heaps. The selection basis
@@ -22,7 +60,7 @@ of those has its own unresolved attribution. None is a comparison input.
 The user revised the supplied 200-design target to about 150 and directed that
 uncertain candidates remain pending while work continues. An explicit pending
 case no longer blocks later reviewed candidates. The 121 selected entries after
-the first pending candidate are marked provisional in `selection.json`; an earlier
+the first pending candidate are marked provisional in `provenance/intake/selection.json`; an earlier
 case resolved later can be reconciled against the same fixed order. There is no
 reroll or silent conversion of uncertainty into exclusion. An unreviewed gap
 still requires review before subsequent selection.
@@ -34,7 +72,7 @@ as unresolved design evidence. A conflicting SFAB identity at rank 197 is retain
 in reviewed reserve. Decisions and the user's instructions are recorded in
 `provenance/design-review.json` and `provenance/scope-questions.json`.
 
-## Population and ordering
+### Population and ordering
 
 The supplied handoff is preserved byte-for-byte in `provenance/supplied/`, with
 hashes in `provenance/intake.json`. The redundant `Fixtures/US-Army-SSI-handoff/`
@@ -54,11 +92,11 @@ executed parameters, save times, hashes and counts. These are unchanged browser
 export bytes; HTTP status and headers were unobservable and remain explicitly
 unknown. Safari is no longer required.
 
-`inventory.json` preserves every returned row. IDs are the first 20 hexadecimal
+`provenance/intake/inventory.json` preserves every returned row. IDs are the first 20 hexadecimal
 characters of SHA-256 over UTF-8 `hazy-ssi-file-v1` + LF + the exact frozen
 `File:` title; underscores and Unicode are retained. IDs are not recomputed after
 Commons normalization or redirects. The seed is
-`hazy-us-army-ssi-petscan-depth5-v1`; `ordering.json` records the full ascending
+`hazy-us-army-ssi-petscan-depth5-v1`; `provenance/intake/ordering.json` records the full ascending
 SHA-256 order of UTF-8 seed + LF + candidate ID, with ID as tie-breaker.
 
 This samples ordered files, deduplicated by design; it is not a uniform random
@@ -70,7 +108,7 @@ do not establish a new design; documented historical redesigns can. Source
 inconsistencies and uncertain relationships remain explicit. No aesthetic or
 numerical similarity selection was performed.
 
-## Acquisition and rights
+### Acquisition and rights
 
 The serial transport adapts POTY's workflow: truthful HazyFixtureBot User-Agent,
 `maxlag=5`, at least three seconds between requests, ten-title metadata batches,
@@ -110,7 +148,7 @@ that recorded set of 12 prior leaves; adding a newer contribution does not expan
 this historical audit. Missing or changed covered evidence still fails. A fresh
 publication audits all current prior leaves.
 
-## Local files and checks
+### Local files and checks
 
 Only the 150 manifest-listed `images/` files are comparison inputs. Each is a
 byte-identical copy of its preserved `sources/` rendition. `previews/` contains
@@ -134,11 +172,11 @@ the exact prior manifest hash and preserved snapshot as replacement guards.
 From the repository root:
 
 ```sh
-python3 -m pip install -r Fixtures/Heaps/Curatorial/US-Army-SSI/requirements.txt
-python3 Fixtures/Heaps/Curatorial/US-Army-SSI/tools/population.py
-python3 Fixtures/Heaps/Curatorial/US-Army-SSI/tools/integrate.py list
-python3 Fixtures/Heaps/Curatorial/US-Army-SSI/tools/integrate.py check
-python3 -m unittest discover -s Fixtures/Heaps/Curatorial/US-Army-SSI/tools -p 'test_*.py'
+.venv/bin/python -m pip install -r Fixtures/Heaps/Curatorial/US-Army-SSI/tools/requirements.txt
+.venv/bin/python Fixtures/Heaps/Curatorial/US-Army-SSI/tools/population.py
+.venv/bin/python Fixtures/Heaps/Curatorial/US-Army-SSI/tools/integrate.py list
+.venv/bin/python Fixtures/Heaps/Curatorial/US-Army-SSI/tools/integrate.py check
+.venv/bin/python -m unittest discover -s Fixtures/Heaps/Curatorial/US-Army-SSI/tools -p 'test_*.py'
 ```
 
 The checker reconstructs the population/order, replays exclusions and provisional

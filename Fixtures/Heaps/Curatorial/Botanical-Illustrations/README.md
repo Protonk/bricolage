@@ -1,5 +1,43 @@
 # Botanical Illustrations
 
+## Purpose and basis
+
+Distinct botanical plates/artworks from a frozen Commons PetScan category population; seeded file ordering and documented exclusions; no expected matches.
+Fixture ID: `hazy-botanical-illustrations-v1`; kind: `curatorial_heap`.
+
+## Completeness
+
+The published manifest contains **149 inputs**. The detailed record below
+retains the original selection counts, pending cases and acquisition limitations.
+The layout migration changes no membership or completion status.
+
+## Contents
+
+This leaf follows the [shared fixture format](../../../FORMAT.md).
+`images/`, `sources/`, `previews/` and `batches/` retain their roles. Live commands
+and dependencies are in `tools/`; the [evidence index](provenance/README.md)
+locates intake/construction records, receipts and preserved packages.
+
+## Validation
+
+From the repository root, using Python 3.14.x:
+
+```sh
+.venv/bin/python -m pip install -r Fixtures/Heaps/Curatorial/Botanical-Illustrations/tools/requirements.txt
+.venv/bin/python Fixtures/Heaps/Curatorial/Botanical-Illustrations/tools/check.py
+```
+
+The check is offline and includes the shared layout check and the existing
+specialized validators. `--metadata-only` omits media and specialized checks.
+
+## Limitations
+
+Selection and source relationships retain their recorded scope; they are not
+similarity scores or additional matching assertions. Technical/provenance
+uncertainties and partial acquisitions remain documented below.
+
+## Detailed record
+
 **150 distinct works selected; 149 acquired, one transfer pending. Acquisition
 remains partial and selection remains provisional around 14 earlier cases.**
 This is one leaf of the
@@ -46,7 +84,7 @@ links, including related reserve candidates, are retained in
 `provenance/alternate-file-evidence.json`. Distinct plates in one book can coexist;
 a shared book, artist or plant name does not establish a duplicate.
 
-## Frozen population and review
+### Frozen population and review
 
 The four supplied instruction files are preserved byte-for-byte in
 `provenance/supplied/`, with hashes and the original setup location in
@@ -64,12 +102,12 @@ reached. Raw bytes, exact parameters, save timestamps, hashes and count checks
 are in `provenance/population/`. Browser HTTP status and headers were unobservable
 and remain null. Safari is no longer required.
 
-`inventory.json` retains every exported row. Stable opaque IDs are the first 20
+`provenance/intake/inventory.json` retains every exported row. Stable opaque IDs are the first 20
 hexadecimal characters of SHA-256 over UTF-8 `hazy-botanical-file-v1` + LF + exact
 frozen `File:` title, retaining underscores and Unicode. IDs do not change after
 Commons title normalization. The seed is `hazy-botanical-illustrations-direct-v1`;
-`ordering.json` records ascending SHA-256 over UTF-8 seed + LF + candidate ID,
-with ID as tie-breaker. `selection.json` accounts for all 709 candidates.
+`provenance/intake/ordering.json` records ascending SHA-256 over UTF-8 seed + LF + candidate ID,
+with ID as tie-breaker. `provenance/intake/selection.json` accounts for all 709 candidates.
 
 This is a seeded file sample with documented work exclusions, not a uniform
 sample of all distinct artworks. Scope and work identity use retained Commons
@@ -98,7 +136,7 @@ publication/collection labels for counting only; 14 selections have no assigned
 label. They do not define sub-heaps or relationships. The 150 individual work keys
 support duplicate exclusion, not matching labels.
 
-## Acquisition and rights
+### Acquisition and rights
 
 The transport adapts the active Commons workflow: HazyFixtureBot User-Agent,
 `maxlag=5`, at least three seconds between serial requests, ten-title metadata
@@ -159,7 +197,7 @@ SHA-256s. Coverage and manifest/catalog snapshot hashes are recorded in
 independent origins or detect undocumented reprints. Rechecking uses that recorded
 coverage; a new publication audits all current prior leaves.
 
-## Local files and checks
+### Local files and checks
 
 Only manifest-listed `images/` files are comparison inputs, each a byte-identical
 copy of one `sources/` rendition. `previews/` holds review tiles, inspection and
@@ -176,10 +214,10 @@ and refuses silent overwrites before publishing.
 From the repository root, with Pillow installed from the pinned requirements:
 
 ```sh
-python3 Fixtures/Heaps/Curatorial/Botanical-Illustrations/tools/population.py
-python3 Fixtures/Heaps/Curatorial/Botanical-Illustrations/tools/integrate.py list
-python3 Fixtures/Heaps/Curatorial/Botanical-Illustrations/tools/integrate.py check
-python3 -m unittest discover -s Fixtures/Heaps/Curatorial/Botanical-Illustrations/tools -p 'test_*.py'
+.venv/bin/python Fixtures/Heaps/Curatorial/Botanical-Illustrations/tools/population.py
+.venv/bin/python Fixtures/Heaps/Curatorial/Botanical-Illustrations/tools/integrate.py list
+.venv/bin/python Fixtures/Heaps/Curatorial/Botanical-Illustrations/tools/integrate.py check
+.venv/bin/python -m unittest discover -s Fixtures/Heaps/Curatorial/Botanical-Illustrations/tools -p 'test_*.py'
 ```
 
 The checker replays population IDs, ordering, decisions and provisional selection;

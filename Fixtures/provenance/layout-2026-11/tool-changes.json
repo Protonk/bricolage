@@ -9,6 +9,30 @@
       "before_git_blob_sha1": "2a93e97de5e8bcf4c0c5ab860db7d0d46ce95566",
       "after_sha256": "bb693e29fc15aa33ce23a7a957bf1ac67be9c710f2b2737ae6718213438f7f8e"
     },
+    "Fixtures/Heaps/Curatorial/Botanical-Illustrations/tools/botanical.py": {
+      "before_path": "Fixtures/Heaps/Curatorial/Botanical-Illustrations/tools/botanical.py",
+      "before_sha256": "58e183ae6f9f87d9ade21e1862138f48add366d8da880abbd7ad2537636c5177",
+      "before_git_blob_sha1": "a03fe1be48e8b8281d8db735425de15f2d66d845",
+      "after_sha256": "409f1f9210ba82b18681d3062c1ec4a610c1aab486396226e3c04fc37e7d1f9f"
+    },
+    "Fixtures/Heaps/Curatorial/Botanical-Illustrations/tools/integrate.py": {
+      "before_path": "Fixtures/Heaps/Curatorial/Botanical-Illustrations/tools/integrate.py",
+      "before_sha256": "954b841528fb4eed8892d33615bbc748de9e3c6d58959c14a9a5977a85c53fd9",
+      "before_git_blob_sha1": "56b90e1c794b919c9703d3135573c9b61fb917a0",
+      "after_sha256": "d65c52bbe0e31f220c703fa1dc48351bfbaaf5833b99f1cf7fd9557ee580138f"
+    },
+    "Fixtures/Heaps/Curatorial/Botanical-Illustrations/tools/population.py": {
+      "before_path": "Fixtures/Heaps/Curatorial/Botanical-Illustrations/tools/population.py",
+      "before_sha256": "f16f31224a0cdf9dbae67e3d0decba04d4df855fe0996d911930f4c2652e030e",
+      "before_git_blob_sha1": "9be670000ea5342e9e3c772e00be5d3643662c7d",
+      "after_sha256": "3dd751ba1503ef9798effe0a8e53e2eb518f56622cb7ab255761a3630b30c8b3"
+    },
+    "Fixtures/Heaps/Curatorial/Botanical-Illustrations/tools/test_botanical.py": {
+      "before_path": "Fixtures/Heaps/Curatorial/Botanical-Illustrations/tools/test_botanical.py",
+      "before_sha256": "7bd90c13b7191fc899debe50d7cc57144f92cc9cd12ae4b61034c2f7dda04af5",
+      "before_git_blob_sha1": "8e1edba336034cf10dc245e760f19ab1f524364b",
+      "after_sha256": "22915d467fd7aa3c57d603db1476269a5fa69aa5df81aa35c967260e6ad0dd97"
+    },
     "Fixtures/Heaps/Curatorial/Evan-Amos-Uploads/tools/audit.py": {
       "before_path": "Fixtures/Heaps/Curatorial/Evan-Amos-Uploads/tools/audit.py",
       "before_sha256": "ac8cfa92675025bc44febf719a6a786238b36c64a3618a1909f2777df32747b9",
@@ -38,6 +62,30 @@
       "before_sha256": "f9d25678e4822689f821f4594b708cf1d7cb0b35a8373d8c112cdd2e2751388c",
       "before_git_blob_sha1": "23db9e26f2fc435c0c8a5f8619e9934a3f16cfc1",
       "after_sha256": "5298283e834cac274b985e0af57be503a2bd5c68c6de6c3d67cbccf4ff2804ac"
+    },
+    "Fixtures/Heaps/Curatorial/US-Army-SSI/tools/integrate.py": {
+      "before_path": "Fixtures/Heaps/Curatorial/US-Army-SSI/tools/integrate.py",
+      "before_sha256": "f4ed3e16f7369bce05a4995b0d83f3615aea3b4fcdad34e98b5042f0fc997f03",
+      "before_git_blob_sha1": "14abe6bd04203cf63a07399b36efb7125d710510",
+      "after_sha256": "97b3121925eb2c78ad7851af8387fbdd4b3f23d0c5e8f5e3c9aaa9f459eea8ac"
+    },
+    "Fixtures/Heaps/Curatorial/US-Army-SSI/tools/population.py": {
+      "before_path": "Fixtures/Heaps/Curatorial/US-Army-SSI/tools/population.py",
+      "before_sha256": "76a078a3b9e2f5da128825b6999f98b0c80c46de0440ea9b101fb6a3e8e4f043",
+      "before_git_blob_sha1": "e3e47dc17e72fb0732d2ba67ab2c0001d51d3730",
+      "after_sha256": "c4bc8a7ad051f1a56ed30a7d13f3e1e20e211c6eb3a6260b5cbeee622c5b2afd"
+    },
+    "Fixtures/Heaps/Curatorial/US-Army-SSI/tools/ssi.py": {
+      "before_path": "Fixtures/Heaps/Curatorial/US-Army-SSI/tools/ssi.py",
+      "before_sha256": "ea486cb963ff0f6fc444e695941887e1b5f1ca49938dd3c01437d35f3b320cd7",
+      "before_git_blob_sha1": "c36c51fac657fe285f8e3a939f84a15034bc6b3f",
+      "after_sha256": "b05dd63900d9bde42d7003aa22cbbf28c2e1dff321faaf00d266c7b1d0fe0f9e"
+    },
+    "Fixtures/Heaps/Curatorial/US-Army-SSI/tools/test_ssi.py": {
+      "before_path": "Fixtures/Heaps/Curatorial/US-Army-SSI/tools/test_ssi.py",
+      "before_sha256": "b1a703cf3be68dcfc95163a087c4893a00c28006a7e73f3e65292f245816c1f0",
+      "before_git_blob_sha1": "b120cbe4ba8e22fb42fb290ce0fbe1e21ced809b",
+      "after_sha256": "7c32b5ee7023e54b0230e5ed24580e307ae213323f4d4bbd9250d0d0a60e3a5b"
     },
     "Fixtures/Heaps/Similarity/BSP01/tools/audit.py": {
       "before_path": "Fixtures/Heaps/Similarity/BSP01/tools/audit.py",

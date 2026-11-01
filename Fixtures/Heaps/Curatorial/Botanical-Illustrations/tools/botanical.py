@@ -17,8 +17,8 @@ def clean(v):
  v=re.sub(r'<(style|script)\b[^>]*>.*?</\1>', '', v, flags=re.I|re.S)
  return html.unescape(re.sub('<[^>]*>','',v)).strip()
 def norm(s):return s.replace('_',' ').removeprefix('File:')
-def order():return read(ROOT/'ordering.json')['candidate_ids']
-def candidates():return {r['candidate_id']:r for r in read(ROOT/'inventory.json')['candidates']}
+def order():return read(ROOT/'provenance/intake/ordering.json')['candidate_ids']
+def candidates():return {r['candidate_id']:r for r in read(ROOT/'provenance/intake/inventory.json')['candidates']}
 def metadata_path(stage,edge,start,end):return f'provenance/api/{stage}-{edge}-ranks-{start:04d}-{end:04d}.json'
 
 def metadata(stage,start,end,edge):
@@ -66,7 +66,7 @@ def selection():
     if unresolved:provisional.append(cid)
     for k in keys:identities[k]=cid
   ledger.append(dict(candidate_id=cid,rank=rank,decision=state,reason=reason,conflicts_with=conflicts,provisional=cid in provisional))
- return dict(target=TARGET,seed=read(ROOT/'ordering.json')['seed'],snapshot_sha256=read(ROOT/'inventory.json')['snapshot_sha256'],pending_policy='Explicit pending decisions do not block later reviewed candidates; later selections remain provisional. Unreviewed gaps still require review.',unresolved_prior_candidates=unresolved,provisional_selected=provisional,selected=selected,decisions=ledger,counts={s:sum(r['decision']==s for r in ledger) for s in ['selected','excluded','reserve','pending']})
+ return dict(target=TARGET,seed=read(ROOT/'provenance/intake/ordering.json')['seed'],snapshot_sha256=read(ROOT/'provenance/intake/inventory.json')['snapshot_sha256'],pending_policy='Explicit pending decisions do not block later reviewed candidates; later selections remain provisional. Unreviewed gaps still require review.',unresolved_prior_candidates=unresolved,provisional_selected=provisional,selected=selected,decisions=ledger,counts={s:sum(r['decision']==s for r in ledger) for s in ['selected','excluded','reserve','pending']})
 
 def dimensions(path,edge):
  with Image.open(path) as im:
@@ -139,5 +139,5 @@ def main():
   elif a.command=='sheets':sheets(a.start,a.end)
   elif a.command=='acknowledge':Client(ROOT).acknowledge(a.diagnosis)
   else:
-   value=selection();dump(ROOT/'selection.json',value);print(value['counts'])
+   value=selection();dump(ROOT/'provenance/intake/selection.json',value);print(value['counts'])
 if __name__=='__main__':main()

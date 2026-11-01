@@ -1,5 +1,43 @@
 # POTY — People and human activity
 
+## Purpose and basis
+
+POTY Round 1 People and human activity, 2023–2025; seeded selection, no expected matches.
+Fixture ID: `hazy-poty-people-and-human-activity-v1`; kind: `curatorial_heap`.
+
+## Completeness
+
+The published manifest contains **50 inputs**. The detailed record below
+retains the original selection counts, pending cases and acquisition limitations.
+The layout migration changes no membership or completion status.
+
+## Contents
+
+This leaf follows the [shared fixture format](../../../../FORMAT.md).
+`images/`, `sources/`, `previews/` and `batches/` retain their roles. Live commands
+and dependencies are in `tools/`; the [evidence index](provenance/README.md)
+locates intake/construction records, receipts and preserved packages.
+
+## Validation
+
+From the repository root, using Python 3.14.x:
+
+```sh
+.venv/bin/python -m pip install -r Fixtures/Heaps/Curatorial/POTY/People-and-human-activity/tools/requirements.txt
+.venv/bin/python Fixtures/Heaps/Curatorial/POTY/People-and-human-activity/tools/check.py
+```
+
+The check is offline and includes the shared layout check and the existing
+specialized validators. `--metadata-only` omits media and specialized checks.
+
+## Limitations
+
+Selection and source relationships retain their recorded scope; they are not
+similarity scores or additional matching assertions. Technical/provenance
+uncertainties and partial acquisitions remain documented below.
+
+## Detailed record
+
 **Complete: 50 acquired / 50 selected / 238 eligible entries.** Target: 50. Excluded in
 the processed ordering: 25; unused reserve: 163; pending acquisition: 0; pending
 provenance review: 0.
@@ -19,8 +57,8 @@ validation. This leaf uses `curatorial_heap`, with empty pair expectations. Its 
 IDs link one input to one byte-identical downloaded source, not different photographs to
 each other.
 
-- `inventory.json`: complete eligible entries, original published fields, year/category membership, data-page revisions and hashes.
-- `ordering.json`, `selection.json`: deterministic order, selections, exclusions and conflicts.
+- `provenance/intake/inventory.json`: complete eligible entries, original published fields, year/category membership, data-page revisions and hashes.
+- `provenance/intake/ordering.json`, `provenance/intake/selection.json`: deterministic order, selections, exclusions and conflicts.
 - `provenance/`: raw API bytes, creator/rights/relationship evidence, aliases and explicit overrides, receipts, full import mapping and checks.
 - `images/`, `sources/`: opaque comparison inputs and unchanged downloaded renditions. Both are Git-ignored.
 - `manifest.json`, `manifest.csv`, `sources.csv`, `SHA256SUMS.txt`: decoded dimensions, orientation, format and source/input byte mapping.
@@ -36,7 +74,7 @@ are taken from individual file evidence; no new collection license is assigned.
 From the repository root, with Pillow from `../requirements.txt` installed:
 
 ```sh
-python3 Fixtures/Heaps/Curatorial/POTY/tools/integrate.py check --category "People and human activity"
+.venv/bin/python Fixtures/Heaps/Curatorial/POTY/tools/integrate.py check --category "People and human activity"
 ```
 
 This check is offline and needs only this contribution’s evidence and local media. It

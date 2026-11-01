@@ -175,7 +175,7 @@ def check(artifacts=None):
     require(not (root / 'prompt.json').exists(), 'Curatorial leaf must not have a visual prompt')
     population.check(root)
     chosen = ssi.selection()
-    require(read(root / 'selection.json') == chosen, 'Selection does not replay')
+    require(read(root / 'provenance/intake/selection.json') == chosen, 'Selection does not replay')
     reviews = read(root / 'provenance/design-review.json')
     evidence = ssi.evidence()
     for path in (root / 'provenance/api').glob('*.json'):
@@ -291,7 +291,7 @@ def build(replace_manifest_sha=None, preserved_publication=None):
     root = ssi.ROOT
     replacing = (root / 'manifest.json').exists()
     expected = replacement_snapshot(replace_manifest_sha, preserved_publication) if replacing else {}
-    require(read(root / 'selection.json') == ssi.selection(), 'Explicitly record selection before building')
+    require(read(root / 'provenance/intake/selection.json') == ssi.selection(), 'Explicitly record selection before building')
     stage = Path(tempfile.mkdtemp(prefix='integration-stage-', dir=root / 'previews'))
     imported = imports()
     rows, sources = records(imported)

@@ -25,7 +25,7 @@ class PopulationTests(unittest.TestCase):
 class SelectionTests(unittest.TestCase):
  def run_selection(self,reviews):
   with tempfile.TemporaryDirectory() as temp:
-   root=Path(temp);(root/'provenance').mkdir();transport.dump(root/'provenance/work-review.json',reviews);transport.dump(root/'ordering.json',{'seed':'test'});transport.dump(root/'inventory.json',{'snapshot_sha256':'test'})
+   root=Path(temp);(root/'provenance').mkdir();transport.dump(root/'provenance/work-review.json',reviews);transport.dump(root/'provenance/intake/ordering.json',{'seed':'test'});transport.dump(root/'provenance/intake/inventory.json',{'snapshot_sha256':'test'})
    ev={c:dict(page=dict(pageid=n,imageinfo=[{'sha1':c}])) for n,c in enumerate(['a','b','c'],1)}
    with patch.object(botanical,'ROOT',root),patch.object(botanical,'order',return_value=['a','b','c']),patch.object(botanical,'evidence',return_value=ev):return botanical.selection()
  def eligible(self,key):return dict(decision='eligible',work_key=key,work_basis='reviewed work',rights_basis='file-specific review',original_artist='Test artist')
