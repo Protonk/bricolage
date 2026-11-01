@@ -1,18 +1,38 @@
-# Fixture sampler
+# Fixture sampling engine
 
 Draw equal tickets from hazy's local fixture inputs and keep a record that other
-programs can read. Python 3.9+ on macOS or Linux; standard library only. There is
+programs can read. Python 3.14.x on macOS or Linux; standard library only. There is
 no network access, image transformation, comparator or activity-specific logic.
 
 ## Use
 
-From the repository root:
+The public executable is [`Fixtures/sample`](../sample), at the fixture root.
+It selects the repository's `.venv` regardless of the caller's working directory
+or activated environment. Python 3.14.x is the only runtime and test target.
+
+From the repository root, set up once using an installed Python 3.14.x:
 
 ```sh
-python3 Fixtures/Sampler/sampler.py inventory
-python3 Fixtures/Sampler/sampler.py draw 12 --seed my-investigation
-python3 Fixtures/Sampler/sampler.py list
+make setup-python
 ```
+
+The Git-ignored `.venv` needs no pip packages for sampling or these tests. Setup
+performs no downloads. If Python 3.14 is installed at a different path, use
+`make setup-python PYTHON314=/path/to/python3.14`. A missing environment or a
+wrong Python minor version produces an actionable error.
+
+Ask for N images directly:
+
+```sh
+Fixtures/sample 12 --seed my-investigation
+Fixtures/sample inventory
+Fixtures/sample list
+```
+
+`Fixtures/sample N` is shorthand for `Fixtures/sample draw N`. Both use the same
+engine and records. From inside Fixtures, use `./sample N`; from elsewhere, use
+the executable's absolute path. No inventory preparation or internal Python
+imports are required.
 
 `draw` refreshes the inventory by default and returns a persistent `sample_id`.
 Omit `--seed` to generate and record a seed. N may be zero; negative N or N larger
@@ -21,13 +41,13 @@ than the eligible population is an error. There is no replacement or size adjust
 Use the returned full identifiers in these commands:
 
 ```sh
-python3 Fixtures/Sampler/sampler.py show SAMPLE_ID --paths
-python3 Fixtures/Sampler/sampler.py show SAMPLE_ID
-python3 Fixtures/Sampler/sampler.py verify SAMPLE_ID
-python3 Fixtures/Sampler/sampler.py annotate SAMPLE_ID --key purpose --json '"Notebook study"'
-python3 Fixtures/Sampler/sampler.py annotate SAMPLE_ID --image IMAGE_ID --key review --json '{"decision":"accepted","tags":["reference"],"note":"My observation"}'
-python3 Fixtures/Sampler/sampler.py annotate SAMPLE_ID --image IMAGE_ID --key review --json '{"decision":"revisit","note":"Revised observation"}'
-python3 Fixtures/Sampler/sampler.py annotate SAMPLE_ID --image IMAGE_ID --key review --delete
+Fixtures/sample show SAMPLE_ID --paths
+Fixtures/sample show SAMPLE_ID
+Fixtures/sample verify SAMPLE_ID
+Fixtures/sample annotate SAMPLE_ID --key purpose --json '"Notebook study"'
+Fixtures/sample annotate SAMPLE_ID --image IMAGE_ID --key review --json '{"decision":"accepted","tags":["reference"],"note":"My observation"}'
+Fixtures/sample annotate SAMPLE_ID --image IMAGE_ID --key review --json '{"decision":"revisit","note":"Revised observation"}'
+Fixtures/sample annotate SAMPLE_ID --image IMAGE_ID --key review --delete
 ```
 
 `SAMPLE_ID` and `IMAGE_ID` above are placeholders. `show --paths` returns ordered
@@ -48,7 +68,7 @@ To repeat a draw against an existing population, use its recorded size, seed and
 inventory ID:
 
 ```sh
-python3 Fixtures/Sampler/sampler.py draw 12 --seed my-investigation --inventory INVENTORY_ID
+Fixtures/sample draw 12 --seed my-investigation --inventory INVENTORY_ID
 ```
 
 This creates a new sample ID with the same ordered image IDs. It does not copy
@@ -56,13 +76,40 @@ annotations from the previous sample. A saved snapshot keeps its original
 eligibility: missing files discovered later are reported, never replaced in the
 draw. Use a fresh `inventory` or the default `draw` to reflect today's availability.
 
+Draw responses have `schema_version: 1` and these fields:
+
+| Field | Use |
+|---|---|
+| `draw` | Original persistent record, including `sample_id`, `image_ids`, seed and inventory ID |
+| `population.counts.eligible` | M, the number of eligible distinct images in this draw's snapshot |
+| `images` | Draw order; each item has `position`, `image_id`, `available_path` and all alias `locations` with current statuses |
+| `current_check` | Record reproduction and current file/metadata verification |
+
+An agent or program can call the engine and use the returned paths immediately:
+
+```python
+import json
+import subprocess
+
+result = subprocess.run(
+    ["Fixtures/sample", "12", "--seed", "my-investigation"],
+    capture_output=True, text=True, check=True,
+)
+sample = json.loads(result.stdout)
+sample_id = sample["draw"]["sample_id"]
+image_paths = [item["available_path"] for item in sample["images"]]
+```
+
 All successful commands output JSON. Exit codes are 0 for success, 1 for a
-`verify` report with current file/metadata problems, and 2 for invalid arguments,
-damaged records or I/O errors. `draw` persists the original selection and includes
-a `current_check`; a file becoming unavailable never causes a replacement draw.
+`draw` or `verify` report with current file/metadata problems, and 2 for invalid
+arguments, damaged records or I/O errors. On exit 1, stdout still contains the
+JSON report and saved sample ID. `draw` persists the original selection before
+checking current availability; a missing file never causes a replacement draw.
+An oversized request is rejected before creating a sample.
 
 Global `--repo CHECKOUT` and `--store DIRECTORY` options go **before** the command.
-Defaults resolve from this script, so commands also work from another directory.
+The checkout and default store resolve from the engine; custom relative option
+paths resolve from the caller's working directory.
 The default store is [records/](records/). It contains versionable text only;
 image bytes remain at their fixture locations. Use `--store output/samples` for
 a local Git-ignored store. Back up or version the whole store, including inventories.
@@ -158,7 +205,8 @@ Python's random-library implementation:
 This partial Fisher–Yates shuffle gives each eligible ticket equal pseudorandom
 probability without replacement. It does not consult annotations. The tests
 enumerate every equally likely random-index path in a small population, check
-rejection at the boundary, and pin a stream vector for cross-version reproduction.
+rejection at the boundary, and pin a stream vector to protect recorded-draw
+reproduction. Tests run only under the repository's Python 3.14.x environment.
 
 ## Demonstration and checks
 
@@ -176,7 +224,7 @@ original draw byte equality and current-file verification. The examples are
 investigation annotations, not fixture judgments or eligibility changes.
 
 ```sh
-python3 Fixtures/Sampler/sampler.py show draw-74427fcd61234647bc46613f73deeecd --paths
-python3 Fixtures/Sampler/sampler.py verify draw-74427fcd61234647bc46613f73deeecd
-python3 -m unittest discover -s Fixtures/Sampler -p 'test_*.py'
+Fixtures/sample show draw-74427fcd61234647bc46613f73deeecd --paths
+Fixtures/sample verify draw-74427fcd61234647bc46613f73deeecd
+make test-sampler
 ```

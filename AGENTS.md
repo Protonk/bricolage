@@ -23,6 +23,10 @@ It is not the router architecture or the future portable API.
   can rely on. Update the portability ledger when that handoff changes.
 - Keep experiment documentation consistent with code. Report meaningful changes,
   focused checks, and remaining uncertainty in plain language.
+- Target Python 3.14.x only for Python tools and tests. Use the repository's
+  `.venv` (`make setup-python`); do not run a Python version matrix. For fixture
+  samples, use `Fixtures/sample N` rather than assembling a draw by hand. See
+  [the sampling engine](Fixtures/Sampler/README.md) for records and annotations.
 - Handle local Git logistics. When requested work reaches a completed, checked
   stopping point, stage and commit its changes on the current appropriate branch;
   `main` is fine when no separate branch is needed. Preserve unrelated work and

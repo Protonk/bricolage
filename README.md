@@ -68,6 +68,25 @@ self-contained mechanics tests can run with `--filter ComparisonTests`.
 
 ## Local fixture assets
 
+### Sampling engine
+
+Ask the engine at the fixture root for N images:
+
+```sh
+make setup-python                  # Once: uses installed python3.14 to create .venv
+Fixtures/sample 12 --seed my-investigation
+make test-sampler
+```
+
+Python tools and tests target **Python 3.14.x only**, using the Git-ignored root
+`.venv`. The sampler needs no third-party packages. Other fixture tools retain
+their own dependency files; use `.venv/bin/python` when running their checks.
+The sampling command returns JSON with a saved sample ID, population size and
+ordered image paths. Omit the seed to generate one. See the
+[sampling engine guide](Fixtures/Sampler/README.md) for inspection and annotations.
+
+### Collections
+
 `Fixtures/Relationships/` holds Derivatives, Multiviews and Variants.
 `Fixtures/Heaps/Similarity/` holds the prompt-selected contributions to the
 current similarity heap. `Fixtures/Heaps/Curatorial/POTY/` holds mechanical
@@ -94,10 +113,6 @@ Git ignores these entire directories for every fixture set, including nested fil
 and unknown or absent extensions. Keep future image assets in those locations.
 The manifests, source catalogs, checksums, and textual provenance remain versionable.
 See [Fixtures/README.md](Fixtures/README.md) for the format and local checks.
-
-The [fixture sampler](Fixtures/Sampler/README.md) draws uniformly from local
-Heaps and Relationships inputs, with exact-byte aliases sharing one ticket.
-Its CLI keeps reproducible draw records and separate annotations in plain JSON.
 
 [AGENTS.md](AGENTS.md) gives working guidance. Work on the task explicitly selected
 in the conversation; the research documents are not an instruction to implement

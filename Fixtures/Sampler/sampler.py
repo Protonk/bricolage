@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Inventory fixture inputs, draw equal tickets, and retain separate annotations.
+"""Sampling engine: draw N equal tickets and retain separate annotations.
 
-Python standard library only. No network, image processing or fixture mutations.
+Python 3.14 standard library only. No network, image processing or fixture mutations.
 The JSON format and byte-exact sampling procedure are documented in README.md.
 """
 import argparse
@@ -427,7 +427,26 @@ def inventory_report(inventory, store):
 
 
 def main(argv=None):
-    parser = argparse.ArgumentParser(description=__doc__)
+    if sys.version_info[:2] != (3, 14):
+        print('sampler: Python 3.14.x is required; run make setup-python and use Fixtures/sample.',
+              file=sys.stderr)
+        return 2
+    argv = list(sys.argv[1:] if argv is None else argv)
+    # A leading N is shorthand for "draw N", after any global options.
+    index = 0
+    while index < len(argv):
+        argument = argv[index]
+        if argument in ('--repo', '--store'):
+            index += 2
+        elif argument.startswith(('--repo=', '--store=')):
+            index += 1
+        else:
+            if re.fullmatch(r'[+-]?[0-9]+', argument):
+                argv.insert(index, 'draw')
+            break
+    parser = argparse.ArgumentParser(
+        prog='Fixtures/sample', description=__doc__, allow_abbrev=False,
+        epilog='Quick draw: Fixtures/sample N [--seed TEXT]. Output is JSON; image paths are in images[].available_path.')
     parser.add_argument('--repo', type=Path, default=REPO, help='Checkout containing Fixtures/')
     parser.add_argument('--store', type=Path, default=DEFAULT_STORE, help='JSON record directory')
     commands = parser.add_subparsers(dest='command', required=True)
@@ -459,7 +478,8 @@ def main(argv=None):
             inventory = (load_inventory(args.store, args.inventory) if args.inventory
                          else build_inventory(args.repo))
             drawn = create_draw(args.store, inventory, args.size, args.seed)
-            result = dict(draw=drawn, population=inventory_report(inventory, args.store),
+            result = dict(schema_version=1, draw=drawn, population=inventory_report(inventory, args.store),
+                          images=inspect_draw(args.store, drawn['sample_id'], args.repo, paths_only=True),
                           current_check=verify_draw(args.store, drawn['sample_id'], args.repo))
         elif args.command == 'list':
             result = list_draws(args.store)
@@ -476,7 +496,8 @@ def main(argv=None):
             result = annotate(args.store, args.sample_id, args.key, value, args.image,
                               args.delete, args.author)
         print(json.dumps(result, ensure_ascii=False, allow_nan=False, indent=2))
-        if args.command == 'verify' and not result['ok']:
+        if ((args.command == 'verify' and not result['ok']) or
+                (args.command == 'draw' and not result['current_check']['ok'])):
             return 1
         return 0
     except (ValueError, OSError, KeyError, TypeError) as error:

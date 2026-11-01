@@ -1,0 +1,10 @@
+#!/bin/sh
+# Public sampling engine. Resolve the checkout independently of the caller's cwd.
+set -eu
+fixture_root=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+sampler_python="$fixture_root/../.venv/bin/python"
+if [ ! -x "$sampler_python" ]; then
+    echo "sample: Python environment missing. Run 'make setup-python' in $fixture_root/.. (requires Python 3.14.x)." >&2
+    exit 2
+fi
+exec "$sampler_python" "$fixture_root/Sampler/sampler.py" "$@"

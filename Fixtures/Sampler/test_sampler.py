@@ -1,6 +1,8 @@
 """Offline mechanics tests; synthetic byte fixtures make no image-quality claims."""
 import concurrent.futures
+import contextlib
 import hashlib
+import io
 import itertools
 import json
 from pathlib import Path
@@ -12,6 +14,10 @@ import unittest
 from unittest.mock import patch
 
 import sampler as s
+
+
+if sys.version_info[:2] != (3, 14):
+    raise RuntimeError('Sampler tests target Python 3.14.x only; run make test-sampler')
 
 
 class SamplerTests(unittest.TestCase):
@@ -227,6 +233,60 @@ class SamplerTests(unittest.TestCase):
         result = self.cli('show', draw['sample_id'])
         self.assertIsNone(json.loads(result.stdout)['annotations']['sample']['whatever'])
         self.assertEqual(len(json.loads(self.cli('show', draw['sample_id'], '--paths').stdout)), 3)
+
+    def test_public_engine_returns_persistent_draw_and_paths_from_another_cwd(self):
+        store = self.repo / 'records with spaces'
+        engine = Path(s.__file__).resolve().parent.parent / 'sample'
+        command = [str(engine), '--repo', str(self.repo), '--store', str(store)]
+        result = subprocess.run([*command, '3', '--seed', 'public engine'],
+                                cwd=self.temp.name, capture_output=True, text=True)
+        self.assertEqual(result.returncode, 0, result.stderr)
+        response = json.loads(result.stdout)
+        self.assertEqual(response['schema_version'], 1)
+        draw = response['draw']
+        self.assertEqual(draw['image_ids'], s.sample_ids(self.inventory(), 3, 'public engine'))
+        self.assertEqual(response['population']['counts']['eligible'], 4)
+        self.assertEqual([i['image_id'] for i in response['images']], draw['image_ids'])
+        self.assertEqual([i['position'] for i in response['images']], [1, 2, 3])
+        for image in response['images']:
+            self.assertEqual('sha256:' + s.file_hash(Path(image['available_path'])), image['image_id'])
+        self.assertEqual(s.load_draw(store, draw['sample_id'])[0], draw)
+        old_syntax = subprocess.run([*command, 'draw', '3', '--seed', 'public engine'],
+                                    cwd=self.temp.name, capture_output=True, text=True, check=True)
+        self.assertEqual(json.loads(old_syntax.stdout)['draw']['image_ids'], draw['image_ids'])
+
+    def test_shorthand_bounds_and_global_options(self):
+        for size in ('-1', '5'):
+            result = self.cli(size)
+            self.assertEqual(result.returncode, 2)
+            self.assertIn('sampler:', result.stderr)
+        self.assertEqual(s.list_draws(self.store), [])
+        result = self.cli('--repo=' + str(self.repo), '--store=' + str(self.store),
+                          '2', '--seed', 'same')
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertEqual(json.loads(result.stdout)['draw']['requested_size'], 2)
+
+    def test_draw_reports_unavailable_saved_snapshot_with_nonzero_exit_and_keeps_record(self):
+        inventory = s.save_inventory(self.store, self.inventory())
+        (self.heap / 'images/0.png').unlink()
+        result = self.cli('4', '--inventory', inventory['inventory_id'])
+        self.assertEqual(result.returncode, 1, result.stderr)
+        response = json.loads(result.stdout)
+        self.assertEqual(len(response['draw']['image_ids']), 4)
+        self.assertEqual(sum(i['available_path'] is None for i in response['images']), 1)
+        self.assertFalse(response['current_check']['ok'])
+        self.assertEqual(s.load_draw(self.store, response['draw']['sample_id'])[0], response['draw'])
+
+    def test_launcher_reports_missing_environment_and_runtime_rejects_other_minor_versions(self):
+        engine = self.repo / 'Fixtures/sample'
+        shutil.copy2(Path(s.__file__).resolve().parent.parent / 'sample', engine)
+        result = subprocess.run([str(engine), '1'], capture_output=True, text=True)
+        self.assertEqual(result.returncode, 2)
+        self.assertIn('make setup-python', result.stderr)
+        stderr = io.StringIO()
+        with patch.object(s.sys, 'version_info', (3, 13)), contextlib.redirect_stderr(stderr):
+            self.assertEqual(s.main(['1']), 2)
+        self.assertIn('Python 3.14.x', stderr.getvalue())
 
     def test_concurrent_annotation_appends_preserve_every_event(self):
         draw = self.draw()

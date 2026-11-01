@@ -3,8 +3,26 @@
 Fixtures are organized by why their images were chosen. The provenance
 relationship sets and the selected image heaps have different evidential roles.
 
+## Sampling engine
+
+Run `Fixtures/sample N` from the repository root (or `./sample N` from here) to
+draw N images uniformly from all available Heaps and Relationships inputs.
+Optional `--seed TEXT` makes a draw repeatable. The command saves the original
+draw and inventory, and returns JSON with `draw.sample_id`,
+`population.counts.eligible` (M), and ordered `images[].available_path` values.
+Exact-byte aliases share one ticket. An oversized request fails explicitly.
+
+The engine uses the root `.venv` with Python 3.14.x. On a new checkout, run
+`make setup-python` at the repository root once. Run `Fixtures/sample --help`
+for commands, or read the [engine guide](Sampler/README.md) to inspect saved
+samples and attach annotations. `make test-sampler` runs the focused tests.
+
+## Collections
+
 ```text
 Fixtures/
+  sample                  # Public sampling engine
+  Sampler/                # Implementation, tests and persistent JSON records
   Relationships/
     Derivatives/
     Multiviews/
@@ -63,9 +81,8 @@ Each leaf separates complete acquisition from earlier deferred selection cases.
 
 ## Working with the fixtures
 
-- Use the [fixture sampler](Sampler/README.md) to draw N equal tickets across
-  active Heaps and Relationships inputs. It preserves a population snapshot,
-  seed, original draw and separate arbitrary annotations without changing fixtures.
+- Use `Fixtures/sample N` to draw equal tickets across active Heaps and
+  Relationships inputs and preserve separate arbitrary annotations.
 - Open the relevant role or heap README, then the leaf set's README for its
   prompt or relationship, status, provenance and check command.
 - Put a new contribution inside its intended heap. A new contribution to

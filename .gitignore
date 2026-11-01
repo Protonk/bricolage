@@ -3,6 +3,7 @@
 .swiftpm/
 output/
 __pycache__/
+.venv/
 
 # Local fixture assets: ignore whole directories, regardless of file format.
 # Applies to current and future fixture sets, including nested asset files.
