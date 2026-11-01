@@ -1,24 +1,15 @@
 # Evan-Amos category uploads
 
-## Purpose and basis
+All files in the saved list of the Commons category “Media uploaded by Evan Amos,”
+except three supplied exclusions. Related views and formats remain included.
 
-Every frozen direct File member of Media uploaded by Evan Amos except three exact user exclusions; no sampling, deduplication or expected matches.
 Fixture ID: `hazy-evan-amos-uploads-v1`; kind: `curatorial_heap`.
+The manifest lists **133 inputs**.
 
-## Completeness
+Use the [shared fixture format](../../../FORMAT.md) for the directory layout and the
+[provenance index](provenance/README.md) for source and selection records.
 
-The published manifest contains **133 inputs**. The detailed record below
-retains the original selection counts, pending cases and acquisition limitations.
-The layout migration changes no membership or completion status.
-
-## Contents
-
-This leaf follows the [shared fixture format](../../../FORMAT.md).
-`images/`, `sources/`, `previews/` and `batches/` retain their roles. Live commands
-and dependencies are in `tools/`; the [evidence index](provenance/README.md)
-locates intake/construction records, receipts and preserved packages.
-
-## Validation
+## Check this collection
 
 From the repository root, using Python 3.14.x:
 
@@ -27,16 +18,10 @@ Fixtures/.venv/bin/python -m pip install -r Fixtures/Heaps/Curatorial/Evan-Amos-
 Fixtures/.venv/bin/python Fixtures/Heaps/Curatorial/Evan-Amos-Uploads/tools/check.py
 ```
 
-The check is offline and includes the shared layout check and the existing
-specialized validators. `--metadata-only` omits media and specialized checks.
+The check is offline. `--metadata-only` checks layout and catalogs without
+media or the specialized validators.
 
-## Limitations
-
-Selection and source relationships retain their recorded scope; they are not
-similarity scores or additional matching assertions. Technical/provenance
-uncertainties and partial acquisitions remain documented below.
-
-## Detailed record
+## Images and records
 
 One leaf of the [Curatorial heap](../README.md): **every frozen direct File
 member** of [Media uploaded by Evan Amos](https://commons.wikimedia.org/wiki/Category:Media_uploaded_by_Evan_Amos),

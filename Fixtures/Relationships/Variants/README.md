@@ -1,24 +1,15 @@
-# Hazy variants — meme fixtures v0
+# Variants
 
-## Purpose and basis
+Six originals, thirty constructed edits and six supplied images generated from
+descriptions of the originals.
 
-Variants: six originals, thirty constructed edits, six unchanged description-mediated generations. Provenance is not a similarity verdict.
 Fixture ID: `hazy-meme-fixtures-v0`; kind: `derivatives`.
+The manifest lists **42 inputs**.
 
-## Completeness
+Use the [shared fixture format](../../FORMAT.md) for the directory layout and the
+[provenance index](provenance/README.md) for source and selection records.
 
-The published manifest contains **42 inputs**. The detailed record below
-retains the original selection counts, pending cases and acquisition limitations.
-The layout migration changes no membership or completion status.
-
-## Contents
-
-This leaf follows the [shared fixture format](../../FORMAT.md).
-`images/`, `sources/`, `previews/` and `batches/` retain their roles. Live commands
-and dependencies are in `tools/`; the [evidence index](provenance/README.md)
-locates intake/construction records, receipts and preserved packages.
-
-## Validation
+## Check this collection
 
 From the repository root, using Python 3.14.x:
 
@@ -27,22 +18,15 @@ Fixtures/.venv/bin/python -m pip install -r Fixtures/Relationships/Variants/tool
 Fixtures/.venv/bin/python Fixtures/Relationships/Variants/tools/check.py
 ```
 
-The check is offline and includes the shared layout check and the existing
-specialized validators. `--metadata-only` omits media and specialized checks.
+The check is offline. `--metadata-only` checks layout and catalogs without
+media or the specialized validators.
 
-## Limitations
-
-Selection and source relationships retain their recorded scope; they are not
-similarity scores or additional matching assertions. Technical/provenance
-uncertainties and partial acquisitions remain documented below.
-
-## Detailed record
+## Images and records
 
 Built and validated: **42 inputs** from six bundled sources: six unchanged source
 copies, 30 locally constructed variants, and six unchanged supplied generations.
-This completes the fixture trio of derivatives, multiviews, and variants. Its
-shared-schema `kind` remains `derivatives`: construction histories live in a
-sidecar rather than changing the comparison API.
+Its manifest uses `kind=derivatives`; separate construction records describe
+the steps used to make each image.
 
 | Treatment | Count | Construction |
 |---|---:|---|

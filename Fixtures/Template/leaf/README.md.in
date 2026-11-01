@@ -1,14 +1,14 @@
 # {{FIXTURE_ID}}
 
-## Purpose and basis
+## Images
 
-Describe why these images belong here and the selection or construction basis.
-Kind: `{{KIND}}`. Preserve unknown provenance explicitly.
+Describe the images, why they were chosen, and what someone could test with them.
+Kind: `{{KIND}}`.
 
-## Completeness
+## Status
 
-Unpublished: no images acquired or integrated. Record eligible, selected, acquired,
-excluded and pending counts where applicable; distinguish missing from rejected.
+Unpublished: no images acquired or integrated. Record the eligible, selected and
+acquired counts, exclusions and pending work. Explain any shortfall against the target.
 
 ## Contents
 
@@ -23,4 +23,5 @@ offline validator to its `checks` list before publication.
 
 ## Limitations
 
-Record technical/provenance uncertainty and limits on relationship assertions.
+Describe missing information or restrictions that affect use of these images.
+Explain what the source records establish about any relationships between them.

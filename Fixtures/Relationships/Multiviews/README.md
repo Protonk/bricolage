@@ -1,24 +1,14 @@
-# hazy multiview fixture v1
+# Multiviews
 
-## Purpose and basis
+Twenty separate captures in eight scene or sequence groups.
 
-Twenty independent captures in eight scene/sequence groups; scene_id is not a similarity score or alignment guarantee.
 Fixture ID: `hazy-multiview-v1`; kind: `multiview`.
+The manifest lists **20 inputs**.
 
-## Completeness
+Use the [shared fixture format](../../FORMAT.md) for the directory layout and the
+[provenance index](provenance/README.md) for source and selection records.
 
-The published manifest contains **20 inputs**. The detailed record below
-retains the original selection counts, pending cases and acquisition limitations.
-The layout migration changes no membership or completion status.
-
-## Contents
-
-This leaf follows the [shared fixture format](../../FORMAT.md).
-`images/`, `sources/`, `previews/` and `batches/` retain their roles. Live commands
-and dependencies are in `tools/`; the [evidence index](provenance/README.md)
-locates intake/construction records, receipts and preserved packages.
-
-## Validation
+## Check this collection
 
 From the repository root, using Python 3.14.x:
 
@@ -27,16 +17,10 @@ Fixtures/.venv/bin/python -m pip install -r Fixtures/Relationships/Multiviews/to
 Fixtures/.venv/bin/python Fixtures/Relationships/Multiviews/tools/check.py
 ```
 
-The check is offline and includes the shared layout check and the existing
-specialized validators. `--metadata-only` omits media and specialized checks.
+The check is offline. `--metadata-only` checks layout and catalogs without
+media or the specialized validators.
 
-## Limitations
-
-Selection and source relationships retain their recorded scope; they are not
-similarity scores or additional matching assertions. Technical/provenance
-uncertainties and partial acquisitions remain documented below.
-
-## Detailed record
+## Images and records
 
 **20 separately captured images in eight scene or sequence groups:** the motorcycle
 pair, nine personal photographs, and nine Commons crowd photographs. Use only the

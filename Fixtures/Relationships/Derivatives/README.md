@@ -1,24 +1,14 @@
-# hazy derivatives fixture v1
+# Derivatives
 
-## Purpose and basis
+Crops, re-encodings, edits and composites made from known source images.
 
-Synthetic derivatives with source provenance; family_id is not an asserted matching cluster.
 Fixture ID: `hazy-derivatives-v1`; kind: `derivatives`.
+The manifest lists **183 inputs**.
 
-## Completeness
+Use the [shared fixture format](../../FORMAT.md) for the directory layout and the
+[provenance index](provenance/README.md) for source and selection records.
 
-The published manifest contains **183 inputs**. The detailed record below
-retains the original selection counts, pending cases and acquisition limitations.
-The layout migration changes no membership or completion status.
-
-## Contents
-
-This leaf follows the [shared fixture format](../../FORMAT.md).
-`images/`, `sources/`, `previews/` and `batches/` retain their roles. Live commands
-and dependencies are in `tools/`; the [evidence index](provenance/README.md)
-locates intake/construction records, receipts and preserved packages.
-
-## Validation
+## Check this collection
 
 From the repository root, using Python 3.14.x:
 
@@ -27,16 +17,10 @@ Fixtures/.venv/bin/python -m pip install -r Fixtures/Relationships/Derivatives/t
 Fixtures/.venv/bin/python Fixtures/Relationships/Derivatives/tools/check.py
 ```
 
-The check is offline and includes the shared layout check and the existing
-specialized validators. `--metadata-only` omits media and specialized checks.
+The check is offline. `--metadata-only` checks layout and catalogs without
+media or the specialized validators.
 
-## Limitations
-
-Selection and source relationships retain their recorded scope; they are not
-similarity scores or additional matching assertions. Technical/provenance
-uncertainties and partial acquisitions remain documented below.
-
-## Detailed record
+## Images and records
 
 A fixed batch of **183 images** intended to exercise coarse image-similarity grouping without using anyone's personal photo library.
 
@@ -46,7 +30,8 @@ Image and source bytes, opaque filenames, probes, and batch lists are unchanged.
 The manifests now add schema identity, stored EXIF orientation, and an empty
 `scene_id` column; the original manifests are retained under `provenance/`.
 
-**Use `images/` as the input set.** It is a single flat directory with opaque filenames so the expected group membership is not conveyed by names or directories. The answer key and provenance are separate.
+The sampler uses `images/` as the input set. Filenames carry no source-family
+labels; the manifests record the source and transformations separately.
 
 ### What's in the corpus
 
@@ -76,7 +61,10 @@ No source is one of your own images. These originals come from the public-domain
 
 ### What the labels mean
 
-`family_id` means **derived from the same original bytes**, not "the correct Apple Vision cluster." Deliberate crops, rotation, and composites are useful precisely because visual similarity under these operations may vary considerably. The ground-truth assertions here are limited to provenance, byte identity, and pixel identity; no image similarity scores were computed and no threshold has been prescribed.
+`family_id` records derivation from the same source image. Cropping, rotation and
+compositing change how much of that source remains visible. The records describe
+those operations, byte identity and decoded pixel identity; comparison scores
+and thresholds are left to the test using the images.
 
 - `byte_copy` is a raw duplicate, with identical file bytes to `source`.
 - `reencode_png` has identical decoded RGB pixels to `source`, but can have a different encoding and byte representation.
@@ -84,13 +72,17 @@ No source is one of your own images. These originals come from the public-domain
 - A `family_id` of empty string and `parents` containing two names denotes a composite with multiple origins.
 - Different family IDs denote different original source images. They may nevertheless be semantically similar.
 
-`probes.csv` lists explicit comparison pairs, including different-origin images that might resemble one another in feature space. The `interpretation` field avoids pretending the supplied labels are Vision's answers.
+`probes.csv` lists comparison pairs, including images from different sources that
+may resemble one another. Its `interpretation` field explains each pair's source
+relationship and why the pair was chosen.
 
 ### Batches
 
 `batch-1.txt` to `batch-4.txt` together partition all 183 `images/` files. They do not partition by source family: copies of one image are spread across batches. Lists are stable and relative to the corpus root.
 
-For a short trial, use the 24 files in `batches/smoke.txt`. For the full trial, import the four lists independently, or import `images/` in one pass. The same files and manifest can be used for every subsequent revision.
+`batches/smoke.txt` lists 24 originals and byte copies; the four numbered lists
+cover the whole set. These lists describe fixture subsets. Consumers receive
+worlds published through `Fixtures/sample`.
 
 ### Reproduction and checks
 
@@ -126,7 +118,9 @@ Pillow's decoded RGB representation, not hazy's Apple-prepared working pixels.
 
 ### Scope limitation
 
-Almost all related images here are **synthetic transformations of a single exposure**. This is suitable for duplicate families and repeatable import behavior but not sufficient for real multi-view retrieval. The external **INRIA Holidays** corpus (1,491 images in 500 scene groups) complements it with genuine photographs of the same scenes; **INRIA Copydays** offers a larger collection of established copy-detection transformations. The external datasets are not included in this zip. Their rights and redistribution terms are theirs, not this corpus's.
+Almost all related images here are transformations of a single exposure. They
+allow repeated tests of crops, edits and encodings. For separate captures of a
+scene, see the local [Multiviews collection](../Multiviews/README.md).
 
 ### Redistribution
 

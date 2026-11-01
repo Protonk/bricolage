@@ -1,24 +1,15 @@
 # Botanical Illustrations
 
-## Purpose and basis
+Botanical plates and artworks selected from a saved Commons category list,
+using a seeded order and recorded exclusions.
 
-Distinct botanical plates/artworks from a frozen Commons PetScan category population; seeded file ordering and documented exclusions; no expected matches.
 Fixture ID: `hazy-botanical-illustrations-v1`; kind: `curatorial_heap`.
+The manifest lists **149 inputs**.
 
-## Completeness
+Use the [shared fixture format](../../../FORMAT.md) for the directory layout and the
+[provenance index](provenance/README.md) for source and selection records.
 
-The published manifest contains **149 inputs**. The detailed record below
-retains the original selection counts, pending cases and acquisition limitations.
-The layout migration changes no membership or completion status.
-
-## Contents
-
-This leaf follows the [shared fixture format](../../../FORMAT.md).
-`images/`, `sources/`, `previews/` and `batches/` retain their roles. Live commands
-and dependencies are in `tools/`; the [evidence index](provenance/README.md)
-locates intake/construction records, receipts and preserved packages.
-
-## Validation
+## Check this collection
 
 From the repository root, using Python 3.14.x:
 
@@ -27,16 +18,10 @@ Fixtures/.venv/bin/python -m pip install -r Fixtures/Heaps/Curatorial/Botanical-
 Fixtures/.venv/bin/python Fixtures/Heaps/Curatorial/Botanical-Illustrations/tools/check.py
 ```
 
-The check is offline and includes the shared layout check and the existing
-specialized validators. `--metadata-only` omits media and specialized checks.
+The check is offline. `--metadata-only` checks layout and catalogs without
+media or the specialized validators.
 
-## Limitations
-
-Selection and source relationships retain their recorded scope; they are not
-similarity scores or additional matching assertions. Technical/provenance
-uncertainties and partial acquisitions remain documented below.
-
-## Detailed record
+## Images and records
 
 **150 distinct works selected; 149 acquired, one transfer pending. Acquisition
 remains partial and selection remains provisional around 14 earlier cases.**

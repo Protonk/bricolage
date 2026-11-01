@@ -1,24 +1,15 @@
 # US Army shoulder-sleeve insignia
 
-## Purpose and basis
+US Army shoulder-sleeve insignia selected from a saved Commons category list,
+with one selection per identified design.
 
-Distinct US Army shoulder-sleeve insignia designs from a frozen Commons PetScan category population; seeded file ordering and documented exclusions; no expected matches.
 Fixture ID: `hazy-us-army-ssi-v1`; kind: `curatorial_heap`.
+The manifest lists **150 inputs**.
 
-## Completeness
+Use the [shared fixture format](../../../FORMAT.md) for the directory layout and the
+[provenance index](provenance/README.md) for source and selection records.
 
-The published manifest contains **150 inputs**. The detailed record below
-retains the original selection counts, pending cases and acquisition limitations.
-The layout migration changes no membership or completion status.
-
-## Contents
-
-This leaf follows the [shared fixture format](../../../FORMAT.md).
-`images/`, `sources/`, `previews/` and `batches/` retain their roles. Live commands
-and dependencies are in `tools/`; the [evidence index](provenance/README.md)
-locates intake/construction records, receipts and preserved packages.
-
-## Validation
+## Check this collection
 
 From the repository root, using Python 3.14.x:
 
@@ -27,16 +18,10 @@ Fixtures/.venv/bin/python -m pip install -r Fixtures/Heaps/Curatorial/US-Army-SS
 Fixtures/.venv/bin/python Fixtures/Heaps/Curatorial/US-Army-SSI/tools/check.py
 ```
 
-The check is offline and includes the shared layout check and the existing
-specialized validators. `--metadata-only` omits media and specialized checks.
+The check is offline. `--metadata-only` checks layout and catalogs without
+media or the specialized validators.
 
-## Limitations
-
-Selection and source relationships retain their recorded scope; they are not
-similarity scores or additional matching assertions. Technical/provenance
-uncertainties and partial acquisitions remain documented below.
-
-## Detailed record
+## Images and records
 
 **Target reached: 150 selected and acquired inputs. Selection remains provisional
 around eight unresolved earlier candidates.** This is one leaf of the

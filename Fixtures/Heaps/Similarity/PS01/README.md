@@ -1,24 +1,14 @@
 # PS01 — Pale skies, dark lower halves
 
-## Purpose and basis
+Photographs with pale, quiet skies above darker, detailed lower regions.
 
-PS01 pale skies and dark lower halves: photographs with a pale quiet upper sky and a darker, detailed lower region. Visual curation, no pair or membership ground truth.
 Fixture ID: `hazy-ps01-v1`; kind: `prompt_heap`.
+The manifest lists **58 inputs**.
 
-## Completeness
+Use the [shared fixture format](../../../FORMAT.md) for the directory layout and the
+[provenance index](provenance/README.md) for source and selection records.
 
-The published manifest contains **58 inputs**. The detailed record below
-retains the original selection counts, pending cases and acquisition limitations.
-The layout migration changes no membership or completion status.
-
-## Contents
-
-This leaf follows the [shared fixture format](../../../FORMAT.md).
-`images/`, `sources/`, `previews/` and `batches/` retain their roles. Live commands
-and dependencies are in `tools/`; the [evidence index](provenance/README.md)
-locates intake/construction records, receipts and preserved packages.
-
-## Validation
+## Check this collection
 
 From the repository root, using Python 3.14.x:
 
@@ -27,16 +17,10 @@ Fixtures/.venv/bin/python -m pip install -r Fixtures/Heaps/Similarity/PS01/tools
 Fixtures/.venv/bin/python Fixtures/Heaps/Similarity/PS01/tools/check.py
 ```
 
-The check is offline and includes the shared layout check and the existing
-specialized validators. `--metadata-only` omits media and specialized checks.
+The check is offline. `--metadata-only` checks layout and catalogs without
+media or the specialized validators.
 
-## Limitations
-
-Selection and source relationships retain their recorded scope; they are not
-similarity scores or additional matching assertions. Technical/provenance
-uncertainties and partial acquisitions remain documented below.
-
-## Detailed record
+## Images and records
 
 Integrated: **58 inputs from 145 supplied leads**. All 145 previews were inspected:
 58 accepted, 85 rejected and two deferred for possible source relationships.

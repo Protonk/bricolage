@@ -1,29 +1,29 @@
 # Working on bricolage
 
 Read [README.md](README.md), then [Fixtures/AGENTS.md](Fixtures/AGENTS.md) and the
-relevant fixture or sampler guide. bricolage's application lives in `Fixtures/`.
-[WORLD.md](WORLD.md) is the whole contract offered to consumers.
+guide for the sampler or collection being changed. [CONTRIBUTING.md](CONTRIBUTING.md)
+describes fixture design and how the documentation fits together.
 
-- Work on the task selected in the conversation. No next research pathway is
-  selected. Do not add speculative roadmaps, rankings or architectural frameworks.
-- Keep changes small enough to trace from input to output. Preserve supplied
-  records, source bytes, IDs and metadata pins. Report errors and missing results
-  explicitly; provenance and measured alignments are not matching judgments.
-- Use Python 3.14.x only, with `Fixtures/.venv` and `make -C Fixtures setup-python`.
-  For samples use `Fixtures/sample N`, which records the draw in the disposable scratch
-  store and publishes a world. A draw meant to be committed is made with `--keep`
-  before the command. Do not construct an undocumented sample or acquire another corpus.
-- Keep all media under a leaf's `images/`, `sources/` or `previews/`, and disposable
-  worlds and scratch records under `Fixtures/output/`. Never force-add ignored image
-  assets. Durable sampler records stay in `Fixtures/Sampler/records/`, are versioned,
-  and change only through `--keep`.
-- Consumers receive a world, never fixture origins. Any provenance lookup, probe
-  selection or interpretation belongs here. The optional runner requires an explicit
-  executable and world; no consumer source tree is a dependency.
-- Keep documentation and focused tests consistent with implemented behavior.
-  Unsupported operations and failed publication receipts must remain visible.
-- Handle local Git logistics: at a completed, checked stopping point, stage and
-  commit the task changes on the appropriate current branch; main is fine. Preserve
-  unrelated work. Do not push unless explicitly asked.
-- WORLD.md is shared with hazy. Keep both copies identical when changing the
-  boundary; the counterpart links in the document locate them.
+- Work on the task in the conversation. Do not invent a next research direction
+  or add speculative roadmaps, rankings or architectures.
+- Preserve supplied records, source bytes, IDs and metadata hashes. Keep changes
+  small enough to follow from input to output. Report missing files and failed
+  operations by name. A source relationship or measured alignment does not by
+  itself establish a visual match.
+- Use Python 3.14.x in `Fixtures/.venv`, created by `make -C Fixtures setup-python`.
+  Use `Fixtures/sample N` for samples. Put `--keep` before the command for draws
+  meant to be committed. Do not assemble unrecorded samples or acquire another corpus.
+- Keep media under a collection leaf's `images/`, `sources/` or `previews/`.
+  Never force-add ignored media. Put disposable worlds and scratch records under
+  `Fixtures/output/`. Change versioned sampler records in `Fixtures/Sampler/records/`
+  only through `--keep`.
+- Give consumers a world as specified in [WORLD.md](WORLD.md). Resolve provenance
+  and choose probes here. The optional runner needs an explicit executable and
+  world; it must not depend on a consumer's source tree.
+- Update the affected guides and run the relevant checks in
+  [Fixtures/AGENTS.md](Fixtures/AGENTS.md). Preserve reports of unsupported
+  operations, missing results and failed publication receipts.
+- At a completed, checked stopping point, stage and commit the task's changes on
+  the current branch; main is fine. Preserve unrelated work. Do not push unless asked.
+- Keep both copies of WORLD.md identical when changing it. Its counterpart links
+  locate the copy in hazy.

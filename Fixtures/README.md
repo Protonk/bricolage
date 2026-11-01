@@ -1,149 +1,86 @@
 # bricolage fixtures
 
-Fixtures are organized by why their images were chosen. The provenance
-relationship sets and the selected image heaps have different evidential roles.
+This directory contains the image collections, their records, and the tools for
+checking and sampling them. A **leaf** is a collection directory with its own
+`manifest.json`; the directories above it group related collections.
 
-## Sampling engine
+## Draw a sample
 
-Run `Fixtures/sample N` from the repository root (or `./sample N` from here) to
-draw N images uniformly from all available Heaps and Relationships inputs.
-Optional `--seed TEXT` makes a draw repeatable. The command saves the original
-draw and inventory, and returns JSON with `draw.sample_id`,
-`population.counts.eligible` (M), and ordered `images[].sampled_path` values.
-Each successful draw publishes a world, by default at `Fixtures/output/sampled/`:
-hash-named byte-identical copies beside a `world.json`, with no fixture origin.
-`show SAMPLE_ID` is the key that maps a world back to leaves and rows.
-The originals stay in their fixtures, and durable records stay in `Sampler/records/`.
-Exact-byte aliases share one ticket. An oversized request fails explicitly. Exit
-code 1 with a `problems` list means a fixture or record needs attention; the JSON
-still says whether the draw itself was published. A leaf whose metadata fails
-validation is excluded and named, and the draw proceeds over the rest.
+From the repository root:
 
-The engine uses `Fixtures/.venv` with Python 3.14.x. On a new checkout, run
-`make -C Fixtures setup-python` at the repository root once. Run `Fixtures/sample --help`
-for commands, or read the [engine guide](Sampler/README.md) to inspect saved
-samples and attach annotations. `make -C Fixtures test-sampler` runs the focused tests.
+```sh
+make -C Fixtures setup-python
+Fixtures/sample 12 --seed first-look
+```
+
+The sampler selects uniformly across available inputs in Heaps and Relationships.
+Exact byte copies count once. It saves the draw and inventory in the scratch store
+at `Fixtures/output/records/` and publishes image copies with `world.json` under
+`Fixtures/output/sampled/`. Put `--keep` before the command for records to commit.
+
+Use `show SAMPLE_ID` to inspect the selection and source records,
+`verify SAMPLE_ID` to check them, and `publish SAMPLE_ID` to reuse that draw.
+Use the same store option on those commands. The [sampler guide](Sampler/README.md)
+explains saved inventories, annotations, output paths and errors.
 
 ## Collections
 
-```text
-Fixtures/
-  AGENTS.md               # Working guidance for this directory
-  Makefile                # Python 3.14 venv and test targets; run as make -C Fixtures
-  sample                  # Public sampling engine
-  Sampler/                # Implementation, tests and persistent JSON records
-  output/                 # Disposable worlds; sampled/ is the default
-  Relationships/
-    Derivatives/
-    Multiviews/
-    Variants/
-  Heaps/
-    Similarity/
-      RG01/
-      SF01/
-      PS01/
-      CR01/
-      TG01/
-      BSP01/
-    Curatorial/
-      POTY/
-        Arthropods/
-        Constructions-and-buildings/
-        People-and-human-activity/
-      US-Army-SSI/
-      Botanical-Illustrations/
-      Evan-Amos-Uploads/
-      Rocks-in-Thin-Section/
-      Stone-Hand-Axes/
-      Ex-Libris/
+| Location | What it contains |
+|---|---|
+| [Relationships](Relationships/README.md) | Derivatives of known sources, separate captures of scenes, and constructed or generated variants |
+| [Heaps / Similarity](Heaps/Similarity/README.md) | Six collections chosen by visual prompts: red accents in green surroundings, speckled fields, pale skies, repeated rectangles, tangled growth, and spreading patches |
+| [Heaps / Curatorial](Heaps/Curatorial/README.md) | Selections from published collections: Commons POTY categories, insignia, botanical illustrations, Evan Amos uploads, rocks, hand axes and bookplates |
+
+The relationship sets record how images are connected. The heaps record why
+images were selected. Both can inform a test, but neither supplies the result an
+image matcher should return.
+
+The [heap guide](Heaps/README.md) also describes the local picture book of
+selected images and how to rebuild it.
+
+Current catalogs list 1,263 inputs across 18 leaves, representing 1,251 distinct
+byte hashes. Acquisition is incomplete in SF01 (11 accepted images pending) and
+Botanical Illustrations (one transfer pending). POTY Arthropods has 43 inputs
+against a target of 50. Some Curatorial selections also have earlier unresolved
+review cases; their later selections remain provisional. Each collection's README
+and records give the details.
+
+## Tools and records
+
+| Path | Contents |
+|---|---|
+| `sample` | Public sampler command |
+| [Sampler/](Sampler/README.md) | Sampler code, tests and versioned records |
+| [tools/](tools/README.md) | Layout checks, fixture creation and the optional comparison runner |
+| [Template/](Template/README.md) | Starting files for a new leaf |
+| [output/](output/AGENTS.md) | Disposable worlds, scratch records and check reports |
+
+Each leaf keeps inputs in `images/`, original assets in `sources/` and previews
+or intermediate images in `previews/`. These directories are ignored by Git.
+Text catalogs, checksums, source records and tools are versioned. Restore the
+supplied media at its recorded paths before running checks that need it.
+
+## Check or change a collection
+
+Read [AGENTS.md](AGENTS.md), the collection's README and
+[FORMAT.md](FORMAT.md) before changing its files. For a new leaf, use the
+[template](Template/README.md); the [handoff guide](WEB-AGENT-GUIDE.md) describes
+what a sourcing partner can supply. Put new contributions alongside the existing
+collections with the same selection basis.
+
+Every leaf has `tools/check.py` and `tools/requirements.txt`. From the repository
+root, install the shared validator dependency and check all leaves:
+
+```sh
+Fixtures/.venv/bin/python -m pip install -r Fixtures/tools/requirements.txt
+Fixtures/.venv/bin/python Fixtures/tools/check_layout.py --full
 ```
 
-| Location | Role |
-|---|---|
-| [Relationships](Relationships/README.md) | The chosen trio: derivation, multiple captures, and variants, with recorded source relationships and comparison probes |
-| [Heaps](Heaps/README.md) | Independently selected image pools, each with its own selection criteria |
-| [Similarity](Heaps/Similarity/README.md) | One heap assembled from collections chosen to look alike under short visual prompts |
-| [Curatorial](Heaps/Curatorial/README.md) | Published populations with mechanical sampling or exhaustive membership rules; see each contribution |
+`--metadata-only` checks layout and catalogs without local media; it omits the
+specialized validators. The [tools guide](tools/README.md) describes narrower
+checks and the test targets. The optional comparison runner needs a published
+world and an executable supplied by the caller.
 
-RG01, SF01, PS01, CR01, TG01 and BSP01 belong to the same Similarity heap. They retain their
-own acquisition and review records. Their collection membership records human
-selection intent; it is not an expected router neighborhood or matching verdict.
-Curatorial occupies a sibling directory under `Heaps/`; its POTY source collection
-contains three category contributions one level deeper. Their official category
-membership is a sourcing fact, not a similarity judgment.
-The [US-Army-SSI leaf](Heaps/Curatorial/US-Army-SSI/README.md) sits beside POTY:
-150 acquired inputs from 1,641 frozen PetScan results. Eight earlier cases remain
-pending; later selections are provisional. It has no sub-heaps.
-[Botanical Illustrations](Heaps/Curatorial/Botanical-Illustrations/README.md) is
-another single leaf, using 709 frozen direct-category File entries and a target
-of 150 distinct works. It has 149 acquired inputs, one pending transfer, and
-14 earlier unresolved selection cases; later selections remain provisional.
-[Evan-Amos-Uploads](Heaps/Curatorial/Evan-Amos-Uploads/README.md) imports all
-136 frozen direct category members minus three exact supplied exclusions,
-all 133 other File identities are acquired and validated, with zero pending.
-Related views and formats remain included without sampling or deduplication.
-[Rocks in Thin Section](Heaps/Curatorial/Rocks-in-Thin-Section/README.md),
-[Stone Hand Axes](Heaps/Curatorial/Stone-Hand-Axes/README.md) and
-[Ex Libris](Heaps/Curatorial/Ex-Libris/README.md) each pool three direct category
-lists into one independent leaf. Fixed seeded ordering and recorded thumbnail
-scope, provenance and rights decisions determine their 50-image selections.
-Each leaf separates complete acquisition from earlier deferred selection cases.
-
-## Working with the fixtures
-
-- Share the [short web-agent guide](WEB-AGENT-GUIDE.md) with a partner helping
-  source a new fixture. A clear brief and traceable leads are sufficient for a
-  local handoff; the partner does not need to reproduce our repository machinery.
-- Start new leaves from the [single fixture template](Template/README.md).
-  It covers heaps and relationship sets, with kind-specific evidence requirements.
-- Every leaf exposes `tools/check.py` and `tools/requirements.txt`. Run
-  `Fixtures/.venv/bin/python Fixtures/tools/check_layout.py --full` from the repository root
-  to check all 18 leaves, including their specialized offline validators.
-- Shared relationship validation and the optional probe runner live in
-  [tools/relationship_fixtures.py](tools/relationship_fixtures.py). Run `make -C Fixtures
-  test-relationships` for their checks. The runner requires an explicit experiment
-  binary; fixture validation has no dependency on the experiment checkout.
-- Use `Fixtures/sample N` to draw equal tickets across active Heaps and
-  Relationships inputs and preserve separate arbitrary annotations.
-- Open the relevant role or heap README, then the leaf set's README for its
-  prompt or relationship, status, provenance and check command.
-- Put a new contribution inside its intended heap. A new contribution to
-  Similarity goes beside RG01, SF01, PS01, CR01, TG01 and BSP01; its prompt, exclusions,
-  acceptable looseness and review/acquisition status belong with that contribution.
-  Curatorial contributions can sit below their source collection. Read the
-  [POTY record](Heaps/Curatorial/POTY/README.md) for its inventories and check commands.
-- Preserve supplied records and source bytes. All media, intermediate images and
-  archives stay in the leaf set's `images/`, `sources/` or `previews/` directories.
-  These directories remain Git-ignored at every depth.
-  Disposable sampler worlds go under `Fixtures/output/` and are replaced on each draw.
-- Read [FORMAT.md](FORMAT.md) for manifests, source records, checksums and the
-  distinction between provenance and visual judgments. Existing fixture IDs and
-  manifest kinds are unchanged by this organization.
-
-The optional comparison runner defaults to Derivatives and uses an explicitly
-supplied experiment binary. Heap collections use their fixture-local validators and
-have no expected pairs. A repository checkout contains the text records and
-tools; restore local media before running checks that need it.
-
-## Locations and history
-
-| Previous folder directly under `Fixtures/` | Current location |
-|---|---|
-| `hazy-derivatives-v1` | `Relationships/Derivatives` |
-| `hazy-multiview-v1` | `Relationships/Multiviews` |
-| `hazy-meme-fixtures-v0` | `Relationships/Variants` |
-| `hazy_rg01_sourcing_v01` | `Heaps/Similarity/RG01` |
-| `hazy_sf01` | `Heaps/Similarity/SF01` |
-| `hazy_ps01` | `Heaps/Similarity/PS01` |
-| `hazy_cr01` | `Heaps/Similarity/CR01` |
-| `hazy_tg01` | `Heaps/Similarity/TG01` |
-| `hazy_bsp01` | `Heaps/Similarity/BSP01` |
-| `US-Army-SSI-handoff` (instruction package) | `Heaps/Curatorial/US-Army-SSI/provenance/supplied` |
-| `Botanical-Illustrations-handoff` (instruction package) | `Heaps/Curatorial/Botanical-Illustrations/provenance/supplied` |
-| `Evan-Amos-Uploads-handoff` (instruction package) | `Heaps/Curatorial/Evan-Amos-Uploads/provenance/supplied` |
-| `hazy_curatorial_three_50_handoff` (instruction package) | `provenance/supplied` in each of Rocks-in-Thin-Section, Stone-Hand-Axes and Ex-Libris under `Heaps/Curatorial` |
-
-Active commands and links use the current locations. Preserved supplied files,
-completed run records and existing ZIP snapshots retain their creation-time
-paths and instructions. Paths inside manifests remain relative to their leaf
-set. The move does not alter any source, input or preview bytes.
+Older paths and supplied instructions remain in the provenance records. The
+[layout record](provenance/layout-2026-11/README.md) describes the directory move;
+current commands use the locations above. Fixture IDs and media bytes were kept.

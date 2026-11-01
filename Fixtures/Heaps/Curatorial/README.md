@@ -1,12 +1,10 @@
 # Curatorial heap
 
-This heap collects images from existing published source populations. Each
-contribution records its sampling or exhaustive membership rule. The
-source's category definitions remain intact; local selection follows each
-contribution's recorded order and scope, provenance, rights, supported-file and
-acquisition checks. Some contributions reject obvious category outliers through
-documented thumbnail review. No aesthetic balancing or similarity measurement
-is applied.
+These collections start from published lists of images. Each records whether
+it takes every entry or selects from a fixed ordering, and how it handles
+duplicates, source credits, rights and unsupported files. Some also use thumbnail
+review to exclude images outside the stated scope. The individual guides explain
+those decisions and any unfinished reviews or downloads.
 
 | Source collection | Contributions | Current selection |
 |---|---|---|
@@ -28,6 +26,6 @@ manifest-listed `images/` files are inputs. `sources/` preserves downloaded byte
 holds contact sheets and diagnostic bodies. All three asset directories remain
 Git-ignored at this depth; metadata and tools are versioned.
 
-The `curatorial_heap` kind records this sourcing basis without inventing a
-visual prompt. It makes no expected pairs, matching verdicts, semantic clusters
-or claim of independent capture origins. See the [fixture format](../../FORMAT.md).
+These leaves use `kind=curatorial_heap`. Category membership explains where an
+image came from; it supplies no expected comparison result. See the
+[fixture format](../../FORMAT.md).

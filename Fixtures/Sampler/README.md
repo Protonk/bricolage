@@ -1,8 +1,9 @@
-# Fixture sampling engine
+# Sampling images
 
-Draw equal tickets from bricolage's local fixture inputs and keep a record that other
-programs can read. Python 3.14.x on macOS or Linux; standard library only. There is
-no network access, image transformation, comparator or activity-specific logic.
+`Fixtures/sample` draws images from the local collections, saves the selection,
+and copies the images into a world directory. Each distinct byte hash has an
+equal chance of selection. It uses Python 3.14.x on macOS or Linux, with no
+third-party packages or network access.
 
 ## Use
 
@@ -34,13 +35,15 @@ engine and records. From inside Fixtures, use `./sample N`; from elsewhere, use
 the executable's absolute path. No inventory preparation or internal Python
 imports are required.
 
+## Worlds and publication
+
 Each successful draw publishes a **world**: a directory holding independent,
 byte-identical copies of the selected images named `<image-sha256>.<original-extension>`,
 beside a `world.json` that lists the world ID and the files, sorted by name.
-The world is what the consuming program receives, and it carries nothing else:
-no draw order, no leaf names, no provenance rows. The world ID is the sample ID,
-so every world leads back to its draw record here. The consumer-facing contract is
-written once in [WORLD.md](../../WORLD.md); this guide describes the Fixtures side.
+The consuming program receives the images and their IDs. Draw order, collection
+names and source records stay in this repository. The world ID is the sample ID,
+which connects it to the saved draw. [WORLD.md](../../WORLD.md) specifies what a
+consumer may rely on.
 
 The default world directory is `Fixtures/output/sampled/`; `--world DIR` writes
 elsewhere. The copies are Git-ignored and disposable; editing them cannot change
@@ -87,7 +90,9 @@ A failure cleaning up the old directory returns exit 1 with `world-cleanup-faile
 and the leftover staging path. The new world remains published and its receipt is
 still attempted. Only that named disposable staging directory needs cleanup.
 
-`draw` refreshes the inventory by default and returns a persistent `sample_id`.
+## Saved samples
+
+`draw` refreshes the inventory by default and returns a saved `sample_id`.
 Omit `--seed` to generate and record a seed. N may be zero; negative N or N larger
 than the eligible population is an error. There is no replacement or size adjustment.
 
@@ -97,7 +102,7 @@ Use the returned full identifiers in these commands:
 Fixtures/sample show SAMPLE_ID --paths
 Fixtures/sample show SAMPLE_ID
 Fixtures/sample verify SAMPLE_ID
-Fixtures/sample publish SAMPLE_ID --world /path/to/world
+Fixtures/sample publish SAMPLE_ID --world Fixtures/output/repeat
 Fixtures/sample annotate SAMPLE_ID --key purpose --json '"Notebook study"'
 Fixtures/sample annotate SAMPLE_ID --image IMAGE_ID --key review --json '{"decision":"accepted","tags":["reference"],"note":"My observation"}'
 Fixtures/sample annotate SAMPLE_ID --image IMAGE_ID --key review --json '{"decision":"revisit","note":"Revised observation"}'
@@ -121,7 +126,8 @@ replaces its **current annotation value**, while preserving the previous event.
 `--delete` removes the current key, preserving history. Sample annotations and
 image annotations are separate; neither writes fixture metadata or draw fields.
 
-To repeat a draw against an existing population, use its recorded size, seed and
+To use the same fixed sample again, use `publish SAMPLE_ID`. To make a new draw
+with the same selection, use the recorded size, seed and
 inventory ID:
 
 ```sh
@@ -133,11 +139,13 @@ annotations from the previous sample. A saved snapshot keeps its original
 eligibility: missing files discovered later are reported, never replaced in the
 draw. Use a fresh `inventory` or the default `draw` to reflect today's availability.
 
+## JSON responses
+
 Draw responses have `schema_version: 1` and these fields:
 
 | Field | Use |
 |---|---|
-| `store` | Absolute path of the record store this command read or wrote; present on every command's response |
+| `store` | Absolute path of the record store this command read or wrote; absent from errors that prevent completion |
 | `draw` | Original persistent record, including `sample_id`, `image_ids`, seed and inventory ID |
 | `population` | Snapshot ID and file, `counts`, every leaf with its status, the `checkout` hint and population `problems` |
 | `population.counts.eligible` | M, the number of eligible distinct images in this draw's snapshot |
@@ -152,24 +160,32 @@ additive: fields may be added, never removed or retyped, and readers ignore fiel
 they do not know. A removal or retyping raises the version, and loaders keep
 accepting earlier versions, as the population schema does.
 
-An agent or program can call the engine and use the returned paths immediately:
+A program can read the report before deciding whether to use its output:
 
 ```python
 import json
 import subprocess
+import sys
 
 result = subprocess.run(
     ["Fixtures/sample", "12", "--seed", "my-investigation"],
-    capture_output=True, text=True, check=True,
+    capture_output=True, text=True,
 )
 sample = json.loads(result.stdout)
+if result.returncode:
+    print(json.dumps(sample, indent=2), file=sys.stderr)
+    raise SystemExit(result.returncode)
 sample_id = sample["draw"]["sample_id"]
 image_paths = [item["sampled_path"] for item in sample["images"]]
 ```
 
-Every command writes JSON to stdout, including failures. Exit code 0 means the
-report lists no problems. Exit code 1 means the command completed and its report
-has a nonempty `problems` list: unavailable or unlisted fixture files, a publication
+This example stops on any problem. A caller can instead examine an exit-1
+report's `output` fields to decide whether its published world is usable.
+
+Commands report results and errors as JSON on stdout. Help prints plain text;
+a missing environment or wrong Python version reports only to stderr.
+Exit code 0 means the report lists no problems. Exit code 1 means the command
+completed and its report has a nonempty `problems` list: unavailable or unlisted fixture files, a publication
 failure, a damaged or snapshotless draw in `list`, or a missing snapshot in `show`
 and `verify`. Read `problems` before deciding whether the result is usable; a draw
 with `output.published` true is complete even when the population reports problems
@@ -184,8 +200,8 @@ Nothing is repaired on failure; fix the fixture or record the message names.
 missing file never causes a replacement draw. An oversized request is rejected
 before creating a sample. On a failed publication, `sampled_path` values are null;
 the saved draw remains available and `publish` can materialize it later. `show` and
-`verify` inspect fixture originals and durable records, without changing or relying
-on any world. `show` is the key: it joins a world's IDs back to leaves and rows. `list` reports
+`verify` inspect fixture originals and saved records, without changing or relying
+on any world. `show` connects a world's IDs to source records. `list` reports
 every draw directory; a damaged record appears with status `damaged` and its error
 rather than hiding the others.
 
@@ -197,16 +213,24 @@ from the caller's working directory. Two stores matter:
 
 | Store | Location | Use |
 |---|---|---|
-| Scratch (default) | `Fixtures/output/records/` | Every draw, publish and annotation unless told otherwise. Disposable and Git-ignored, so exploration, tests and agents leave no diff |
+| Scratch (default) | `Fixtures/output/records/` | Default store for draws, publications and annotations. Disposable and Git-ignored |
 | Durable (`--keep`) | [records/](records/) | Draws meant to outlive the session. Versioned text only; commit it after a `--keep` draw |
 
 The first command that needs the scratch store seeds it with a copy of the durable
 records, so the committed draws can be shown, verified and republished with no option.
-Later durable changes are not mirrored into an existing scratch store; delete
-`Fixtures/output/records/` to seed it again. Every response carries a `store` field
-naming the store it used, so a draw that was meant to be kept but landed in scratch is
-visible in the output already being read. A scratch world is only as durable as its
-store: clearing `output/` removes both. `--store` names any other directory; stores
+Later changes in the versioned store are not copied into an existing scratch store.
+Use `--keep` for later commands on kept draws:
+
+```sh
+Fixtures/sample --keep show SAMPLE_ID
+Fixtures/sample --keep verify SAMPLE_ID
+Fixtures/sample --keep publish SAMPLE_ID --world Fixtures/output/repeat
+```
+
+Deleting `Fixtures/output/records/` makes the next command seed it again, losing
+any scratch draws and annotations. A completed report's `store` field names the
+store used. Clearing `output/` removes both scratch records and their worlds.
+`--store` names any other directory; stores
 under `output/` are disposable too, and `--store` with `--keep` is a usage error.
 Original image bytes remain at their fixture locations in every case. Back up or
 version a durable store whole, including inventories.

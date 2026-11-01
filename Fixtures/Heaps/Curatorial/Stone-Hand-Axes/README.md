@@ -1,24 +1,15 @@
 # Stone Hand Axes
 
-## Purpose and basis
+Photographs and drawings of hand axes selected from three Commons categories,
+using a fixed order, thumbnail review and recorded artifact exclusions.
 
-Fixed-order sample of three direct Commons categories, with thumbnail scope and documented work/specimen exclusions. No expected matches.
 Fixture ID: `hazy-stone-hand-axes-v1`; kind: `curatorial_heap`.
+The manifest lists **50 inputs**.
 
-## Completeness
+Use the [shared fixture format](../../../FORMAT.md) for the directory layout and the
+[provenance index](provenance/README.md) for source and selection records.
 
-The published manifest contains **50 inputs**. The detailed record below
-retains the original selection counts, pending cases and acquisition limitations.
-The layout migration changes no membership or completion status.
-
-## Contents
-
-This leaf follows the [shared fixture format](../../../FORMAT.md).
-`images/`, `sources/`, `previews/` and `batches/` retain their roles. Live commands
-and dependencies are in `tools/`; the [evidence index](provenance/README.md)
-locates intake/construction records, receipts and preserved packages.
-
-## Validation
+## Check this collection
 
 From the repository root, using Python 3.14.x:
 
@@ -27,16 +18,10 @@ Fixtures/.venv/bin/python -m pip install -r Fixtures/Heaps/Curatorial/Stone-Hand
 Fixtures/.venv/bin/python Fixtures/Heaps/Curatorial/Stone-Hand-Axes/tools/check.py
 ```
 
-The check is offline and includes the shared layout check and the existing
-specialized validators. `--metadata-only` omits media and specialized checks.
+The check is offline. `--metadata-only` checks layout and catalogs without
+media or the specialized validators.
 
-## Limitations
-
-Selection and source relationships retain their recorded scope; they are not
-similarity scores or additional matching assertions. Technical/provenance
-uncertainties and partial acquisitions remain documented below.
-
-## Detailed record
+## Images and records
 
 **50 selected images, all 50 acquired and validated. Three earlier cases remain
 deferred, so 33 later selections are provisional.** This is one Curatorial leaf,

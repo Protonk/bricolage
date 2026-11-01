@@ -1,8 +1,8 @@
-# Provenance relationships
+# Related images
 
-These three sets were chosen for known relationships among their sources and
-captures. Provenance determines the recorded relationship, not whether the
-images must look similar to a particular algorithm.
+These sets contain images with recorded connections: edits of a common source,
+separate photographs of a scene, and images generated from source descriptions.
+They let a test examine how an image algorithm handles each relationship.
 
 | Set | Fixture ID | Inputs | Relationship | Focus / probes / full |
 |---|---|---:|---|---:|
@@ -11,7 +11,7 @@ images must look similar to a particular algorithm.
 | [Variants](Variants/README.md) | `hazy-meme-fixtures-v0` | 42 | Constructed changes, donor replacements and supplied description-mediated generations | 15 / 54 / 54 pairs |
 
 All use the [shared format](../FORMAT.md). Variants retains `kind=derivatives`;
-its richer construction lineage is recorded in sidecars. Multiview scene labels
+its construction steps are recorded in separate files. Multiview scene labels
 and source-family labels remain distinct. Neither is a similarity score.
 
 From the repository root:
@@ -22,7 +22,7 @@ Fixtures/.venv/bin/python Fixtures/Relationships/Multiviews/tools/check.py
 Fixtures/.venv/bin/python Fixtures/Relationships/Variants/tools/check.py
 ```
 
-Derivatives remains the default. Use the individual README files for generation
+The comparison runner defaults to Derivatives. Use the individual README files for generation
 checks and image-preservation limits; the [shared tools](../tools/README.md) run
 probe comparisons against a published world.
 The [Similarity heap](../Heaps/Similarity/README.md) has a separate selection basis.

@@ -1,24 +1,15 @@
 # POTY — People and human activity
 
-## Purpose and basis
+A seeded selection from the 2023–2025 Commons Picture of the Year Round 1
+People and human activity lists.
 
-POTY Round 1 People and human activity, 2023–2025; seeded selection, no expected matches.
 Fixture ID: `hazy-poty-people-and-human-activity-v1`; kind: `curatorial_heap`.
+The manifest lists **50 inputs**.
 
-## Completeness
+Use the [shared fixture format](../../../../FORMAT.md) for the directory layout and the
+[provenance index](provenance/README.md) for source and selection records.
 
-The published manifest contains **50 inputs**. The detailed record below
-retains the original selection counts, pending cases and acquisition limitations.
-The layout migration changes no membership or completion status.
-
-## Contents
-
-This leaf follows the [shared fixture format](../../../../FORMAT.md).
-`images/`, `sources/`, `previews/` and `batches/` retain their roles. Live commands
-and dependencies are in `tools/`; the [evidence index](provenance/README.md)
-locates intake/construction records, receipts and preserved packages.
-
-## Validation
+## Check this collection
 
 From the repository root, using Python 3.14.x:
 
@@ -27,16 +18,10 @@ Fixtures/.venv/bin/python -m pip install -r Fixtures/Heaps/Curatorial/POTY/Peopl
 Fixtures/.venv/bin/python Fixtures/Heaps/Curatorial/POTY/People-and-human-activity/tools/check.py
 ```
 
-The check is offline and includes the shared layout check and the existing
-specialized validators. `--metadata-only` omits media and specialized checks.
+The check is offline. `--metadata-only` checks layout and catalogs without
+media or the specialized validators.
 
-## Limitations
-
-Selection and source relationships retain their recorded scope; they are not
-similarity scores or additional matching assertions. Technical/provenance
-uncertainties and partial acquisitions remain documented below.
-
-## Detailed record
+## Images and records
 
 **Complete: 50 acquired / 50 selected / 238 eligible entries.** Target: 50. Excluded in
 the processed ordering: 25; unused reserve: 163; pending acquisition: 0; pending

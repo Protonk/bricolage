@@ -1,18 +1,17 @@
-# One leaf fixture template
+# Start a fixture collection
 
 Use this template for every Similarity or Curatorial contribution and every
 relationship set. Collection/group directories are indexes; only leaves have
 manifests. Arbitrary nesting under Heaps or Relationships is supported.
 
 For help from a web partner, use the [short handoff guide](../WEB-AGENT-GUIDE.md).
-The local integrator preserves the supplied brief and exports unchanged under
-`provenance/supplied/`, then records the agreed scope and current evidence under
-`provenance/intake/` or `provenance/construction/` as appropriate. Source-specific
-verification belongs in the local tools; incomplete scouting remains explicitly
-incomplete until those checks have been performed.
+Keep the supplied brief and exports unchanged under
+`provenance/supplied/`, then record the selection or construction work under
+`provenance/intake/` or `provenance/construction/`. Add checks for the source's
+particular requirements to the local tools, and record any work still needed.
 
-The template deliberately uses `.in` filenames and lives outside both population
-roots, so neither the sampler nor legacy audit discovery can mistake it for a set.
+The template uses `.in` filenames outside Heaps and Relationships, so the sampler
+and audit tools do not discover it as a collection.
 Run `../.venv/bin/python ../tools/new_fixture.py --help` from this directory,
 or use the repository-root command below:
 
