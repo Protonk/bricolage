@@ -67,7 +67,8 @@ Fixtures/sample annotate SAMPLE_ID --image IMAGE_ID --key review --delete
 `SAMPLE_ID` and `IMAGE_ID` above are placeholders. `show --paths` returns an
 `images` list in draw order: image ID, an available absolute path (or null), and
 every alias's current status. Open those paths with the local viewer of your choice.
-`show` also returns the original draw, frozen fixture/source metadata, current
+`show` also returns the original draw, each image's provenance rows read from the
+checkout and checked against the snapshot's pins, a per-leaf summary, current
 annotations and the complete annotation history, even if image files are missing.
 If the draw's snapshot is missing or damaged, `show` still returns the draw record
 and its image IDs, with the gap listed under `problems`.
@@ -97,7 +98,9 @@ Draw responses have `schema_version: 1` and these fields:
 | Field | Use |
 |---|---|
 | `draw` | Original persistent record, including `sample_id`, `image_ids`, seed and inventory ID |
+| `population` | Snapshot ID and file, `counts`, every leaf with its status, the `checkout` hint and population `problems` |
 | `population.counts.eligible` | M, the number of eligible distinct images in this draw's snapshot |
+| `summary.by_leaf` | How many selected images each leaf contributed |
 | `images` | Draw order; each item has `position`, `image_id`, `sampled_path` for its disposable copy, `available_path` for its fixture original, and all alias `locations` with current statuses |
 | `current_check` | Record reproduction and current file/metadata verification |
 | `output` | Absolute `directory`, `published` Boolean, and `error` if copying or publication failed |
@@ -170,11 +173,20 @@ symlinks are reported as inaccessible. Filesystem observations occur during the
 scan; they are not a lock on the whole checkout. The sampler checks bytes against
 fixture records and relies on fixture validators for image decoding/format checks.
 
-Metadata is copied from each full manifest row, its parent/family source-catalog
-rows (including multiple parents), and the matching import-map row when present.
-Unknown source fields stay unknown. Metadata-file paths and SHA-256s identify
-the surrounding manifest, catalog, import map and readable credits. No provenance
-field is interpreted as a sampling weight or investigation decision.
+A leaf whose `manifest.json`, `sources.csv` or `provenance/import-map.json` cannot
+be read and validated is **excluded**: the inventory records the leaf with the
+error that names the file and field, its images are not tickets, and `draw` still
+proceeds over the remaining population with exit code 1. Fix the leaf, then rescan;
+the population and therefore the snapshot identity change when it returns.
+
+Metadata is pinned, not stored. The snapshot records the path and SHA-256 of each
+leaf's manifest, source catalog, import map and readable credits, which Git already
+versions. `show` reads the manifest row, its parent/family source-catalog rows and
+the matching import-map row from the checkout and compares every pinned file: a
+`frozen` leaf still has its recorded bytes, so the rows shown are exactly the ones
+present at the draw; a `changed` leaf shows current rows with the differing file
+named; an `unreadable` leaf reports its error. Unknown source fields stay unknown.
+No provenance field is interpreted as a sampling weight or investigation decision.
 
 ## Durable format
 
@@ -193,13 +205,16 @@ Upstream metadata is retained as supplied and may itself contain historical path
 
 | Record | Contents |
 |---|---|
-| Inventory | `inventory_id`, `created_at`, and a `population` object with schema/policy, sorted `images`, metadata-file checksums, counts and unlisted inputs |
-| Inventory image | `image_id`, `byte_sha256`, frozen `eligible`, and `aliases`; each alias has fixture ID/kind/path, full manifest/source/import records and observed availability |
+| Inventory | `inventory_id`, `created_at`, a `checkout` hint (Git commit and dirty flag, or null) and a `population` object with schema/policy, `leaves` with status, sorted `images`, metadata-file pins, counts and unlisted inputs |
+| Inventory image | `image_id`, `byte_sha256`, frozen `eligible`, and `aliases`; each alias has its path, leaf path, fixture ID, kind and observed availability |
 | Draw | Schema, sample ID, timestamp, inventory ID/store-relative reference, versioned procedure, exact seed text, requested size, eligible count, ordered `image_ids`, draw checksum |
 | Annotation event | Schema, sequence, event ID, timestamp, sample ID/draw checksum, nullable `image_id` (null means sample), optional author, arbitrary key, `set`/`delete`, and a value for `set` |
 
-Inventory IDs hash the `population` object, excluding its creation timestamp.
-Identical rescans reuse one snapshot. A draw's checksum covers all its fields
+Inventory IDs hash the `population` object, excluding its creation timestamp and
+checkout hint. Identical rescans reuse one snapshot. Population schema 2 pins
+metadata by hash; schema 1 snapshots, which embedded metadata rows per alias, still
+load, replay and show. The hint is where the scan happened as Git saw it; the
+file pins remain the authority, so a scan outside Git or in a dirty tree is valid. A draw's checksum covers all its fields
 except `draw_sha256`. Canonical JSON for these hashes is UTF-8, sorted object keys,
 no ASCII escaping, separators `,` and `:`, and no NaN/infinities. These checks detect
 accidental changes; they are not signatures or authentication.
@@ -213,9 +228,10 @@ An incomplete or malformed log is reported and left intact for explicit repair.
 Use the CLI for concurrent writes; local file locks are not a distributed service.
 
 `verify` checks snapshot/draw integrity, replays the original selection, validates
-annotation history, and rehashes all selected aliases and their fixture metadata
-files. Changed provenance is reported while the frozen metadata remains readable.
-New inventories and all later annotations leave an existing draw unchanged.
+annotation history, and rehashes all selected aliases and their pinned fixture
+metadata files. A changed pin is reported with both hashes; recovering the recorded
+bytes is a Git step, not a sampler one. New inventories and all later annotations
+leave an existing draw unchanged.
 
 ## Sampling procedure, version 1
 

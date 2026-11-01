@@ -64,8 +64,18 @@ class SamplerTests(unittest.TestCase):
         aliases = [a for i in inv['population']['images'] for a in i['aliases']]
         self.assertEqual({a['fixture_id'] for a in aliases},
                          {'Heaps/Curatorial/Nested/Leaf', 'Relationships/Variants'})
-        self.assertEqual({a['manifest_record']['transformation'] for a in aliases}, {'source', 'variant'})
-        self.assertTrue(all(a['source_records'][0]['credit_status'] == 'Example credit' for a in aliases))
+        self.assertNotIn('manifest_record', aliases[0])  # Rows are pinned by hash, not stored.
+        self.assertEqual([l['status'] for l in inv['population']['leaves']], ['ok', 'ok'])
+        self.assertIn('checkout', inv)
+        draw = s.create_draw(self.store, inv, 4, 'all')
+        shown = s.inspect_draw(self.store, draw['sample_id'], self.repo)
+        rows = [p for image in shown['images'] for p in image['provenance']]
+        self.assertEqual({p['status'] for p in rows}, {'frozen'})
+        self.assertEqual({p['manifest_record']['transformation'] for p in rows}, {'source', 'variant'})
+        self.assertTrue(all(p['source_records'][0]['credit_status'] == 'Example credit' for p in rows))
+        self.assertEqual(shown['summary']['by_leaf'],
+                         {'Fixtures/Heaps/Curatorial/Nested/Leaf': 2, 'Fixtures/Relationships/Variants': 2})
+        self.assertEqual(shown['problems'], [])
 
     def test_archives_source_copies_and_previews_are_not_extra_tickets(self):
         before = self.inventory()['population']
@@ -193,18 +203,37 @@ class SamplerTests(unittest.TestCase):
         self.assertEqual(self.cli('show', draw['sample_id']).returncode, 0)
         self.assertNotEqual(self.inventory()['inventory_id'], draw['inventory_id'])
 
-    def test_changed_provenance_is_reported_while_frozen_metadata_survives(self):
+    def test_changed_provenance_is_reported_against_its_pin_and_shown_as_current(self):
         draw = self.draw(4)
-        before = s.inspect_draw(self.store, draw['sample_id'], self.repo)['images']
+        heap_rows = lambda shown: [p for image in shown['images'] for p in image['provenance']
+                                   if p['fixture_path'] == 'Fixtures/Heaps/Curatorial/Nested/Leaf']
+        before = heap_rows(s.inspect_draw(self.store, draw['sample_id'], self.repo))
+        self.assertEqual({p['status'] for p in before}, {'frozen'})
         path = self.heap / 'sources.csv'
         path.write_text(path.read_text().replace('Example credit', 'Changed credit'))
-        after = s.inspect_draw(self.store, draw['sample_id'], self.repo)['images']
-        self.assertEqual(before, after)
+        shown = s.inspect_draw(self.store, draw['sample_id'], self.repo)
+        after = heap_rows(shown)
+        self.assertEqual({p['status'] for p in after}, {'changed'})
+        self.assertEqual(after[0]['source_records'][0]['credit_status'], 'Changed credit')
+        changed = [m for m in after[0]['metadata'] if m['status'] != 'frozen']
+        self.assertEqual([(m['path'], m['status']) for m in changed],
+                         [('Fixtures/Heaps/Curatorial/Nested/Leaf/sources.csv', 'changed')])
+        self.assertTrue(changed[0]['pinned_sha256'] != changed[0]['observed_sha256'])
+        self.assertEqual([p['kind'] for p in shown['problems']], ['metadata-changed'])
+        self.assertEqual(self.cli('show', draw['sample_id']).returncode, 1)
         result = s.verify_draw(self.store, draw['sample_id'], self.repo)
         self.assertEqual(result['images_available'], 4)
         self.assertEqual(len(result['problems']), 1)
         self.assertEqual(result['problems'][0]['kind'], 'metadata-changed')
         self.assertEqual(result['problems'][0]['status'], 'changed')
+        # A leaf that can no longer be read is reported once, and the other leaf still resolves.
+        (self.heap / 'manifest.json').write_text('{not json')
+        shown = s.inspect_draw(self.store, draw['sample_id'], self.repo)
+        self.assertEqual({p['status'] for p in heap_rows(shown)}, {'unreadable'})
+        self.assertEqual(sorted(p['kind'] for p in shown['problems']),
+                         ['leaf-unreadable', 'metadata-changed', 'metadata-changed'])
+        self.assertTrue(all(p['status'] == 'frozen' for image in shown['images'] for p in image['provenance']
+                            if p['fixture_path'] == 'Fixtures/Relationships/Variants'))
 
     def test_records_and_fixture_paths_survive_checkout_relocation(self):
         draw = self.draw()
@@ -414,27 +443,76 @@ class SamplerTests(unittest.TestCase):
             (lambda m: m.__setitem__('schema_version', 2), 'unsupported schema_version'),
         ]
         original = manifest.read_text()
+        leaf_path = 'Fixtures/Heaps/Curatorial/Nested/Leaf'
         for mutate, expected in cases:
             value = json.loads(original)
             mutate(value)
             manifest.write_text(json.dumps(value))
-            with self.assertRaisesRegex(s.SamplerError, 'Fixture leaf Fixtures/Heaps/Curatorial/Nested/Leaf: .*' + expected) as caught:
-                self.inventory()
+            with self.assertRaisesRegex(s.SamplerError, 'Fixture leaf ' + leaf_path + ': .*' + expected) as caught:
+                s.read_leaf(self.repo, manifest)
             self.assertEqual(caught.exception.code, 'fixture')
-            self.assertEqual(caught.exception.details['leaf'], 'Fixtures/Heaps/Curatorial/Nested/Leaf')
+            self.assertEqual(caught.exception.details['leaf'], leaf_path)
         manifest.write_text(original)
         sources = self.heap / 'sources.csv'
         sources.unlink()
         with self.assertRaisesRegex(s.SamplerError, 'sources.csv is missing'):
-            self.inventory()
+            s.read_leaf(self.repo, manifest)
         sources.write_text('source_filename,credit\nx,y\n')
         with self.assertRaisesRegex(s.SamplerError, 'family_id column'):
-            self.inventory()
-        result = self.cli('1')
-        self.assertEqual(result.returncode, 2)
-        error = json.loads(result.stdout)['error']
-        self.assertEqual((error['code'], error['leaf']), ('fixture', 'Fixtures/Heaps/Curatorial/Nested/Leaf'))
-        self.assertIn('family_id column', result.stderr)
+            s.read_leaf(self.repo, manifest)
+
+    def test_excluded_leaf_is_recorded_and_the_draw_proceeds_with_a_nonzero_exit(self):
+        (self.heap / 'sources.csv').unlink()
+        inv = self.inventory()
+        self.assertEqual(inv['population']['counts'], dict(leaves=2, excluded_leaves=1, manifest_records=2,
+                                                           distinct_images=2, eligible=2, alias_records=0))
+        excluded = [l for l in inv['population']['leaves'] if l['status'] == 'excluded']
+        self.assertEqual(excluded[0]['fixture_path'], 'Fixtures/Heaps/Curatorial/Nested/Leaf')
+        self.assertIn('sources.csv is missing', excluded[0]['error']['message'])
+        result = self.cli('2', '--seed', 'partial')
+        self.assertEqual(result.returncode, 1, result.stderr)
+        response = json.loads(result.stdout)
+        self.assertTrue(response['output']['published'])
+        self.assertEqual([p['kind'] for p in response['problems']], ['leaf-excluded'])
+        self.assertEqual(response['problems'][0]['fixture_path'], 'Fixtures/Heaps/Curatorial/Nested/Leaf')
+        self.assertEqual(response['summary']['by_leaf'], {'Fixtures/Relationships/Variants': 2})
+        self.assertEqual(self.cli('inventory').returncode, 1)
+        # Restoring the leaf changes the population and therefore the snapshot identity.
+        (self.heap / 'sources.csv').write_text('family_id,credit_status\nsource-a,Example credit\n')
+        self.assertNotEqual(self.inventory()['inventory_id'], inv['inventory_id'])
+        self.assertEqual(self.inventory()['population']['counts']['eligible'], 4)
+
+    def legacy_inventory(self):
+        """A schema 1 snapshot as the first sampler release wrote it: rows embedded per alias."""
+        current = self.inventory()
+        pop = json.loads(json.dumps(current['population']))
+        repo = self.repo.resolve()
+        leaves = {m.parent.relative_to(repo).as_posix(): s.read_leaf(repo, m) for m in s.manifests(repo)}
+        for item in pop['images']:
+            for alias in item['aliases']:
+                leaf = leaves[alias['fixture_path']]
+                image = next(i for i in leaf['images'] if alias['path'].endswith('/' + i['name']))
+                alias.update(manifest_record=image['record'], source_records=image['source_records'],
+                             import_record=image['import_record'])
+                alias['availability'] = dict(status=alias['availability']['status'],
+                                             observed_sha256=item['byte_sha256'])
+        pop['schema_version'] = 1
+        del pop['leaves']
+        del pop['counts']['excluded_leaves']
+        return dict(inventory_id=s.digest(pop), created_at=s.utc(), population=pop)
+
+    def test_schema_1_snapshots_still_load_replay_and_show(self):
+        legacy = s.save_inventory(self.store, self.legacy_inventory())
+        draw = s.create_draw(self.store, legacy, 3, 'legacy')
+        loaded, snapshot = s.load_draw(self.store, draw['sample_id'])
+        self.assertEqual(snapshot['population']['schema_version'], 1)
+        self.assertEqual(loaded['image_ids'], s.sample_ids(self.inventory(), 3, 'legacy'))
+        shown = s.inspect_draw(self.store, draw['sample_id'], self.repo)
+        self.assertEqual({p['status'] for image in shown['images'] for p in image['provenance']}, {'frozen'})
+        self.assertEqual(shown['problems'], [])
+        self.assertTrue(s.verify_draw(self.store, draw['sample_id'], self.repo)['ok'])
+        self.assertEqual(json.loads(self.cli('inventory').stdout)['counts']['excluded_leaves'], 0)
+        self.assertEqual(self.cli('show', draw['sample_id'], '--paths').returncode, 0)
 
     def test_argument_mistakes_are_json_errors_too(self):
         result = self.cli('nonsense')

@@ -15,6 +15,7 @@ from pathlib import Path, PurePosixPath
 import re
 import secrets
 import shutil
+import subprocess
 import sys
 import tempfile
 from datetime import datetime, timezone
@@ -25,6 +26,7 @@ REPO = Path(__file__).resolve().parents[2]
 DEFAULT_STORE = Path(__file__).resolve().parent / 'records'
 PROCEDURE = 'sha256-counter-rejection-partial-fisher-yates-v1'
 POLICY = 'active-manifest-inputs; exact-byte-sha256-aliases; one-ticket-per-hash-v1'
+POPULATION_SCHEMAS = (1, 2)  # 1 embedded metadata rows; 2 pins metadata files by hash only.
 SKIP_DIRS = {'images', 'sources', 'previews', 'provenance', '__pycache__', '.git'}
 HEX = re.compile(r'[0-9a-f]{64}\Z')
 DRAW_FIELDS = (('schema_version', int), ('sample_id', str), ('created_at', str),
@@ -243,12 +245,45 @@ def read_leaf(repo, manifest_path):
                 metadata_files=files, unlisted_inputs=unlisted)
 
 
+def compact_status(availability):
+    """Keep only what an ok/missing/changed/inaccessible status needs to explain itself."""
+    compact = dict(status=availability['status'])
+    if availability['status'] == 'changed':
+        compact['observed_sha256'] = availability['observed_sha256']
+    if 'error' in availability:
+        compact['error'] = availability['error']
+    return compact
+
+
+def checkout_hint(repo):
+    """Where the snapshot was taken, as Git saw it. A hint only; the file pins are authoritative."""
+    def git(*words):
+        done = subprocess.run(['git', '-C', str(repo), *words], capture_output=True, text=True, timeout=60)
+        return done.stdout if done.returncode == 0 else None
+    try:
+        commit = git('rev-parse', 'HEAD')
+        if commit is None:
+            return None
+        status = git('status', '--porcelain')
+        return dict(git_commit=commit.strip(), git_dirty=None if status is None else bool(status.strip()))
+    except (OSError, subprocess.SubprocessError):
+        return None
+
+
 def build_inventory(repo):
+    """Scan every active leaf. A leaf whose metadata fails is excluded and recorded, not fatal."""
     repo = Path(repo).resolve()
-    tickets, metadata_files, unlisted = {}, [], []
-    leaves = [read_leaf(repo, manifest_path) for manifest_path in manifests(repo)]
+    tickets, metadata_files, unlisted, leaves = {}, [], [], []
     occurrences = 0
-    for leaf in leaves:
+    for manifest_path in manifests(repo):
+        rel = manifest_path.parent.relative_to(repo).as_posix()
+        try:
+            leaf = read_leaf(repo, manifest_path)
+        except SamplerError as error:
+            leaves.append(dict(fixture_path=rel, status='excluded', error=error.report()))
+            continue
+        leaves.append(dict(fixture_path=rel, fixture_id=leaf['fixture_id'], kind=leaf['kind'],
+                           manifest_records=len(leaf['images']), status='ok'))
         metadata_files.extend(leaf['metadata_files'])
         unlisted.extend(leaf['unlisted_inputs'])
         for image in leaf['images']:
@@ -256,10 +291,7 @@ def build_inventory(repo):
             path = (leaf['leaf'] / image['name']).relative_to(repo).as_posix()
             alias = dict(path=path, fixture_path=leaf['fixture_path'],
                          fixture_id=leaf['fixture_id'], kind=leaf['kind'],
-                         manifest_record=image['record'],
-                         source_records=image['source_records'],
-                         import_record=image['import_record'],
-                         availability=location_status(repo, path, image['expected']))
+                         availability=compact_status(location_status(repo, path, image['expected'])))
             tickets.setdefault(image_id, dict(image_id=image_id, byte_sha256=image['expected'],
                                               aliases=[]))['aliases'].append(alias)
             occurrences += 1
@@ -269,14 +301,17 @@ def build_inventory(repo):
         item['aliases'].sort(key=lambda a: a['path'])
         item['eligible'] = any(a['availability']['status'] == 'ok' for a in item['aliases'])
         images.append(item)
-    population = dict(schema_version=1, policy=POLICY, images=images,
+    leaves.sort(key=lambda leaf: leaf['fixture_path'])
+    excluded = sum(leaf['status'] == 'excluded' for leaf in leaves)
+    population = dict(schema_version=2, policy=POLICY, leaves=leaves, images=images,
                       metadata_files=sorted(metadata_files, key=lambda r: r['path']),
                       unlisted_inputs=sorted(unlisted),
-                      counts=dict(leaves=len(leaves), manifest_records=occurrences,
-                                  distinct_images=len(images),
+                      counts=dict(leaves=len(leaves), excluded_leaves=excluded,
+                                  manifest_records=occurrences, distinct_images=len(images),
                                   eligible=sum(i['eligible'] for i in images),
                                   alias_records=occurrences-len(images)))
-    return dict(inventory_id=digest(population), created_at=utc(), population=population)
+    return dict(inventory_id=digest(population), created_at=utc(), checkout=checkout_hint(repo),
+                population=population)
 
 
 def validate_inventory(inventory):
@@ -284,7 +319,7 @@ def validate_inventory(inventory):
     pop = field(inventory, 'population', dict, what)
     inventory_id = field(inventory, 'inventory_id', str, what)
     require(inventory_id == digest(pop), 'record-damaged', f'{what} {inventory_id}: checksum differs from its contents')
-    require(field(pop, 'schema_version', int, what) == 1 and pop.get('policy') == POLICY,
+    require(field(pop, 'schema_version', int, what) in POPULATION_SCHEMAS and pop.get('policy') == POLICY,
             'record-invalid', f'{what} {inventory_id}: unsupported population schema or policy')
     images = field(pop, 'images', list, what)
     ids = [field(i, 'image_id', str, what) for i in images]
@@ -294,11 +329,26 @@ def validate_inventory(inventory):
         require(HEX.fullmatch(sha) and item['image_id'] == 'sha256:' + sha,
                 'record-invalid', f'{what} {inventory_id}: invalid image identity {item["image_id"]}')
         aliases = field(item, 'aliases', list, what)
+        for alias in aliases:
+            field(alias, 'path', str, what)
+            field(alias, 'fixture_path', str, what)
+            field(field(alias, 'availability', dict, what), 'status', str, what)
         require(aliases and field(item, 'eligible', bool, what) == any(
             a['availability']['status'] == 'ok' for a in aliases),
             'record-invalid', f'{what} {inventory_id}: invalid eligibility for {item["image_id"]}')
+    for record in field(pop, 'metadata_files', list, what):
+        field(record, 'path', str, what)
+        field(record, 'sha256', str, what)
+    for leaf in pop.get('leaves', []):
+        field(leaf, 'fixture_path', str, what)
+        require(field(leaf, 'status', str, what) in ('ok', 'excluded'), 'record-invalid',
+                f'{what} {inventory_id}: unknown leaf status {leaf["status"]}')
     field(pop, 'counts', dict, what)
     return inventory
+
+
+def excluded_leaves(inventory):
+    return [leaf for leaf in inventory['population'].get('leaves', []) if leaf['status'] == 'excluded']
 
 
 def inventory_file(store, inventory_id):
@@ -522,6 +572,95 @@ def current_images(repo, draw, inventory):
     return rows
 
 
+def selected_items(draw, inventory):
+    indexed = {r['image_id']: r for r in inventory['population']['images']}
+    return [indexed[i] for i in draw['image_ids'] if i in indexed]
+
+
+def pinned_metadata(repo, inventory, leaf_paths):
+    """Compare each pinned metadata file of these leaves with the checkout now."""
+    rows = []
+    for record in inventory['population']['metadata_files']:
+        if any(record['path'].startswith(leaf + '/') for leaf in leaf_paths):
+            status = location_status(repo, record['path'], record['sha256'])
+            status['status'] = {'ok': 'frozen'}.get(status['status'], status['status'])
+            rows.append(dict(path=record['path'], pinned_sha256=record['sha256'], **status))
+    return rows
+
+
+def leaf_summary(items):
+    """How many selected images each leaf contributed, counting every alias once per image."""
+    counts = {}
+    for item in items:
+        for leaf in sorted({a['fixture_path'] for a in item['aliases']}):
+            counts[leaf] = counts.get(leaf, 0) + 1
+    return dict(sorted(counts.items()))
+
+
+class Provenance:
+    """Resolve the live manifest and catalog rows behind a snapshot alias.
+
+    Rows are read from the checkout, never stored in the snapshot. Each leaf's pinned
+    metadata files are compared with the checkout; `frozen` means every pinned file of
+    the leaf still has its recorded bytes, so the rows shown are exactly the frozen ones.
+    """
+    def __init__(self, repo, inventory):
+        self.repo = Path(repo).resolve()
+        self.inventory = inventory
+        self.leaves = {}
+
+    def leaf(self, leaf_path):
+        if leaf_path not in self.leaves:
+            pins = pinned_metadata(self.repo, self.inventory, [leaf_path])
+            try:
+                data = read_leaf(self.repo, fixture_path(self.repo, leaf_path) / 'manifest.json')
+                error = None
+            except SamplerError as failure:
+                data, error = None, failure.report()
+            if data is not None:
+                pinned = {r['path'] for r in pins}
+                pins.extend(dict(path=r['path'], pinned_sha256=None, status='unpinned', observed_sha256=r['sha256'])
+                            for r in data['metadata_files'] if r['path'] not in pinned)
+            frozen = error is None and all(r['status'] == 'frozen' for r in pins)
+            self.leaves[leaf_path] = dict(data=data, error=error, metadata=pins,
+                                          status='frozen' if frozen else 'unreadable' if error else 'changed')
+        return self.leaves[leaf_path]
+
+    def alias(self, alias):
+        leaf = self.leaf(alias['fixture_path'])
+        result = dict(path=alias['path'], fixture_path=alias['fixture_path'],
+                      fixture_id=alias.get('fixture_id'), kind=alias.get('kind'),
+                      status=leaf['status'], metadata=leaf['metadata'],
+                      manifest_record=None, source_records=[], import_record=None)
+        if leaf['error']:
+            result['error'] = leaf['error']
+            return result
+        name = alias['path'].removeprefix(alias['fixture_path'] + '/')
+        image = next((i for i in leaf['data']['images'] if i['name'] == name), None)
+        if image is None:
+            result['status'] = 'unlisted-now'
+            return result
+        result.update(manifest_record=image['record'], source_records=image['source_records'],
+                      import_record=image['import_record'])
+        return result
+
+
+def metadata_problems(provenance_rows):
+    """One problem per pinned file that no longer has its recorded bytes, deduplicated."""
+    seen, problems = set(), []
+    for row in provenance_rows:
+        if 'error' in row and row['status'] == 'unreadable':
+            key = ('leaf', row['fixture_path'])
+            if key not in seen:
+                seen.add(key)
+                problems.append(dict(kind='leaf-unreadable', fixture_path=row['fixture_path'], **row['error']))
+        for record in row['metadata']:
+            if record['status'] != 'frozen' and ('file', record['path']) not in seen:
+                seen.add(('file', record['path']))
+                problems.append(dict(kind='metadata-changed', **record))
+    return problems
+
+
 def inspect_draw(store, sample_id, repo, paths_only=False):
     draw = read_draw(store, sample_id)
     inventory, problems = resolve_inventory(store, draw)
@@ -533,10 +672,21 @@ def inspect_draw(store, sample_id, repo, paths_only=False):
     except SamplerError as error:
         events = []
         problems.append(dict(kind='annotations-unreadable', **error.report()))
-    indexed = {r['image_id']: r for r in inventory['population']['images']} if inventory else {}
-    return dict(schema_version=1, draw=draw,
-                snapshot_available=inventory is not None,
-                images=[indexed.get(i, dict(image_id=i)) for i in draw['image_ids']],
+    images, summary, checkout = [], {}, None
+    if inventory:
+        provenance = Provenance(repo, inventory)
+        indexed = {r['image_id']: r for r in inventory['population']['images']}
+        for n, image_id in enumerate(draw['image_ids'], 1):
+            item = indexed.get(image_id, dict(image_id=image_id, aliases=[]))
+            images.append(dict(position=n, **item,
+                               provenance=[provenance.alias(a) for a in item['aliases']]))
+        problems.extend(metadata_problems(row for image in images for row in image['provenance']))
+        summary = leaf_summary(selected_items(draw, inventory))
+        checkout = inventory.get('checkout')
+    else:
+        images = [dict(position=n, image_id=i) for n, i in enumerate(draw['image_ids'], 1)]
+    return dict(schema_version=1, draw=draw, snapshot_available=inventory is not None,
+                snapshot_checkout=checkout, summary=dict(by_leaf=summary), images=images,
                 current_locations=current, annotations=annotation_state(events),
                 annotation_history=events, problems=problems)
 
@@ -555,13 +705,10 @@ def verify_draw(store, sample_id, repo):
                 problems.append(dict(kind='image-unavailable', image_id=row['image_id'],
                                      **{k: v for k, v in location.items() if k != 'absolute_path'}))
     if inventory:
-        selected = [i for i in inventory['population']['images'] if i['image_id'] in set(draw['image_ids'])]
-        leaf_paths = {a['fixture_path'] for item in selected for a in item['aliases']}
-        for record in inventory['population']['metadata_files']:
-            if any(record['path'].startswith(leaf + '/') for leaf in leaf_paths):
-                status = location_status(repo, record['path'], record['sha256'])
-                if status['status'] != 'ok':
-                    problems.append(dict(kind='metadata-changed', path=record['path'], **status))
+        leaf_paths = {a['fixture_path'] for item in selected_items(draw, inventory) for a in item['aliases']}
+        problems.extend(dict(kind='metadata-changed', **record)
+                        for record in pinned_metadata(repo, inventory, leaf_paths)
+                        if record['status'] != 'frozen')
     return dict(schema_version=1, sample_id=sample_id, record_valid=True,
                 original_draw_reproduced=inventory is not None,
                 requested_size=draw['requested_size'],
@@ -591,8 +738,10 @@ def list_draws(store):
 
 def population_problems(inventory):
     pop = inventory['population']
-    problems = [dict(kind='alias-unavailable', image_id=i['image_id'], path=a['path'], **a['availability'])
-                for i in pop['images'] for a in i['aliases'] if a['availability']['status'] != 'ok']
+    problems = [dict(kind='leaf-excluded', fixture_path=leaf['fixture_path'], **leaf['error'])
+                for leaf in excluded_leaves(inventory)]
+    problems.extend(dict(kind='alias-unavailable', image_id=i['image_id'], path=a['path'], **a['availability'])
+                    for i in pop['images'] for a in i['aliases'] if a['availability']['status'] != 'ok')
     problems.extend(dict(kind='unlisted-input', path=p) for p in pop['unlisted_inputs'])
     return problems
 
@@ -601,7 +750,8 @@ def inventory_report(inventory, store):
     pop = inventory['population']
     return dict(schema_version=1, inventory_id=inventory['inventory_id'],
                 file=str(inventory_file(store, inventory['inventory_id']).resolve()),
-                counts=pop['counts'], unlisted_inputs=pop['unlisted_inputs'],
+                checkout=inventory.get('checkout'), counts=pop['counts'],
+                leaves=pop.get('leaves', []), unlisted_inputs=pop['unlisted_inputs'],
                 problems=population_problems(inventory))
 
 
@@ -659,6 +809,7 @@ def draw_command(args):
     for image in images:
         image['sampled_path'] = None
     result = dict(schema_version=1, draw=drawn, population=inventory_report(inventory, args.store),
+                  summary=dict(by_leaf=leaf_summary(selected_items(drawn, inventory))),
                   images=images, current_check=check,
                   output=dict(directory=str(target), published=False), problems=[])
     if check['ok']:
