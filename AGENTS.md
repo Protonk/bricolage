@@ -45,7 +45,9 @@ Portability is a parallel research track: eventually preserve the same caller AP
 across macOS and a possible Linux/OpenCV implementation, while making unsupported
 capabilities explicit. It does not require a backend framework or a port now.
 
-Work on the task requested in the current conversation. The research documents do
+Work on the task requested in the current conversation. One task is already
+selected and specified: lifting Fixtures into its own repository, per
+[FIXTURE-LIFT-PLAN.md](FIXTURE-LIFT-PLAN.md). The research documents do
 not authorize implementing future directions. Leave the next pathway unselected
 until explicitly chosen; let concrete work reveal useful shared structure. Do not
 leave speculative pathway examples, candidate lists, rankings, or implied next

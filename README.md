@@ -15,6 +15,8 @@ The router is specified but not implemented.
 | [Research/Portability](Research/Portability/README.md) | Parallel research into framework handoffs and an eventual shared API on macOS and Linux |
 | [Experiments/AppleVisionTranslation](Experiments/AppleVisionTranslation/README.md) | Working macOS translation channel experiment, with its own Swift package, CLI, tests, and tools |
 | [Fixtures](Fixtures/README.md) | Provenance relationship sets and separately selected image heaps; media remains local and Git-ignored |
+| [WORLD.md](WORLD.md) | What hazy may assume about a world the sampler hands it, and what it owes back |
+| [FIXTURE-LIFT-PLAN.md](FIXTURE-LIFT-PLAN.md) | Handoff for moving Fixtures into its own repository: decisions made and tasks remaining |
 
 There is no root Swift package or router executable. The existing code lives in
 an explicitly named experiment so its structure cannot be mistaken for the
