@@ -1,0 +1,19 @@
+{
+  "utc": "2026-11-01T00:09:35.154180+00:00",
+  "key": "preview-320-ranks-0061-0061",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3AAubeville+stone+tool.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=320&iiurlheight=320&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 5279,
+  "headers": {
+    "date": "Sun, 01 Nov 2026 00:09:35 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-hv9sn",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "cc6cd816-e1e6-4fb6-a26d-fb4175fd44b5"
+  },
+  "sha256": "01d9b59de602173e171d97eaf3257c8649ede5db4b9e3a60c9ab146f4b2f6392"
+}

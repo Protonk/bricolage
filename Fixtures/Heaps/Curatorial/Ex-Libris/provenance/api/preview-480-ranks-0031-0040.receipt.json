@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T23:44:46.574652+00:00",
+  "key": "preview-480-ranks-0031-0040",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3AChrisLebeauMoret.jpg%7CFile%3AThe+ventriculidae+of+the+chalk+BHL22685594+%28cropped%29.jpg%7CFile%3AP%C3%A1gina+inicial+En+pro+del+casticismo+Manuel+G+Revilla+Andr%C3%A9s+Botas+e+Hijo+M%C3%A9xico+1917+02.jpg%7CFile%3AWally+Landsberg%2C+fl.+1918.jpg%7CFile%3APierre+Adamoli%2C+ex-libris+manuscrit%2C4.jpg%7CFile%3AEx-Libris+de+Alfredo+de+Sequeira+Filho+%28cropped%29.jpg%7CFile%3AZnakLadislavKuncir.jpg%7CFile%3ANude+Bookplate+2.jpg%7CFile%3AExlibris+Elsa+K%C3%B6ster+A.v.Chlingensperg.jpg%7CFile%3AOtto+Lemcke+Ex+libris+H+M+Tiedemann+um+1920.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=480&iiurlheight=480&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 50317,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 23:44:46 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-bfhtb",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "4120bce2-371e-42af-81df-482ced9736d3"
+  },
+  "sha256": "383309b13c4ef2b54006e6fc116c616633c23781fb20ee876258beb755f0a347"
+}

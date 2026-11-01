@@ -1,0 +1,12 @@
+{
+  "19c5f42639ceb08f37fa": {
+    "candidate_id": "19c5f42639ceb08f37fa",
+    "rank": 48,
+    "original_mime": "application/ogg",
+    "metadata_path": "provenance/api/preview-480-ranks-0041-0050.json",
+    "metadata_sha256": "01b41b11dae29589d1083613ce3953d8d1c146e20047f4084fc1057b71170215",
+    "reason": "Unsupported video original; no arbitrary frame extraction for a still-image fixture.",
+    "visual_review": "not_performed",
+    "media_request_made": false
+  }
+}

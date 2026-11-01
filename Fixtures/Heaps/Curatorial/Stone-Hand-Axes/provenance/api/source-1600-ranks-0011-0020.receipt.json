@@ -1,0 +1,19 @@
+{
+  "utc": "2026-11-01T00:13:08.974370+00:00",
+  "key": "source-1600-ranks-0011-0020",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3ASmac+Pal%C3%A4olithikum+031.jpg%7CFile%3AMuseum+of+Anatolian+Civilizations+1320329+nevit.jpg%7CFile%3AGLAM+Ice+Age+094.jpg%7CFile%3AHendidor+tipo+21.png%7CFile%3ABifaces+prehist%C3%B3ricos+-+Museo+de+la+Rioja+%281%29.jpg%7CFile%3ABiface%2C+Acheul%C3%A9en+-+Chissey-les-M%C3%A2con%2C+Sa%C3%B4ne-et-Loire.jpg%7CFile%3ABifaz.+Pleistoceno+medio.+Terrazas+del+Manzanares.jpg%7CFile%3AEnrique+Baquedano+con+un+bifaz+en+Olduvai.png%7CFile%3APlate+II.jpg%7CFile%3ABiface+Extension.png&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 45283,
+  "headers": {
+    "date": "Sun, 01 Nov 2026 00:13:09 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-69fq5",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "5af1d5bd-6b2a-4c8a-8538-767a9f31a748"
+  },
+  "sha256": "03c7386a48621111242f79e4bfb98dff38aad9c741af6dbbe40a3fe8b81d3a0f"
+}

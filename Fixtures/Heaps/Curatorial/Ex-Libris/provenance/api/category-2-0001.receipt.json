@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T23:43:22.745106+00:00",
+  "key": "category-2-0001",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&list=categorymembers&cmtitle=Category%3A19th-century+ex+libris&cmtype=file&cmprop=ids%7Ctitle%7Ctype&cmsort=sortkey&cmlimit=500",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 15334,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 23:43:22 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-bnfg6",
+    "cache-control": "private, must-revalidate, max-age=0",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 pass",
+    "x-request-id": "c5fd608d-44ee-4e88-b1c2-978f124dadd6"
+  },
+  "sha256": "6979fda834db70a79123e452cbf9b1df569d069aa2c8f4c9bc505e1e39cdedb1"
+}

@@ -28,6 +28,9 @@ Each README separates selected, acquired and pending counts.
 Evan-Amos-Uploads is an exhaustive direct-category leaf with three exact user
 exclusions and all 133 included files acquired; related captures and alternate
 formats remain included.
+Rocks-in-Thin-Section, Stone-Hand-Axes and Ex-Libris each combine three direct
+category lists into a single leaf, with fixed ordering and recorded thumbnail
+scope reviews. Their READMEs distinguish acquired inputs from deferred cases.
 
 See [the fixture index](../README.md) for intake locations and
 [FORMAT.md](../FORMAT.md) for the existing manifest and asset conventions.
@@ -36,8 +39,9 @@ See [the fixture index](../README.md) for intake locations and
 
 The locally generated [heap picture book](../../output/pdf/hazy-heaps-tour.pdf)
 is a 36-page tour with large plates, contact sheets and linked image credits.
-Its October 2026 edition samples 144 images from the 868 acquired inputs in all
-12 leaf collections. Only the overall image and collection counts appear in the
+Its frozen October 2026 edition samples 144 images from the 868 acquired inputs
+in its original 12 leaf collections. Later additions are outside that edition.
+Only the overall image and collection counts appear in the
 tour; acquisition details remain in the contribution records.
 
 [tour-guide.json](tour-guide.json) fixes the book's image selection, chapter
@@ -55,7 +59,7 @@ python3 -m venv /tmp/hazy-tour-env
 /tmp/hazy-tour-env/bin/python Fixtures/Heaps/tools/build_tour.py
 ```
 
-The builder checks the complete leaf roster and counts, the selected input hashes
+The builder checks the edition's recorded leaf roster and counts, the selected input hashes
 and decoded dimensions, and the contact-sheet ordering before writing
 `output/pdf/hazy-heaps-tour.pdf`. It makes no network requests and changes no
 fixture assets. PDF display copies retain full framing and use up to 180 dpi;

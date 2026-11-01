@@ -1,0 +1,30 @@
+{
+  "46": {
+    "visual_decision": "accept",
+    "visual_reason": "Foliated rock microstructure fills the plane-polarized thin-section field.",
+    "provenance_decision": "accept",
+    "rights_decision": "accept",
+    "reason": "In-scope preview; no established repetition among earlier accepted candidates.",
+    "work_key": "chd-garnet-mica-schist",
+    "work_basis": "File explicitly links Garnet-mica-shist-x-nicols.jpg as the alternate polarized view; only this file is selected.",
+    "rights_basis": "Retained file-specific Commons CC BY-SA 3.0 claim and license template; source/author credit reviewed. This records the claim, not independent authentication.",
+    "original_creator": null,
+    "photographer": "Chd",
+    "digitizer": null,
+    "creator_basis": "Author and own-work source explicitly credit this photomicrograph."
+  },
+  "47": {
+    "visual_decision": "accept",
+    "visual_reason": "Colored chondrule grains fill a documented meteorite thin-section micrograph.",
+    "provenance_decision": "accept",
+    "rights_decision": "accept",
+    "reason": "In-scope preview; no established repetition among earlier accepted candidates.",
+    "work_key": null,
+    "work_basis": "Exact specimen/work identity remains unknown; reviewed title, description and file-page alternatives do not establish a repeat among earlier accepted candidates.",
+    "rights_basis": "Retained file-specific Commons CC BY-SA 4.0 claim and license template; source/author credit reviewed. This records the claim, not independent authentication.",
+    "original_creator": "Ringwoodit",
+    "photographer": "Ringwoodit",
+    "digitizer": null,
+    "creator_basis": "File-specific Artist and own-work source explicitly credit this photomicrograph; uploader is recorded separately."
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "candidate_id": "284b72b37a4fb9339127",
+  "stage": "source",
+  "requested_edge": 1600,
+  "metadata_path": "provenance/api/source-1600-ranks-0001-0010.json",
+  "reason": "API offered an SVG or oversized unscaled original; no media request made. Explicit alternate API rendition required."
+}

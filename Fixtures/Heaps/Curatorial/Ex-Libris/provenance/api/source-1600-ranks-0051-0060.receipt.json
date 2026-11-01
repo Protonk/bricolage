@@ -1,0 +1,19 @@
+{
+  "utc": "2026-11-01T00:19:44.927872+00:00",
+  "key": "source-1600-ranks-0051-0060",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3AEx-libris+M.+de+L%27Epinay.JPG%7CFile%3ABedford+Modern+School+Prize+Book+Plate+-+1889.jpg%7CFile%3AKeber%2C+John+B.+-+DPLA+-+2a63f5a546d0f454c4864a129ef2dda0.jpg%7CFile%3ACH-NB+Archive+Marc+Gonthier+GS-GONTHIER-A-3-a-144.tif%7CFile%3AEx+libris+Georges+A+Wild.jpg%7CFile%3ADye+zaigung+des+hochlobwirdigen+hailigthums+der+Stifftkirchen+aller+hailigen+zu+Wittenburg+%28The+display+of+the+highly+praised+reliquaries+of+the+church+of+All+Saints+at+Wittenberg%29+%28BM+1911%2C0708.1+93%29.jpg%7CFile%3AJakobWackernagelExLibris.jpg%7CFile%3A%D0%9C.+%D0%9B%D0%B5%D0%B1%D0%B5%D0%B4%D0%B7%D0%B5%D0%B2%D0%B0+%D0%AD%D0%BA%D1%81%D0%BB%D1%96%D0%B1%D1%80%D1%8B%D1%81+%D0%90.%D0%9C.+%D0%9C%D0%B0%D0%BA%D0%B0%D1%80%D0%B0%D0%B2%D0%B0%D0%B9.jpg%7CFile%3AThe+larger+North+American+mammals+%28IA+cu31924022547198%29+%28page+2+crop%29.jpg%7CFile%3AExlibris-ManuelBrunet.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 48976,
+  "headers": {
+    "date": "Sun, 01 Nov 2026 00:19:45 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-6x59m",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "04bf6abf-99f9-4af8-8667-d73b986c132e"
+  },
+  "sha256": "da8f046fba09c4add140d61108fdf254c0a56588cd81c73f6432ec4e9835945b"
+}

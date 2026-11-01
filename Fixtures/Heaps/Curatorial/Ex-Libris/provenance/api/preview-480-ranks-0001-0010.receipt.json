@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T23:44:34.809380+00:00",
+  "key": "preview-480-ranks-0001-0010",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3ALandmann%2C+Max+-+DPLA+-+2922d0cca5631f0a4bb083f0459f611c.jpg%7CFile%3AMargaret+Cochrane+Dewar+ex+libris+from+Bookplates+by+de+Courcy+Lewthwaite+Dewar+for+Margaret+Cochrane+Dewar+and+Elma+Archibald+%28cropped%29.jpg%7CFile%3ABookplate+of+Edgar+Rice+Burroughs.jpg%7CFile%3AEx+libris+van+Liliana+Tarozzi%2C+RP-P-2017-2665.jpg%7CFile%3ACaderno+Cartonado%2C+Acervo+do+Museu+Paulista+da+USP+%284%29.jpg%7CFile%3APrint%2C+bookplate+%28BM+1983%2CU.2859%29.jpg%7CFile%3AThe+Tabard+Inn+Library+bookplate+%26+Governing+Rules.png%7CFile%3ABibliotheca+tuerkheimiana.jpg%7CFile%3AJosef+Sech%C3%A9+-+Ex+Eroticis+Kristen+Rasmussen.jpg%7CFile%3AC188a726+04.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=480&iiurlheight=480&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 68250,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 23:44:35 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-sdt6b",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "bc9d0554-657e-4728-82c5-9d8cdb6e38d2"
+  },
+  "sha256": "f763227e223804f403fd38bd835d83f6d19ea1be6100e8661df67a8454fb559b"
+}

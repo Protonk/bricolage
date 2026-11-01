@@ -1,0 +1,58 @@
+{
+  "41": {
+    "visual_decision": "accept",
+    "visual_reason": "A large green zoned crystal and its surrounding grains dominate the thin-section field.",
+    "provenance_decision": "accept",
+    "rights_decision": "accept",
+    "reason": "In-scope preview; no established repetition among earlier accepted candidates.",
+    "work_key": null,
+    "work_basis": "Exact specimen/work identity remains unknown; reviewed title, description and file-page alternatives do not establish a repeat among earlier accepted candidates.",
+    "rights_basis": "Retained file-specific Commons CC BY-SA 4.0 claim and license template; source/author credit reviewed. This records the claim, not independent authentication.",
+    "original_creator": "Ringwoodit",
+    "photographer": "Ringwoodit",
+    "digitizer": null,
+    "creator_basis": "File-specific Artist and own-work source explicitly credit this photomicrograph; uploader is recorded separately."
+  },
+  "42": {
+    "visual_decision": "accept",
+    "visual_reason": "Interlocking colored grains fill the polarized microscope field.",
+    "provenance_decision": "accept",
+    "rights_decision": "accept",
+    "reason": "In-scope preview; no established repetition among earlier accepted candidates.",
+    "work_key": null,
+    "work_basis": "Exact specimen/work identity remains unknown; reviewed title, description and file-page alternatives do not establish a repeat among earlier accepted candidates.",
+    "rights_basis": "Retained file-specific Commons CC BY-SA 4.0 claim and license template; source/author credit reviewed. This records the claim, not independent authentication.",
+    "original_creator": "Strekeisen",
+    "photographer": "Strekeisen",
+    "digitizer": null,
+    "creator_basis": "File-specific Artist and own-work source explicitly credit this photomicrograph; uploader is recorded separately."
+  },
+  "43": {
+    "visual_decision": "accept",
+    "visual_reason": "Relict mineral and fine intergrowths fill the thin-section photomicrograph.",
+    "provenance_decision": "accept",
+    "rights_decision": "accept",
+    "reason": "In-scope preview; no established repetition among earlier accepted candidates.",
+    "work_key": "ringwoodit-omphacit-retrograd",
+    "work_basis": "Exact Omphacit retrograd title pair, same Ringwoodit attribution, Förstenreuth eclogite description and same crystal outlines as rank 51 XPL.",
+    "rights_basis": "Retained file-specific Commons CC BY-SA 4.0 claim and license template; source/author credit reviewed. This records the claim, not independent authentication.",
+    "original_creator": "Ringwoodit",
+    "photographer": "Ringwoodit",
+    "digitizer": null,
+    "creator_basis": "File-specific Artist and own-work source explicitly credit this photomicrograph; uploader is recorded separately."
+  },
+  "44": {
+    "visual_decision": "accept",
+    "visual_reason": "A dark pyrite cube and surrounding strain fringes dominate the microscope field.",
+    "provenance_decision": "accept",
+    "rights_decision": "accept",
+    "reason": "In-scope preview; no established repetition among earlier accepted candidates.",
+    "work_key": null,
+    "work_basis": "Exact specimen/work identity remains unknown; reviewed title, description and file-page alternatives do not establish a repeat among earlier accepted candidates.",
+    "rights_basis": "Retained file-specific Commons CC BY-SA 4.0 claim and license template; source/author credit reviewed. This records the claim, not independent authentication.",
+    "original_creator": "Strekeisen",
+    "photographer": "Strekeisen",
+    "digitizer": null,
+    "creator_basis": "File-specific Artist and own-work source explicitly credit this photomicrograph; uploader is recorded separately."
+  }
+}

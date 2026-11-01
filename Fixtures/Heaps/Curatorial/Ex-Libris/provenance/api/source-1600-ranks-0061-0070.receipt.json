@@ -1,0 +1,19 @@
+{
+  "utc": "2026-11-01T00:19:48.372262+00:00",
+  "key": "source-1600-ranks-0061-0070",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3AJane+Boleyn.jpg%7CFile%3ABookplate-Prince+Albert.jpg%7CFile%3AHnizdovsky+ExLibris+Tree.jpg%7CFile%3AFrancisceumsbibliothek+Exlibris+Johannes+Luckow.JPG%7CFile%3AEx+libris+Kapuziner+Bozen.jpg%7CFile%3ABritannica+Book-Plates+-+Arthur+Vicars+by+C.+W.+Sherborn.jpg%7CFile%3AEx-libris+Giry.JPG%7CFile%3AC188a750+02.jpg%7CFile%3ASammlung+Hobrecker.jpg%7CFile%3AWild+plants+needing+protection+BHL11447707.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 54428,
+  "headers": {
+    "date": "Sun, 01 Nov 2026 00:19:48 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-ch2wz",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "b760f375-253c-425e-abd9-e42fabd759ec"
+  },
+  "sha256": "0d9d4bcd17a1936c7d487118b5108ea753a93a2adfba726f7afa753a8d79f76f"
+}

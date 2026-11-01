@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T23:45:42.194772+00:00",
+  "key": "preview-320-ranks-0001-0001",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3AObsidienne+biface+ethiopie.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=320&iiurlheight=320&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 4112,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 23:45:42 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-zxclw",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "472285b9-f669-4350-90e8-ee207936cf5c"
+  },
+  "sha256": "a89706ca163f538a379d567081c3618462fc2c31a7db477b6f14c965216d113c"
+}

@@ -1,0 +1,9 @@
+{
+  "utc": "2026-11-01T00:16:56.729849+00:00",
+  "reason": "Include all six available Similarity candidates.jsonl catalogs in addition to integrated sources and Curatorial frozen populations.",
+  "previous_sha256": "7e74ed9343d242486460a408461a96e9354700323f8caddb83ed157fbf6a9383",
+  "current_sha256": "d02163a7c3d3a741c56183014518d1e4630f6ad706bd7b7187314e5d5898dcdb",
+  "previous_candidate_entries": 3209,
+  "current_candidate_entries": 4108,
+  "included_overlaps": []
+}

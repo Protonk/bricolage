@@ -1,0 +1,5280 @@
+{
+  "leaf": "Stone-Hand-Axes",
+  "depth": 0,
+  "method": "Direct categorymembers File union by page ID; all continuations exhausted",
+  "categories": [
+    "Category:Stone hand axes",
+    "Category:Acheulean hand axes",
+    "Category:Drawings of stone hand axes"
+  ],
+  "category_counts": {
+    "Category:Stone hand axes": 147,
+    "Category:Acheulean hand axes": 61,
+    "Category:Drawings of stone hand axes": 74
+  },
+  "actual_count": 268,
+  "responses": [
+    {
+      "category": "Category:Stone hand axes",
+      "path": "provenance/api/category-1-0001.json",
+      "sha256": "51b5e6199bfdf8b8a163dc3371611a82e1b2b7ea17e0a96a7ba4e9abdf358191",
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&list=categorymembers&cmtitle=Category%3AStone+hand+axes&cmtype=file&cmprop=ids%7Ctitle%7Ctype&cmsort=sortkey&cmlimit=500",
+      "utc": "2026-10-31T23:43:09.607445+00:00",
+      "rows": 147,
+      "continuation": null
+    },
+    {
+      "category": "Category:Acheulean hand axes",
+      "path": "provenance/api/category-2-0001.json",
+      "sha256": "e359bf70e462e7967d2ea436d36bd3370ff7741e73aa06028dd7db38f152c29c",
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&list=categorymembers&cmtitle=Category%3AAcheulean+hand+axes&cmtype=file&cmprop=ids%7Ctitle%7Ctype&cmsort=sortkey&cmlimit=500",
+      "utc": "2026-10-31T23:43:12.874684+00:00",
+      "rows": 61,
+      "continuation": null
+    },
+    {
+      "category": "Category:Drawings of stone hand axes",
+      "path": "provenance/api/category-3-0001.json",
+      "sha256": "acbdcdbd22c00deb0b835e48efbda789b4eda17b0ff270a4eaab6e416cfb6e16",
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&list=categorymembers&cmtitle=Category%3ADrawings+of+stone+hand+axes&cmtype=file&cmprop=ids%7Ctitle%7Ctype&cmsort=sortkey&cmlimit=500",
+      "utc": "2026-10-31T23:43:16.102843+00:00",
+      "rows": 74,
+      "continuation": null
+    }
+  ],
+  "candidate_id_algorithm": "First 20 hex SHA-256 of UTF-8 hazy-curatorial-triplet-v1 + LF + leaf slug + LF + exact frozen File title",
+  "candidates": [
+    {
+      "candidate_id": "d6696d6bfabe47027a01",
+      "frozen_title": "File:JapanesePolishedStoneAxes.JPG",
+      "category_pageid": 258416,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 258416,
+            "ns": 6,
+            "title": "File:JapanesePolishedStoneAxes.JPG",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "ce1578be78758c8d4d49",
+      "frozen_title": "File:Aubeville stone tool.jpg",
+      "category_pageid": 480419,
+      "memberships": [
+        "Category:Acheulean hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Acheulean hand axes",
+          "row": {
+            "pageid": 480419,
+            "ns": 6,
+            "title": "File:Aubeville stone tool.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "6f338bb045f7f7d47acc",
+      "frozen_title": "File:Acheuleanhandaxes.jpg",
+      "category_pageid": 499022,
+      "memberships": [
+        "Category:Acheulean hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Acheulean hand axes",
+          "row": {
+            "pageid": 499022,
+            "ns": 6,
+            "title": "File:Acheuleanhandaxes.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "754ac3599c6e9baeb9e3",
+      "frozen_title": "File:Biface.jpg",
+      "category_pageid": 504641,
+      "memberships": [
+        "Category:Acheulean hand axes",
+        "Category:Drawings of stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Acheulean hand axes",
+          "row": {
+            "pageid": 504641,
+            "ns": 6,
+            "title": "File:Biface.jpg",
+            "type": "file"
+          }
+        },
+        {
+          "category": "Category:Drawings of stone hand axes",
+          "row": {
+            "pageid": 504641,
+            "ns": 6,
+            "title": "File:Biface.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "cd132f9dab694b48eb20",
+      "frozen_title": "File:Bifaz Handhaxe Biface.gif",
+      "category_pageid": 534649,
+      "memberships": [
+        "Category:Acheulean hand axes",
+        "Category:Drawings of stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Acheulean hand axes",
+          "row": {
+            "pageid": 534649,
+            "ns": 6,
+            "title": "File:Bifaz Handhaxe Biface.gif",
+            "type": "file"
+          }
+        },
+        {
+          "category": "Category:Drawings of stone hand axes",
+          "row": {
+            "pageid": 534649,
+            "ns": 6,
+            "title": "File:Bifaz Handhaxe Biface.gif",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "abd6db619201789d877f",
+      "frozen_title": "File:Hand axe spanish.gif",
+      "category_pageid": 548596,
+      "memberships": [
+        "Category:Drawings of stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Drawings of stone hand axes",
+          "row": {
+            "pageid": 548596,
+            "ns": 6,
+            "title": "File:Hand axe spanish.gif",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "f293713787f292e94494",
+      "frozen_title": "File:Hendidor.png",
+      "category_pageid": 548611,
+      "memberships": [
+        "Category:Drawings of stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Drawings of stone hand axes",
+          "row": {
+            "pageid": 548611,
+            "ns": 6,
+            "title": "File:Hendidor.png",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "856f67da5e5f3a8ddf69",
+      "frozen_title": "File:Bifaz-1 del Trabancos.gif",
+      "category_pageid": 583289,
+      "memberships": [
+        "Category:Drawings of stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Drawings of stone hand axes",
+          "row": {
+            "pageid": 583289,
+            "ns": 6,
+            "title": "File:Bifaz-1 del Trabancos.gif",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "6b9795994138797ef681",
+      "frozen_title": "File:Bifaz-2 del Trabancos.gif",
+      "category_pageid": 583293,
+      "memberships": [
+        "Category:Drawings of stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Drawings of stone hand axes",
+          "row": {
+            "pageid": 583293,
+            "ns": 6,
+            "title": "File:Bifaz-2 del Trabancos.gif",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "3b1d3378c234e15f2c85",
+      "frozen_title": "File:Hachereau de Hassi Manda.jpg",
+      "category_pageid": 652339,
+      "memberships": [
+        "Category:Drawings of stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Drawings of stone hand axes",
+          "row": {
+            "pageid": 652339,
+            "ns": 6,
+            "title": "File:Hachereau de Hassi Manda.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "6aa59fd414b06dbe1f3a",
+      "frozen_title": "File:Handaxe-of-Um-Qatafa.png",
+      "category_pageid": 753186,
+      "memberships": [
+        "Category:Acheulean hand axes",
+        "Category:Drawings of stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Acheulean hand axes",
+          "row": {
+            "pageid": 753186,
+            "ns": 6,
+            "title": "File:Handaxe-of-Um-Qatafa.png",
+            "type": "file"
+          }
+        },
+        {
+          "category": "Category:Drawings of stone hand axes",
+          "row": {
+            "pageid": 753186,
+            "ns": 6,
+            "title": "File:Handaxe-of-Um-Qatafa.png",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "95aca44db5b322d4c3ee",
+      "frozen_title": "File:Coup de poing acheléen.jpg",
+      "category_pageid": 868642,
+      "memberships": [
+        "Category:Acheulean hand axes",
+        "Category:Drawings of stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Acheulean hand axes",
+          "row": {
+            "pageid": 868642,
+            "ns": 6,
+            "title": "File:Coup de poing acheléen.jpg",
+            "type": "file"
+          }
+        },
+        {
+          "category": "Category:Drawings of stone hand axes",
+          "row": {
+            "pageid": 868642,
+            "ns": 6,
+            "title": "File:Coup de poing acheléen.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "bc443616752a91e6de94",
+      "frozen_title": "File:Bifaz abbevillense.png",
+      "category_pageid": 1011498,
+      "memberships": [
+        "Category:Drawings of stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Drawings of stone hand axes",
+          "row": {
+            "pageid": 1011498,
+            "ns": 6,
+            "title": "File:Bifaz abbevillense.png",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "3f7832570297c9a63f64",
+      "frozen_title": "File:Bifaz con percutor duro.png",
+      "category_pageid": 1097624,
+      "memberships": [
+        "Category:Stone hand axes",
+        "Category:Drawings of stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 1097624,
+            "ns": 6,
+            "title": "File:Bifaz con percutor duro.png",
+            "type": "file"
+          }
+        },
+        {
+          "category": "Category:Drawings of stone hand axes",
+          "row": {
+            "pageid": 1097624,
+            "ns": 6,
+            "title": "File:Bifaz con percutor duro.png",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "0e147f4b24c144649399",
+      "frozen_title": "File:Bifaz con percutor blando.png",
+      "category_pageid": 1097625,
+      "memberships": [
+        "Category:Acheulean hand axes",
+        "Category:Drawings of stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Acheulean hand axes",
+          "row": {
+            "pageid": 1097625,
+            "ns": 6,
+            "title": "File:Bifaz con percutor blando.png",
+            "type": "file"
+          }
+        },
+        {
+          "category": "Category:Drawings of stone hand axes",
+          "row": {
+            "pageid": 1097625,
+            "ns": 6,
+            "title": "File:Bifaz con percutor blando.png",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "da998e3f7f93ca0b5664",
+      "frozen_title": "File:Hendido tipo 20.png",
+      "category_pageid": 1159986,
+      "memberships": [
+        "Category:Drawings of stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Drawings of stone hand axes",
+          "row": {
+            "pageid": 1159986,
+            "ns": 6,
+            "title": "File:Hendido tipo 20.png",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "bd442f320c7e5d368f39",
+      "frozen_title": "File:Hendidor de tipo 6.png",
+      "category_pageid": 1159988,
+      "memberships": [
+        "Category:Drawings of stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Drawings of stone hand axes",
+          "row": {
+            "pageid": 1159988,
+            "ns": 6,
+            "title": "File:Hendidor de tipo 6.png",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "3f89f989aa8a746f38e1",
+      "frozen_title": "File:Hendidor tipo 00.png",
+      "category_pageid": 1160039,
+      "memberships": [
+        "Category:Drawings of stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Drawings of stone hand axes",
+          "row": {
+            "pageid": 1160039,
+            "ns": 6,
+            "title": "File:Hendidor tipo 00.png",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "e5ed285143923b94d4db",
+      "frozen_title": "File:Hendidor tipo 01.png",
+      "category_pageid": 1160047,
+      "memberships": [
+        "Category:Drawings of stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Drawings of stone hand axes",
+          "row": {
+            "pageid": 1160047,
+            "ns": 6,
+            "title": "File:Hendidor tipo 01.png",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "dfc60809b9e31c5736d7",
+      "frozen_title": "File:Hendidor tipo 10.png",
+      "category_pageid": 1160063,
+      "memberships": [
+        "Category:Drawings of stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Drawings of stone hand axes",
+          "row": {
+            "pageid": 1160063,
+            "ns": 6,
+            "title": "File:Hendidor tipo 10.png",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "2e39c0a7e893e6090160",
+      "frozen_title": "File:Hendidor tipo 11 percusion sur.png",
+      "category_pageid": 1160076,
+      "memberships": [
+        "Category:Drawings of stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Drawings of stone hand axes",
+          "row": {
+            "pageid": 1160076,
+            "ns": 6,
+            "title": "File:Hendidor tipo 11 percusion sur.png",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "9d337aa6dde9c957810d",
+      "frozen_title": "File:Hendidor tipo 21.png",
+      "category_pageid": 1160083,
+      "memberships": [
+        "Category:Drawings of stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Drawings of stone hand axes",
+          "row": {
+            "pageid": 1160083,
+            "ns": 6,
+            "title": "File:Hendidor tipo 21.png",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "f654c7d1bea9bdac8908",
+      "frozen_title": "File:Hendidor tipo 31.png",
+      "category_pageid": 1160088,
+      "memberships": [
+        "Category:Drawings of stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Drawings of stone hand axes",
+          "row": {
+            "pageid": 1160088,
+            "ns": 6,
+            "title": "File:Hendidor tipo 31.png",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "a77238510843b9be9a98",
+      "frozen_title": "File:Faustkeil001.jpg",
+      "category_pageid": 1161998,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 1161998,
+            "ns": 6,
+            "title": "File:Faustkeil001.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "04aefea5a1cf49a20bf1",
+      "frozen_title": "File:Exhendidor de El Lombo.png",
+      "category_pageid": 1166147,
+      "memberships": [
+        "Category:Drawings of stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Drawings of stone hand axes",
+          "row": {
+            "pageid": 1166147,
+            "ns": 6,
+            "title": "File:Exhendidor de El Lombo.png",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "3fe6365dc98f93bcb567",
+      "frozen_title": "File:Bifaz en mano.jpg",
+      "category_pageid": 1431740,
+      "memberships": [
+        "Category:Acheulean hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Acheulean hand axes",
+          "row": {
+            "pageid": 1431740,
+            "ns": 6,
+            "title": "File:Bifaz en mano.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "9f6f6b299738607c075c",
+      "frozen_title": "File:Bifaz de Silex de Mucientes.jpg",
+      "category_pageid": 1483790,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 1483790,
+            "ns": 6,
+            "title": "File:Bifaz de Silex de Mucientes.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "4cd8f565fbf0b1364076",
+      "frozen_title": "File:Hechura litica-Façonnage.png",
+      "category_pageid": 1485275,
+      "memberships": [
+        "Category:Drawings of stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Drawings of stone hand axes",
+          "row": {
+            "pageid": 1485275,
+            "ns": 6,
+            "title": "File:Hechura litica-Façonnage.png",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "24f8ece9892af39ccdeb",
+      "frozen_title": "File:Biface Extension.png",
+      "category_pageid": 1554936,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 1554936,
+            "ns": 6,
+            "title": "File:Biface Extension.png",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "74176316e1741d1a1619",
+      "frozen_title": "File:Bifaz sobre lasca.png",
+      "category_pageid": 1565231,
+      "memberships": [
+        "Category:Drawings of stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Drawings of stone hand axes",
+          "row": {
+            "pageid": 1565231,
+            "ns": 6,
+            "title": "File:Bifaz sobre lasca.png",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "4ec9859e2242cb933126",
+      "frozen_title": "File:Bifaz-El Lombo (PD).png",
+      "category_pageid": 1570210,
+      "memberships": [
+        "Category:Drawings of stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Drawings of stone hand axes",
+          "row": {
+            "pageid": 1570210,
+            "ns": 6,
+            "title": "File:Bifaz-El Lombo (PD).png",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "3e4f090572f5a58b132a",
+      "frozen_title": "File:Bifaz-Teso de San Francisco (PD+PD).png",
+      "category_pageid": 1570213,
+      "memberships": [
+        "Category:Drawings of stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Drawings of stone hand axes",
+          "row": {
+            "pageid": 1570213,
+            "ns": 6,
+            "title": "File:Bifaz-Teso de San Francisco (PD+PD).png",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "03dcbec8076fcc978cfc",
+      "frozen_title": "File:Bifaz-Valdeagun (PD+PB).png",
+      "category_pageid": 1570219,
+      "memberships": [
+        "Category:Drawings of stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Drawings of stone hand axes",
+          "row": {
+            "pageid": 1570219,
+            "ns": 6,
+            "title": "File:Bifaz-Valdeagun (PD+PB).png",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "52809f2210aca642199c",
+      "frozen_title": "File:Bifaz-Castillejo (PB).png",
+      "category_pageid": 1570223,
+      "memberships": [
+        "Category:Drawings of stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Drawings of stone hand axes",
+          "row": {
+            "pageid": 1570223,
+            "ns": 6,
+            "title": "File:Bifaz-Castillejo (PB).png",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "c32e1e0030d17b4e8276",
+      "frozen_title": "File:Monofaz Achelense.png",
+      "category_pageid": 1574572,
+      "memberships": [
+        "Category:Drawings of stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Drawings of stone hand axes",
+          "row": {
+            "pageid": 1574572,
+            "ns": 6,
+            "title": "File:Monofaz Achelense.png",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "fdb7cc73fc101b313308",
+      "frozen_title": "File:Bifaz de dorso-Rincon.png",
+      "category_pageid": 1574575,
+      "memberships": [
+        "Category:Drawings of stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Drawings of stone hand axes",
+          "row": {
+            "pageid": 1574575,
+            "ns": 6,
+            "title": "File:Bifaz de dorso-Rincon.png",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "7a666ee6f18013b3ab26",
+      "frozen_title": "File:Bifaz parcial-El-Lombo.png",
+      "category_pageid": 1574655,
+      "memberships": [
+        "Category:Drawings of stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Drawings of stone hand axes",
+          "row": {
+            "pageid": 1574655,
+            "ns": 6,
+            "title": "File:Bifaz parcial-El-Lombo.png",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "8c1fa75e2296280964c8",
+      "frozen_title": "File:Bifaz de los Tablazos.png",
+      "category_pageid": 1574705,
+      "memberships": [
+        "Category:Drawings of stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Drawings of stone hand axes",
+          "row": {
+            "pageid": 1574705,
+            "ns": 6,
+            "title": "File:Bifaz de los Tablazos.png",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "e8a953804e8bd92c5a86",
+      "frozen_title": "File:Bifaz-esquema.png",
+      "category_pageid": 1578391,
+      "memberships": [
+        "Category:Acheulean hand axes",
+        "Category:Drawings of stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Acheulean hand axes",
+          "row": {
+            "pageid": 1578391,
+            "ns": 6,
+            "title": "File:Bifaz-esquema.png",
+            "type": "file"
+          }
+        },
+        {
+          "category": "Category:Drawings of stone hand axes",
+          "row": {
+            "pageid": 1578391,
+            "ns": 6,
+            "title": "File:Bifaz-esquema.png",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "c6577cb141e2736f660d",
+      "frozen_title": "File:Biface flexueux.png",
+      "category_pageid": 1579088,
+      "memberships": [
+        "Category:Drawings of stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Drawings of stone hand axes",
+          "row": {
+            "pageid": 1579088,
+            "ns": 6,
+            "title": "File:Biface flexueux.png",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "d61c7643fe6eb23ed699",
+      "frozen_title": "File:Biface discoide.png",
+      "category_pageid": 1579119,
+      "memberships": [
+        "Category:Drawings of stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Drawings of stone hand axes",
+          "row": {
+            "pageid": 1579119,
+            "ns": 6,
+            "title": "File:Biface discoide.png",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "e84b70c2ef979471462e",
+      "frozen_title": "File:Biface amygdaloide.png",
+      "category_pageid": 1579130,
+      "memberships": [
+        "Category:Acheulean hand axes",
+        "Category:Drawings of stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Acheulean hand axes",
+          "row": {
+            "pageid": 1579130,
+            "ns": 6,
+            "title": "File:Biface amygdaloide.png",
+            "type": "file"
+          }
+        },
+        {
+          "category": "Category:Drawings of stone hand axes",
+          "row": {
+            "pageid": 1579130,
+            "ns": 6,
+            "title": "File:Biface amygdaloide.png",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "70258c41ef6fe6e25593",
+      "frozen_title": "File:Biface triangulaire.png",
+      "category_pageid": 1579147,
+      "memberships": [
+        "Category:Drawings of stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Drawings of stone hand axes",
+          "row": {
+            "pageid": 1579147,
+            "ns": 6,
+            "title": "File:Biface triangulaire.png",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "1466559208f87601c9f7",
+      "frozen_title": "File:Biface-hachereau.png",
+      "category_pageid": 1579148,
+      "memberships": [
+        "Category:Drawings of stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Drawings of stone hand axes",
+          "row": {
+            "pageid": 1579148,
+            "ns": 6,
+            "title": "File:Biface-hachereau.png",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "5fbfca29db035726bf39",
+      "frozen_title": "File:Biface limande.png",
+      "category_pageid": 1579345,
+      "memberships": [
+        "Category:Drawings of stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Drawings of stone hand axes",
+          "row": {
+            "pageid": 1579345,
+            "ns": 6,
+            "title": "File:Biface limande.png",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "98c0560dfcce45de05bf",
+      "frozen_title": "File:Biface ovalaire.png",
+      "category_pageid": 1579519,
+      "memberships": [
+        "Category:Drawings of stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Drawings of stone hand axes",
+          "row": {
+            "pageid": 1579519,
+            "ns": 6,
+            "title": "File:Biface ovalaire.png",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "e7f8bfab2b8144f773da",
+      "frozen_title": "File:Biface losangique.png",
+      "category_pageid": 1579630,
+      "memberships": [
+        "Category:Drawings of stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Drawings of stone hand axes",
+          "row": {
+            "pageid": 1579630,
+            "ns": 6,
+            "title": "File:Biface losangique.png",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "1e5cd22c7479087ca232",
+      "frozen_title": "File:Biface naviforme.png",
+      "category_pageid": 1579689,
+      "memberships": [
+        "Category:Drawings of stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Drawings of stone hand axes",
+          "row": {
+            "pageid": 1579689,
+            "ns": 6,
+            "title": "File:Biface naviforme.png",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "d50d2e422f8af9031347",
+      "frozen_title": "File:Biface abbevillien.png",
+      "category_pageid": 1580237,
+      "memberships": [
+        "Category:Drawings of stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Drawings of stone hand axes",
+          "row": {
+            "pageid": 1580237,
+            "ns": 6,
+            "title": "File:Biface abbevillien.png",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "48cd181fcd1a9b2f39ff",
+      "frozen_title": "File:Biface nucleiforme.png",
+      "category_pageid": 1580240,
+      "memberships": [
+        "Category:Drawings of stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Drawings of stone hand axes",
+          "row": {
+            "pageid": 1580240,
+            "ns": 6,
+            "title": "File:Biface nucleiforme.png",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "b2a2e721467bf9e9d089",
+      "frozen_title": "File:Biface lageniforme.png",
+      "category_pageid": 1581841,
+      "memberships": [
+        "Category:Drawings of stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Drawings of stone hand axes",
+          "row": {
+            "pageid": 1581841,
+            "ns": 6,
+            "title": "File:Biface lageniforme.png",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "30464777c50c0bf3800c",
+      "frozen_title": "File:Bifaz dimensiones.svg",
+      "category_pageid": 1583012,
+      "memberships": [
+        "Category:Drawings of stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Drawings of stone hand axes",
+          "row": {
+            "pageid": 1583012,
+            "ns": 6,
+            "title": "File:Bifaz dimensiones.svg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "291161ce77af5be4a511",
+      "frozen_title": "File:Bifaz-indice de alargamiento.gif",
+      "category_pageid": 1588676,
+      "memberships": [
+        "Category:Drawings of stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Drawings of stone hand axes",
+          "row": {
+            "pageid": 1588676,
+            "ns": 6,
+            "title": "File:Bifaz-indice de alargamiento.gif",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "627e5fc757d6901e611b",
+      "frozen_title": "File:Bifaz-Redondeamiento de la base.gif",
+      "category_pageid": 1588687,
+      "memberships": [
+        "Category:Drawings of stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Drawings of stone hand axes",
+          "row": {
+            "pageid": 1588687,
+            "ns": 6,
+            "title": "File:Bifaz-Redondeamiento de la base.gif",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "bef9e7bc1bf8ad104cf0",
+      "frozen_title": "File:Bifaz-indice de aplastamiento.gif",
+      "category_pageid": 1589123,
+      "memberships": [
+        "Category:Drawings of stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Drawings of stone hand axes",
+          "row": {
+            "pageid": 1589123,
+            "ns": 6,
+            "title": "File:Bifaz-indice de aplastamiento.gif",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "efdb7ee04b8ea5cdb415",
+      "frozen_title": "File:Agarre de un bifaz.png",
+      "category_pageid": 1589281,
+      "memberships": [
+        "Category:Drawings of stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Drawings of stone hand axes",
+          "row": {
+            "pageid": 1589281,
+            "ns": 6,
+            "title": "File:Agarre de un bifaz.png",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "3cd7d796f0686bb75948",
+      "frozen_title": "File:Bifaz-Rotura de la punta.png",
+      "category_pageid": 1590502,
+      "memberships": [
+        "Category:Drawings of stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Drawings of stone hand axes",
+          "row": {
+            "pageid": 1590502,
+            "ns": 6,
+            "title": "File:Bifaz-Rotura de la punta.png",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "a9474ef4ab186a577b8d",
+      "frozen_title": "File:Bifaz-Punta reconstruida.png",
+      "category_pageid": 1590648,
+      "memberships": [
+        "Category:Drawings of stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Drawings of stone hand axes",
+          "row": {
+            "pageid": 1590648,
+            "ns": 6,
+            "title": "File:Bifaz-Punta reconstruida.png",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "979c851d68b4ce198340",
+      "frozen_title": "File:Handaxe by John Frere.png",
+      "category_pageid": 1602218,
+      "memberships": [
+        "Category:Drawings of stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Drawings of stone hand axes",
+          "row": {
+            "pageid": 1602218,
+            "ns": 6,
+            "title": "File:Handaxe by John Frere.png",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "71edcf098f4efbb651f1",
+      "frozen_title": "File:Bifaz triangular.jpg",
+      "category_pageid": 1605673,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 1605673,
+            "ns": 6,
+            "title": "File:Bifaz triangular.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "4754f5b1cffee02567ad",
+      "frozen_title": "File:Bifaz amigdaloide.jpg",
+      "category_pageid": 1605693,
+      "memberships": [
+        "Category:Acheulean hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Acheulean hand axes",
+          "row": {
+            "pageid": 1605693,
+            "ns": 6,
+            "title": "File:Bifaz amigdaloide.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "413a5f0391830c8cf94b",
+      "frozen_title": "File:Bifaz lanceolado.jpg",
+      "category_pageid": 1605720,
+      "memberships": [
+        "Category:Acheulean hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Acheulean hand axes",
+          "row": {
+            "pageid": 1605720,
+            "ns": 6,
+            "title": "File:Bifaz lanceolado.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "66a21e497d91a1c033bd",
+      "frozen_title": "File:Bifaz cordiforme.jpg",
+      "category_pageid": 1605723,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 1605723,
+            "ns": 6,
+            "title": "File:Bifaz cordiforme.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "d623b7823f8039f28e5c",
+      "frozen_title": "File:Bifaz ovoide.jpg",
+      "category_pageid": 1605992,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 1605992,
+            "ns": 6,
+            "title": "File:Bifaz ovoide.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "9f900c38917bc6f4f277",
+      "frozen_title": "File:Bifaz eliptico.jpg",
+      "category_pageid": 1606672,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 1606672,
+            "ns": 6,
+            "title": "File:Bifaz eliptico.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "1cdf899b798c2d9da1ec",
+      "frozen_title": "File:Bifaz ovoide-Valladolid.jpg",
+      "category_pageid": 1606807,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 1606807,
+            "ns": 6,
+            "title": "File:Bifaz ovoide-Valladolid.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "6420ec7746391c3e4c69",
+      "frozen_title": "File:Bifaz de estilo Abbevillense.png",
+      "category_pageid": 1621711,
+      "memberships": [
+        "Category:Drawings of stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Drawings of stone hand axes",
+          "row": {
+            "pageid": 1621711,
+            "ns": 6,
+            "title": "File:Bifaz de estilo Abbevillense.png",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "b56303e73386ab56798c",
+      "frozen_title": "File:Biface ficron.png",
+      "category_pageid": 1621817,
+      "memberships": [
+        "Category:Drawings of stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Drawings of stone hand axes",
+          "row": {
+            "pageid": 1621817,
+            "ns": 6,
+            "title": "File:Biface ficron.png",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "006b03097de4a5201c61",
+      "frozen_title": "File:Bifaz nucleiforme (Torralba).png",
+      "category_pageid": 1623458,
+      "memberships": [
+        "Category:Drawings of stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Drawings of stone hand axes",
+          "row": {
+            "pageid": 1623458,
+            "ns": 6,
+            "title": "File:Bifaz nucleiforme (Torralba).png",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "004a518566eb90d2568a",
+      "frozen_title": "File:Bifaz-Hendidor (Torralba).png",
+      "category_pageid": 1623464,
+      "memberships": [
+        "Category:Drawings of stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Drawings of stone hand axes",
+          "row": {
+            "pageid": 1623464,
+            "ns": 6,
+            "title": "File:Bifaz-Hendidor (Torralba).png",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "32fb67b97f120e7ae3b4",
+      "frozen_title": "File:Bifaz parcial (Madrid).png",
+      "category_pageid": 1623475,
+      "memberships": [
+        "Category:Drawings of stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Drawings of stone hand axes",
+          "row": {
+            "pageid": 1623475,
+            "ns": 6,
+            "title": "File:Bifaz parcial (Madrid).png",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "32bb43bf85d9f3a950bf",
+      "frozen_title": "File:Pieza foliacea bifacial-1.png",
+      "category_pageid": 1627269,
+      "memberships": [
+        "Category:Acheulean hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Acheulean hand axes",
+          "row": {
+            "pageid": 1627269,
+            "ns": 6,
+            "title": "File:Pieza foliacea bifacial-1.png",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "9d3f51834224f0228261",
+      "frozen_title": "File:Pieza foliacea bifacial-2.png",
+      "category_pageid": 1627272,
+      "memberships": [
+        "Category:Acheulean hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Acheulean hand axes",
+          "row": {
+            "pageid": 1627272,
+            "ns": 6,
+            "title": "File:Pieza foliacea bifacial-2.png",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "037e6097764e95dd1a9f",
+      "frozen_title": "File:Bifaz lanceolado-San Isidro (Madrid).png",
+      "category_pageid": 1636911,
+      "memberships": [
+        "Category:Acheulean hand axes",
+        "Category:Drawings of stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Acheulean hand axes",
+          "row": {
+            "pageid": 1636911,
+            "ns": 6,
+            "title": "File:Bifaz lanceolado-San Isidro (Madrid).png",
+            "type": "file"
+          }
+        },
+        {
+          "category": "Category:Drawings of stone hand axes",
+          "row": {
+            "pageid": 1636911,
+            "ns": 6,
+            "title": "File:Bifaz lanceolado-San Isidro (Madrid).png",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "4e8fcefafd852bdf0fec",
+      "frozen_title": "File:Protobifaz-Guelmim-Es Semara.jpg",
+      "category_pageid": 1892118,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 1892118,
+            "ns": 6,
+            "title": "File:Protobifaz-Guelmim-Es Semara.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "5ea29f87e2be45ebe968",
+      "frozen_title": "File:Bifaz micoquiense.jpg",
+      "category_pageid": 1896285,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 1896285,
+            "ns": 6,
+            "title": "File:Bifaz micoquiense.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "cdc59489a7a3666ac0d0",
+      "frozen_title": "File:Bifaz de Atapuerca (TG10).jpg",
+      "category_pageid": 1927194,
+      "memberships": [
+        "Category:Acheulean hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Acheulean hand axes",
+          "row": {
+            "pageid": 1927194,
+            "ns": 6,
+            "title": "File:Bifaz de Atapuerca (TG10).jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "b0fe4d7b58e730263086",
+      "frozen_title": "File:9187 - Milano, Museo storia naturale - Amigdale paleolitiche - Foto Giovanni Dall'Orto 22-Apr-2007.jpg",
+      "category_pageid": 2085714,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 2085714,
+            "ns": 6,
+            "title": "File:9187 - Milano, Museo storia naturale - Amigdale paleolitiche - Foto Giovanni Dall'Orto 22-Apr-2007.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "6ff7064de46bb928046a",
+      "frozen_title": "File:NOR1521.JPG",
+      "category_pageid": 2943778,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 2943778,
+            "ns": 6,
+            "title": "File:NOR1521.JPG",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "5833c33c40a574c495d1",
+      "frozen_title": "File:CMOC Treasures of Ancient China exhibit - stone scraper.jpg",
+      "category_pageid": 2975236,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 2975236,
+            "ns": 6,
+            "title": "File:CMOC Treasures of Ancient China exhibit - stone scraper.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "cc75df163437b6877fab",
+      "frozen_title": "File:Biface (France).jpg",
+      "category_pageid": 3995822,
+      "memberships": [
+        "Category:Acheulean hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Acheulean hand axes",
+          "row": {
+            "pageid": 3995822,
+            "ns": 6,
+            "title": "File:Biface (France).jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "27fd2d8e0bb9f5448ae3",
+      "frozen_title": "File:Obsidienne biface ethiopie.jpg",
+      "category_pageid": 4086787,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 4086787,
+            "ns": 6,
+            "title": "File:Obsidienne biface ethiopie.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "80ddb8841bc7a41824e0",
+      "frozen_title": "File:Biface.png",
+      "category_pageid": 4483411,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 4483411,
+            "ns": 6,
+            "title": "File:Biface.png",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "b28dd91be1f363e93167",
+      "frozen_title": "File:BifaceTransparenticon.png",
+      "category_pageid": 4483634,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 4483634,
+            "ns": 6,
+            "title": "File:BifaceTransparenticon.png",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "6a5988f888eee027ea2b",
+      "frozen_title": "File:Faustkeil 1 Poesing.jpg",
+      "category_pageid": 6530480,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 6530480,
+            "ns": 6,
+            "title": "File:Faustkeil 1 Poesing.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "efaf7fb3d43898d7b599",
+      "frozen_title": "File:Faustkeil 2 Poesing.jpg",
+      "category_pageid": 6530496,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 6530496,
+            "ns": 6,
+            "title": "File:Faustkeil 2 Poesing.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "26e7c184b28b0ed5d77c",
+      "frozen_title": "File:Faustkeil 3 Poesing.jpg",
+      "category_pageid": 6530528,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 6530528,
+            "ns": 6,
+            "title": "File:Faustkeil 3 Poesing.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "d85ecad789b8cd2b4694",
+      "frozen_title": "File:Hand ston 1.jpg",
+      "category_pageid": 6563426,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 6563426,
+            "ns": 6,
+            "title": "File:Hand ston 1.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "756ddfbc6993d29c7298",
+      "frozen_title": "File:Hand ston 2.JPG",
+      "category_pageid": 6563464,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 6563464,
+            "ns": 6,
+            "title": "File:Hand ston 2.JPG",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "e042f678fd54a3f7afc5",
+      "frozen_title": "File:Hand axe.JPG",
+      "category_pageid": 6944824,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 6944824,
+            "ns": 6,
+            "title": "File:Hand axe.JPG",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "3d57f0520ec686dcfd36",
+      "frozen_title": "File:Saltley Handaxe.jpg",
+      "category_pageid": 7282112,
+      "memberships": [
+        "Category:Drawings of stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Drawings of stone hand axes",
+          "row": {
+            "pageid": 7282112,
+            "ns": 6,
+            "title": "File:Saltley Handaxe.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "39c472cfccffae6c0c35",
+      "frozen_title": "File:Große Faustkeile.JPG",
+      "category_pageid": 8440051,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 8440051,
+            "ns": 6,
+            "title": "File:Große Faustkeile.JPG",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "6cbbae169dc35cff05f3",
+      "frozen_title": "File:Bifaz de San Isidro (M.A.N. 1942-101-4-4723) 01.jpg",
+      "category_pageid": 8539493,
+      "memberships": [
+        "Category:Acheulean hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Acheulean hand axes",
+          "row": {
+            "pageid": 8539493,
+            "ns": 6,
+            "title": "File:Bifaz de San Isidro (M.A.N. 1942-101-4-4723) 01.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "daeaf01eee2805cc1428",
+      "frozen_title": "File:Ägyptisches Museum Leipzig 264.jpg",
+      "category_pageid": 8672230,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 8672230,
+            "ns": 6,
+            "title": "File:Ägyptisches Museum Leipzig 264.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "d72a3636edf27abbd384",
+      "frozen_title": "File:Biface silex.png",
+      "category_pageid": 9080835,
+      "memberships": [
+        "Category:Acheulean hand axes",
+        "Category:Drawings of stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Acheulean hand axes",
+          "row": {
+            "pageid": 9080835,
+            "ns": 6,
+            "title": "File:Biface silex.png",
+            "type": "file"
+          }
+        },
+        {
+          "category": "Category:Drawings of stone hand axes",
+          "row": {
+            "pageid": 9080835,
+            "ns": 6,
+            "title": "File:Biface silex.png",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "f2a2a83546badd3592bb",
+      "frozen_title": "File:Faustkeil 4 Poesing.jpg",
+      "category_pageid": 9858506,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 9858506,
+            "ns": 6,
+            "title": "File:Faustkeil 4 Poesing.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "52b0dd80eabecf92c75e",
+      "frozen_title": "File:Sour El-Ghozlane .biface.2.JPG",
+      "category_pageid": 10892351,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 10892351,
+            "ns": 6,
+            "title": "File:Sour El-Ghozlane .biface.2.JPG",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "7134fe54c9e840a48c7e",
+      "frozen_title": "File:Sour El-Ghozlane .biface1.JPG",
+      "category_pageid": 10892361,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 10892361,
+            "ns": 6,
+            "title": "File:Sour El-Ghozlane .biface1.JPG",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "8bfd2752b3850d8178b7",
+      "frozen_title": "File:GNM - Faustkeil.jpg",
+      "category_pageid": 11008976,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 11008976,
+            "ns": 6,
+            "title": "File:GNM - Faustkeil.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "227703ff8b66e62a2c00",
+      "frozen_title": "File:Bifaces Ouargla.JPG",
+      "category_pageid": 11195853,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 11195853,
+            "ns": 6,
+            "title": "File:Bifaces Ouargla.JPG",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "ed7aa4ac5b95da1bf102",
+      "frozen_title": "File:British Museum Olduvai handaxe.jpg",
+      "category_pageid": 11245062,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 11245062,
+            "ns": 6,
+            "title": "File:British Museum Olduvai handaxe.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "805f4f806391ff12d956",
+      "frozen_title": "File:Silex Griquatown.2009.0.197 fond.jpg",
+      "category_pageid": 11271536,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 11271536,
+            "ns": 6,
+            "title": "File:Silex Griquatown.2009.0.197 fond.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "ca8607d85da5a02b5548",
+      "frozen_title": "File:Makevet-keren-aven-yad72.jpg",
+      "category_pageid": 11625829,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 11625829,
+            "ns": 6,
+            "title": "File:Makevet-keren-aven-yad72.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "e65e20ce337065b088ae",
+      "frozen_title": "File:Biface Cintegabelle MHNT PRE 2009.0.201.1 V2.jpg",
+      "category_pageid": 11656505,
+      "memberships": [
+        "Category:Acheulean hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Acheulean hand axes",
+          "row": {
+            "pageid": 11656505,
+            "ns": 6,
+            "title": "File:Biface Cintegabelle MHNT PRE 2009.0.201.1 V2.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "30f8495ee5455fe69896",
+      "frozen_title": "File:Archeuléen - Biface.JPG",
+      "category_pageid": 14741132,
+      "memberships": [
+        "Category:Acheulean hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Acheulean hand axes",
+          "row": {
+            "pageid": 14741132,
+            "ns": 6,
+            "title": "File:Archeuléen - Biface.JPG",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "26a2c09dfd7ad3dece88",
+      "frozen_title": "File:Biface Archeuléen.JPG",
+      "category_pageid": 14741168,
+      "memberships": [
+        "Category:Acheulean hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Acheulean hand axes",
+          "row": {
+            "pageid": 14741168,
+            "ns": 6,
+            "title": "File:Biface Archeuléen.JPG",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "22800ebe6e2123eb7268",
+      "frozen_title": "File:Museum of Anatolian Civilizations 1320329 nevit.jpg",
+      "category_pageid": 14793572,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 14793572,
+            "ns": 6,
+            "title": "File:Museum of Anatolian Civilizations 1320329 nevit.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "34bc84ab440d0c10d3cc",
+      "frozen_title": "File:Vuistbijl paleolithicum.jpg",
+      "category_pageid": 14894016,
+      "memberships": [
+        "Category:Acheulean hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Acheulean hand axes",
+          "row": {
+            "pageid": 14894016,
+            "ns": 6,
+            "title": "File:Vuistbijl paleolithicum.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "32508c869510c3b8a1ba",
+      "frozen_title": "File:Biface de St Acheul MHNT.jpg",
+      "category_pageid": 14901021,
+      "memberships": [
+        "Category:Acheulean hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Acheulean hand axes",
+          "row": {
+            "pageid": 14901021,
+            "ns": 6,
+            "title": "File:Biface de St Acheul MHNT.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "f1c2ceddfc9bd1faa4c1",
+      "frozen_title": "File:Hachet Noulet MHNT.PRE.2011.0.429.jpg",
+      "category_pageid": 16108269,
+      "memberships": [
+        "Category:Drawings of stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Drawings of stone hand axes",
+          "row": {
+            "pageid": 16108269,
+            "ns": 6,
+            "title": "File:Hachet Noulet MHNT.PRE.2011.0.429.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "e814dd375af39ac15521",
+      "frozen_title": "File:SzakocaAvas01.jpg",
+      "category_pageid": 16151411,
+      "memberships": [
+        "Category:Drawings of stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Drawings of stone hand axes",
+          "row": {
+            "pageid": 16151411,
+            "ns": 6,
+            "title": "File:SzakocaAvas01.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "ca1b62234dda0ffbe78e",
+      "frozen_title": "File:Olduvai handaxeDSCF6959.jpg",
+      "category_pageid": 16317745,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 16317745,
+            "ns": 6,
+            "title": "File:Olduvai handaxeDSCF6959.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "d2653e2731112b1b2966",
+      "frozen_title": "File:Handaxe 1931-30-35.jpg",
+      "category_pageid": 16980007,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 16980007,
+            "ns": 6,
+            "title": "File:Handaxe 1931-30-35.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "070e06dcdc0e95592c64",
+      "frozen_title": "File:Handaxe 1931-30-35 2.jpg",
+      "category_pageid": 16980009,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 16980009,
+            "ns": 6,
+            "title": "File:Handaxe 1931-30-35 2.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "0d698618b264f870d742",
+      "frozen_title": "File:GLAM Ice Age 050.jpg",
+      "category_pageid": 16980439,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 16980439,
+            "ns": 6,
+            "title": "File:GLAM Ice Age 050.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "9b82a8eef6fd9cde62c9",
+      "frozen_title": "File:GLAM Ice Age 053.jpg",
+      "category_pageid": 16980498,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 16980498,
+            "ns": 6,
+            "title": "File:GLAM Ice Age 053.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "609a4612703fba166772",
+      "frozen_title": "File:GLAM Ice Age 055.jpg",
+      "category_pageid": 16980499,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 16980499,
+            "ns": 6,
+            "title": "File:GLAM Ice Age 055.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "40b7dc8f7d129c4b20ec",
+      "frozen_title": "File:GLAM Ice Age 052.jpg",
+      "category_pageid": 16980500,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 16980500,
+            "ns": 6,
+            "title": "File:GLAM Ice Age 052.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "e648d6349d7ae1721fe4",
+      "frozen_title": "File:GLAM Ice Age 057.jpg",
+      "category_pageid": 16980501,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 16980501,
+            "ns": 6,
+            "title": "File:GLAM Ice Age 057.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "c2d3af83aee9cc9bd578",
+      "frozen_title": "File:GLAM Ice Age 058.jpg",
+      "category_pageid": 16980502,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 16980502,
+            "ns": 6,
+            "title": "File:GLAM Ice Age 058.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "f656925f138446f9c3fa",
+      "frozen_title": "File:GLAM Ice Age 061.jpg",
+      "category_pageid": 16980503,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 16980503,
+            "ns": 6,
+            "title": "File:GLAM Ice Age 061.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "3e334333bd6814bbb869",
+      "frozen_title": "File:GLAM Ice Age 065.jpg",
+      "category_pageid": 16980504,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 16980504,
+            "ns": 6,
+            "title": "File:GLAM Ice Age 065.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "e9ca1feedd42c19091c4",
+      "frozen_title": "File:GLAM Ice Age 096.jpg",
+      "category_pageid": 16981163,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 16981163,
+            "ns": 6,
+            "title": "File:GLAM Ice Age 096.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "f736265542a1fbf90f4e",
+      "frozen_title": "File:GLAM Ice Age 094.jpg",
+      "category_pageid": 16981164,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 16981164,
+            "ns": 6,
+            "title": "File:GLAM Ice Age 094.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "16f465fef13adac640fd",
+      "frozen_title": "File:GLAM Ice Age 092.jpg",
+      "category_pageid": 16981165,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 16981165,
+            "ns": 6,
+            "title": "File:GLAM Ice Age 092.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "9e0f93698e4b56448ecf",
+      "frozen_title": "File:GLAM Ice Age 110.jpg",
+      "category_pageid": 16981239,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 16981239,
+            "ns": 6,
+            "title": "File:GLAM Ice Age 110.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "8bbda7961cb440999a08",
+      "frozen_title": "File:GLAM Ice Age 108.jpg",
+      "category_pageid": 16981243,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 16981243,
+            "ns": 6,
+            "title": "File:GLAM Ice Age 108.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "30bdde9c7a25ae18d16e",
+      "frozen_title": "File:Franks HouseDSCF7154.jpg",
+      "category_pageid": 16985889,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 16985889,
+            "ns": 6,
+            "title": "File:Franks HouseDSCF7154.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "7126f8352f09e29fe3d0",
+      "frozen_title": "File:Franks HouseDSCF7155.jpg",
+      "category_pageid": 16985890,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 16985890,
+            "ns": 6,
+            "title": "File:Franks HouseDSCF7155.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "baa87bd11d711fbe04de",
+      "frozen_title": "File:Franks HouseDSCF7156.jpg",
+      "category_pageid": 16985892,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 16985892,
+            "ns": 6,
+            "title": "File:Franks HouseDSCF7156.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "23aea69f13da121daee8",
+      "frozen_title": "File:Franks HouseDSCF7158.jpg",
+      "category_pageid": 16985893,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 16985893,
+            "ns": 6,
+            "title": "File:Franks HouseDSCF7158.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "650653b341519a1d012b",
+      "frozen_title": "File:Franks HouseDSCF7165.jpg",
+      "category_pageid": 16985895,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 16985895,
+            "ns": 6,
+            "title": "File:Franks HouseDSCF7165.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "cdc0564f43198d6916c7",
+      "frozen_title": "File:Franks House DSCF7168.jpg",
+      "category_pageid": 16987280,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 16987280,
+            "ns": 6,
+            "title": "File:Franks House DSCF7168.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "07a9049efd1794c878ef",
+      "frozen_title": "File:Franks HouseDSCF7169.jpg",
+      "category_pageid": 16987281,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 16987281,
+            "ns": 6,
+            "title": "File:Franks HouseDSCF7169.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "bac13ec14009ddc0beae",
+      "frozen_title": "File:Franks HouseDSCF7170.jpg",
+      "category_pageid": 16987282,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 16987282,
+            "ns": 6,
+            "title": "File:Franks HouseDSCF7170.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "2e3fe370149e9a1604e9",
+      "frozen_title": "File:GLAM Ice Age 266.jpg",
+      "category_pageid": 17157844,
+      "memberships": [
+        "Category:Acheulean hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Acheulean hand axes",
+          "row": {
+            "pageid": 17157844,
+            "ns": 6,
+            "title": "File:GLAM Ice Age 266.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "728d045a081cb5e36898",
+      "frozen_title": "File:Каменный топор.jpg",
+      "category_pageid": 17938857,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 17938857,
+            "ns": 6,
+            "title": "File:Каменный топор.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "15866ffe18dd835b545f",
+      "frozen_title": "File:Vuistbijl.JPG",
+      "category_pageid": 19137176,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 19137176,
+            "ns": 6,
+            "title": "File:Vuistbijl.JPG",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "70dc590e87e16536fdc6",
+      "frozen_title": "File:Happisburgh handaxe.jpg",
+      "category_pageid": 20375347,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 20375347,
+            "ns": 6,
+            "title": "File:Happisburgh handaxe.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "ddcc9ed48b53415b8ca2",
+      "frozen_title": "File:Enrique Baquedano con un bifaz en Olduvai.png",
+      "category_pageid": 25283792,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 25283792,
+            "ns": 6,
+            "title": "File:Enrique Baquedano con un bifaz en Olduvai.png",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "79ba01b10b2d9bd4b5a8",
+      "frozen_title": "File:Bifaz Palmones (1).jpg",
+      "category_pageid": 26081399,
+      "memberships": [
+        "Category:Acheulean hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Acheulean hand axes",
+          "row": {
+            "pageid": 26081399,
+            "ns": 6,
+            "title": "File:Bifaz Palmones (1).jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "921fe13e22d136ff7a90",
+      "frozen_title": "File:Bifaz Palmones (2).jpg",
+      "category_pageid": 26081556,
+      "memberships": [
+        "Category:Acheulean hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Acheulean hand axes",
+          "row": {
+            "pageid": 26081556,
+            "ns": 6,
+            "title": "File:Bifaz Palmones (2).jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "61c62027a17caf4b80d1",
+      "frozen_title": "File:Handaxes.JPG",
+      "category_pageid": 26505279,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 26505279,
+            "ns": 6,
+            "title": "File:Handaxes.JPG",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "0e235d986cf4fc384f20",
+      "frozen_title": "File:Faustkeil von Wörleschwang.jpg",
+      "category_pageid": 28281907,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 28281907,
+            "ns": 6,
+            "title": "File:Faustkeil von Wörleschwang.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "5e665e6084c73810bb40",
+      "frozen_title": "File:MuseoDeBurgos20130911125558P1170787.jpg",
+      "category_pageid": 28301923,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 28301923,
+            "ns": 6,
+            "title": "File:MuseoDeBurgos20130911125558P1170787.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "6d8e17cd418286f9c9b5",
+      "frozen_title": "File:Handaxes 2.png",
+      "category_pageid": 28335871,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 28335871,
+            "ns": 6,
+            "title": "File:Handaxes 2.png",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "dc94ef278140222fc05a",
+      "frozen_title": "File:Celts from archaeological excavations in Sierra Leone (west Africa) (2387863991).jpg",
+      "category_pageid": 29751312,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 29751312,
+            "ns": 6,
+            "title": "File:Celts from archaeological excavations in Sierra Leone (west Africa) (2387863991).jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "bb2004e706d477dae616",
+      "frozen_title": "File:Heidenschmiede Faustkeil Tafel V1.jpg",
+      "category_pageid": 30249180,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 30249180,
+            "ns": 6,
+            "title": "File:Heidenschmiede Faustkeil Tafel V1.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "82976ce9dacf01d8860f",
+      "frozen_title": "File:Heidenschmiede Faustkeil Tafel VIII1.jpg",
+      "category_pageid": 30249226,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 30249226,
+            "ns": 6,
+            "title": "File:Heidenschmiede Faustkeil Tafel VIII1.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "65c66aec1bea7d893731",
+      "frozen_title": "File:Hochfelden Biface.jpg",
+      "category_pageid": 32194778,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 32194778,
+            "ns": 6,
+            "title": "File:Hochfelden Biface.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "cb0aff40357cccc81348",
+      "frozen_title": "File:Biface, Acheuléen - Chissey-les-Mâcon, Saône-et-Loire (2).jpg",
+      "category_pageid": 35731526,
+      "memberships": [
+        "Category:Acheulean hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Acheulean hand axes",
+          "row": {
+            "pageid": 35731526,
+            "ns": 6,
+            "title": "File:Biface, Acheuléen - Chissey-les-Mâcon, Saône-et-Loire (2).jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "3d181497bb1898be070e",
+      "frozen_title": "File:Biface, Acheuléen - Chissey-les-Mâcon, Saône-et-Loire.jpg",
+      "category_pageid": 35731562,
+      "memberships": [
+        "Category:Acheulean hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Acheulean hand axes",
+          "row": {
+            "pageid": 35731562,
+            "ns": 6,
+            "title": "File:Biface, Acheuléen - Chissey-les-Mâcon, Saône-et-Loire.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "62d5842c89b627bce939",
+      "frozen_title": "File:Biface, Acheuléen - Cormatin, Saône-et-Loire.jpg",
+      "category_pageid": 35731636,
+      "memberships": [
+        "Category:Acheulean hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Acheulean hand axes",
+          "row": {
+            "pageid": 35731636,
+            "ns": 6,
+            "title": "File:Biface, Acheuléen - Cormatin, Saône-et-Loire.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "9b47d51c1e4911088f70",
+      "frozen_title": "File:Biface, Acheuléen - Flagny, Saône-et-Loire.jpg",
+      "category_pageid": 35731743,
+      "memberships": [
+        "Category:Acheulean hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Acheulean hand axes",
+          "row": {
+            "pageid": 35731743,
+            "ns": 6,
+            "title": "File:Biface, Acheuléen - Flagny, Saône-et-Loire.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "85cfabe598729dd96296",
+      "frozen_title": "File:Biface, Acheuléen - Verchizeuil, Saône-et-Loire.jpg",
+      "category_pageid": 35731827,
+      "memberships": [
+        "Category:Acheulean hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Acheulean hand axes",
+          "row": {
+            "pageid": 35731827,
+            "ns": 6,
+            "title": "File:Biface, Acheuléen - Verchizeuil, Saône-et-Loire.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "803c357c43484f5c3b7e",
+      "frozen_title": "File:Hand-axes from Hoxne, Suffolk in Archaeologia, 1800 Wellcome M0015026.jpg",
+      "category_pageid": 36368258,
+      "memberships": [
+        "Category:Drawings of stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Drawings of stone hand axes",
+          "row": {
+            "pageid": 36368258,
+            "ns": 6,
+            "title": "File:Hand-axes from Hoxne, Suffolk in Archaeologia, 1800 Wellcome M0015026.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "2b923d411df080a862ba",
+      "frozen_title": "File:Hand-axe found by the apothecary John Conyrs in 1690 Wellcome M0015033.jpg",
+      "category_pageid": 36368280,
+      "memberships": [
+        "Category:Drawings of stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Drawings of stone hand axes",
+          "row": {
+            "pageid": 36368280,
+            "ns": 6,
+            "title": "File:Hand-axe found by the apothecary John Conyrs in 1690 Wellcome M0015033.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "9cb7f093079dd2457117",
+      "frozen_title": "File:Acheulian bifacial tools (hand-axes) Wellcome M0015373.jpg",
+      "category_pageid": 36369609,
+      "memberships": [
+        "Category:Acheulean hand axes",
+        "Category:Drawings of stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Acheulean hand axes",
+          "row": {
+            "pageid": 36369609,
+            "ns": 6,
+            "title": "File:Acheulian bifacial tools (hand-axes) Wellcome M0015373.jpg",
+            "type": "file"
+          }
+        },
+        {
+          "category": "Category:Drawings of stone hand axes",
+          "row": {
+            "pageid": 36369609,
+            "ns": 6,
+            "title": "File:Acheulian bifacial tools (hand-axes) Wellcome M0015373.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "dc8f2ad82300be7e37df",
+      "frozen_title": "File:Paleolithic hand-axes Wellcome M0015582EA.jpg",
+      "category_pageid": 36370346,
+      "memberships": [
+        "Category:Stone hand axes",
+        "Category:Drawings of stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 36370346,
+            "ns": 6,
+            "title": "File:Paleolithic hand-axes Wellcome M0015582EA.jpg",
+            "type": "file"
+          }
+        },
+        {
+          "category": "Category:Drawings of stone hand axes",
+          "row": {
+            "pageid": 36370346,
+            "ns": 6,
+            "title": "File:Paleolithic hand-axes Wellcome M0015582EA.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "c5619e06aa2c6055dd2a",
+      "frozen_title": "File:Hand-axes and scraper from Croxleygreen Wellcome M0015603.jpg",
+      "category_pageid": 36370435,
+      "memberships": [
+        "Category:Drawings of stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Drawings of stone hand axes",
+          "row": {
+            "pageid": 36370435,
+            "ns": 6,
+            "title": "File:Hand-axes and scraper from Croxleygreen Wellcome M0015603.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "4374e3312f2386cbabc6",
+      "frozen_title": "File:Ficron.jpg",
+      "category_pageid": 37370327,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 37370327,
+            "ns": 6,
+            "title": "File:Ficron.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "f5a50f21ee402a54bcb7",
+      "frozen_title": "File:Teyjat-2014 biface 01.JPG",
+      "category_pageid": 38967757,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 38967757,
+            "ns": 6,
+            "title": "File:Teyjat-2014 biface 01.JPG",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "116301d72064c88b4972",
+      "frozen_title": "File:Faustkeil.jpg",
+      "category_pageid": 39720579,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 39720579,
+            "ns": 6,
+            "title": "File:Faustkeil.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "c714686bcc80d7137085",
+      "frozen_title": "File:Archaeologia Volume 13 D257.png",
+      "category_pageid": 41073713,
+      "memberships": [
+        "Category:Drawings of stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Drawings of stone hand axes",
+          "row": {
+            "pageid": 41073713,
+            "ns": 6,
+            "title": "File:Archaeologia Volume 13 D257.png",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "1e6b8b47f11bb3e7811e",
+      "frozen_title": "File:Archaeologia Volume 13 D259.png",
+      "category_pageid": 41073714,
+      "memberships": [
+        "Category:Drawings of stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Drawings of stone hand axes",
+          "row": {
+            "pageid": 41073714,
+            "ns": 6,
+            "title": "File:Archaeologia Volume 13 D259.png",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "7179b6f91bf7cd5cd412",
+      "frozen_title": "File:Quarterly Journal of the Geological Society of London, vol. 33 no. 32 fig. 2.png",
+      "category_pageid": 41514127,
+      "memberships": [
+        "Category:Stone hand axes",
+        "Category:Drawings of stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 41514127,
+            "ns": 6,
+            "title": "File:Quarterly Journal of the Geological Society of London, vol. 33 no. 32 fig. 2.png",
+            "type": "file"
+          }
+        },
+        {
+          "category": "Category:Drawings of stone hand axes",
+          "row": {
+            "pageid": 41514127,
+            "ns": 6,
+            "title": "File:Quarterly Journal of the Geological Society of London, vol. 33 no. 32 fig. 2.png",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "9115df4f76297a1c6e9d",
+      "frozen_title": "File:Antiquities of the southern Indians, particularly of the Georgia tribes (1873) (14754352046).jpg",
+      "category_pageid": 42182096,
+      "memberships": [
+        "Category:Drawings of stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Drawings of stone hand axes",
+          "row": {
+            "pageid": 42182096,
+            "ns": 6,
+            "title": "File:Antiquities of the southern Indians, particularly of the Georgia tribes (1873) (14754352046).jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "763a7bd6a5e5bbb14899",
+      "frozen_title": "File:Artefatos líticos - Europa MN 01.jpg",
+      "category_pageid": 43782867,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 43782867,
+            "ns": 6,
+            "title": "File:Artefatos líticos - Europa MN 01.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "051b8e30679380dcb126",
+      "frozen_title": "File:Ridpath's history of the world; being an account of the ethnic origin, primitive estate, early migrations, social conditions and present promise of the principal families of men (1897) (14803320293).jpg",
+      "category_pageid": 43894869,
+      "memberships": [
+        "Category:Drawings of stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Drawings of stone hand axes",
+          "row": {
+            "pageid": 43894869,
+            "ns": 6,
+            "title": "File:Ridpath's history of the world; being an account of the ethnic origin, primitive estate, early migrations, social conditions and present promise of the principal families of men (1897) (14803320293).jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "219886fe87232f6c51b2",
+      "frozen_title": "File:RAMM - Exeter hand axe.jpg",
+      "category_pageid": 44829314,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 44829314,
+            "ns": 6,
+            "title": "File:RAMM - Exeter hand axe.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "51779ce8cfb917a4a33c",
+      "frozen_title": "File:NHM - Faustkeil Entstehung.jpg",
+      "category_pageid": 45131956,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 45131956,
+            "ns": 6,
+            "title": "File:NHM - Faustkeil Entstehung.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "96cdb36e8d738ac6efe0",
+      "frozen_title": "File:Faustkeil von Schnaitheim stone hand axe.jpg",
+      "category_pageid": 45263442,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 45263442,
+            "ns": 6,
+            "title": "File:Faustkeil von Schnaitheim stone hand axe.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "785c5b559574b21335d0",
+      "frozen_title": "File:Museo Arqueológico Nacional - 1942-101-4-4723 - Bifaz del Manzanares 01.jpg",
+      "category_pageid": 46161837,
+      "memberships": [
+        "Category:Acheulean hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Acheulean hand axes",
+          "row": {
+            "pageid": 46161837,
+            "ns": 6,
+            "title": "File:Museo Arqueológico Nacional - 1942-101-4-4723 - Bifaz del Manzanares 01.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "1535866e7d41e86e1415",
+      "frozen_title": "File:Museo Arqueológico Nacional - 1942-101-4-4723 - Bifaz del Manzanares 02.jpg",
+      "category_pageid": 46161839,
+      "memberships": [
+        "Category:Acheulean hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Acheulean hand axes",
+          "row": {
+            "pageid": 46161839,
+            "ns": 6,
+            "title": "File:Museo Arqueológico Nacional - 1942-101-4-4723 - Bifaz del Manzanares 02.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "7340f57a075b8076aa7e",
+      "frozen_title": "File:134A Musée préhistoire Penmarc'h.JPG",
+      "category_pageid": 47557182,
+      "memberships": [
+        "Category:Acheulean hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Acheulean hand axes",
+          "row": {
+            "pageid": 47557182,
+            "ns": 6,
+            "title": "File:134A Musée préhistoire Penmarc'h.JPG",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "912fb49ddab2a46b8450",
+      "frozen_title": "File:133 Musée préhistoire Penmarc'h.JPG",
+      "category_pageid": 47575588,
+      "memberships": [
+        "Category:Acheulean hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Acheulean hand axes",
+          "row": {
+            "pageid": 47575588,
+            "ns": 6,
+            "title": "File:133 Musée préhistoire Penmarc'h.JPG",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "c83dc92d81d33a00a047",
+      "frozen_title": "File:Acheulean.jpg",
+      "category_pageid": 47867555,
+      "memberships": [
+        "Category:Acheulean hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Acheulean hand axes",
+          "row": {
+            "pageid": 47867555,
+            "ns": 6,
+            "title": "File:Acheulean.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "e1c707515594e6382ab1",
+      "frozen_title": "File:Biface Sima de los Huesos.jpg",
+      "category_pageid": 49923744,
+      "memberships": [
+        "Category:Stone hand axes",
+        "Category:Drawings of stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 49923744,
+            "ns": 6,
+            "title": "File:Biface Sima de los Huesos.jpg",
+            "type": "file"
+          }
+        },
+        {
+          "category": "Category:Drawings of stone hand axes",
+          "row": {
+            "pageid": 49923744,
+            "ns": 6,
+            "title": "File:Biface Sima de los Huesos.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "4d8eb05a974bc0358620",
+      "frozen_title": "File:Hand Axe Sima de los Huesos.jpg",
+      "category_pageid": 50525481,
+      "memberships": [
+        "Category:Acheulean hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Acheulean hand axes",
+          "row": {
+            "pageid": 50525481,
+            "ns": 6,
+            "title": "File:Hand Axe Sima de los Huesos.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "284b72b37a4fb9339127",
+      "frozen_title": "File:Faustkeil von Bad Salzuflen 8.2016.jpg",
+      "category_pageid": 50805478,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 50805478,
+            "ns": 6,
+            "title": "File:Faustkeil von Bad Salzuflen 8.2016.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "16c81e42dd330dbd3bc4",
+      "frozen_title": "File:Roter Faustkeil, Stein der Weisen.jpg",
+      "category_pageid": 50856783,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 50856783,
+            "ns": 6,
+            "title": "File:Roter Faustkeil, Stein der Weisen.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "7ebae791ddeb827bc907",
+      "frozen_title": "File:Roter Stein der Weisen.jpg",
+      "category_pageid": 50856784,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 50856784,
+            "ns": 6,
+            "title": "File:Roter Stein der Weisen.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "10f6b67ff1c47caba46c",
+      "frozen_title": "File:Bifaz (21345445650).jpg",
+      "category_pageid": 51253665,
+      "memberships": [
+        "Category:Acheulean hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Acheulean hand axes",
+          "row": {
+            "pageid": 51253665,
+            "ns": 6,
+            "title": "File:Bifaz (21345445650).jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "e030e881caac4376731e",
+      "frozen_title": "File:Bifaz (21345446950).jpg",
+      "category_pageid": 51253667,
+      "memberships": [
+        "Category:Acheulean hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Acheulean hand axes",
+          "row": {
+            "pageid": 51253667,
+            "ns": 6,
+            "title": "File:Bifaz (21345446950).jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "481fa21e900f420fa597",
+      "frozen_title": "File:Bifaz achelense (15931943729).jpg",
+      "category_pageid": 51254103,
+      "memberships": [
+        "Category:Acheulean hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Acheulean hand axes",
+          "row": {
+            "pageid": 51254103,
+            "ns": 6,
+            "title": "File:Bifaz achelense (15931943729).jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "5b7821ed99bf79923fc6",
+      "frozen_title": "File:Biface Acheuléen Musée Saint-Remi Reims 21092016 01.jpg",
+      "category_pageid": 51667573,
+      "memberships": [
+        "Category:Acheulean hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Acheulean hand axes",
+          "row": {
+            "pageid": 51667573,
+            "ns": 6,
+            "title": "File:Biface Acheuléen Musée Saint-Remi Reims 21092016 01.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "f43bb6a409e0d305f70f",
+      "frozen_title": "File:Biface Acheuléen Musée Saint-Remi Reims 21092016 02.jpg",
+      "category_pageid": 51668062,
+      "memberships": [
+        "Category:Acheulean hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Acheulean hand axes",
+          "row": {
+            "pageid": 51668062,
+            "ns": 6,
+            "title": "File:Biface Acheuléen Musée Saint-Remi Reims 21092016 02.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "928f98619296518fd876",
+      "frozen_title": "File:Biface Acheuléen Musée Saint-Remi Reims 21092016 03.jpg",
+      "category_pageid": 51668106,
+      "memberships": [
+        "Category:Acheulean hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Acheulean hand axes",
+          "row": {
+            "pageid": 51668106,
+            "ns": 6,
+            "title": "File:Biface Acheuléen Musée Saint-Remi Reims 21092016 03.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "bd58f191edead32e5af9",
+      "frozen_title": "File:Europa, pietra con impugnatura e lama, 6000 ac (museo pigorini).jpg",
+      "category_pageid": 55033098,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 55033098,
+            "ns": 6,
+            "title": "File:Europa, pietra con impugnatura e lama, 6000 ac (museo pigorini).jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "73cc668f497a049920a2",
+      "frozen_title": "File:Giappone, pietra modificata per essere impugnata, 2400-1800 ac ca. (tokiaki yoshizawa coll.).jpg",
+      "category_pageid": 55033114,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 55033114,
+            "ns": 6,
+            "title": "File:Giappone, pietra modificata per essere impugnata, 2400-1800 ac ca. (tokiaki yoshizawa coll.).jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "fc657648efb258732694",
+      "frozen_title": "File:Giappone, pietra con impugnatura e lama, 3000-2500 ac ca. (tokiaki yoshizawa coll.).jpg",
+      "category_pageid": 55033115,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 55033115,
+            "ns": 6,
+            "title": "File:Giappone, pietra con impugnatura e lama, 3000-2500 ac ca. (tokiaki yoshizawa coll.).jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "fe7ee9879b9e1b21fd1f",
+      "frozen_title": "File:Giappone, pietra oblunga levigata fino all'estremità, 3000 ac ca. (tokiaki yoshizawa coll.).jpg",
+      "category_pageid": 55033116,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 55033116,
+            "ns": 6,
+            "title": "File:Giappone, pietra oblunga levigata fino all'estremità, 3000 ac ca. (tokiaki yoshizawa coll.).jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "36a5e7a56716ba717f05",
+      "frozen_title": "File:Giappone, pietra oblunga levigata fino all'estremità, 3000-2500 ac ca. (tokiaki yoshizawa coll.) 01.jpg",
+      "category_pageid": 55033117,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 55033117,
+            "ns": 6,
+            "title": "File:Giappone, pietra oblunga levigata fino all'estremità, 3000-2500 ac ca. (tokiaki yoshizawa coll.) 01.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "3a008240ec4cd657d2f9",
+      "frozen_title": "File:Giappone, pietra oblunga levigata fino all'estremità, 3000-2500 ac ca. (tokiaki yoshizawa coll.) 02.jpg",
+      "category_pageid": 55033119,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 55033119,
+            "ns": 6,
+            "title": "File:Giappone, pietra oblunga levigata fino all'estremità, 3000-2500 ac ca. (tokiaki yoshizawa coll.) 02.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "b2b695b4c69bdb6cb637",
+      "frozen_title": "File:Acheulean hand-axe from Egypt. Found on a hill top plateau, 1400 feet above sea level, 9 miles NNW of the city of Naqada, Egypt. Paleolithic. The Petrie Museum of Egyptian Archaeology, London.jpg",
+      "category_pageid": 55261925,
+      "memberships": [
+        "Category:Acheulean hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Acheulean hand axes",
+          "row": {
+            "pageid": 55261925,
+            "ns": 6,
+            "title": "File:Acheulean hand-axe from Egypt. Found on a hill top plateau, 1400 feet above sea level, 9 miles NNW of the city of Naqada, Egypt. Paleolithic. The Petrie Museum of Egyptian Archaeology, London.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "352a8d0432256ad4bb0f",
+      "frozen_title": "File:Plate II.jpg",
+      "category_pageid": 56835356,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 56835356,
+            "ns": 6,
+            "title": "File:Plate II.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "a9b627eb6f8ba49b15aa",
+      "frozen_title": "File:Paleolithic handaxe, 340-300 thousand years old.jpg",
+      "category_pageid": 57146085,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 57146085,
+            "ns": 6,
+            "title": "File:Paleolithic handaxe, 340-300 thousand years old.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "d30ff02cac4558c2831b",
+      "frozen_title": "File:Implement MET 26.2.66 EGDP011609.jpg",
+      "category_pageid": 60927881,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 60927881,
+            "ns": 6,
+            "title": "File:Implement MET 26.2.66 EGDP011609.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "442fbdbf2e1eaaaf2680",
+      "frozen_title": "File:Stone hand axe. Imjin-Hantan river. Korea. Lower Paleolithic.jpg",
+      "category_pageid": 62639724,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 62639724,
+            "ns": 6,
+            "title": "File:Stone hand axe. Imjin-Hantan river. Korea. Lower Paleolithic.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "b47054966c93d74f8c63",
+      "frozen_title": "File:Stone hand axe. Seokjangni. Korea. Lower Paleolithic. Replica.jpg",
+      "category_pageid": 62640248,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 62640248,
+            "ns": 6,
+            "title": "File:Stone hand axe. Seokjangni. Korea. Lower Paleolithic. Replica.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "64eb4c50a3beaaaff9f4",
+      "frozen_title": "File:Smac Paläolithikum 031.jpg",
+      "category_pageid": 66371311,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 66371311,
+            "ns": 6,
+            "title": "File:Smac Paläolithikum 031.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "fe54bfd35c3b4c4dcc45",
+      "frozen_title": "File:Smac Paläolithikum 037.jpg",
+      "category_pageid": 66371322,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 66371322,
+            "ns": 6,
+            "title": "File:Smac Paläolithikum 037.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "fccee1139f718a50181e",
+      "frozen_title": "File:Middle Paleolithic tools, Museum of Western Bohemia in Pilsen, 187664.jpg",
+      "category_pageid": 69089659,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 69089659,
+            "ns": 6,
+            "title": "File:Middle Paleolithic tools, Museum of Western Bohemia in Pilsen, 187664.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "41ed9ce9ccb233f3ab91",
+      "frozen_title": "File:Stone hand axe. Seokjangni, Gongju. Korea. Yonsei University Museum.jpg",
+      "category_pageid": 69174893,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 69174893,
+            "ns": 6,
+            "title": "File:Stone hand axe. Seokjangni, Gongju. Korea. Yonsei University Museum.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "5d6b096c1a0aa1e981a8",
+      "frozen_title": "File:Stone hand axe2. Seokjangni, Gongju. Korea. Yonsei University Museum.jpg",
+      "category_pageid": 69175221,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 69175221,
+            "ns": 6,
+            "title": "File:Stone hand axe2. Seokjangni, Gongju. Korea. Yonsei University Museum.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "d84b6816f3552918b89a",
+      "frozen_title": "File:Handaxe. Jeongok ri. Gyeonggi do. National Museum of Korea.jpg",
+      "category_pageid": 69403420,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 69403420,
+            "ns": 6,
+            "title": "File:Handaxe. Jeongok ri. Gyeonggi do. National Museum of Korea.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "084d816a8f6cf033e552",
+      "frozen_title": "File:Neandertal handaxes from Moravia, Welcome to the Neandertals, Brno, 187915.jpg",
+      "category_pageid": 69528461,
+      "memberships": [
+        "Category:Acheulean hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Acheulean hand axes",
+          "row": {
+            "pageid": 69528461,
+            "ns": 6,
+            "title": "File:Neandertal handaxes from Moravia, Welcome to the Neandertals, Brno, 187915.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "7669dda3601bf04a855e",
+      "frozen_title": "File:Objects with possible aesthetic or symbolic meaning, Welcome to the Neandertals, Brno, 187920.jpg",
+      "category_pageid": 69529062,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 69529062,
+            "ns": 6,
+            "title": "File:Objects with possible aesthetic or symbolic meaning, Welcome to the Neandertals, Brno, 187920.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "3797ee90357df289c5a9",
+      "frozen_title": "File:Objects with possible aesthetic or symbolic meaning, Welcome to the Neandertals, Brno, 187921.jpg",
+      "category_pageid": 69529063,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 69529063,
+            "ns": 6,
+            "title": "File:Objects with possible aesthetic or symbolic meaning, Welcome to the Neandertals, Brno, 187921.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "90f756377d682d3926cd",
+      "frozen_title": "File:Paleolithic Handaxe.Paju Juwol-ri.Seoul National University Museum.jpg",
+      "category_pageid": 69867131,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 69867131,
+            "ns": 6,
+            "title": "File:Paleolithic Handaxe.Paju Juwol-ri.Seoul National University Museum.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "944bcfb68ecce2c59349",
+      "frozen_title": "File:Paleolithic Handaxe. Seoul National University Museum.jpg",
+      "category_pageid": 69868300,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 69868300,
+            "ns": 6,
+            "title": "File:Paleolithic Handaxe. Seoul National University Museum.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "e78ba82ab8d7995d7b0b",
+      "frozen_title": "File:Biface de St Acheul Muséum de Toulouse.jpg",
+      "category_pageid": 73344844,
+      "memberships": [
+        "Category:Acheulean hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Acheulean hand axes",
+          "row": {
+            "pageid": 73344844,
+            "ns": 6,
+            "title": "File:Biface de St Acheul Muséum de Toulouse.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "17e931a0d874413b9938",
+      "frozen_title": "File:Faustkeil?.jpg",
+      "category_pageid": 74022209,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 74022209,
+            "ns": 6,
+            "title": "File:Faustkeil?.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "5455ee0c88478fb1e3ec",
+      "frozen_title": "File:Faustkeil Serie A. Lesch g(3).jpg",
+      "category_pageid": 84376536,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 84376536,
+            "ns": 6,
+            "title": "File:Faustkeil Serie A. Lesch g(3).jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "c55eea0d151c1833923e",
+      "frozen_title": "File:Faustkeil Serie A. Lesch (11).jpg",
+      "category_pageid": 84376565,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 84376565,
+            "ns": 6,
+            "title": "File:Faustkeil Serie A. Lesch (11).jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "74c64f00a88f17259769",
+      "frozen_title": "File:Faustkeil Serie A. Lesch (9).jpg",
+      "category_pageid": 84376840,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 84376840,
+            "ns": 6,
+            "title": "File:Faustkeil Serie A. Lesch (9).jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "bf5830428ea655884d49",
+      "frozen_title": "File:Vuistbijl in silex, 250 000 tot 38 000 BP, vindplaats- Meeuwen, In den Damp, 21.10.1985.jpg",
+      "category_pageid": 84552553,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 84552553,
+            "ns": 6,
+            "title": "File:Vuistbijl in silex, 250 000 tot 38 000 BP, vindplaats- Meeuwen, In den Damp, 21.10.1985.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "f9657a6d60ac97fe249f",
+      "frozen_title": "File:Kariandusi Acheulean Tools.jpg",
+      "category_pageid": 86336542,
+      "memberships": [
+        "Category:Acheulean hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Acheulean hand axes",
+          "row": {
+            "pageid": 86336542,
+            "ns": 6,
+            "title": "File:Kariandusi Acheulean Tools.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "ea27222a2c967b63bb5f",
+      "frozen_title": "File:Nick flintknapping.jpg",
+      "category_pageid": 86440553,
+      "memberships": [
+        "Category:Acheulean hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Acheulean hand axes",
+          "row": {
+            "pageid": 86440553,
+            "ns": 6,
+            "title": "File:Nick flintknapping.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "9fb09b2c29d31914a2cc",
+      "frozen_title": "File:Bifacciale del paleolitico.JPG",
+      "category_pageid": 92444265,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 92444265,
+            "ns": 6,
+            "title": "File:Bifacciale del paleolitico.JPG",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "56b2e7b07a1a47e4719e",
+      "frozen_title": "File:Bársony-házi szakóca.jpg",
+      "category_pageid": 95203487,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 95203487,
+            "ns": 6,
+            "title": "File:Bársony-házi szakóca.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "6c4a80cbcaa0197c4c63",
+      "frozen_title": "File:Faustkeil Nachbau, 2020 PD a-3.jpg",
+      "category_pageid": 95226374,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 95226374,
+            "ns": 6,
+            "title": "File:Faustkeil Nachbau, 2020 PD a-3.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "e2118d03dcfec0e9d546",
+      "frozen_title": "File:Faustkeil Nachbau, 2020 PD a-3a.jpg",
+      "category_pageid": 95226382,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 95226382,
+            "ns": 6,
+            "title": "File:Faustkeil Nachbau, 2020 PD a-3a.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "01d6fa65d35eb1aae3c1",
+      "frozen_title": "File:Faustkeil Nachbau, 2020 PD a-4.jpg",
+      "category_pageid": 95226393,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 95226393,
+            "ns": 6,
+            "title": "File:Faustkeil Nachbau, 2020 PD a-4.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "a8bc4a363ac959be0a18",
+      "frozen_title": "File:Faustkeil Nachbau, 2020 PD a-5.jpg",
+      "category_pageid": 95226402,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 95226402,
+            "ns": 6,
+            "title": "File:Faustkeil Nachbau, 2020 PD a-5.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "0a3e9faabef2c5419b43",
+      "frozen_title": "File:Faustkeil Nachbau, 2020 PD a-5a.jpg",
+      "category_pageid": 95226410,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 95226410,
+            "ns": 6,
+            "title": "File:Faustkeil Nachbau, 2020 PD a-5a.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "c2912044e90335175924",
+      "frozen_title": "File:Faustkeil Nachbau, 2020 PD a-5b.jpg",
+      "category_pageid": 95226413,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 95226413,
+            "ns": 6,
+            "title": "File:Faustkeil Nachbau, 2020 PD a-5b.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "039ba7d460c06f59436d",
+      "frozen_title": "File:Faustkeil Nachbau, 2020 PD a-5c.jpg",
+      "category_pageid": 95226423,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 95226423,
+            "ns": 6,
+            "title": "File:Faustkeil Nachbau, 2020 PD a-5c.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "9bbd1837499ad0515dd3",
+      "frozen_title": "File:Faustkeil Nachbau, 2020 PD a-5d.jpg",
+      "category_pageid": 95226432,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 95226432,
+            "ns": 6,
+            "title": "File:Faustkeil Nachbau, 2020 PD a-5d.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "70a2bc376060a0ed76da",
+      "frozen_title": "File:Faustkeil Nachbau, 2020 PD a-6.jpg",
+      "category_pageid": 95226438,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 95226438,
+            "ns": 6,
+            "title": "File:Faustkeil Nachbau, 2020 PD a-6.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "c204aedfade36aed5c1d",
+      "frozen_title": "File:Faustkeil Nachbau, 2020 PD a-6a.jpg",
+      "category_pageid": 95226447,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 95226447,
+            "ns": 6,
+            "title": "File:Faustkeil Nachbau, 2020 PD a-6a.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "dfd55b67141e0167d872",
+      "frozen_title": "File:Faustkeil Nachbau, 2020 PD a-7.jpg",
+      "category_pageid": 95226450,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 95226450,
+            "ns": 6,
+            "title": "File:Faustkeil Nachbau, 2020 PD a-7.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "b7d0d3fce8ee81b00964",
+      "frozen_title": "File:Faustkeil Nachbau, 2020 PD a-8.jpg",
+      "category_pageid": 95226451,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 95226451,
+            "ns": 6,
+            "title": "File:Faustkeil Nachbau, 2020 PD a-8.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "76564a2428d98ae84b8d",
+      "frozen_title": "File:Bifaç de la Cova del Bolomor.png",
+      "category_pageid": 97873303,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 97873303,
+            "ns": 6,
+            "title": "File:Bifaç de la Cova del Bolomor.png",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "daee8e651a988d0c5419",
+      "frozen_title": "File:Links Faustkeil von Hundisburg, rechts Feuersteinklingenrest von Westeregeln.jpg",
+      "category_pageid": 99487188,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 99487188,
+            "ns": 6,
+            "title": "File:Links Faustkeil von Hundisburg, rechts Feuersteinklingenrest von Westeregeln.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "9edf07c32ec783c8e472",
+      "frozen_title": "File:Chert hand axe, from Ur, Iraq. Paleolithic. Sulaymaniyah Museum, Iraq.jpg",
+      "category_pageid": 102377199,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 102377199,
+            "ns": 6,
+            "title": "File:Chert hand axe, from Ur, Iraq. Paleolithic. Sulaymaniyah Museum, Iraq.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "7a0e6ef4c764e42c7316",
+      "frozen_title": "File:Hand-axes from Barda Balka, Sulaymaniyah, Iraq. Acheulean period, c. 250,000 years ago. Sulaymaniyah Museum, Iraqi Kurdistan.jpg",
+      "category_pageid": 111720899,
+      "memberships": [
+        "Category:Acheulean hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Acheulean hand axes",
+          "row": {
+            "pageid": 111720899,
+            "ns": 6,
+            "title": "File:Hand-axes from Barda Balka, Sulaymaniyah, Iraq. Acheulean period, c. 250,000 years ago. Sulaymaniyah Museum, Iraqi Kurdistan.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "fca2085f60f51727eadf",
+      "frozen_title": "File:Museo della preistoria Luigi Donini abc5.jpg",
+      "category_pageid": 114526718,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 114526718,
+            "ns": 6,
+            "title": "File:Museo della preistoria Luigi Donini abc5.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "164a3fe5d246381ba1b9",
+      "frozen_title": "File:Museo della preistoria Luigi Donini abc11.jpg",
+      "category_pageid": 114526726,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 114526726,
+            "ns": 6,
+            "title": "File:Museo della preistoria Luigi Donini abc11.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "136486906fcde57327e3",
+      "frozen_title": "File:Bifaz. Pleistoceno medio. Terrazas del Manzanares.jpg",
+      "category_pageid": 116958468,
+      "memberships": [
+        "Category:Acheulean hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Acheulean hand axes",
+          "row": {
+            "pageid": 116958468,
+            "ns": 6,
+            "title": "File:Bifaz. Pleistoceno medio. Terrazas del Manzanares.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "ce0c6b03b951123c953b",
+      "frozen_title": "File:Acheulean handaxe.png",
+      "category_pageid": 118604210,
+      "memberships": [
+        "Category:Acheulean hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Acheulean hand axes",
+          "row": {
+            "pageid": 118604210,
+            "ns": 6,
+            "title": "File:Acheulean handaxe.png",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "985672db60d333fa1444",
+      "frozen_title": "File:Hand-axe from Barda Balka, Iraq. Acheulean period, c. 250,000 years ago. Sulaymaniyah Museum, Iraq.jpg",
+      "category_pageid": 123157128,
+      "memberships": [
+        "Category:Acheulean hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Acheulean hand axes",
+          "row": {
+            "pageid": 123157128,
+            "ns": 6,
+            "title": "File:Hand-axe from Barda Balka, Iraq. Acheulean period, c. 250,000 years ago. Sulaymaniyah Museum, Iraq.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "63e81697b4ddee695b56",
+      "frozen_title": "File:Hand-axe from Sulaymaniyah, Iraq. Acheulean period, c. 250,000 years ago. Sulaymaniyah Museum, Iraq.jpg",
+      "category_pageid": 123157130,
+      "memberships": [
+        "Category:Acheulean hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Acheulean hand axes",
+          "row": {
+            "pageid": 123157130,
+            "ns": 6,
+            "title": "File:Hand-axe from Sulaymaniyah, Iraq. Acheulean period, c. 250,000 years ago. Sulaymaniyah Museum, Iraq.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "9df5d26cbfc9b2f95768",
+      "frozen_title": "File:Hand-axe from Tell Bazmusian, Sulaymaniyah, Iraq. Acheulean period, c. 250,000 years ago. Sulaymaniyah Museum, Iraq.jpg",
+      "category_pageid": 123157131,
+      "memberships": [
+        "Category:Acheulean hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Acheulean hand axes",
+          "row": {
+            "pageid": 123157131,
+            "ns": 6,
+            "title": "File:Hand-axe from Tell Bazmusian, Sulaymaniyah, Iraq. Acheulean period, c. 250,000 years ago. Sulaymaniyah Museum, Iraq.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "6e0de4dccb877dfff059",
+      "frozen_title": "File:Trabajos de excavación en el yacimiento de Cantera Vieja.jpg",
+      "category_pageid": 123484416,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 123484416,
+            "ns": 6,
+            "title": "File:Trabajos de excavación en el yacimiento de Cantera Vieja.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "754188c20d9c09ce7566",
+      "frozen_title": "File:Bifaz fracturado del yacimiento de Cantera Vieja.jpg",
+      "category_pageid": 123484701,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 123484701,
+            "ns": 6,
+            "title": "File:Bifaz fracturado del yacimiento de Cantera Vieja.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "f98b2713d1e9b9a1a714",
+      "frozen_title": "File:Palæolithic Man and Terramara Settlements in Europe, 0074.png",
+      "category_pageid": 126512694,
+      "memberships": [
+        "Category:Drawings of stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Drawings of stone hand axes",
+          "row": {
+            "pageid": 126512694,
+            "ns": 6,
+            "title": "File:Palæolithic Man and Terramara Settlements in Europe, 0074.png",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "4b42fece8efdcfe4661a",
+      "frozen_title": "File:Biface, Paleolithic from Münster-Gittrup - LWL-Archäologie für Westfalen in City Museum of Münster.jpg",
+      "category_pageid": 127381349,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 127381349,
+            "ns": 6,
+            "title": "File:Biface, Paleolithic from Münster-Gittrup - LWL-Archäologie für Westfalen in City Museum of Münster.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "6c545c4ffaca9b9b035d",
+      "frozen_title": "File:Stone hand-axe from Korea.jpg",
+      "category_pageid": 129081118,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 129081118,
+            "ns": 6,
+            "title": "File:Stone hand-axe from Korea.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "07be4267ec17b714009a",
+      "frozen_title": "File:Faustkeil Serie A. Lesch (6).jpg",
+      "category_pageid": 130619288,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 130619288,
+            "ns": 6,
+            "title": "File:Faustkeil Serie A. Lesch (6).jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "8d1cd2e73d9d9784339e",
+      "frozen_title": "File:Faustkeil Serie A. Lesch (8).jpg",
+      "category_pageid": 130619312,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 130619312,
+            "ns": 6,
+            "title": "File:Faustkeil Serie A. Lesch (8).jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "b2337ccd4fa9f67f5f99",
+      "frozen_title": "File:Bifaces prehistóricos - Museo de la Rioja (3).jpg",
+      "category_pageid": 132629893,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 132629893,
+            "ns": 6,
+            "title": "File:Bifaces prehistóricos - Museo de la Rioja (3).jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "da6ec5dcef83b45ceebf",
+      "frozen_title": "File:Bifaces prehistóricos - Museo de la Rioja (1).jpg",
+      "category_pageid": 132629895,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 132629895,
+            "ns": 6,
+            "title": "File:Bifaces prehistóricos - Museo de la Rioja (1).jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "3ec1f6012e3b3353ca4c",
+      "frozen_title": "File:Bifaces prehistóricos - Museo de la Rioja (2).jpg",
+      "category_pageid": 132629896,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 132629896,
+            "ns": 6,
+            "title": "File:Bifaces prehistóricos - Museo de la Rioja (2).jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "b30f3d7ac77c41e3f21b",
+      "frozen_title": "File:Paleolitico inferiore arcaico, pietre appuntite da scordovillo, tre carlini, e truscia-bella di canne 01.JPG",
+      "category_pageid": 136742597,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 136742597,
+            "ns": 6,
+            "title": "File:Paleolitico inferiore arcaico, pietre appuntite da scordovillo, tre carlini, e truscia-bella di canne 01.JPG",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "14d50593d2bcc0b77ec1",
+      "frozen_title": "File:Paleolitico inferiore arcaico, pietre appuntite da scordovillo, tre carlini, e truscia-bella di canne 02.JPG",
+      "category_pageid": 136742602,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 136742602,
+            "ns": 6,
+            "title": "File:Paleolitico inferiore arcaico, pietre appuntite da scordovillo, tre carlini, e truscia-bella di canne 02.JPG",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "725f19e59b60bd4bb0b3",
+      "frozen_title": "File:Stadtmuseum Mülheim-Kärlich - Faustkeil (2012-02-26 Sp).JPG",
+      "category_pageid": 137688981,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 137688981,
+            "ns": 6,
+            "title": "File:Stadtmuseum Mülheim-Kärlich - Faustkeil (2012-02-26 Sp).JPG",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "de7a91cec65d9012de8e",
+      "frozen_title": "File:Vuistbijl Rhenen ± 200.000 v.Chr.jpg",
+      "category_pageid": 140095149,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 140095149,
+            "ns": 6,
+            "title": "File:Vuistbijl Rhenen ± 200.000 v.Chr.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "b2778df952d166683e8f",
+      "frozen_title": "File:Faustkeil 2.jpg",
+      "category_pageid": 147822791,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 147822791,
+            "ns": 6,
+            "title": "File:Faustkeil 2.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "951c76ae47c504dbde9a",
+      "frozen_title": "File:Tautavel - Industrie lithique 16.jpg",
+      "category_pageid": 149207940,
+      "memberships": [
+        "Category:Acheulean hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Acheulean hand axes",
+          "row": {
+            "pageid": 149207940,
+            "ns": 6,
+            "title": "File:Tautavel - Industrie lithique 16.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "521587d7ade79d24ac98",
+      "frozen_title": "File:Tautavel - Industrie lithique 17.jpg",
+      "category_pageid": 149207941,
+      "memberships": [
+        "Category:Acheulean hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Acheulean hand axes",
+          "row": {
+            "pageid": 149207941,
+            "ns": 6,
+            "title": "File:Tautavel - Industrie lithique 17.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "f054847c37b5c2c86460",
+      "frozen_title": "File:Quiñones de León 01-01b, bifaces.jpg",
+      "category_pageid": 151150209,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 151150209,
+            "ns": 6,
+            "title": "File:Quiñones de León 01-01b, bifaces.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "e0a6acdcc914665ab2b6",
+      "frozen_title": "File:Quiñones de León 01-02b, bifaces e chopper.jpg",
+      "category_pageid": 151150211,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 151150211,
+            "ns": 6,
+            "title": "File:Quiñones de León 01-02b, bifaces e chopper.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "ca39279c19dea06b50e9",
+      "frozen_title": "File:250207 전곡선사박물관 28.jpg",
+      "category_pageid": 159302821,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 159302821,
+            "ns": 6,
+            "title": "File:250207 전곡선사박물관 28.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "94b44394ce7d596c01cf",
+      "frozen_title": "File:250207 전곡선사박물관 29.jpg",
+      "category_pageid": 159302824,
+      "memberships": [
+        "Category:Stone hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Stone hand axes",
+          "row": {
+            "pageid": 159302824,
+            "ns": 6,
+            "title": "File:250207 전곡선사박물관 29.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "c869cece3a0baf80bc88",
+      "frozen_title": "File:Acheulean hand axe, c. 450,000 years before present, stone - Canterbury Museum - Christchurch, NZ - DSC02244.jpg",
+      "category_pageid": 159925266,
+      "memberships": [
+        "Category:Acheulean hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Acheulean hand axes",
+          "row": {
+            "pageid": 159925266,
+            "ns": 6,
+            "title": "File:Acheulean hand axe, c. 450,000 years before present, stone - Canterbury Museum - Christchurch, NZ - DSC02244.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "0b5e36d4a8cc1e80aa88",
+      "frozen_title": "File:Tools of Acheulean culture in the Timiryazev museum.jpg",
+      "category_pageid": 160902369,
+      "memberships": [
+        "Category:Acheulean hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Acheulean hand axes",
+          "row": {
+            "pageid": 160902369,
+            "ns": 6,
+            "title": "File:Tools of Acheulean culture in the Timiryazev museum.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "cb3c67dfad44c78707e8",
+      "frozen_title": "File:Acheulean handaxe found in southern England - 55465763081.jpg",
+      "category_pageid": 197850918,
+      "memberships": [
+        "Category:Acheulean hand axes"
+      ],
+      "raw_rows": [
+        {
+          "category": "Category:Acheulean hand axes",
+          "row": {
+            "pageid": 197850918,
+            "ns": 6,
+            "title": "File:Acheulean handaxe found in southern England - 55465763081.jpg",
+            "type": "file"
+          }
+        }
+      ]
+    }
+  ]
+}

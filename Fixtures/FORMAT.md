@@ -113,8 +113,10 @@ and their check commands.
 
 `kind=curatorial_heap` records membership in an already published source
 population, followed by documented mechanical selection and provenance exclusions.
-It does not require `prompt.json` or visual acceptance judgments. POTY leaves use
-`inventory.json`, `ordering.json` and `selection.json` for the full eligible
+It does not require `prompt.json` or visual acceptance judgments. A contribution
+may add documented thumbnail scope checks to reject obvious category outliers;
+those fallible decisions do not assert visual similarity or category ground truth.
+POTY leaves use `inventory.json`, `ordering.json` and `selection.json` for the full eligible
 population, seeded ordering and per-candidate decisions. File-specific evidence,
 original-creator identity decisions, explicit exceptions, acquisition receipts,
 and POTY year/category mappings are in `provenance/`. Each leaf has its own
@@ -139,6 +141,15 @@ sampling, creator limits or deduplication. Related files and prior-fixture overl
 remain included; technical or rights problems are independent pending/blocked
 acquisition states, not selection exclusions. Completion requires every included
 File identity to have a validated acquired input.
+
+Rocks-in-Thin-Section, Stone-Hand-Axes and Ex-Libris each freeze the union of
+three direct File category lists. They record separate visual-scope, work/specimen
+provenance and rights decisions bound to actual inspected preview bytes. Clear
+rejection on any axis excludes; otherwise an explicit defer allows provisional
+later selection, while an unreviewed gap blocks it. Metadata-bound unsupported
+media exclusions do not fabricate visual reviews. Known repeated objects or
+printed works are excluded, unknown identities remain null, and neither artist
+caps nor category quotas apply. Acquisition failures never replace selections.
 
 Cross-fixture identity audits record the prior leaves they covered and their
 manifest/catalog hashes. An offline recheck uses that recorded coverage so a new

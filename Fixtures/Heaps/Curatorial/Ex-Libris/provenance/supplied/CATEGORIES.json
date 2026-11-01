@@ -1,0 +1,105 @@
+{
+  "package_id": "hazy-curatorial-three-50-instructions-v1",
+  "source": "Wikimedia Commons",
+  "repository": "Protonk/hazy",
+  "baseline_commit": "c8874023df26167bda41f4a89fe80489a061cd6b",
+  "checked_date": "2026-10-31",
+  "destination_parent": "Fixtures/Heaps/Curatorial",
+  "fixture_kind": "curatorial_heap",
+  "relation_kind": "curatorial_selected",
+  "selection_policy": "mechanical_hash_order_with_thumbnail_scope_rejections",
+  "category_lookup": {
+    "api": "https://commons.wikimedia.org/w/api.php",
+    "module": "query+categorymembers",
+    "recursion": false,
+    "notes": "Direct File members of each of the 9 listed categories, with continuation when returned. Preserve raw full JSON response bodies. Do not traverse further or search for extra material."
+  },
+  "target_per_leaf": 50,
+  "hard_minimum": null,
+  "leaves": [
+    {
+      "leaf_directory": "Rocks-in-Thin-Section",
+      "subject_label": "Rocks in thin section",
+      "target": 50,
+      "seed": "hazy-curatorial-rocks-in-thin-section-v1",
+      "estimated_membership_sum": 553,
+      "count_note": "Counts are observed direct-category listings, not a frozen deduplicated inventory; enumerate before sampling.",
+      "categories": [
+        {
+          "title": "Category:Rocks in thin section",
+          "commons_url": "https://commons.wikimedia.org/wiki/Category:Rocks_in_thin_section",
+          "observed_direct_file_count": 243,
+          "api_query_url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&list=categorymembers&cmtitle=Category%3ARocks+in+thin+section&cmtype=file&cmprop=ids%7Ctitle%7Ctype&cmsort=sortkey&cmlimit=500&maxlag=5"
+        },
+        {
+          "title": "Category:Igneous rocks in thin section",
+          "commons_url": "https://commons.wikimedia.org/wiki/Category:Igneous_rocks_in_thin_section",
+          "observed_direct_file_count": 193,
+          "api_query_url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&list=categorymembers&cmtitle=Category%3AIgneous+rocks+in+thin+section&cmtype=file&cmprop=ids%7Ctitle%7Ctype&cmsort=sortkey&cmlimit=500&maxlag=5"
+        },
+        {
+          "title": "Category:Metamorphic rocks in thin section",
+          "commons_url": "https://commons.wikimedia.org/wiki/Category:Metamorphic_rocks_in_thin_section",
+          "observed_direct_file_count": 117,
+          "api_query_url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&list=categorymembers&cmtitle=Category%3AMetamorphic+rocks+in+thin+section&cmtype=file&cmprop=ids%7Ctitle%7Ctype&cmsort=sortkey&cmlimit=500&maxlag=5"
+        }
+      ]
+    },
+    {
+      "leaf_directory": "Stone-Hand-Axes",
+      "subject_label": "Stone hand axes",
+      "target": 50,
+      "seed": "hazy-curatorial-stone-hand-axes-v1",
+      "estimated_membership_sum": 282,
+      "count_note": "Counts are observed direct-category listings, not a frozen deduplicated inventory; enumerate before sampling.",
+      "categories": [
+        {
+          "title": "Category:Stone hand axes",
+          "commons_url": "https://commons.wikimedia.org/wiki/Category:Stone_hand_axes",
+          "observed_direct_file_count": 147,
+          "api_query_url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&list=categorymembers&cmtitle=Category%3AStone+hand+axes&cmtype=file&cmprop=ids%7Ctitle%7Ctype&cmsort=sortkey&cmlimit=500&maxlag=5"
+        },
+        {
+          "title": "Category:Acheulean hand axes",
+          "commons_url": "https://commons.wikimedia.org/wiki/Category:Acheulean_hand_axes",
+          "observed_direct_file_count": 61,
+          "api_query_url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&list=categorymembers&cmtitle=Category%3AAcheulean+hand+axes&cmtype=file&cmprop=ids%7Ctitle%7Ctype&cmsort=sortkey&cmlimit=500&maxlag=5"
+        },
+        {
+          "title": "Category:Drawings of stone hand axes",
+          "commons_url": "https://commons.wikimedia.org/wiki/Category:Drawings_of_stone_hand_axes",
+          "observed_direct_file_count": 74,
+          "api_query_url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&list=categorymembers&cmtitle=Category%3ADrawings+of+stone+hand+axes&cmtype=file&cmprop=ids%7Ctitle%7Ctype&cmsort=sortkey&cmlimit=500&maxlag=5"
+        }
+      ]
+    },
+    {
+      "leaf_directory": "Ex-Libris",
+      "subject_label": "Ex libris",
+      "target": 50,
+      "seed": "hazy-curatorial-ex-libris-v1",
+      "estimated_membership_sum": 434,
+      "count_note": "Counts are observed direct-category listings, not a frozen deduplicated inventory; enumerate before sampling.",
+      "categories": [
+        {
+          "title": "Category:Ex libris",
+          "commons_url": "https://commons.wikimedia.org/wiki/Category:Ex_libris",
+          "observed_direct_file_count": 115,
+          "api_query_url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&list=categorymembers&cmtitle=Category%3AEx+libris&cmtype=file&cmprop=ids%7Ctitle%7Ctype&cmsort=sortkey&cmlimit=500&maxlag=5"
+        },
+        {
+          "title": "Category:19th-century ex libris",
+          "commons_url": "https://commons.wikimedia.org/wiki/Category:19th-century_ex_libris",
+          "observed_direct_file_count": 127,
+          "api_query_url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&list=categorymembers&cmtitle=Category%3A19th-century+ex+libris&cmtype=file&cmprop=ids%7Ctitle%7Ctype&cmsort=sortkey&cmlimit=500&maxlag=5"
+        },
+        {
+          "title": "Category:20th-century ex libris",
+          "commons_url": "https://commons.wikimedia.org/wiki/Category:20th-century_ex_libris",
+          "observed_direct_file_count": 192,
+          "api_query_url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&list=categorymembers&cmtitle=Category%3A20th-century+ex+libris&cmtype=file&cmprop=ids%7Ctitle%7Ctype&cmsort=sortkey&cmlimit=500&maxlag=5"
+        }
+      ]
+    }
+  ]
+}

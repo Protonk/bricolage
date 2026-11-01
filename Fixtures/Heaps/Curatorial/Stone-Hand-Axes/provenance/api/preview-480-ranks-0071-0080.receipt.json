@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T23:57:04.934150+00:00",
+  "key": "preview-480-ranks-0071-0080",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3ABifaz-Valdeagun+%28PD%2BPB%29.png%7CFile%3ABifaz-indice+de+aplastamiento.gif%7CFile%3AHendidor+tipo+01.png%7CFile%3ABifaz+Palmones+%282%29.jpg%7CFile%3AObjects+with+possible+aesthetic+or+symbolic+meaning%2C+Welcome+to+the+Neandertals%2C+Brno%2C+187920.jpg%7CFile%3ARoter+Stein+der+Weisen.jpg%7CFile%3ASour+El-Ghozlane+.biface.2.JPG%7CFile%3AFranks+House+DSCF7168.jpg%7CFile%3AHeidenschmiede+Faustkeil+Tafel+V1.jpg%7CFile%3AGLAM+Ice+Age+057.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=480&iiurlheight=480&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 56473,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 23:57:05 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-p9dtx",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "e2b22d51-458e-4cd5-9d53-89ba9b0ae965"
+  },
+  "sha256": "f05db0b59aede9e82649b2f2dfceb48413cd81dd0c53f816d469ecda1155e8b0"
+}

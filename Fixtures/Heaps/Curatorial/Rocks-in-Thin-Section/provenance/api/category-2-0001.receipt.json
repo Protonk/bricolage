@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T23:43:02.978464+00:00",
+  "key": "category-2-0001",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&list=categorymembers&cmtitle=Category%3AIgneous+rocks+in+thin+section&cmtype=file&cmprop=ids%7Ctitle%7Ctype&cmsort=sortkey&cmlimit=500",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 16782,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 23:43:03 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-7pbzj",
+    "cache-control": "private, must-revalidate, max-age=0",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 pass",
+    "x-request-id": "71ea32fb-8ce7-439e-8b77-28d8ed2efc78"
+  },
+  "sha256": "0cd03686a590f55879ab355421a08a62e20b7ceb19f926bf0e890def116e4d5c"
+}

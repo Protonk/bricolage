@@ -1,0 +1,19 @@
+{
+  "utc": "2026-11-01T00:13:16.055071+00:00",
+  "key": "source-1600-ranks-0031-0040",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3AGLAM+Ice+Age+092.jpg%7CFile%3A133+Mus%C3%A9e+pr%C3%A9histoire+Penmarc%27h.JPG%7CFile%3ABifaz+ovoide-Valladolid.jpg%7CFile%3AHendidor+tipo+00.png%7CFile%3ASilex+Griquatown.2009.0.197+fond.jpg%7CFile%3AFaustkeil+Nachbau%2C+2020+PD+a-5c.jpg%7CFile%3ABifaz+Palmones+%281%29.jpg%7CFile%3AGiappone%2C+pietra+oblunga+levigata+fino+all%27estremit%C3%A0%2C+3000+ac+ca.+%28tokiaki+yoshizawa+coll.%29.jpg%7CFile%3ABifaz+lanceolado-San+Isidro+%28Madrid%29.png%7CFile%3ATrabajos+de+excavaci%C3%B3n+en+el+yacimiento+de+Cantera+Vieja.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 51258,
+  "headers": {
+    "date": "Sun, 01 Nov 2026 00:13:16 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-v82dz",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "b960b80c-f1c0-4bb2-bf6c-5db8c36a71f0"
+  },
+  "sha256": "ff9dda5b0c1a700adc4bfa7e1ec727ea152b7eaf0feb228e6c164d6a68e1bfbd"
+}

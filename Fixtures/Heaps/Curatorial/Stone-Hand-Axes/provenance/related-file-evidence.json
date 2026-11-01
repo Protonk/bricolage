@@ -1,0 +1,816 @@
+[
+  {
+    "candidate_id": "27fd2d8e0bb9f5448ae3",
+    "metadata_path": "provenance/api/preview-480-ranks-0001-0010.json",
+    "metadata_sha256": "82aa41e181e6a92b361ae05826e56b8e96113a2438c3cf06339893858766f3ba",
+    "file_page_revision": 1280509872,
+    "passages": [
+      "|other_versions="
+    ],
+    "file_links": [],
+    "interpretation": "Links are leads, not proof of the same specimen/work; explicit review decisions are in work-review.json."
+  },
+  {
+    "candidate_id": "6a5988f888eee027ea2b",
+    "metadata_path": "provenance/api/preview-480-ranks-0001-0010.json",
+    "metadata_sha256": "82aa41e181e6a92b361ae05826e56b8e96113a2438c3cf06339893858766f3ba",
+    "file_page_revision": 1249970090,
+    "passages": [
+      "|other_versions="
+    ],
+    "file_links": [],
+    "interpretation": "Links are leads, not proof of the same specimen/work; explicit review decisions are in work-review.json."
+  },
+  {
+    "candidate_id": "763a7bd6a5e5bbb14899",
+    "metadata_path": "provenance/api/preview-480-ranks-0001-0010.json",
+    "metadata_sha256": "82aa41e181e6a92b361ae05826e56b8e96113a2438c3cf06339893858766f3ba",
+    "file_page_revision": 1066270325,
+    "passages": [
+      "|other versions="
+    ],
+    "file_links": [],
+    "interpretation": "Links are leads, not proof of the same specimen/work; explicit review decisions are in work-review.json."
+  },
+  {
+    "candidate_id": "3797ee90357df289c5a9",
+    "metadata_path": "provenance/api/preview-480-ranks-0001-0010.json",
+    "metadata_sha256": "82aa41e181e6a92b361ae05826e56b8e96113a2438c3cf06339893858766f3ba",
+    "file_page_revision": 1203891689,
+    "passages": [
+      "|other versions="
+    ],
+    "file_links": [],
+    "interpretation": "Links are leads, not proof of the same specimen/work; explicit review decisions are in work-review.json."
+  },
+  {
+    "candidate_id": "284b72b37a4fb9339127",
+    "metadata_path": "provenance/api/preview-480-ranks-0001-0010.json",
+    "metadata_sha256": "82aa41e181e6a92b361ae05826e56b8e96113a2438c3cf06339893858766f3ba",
+    "file_page_revision": 1249970252,
+    "passages": [
+      "|other versions="
+    ],
+    "file_links": [],
+    "interpretation": "Links are leads, not proof of the same specimen/work; explicit review decisions are in work-review.json."
+  },
+  {
+    "candidate_id": "e030e881caac4376731e",
+    "metadata_path": "provenance/api/preview-480-ranks-0001-0010.json",
+    "metadata_sha256": "82aa41e181e6a92b361ae05826e56b8e96113a2438c3cf06339893858766f3ba",
+    "file_page_revision": 1086529170,
+    "passages": [
+      "| other_versions="
+    ],
+    "file_links": [],
+    "interpretation": "Links are leads, not proof of the same specimen/work; explicit review decisions are in work-review.json."
+  },
+  {
+    "candidate_id": "c2912044e90335175924",
+    "metadata_path": "provenance/api/preview-480-ranks-0001-0010.json",
+    "metadata_sha256": "82aa41e181e6a92b361ae05826e56b8e96113a2438c3cf06339893858766f3ba",
+    "file_page_revision": 1249970176,
+    "passages": [
+      "|other_versions="
+    ],
+    "file_links": [],
+    "interpretation": "Links are leads, not proof of the same specimen/work; explicit review decisions are in work-review.json."
+  },
+  {
+    "candidate_id": "481fa21e900f420fa597",
+    "metadata_path": "provenance/api/preview-480-ranks-0001-0010.json",
+    "metadata_sha256": "82aa41e181e6a92b361ae05826e56b8e96113a2438c3cf06339893858766f3ba",
+    "file_page_revision": 1086529219,
+    "passages": [
+      "| other_versions=}}"
+    ],
+    "file_links": [],
+    "interpretation": "Links are leads, not proof of the same specimen/work; explicit review decisions are in work-review.json."
+  },
+  {
+    "candidate_id": "daee8e651a988d0c5419",
+    "metadata_path": "provenance/api/preview-480-ranks-0001-0010.json",
+    "metadata_sha256": "82aa41e181e6a92b361ae05826e56b8e96113a2438c3cf06339893858766f3ba",
+    "file_page_revision": 824106474,
+    "passages": [
+      "|other versions="
+    ],
+    "file_links": [],
+    "interpretation": "Links are leads, not proof of the same specimen/work; explicit review decisions are in work-review.json."
+  },
+  {
+    "candidate_id": "65c66aec1bea7d893731",
+    "metadata_path": "provenance/api/preview-480-ranks-0001-0010.json",
+    "metadata_sha256": "82aa41e181e6a92b361ae05826e56b8e96113a2438c3cf06339893858766f3ba",
+    "file_page_revision": 1179722958,
+    "passages": [
+      "|other_versions="
+    ],
+    "file_links": [],
+    "interpretation": "Links are leads, not proof of the same specimen/work; explicit review decisions are in work-review.json."
+  },
+  {
+    "candidate_id": "64eb4c50a3beaaaff9f4",
+    "metadata_path": "provenance/api/preview-480-ranks-0011-0020.json",
+    "metadata_sha256": "dae8050e015dd98af0227d4ba4061d341459664f9db1d495c487a810922faba1",
+    "file_page_revision": 1079362495,
+    "passages": [
+      "|other versions="
+    ],
+    "file_links": [],
+    "interpretation": "Links are leads, not proof of the same specimen/work; explicit review decisions are in work-review.json."
+  },
+  {
+    "candidate_id": "22800ebe6e2123eb7268",
+    "metadata_path": "provenance/api/preview-480-ranks-0011-0020.json",
+    "metadata_sha256": "dae8050e015dd98af0227d4ba4061d341459664f9db1d495c487a810922faba1",
+    "file_page_revision": 1173120256,
+    "passages": [
+      "|other_versions="
+    ],
+    "file_links": [],
+    "interpretation": "Links are leads, not proof of the same specimen/work; explicit review decisions are in work-review.json."
+  },
+  {
+    "candidate_id": "f736265542a1fbf90f4e",
+    "metadata_path": "provenance/api/preview-480-ranks-0011-0020.json",
+    "metadata_sha256": "dae8050e015dd98af0227d4ba4061d341459664f9db1d495c487a810922faba1",
+    "file_page_revision": 1264830827,
+    "passages": [
+      "|other_versions="
+    ],
+    "file_links": [],
+    "interpretation": "Links are leads, not proof of the same specimen/work; explicit review decisions are in work-review.json."
+  },
+  {
+    "candidate_id": "9d337aa6dde9c957810d",
+    "metadata_path": "provenance/api/preview-480-ranks-0011-0020.json",
+    "metadata_sha256": "dae8050e015dd98af0227d4ba4061d341459664f9db1d495c487a810922faba1",
+    "file_page_revision": 971988366,
+    "passages": [
+      "|other_versions="
+    ],
+    "file_links": [],
+    "interpretation": "Links are leads, not proof of the same specimen/work; explicit review decisions are in work-review.json."
+  },
+  {
+    "candidate_id": "da6ec5dcef83b45ceebf",
+    "metadata_path": "provenance/api/preview-480-ranks-0011-0020.json",
+    "metadata_sha256": "dae8050e015dd98af0227d4ba4061d341459664f9db1d495c487a810922faba1",
+    "file_page_revision": 823460782,
+    "passages": [
+      "|other versions="
+    ],
+    "file_links": [],
+    "interpretation": "Links are leads, not proof of the same specimen/work; explicit review decisions are in work-review.json."
+  },
+  {
+    "candidate_id": "3d181497bb1898be070e",
+    "metadata_path": "provenance/api/preview-480-ranks-0011-0020.json",
+    "metadata_sha256": "dae8050e015dd98af0227d4ba4061d341459664f9db1d495c487a810922faba1",
+    "file_page_revision": 1206153305,
+    "passages": [
+      "|other_versions="
+    ],
+    "file_links": [],
+    "interpretation": "Links are leads, not proof of the same specimen/work; explicit review decisions are in work-review.json."
+  },
+  {
+    "candidate_id": "136486906fcde57327e3",
+    "metadata_path": "provenance/api/preview-480-ranks-0011-0020.json",
+    "metadata_sha256": "dae8050e015dd98af0227d4ba4061d341459664f9db1d495c487a810922faba1",
+    "file_page_revision": 1086529146,
+    "passages": [
+      "|other versions="
+    ],
+    "file_links": [],
+    "interpretation": "Links are leads, not proof of the same specimen/work; explicit review decisions are in work-review.json."
+  },
+  {
+    "candidate_id": "ddcc9ed48b53415b8ca2",
+    "metadata_path": "provenance/api/preview-480-ranks-0011-0020.json",
+    "metadata_sha256": "dae8050e015dd98af0227d4ba4061d341459664f9db1d495c487a810922faba1",
+    "file_page_revision": 1247669358,
+    "passages": [
+      "|other_versions="
+    ],
+    "file_links": [],
+    "interpretation": "Links are leads, not proof of the same specimen/work; explicit review decisions are in work-review.json."
+  },
+  {
+    "candidate_id": "352a8d0432256ad4bb0f",
+    "metadata_path": "provenance/api/preview-480-ranks-0011-0020.json",
+    "metadata_sha256": "dae8050e015dd98af0227d4ba4061d341459664f9db1d495c487a810922faba1",
+    "file_page_revision": 982145791,
+    "passages": [
+      "|other versions="
+    ],
+    "file_links": [],
+    "interpretation": "Links are leads, not proof of the same specimen/work; explicit review decisions are in work-review.json."
+  },
+  {
+    "candidate_id": "24f8ece9892af39ccdeb",
+    "metadata_path": "provenance/api/preview-480-ranks-0011-0020.json",
+    "metadata_sha256": "dae8050e015dd98af0227d4ba4061d341459664f9db1d495c487a810922faba1",
+    "file_page_revision": 823460535,
+    "passages": [
+      "|other_versions="
+    ],
+    "file_links": [],
+    "interpretation": "Links are leads, not proof of the same specimen/work; explicit review decisions are in work-review.json."
+  },
+  {
+    "candidate_id": "f5a50f21ee402a54bcb7",
+    "metadata_path": "provenance/api/preview-480-ranks-0021-0030.json",
+    "metadata_sha256": "1dabea75d6d0c1d96fe7a5d218fde7275ea67f9218c044fc845ab66d7b18c384",
+    "file_page_revision": 1276590721,
+    "passages": [
+      "|other_versions="
+    ],
+    "file_links": [],
+    "interpretation": "Links are leads, not proof of the same specimen/work; explicit review decisions are in work-review.json."
+  },
+  {
+    "candidate_id": "4374e3312f2386cbabc6",
+    "metadata_path": "provenance/api/preview-480-ranks-0021-0030.json",
+    "metadata_sha256": "1dabea75d6d0c1d96fe7a5d218fde7275ea67f9218c044fc845ab66d7b18c384",
+    "file_page_revision": 1252025734,
+    "passages": [
+      "|other_versions="
+    ],
+    "file_links": [],
+    "interpretation": "Links are leads, not proof of the same specimen/work; explicit review decisions are in work-review.json."
+  },
+  {
+    "candidate_id": "f654c7d1bea9bdac8908",
+    "metadata_path": "provenance/api/preview-480-ranks-0021-0030.json",
+    "metadata_sha256": "1dabea75d6d0c1d96fe7a5d218fde7275ea67f9218c044fc845ab66d7b18c384",
+    "file_page_revision": 464442106,
+    "passages": [
+      "|other_versions= See [[:Category:Hachereau]]"
+    ],
+    "file_links": [],
+    "interpretation": "Links are leads, not proof of the same specimen/work; explicit review decisions are in work-review.json."
+  },
+  {
+    "candidate_id": "26e7c184b28b0ed5d77c",
+    "metadata_path": "provenance/api/preview-480-ranks-0021-0030.json",
+    "metadata_sha256": "1dabea75d6d0c1d96fe7a5d218fde7275ea67f9218c044fc845ab66d7b18c384",
+    "file_page_revision": 1249970119,
+    "passages": [
+      "|other_versions="
+    ],
+    "file_links": [],
+    "interpretation": "Links are leads, not proof of the same specimen/work; explicit review decisions are in work-review.json."
+  },
+  {
+    "candidate_id": "5833c33c40a574c495d1",
+    "metadata_path": "provenance/api/preview-480-ranks-0021-0030.json",
+    "metadata_sha256": "1dabea75d6d0c1d96fe7a5d218fde7275ea67f9218c044fc845ab66d7b18c384",
+    "file_page_revision": 1108031609,
+    "passages": [
+      "|other_versions="
+    ],
+    "file_links": [],
+    "interpretation": "Links are leads, not proof of the same specimen/work; explicit review decisions are in work-review.json."
+  },
+  {
+    "candidate_id": "cb3c67dfad44c78707e8",
+    "metadata_path": "provenance/api/preview-480-ranks-0021-0030.json",
+    "metadata_sha256": "1dabea75d6d0c1d96fe7a5d218fde7275ea67f9218c044fc845ab66d7b18c384",
+    "file_page_revision": 1264058054,
+    "passages": [
+      "|other versions="
+    ],
+    "file_links": [],
+    "interpretation": "Links are leads, not proof of the same specimen/work; explicit review decisions are in work-review.json."
+  },
+  {
+    "candidate_id": "7126f8352f09e29fe3d0",
+    "metadata_path": "provenance/api/preview-480-ranks-0021-0030.json",
+    "metadata_sha256": "1dabea75d6d0c1d96fe7a5d218fde7275ea67f9218c044fc845ab66d7b18c384",
+    "file_page_revision": 1275101193,
+    "passages": [
+      "|other_versions="
+    ],
+    "file_links": [],
+    "interpretation": "Links are leads, not proof of the same specimen/work; explicit review decisions are in work-review.json."
+  },
+  {
+    "candidate_id": "e84b70c2ef979471462e",
+    "metadata_path": "provenance/api/preview-480-ranks-0021-0030.json",
+    "metadata_sha256": "1dabea75d6d0c1d96fe7a5d218fde7275ea67f9218c044fc845ab66d7b18c384",
+    "file_page_revision": 823460643,
+    "passages": [
+      "|other_versions="
+    ],
+    "file_links": [],
+    "interpretation": "Links are leads, not proof of the same specimen/work; explicit review decisions are in work-review.json."
+  },
+  {
+    "candidate_id": "070e06dcdc0e95592c64",
+    "metadata_path": "provenance/api/preview-480-ranks-0021-0030.json",
+    "metadata_sha256": "1dabea75d6d0c1d96fe7a5d218fde7275ea67f9218c044fc845ab66d7b18c384",
+    "file_page_revision": 1275091955,
+    "passages": [
+      "|other_versions="
+    ],
+    "file_links": [],
+    "interpretation": "Links are leads, not proof of the same specimen/work; explicit review decisions are in work-review.json."
+  },
+  {
+    "candidate_id": "16f465fef13adac640fd",
+    "metadata_path": "provenance/api/preview-480-ranks-0031-0040.json",
+    "metadata_sha256": "4447cddeaf69dfb7bb70d104cb1ff51d9b9af7d524f43182dfb07d187e1efeaa",
+    "file_page_revision": 1137599723,
+    "passages": [
+      "|other_versions="
+    ],
+    "file_links": [],
+    "interpretation": "Links are leads, not proof of the same specimen/work; explicit review decisions are in work-review.json."
+  },
+  {
+    "candidate_id": "912fb49ddab2a46b8450",
+    "metadata_path": "provenance/api/preview-480-ranks-0031-0040.json",
+    "metadata_sha256": "4447cddeaf69dfb7bb70d104cb1ff51d9b9af7d524f43182dfb07d187e1efeaa",
+    "file_page_revision": 787405410,
+    "passages": [
+      "|other versions="
+    ],
+    "file_links": [],
+    "interpretation": "Links are leads, not proof of the same specimen/work; explicit review decisions are in work-review.json."
+  },
+  {
+    "candidate_id": "1cdf899b798c2d9da1ec",
+    "metadata_path": "provenance/api/preview-480-ranks-0031-0040.json",
+    "metadata_sha256": "4447cddeaf69dfb7bb70d104cb1ff51d9b9af7d524f43182dfb07d187e1efeaa",
+    "file_page_revision": 1057033625,
+    "passages": [
+      "|other_versions="
+    ],
+    "file_links": [],
+    "interpretation": "Links are leads, not proof of the same specimen/work; explicit review decisions are in work-review.json."
+  },
+  {
+    "candidate_id": "3f89f989aa8a746f38e1",
+    "metadata_path": "provenance/api/preview-480-ranks-0031-0040.json",
+    "metadata_sha256": "4447cddeaf69dfb7bb70d104cb1ff51d9b9af7d524f43182dfb07d187e1efeaa",
+    "file_page_revision": 464442339,
+    "passages": [
+      "|other_versions= See [[:Category:Hachereau]]"
+    ],
+    "file_links": [],
+    "interpretation": "Links are leads, not proof of the same specimen/work; explicit review decisions are in work-review.json."
+  },
+  {
+    "candidate_id": "805f4f806391ff12d956",
+    "metadata_path": "provenance/api/preview-480-ranks-0031-0040.json",
+    "metadata_sha256": "4447cddeaf69dfb7bb70d104cb1ff51d9b9af7d524f43182dfb07d187e1efeaa",
+    "file_page_revision": 1255609436,
+    "passages": [
+      "|other_versions="
+    ],
+    "file_links": [],
+    "interpretation": "Links are leads, not proof of the same specimen/work; explicit review decisions are in work-review.json."
+  },
+  {
+    "candidate_id": "039ba7d460c06f59436d",
+    "metadata_path": "provenance/api/preview-480-ranks-0031-0040.json",
+    "metadata_sha256": "4447cddeaf69dfb7bb70d104cb1ff51d9b9af7d524f43182dfb07d187e1efeaa",
+    "file_page_revision": 1047790402,
+    "passages": [
+      "|other_versions="
+    ],
+    "file_links": [],
+    "interpretation": "Links are leads, not proof of the same specimen/work; explicit review decisions are in work-review.json."
+  },
+  {
+    "candidate_id": "79ba01b10b2d9bd4b5a8",
+    "metadata_path": "provenance/api/preview-480-ranks-0031-0040.json",
+    "metadata_sha256": "4447cddeaf69dfb7bb70d104cb1ff51d9b9af7d524f43182dfb07d187e1efeaa",
+    "file_page_revision": 1160634973,
+    "passages": [
+      "|other_versions="
+    ],
+    "file_links": [],
+    "interpretation": "Links are leads, not proof of the same specimen/work; explicit review decisions are in work-review.json."
+  },
+  {
+    "candidate_id": "fe7ee9879b9e1b21fd1f",
+    "metadata_path": "provenance/api/preview-480-ranks-0031-0040.json",
+    "metadata_sha256": "4447cddeaf69dfb7bb70d104cb1ff51d9b9af7d524f43182dfb07d187e1efeaa",
+    "file_page_revision": 1272931660,
+    "passages": [
+      "|other versions="
+    ],
+    "file_links": [],
+    "interpretation": "Links are leads, not proof of the same specimen/work; explicit review decisions are in work-review.json."
+  },
+  {
+    "candidate_id": "037e6097764e95dd1a9f",
+    "metadata_path": "provenance/api/preview-480-ranks-0031-0040.json",
+    "metadata_sha256": "4447cddeaf69dfb7bb70d104cb1ff51d9b9af7d524f43182dfb07d187e1efeaa",
+    "file_page_revision": 1086529290,
+    "passages": [
+      "|other_versions="
+    ],
+    "file_links": [],
+    "interpretation": "Links are leads, not proof of the same specimen/work; explicit review decisions are in work-review.json."
+  },
+  {
+    "candidate_id": "6e0de4dccb877dfff059",
+    "metadata_path": "provenance/api/preview-480-ranks-0031-0040.json",
+    "metadata_sha256": "4447cddeaf69dfb7bb70d104cb1ff51d9b9af7d524f43182dfb07d187e1efeaa",
+    "file_page_revision": 714033783,
+    "passages": [
+      "|other versions="
+    ],
+    "file_links": [],
+    "interpretation": "Links are leads, not proof of the same specimen/work; explicit review decisions are in work-review.json."
+  },
+  {
+    "candidate_id": "9fb09b2c29d31914a2cc",
+    "metadata_path": "provenance/api/preview-480-ranks-0041-0050.json",
+    "metadata_sha256": "569a1c60b00b85ee9fb5d5d9a78e7f2a6a2df82cc055a36bf0f39ceaee8beff6",
+    "file_page_revision": 1086528517,
+    "passages": [
+      "|other_versions="
+    ],
+    "file_links": [],
+    "interpretation": "Links are leads, not proof of the same specimen/work; explicit review decisions are in work-review.json."
+  },
+  {
+    "candidate_id": "a9b627eb6f8ba49b15aa",
+    "metadata_path": "provenance/api/preview-480-ranks-0041-0050.json",
+    "metadata_sha256": "569a1c60b00b85ee9fb5d5d9a78e7f2a6a2df82cc055a36bf0f39ceaee8beff6",
+    "file_page_revision": 1017505581,
+    "passages": [
+      "|other versions="
+    ],
+    "file_links": [],
+    "interpretation": "Links are leads, not proof of the same specimen/work; explicit review decisions are in work-review.json."
+  },
+  {
+    "candidate_id": "b2b695b4c69bdb6cb637",
+    "metadata_path": "provenance/api/preview-480-ranks-0041-0050.json",
+    "metadata_sha256": "569a1c60b00b85ee9fb5d5d9a78e7f2a6a2df82cc055a36bf0f39ceaee8beff6",
+    "file_page_revision": 1005023739,
+    "passages": [
+      "|other versions="
+    ],
+    "file_links": [],
+    "interpretation": "Links are leads, not proof of the same specimen/work; explicit review decisions are in work-review.json."
+  },
+  {
+    "candidate_id": "754188c20d9c09ce7566",
+    "metadata_path": "provenance/api/preview-480-ranks-0041-0050.json",
+    "metadata_sha256": "569a1c60b00b85ee9fb5d5d9a78e7f2a6a2df82cc055a36bf0f39ceaee8beff6",
+    "file_page_revision": 823461046,
+    "passages": [
+      "|other versions="
+    ],
+    "file_links": [],
+    "interpretation": "Links are leads, not proof of the same specimen/work; explicit review decisions are in work-review.json."
+  },
+  {
+    "candidate_id": "219886fe87232f6c51b2",
+    "metadata_path": "provenance/api/preview-480-ranks-0041-0050.json",
+    "metadata_sha256": "569a1c60b00b85ee9fb5d5d9a78e7f2a6a2df82cc055a36bf0f39ceaee8beff6",
+    "file_page_revision": 1053546293,
+    "passages": [
+      "|other versions="
+    ],
+    "file_links": [],
+    "interpretation": "Links are leads, not proof of the same specimen/work; explicit review decisions are in work-review.json."
+  },
+  {
+    "candidate_id": "ca1b62234dda0ffbe78e",
+    "metadata_path": "provenance/api/preview-480-ranks-0041-0050.json",
+    "metadata_sha256": "569a1c60b00b85ee9fb5d5d9a78e7f2a6a2df82cc055a36bf0f39ceaee8beff6",
+    "file_page_revision": 1273934991,
+    "passages": [
+      "|other_versions="
+    ],
+    "file_links": [],
+    "interpretation": "Links are leads, not proof of the same specimen/work; explicit review decisions are in work-review.json."
+  },
+  {
+    "candidate_id": "1535866e7d41e86e1415",
+    "metadata_path": "provenance/api/preview-480-ranks-0041-0050.json",
+    "metadata_sha256": "569a1c60b00b85ee9fb5d5d9a78e7f2a6a2df82cc055a36bf0f39ceaee8beff6",
+    "file_page_revision": 973128737,
+    "passages": [
+      " |other versions   = "
+    ],
+    "file_links": [],
+    "interpretation": "Links are leads, not proof of the same specimen/work; explicit review decisions are in work-review.json."
+  },
+  {
+    "candidate_id": "23aea69f13da121daee8",
+    "metadata_path": "provenance/api/preview-480-ranks-0041-0050.json",
+    "metadata_sha256": "569a1c60b00b85ee9fb5d5d9a78e7f2a6a2df82cc055a36bf0f39ceaee8beff6",
+    "file_page_revision": 1275101203,
+    "passages": [
+      "|other_versions="
+    ],
+    "file_links": [],
+    "interpretation": "Links are leads, not proof of the same specimen/work; explicit review decisions are in work-review.json."
+  },
+  {
+    "candidate_id": "b56303e73386ab56798c",
+    "metadata_path": "provenance/api/preview-480-ranks-0041-0050.json",
+    "metadata_sha256": "569a1c60b00b85ee9fb5d5d9a78e7f2a6a2df82cc055a36bf0f39ceaee8beff6",
+    "file_page_revision": 1086528900,
+    "passages": [
+      "|other_versions= The full page in [[:Image:Acheuleanhandaxes.jpg]]"
+    ],
+    "file_links": [],
+    "interpretation": "Links are leads, not proof of the same specimen/work; explicit review decisions are in work-review.json."
+  },
+  {
+    "candidate_id": "dfd55b67141e0167d872",
+    "metadata_path": "provenance/api/preview-480-ranks-0051-0060.json",
+    "metadata_sha256": "74c3ed90dcd617036d6b1d95a80052a06eeeaf7c4a75ca661c80d09b1d22aa6f",
+    "file_page_revision": 901935958,
+    "passages": [
+      "|other_versions="
+    ],
+    "file_links": [],
+    "interpretation": "Links are leads, not proof of the same specimen/work; explicit review decisions are in work-review.json."
+  },
+  {
+    "candidate_id": "c714686bcc80d7137085",
+    "metadata_path": "provenance/api/preview-480-ranks-0051-0060.json",
+    "metadata_sha256": "74c3ed90dcd617036d6b1d95a80052a06eeeaf7c4a75ca661c80d09b1d22aa6f",
+    "file_page_revision": 1062505123,
+    "passages": [
+      "|other versions="
+    ],
+    "file_links": [],
+    "interpretation": "Links are leads, not proof of the same specimen/work; explicit review decisions are in work-review.json."
+  },
+  {
+    "candidate_id": "e8a953804e8bd92c5a86",
+    "metadata_path": "provenance/api/preview-480-ranks-0051-0060.json",
+    "metadata_sha256": "74c3ed90dcd617036d6b1d95a80052a06eeeaf7c4a75ca661c80d09b1d22aa6f",
+    "file_page_revision": 823460936,
+    "passages": [
+      "|other_versions="
+    ],
+    "file_links": [],
+    "interpretation": "Links are leads, not proof of the same specimen/work; explicit review decisions are in work-review.json."
+  },
+  {
+    "candidate_id": "48cd181fcd1a9b2f39ff",
+    "metadata_path": "provenance/api/preview-480-ranks-0051-0060.json",
+    "metadata_sha256": "74c3ed90dcd617036d6b1d95a80052a06eeeaf7c4a75ca661c80d09b1d22aa6f",
+    "file_page_revision": 823460721,
+    "passages": [
+      "|other_versions="
+    ],
+    "file_links": [],
+    "interpretation": "Links are leads, not proof of the same specimen/work; explicit review decisions are in work-review.json."
+  },
+  {
+    "candidate_id": "5fbfca29db035726bf39",
+    "metadata_path": "provenance/api/preview-480-ranks-0051-0060.json",
+    "metadata_sha256": "74c3ed90dcd617036d6b1d95a80052a06eeeaf7c4a75ca661c80d09b1d22aa6f",
+    "file_page_revision": 823460707,
+    "passages": [
+      "|other_versions="
+    ],
+    "file_links": [],
+    "interpretation": "Links are leads, not proof of the same specimen/work; explicit review decisions are in work-review.json."
+  },
+  {
+    "candidate_id": "36a5e7a56716ba717f05",
+    "metadata_path": "provenance/api/preview-480-ranks-0051-0060.json",
+    "metadata_sha256": "74c3ed90dcd617036d6b1d95a80052a06eeeaf7c4a75ca661c80d09b1d22aa6f",
+    "file_page_revision": 1178935589,
+    "passages": [
+      "|other versions="
+    ],
+    "file_links": [],
+    "interpretation": "Links are leads, not proof of the same specimen/work; explicit review decisions are in work-review.json."
+  },
+  {
+    "candidate_id": "0b5e36d4a8cc1e80aa88",
+    "metadata_path": "provenance/api/preview-480-ranks-0051-0060.json",
+    "metadata_sha256": "74c3ed90dcd617036d6b1d95a80052a06eeeaf7c4a75ca661c80d09b1d22aa6f",
+    "file_page_revision": 1030178577,
+    "passages": [
+      "|other versions="
+    ],
+    "file_links": [],
+    "interpretation": "Links are leads, not proof of the same specimen/work; explicit review decisions are in work-review.json."
+  },
+  {
+    "candidate_id": "e7f8bfab2b8144f773da",
+    "metadata_path": "provenance/api/preview-480-ranks-0061-0070.json",
+    "metadata_sha256": "fc3b7d16ef836714b70ca2de1d4d4413a31b329813653405d857033fc6fc79ff",
+    "file_page_revision": 823460711,
+    "passages": [
+      "|other_versions="
+    ],
+    "file_links": [],
+    "interpretation": "Links are leads, not proof of the same specimen/work; explicit review decisions are in work-review.json."
+  },
+  {
+    "candidate_id": "32fb67b97f120e7ae3b4",
+    "metadata_path": "provenance/api/preview-480-ranks-0061-0070.json",
+    "metadata_sha256": "fc3b7d16ef836714b70ca2de1d4d4413a31b329813653405d857033fc6fc79ff",
+    "file_page_revision": 1086529310,
+    "passages": [
+      "|other_versions="
+    ],
+    "file_links": [],
+    "interpretation": "Links are leads, not proof of the same specimen/work; explicit review decisions are in work-review.json."
+  },
+  {
+    "candidate_id": "5ea29f87e2be45ebe968",
+    "metadata_path": "provenance/api/preview-480-ranks-0061-0070.json",
+    "metadata_sha256": "fc3b7d16ef836714b70ca2de1d4d4413a31b329813653405d857033fc6fc79ff",
+    "file_page_revision": 823461056,
+    "passages": [
+      "|other_versions="
+    ],
+    "file_links": [],
+    "interpretation": "Links are leads, not proof of the same specimen/work; explicit review decisions are in work-review.json."
+  },
+  {
+    "candidate_id": "7a666ee6f18013b3ab26",
+    "metadata_path": "provenance/api/preview-480-ranks-0061-0070.json",
+    "metadata_sha256": "fc3b7d16ef836714b70ca2de1d4d4413a31b329813653405d857033fc6fc79ff",
+    "file_page_revision": 823461067,
+    "passages": [
+      "|other_versions="
+    ],
+    "file_links": [],
+    "interpretation": "Links are leads, not proof of the same specimen/work; explicit review decisions are in work-review.json."
+  },
+  {
+    "candidate_id": "4e8fcefafd852bdf0fec",
+    "metadata_path": "provenance/api/preview-480-ranks-0061-0070.json",
+    "metadata_sha256": "fc3b7d16ef836714b70ca2de1d4d4413a31b329813653405d857033fc6fc79ff",
+    "file_page_revision": 1291966299,
+    "passages": [
+      "|other_versions="
+    ],
+    "file_links": [],
+    "interpretation": "Links are leads, not proof of the same specimen/work; explicit review decisions are in work-review.json."
+  },
+  {
+    "candidate_id": "164a3fe5d246381ba1b9",
+    "metadata_path": "provenance/api/preview-480-ranks-0061-0070.json",
+    "metadata_sha256": "fc3b7d16ef836714b70ca2de1d4d4413a31b329813653405d857033fc6fc79ff",
+    "file_page_revision": 997172797,
+    "passages": [
+      "|other versions="
+    ],
+    "file_links": [],
+    "interpretation": "Links are leads, not proof of the same specimen/work; explicit review decisions are in work-review.json."
+  },
+  {
+    "candidate_id": "c869cece3a0baf80bc88",
+    "metadata_path": "provenance/api/preview-480-ranks-0061-0070.json",
+    "metadata_sha256": "fc3b7d16ef836714b70ca2de1d4d4413a31b329813653405d857033fc6fc79ff",
+    "file_page_revision": 1005023743,
+    "passages": [
+      "|other versions="
+    ],
+    "file_links": [],
+    "interpretation": "Links are leads, not proof of the same specimen/work; explicit review decisions are in work-review.json."
+  },
+  {
+    "candidate_id": "413a5f0391830c8cf94b",
+    "metadata_path": "provenance/api/preview-480-ranks-0061-0070.json",
+    "metadata_sha256": "fc3b7d16ef836714b70ca2de1d4d4413a31b329813653405d857033fc6fc79ff",
+    "file_page_revision": 823461053,
+    "passages": [
+      "|other_versions="
+    ],
+    "file_links": [],
+    "interpretation": "Links are leads, not proof of the same specimen/work; explicit review decisions are in work-review.json."
+  },
+  {
+    "candidate_id": "baa87bd11d711fbe04de",
+    "metadata_path": "provenance/api/preview-480-ranks-0061-0070.json",
+    "metadata_sha256": "fc3b7d16ef836714b70ca2de1d4d4413a31b329813653405d857033fc6fc79ff",
+    "file_page_revision": 1275101172,
+    "passages": [
+      "|other_versions="
+    ],
+    "file_links": [],
+    "interpretation": "Links are leads, not proof of the same specimen/work; explicit review decisions are in work-review.json."
+  },
+  {
+    "candidate_id": "03dcbec8076fcc978cfc",
+    "metadata_path": "provenance/api/preview-480-ranks-0071-0080.json",
+    "metadata_sha256": "f05db0b59aede9e82649b2f2dfceb48413cd81dd0c53f816d469ecda1155e8b0",
+    "file_page_revision": 823460934,
+    "passages": [
+      "|other_versions="
+    ],
+    "file_links": [],
+    "interpretation": "Links are leads, not proof of the same specimen/work; explicit review decisions are in work-review.json."
+  },
+  {
+    "candidate_id": "bef9e7bc1bf8ad104cf0",
+    "metadata_path": "provenance/api/preview-480-ranks-0071-0080.json",
+    "metadata_sha256": "f05db0b59aede9e82649b2f2dfceb48413cd81dd0c53f816d469ecda1155e8b0",
+    "file_page_revision": 1254894235,
+    "passages": [
+      "|other_versions="
+    ],
+    "file_links": [],
+    "interpretation": "Links are leads, not proof of the same specimen/work; explicit review decisions are in work-review.json."
+  },
+  {
+    "candidate_id": "e5ed285143923b94d4db",
+    "metadata_path": "provenance/api/preview-480-ranks-0071-0080.json",
+    "metadata_sha256": "f05db0b59aede9e82649b2f2dfceb48413cd81dd0c53f816d469ecda1155e8b0",
+    "file_page_revision": 464442285,
+    "passages": [
+      "|other_versions= See [[:Category:Hachereau]]"
+    ],
+    "file_links": [],
+    "interpretation": "Links are leads, not proof of the same specimen/work; explicit review decisions are in work-review.json."
+  },
+  {
+    "candidate_id": "921fe13e22d136ff7a90",
+    "metadata_path": "provenance/api/preview-480-ranks-0071-0080.json",
+    "metadata_sha256": "f05db0b59aede9e82649b2f2dfceb48413cd81dd0c53f816d469ecda1155e8b0",
+    "file_page_revision": 1160635624,
+    "passages": [
+      "|other_versions="
+    ],
+    "file_links": [],
+    "interpretation": "Links are leads, not proof of the same specimen/work; explicit review decisions are in work-review.json."
+  },
+  {
+    "candidate_id": "7669dda3601bf04a855e",
+    "metadata_path": "provenance/api/preview-480-ranks-0071-0080.json",
+    "metadata_sha256": "f05db0b59aede9e82649b2f2dfceb48413cd81dd0c53f816d469ecda1155e8b0",
+    "file_page_revision": 1152347695,
+    "passages": [
+      "|other versions="
+    ],
+    "file_links": [],
+    "interpretation": "Links are leads, not proof of the same specimen/work; explicit review decisions are in work-review.json."
+  },
+  {
+    "candidate_id": "7ebae791ddeb827bc907",
+    "metadata_path": "provenance/api/preview-480-ranks-0071-0080.json",
+    "metadata_sha256": "f05db0b59aede9e82649b2f2dfceb48413cd81dd0c53f816d469ecda1155e8b0",
+    "file_page_revision": 719155611,
+    "passages": [
+      "|other versions="
+    ],
+    "file_links": [],
+    "interpretation": "Links are leads, not proof of the same specimen/work; explicit review decisions are in work-review.json."
+  },
+  {
+    "candidate_id": "52b0dd80eabecf92c75e",
+    "metadata_path": "provenance/api/preview-480-ranks-0071-0080.json",
+    "metadata_sha256": "f05db0b59aede9e82649b2f2dfceb48413cd81dd0c53f816d469ecda1155e8b0",
+    "file_page_revision": 1242156447,
+    "passages": [
+      "|other_versions="
+    ],
+    "file_links": [],
+    "interpretation": "Links are leads, not proof of the same specimen/work; explicit review decisions are in work-review.json."
+  },
+  {
+    "candidate_id": "cdc0564f43198d6916c7",
+    "metadata_path": "provenance/api/preview-480-ranks-0071-0080.json",
+    "metadata_sha256": "f05db0b59aede9e82649b2f2dfceb48413cd81dd0c53f816d469ecda1155e8b0",
+    "file_page_revision": 1275102844,
+    "passages": [
+      "|other_versions="
+    ],
+    "file_links": [],
+    "interpretation": "Links are leads, not proof of the same specimen/work; explicit review decisions are in work-review.json."
+  },
+  {
+    "candidate_id": "bb2004e706d477dae616",
+    "metadata_path": "provenance/api/preview-480-ranks-0071-0080.json",
+    "metadata_sha256": "f05db0b59aede9e82649b2f2dfceb48413cd81dd0c53f816d469ecda1155e8b0",
+    "file_page_revision": 1200409212,
+    "passages": [
+      "|other_versions="
+    ],
+    "file_links": [],
+    "interpretation": "Links are leads, not proof of the same specimen/work; explicit review decisions are in work-review.json."
+  },
+  {
+    "candidate_id": "e648d6349d7ae1721fe4",
+    "metadata_path": "provenance/api/preview-480-ranks-0071-0080.json",
+    "metadata_sha256": "f05db0b59aede9e82649b2f2dfceb48413cd81dd0c53f816d469ecda1155e8b0",
+    "file_page_revision": 1241211598,
+    "passages": [
+      "|other_versions="
+    ],
+    "file_links": [],
+    "interpretation": "Links are leads, not proof of the same specimen/work; explicit review decisions are in work-review.json."
+  }
+]

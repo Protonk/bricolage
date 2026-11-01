@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T23:43:26.022734+00:00",
+  "key": "category-3-0001",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&list=categorymembers&cmtitle=Category%3A20th-century+ex+libris&cmtype=file&cmprop=ids%7Ctitle%7Ctype&cmsort=sortkey&cmlimit=500",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 20186,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 23:43:26 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-nfnqj",
+    "cache-control": "private, must-revalidate, max-age=0",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 pass",
+    "x-request-id": "3be0c946-1d7c-4531-82fd-c90031ce5bf2"
+  },
+  "sha256": "636472d13f87e30edcf755f4b7c2628b5259a165306ecc4ee3224d781cd70d10"
+}

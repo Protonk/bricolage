@@ -1,0 +1,20 @@
+{
+  "original_path": "Fixtures/hazy_curatorial_three_50_handoff",
+  "source_files": {
+    "CATEGORIES.json": "c083d4616b545aaa6010c3c4ea734be4197c8e561ec5e091eb738dddf646f87a",
+    "HANDOFF_SHA256SUMS.txt": "af38eb8384995d213699c47b36a553540c00b24b2f5c6428adfbd618a5aa5513",
+    "WORKFLOW.md": "8202b68e6e3975b338d72e739ca64c035d7dbe9f74d265ef0f9d92d944b7b4f2",
+    "README.md": "46378821cb01de4ddac15049870911d60c82d245bb00cb5024070b97c612f6cb",
+    "THUMBNAIL_REVIEW.md": "017e1cdfc6882bd0747282a7083e0bc4ea526fe52dbbb6b064839503780d374e",
+    "CHECKS.md": "cb36a2fd7bef69c0f61e83cd966a9ccec30c18cbad52210122f1d5d69060e5aa"
+  },
+  "imported_utc": "2026-10-31T23:41:57.594803+00:00",
+  "cleanup": {
+    "status": "removed",
+    "utc": "2026-11-01T00:23:31.490614+00:00",
+    "original_path": "Fixtures/hazy_curatorial_three_50_handoff",
+    "verification": "All six original handoff files hash-checked against byte-identical copies in each of the three leaf provenance/supplied directories before removal.",
+    "authorization": "Current user requested the instruction folder be gone after integration."
+  },
+  "authorization": "Current user authorizes acquisition, thumbnail scope rejection, roughly 50 inputs (60-65 acceptable), integration, commit and handoff cleanup."
+}

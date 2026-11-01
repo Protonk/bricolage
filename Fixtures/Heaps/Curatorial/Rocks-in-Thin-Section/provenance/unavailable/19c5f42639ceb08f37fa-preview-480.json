@@ -1,0 +1,7 @@
+{
+  "candidate_id": "19c5f42639ceb08f37fa",
+  "stage": "preview",
+  "requested_edge": 480,
+  "metadata_path": "provenance/api/preview-480-ranks-0041-0050.json",
+  "reason": "Non-image original outside supported single-image input scope; no media request made."
+}

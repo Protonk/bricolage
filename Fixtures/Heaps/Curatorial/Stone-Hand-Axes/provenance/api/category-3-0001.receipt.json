@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T23:43:16.102843+00:00",
+  "key": "category-3-0001",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&list=categorymembers&cmtitle=Category%3ADrawings+of+stone+hand+axes&cmtype=file&cmprop=ids%7Ctitle%7Ctype&cmsort=sortkey&cmlimit=500",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 6533,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 23:43:16 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-c66mn",
+    "cache-control": "private, must-revalidate, max-age=0",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 pass",
+    "x-request-id": "5585b179-3745-49c7-ba34-4043b6a4d63d"
+  },
+  "sha256": "acbdcdbd22c00deb0b835e48efbda789b4eda17b0ff270a4eaab6e416cfb6e16"
+}

@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T23:44:42.968361+00:00",
+  "key": "preview-480-ranks-0021-0030",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3ABookplate+of+Sir+Charles+Philip+Huntington%2C+3rd+Baronet.jpg%7CFile%3ABookplate+of+Malden+Public+Library%2C+August+1924+-+from+Maldonian+Yearbook+%28IA+maldonianyearboo1924mald%29+%28page+2+crop%29.jpg%7CFile%3ALudvig+S+Ipsen+Bookplate+James+Means.jpg%7CFile%3AEx-libris+Oberaltaich+02.jpg%7CFile%3AMartin+Eisengrein+Exlibris+2.jpg%7CFile%3AKarl+Hobrecker+Ex+libris+30.jpg%7CFile%3AEx-Libris+de+Jos%C3%A9+de+Barros+Martins+%28cropped%29.jpg%7CFile%3ASigilium+Archiepislopalis+Ordinariatis+Monac+et+Frisingens+20190314+.jpg%7CFile%3ACanadiana+bookplate+TPL+1914.jpg%7CFile%3AMargaret+Marriott.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=480&iiurlheight=480&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 43521,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 23:44:43 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-42p2x",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "6194ed3c-cab2-4ce8-b705-0fea4ccb0761"
+  },
+  "sha256": "8ab6597f097fcb0e7c039a65d78dd70e1ce7ea2922f8cd3253bc613da641fa02"
+}

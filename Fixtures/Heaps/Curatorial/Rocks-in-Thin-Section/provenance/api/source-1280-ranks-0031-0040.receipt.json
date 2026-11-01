@@ -1,0 +1,19 @@
+{
+  "utc": "2026-11-01T00:01:04.030803+00:00",
+  "key": "source-1280-ranks-0031-0040",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3ARainbow+Amphibolite.JPG%7CFile%3ATartan-Microcline.JPG%7CFile%3APistacite+Epidote.JPG%7CFile%3AVista+de+rocas+al+microscopio+polarizante.jpg%7CFile%3ASieve+texture.JPG%7CFile%3AChlorit+LPL.jpg%7CFile%3AGranodiorite+pmg+ss+2006.jpg%7CFile%3ARunite4.PNG%7CFile%3AFylite-macro.jpg%7CFile%3AETH-BIB-Ciegos%2C+Anden%2C+Schliff+109-Dia+247-M-00042.tif&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1280&iiurlheight=1280&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 47611,
+  "headers": {
+    "date": "Sun, 01 Nov 2026 00:01:04 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-9kpwj",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "759da1fb-499a-443c-aade-0b8f3b3f5ed8"
+  },
+  "sha256": "6a1f5cb6a19968751d84f33157a7706f4bc9c79e092aa9054418852fc6b200b3"
+}

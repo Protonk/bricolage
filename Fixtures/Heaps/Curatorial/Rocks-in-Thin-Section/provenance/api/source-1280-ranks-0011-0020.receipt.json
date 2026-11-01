@@ -1,0 +1,19 @@
+{
+  "utc": "2026-11-01T00:00:57.203277+00:00",
+  "key": "source-1280-ranks-0011-0020",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3AGabro2a.jpg%7CFile%3A070811-1+siderite+20x+XPL.jpg%7CFile%3AGranophyr+Struktur+LPL.jpg%7CFile%3A180507-2+qtzaren+silicacem+dustrim+20x+XPL.jpg%7CFile%3AGreen+Epidote.JPG%7CFile%3ASivrihisar+blueschist3.jpg%7CFile%3AHa%C3%BCyne+crystal.JPG%7CFile%3ABuchonit+LPL.jpg%7CFile%3APhotomicrograph-of-blocky-anhedral-to-subhedral-quartz-crystals-of-the-quartz-coating-from-the-quartz-zone-Rusey-Fault-s.jpg%7CFile%3ATopasgreisen+Topas+1+LPL.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1280&iiurlheight=1280&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 40711,
+  "headers": {
+    "date": "Sun, 01 Nov 2026 00:00:57 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-pddw9",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "d043e2aa-1de9-4a6b-9822-4519dc72e36b"
+  },
+  "sha256": "78c1ab27321c0fa126f9824125fef0727af4742f2b4a411d6e6a64553a0e3d78"
+}

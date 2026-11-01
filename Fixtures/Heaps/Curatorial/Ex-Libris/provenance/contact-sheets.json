@@ -1,0 +1,76 @@
+[
+  {
+    "path": "previews/selected-01.jpg",
+    "sha256": "92c6f9f3ef6fdc97e9f878f832a5ca5d86f7fb5cecc18a4321842da8d2258fe5",
+    "width": 1280,
+    "height": 1400,
+    "candidate_ids": [
+      "e4504c2a536c9f43cf85",
+      "cd17dffa3d0c582c14f1",
+      "7826fc259faabfd4e4bb",
+      "caf3bb879ed5943c92e0",
+      "b4ed11584be0cc8c3137",
+      "fbeeeeb85c60ac630022",
+      "37d0bfcf3b2b2c787496",
+      "02e865d4a64ba2bf87d3",
+      "889f1963e0b954e0b152",
+      "075d5378ccbcdb444112",
+      "7524281f4987396f6e7a",
+      "478c5e31dde2eaa9c3f5",
+      "1bc6a6719b8fef41fbf8",
+      "2d620525e47199ae6253",
+      "906bea560a17546bb03b",
+      "d5e267c651d08c09117a",
+      "f42d1e0a6f3f7677974a",
+      "3b2acc44bf83cff7533a",
+      "773b46b03286df375c2f",
+      "ea4e53ffc5432cef619e"
+    ]
+  },
+  {
+    "path": "previews/selected-02.jpg",
+    "sha256": "6d999218fa82e41cc71d1ce7d7f0abfc4b6e3476c47a73f1105b7e1bdcfd543d",
+    "width": 1280,
+    "height": 1400,
+    "candidate_ids": [
+      "044e64c94a28dc8be0f8",
+      "63876895d4a95384266e",
+      "5d1998fab740f3a2183f",
+      "5649b7b96bf2e1e4f3a3",
+      "cafe55c44731cc57ac71",
+      "ceff8b1888cb02b67dc7",
+      "24c05fcc626657b8199a",
+      "3ce0f2c8ec7ff2b30329",
+      "53f2751ab9d1674830d0",
+      "c8cb9e91c413dd9f79d0",
+      "1ba9fda8d8b3f7219804",
+      "c097daa3c47c593fcf30",
+      "bb4736a490a9615efc1c",
+      "a872a995597038559e0d",
+      "9a47afbe55646144b0f5",
+      "4f7dd5570b878dc7c81f",
+      "77e80368336b352224bc",
+      "0f63cb04a2ebec3347b9",
+      "8fdd30b575ac4fba8cfe",
+      "cfb550031f74183aa7d9"
+    ]
+  },
+  {
+    "path": "previews/selected-03.jpg",
+    "sha256": "1b5e0596bb368b0b58bf43c85798a2974457e93f1e3d1cdb31c934d7fa7d6073",
+    "width": 1280,
+    "height": 840,
+    "candidate_ids": [
+      "d3d6549cd75d1a81bb2c",
+      "a90dbd57246a7b3e239b",
+      "1e1876b15b33488daddc",
+      "2076793e3e0449d44b57",
+      "dd39aa37b6e0cda16113",
+      "f1bfb5e453b4cc37a530",
+      "d2e1c573734469406f50",
+      "afae6a3424dde0597b5d",
+      "3fd0f1220b49ff5ed41b",
+      "591044ad40fef078adef"
+    ]
+  }
+]

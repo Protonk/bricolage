@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T23:43:19.427782+00:00",
+  "key": "category-1-0001",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&list=categorymembers&cmtitle=Category%3AEx+libris&cmtype=file&cmprop=ids%7Ctitle%7Ctype&cmsort=sortkey&cmlimit=500",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 15164,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 23:43:19 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-7w5dp",
+    "cache-control": "private, must-revalidate, max-age=0",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 pass",
+    "x-request-id": "f13dbeb4-4424-4acc-800c-0816e7cccade"
+  },
+  "sha256": "c5f0473c3af9a9f6828f6f9c25a0c8fec131f3c609e7d7390117f13e5056c270"
+}

@@ -1,0 +1,2255 @@
+{
+  "target": 50,
+  "seed": "hazy-curatorial-stone-hand-axes-v1",
+  "inventory_sha256": "c43283b4262b5f16ac46d2c3d548a94e25ac8adfb47f19ab55b3cea664136948",
+  "pending_policy": "Explicit defer advances provisionally; unreviewed gaps block selection; source transfer failures never replace selections.",
+  "selected": [
+    "27fd2d8e0bb9f5448ae3",
+    "6a5988f888eee027ea2b",
+    "763a7bd6a5e5bbb14899",
+    "3797ee90357df289c5a9",
+    "284b72b37a4fb9339127",
+    "e030e881caac4376731e",
+    "481fa21e900f420fa597",
+    "daee8e651a988d0c5419",
+    "65c66aec1bea7d893731",
+    "64eb4c50a3beaaaff9f4",
+    "22800ebe6e2123eb7268",
+    "f736265542a1fbf90f4e",
+    "3d181497bb1898be070e",
+    "136486906fcde57327e3",
+    "352a8d0432256ad4bb0f",
+    "4374e3312f2386cbabc6",
+    "725f19e59b60bd4bb0b3",
+    "cb3c67dfad44c78707e8",
+    "7126f8352f09e29fe3d0",
+    "e84b70c2ef979471462e",
+    "070e06dcdc0e95592c64",
+    "912fb49ddab2a46b8450",
+    "1cdf899b798c2d9da1ec",
+    "79ba01b10b2d9bd4b5a8",
+    "037e6097764e95dd1a9f",
+    "9fb09b2c29d31914a2cc",
+    "6f338bb045f7f7d47acc",
+    "a9b627eb6f8ba49b15aa",
+    "b2b695b4c69bdb6cb637",
+    "754188c20d9c09ce7566",
+    "219886fe87232f6c51b2",
+    "ca1b62234dda0ffbe78e",
+    "1535866e7d41e86e1415",
+    "23aea69f13da121daee8",
+    "944bcfb68ecce2c59349",
+    "c714686bcc80d7137085",
+    "e8a953804e8bd92c5a86",
+    "48cd181fcd1a9b2f39ff",
+    "5fbfca29db035726bf39",
+    "95aca44db5b322d4c3ee",
+    "0b5e36d4a8cc1e80aa88",
+    "e7f8bfab2b8144f773da",
+    "32fb67b97f120e7ae3b4",
+    "5ea29f87e2be45ebe968",
+    "7a666ee6f18013b3ab26",
+    "4e8fcefafd852bdf0fec",
+    "164a3fe5d246381ba1b9",
+    "c869cece3a0baf80bc88",
+    "baa87bd11d711fbe04de",
+    "03dcbec8076fcc978cfc"
+  ],
+  "unresolved_prior_candidates": [
+    "26e7c184b28b0ed5d77c",
+    "16f465fef13adac640fd",
+    "c55eea0d151c1833923e"
+  ],
+  "provisional_selected": [
+    "cb3c67dfad44c78707e8",
+    "7126f8352f09e29fe3d0",
+    "e84b70c2ef979471462e",
+    "070e06dcdc0e95592c64",
+    "912fb49ddab2a46b8450",
+    "1cdf899b798c2d9da1ec",
+    "79ba01b10b2d9bd4b5a8",
+    "037e6097764e95dd1a9f",
+    "9fb09b2c29d31914a2cc",
+    "6f338bb045f7f7d47acc",
+    "a9b627eb6f8ba49b15aa",
+    "b2b695b4c69bdb6cb637",
+    "754188c20d9c09ce7566",
+    "219886fe87232f6c51b2",
+    "ca1b62234dda0ffbe78e",
+    "1535866e7d41e86e1415",
+    "23aea69f13da121daee8",
+    "944bcfb68ecce2c59349",
+    "c714686bcc80d7137085",
+    "e8a953804e8bd92c5a86",
+    "48cd181fcd1a9b2f39ff",
+    "5fbfca29db035726bf39",
+    "95aca44db5b322d4c3ee",
+    "0b5e36d4a8cc1e80aa88",
+    "e7f8bfab2b8144f773da",
+    "32fb67b97f120e7ae3b4",
+    "5ea29f87e2be45ebe968",
+    "7a666ee6f18013b3ab26",
+    "4e8fcefafd852bdf0fec",
+    "164a3fe5d246381ba1b9",
+    "c869cece3a0baf80bc88",
+    "baa87bd11d711fbe04de",
+    "03dcbec8076fcc978cfc"
+  ],
+  "decisions": [
+    {
+      "candidate_id": "27fd2d8e0bb9f5448ae3",
+      "rank": 1,
+      "decision": "selected",
+      "reason": "next_eligible_in_fixed_order",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "6a5988f888eee027ea2b",
+      "rank": 2,
+      "decision": "selected",
+      "reason": "next_eligible_in_fixed_order",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "763a7bd6a5e5bbb14899",
+      "rank": 3,
+      "decision": "selected",
+      "reason": "next_eligible_in_fixed_order",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "3797ee90357df289c5a9",
+      "rank": 4,
+      "decision": "selected",
+      "reason": "next_eligible_in_fixed_order",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "284b72b37a4fb9339127",
+      "rank": 5,
+      "decision": "selected",
+      "reason": "next_eligible_in_fixed_order",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "e030e881caac4376731e",
+      "rank": 6,
+      "decision": "selected",
+      "reason": "next_eligible_in_fixed_order",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "c2912044e90335175924",
+      "rank": 7,
+      "decision": "excluded",
+      "reason": "Documented modern experimental replica (Nachbau), excluded conservatively from the prehistoric artifact sample.",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "481fa21e900f420fa597",
+      "rank": 8,
+      "decision": "selected",
+      "reason": "next_eligible_in_fixed_order",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "daee8e651a988d0c5419",
+      "rank": 9,
+      "decision": "selected",
+      "reason": "next_eligible_in_fixed_order",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "65c66aec1bea7d893731",
+      "rank": 10,
+      "decision": "selected",
+      "reason": "next_eligible_in_fixed_order",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "64eb4c50a3beaaaff9f4",
+      "rank": 11,
+      "decision": "selected",
+      "reason": "next_eligible_in_fixed_order",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "22800ebe6e2123eb7268",
+      "rank": 12,
+      "decision": "selected",
+      "reason": "next_eligible_in_fixed_order",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "f736265542a1fbf90f4e",
+      "rank": 13,
+      "decision": "selected",
+      "reason": "next_eligible_in_fixed_order",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "9d337aa6dde9c957810d",
+      "rank": 14,
+      "decision": "excluded",
+      "reason": "Scope exclusion: the pictured drawing and description identify a cleaver-flake, not a hand axe.",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "da6ec5dcef83b45ceebf",
+      "rank": 15,
+      "decision": "excluded",
+      "reason": "Scope exclusion: museum-wide case view with small individual tools.",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "3d181497bb1898be070e",
+      "rank": 16,
+      "decision": "selected",
+      "reason": "next_eligible_in_fixed_order",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "136486906fcde57327e3",
+      "rank": 17,
+      "decision": "selected",
+      "reason": "next_eligible_in_fixed_order",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "ddcc9ed48b53415b8ca2",
+      "rank": 18,
+      "decision": "excluded",
+      "reason": "Scope exclusion: portrait dominates; the hand axe is a secondary small element.",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "352a8d0432256ad4bb0f",
+      "rank": 19,
+      "decision": "selected",
+      "reason": "next_eligible_in_fixed_order",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "24f8ece9892af39ccdeb",
+      "rank": 20,
+      "decision": "excluded",
+      "reason": "Scope exclusion: a distribution map, with no actual axe depiction.",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "f5a50f21ee402a54bcb7",
+      "rank": 21,
+      "decision": "excluded",
+      "reason": "Scope exclusion: modern demonstration scene; the object is a small part of a person-and-tools photograph.",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "4374e3312f2386cbabc6",
+      "rank": 22,
+      "decision": "selected",
+      "reason": "next_eligible_in_fixed_order",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "725f19e59b60bd4bb0b3",
+      "rank": 23,
+      "decision": "selected",
+      "reason": "next_eligible_in_fixed_order",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "f654c7d1bea9bdac8908",
+      "rank": 24,
+      "decision": "excluded",
+      "reason": "Scope exclusion: cleaver-flake drawing, explicitly identified as cleaver type 3.1.",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "26e7c184b28b0ed5d77c",
+      "rank": 25,
+      "decision": "deferred",
+      "reason": "Possible alternate view of rank 2: same Poesing find, age, photographer and closely corresponding object form; distinct artifact identity is not established.",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "5833c33c40a574c495d1",
+      "rank": 26,
+      "decision": "excluded",
+      "reason": "Scope exclusion: the pictured lithic tool is explicitly catalogued as a two-edged scraper, not a hand axe.",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "cb3c67dfad44c78707e8",
+      "rank": 27,
+      "decision": "selected",
+      "reason": "next_eligible_in_fixed_order",
+      "conflicts_with": [],
+      "provisional": true
+    },
+    {
+      "candidate_id": "7126f8352f09e29fe3d0",
+      "rank": 28,
+      "decision": "selected",
+      "reason": "next_eligible_in_fixed_order",
+      "conflicts_with": [],
+      "provisional": true
+    },
+    {
+      "candidate_id": "e84b70c2ef979471462e",
+      "rank": 29,
+      "decision": "selected",
+      "reason": "next_eligible_in_fixed_order",
+      "conflicts_with": [],
+      "provisional": true
+    },
+    {
+      "candidate_id": "070e06dcdc0e95592c64",
+      "rank": 30,
+      "decision": "selected",
+      "reason": "next_eligible_in_fixed_order",
+      "conflicts_with": [],
+      "provisional": true
+    },
+    {
+      "candidate_id": "16f465fef13adac640fd",
+      "rank": 31,
+      "decision": "deferred",
+      "reason": "Possible alternate capture of rank 13: same photographer and British Museum Ice Age session, with closely matching flake scars; independent artifact identity is not established.",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "912fb49ddab2a46b8450",
+      "rank": 32,
+      "decision": "selected",
+      "reason": "next_eligible_in_fixed_order",
+      "conflicts_with": [],
+      "provisional": true
+    },
+    {
+      "candidate_id": "1cdf899b798c2d9da1ec",
+      "rank": 33,
+      "decision": "selected",
+      "reason": "next_eligible_in_fixed_order",
+      "conflicts_with": [],
+      "provisional": true
+    },
+    {
+      "candidate_id": "3f89f989aa8a746f38e1",
+      "rank": 34,
+      "decision": "excluded",
+      "reason": "Scope exclusion: cleaver-flake drawing, explicitly identified as cleaver type 0.0.",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "805f4f806391ff12d956",
+      "rank": 35,
+      "decision": "excluded",
+      "reason": "Scope exclusion: catalogued Flint Cleaver, shown in three views.",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "039ba7d460c06f59436d",
+      "rank": 36,
+      "decision": "excluded",
+      "reason": "Documented modern experimental replicas, also repeating the rank 7 source scene.",
+      "conflicts_with": [
+        "c2912044e90335175924"
+      ],
+      "provisional": false
+    },
+    {
+      "candidate_id": "79ba01b10b2d9bd4b5a8",
+      "rank": 37,
+      "decision": "selected",
+      "reason": "next_eligible_in_fixed_order",
+      "conflicts_with": [],
+      "provisional": true
+    },
+    {
+      "candidate_id": "fe7ee9879b9e1b21fd1f",
+      "rank": 38,
+      "decision": "excluded",
+      "reason": "Conservative scope exclusion: polished oblong stone/celt-like form without a documented hand-axe or biface context.",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "037e6097764e95dd1a9f",
+      "rank": 39,
+      "decision": "selected",
+      "reason": "next_eligible_in_fixed_order",
+      "conflicts_with": [],
+      "provisional": true
+    },
+    {
+      "candidate_id": "6e0de4dccb877dfff059",
+      "rank": 40,
+      "decision": "excluded",
+      "reason": "Scope exclusion: excavation scene without a clearly inspectable hand-axe depiction.",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "9fb09b2c29d31914a2cc",
+      "rank": 41,
+      "decision": "selected",
+      "reason": "next_eligible_in_fixed_order",
+      "conflicts_with": [],
+      "provisional": true
+    },
+    {
+      "candidate_id": "6f338bb045f7f7d47acc",
+      "rank": 42,
+      "decision": "selected",
+      "reason": "next_eligible_in_fixed_order",
+      "conflicts_with": [],
+      "provisional": true
+    },
+    {
+      "candidate_id": "a9b627eb6f8ba49b15aa",
+      "rank": 43,
+      "decision": "selected",
+      "reason": "next_eligible_in_fixed_order",
+      "conflicts_with": [],
+      "provisional": true
+    },
+    {
+      "candidate_id": "b2b695b4c69bdb6cb637",
+      "rank": 44,
+      "decision": "selected",
+      "reason": "next_eligible_in_fixed_order",
+      "conflicts_with": [],
+      "provisional": true
+    },
+    {
+      "candidate_id": "754188c20d9c09ce7566",
+      "rank": 45,
+      "decision": "selected",
+      "reason": "next_eligible_in_fixed_order",
+      "conflicts_with": [],
+      "provisional": true
+    },
+    {
+      "candidate_id": "219886fe87232f6c51b2",
+      "rank": 46,
+      "decision": "selected",
+      "reason": "next_eligible_in_fixed_order",
+      "conflicts_with": [],
+      "provisional": true
+    },
+    {
+      "candidate_id": "ca1b62234dda0ffbe78e",
+      "rank": 47,
+      "decision": "selected",
+      "reason": "next_eligible_in_fixed_order",
+      "conflicts_with": [],
+      "provisional": true
+    },
+    {
+      "candidate_id": "1535866e7d41e86e1415",
+      "rank": 48,
+      "decision": "selected",
+      "reason": "next_eligible_in_fixed_order",
+      "conflicts_with": [],
+      "provisional": true
+    },
+    {
+      "candidate_id": "23aea69f13da121daee8",
+      "rank": 49,
+      "decision": "selected",
+      "reason": "next_eligible_in_fixed_order",
+      "conflicts_with": [],
+      "provisional": true
+    },
+    {
+      "candidate_id": "b56303e73386ab56798c",
+      "rank": 50,
+      "decision": "excluded",
+      "reason": "Known cropped detail of the full archaeological plate selected at rank 42.",
+      "conflicts_with": [
+        "6f338bb045f7f7d47acc"
+      ],
+      "provisional": false
+    },
+    {
+      "candidate_id": "c55eea0d151c1833923e",
+      "rank": 51,
+      "decision": "deferred",
+      "reason": "Description credits photograph to A. Lesch, while self-license is by S. J. Miba; the identity or permission link is not established in cached evidence.",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "dfd55b67141e0167d872",
+      "rank": 52,
+      "decision": "excluded",
+      "reason": "Documented modern experimental replica, excluded from the prehistoric artifact sample.",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "944bcfb68ecce2c59349",
+      "rank": 53,
+      "decision": "selected",
+      "reason": "next_eligible_in_fixed_order",
+      "conflicts_with": [],
+      "provisional": true
+    },
+    {
+      "candidate_id": "c714686bcc80d7137085",
+      "rank": 54,
+      "decision": "selected",
+      "reason": "next_eligible_in_fixed_order",
+      "conflicts_with": [],
+      "provisional": true
+    },
+    {
+      "candidate_id": "e8a953804e8bd92c5a86",
+      "rank": 55,
+      "decision": "selected",
+      "reason": "next_eligible_in_fixed_order",
+      "conflicts_with": [],
+      "provisional": true
+    },
+    {
+      "candidate_id": "48cd181fcd1a9b2f39ff",
+      "rank": 56,
+      "decision": "selected",
+      "reason": "next_eligible_in_fixed_order",
+      "conflicts_with": [],
+      "provisional": true
+    },
+    {
+      "candidate_id": "5fbfca29db035726bf39",
+      "rank": 57,
+      "decision": "selected",
+      "reason": "next_eligible_in_fixed_order",
+      "conflicts_with": [],
+      "provisional": true
+    },
+    {
+      "candidate_id": "95aca44db5b322d4c3ee",
+      "rank": 58,
+      "decision": "selected",
+      "reason": "next_eligible_in_fixed_order",
+      "conflicts_with": [],
+      "provisional": true
+    },
+    {
+      "candidate_id": "36a5e7a56716ba717f05",
+      "rank": 59,
+      "decision": "excluded",
+      "reason": "Conservative scope exclusion: polished oblong stone without a documented hand-axe/biface context.",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "0b5e36d4a8cc1e80aa88",
+      "rank": 60,
+      "decision": "selected",
+      "reason": "next_eligible_in_fixed_order",
+      "conflicts_with": [],
+      "provisional": true
+    },
+    {
+      "candidate_id": "ce1578be78758c8d4d49",
+      "rank": 61,
+      "decision": "excluded",
+      "reason": "Stratigraphic diagrams dominate the page; hand-axe illustration is only a small upper inset.",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "e7f8bfab2b8144f773da",
+      "rank": 62,
+      "decision": "selected",
+      "reason": "next_eligible_in_fixed_order",
+      "conflicts_with": [],
+      "provisional": true
+    },
+    {
+      "candidate_id": "32fb67b97f120e7ae3b4",
+      "rank": 63,
+      "decision": "selected",
+      "reason": "next_eligible_in_fixed_order",
+      "conflicts_with": [],
+      "provisional": true
+    },
+    {
+      "candidate_id": "5ea29f87e2be45ebe968",
+      "rank": 64,
+      "decision": "selected",
+      "reason": "next_eligible_in_fixed_order",
+      "conflicts_with": [],
+      "provisional": true
+    },
+    {
+      "candidate_id": "7a666ee6f18013b3ab26",
+      "rank": 65,
+      "decision": "selected",
+      "reason": "next_eligible_in_fixed_order",
+      "conflicts_with": [],
+      "provisional": true
+    },
+    {
+      "candidate_id": "4e8fcefafd852bdf0fec",
+      "rank": 66,
+      "decision": "selected",
+      "reason": "next_eligible_in_fixed_order",
+      "conflicts_with": [],
+      "provisional": true
+    },
+    {
+      "candidate_id": "164a3fe5d246381ba1b9",
+      "rank": 67,
+      "decision": "selected",
+      "reason": "next_eligible_in_fixed_order",
+      "conflicts_with": [],
+      "provisional": true
+    },
+    {
+      "candidate_id": "c869cece3a0baf80bc88",
+      "rank": 68,
+      "decision": "selected",
+      "reason": "next_eligible_in_fixed_order",
+      "conflicts_with": [],
+      "provisional": true
+    },
+    {
+      "candidate_id": "413a5f0391830c8cf94b",
+      "rank": 69,
+      "decision": "excluded",
+      "reason": "Description explicitly identifies this as a modern replica/knapping experiment; prehistoric-artifact scope is not established.",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "baa87bd11d711fbe04de",
+      "rank": 70,
+      "decision": "selected",
+      "reason": "next_eligible_in_fixed_order",
+      "conflicts_with": [],
+      "provisional": true
+    },
+    {
+      "candidate_id": "03dcbec8076fcc978cfc",
+      "rank": 71,
+      "decision": "selected",
+      "reason": "next_eligible_in_fixed_order",
+      "conflicts_with": [],
+      "provisional": true
+    },
+    {
+      "candidate_id": "bef9e7bc1bf8ad104cf0",
+      "rank": 72,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "e5ed285143923b94d4db",
+      "rank": 73,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "921fe13e22d136ff7a90",
+      "rank": 74,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "7669dda3601bf04a855e",
+      "rank": 75,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "7ebae791ddeb827bc907",
+      "rank": 76,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "52b0dd80eabecf92c75e",
+      "rank": 77,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "cdc0564f43198d6916c7",
+      "rank": 78,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "bb2004e706d477dae616",
+      "rank": 79,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "e648d6349d7ae1721fe4",
+      "rank": 80,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "8c1fa75e2296280964c8",
+      "rank": 81,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "3e4f090572f5a58b132a",
+      "rank": 82,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "e9ca1feedd42c19091c4",
+      "rank": 83,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "bd58f191edead32e5af9",
+      "rank": 84,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "6c4a80cbcaa0197c4c63",
+      "rank": 85,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "abd6db619201789d877f",
+      "rank": 86,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "07be4267ec17b714009a",
+      "rank": 87,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "04aefea5a1cf49a20bf1",
+      "rank": 88,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "291161ce77af5be4a511",
+      "rank": 89,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "6ff7064de46bb928046a",
+      "rank": 90,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "0a3e9faabef2c5419b43",
+      "rank": 91,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "51779ce8cfb917a4a33c",
+      "rank": 92,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "ea27222a2c967b63bb5f",
+      "rank": 93,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "efdb7ee04b8ea5cdb415",
+      "rank": 94,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "1466559208f87601c9f7",
+      "rank": 95,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "70a2bc376060a0ed76da",
+      "rank": 96,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "32bb43bf85d9f3a950bf",
+      "rank": 97,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "15866ffe18dd835b545f",
+      "rank": 98,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "785c5b559574b21335d0",
+      "rank": 99,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "e2118d03dcfec0e9d546",
+      "rank": 100,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "4754f5b1cffee02567ad",
+      "rank": 101,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "728d045a081cb5e36898",
+      "rank": 102,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "26a2c09dfd7ad3dece88",
+      "rank": 103,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "4b42fece8efdcfe4661a",
+      "rank": 104,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "3b1d3378c234e15f2c85",
+      "rank": 105,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "d85ecad789b8cd2b4694",
+      "rank": 106,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "17e931a0d874413b9938",
+      "rank": 107,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "10f6b67ff1c47caba46c",
+      "rank": 108,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "dc8f2ad82300be7e37df",
+      "rank": 109,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "7340f57a075b8076aa7e",
+      "rank": 110,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "b7d0d3fce8ee81b00964",
+      "rank": 111,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "fc657648efb258732694",
+      "rank": 112,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "9cb7f093079dd2457117",
+      "rank": 113,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "985672db60d333fa1444",
+      "rank": 114,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "9b82a8eef6fd9cde62c9",
+      "rank": 115,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "b47054966c93d74f8c63",
+      "rank": 116,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "6cbbae169dc35cff05f3",
+      "rank": 117,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "e78ba82ab8d7995d7b0b",
+      "rank": 118,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "30f8495ee5455fe69896",
+      "rank": 119,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "74176316e1741d1a1619",
+      "rank": 120,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "9edf07c32ec783c8e472",
+      "rank": 121,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "66a21e497d91a1c033bd",
+      "rank": 122,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "dc94ef278140222fc05a",
+      "rank": 123,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "f43bb6a409e0d305f70f",
+      "rank": 124,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "051b8e30679380dcb126",
+      "rank": 125,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "7134fe54c9e840a48c7e",
+      "rank": 126,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "3cd7d796f0686bb75948",
+      "rank": 127,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "d6696d6bfabe47027a01",
+      "rank": 128,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "c2d3af83aee9cc9bd578",
+      "rank": 129,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "006b03097de4a5201c61",
+      "rank": 130,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "442fbdbf2e1eaaaf2680",
+      "rank": 131,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "f656925f138446f9c3fa",
+      "rank": 132,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "41ed9ce9ccb233f3ab91",
+      "rank": 133,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "004a518566eb90d2568a",
+      "rank": 134,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "07a9049efd1794c878ef",
+      "rank": 135,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "74c64f00a88f17259769",
+      "rank": 136,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "62d5842c89b627bce939",
+      "rank": 137,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "bd442f320c7e5d368f39",
+      "rank": 138,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "2e39c0a7e893e6090160",
+      "rank": 139,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "1e6b8b47f11bb3e7811e",
+      "rank": 140,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "70dc590e87e16536fdc6",
+      "rank": 141,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "01d6fa65d35eb1aae3c1",
+      "rank": 142,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "b2a2e721467bf9e9d089",
+      "rank": 143,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "61c62027a17caf4b80d1",
+      "rank": 144,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "6c545c4ffaca9b9b035d",
+      "rank": 145,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "f1c2ceddfc9bd1faa4c1",
+      "rank": 146,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "084d816a8f6cf033e552",
+      "rank": 147,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "f2a2a83546badd3592bb",
+      "rank": 148,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "9bbd1837499ad0515dd3",
+      "rank": 149,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "756ddfbc6993d29c7298",
+      "rank": 150,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "9e0f93698e4b56448ecf",
+      "rank": 151,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "bc443616752a91e6de94",
+      "rank": 152,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "9115df4f76297a1c6e9d",
+      "rank": 153,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "fe54bfd35c3b4c4dcc45",
+      "rank": 154,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "c5619e06aa2c6055dd2a",
+      "rank": 155,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "9f900c38917bc6f4f277",
+      "rank": 156,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "3fe6365dc98f93bcb567",
+      "rank": 157,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "73cc668f497a049920a2",
+      "rank": 158,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "754ac3599c6e9baeb9e3",
+      "rank": 159,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "ce0c6b03b951123c953b",
+      "rank": 160,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "c6577cb141e2736f660d",
+      "rank": 161,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "63e81697b4ddee695b56",
+      "rank": 162,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "116301d72064c88b4972",
+      "rank": 163,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "efaf7fb3d43898d7b599",
+      "rank": 164,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "b0fe4d7b58e730263086",
+      "rank": 165,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "98c0560dfcce45de05bf",
+      "rank": 166,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "e1c707515594e6382ab1",
+      "rank": 167,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "fca2085f60f51727eadf",
+      "rank": 168,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "f9657a6d60ac97fe249f",
+      "rank": 169,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "856f67da5e5f3a8ddf69",
+      "rank": 170,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "30464777c50c0bf3800c",
+      "rank": 171,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "e65e20ce337065b088ae",
+      "rank": 172,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "39c472cfccffae6c0c35",
+      "rank": 173,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "b2778df952d166683e8f",
+      "rank": 174,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "f054847c37b5c2c86460",
+      "rank": 175,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "b2337ccd4fa9f67f5f99",
+      "rank": 176,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "82976ce9dacf01d8860f",
+      "rank": 177,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "3a008240ec4cd657d2f9",
+      "rank": 178,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "b28dd91be1f363e93167",
+      "rank": 179,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "de7a91cec65d9012de8e",
+      "rank": 180,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "4d8eb05a974bc0358620",
+      "rank": 181,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "cd132f9dab694b48eb20",
+      "rank": 182,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "96cdb36e8d738ac6efe0",
+      "rank": 183,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "bf5830428ea655884d49",
+      "rank": 184,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "3ec1f6012e3b3353ca4c",
+      "rank": 185,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "9df5d26cbfc9b2f95768",
+      "rank": 186,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "cc75df163437b6877fab",
+      "rank": 187,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "0d698618b264f870d742",
+      "rank": 188,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "d72a3636edf27abbd384",
+      "rank": 189,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "6b9795994138797ef681",
+      "rank": 190,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "9b47d51c1e4911088f70",
+      "rank": 191,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "d50d2e422f8af9031347",
+      "rank": 192,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "fdb7cc73fc101b313308",
+      "rank": 193,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "2e3fe370149e9a1604e9",
+      "rank": 194,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "979c851d68b4ce198340",
+      "rank": 195,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "951c76ae47c504dbde9a",
+      "rank": 196,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "5e665e6084c73810bb40",
+      "rank": 197,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "71edcf098f4efbb651f1",
+      "rank": 198,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "650653b341519a1d012b",
+      "rank": 199,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "0e235d986cf4fc384f20",
+      "rank": 200,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "6420ec7746391c3e4c69",
+      "rank": 201,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "d30ff02cac4558c2831b",
+      "rank": 202,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "8bfd2752b3850d8178b7",
+      "rank": 203,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "803c357c43484f5c3b7e",
+      "rank": 204,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "9d3f51834224f0228261",
+      "rank": 205,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "94b44394ce7d596c01cf",
+      "rank": 206,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "14d50593d2bcc0b77ec1",
+      "rank": 207,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "627e5fc757d6901e611b",
+      "rank": 208,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "56b2e7b07a1a47e4719e",
+      "rank": 209,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "cdc59489a7a3666ac0d0",
+      "rank": 210,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "40b7dc8f7d129c4b20ec",
+      "rank": 211,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "e042f678fd54a3f7afc5",
+      "rank": 212,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "5d6b096c1a0aa1e981a8",
+      "rank": 213,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "8d1cd2e73d9d9784339e",
+      "rank": 214,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "c32e1e0030d17b4e8276",
+      "rank": 215,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "32508c869510c3b8a1ba",
+      "rank": 216,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "dfc60809b9e31c5736d7",
+      "rank": 217,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "3e334333bd6814bbb869",
+      "rank": 218,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "2b923d411df080a862ba",
+      "rank": 219,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "a9474ef4ab186a577b8d",
+      "rank": 220,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "bac13ec14009ddc0beae",
+      "rank": 221,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "6aa59fd414b06dbe1f3a",
+      "rank": 222,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "a8bc4a363ac959be0a18",
+      "rank": 223,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "e0a6acdcc914665ab2b6",
+      "rank": 224,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "d2653e2731112b1b2966",
+      "rank": 225,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "0e147f4b24c144649399",
+      "rank": 226,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "9f6f6b299738607c075c",
+      "rank": 227,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "80ddb8841bc7a41824e0",
+      "rank": 228,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "ca39279c19dea06b50e9",
+      "rank": 229,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "a77238510843b9be9a98",
+      "rank": 230,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "7179b6f91bf7cd5cd412",
+      "rank": 231,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "ca8607d85da5a02b5548",
+      "rank": 232,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "c204aedfade36aed5c1d",
+      "rank": 233,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "fccee1139f718a50181e",
+      "rank": 234,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "6d8e17cd418286f9c9b5",
+      "rank": 235,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "d623b7823f8039f28e5c",
+      "rank": 236,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "16c81e42dd330dbd3bc4",
+      "rank": 237,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "d61c7643fe6eb23ed699",
+      "rank": 238,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "4ec9859e2242cb933126",
+      "rank": 239,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "b30f3d7ac77c41e3f21b",
+      "rank": 240,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "ed7aa4ac5b95da1bf102",
+      "rank": 241,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "70258c41ef6fe6e25593",
+      "rank": 242,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "4cd8f565fbf0b1364076",
+      "rank": 243,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "1e5cd22c7479087ca232",
+      "rank": 244,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "928f98619296518fd876",
+      "rank": 245,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "da998e3f7f93ca0b5664",
+      "rank": 246,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "521587d7ade79d24ac98",
+      "rank": 247,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "7a0e6ef4c764e42c7316",
+      "rank": 248,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "52809f2210aca642199c",
+      "rank": 249,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "30bdde9c7a25ae18d16e",
+      "rank": 250,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "e814dd375af39ac15521",
+      "rank": 251,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "daeaf01eee2805cc1428",
+      "rank": 252,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "227703ff8b66e62a2c00",
+      "rank": 253,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "609a4612703fba166772",
+      "rank": 254,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "34bc84ab440d0c10d3cc",
+      "rank": 255,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "85cfabe598729dd96296",
+      "rank": 256,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "8bbda7961cb440999a08",
+      "rank": 257,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "cb0aff40357cccc81348",
+      "rank": 258,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "3d57f0520ec686dcfd36",
+      "rank": 259,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "f293713787f292e94494",
+      "rank": 260,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "5b7821ed99bf79923fc6",
+      "rank": 261,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "f98b2713d1e9b9a1a714",
+      "rank": 262,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "c83dc92d81d33a00a047",
+      "rank": 263,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "d84b6816f3552918b89a",
+      "rank": 264,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "76564a2428d98ae84b8d",
+      "rank": 265,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "90f756377d682d3926cd",
+      "rank": 266,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "5455ee0c88478fb1e3ec",
+      "rank": 267,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    },
+    {
+      "candidate_id": "3f7832570297c9a63f64",
+      "rank": 268,
+      "decision": "reserve",
+      "reason": "target_reached",
+      "conflicts_with": [],
+      "provisional": false
+    }
+  ],
+  "counts": {
+    "selected": 50,
+    "excluded": 18,
+    "deferred": 3,
+    "reserve": 197,
+    "unreviewed": 0
+  }
+}

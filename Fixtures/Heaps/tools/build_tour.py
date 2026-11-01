@@ -42,7 +42,7 @@ def load_collections(plan):
         str(p.parent.relative_to(HEAPS)) for p in HEAPS.rglob('manifest.json')
         if not {'provenance', 'previews', 'sources', 'images'}.intersection(p.parts)
     }
-    assert manifests == {c['leaf'] for c in plan['collections']}, 'Collection roster changed'
+    assert {c['leaf'] for c in plan['collections']} <= manifests, 'Recorded edition leaf missing'
     for number, chapter in enumerate(plan['collections'], 1):
         leaf = HEAPS / chapter['leaf']
         rows = json.loads((leaf / 'manifest.json').read_text())['images']

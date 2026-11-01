@@ -1,0 +1,16 @@
+{
+  "19": {
+    "visual_decision": "accept",
+    "visual_reason": "Narrow figurative ex-libris design with clearly printed ownership lettering.",
+    "provenance_decision": "accept",
+    "rights_decision": "accept",
+    "reason": "In-scope preview; no established repetition among earlier accepted candidates.",
+    "work_key": null,
+    "work_basis": "Description dates the underlying bookplate to 1904; exact printed-work identifier remains unknown.",
+    "rights_basis": "Retained file-specific Commons CC BY-SA 3.0 claim and license template; source/author credit reviewed. This records the claim, not independent authentication.",
+    "original_creator": null,
+    "photographer": "Raquel Méndez Manzano",
+    "digitizer": null,
+    "creator_basis": "Own-work Author names the reproduction photographer; J. Llongueras and Emili Vallés occur in the description without separately assigned artist/owner roles."
+  }
+}

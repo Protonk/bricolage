@@ -1,0 +1,23 @@
+{
+  "status": "complete_acquisition",
+  "selection_status": "provisional",
+  "unique_enumerated": 268,
+  "technical_rejects": 1,
+  "reviewed_previews": 79,
+  "scope_rejects": 15,
+  "provenance_or_rights_rejects": 6,
+  "deferred_reviews": 4,
+  "visually_eligible": 64,
+  "selected": 50,
+  "acquired": 50,
+  "pending_acquisition": 0,
+  "pending_candidate_ids": [],
+  "selection_exclusions": 18,
+  "pending_selection": 3,
+  "unreviewed": 189,
+  "unused_reserve": 197,
+  "target": 50,
+  "provisional_selected": 33,
+  "transport_stops": 3,
+  "automatic_retries": 0
+}

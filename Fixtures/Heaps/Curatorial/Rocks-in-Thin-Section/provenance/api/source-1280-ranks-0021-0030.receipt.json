@@ -1,0 +1,19 @@
+{
+  "utc": "2026-11-01T00:01:00.596126+00:00",
+  "key": "source-1280-ranks-0021-0030",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3AHornblendite+with+apatite.jpg%7CFile%3AKinked+biotite.JPG%7CFile%3A210509-2+qtz+feld+lith+aren+50x+XPL.jpg%7CFile%3AMyrmekite.JPG%7CFile%3AThin+section+microscopy+Siilinj%C3%A4rvi+R616+1820+apatite.jpg%7CFile%3AMuscovite23b.jpg%7CFile%3AOpacit3+LPL.jpg%7CFile%3ASchalstein+Langenaubach+XPL+5+gross.jpg%7CFile%3AOpacit3+XPL.jpg%7CFile%3ASienite+nicol+incrociati.gif&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1280&iiurlheight=1280&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 38048,
+  "headers": {
+    "date": "Sun, 01 Nov 2026 00:01:00 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-nrhll",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "fbfb8140-a815-4343-b7eb-460b076fd63b"
+  },
+  "sha256": "ba3782f0262540149d13b9e0e491f0bab78cdacdf45594ecce9878a9237c8b1c"
+}

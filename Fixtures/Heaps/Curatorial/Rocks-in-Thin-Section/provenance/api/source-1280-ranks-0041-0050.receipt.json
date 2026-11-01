@@ -1,0 +1,19 @@
+{
+  "utc": "2026-11-01T00:01:07.415498+00:00",
+  "key": "source-1280-ranks-0041-0050",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3AAegirin+Augit+LPL.jpg%7CFile%3AStained+marble.JPG%7CFile%3AOmphacit+retrograd+LPL.jpg%7CFile%3AFringes.JPG%7CFile%3AMonzonite+nicol+incrociati.gif%7CFile%3AGarnet-mica-shist-ll-nicols+1.jpg%7CFile%3AOlivin+Chondron.jpg%7CFile%3AIcelandic+Sand+%C2%B5CT.ogv%7CFile%3AViridit+4+LPL+b.jpg%7CFile%3ALeucit+LPL.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1280&iiurlheight=1280&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 38911,
+  "headers": {
+    "date": "Sun, 01 Nov 2026 00:01:07 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-j6g86",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "a088d72a-3fdf-4372-a956-72cabbfbcbac"
+  },
+  "sha256": "dc349d10083bbffdbf96ccd0d4f27d9edb77e39c902fa89c926e0862384dee73"
+}

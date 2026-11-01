@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T23:57:12.817955+00:00",
+  "key": "preview-480-ranks-0071-0080",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3ABookplate+%28Ex+Libris%29+of+Sir+William+Crookes%2C+D.+Sc.%2C+F.R.S.+-+from+the+book%2C+The+Chemical+Testing+of+Wines+and+Spirits%2C+1866+%28page+2+crop%29.jpg%7CFile%3AAnnalisa+Franzoni+ex+libris1.jpg%7CFile%3AEx-Libris+de+Santos+Dumont.jpg%7CFile%3AExlibris+Cramer-Klett.webp%7CFile%3ADavid+Starr+Jordan+bookplate.png%7CFile%3ABookplate+of+Leslie+Leland+Locke+%28cropped%29.png%7CFile%3APrint%2C+extra-illustrated+book%2C+bookplate+%28BM+1886%2C1122.5.1-173%29.jpg%7CFile%3ATadeusz+Cieslewski+Zygmunt+Klemensiewicz+ex+libris+1943.jpg%7CFile%3AThe+Belles+Heures+of+Jean+de+France%2C+duc+de+Berry+MET+DP150015.jpg%7CFile%3ADienst-paul-exlibris.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=480&iiurlheight=480&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 58420,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 23:57:13 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-mddm9",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "4861f8f8-199e-4795-b02c-2a4d255454e6"
+  },
+  "sha256": "4cc8f19f12eefc8a4fc7fb8a5a70cb3b6bf9974527ff868b5a82e5daf80ae6a3"
+}

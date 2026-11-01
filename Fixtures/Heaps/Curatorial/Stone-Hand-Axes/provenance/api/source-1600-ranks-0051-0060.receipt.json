@@ -1,0 +1,19 @@
+{
+  "utc": "2026-11-01T00:13:23.011644+00:00",
+  "key": "source-1600-ranks-0051-0060",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3AFaustkeil+Serie+A.+Lesch+%2811%29.jpg%7CFile%3AFaustkeil+Nachbau%2C+2020+PD+a-7.jpg%7CFile%3APaleolithic+Handaxe.+Seoul+National+University+Museum.jpg%7CFile%3AArchaeologia+Volume+13+D257.png%7CFile%3ABifaz-esquema.png%7CFile%3ABiface+nucleiforme.png%7CFile%3ABiface+limande.png%7CFile%3ACoup+de+poing+achel%C3%A9en.jpg%7CFile%3AGiappone%2C+pietra+oblunga+levigata+fino+all%27estremit%C3%A0%2C+3000-2500+ac+ca.+%28tokiaki+yoshizawa+coll.%29+01.jpg%7CFile%3ATools+of+Acheulean+culture+in+the+Timiryazev+museum.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 41668,
+  "headers": {
+    "date": "Sun, 01 Nov 2026 00:13:23 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-q2rp6",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "86dc1b3f-8b9f-44bb-8776-84e5ccee7f8e"
+  },
+  "sha256": "f6526d49498115aba063c015bda3677b96eadc68e24b455c7ba448d42ac5e520"
+}

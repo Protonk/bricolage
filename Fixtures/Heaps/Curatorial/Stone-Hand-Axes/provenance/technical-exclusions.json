@@ -1,0 +1,15 @@
+{
+  "bef9e7bc1bf8ad104cf0": {
+    "candidate_id": "bef9e7bc1bf8ad104cf0",
+    "rank": 72,
+    "original_mime": "image/gif",
+    "metadata_path": "provenance/api/preview-480-ranks-0071-0080.json",
+    "metadata_sha256": "f05db0b59aede9e82649b2f2dfceb48413cd81dd0c53f816d469ecda1155e8b0",
+    "reason": "Unsupported animated GIF (13 decoded frames); no arbitrary frame extraction for a still-image fixture.",
+    "visual_review": "not_performed",
+    "media_request_made": true,
+    "diagnostic_path": "previews/partials/bef9e7bc1bf8ad104cf0-preview-320.part",
+    "diagnostic_sha256": "b3fa20ba1f1590aad9712ba42ac094694dae6b06da57de7890ae4e889dda8c0a",
+    "frames": 13
+  }
+}

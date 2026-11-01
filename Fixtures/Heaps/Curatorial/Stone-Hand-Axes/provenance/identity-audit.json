@@ -1,0 +1,3915 @@
+{
+  "status": "reported",
+  "inventories": [
+    {
+      "fixture": "Heaps/Curatorial/Botanical-Illustrations",
+      "inputs": 149,
+      "sources": 149,
+      "manifest_sha256": "0ff8e4fe91aa98f2143fa7c34203bd5e0e0a7978e0b7fa8cb0bd53ac0f54f713",
+      "source_catalog_sha256": "b7c8b9f9ea1c67b6dd8087cc8e808111f597786681a0453e06afe99e0047c4ce",
+      "import_map_sha256": "88afa1783e791694e0d4c0d02750135ea5da64755ea48decdf0cce89724da0d3",
+      "candidate_inventory_sha256": "842988542834155e6530f832a3bef1f711fd8cdaed4993c1073ebd2c54dbcbe0",
+      "candidate_inventory_entries": 709
+    },
+    {
+      "fixture": "Heaps/Curatorial/Evan-Amos-Uploads",
+      "inputs": 133,
+      "sources": 133,
+      "manifest_sha256": "f455ec4ed947c7fec4aa168b43afa303e562b7c8230b9d9cd7cd775d4fce81c9",
+      "source_catalog_sha256": "61956835809326dbd737dce01130d4c7043916613a2bf2c39fe20331a8b9676c",
+      "import_map_sha256": "9f9080857a07baa2f720f7ca80f26c60c073c71b7aa9609f8baf0564c583e9b6",
+      "candidate_inventory_sha256": "54e77f2a57e265860073a84dbc95a641dcb280ae2166a0f5be0ebe247f888dbe",
+      "candidate_inventory_entries": 136
+    },
+    {
+      "fixture": "Heaps/Curatorial/POTY/Arthropods",
+      "inputs": 43,
+      "sources": 43,
+      "manifest_sha256": "7ebd088010f0652629a6b37d79100f5a3eb1edc2a1bc62768509abc1357f0ef2",
+      "source_catalog_sha256": "98c59b36725496fd8c2e500ab9a93792bb668eae5683d0e740c1f2854c336066",
+      "import_map_sha256": "2ca055bb3871c8fdc2ddf7491180220cc6e9d3e87fda47f64d1bd1aa8d01c08b",
+      "candidate_inventory_sha256": "11e35b727ed653ec3a0320558a4d544338c72f541be6735710101b07496ed635",
+      "candidate_inventory_entries": 237
+    },
+    {
+      "fixture": "Heaps/Curatorial/POTY/Constructions-and-buildings",
+      "inputs": 50,
+      "sources": 50,
+      "manifest_sha256": "42523610eee11c7d6193b865a5edc86c6c2e0b7ffce999b1093c9e0f2f0284e9",
+      "source_catalog_sha256": "9c444e320aa0c8b390490e61c62f038a4d0fa84ba5108231fe29e0752bf30e1b",
+      "import_map_sha256": "079664a38267cdb88fbd0fbd134208103fc303c8b446f423d29d9a2a4c11490e",
+      "candidate_inventory_sha256": "9e5809b924822ca684dbd9e47ddc2fd402a7fdf0ed336cef8f776befa3d2e02b",
+      "candidate_inventory_entries": 248
+    },
+    {
+      "fixture": "Heaps/Curatorial/POTY/People-and-human-activity",
+      "inputs": 50,
+      "sources": 50,
+      "manifest_sha256": "1db0e952023b49cd6d75c4d7822c776a13da9bf90305974b85451191cb7aa4fd",
+      "source_catalog_sha256": "8740bb5d5f12d32b7f79ed477ed8b55e2a8a4f0d675d2c0284aad5bfbb782623",
+      "import_map_sha256": "d51fa6062db2c5a967450c0cbb9015ed6d1ca72f95d1f5139c2cf905628cf354",
+      "candidate_inventory_sha256": "91808b71ee2250a10261997c69ee3bba61783ccb4f9365e085aca666062da5d6",
+      "candidate_inventory_entries": 238
+    },
+    {
+      "fixture": "Heaps/Curatorial/Rocks-in-Thin-Section",
+      "inputs": 50,
+      "sources": 50,
+      "manifest_sha256": "ffad8f195ab15821241f354f5b915ab04c474652c15d673fc3511a6d7630d3c8",
+      "source_catalog_sha256": "6a397c5aa1016bcd59bcb201cdd7557a6c77ca6078553bc3ab2f0471b16da890",
+      "import_map_sha256": "1705aa9bb579ed95af19bf570f74d68830b6396365eaf4b598ca7877957a0582",
+      "candidate_inventory_sha256": "40c857f4597bde3c208ef63c28cefd3378686932a859e7cd13f80744a1ea829e",
+      "candidate_inventory_entries": 530
+    },
+    {
+      "fixture": "Heaps/Curatorial/US-Army-SSI",
+      "inputs": 150,
+      "sources": 150,
+      "manifest_sha256": "515abd34be4ee7405678d771c477c8a6c72caa04d01671090533ddaacda934e6",
+      "source_catalog_sha256": "86d6f09473ae2e1a4809da0752d1036367d8452b00d96a8da43b16a1e501d3f7",
+      "import_map_sha256": "984c7257fa5a71ac0d2bf24cd7cc8d73087529e72f5041eb8d3b290848f8aeff",
+      "candidate_inventory_sha256": "a5f417616b37ed33a64f3182fa296a8bc9ae8f7b64c876517445171fa84906e8",
+      "candidate_inventory_entries": 1641
+    },
+    {
+      "fixture": "Heaps/Similarity/BSP01",
+      "inputs": 68,
+      "sources": 68,
+      "manifest_sha256": "7eb43cbd99438215076cb09f618eb47c544ac4b4e63769a265739e818545a812",
+      "source_catalog_sha256": "2b286eb82c8a87fb0236e1fe49bd311596aa2616b18e68435f18d1c4085e2e93",
+      "import_map_sha256": "8348ceb7cac6a7e4ee9aebb1209bd94b2a90dfd4de3d40d2ffc88a6b4923fe1c",
+      "candidate_catalog_sha256": "2c36b5909e4f7c0344303d8299cec019a965fb055d9f2b90a348c0711872ec89",
+      "candidate_catalog_entries": 185
+    },
+    {
+      "fixture": "Heaps/Similarity/CR01",
+      "inputs": 57,
+      "sources": 57,
+      "manifest_sha256": "df695b27cd27fa082088f5dc86cc553c158da00390aa908dfaf76a3b3448912f",
+      "source_catalog_sha256": "86ec9c1b5546563b2f805b98f9d5066996430596adb5d61b0b007232807649e7",
+      "import_map_sha256": "e44ed7336c6b64bcd48185d7c31556a0428b9a464291313363600b1fb17c5c71",
+      "candidate_catalog_sha256": "123a0276e0e1e9dac8f77d978859df6840259790231cf9d3f2bb84f7d73099b5",
+      "candidate_catalog_entries": 168
+    },
+    {
+      "fixture": "Heaps/Similarity/PS01",
+      "inputs": 58,
+      "sources": 58,
+      "manifest_sha256": "f87e09e932310784fce7096fa34e0addbcbfdf1dda0219232d2136011f6782d3",
+      "source_catalog_sha256": "3b04a4fe575b884b3bfea37a4b916743becf118a84fa4032db92b642db86052a",
+      "import_map_sha256": "bdde0a86669cba3d4b454409cca8e2495179b1371cd7849b7325f48e34317099",
+      "candidate_catalog_sha256": "45a5007ab343de1619fb48be8f3362fbb0e9797602f31c240018f023fb2e3c79",
+      "candidate_catalog_entries": 145
+    },
+    {
+      "fixture": "Heaps/Similarity/RG01",
+      "inputs": 31,
+      "sources": 31,
+      "manifest_sha256": "8c11d19a70ae73c0a526ee05e7f9fb2c904ab39e977788395c201b94aa9d3a0c",
+      "source_catalog_sha256": "d843cce70abcce1c268226c02ebfef911663149408c0cdc3bfdb95ac1ee76c0d",
+      "import_map_sha256": "412af33192adbc940b992f2dac5541f423e66f7e0c5fcf0a669e7133e6eec5fa",
+      "candidate_catalog_sha256": "f56a2cd395c0a6e6a932c8905387315d96c70237924f95bc700b8a13a5b55403",
+      "candidate_catalog_entries": 107
+    },
+    {
+      "fixture": "Heaps/Similarity/SF01",
+      "inputs": 48,
+      "sources": 48,
+      "manifest_sha256": "29b006215f26a49b6eb774bcfeb8d29e761fd31f224bcc278b4868acbe3ca026",
+      "source_catalog_sha256": "02d8ee2a441dd22cdf6f7a68607b2f294fefaece1612e168bbc6cf68562fb6c6",
+      "import_map_sha256": "7f1515d13fc81673216e33c78fd22d3b97a84064c03546207b4a0b750062f4a3",
+      "candidate_catalog_sha256": "106c03b1005e39df00cc17583eb328b74c6e138a52ed241a786a7af789e5d54f",
+      "candidate_catalog_entries": 142
+    },
+    {
+      "fixture": "Heaps/Similarity/TG01",
+      "inputs": 31,
+      "sources": 31,
+      "manifest_sha256": "d1c8c6361e8f7d25e6c68af8f87aac9c9b8b42f31688a9324f7ad6da53ec0365",
+      "source_catalog_sha256": "7f335bba606207fff3a3d3820cdd6a8acdb42d3fb1ef0256db5a868c83f9f83d",
+      "import_map_sha256": "14ba0d2f318745c63ef7e19454026cc7708601fd5e961b1a9e2476db810d51df",
+      "candidate_catalog_sha256": "24c3bd0d6e8b93a46455afb4eaaeb6b529a5e3cd3083da45fae15cdcdb023279",
+      "candidate_catalog_entries": 152
+    },
+    {
+      "fixture": "Relationships/Derivatives",
+      "inputs": 183,
+      "sources": 15,
+      "manifest_sha256": "6141c7fde28f1e2809bb1ca4df207a1ebe0788db4daaf1f489e79421fb1c038d",
+      "source_catalog_sha256": "e43c7abfdefd193c19ea40c0e8436c6a377c91c6c6f1887550d074bfb5a4517c"
+    },
+    {
+      "fixture": "Relationships/Multiviews",
+      "inputs": 20,
+      "sources": 20,
+      "manifest_sha256": "2b77fb179dc6b3a2b537fa631f8fad528fdb2e44660a8f3e918e41a09fce5b63",
+      "source_catalog_sha256": "c123fc2c8a85f546f8aaa04a0aee85d056abf225ea1d5a0f0243fddf64e5e594"
+    },
+    {
+      "fixture": "Relationships/Variants",
+      "inputs": 42,
+      "sources": 6,
+      "manifest_sha256": "8d0fd98dd2e435661ef6d77b458050b131ed488b172204659023f080a85111df",
+      "source_catalog_sha256": "9ce08683d44dc925062232d7887629b3a5bfff1b50cabeda32a8e31b5074a67e",
+      "source_manifest_sha256": "aa50cfc091c9ff7027b8f7f81b03af8f4020240cfa52b9370c96a45cb8f71b80"
+    }
+  ],
+  "previous_inputs": 1163,
+  "previous_frozen_candidates": 4638,
+  "available_previous_identities": {
+    "title": 4653,
+    "pageid": 3982,
+    "original_sha1": 1454,
+    "byte_sha256": 1151
+  },
+  "checked": [
+    {
+      "candidate_id": "d6696d6bfabe47027a01",
+      "identities": {
+        "title": [
+          "File:JapanesePolishedStoneAxes.JPG"
+        ],
+        "pageid": [
+          "258416"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "ce1578be78758c8d4d49",
+      "identities": {
+        "title": [
+          "File:Aubeville stone tool.jpg"
+        ],
+        "pageid": [
+          "480419"
+        ],
+        "original_sha1": [
+          "c3b046c83dd77ec040bcb53e284a3b933c45dca8"
+        ],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "6f338bb045f7f7d47acc",
+      "identities": {
+        "title": [
+          "File:Acheuleanhandaxes.jpg"
+        ],
+        "pageid": [
+          "499022"
+        ],
+        "original_sha1": [
+          "3820d025ae2f66b5efd140936b420ec968159b24"
+        ],
+        "byte_sha256": [
+          "1c22cba9953b83a44fbd1890abfe0b7dce388edf30c9ad2090852f4b319c53ec"
+        ]
+      }
+    },
+    {
+      "candidate_id": "754ac3599c6e9baeb9e3",
+      "identities": {
+        "title": [
+          "File:Biface.jpg"
+        ],
+        "pageid": [
+          "504641"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "cd132f9dab694b48eb20",
+      "identities": {
+        "title": [
+          "File:Bifaz Handhaxe Biface.gif"
+        ],
+        "pageid": [
+          "534649"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "abd6db619201789d877f",
+      "identities": {
+        "title": [
+          "File:Hand axe spanish.gif"
+        ],
+        "pageid": [
+          "548596"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "f293713787f292e94494",
+      "identities": {
+        "title": [
+          "File:Hendidor.png"
+        ],
+        "pageid": [
+          "548611"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "856f67da5e5f3a8ddf69",
+      "identities": {
+        "title": [
+          "File:Bifaz-1 del Trabancos.gif"
+        ],
+        "pageid": [
+          "583289"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "6b9795994138797ef681",
+      "identities": {
+        "title": [
+          "File:Bifaz-2 del Trabancos.gif"
+        ],
+        "pageid": [
+          "583293"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "3b1d3378c234e15f2c85",
+      "identities": {
+        "title": [
+          "File:Hachereau de Hassi Manda.jpg"
+        ],
+        "pageid": [
+          "652339"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "6aa59fd414b06dbe1f3a",
+      "identities": {
+        "title": [
+          "File:Handaxe-of-Um-Qatafa.png"
+        ],
+        "pageid": [
+          "753186"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "95aca44db5b322d4c3ee",
+      "identities": {
+        "title": [
+          "File:Coup de poing acheléen.jpg"
+        ],
+        "pageid": [
+          "868642"
+        ],
+        "original_sha1": [
+          "30cba7fedc0fc3eda7ed10106063d681dde081fc"
+        ],
+        "byte_sha256": [
+          "0d7d15511a2958d2af0f46b62ab085814c6d007e12e64e99aad9254adad7431d"
+        ]
+      }
+    },
+    {
+      "candidate_id": "bc443616752a91e6de94",
+      "identities": {
+        "title": [
+          "File:Bifaz abbevillense.png"
+        ],
+        "pageid": [
+          "1011498"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "3f7832570297c9a63f64",
+      "identities": {
+        "title": [
+          "File:Bifaz con percutor duro.png"
+        ],
+        "pageid": [
+          "1097624"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "0e147f4b24c144649399",
+      "identities": {
+        "title": [
+          "File:Bifaz con percutor blando.png"
+        ],
+        "pageid": [
+          "1097625"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "da998e3f7f93ca0b5664",
+      "identities": {
+        "title": [
+          "File:Hendido tipo 20.png"
+        ],
+        "pageid": [
+          "1159986"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "bd442f320c7e5d368f39",
+      "identities": {
+        "title": [
+          "File:Hendidor de tipo 6.png"
+        ],
+        "pageid": [
+          "1159988"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "3f89f989aa8a746f38e1",
+      "identities": {
+        "title": [
+          "File:Hendidor tipo 00.png"
+        ],
+        "pageid": [
+          "1160039"
+        ],
+        "original_sha1": [
+          "9ef85126d0d24bb7916d0e655c87dabdcf16204d"
+        ],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "e5ed285143923b94d4db",
+      "identities": {
+        "title": [
+          "File:Hendidor tipo 01.png"
+        ],
+        "pageid": [
+          "1160047"
+        ],
+        "original_sha1": [
+          "2b31865237970d6faab451e6050f4809a6cb482b"
+        ],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "dfc60809b9e31c5736d7",
+      "identities": {
+        "title": [
+          "File:Hendidor tipo 10.png"
+        ],
+        "pageid": [
+          "1160063"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "2e39c0a7e893e6090160",
+      "identities": {
+        "title": [
+          "File:Hendidor tipo 11 percusion sur.png"
+        ],
+        "pageid": [
+          "1160076"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "9d337aa6dde9c957810d",
+      "identities": {
+        "title": [
+          "File:Hendidor tipo 21.png"
+        ],
+        "pageid": [
+          "1160083"
+        ],
+        "original_sha1": [
+          "46efea1a2f13598389e4b651fda6ea2e1c08d202"
+        ],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "f654c7d1bea9bdac8908",
+      "identities": {
+        "title": [
+          "File:Hendidor tipo 31.png"
+        ],
+        "pageid": [
+          "1160088"
+        ],
+        "original_sha1": [
+          "eda4941d68d8326505fc4d94737de10608cc0b94"
+        ],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "a77238510843b9be9a98",
+      "identities": {
+        "title": [
+          "File:Faustkeil001.jpg"
+        ],
+        "pageid": [
+          "1161998"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "04aefea5a1cf49a20bf1",
+      "identities": {
+        "title": [
+          "File:Exhendidor de El Lombo.png"
+        ],
+        "pageid": [
+          "1166147"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "3fe6365dc98f93bcb567",
+      "identities": {
+        "title": [
+          "File:Bifaz en mano.jpg"
+        ],
+        "pageid": [
+          "1431740"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "9f6f6b299738607c075c",
+      "identities": {
+        "title": [
+          "File:Bifaz de Silex de Mucientes.jpg"
+        ],
+        "pageid": [
+          "1483790"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "4cd8f565fbf0b1364076",
+      "identities": {
+        "title": [
+          "File:Hechura litica-Façonnage.png"
+        ],
+        "pageid": [
+          "1485275"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "24f8ece9892af39ccdeb",
+      "identities": {
+        "title": [
+          "File:Biface Extension.png"
+        ],
+        "pageid": [
+          "1554936"
+        ],
+        "original_sha1": [
+          "631607294336306e2318059e94373a34c87f8503"
+        ],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "74176316e1741d1a1619",
+      "identities": {
+        "title": [
+          "File:Bifaz sobre lasca.png"
+        ],
+        "pageid": [
+          "1565231"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "4ec9859e2242cb933126",
+      "identities": {
+        "title": [
+          "File:Bifaz-El Lombo (PD).png"
+        ],
+        "pageid": [
+          "1570210"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "3e4f090572f5a58b132a",
+      "identities": {
+        "title": [
+          "File:Bifaz-Teso de San Francisco (PD+PD).png"
+        ],
+        "pageid": [
+          "1570213"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "03dcbec8076fcc978cfc",
+      "identities": {
+        "title": [
+          "File:Bifaz-Valdeagun (PD+PB).png"
+        ],
+        "pageid": [
+          "1570219"
+        ],
+        "original_sha1": [
+          "b9fbef295d1a6eeb75c2620775f4cf83044960b6"
+        ],
+        "byte_sha256": [
+          "35d76a5bd423146bda6a5f6500eac7641c6e7eea47106a7bce4d28734fa22029"
+        ]
+      }
+    },
+    {
+      "candidate_id": "52809f2210aca642199c",
+      "identities": {
+        "title": [
+          "File:Bifaz-Castillejo (PB).png"
+        ],
+        "pageid": [
+          "1570223"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "c32e1e0030d17b4e8276",
+      "identities": {
+        "title": [
+          "File:Monofaz Achelense.png"
+        ],
+        "pageid": [
+          "1574572"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "fdb7cc73fc101b313308",
+      "identities": {
+        "title": [
+          "File:Bifaz de dorso-Rincon.png"
+        ],
+        "pageid": [
+          "1574575"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "7a666ee6f18013b3ab26",
+      "identities": {
+        "title": [
+          "File:Bifaz parcial-El-Lombo.png"
+        ],
+        "pageid": [
+          "1574655"
+        ],
+        "original_sha1": [
+          "153e45935fc8580f8292269d3a96efed099c57e5"
+        ],
+        "byte_sha256": [
+          "ce09297e861844e02add14e48c6fccd4dfedcaa6dd0db5055733993f65dcb063"
+        ]
+      }
+    },
+    {
+      "candidate_id": "8c1fa75e2296280964c8",
+      "identities": {
+        "title": [
+          "File:Bifaz de los Tablazos.png"
+        ],
+        "pageid": [
+          "1574705"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "e8a953804e8bd92c5a86",
+      "identities": {
+        "title": [
+          "File:Bifaz-esquema.png"
+        ],
+        "pageid": [
+          "1578391"
+        ],
+        "original_sha1": [
+          "2b8f118dbae6d95e29b568b2dfed45031e425969"
+        ],
+        "byte_sha256": [
+          "d2b2c32d273716ed6ebb06884e2c58165cc1d6acd0ea0b3844fe9b79e3c6db62"
+        ]
+      }
+    },
+    {
+      "candidate_id": "c6577cb141e2736f660d",
+      "identities": {
+        "title": [
+          "File:Biface flexueux.png"
+        ],
+        "pageid": [
+          "1579088"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "d61c7643fe6eb23ed699",
+      "identities": {
+        "title": [
+          "File:Biface discoide.png"
+        ],
+        "pageid": [
+          "1579119"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "e84b70c2ef979471462e",
+      "identities": {
+        "title": [
+          "File:Biface amygdaloide.png"
+        ],
+        "pageid": [
+          "1579130"
+        ],
+        "original_sha1": [
+          "e0dfb86d4c8013a6e6c30b2e04121fc60f9d43db"
+        ],
+        "byte_sha256": [
+          "cfc4089ef27d3b2d00ef72ae4f782d27015d27c49a58126af8c220c0cc8ac519"
+        ]
+      }
+    },
+    {
+      "candidate_id": "70258c41ef6fe6e25593",
+      "identities": {
+        "title": [
+          "File:Biface triangulaire.png"
+        ],
+        "pageid": [
+          "1579147"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "1466559208f87601c9f7",
+      "identities": {
+        "title": [
+          "File:Biface-hachereau.png"
+        ],
+        "pageid": [
+          "1579148"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "5fbfca29db035726bf39",
+      "identities": {
+        "title": [
+          "File:Biface limande.png"
+        ],
+        "pageid": [
+          "1579345"
+        ],
+        "original_sha1": [
+          "ae798729cb03e4be1f97d0cdd6a65b90b747ac54"
+        ],
+        "byte_sha256": [
+          "42b5d872d9384879e47c627c5922eee6d4f360b261f4176e27c6a7ccdb8cdfdd"
+        ]
+      }
+    },
+    {
+      "candidate_id": "98c0560dfcce45de05bf",
+      "identities": {
+        "title": [
+          "File:Biface ovalaire.png"
+        ],
+        "pageid": [
+          "1579519"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "e7f8bfab2b8144f773da",
+      "identities": {
+        "title": [
+          "File:Biface losangique.png"
+        ],
+        "pageid": [
+          "1579630"
+        ],
+        "original_sha1": [
+          "bf48a18fa43503cc63cff60d5ec9e80c6c65d840"
+        ],
+        "byte_sha256": [
+          "594074103db3e620297920e556425af0e35e77990ae189ae27c8d553e9f20734"
+        ]
+      }
+    },
+    {
+      "candidate_id": "1e5cd22c7479087ca232",
+      "identities": {
+        "title": [
+          "File:Biface naviforme.png"
+        ],
+        "pageid": [
+          "1579689"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "d50d2e422f8af9031347",
+      "identities": {
+        "title": [
+          "File:Biface abbevillien.png"
+        ],
+        "pageid": [
+          "1580237"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "48cd181fcd1a9b2f39ff",
+      "identities": {
+        "title": [
+          "File:Biface nucleiforme.png"
+        ],
+        "pageid": [
+          "1580240"
+        ],
+        "original_sha1": [
+          "ca32dc4c4ed5b40ecbfcd22054df07c354dfcb17"
+        ],
+        "byte_sha256": [
+          "f90e6b5cda69923519553467ea2461c72d931296e9471cedf7e92e499fc786eb"
+        ]
+      }
+    },
+    {
+      "candidate_id": "b2a2e721467bf9e9d089",
+      "identities": {
+        "title": [
+          "File:Biface lageniforme.png"
+        ],
+        "pageid": [
+          "1581841"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "30464777c50c0bf3800c",
+      "identities": {
+        "title": [
+          "File:Bifaz dimensiones.svg"
+        ],
+        "pageid": [
+          "1583012"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "291161ce77af5be4a511",
+      "identities": {
+        "title": [
+          "File:Bifaz-indice de alargamiento.gif"
+        ],
+        "pageid": [
+          "1588676"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "627e5fc757d6901e611b",
+      "identities": {
+        "title": [
+          "File:Bifaz-Redondeamiento de la base.gif"
+        ],
+        "pageid": [
+          "1588687"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "bef9e7bc1bf8ad104cf0",
+      "identities": {
+        "title": [
+          "File:Bifaz-indice de aplastamiento.gif"
+        ],
+        "pageid": [
+          "1589123"
+        ],
+        "original_sha1": [
+          "ddf40ee4f13151413b8ee80039ba8c0b4d921f03"
+        ],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "efdb7ee04b8ea5cdb415",
+      "identities": {
+        "title": [
+          "File:Agarre de un bifaz.png"
+        ],
+        "pageid": [
+          "1589281"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "3cd7d796f0686bb75948",
+      "identities": {
+        "title": [
+          "File:Bifaz-Rotura de la punta.png"
+        ],
+        "pageid": [
+          "1590502"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "a9474ef4ab186a577b8d",
+      "identities": {
+        "title": [
+          "File:Bifaz-Punta reconstruida.png"
+        ],
+        "pageid": [
+          "1590648"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "979c851d68b4ce198340",
+      "identities": {
+        "title": [
+          "File:Handaxe by John Frere.png"
+        ],
+        "pageid": [
+          "1602218"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "71edcf098f4efbb651f1",
+      "identities": {
+        "title": [
+          "File:Bifaz triangular.jpg"
+        ],
+        "pageid": [
+          "1605673"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "4754f5b1cffee02567ad",
+      "identities": {
+        "title": [
+          "File:Bifaz amigdaloide.jpg"
+        ],
+        "pageid": [
+          "1605693"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "413a5f0391830c8cf94b",
+      "identities": {
+        "title": [
+          "File:Bifaz lanceolado.jpg"
+        ],
+        "pageid": [
+          "1605720"
+        ],
+        "original_sha1": [
+          "582e1ca83940b842aa1387ff4854338dfb03b6a4"
+        ],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "66a21e497d91a1c033bd",
+      "identities": {
+        "title": [
+          "File:Bifaz cordiforme.jpg"
+        ],
+        "pageid": [
+          "1605723"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "d623b7823f8039f28e5c",
+      "identities": {
+        "title": [
+          "File:Bifaz ovoide.jpg"
+        ],
+        "pageid": [
+          "1605992"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "9f900c38917bc6f4f277",
+      "identities": {
+        "title": [
+          "File:Bifaz eliptico.jpg"
+        ],
+        "pageid": [
+          "1606672"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "1cdf899b798c2d9da1ec",
+      "identities": {
+        "title": [
+          "File:Bifaz ovoide-Valladolid.jpg"
+        ],
+        "pageid": [
+          "1606807"
+        ],
+        "original_sha1": [
+          "c09ead1999e4f6af3a3cb987b538184130f1a7d3"
+        ],
+        "byte_sha256": [
+          "f63d1231c5e6ac029f19960fc722884bee20b486b6571a94e124dec957e62e3e"
+        ]
+      }
+    },
+    {
+      "candidate_id": "6420ec7746391c3e4c69",
+      "identities": {
+        "title": [
+          "File:Bifaz de estilo Abbevillense.png"
+        ],
+        "pageid": [
+          "1621711"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "b56303e73386ab56798c",
+      "identities": {
+        "title": [
+          "File:Biface ficron.png"
+        ],
+        "pageid": [
+          "1621817"
+        ],
+        "original_sha1": [
+          "b08558f9b266736af615707a5f216e4c60167d67"
+        ],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "006b03097de4a5201c61",
+      "identities": {
+        "title": [
+          "File:Bifaz nucleiforme (Torralba).png"
+        ],
+        "pageid": [
+          "1623458"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "004a518566eb90d2568a",
+      "identities": {
+        "title": [
+          "File:Bifaz-Hendidor (Torralba).png"
+        ],
+        "pageid": [
+          "1623464"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "32fb67b97f120e7ae3b4",
+      "identities": {
+        "title": [
+          "File:Bifaz parcial (Madrid).png"
+        ],
+        "pageid": [
+          "1623475"
+        ],
+        "original_sha1": [
+          "d00064955d3f0b013465397a5220b0f508602deb"
+        ],
+        "byte_sha256": [
+          "c160a00b7be8e32eb95be1f681cfc431f0635097efbf22f05942db95d6849fe9"
+        ]
+      }
+    },
+    {
+      "candidate_id": "32bb43bf85d9f3a950bf",
+      "identities": {
+        "title": [
+          "File:Pieza foliacea bifacial-1.png"
+        ],
+        "pageid": [
+          "1627269"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "9d3f51834224f0228261",
+      "identities": {
+        "title": [
+          "File:Pieza foliacea bifacial-2.png"
+        ],
+        "pageid": [
+          "1627272"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "037e6097764e95dd1a9f",
+      "identities": {
+        "title": [
+          "File:Bifaz lanceolado-San Isidro (Madrid).png"
+        ],
+        "pageid": [
+          "1636911"
+        ],
+        "original_sha1": [
+          "9b18c3278874214ee3b096c89af32e195e350db5"
+        ],
+        "byte_sha256": [
+          "7bc60c19fca7072d60e73860c240e1aa9a0494e0874db7027478090772bad17d"
+        ]
+      }
+    },
+    {
+      "candidate_id": "4e8fcefafd852bdf0fec",
+      "identities": {
+        "title": [
+          "File:Protobifaz-Guelmim-Es Semara.jpg"
+        ],
+        "pageid": [
+          "1892118"
+        ],
+        "original_sha1": [
+          "75eb0160852f131bce92b823ac9a903b9f273025"
+        ],
+        "byte_sha256": [
+          "c55263a6334d2c51cc5c63f350093ce7d605e79fa25e50209ee4b854d45f5738"
+        ]
+      }
+    },
+    {
+      "candidate_id": "5ea29f87e2be45ebe968",
+      "identities": {
+        "title": [
+          "File:Bifaz micoquiense.jpg"
+        ],
+        "pageid": [
+          "1896285"
+        ],
+        "original_sha1": [
+          "d58027e10b9cd4ee525b5ad65e18813024b88b75"
+        ],
+        "byte_sha256": [
+          "c704caed1e3debfc731601e3a9273aa7ff8f047a3e0ea7d2a6a8a3aac0e63d9e"
+        ]
+      }
+    },
+    {
+      "candidate_id": "cdc59489a7a3666ac0d0",
+      "identities": {
+        "title": [
+          "File:Bifaz de Atapuerca (TG10).jpg"
+        ],
+        "pageid": [
+          "1927194"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "b0fe4d7b58e730263086",
+      "identities": {
+        "title": [
+          "File:9187 - Milano, Museo storia naturale - Amigdale paleolitiche - Foto Giovanni Dall'Orto 22-Apr-2007.jpg"
+        ],
+        "pageid": [
+          "2085714"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "6ff7064de46bb928046a",
+      "identities": {
+        "title": [
+          "File:NOR1521.JPG"
+        ],
+        "pageid": [
+          "2943778"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "5833c33c40a574c495d1",
+      "identities": {
+        "title": [
+          "File:CMOC Treasures of Ancient China exhibit - stone scraper.jpg"
+        ],
+        "pageid": [
+          "2975236"
+        ],
+        "original_sha1": [
+          "ecb05cc9b4affe588401f630dfae419ceb068009"
+        ],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "cc75df163437b6877fab",
+      "identities": {
+        "title": [
+          "File:Biface (France).jpg"
+        ],
+        "pageid": [
+          "3995822"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "27fd2d8e0bb9f5448ae3",
+      "identities": {
+        "title": [
+          "File:Obsidienne biface ethiopie.jpg"
+        ],
+        "pageid": [
+          "4086787"
+        ],
+        "original_sha1": [
+          "a839051b192f1bdf2def4c5e651706b50af62ed1"
+        ],
+        "byte_sha256": [
+          "530b8a921c05d4efe5a58851486e7908049bafd47d4b9a0920494518aeb52704"
+        ]
+      }
+    },
+    {
+      "candidate_id": "80ddb8841bc7a41824e0",
+      "identities": {
+        "title": [
+          "File:Biface.png"
+        ],
+        "pageid": [
+          "4483411"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "b28dd91be1f363e93167",
+      "identities": {
+        "title": [
+          "File:BifaceTransparenticon.png"
+        ],
+        "pageid": [
+          "4483634"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "6a5988f888eee027ea2b",
+      "identities": {
+        "title": [
+          "File:Faustkeil 1 Poesing.jpg"
+        ],
+        "pageid": [
+          "6530480"
+        ],
+        "original_sha1": [
+          "fa79b1f0598f7e950686cdfddf4a3b192cf74f53"
+        ],
+        "byte_sha256": [
+          "cef0a8f822aed69281eb8b4460d2cb7d07139978b459841497e9e96d4f2e4031"
+        ]
+      }
+    },
+    {
+      "candidate_id": "efaf7fb3d43898d7b599",
+      "identities": {
+        "title": [
+          "File:Faustkeil 2 Poesing.jpg"
+        ],
+        "pageid": [
+          "6530496"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "26e7c184b28b0ed5d77c",
+      "identities": {
+        "title": [
+          "File:Faustkeil 3 Poesing.jpg"
+        ],
+        "pageid": [
+          "6530528"
+        ],
+        "original_sha1": [
+          "5b49c4760774d1248af01e19fd1525ee660a6ba4"
+        ],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "d85ecad789b8cd2b4694",
+      "identities": {
+        "title": [
+          "File:Hand ston 1.jpg"
+        ],
+        "pageid": [
+          "6563426"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "756ddfbc6993d29c7298",
+      "identities": {
+        "title": [
+          "File:Hand ston 2.JPG"
+        ],
+        "pageid": [
+          "6563464"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "e042f678fd54a3f7afc5",
+      "identities": {
+        "title": [
+          "File:Hand axe.JPG"
+        ],
+        "pageid": [
+          "6944824"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "3d57f0520ec686dcfd36",
+      "identities": {
+        "title": [
+          "File:Saltley Handaxe.jpg"
+        ],
+        "pageid": [
+          "7282112"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "39c472cfccffae6c0c35",
+      "identities": {
+        "title": [
+          "File:Große Faustkeile.JPG"
+        ],
+        "pageid": [
+          "8440051"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "6cbbae169dc35cff05f3",
+      "identities": {
+        "title": [
+          "File:Bifaz de San Isidro (M.A.N. 1942-101-4-4723) 01.jpg"
+        ],
+        "pageid": [
+          "8539493"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "daeaf01eee2805cc1428",
+      "identities": {
+        "title": [
+          "File:Ägyptisches Museum Leipzig 264.jpg"
+        ],
+        "pageid": [
+          "8672230"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "d72a3636edf27abbd384",
+      "identities": {
+        "title": [
+          "File:Biface silex.png"
+        ],
+        "pageid": [
+          "9080835"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "f2a2a83546badd3592bb",
+      "identities": {
+        "title": [
+          "File:Faustkeil 4 Poesing.jpg"
+        ],
+        "pageid": [
+          "9858506"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "52b0dd80eabecf92c75e",
+      "identities": {
+        "title": [
+          "File:Sour El-Ghozlane .biface.2.JPG"
+        ],
+        "pageid": [
+          "10892351"
+        ],
+        "original_sha1": [
+          "03a5de46b2a99140a89a099ec43b3a27f1148558"
+        ],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "7134fe54c9e840a48c7e",
+      "identities": {
+        "title": [
+          "File:Sour El-Ghozlane .biface1.JPG"
+        ],
+        "pageid": [
+          "10892361"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "8bfd2752b3850d8178b7",
+      "identities": {
+        "title": [
+          "File:GNM - Faustkeil.jpg"
+        ],
+        "pageid": [
+          "11008976"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "227703ff8b66e62a2c00",
+      "identities": {
+        "title": [
+          "File:Bifaces Ouargla.JPG"
+        ],
+        "pageid": [
+          "11195853"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "ed7aa4ac5b95da1bf102",
+      "identities": {
+        "title": [
+          "File:British Museum Olduvai handaxe.jpg"
+        ],
+        "pageid": [
+          "11245062"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "805f4f806391ff12d956",
+      "identities": {
+        "title": [
+          "File:Silex Griquatown.2009.0.197 fond.jpg"
+        ],
+        "pageid": [
+          "11271536"
+        ],
+        "original_sha1": [
+          "79fe316de39b26abcb7096057812a6517e14b929"
+        ],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "ca8607d85da5a02b5548",
+      "identities": {
+        "title": [
+          "File:Makevet-keren-aven-yad72.jpg"
+        ],
+        "pageid": [
+          "11625829"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "e65e20ce337065b088ae",
+      "identities": {
+        "title": [
+          "File:Biface Cintegabelle MHNT PRE 2009.0.201.1 V2.jpg"
+        ],
+        "pageid": [
+          "11656505"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "30f8495ee5455fe69896",
+      "identities": {
+        "title": [
+          "File:Archeuléen - Biface.JPG"
+        ],
+        "pageid": [
+          "14741132"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "26a2c09dfd7ad3dece88",
+      "identities": {
+        "title": [
+          "File:Biface Archeuléen.JPG"
+        ],
+        "pageid": [
+          "14741168"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "22800ebe6e2123eb7268",
+      "identities": {
+        "title": [
+          "File:Museum of Anatolian Civilizations 1320329 nevit.jpg"
+        ],
+        "pageid": [
+          "14793572"
+        ],
+        "original_sha1": [
+          "c1c83ed8912ef741699fdd1b2481fa173b24f5d7"
+        ],
+        "byte_sha256": [
+          "c9ab738a50dfec174b2d3dd53f6c7e9b6ce82bdbf72e7d295bb513f9dd6da50b"
+        ]
+      }
+    },
+    {
+      "candidate_id": "34bc84ab440d0c10d3cc",
+      "identities": {
+        "title": [
+          "File:Vuistbijl paleolithicum.jpg"
+        ],
+        "pageid": [
+          "14894016"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "32508c869510c3b8a1ba",
+      "identities": {
+        "title": [
+          "File:Biface de St Acheul MHNT.jpg"
+        ],
+        "pageid": [
+          "14901021"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "f1c2ceddfc9bd1faa4c1",
+      "identities": {
+        "title": [
+          "File:Hachet Noulet MHNT.PRE.2011.0.429.jpg"
+        ],
+        "pageid": [
+          "16108269"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "e814dd375af39ac15521",
+      "identities": {
+        "title": [
+          "File:SzakocaAvas01.jpg"
+        ],
+        "pageid": [
+          "16151411"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "ca1b62234dda0ffbe78e",
+      "identities": {
+        "title": [
+          "File:Olduvai handaxeDSCF6959.jpg"
+        ],
+        "pageid": [
+          "16317745"
+        ],
+        "original_sha1": [
+          "701c248b1b2776de0ea616af7b7bc60566ccb3ab"
+        ],
+        "byte_sha256": [
+          "a6f6f80e0f5bf41fabcf78ce131b5f361bb997d2aced4604fadf600b3b2331fc"
+        ]
+      }
+    },
+    {
+      "candidate_id": "d2653e2731112b1b2966",
+      "identities": {
+        "title": [
+          "File:Handaxe 1931-30-35.jpg"
+        ],
+        "pageid": [
+          "16980007"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "070e06dcdc0e95592c64",
+      "identities": {
+        "title": [
+          "File:Handaxe 1931-30-35 2.jpg"
+        ],
+        "pageid": [
+          "16980009"
+        ],
+        "original_sha1": [
+          "e28a925209b25ea084afe82e68b007470a5772c0"
+        ],
+        "byte_sha256": [
+          "bf6bde31dcf55057f78796ace043f22877b50b80d6520cd6887244e3fa2398f1"
+        ]
+      }
+    },
+    {
+      "candidate_id": "0d698618b264f870d742",
+      "identities": {
+        "title": [
+          "File:GLAM Ice Age 050.jpg"
+        ],
+        "pageid": [
+          "16980439"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "9b82a8eef6fd9cde62c9",
+      "identities": {
+        "title": [
+          "File:GLAM Ice Age 053.jpg"
+        ],
+        "pageid": [
+          "16980498"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "609a4612703fba166772",
+      "identities": {
+        "title": [
+          "File:GLAM Ice Age 055.jpg"
+        ],
+        "pageid": [
+          "16980499"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "40b7dc8f7d129c4b20ec",
+      "identities": {
+        "title": [
+          "File:GLAM Ice Age 052.jpg"
+        ],
+        "pageid": [
+          "16980500"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "e648d6349d7ae1721fe4",
+      "identities": {
+        "title": [
+          "File:GLAM Ice Age 057.jpg"
+        ],
+        "pageid": [
+          "16980501"
+        ],
+        "original_sha1": [
+          "4bd9b1d86555b041cf88b34c91b7a7d04ad79a9e"
+        ],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "c2d3af83aee9cc9bd578",
+      "identities": {
+        "title": [
+          "File:GLAM Ice Age 058.jpg"
+        ],
+        "pageid": [
+          "16980502"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "f656925f138446f9c3fa",
+      "identities": {
+        "title": [
+          "File:GLAM Ice Age 061.jpg"
+        ],
+        "pageid": [
+          "16980503"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "3e334333bd6814bbb869",
+      "identities": {
+        "title": [
+          "File:GLAM Ice Age 065.jpg"
+        ],
+        "pageid": [
+          "16980504"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "e9ca1feedd42c19091c4",
+      "identities": {
+        "title": [
+          "File:GLAM Ice Age 096.jpg"
+        ],
+        "pageid": [
+          "16981163"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "f736265542a1fbf90f4e",
+      "identities": {
+        "title": [
+          "File:GLAM Ice Age 094.jpg"
+        ],
+        "pageid": [
+          "16981164"
+        ],
+        "original_sha1": [
+          "903d2a6157d2b4cab87cd97a013c4c068ad82345"
+        ],
+        "byte_sha256": [
+          "18c961979a1a302933ce2413460d8737421e37a981b13b7d899b373259a632f7"
+        ]
+      }
+    },
+    {
+      "candidate_id": "16f465fef13adac640fd",
+      "identities": {
+        "title": [
+          "File:GLAM Ice Age 092.jpg"
+        ],
+        "pageid": [
+          "16981165"
+        ],
+        "original_sha1": [
+          "a7c26ee3ee7e07e76a0f4bd6cec771423318d002"
+        ],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "9e0f93698e4b56448ecf",
+      "identities": {
+        "title": [
+          "File:GLAM Ice Age 110.jpg"
+        ],
+        "pageid": [
+          "16981239"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "8bbda7961cb440999a08",
+      "identities": {
+        "title": [
+          "File:GLAM Ice Age 108.jpg"
+        ],
+        "pageid": [
+          "16981243"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "30bdde9c7a25ae18d16e",
+      "identities": {
+        "title": [
+          "File:Franks HouseDSCF7154.jpg"
+        ],
+        "pageid": [
+          "16985889"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "7126f8352f09e29fe3d0",
+      "identities": {
+        "title": [
+          "File:Franks HouseDSCF7155.jpg"
+        ],
+        "pageid": [
+          "16985890"
+        ],
+        "original_sha1": [
+          "d7fe92cf838f1246c96e42da15d2c4df2e0dbd8e"
+        ],
+        "byte_sha256": [
+          "1d60be7bc84b8ad6bb4fb736f678031f8eddad82fe7a313b0ac1fec225217dbb"
+        ]
+      }
+    },
+    {
+      "candidate_id": "baa87bd11d711fbe04de",
+      "identities": {
+        "title": [
+          "File:Franks HouseDSCF7156.jpg"
+        ],
+        "pageid": [
+          "16985892"
+        ],
+        "original_sha1": [
+          "c9c93c6e2e6d9388473551fb79eb64c342a44e99"
+        ],
+        "byte_sha256": [
+          "5a8d5ad703309b2c8cf1a1d120bc384b2d98c64cb300c5f044ec79b1c53bba91"
+        ]
+      }
+    },
+    {
+      "candidate_id": "23aea69f13da121daee8",
+      "identities": {
+        "title": [
+          "File:Franks HouseDSCF7158.jpg"
+        ],
+        "pageid": [
+          "16985893"
+        ],
+        "original_sha1": [
+          "53f15981e8e88773dfd16ece4b6af94b95222c0c"
+        ],
+        "byte_sha256": [
+          "53c323c95068a5afda8f9925ccf7686b20565073bea2b657a890e4421cb4c9a1"
+        ]
+      }
+    },
+    {
+      "candidate_id": "650653b341519a1d012b",
+      "identities": {
+        "title": [
+          "File:Franks HouseDSCF7165.jpg"
+        ],
+        "pageid": [
+          "16985895"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "cdc0564f43198d6916c7",
+      "identities": {
+        "title": [
+          "File:Franks House DSCF7168.jpg"
+        ],
+        "pageid": [
+          "16987280"
+        ],
+        "original_sha1": [
+          "6d39681f002198cb580222fdfb275f67f119f927"
+        ],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "07a9049efd1794c878ef",
+      "identities": {
+        "title": [
+          "File:Franks HouseDSCF7169.jpg"
+        ],
+        "pageid": [
+          "16987281"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "bac13ec14009ddc0beae",
+      "identities": {
+        "title": [
+          "File:Franks HouseDSCF7170.jpg"
+        ],
+        "pageid": [
+          "16987282"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "2e3fe370149e9a1604e9",
+      "identities": {
+        "title": [
+          "File:GLAM Ice Age 266.jpg"
+        ],
+        "pageid": [
+          "17157844"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "728d045a081cb5e36898",
+      "identities": {
+        "title": [
+          "File:Каменный топор.jpg"
+        ],
+        "pageid": [
+          "17938857"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "15866ffe18dd835b545f",
+      "identities": {
+        "title": [
+          "File:Vuistbijl.JPG"
+        ],
+        "pageid": [
+          "19137176"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "70dc590e87e16536fdc6",
+      "identities": {
+        "title": [
+          "File:Happisburgh handaxe.jpg"
+        ],
+        "pageid": [
+          "20375347"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "ddcc9ed48b53415b8ca2",
+      "identities": {
+        "title": [
+          "File:Enrique Baquedano con un bifaz en Olduvai.png"
+        ],
+        "pageid": [
+          "25283792"
+        ],
+        "original_sha1": [
+          "67bdf8d63f0aec7fc929e29231424571e086fd7d"
+        ],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "79ba01b10b2d9bd4b5a8",
+      "identities": {
+        "title": [
+          "File:Bifaz Palmones (1).jpg"
+        ],
+        "pageid": [
+          "26081399"
+        ],
+        "original_sha1": [
+          "40f3c72d59de40c63feae0abff0326f0de63467a"
+        ],
+        "byte_sha256": [
+          "7cc519338788c99ccb9ba1c20444f7d3a776dcafced8c34a808dbb625bd8f421"
+        ]
+      }
+    },
+    {
+      "candidate_id": "921fe13e22d136ff7a90",
+      "identities": {
+        "title": [
+          "File:Bifaz Palmones (2).jpg"
+        ],
+        "pageid": [
+          "26081556"
+        ],
+        "original_sha1": [
+          "23ddc64231b200679092c8c1d6607d9045ee6440"
+        ],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "61c62027a17caf4b80d1",
+      "identities": {
+        "title": [
+          "File:Handaxes.JPG"
+        ],
+        "pageid": [
+          "26505279"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "0e235d986cf4fc384f20",
+      "identities": {
+        "title": [
+          "File:Faustkeil von Wörleschwang.jpg"
+        ],
+        "pageid": [
+          "28281907"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "5e665e6084c73810bb40",
+      "identities": {
+        "title": [
+          "File:MuseoDeBurgos20130911125558P1170787.jpg"
+        ],
+        "pageid": [
+          "28301923"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "6d8e17cd418286f9c9b5",
+      "identities": {
+        "title": [
+          "File:Handaxes 2.png"
+        ],
+        "pageid": [
+          "28335871"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "dc94ef278140222fc05a",
+      "identities": {
+        "title": [
+          "File:Celts from archaeological excavations in Sierra Leone (west Africa) (2387863991).jpg"
+        ],
+        "pageid": [
+          "29751312"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "bb2004e706d477dae616",
+      "identities": {
+        "title": [
+          "File:Heidenschmiede Faustkeil Tafel V1.jpg"
+        ],
+        "pageid": [
+          "30249180"
+        ],
+        "original_sha1": [
+          "932b0236fb44171dd691b4d460f7b9b4a311f8ee"
+        ],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "82976ce9dacf01d8860f",
+      "identities": {
+        "title": [
+          "File:Heidenschmiede Faustkeil Tafel VIII1.jpg"
+        ],
+        "pageid": [
+          "30249226"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "65c66aec1bea7d893731",
+      "identities": {
+        "title": [
+          "File:Hochfelden Biface.jpg"
+        ],
+        "pageid": [
+          "32194778"
+        ],
+        "original_sha1": [
+          "78c2489939a258ed979c08216351a09151e3a9fe"
+        ],
+        "byte_sha256": [
+          "e795aba89f900adca024637dc6a842d9ccc0b0db0534a59d64f640b5b504558a"
+        ]
+      }
+    },
+    {
+      "candidate_id": "cb0aff40357cccc81348",
+      "identities": {
+        "title": [
+          "File:Biface, Acheuléen - Chissey-les-Mâcon, Saône-et-Loire (2).jpg"
+        ],
+        "pageid": [
+          "35731526"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "3d181497bb1898be070e",
+      "identities": {
+        "title": [
+          "File:Biface, Acheuléen - Chissey-les-Mâcon, Saône-et-Loire.jpg"
+        ],
+        "pageid": [
+          "35731562"
+        ],
+        "original_sha1": [
+          "2c235543b68d1bde34941a6b9d1a664bd85f38ed"
+        ],
+        "byte_sha256": [
+          "e84b57eb14daccaf54714422a46175209beafb8fd5220173b1d88720128d29ad"
+        ]
+      }
+    },
+    {
+      "candidate_id": "62d5842c89b627bce939",
+      "identities": {
+        "title": [
+          "File:Biface, Acheuléen - Cormatin, Saône-et-Loire.jpg"
+        ],
+        "pageid": [
+          "35731636"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "9b47d51c1e4911088f70",
+      "identities": {
+        "title": [
+          "File:Biface, Acheuléen - Flagny, Saône-et-Loire.jpg"
+        ],
+        "pageid": [
+          "35731743"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "85cfabe598729dd96296",
+      "identities": {
+        "title": [
+          "File:Biface, Acheuléen - Verchizeuil, Saône-et-Loire.jpg"
+        ],
+        "pageid": [
+          "35731827"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "803c357c43484f5c3b7e",
+      "identities": {
+        "title": [
+          "File:Hand-axes from Hoxne, Suffolk in Archaeologia, 1800 Wellcome M0015026.jpg"
+        ],
+        "pageid": [
+          "36368258"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "2b923d411df080a862ba",
+      "identities": {
+        "title": [
+          "File:Hand-axe found by the apothecary John Conyrs in 1690 Wellcome M0015033.jpg"
+        ],
+        "pageid": [
+          "36368280"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "9cb7f093079dd2457117",
+      "identities": {
+        "title": [
+          "File:Acheulian bifacial tools (hand-axes) Wellcome M0015373.jpg"
+        ],
+        "pageid": [
+          "36369609"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "dc8f2ad82300be7e37df",
+      "identities": {
+        "title": [
+          "File:Paleolithic hand-axes Wellcome M0015582EA.jpg"
+        ],
+        "pageid": [
+          "36370346"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "c5619e06aa2c6055dd2a",
+      "identities": {
+        "title": [
+          "File:Hand-axes and scraper from Croxleygreen Wellcome M0015603.jpg"
+        ],
+        "pageid": [
+          "36370435"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "4374e3312f2386cbabc6",
+      "identities": {
+        "title": [
+          "File:Ficron.jpg"
+        ],
+        "pageid": [
+          "37370327"
+        ],
+        "original_sha1": [
+          "5abd1d571d5df4f720189ac3992688bec1b177ac"
+        ],
+        "byte_sha256": [
+          "b891f6a7798660e0aedc53da4a8004c5802414684ebe14df9347f94201f9491c"
+        ]
+      }
+    },
+    {
+      "candidate_id": "f5a50f21ee402a54bcb7",
+      "identities": {
+        "title": [
+          "File:Teyjat-2014 biface 01.JPG"
+        ],
+        "pageid": [
+          "38967757"
+        ],
+        "original_sha1": [
+          "1839fe8d29d8f293e21309b6ffcb2a05e8fa39a4"
+        ],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "116301d72064c88b4972",
+      "identities": {
+        "title": [
+          "File:Faustkeil.jpg"
+        ],
+        "pageid": [
+          "39720579"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "c714686bcc80d7137085",
+      "identities": {
+        "title": [
+          "File:Archaeologia Volume 13 D257.png"
+        ],
+        "pageid": [
+          "41073713"
+        ],
+        "original_sha1": [
+          "9581c298747b4fc41f01b3bc5d99c07c9c94dcb5"
+        ],
+        "byte_sha256": [
+          "1508628efd56cf76ee32f07ad163e7f7a5be7f3a1159048f153074ee8e7f23ca"
+        ]
+      }
+    },
+    {
+      "candidate_id": "1e6b8b47f11bb3e7811e",
+      "identities": {
+        "title": [
+          "File:Archaeologia Volume 13 D259.png"
+        ],
+        "pageid": [
+          "41073714"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "7179b6f91bf7cd5cd412",
+      "identities": {
+        "title": [
+          "File:Quarterly Journal of the Geological Society of London, vol. 33 no. 32 fig. 2.png"
+        ],
+        "pageid": [
+          "41514127"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "9115df4f76297a1c6e9d",
+      "identities": {
+        "title": [
+          "File:Antiquities of the southern Indians, particularly of the Georgia tribes (1873) (14754352046).jpg"
+        ],
+        "pageid": [
+          "42182096"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "763a7bd6a5e5bbb14899",
+      "identities": {
+        "title": [
+          "File:Artefatos líticos - Europa MN 01.jpg"
+        ],
+        "pageid": [
+          "43782867"
+        ],
+        "original_sha1": [
+          "5dc2f27871e6eb1feedf06fafa8b40d58bf48d0c"
+        ],
+        "byte_sha256": [
+          "7e3da787f2e5708e6738618e3b1c7b5927eb8b8fdbcf4069981e6b086d19f21c"
+        ]
+      }
+    },
+    {
+      "candidate_id": "051b8e30679380dcb126",
+      "identities": {
+        "title": [
+          "File:Ridpath's history of the world; being an account of the ethnic origin, primitive estate, early migrations, social conditions and present promise of the principal families of men (1897) (14803320293).jpg"
+        ],
+        "pageid": [
+          "43894869"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "219886fe87232f6c51b2",
+      "identities": {
+        "title": [
+          "File:RAMM - Exeter hand axe.jpg"
+        ],
+        "pageid": [
+          "44829314"
+        ],
+        "original_sha1": [
+          "bbdbffb9a2e73af0a1dfb68a56ae549aec6be191"
+        ],
+        "byte_sha256": [
+          "8226abfd192cc7781d7ebf87b0f4aff399ff5c4358e69bfdd549c667610b518c"
+        ]
+      }
+    },
+    {
+      "candidate_id": "51779ce8cfb917a4a33c",
+      "identities": {
+        "title": [
+          "File:NHM - Faustkeil Entstehung.jpg"
+        ],
+        "pageid": [
+          "45131956"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "96cdb36e8d738ac6efe0",
+      "identities": {
+        "title": [
+          "File:Faustkeil von Schnaitheim stone hand axe.jpg"
+        ],
+        "pageid": [
+          "45263442"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "785c5b559574b21335d0",
+      "identities": {
+        "title": [
+          "File:Museo Arqueológico Nacional - 1942-101-4-4723 - Bifaz del Manzanares 01.jpg"
+        ],
+        "pageid": [
+          "46161837"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "1535866e7d41e86e1415",
+      "identities": {
+        "title": [
+          "File:Museo Arqueológico Nacional - 1942-101-4-4723 - Bifaz del Manzanares 02.jpg"
+        ],
+        "pageid": [
+          "46161839"
+        ],
+        "original_sha1": [
+          "cf6e652f488da837a50d2b47cb9bb37db26352b4"
+        ],
+        "byte_sha256": [
+          "f86aa6980515fe3ba22e8a1761354551786df412689800105b447f1821aebd7c"
+        ]
+      }
+    },
+    {
+      "candidate_id": "7340f57a075b8076aa7e",
+      "identities": {
+        "title": [
+          "File:134A Musée préhistoire Penmarc'h.JPG"
+        ],
+        "pageid": [
+          "47557182"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "912fb49ddab2a46b8450",
+      "identities": {
+        "title": [
+          "File:133 Musée préhistoire Penmarc'h.JPG"
+        ],
+        "pageid": [
+          "47575588"
+        ],
+        "original_sha1": [
+          "b7cb0eb168d30afe9931acfe1ca987a7bcc5c549"
+        ],
+        "byte_sha256": [
+          "b300d9b72eccbb81d35294a92740bb4cab6ea72bb09ab9749f3be2854b75553d"
+        ]
+      }
+    },
+    {
+      "candidate_id": "c83dc92d81d33a00a047",
+      "identities": {
+        "title": [
+          "File:Acheulean.jpg"
+        ],
+        "pageid": [
+          "47867555"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "e1c707515594e6382ab1",
+      "identities": {
+        "title": [
+          "File:Biface Sima de los Huesos.jpg"
+        ],
+        "pageid": [
+          "49923744"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "4d8eb05a974bc0358620",
+      "identities": {
+        "title": [
+          "File:Hand Axe Sima de los Huesos.jpg"
+        ],
+        "pageid": [
+          "50525481"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "284b72b37a4fb9339127",
+      "identities": {
+        "title": [
+          "File:Faustkeil von Bad Salzuflen 8.2016.jpg"
+        ],
+        "pageid": [
+          "50805478"
+        ],
+        "original_sha1": [
+          "f1c87d99ece122f5dacd28989337ad9747da79ca"
+        ],
+        "byte_sha256": [
+          "9a4281d8a0f2804d6901a11475b078a7986daab9cf8e3e52c3f2075442ad3f39"
+        ]
+      }
+    },
+    {
+      "candidate_id": "16c81e42dd330dbd3bc4",
+      "identities": {
+        "title": [
+          "File:Roter Faustkeil, Stein der Weisen.jpg"
+        ],
+        "pageid": [
+          "50856783"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "7ebae791ddeb827bc907",
+      "identities": {
+        "title": [
+          "File:Roter Stein der Weisen.jpg"
+        ],
+        "pageid": [
+          "50856784"
+        ],
+        "original_sha1": [
+          "95c43e8ac43436f4dc7ea9d3fa25f0859b21c4ed"
+        ],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "10f6b67ff1c47caba46c",
+      "identities": {
+        "title": [
+          "File:Bifaz (21345445650).jpg"
+        ],
+        "pageid": [
+          "51253665"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "e030e881caac4376731e",
+      "identities": {
+        "title": [
+          "File:Bifaz (21345446950).jpg"
+        ],
+        "pageid": [
+          "51253667"
+        ],
+        "original_sha1": [
+          "74ff8ea0d42d4f997fae24f3b5269ccef28e9d79"
+        ],
+        "byte_sha256": [
+          "2731491e91bb42f4912a25065fa555e38d6201694e254fbeb13ad12baaa3ceae"
+        ]
+      }
+    },
+    {
+      "candidate_id": "481fa21e900f420fa597",
+      "identities": {
+        "title": [
+          "File:Bifaz achelense (15931943729).jpg"
+        ],
+        "pageid": [
+          "51254103"
+        ],
+        "original_sha1": [
+          "17c9c98bd6cab567320296e238bf587251fb0d1d"
+        ],
+        "byte_sha256": [
+          "f92e505256f928797969b9582db2874c3b3221eeb87d0866150ae6dd93bd4d2e"
+        ]
+      }
+    },
+    {
+      "candidate_id": "5b7821ed99bf79923fc6",
+      "identities": {
+        "title": [
+          "File:Biface Acheuléen Musée Saint-Remi Reims 21092016 01.jpg"
+        ],
+        "pageid": [
+          "51667573"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "f43bb6a409e0d305f70f",
+      "identities": {
+        "title": [
+          "File:Biface Acheuléen Musée Saint-Remi Reims 21092016 02.jpg"
+        ],
+        "pageid": [
+          "51668062"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "928f98619296518fd876",
+      "identities": {
+        "title": [
+          "File:Biface Acheuléen Musée Saint-Remi Reims 21092016 03.jpg"
+        ],
+        "pageid": [
+          "51668106"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "bd58f191edead32e5af9",
+      "identities": {
+        "title": [
+          "File:Europa, pietra con impugnatura e lama, 6000 ac (museo pigorini).jpg"
+        ],
+        "pageid": [
+          "55033098"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "73cc668f497a049920a2",
+      "identities": {
+        "title": [
+          "File:Giappone, pietra modificata per essere impugnata, 2400-1800 ac ca. (tokiaki yoshizawa coll.).jpg"
+        ],
+        "pageid": [
+          "55033114"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "fc657648efb258732694",
+      "identities": {
+        "title": [
+          "File:Giappone, pietra con impugnatura e lama, 3000-2500 ac ca. (tokiaki yoshizawa coll.).jpg"
+        ],
+        "pageid": [
+          "55033115"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "fe7ee9879b9e1b21fd1f",
+      "identities": {
+        "title": [
+          "File:Giappone, pietra oblunga levigata fino all'estremità, 3000 ac ca. (tokiaki yoshizawa coll.).jpg"
+        ],
+        "pageid": [
+          "55033116"
+        ],
+        "original_sha1": [
+          "2342e99dc916034f6b513ec47b0b994f57e42b97"
+        ],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "36a5e7a56716ba717f05",
+      "identities": {
+        "title": [
+          "File:Giappone, pietra oblunga levigata fino all'estremità, 3000-2500 ac ca. (tokiaki yoshizawa coll.) 01.jpg"
+        ],
+        "pageid": [
+          "55033117"
+        ],
+        "original_sha1": [
+          "8f9447fedbf71b1e56cbe167fde1b527710c9d91"
+        ],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "3a008240ec4cd657d2f9",
+      "identities": {
+        "title": [
+          "File:Giappone, pietra oblunga levigata fino all'estremità, 3000-2500 ac ca. (tokiaki yoshizawa coll.) 02.jpg"
+        ],
+        "pageid": [
+          "55033119"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "b2b695b4c69bdb6cb637",
+      "identities": {
+        "title": [
+          "File:Acheulean hand-axe from Egypt. Found on a hill top plateau, 1400 feet above sea level, 9 miles NNW of the city of Naqada, Egypt. Paleolithic. The Petrie Museum of Egyptian Archaeology, London.jpg"
+        ],
+        "pageid": [
+          "55261925"
+        ],
+        "original_sha1": [
+          "8544a54be3197ef48fe49ca004fcf1b69d62d78b"
+        ],
+        "byte_sha256": [
+          "e01ff0eaf02bc90fe829f1d1c374111cba9f392d4fad18cc41756e6424c43afc"
+        ]
+      }
+    },
+    {
+      "candidate_id": "352a8d0432256ad4bb0f",
+      "identities": {
+        "title": [
+          "File:Plate II.jpg"
+        ],
+        "pageid": [
+          "56835356"
+        ],
+        "original_sha1": [
+          "53da68c9a9c764403e26d77b83a20730ec0411a5"
+        ],
+        "byte_sha256": [
+          "8e3408822625585aaced575cff09d1ec09a123a6cd9638457c54e679fb93dfba"
+        ]
+      }
+    },
+    {
+      "candidate_id": "a9b627eb6f8ba49b15aa",
+      "identities": {
+        "title": [
+          "File:Paleolithic handaxe, 340-300 thousand years old.jpg"
+        ],
+        "pageid": [
+          "57146085"
+        ],
+        "original_sha1": [
+          "e025aa759ad72af6d46599a363707e989f78afca"
+        ],
+        "byte_sha256": [
+          "c9d528349b81335c37c90ab78bab28d00a6d53636909e97ebcbbc8fe5b35c28b"
+        ]
+      }
+    },
+    {
+      "candidate_id": "d30ff02cac4558c2831b",
+      "identities": {
+        "title": [
+          "File:Implement MET 26.2.66 EGDP011609.jpg"
+        ],
+        "pageid": [
+          "60927881"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "442fbdbf2e1eaaaf2680",
+      "identities": {
+        "title": [
+          "File:Stone hand axe. Imjin-Hantan river. Korea. Lower Paleolithic.jpg"
+        ],
+        "pageid": [
+          "62639724"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "b47054966c93d74f8c63",
+      "identities": {
+        "title": [
+          "File:Stone hand axe. Seokjangni. Korea. Lower Paleolithic. Replica.jpg"
+        ],
+        "pageid": [
+          "62640248"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "64eb4c50a3beaaaff9f4",
+      "identities": {
+        "title": [
+          "File:Smac Paläolithikum 031.jpg"
+        ],
+        "pageid": [
+          "66371311"
+        ],
+        "original_sha1": [
+          "981cdb799ac8da69d25dbca3adc189079bbe2c9f"
+        ],
+        "byte_sha256": [
+          "4771359218a16ea3d9802f90c2e140005f1766fc894253d76a1153a0ed695cd9"
+        ]
+      }
+    },
+    {
+      "candidate_id": "fe54bfd35c3b4c4dcc45",
+      "identities": {
+        "title": [
+          "File:Smac Paläolithikum 037.jpg"
+        ],
+        "pageid": [
+          "66371322"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "fccee1139f718a50181e",
+      "identities": {
+        "title": [
+          "File:Middle Paleolithic tools, Museum of Western Bohemia in Pilsen, 187664.jpg"
+        ],
+        "pageid": [
+          "69089659"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "41ed9ce9ccb233f3ab91",
+      "identities": {
+        "title": [
+          "File:Stone hand axe. Seokjangni, Gongju. Korea. Yonsei University Museum.jpg"
+        ],
+        "pageid": [
+          "69174893"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "5d6b096c1a0aa1e981a8",
+      "identities": {
+        "title": [
+          "File:Stone hand axe2. Seokjangni, Gongju. Korea. Yonsei University Museum.jpg"
+        ],
+        "pageid": [
+          "69175221"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "d84b6816f3552918b89a",
+      "identities": {
+        "title": [
+          "File:Handaxe. Jeongok ri. Gyeonggi do. National Museum of Korea.jpg"
+        ],
+        "pageid": [
+          "69403420"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "084d816a8f6cf033e552",
+      "identities": {
+        "title": [
+          "File:Neandertal handaxes from Moravia, Welcome to the Neandertals, Brno, 187915.jpg"
+        ],
+        "pageid": [
+          "69528461"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "7669dda3601bf04a855e",
+      "identities": {
+        "title": [
+          "File:Objects with possible aesthetic or symbolic meaning, Welcome to the Neandertals, Brno, 187920.jpg"
+        ],
+        "pageid": [
+          "69529062"
+        ],
+        "original_sha1": [
+          "9fe58c2876805072a8a606c69344c29ddc02fd20"
+        ],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "3797ee90357df289c5a9",
+      "identities": {
+        "title": [
+          "File:Objects with possible aesthetic or symbolic meaning, Welcome to the Neandertals, Brno, 187921.jpg"
+        ],
+        "pageid": [
+          "69529063"
+        ],
+        "original_sha1": [
+          "c68442bab68c959c515b69b639ad0dfebad210ac"
+        ],
+        "byte_sha256": [
+          "05dc58a11b2fe92b44e8b545e659508ee82cdabe4a05759035be6aaa05c28094"
+        ]
+      }
+    },
+    {
+      "candidate_id": "90f756377d682d3926cd",
+      "identities": {
+        "title": [
+          "File:Paleolithic Handaxe.Paju Juwol-ri.Seoul National University Museum.jpg"
+        ],
+        "pageid": [
+          "69867131"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "944bcfb68ecce2c59349",
+      "identities": {
+        "title": [
+          "File:Paleolithic Handaxe. Seoul National University Museum.jpg"
+        ],
+        "pageid": [
+          "69868300"
+        ],
+        "original_sha1": [
+          "3b29fb06819ae594a26ac040d85d753a4d9f0460"
+        ],
+        "byte_sha256": [
+          "de2961b1a732bca55a65357f2c41c415234c4e9d8537b4c360cd3aab13c00081"
+        ]
+      }
+    },
+    {
+      "candidate_id": "e78ba82ab8d7995d7b0b",
+      "identities": {
+        "title": [
+          "File:Biface de St Acheul Muséum de Toulouse.jpg"
+        ],
+        "pageid": [
+          "73344844"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "17e931a0d874413b9938",
+      "identities": {
+        "title": [
+          "File:Faustkeil?.jpg"
+        ],
+        "pageid": [
+          "74022209"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "5455ee0c88478fb1e3ec",
+      "identities": {
+        "title": [
+          "File:Faustkeil Serie A. Lesch g(3).jpg"
+        ],
+        "pageid": [
+          "84376536"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "c55eea0d151c1833923e",
+      "identities": {
+        "title": [
+          "File:Faustkeil Serie A. Lesch (11).jpg"
+        ],
+        "pageid": [
+          "84376565"
+        ],
+        "original_sha1": [
+          "0cf91c8d532714eb55269a38ed98223563af6c07"
+        ],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "74c64f00a88f17259769",
+      "identities": {
+        "title": [
+          "File:Faustkeil Serie A. Lesch (9).jpg"
+        ],
+        "pageid": [
+          "84376840"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "bf5830428ea655884d49",
+      "identities": {
+        "title": [
+          "File:Vuistbijl in silex, 250 000 tot 38 000 BP, vindplaats- Meeuwen, In den Damp, 21.10.1985.jpg"
+        ],
+        "pageid": [
+          "84552553"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "f9657a6d60ac97fe249f",
+      "identities": {
+        "title": [
+          "File:Kariandusi Acheulean Tools.jpg"
+        ],
+        "pageid": [
+          "86336542"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "ea27222a2c967b63bb5f",
+      "identities": {
+        "title": [
+          "File:Nick flintknapping.jpg"
+        ],
+        "pageid": [
+          "86440553"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "9fb09b2c29d31914a2cc",
+      "identities": {
+        "title": [
+          "File:Bifacciale del paleolitico.JPG"
+        ],
+        "pageid": [
+          "92444265"
+        ],
+        "original_sha1": [
+          "aa2b5c6ba5ec5e49e380681ba21b242a71accec7"
+        ],
+        "byte_sha256": [
+          "3af7ca62b8c5419a41a358ac5c75a546bbe885b1b620c27eed2cd127f4f26029"
+        ]
+      }
+    },
+    {
+      "candidate_id": "56b2e7b07a1a47e4719e",
+      "identities": {
+        "title": [
+          "File:Bársony-házi szakóca.jpg"
+        ],
+        "pageid": [
+          "95203487"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "6c4a80cbcaa0197c4c63",
+      "identities": {
+        "title": [
+          "File:Faustkeil Nachbau, 2020 PD a-3.jpg"
+        ],
+        "pageid": [
+          "95226374"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "e2118d03dcfec0e9d546",
+      "identities": {
+        "title": [
+          "File:Faustkeil Nachbau, 2020 PD a-3a.jpg"
+        ],
+        "pageid": [
+          "95226382"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "01d6fa65d35eb1aae3c1",
+      "identities": {
+        "title": [
+          "File:Faustkeil Nachbau, 2020 PD a-4.jpg"
+        ],
+        "pageid": [
+          "95226393"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "a8bc4a363ac959be0a18",
+      "identities": {
+        "title": [
+          "File:Faustkeil Nachbau, 2020 PD a-5.jpg"
+        ],
+        "pageid": [
+          "95226402"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "0a3e9faabef2c5419b43",
+      "identities": {
+        "title": [
+          "File:Faustkeil Nachbau, 2020 PD a-5a.jpg"
+        ],
+        "pageid": [
+          "95226410"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "c2912044e90335175924",
+      "identities": {
+        "title": [
+          "File:Faustkeil Nachbau, 2020 PD a-5b.jpg"
+        ],
+        "pageid": [
+          "95226413"
+        ],
+        "original_sha1": [
+          "29746edcc7becb9332b0f0c2fbf7656f1575aef2"
+        ],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "039ba7d460c06f59436d",
+      "identities": {
+        "title": [
+          "File:Faustkeil Nachbau, 2020 PD a-5c.jpg"
+        ],
+        "pageid": [
+          "95226423"
+        ],
+        "original_sha1": [
+          "422d2c1f6f995bf392ebad9e2e3b52b35c778e21"
+        ],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "9bbd1837499ad0515dd3",
+      "identities": {
+        "title": [
+          "File:Faustkeil Nachbau, 2020 PD a-5d.jpg"
+        ],
+        "pageid": [
+          "95226432"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "70a2bc376060a0ed76da",
+      "identities": {
+        "title": [
+          "File:Faustkeil Nachbau, 2020 PD a-6.jpg"
+        ],
+        "pageid": [
+          "95226438"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "c204aedfade36aed5c1d",
+      "identities": {
+        "title": [
+          "File:Faustkeil Nachbau, 2020 PD a-6a.jpg"
+        ],
+        "pageid": [
+          "95226447"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "dfd55b67141e0167d872",
+      "identities": {
+        "title": [
+          "File:Faustkeil Nachbau, 2020 PD a-7.jpg"
+        ],
+        "pageid": [
+          "95226450"
+        ],
+        "original_sha1": [
+          "9a0bfa17dcf43fe033a783d3eb531d9ac6d54593"
+        ],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "b7d0d3fce8ee81b00964",
+      "identities": {
+        "title": [
+          "File:Faustkeil Nachbau, 2020 PD a-8.jpg"
+        ],
+        "pageid": [
+          "95226451"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "76564a2428d98ae84b8d",
+      "identities": {
+        "title": [
+          "File:Bifaç de la Cova del Bolomor.png"
+        ],
+        "pageid": [
+          "97873303"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "daee8e651a988d0c5419",
+      "identities": {
+        "title": [
+          "File:Links Faustkeil von Hundisburg, rechts Feuersteinklingenrest von Westeregeln.jpg"
+        ],
+        "pageid": [
+          "99487188"
+        ],
+        "original_sha1": [
+          "5721c11efaf1e5f9e10080de42d2641084f9f271"
+        ],
+        "byte_sha256": [
+          "d332f09646598acf717d799ef1f30772e1da49d175ac45c93831431a324f8d8f"
+        ]
+      }
+    },
+    {
+      "candidate_id": "9edf07c32ec783c8e472",
+      "identities": {
+        "title": [
+          "File:Chert hand axe, from Ur, Iraq. Paleolithic. Sulaymaniyah Museum, Iraq.jpg"
+        ],
+        "pageid": [
+          "102377199"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "7a0e6ef4c764e42c7316",
+      "identities": {
+        "title": [
+          "File:Hand-axes from Barda Balka, Sulaymaniyah, Iraq. Acheulean period, c. 250,000 years ago. Sulaymaniyah Museum, Iraqi Kurdistan.jpg"
+        ],
+        "pageid": [
+          "111720899"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "fca2085f60f51727eadf",
+      "identities": {
+        "title": [
+          "File:Museo della preistoria Luigi Donini abc5.jpg"
+        ],
+        "pageid": [
+          "114526718"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "164a3fe5d246381ba1b9",
+      "identities": {
+        "title": [
+          "File:Museo della preistoria Luigi Donini abc11.jpg"
+        ],
+        "pageid": [
+          "114526726"
+        ],
+        "original_sha1": [
+          "ea1d3dfa3e80867bcc69fad2c04a84a5d5b33d48"
+        ],
+        "byte_sha256": [
+          "33c5c40853c4da2be00b409a81971508f9e6b9eaf24de84b465a49ca16e5a7bc"
+        ]
+      }
+    },
+    {
+      "candidate_id": "136486906fcde57327e3",
+      "identities": {
+        "title": [
+          "File:Bifaz. Pleistoceno medio. Terrazas del Manzanares.jpg"
+        ],
+        "pageid": [
+          "116958468"
+        ],
+        "original_sha1": [
+          "3ebef7fda223278293b03cf865f5465015d3c783"
+        ],
+        "byte_sha256": [
+          "58194d1bc6c08e4b3875ef4cb9a34924c25f9fb2f304b9cb826e727b7d88684f"
+        ]
+      }
+    },
+    {
+      "candidate_id": "ce0c6b03b951123c953b",
+      "identities": {
+        "title": [
+          "File:Acheulean handaxe.png"
+        ],
+        "pageid": [
+          "118604210"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "985672db60d333fa1444",
+      "identities": {
+        "title": [
+          "File:Hand-axe from Barda Balka, Iraq. Acheulean period, c. 250,000 years ago. Sulaymaniyah Museum, Iraq.jpg"
+        ],
+        "pageid": [
+          "123157128"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "63e81697b4ddee695b56",
+      "identities": {
+        "title": [
+          "File:Hand-axe from Sulaymaniyah, Iraq. Acheulean period, c. 250,000 years ago. Sulaymaniyah Museum, Iraq.jpg"
+        ],
+        "pageid": [
+          "123157130"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "9df5d26cbfc9b2f95768",
+      "identities": {
+        "title": [
+          "File:Hand-axe from Tell Bazmusian, Sulaymaniyah, Iraq. Acheulean period, c. 250,000 years ago. Sulaymaniyah Museum, Iraq.jpg"
+        ],
+        "pageid": [
+          "123157131"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "6e0de4dccb877dfff059",
+      "identities": {
+        "title": [
+          "File:Trabajos de excavación en el yacimiento de Cantera Vieja.jpg"
+        ],
+        "pageid": [
+          "123484416"
+        ],
+        "original_sha1": [
+          "d144070b71a9adab130c4a2d0a046c795ac753b5"
+        ],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "754188c20d9c09ce7566",
+      "identities": {
+        "title": [
+          "File:Bifaz fracturado del yacimiento de Cantera Vieja.jpg"
+        ],
+        "pageid": [
+          "123484701"
+        ],
+        "original_sha1": [
+          "5b04a33c8e6c5b5c2663667724b02b0eaef1890d"
+        ],
+        "byte_sha256": [
+          "f6f791770417a40ebce5589682ac7674bade954bfad2b3ca096e30bf78d8b2b1"
+        ]
+      }
+    },
+    {
+      "candidate_id": "f98b2713d1e9b9a1a714",
+      "identities": {
+        "title": [
+          "File:Palæolithic Man and Terramara Settlements in Europe, 0074.png"
+        ],
+        "pageid": [
+          "126512694"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "4b42fece8efdcfe4661a",
+      "identities": {
+        "title": [
+          "File:Biface, Paleolithic from Münster-Gittrup - LWL-Archäologie für Westfalen in City Museum of Münster.jpg"
+        ],
+        "pageid": [
+          "127381349"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "6c545c4ffaca9b9b035d",
+      "identities": {
+        "title": [
+          "File:Stone hand-axe from Korea.jpg"
+        ],
+        "pageid": [
+          "129081118"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "07be4267ec17b714009a",
+      "identities": {
+        "title": [
+          "File:Faustkeil Serie A. Lesch (6).jpg"
+        ],
+        "pageid": [
+          "130619288"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "8d1cd2e73d9d9784339e",
+      "identities": {
+        "title": [
+          "File:Faustkeil Serie A. Lesch (8).jpg"
+        ],
+        "pageid": [
+          "130619312"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "b2337ccd4fa9f67f5f99",
+      "identities": {
+        "title": [
+          "File:Bifaces prehistóricos - Museo de la Rioja (3).jpg"
+        ],
+        "pageid": [
+          "132629893"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "da6ec5dcef83b45ceebf",
+      "identities": {
+        "title": [
+          "File:Bifaces prehistóricos - Museo de la Rioja (1).jpg"
+        ],
+        "pageid": [
+          "132629895"
+        ],
+        "original_sha1": [
+          "f1aaa2526af27773a19f5e9ef9e6e93c2fb090c7"
+        ],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "3ec1f6012e3b3353ca4c",
+      "identities": {
+        "title": [
+          "File:Bifaces prehistóricos - Museo de la Rioja (2).jpg"
+        ],
+        "pageid": [
+          "132629896"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "b30f3d7ac77c41e3f21b",
+      "identities": {
+        "title": [
+          "File:Paleolitico inferiore arcaico, pietre appuntite da scordovillo, tre carlini, e truscia-bella di canne 01.JPG"
+        ],
+        "pageid": [
+          "136742597"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "14d50593d2bcc0b77ec1",
+      "identities": {
+        "title": [
+          "File:Paleolitico inferiore arcaico, pietre appuntite da scordovillo, tre carlini, e truscia-bella di canne 02.JPG"
+        ],
+        "pageid": [
+          "136742602"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "725f19e59b60bd4bb0b3",
+      "identities": {
+        "title": [
+          "File:Stadtmuseum Mülheim-Kärlich - Faustkeil (2012-02-26 Sp).JPG"
+        ],
+        "pageid": [
+          "137688981"
+        ],
+        "original_sha1": [
+          "d4c5efb4becb038f93d07c7990160286fbd1ef64"
+        ],
+        "byte_sha256": [
+          "4ee5d0b2ac604a9fa5a7f41f0d93c519d1e4257caffcd110d15b9c880315db17"
+        ]
+      }
+    },
+    {
+      "candidate_id": "de7a91cec65d9012de8e",
+      "identities": {
+        "title": [
+          "File:Vuistbijl Rhenen ± 200.000 v.Chr.jpg"
+        ],
+        "pageid": [
+          "140095149"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "b2778df952d166683e8f",
+      "identities": {
+        "title": [
+          "File:Faustkeil 2.jpg"
+        ],
+        "pageid": [
+          "147822791"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "951c76ae47c504dbde9a",
+      "identities": {
+        "title": [
+          "File:Tautavel - Industrie lithique 16.jpg"
+        ],
+        "pageid": [
+          "149207940"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "521587d7ade79d24ac98",
+      "identities": {
+        "title": [
+          "File:Tautavel - Industrie lithique 17.jpg"
+        ],
+        "pageid": [
+          "149207941"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "f054847c37b5c2c86460",
+      "identities": {
+        "title": [
+          "File:Quiñones de León 01-01b, bifaces.jpg"
+        ],
+        "pageid": [
+          "151150209"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "e0a6acdcc914665ab2b6",
+      "identities": {
+        "title": [
+          "File:Quiñones de León 01-02b, bifaces e chopper.jpg"
+        ],
+        "pageid": [
+          "151150211"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "ca39279c19dea06b50e9",
+      "identities": {
+        "title": [
+          "File:250207 전곡선사박물관 28.jpg"
+        ],
+        "pageid": [
+          "159302821"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "94b44394ce7d596c01cf",
+      "identities": {
+        "title": [
+          "File:250207 전곡선사박물관 29.jpg"
+        ],
+        "pageid": [
+          "159302824"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "c869cece3a0baf80bc88",
+      "identities": {
+        "title": [
+          "File:Acheulean hand axe, c. 450,000 years before present, stone - Canterbury Museum - Christchurch, NZ - DSC02244.jpg"
+        ],
+        "pageid": [
+          "159925266"
+        ],
+        "original_sha1": [
+          "ea6391b7b3998c01e8c81496bc9794b6b826a91e"
+        ],
+        "byte_sha256": [
+          "f168ca924f179a77b5da989527416ec16a17cc1e9562c4a019dc3e1e37fbe2c2"
+        ]
+      }
+    },
+    {
+      "candidate_id": "0b5e36d4a8cc1e80aa88",
+      "identities": {
+        "title": [
+          "File:Tools of Acheulean culture in the Timiryazev museum.jpg"
+        ],
+        "pageid": [
+          "160902369"
+        ],
+        "original_sha1": [
+          "19c85814ee05063bea9e99cbc8529869885ca461"
+        ],
+        "byte_sha256": [
+          "8eb1e56668e96b2b2588f3a06c6a22297def0fe55d96214a1bc4e860470a7268"
+        ]
+      }
+    },
+    {
+      "candidate_id": "cb3c67dfad44c78707e8",
+      "identities": {
+        "title": [
+          "File:Acheulean handaxe found in southern England - 55465763081.jpg"
+        ],
+        "pageid": [
+          "197850918"
+        ],
+        "original_sha1": [
+          "cc1bee9278beecbd07d1aee3272d6ca71c6ae5bc"
+        ],
+        "byte_sha256": [
+          "c1d1b0815dd809575bd1045a83b4000c8281ec6bfc6babe47da6fdeb42259aa4"
+        ]
+      }
+    }
+  ],
+  "collisions_with_previous": [],
+  "included_overlaps": [],
+  "policy": "Retain otherwise eligible selections despite prior fixture reuse; exact overlaps are recorded, not automatic exclusions. Within-leaf repeats are handled by the separate ordered selection. Inventory-only matches are identified by inventory.json or candidates.jsonl locations and do not claim acquired reuse.",
+  "limitations": "Exact identities only; title matching is conservative and case-folded. Original SHA-1/page IDs are compared where locally available. No exact match does not establish distinct works, independent origins, or complete prior upstream coverage."
+}

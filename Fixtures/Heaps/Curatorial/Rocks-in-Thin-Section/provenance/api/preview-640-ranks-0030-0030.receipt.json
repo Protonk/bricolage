@@ -1,0 +1,20 @@
+{
+  "utc": "2026-10-31T23:50:25.570177+00:00",
+  "key": "preview-640-ranks-0030-0030",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3ASienite+nicol+incrociati.gif&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=640&iiurlheight=640&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 3176,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 23:50:25 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-7svzc",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "content-length": "3176",
+    "x-request-id": "a54a1881-5df1-4625-b20b-49ca916f3669"
+  },
+  "sha256": "5d5e35a231cfd7fa5ad02ac4306d2d2d19e5a778eadc08d2cd3e8f033870d943"
+}

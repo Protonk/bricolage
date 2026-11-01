@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T23:50:32.405273+00:00",
+  "key": "preview-640-ranks-0045-0045",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3AMonzonite+nicol+incrociati.gif&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=640&iiurlheight=640&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 3199,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 23:50:32 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-jdxxv",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "309e0989-9b07-4dae-ba51-c9a09dcdbb28"
+  },
+  "sha256": "68653cfd8a2636894825a74dde6a9dbd24335a4e8e0cd740feb58c7dc2736746"
+}

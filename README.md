@@ -83,6 +83,10 @@ inputs. One transfer and 14 earlier selection cases remain pending.
 [Evan-Amos category uploads](Fixtures/Heaps/Curatorial/Evan-Amos-Uploads/README.md)
 imports every direct File member of its source category except three supplied
 exclusions: all 133 included files are acquired, retaining related views and formats.
+Three further [Curatorial contributions](Fixtures/Heaps/Curatorial/README.md)
+cover rock thin-section micrographs, stone hand axes and ex libris. Each pools
+three direct category lists, with fixed ordering and documented thumbnail scope
+review; its README records acquisition and unresolved selection cases.
 
 Fixture sets use `images/` for comparison inputs and `sources/` for preserved
 source bytes. Optional `previews/` contains contact sheets, outside the input set.

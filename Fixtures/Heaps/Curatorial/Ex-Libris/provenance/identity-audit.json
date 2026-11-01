@@ -1,0 +1,6161 @@
+{
+  "status": "reported",
+  "inventories": [
+    {
+      "fixture": "Heaps/Curatorial/Botanical-Illustrations",
+      "inputs": 149,
+      "sources": 149,
+      "manifest_sha256": "0ff8e4fe91aa98f2143fa7c34203bd5e0e0a7978e0b7fa8cb0bd53ac0f54f713",
+      "source_catalog_sha256": "b7c8b9f9ea1c67b6dd8087cc8e808111f597786681a0453e06afe99e0047c4ce",
+      "import_map_sha256": "88afa1783e791694e0d4c0d02750135ea5da64755ea48decdf0cce89724da0d3",
+      "candidate_inventory_sha256": "842988542834155e6530f832a3bef1f711fd8cdaed4993c1073ebd2c54dbcbe0",
+      "candidate_inventory_entries": 709
+    },
+    {
+      "fixture": "Heaps/Curatorial/Evan-Amos-Uploads",
+      "inputs": 133,
+      "sources": 133,
+      "manifest_sha256": "f455ec4ed947c7fec4aa168b43afa303e562b7c8230b9d9cd7cd775d4fce81c9",
+      "source_catalog_sha256": "61956835809326dbd737dce01130d4c7043916613a2bf2c39fe20331a8b9676c",
+      "import_map_sha256": "9f9080857a07baa2f720f7ca80f26c60c073c71b7aa9609f8baf0564c583e9b6",
+      "candidate_inventory_sha256": "54e77f2a57e265860073a84dbc95a641dcb280ae2166a0f5be0ebe247f888dbe",
+      "candidate_inventory_entries": 136
+    },
+    {
+      "fixture": "Heaps/Curatorial/POTY/Arthropods",
+      "inputs": 43,
+      "sources": 43,
+      "manifest_sha256": "7ebd088010f0652629a6b37d79100f5a3eb1edc2a1bc62768509abc1357f0ef2",
+      "source_catalog_sha256": "98c59b36725496fd8c2e500ab9a93792bb668eae5683d0e740c1f2854c336066",
+      "import_map_sha256": "2ca055bb3871c8fdc2ddf7491180220cc6e9d3e87fda47f64d1bd1aa8d01c08b",
+      "candidate_inventory_sha256": "11e35b727ed653ec3a0320558a4d544338c72f541be6735710101b07496ed635",
+      "candidate_inventory_entries": 237
+    },
+    {
+      "fixture": "Heaps/Curatorial/POTY/Constructions-and-buildings",
+      "inputs": 50,
+      "sources": 50,
+      "manifest_sha256": "42523610eee11c7d6193b865a5edc86c6c2e0b7ffce999b1093c9e0f2f0284e9",
+      "source_catalog_sha256": "9c444e320aa0c8b390490e61c62f038a4d0fa84ba5108231fe29e0752bf30e1b",
+      "import_map_sha256": "079664a38267cdb88fbd0fbd134208103fc303c8b446f423d29d9a2a4c11490e",
+      "candidate_inventory_sha256": "9e5809b924822ca684dbd9e47ddc2fd402a7fdf0ed336cef8f776befa3d2e02b",
+      "candidate_inventory_entries": 248
+    },
+    {
+      "fixture": "Heaps/Curatorial/POTY/People-and-human-activity",
+      "inputs": 50,
+      "sources": 50,
+      "manifest_sha256": "1db0e952023b49cd6d75c4d7822c776a13da9bf90305974b85451191cb7aa4fd",
+      "source_catalog_sha256": "8740bb5d5f12d32b7f79ed477ed8b55e2a8a4f0d675d2c0284aad5bfbb782623",
+      "import_map_sha256": "d51fa6062db2c5a967450c0cbb9015ed6d1ca72f95d1f5139c2cf905628cf354",
+      "candidate_inventory_sha256": "91808b71ee2250a10261997c69ee3bba61783ccb4f9365e085aca666062da5d6",
+      "candidate_inventory_entries": 238
+    },
+    {
+      "fixture": "Heaps/Curatorial/Rocks-in-Thin-Section",
+      "inputs": 50,
+      "sources": 50,
+      "manifest_sha256": "ffad8f195ab15821241f354f5b915ab04c474652c15d673fc3511a6d7630d3c8",
+      "source_catalog_sha256": "6a397c5aa1016bcd59bcb201cdd7557a6c77ca6078553bc3ab2f0471b16da890",
+      "import_map_sha256": "1705aa9bb579ed95af19bf570f74d68830b6396365eaf4b598ca7877957a0582",
+      "candidate_inventory_sha256": "40c857f4597bde3c208ef63c28cefd3378686932a859e7cd13f80744a1ea829e",
+      "candidate_inventory_entries": 530
+    },
+    {
+      "fixture": "Heaps/Curatorial/Stone-Hand-Axes",
+      "inputs": 50,
+      "sources": 50,
+      "manifest_sha256": "d2eddde595a5fb48fbb796d9f5c642f2d048fb9120d776340ead38e11b78d062",
+      "source_catalog_sha256": "789d2ea1ef4ca290732c3091a0b2e10307d4390cda41d14bb3153d0a24eed6c6",
+      "import_map_sha256": "65a16ccc6b1dcba48beb2a6815e9970c5ac69a8203da907b4fa29934980ea75f",
+      "candidate_inventory_sha256": "c43283b4262b5f16ac46d2c3d548a94e25ac8adfb47f19ab55b3cea664136948",
+      "candidate_inventory_entries": 268
+    },
+    {
+      "fixture": "Heaps/Curatorial/US-Army-SSI",
+      "inputs": 150,
+      "sources": 150,
+      "manifest_sha256": "515abd34be4ee7405678d771c477c8a6c72caa04d01671090533ddaacda934e6",
+      "source_catalog_sha256": "86d6f09473ae2e1a4809da0752d1036367d8452b00d96a8da43b16a1e501d3f7",
+      "import_map_sha256": "984c7257fa5a71ac0d2bf24cd7cc8d73087529e72f5041eb8d3b290848f8aeff",
+      "candidate_inventory_sha256": "a5f417616b37ed33a64f3182fa296a8bc9ae8f7b64c876517445171fa84906e8",
+      "candidate_inventory_entries": 1641
+    },
+    {
+      "fixture": "Heaps/Similarity/BSP01",
+      "inputs": 68,
+      "sources": 68,
+      "manifest_sha256": "7eb43cbd99438215076cb09f618eb47c544ac4b4e63769a265739e818545a812",
+      "source_catalog_sha256": "2b286eb82c8a87fb0236e1fe49bd311596aa2616b18e68435f18d1c4085e2e93",
+      "import_map_sha256": "8348ceb7cac6a7e4ee9aebb1209bd94b2a90dfd4de3d40d2ffc88a6b4923fe1c",
+      "candidate_catalog_sha256": "2c36b5909e4f7c0344303d8299cec019a965fb055d9f2b90a348c0711872ec89",
+      "candidate_catalog_entries": 185
+    },
+    {
+      "fixture": "Heaps/Similarity/CR01",
+      "inputs": 57,
+      "sources": 57,
+      "manifest_sha256": "df695b27cd27fa082088f5dc86cc553c158da00390aa908dfaf76a3b3448912f",
+      "source_catalog_sha256": "86ec9c1b5546563b2f805b98f9d5066996430596adb5d61b0b007232807649e7",
+      "import_map_sha256": "e44ed7336c6b64bcd48185d7c31556a0428b9a464291313363600b1fb17c5c71",
+      "candidate_catalog_sha256": "123a0276e0e1e9dac8f77d978859df6840259790231cf9d3f2bb84f7d73099b5",
+      "candidate_catalog_entries": 168
+    },
+    {
+      "fixture": "Heaps/Similarity/PS01",
+      "inputs": 58,
+      "sources": 58,
+      "manifest_sha256": "f87e09e932310784fce7096fa34e0addbcbfdf1dda0219232d2136011f6782d3",
+      "source_catalog_sha256": "3b04a4fe575b884b3bfea37a4b916743becf118a84fa4032db92b642db86052a",
+      "import_map_sha256": "bdde0a86669cba3d4b454409cca8e2495179b1371cd7849b7325f48e34317099",
+      "candidate_catalog_sha256": "45a5007ab343de1619fb48be8f3362fbb0e9797602f31c240018f023fb2e3c79",
+      "candidate_catalog_entries": 145
+    },
+    {
+      "fixture": "Heaps/Similarity/RG01",
+      "inputs": 31,
+      "sources": 31,
+      "manifest_sha256": "8c11d19a70ae73c0a526ee05e7f9fb2c904ab39e977788395c201b94aa9d3a0c",
+      "source_catalog_sha256": "d843cce70abcce1c268226c02ebfef911663149408c0cdc3bfdb95ac1ee76c0d",
+      "import_map_sha256": "412af33192adbc940b992f2dac5541f423e66f7e0c5fcf0a669e7133e6eec5fa",
+      "candidate_catalog_sha256": "f56a2cd395c0a6e6a932c8905387315d96c70237924f95bc700b8a13a5b55403",
+      "candidate_catalog_entries": 107
+    },
+    {
+      "fixture": "Heaps/Similarity/SF01",
+      "inputs": 48,
+      "sources": 48,
+      "manifest_sha256": "29b006215f26a49b6eb774bcfeb8d29e761fd31f224bcc278b4868acbe3ca026",
+      "source_catalog_sha256": "02d8ee2a441dd22cdf6f7a68607b2f294fefaece1612e168bbc6cf68562fb6c6",
+      "import_map_sha256": "7f1515d13fc81673216e33c78fd22d3b97a84064c03546207b4a0b750062f4a3",
+      "candidate_catalog_sha256": "106c03b1005e39df00cc17583eb328b74c6e138a52ed241a786a7af789e5d54f",
+      "candidate_catalog_entries": 142
+    },
+    {
+      "fixture": "Heaps/Similarity/TG01",
+      "inputs": 31,
+      "sources": 31,
+      "manifest_sha256": "d1c8c6361e8f7d25e6c68af8f87aac9c9b8b42f31688a9324f7ad6da53ec0365",
+      "source_catalog_sha256": "7f335bba606207fff3a3d3820cdd6a8acdb42d3fb1ef0256db5a868c83f9f83d",
+      "import_map_sha256": "14ba0d2f318745c63ef7e19454026cc7708601fd5e961b1a9e2476db810d51df",
+      "candidate_catalog_sha256": "24c3bd0d6e8b93a46455afb4eaaeb6b529a5e3cd3083da45fae15cdcdb023279",
+      "candidate_catalog_entries": 152
+    },
+    {
+      "fixture": "Relationships/Derivatives",
+      "inputs": 183,
+      "sources": 15,
+      "manifest_sha256": "6141c7fde28f1e2809bb1ca4df207a1ebe0788db4daaf1f489e79421fb1c038d",
+      "source_catalog_sha256": "e43c7abfdefd193c19ea40c0e8436c6a377c91c6c6f1887550d074bfb5a4517c"
+    },
+    {
+      "fixture": "Relationships/Multiviews",
+      "inputs": 20,
+      "sources": 20,
+      "manifest_sha256": "2b77fb179dc6b3a2b537fa631f8fad528fdb2e44660a8f3e918e41a09fce5b63",
+      "source_catalog_sha256": "c123fc2c8a85f546f8aaa04a0aee85d056abf225ea1d5a0f0243fddf64e5e594"
+    },
+    {
+      "fixture": "Relationships/Variants",
+      "inputs": 42,
+      "sources": 6,
+      "manifest_sha256": "8d0fd98dd2e435661ef6d77b458050b131ed488b172204659023f080a85111df",
+      "source_catalog_sha256": "9ce08683d44dc925062232d7887629b3a5bfff1b50cabeda32a8e31b5074a67e",
+      "source_manifest_sha256": "aa50cfc091c9ff7027b8f7f81b03af8f4020240cfa52b9370c96a45cb8f71b80"
+    }
+  ],
+  "previous_inputs": 1213,
+  "previous_frozen_candidates": 4906,
+  "available_previous_identities": {
+    "title": 4921,
+    "pageid": 4250,
+    "original_sha1": 1504,
+    "byte_sha256": 1201
+  },
+  "checked": [
+    {
+      "candidate_id": "d4c909aef0ebee8a4ee2",
+      "identities": {
+        "title": [
+          "File:Biblioteka Uniwersytecka w Wilnie.jpg"
+        ],
+        "pageid": [
+          "119110"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "44f1c2c80d71fba81b69",
+      "identities": {
+        "title": [
+          "File:Bibliotheksstempel Bodleiana.jpg"
+        ],
+        "pageid": [
+          "209358"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "c86921b9f348313688ae",
+      "identities": {
+        "title": [
+          "File:John Forrest bookplate.jpg"
+        ],
+        "pageid": [
+          "407429"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "435dff76b7c5fc97c7f7",
+      "identities": {
+        "title": [
+          "File:Exlibris-Ollendorff.jpg"
+        ],
+        "pageid": [
+          "696521"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "7ff14dc2056b85dd6fce",
+      "identities": {
+        "title": [
+          "File:Maucler exlibris.JPG"
+        ],
+        "pageid": [
+          "718365"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "877aaa6076dffb6140c8",
+      "identities": {
+        "title": [
+          "File:Slocum ex libris.jpg"
+        ],
+        "pageid": [
+          "1031691"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "b60997c1e5946eeec070",
+      "identities": {
+        "title": [
+          "File:Armoiries Roederer.jpg"
+        ],
+        "pageid": [
+          "1049639"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "d1f14fe76b56db3b8090",
+      "identities": {
+        "title": [
+          "File:Exlibris-Hans-Adolf-von-Moltke.JPG"
+        ],
+        "pageid": [
+          "1384139"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "76c1a22b1a53af9c8d5f",
+      "identities": {
+        "title": [
+          "File:Ex-libris Giry.JPG"
+        ],
+        "pageid": [
+          "1486945"
+        ],
+        "original_sha1": [
+          "5116d271000a01fd656262bd41f44c907202aa3b"
+        ],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "d711dd9149272cb9e536",
+      "identities": {
+        "title": [
+          "File:Greig exlib.jpg"
+        ],
+        "pageid": [
+          "1700759"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "30e58ef7ef4540d1efb6",
+      "identities": {
+        "title": [
+          "File:Portada A. Loning.jpg"
+        ],
+        "pageid": [
+          "2001827"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "c585279d6308372f2971",
+      "identities": {
+        "title": [
+          "File:Christopher de Paus COA.JPG"
+        ],
+        "pageid": [
+          "2077873"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "500e65743efecbfeda2e",
+      "identities": {
+        "title": [
+          "File:Woodrow Wilson ex libris.jpg"
+        ],
+        "pageid": [
+          "2984400"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "6cd214fcfb0bfb24d1a3",
+      "identities": {
+        "title": [
+          "File:IngeborgReflingHagen ExLlibris.jpg"
+        ],
+        "pageid": [
+          "3080689"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "e8e02c365815b445b395",
+      "identities": {
+        "title": [
+          "File:Hasip Pektas ekslibrisi, X5 (100X75mm) 1997.gif"
+        ],
+        "pageid": [
+          "3231607"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "c6f0c83946576ce3d37b",
+      "identities": {
+        "title": [
+          "File:Brosch Ex-Libris 1916 001.jpg"
+        ],
+        "pageid": [
+          "3278655"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "c650c828278faa00de56",
+      "identities": {
+        "title": [
+          "File:Coat of arms of Paul Gore.png"
+        ],
+        "pageid": [
+          "3556556"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "2da22e8765d223e241ae",
+      "identities": {
+        "title": [
+          "File:LouisRheadBookplate.JPG"
+        ],
+        "pageid": [
+          "3683492"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "d69cdd8c1717b41b0764",
+      "identities": {
+        "title": [
+          "File:Rassenfosse, Armand - Ex Libris E R, 1921.jpg"
+        ],
+        "pageid": [
+          "4023511"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "cf5ce4b076e8937a147f",
+      "identities": {
+        "title": [
+          "File:Kloss exlibris.jpg"
+        ],
+        "pageid": [
+          "4044388"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "983e3cd790117b8da554",
+      "identities": {
+        "title": [
+          "File:FirstChurchDivineScienceBookplate.jpg"
+        ],
+        "pageid": [
+          "4075793"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "b17f7dedf3846acd8ddf",
+      "identities": {
+        "title": [
+          "File:ZnakLadislavKuncir.jpg"
+        ],
+        "pageid": [
+          "4278219"
+        ],
+        "original_sha1": [
+          "b0a72a5b39bcbe5f8aee35a9e81b1101da72f464"
+        ],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "682781ed8ed513b2bf65",
+      "identities": {
+        "title": [
+          "File:George W. Eve.jpg"
+        ],
+        "pageid": [
+          "4401770"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "a3fc04b09197cb5a0b31",
+      "identities": {
+        "title": [
+          "File:ExLibrisLevytsky43.jpg"
+        ],
+        "pageid": [
+          "4466864"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "d04e2dff9f314880cee3",
+      "identities": {
+        "title": [
+          "File:Dant vulnera formam.jpg"
+        ],
+        "pageid": [
+          "4469993"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "08ce0281f5ad4fc827ba",
+      "identities": {
+        "title": [
+          "File:Ex Libris.jpg"
+        ],
+        "pageid": [
+          "4671431"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "fb7b950b44a6de0406f1",
+      "identities": {
+        "title": [
+          "File:Exlibris of Norov A.S.png"
+        ],
+        "pageid": [
+          "4832410"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "8861441063dbc066a30c",
+      "identities": {
+        "title": [
+          "File:Mittag-Leffler Exlibris.png"
+        ],
+        "pageid": [
+          "4969913"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "57570ef27c1d0de87331",
+      "identities": {
+        "title": [
+          "File:Kner exlibris.jpg"
+        ],
+        "pageid": [
+          "5097406"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "bffa706296dfbb777338",
+      "identities": {
+        "title": [
+          "File:EX LIBRIS SCHULTZ.jpg"
+        ],
+        "pageid": [
+          "5103699"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "9f2e350e6e50c0ebf616",
+      "identities": {
+        "title": [
+          "File:El MMSchultz1982.jpg"
+        ],
+        "pageid": [
+          "5108527"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "847a59086dc91ed7b27a",
+      "identities": {
+        "title": [
+          "File:Ex libris iustus.jpg"
+        ],
+        "pageid": [
+          "5159025"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "29c5d376a3dde235903f",
+      "identities": {
+        "title": [
+          "File:Ex libris Aure by Gerhard Munthe.png"
+        ],
+        "pageid": [
+          "5168650"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "bd7f300d42ace65bbd02",
+      "identities": {
+        "title": [
+          "File:Ex-Libris Bibliotheque Saint-Sulpice.jpg"
+        ],
+        "pageid": [
+          "5210205"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "5b56169e42d813bb25ea",
+      "identities": {
+        "title": [
+          "File:Hnizdovsky ExLibris Kuzan.jpg"
+        ],
+        "pageid": [
+          "5695519"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "3fd0f1220b49ff5ed41b",
+      "identities": {
+        "title": [
+          "File:Hnizdovsky ExLibris Tree.jpg"
+        ],
+        "pageid": [
+          "5695874"
+        ],
+        "original_sha1": [
+          "eade71a09b1cf30817eb84e0fedcc426b96d54a2"
+        ],
+        "byte_sha256": [
+          "0fd83d78746d25f1111b92b0ad8845cbb4f938853a476ee97184f3a927e7089a"
+        ]
+      }
+    },
+    {
+      "candidate_id": "9a47afbe55646144b0f5",
+      "identities": {
+        "title": [
+          "File:Hnizdovsky ExLibris Ferencevych.jpg"
+        ],
+        "pageid": [
+          "5703655"
+        ],
+        "original_sha1": [
+          "dd81da51085ab95338561c456fc7279d59721170"
+        ],
+        "byte_sha256": [
+          "f6fb98aad6d6f70696f8259eaf45a949ad9660c88c9f5e8a2c10ec57d2d244ec"
+        ]
+      }
+    },
+    {
+      "candidate_id": "c9591e8cdf30e6718758",
+      "identities": {
+        "title": [
+          "File:Lorenz Böhlers‘ --Ex Libris-- mit seinem Hauptwerk „Die Technik der Knochenbruchbehandlung“ und Verwundeten in der Kraftkammer die seine Behandlungsmethode veranschaulichen sollen..jpg"
+        ],
+        "pageid": [
+          "6365195"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "7826fc259faabfd4e4bb",
+      "identities": {
+        "title": [
+          "File:Bookplate of Edgar Rice Burroughs.jpg"
+        ],
+        "pageid": [
+          "6422210"
+        ],
+        "original_sha1": [
+          "e83d4a3b85136b24b387effc7b5602e905bd3ebe"
+        ],
+        "byte_sha256": [
+          "7824aa84c7f00eda63526b674f5d94f3056494fa56b4cc12e5d53ebc3de25da1"
+        ]
+      }
+    },
+    {
+      "candidate_id": "8734545706c45380d20f",
+      "identities": {
+        "title": [
+          "File:Bookplate of Edward Penfield.jpg"
+        ],
+        "pageid": [
+          "6451633"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "fb6c582bf260be9db238",
+      "identities": {
+        "title": [
+          "File:Bookplate of William Corless Mills.jpg"
+        ],
+        "pageid": [
+          "6525938"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "020f8cfaefbb3a950063",
+      "identities": {
+        "title": [
+          "File:MjoebergJosua-ExLibris.jpg"
+        ],
+        "pageid": [
+          "7045914"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "e3bc8d80c9355715c969",
+      "identities": {
+        "title": [
+          "File:Ex-libris Ruch par Bacher.jpg"
+        ],
+        "pageid": [
+          "7054245"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "8349e73a880978595e75",
+      "identities": {
+        "title": [
+          "File:Notenkraker Ex libris AHahn.jpg"
+        ],
+        "pageid": [
+          "7626594"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "5d1998fab740f3a2183f",
+      "identities": {
+        "title": [
+          "File:Canadiana bookplate TPL 1914.jpg"
+        ],
+        "pageid": [
+          "7710566"
+        ],
+        "original_sha1": [
+          "40a9befbd3ad3e9517f715e3063ebb88e35ce948"
+        ],
+        "byte_sha256": [
+          "b2564acca594e0325ea93eb667e762cf676fd30ca8a43565f16ee18d04a90732"
+        ]
+      }
+    },
+    {
+      "candidate_id": "3ce0f2c8ec7ff2b30329",
+      "identities": {
+        "title": [
+          "File:Nude Bookplate 2.jpg"
+        ],
+        "pageid": [
+          "7834052"
+        ],
+        "original_sha1": [
+          "485a04bd2f3ecf5699cec63c9a6faaedb132e321"
+        ],
+        "byte_sha256": [
+          "ca85290ce9298f9d5202ff70ce11ca131dd22b02e37de9fc2fbcbc04165c8680"
+        ]
+      }
+    },
+    {
+      "candidate_id": "5aa5aac5b882f7d5c5e6",
+      "identities": {
+        "title": [
+          "File:Rupertbearinscription.JPG"
+        ],
+        "pageid": [
+          "8144865"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "f9e0ab09012ae235ae9d",
+      "identities": {
+        "title": [
+          "File:Monza-Arengario-9-ex-libris.jpg"
+        ],
+        "pageid": [
+          "8471921"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "df16d7a5c8d3f8f8463d",
+      "identities": {
+        "title": [
+          "File:Wrangell ex-libris.jpg"
+        ],
+        "pageid": [
+          "8753387"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "d299faeb019ed4c94f1a",
+      "identities": {
+        "title": [
+          "File:Ex Libris by Armand Rassenfosse.jpg"
+        ],
+        "pageid": [
+          "8885262"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "d25d2969dbd8aed6eea9",
+      "identities": {
+        "title": [
+          "File:Ex-libris 24.jpg"
+        ],
+        "pageid": [
+          "9108958"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "d93aa6f9911871944396",
+      "identities": {
+        "title": [
+          "File:Ex-libris 21.jpg"
+        ],
+        "pageid": [
+          "9109054"
+        ],
+        "original_sha1": [
+          "5b4c2858c9b4a4e1d37df3f9fb5c7c8958352576"
+        ],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "3177de450e086ce307f9",
+      "identities": {
+        "title": [
+          "File:Ex-libris 7.jpg"
+        ],
+        "pageid": [
+          "9442759"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "03ecab3a4b710173eb35",
+      "identities": {
+        "title": [
+          "File:Annalisa Franzoni ex libris1.jpg"
+        ],
+        "pageid": [
+          "9443892"
+        ],
+        "original_sha1": [
+          "6acdb1c6957b5448c9b102e621560d1ba64d98df"
+        ],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "d47297cf7484b57583fb",
+      "identities": {
+        "title": [
+          "File:Paul helbronner Ex-libris.jpg"
+        ],
+        "pageid": [
+          "9589235"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "4703197308426c59a3b4",
+      "identities": {
+        "title": [
+          "File:Ex libris Henry Swan Dudding, from Gibbon, Empire, 1815 ed.jpg"
+        ],
+        "pageid": [
+          "9761781"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "be7d12a6608a11a0fd4e",
+      "identities": {
+        "title": [
+          "File:William R. Castle Bookplate.jpg"
+        ],
+        "pageid": [
+          "10244416"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "f27041d94487971f9c65",
+      "identities": {
+        "title": [
+          "File:Exlibris John Crichton-Stuart.jpg"
+        ],
+        "pageid": [
+          "10384545"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "743e07d6298427ce02ed",
+      "identities": {
+        "title": [
+          "File:Cutbush 1808 edward.jpg"
+        ],
+        "pageid": [
+          "10620917"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "98d56c33c25b76e46d71",
+      "identities": {
+        "title": [
+          "File:Carla Fusi exlibris Bresler.jpg"
+        ],
+        "pageid": [
+          "10659096"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "2d620525e47199ae6253",
+      "identities": {
+        "title": [
+          "File:Theodore Roosevelt bookplate.jpg"
+        ],
+        "pageid": [
+          "11656349"
+        ],
+        "original_sha1": [
+          "3d27e27a7b25eeb017f40c9ae37f4378b3e178d8"
+        ],
+        "byte_sha256": [
+          "c419c9884a5e362464aa553702ec4f9ec8c5a96a793fb3943a52f4b4ab110aeb"
+        ]
+      }
+    },
+    {
+      "candidate_id": "6de3592507cef8e312c5",
+      "identities": {
+        "title": [
+          "File:Sojkin p p exlibris.png"
+        ],
+        "pageid": [
+          "12148028"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "268a7fd93ac2ad5b6570",
+      "identities": {
+        "title": [
+          "File:Sammlung Brandes - Vorsatzpapiere und Ex Libris.tif"
+        ],
+        "pageid": [
+          "12673056"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "ea4e53ffc5432cef619e",
+      "identities": {
+        "title": [
+          "File:Ex-libris Oberaltaich 02.jpg"
+        ],
+        "pageid": [
+          "15308860"
+        ],
+        "original_sha1": [
+          "71564729cab2280127f6620f7cd8eb4ceecbc8fb"
+        ],
+        "byte_sha256": [
+          "8de43ed0ad04004d0c40694a1fc9a3d0d08cc48a882314012e64334d425edea5"
+        ]
+      }
+    },
+    {
+      "candidate_id": "2ace10b8e1c61ea15bf5",
+      "identities": {
+        "title": [
+          "File:BU Poznan from Frankfurt O.JPG"
+        ],
+        "pageid": [
+          "15373526"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "e7853a760d9f6fefd6fc",
+      "identities": {
+        "title": [
+          "File:Sarton Bookplate.jpg"
+        ],
+        "pageid": [
+          "16056466"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "4571f079b8ba448df30d",
+      "identities": {
+        "title": [
+          "File:Leonard Horner, 1785-1864.jpg"
+        ],
+        "pageid": [
+          "16070875"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "57fe1ed1a2260f170547",
+      "identities": {
+        "title": [
+          "File:A. Edward Newton, 1864-1940.jpg"
+        ],
+        "pageid": [
+          "16070998"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "9dcd695b41b008891063",
+      "identities": {
+        "title": [
+          "File:A. Edward Newton, 1864-1940 2.jpg"
+        ],
+        "pageid": [
+          "16071071"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "664fcc9a4fc28e3f4adb",
+      "identities": {
+        "title": [
+          "File:Samuel Weiller Fernberger, 1887-1956.jpg"
+        ],
+        "pageid": [
+          "16071290"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "26b282a4c57629e7a54b",
+      "identities": {
+        "title": [
+          "File:Photograph of James Issaverdens, b. 1834 (verso).jpg"
+        ],
+        "pageid": [
+          "16071386"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "7cb640c0c9e38a2458de",
+      "identities": {
+        "title": [
+          "File:Sims Reeves, 1818-1900.jpg"
+        ],
+        "pageid": [
+          "16072558"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "9f9a3f4329937b694722",
+      "identities": {
+        "title": [
+          "File:Monogram stamps of Sims Reeves.jpg"
+        ],
+        "pageid": [
+          "16072590"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "15f200c5f5d74ab7ad9a",
+      "identities": {
+        "title": [
+          "File:Elena R. Goodwin.jpg"
+        ],
+        "pageid": [
+          "16072632"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "58d2194a9141cc7c9109",
+      "identities": {
+        "title": [
+          "File:Paul Lemperly, 1858-1939.jpg"
+        ],
+        "pageid": [
+          "16072659"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "e761c10bcd811db285e5",
+      "identities": {
+        "title": [
+          "File:James Ramsay MacDonald, 1866-1937.jpg"
+        ],
+        "pageid": [
+          "16073341"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "d3b4e3d642d524598b95",
+      "identities": {
+        "title": [
+          "File:Edith Maud, Countess of Loudoun, 1833-1874.jpg"
+        ],
+        "pageid": [
+          "16073460"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "b89a98250024ffc0d55c",
+      "identities": {
+        "title": [
+          "File:Thomas Carlyle, 1795-1881.jpg"
+        ],
+        "pageid": [
+          "16073488"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "0c0e24c28fd70a1662b8",
+      "identities": {
+        "title": [
+          "File:Thomas Carlyle, Jane Carlyle.jpg"
+        ],
+        "pageid": [
+          "16073522"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "ceff8b1888cb02b67dc7",
+      "identities": {
+        "title": [
+          "File:Wally Landsberg, fl. 1918.jpg"
+        ],
+        "pageid": [
+          "16073922"
+        ],
+        "original_sha1": [
+          "2aab6765ffa8a4ae579394c72864baf839eddf4a"
+        ],
+        "byte_sha256": [
+          "58bb677c3b6966d31f5015f0d0d32e11bc53bdb24d50e62065d186870af6c637"
+        ]
+      }
+    },
+    {
+      "candidate_id": "8eeee84c327343b4741c",
+      "identities": {
+        "title": [
+          "File:Armorial bookplate of the Stanley family, Earls of Derby.jpg"
+        ],
+        "pageid": [
+          "16073972"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "093488a4c685740ebaa6",
+      "identities": {
+        "title": [
+          "File:Paul Lemperly, 1858-1939 3.jpg"
+        ],
+        "pageid": [
+          "16075829"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "d1724f58334ec57e5f63",
+      "identities": {
+        "title": [
+          "File:Edith Barbara Tranter.jpg"
+        ],
+        "pageid": [
+          "16076191"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "63e62b51213e7400f0d1",
+      "identities": {
+        "title": [
+          "File:Sir David Salomons, Bart.jpg"
+        ],
+        "pageid": [
+          "16076215"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "000d8de8e67a38230ed3",
+      "identities": {
+        "title": [
+          "File:Edith Anne Greene, d. 1912?.jpg"
+        ],
+        "pageid": [
+          "16076266"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "a14d4aaf7540a8f80355",
+      "identities": {
+        "title": [
+          "File:Sir Stuart Alexander Donaldson, 1812-1867.jpg"
+        ],
+        "pageid": [
+          "16076371"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "025eb5b790112c57f516",
+      "identities": {
+        "title": [
+          "File:Stafford H. Northcote, Earl of Iddesleigh, 1818-1887.jpg"
+        ],
+        "pageid": [
+          "16076420"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "6521f77b5abbb10002eb",
+      "identities": {
+        "title": [
+          "File:Sammlung Hobrecker.jpg"
+        ],
+        "pageid": [
+          "16122452"
+        ],
+        "original_sha1": [
+          "c273479f145f759d71d534a25a622c615d7e2eb9"
+        ],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "767d81e0f77e8bdcfc58",
+      "identities": {
+        "title": [
+          "File:Britannica Book-Plates - Arthur Vicars by C. W. Sherborn.jpg"
+        ],
+        "pageid": [
+          "18327191"
+        ],
+        "original_sha1": [
+          "301e6b7355942239188ba7b87805d4c77caeb486"
+        ],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "cc0a2769e6a27e481d88",
+      "identities": {
+        "title": [
+          "File:Strichaetzung1.jpg"
+        ],
+        "pageid": [
+          "18334790"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "23908c1c6c17571371c3",
+      "identities": {
+        "title": [
+          "File:Ex-libris andré goüin.tiff"
+        ],
+        "pageid": [
+          "18336941"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "3c699b6c6e7dfdb91a8e",
+      "identities": {
+        "title": [
+          "File:Shojakukanin.png"
+        ],
+        "pageid": [
+          "19031827"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "42e21f9254d9b0de244f",
+      "identities": {
+        "title": [
+          "File:Konofumiwokariteyomuhito.png"
+        ],
+        "pageid": [
+          "19163652"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "72dcf2946609aaae81da",
+      "identities": {
+        "title": [
+          "File:Konofumiwokaritemimuhito.png"
+        ],
+        "pageid": [
+          "19304404"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "5bbbcb6b5e4826bc8495",
+      "identities": {
+        "title": [
+          "File:Redbook-1913-1914 (35GA).pdf"
+        ],
+        "pageid": [
+          "19569072"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "aa50c756ef6405efa5b0",
+      "identities": {
+        "title": [
+          "File:Erb black and white booklet.jpg"
+        ],
+        "pageid": [
+          "19673175"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "7f268037842bca6ce7ed",
+      "identities": {
+        "title": [
+          "File:Exlibris Ernst von Linsingen.jpg"
+        ],
+        "pageid": [
+          "20744129"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "1639fef307c74441661a",
+      "identities": {
+        "title": [
+          "File:Ex libris of P F Madigan.jpg"
+        ],
+        "pageid": [
+          "20800173"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "de949b37a82394847cde",
+      "identities": {
+        "title": [
+          "File:Ex libris Organ.jpg"
+        ],
+        "pageid": [
+          "20801225"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "20d57b9d0312fee8bb0c",
+      "identities": {
+        "title": [
+          "File:Ex libris Pückler-Muskau.jpg"
+        ],
+        "pageid": [
+          "21049271"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "dd39aa37b6e0cda16113",
+      "identities": {
+        "title": [
+          "File:М. Лебедзева Экслібрыс А.М. Макаравай.jpg"
+        ],
+        "pageid": [
+          "21509887"
+        ],
+        "original_sha1": [
+          "bf94c86deb58efe6a8424419d99180b42e7e0af6"
+        ],
+        "byte_sha256": [
+          "6b520cd82f38ee387ec957cf6c4c643b1820efd8deb705bb3076468839e2e463"
+        ]
+      }
+    },
+    {
+      "candidate_id": "e2a72973bf65b1db5823",
+      "identities": {
+        "title": [
+          "File:Экслібрыс Е. Бараноўскага (1902)..jpg"
+        ],
+        "pageid": [
+          "21529706"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "978e9d5a09de99baba50",
+      "identities": {
+        "title": [
+          "File:Экслібрыс Браніслава Эпімах-Шыпілы..jpg"
+        ],
+        "pageid": [
+          "21529816"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "8fdd30b575ac4fba8cfe",
+      "identities": {
+        "title": [
+          "File:ExlibriBibStralsund.jpg"
+        ],
+        "pageid": [
+          "22727002"
+        ],
+        "original_sha1": [
+          "3a82a4b1c260d69dc322fa9658820bdb1a6d5d41"
+        ],
+        "byte_sha256": [
+          "125adea25d0b2b725209208a3510199e666fce7a3ae05364f1d276a45c338669"
+        ]
+      }
+    },
+    {
+      "candidate_id": "e9e939731979f5b6cf73",
+      "identities": {
+        "title": [
+          "File:Экслібрыс Р. Зямкевіча.jpg"
+        ],
+        "pageid": [
+          "22782515"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "2076793e3e0449d44b57",
+      "identities": {
+        "title": [
+          "File:JakobWackernagelExLibris.jpg"
+        ],
+        "pageid": [
+          "23038419"
+        ],
+        "original_sha1": [
+          "637aaad77a0fe13cdef707d32376cc6f48a2b346"
+        ],
+        "byte_sha256": [
+          "c932e0aaccea8fdb99466a1fe272532520d0e22411e0554975b0ced47205f4dc"
+        ]
+      }
+    },
+    {
+      "candidate_id": "d4dc6cde47390fb9a1ac",
+      "identities": {
+        "title": [
+          "File:Ex libris Stefan Zweig.jpg"
+        ],
+        "pageid": [
+          "23120708"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "906bea560a17546bb03b",
+      "identities": {
+        "title": [
+          "File:Exlibris japonitzant.jpg"
+        ],
+        "pageid": [
+          "23921427"
+        ],
+        "original_sha1": [
+          "9df1049e168e89c21fd11669bae392e0c4f88dac"
+        ],
+        "byte_sha256": [
+          "9e99a9d779078a15a33a66a8b8e698f3ebb955ac1547636c20c785f12e6bea07"
+        ]
+      }
+    },
+    {
+      "candidate_id": "1e1876b15b33488daddc",
+      "identities": {
+        "title": [
+          "File:Ex libris Georges A Wild.jpg"
+        ],
+        "pageid": [
+          "23932680"
+        ],
+        "original_sha1": [
+          "474deb24a62ac2d5bd624299f2b464d1276e971b"
+        ],
+        "byte_sha256": [
+          "5c5f78f691d14bd0e07b8b07f1303a26ae47d5551895348634bbbdf48b8b320f"
+        ]
+      }
+    },
+    {
+      "candidate_id": "fc42c13e8cb3f82795c0",
+      "identities": {
+        "title": [
+          "File:Henry Spencer Ashbee Ex Libris.jpg"
+        ],
+        "pageid": [
+          "24582121"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "02e865d4a64ba2bf87d3",
+      "identities": {
+        "title": [
+          "File:Bibliotheca tuerkheimiana.jpg"
+        ],
+        "pageid": [
+          "25464889"
+        ],
+        "original_sha1": [
+          "65f6b0fdc6d5f4a70defe81901955419893b86eb"
+        ],
+        "byte_sha256": [
+          "98ece4d06164e6839f900e4c84138e04b146a62b1f4e009b1c350c39f42be44e"
+        ]
+      }
+    },
+    {
+      "candidate_id": "c5177f3301a3ffb5acc2",
+      "identities": {
+        "title": [
+          "File:Shojakukanin.svg"
+        ],
+        "pageid": [
+          "25489681"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "cfb550031f74183aa7d9",
+      "identities": {
+        "title": [
+          "File:Ex-libris M. de L'Epinay.JPG"
+        ],
+        "pageid": [
+          "25922967"
+        ],
+        "original_sha1": [
+          "55e9fcb19dacf26536af5e0687632205bc67f8e9"
+        ],
+        "byte_sha256": [
+          "ab49bc3bec323ac1928e5cfc50246e23d1c131f99c74e267db8b61b1ddbc5c8f"
+        ]
+      }
+    },
+    {
+      "candidate_id": "eaabbc9e808734c27a68",
+      "identities": {
+        "title": [
+          "File:Ex libris Mariae Elia.jpg"
+        ],
+        "pageid": [
+          "26509478"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "b61e9157c2bdedc6e849",
+      "identities": {
+        "title": [
+          "File:Bookplate-George Frederick Ernest Albert Prince of Wales.jpg"
+        ],
+        "pageid": [
+          "27579493"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "afae6a3424dde0597b5d",
+      "identities": {
+        "title": [
+          "File:Bookplate-Prince Albert.jpg"
+        ],
+        "pageid": [
+          "27595870"
+        ],
+        "original_sha1": [
+          "bfc334de69eddc1f6af9e2432839de4ba7f128f0"
+        ],
+        "byte_sha256": [
+          "95bb10ccc476d18f69787fbbcec0a6f1d793363d7651165e35a75cff7d2f9fc8"
+        ]
+      }
+    },
+    {
+      "candidate_id": "02fd22f46d7848ddd752",
+      "identities": {
+        "title": [
+          "File:Henry Stacy Marks Bookplate-Mary Marks.jpg"
+        ],
+        "pageid": [
+          "27610181"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "e129c23a668722f3edab",
+      "identities": {
+        "title": [
+          "File:Ex-libris - Garnet Wolseley, 1st Viscount Wolseley.jpg"
+        ],
+        "pageid": [
+          "27838684"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "82e01f03bc71e338b127",
+      "identities": {
+        "title": [
+          "File:Wan exlibris.jpg"
+        ],
+        "pageid": [
+          "27844068"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "b4cd5f2c862116edf75a",
+      "identities": {
+        "title": [
+          "File:Zentralbibliothek Solothurn - In Kartusche DEO PATRIAE ET AMICIS in Rahmen SACRA IOVI SERVAT CIVEIS DITATQ PENATES Iin Kartusche HANS IACOB VOM STAAL - aa0344.tif"
+        ],
+        "pageid": [
+          "29633184"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "a4cbb78d22a719191ba6",
+      "identities": {
+        "title": [
+          "File:Général Taufflieb-Ex libris.jpg"
+        ],
+        "pageid": [
+          "29830176"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "1aa6a9302ed9c777c9f3",
+      "identities": {
+        "title": [
+          "File:Zentralbibliothek Solothurn - In Kartusche GULIELMUS TUGGINERUS DICTUS FRÖLICH EQUE SENTOR SOLODORENSIS FRANCORUM REGIABEPULIS ATQUE HELVETIAE CUSTODIAE REGIUS PREAFECTUS ANNO A CHRISTO NATO 1575 AETATIS VEROSUAE 50 U - aa0293.tif"
+        ],
+        "pageid": [
+          "29920453"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "f42d1e0a6f3f7677974a",
+      "identities": {
+        "title": [
+          "File:Bookplate of Sir Charles Philip Huntington, 3rd Baronet.jpg"
+        ],
+        "pageid": [
+          "30222605"
+        ],
+        "original_sha1": [
+          "ba0ea0e26714482bef6601ccc68b9de468a770c7"
+        ],
+        "byte_sha256": [
+          "075da5500f0293aa6d0cbbf17364b9d062e6c6070e4135982dcbb04d53d14dbb"
+        ]
+      }
+    },
+    {
+      "candidate_id": "1bc6a6719b8fef41fbf8",
+      "identities": {
+        "title": [
+          "File:Holberg Ex libris af Lode.png"
+        ],
+        "pageid": [
+          "30604021"
+        ],
+        "original_sha1": [
+          "c5854f98ca383e17bbbfde21aef6e9b7341924bc"
+        ],
+        "byte_sha256": [
+          "1324048495e9d14fe8eabd0bf844a7370e328b2b29cabcc8261a0035e8ad0e2c"
+        ]
+      }
+    },
+    {
+      "candidate_id": "e14423336163722280bc",
+      "identities": {
+        "title": [
+          "File:EL 0061 - Weber, Paul (L) - A. TREMONT, Auguste (L) & COTTET, René (F) - vers 1950.JPG"
+        ],
+        "pageid": [
+          "31094885"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "a297d75ce5ea0d11ac06",
+      "identities": {
+        "title": [
+          "File:King George V bookplate by George Eve.jpg"
+        ],
+        "pageid": [
+          "31378057"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "9b2d5a019d1a63c7b98e",
+      "identities": {
+        "title": [
+          "File:Royal bookplate for King Edward VII by G W Eve.jpg"
+        ],
+        "pageid": [
+          "31379229"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "f5a8bd1c867a14588238",
+      "identities": {
+        "title": [
+          "File:Julius Hofmann exlibris 1.JPG"
+        ],
+        "pageid": [
+          "31719026"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "e29e48ab5da213cccd3d",
+      "identities": {
+        "title": [
+          "File:HarvardCollegeLibrary HardLaborBookplate.jpg"
+        ],
+        "pageid": [
+          "32507578"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "735ae8c8bed2799b79b5",
+      "identities": {
+        "title": [
+          "File:Petr(1855) p2.jpg"
+        ],
+        "pageid": [
+          "32835606"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "108f32dd357fed1ac4e0",
+      "identities": {
+        "title": [
+          "File:Francisceumsbibliothek Exlibris Johannes Luckow.JPG"
+        ],
+        "pageid": [
+          "33415147"
+        ],
+        "original_sha1": [
+          "94eb231e626e758442e07c5c5981b821904232ff"
+        ],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "0782e47084f6cb6a2b5e",
+      "identities": {
+        "title": [
+          "File:Ex libris by e aufseeser.jpg"
+        ],
+        "pageid": [
+          "33645193"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "478c5e31dde2eaa9c3f5",
+      "identities": {
+        "title": [
+          "File:M. Griffith, Book-plate- 1750 Wellcome L0003727.jpg"
+        ],
+        "pageid": [
+          "35865965"
+        ],
+        "original_sha1": [
+          "8ee66a80ad7e0b58588fb6d3158b6468051f19c2"
+        ],
+        "byte_sha256": [
+          "96405cea34ef13371681e97ea3557ae851f56ced7201d4fcf1d964c2357b1d86"
+        ]
+      }
+    },
+    {
+      "candidate_id": "cbb4abab7215a4e7c7d4",
+      "identities": {
+        "title": [
+          "File:Rugby School - ex libris.tif"
+        ],
+        "pageid": [
+          "36766622"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "46a8509e63323102282b",
+      "identities": {
+        "title": [
+          "File:Belarusian Exlibris 1987-97 Mikola Ryzhy 23.10.2014 Palace of Art Minsk.jpg"
+        ],
+        "pageid": [
+          "36809647"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "ad3f347563a176666bf1",
+      "identities": {
+        "title": [
+          "File:Ex-libris Schoepflin.jpg"
+        ],
+        "pageid": [
+          "36824172"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "cb3070476cccd5cad912",
+      "identities": {
+        "title": [
+          "File:E. M. Lilien Ex Libris Oppenheimer.jpg"
+        ],
+        "pageid": [
+          "36939765"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "0b6b1b7da7831e4d0520",
+      "identities": {
+        "title": [
+          "File:Exlibris Joseph August Beringer von Hans Thoma, 1900.jpg"
+        ],
+        "pageid": [
+          "38733733"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "373cab62f6a27ff72d72",
+      "identities": {
+        "title": [
+          "File:The Soviet Union 1970 CPA 3926 stamp (Vilnius University Library Bookplate (Anastas Kuchas Woodcut).jpg"
+        ],
+        "pageid": [
+          "39822030"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "2734d3fa5573fc6e53a7",
+      "identities": {
+        "title": [
+          "File:The Soviet Union 1970 CPA 3926 stamp (Vilnius University Library Bookplate (Anastas Kuchas Woodcut).png"
+        ],
+        "pageid": [
+          "39822032"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "741dfce6abece248b49a",
+      "identities": {
+        "title": [
+          "File:The Soviet Union 1970 CPA 3926 stamp (Vilnius University Library Bookplate (Anastas Kuchas Woodcut) with long 7 in 1970.jpg"
+        ],
+        "pageid": [
+          "39825047"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "129bb26fd03e12e73465",
+      "identities": {
+        "title": [
+          "File:Toni Pecoraro, ex libris Luc Van Den Briele.jpg"
+        ],
+        "pageid": [
+          "40268832"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "517516758bd3f78be46c",
+      "identities": {
+        "title": [
+          "File:Ex-libris of 'Obrazovaniye' — 1.jpg"
+        ],
+        "pageid": [
+          "40784519"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "35579475721ed440f6d6",
+      "identities": {
+        "title": [
+          "File:Ex-libris of 'Obrazovaniye' — 2.jpg"
+        ],
+        "pageid": [
+          "40784520"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "be0aa65f868a8591d41b",
+      "identities": {
+        "title": [
+          "File:Exlibris Otto Jahn.jpg"
+        ],
+        "pageid": [
+          "41891786"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "409f6cad6f6013be0fe0",
+      "identities": {
+        "title": [
+          "File:Ex libris ney.jpg"
+        ],
+        "pageid": [
+          "42952514"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "331918340fc38686c463",
+      "identities": {
+        "title": [
+          "File:Office de la semaine sainte - Upper doublure (Davis474).jpg"
+        ],
+        "pageid": [
+          "43078659"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "9d0828eef9048fa7b88f",
+      "identities": {
+        "title": [
+          "File:The elevation, section, plan and views of a triple vessel and of wheels. - Upper pastedown (L40-48).jpg"
+        ],
+        "pageid": [
+          "43093577"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "30f9b64f25640290fa7d",
+      "identities": {
+        "title": [
+          "File:Экслибрис Никиты Тарновского.jpg"
+        ],
+        "pageid": [
+          "43224148"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "77208f3a5581102488ac",
+      "identities": {
+        "title": [
+          "File:Le Solitaire du mont Carmel. Episode des premiers temps du christianisme. Cinquieme edition. - Upper pastedown (c109e31).jpg"
+        ],
+        "pageid": [
+          "43228754"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "99b1a4af356ae4e25ca9",
+      "identities": {
+        "title": [
+          "File:The compleat angler - Upper pastedown and endleaf. (Davis223).jpg"
+        ],
+        "pageid": [
+          "43239726"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "5132a0335073b9fc5196",
+      "identities": {
+        "title": [
+          "File:The new book of the dog - a comprehensive natural history of British dogs and their foreign relatives, with chapters on law, breeding, kennel management, and veterinary treatment (1911) (14576966328).jpg"
+        ],
+        "pageid": [
+          "43245830"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "030f4fa8a5578aa0468e",
+      "identities": {
+        "title": [
+          "File:Ontwerp ex-libris voor Bern. W. Ottevanger.jpeg"
+        ],
+        "pageid": [
+          "43622002"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "1748f8f887303d42602c",
+      "identities": {
+        "title": [
+          "File:Washington and the generals of the American revolution (1848) (14578351288).jpg"
+        ],
+        "pageid": [
+          "44105651"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "6b995efbe21d745818fb",
+      "identities": {
+        "title": [
+          "File:Inmates of my house and garden BHL17204736.jpg"
+        ],
+        "pageid": [
+          "44417981"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "2e86101fe0d7a543c121",
+      "identities": {
+        "title": [
+          "File:Rambles with nature students BHL17015197.jpg"
+        ],
+        "pageid": [
+          "44429450"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "36676ffe05e6ec23dd00",
+      "identities": {
+        "title": [
+          "File:Wild plants needing protection BHL11447707.jpg"
+        ],
+        "pageid": [
+          "44435127"
+        ],
+        "original_sha1": [
+          "c0f491981ad4a65370fd651890dfe0b2ea99c0cb"
+        ],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "5301ada3b26971b3551e",
+      "identities": {
+        "title": [
+          "File:Wet Sundays BHL22205079.jpg"
+        ],
+        "pageid": [
+          "44869440"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "bb198688f65d23a60dbe",
+      "identities": {
+        "title": [
+          "File:The cat, a guide to the classification and varieties of cats and a short tratise upon their care, diseases, and treatment BHL23731654.jpg"
+        ],
+        "pageid": [
+          "44895943"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "1d8845e30259b3f39ab5",
+      "identities": {
+        "title": [
+          "File:The new system of educating horses including instructions on feeding, watering, stabling, shoeing, etc. with practical treatment for diseases BHL26164199.jpg"
+        ],
+        "pageid": [
+          "44960388"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "09e2e81932a984f6c16b",
+      "identities": {
+        "title": [
+          "File:Fridrich Karel Chorinský z Ledské.jpg"
+        ],
+        "pageid": [
+          "45158238"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "45a827537d0c45d6bddf",
+      "identities": {
+        "title": [
+          "File:Count László Szőgyény-Marich de Magyar-Szőgyén et Szolgaegyháza - 1839 (2).tif"
+        ],
+        "pageid": [
+          "45407218"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "044e64c94a28dc8be0f8",
+      "identities": {
+        "title": [
+          "File:Martin Eisengrein Exlibris 2.jpg"
+        ],
+        "pageid": [
+          "45560229"
+        ],
+        "original_sha1": [
+          "06ddc4b423ef2fc0c2871331aa8106b9af412071"
+        ],
+        "byte_sha256": [
+          "f83cbac0666867e81c3f25ae07c37cbfe7931cfe64502d2929d17dd2a3b8fd25"
+        ]
+      }
+    },
+    {
+      "candidate_id": "8f09a0c8a59c53584b22",
+      "identities": {
+        "title": [
+          "File:Mikola Tarasikaŭ Exlibris Jakub Kolas.jpg"
+        ],
+        "pageid": [
+          "46115187"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "3c1fcc3f1f6a9554467c",
+      "identities": {
+        "title": [
+          "File:Леонид Курис-Экслибрис Янины Саффарини-гравюра на пластике-63x47-2001.jpg"
+        ],
+        "pageid": [
+          "46268209"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "7c6e4fea59c6cae2a25a",
+      "identities": {
+        "title": [
+          "File:Леонид Курис-Экслибрис Эляны и Тадаса Вебра-гравюра на дереве-64x57-2013.jpg"
+        ],
+        "pageid": [
+          "46268239"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "22fcf23a9f0bbd90649a",
+      "identities": {
+        "title": [
+          "File:Jacques rosenthal.jpg"
+        ],
+        "pageid": [
+          "46860172"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "c06c876c67a3c8f0c73d",
+      "identities": {
+        "title": [
+          "File:Página inicial En pro del casticismo Manuel G Revilla Andrés Botas e Hijo México 1917 01.jpg"
+        ],
+        "pageid": [
+          "47195252"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "5f69c8f3ea9e30b3d76f",
+      "identities": {
+        "title": [
+          "File:Página inicial En pro del casticismo Manuel G Revilla Andrés Botas e Hijo México 1917 03.jpg"
+        ],
+        "pageid": [
+          "47195253"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "b246f1d92971566dd195",
+      "identities": {
+        "title": [
+          "File:Página inicial En pro del casticismo Manuel G Revilla Andrés Botas e Hijo México 1917 02.jpg"
+        ],
+        "pageid": [
+          "47195254"
+        ],
+        "original_sha1": [
+          "5f719076c69c5fb998ca219a03cc16cfe5900953"
+        ],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "ae4871bfaf63bebb16f8",
+      "identities": {
+        "title": [
+          "File:Rothschild Exlibris.jpg"
+        ],
+        "pageid": [
+          "47929359"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "1ba9fda8d8b3f7219804",
+      "identities": {
+        "title": [
+          "File:Marque de la collection Lucien Wiener ( Lugt 4033 ).jpg"
+        ],
+        "pageid": [
+          "48315937"
+        ],
+        "original_sha1": [
+          "6649cc660eb85c6e20d60b9a45bc758e4e9ae1b6"
+        ],
+        "byte_sha256": [
+          "4ce1cfc7d9060471bab4066d8ab22558b0c10d2cf990a4b9d676224502a23eac"
+        ]
+      }
+    },
+    {
+      "candidate_id": "1cae986784f14b220d1d",
+      "identities": {
+        "title": [
+          "File:Exlibris-ManuelBrunet.jpg"
+        ],
+        "pageid": [
+          "49335558"
+        ],
+        "original_sha1": [
+          "951fab6f32c48a96147b5e9c3c65448fba5c2808"
+        ],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "77e80368336b352224bc",
+      "identities": {
+        "title": [
+          "File:Cesare Ratta - Ex libris 2.jpg"
+        ],
+        "pageid": [
+          "49980780"
+        ],
+        "original_sha1": [
+          "3a0551aec06f8350777b972c983de946d3ccd2e0"
+        ],
+        "byte_sha256": [
+          "e6b356fc6828a2248cf0b01d21d0f63a7b901f79112f970ca86df5c7f311931a"
+        ]
+      }
+    },
+    {
+      "candidate_id": "85ecd0582046bb5bc014",
+      "identities": {
+        "title": [
+          "File:Cesare Ratta - Ex libris 1.jpg"
+        ],
+        "pageid": [
+          "49980781"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "73c7ee712e5db6519b7a",
+      "identities": {
+        "title": [
+          "File:GEZAE KVVN.jpg"
+        ],
+        "pageid": [
+          "50161359"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "0d14948161f62550a53e",
+      "identities": {
+        "title": [
+          "File:Ex-libris de Isidoro Valverde Álvarez.png"
+        ],
+        "pageid": [
+          "52209997"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "20ce53f3c8c4073a251e",
+      "identities": {
+        "title": [
+          "File:P16-512 ex libris (6672203647).jpg"
+        ],
+        "pageid": [
+          "52233967"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "bc9b0307661f2fd07e59",
+      "identities": {
+        "title": [
+          "File:Ex libris manuscrit de la Bible de Luther sur le premier contre plat (12518301044).jpg"
+        ],
+        "pageid": [
+          "52234911"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "2b113e93140e4ac630e6",
+      "identities": {
+        "title": [
+          "File:Durham Advertiser. ALS to the editor (1838 Feb. 3) (NYPL b15893398-5110777).tiff"
+        ],
+        "pageid": [
+          "52708298"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "eabfd7b16d3bd49bd61c",
+      "identities": {
+        "title": [
+          "File:Hall, Mrs. S(amuel) C(arter). ALS to 1849 July 18 (NYPL b15893398-5110934).tiff"
+        ],
+        "pageid": [
+          "52714062"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "93d62a79ebb419fef281",
+      "identities": {
+        "title": [
+          "File:Stacy Marks Bookplate.jpg"
+        ],
+        "pageid": [
+          "53616205"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "6bc00a4123593227753e",
+      "identities": {
+        "title": [
+          "File:ExLibrisDr.AFonio1921 01.jpg"
+        ],
+        "pageid": [
+          "56404110"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "738d7597e6246020217e",
+      "identities": {
+        "title": [
+          "File:Екслібріс Воронцова.jpg"
+        ],
+        "pageid": [
+          "57577476"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "49d9f7bb6d910fd5f1d3",
+      "identities": {
+        "title": [
+          "File:The Belles Heures of Jean de France, duc de Berry MET DP150015.jpg"
+        ],
+        "pageid": [
+          "57857590"
+        ],
+        "original_sha1": [
+          "b15dae26fb857c76b040c7dfdf200fa1b73a89f1"
+        ],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "cfa292e22f60ce014e39",
+      "identities": {
+        "title": [
+          "File:De' ragguagli di Parnaso- Centuria prima-seconda MET i19511814-ef.jpg"
+        ],
+        "pageid": [
+          "57860516"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "9b63aa568a3a38f873f9",
+      "identities": {
+        "title": [
+          "File:Chun Tsew Bookplate.png"
+        ],
+        "pageid": [
+          "58368559"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "f76cbcbdeb0a04ec6da6",
+      "identities": {
+        "title": [
+          "File:Study for a Book Plate- Leda and the Swan MET DP819615.jpg"
+        ],
+        "pageid": [
+          "60842261"
+        ],
+        "original_sha1": [
+          "4b36920dfd4c541e4b04f9e76c6e4a2bb3020dc4"
+        ],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "a1c7ceadb9e4b8bd405e",
+      "identities": {
+        "title": [
+          "File:Purves 6th baronet ex-libris.jpg"
+        ],
+        "pageid": [
+          "61273592"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "ec73f8819189baabd428",
+      "identities": {
+        "title": [
+          "File:BroGuy.png"
+        ],
+        "pageid": [
+          "61407447"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "6a5ad070974eacf0a061",
+      "identities": {
+        "title": [
+          "File:Ex libris UB Strassburg 1871.jpg"
+        ],
+        "pageid": [
+          "64336773"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "ab6af1ca24d6742e53c9",
+      "identities": {
+        "title": [
+          "File:Pattern Book Facsimile, La gloria et l'honore de ponti tagliati, e ponti in aere, 1884 (CH 18388611-36).jpg"
+        ],
+        "pageid": [
+          "64503144"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "d0b086aa0821a3ea0198",
+      "identities": {
+        "title": [
+          "File:The Belles Heures of Jean de France, duc de Berry MET DP274543.jpg"
+        ],
+        "pageid": [
+          "65138220"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "71a816486e40b3eaff99",
+      "identities": {
+        "title": [
+          "File:Circulating library no. 23 LCCN2003674401.jpg"
+        ],
+        "pageid": [
+          "65766278"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "6c5f0f48a20467349c3f",
+      "identities": {
+        "title": [
+          "File:Ex Libris von Erich Mühsam (1917).jpg"
+        ],
+        "pageid": [
+          "65886939"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "0cbfc1003be44e448b24",
+      "identities": {
+        "title": [
+          "File:Henry Spencer Ashbee Ex Libris (cropped).jpg"
+        ],
+        "pageid": [
+          "65949373"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "30a47e1fd5fac15a319c",
+      "identities": {
+        "title": [
+          "File:Page 105 of 'A Tortured Soul' (11297591805).jpg"
+        ],
+        "pageid": [
+          "66185046"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "cced35e26f0394bde8ef",
+      "identities": {
+        "title": [
+          "File:19. Jahrhundert circa Hanna E. Stern Exlibris Max und Liesel Meyer, Hannover.tif"
+        ],
+        "pageid": [
+          "66235825"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "30f111d6dc9ec027f718",
+      "identities": {
+        "title": [
+          "File:Ex libris bookplate of Frank A. Vanderlip.jpg"
+        ],
+        "pageid": [
+          "66949520"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "09316157ad0cf98d0297",
+      "identities": {
+        "title": [
+          "File:Erich Heermann - Exlibris für Charlotte Mamroth, Radierung 1908.jpg"
+        ],
+        "pageid": [
+          "67331768"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "2b257c056512d9f91208",
+      "identities": {
+        "title": [
+          "File:Otto Rückert - Ex Libris für Johann Nepomuk Eser, 1907.jpg"
+        ],
+        "pageid": [
+          "67334043"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "378e529be3dae1e85762",
+      "identities": {
+        "title": [
+          "File:Bookplate of Helen Louise Taylor, Cincinnati, Ohio LCCN2007683289.tif"
+        ],
+        "pageid": [
+          "67689931"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "a6dacf869ec0d403441e",
+      "identities": {
+        "title": [
+          "File:Bookplate of War Service Library LCCN2016646251.jpg"
+        ],
+        "pageid": [
+          "68040353"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "f8089f6d5c172a8d11d9",
+      "identities": {
+        "title": [
+          "File:Inscription in album- \"Daniel Jeanes book 1855\" LCCN2016647933.jpg"
+        ],
+        "pageid": [
+          "68049063"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "7da226d4ac7e6ca1c8d6",
+      "identities": {
+        "title": [
+          "File:Kaiser Library (ex-libris of Kaiser Shamsher).JPG"
+        ],
+        "pageid": [
+          "68556638"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "d237f8b9e2d809aae3e6",
+      "identities": {
+        "title": [
+          "File:Exlibris - Koppler von Inngau (1883).jpg"
+        ],
+        "pageid": [
+          "69451259"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "0f63cb04a2ebec3347b9",
+      "identities": {
+        "title": [
+          "File:Stefan-Schlesinger-Boas-Kogel-ex-libris.tif"
+        ],
+        "pageid": [
+          "69791845"
+        ],
+        "original_sha1": [
+          "b09fc17e00c7339d71ea7aa6f126db876bef5444"
+        ],
+        "byte_sha256": [
+          "707f22c2107167f5a9adfa10c6f49b60fd530f4a8c4b38f50b874a1da7cb02d2"
+        ]
+      }
+    },
+    {
+      "candidate_id": "739fc2bffddfa5d6f65c",
+      "identities": {
+        "title": [
+          "File:ChrisLebeauMoret.jpg"
+        ],
+        "pageid": [
+          "70561653"
+        ],
+        "original_sha1": [
+          "af4557b1b9b9986df2d469e031d9e9996d852f57"
+        ],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "6b581cafdb339dd5570d",
+      "identities": {
+        "title": [
+          "File:ChrisLebeauVDVies.jpg"
+        ],
+        "pageid": [
+          "70561658"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "25424fb56fc4066b5466",
+      "identities": {
+        "title": [
+          "File:Giacomo Manzoni ex libris.jpg"
+        ],
+        "pageid": [
+          "72246223"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "68706ac796edd3df2f47",
+      "identities": {
+        "title": [
+          "File:Verbreitung und Einfluss des mikroskopischen Lebens in Süd- und Nord-Amerika.pdf"
+        ],
+        "pageid": [
+          "72609579"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "b492c3ec545b06b390f4",
+      "identities": {
+        "title": [
+          "File:Hans Baluschek - Ex Libris für Doktor Müller-Mann.jpg"
+        ],
+        "pageid": [
+          "72753671"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "19bef2d5cdb6d73283e8",
+      "identities": {
+        "title": [
+          "File:LAPPENBERG EXLIBRIS.jpg"
+        ],
+        "pageid": [
+          "72769535"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "752eb17812a22e3471cd",
+      "identities": {
+        "title": [
+          "File:Todoreszku Ex libris.jpg"
+        ],
+        "pageid": [
+          "73496490"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "aa68fb657dd6f9bf9361",
+      "identities": {
+        "title": [
+          "File:Dienst-paul-exlibris.jpg"
+        ],
+        "pageid": [
+          "73793632"
+        ],
+        "original_sha1": [
+          "e1644a4e6cfa8fe1b7eea2cde66c6c2819c5a2b8"
+        ],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "e4687b0257a19beb823a",
+      "identities": {
+        "title": [
+          "File:Thieviet exlibris manuscrit 105.jpg"
+        ],
+        "pageid": [
+          "73819041"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "0d93ce584ad561e31019",
+      "identities": {
+        "title": [
+          "File:Ex libris Paul Hartwig (Greiner).jpg"
+        ],
+        "pageid": [
+          "73958021"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "7d3c6edd2f5ef5af91b6",
+      "identities": {
+        "title": [
+          "File:David Starr Jordan bookplate.png"
+        ],
+        "pageid": [
+          "73992121"
+        ],
+        "original_sha1": [
+          "177e01492878971b4a7e88edade878510a9de7ce"
+        ],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "7524281f4987396f6e7a",
+      "identities": {
+        "title": [
+          "File:Otto Blankenstein - Ex libris Julius Erxleben, 1903.jpg"
+        ],
+        "pageid": [
+          "74122669"
+        ],
+        "original_sha1": [
+          "d6ff96661c00bd0f1be8ff559400deb1215bda15"
+        ],
+        "byte_sha256": [
+          "bb557dbde777e1c9ad5bdb038b6ce4afa6cc6e0ea2e674085eeaa83f9a7aaf40"
+        ]
+      }
+    },
+    {
+      "candidate_id": "caf546536d8c265dc3c9",
+      "identities": {
+        "title": [
+          "File:Olympia Brown - Acquaintances, Old and New, Among Reformers.pdf"
+        ],
+        "pageid": [
+          "74250001"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "57021a43b3036b3c7983",
+      "identities": {
+        "title": [
+          "File:Fré Cohen ex libris Marie Hamel.jpg"
+        ],
+        "pageid": [
+          "74540896"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "889f1963e0b954e0b152",
+      "identities": {
+        "title": [
+          "File:Josef Seché - Ex Eroticis Kristen Rasmussen.jpg"
+        ],
+        "pageid": [
+          "76188471"
+        ],
+        "original_sha1": [
+          "4c933277facab91daf91470a1e4fe0655ec9a35a"
+        ],
+        "byte_sha256": [
+          "5404784de4830139ca6b2c0e0707627a4c849db7f50107b7fc841f12f6a218ea"
+        ]
+      }
+    },
+    {
+      "candidate_id": "c5d5cbd55453639885ea",
+      "identities": {
+        "title": [
+          "File:Encourage the beautiful by Louis Rhead, 1907.jpg"
+        ],
+        "pageid": [
+          "77723273"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "6c5e25973cea10cb56ef",
+      "identities": {
+        "title": [
+          "File:Livro de Endereços, Acervo do Museu Paulista da USP (5).jpg"
+        ],
+        "pageid": [
+          "77738521"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "8cbaf6417a94839578a0",
+      "identities": {
+        "title": [
+          "File:Livro de Endereços, Acervo do Museu Paulista da USP (6).jpg"
+        ],
+        "pageid": [
+          "77738530"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "a3c9361f0abf2517f147",
+      "identities": {
+        "title": [
+          "File:Caderno Cartonado, Acervo do Museu Paulista da USP (3).jpg"
+        ],
+        "pageid": [
+          "77738556"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "b4ed11584be0cc8c3137",
+      "identities": {
+        "title": [
+          "File:Caderno Cartonado, Acervo do Museu Paulista da USP (4).jpg"
+        ],
+        "pageid": [
+          "77738558"
+        ],
+        "original_sha1": [
+          "5b13b85f6e259d60251b791f841092708816b9ce"
+        ],
+        "byte_sha256": [
+          "fc6ded9055a3c49f435dae0b559f8eaf15f06dfd0e38552e382a7710b9ed81b3"
+        ]
+      }
+    },
+    {
+      "candidate_id": "d072c76d0c238961fc81",
+      "identities": {
+        "title": [
+          "File:Nelly Pauson, Ex libris by e aufseeser (cropped).jpg"
+        ],
+        "pageid": [
+          "77945014"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "a541ed7191d0c03b3e13",
+      "identities": {
+        "title": [
+          "File:His book in 1920, woodcut print, (Bookplate of Buddy Lankes) (LOC) (15606491681) (cropped).jpg"
+        ],
+        "pageid": [
+          "77945533"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "cd17dffa3d0c582c14f1",
+      "identities": {
+        "title": [
+          "File:Margaret Cochrane Dewar ex libris from Bookplates by de Courcy Lewthwaite Dewar for Margaret Cochrane Dewar and Elma Archibald (cropped).jpg"
+        ],
+        "pageid": [
+          "77946682"
+        ],
+        "original_sha1": [
+          "954f6ab3934202718358a424aef447c0dd8415a4"
+        ],
+        "byte_sha256": [
+          "1f7fcb183bd347e7cac2c2386b6566862b3fb02c154d06452fde7219d6d99a34"
+        ]
+      }
+    },
+    {
+      "candidate_id": "0a1688309d3da26bbf98",
+      "identities": {
+        "title": [
+          "File:Ex-libris A. Giry don par souscription posthume a L'ecole des Chartes (cropped).JPG"
+        ],
+        "pageid": [
+          "77948313"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "9a28a2eb40b8f9c82fa8",
+      "identities": {
+        "title": [
+          "File:Combed marbled paper detail, Ex-libris A. Giry (cropped).JPG"
+        ],
+        "pageid": [
+          "77948543"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "cafe55c44731cc57ac71",
+      "identities": {
+        "title": [
+          "File:The ventriculidae of the chalk BHL22685594 (cropped).jpg"
+        ],
+        "pageid": [
+          "77953211"
+        ],
+        "original_sha1": [
+          "14bd5f44f379356e64d469a9cc6410db2e71cc5c"
+        ],
+        "byte_sha256": [
+          "723eb7e5747a5309704869ebc9f2fe0fef1e6c79cbd33e9aaa48759a6bb0d9f6"
+        ]
+      }
+    },
+    {
+      "candidate_id": "e1f088f3d25140e2f508",
+      "identities": {
+        "title": [
+          "File:Книжный знак М.Я. Ария.jpg"
+        ],
+        "pageid": [
+          "79442271"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "4370f45bc62a2451af65",
+      "identities": {
+        "title": [
+          "File:Sigilium Archiepislopalis Ordinariatis Monac et Frisingens 20190314 .jpg"
+        ],
+        "pageid": [
+          "79606918"
+        ],
+        "original_sha1": [
+          "bee0ea653c466250bfc9cbb3de90286183fd544a"
+        ],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "589272c6822c1610836b",
+      "identities": {
+        "title": [
+          "File:Marianne Saxl-Deutsch Exlibris Agathe Hardt-Stremayr.jpg"
+        ],
+        "pageid": [
+          "80018444"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "fa071efb238a7db0fb03",
+      "identities": {
+        "title": [
+          "File:Library art detail, Bookplate of Charles P. Searle, (LOC) (15423158127) (cropped).jpg"
+        ],
+        "pageid": [
+          "80060563"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "e90597bde121991ae88b",
+      "identities": {
+        "title": [
+          "File:Les quatre fils aymon 94348 (ex libris).jpg"
+        ],
+        "pageid": [
+          "80151603"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "10f7f16d778825f7f988",
+      "identities": {
+        "title": [
+          "File:Maria Elia De Seta Pignatelli \"Ex libris Maria Elia\" bookplate (cropped).jpg"
+        ],
+        "pageid": [
+          "80526409"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "c5337dfdaa5261d37e0a",
+      "identities": {
+        "title": [
+          "File:Gertrud Caspari Dies Buch gehört.jpg"
+        ],
+        "pageid": [
+          "80927295"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "110d5ba1be9900bbd523",
+      "identities": {
+        "title": [
+          "File:Bamberger otto lichtenfels exlibris.png"
+        ],
+        "pageid": [
+          "81678245"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "c6823a6d6a2bdaa125ae",
+      "identities": {
+        "title": [
+          "File:Paul Gavarni, Ex Libris C. Patel, 19th century, NGA 143518.jpg"
+        ],
+        "pageid": [
+          "82042847"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "60cbde18f57aef338560",
+      "identities": {
+        "title": [
+          "File:Tadeusz Cieslewski Zygmunt Klemensiewicz ex libris 1943.jpg"
+        ],
+        "pageid": [
+          "82791067"
+        ],
+        "original_sha1": [
+          "bf42ccea6b094712ccc5dcaefef38512d829766b"
+        ],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "8898abac27a1c68ac566",
+      "identities": {
+        "title": [
+          "File:Bedford Modern School Prize Book Plate - 1889.jpg"
+        ],
+        "pageid": [
+          "82979789"
+        ],
+        "original_sha1": [
+          "5e915131d3b191583d285e45e29119f35d026500"
+        ],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "c097daa3c47c593fcf30",
+      "identities": {
+        "title": [
+          "File:Bookplate, from- Lingnan University Yearbook 1925 (page 2 crop).jpg"
+        ],
+        "pageid": [
+          "83066426"
+        ],
+        "original_sha1": [
+          "855f98ba620b9fe2552bd8a65fb203bcd2d5bcc6"
+        ],
+        "byte_sha256": [
+          "08d68a0f8dcfb10ec965a3a5c5a23e91f2b663c4728a5c16e84dd2927aee5f23"
+        ]
+      }
+    },
+    {
+      "candidate_id": "98c88cbe53f9fd782a77",
+      "identities": {
+        "title": [
+          "File:Mnchenundseineba00baye 0002.jpg"
+        ],
+        "pageid": [
+          "83427394"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "7ef6405b2421d58f23c6",
+      "identities": {
+        "title": [
+          "File:Ex Libris Ludwig Hohlwein, between 1905 and 1940, lithograph by Paul Neu, 13.5 by 7.5 cm (sheet).jpg"
+        ],
+        "pageid": [
+          "84041698"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "41b40508425cef596dda",
+      "identities": {
+        "title": [
+          "File:Guide pratique pour l'emploi des surfaces orthochromatiques (titel op object), RP-F-2001-7-110.jpg"
+        ],
+        "pageid": [
+          "84746502"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "1b12e14d87a674c24ae1",
+      "identities": {
+        "title": [
+          "File:Photographic view album of Ilkley, Yorks (titel op object), RP-F-2001-7-218.jpg"
+        ],
+        "pageid": [
+          "84980584"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "47a69a2ba152ceb8808c",
+      "identities": {
+        "title": [
+          "File:Photographic view album of Bolton Abbey and woods (titel op object), RP-F-2001-7-219.jpg"
+        ],
+        "pageid": [
+          "84981591"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "ce9926fea1930732efe7",
+      "identities": {
+        "title": [
+          "File:Ex-Libris d'Auguste 1er, roi de l'île d'Or.jpg"
+        ],
+        "pageid": [
+          "85010139"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "2b4122c8f4295d87d14a",
+      "identities": {
+        "title": [
+          "File:Recherches sur le microbe du choléra asiatique (titel op object) Recherches sur le microbe du choléra asiatique, RP-F-2001-7-1313.jpg"
+        ],
+        "pageid": [
+          "85064203"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "8ac6460b2c8a64c1f6dd",
+      "identities": {
+        "title": [
+          "File:Ru-SPb-Klochkov-exlibr-5.jpg"
+        ],
+        "pageid": [
+          "85164956"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "2c1e96239c0e04f6ab48",
+      "identities": {
+        "title": [
+          "File:George Faunce Whitcomb.jpg"
+        ],
+        "pageid": [
+          "85636659"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "5f0b2a979359a35b38f7",
+      "identities": {
+        "title": [
+          "File:Emile K Boisot Bookplate.jpg"
+        ],
+        "pageid": [
+          "85898983"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "fddb88cd7f58b352392a",
+      "identities": {
+        "title": [
+          "File:Etsplaat voor ex libris Bibliotheca Willetiana, objectnr KA 22674.tif"
+        ],
+        "pageid": [
+          "87645111"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "be49c2bf44fbfe0532e7",
+      "identities": {
+        "title": [
+          "File:Ex libris Otto Rudl.png"
+        ],
+        "pageid": [
+          "89104920"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "bf9c2c6f2ea6c3a47d5c",
+      "identities": {
+        "title": [
+          "File:Лансерэ. Экслібрыс «В.К. Чеховичъ». 1901.jpg"
+        ],
+        "pageid": [
+          "89258782"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "64bf1156d40f957473e1",
+      "identities": {
+        "title": [
+          "File:Image from page 177 of \"Artists and engravers of British and American book plates - a book of reference for book plate and print collectors\" (1897).jpg"
+        ],
+        "pageid": [
+          "89419615"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "bcea3d1f39193e31c138",
+      "identities": {
+        "title": [
+          "File:Franz Stassen - Ex libris Wilhelm Felsing.jpg"
+        ],
+        "pageid": [
+          "89555811"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "2f75a5971ceb62557638",
+      "identities": {
+        "title": [
+          "File:Mathieu Molitor - Ex libris Dr. Erhard Riecke.jpg"
+        ],
+        "pageid": [
+          "89559439"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "5fbc1cc035684cc2fb68",
+      "identities": {
+        "title": [
+          "File:Hugo Steiner-Prag - Ex libris Eugen Pawlik.jpg"
+        ],
+        "pageid": [
+          "89564064"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "1077968a50d59ad632d0",
+      "identities": {
+        "title": [
+          "File:Dye zaigung des hochlobwirdigen hailigthums der Stifftkirchen aller hailigen zu Wittenburg (The display of the highly praised reliquaries of the church of All Saints at Wittenberg) (BM 1911,0708.1 93).jpg"
+        ],
+        "pageid": [
+          "89902687"
+        ],
+        "original_sha1": [
+          "04d12a61ef9b386aebb9fb8ef0228016fa0ffc71"
+        ],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "d68cca8f02ca83292928",
+      "identities": {
+        "title": [
+          "File:Print, extra-illustrated book, bookplate (BM 1886,1122.5.1-173).jpg"
+        ],
+        "pageid": [
+          "90132536"
+        ],
+        "original_sha1": [
+          "6af6dcc05e8b099ec6636dc57cf431b07341db9c"
+        ],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "fbeeeeb85c60ac630022",
+      "identities": {
+        "title": [
+          "File:Print, bookplate (BM 1983,U.2859).jpg"
+        ],
+        "pageid": [
+          "90361393"
+        ],
+        "original_sha1": [
+          "192ba27bd7faed22a5b83e4b38d4b1642544b327"
+        ],
+        "byte_sha256": [
+          "ef766fccc79e27d540857ba054ecb713f646996ec6c98c289d703bea05b44aa1"
+        ]
+      }
+    },
+    {
+      "candidate_id": "870ab21fb9359fe18c62",
+      "identities": {
+        "title": [
+          "File:Milenko Djuric, Ex Libris.jpg"
+        ],
+        "pageid": [
+          "90421725"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "f21fea13ff7cab77ea4a",
+      "identities": {
+        "title": [
+          "File:\"Sir Joeseph Fayrer, Bart. K.C.S.I. M.D. F.R.S.\" \"NE TENTES AUT PERFICE\" bookplate detail, from- Proceedings of the Asiatic Society of Bengal, for January 1868 (IA b28709366) (page 2 crop).jpg"
+        ],
+        "pageid": [
+          "93879179"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "735694c1a4b8cb361f17",
+      "identities": {
+        "title": [
+          "File:1880 \"US GEOLOGICAL SURVEY LIBRARY\" bookplate detail, from- Proceedings of the Asiatic Society of Bengal (IA proceedingsofasi1880asia) (page 2 crop).jpg"
+        ],
+        "pageid": [
+          "93879566"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "fd221182c649c726989c",
+      "identities": {
+        "title": [
+          "File:\"Surgeon General's Office Library\" 1875 bookplate, from- Roster of examining surgeons appointed under authority of the Commissioner of Pensions (IA 46020590R.nlm.nih.gov) (page 2 crop).jpg"
+        ],
+        "pageid": [
+          "93905479"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "bb4736a490a9615efc1c",
+      "identities": {
+        "title": [
+          "File:\"Field Museum of Natural History Library Chicago\" bookplate in 1832, from- Journal of the Asiatic Society of Bengal (IA journalofasiatic731calc) (page 2 crop).jpg"
+        ],
+        "pageid": [
+          "93959820"
+        ],
+        "original_sha1": [
+          "62ce1eeb9615795218b57d96d37deb71f8f547fb"
+        ],
+        "byte_sha256": [
+          "94178b9b1a7565c00ce32f1cf7b4752fad3442e15400e4a844af1931fdecffb5"
+        ]
+      }
+    },
+    {
+      "candidate_id": "4220d658945b392ad2ca",
+      "identities": {
+        "title": [
+          "File:\"Glasgow University Library\" bookplate, from- Clinical lectures on venereal diseases (IA b24924003) (page 2 crop).jpg"
+        ],
+        "pageid": [
+          "94145289"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "ae0a910db2fb13e57441",
+      "identities": {
+        "title": [
+          "File:\"ARMY MEDICAL LIBRARY WASHINGTON Founded 1836 Library of the Surgeon General's Office War Department\" bookplate- (...) illustrated by drawings of the different forms of venereal eruptions (IA 64551090R.nlm.nih.gov) (page 2 crop).jpg"
+        ],
+        "pageid": [
+          "94146053"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "04341c8c279e154dcd06",
+      "identities": {
+        "title": [
+          "File:Ex-libris Léon de La Sicotière.png"
+        ],
+        "pageid": [
+          "94370063"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "c8bd9e311ff80ef6dc1a",
+      "identities": {
+        "title": [
+          "File:Elfriede Wendtlandt - Ex libris Marie Duca.jpg"
+        ],
+        "pageid": [
+          "94606301"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "40ee85b629a54a4582cc",
+      "identities": {
+        "title": [
+          "File:Hayo Tjarks Oltmanns Ex Libris meis 1901.jpg"
+        ],
+        "pageid": [
+          "95723517"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "acc3dccd1aa17b62ffa5",
+      "identities": {
+        "title": [
+          "File:Hayo Tjarks Oltmanns Ex libris Gymnasium Mährisch-Ostrau 1901.jpg"
+        ],
+        "pageid": [
+          "95724163"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "43068daa3695db751be2",
+      "identities": {
+        "title": [
+          "File:Caproni-biblioteca-logo.jpg"
+        ],
+        "pageid": [
+          "97427657"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "20d8eadab5c74ae524be",
+      "identities": {
+        "title": [
+          "File:Leiningen Reinhard 2 a.jpg"
+        ],
+        "pageid": [
+          "98453152"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "ddb6057061d69b4f16ca",
+      "identities": {
+        "title": [
+          "File:“EX LIBRIS ELSIE PLAUT & ELY JACQUES KAHN” bookplate art - Mnchenundseineba00baye 0002 (cropped).jpg"
+        ],
+        "pageid": [
+          "100317426"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "572ced1c70693a099b02",
+      "identities": {
+        "title": [
+          "File:“CARNEGIE LIBRARY PITTSBURGH” “Presented by Andrew Carnegie“ - The street railway review (IA streetrailwayrev04amer) (page 2 crop).jpg"
+        ],
+        "pageid": [
+          "101156983"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "e35147a10bb6ead04bd3",
+      "identities": {
+        "title": [
+          "File:Bookplate from 1829 book - An introduction to the study of mineralogy ; or, student's pocket companion (IA AnIntroductionToTheStudyOfMineralogy) (page 2 crop).jpg"
+        ],
+        "pageid": [
+          "103711861"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "876c2701350e7022b2a7",
+      "identities": {
+        "title": [
+          "File:\"JohnAdams Library, in the custody of the Boston Public Library\" bookplate - The theory and practice of brewing (IA theorypracticeof00comb) (page 2 crop).jpg"
+        ],
+        "pageid": [
+          "104354905"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "9e49b61f8aa0b5c2a011",
+      "identities": {
+        "title": [
+          "File:The Library of the University of Toronto Bookplate of gift book from the Secretary of State of India - February 14th, 1890 fire - The Cave Temples of India (page 2 crop).jpg"
+        ],
+        "pageid": [
+          "105978117"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "fa728dbb37d205e87752",
+      "identities": {
+        "title": [
+          "File:Анатоль Тычына. Экслібрыс Міколы Шчакаціхіна.jpg"
+        ],
+        "pageid": [
+          "106540495"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "e968a8ee194e503bffc2",
+      "identities": {
+        "title": [
+          "File:Ex-libris da Rainha D. Amélia.png"
+        ],
+        "pageid": [
+          "106808874"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "36202f81ea25be650d6c",
+      "identities": {
+        "title": [
+          "File:\"The University of Toronto Chemical Library\" bookplate - Collection des anciens alchimistes grecs - L2, 3-4-5-6, 1888 (page 2 crop).jpg"
+        ],
+        "pageid": [
+          "107806548"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "7105afc1b89405a73bf5",
+      "identities": {
+        "title": [
+          "File:Bookplate, \"Library of Wellesley College\" \"NON MINISTRARI SED MINISTRARE\" \"Presented by John P. Squire Arlington (?....) - Claudii Ptolemaei geographia, 1843, vol2 (page 2 crop).jpg"
+        ],
+        "pageid": [
+          "107826872"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "3486cf6c8f016e79473c",
+      "identities": {
+        "title": [
+          "File:Bookplate \"Toronto University Library Presented by The Royal Society through the Committee formed in The Old Country to aid in replacing the loss caused by The disastrous Fire of February the 14th 1890\" -(page 2 crop).jpg"
+        ],
+        "pageid": [
+          "107917038"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "d2607dc4e1783daf43a6",
+      "identities": {
+        "title": [
+          "File:Bookplate of Hall Park McCullough - from, Report of the Council of hygiene and public health of the Citizens' association of New York upon the sanitary condition of the city ... (IA reportofcouncilo00citi) (page 2 crop).jpg"
+        ],
+        "pageid": [
+          "108510457"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "fe76ea927c65bec3b447",
+      "identities": {
+        "title": [
+          "File:Bookplate \"Library of the Theological Seminary, Princeton, N. J.\" (New Jersey) - from, Sacred Books of the East - Volume 42 (page 2 crop).jpg"
+        ],
+        "pageid": [
+          "109392122"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "37d2d397167f402a93c7",
+      "identities": {
+        "title": [
+          "File:XG 103 Thucydide 1203652.jpg"
+        ],
+        "pageid": [
+          "112090263"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "9a3308c08f2da7d72435",
+      "identities": {
+        "title": [
+          "File:Blason. Auguste Ier, roi de l'île d'Or.jpg"
+        ],
+        "pageid": [
+          "112556212"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "9221cf990d9c6982d92c",
+      "identities": {
+        "title": [
+          "File:Sörrensen, Wolfgang — Ex libris (Enwürfe) — 1900er oder 1910er Jahre.tif"
+        ],
+        "pageid": [
+          "112894478"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "0ba76e83609e3829093a",
+      "identities": {
+        "title": [
+          "File:Sörrensen, Wolfgang — Ex libris K. u. W. Sörrensen — 1900er oder 1910er Jahre.jpg"
+        ],
+        "pageid": [
+          "112922139"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "6424e35c50b5ef416f36",
+      "identities": {
+        "title": [
+          "File:Sörrensen, Wolfgang Hans — Ex libris (eigenes) — 1900er oder 1910er Jahre.jpeg"
+        ],
+        "pageid": [
+          "112960413"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "57a3147c78226bca110c",
+      "identities": {
+        "title": [
+          "File:Bookplate, \"Cornell University Library Lucy Harris Fund for a Memorial Collection of the Victorian Poets 1893\" from, Departmental ditties and other verses (IA cu31924013493303) (page 2 crop).jpg"
+        ],
+        "pageid": [
+          "112994218"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "6fb35bacca6e77546607",
+      "identities": {
+        "title": [
+          "File:Marion Boisot (1897-1990) bookplate.jpg"
+        ],
+        "pageid": [
+          "113599850"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "d467bdb415f888b4828f",
+      "identities": {
+        "title": [
+          "File:Bookplate (partial), \"The National Library of Wales, Aberystwyth A.D. 1905\" from Daniel Ddu o Geredigion (5348987) (cropped).jpg"
+        ],
+        "pageid": [
+          "113881422"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "52c97e5b9b9229382b3e",
+      "identities": {
+        "title": [
+          "File:Karl Hobrecker Ex libris 20.jpg"
+        ],
+        "pageid": [
+          "114240097"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "01e1aab53510043dcd55",
+      "identities": {
+        "title": [
+          "File:Karl Hobrecker Ex libris 10.jpg"
+        ],
+        "pageid": [
+          "114240098"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "5eb2b894ed6f0b3ecd36",
+      "identities": {
+        "title": [
+          "File:Karl Hobrecker Ex libris 30.jpg"
+        ],
+        "pageid": [
+          "114240099"
+        ],
+        "original_sha1": [
+          "da67aea28e50cc4b258f050519b2601aabd59317"
+        ],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "283cb8807564a5f5bf97",
+      "identities": {
+        "title": [
+          "File:Karl Hobrecker Ex libris 50.jpg"
+        ],
+        "pageid": [
+          "114240101"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "b5e1499dbb97120c1715",
+      "identities": {
+        "title": [
+          "File:Karl Hobrecker Ex libris 60.jpg"
+        ],
+        "pageid": [
+          "114240102"
+        ],
+        "original_sha1": [
+          "45e121ab24bab7c4103fe02eb9a93b41e5f492f9"
+        ],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "2c2fb46da62d45e203c8",
+      "identities": {
+        "title": [
+          "File:Bookplate from Bureau of Education, Department of the Interior - A complete arithmetic, oral and written. Part 2 (IA completearithmet00malc 0) (page 2 crop).jpg"
+        ],
+        "pageid": [
+          "115161360"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "163559bfa3e6902fb25a",
+      "identities": {
+        "title": [
+          "File:Ex libris Otakar Douša.jpg"
+        ],
+        "pageid": [
+          "116036280"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "3fb199b688a6139cb59c",
+      "identities": {
+        "title": [
+          "File:3 ekslibrisy odbite z jednej plyty 1837 (84086478).jpg"
+        ],
+        "pageid": [
+          "116084122"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "eacca252b990c93cff55",
+      "identities": {
+        "title": [
+          "File:Bookplate of a Sacriston Wesleyan P.S.A. Book Scheme Prize awarded to George Taylor on December 31, 1898 by - from, Gulliver's Travels and Other Works dated 1890.jpg"
+        ],
+        "pageid": [
+          "116152668"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "5649b7b96bf2e1e4f3a3",
+      "identities": {
+        "title": [
+          "File:Margaret Marriott.jpg"
+        ],
+        "pageid": [
+          "116318799"
+        ],
+        "original_sha1": [
+          "49b4d5f13b0058446fa0630c716d9a294bf0a9bd"
+        ],
+        "byte_sha256": [
+          "981acaa58544af3374eaf4dc117140b9f0e45382048fdf4b7d8d36c376bbee4c"
+        ]
+      }
+    },
+    {
+      "candidate_id": "6cc256e6d119e9cdcc1f",
+      "identities": {
+        "title": [
+          "File:Ex Libris S.V. Hagley.jpg"
+        ],
+        "pageid": [
+          "116318805"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "d2e1c573734469406f50",
+      "identities": {
+        "title": [
+          "File:Jane Boleyn.jpg"
+        ],
+        "pageid": [
+          "116318808"
+        ],
+        "original_sha1": [
+          "9d0e814a30a94dc73cd6315d2d60c1091d948167"
+        ],
+        "byte_sha256": [
+          "48d4cc9109f25b111281e625193bdbae00d18cd51b3768b4b52ab59c903c960b"
+        ]
+      }
+    },
+    {
+      "candidate_id": "fe186a06f2c39c1974e2",
+      "identities": {
+        "title": [
+          "File:Allan Jordan woodcut.jpg"
+        ],
+        "pageid": [
+          "116368944"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "773b46b03286df375c2f",
+      "identities": {
+        "title": [
+          "File:Ludvig S Ipsen Bookplate James Means.jpg"
+        ],
+        "pageid": [
+          "117442992"
+        ],
+        "original_sha1": [
+          "48695d2a7b95fa4642ae5a7fea4b63828a431869"
+        ],
+        "byte_sha256": [
+          "a7bdee194b340b0de2bba38ecd1956c158889c08e1766bfc0cbd4c454635a1d9"
+        ]
+      }
+    },
+    {
+      "candidate_id": "3b2acc44bf83cff7533a",
+      "identities": {
+        "title": [
+          "File:Bookplate of Malden Public Library, August 1924 - from Maldonian Yearbook (IA maldonianyearboo1924mald) (page 2 crop).jpg"
+        ],
+        "pageid": [
+          "117488376"
+        ],
+        "original_sha1": [
+          "2dc6773ddfd7ce72defd1eca264a42ca68ec28e6"
+        ],
+        "byte_sha256": [
+          "927552508a81f8686eb7cc633b0a593dbbf4e34752ae91eb37871b82ea1dd5a8"
+        ]
+      }
+    },
+    {
+      "candidate_id": "5331c482e0a891b6fcdd",
+      "identities": {
+        "title": [
+          "File:Hull High School bookplate c1971.jpg"
+        ],
+        "pageid": [
+          "119235256"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "026e6d71bac3643be9c0",
+      "identities": {
+        "title": [
+          "File:Ex libris by Alexander de Riquer (1856-1920) for Narcís Clavell.jpg"
+        ],
+        "pageid": [
+          "120117101"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "e00a94c670e14281672f",
+      "identities": {
+        "title": [
+          "File:Jerusalem aus der Vogelschau (Dritte Auflage) - Entworfen und gezeichnet von Adolf Eltzner ; Druck von J. J. Weber in Leipzig - btv1b10100401w (2 of 4).jpg"
+        ],
+        "pageid": [
+          "120872732"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "187681d757be200b3179",
+      "identities": {
+        "title": [
+          "File:Bookplate of the Worcester Polytechnic Institute Library - from, The Aftermath (yearbook) 1922 - (IA aftermath1922worc 0) (page 2 crop).jpg"
+        ],
+        "pageid": [
+          "121297355"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "d5e267c651d08c09117a",
+      "identities": {
+        "title": [
+          "File:The Strand Magazine vol. 2, no. 8, pg. 120 - Mr Marks Bookplate.png"
+        ],
+        "pageid": [
+          "122196050"
+        ],
+        "original_sha1": [
+          "7caa0773f3167748f13498081fb941c48f9cae24"
+        ],
+        "byte_sha256": [
+          "24d5f43ea065442496e7cefc4095253e762d5d6086c718002c7905e1a6fb7507"
+        ]
+      }
+    },
+    {
+      "candidate_id": "9d6997b261974b32a50c",
+      "identities": {
+        "title": [
+          "File:Ex-libris Rachel Sassoon.jpg"
+        ],
+        "pageid": [
+          "122592154"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "de260214647fbd4dd7e0",
+      "identities": {
+        "title": [
+          "File:CollectorsLibraryExLibris.jpg"
+        ],
+        "pageid": [
+          "124651467"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "b3584e1cfab94900abcd",
+      "identities": {
+        "title": [
+          "File:Wolbrandt, Carl - DPLA - 6e24a5cedeb69457df50bb1d1058941e.jpg"
+        ],
+        "pageid": [
+          "124999774"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "17c17c85ae171ced8d5c",
+      "identities": {
+        "title": [
+          "File:Wolbrandt, Caecelie - DPLA - 4b2e3ca0768f96fc6004f32aa5668eea.jpg"
+        ],
+        "pageid": [
+          "124999800"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "a94e2550dee656bf8d57",
+      "identities": {
+        "title": [
+          "File:Shaftel, Norman, 1915-1998 - DPLA - 3bf5ec472069f6193fd06c029871e0e0.jpg"
+        ],
+        "pageid": [
+          "124999818"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "ac5a9ce3ec3c3b35a0a9",
+      "identities": {
+        "title": [
+          "File:Pellechet, M. (Marie), 1840-1900 - DPLA - 76cfef7148703e4452a7d18845b6a5f8.jpg"
+        ],
+        "pageid": [
+          "125000447"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "e4504c2a536c9f43cf85",
+      "identities": {
+        "title": [
+          "File:Landmann, Max - DPLA - 2922d0cca5631f0a4bb083f0459f611c.jpg"
+        ],
+        "pageid": [
+          "125000677"
+        ],
+        "original_sha1": [
+          "6d4171436108b8a8581b9b78f846a2b819e4e368"
+        ],
+        "byte_sha256": [
+          "5acdce807ce7a2a0e8db78a19cb9641d3c0ece340c957b64da7b9b61b8cbe3b4"
+        ]
+      }
+    },
+    {
+      "candidate_id": "74860935758bb6756a7a",
+      "identities": {
+        "title": [
+          "File:Anderle, Franc - DPLA - 356e64f4fe658229206f06ab444100e3.jpg"
+        ],
+        "pageid": [
+          "125001101"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "d3d6549cd75d1a81bb2c",
+      "identities": {
+        "title": [
+          "File:Keber, John B. - DPLA - 2a63f5a546d0f454c4864a129ef2dda0.jpg"
+        ],
+        "pageid": [
+          "125001677"
+        ],
+        "original_sha1": [
+          "1343ca94366fb52c6d603b6b13c2259bc136bc41"
+        ],
+        "byte_sha256": [
+          "e4032feb77b898a539f385155d9489ce3826c744f14d3a3c77015b7792c8bfa7"
+        ]
+      }
+    },
+    {
+      "candidate_id": "bbf3a94fcc32d513cacf",
+      "identities": {
+        "title": [
+          "File:Spottiswoode, William, 1825-1883 - DPLA - 1077d298b7c0192e7cdfa90bb55df481.jpg"
+        ],
+        "pageid": [
+          "125002651"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "adb31eeb52f2f7155b2b",
+      "identities": {
+        "title": [
+          "File:Steele, Robert, 1860-1944 - DPLA - 238200ddff801b8c499b5c5efc3ec3ae.jpg"
+        ],
+        "pageid": [
+          "125002869"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "b111a052f0b88b05c036",
+      "identities": {
+        "title": [
+          "File:Walter Rothschild Bookplate.jpg"
+        ],
+        "pageid": [
+          "125991337"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "2c7237c538d6cac22707",
+      "identities": {
+        "title": [
+          "File:Exlibris Friedrich Lessing.jpg"
+        ],
+        "pageid": [
+          "127625855"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "f05026fbb9f29c8e5732",
+      "identities": {
+        "title": [
+          "File:Sassoon bookplate.png"
+        ],
+        "pageid": [
+          "128808644"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "65c0a59e4d098328cc04",
+      "identities": {
+        "title": [
+          "File:Camusat de Riancey, Henry et Charles (ex-libris).jpg"
+        ],
+        "pageid": [
+          "137189416"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "0652a8ab2c64a2ac4a17",
+      "identities": {
+        "title": [
+          "File:Armorial Bookplate of Reginald Cholmondeley of Condover Hall (1826-1896).png"
+        ],
+        "pageid": [
+          "137498446"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "bf9ff0d588cb0cb239aa",
+      "identities": {
+        "title": [
+          "File:Das Schlesienbuch, ex-libris Hermann Goering, 2002.1771(2).jpg"
+        ],
+        "pageid": [
+          "137864723"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "8bbb1548cb79540413fa",
+      "identities": {
+        "title": [
+          "File:AMNH ex libris.png"
+        ],
+        "pageid": [
+          "139430839"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "99c6cb8ddfce457cb384",
+      "identities": {
+        "title": [
+          "File:Josef Váchal Ex libris Františka Procházky (SOkA Nymburk).jpg"
+        ],
+        "pageid": [
+          "139741787"
+        ],
+        "original_sha1": [
+          "7e60d3158dc80497e19227d0527844225fa679a9"
+        ],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "97ca660fddbc4965233f",
+      "identities": {
+        "title": [
+          "File:Exlibris-eduard-lorenz-meyer-s399.jpg"
+        ],
+        "pageid": [
+          "140639519"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "a3d740c77153438cda78",
+      "identities": {
+        "title": [
+          "File:Exlibris-hans-curschmann-kuenstler-joseph sattler-s427.jpg"
+        ],
+        "pageid": [
+          "140644404"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "f2f288ef83f5193b7c36",
+      "identities": {
+        "title": [
+          "File:Exlibris-friedrich-altmann-kuenstler-georg-barloesius-s435.jpg"
+        ],
+        "pageid": [
+          "140644406"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "ac244ecab539654af89f",
+      "identities": {
+        "title": [
+          "File:Exlibris-wolfgang-seidl-s152.jpg"
+        ],
+        "pageid": [
+          "140644472"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "5c3f71cd871d5b432496",
+      "identities": {
+        "title": [
+          "File:1838 Carl Friedrich Nägelsbach (Redaktion), Verlag von Riegel & Mießner Verhandlungen der ersten Versammlung deutscher Philologen und Schulmänner in Nürnberg 1838, S. 0b (Ausschnitt) Etikett König Ludwig I. von Bayern.jpg"
+        ],
+        "pageid": [
+          "141015305"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "3e3f5c292bed31dcd618",
+      "identities": {
+        "title": [
+          "File:Ex-libris do conde de Tovar, Lisboa, 1930 (c), Portugal. - Image 122118.jpg"
+        ],
+        "pageid": [
+          "141459773"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "8171956ade7bc5a2ad9f",
+      "identities": {
+        "title": [
+          "File:Harden-Hickey ex-libris.jpg"
+        ],
+        "pageid": [
+          "141970946"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "d12f1e1c18b153c81f10",
+      "identities": {
+        "title": [
+          "File:The Donald MacPherson collection bookplate Sydney Library.jpg"
+        ],
+        "pageid": [
+          "144640402"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "6ed48106d0c4ceae7148",
+      "identities": {
+        "title": [
+          "File:Ex libris - Lipótvárosi Társaskör.jpg"
+        ],
+        "pageid": [
+          "146010757"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "caf3bb879ed5943c92e0",
+      "identities": {
+        "title": [
+          "File:Ex libris van Liliana Tarozzi, RP-P-2017-2665.jpg"
+        ],
+        "pageid": [
+          "151399471"
+        ],
+        "original_sha1": [
+          "f520e54ce7a2f679150a76feb52e6033f443c88f"
+        ],
+        "byte_sha256": [
+          "47e250d5782b1eadc64f146748e15da6212d4368b0cce3de83945d02e1a4eb73"
+        ]
+      }
+    },
+    {
+      "candidate_id": "6e3647356bdc0ffbf23b",
+      "identities": {
+        "title": [
+          "File:Charles de Rham bookplate, by Charles de Rham (Getty 108ZG9).jpg"
+        ],
+        "pageid": [
+          "151907832"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "893c39537f675505f020",
+      "identities": {
+        "title": [
+          "File:Bookplate (exlibris) of John Carter Brown with \"GAUDEO\".jpg"
+        ],
+        "pageid": [
+          "152030775"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "346e3c80575d5fe7e952",
+      "identities": {
+        "title": [
+          "File:Exlibris Cramer-Klett.webp"
+        ],
+        "pageid": [
+          "152328542"
+        ],
+        "original_sha1": [
+          "6c7e42946890f3a67f3e7d0ae944a9854140483c"
+        ],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "01884ad0b36887a206e0",
+      "identities": {
+        "title": [
+          "File:Ex Libris van Karel van Hultem.jpg"
+        ],
+        "pageid": [
+          "153034173"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "479691f0c791ff824879",
+      "identities": {
+        "title": [
+          "File:Havlicek-tarot skyz.jpg"
+        ],
+        "pageid": [
+          "153230648"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "ad95f8738543782ab57a",
+      "identities": {
+        "title": [
+          "File:Charles Alexander John Piesse ex libris.tif"
+        ],
+        "pageid": [
+          "153264103"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "a26983a6f5a3b2688070",
+      "identities": {
+        "title": [
+          "File:Guide pratique pour l'emploi des surfaces orthochromatiques (titel op object), RP-F-2001-7-110 (cropped).jpg"
+        ],
+        "pageid": [
+          "154176430"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "d20570f3162e1ce9cc13",
+      "identities": {
+        "title": [
+          "File:Stema e Aladro Kastriotas.png"
+        ],
+        "pageid": [
+          "154675806"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "09d86bc4cd77f6115127",
+      "identities": {
+        "title": [
+          "File:William Fowler Hopson - 7ec499abea.jpg"
+        ],
+        "pageid": [
+          "156568530"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "196eb5dfbef265334562",
+      "identities": {
+        "title": [
+          "File:Bookplate of Leslie Leland Locke (cropped).png"
+        ],
+        "pageid": [
+          "157487138"
+        ],
+        "original_sha1": [
+          "eb764d61dbc479cfd054f73c7e09a1703e693066"
+        ],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "5cc68103eb6a010f8809",
+      "identities": {
+        "title": [
+          "File:Pierre Adamoli, ex-libris manuscrit,4.jpg"
+        ],
+        "pageid": [
+          "158043904"
+        ],
+        "original_sha1": [
+          "56458aa0e51ca582b7c6685457aa31637ce43ce3"
+        ],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "d7ef47b8026b0a289305",
+      "identities": {
+        "title": [
+          "File:Pierre Adamoli, ex-libris imprimé, 2.jpg"
+        ],
+        "pageid": [
+          "158043905"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "6a184207d845df958840",
+      "identities": {
+        "title": [
+          "File:Pierre Adamoli, Ex-libris 6.svg"
+        ],
+        "pageid": [
+          "158043911"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "0be83c946d2f032337fa",
+      "identities": {
+        "title": [
+          "File:Legislation romaine III IV J Ortolan M E Bonnier Instituts de l'empereur Justinien Paris 1875 E Plon 03.jpg"
+        ],
+        "pageid": [
+          "158837111"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "87ae9058bf9316747ebf",
+      "identities": {
+        "title": [
+          "File:Legislation romaine III IV J Ortolan M E Bonnier Instituts de l'empereur Justinien Paris 1875 E Plon 04.jpg"
+        ],
+        "pageid": [
+          "158837113"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "37d0bfcf3b2b2c787496",
+      "identities": {
+        "title": [
+          "File:The Tabard Inn Library bookplate & Governing Rules.png"
+        ],
+        "pageid": [
+          "159852966"
+        ],
+        "original_sha1": [
+          "dad8d140a80c5e9229c92a60243bc95e2076e771"
+        ],
+        "byte_sha256": [
+          "9ac0111b271c95e50efca94f0ade898cead474a997a9ff8c9d7fd5c3852cedae"
+        ]
+      }
+    },
+    {
+      "candidate_id": "af4c7483ad05cd4bceaa",
+      "identities": {
+        "title": [
+          "File:Ex libris (bookplate) of the Society of Belgian Collectors,1399359.jpg"
+        ],
+        "pageid": [
+          "161087742"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "7e85324c6b8dc92cda73",
+      "identities": {
+        "title": [
+          "File:Ex libris (bookplate) of James Willcox Alsop,1399390.jpg"
+        ],
+        "pageid": [
+          "161092145"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "dfc13b657c949a703f46",
+      "identities": {
+        "title": [
+          "File:Ex libris (bookplate) of J. Ringland Anderson,1399401.jpg"
+        ],
+        "pageid": [
+          "161092262"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "bfd25049df7f516960ff",
+      "identities": {
+        "title": [
+          "File:Ex libris (bookplate) of William Craibe Angus,1399429.jpg"
+        ],
+        "pageid": [
+          "161092498"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "a284e3667b143afb41c1",
+      "identities": {
+        "title": [
+          "File:Ex libris (bookplate) of William Arnott,1399453.jpg"
+        ],
+        "pageid": [
+          "161092782"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "27a9050b2a6ca0d47d4d",
+      "identities": {
+        "title": [
+          "File:Ex libris (bookplate) of William Arnott,1399454.jpg"
+        ],
+        "pageid": [
+          "161092789"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "5a186a4a2c88b55351fe",
+      "identities": {
+        "title": [
+          "File:Ex libris (bookplate) of William Arnott,1399455.jpg"
+        ],
+        "pageid": [
+          "161092796"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "2cdce73d770c2f4f273f",
+      "identities": {
+        "title": [
+          "File:Ex libris (bookplate) of William Arnott,1399456.jpg"
+        ],
+        "pageid": [
+          "161092801"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "7e27e33308015eca8c00",
+      "identities": {
+        "title": [
+          "File:Ex libris (bookplate) of The Australian Ex Libris Society,1399496.jpg"
+        ],
+        "pageid": [
+          "161093024"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "9d96a996dd42e1529391",
+      "identities": {
+        "title": [
+          "File:Ex libris (bookplate) of unknown,1399513.jpg"
+        ],
+        "pageid": [
+          "161093141"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "e28eb0c8cf7693908fee",
+      "identities": {
+        "title": [
+          "File:Ex libris (bookplate) of unknown,1399514.jpg"
+        ],
+        "pageid": [
+          "161093147"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "8bb7424e0c01ad11969e",
+      "identities": {
+        "title": [
+          "File:Ex libris (bookplate) of,1399518.jpg"
+        ],
+        "pageid": [
+          "161093172"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "4f7dd5570b878dc7c81f",
+      "identities": {
+        "title": [
+          "File:Ex libris (bookplate) of Sir William H. Bailey,1399547.jpg"
+        ],
+        "pageid": [
+          "161093322"
+        ],
+        "original_sha1": [
+          "115722a7ecbede2e06c6afd17319f28f7c408b29"
+        ],
+        "byte_sha256": [
+          "8e18024eb4b1944eb948795808fcf30776300c781a636580b20ea55f001ad9f2"
+        ]
+      }
+    },
+    {
+      "candidate_id": "a872a995597038559e0d",
+      "identities": {
+        "title": [
+          "File:Ex libris (bookplate) of Mary Townley Balfour,1399574.jpg"
+        ],
+        "pageid": [
+          "161093478"
+        ],
+        "original_sha1": [
+          "8c5c9f7de20029613b3f8489ab2257ef672ee7d0"
+        ],
+        "byte_sha256": [
+          "64aa01ad89e8660e6194208c5c2e3ae828cb0bfba3197bd13501d3bdbc13b830"
+        ]
+      }
+    },
+    {
+      "candidate_id": "0fdb4cdfee7b85523e90",
+      "identities": {
+        "title": [
+          "File:Ex libris (bookplate) of Garnet Agnew,1399650.jpg"
+        ],
+        "pageid": [
+          "161094034"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "7c2791554bbae7a978f3",
+      "identities": {
+        "title": [
+          "File:Ex libris (bookplate) of Garnet Agnew,1399651.jpg"
+        ],
+        "pageid": [
+          "161094041"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "6c4fc075f324254dcaf0",
+      "identities": {
+        "title": [
+          "File:Ex libris (bookplate) of Garnet Agnew,1399652.jpg"
+        ],
+        "pageid": [
+          "161094051"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "ec6dcf567ecd71d42a97",
+      "identities": {
+        "title": [
+          "File:Ex libris (bookplate) of Garnet Agnew,1399653.jpg"
+        ],
+        "pageid": [
+          "161094059"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "0e955be837643e9b4f41",
+      "identities": {
+        "title": [
+          "File:El sentido de la muerte Pablo Bourget biblioteca Gustavo Sandoval López 03.jpg"
+        ],
+        "pageid": [
+          "161242007"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "3d9bac13a5c4c1e08675",
+      "identities": {
+        "title": [
+          "File:Alternative design for the bookplate of James J. MacLehose - DPLA - c2a65587788c7e090df006c9241ee0bf.jpg"
+        ],
+        "pageid": [
+          "161256258"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "b50c9c69f70dc2b1a8f7",
+      "identities": {
+        "title": [
+          "File:C188a726 04.jpg"
+        ],
+        "pageid": [
+          "161392217"
+        ],
+        "original_sha1": [
+          "2fbcc48b48d21fbbc9269e685a5e3ecfdb65ff3c"
+        ],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "6d325eb42cee2dd68cee",
+      "identities": {
+        "title": [
+          "File:Carte tirée d'un jeu gravé par Virgil Solis - jeu de cartes, estampe - btv1b10510643m (1 of 2).jpg"
+        ],
+        "pageid": [
+          "161677147"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "58839a5207d570fcac2a",
+      "identities": {
+        "title": [
+          "File:Pellechet, Marie (1840-1900) - btv1b10487504b.jpg"
+        ],
+        "pageid": [
+          "161846544"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "6dbac1d1b64595737893",
+      "identities": {
+        "title": [
+          "File:Histoire de l'Inde depuis Tamerlank jusquà Orangzeb - peinture - par Manucci - btv1b55003367g (009 of 241).jpg"
+        ],
+        "pageid": [
+          "161930564"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "24f4002341b089b36778",
+      "identities": {
+        "title": [
+          "File:Dieses Buch gehoert Agnes Engehausen - btv1b10213232f.jpg"
+        ],
+        "pageid": [
+          "162636311"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "22747e07bdc6334425f2",
+      "identities": {
+        "title": [
+          "File:Ex-Libris de Annibal Velloso Rebello.jpg"
+        ],
+        "pageid": [
+          "163304033"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "07f6cf050e8ebe2139f8",
+      "identities": {
+        "title": [
+          "File:Ex-Libris de Felix Pacheco.jpg"
+        ],
+        "pageid": [
+          "163304035"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "b494f1ab5bafffab5068",
+      "identities": {
+        "title": [
+          "File:Ex-Libris de Santos Dumont.jpg"
+        ],
+        "pageid": [
+          "163304039"
+        ],
+        "original_sha1": [
+          "46913dd67e51efaecc6ba64dec5c1058085eb5a2"
+        ],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "ca00f92f98c671194291",
+      "identities": {
+        "title": [
+          "File:Ex-Libris de Ruy Martins Ferreira.jpg"
+        ],
+        "pageid": [
+          "163304040"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "075d5378ccbcdb444112",
+      "identities": {
+        "title": [
+          "File:Ex-Libris de M. L. de Oliveira Filho.jpg"
+        ],
+        "pageid": [
+          "163304042"
+        ],
+        "original_sha1": [
+          "eb27eb5f173e64eca2607afaf9201c68a064a873"
+        ],
+        "byte_sha256": [
+          "2d249ed333675773aa7c8a0c3afba3b7a00b3b3c47e439364f2ff142ca976ac7"
+        ]
+      }
+    },
+    {
+      "candidate_id": "735029be151cffa3c9dd",
+      "identities": {
+        "title": [
+          "File:Ex-Libris de José de Barros Martins.jpg"
+        ],
+        "pageid": [
+          "163304044"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "24c05fcc626657b8199a",
+      "identities": {
+        "title": [
+          "File:Ex-Libris de Alfredo de Sequeira Filho (cropped).jpg"
+        ],
+        "pageid": [
+          "163338318"
+        ],
+        "original_sha1": [
+          "6312f3e5784f01232d737925bb32b098d292de84"
+        ],
+        "byte_sha256": [
+          "269e4c590c0a2c45ecfba162e9673d5a9caeeddbf1ba1f518bb070c6544ba075"
+        ]
+      }
+    },
+    {
+      "candidate_id": "f79c4d01e6f816e69f34",
+      "identities": {
+        "title": [
+          "File:Ex-Libris de M. L. de Oliveira Filho (cropped).jpg"
+        ],
+        "pageid": [
+          "163338403"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "63876895d4a95384266e",
+      "identities": {
+        "title": [
+          "File:Ex-Libris de José de Barros Martins (cropped).jpg"
+        ],
+        "pageid": [
+          "163338427"
+        ],
+        "original_sha1": [
+          "6dbcac631915be3b334e4dca31794820b8ab1e17"
+        ],
+        "byte_sha256": [
+          "e1c47026a7f95fb5b133018439d56bc786244fbfe621bf9974fcfd0b5aa0e963"
+        ]
+      }
+    },
+    {
+      "candidate_id": "ed0c154a22961f772a7d",
+      "identities": {
+        "title": [
+          "File:C188a750 02.jpg"
+        ],
+        "pageid": [
+          "163394308"
+        ],
+        "original_sha1": [
+          "9eeecc6e4076ddf27cc21a08aa3f0c8fda4aef07"
+        ],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "4ad2f6f33255791e1ecc",
+      "identities": {
+        "title": [
+          "File:Acadiensis - Book-Plates No10.png"
+        ],
+        "pageid": [
+          "163536979"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "07088496cfc9bc552fbd",
+      "identities": {
+        "title": [
+          "File:Ex-libris voor Jan de Schuyter door Jos Ratinckx, asset X1kVKWHtOlbELZdTsmicUY0c.tif"
+        ],
+        "pageid": [
+          "168248835"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "e2837a4f7b1ec4be05b2",
+      "identities": {
+        "title": [
+          "File:Ex libris voor Fernand Donnet door Edward Pellens, asset D1tSYQhBAbQOQQRTIGxmmN4Y.jpg"
+        ],
+        "pageid": [
+          "168249034"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "012c9ad5424692627872",
+      "identities": {
+        "title": [
+          "File:Harmonia celeste de diversi eccellentissimi musici a IV. V. VI. et VIII. voci raccolta per Andrea Pevernage nella quale si contengono i più eccellenti madrigali che hoggidi si cantino. Novamente... - btv1b8449069z (002 of 431).jpg"
+        ],
+        "pageid": [
+          "168678481"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "a90dbd57246a7b3e239b",
+      "identities": {
+        "title": [
+          "File:CH-NB Archive Marc Gonthier GS-GONTHIER-A-3-a-144.tif"
+        ],
+        "pageid": [
+          "169955819"
+        ],
+        "original_sha1": [
+          "e59fbae567dfcd6721c5821921605e01ad192f8f"
+        ],
+        "byte_sha256": [
+          "ed4a13da6ed692ea56e9c1727031d90e0f3f334409840848f1b33d58cb31f0a2"
+        ]
+      }
+    },
+    {
+      "candidate_id": "85910ce9052a7d3614ca",
+      "identities": {
+        "title": [
+          "File:CH-NB Archive Marc Gonthier GS-GONTHIER-A-3-a-146.tif"
+        ],
+        "pageid": [
+          "169955906"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "29dbd82d0f9c8150fbde",
+      "identities": {
+        "title": [
+          "File:Table - de plusieurs petits Motets, et - Elevations - de M.rs Carissimi, de Lully, Robert, Danielis - Et Foggia - A 2. 3. et 4. Voix, et quelques unes avec des violons - Recüeillis - Par Philidor... - btv1b52518490n (002 of 836).jpg"
+        ],
+        "pageid": [
+          "171870943"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "c533e3341f13e759e33d",
+      "identities": {
+        "title": [
+          "File:Table - de plusieurs petits Motets, et - Elevations - de M.rs Carissimi, de Lully, Robert, Danielis - Et Foggia - A 2. 3. et 4. Voix, et quelques unes avec des violons - Recüeillis - Par Philidor... - btv1b52518490n (003 of 836).jpg"
+        ],
+        "pageid": [
+          "171870957"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "934ad2abc87af1878b2a",
+      "identities": {
+        "title": [
+          "File:Bookplate (Exlibris) \"The Trustees of the Public Library of the City of Boston 1852 -1878\" \"The Paul Sabatier Franciscan Collection\" - DPLA - (cropped).jpg"
+        ],
+        "pageid": [
+          "172242379"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "20ef9cde24df17e96761",
+      "identities": {
+        "title": [
+          "File:Bookplate (Exlibris) \"The Trustees of the Public Library of the City of Boston 1852 -1878\" \"The Paul Sabatier Franciscan Collection\" (cropped).jpg"
+        ],
+        "pageid": [
+          "172243117"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "d981efe23fc8e1ca55c0",
+      "identities": {
+        "title": [
+          "File:Ex libris - Georg Mader - R Schiestl - 1909.jpg"
+        ],
+        "pageid": [
+          "172727839"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "99dd26330e4649b206ee",
+      "identities": {
+        "title": [
+          "File:Karl Federlein.jpg"
+        ],
+        "pageid": [
+          "173709059"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "40608b9f2b9b9ad747ca",
+      "identities": {
+        "title": [
+          "File:Sophie Hauser Ex Libris für Rösli Weber 1916.jpg"
+        ],
+        "pageid": [
+          "174648111"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "895605094516dfbb005a",
+      "identities": {
+        "title": [
+          "File:C188b178 02.jpg"
+        ],
+        "pageid": [
+          "176012003"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "5776f85a9e1f437a27c1",
+      "identities": {
+        "title": [
+          "File:Bookplate with a wild man by Lina Burger.png"
+        ],
+        "pageid": [
+          "176696508"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "945aeb4d32cbf7673bd9",
+      "identities": {
+        "title": [
+          "File:Ex libris of Alphons Dürr Sr. by Lina Burger.jpg"
+        ],
+        "pageid": [
+          "176705562"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "c8cb9e91c413dd9f79d0",
+      "identities": {
+        "title": [
+          "File:Otto Lemcke Ex libris H M Tiedemann um 1920.jpg"
+        ],
+        "pageid": [
+          "177290144"
+        ],
+        "original_sha1": [
+          "31461a8a2c0d70a4fc8b18bed0c7f1234b14c9df"
+        ],
+        "byte_sha256": [
+          "b2c47d9006fd7b0675fbc4da33b041f378c60dfeabf659557234c73ef636e8b4"
+        ]
+      }
+    },
+    {
+      "candidate_id": "fa6f0dfe92301e1feaa7",
+      "identities": {
+        "title": [
+          "File:Bookplate (Ex Libris) of Sir William Crookes, D. Sc., F.R.S. - from the book, The Chemical Testing of Wines and Spirits, 1866 (page 2 crop).jpg"
+        ],
+        "pageid": [
+          "179298965"
+        ],
+        "original_sha1": [
+          "d88378dfc33e75572df3c40cf61c1a2c69c153ad"
+        ],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "b2420bde68c948101ad7",
+      "identities": {
+        "title": [
+          "File:El pianista virtuoso Schirmer's Library Charles-Louis Hanon ejercicios piano NY 1908 1911 1925 Enrique Munguía Gustavo Sandoval López 01.jpg"
+        ],
+        "pageid": [
+          "181185363"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "a3fd6d5f138d983cbfa8",
+      "identities": {
+        "title": [
+          "File:Francisco Villaespesa Aben-Humeya 1913 Sopena 04.jpg"
+        ],
+        "pageid": [
+          "182212425"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "be25729c794f55f61a5c",
+      "identities": {
+        "title": [
+          "File:Laurence Richardson Baily Bookplate.jpg"
+        ],
+        "pageid": [
+          "182425589"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "63b3c5847e5bc131ff6e",
+      "identities": {
+        "title": [
+          "File:Ex libris de Max-Marc Thomas.jpg"
+        ],
+        "pageid": [
+          "184558610"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "0711c0a804889f4627b4",
+      "identities": {
+        "title": [
+          "File:Exlibris de Joaquín V. González.png"
+        ],
+        "pageid": [
+          "186328500"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "0fdf44e1d59335dc7cdc",
+      "identities": {
+        "title": [
+          "File:19th century American Numismatic Society bookplate with logo (page 2 crop).jpg"
+        ],
+        "pageid": [
+          "186530820"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "591044ad40fef078adef",
+      "identities": {
+        "title": [
+          "File:Ex libris Kapuziner Bozen.jpg"
+        ],
+        "pageid": [
+          "186870827"
+        ],
+        "original_sha1": [
+          "703b13c29b61573476c72705138eda3fbb64187f"
+        ],
+        "byte_sha256": [
+          "c9321df58ffec2c37baae95848ec35afa99de66f16e59a614f856bedbb70da6e"
+        ]
+      }
+    },
+    {
+      "candidate_id": "7aefa7356cb000a5ddd6",
+      "identities": {
+        "title": [
+          "File:Exlibris XB 4831 UB Mannheim.jpg"
+        ],
+        "pageid": [
+          "188445141"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "e66874d0674f3e4c3de2",
+      "identities": {
+        "title": [
+          "File:Ex-Libris-Grafik-1938.jpg"
+        ],
+        "pageid": [
+          "191401934"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "ec4d6411847b537a25e3",
+      "identities": {
+        "title": [
+          "File:House of Harden Hickey.png"
+        ],
+        "pageid": [
+          "192119355"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "54bcef53de7f7e60e109",
+      "identities": {
+        "title": [
+          "File:Text Page-items pasted in front liner) ($12 receipt for purchase of atlas in 1883. Book plates from Calvin B (IA dr text-page-items-pasted-in-front-liner-12-receipt-for-purchase-of-atlas-7835002).jpg"
+        ],
+        "pageid": [
+          "194567470"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "f1bfb5e453b4cc37a530",
+      "identities": {
+        "title": [
+          "File:The larger North American mammals (IA cu31924022547198) (page 2 crop).jpg"
+        ],
+        "pageid": [
+          "194964196"
+        ],
+        "original_sha1": [
+          "e3198228fc22dc642248c4dfffccfbaae71cc1d6"
+        ],
+        "byte_sha256": [
+          "ea6f0ef2774c6bc0dd839de7b2551a7731a6af71febeb8f4c7a553c83f119837"
+        ]
+      }
+    },
+    {
+      "candidate_id": "5ab43b7d1f7f50c5baac",
+      "identities": {
+        "title": [
+          "File:Ediciones Mínimas - Ex libris.jpg"
+        ],
+        "pageid": [
+          "195787805"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "b6a2fea8922c81ae50e0",
+      "identities": {
+        "title": [
+          "File:Екслібрис Володимира Шпільчака роботи Петра Прокопіва, 2003.jpg"
+        ],
+        "pageid": [
+          "196303319"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "f0a0a7075f637c641c52",
+      "identities": {
+        "title": [
+          "File:Gal, Louis, ex-libris.jpg"
+        ],
+        "pageid": [
+          "196677655"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "ae7518274a18fdc4b7b1",
+      "identities": {
+        "title": [
+          "File:Ad Astra (adastrabeingsele00dantrich), 003.jpg"
+        ],
+        "pageid": [
+          "197029483"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "1b9b43e544cfcc5f7964",
+      "identities": {
+        "title": [
+          "File:Aubrey Beardsley - Walter Arensberg ex libris.jpg"
+        ],
+        "pageid": [
+          "197272139"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "e7d420f2df974731936a",
+      "identities": {
+        "title": [
+          "File:Ex Libris für Arthur Schnitzler von Emma Löwenstamm 01.jpg"
+        ],
+        "pageid": [
+          "198490284"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "f54f4f71e8f5816e1691",
+      "identities": {
+        "title": [
+          "File:Ex Libris für Arthur Schnitzler von Emma Löwenstamm 2.jpg"
+        ],
+        "pageid": [
+          "198490285"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "53f2751ab9d1674830d0",
+      "identities": {
+        "title": [
+          "File:Exlibris Elsa Köster A.v.Chlingensperg.jpg"
+        ],
+        "pageid": [
+          "199137393"
+        ],
+        "original_sha1": [
+          "5198461472b34575f0deb1673cccbf2f5586b930"
+        ],
+        "byte_sha256": [
+          "cde14f5bbcd38232df1b987f56176c5c66af3b6ad17b081b7e7552263e553517"
+        ]
+      }
+    },
+    {
+      "candidate_id": "ac2c0273f02f909831a1",
+      "identities": {
+        "title": [
+          "File:BML 06PRV001020007-Ex-libris imprimé aux armes de Joseph Nouvellet.jpg"
+        ],
+        "pageid": [
+          "201333646"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "eb0ecb4e7b2c383ba44d",
+      "identities": {
+        "title": [
+          "File:Oudenhoven - Beschryvinge der Stadt ende Meyerye van 's Hertogen-Bossche (1649) ex libris C. van Hulthem.png"
+        ],
+        "pageid": [
+          "201482819"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "f79e012d4bff3ef4c905",
+      "identities": {
+        "title": [
+          "File:BML 06PRV01000RsInc11151482-Ex-libris de Jean Agret.jpg"
+        ],
+        "pageid": [
+          "201730071"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "5b91c80a1917f942bea5",
+      "identities": {
+        "title": [
+          "File:Z knihovny AF.jpg"
+        ],
+        "pageid": [
+          "202238244"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    }
+  ],
+  "collisions_with_previous": [],
+  "included_overlaps": [],
+  "policy": "Retain otherwise eligible selections despite prior fixture reuse; exact overlaps are recorded, not automatic exclusions. Within-leaf repeats are handled by the separate ordered selection. Inventory-only matches are identified by inventory.json or candidates.jsonl locations and do not claim acquired reuse.",
+  "limitations": "Exact identities only; title matching is conservative and case-folded. Original SHA-1/page IDs are compared where locally available. No exact match does not establish distinct works, independent origins, or complete prior upstream coverage."
+}

@@ -1,0 +1,19 @@
+{
+  "utc": "2026-11-01T00:19:41.451772+00:00",
+  "key": "source-1600-ranks-0041-0050",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3AMarque+de+la+collection+Lucien+Wiener+%28+Lugt+4033+%29.jpg%7CFile%3ABookplate%2C+from-+Lingnan+University+Yearbook+1925+%28page+2+crop%29.jpg%7CFile%3A%22Field+Museum+of+Natural+History+Library+Chicago%22+bookplate+in+1832%2C+from-+Journal+of+the+Asiatic+Society+of+Bengal+%28IA+journalofasiatic731calc%29+%28page+2+crop%29.jpg%7CFile%3AEx+libris+%28bookplate%29+of+Mary+Townley+Balfour%2C1399574.jpg%7CFile%3AHnizdovsky+ExLibris+Ferencevych.jpg%7CFile%3AEx+libris+%28bookplate%29+of+Sir+William+H.+Bailey%2C1399547.jpg%7CFile%3ACesare+Ratta+-+Ex+libris+2.jpg%7CFile%3AStefan-Schlesinger-Boas-Kogel-ex-libris.tif%7CFile%3AExlibriBibStralsund.jpg%7CFile%3AJosef+V%C3%A1chal+Ex+libris+Franti%C5%A1ka+Proch%C3%A1zky+%28SOkA+Nymburk%29.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 48772,
+  "headers": {
+    "date": "Sun, 01 Nov 2026 00:19:41 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-g4h4h",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "9813d8ec-f48e-4b09-abcd-a46665a68b73"
+  },
+  "sha256": "2253ac774ceb4f5f0349eefcbd68e871826d9206e430b84e203b1067789e878f"
+}

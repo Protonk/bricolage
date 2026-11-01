@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T23:44:19.039385+00:00",
+  "key": "preview-480-ranks-0021-0030",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3ATeyjat-2014+biface+01.JPG%7CFile%3AFicron.jpg%7CFile%3AStadtmuseum+M%C3%BClheim-K%C3%A4rlich+-+Faustkeil+%282012-02-26+Sp%29.JPG%7CFile%3AHendidor+tipo+31.png%7CFile%3AFaustkeil+3+Poesing.jpg%7CFile%3ACMOC+Treasures+of+Ancient+China+exhibit+-+stone+scraper.jpg%7CFile%3AAcheulean+handaxe+found+in+southern+England+-+55465763081.jpg%7CFile%3AFranks+HouseDSCF7155.jpg%7CFile%3ABiface+amygdaloide.png%7CFile%3AHandaxe+1931-30-35+2.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=480&iiurlheight=480&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 48002,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 23:44:19 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-gdwdk",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "20f6f9c4-9855-46f3-ac9c-a580283e2fda"
+  },
+  "sha256": "1dabea75d6d0c1d96fe7a5d218fde7275ea67f9218c044fc845ab66d7b18c384"
+}

@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T23:44:27.027527+00:00",
+  "key": "preview-480-ranks-0041-0050",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3ABifacciale+del+paleolitico.JPG%7CFile%3AAcheuleanhandaxes.jpg%7CFile%3APaleolithic+handaxe%2C+340-300+thousand+years+old.jpg%7CFile%3AAcheulean+hand-axe+from+Egypt.+Found+on+a+hill+top+plateau%2C+1400+feet+above+sea+level%2C+9+miles+NNW+of+the+city+of+Naqada%2C+Egypt.+Paleolithic.+The+Petrie+Museum+of+Egyptian+Archaeology%2C+London.jpg%7CFile%3ABifaz+fracturado+del+yacimiento+de+Cantera+Vieja.jpg%7CFile%3ARAMM+-+Exeter+hand+axe.jpg%7CFile%3AOlduvai+handaxeDSCF6959.jpg%7CFile%3AMuseo+Arqueol%C3%B3gico+Nacional+-+1942-101-4-4723+-+Bifaz+del+Manzanares+02.jpg%7CFile%3AFranks+HouseDSCF7158.jpg%7CFile%3ABiface+ficron.png&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=480&iiurlheight=480&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 55300,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 23:44:27 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-spr86",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "ed6d4362-455a-4135-a2c2-5c678d246c74"
+  },
+  "sha256": "569a1c60b00b85ee9fb5d5d9a78e7f2a6a2df82cc055a36bf0f39ceaee8beff6"
+}

@@ -1,0 +1,10 @@
+{
+  "path": "previews/review-evidence/ranks-0030-0030.jpg",
+  "sha256": "464973350e715ba770616dcbf173ff1ff9b18c29988cfbe13bf8f2fd95316c94",
+  "candidate_ids": [
+    "9eea0b8b8aafa4a8ceb5"
+  ],
+  "preview_sha256": {
+    "9eea0b8b8aafa4a8ceb5": "b221765913c63b891cadb6166855759971ce26ce28e2bab73fe7a20098697819"
+  }
+}

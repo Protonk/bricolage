@@ -25,6 +25,9 @@ Fixtures/
       US-Army-SSI/
       Botanical-Illustrations/
       Evan-Amos-Uploads/
+      Rocks-in-Thin-Section/
+      Stone-Hand-Axes/
+      Ex-Libris/
 ```
 
 | Location | Role |
@@ -51,6 +54,12 @@ of 150 distinct works. It has 149 acquired inputs, one pending transfer, and
 136 frozen direct category members minus three exact supplied exclusions,
 all 133 other File identities are acquired and validated, with zero pending.
 Related views and formats remain included without sampling or deduplication.
+[Rocks in Thin Section](Heaps/Curatorial/Rocks-in-Thin-Section/README.md),
+[Stone Hand Axes](Heaps/Curatorial/Stone-Hand-Axes/README.md) and
+[Ex Libris](Heaps/Curatorial/Ex-Libris/README.md) each pool three direct category
+lists into one independent leaf. Fixed seeded ordering and recorded thumbnail
+scope, provenance and rights decisions determine their 50-image selections.
+Each leaf separates complete acquisition from earlier deferred selection cases.
 
 ## Working with the fixtures
 
@@ -89,6 +98,7 @@ tools; restore local media before running checks that need it.
 | `US-Army-SSI-handoff` (instruction package) | `Heaps/Curatorial/US-Army-SSI/provenance/supplied` |
 | `Botanical-Illustrations-handoff` (instruction package) | `Heaps/Curatorial/Botanical-Illustrations/provenance/supplied` |
 | `Evan-Amos-Uploads-handoff` (instruction package) | `Heaps/Curatorial/Evan-Amos-Uploads/provenance/supplied` |
+| `hazy_curatorial_three_50_handoff` (instruction package) | `provenance/supplied` in each of Rocks-in-Thin-Section, Stone-Hand-Axes and Ex-Libris under `Heaps/Curatorial` |
 
 Active commands and links use the current locations. Preserved supplied files,
 completed run records and existing ZIP snapshots retain their creation-time

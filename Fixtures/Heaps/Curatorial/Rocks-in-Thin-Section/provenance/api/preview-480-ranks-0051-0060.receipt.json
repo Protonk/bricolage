@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T23:44:07.561468+00:00",
+  "key": "preview-480-ranks-0051-0060",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3AOmphacit+retrograd+XPL.jpg%7CFile%3ASf%C3%A4ruliter+1.jpg%7CFile%3AThin+section+scan+crossed+polarizers+Siilinj%C3%A4rvi+R636-63.35.jpg%7CFile%3AKatzenbuckel+Odenwald+Nosean+LPL+1.jpg%7CFile%3AAmfibol-nokoly2.jpg%7CFile%3ADiorite+pmg+ss+2006.jpg%7CFile%3AMelanit+2+LPL.jpg%7CFile%3ATonalite+%28quartz+diorite%29+%28GeoDIL+number+-+2628%29.jpg%7CFile%3AThin+section+scan+crossed+polarizers+Siilinj%C3%A4rvi+R276-108.40.jpg%7CFile%3APlagioclase+Replacement.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=480&iiurlheight=480&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 51206,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 23:44:07 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-r5n67",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "227ac43c-43da-4d51-9095-ffcf0a106916"
+  },
+  "sha256": "7370fca827fd7115ba22fd0542907d741d4ac2c6e9a6c4cfafd1bbbf304743fb"
+}

@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T23:44:39.158771+00:00",
+  "key": "preview-480-ranks-0011-0020",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3AEx-Libris+de+M.+L.+de+Oliveira+Filho.jpg%7CFile%3AKarl+Hobrecker+Ex+libris+60.jpg%7CFile%3AOtto+Blankenstein+-+Ex+libris+Julius+Erxleben%2C+1903.jpg%7CFile%3AStudy+for+a+Book+Plate-+Leda+and+the+Swan+MET+DP819615.jpg%7CFile%3AM.+Griffith%2C+Book-plate-+1750+Wellcome+L0003727.jpg%7CFile%3AHolberg+Ex+libris+af+Lode.png%7CFile%3ATheodore+Roosevelt+bookplate.jpg%7CFile%3AEx-libris+21.jpg%7CFile%3AExlibris+japonitzant.jpg%7CFile%3AThe+Strand+Magazine+vol.+2%2C+no.+8%2C+pg.+120+-+Mr+Marks+Bookplate.png&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=480&iiurlheight=480&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 54226,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 23:44:39 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-p9dtx",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "7ac780c3-65a6-451e-8d3d-370bba1b1c49"
+  },
+  "sha256": "0c08d6215eb3d377e6cfc9a0139ce18742438f0f060c62589da147ae8f2a600d"
+}

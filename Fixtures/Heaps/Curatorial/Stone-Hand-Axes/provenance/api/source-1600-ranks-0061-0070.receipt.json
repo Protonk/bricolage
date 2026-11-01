@@ -1,0 +1,19 @@
+{
+  "utc": "2026-11-01T00:13:26.405377+00:00",
+  "key": "source-1600-ranks-0061-0070",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3AAubeville+stone+tool.jpg%7CFile%3ABiface+losangique.png%7CFile%3ABifaz+parcial+%28Madrid%29.png%7CFile%3ABifaz+micoquiense.jpg%7CFile%3ABifaz+parcial-El-Lombo.png%7CFile%3AProtobifaz-Guelmim-Es+Semara.jpg%7CFile%3AMuseo+della+preistoria+Luigi+Donini+abc11.jpg%7CFile%3AAcheulean+hand+axe%2C+c.+450%2C000+years+before+present%2C+stone+-+Canterbury+Museum+-+Christchurch%2C+NZ+-+DSC02244.jpg%7CFile%3ABifaz+lanceolado.jpg%7CFile%3AFranks+HouseDSCF7156.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=1600&iiurlheight=1600&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 49848,
+  "headers": {
+    "date": "Sun, 01 Nov 2026 00:13:26 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-phv9p",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "eaea77ef-e317-40c3-98b1-ed491fc739d0"
+  },
+  "sha256": "e175606b65f57c390e0db41d9bc1ebf87f1b3016f0f0d862e6dff0d5d052fac0"
+}

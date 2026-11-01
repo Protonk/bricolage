@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T23:44:11.510710+00:00",
+  "key": "preview-480-ranks-0001-0010",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3AObsidienne+biface+ethiopie.jpg%7CFile%3AFaustkeil+1+Poesing.jpg%7CFile%3AArtefatos+l%C3%ADticos+-+Europa+MN+01.jpg%7CFile%3AObjects+with+possible+aesthetic+or+symbolic+meaning%2C+Welcome+to+the+Neandertals%2C+Brno%2C+187921.jpg%7CFile%3AFaustkeil+von+Bad+Salzuflen+8.2016.jpg%7CFile%3ABifaz+%2821345446950%29.jpg%7CFile%3AFaustkeil+Nachbau%2C+2020+PD+a-5b.jpg%7CFile%3ABifaz+achelense+%2815931943729%29.jpg%7CFile%3ALinks+Faustkeil+von+Hundisburg%2C+rechts+Feuersteinklingenrest+von+Westeregeln.jpg%7CFile%3AHochfelden+Biface.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=480&iiurlheight=480&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 44718,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 23:44:11 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-586kx",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "b9977c64-7d78-484f-8e0c-24443c743395"
+  },
+  "sha256": "82aa41e181e6a92b361ae05826e56b8e96113a2438c3cf06339893858766f3ba"
+}

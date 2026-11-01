@@ -1,0 +1,7259 @@
+{
+  "status": "reported",
+  "inventories": [
+    {
+      "fixture": "Heaps/Curatorial/Botanical-Illustrations",
+      "inputs": 149,
+      "sources": 149,
+      "manifest_sha256": "0ff8e4fe91aa98f2143fa7c34203bd5e0e0a7978e0b7fa8cb0bd53ac0f54f713",
+      "source_catalog_sha256": "b7c8b9f9ea1c67b6dd8087cc8e808111f597786681a0453e06afe99e0047c4ce",
+      "import_map_sha256": "88afa1783e791694e0d4c0d02750135ea5da64755ea48decdf0cce89724da0d3",
+      "candidate_inventory_sha256": "842988542834155e6530f832a3bef1f711fd8cdaed4993c1073ebd2c54dbcbe0",
+      "candidate_inventory_entries": 709
+    },
+    {
+      "fixture": "Heaps/Curatorial/Evan-Amos-Uploads",
+      "inputs": 133,
+      "sources": 133,
+      "manifest_sha256": "f455ec4ed947c7fec4aa168b43afa303e562b7c8230b9d9cd7cd775d4fce81c9",
+      "source_catalog_sha256": "61956835809326dbd737dce01130d4c7043916613a2bf2c39fe20331a8b9676c",
+      "import_map_sha256": "9f9080857a07baa2f720f7ca80f26c60c073c71b7aa9609f8baf0564c583e9b6",
+      "candidate_inventory_sha256": "54e77f2a57e265860073a84dbc95a641dcb280ae2166a0f5be0ebe247f888dbe",
+      "candidate_inventory_entries": 136
+    },
+    {
+      "fixture": "Heaps/Curatorial/POTY/Arthropods",
+      "inputs": 43,
+      "sources": 43,
+      "manifest_sha256": "7ebd088010f0652629a6b37d79100f5a3eb1edc2a1bc62768509abc1357f0ef2",
+      "source_catalog_sha256": "98c59b36725496fd8c2e500ab9a93792bb668eae5683d0e740c1f2854c336066",
+      "import_map_sha256": "2ca055bb3871c8fdc2ddf7491180220cc6e9d3e87fda47f64d1bd1aa8d01c08b",
+      "candidate_inventory_sha256": "11e35b727ed653ec3a0320558a4d544338c72f541be6735710101b07496ed635",
+      "candidate_inventory_entries": 237
+    },
+    {
+      "fixture": "Heaps/Curatorial/POTY/Constructions-and-buildings",
+      "inputs": 50,
+      "sources": 50,
+      "manifest_sha256": "42523610eee11c7d6193b865a5edc86c6c2e0b7ffce999b1093c9e0f2f0284e9",
+      "source_catalog_sha256": "9c444e320aa0c8b390490e61c62f038a4d0fa84ba5108231fe29e0752bf30e1b",
+      "import_map_sha256": "079664a38267cdb88fbd0fbd134208103fc303c8b446f423d29d9a2a4c11490e",
+      "candidate_inventory_sha256": "9e5809b924822ca684dbd9e47ddc2fd402a7fdf0ed336cef8f776befa3d2e02b",
+      "candidate_inventory_entries": 248
+    },
+    {
+      "fixture": "Heaps/Curatorial/POTY/People-and-human-activity",
+      "inputs": 50,
+      "sources": 50,
+      "manifest_sha256": "1db0e952023b49cd6d75c4d7822c776a13da9bf90305974b85451191cb7aa4fd",
+      "source_catalog_sha256": "8740bb5d5f12d32b7f79ed477ed8b55e2a8a4f0d675d2c0284aad5bfbb782623",
+      "import_map_sha256": "d51fa6062db2c5a967450c0cbb9015ed6d1ca72f95d1f5139c2cf905628cf354",
+      "candidate_inventory_sha256": "91808b71ee2250a10261997c69ee3bba61783ccb4f9365e085aca666062da5d6",
+      "candidate_inventory_entries": 238
+    },
+    {
+      "fixture": "Heaps/Curatorial/US-Army-SSI",
+      "inputs": 150,
+      "sources": 150,
+      "manifest_sha256": "515abd34be4ee7405678d771c477c8a6c72caa04d01671090533ddaacda934e6",
+      "source_catalog_sha256": "86d6f09473ae2e1a4809da0752d1036367d8452b00d96a8da43b16a1e501d3f7",
+      "import_map_sha256": "984c7257fa5a71ac0d2bf24cd7cc8d73087529e72f5041eb8d3b290848f8aeff",
+      "candidate_inventory_sha256": "a5f417616b37ed33a64f3182fa296a8bc9ae8f7b64c876517445171fa84906e8",
+      "candidate_inventory_entries": 1641
+    },
+    {
+      "fixture": "Heaps/Similarity/BSP01",
+      "inputs": 68,
+      "sources": 68,
+      "manifest_sha256": "7eb43cbd99438215076cb09f618eb47c544ac4b4e63769a265739e818545a812",
+      "source_catalog_sha256": "2b286eb82c8a87fb0236e1fe49bd311596aa2616b18e68435f18d1c4085e2e93",
+      "import_map_sha256": "8348ceb7cac6a7e4ee9aebb1209bd94b2a90dfd4de3d40d2ffc88a6b4923fe1c"
+    },
+    {
+      "fixture": "Heaps/Similarity/CR01",
+      "inputs": 57,
+      "sources": 57,
+      "manifest_sha256": "df695b27cd27fa082088f5dc86cc553c158da00390aa908dfaf76a3b3448912f",
+      "source_catalog_sha256": "86ec9c1b5546563b2f805b98f9d5066996430596adb5d61b0b007232807649e7",
+      "import_map_sha256": "e44ed7336c6b64bcd48185d7c31556a0428b9a464291313363600b1fb17c5c71"
+    },
+    {
+      "fixture": "Heaps/Similarity/PS01",
+      "inputs": 58,
+      "sources": 58,
+      "manifest_sha256": "f87e09e932310784fce7096fa34e0addbcbfdf1dda0219232d2136011f6782d3",
+      "source_catalog_sha256": "3b04a4fe575b884b3bfea37a4b916743becf118a84fa4032db92b642db86052a",
+      "import_map_sha256": "bdde0a86669cba3d4b454409cca8e2495179b1371cd7849b7325f48e34317099"
+    },
+    {
+      "fixture": "Heaps/Similarity/RG01",
+      "inputs": 31,
+      "sources": 31,
+      "manifest_sha256": "8c11d19a70ae73c0a526ee05e7f9fb2c904ab39e977788395c201b94aa9d3a0c",
+      "source_catalog_sha256": "d843cce70abcce1c268226c02ebfef911663149408c0cdc3bfdb95ac1ee76c0d",
+      "import_map_sha256": "412af33192adbc940b992f2dac5541f423e66f7e0c5fcf0a669e7133e6eec5fa"
+    },
+    {
+      "fixture": "Heaps/Similarity/SF01",
+      "inputs": 48,
+      "sources": 48,
+      "manifest_sha256": "29b006215f26a49b6eb774bcfeb8d29e761fd31f224bcc278b4868acbe3ca026",
+      "source_catalog_sha256": "02d8ee2a441dd22cdf6f7a68607b2f294fefaece1612e168bbc6cf68562fb6c6",
+      "import_map_sha256": "7f1515d13fc81673216e33c78fd22d3b97a84064c03546207b4a0b750062f4a3"
+    },
+    {
+      "fixture": "Heaps/Similarity/TG01",
+      "inputs": 31,
+      "sources": 31,
+      "manifest_sha256": "d1c8c6361e8f7d25e6c68af8f87aac9c9b8b42f31688a9324f7ad6da53ec0365",
+      "source_catalog_sha256": "7f335bba606207fff3a3d3820cdd6a8acdb42d3fb1ef0256db5a868c83f9f83d",
+      "import_map_sha256": "14ba0d2f318745c63ef7e19454026cc7708601fd5e961b1a9e2476db810d51df"
+    },
+    {
+      "fixture": "Relationships/Derivatives",
+      "inputs": 183,
+      "sources": 15,
+      "manifest_sha256": "6141c7fde28f1e2809bb1ca4df207a1ebe0788db4daaf1f489e79421fb1c038d",
+      "source_catalog_sha256": "e43c7abfdefd193c19ea40c0e8436c6a377c91c6c6f1887550d074bfb5a4517c"
+    },
+    {
+      "fixture": "Relationships/Multiviews",
+      "inputs": 20,
+      "sources": 20,
+      "manifest_sha256": "2b77fb179dc6b3a2b537fa631f8fad528fdb2e44660a8f3e918e41a09fce5b63",
+      "source_catalog_sha256": "c123fc2c8a85f546f8aaa04a0aee85d056abf225ea1d5a0f0243fddf64e5e594"
+    },
+    {
+      "fixture": "Relationships/Variants",
+      "inputs": 42,
+      "sources": 6,
+      "manifest_sha256": "8d0fd98dd2e435661ef6d77b458050b131ed488b172204659023f080a85111df",
+      "source_catalog_sha256": "9ce08683d44dc925062232d7887629b3a5bfff1b50cabeda32a8e31b5074a67e",
+      "source_manifest_sha256": "aa50cfc091c9ff7027b8f7f81b03af8f4020240cfa52b9370c96a45cb8f71b80"
+    }
+  ],
+  "previous_inputs": 1113,
+  "previous_frozen_candidates": 3209,
+  "available_previous_identities": {
+    "title": 3517,
+    "pageid": 2922,
+    "original_sha1": 874,
+    "byte_sha256": 1101
+  },
+  "checked": [
+    {
+      "candidate_id": "c939370e52338920bc66",
+      "identities": {
+        "title": [
+          "File:Kimberlite ol macro.jpg"
+        ],
+        "pageid": [
+          "352707"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "e3ded68706010b26164c",
+      "identities": {
+        "title": [
+          "File:Amphibol.jpg"
+        ],
+        "pageid": [
+          "623116"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "d6f86154fa31d0afdcbb",
+      "identities": {
+        "title": [
+          "File:Biotite and muscovite.jpg"
+        ],
+        "pageid": [
+          "623122"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "16d121d0d12b7c7d5234",
+      "identities": {
+        "title": [
+          "File:Plagioclase twinning.jpg"
+        ],
+        "pageid": [
+          "623130"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "0ee1ae997d62c302f52d",
+      "identities": {
+        "title": [
+          "File:Microcline.jpg"
+        ],
+        "pageid": [
+          "623136"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "3e53d1ce174a9a748109",
+      "identities": {
+        "title": [
+          "File:Microcline1.jpg"
+        ],
+        "pageid": [
+          "623137"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "1c6838a62276da3a768a",
+      "identities": {
+        "title": [
+          "File:Muscovite1.jpg"
+        ],
+        "pageid": [
+          "623139"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "2adb2beb3dd3745fad19",
+      "identities": {
+        "title": [
+          "File:Mineral inclusion.jpg"
+        ],
+        "pageid": [
+          "623143"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "f34e1621dff9bd5ba136",
+      "identities": {
+        "title": [
+          "File:Minette 2 mm max.jpg"
+        ],
+        "pageid": [
+          "863728"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "bd9a494626da91ee91b1",
+      "identities": {
+        "title": [
+          "File:Sivrihisar blueschist1.jpg"
+        ],
+        "pageid": [
+          "1047052"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "f1928f121fa8432bd9c4",
+      "identities": {
+        "title": [
+          "File:Tuff shards.jpg"
+        ],
+        "pageid": [
+          "1149608"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "ea659b4b5391bc0d188a",
+      "identities": {
+        "title": [
+          "File:Tuff welded.jpg"
+        ],
+        "pageid": [
+          "1149622"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "253b679342bdb2cdf056",
+      "identities": {
+        "title": [
+          "File:Diorite2 pmg ss 2006.jpg"
+        ],
+        "pageid": [
+          "1399423"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "2dddcb72d7b2711d25ec",
+      "identities": {
+        "title": [
+          "File:Diorite pmg ss 2006.jpg"
+        ],
+        "pageid": [
+          "1399636"
+        ],
+        "original_sha1": [
+          "7a7cf4d1c20dac7c0d4c6ae1e09d577b91d76011"
+        ],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "d8aa21c691480b7e7f3c",
+      "identities": {
+        "title": [
+          "File:Gabbro pmg ss 2006.jpg"
+        ],
+        "pageid": [
+          "1399647"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "7bf74aca65a74beeda65",
+      "identities": {
+        "title": [
+          "File:Graniteporphyry pmg ss 2006.jpg"
+        ],
+        "pageid": [
+          "1399686"
+        ],
+        "original_sha1": [
+          "29334eb95a06a7c4dc708d8bc7d2cd359781e539"
+        ],
+        "byte_sha256": [
+          "96247afc8bc0d2cde72ec8d78f7e2e3c7a269e8c047c6c8eed7201a3d4ab8c25"
+        ]
+      }
+    },
+    {
+      "candidate_id": "8774e2836903ab01f7a8",
+      "identities": {
+        "title": [
+          "File:Granodiorite pmg ss 2006.jpg"
+        ],
+        "pageid": [
+          "1399696"
+        ],
+        "original_sha1": [
+          "bb70e457af81f5914bbbac4c046dc9a10e8774a9"
+        ],
+        "byte_sha256": [
+          "b7eb28d10c03c50ef5513f6d44205312db57673c9d86332fbbed494b711080a0"
+        ]
+      }
+    },
+    {
+      "candidate_id": "020f2ed795ebe0c5b8bb",
+      "identities": {
+        "title": [
+          "File:Rhyolite pmg ss 2006.jpg"
+        ],
+        "pageid": [
+          "1399717"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "fcdff6774e8a2c8f241a",
+      "identities": {
+        "title": [
+          "File:Biotite cordierite gneiss pmg ss pp 0,8 2007.jpg"
+        ],
+        "pageid": [
+          "1577152"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "0f951c22ba51df51073d",
+      "identities": {
+        "title": [
+          "File:Biotite cordierite gneiss pmg ss xp 0,8 2007.jpg"
+        ],
+        "pageid": [
+          "1577162"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "c462c78506d71d197713",
+      "identities": {
+        "title": [
+          "File:Glaucophane schist ss 0,5 xp 2007.jpg"
+        ],
+        "pageid": [
+          "1577171"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "e2b2e08319e7de86ace8",
+      "identities": {
+        "title": [
+          "File:Staurolite garnet schist 3mm pp 2007.jpg"
+        ],
+        "pageid": [
+          "1577183"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "75a7e56c7889b27d8ff3",
+      "identities": {
+        "title": [
+          "File:Staurolite garnet schist 3mm xp 2007.jpg"
+        ],
+        "pageid": [
+          "1577193"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "81a5f5429732c99a5c71",
+      "identities": {
+        "title": [
+          "File:Inclumed.gif"
+        ],
+        "pageid": [
+          "1654994"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "6eea4955c1466976c7cd",
+      "identities": {
+        "title": [
+          "File:Granodiorit.jpg"
+        ],
+        "pageid": [
+          "1742490"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "5bdc61fd31959bc4e401",
+      "identities": {
+        "title": [
+          "File:Granodiorit2.jpg"
+        ],
+        "pageid": [
+          "1742493"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "ae7505a2bc4817a4a1ff",
+      "identities": {
+        "title": [
+          "File:Lk 88 mikroklin.jpg"
+        ],
+        "pageid": [
+          "1751132"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "48c1e3a61030de846dbe",
+      "identities": {
+        "title": [
+          "File:Lk 88 mikroklin1.jpg"
+        ],
+        "pageid": [
+          "1751143"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "9b4167115f8960575853",
+      "identities": {
+        "title": [
+          "File:Lk 88 mikroklin2.jpg"
+        ],
+        "pageid": [
+          "1751146"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "704b9043749361c68b76",
+      "identities": {
+        "title": [
+          "File:Amfibol-nikol1.jpg"
+        ],
+        "pageid": [
+          "1766792"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "831dc6da1c56c3ddf75f",
+      "identities": {
+        "title": [
+          "File:Amfibol-nokoly1.jpg"
+        ],
+        "pageid": [
+          "1766802"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "4db56c611ff9d41121a0",
+      "identities": {
+        "title": [
+          "File:Amfibol-nokoly2.jpg"
+        ],
+        "pageid": [
+          "1766814"
+        ],
+        "original_sha1": [
+          "c589597c292cae05fc638c07b42a2ebaef7ef1a3"
+        ],
+        "byte_sha256": [
+          "382fb956f98a944156c3737d48d8d5d629c6020780436d839db9c4ade191e76e"
+        ]
+      }
+    },
+    {
+      "candidate_id": "36f41fb1a04d79de9c58",
+      "identities": {
+        "title": [
+          "File:Durbachit1.jpg"
+        ],
+        "pageid": [
+          "1766870"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "717bf3ad8f15a7ab7d4d",
+      "identities": {
+        "title": [
+          "File:Durbachit2.jpg"
+        ],
+        "pageid": [
+          "1766877"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "48109402ae617c6f88c2",
+      "identities": {
+        "title": [
+          "File:Durbachit3.jpg"
+        ],
+        "pageid": [
+          "1766893"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "0e18fa07e620f7f4266d",
+      "identities": {
+        "title": [
+          "File:Quartz-micro1.jpg"
+        ],
+        "pageid": [
+          "1766924"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "f21c668b16d595076289",
+      "identities": {
+        "title": [
+          "File:Quartz-micro2.jpg"
+        ],
+        "pageid": [
+          "1766925"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "162c88399b26da0ea448",
+      "identities": {
+        "title": [
+          "File:Plagioklas1.jpg"
+        ],
+        "pageid": [
+          "1766963"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "a388faf967751f168023",
+      "identities": {
+        "title": [
+          "File:Plagioklas2.jpg"
+        ],
+        "pageid": [
+          "1766964"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "10e020898053ed609767",
+      "identities": {
+        "title": [
+          "File:Titanit1.jpg"
+        ],
+        "pageid": [
+          "1766987"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "916f654c7909d5c2c3e8",
+      "identities": {
+        "title": [
+          "File:Titanit3.jpg"
+        ],
+        "pageid": [
+          "1766988"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "4d7ba72dabee42ef449d",
+      "identities": {
+        "title": [
+          "File:Titanit2.jpg"
+        ],
+        "pageid": [
+          "1766989"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "a3e996807fe22b09584f",
+      "identities": {
+        "title": [
+          "File:Gabro1b.jpg"
+        ],
+        "pageid": [
+          "1833587"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "b7015dc937e4f59116af",
+      "identities": {
+        "title": [
+          "File:Gabro2a.jpg"
+        ],
+        "pageid": [
+          "1833599"
+        ],
+        "original_sha1": [
+          "cbd581b725e861854083a74d134d61ee59e053e5"
+        ],
+        "byte_sha256": [
+          "30ae105aed7e171a4e561f04d99b671d3db7972aa5336651ec0fbfb3e6a41ceb"
+        ]
+      }
+    },
+    {
+      "candidate_id": "f1b2cd769e2edcdaab81",
+      "identities": {
+        "title": [
+          "File:Gabro3a.jpg"
+        ],
+        "pageid": [
+          "1833601"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "cbd35913ed3798328eed",
+      "identities": {
+        "title": [
+          "File:Gabro2b.jpg"
+        ],
+        "pageid": [
+          "1833614"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "e19ffbab322dd38d0c2a",
+      "identities": {
+        "title": [
+          "File:Gabro3b.jpg"
+        ],
+        "pageid": [
+          "1833615"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "ee4076830179df434c19",
+      "identities": {
+        "title": [
+          "File:Olivín1a.jpg"
+        ],
+        "pageid": [
+          "1833626"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "3ba3f895d53a0ad8cdc1",
+      "identities": {
+        "title": [
+          "File:Olivín1b.jpg"
+        ],
+        "pageid": [
+          "1833628"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "cef599489be0e11b6b66",
+      "identities": {
+        "title": [
+          "File:Trachyte-micro.jpg"
+        ],
+        "pageid": [
+          "1833649"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "4820008cd2db6eacb8f7",
+      "identities": {
+        "title": [
+          "File:Trachyte-micro-nicols.jpg"
+        ],
+        "pageid": [
+          "1833652"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "284e51a4971d85f6d2c6",
+      "identities": {
+        "title": [
+          "File:Chlorit1a.jpg"
+        ],
+        "pageid": [
+          "1833733"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "e4c3d59248b717b7d164",
+      "identities": {
+        "title": [
+          "File:Chlorit1b.jpg"
+        ],
+        "pageid": [
+          "1833736"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "79ed589431d6bb2cc671",
+      "identities": {
+        "title": [
+          "File:Muscovite23.jpg"
+        ],
+        "pageid": [
+          "1865269"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "02000151d8c0c3deef57",
+      "identities": {
+        "title": [
+          "File:Muscovite23b.jpg"
+        ],
+        "pageid": [
+          "1865282"
+        ],
+        "original_sha1": [
+          "8a07448c92126715748c975b1094e35b157f66b6"
+        ],
+        "byte_sha256": [
+          "865713d6e14fe3e5a99341b85af4346894afb969ee2e6a150eafdda2602a58a1"
+        ]
+      }
+    },
+    {
+      "candidate_id": "1f188231758c3d7b6f75",
+      "identities": {
+        "title": [
+          "File:Basalt-microscop.jpg"
+        ],
+        "pageid": [
+          "1865490"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "2b87fa78a5dbc0bb0e05",
+      "identities": {
+        "title": [
+          "File:Basalt-microscop-crossed polars.jpg"
+        ],
+        "pageid": [
+          "1865503"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "46910a6c081859816369",
+      "identities": {
+        "title": [
+          "File:Muscovite and Biotite1a.jpg"
+        ],
+        "pageid": [
+          "1904595"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "50cefe55693a05997e43",
+      "identities": {
+        "title": [
+          "File:Muscovite and Biotite2a.jpg"
+        ],
+        "pageid": [
+          "1904596"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "8d02b2492b50241873cf",
+      "identities": {
+        "title": [
+          "File:Muscovite and Biotite1b.jpg"
+        ],
+        "pageid": [
+          "1904603"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "104604df75dfdf84d8e4",
+      "identities": {
+        "title": [
+          "File:Muscovite and Biotite2b.jpg"
+        ],
+        "pageid": [
+          "1904604"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "d465f2a1ad6b8006131e",
+      "identities": {
+        "title": [
+          "File:Skarn.jpg"
+        ],
+        "pageid": [
+          "2094558"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "f729941598cf82871df4",
+      "identities": {
+        "title": [
+          "File:Skarn2.jpg"
+        ],
+        "pageid": [
+          "2094562"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "59138a7a073a67bd0c44",
+      "identities": {
+        "title": [
+          "File:Fylite-micro.jpg"
+        ],
+        "pageid": [
+          "2094581"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "711a20396e4eed26c380",
+      "identities": {
+        "title": [
+          "File:Fylite-macro.jpg"
+        ],
+        "pageid": [
+          "2094584"
+        ],
+        "original_sha1": [
+          "06fea4487891db35892ddee3996ce9c08140c791"
+        ],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "00ab99aa702cbfd93477",
+      "identities": {
+        "title": [
+          "File:Granulite-micro.jpg"
+        ],
+        "pageid": [
+          "2094602"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "bf8d09ec388b844f2e2b",
+      "identities": {
+        "title": [
+          "File:Amphibolite-micro.jpg"
+        ],
+        "pageid": [
+          "2094625"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "b98876309ce7ec11a019",
+      "identities": {
+        "title": [
+          "File:Amphibolite-micro2.jpg"
+        ],
+        "pageid": [
+          "2094627"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "ee5606828491fec6fea4",
+      "identities": {
+        "title": [
+          "File:Eclogite avec cristal de rutile.jpg"
+        ],
+        "pageid": [
+          "2212879"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "65668095a14ab961e924",
+      "identities": {
+        "title": [
+          "File:Quartz-zhaseni.gif"
+        ],
+        "pageid": [
+          "3065027"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "be39e9f3e087f820308d",
+      "identities": {
+        "title": [
+          "File:Tonalite nicol paralleli.jpg"
+        ],
+        "pageid": [
+          "3591021"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "283f18e6db9afc52bc40",
+      "identities": {
+        "title": [
+          "File:Tonalite nicol incrociati.gif"
+        ],
+        "pageid": [
+          "3591023"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "5a533fd123c0300aeca7",
+      "identities": {
+        "title": [
+          "File:Granodiorite nicol paralleli.jpg"
+        ],
+        "pageid": [
+          "3591029"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "1d9e7cd643c109af1bca",
+      "identities": {
+        "title": [
+          "File:Granodiorite nicol incrociati.gif"
+        ],
+        "pageid": [
+          "3591030"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "97a7d99eff6f95b2b31e",
+      "identities": {
+        "title": [
+          "File:Sienite nicol paralleli.jpg"
+        ],
+        "pageid": [
+          "3591050"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "9eea0b8b8aafa4a8ceb5",
+      "identities": {
+        "title": [
+          "File:Sienite nicol incrociati.gif"
+        ],
+        "pageid": [
+          "3591051"
+        ],
+        "original_sha1": [
+          "86a233cb41cd6e26c5bce9a215576e22af23c50e"
+        ],
+        "byte_sha256": [
+          "b221765913c63b891cadb6166855759971ce26ce28e2bab73fe7a20098697819"
+        ]
+      }
+    },
+    {
+      "candidate_id": "0938702c8766498ef991",
+      "identities": {
+        "title": [
+          "File:Monzonite nicol paralleli.jpg"
+        ],
+        "pageid": [
+          "3598700"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "a6748683d07845dbe457",
+      "identities": {
+        "title": [
+          "File:Monzonite nicol incrociati.gif"
+        ],
+        "pageid": [
+          "3598705"
+        ],
+        "original_sha1": [
+          "7ec2d928a9534ae0dfd18f85410f2f60dfebe3f7"
+        ],
+        "byte_sha256": [
+          "3399749cfbb0145ace5ba6f003c0ad08f63ac73570ff553c78d00afa4ed758fb"
+        ]
+      }
+    },
+    {
+      "candidate_id": "f377adae434087086a42",
+      "identities": {
+        "title": [
+          "File:Lherzolite nicol paralleli.jpg"
+        ],
+        "pageid": [
+          "3598739"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "59ab67d5ab5d0a40d559",
+      "identities": {
+        "title": [
+          "File:Lherzolite nicol incrociati.gif"
+        ],
+        "pageid": [
+          "3598742"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "703d736afb0ed5fb6a49",
+      "identities": {
+        "title": [
+          "File:Orneblendite nicol paralleli.jpg"
+        ],
+        "pageid": [
+          "3598759"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "f2a8e87e436eeea11620",
+      "identities": {
+        "title": [
+          "File:Orneblendite nicol incrociati.gif"
+        ],
+        "pageid": [
+          "3598761"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "82f913d98e6dce6ab7a6",
+      "identities": {
+        "title": [
+          "File:Basalto tholeitico nicol paralleli.jpg"
+        ],
+        "pageid": [
+          "3598796"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "16d4ea284c14c5798f2c",
+      "identities": {
+        "title": [
+          "File:Dacite nicol paralleli.jpg"
+        ],
+        "pageid": [
+          "3598821"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "b968518145ae52eb5203",
+      "identities": {
+        "title": [
+          "File:Granofiro nicol paralleli.jpg"
+        ],
+        "pageid": [
+          "3598845"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "c716e55aba8984980862",
+      "identities": {
+        "title": [
+          "File:Granofiro nicol incrociati.gif"
+        ],
+        "pageid": [
+          "3598851"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "2551654dffea1f1f0cb9",
+      "identities": {
+        "title": [
+          "File:Latite nicol parallei.jpg"
+        ],
+        "pageid": [
+          "3598903"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "7eb9510f76b6952dca73",
+      "identities": {
+        "title": [
+          "File:Latite nicol incrociati.gif"
+        ],
+        "pageid": [
+          "3598904"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "a92da1ca75768cf8fc6d",
+      "identities": {
+        "title": [
+          "File:Anorthosite-microsection.jpg"
+        ],
+        "pageid": [
+          "3656102"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "bd00744e50d1d8745a0a",
+      "identities": {
+        "title": [
+          "File:Eclogite nicol paralleli.jpg"
+        ],
+        "pageid": [
+          "4151065"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "56e28584a3d344955087",
+      "identities": {
+        "title": [
+          "File:Fillade nicol paralleli.gif"
+        ],
+        "pageid": [
+          "4159061"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "177a64b2151323df0dcc",
+      "identities": {
+        "title": [
+          "File:Fillade nicol incrociati.gif"
+        ],
+        "pageid": [
+          "4159073"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "b241efd4c161fb7e66c8",
+      "identities": {
+        "title": [
+          "File:Titanit P7113076.JPG"
+        ],
+        "pageid": [
+          "4423921"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "6e3770907fd8c7d87234",
+      "identities": {
+        "title": [
+          "File:Microcline P7113074.JPG"
+        ],
+        "pageid": [
+          "4423960"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "2a4b0b9a17e2722b0985",
+      "identities": {
+        "title": [
+          "File:Epidote P7113075.JPG"
+        ],
+        "pageid": [
+          "4423978"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "b1a593b5223f7b183808",
+      "identities": {
+        "title": [
+          "File:Sivrihisar blueschist2.jpg"
+        ],
+        "pageid": [
+          "5155655"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "0e2fd277ecd651876203",
+      "identities": {
+        "title": [
+          "File:Sivrihisar blueschist3.jpg"
+        ],
+        "pageid": [
+          "5155665"
+        ],
+        "original_sha1": [
+          "926bbb671a1b812573f8d5f5df5bc06beecc8e5a"
+        ],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "35c8dd679bf836fc5334",
+      "identities": {
+        "title": [
+          "File:Dünnschliff e. bořický 1876.jpg"
+        ],
+        "pageid": [
+          "6068948"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "8574d60e84c0c007e36d",
+      "identities": {
+        "title": [
+          "File:Suvasvesi shocked quartz.jpg"
+        ],
+        "pageid": [
+          "7425503"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "093bf5999217b5291072",
+      "identities": {
+        "title": [
+          "File:Sainte Dorothee XP.jpg"
+        ],
+        "pageid": [
+          "7486128"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "9a132752a8d282726d60",
+      "identities": {
+        "title": [
+          "File:Plagioclase Replacement.jpg"
+        ],
+        "pageid": [
+          "7750354"
+        ],
+        "original_sha1": [
+          "1b5d9aa60977a0bfd4aa9c3aa6c53280e12e9d08"
+        ],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "279b1ed599f1f82a8a9e",
+      "identities": {
+        "title": [
+          "File:Wartlike myrmekite.gif"
+        ],
+        "pageid": [
+          "7777732"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "d0e103d035e9c36a8054",
+      "identities": {
+        "title": [
+          "File:Rim myrmekite.gif"
+        ],
+        "pageid": [
+          "7777868"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "35a1cfcddcf126387e1f",
+      "identities": {
+        "title": [
+          "File:Ghost myrmekite.gif"
+        ],
+        "pageid": [
+          "7777931"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "58e0a3a62082f20b4ae8",
+      "identities": {
+        "title": [
+          "File:Ca-myrmekite.gif"
+        ],
+        "pageid": [
+          "7781651"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "31f8d47d04dfbef5bbf2",
+      "identities": {
+        "title": [
+          "File:Myrmekite LyonMtn.gif"
+        ],
+        "pageid": [
+          "7797105"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "4083feeee56c4063b8a0",
+      "identities": {
+        "title": [
+          "File:Myrmekite Temecula.gif"
+        ],
+        "pageid": [
+          "7814526"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "59e252d0f0c9bab83dfb",
+      "identities": {
+        "title": [
+          "File:Myrmekite Cooma.gif"
+        ],
+        "pageid": [
+          "7849776"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "28a4f72dbc5b0d8105cd",
+      "identities": {
+        "title": [
+          "File:Myrmekit Wanup.jpg"
+        ],
+        "pageid": [
+          "7849882"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "7385ebafc7c3223d3050",
+      "identities": {
+        "title": [
+          "File:K-feldspar replacement.jpg"
+        ],
+        "pageid": [
+          "8054348"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "2f6aacb5c14bd3741ed4",
+      "identities": {
+        "title": [
+          "File:Hornblendite with apatite.jpg"
+        ],
+        "pageid": [
+          "9409351"
+        ],
+        "original_sha1": [
+          "59340af12b99246db3fd3f7e7babfbe4251bd4c8"
+        ],
+        "byte_sha256": [
+          "12dfd3fa13a5965854ad252cd90fdeba4443f9f397cb91672711739c47c10a1f"
+        ]
+      }
+    },
+    {
+      "candidate_id": "254b3b74d76728db9e3b",
+      "identities": {
+        "title": [
+          "File:Amphibolites-hornblende.jpg"
+        ],
+        "pageid": [
+          "9409371"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "1cdaee063ed87b5d4bd7",
+      "identities": {
+        "title": [
+          "File:Bronzitite.jpg"
+        ],
+        "pageid": [
+          "9430781"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "e9c56cfcca09902e88f4",
+      "identities": {
+        "title": [
+          "File:Hyaloclastite in petrographic microscope.JPG"
+        ],
+        "pageid": [
+          "9774078"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "6e549cc101c3f1a853e5",
+      "identities": {
+        "title": [
+          "File:Garnet-mica-shist-ll-nicols 1.jpg"
+        ],
+        "pageid": [
+          "10102546"
+        ],
+        "original_sha1": [
+          "e5d86cd0b9e2630d5bd8c8b4c9fdc173045b03a4"
+        ],
+        "byte_sha256": [
+          "e919feb52df22220c7ca0d7bc6530e9018d9bee99ddcece164f21be96623055e"
+        ]
+      }
+    },
+    {
+      "candidate_id": "6d60a073041e11c928c9",
+      "identities": {
+        "title": [
+          "File:Bushveld gabbro.jpg"
+        ],
+        "pageid": [
+          "10260371"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "ff90e437d5c7c4c43814",
+      "identities": {
+        "title": [
+          "File:PSM V09 D451 Section of granite from cornwall.jpg"
+        ],
+        "pageid": [
+          "10889749"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "ee9a868f10b57f82417b",
+      "identities": {
+        "title": [
+          "File:PSM V09 D452 Orthoclase and plagioclase feldspar.jpg"
+        ],
+        "pageid": [
+          "10889760"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "aa1d93ff6ef226f96b8d",
+      "identities": {
+        "title": [
+          "File:PSM V09 D453 Mica.jpg"
+        ],
+        "pageid": [
+          "10889765"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "3ba4b8c662b3b41dc3f9",
+      "identities": {
+        "title": [
+          "File:Myrmekit.jpg"
+        ],
+        "pageid": [
+          "11112433"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "bf2103b28dba075d7a1c",
+      "identities": {
+        "title": [
+          "File:Thin section image of quartzie.jpg"
+        ],
+        "pageid": [
+          "11503148"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "c77f1145a47a9ca40b72",
+      "identities": {
+        "title": [
+          "File:LvMS-Lvm.jpg"
+        ],
+        "pageid": [
+          "11861903"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "da640fb60fdb2733f877",
+      "identities": {
+        "title": [
+          "File:Palisades Sill Olivine Zone.jpg"
+        ],
+        "pageid": [
+          "12859488"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "53f806b3653780651ff2",
+      "identities": {
+        "title": [
+          "File:Icelandic Sand µCT.jpg"
+        ],
+        "pageid": [
+          "14606737"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "19c5f42639ceb08f37fa",
+      "identities": {
+        "title": [
+          "File:Icelandic Sand µCT.ogv"
+        ],
+        "pageid": [
+          "14606785"
+        ],
+        "original_sha1": [
+          "dddbb3938622763fe31c00600bd1007cf4fd389f"
+        ],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "e9c72000f021e6495583",
+      "identities": {
+        "title": [
+          "File:LvMS-Lvg.jpg"
+        ],
+        "pageid": [
+          "14712017"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "98a275ecf1e08d0bf8f5",
+      "identities": {
+        "title": [
+          "File:LvMS-Lvl&Lvsm.jpg"
+        ],
+        "pageid": [
+          "14712039"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "d7250a7fdd0d44311c12",
+      "identities": {
+        "title": [
+          "File:LvMS-Lvv.jpg"
+        ],
+        "pageid": [
+          "14712067"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "ba081c2c077de25f8d01",
+      "identities": {
+        "title": [
+          "File:Pigeonite, Albite-Anorthite Series, Augite-358246.jpg"
+        ],
+        "pageid": [
+          "15520832"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "aef3815879cf42da8ed8",
+      "identities": {
+        "title": [
+          "File:S. Apps. Quartzite.jpg"
+        ],
+        "pageid": [
+          "17053350"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "38db7bad272266cafeee",
+      "identities": {
+        "title": [
+          "File:Quartzite bulging recrystallization.jpg"
+        ],
+        "pageid": [
+          "17064107"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "7ac156d76dab1fa947ad",
+      "identities": {
+        "title": [
+          "File:Pabbar Valley SGR.jpg"
+        ],
+        "pageid": [
+          "17065366"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "fed6ac53534cffd3e2e0",
+      "identities": {
+        "title": [
+          "File:Pabbar Valley GBM.jpg"
+        ],
+        "pageid": [
+          "17065560"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "2caa4760b1a6339edc4f",
+      "identities": {
+        "title": [
+          "File:S. Apps Quartzite.jpg"
+        ],
+        "pageid": [
+          "17306063"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "bb59825927e7f4204fc2",
+      "identities": {
+        "title": [
+          "File:Bulging Recrystallized Quartzite.jpg"
+        ],
+        "pageid": [
+          "17306104"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "a58cc672f181239fb6cf",
+      "identities": {
+        "title": [
+          "File:Pabbar GBM Scale Bar.jpg"
+        ],
+        "pageid": [
+          "17306235"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "c26680249c5fbcd74861",
+      "identities": {
+        "title": [
+          "File:Pabbar SGR.jpg"
+        ],
+        "pageid": [
+          "17306271"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "5288baae4445eda1e0d8",
+      "identities": {
+        "title": [
+          "File:Porosity thin section GP.jpg"
+        ],
+        "pageid": [
+          "17780757"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "58be03fb345c7912f836",
+      "identities": {
+        "title": [
+          "File:Peneroplid thin section PP.jpg"
+        ],
+        "pageid": [
+          "17780767"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "8b40372e53e1e32f0f4a",
+      "identities": {
+        "title": [
+          "File:Coral thin section PP.jpg"
+        ],
+        "pageid": [
+          "17780775"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "f4f71e9090585937c318",
+      "identities": {
+        "title": [
+          "File:Fleckengneis xpl.jpg"
+        ],
+        "pageid": [
+          "20591387"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "3cc65c359ca0477990cb",
+      "identities": {
+        "title": [
+          "File:Fleckengneis lpl.jpg"
+        ],
+        "pageid": [
+          "20591398"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "d692e825b02ef76eb0e6",
+      "identities": {
+        "title": [
+          "File:Astroblème-quartz-choqué.jpg"
+        ],
+        "pageid": [
+          "20626033"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "7c102fa6cad9708ec1f1",
+      "identities": {
+        "title": [
+          "File:Cuarzo de Choque de la Formación Peñalver (Cuba Occidental).jpg"
+        ],
+        "pageid": [
+          "22946603"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "cea5b15c1b058c04b02c",
+      "identities": {
+        "title": [
+          "File:Esferulas Silícias y Arcillosas (Formación Peñalver, Cuba Occidental).jpg"
+        ],
+        "pageid": [
+          "22946608"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "a7e20d3198321c19925d",
+      "identities": {
+        "title": [
+          "File:Cuarzo de Choque.jpg"
+        ],
+        "pageid": [
+          "22947071"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "41c6969d69a5b376093f",
+      "identities": {
+        "title": [
+          "File:Ultra thin section carbonate sigma clast 1.JPG"
+        ],
+        "pageid": [
+          "23248028"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "403b616d4d0e404208ad",
+      "identities": {
+        "title": [
+          "File:Ultra thin section carbonate sigma clast 2.JPG"
+        ],
+        "pageid": [
+          "23248029"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "b4052c6cabe66bdcdfc2",
+      "identities": {
+        "title": [
+          "File:Ultra thin section carbonate sigma clast 2b.JPG"
+        ],
+        "pageid": [
+          "23248030"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "1fa1f8165548f6117d45",
+      "identities": {
+        "title": [
+          "File:Ultra thin section carbonate sigma clast 3.JPG"
+        ],
+        "pageid": [
+          "23248031"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "de1cc1b974c3c264ee1f",
+      "identities": {
+        "title": [
+          "File:Idyngsyt BA.jpg"
+        ],
+        "pageid": [
+          "30510690"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "c98a74cd685080f08596",
+      "identities": {
+        "title": [
+          "File:Idyngsyt X.jpg"
+        ],
+        "pageid": [
+          "30510985"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "8787b2c585ed0a69e7fd",
+      "identities": {
+        "title": [
+          "File:Shock metamorphism at Bloody Creek crater.png"
+        ],
+        "pageid": [
+          "31115085"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "b71c169185dfdb1c4e72",
+      "identities": {
+        "title": [
+          "File:Geschockter Quarz Rochechouart.jpg"
+        ],
+        "pageid": [
+          "32201320"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "47d39c07a81958b1ad05",
+      "identities": {
+        "title": [
+          "File:Parasite130094-fig3 Cysts.tif"
+        ],
+        "pageid": [
+          "32403088"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "75c99ef17a053fbd2906",
+      "identities": {
+        "title": [
+          "File:Parasite130094-fig2 Cysts and laminated layer.tif"
+        ],
+        "pageid": [
+          "32403089"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "a92573a9658239bd9970",
+      "identities": {
+        "title": [
+          "File:Blue Pearl Granite (larvikite) Larvik Batholith Norway.jpg"
+        ],
+        "pageid": [
+          "34490100"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "a42cc80fe508e61a5bc2",
+      "identities": {
+        "title": [
+          "File:Dacite-ThinSection-USGS.jpg"
+        ],
+        "pageid": [
+          "34666994"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "5ec7b7d2b3e018f0532a",
+      "identities": {
+        "title": [
+          "File:Basalto tholeitico nicol incrociati.png"
+        ],
+        "pageid": [
+          "34907967"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "3658063b5b379d2da286",
+      "identities": {
+        "title": [
+          "File:CSIRO ScienceImage 1483 Olivine Adcumulate.jpg"
+        ],
+        "pageid": [
+          "35445818"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "c1a68282325d8ab1c78c",
+      "identities": {
+        "title": [
+          "File:CSIRO ScienceImage 1484 Komatiite Pyroxene Needles.jpg"
+        ],
+        "pageid": [
+          "35445832"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "a965183f30d3cc95f191",
+      "identities": {
+        "title": [
+          "File:Meyers b7 s0249a.jpg"
+        ],
+        "pageid": [
+          "35837891"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "989e41d7b762a2f34a6d",
+      "identities": {
+        "title": [
+          "File:CKM11b xpl 20x.tif"
+        ],
+        "pageid": [
+          "36120683"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "0b2e7baa7c921c408df1",
+      "identities": {
+        "title": [
+          "File:110113-2 ppl 20x.tif"
+        ],
+        "pageid": [
+          "36120684"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "62d9af1383428393dc3a",
+      "identities": {
+        "title": [
+          "File:W290 xpl 20x.tif"
+        ],
+        "pageid": [
+          "36120686"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "de21685b22045f4cb164",
+      "identities": {
+        "title": [
+          "File:Quartzite 200708-1 xpl 20x.tif"
+        ],
+        "pageid": [
+          "36120688"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "1aa3480afd0a09bd2cba",
+      "identities": {
+        "title": [
+          "File:110113-2 xpl-b.tif"
+        ],
+        "pageid": [
+          "36133772"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "326174dd219a84093919",
+      "identities": {
+        "title": [
+          "File:Dacite nicol incrociati.png"
+        ],
+        "pageid": [
+          "37174203"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "d007077f4abeb09f4b60",
+      "identities": {
+        "title": [
+          "File:Eclogite nicol incrociati.png"
+        ],
+        "pageid": [
+          "37709108"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "4cd3058c0a3076ad9e7d",
+      "identities": {
+        "title": [
+          "File:Neues Jahrbuch für Mineralogie, Geologie and Paläontologie (1895) (14591118639).jpg"
+        ],
+        "pageid": [
+          "42154279"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "e63707236e89c7604f9a",
+      "identities": {
+        "title": [
+          "File:Neues Jahrbuch für Mineralogie, Geologie and Paläontologie (1895) (14777439492).jpg"
+        ],
+        "pageid": [
+          "42154376"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "920b1692e6d952614893",
+      "identities": {
+        "title": [
+          "File:Bulletin of the Geological Society of America (1905) (20261880060).jpg"
+        ],
+        "pageid": [
+          "42358088"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "93b4e6f700e631dc4de4",
+      "identities": {
+        "title": [
+          "File:The geology of Ascutney Mountain, Vermont (1903) (14780739751).jpg"
+        ],
+        "pageid": [
+          "42607373"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "0acb91db9b5f57e3824e",
+      "identities": {
+        "title": [
+          "File:Brockhaus' Konversations-Lexikon (1892) (14594703858).jpg"
+        ],
+        "pageid": [
+          "43978083"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "e6840e2b36f0463b6afa",
+      "identities": {
+        "title": [
+          "File:Strone Fireworks.JPG"
+        ],
+        "pageid": [
+          "44914815"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "caeaa41183972017f875",
+      "identities": {
+        "title": [
+          "File:Green Actinolite.JPG"
+        ],
+        "pageid": [
+          "44914817"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "b52156b3211af23b89cb",
+      "identities": {
+        "title": [
+          "File:Calc-silicate marble.JPG"
+        ],
+        "pageid": [
+          "44914821"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "fddd4f6bf32ce4b99d77",
+      "identities": {
+        "title": [
+          "File:Blueschist.JPG"
+        ],
+        "pageid": [
+          "44914822"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "ccac18f834ed4d47f7fa",
+      "identities": {
+        "title": [
+          "File:Chlorite.JPG"
+        ],
+        "pageid": [
+          "44914823"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "8e77dfd7a969e9c76ff9",
+      "identities": {
+        "title": [
+          "File:Clinopyroxene.JPG"
+        ],
+        "pageid": [
+          "44914826"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "eef17f35866608c1b684",
+      "identities": {
+        "title": [
+          "File:Dunite.JPG"
+        ],
+        "pageid": [
+          "44914827"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "61eaec7562813075820b",
+      "identities": {
+        "title": [
+          "File:Elba island.JPG"
+        ],
+        "pageid": [
+          "44914828"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "2626a76fb073c8464b61",
+      "identities": {
+        "title": [
+          "File:Epidotes.JPG"
+        ],
+        "pageid": [
+          "44914829"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "7c404267dfc8ca4e138b",
+      "identities": {
+        "title": [
+          "File:Epidote explosion.JPG"
+        ],
+        "pageid": [
+          "44914830"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "8338ade538c47ef15160",
+      "identities": {
+        "title": [
+          "File:Furnace Slag.JPG"
+        ],
+        "pageid": [
+          "44914831"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "1c96fe9f51ed0b476bb2",
+      "identities": {
+        "title": [
+          "File:Fringes.JPG"
+        ],
+        "pageid": [
+          "44914832"
+        ],
+        "original_sha1": [
+          "5411320a63ffc8a0364c8d983c249d3abedd2a1e"
+        ],
+        "byte_sha256": [
+          "f78cacef1e87a5ff4bdcfde09010ff587fa1989176183a9c2e8e03db2ed2e3d8"
+        ]
+      }
+    },
+    {
+      "candidate_id": "afd658b33a51e59f6cd8",
+      "identities": {
+        "title": [
+          "File:Green and Blue.JPG"
+        ],
+        "pageid": [
+          "44914836"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "f777f38af4e59f3988ce",
+      "identities": {
+        "title": [
+          "File:Hametite.JPG"
+        ],
+        "pageid": [
+          "44914838"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "26f3571404b2d5ef46a1",
+      "identities": {
+        "title": [
+          "File:Stone Egg.JPG"
+        ],
+        "pageid": [
+          "44914840"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "d63badbd44694f1998fd",
+      "identities": {
+        "title": [
+          "File:Hyercinite.JPG"
+        ],
+        "pageid": [
+          "44914899"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "4854e997ea676bf664bd",
+      "identities": {
+        "title": [
+          "File:Stone Colors.JPG"
+        ],
+        "pageid": [
+          "44914900"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "61ca1ede838aa4eb0134",
+      "identities": {
+        "title": [
+          "File:Rainbow Amphibolite.JPG"
+        ],
+        "pageid": [
+          "44914902"
+        ],
+        "original_sha1": [
+          "6f487409e052bd837131ef88030d5ebcc77546b3"
+        ],
+        "byte_sha256": [
+          "27035d5e6877cac8e9a2c0ebdf99e25014dba9f2b5248753eb7d7c817d38c04f"
+        ]
+      }
+    },
+    {
+      "candidate_id": "713f9a0384f5b93a6c07",
+      "identities": {
+        "title": [
+          "File:Barite Tree.JPG"
+        ],
+        "pageid": [
+          "44914903"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "0d38c28cbbd037a49132",
+      "identities": {
+        "title": [
+          "File:MicroGalaxy.JPG"
+        ],
+        "pageid": [
+          "44914906"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "c74655cd8119e85b58fc",
+      "identities": {
+        "title": [
+          "File:Flow in a Stone River.JPG"
+        ],
+        "pageid": [
+          "44914907"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "50d453f64b456ee38923",
+      "identities": {
+        "title": [
+          "File:Eclogites.JPG"
+        ],
+        "pageid": [
+          "44914908"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "20e95afdc5ef93be9968",
+      "identities": {
+        "title": [
+          "File:Green Epidote.JPG"
+        ],
+        "pageid": [
+          "44914909"
+        ],
+        "original_sha1": [
+          "84cbffb8aa13bb9a655500fb2443e8115511def2"
+        ],
+        "byte_sha256": [
+          "55f34195e09e20cc6e63e0a8c13391cd2d4f855da93b7a434117cbbd4763bd6b"
+        ]
+      }
+    },
+    {
+      "candidate_id": "8834602b33f47e5f90d4",
+      "identities": {
+        "title": [
+          "File:Volcanic Glass.JPG"
+        ],
+        "pageid": [
+          "44914910"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "73c8105f2baa4b4277c9",
+      "identities": {
+        "title": [
+          "File:Giglio isnald.JPG"
+        ],
+        "pageid": [
+          "44914912"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "62307bd0f6eb6bf7a26b",
+      "identities": {
+        "title": [
+          "File:Blue Glaucophane.JPG"
+        ],
+        "pageid": [
+          "44914914"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "c8115461c73a8ff44721",
+      "identities": {
+        "title": [
+          "File:Haüyne crystal.JPG"
+        ],
+        "pageid": [
+          "44914917"
+        ],
+        "original_sha1": [
+          "0cd09a4430ba4a73fa3629a88d24d1d0cf2d0317"
+        ],
+        "byte_sha256": [
+          "a4adac21c4f5be3d904e3f89f22a8de384c9c25e23d817f320e81af929f97437"
+        ]
+      }
+    },
+    {
+      "candidate_id": "20f435d18fef2b76324b",
+      "identities": {
+        "title": [
+          "File:Quartz fragments.JPG"
+        ],
+        "pageid": [
+          "44914918"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "c52af0f29e2fe6943025",
+      "identities": {
+        "title": [
+          "File:Kinked biotite.JPG"
+        ],
+        "pageid": [
+          "44917220"
+        ],
+        "original_sha1": [
+          "b83a4536a1cd893906bfd12e00a959c724e09331"
+        ],
+        "byte_sha256": [
+          "de1953f003194cf56f6d139045df0f85893e260116ca289a92e24239fd9be170"
+        ]
+      }
+    },
+    {
+      "candidate_id": "e95001bffcfb50da862a",
+      "identities": {
+        "title": [
+          "File:Skeletal magnetite.JPG"
+        ],
+        "pageid": [
+          "44917221"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "6f3ed7f9199d8b9ad61c",
+      "identities": {
+        "title": [
+          "File:Skeletal olivine.JPG"
+        ],
+        "pageid": [
+          "44917222"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "0d12cdf4856e420d1dba",
+      "identities": {
+        "title": [
+          "File:Twinned Kyanite.JPG"
+        ],
+        "pageid": [
+          "44917223"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "8b8befdd4d6943ea9de5",
+      "identities": {
+        "title": [
+          "File:Gregorite.JPG"
+        ],
+        "pageid": [
+          "44917225"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "fb0b097c9ba742e6357e",
+      "identities": {
+        "title": [
+          "File:Cartwheel Leucite.JPG"
+        ],
+        "pageid": [
+          "44917226"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "541c2e078f4002ad709b",
+      "identities": {
+        "title": [
+          "File:Crystal waves.JPG"
+        ],
+        "pageid": [
+          "44917227"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "8c4b7b500ab865e064e4",
+      "identities": {
+        "title": [
+          "File:Stained marble.JPG"
+        ],
+        "pageid": [
+          "44917230"
+        ],
+        "original_sha1": [
+          "67c9ed62b4962b9b89676b4cc687611587c4023b"
+        ],
+        "byte_sha256": [
+          "cdb0f38fd582b0caa9e2d6714eeb6a170cab38febbc5119f6b4b516955e4d8b3"
+        ]
+      }
+    },
+    {
+      "candidate_id": "683ecda25489cde71fd2",
+      "identities": {
+        "title": [
+          "File:Crystal Lines.JPG"
+        ],
+        "pageid": [
+          "44917231"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "7750b220c314dfa1ba4c",
+      "identities": {
+        "title": [
+          "File:Tartan-Microcline.JPG"
+        ],
+        "pageid": [
+          "44917232"
+        ],
+        "original_sha1": [
+          "8dfa95b24e56921cf6c781e0070c513ace920854"
+        ],
+        "byte_sha256": [
+          "70e7e02c8a6ce17f72429fc04a5dde26e6f1d0b687ba75ebee5cfae53eb8ec6f"
+        ]
+      }
+    },
+    {
+      "candidate_id": "ae97ba1022b46d4e04f0",
+      "identities": {
+        "title": [
+          "File:Myrmekite.JPG"
+        ],
+        "pageid": [
+          "44917233"
+        ],
+        "original_sha1": [
+          "0f3d063342864a4a6a5319ce9cb6457661c6ee85"
+        ],
+        "byte_sha256": [
+          "0ccec9c41832ecc4ad72b55f80bfd029e17225c69ebc2ff0c4e59c760623c4c6"
+        ]
+      }
+    },
+    {
+      "candidate_id": "2d87e5a6d84cc803094d",
+      "identities": {
+        "title": [
+          "File:Muscovite crystals.JPG"
+        ],
+        "pageid": [
+          "44917234"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "87a48c629f14ff483eaa",
+      "identities": {
+        "title": [
+          "File:Peridotitic Mylonite.JPG"
+        ],
+        "pageid": [
+          "44917236"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "3dd3ab4d03417248bdc7",
+      "identities": {
+        "title": [
+          "File:Ductile Deformation.JPG"
+        ],
+        "pageid": [
+          "44917237"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "edf01b79e96867da083a",
+      "identities": {
+        "title": [
+          "File:Flow in Obsidian.JPG"
+        ],
+        "pageid": [
+          "44917238"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "cd600409021aff013539",
+      "identities": {
+        "title": [
+          "File:Pantelleritic ignimbrite.JPG"
+        ],
+        "pageid": [
+          "44917241"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "14e9ec32fe20bac95423",
+      "identities": {
+        "title": [
+          "File:Perthite(1).JPG"
+        ],
+        "pageid": [
+          "44917242"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "8db589c78db0eb24eff8",
+      "identities": {
+        "title": [
+          "File:Perthite.JPG"
+        ],
+        "pageid": [
+          "44917243"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "9b8c49167a3c81cc9ca6",
+      "identities": {
+        "title": [
+          "File:Pistacite Epidote.JPG"
+        ],
+        "pageid": [
+          "44917245"
+        ],
+        "original_sha1": [
+          "98e8133427042455d15d480e7150249b62657f3c"
+        ],
+        "byte_sha256": [
+          "d35fa7d432f44527c7600f4470851d59776f43d89e8838ffda5b4aed5ab8593a"
+        ]
+      }
+    },
+    {
+      "candidate_id": "f69b14aa7562c3b6a593",
+      "identities": {
+        "title": [
+          "File:Piemontite Epidote.JPG"
+        ],
+        "pageid": [
+          "44917246"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "1686def3de99c85a0193",
+      "identities": {
+        "title": [
+          "File:Faulted Plagiclase.JPG"
+        ],
+        "pageid": [
+          "44917247"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "92f3d8748d8989fa8071",
+      "identities": {
+        "title": [
+          "File:Pleocroic halo.JPG"
+        ],
+        "pageid": [
+          "44917248"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "a0e79b50f6f68de291ad",
+      "identities": {
+        "title": [
+          "File:Poikilitic augite.JPG"
+        ],
+        "pageid": [
+          "44917249"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "293c4a2b0e65cbb2c062",
+      "identities": {
+        "title": [
+          "File:Dark crown.JPG"
+        ],
+        "pageid": [
+          "44917251"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "740fe1b4c3cfffc00bb8",
+      "identities": {
+        "title": [
+          "File:Quartz flowers.JPG"
+        ],
+        "pageid": [
+          "44917252"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "658501d373ce87fedfc2",
+      "identities": {
+        "title": [
+          "File:Rhum complex.JPG"
+        ],
+        "pageid": [
+          "44917253"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "22dc7f309f95c4052551",
+      "identities": {
+        "title": [
+          "File:Sagenitic biotite.JPG"
+        ],
+        "pageid": [
+          "44917256"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "3cc60a3260fa71ac3034",
+      "identities": {
+        "title": [
+          "File:Serpentine veins.JPG"
+        ],
+        "pageid": [
+          "44917257"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "5debaf240bd2e1fffbe8",
+      "identities": {
+        "title": [
+          "File:Luxullianite rock.JPG"
+        ],
+        "pageid": [
+          "44917274"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "795975e1b71815149e34",
+      "identities": {
+        "title": [
+          "File:Orange like Orpiment.JPG"
+        ],
+        "pageid": [
+          "44917275"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "8cf34093e3d03a1a3f7b",
+      "identities": {
+        "title": [
+          "File:Fire-stone wave.JPG"
+        ],
+        "pageid": [
+          "44918061"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "18e760e142be80f8f8b8",
+      "identities": {
+        "title": [
+          "File:Serpentinite layers.JPG"
+        ],
+        "pageid": [
+          "44918062"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "00e98a02bc46fcab4005",
+      "identities": {
+        "title": [
+          "File:Lightning on a crystal egg.JPG"
+        ],
+        "pageid": [
+          "44918063"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "46ce406a90f0700f2292",
+      "identities": {
+        "title": [
+          "File:Yellow line.JPG"
+        ],
+        "pageid": [
+          "44918064"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "f20df6c9caec425079b1",
+      "identities": {
+        "title": [
+          "File:Serpentinized peridotite.JPG"
+        ],
+        "pageid": [
+          "44918065"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "c1d9c6fac7222d895ab4",
+      "identities": {
+        "title": [
+          "File:Naujaite.JPG"
+        ],
+        "pageid": [
+          "44918068"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "4ee460d007d488acecc9",
+      "identities": {
+        "title": [
+          "File:Sieve texture.JPG"
+        ],
+        "pageid": [
+          "44918069"
+        ],
+        "original_sha1": [
+          "2fc6478a8a48acebaf91a2331786c54f480f11ca"
+        ],
+        "byte_sha256": [
+          "75a5767f1d902201b37c619393890834c41fe5e4680cfd20e2175cf1c939848a"
+        ]
+      }
+    },
+    {
+      "candidate_id": "f0c9dfba01a8d27bf831",
+      "identities": {
+        "title": [
+          "File:Fibrolite.JPG"
+        ],
+        "pageid": [
+          "44918070"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "d4eb114b905b7ca36bff",
+      "identities": {
+        "title": [
+          "File:Stilpnomelane sheaves.JPG"
+        ],
+        "pageid": [
+          "44918074"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "0c403e8f3cf93530db62",
+      "identities": {
+        "title": [
+          "File:Tormaline.JPG"
+        ],
+        "pageid": [
+          "44918075"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "1f62fd99fb7e2182100a",
+      "identities": {
+        "title": [
+          "File:Trilobite cross-section.jpg"
+        ],
+        "pageid": [
+          "44918076"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "7f676fb868ea55b53546",
+      "identities": {
+        "title": [
+          "File:Twinn lamellae in calcite.JPG"
+        ],
+        "pageid": [
+          "44918077"
+        ],
+        "original_sha1": [
+          "b21722d8388e290ea77b79b11772520e55748650"
+        ],
+        "byte_sha256": [
+          "547f416e82a85995f8598ed67660d42caa8011e85eb92b632dff4254ca8a86bd"
+        ]
+      }
+    },
+    {
+      "candidate_id": "247d0319036599174b31",
+      "identities": {
+        "title": [
+          "File:Violet dot.JPG"
+        ],
+        "pageid": [
+          "44918078"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "a35c533b26aa2ca6fe76",
+      "identities": {
+        "title": [
+          "File:Wherlite.JPG"
+        ],
+        "pageid": [
+          "44918080"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "48d0a24004458ef31067",
+      "identities": {
+        "title": [
+          "File:Yoderite.JPG"
+        ],
+        "pageid": [
+          "44918083"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "c287e1de300e3e47bc74",
+      "identities": {
+        "title": [
+          "File:Twinned Staurolite.JPG"
+        ],
+        "pageid": [
+          "44918104"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "72d682d4ccb1b986193c",
+      "identities": {
+        "title": [
+          "File:Diagonal pyroxene.JPG"
+        ],
+        "pageid": [
+          "44918106"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "7607b5672d9c1a16acfb",
+      "identities": {
+        "title": [
+          "File:Titanium Lozenge.JPG"
+        ],
+        "pageid": [
+          "44918107"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "1361795ffe0b71a1961f",
+      "identities": {
+        "title": [
+          "File:One cannot conquer alone.jpg"
+        ],
+        "pageid": [
+          "45323975"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "2a1952c05a7392bac8f9",
+      "identities": {
+        "title": [
+          "File:Igneous on microscope.JPG"
+        ],
+        "pageid": [
+          "45324988"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "4e79350c78baba9fe29c",
+      "identities": {
+        "title": [
+          "File:Tischendorffite.jpg"
+        ],
+        "pageid": [
+          "47391410"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "35517a43995112d2dbc7",
+      "identities": {
+        "title": [
+          "File:Photomicrograph granite PlateXVII Fig1 MD Geological Survey Volume 2.jpg"
+        ],
+        "pageid": [
+          "47553335"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "3fae1334931d6f67a179",
+      "identities": {
+        "title": [
+          "File:Photomicrograph granite PlateIX Fig2 MD Geological Survey Volume 2.jpg"
+        ],
+        "pageid": [
+          "47553561"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "aac99a8b1950575faf7e",
+      "identities": {
+        "title": [
+          "File:Photomicrograph granite PlateIX Fig1 MD Geological Survey Volume 2.jpg"
+        ],
+        "pageid": [
+          "47554935"
+        ],
+        "original_sha1": [
+          "252903cbcdd306fb00afc61e9e319e0ae3ee48e3"
+        ],
+        "byte_sha256": [
+          "93b3e9f9172ec10811bbc55dce03bdd1b73f33f6e015130fa0d83b97a445a1ac"
+        ]
+      }
+    },
+    {
+      "candidate_id": "5be268355eab179f9ebf",
+      "identities": {
+        "title": [
+          "File:Photomicrograph gneiss PlateXVII Fig2 MD Geological Survey Volume 2.jpg"
+        ],
+        "pageid": [
+          "47556063"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "13f7551e0214a9da9ebc",
+      "identities": {
+        "title": [
+          "File:Art06-fig08 El Toro volcanic field.jpg"
+        ],
+        "pageid": [
+          "48450202"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "f64781bed18bbe3e157d",
+      "identities": {
+        "title": [
+          "File:South African Geology - Schwarz - 1912 Fig 10.png"
+        ],
+        "pageid": [
+          "48946803"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "014e881420eddbddf2de",
+      "identities": {
+        "title": [
+          "File:Gold thin section mcroscope.jpg"
+        ],
+        "pageid": [
+          "57939132"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "af4116250f571513fe6d",
+      "identities": {
+        "title": [
+          "File:Shagreenrot2.jpg"
+        ],
+        "pageid": [
+          "62426080"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "4aad0f30f03df82b7b91",
+      "identities": {
+        "title": [
+          "File:Shagreencompare.jpg"
+        ],
+        "pageid": [
+          "62426082"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "e6e18e8b34d9f9712921",
+      "identities": {
+        "title": [
+          "File:Shagreenrot1.jpg"
+        ],
+        "pageid": [
+          "62426083"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "c7e61ad5cfb923aca088",
+      "identities": {
+        "title": [
+          "File:Fluoriterelief.jpg"
+        ],
+        "pageid": [
+          "62443230"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "169ec646cdaa6fa90267",
+      "identities": {
+        "title": [
+          "File:Grtrelief.jpg"
+        ],
+        "pageid": [
+          "62443231"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "aa73bb032cd6158f3abf",
+      "identities": {
+        "title": [
+          "File:Cassiterite crystal.jpg"
+        ],
+        "pageid": [
+          "64079737"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "22c62871e4956adad34e",
+      "identities": {
+        "title": [
+          "File:Lherzolite.jpg"
+        ],
+        "pageid": [
+          "64079762"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "054bfa4345d6f9103725",
+      "identities": {
+        "title": [
+          "File:Cordierite volcanic.jpg"
+        ],
+        "pageid": [
+          "64079806"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "50e251be95a1a92bf600",
+      "identities": {
+        "title": [
+          "File:Mica-fish.jpg"
+        ],
+        "pageid": [
+          "64079937"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "40a3523d11694e20c973",
+      "identities": {
+        "title": [
+          "File:Staurolite sardinia.jpg"
+        ],
+        "pageid": [
+          "64079955"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "48dbe8ee0300541feb28",
+      "identities": {
+        "title": [
+          "File:Aegirine siberia.jpg"
+        ],
+        "pageid": [
+          "64079975"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "a225f53a11961452f7e8",
+      "identities": {
+        "title": [
+          "File:Aegirine siberia1.jpg"
+        ],
+        "pageid": [
+          "64079986"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "dbf4b9e93ef569e9c692",
+      "identities": {
+        "title": [
+          "File:Vista de rocas al microscopio polarizante.jpg"
+        ],
+        "pageid": [
+          "64183220"
+        ],
+        "original_sha1": [
+          "104954cda17898ccb1d06339675d5f66a2b26fca"
+        ],
+        "byte_sha256": [
+          "a94a93ff6283c0c417ce8d703769226d7f3a06ce6e8c21fd991f109915024e20"
+        ]
+      }
+    },
+    {
+      "candidate_id": "f3b401324e0be3189f80",
+      "identities": {
+        "title": [
+          "File:Necking down.jpg"
+        ],
+        "pageid": [
+          "64436535"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "c93b6b2cd242b8cb6a58",
+      "identities": {
+        "title": [
+          "File:GAFA 2001-25-03-1 Calcite 100fach XPL.tif"
+        ],
+        "pageid": [
+          "64473818"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "5c1dc181b6ca79e222e0",
+      "identities": {
+        "title": [
+          "File:JohnStone.jpg"
+        ],
+        "pageid": [
+          "64480526"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "83bc3e33aebb48c16669",
+      "identities": {
+        "title": [
+          "File:Photomicrographs-of-zeolite-diagenesis-and-dissolved-zeolite-related-to-basalt-eruption-of-the-Paleogene-sandstone-reser.jpg"
+        ],
+        "pageid": [
+          "65452771"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "d1bb816cbdfa641d2a3d",
+      "identities": {
+        "title": [
+          "File:Wooden box with slices 2009.jpg"
+        ],
+        "pageid": [
+          "65869658"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "c2f039fc889b704f1119",
+      "identities": {
+        "title": [
+          "File:Thin Section of Biotite (test).jpg"
+        ],
+        "pageid": [
+          "66139384"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "f0005adb3d5237910657",
+      "identities": {
+        "title": [
+          "File:Microscopic image Pyroxene.jpg"
+        ],
+        "pageid": [
+          "66795689"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "3c2aeb6a6c895edaa116",
+      "identities": {
+        "title": [
+          "File:Hornblende and Plagioclase (polarized light).jpg"
+        ],
+        "pageid": [
+          "66796160"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "bcf5942240d8b253e204",
+      "identities": {
+        "title": [
+          "File:Hornblende and Plagioclase (normal light).jpg"
+        ],
+        "pageid": [
+          "66796161"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "55d1851dc01d0963e0cc",
+      "identities": {
+        "title": [
+          "File:Hornblende and Plagioclase (normal and polarized).jpg"
+        ],
+        "pageid": [
+          "66796475"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "49e18b005735fedd19e0",
+      "identities": {
+        "title": [
+          "File:Olivine in polarizing light.jpg"
+        ],
+        "pageid": [
+          "66796581"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "c3231d886edfaceff2ce",
+      "identities": {
+        "title": [
+          "File:Tessitura porfirica.jpg"
+        ],
+        "pageid": [
+          "68018074"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "e37b1d339a3eb566b20b",
+      "identities": {
+        "title": [
+          "File:ETH-BIB-Glimmer-Minette, St. Michaëlis bei Freiberg, Sachsen, Schliff HTZ 8-Dia 247-02314.tif"
+        ],
+        "pageid": [
+          "68536617"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "d568def9e810f8ae2b84",
+      "identities": {
+        "title": [
+          "File:ETH-BIB-Limburgit, Limburg, Kaiserstuhl-Geb., Schliff HTZ 19-Dia 247-02312.tif"
+        ],
+        "pageid": [
+          "68536619"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "5917d59fa61d9ef28874",
+      "identities": {
+        "title": [
+          "File:ETH-BIB-Diabas, Rügen (erratisch), Schliff HTZ 306-Dia 247-02316.tif"
+        ],
+        "pageid": [
+          "68536620"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "356705a27a795f474805",
+      "identities": {
+        "title": [
+          "File:ETH-BIB-Augit-Syenit, Groba -Gröba?- bei Riesa, Sachsen, Schliff HTZ 35-Dia 247-02322.tif"
+        ],
+        "pageid": [
+          "68536673"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "b07142de139d6655539a",
+      "identities": {
+        "title": [
+          "File:ETH-BIB-Leucitophyr, Rieden bei Lachersee, Schliff HTZ 240. Nic. II-Dia 247-02323.tif"
+        ],
+        "pageid": [
+          "68536681"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "843fea90fa454135450b",
+      "identities": {
+        "title": [
+          "File:ETH-BIB-Marmor, Andermatt-Dia 247-M-00016.tif"
+        ],
+        "pageid": [
+          "68591916"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "6deefa2170d9a7a94414",
+      "identities": {
+        "title": [
+          "File:ETH-BIB-Limburgit-Dia 247-M-00034.tif"
+        ],
+        "pageid": [
+          "68591958"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "cc7871f5a8a7c0932fae",
+      "identities": {
+        "title": [
+          "File:ETH-BIB-Vesuvlava, Cisterna-Dia 247-M-00035.tif"
+        ],
+        "pageid": [
+          "68591959"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "1a55b9acb6eb7e15d6b4",
+      "identities": {
+        "title": [
+          "File:ETH-BIB-Anden, Schliff 119-Dia 247-M-00045.tif"
+        ],
+        "pageid": [
+          "68592016"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "0b7b7b3b11ba4c9f650e",
+      "identities": {
+        "title": [
+          "File:ETH-BIB-Ciegos, Anden, Schliff 109-Dia 247-M-00042.tif"
+        ],
+        "pageid": [
+          "68592017"
+        ],
+        "original_sha1": [
+          "5fe49049520c3397648e6f03d6594c2ff5b806c9"
+        ],
+        "byte_sha256": [
+          "3fedc9505c06601b097d9e0cfd535a32209bd1609717295e0d61f316c79e422f"
+        ]
+      }
+    },
+    {
+      "candidate_id": "0c35a8963a05cff9fb97",
+      "identities": {
+        "title": [
+          "File:ETH-BIB-Chilen. Andesit Schliff-Dia 247-M-00046.tif"
+        ],
+        "pageid": [
+          "68592018"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "592635fbb12c388fb655",
+      "identities": {
+        "title": [
+          "File:ETH-BIB-Tingiririca-Porphyr, Chile, Rabones-Dia 247-M-00047.tif"
+        ],
+        "pageid": [
+          "68592039"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "86250ed2f1f43fc8d30b",
+      "identities": {
+        "title": [
+          "File:ETH-BIB-Säulen Carissale, Chile, Schliff 21-Dia 247-M-00048.tif"
+        ],
+        "pageid": [
+          "68592040"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "f4fb69bca0937b0e5e20",
+      "identities": {
+        "title": [
+          "File:ETH-BIB-Tronador, Anden, Schliff 1013-Dia 247-M-00050.tif"
+        ],
+        "pageid": [
+          "68592045"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "788fbc0506512425e99f",
+      "identities": {
+        "title": [
+          "File:ETH-BIB-Sta Lucia, Santiago, Chile-Dia 247-M-00049.tif"
+        ],
+        "pageid": [
+          "68592046"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "eb419607f6cf666a1aa7",
+      "identities": {
+        "title": [
+          "File:ETH-BIB-Marmor Carrara-Dia 247-M-00056.tif"
+        ],
+        "pageid": [
+          "68592047"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "206fbeeaf1ba70a2e827",
+      "identities": {
+        "title": [
+          "File:2. Обнажение израндита на горе Карандаш.jpg"
+        ],
+        "pageid": [
+          "73141669"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "9d1938288855b08c2db9",
+      "identities": {
+        "title": [
+          "File:Esempi di sezioni sottili.jpg"
+        ],
+        "pageid": [
+          "73293907"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "e40fe004db8c7cc8f6e9",
+      "identities": {
+        "title": [
+          "File:PotYC1 MTTI811.tif"
+        ],
+        "pageid": [
+          "74542627"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "34bc347a02b2e5fa021b",
+      "identities": {
+        "title": [
+          "File:Thin Section of Hillhouse Gabbro - geograph 5888115.jpg"
+        ],
+        "pageid": [
+          "77064229"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "3772885bae24060303df",
+      "identities": {
+        "title": [
+          "File:Thin Section of Biotite (test) (cropped to Biotite).jpg"
+        ],
+        "pageid": [
+          "77198689"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "13ead592fc7e9362a8c0",
+      "identities": {
+        "title": [
+          "File:Rock thin section andesite.jpg"
+        ],
+        "pageid": [
+          "77508220"
+        ],
+        "original_sha1": [
+          "0f400c9fae778c2983b6a31e44e3df6f89c93e09"
+        ],
+        "byte_sha256": [
+          "e3b07f47f008bf32c24332ad8dfb135a51758585e0583d428c234292009a09e1"
+        ]
+      }
+    },
+    {
+      "candidate_id": "258dfba6bec5ad66a109",
+      "identities": {
+        "title": [
+          "File:Photomicrograph of Orthogneiss.tif"
+        ],
+        "pageid": [
+          "77510700"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "79db3ccc6a7234ec1e8c",
+      "identities": {
+        "title": [
+          "File:Photomicrograph of rock thin section Gabbroic inclusion.jpg"
+        ],
+        "pageid": [
+          "77510754"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "73fb7ba73dcf969b3eae",
+      "identities": {
+        "title": [
+          "File:Thin Section of Jurassic Diabase, SC.jpg"
+        ],
+        "pageid": [
+          "77510761"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "aa0f04b9da0e6eba26ae",
+      "identities": {
+        "title": [
+          "File:Melilith.jpg"
+        ],
+        "pageid": [
+          "78317630"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "228076bbce7f87655769",
+      "identities": {
+        "title": [
+          "File:Ocellus.jpg"
+        ],
+        "pageid": [
+          "78606219"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "a9ec4d4e562328418d36",
+      "identities": {
+        "title": [
+          "File:Buchit LPL.jpg"
+        ],
+        "pageid": [
+          "78850641"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "d3c490ed7be4a3f32010",
+      "identities": {
+        "title": [
+          "File:Buchit XPL.jpg"
+        ],
+        "pageid": [
+          "78850796"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "6b6dc68ed2edde69246a",
+      "identities": {
+        "title": [
+          "File:Limburgit LPL.jpg"
+        ],
+        "pageid": [
+          "79211019"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "5c71801c068b63abc87e",
+      "identities": {
+        "title": [
+          "File:Limburgit XPL.jpg"
+        ],
+        "pageid": [
+          "79211051"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "f9e29f1821d401bdd3a3",
+      "identities": {
+        "title": [
+          "File:Opacit3 LPL.jpg"
+        ],
+        "pageid": [
+          "79654802"
+        ],
+        "original_sha1": [
+          "2098dae56ca82bdc9c5a419d189a3e4bbe660151"
+        ],
+        "byte_sha256": [
+          "d87554092745b8bb4675487980076b6dcecb7177f8ebd14aaa049b913a06e648"
+        ]
+      }
+    },
+    {
+      "candidate_id": "a93d6045d751c6791421",
+      "identities": {
+        "title": [
+          "File:Opacit3 XPL.jpg"
+        ],
+        "pageid": [
+          "79654842"
+        ],
+        "original_sha1": [
+          "8092b3e616782560d65c4986d1a8266233d02250"
+        ],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "4bda57b301e25ef10a6b",
+      "identities": {
+        "title": [
+          "File:Hornblenderelikt XPL.jpg"
+        ],
+        "pageid": [
+          "79654863"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "fcffbe80e604d4714280",
+      "identities": {
+        "title": [
+          "File:Iddingsit LPL.jpg"
+        ],
+        "pageid": [
+          "79742025"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "c2bbf43390bb9c0babb2",
+      "identities": {
+        "title": [
+          "File:Tridymit LPL.jpg"
+        ],
+        "pageid": [
+          "80115597"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "ed9253b22a7118de4ebb",
+      "identities": {
+        "title": [
+          "File:Tridymit XPL.jpg"
+        ],
+        "pageid": [
+          "80115900"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "03240d56662734d729e7",
+      "identities": {
+        "title": [
+          "File:Cataclasite Matrix in Thin Section.png"
+        ],
+        "pageid": [
+          "83693248"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "2cdd019e78d9398ad0bb",
+      "identities": {
+        "title": [
+          "File:Thin section microscopy Siilinjärvi 501M3 carbonate.jpg"
+        ],
+        "pageid": [
+          "83902554"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "e35dd4e542139dc69a32",
+      "identities": {
+        "title": [
+          "File:Thin section microscopy Siilinjärvi H2 mica-rutile.jpg"
+        ],
+        "pageid": [
+          "83902555"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "37ffe175852b8e195360",
+      "identities": {
+        "title": [
+          "File:Thin section microscopy Siilinjärvi 501M3 mica.jpg"
+        ],
+        "pageid": [
+          "83902556"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "b1de66419617208fcda1",
+      "identities": {
+        "title": [
+          "File:Thin section microscopy Siilinjärvi H10 phlogopite.jpg"
+        ],
+        "pageid": [
+          "83902557"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "3d0b60c30acd7e05c413",
+      "identities": {
+        "title": [
+          "File:Thin section microscopy Siilinjärvi R301 6170 apatite.jpg"
+        ],
+        "pageid": [
+          "83902558"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "a4a101245843dbb2ad6f",
+      "identities": {
+        "title": [
+          "File:Thin section scan crossed polarizers Siilinjärvi H10.jpg"
+        ],
+        "pageid": [
+          "83902559"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "f44d698255709936ed5c",
+      "identities": {
+        "title": [
+          "File:Thin section scan crossed polarizers Siilinjärvi R301-61.70.jpg"
+        ],
+        "pageid": [
+          "83902560"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "a2e59c8c9498b154fe39",
+      "identities": {
+        "title": [
+          "File:Thin section microscopy Siilinjärvi R616 1820 apatite.jpg"
+        ],
+        "pageid": [
+          "83902561"
+        ],
+        "original_sha1": [
+          "a111e03bb292959dde0517d9ad60303cdf0536c6"
+        ],
+        "byte_sha256": [
+          "cebb0428b8f6f422a66b2f92a7c72fabf3dbf1a7c6ca6b502020f640fd3e14dc"
+        ]
+      }
+    },
+    {
+      "candidate_id": "65c409013c312606f684",
+      "identities": {
+        "title": [
+          "File:Thin section microscopy Siilinjärvi R625 14540 mica.jpg"
+        ],
+        "pageid": [
+          "83902562"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "afc7f84f35fb104512bf",
+      "identities": {
+        "title": [
+          "File:Thin section microscopy Siilinjärvi R625 15325 braided mica.jpg"
+        ],
+        "pageid": [
+          "83902563"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "8d2bdb2a7b74acd059b0",
+      "identities": {
+        "title": [
+          "File:Thin section microscopy Siilinjärvi R625 47.40 amphiboles.jpg"
+        ],
+        "pageid": [
+          "83902564"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "85f436a33ff91c139a98",
+      "identities": {
+        "title": [
+          "File:Thin section scan crossed polarizers Siilinjärvi R625-110.80.jpg"
+        ],
+        "pageid": [
+          "83902565"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "f76ce07a9fa08338b0d8",
+      "identities": {
+        "title": [
+          "File:Thin section microscopy Siilinjärvi R636 6335 amphibole.jpg"
+        ],
+        "pageid": [
+          "83902567"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "0dcfda7d3c55af37f1c3",
+      "identities": {
+        "title": [
+          "File:Thin section scan crossed polarizers Siilinjärvi R625-122.05.jpg"
+        ],
+        "pageid": [
+          "83902568"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "2a1882d2661e9c4d60e5",
+      "identities": {
+        "title": [
+          "File:Thin section scan crossed polarizers Siilinjärvi R636-42.60.jpg"
+        ],
+        "pageid": [
+          "83902569"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "0fd0803773268ab121b4",
+      "identities": {
+        "title": [
+          "File:Thin section scan crossed polarizers Siilinjärvi R636-63.35.jpg"
+        ],
+        "pageid": [
+          "83902570"
+        ],
+        "original_sha1": [
+          "7e77410ac2e59bbd0648d028b830dfbef128a4da"
+        ],
+        "byte_sha256": [
+          "07ef67d22bbc6167fb607bea83fad14f5ca9ea70e3985cbc336b154da4eaca50"
+        ]
+      }
+    },
+    {
+      "candidate_id": "7257b01f6a94b6f93384",
+      "identities": {
+        "title": [
+          "File:Thin section scan crossed polarizers Siilinjärvi R636-105.90.jpg"
+        ],
+        "pageid": [
+          "83902571"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "dc47bc0015ba77fa6c7c",
+      "identities": {
+        "title": [
+          "File:Thin section scan crossed polarizers Siilinjärvi R636-116.75.jpg"
+        ],
+        "pageid": [
+          "83902572"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "15f934cb040483b0fc4f",
+      "identities": {
+        "title": [
+          "File:Thin section scan crossed polarizers Siilinjärvi R636-120.45.jpg"
+        ],
+        "pageid": [
+          "83902573"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "e60e8a04ed222fb1154b",
+      "identities": {
+        "title": [
+          "File:Thin section scan crossed polarizers Siilinjärvi R636-131.20.jpg"
+        ],
+        "pageid": [
+          "83902574"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "a8f01a762107fac5e18a",
+      "identities": {
+        "title": [
+          "File:Thin section scan crossed polarizers Siilinjärvi H16.jpg"
+        ],
+        "pageid": [
+          "83902576"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "1f2009e58a19877424b3",
+      "identities": {
+        "title": [
+          "File:Thin section microscopy Siilinjärvi R216 10840 carbonate.jpg"
+        ],
+        "pageid": [
+          "83902577"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "afae743000d29e5f2397",
+      "identities": {
+        "title": [
+          "File:Thin section scan crossed polarizers Siilinjärvi R276-108.40.jpg"
+        ],
+        "pageid": [
+          "83922239"
+        ],
+        "original_sha1": [
+          "9148fca90863241bad2eef9a4782e9c0db6a8a30"
+        ],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "44fb81a62840e36f71f2",
+      "identities": {
+        "title": [
+          "File:Thin section scan crossed polarizers Siilinjärvi 501-M3.jpg"
+        ],
+        "pageid": [
+          "83922240"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "bca27ec5de0b7b8265d8",
+      "identities": {
+        "title": [
+          "File:Thin section scan crossed polarizers Siilinjärvi H2.jpg"
+        ],
+        "pageid": [
+          "83922241"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "45200098eef566ef5e95",
+      "identities": {
+        "title": [
+          "File:Thin section scan crossed polarizers Siilinjärvi R616-78.20.jpg"
+        ],
+        "pageid": [
+          "83922244"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "638935a81b135a2e236d",
+      "identities": {
+        "title": [
+          "File:Thin section scan crossed polarizers Siilinjärvi R625-47.40.jpg"
+        ],
+        "pageid": [
+          "83922245"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "895adea58c1134668f62",
+      "identities": {
+        "title": [
+          "File:Thin section scan crossed polarizers Siilinjärvi R625-145.40.jpg"
+        ],
+        "pageid": [
+          "83922246"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "fe0c6358ee401c804e94",
+      "identities": {
+        "title": [
+          "File:Thin section scan crossed polarizers Siilinjärvi R625-153.25.jpg"
+        ],
+        "pageid": [
+          "83922248"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "a709ae0cf7c103f38413",
+      "identities": {
+        "title": [
+          "File:Thin section microscopy Siilinjärvi R636 116 etched.jpg"
+        ],
+        "pageid": [
+          "84022477"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "859f3c0aef810d471386",
+      "identities": {
+        "title": [
+          "File:Thin section microscopy Siilinjärvi 501M3 etched.jpg"
+        ],
+        "pageid": [
+          "84022478"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "325c0494d32385ac38ca",
+      "identities": {
+        "title": [
+          "File:Thin section scan crossed polarizers Siilinjärvi R636-136.45.jpg"
+        ],
+        "pageid": [
+          "84055119"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "88d4b61f8138b281040c",
+      "identities": {
+        "title": [
+          "File:Thin section scan crossed polarizers Siilinjärvi R636-105.90 edit.jpg"
+        ],
+        "pageid": [
+          "84109863"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "85132f0a0d093a7393b7",
+      "identities": {
+        "title": [
+          "File:Leucit LPL.jpg"
+        ],
+        "pageid": [
+          "86388172"
+        ],
+        "original_sha1": [
+          "f7f13d374991e35f2c18b9adaaf2cb247a0bd9c2"
+        ],
+        "byte_sha256": [
+          "c76716519b46ea79b030067c1dc27712e7b07da96027a5e852dda35ad6a29c0d"
+        ]
+      }
+    },
+    {
+      "candidate_id": "f3288e26026967dd6072",
+      "identities": {
+        "title": [
+          "File:Leucit XPL.jpg"
+        ],
+        "pageid": [
+          "86388244"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "6bfe674f8686c35441e6",
+      "identities": {
+        "title": [
+          "File:Eklogit-retrograd.jpg"
+        ],
+        "pageid": [
+          "86620818"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "a46da9867f1136d3579f",
+      "identities": {
+        "title": [
+          "File:2020-02-25-0001 micro granite porphyroide LNPA.jpg"
+        ],
+        "pageid": [
+          "87461223"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "704a9f7ae9e5407c9c96",
+      "identities": {
+        "title": [
+          "File:Leukoxen LPL.jpg"
+        ],
+        "pageid": [
+          "87625072"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "90e5db1ff17c58cac1f3",
+      "identities": {
+        "title": [
+          "File:Leukoxen XPL.jpg"
+        ],
+        "pageid": [
+          "87625110"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "6d8512effd64f0f86d7e",
+      "identities": {
+        "title": [
+          "File:Photomicrograph-of-blocky-anhedral-to-subhedral-quartz-crystals-of-the-quartz-coating-from-the-quartz-zone-Rusey-Fault-s.jpg"
+        ],
+        "pageid": [
+          "87645960"
+        ],
+        "original_sha1": [
+          "da17357444be7411fb5d8c3112ae1a470b2e1ab7"
+        ],
+        "byte_sha256": [
+          "e6a4c368abfd8eb163ecd0f9f4c6e264efcb4fd2ac4a6740d879be5ffee1421c"
+        ]
+      }
+    },
+    {
+      "candidate_id": "a61b8da6ba6638d3fa05",
+      "identities": {
+        "title": [
+          "File:Palagonit LPL.jpg"
+        ],
+        "pageid": [
+          "87779846"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "a807e7710dba347fe9d1",
+      "identities": {
+        "title": [
+          "File:Palagonit XPL.jpg"
+        ],
+        "pageid": [
+          "87779897"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "0409e7a588db8ea8821a",
+      "identities": {
+        "title": [
+          "File:Thin section scan crossed polarizers Siilinjärvi R636-105.90 edit (cropped).jpg"
+        ],
+        "pageid": [
+          "88535747"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "bd3bed6177c2e5798145",
+      "identities": {
+        "title": [
+          "File:Detail, Thin section scan crossed polarizers Siilinjärvi R636-105.90 edit (cropped).jpg"
+        ],
+        "pageid": [
+          "88535759"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "04bf0ec411550e692778",
+      "identities": {
+        "title": [
+          "File:Serpentinit LPL.jpg"
+        ],
+        "pageid": [
+          "89098040"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "e1b21d33ce48c2cb2630",
+      "identities": {
+        "title": [
+          "File:Serpentinit XPL.jpg"
+        ],
+        "pageid": [
+          "89098068"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "4936f6bca134ecb7472b",
+      "identities": {
+        "title": [
+          "File:Omphacit retrograd LPL.jpg"
+        ],
+        "pageid": [
+          "89106460"
+        ],
+        "original_sha1": [
+          "33b0209e27176e41b6b27d964c66e735f04089cf"
+        ],
+        "byte_sha256": [
+          "1e246fdd32e08a83fa2e7e225477ab573b3e359a24ab4978b6d0a6249510b289"
+        ]
+      }
+    },
+    {
+      "candidate_id": "10c03fb1f6097242a2ad",
+      "identities": {
+        "title": [
+          "File:Omphacit retrograd XPL.jpg"
+        ],
+        "pageid": [
+          "89106528"
+        ],
+        "original_sha1": [
+          "151b8a475c31466f22ef7b16a3d4736eb1c62c76"
+        ],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "281ce69d7338683ded9f",
+      "identities": {
+        "title": [
+          "File:Antigorit XPL.jpg"
+        ],
+        "pageid": [
+          "89254164"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "ba8f9e574b29f766a8c9",
+      "identities": {
+        "title": [
+          "File:Serpentinitisierung XPL.jpg"
+        ],
+        "pageid": [
+          "89264479"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "86d8dc3fae7d47e39586",
+      "identities": {
+        "title": [
+          "File:Boehm Lamellae.jpg"
+        ],
+        "pageid": [
+          "89337394"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "32818c02304de80b2cbf",
+      "identities": {
+        "title": [
+          "File:Hellglimmer in Pegmatit.jpg"
+        ],
+        "pageid": [
+          "89712569"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "07e2e46083b361fd64a2",
+      "identities": {
+        "title": [
+          "File:Fluorit LPL.jpg"
+        ],
+        "pageid": [
+          "89941442"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "c129ab799b492fe06836",
+      "identities": {
+        "title": [
+          "File:Fluorit XPL.jpg"
+        ],
+        "pageid": [
+          "89941661"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "beed56f0d4c2c59d4c57",
+      "identities": {
+        "title": [
+          "File:Borengit LPL.jpg"
+        ],
+        "pageid": [
+          "98753651"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "aa27392bd9c94baa7f2a",
+      "identities": {
+        "title": [
+          "File:Borengit XPL.jpg"
+        ],
+        "pageid": [
+          "98753771"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "bceb993fcdfe6686f96b",
+      "identities": {
+        "title": [
+          "File:Magnetit Skelett.jpg"
+        ],
+        "pageid": [
+          "98756546"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "7f729e3691ffa9d26bce",
+      "identities": {
+        "title": [
+          "File:Sfäruliter.jpg"
+        ],
+        "pageid": [
+          "99291031"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "cfa051b64e41620acb71",
+      "identities": {
+        "title": [
+          "File:Sfäruliter 2.jpg"
+        ],
+        "pageid": [
+          "99291086"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "bbaf9806b1b8d0e0842f",
+      "identities": {
+        "title": [
+          "File:Sfäruliter 3.jpg"
+        ],
+        "pageid": [
+          "99291120"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "bfc1acd629ae37cad965",
+      "identities": {
+        "title": [
+          "File:Sfäruliter 4.jpg"
+        ],
+        "pageid": [
+          "99291807"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "8138f219af7879e457d6",
+      "identities": {
+        "title": [
+          "File:Plagioclase mineral in thin section.jpg"
+        ],
+        "pageid": [
+          "99506052"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "4351ab1fab25ffebb74e",
+      "identities": {
+        "title": [
+          "File:Glaukophan LPL 1.jpg"
+        ],
+        "pageid": [
+          "99899432"
+        ],
+        "original_sha1": [
+          "3126d39982e83453769a54df98353c78fa5aff4f"
+        ],
+        "byte_sha256": [
+          "e36ada256af91b2817f7f2ae04686c8ac99556f91f90d35bad85448dbb971ada"
+        ]
+      }
+    },
+    {
+      "candidate_id": "818f672bff57d5f2b627",
+      "identities": {
+        "title": [
+          "File:Aegirin Augit LPL.jpg"
+        ],
+        "pageid": [
+          "100800176"
+        ],
+        "original_sha1": [
+          "8517afac20cf44ccaa6ce3763b0af54f539692e3"
+        ],
+        "byte_sha256": [
+          "78b275d55a253191f6fb702679c2e73c391044ccbea95c0c52390198ed8a34df"
+        ]
+      }
+    },
+    {
+      "candidate_id": "0049d9eb1027ab3c2651",
+      "identities": {
+        "title": [
+          "File:Perthite with scalebar.png"
+        ],
+        "pageid": [
+          "102404298"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "610a1c7a80524a1295bd",
+      "identities": {
+        "title": [
+          "File:Roosevelt Gabbro Thin Sections.jpg"
+        ],
+        "pageid": [
+          "102509799"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "c7886bf62191070552f8",
+      "identities": {
+        "title": [
+          "File:Ashe MMS amphibolite PPL.jpg"
+        ],
+        "pageid": [
+          "102669701"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "a0d2da132ea226f86bed",
+      "identities": {
+        "title": [
+          "File:Ashe MMS Amphibolite XPL.jpg"
+        ],
+        "pageid": [
+          "102669703"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "a0b232c1760de33e344a",
+      "identities": {
+        "title": [
+          "File:Ashe MMS pelite XPL.jpg"
+        ],
+        "pageid": [
+          "102669704"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "1ad90168a67b864eeb09",
+      "identities": {
+        "title": [
+          "File:Ashe MMS pelite PPL.jpg"
+        ],
+        "pageid": [
+          "102669708"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "79c69bc7feb146d4c68f",
+      "identities": {
+        "title": [
+          "File:Sotnikova.jpg"
+        ],
+        "pageid": [
+          "102779314"
+        ],
+        "original_sha1": [
+          "cbdd4924059b5731f1cd5adebacad585e875113e"
+        ],
+        "byte_sha256": [
+          "a3a8f0acf1cad15cc7f72f0f0a87f07f2ccdf6921ee9c1205026575b8d537861"
+        ]
+      }
+    },
+    {
+      "candidate_id": "0d0d8d93636ff0dc9d52",
+      "identities": {
+        "title": [
+          "File:Астероиды древнего микрокосмоса.jpg"
+        ],
+        "pageid": [
+          "103504183"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "5968e6d17c7ac4b7f4b7",
+      "identities": {
+        "title": [
+          "File:Red Hill Syenite XPL with scale bar.png"
+        ],
+        "pageid": [
+          "103887639"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "500cbd95142d84ea7444",
+      "identities": {
+        "title": [
+          "File:Red Hill Syenite PPL with scale bar.png"
+        ],
+        "pageid": [
+          "103887642"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "fe3c415202076cdee557",
+      "identities": {
+        "title": [
+          "File:Eklogit 1 LPL.jpg"
+        ],
+        "pageid": [
+          "104325452"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "07a165463c1768322031",
+      "identities": {
+        "title": [
+          "File:Eklogit 1 XPL.jpg"
+        ],
+        "pageid": [
+          "104325795"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "0808df8ad11991151917",
+      "identities": {
+        "title": [
+          "File:Omphacit 1 LPL.jpg"
+        ],
+        "pageid": [
+          "104341261"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "5bce076ed479b01d89db",
+      "identities": {
+        "title": [
+          "File:Omphacit 1 XPL.jpg"
+        ],
+        "pageid": [
+          "104341344"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "57df4fc094dee9812c57",
+      "identities": {
+        "title": [
+          "File:Tigerauge LPL Medium.jpg"
+        ],
+        "pageid": [
+          "104878010"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "cbda7835d235ebc70a13",
+      "identities": {
+        "title": [
+          "File:Tigerauge XPL Medium.jpg"
+        ],
+        "pageid": [
+          "104878206"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "ecc249e0fcba269116cf",
+      "identities": {
+        "title": [
+          "File:Tigerauge LPL gross.jpg"
+        ],
+        "pageid": [
+          "104878286"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "289aa3ff912092005e09",
+      "identities": {
+        "title": [
+          "File:Melanit 2 LPL.jpg"
+        ],
+        "pageid": [
+          "106545486"
+        ],
+        "original_sha1": [
+          "92d673e061e2ebf74fc3b66166a366590ded8cce"
+        ],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "f53d678e1e6911ff9b8d",
+      "identities": {
+        "title": [
+          "File:Melanit 2 XPL.jpg"
+        ],
+        "pageid": [
+          "106545530"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "68edfccb2d870b3958ff",
+      "identities": {
+        "title": [
+          "File:Imagem1.nj.jpg"
+        ],
+        "pageid": [
+          "108092849"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "d2ae52c80b3a97af81a3",
+      "identities": {
+        "title": [
+          "File:ST thin section.jpg"
+        ],
+        "pageid": [
+          "110561327"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "729060da3b28b2439008",
+      "identities": {
+        "title": [
+          "File:Runite4.PNG"
+        ],
+        "pageid": [
+          "112285989"
+        ],
+        "original_sha1": [
+          "2837d614c47a735783ec9d6708edab4a84993aae"
+        ],
+        "byte_sha256": [
+          "4b6f1430db5419416038534181a735b2652e02c0d9d93cf5a14ff6e1c5a7eeca"
+        ]
+      }
+    },
+    {
+      "candidate_id": "3618411aabad22094a71",
+      "identities": {
+        "title": [
+          "File:Sfäruliter 1.jpg"
+        ],
+        "pageid": [
+          "112453203"
+        ],
+        "original_sha1": [
+          "ee47fa9c50a9a5572c5594d531350d1dbb2f4e46"
+        ],
+        "byte_sha256": [
+          "aab5254b26a2b4310804ff46f8524c51bb3fa71282328e2dd4a9f7d45f518f2a"
+        ]
+      }
+    },
+    {
+      "candidate_id": "df3d33335baac2fb47cb",
+      "identities": {
+        "title": [
+          "File:Sfäruliter+pimpsten.jpg"
+        ],
+        "pageid": [
+          "112453616"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "d1468f66a101e411b1c4",
+      "identities": {
+        "title": [
+          "File:Buchonit LPL.jpg"
+        ],
+        "pageid": [
+          "112475618"
+        ],
+        "original_sha1": [
+          "944fa4900e94c92202545f5310af394976f5a544"
+        ],
+        "byte_sha256": [
+          "292336bec83a603b1405630e0e57ba61fbed015859a2fb64033b9f143fbb41a6"
+        ]
+      }
+    },
+    {
+      "candidate_id": "4adf751e941ea671c6d0",
+      "identities": {
+        "title": [
+          "File:Buchonit XPL.jpg"
+        ],
+        "pageid": [
+          "112475665"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "b77509f9291152faba78",
+      "identities": {
+        "title": [
+          "File:Runit7.PNG"
+        ],
+        "pageid": [
+          "112718149"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "531a20669a61d97843a7",
+      "identities": {
+        "title": [
+          "File:RunitBard.PNG"
+        ],
+        "pageid": [
+          "112816057"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "03577e4926daa30d9b41",
+      "identities": {
+        "title": [
+          "File:Tephrit Overview LPL.jpg"
+        ],
+        "pageid": [
+          "112923933"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "2133d3c219a339615184",
+      "identities": {
+        "title": [
+          "File:Tephrit Overview XPL.jpg"
+        ],
+        "pageid": [
+          "112923962"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "b3e38ed697eed1570ff7",
+      "identities": {
+        "title": [
+          "File:Epidot-X idiomorph LPL.jpg"
+        ],
+        "pageid": [
+          "114109938"
+        ],
+        "original_sha1": [
+          "9c19029d0d8cd4ef1bcacd66e34db0ede33ef8d0"
+        ],
+        "byte_sha256": [
+          "29a29251c0fe51593796af5b13147527fe254830b2027855ac323d99aef4e1ce"
+        ]
+      }
+    },
+    {
+      "candidate_id": "2112000f6fd42aad37af",
+      "identities": {
+        "title": [
+          "File:Epidot-X idiomorph XPL.jpg"
+        ],
+        "pageid": [
+          "114109986"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "b1eefeebf164184968eb",
+      "identities": {
+        "title": [
+          "File:Chlorit LPL.jpg"
+        ],
+        "pageid": [
+          "115096936"
+        ],
+        "original_sha1": [
+          "5500d024ba6a90be22b4df936d16757c5d42b305"
+        ],
+        "byte_sha256": [
+          "bde89fe9e037356ab71296a731a460266124aa383ef92232b7082e72ceab18bc"
+        ]
+      }
+    },
+    {
+      "candidate_id": "d39fd0badecbd096613b",
+      "identities": {
+        "title": [
+          "File:Chlorit XPL.jpg"
+        ],
+        "pageid": [
+          "115096967"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "71b819fc3bade0f859bf",
+      "identities": {
+        "title": [
+          "File:Pumice from Sinai in Egypt - Thin Section.png"
+        ],
+        "pageid": [
+          "115438531"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "9cccbd7e5ed8de84b812",
+      "identities": {
+        "title": [
+          "File:Nephelindolerit Nephelin LPL.jpg"
+        ],
+        "pageid": [
+          "115523160"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "ff2ad506ec2efddc19a2",
+      "identities": {
+        "title": [
+          "File:Nephelindolerit Nephelin XPL.jpg"
+        ],
+        "pageid": [
+          "115523207"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "1759e2af1f0deb89bab2",
+      "identities": {
+        "title": [
+          "File:Topasgreisen Topas 1 LPL.jpg"
+        ],
+        "pageid": [
+          "116081726"
+        ],
+        "original_sha1": [
+          "1531e98466063b9d892e4abb60316d31022f6891"
+        ],
+        "byte_sha256": [
+          "ab9cdf08d513aedb0b78c9f4c0bdc63c9e0c8c3dc1af2b4c7c1b52c91eaf4813"
+        ]
+      }
+    },
+    {
+      "candidate_id": "e1fbc56254743278c830",
+      "identities": {
+        "title": [
+          "File:Topasgreisen Topas 1 XPL.jpg"
+        ],
+        "pageid": [
+          "116081748"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "87915340e9ba5d6285c3",
+      "identities": {
+        "title": [
+          "File:Granophyr Struktur LPL.jpg"
+        ],
+        "pageid": [
+          "116993063"
+        ],
+        "original_sha1": [
+          "1ad676d20be97420f35f83a1177b32af042bdd3a"
+        ],
+        "byte_sha256": [
+          "9b2a935198022562acbc6833335e6208b8bcbdf9a028cd2bf2f58fd76f9b181f"
+        ]
+      }
+    },
+    {
+      "candidate_id": "eeb8396cb5ade2aeb85f",
+      "identities": {
+        "title": [
+          "File:Granophyr Struktur XPL.jpg"
+        ],
+        "pageid": [
+          "116993135"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "f1dae5564850eb08f982",
+      "identities": {
+        "title": [
+          "File:Granophyr Struktur XPL RotI.jpg"
+        ],
+        "pageid": [
+          "116993172"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "3ceac71b78219f0e2a60",
+      "identities": {
+        "title": [
+          "File:Vogelsberg Wetzberg Augitzwilling 10 XPL.jpg"
+        ],
+        "pageid": [
+          "117941262"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "7674e35be6351910a454",
+      "identities": {
+        "title": [
+          "File:Apatit LPL.jpg"
+        ],
+        "pageid": [
+          "120681131"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "bc8ac8fba112747cdcd1",
+      "identities": {
+        "title": [
+          "File:Apatit XPL.jpg"
+        ],
+        "pageid": [
+          "120681318"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "bcd70140dcda9a745c11",
+      "identities": {
+        "title": [
+          "File:Sideromelan LPL 1.jpg"
+        ],
+        "pageid": [
+          "126627181"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "28e046abf2cb22e9cc77",
+      "identities": {
+        "title": [
+          "File:Mesostasis Hellfeld 1.jpg"
+        ],
+        "pageid": [
+          "126695048"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "a8a6139951fed5a01586",
+      "identities": {
+        "title": [
+          "File:Mesostasis Hellfeld 5.jpg"
+        ],
+        "pageid": [
+          "126695118"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "5441e34289b95acc2a1f",
+      "identities": {
+        "title": [
+          "File:Obidian Entglasung Hellfeld.jpg"
+        ],
+        "pageid": [
+          "126720115"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "93a5be9779db7df41152",
+      "identities": {
+        "title": [
+          "File:Hyaloklastit 1 LPL.jpg"
+        ],
+        "pageid": [
+          "127003235"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "82f4c7aa86a3adfbacf1",
+      "identities": {
+        "title": [
+          "File:Hyaloklastit 1 XPL.jpg"
+        ],
+        "pageid": [
+          "127003293"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "a07e78d5e0f430b63125",
+      "identities": {
+        "title": [
+          "File:Impaktglas Zhamanshin 1.jpg"
+        ],
+        "pageid": [
+          "127596713"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "f3ef5075bbf67e1e0128",
+      "identities": {
+        "title": [
+          "File:Impaktglas Zhamanshin 7.jpg"
+        ],
+        "pageid": [
+          "127596810"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "120531507dbf376c8c2c",
+      "identities": {
+        "title": [
+          "File:Kimberlit Übersicht 2 LPL.jpg"
+        ],
+        "pageid": [
+          "127791348"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "19d6d7b35bd81d40d5b2",
+      "identities": {
+        "title": [
+          "File:Kimberlit Übersicht 2 XPL.jpg"
+        ],
+        "pageid": [
+          "127791420"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "c40d3f70fd4e8c27849b",
+      "identities": {
+        "title": [
+          "File:Mienit Cristobalit LPL.jpg"
+        ],
+        "pageid": [
+          "129018128"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "a8b5b005f245e22e7945",
+      "identities": {
+        "title": [
+          "File:Mienit Cristobalit XPL.jpg"
+        ],
+        "pageid": [
+          "129018270"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "81703c51b3770ff17168",
+      "identities": {
+        "title": [
+          "File:Pyrrhotite Mineral.jpg"
+        ],
+        "pageid": [
+          "129690236"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "10ba8417f9fd3901eb1a",
+      "identities": {
+        "title": [
+          "File:Rock3 undulatory-qtz 50x PPL.jpg"
+        ],
+        "pageid": [
+          "143891310"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "a7b03b1186a494770f4b",
+      "identities": {
+        "title": [
+          "File:200708-1 qtzarem silicacemt 50x PPL.jpg"
+        ],
+        "pageid": [
+          "143891311"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "e37aa65631f4a96b48f9",
+      "identities": {
+        "title": [
+          "File:170609-7 cong lith polyqtz 20x PPL.jpg"
+        ],
+        "pageid": [
+          "143891312"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "8ef80615c58fdce424f4",
+      "identities": {
+        "title": [
+          "File:Belt chlor feldwacke 50x PPL.jpg"
+        ],
+        "pageid": [
+          "143892540"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "6e8182e29167ca3568db",
+      "identities": {
+        "title": [
+          "File:Min-Plag2 plag stain cleav twinning redstain 20x XPL.jpg"
+        ],
+        "pageid": [
+          "143892548"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "1db0b7c3eb40becce2fe",
+      "identities": {
+        "title": [
+          "File:130609-2 yellow-kspar qtz 50x XPL.jpg"
+        ],
+        "pageid": [
+          "143892553"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "02d1b72bd08499b6c8a9",
+      "identities": {
+        "title": [
+          "File:SH Basal cgl Kk 2 cong lithic chert 20x XPL.jpg"
+        ],
+        "pageid": [
+          "143893469"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "41f040edbe41cfd56eae",
+      "identities": {
+        "title": [
+          "File:130609-2 lith meta qtz stained 50x XPL.jpg"
+        ],
+        "pageid": [
+          "143893470"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "7e924bfc817ed65781c9",
+      "identities": {
+        "title": [
+          "File:0011106-2 ignlith 50x XPL.jpg"
+        ],
+        "pageid": [
+          "143893472"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "9f4901b413dc48bf6bcf",
+      "identities": {
+        "title": [
+          "File:010607-3 cong lmstlit matrix qtz 20x XPL.jpg"
+        ],
+        "pageid": [
+          "143908826"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "8885ff0f9da4eb0d0ba7",
+      "identities": {
+        "title": [
+          "File:050607-1 hematite ooids 20x XPL.jpg"
+        ],
+        "pageid": [
+          "143908827"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "4c512cde606c17857e70",
+      "identities": {
+        "title": [
+          "File:Flathead glauc qtz silicacement-- 50x XPL.jpg"
+        ],
+        "pageid": [
+          "143908828"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "e960286f89ad0bcb1874",
+      "identities": {
+        "title": [
+          "File:0106071 mica chlorite feld 20x XPL.jpg"
+        ],
+        "pageid": [
+          "143908831"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "a1b8204800ac25feba99",
+      "identities": {
+        "title": [
+          "File:070811-1 siderite 20x XPL.jpg"
+        ],
+        "pageid": [
+          "143908832"
+        ],
+        "original_sha1": [
+          "39ff4921f36df092626370206490c3c18da92081"
+        ],
+        "byte_sha256": [
+          "6faa0f5e85a421df852e77fffae5cb0f4d95a78e77478169601c5f99327eb4ba"
+        ]
+      }
+    },
+    {
+      "candidate_id": "0d73a51820ef60600be2",
+      "identities": {
+        "title": [
+          "File:440170-5 muscovite 50x XPL.jpg"
+        ],
+        "pageid": [
+          "143908833"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "738946df5cf3b95bebd3",
+      "identities": {
+        "title": [
+          "File:0110061 lithicwacke matrix qtz 50x XPL.jpg"
+        ],
+        "pageid": [
+          "143912642"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "7481f812795dce7138d2",
+      "identities": {
+        "title": [
+          "File:0011106-2 ignlith matrix 20x XPL.jpg"
+        ],
+        "pageid": [
+          "143912643"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "1a9a738082cd0111d110",
+      "identities": {
+        "title": [
+          "File:Belt chlor feldwacke 20x XPL.jpg"
+        ],
+        "pageid": [
+          "143912644"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "33d3a29292afda836054",
+      "identities": {
+        "title": [
+          "File:1306092 litharen sedlith 20x XPL.jpg"
+        ],
+        "pageid": [
+          "143912914"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "e67994f23eacf444d453",
+      "identities": {
+        "title": [
+          "File:Sandstone1 qtzaren silicacem calccem 100x XPL.jpg"
+        ],
+        "pageid": [
+          "143912916"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "773813e41607b0398dad",
+      "identities": {
+        "title": [
+          "File:180507-2 qtzaren silicacem dustrim 50x XPL.jpg"
+        ],
+        "pageid": [
+          "143912917"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "ea29861836857830c2be",
+      "identities": {
+        "title": [
+          "File:2407103 polyqtx degradedfeld poly silicacem 20x PPL 1.jpg"
+        ],
+        "pageid": [
+          "143913323"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "40034fec9def2de4068e",
+      "identities": {
+        "title": [
+          "File:180507-2 qtzaren silicacem dustrim 20x XPL.jpg"
+        ],
+        "pageid": [
+          "143913324"
+        ],
+        "original_sha1": [
+          "a11b8d65d964c867cab1902f096fa12f0058223d"
+        ],
+        "byte_sha256": [
+          "959c83502634c556c7c8c97a538999339f6f4afbb08fc795789e452cec09f834"
+        ]
+      }
+    },
+    {
+      "candidate_id": "209d6af04d1de743803b",
+      "identities": {
+        "title": [
+          "File:210509-2 qtz feld lith aren 50x XPL.jpg"
+        ],
+        "pageid": [
+          "143913325"
+        ],
+        "original_sha1": [
+          "dff74301a553a13c8099f50f656d52af6add47ae"
+        ],
+        "byte_sha256": [
+          "5fb76681e048a3a03f3898b656a6d068194f1cb9252a859d93e4f6d2706814fb"
+        ]
+      }
+    },
+    {
+      "candidate_id": "e261ff79dc9839e64ad1",
+      "identities": {
+        "title": [
+          "File:010607-6 qtz wacke matrix 50x XPL.jpg"
+        ],
+        "pageid": [
+          "143918163"
+        ],
+        "original_sha1": [
+          "a2e1b86e94a11c60c7e198b02d5c91672de2209c"
+        ],
+        "byte_sha256": [
+          "720059b247b20f84ea8f360c4f54fd1c11f56d2ac59308ddb0195241d9e2e6e1"
+        ]
+      }
+    },
+    {
+      "candidate_id": "c21bfe6ad2f0dbb16425",
+      "identities": {
+        "title": [
+          "File:0106071 feld chlorite 50x XPL.jpg"
+        ],
+        "pageid": [
+          "143918164"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "860a54acbe4531e13f61",
+      "identities": {
+        "title": [
+          "File:280908-3 feld matrix feldwacke 100x XPL.jpg"
+        ],
+        "pageid": [
+          "143918167"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "64ce474e3fda2f84007d",
+      "identities": {
+        "title": [
+          "File:0110061 qtz-wacke matrix qtz 20x XPL.jpg"
+        ],
+        "pageid": [
+          "143918168"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "6075c5d07ddaf662a9fc",
+      "identities": {
+        "title": [
+          "File:Rock3 feldwacke stain 50x XPL.jpg"
+        ],
+        "pageid": [
+          "143918175"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "e5a6fb302d956dc27599",
+      "identities": {
+        "title": [
+          "File:Olivin Chondron.jpg"
+        ],
+        "pageid": [
+          "145047429"
+        ],
+        "original_sha1": [
+          "7f2f053008f01388990501371e056d912db1a7cb"
+        ],
+        "byte_sha256": [
+          "78e14726618f70796cab622aa8bb1f3cbbfa546815d8eee4fcba6a30c4a7c21f"
+        ]
+      }
+    },
+    {
+      "candidate_id": "a8b6c5ee143b62e00951",
+      "identities": {
+        "title": [
+          "File:Meteorit Knorz 4.jpg"
+        ],
+        "pageid": [
+          "145071051"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "9bf37ffed297946564e1",
+      "identities": {
+        "title": [
+          "File:Kerogenooid 9 LPL.jpg"
+        ],
+        "pageid": [
+          "145213244"
+        ],
+        "original_sha1": [
+          "f8ee00858904dda05f7fbd3c34e77462f067c70b"
+        ],
+        "byte_sha256": [
+          "f415dce6250262580a25df89ce94f3089c84d9287f15068783313236ce573c69"
+        ]
+      }
+    },
+    {
+      "candidate_id": "e0ab5a401d9edafc3665",
+      "identities": {
+        "title": [
+          "File:Cordierit-Magnetit-Hornfels LPL.jpg"
+        ],
+        "pageid": [
+          "148199818"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "6a802bd030f91a55b097",
+      "identities": {
+        "title": [
+          "File:Cordierit-Magnetit-Hornfels XPL.jpg"
+        ],
+        "pageid": [
+          "148199848"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "e24790f2534e2b5334d6",
+      "identities": {
+        "title": [
+          "File:Cordierit-Magnetit-Hornfels XPL gross.jpg"
+        ],
+        "pageid": [
+          "148199897"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "5e369280f9b8d3a7d383",
+      "identities": {
+        "title": [
+          "File:Schalstein LPL.jpg"
+        ],
+        "pageid": [
+          "148685062"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "1a276ace53d23ab93927",
+      "identities": {
+        "title": [
+          "File:Schalstein XPL.jpg"
+        ],
+        "pageid": [
+          "148685219"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "75f6f231fb9fc75e3738",
+      "identities": {
+        "title": [
+          "File:Porphyrisches Pyroxen-Chondron.jpg"
+        ],
+        "pageid": [
+          "148779354"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "d28d6768a93639408bba",
+      "identities": {
+        "title": [
+          "File:Barred Olivine Chondrule XPL.jpg"
+        ],
+        "pageid": [
+          "148885131"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "10ee179556cea76884f4",
+      "identities": {
+        "title": [
+          "File:Kryptokristallines Chondron.jpg"
+        ],
+        "pageid": [
+          "148885257"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "18c74a0aecfcf12e2fda",
+      "identities": {
+        "title": [
+          "File:Spilit LPL.jpg"
+        ],
+        "pageid": [
+          "149007743"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "14005554810e2b872b86",
+      "identities": {
+        "title": [
+          "File:Spilit XPL.jpg"
+        ],
+        "pageid": [
+          "149007794"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "c2a862f393d3709cf805",
+      "identities": {
+        "title": [
+          "File:Chara fossil.jpg"
+        ],
+        "pageid": [
+          "149317216"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "ddf01facd03b6e3c59bc",
+      "identities": {
+        "title": [
+          "File:Hauynophyr Pulverbuck LPL 1.jpg"
+        ],
+        "pageid": [
+          "150064981"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "029da48a9157f22f9a00",
+      "identities": {
+        "title": [
+          "File:Hauynophyr Pulverbuck XPL 1.jpg"
+        ],
+        "pageid": [
+          "150065104"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "a704be00327733b45627",
+      "identities": {
+        "title": [
+          "File:Katzenbuckel Odenwald Arfvedsonit LPL 2.jpg"
+        ],
+        "pageid": [
+          "150594240"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "3fd2547e78d9d9e2cc65",
+      "identities": {
+        "title": [
+          "File:Katzenbuckel Odenwald Nosean LPL 1.jpg"
+        ],
+        "pageid": [
+          "151804631"
+        ],
+        "original_sha1": [
+          "16c75798ff986dd6e29351be26d6cb83a3a27cc3"
+        ],
+        "byte_sha256": [
+          "947c43534fe42e6eac5b5971e5029ab94d082d3d9ed46648999ca17664bb05eb"
+        ]
+      }
+    },
+    {
+      "candidate_id": "0f2b6a322c6a367147b7",
+      "identities": {
+        "title": [
+          "File:Katzenbuckel Odenwald Nosean XPL 1.jpg"
+        ],
+        "pageid": [
+          "151804707"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "07de80b6a75108c26ffd",
+      "identities": {
+        "title": [
+          "File:Olivin Vogelsberg LPL.jpg"
+        ],
+        "pageid": [
+          "154020477"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "8dd6ac4facc0d3fb9dd8",
+      "identities": {
+        "title": [
+          "File:Olivin Vogelsberg XPL.jpg"
+        ],
+        "pageid": [
+          "154020550"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "c0db860f4ee065b3a217",
+      "identities": {
+        "title": [
+          "File:Bergalith LPL Oberbergen.jpg"
+        ],
+        "pageid": [
+          "154743732"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "e49a037bb21f5e018cc2",
+      "identities": {
+        "title": [
+          "File:Bergalith XPL Oberbergen.jpg"
+        ],
+        "pageid": [
+          "154743851"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "8d89d27a6d3cf79108f3",
+      "identities": {
+        "title": [
+          "File:Ijolite (GeoDIL number - 1727).jpg"
+        ],
+        "pageid": [
+          "163485073"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "8e80f655676871897eae",
+      "identities": {
+        "title": [
+          "File:Quartz monzonite porphyry (GeoDIL number - 2516).jpg"
+        ],
+        "pageid": [
+          "163487352"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "7d6f950fd2ad08457a96",
+      "identities": {
+        "title": [
+          "File:Quartz monzonite porphyry (GeoDIL number - 2536).jpg"
+        ],
+        "pageid": [
+          "163487403"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "8d7820621eee9c5e30c7",
+      "identities": {
+        "title": [
+          "File:Rhyolite porphyry (GeoDIL number - 2551).jpg"
+        ],
+        "pageid": [
+          "163487449"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "d8b460a87669b298dc60",
+      "identities": {
+        "title": [
+          "File:Rhyolite porphyry (GeoDIL number - 2552).jpg"
+        ],
+        "pageid": [
+          "163487454"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "e77f9d4eb172cd7a92eb",
+      "identities": {
+        "title": [
+          "File:Trachyte porphyry (bostonite) (GeoDIL number - 2557).jpg"
+        ],
+        "pageid": [
+          "163487471"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "fe9eb64e2d7ad6ff1176",
+      "identities": {
+        "title": [
+          "File:Trachyte porphyry (GeoDIL number - 2558).jpg"
+        ],
+        "pageid": [
+          "163487481"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "668696678b1c33a94186",
+      "identities": {
+        "title": [
+          "File:Trachyte porphyry (GeoDIL number - 2559).jpg"
+        ],
+        "pageid": [
+          "163487489"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "5a0c8577fbdd800d1c92",
+      "identities": {
+        "title": [
+          "File:Nepheline syenite (GeoDIL number - 2560).jpg"
+        ],
+        "pageid": [
+          "163487493"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "a30f79ce3fbd477ba30c",
+      "identities": {
+        "title": [
+          "File:Nepheline syenite (GeoDIL number - 2561).jpg"
+        ],
+        "pageid": [
+          "163487505"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "0a583555950aab1ead30",
+      "identities": {
+        "title": [
+          "File:Nepheline syenite (malignite) (GeoDIL number - 2562).jpg"
+        ],
+        "pageid": [
+          "163487513"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "c423693a5356c6ecff05",
+      "identities": {
+        "title": [
+          "File:Nepheline syenite (malignite) (GeoDIL number - 2563).jpg"
+        ],
+        "pageid": [
+          "163487516"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "505723bc928581131efc",
+      "identities": {
+        "title": [
+          "File:Siderite carbonatite (GeoDIL number - 2573).jpg"
+        ],
+        "pageid": [
+          "163487592"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "265ca68f58f13e44a9b5",
+      "identities": {
+        "title": [
+          "File:Siderite carbonatite (GeoDIL number - 2574).jpg"
+        ],
+        "pageid": [
+          "163487597"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "f0fafc8ae6b16d92194c",
+      "identities": {
+        "title": [
+          "File:Phonolite (GeoDIL number - 2621).jpg"
+        ],
+        "pageid": [
+          "163488052"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "ede9717e2ecb75c74111",
+      "identities": {
+        "title": [
+          "File:Phonolite (GeoDIL number - 2622).jpg"
+        ],
+        "pageid": [
+          "163488059"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "102dd5db7c59c08d4d76",
+      "identities": {
+        "title": [
+          "File:Monzonite (GeoDIL number - 2623).jpg"
+        ],
+        "pageid": [
+          "163488066"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "506b2c46a950c7304534",
+      "identities": {
+        "title": [
+          "File:Monzonite (GeoDIL number - 2624).jpg"
+        ],
+        "pageid": [
+          "163488077"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "c18ae678cad3ac0dcfee",
+      "identities": {
+        "title": [
+          "File:Latite porphyry (GeoDIL number - 2625).jpg"
+        ],
+        "pageid": [
+          "163488090"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "1a428c3f541e21df2687",
+      "identities": {
+        "title": [
+          "File:Latite porphyry (GeoDIL number - 2626).jpg"
+        ],
+        "pageid": [
+          "163488097"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "4e0bfafc9ead660b1982",
+      "identities": {
+        "title": [
+          "File:Tonalite (quartz diorite) (GeoDIL number - 2627).jpg"
+        ],
+        "pageid": [
+          "163488104"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "c3670ef64befab80f92b",
+      "identities": {
+        "title": [
+          "File:Tonalite (quartz diorite) (GeoDIL number - 2628).jpg"
+        ],
+        "pageid": [
+          "163488110"
+        ],
+        "original_sha1": [
+          "92623bdc81db3bbef585cffe8561b4b38516d6de"
+        ],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "8ade61bc196db31ba3e3",
+      "identities": {
+        "title": [
+          "File:Diorite (GeoDIL number - 2629).jpg"
+        ],
+        "pageid": [
+          "163488117"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "c7485d425080e18fddfd",
+      "identities": {
+        "title": [
+          "File:Diorite (GeoDIL number - 2630).jpg"
+        ],
+        "pageid": [
+          "163488127"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "c45d2d56a51740a789fa",
+      "identities": {
+        "title": [
+          "File:Dacite (GeoDIL number - 2631).jpg"
+        ],
+        "pageid": [
+          "163488134"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "9e747a6e83c0abf10739",
+      "identities": {
+        "title": [
+          "File:Dacite (GeoDIL number - 2632).jpg"
+        ],
+        "pageid": [
+          "163488143"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "8253b1dbc8941104f149",
+      "identities": {
+        "title": [
+          "File:Trachyte porphyry (bostonite) (GeoDIL number - 2637).jpg"
+        ],
+        "pageid": [
+          "163488176"
+        ],
+        "original_sha1": [
+          "3f0c0b1e5033dcef0bd204fb7f16cc5dad68ab6d"
+        ],
+        "byte_sha256": [
+          "b9248d1e80f0104e6c37c6712c97da3780c98a081ef857258e30b3b2b0c2d7de"
+        ]
+      }
+    },
+    {
+      "candidate_id": "9f305f87e43f4340113e",
+      "identities": {
+        "title": [
+          "File:Dravit LPL.jpg"
+        ],
+        "pageid": [
+          "165545621"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "2005b793fdb68672aaa5",
+      "identities": {
+        "title": [
+          "File:Dravit XPL.jpg"
+        ],
+        "pageid": [
+          "165545721"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "a4ae3b423d395847b2d8",
+      "identities": {
+        "title": [
+          "File:Dunite in thin section.jpg"
+        ],
+        "pageid": [
+          "174876929"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "b59f98a89e79d0672d1d",
+      "identities": {
+        "title": [
+          "File:Viridit 4 LPL b.jpg"
+        ],
+        "pageid": [
+          "181298260"
+        ],
+        "original_sha1": [
+          "a1cd34f272315dfa5be7ce450c2009804f217799"
+        ],
+        "byte_sha256": [
+          "ad3b1af4fe1e682e19a95763717ff55098642fd8ad57e71740404da34ad5881f"
+        ]
+      }
+    },
+    {
+      "candidate_id": "92e526489f22ebb81c6d",
+      "identities": {
+        "title": [
+          "File:Viridit 4 XPL b.jpg"
+        ],
+        "pageid": [
+          "181298396"
+        ],
+        "original_sha1": [],
+        "byte_sha256": []
+      }
+    },
+    {
+      "candidate_id": "c3fcce25c9334de6ac51",
+      "identities": {
+        "title": [
+          "File:Schalstein Langenaubach XPL 5 gross.jpg"
+        ],
+        "pageid": [
+          "181298835"
+        ],
+        "original_sha1": [
+          "113f3fe5c23979c685802782edae494b9bea0dd1"
+        ],
+        "byte_sha256": [
+          "5ab221f3c6c3fedae46f6c42a6f52fdf688cc6acd7ad82c78cbee03cbf4ba66f"
+        ]
+      }
+    }
+  ],
+  "collisions_with_previous": [],
+  "included_overlaps": [],
+  "policy": "Retain otherwise eligible selections despite prior fixture reuse; exact overlaps are recorded, not automatic exclusions. Within-leaf repeats are handled by the separate ordered selection. Inventory-only matches are identified by inventory.json locations and do not claim acquired reuse.",
+  "limitations": "Exact identities only; title matching is conservative and case-folded. Original SHA-1/page IDs are compared where locally available. No exact match does not establish distinct works, independent origins, or complete prior upstream coverage."
+}

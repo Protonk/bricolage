@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-31T23:43:48.724413+00:00",
+  "key": "preview-480-ranks-0001-0010",
+  "kind": "api",
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&maxlag=5&prop=imageinfo%7Crevisions&titles=File%3ARock+thin+section+andesite.jpg%7CFile%3APhotomicrograph+granite+PlateIX+Fig1+MD+Geological+Survey+Volume+2.jpg%7CFile%3AEpidot-X+idiomorph+LPL.jpg%7CFile%3AGlaukophan+LPL+1.jpg%7CFile%3ATrachyte+porphyry+%28bostonite%29+%28GeoDIL+number+-+2637%29.jpg%7CFile%3ASotnikova.jpg%7CFile%3A010607-6+qtz+wacke+matrix+50x+XPL.jpg%7CFile%3AGraniteporphyry+pmg+ss+2006.jpg%7CFile%3ATwinn+lamellae+in+calcite.JPG%7CFile%3AKerogenooid+9+LPL.jpg&redirects=1&iiprop=url%7Csize%7Cmime%7Csha1%7Cextmetadata%7Ctimestamp%7Cuser&iiurlwidth=480&iiurlheight=480&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main",
+  "user_agent": "HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib",
+  "status": 200,
+  "response_complete": true,
+  "bytes_received": 44145,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 23:43:48 GMT",
+    "server": "mw-api-ext.codfw.main-5fcdd9d8b-8mdzg",
+    "cache-control": "max-age=3600, s-maxage=3600, public",
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "cp4044 miss, cp4044 miss",
+    "x-request-id": "a3b62b6d-2ecb-49d6-98d7-f77cd5b8d354"
+  },
+  "sha256": "2f82d86f2da471f845215b66b81c7f751a36d54e226d81648983c24fc512d610"
+}
