@@ -50,7 +50,7 @@ def atomic_write(path, data:bytes):
     tmp.write_bytes(data);tmp.replace(path)
 
 def save_records(records):
-    json_path=ROOT/'candidates.jsonl'
+    json_path=ROOT/'provenance/intake/candidates.jsonl'
     atomic_write(json_path,(''.join(json.dumps(r,ensure_ascii=False)+'\n' for r in records)).encode('utf-8'))
     # MediaWiki enriches rows incrementally. Some fields first appear on a later
     # record; derive CSV columns from the union rather than the first row only.
@@ -58,7 +58,7 @@ def save_records(records):
     import io
     s=io.StringIO(newline='')
     w=csv.DictWriter(s,fieldnames=keys);w.writeheader();w.writerows(records)
-    atomic_write(ROOT/'candidates.csv',s.getvalue().encode('utf-8'))
+    atomic_write(ROOT/'provenance/intake/candidates.csv',s.getvalue().encode('utf-8'))
 
 def clean_text(s):
     return html.unescape(re.sub(r'<[^>]*>','',s or '')).strip() or None
@@ -190,7 +190,7 @@ def main():
     if args.stage!='contact' and not args.user_agent:
         ap.error('Provide HAZY_USER_AGENT identifying your client and a real contact method (per Wikimedia policy).')
     if args.limit<0 or args.pace<1:ap.error('limit must be >=0, pace >=1 second')
-    records=jsonlines(ROOT/'candidates.jsonl')
+    records=jsonlines(ROOT/'provenance/intake/candidates.jsonl')
     if args.stage=='contact':
         n=make_contact_sheets(records);print('Previews on contact sheets:',n);return
     stage=args.stage

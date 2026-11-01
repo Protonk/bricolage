@@ -1,5 +1,43 @@
 # PS01 — Pale skies, dark lower halves
 
+## Purpose and basis
+
+PS01 pale skies and dark lower halves: photographs with a pale quiet upper sky and a darker, detailed lower region. Visual curation, no pair or membership ground truth.
+Fixture ID: `hazy-ps01-v1`; kind: `prompt_heap`.
+
+## Completeness
+
+The published manifest contains **58 inputs**. The detailed record below
+retains the original selection counts, pending cases and acquisition limitations.
+The layout migration changes no membership or completion status.
+
+## Contents
+
+This leaf follows the [shared fixture format](../../../FORMAT.md).
+`images/`, `sources/`, `previews/` and `batches/` retain their roles. Live commands
+and dependencies are in `tools/`; the [evidence index](provenance/README.md)
+locates intake/construction records, receipts and preserved packages.
+
+## Validation
+
+From the repository root, using Python 3.14.x:
+
+```sh
+.venv/bin/python -m pip install -r Fixtures/Heaps/Similarity/PS01/tools/requirements.txt
+.venv/bin/python Fixtures/Heaps/Similarity/PS01/tools/check.py
+```
+
+The check is offline and includes the shared layout check and the existing
+specialized validators. `--metadata-only` omits media and specialized checks.
+
+## Limitations
+
+Selection and source relationships retain their recorded scope; they are not
+similarity scores or additional matching assertions. Technical/provenance
+uncertainties and partial acquisitions remain documented below.
+
+## Detailed record
+
 Integrated: **58 inputs from 145 supplied leads**. All 145 previews were inspected:
 58 accepted, 85 rejected and two deferred for possible source relationships.
 All accepted sources were acquired; none remain pending. The 58 inputs fall within
@@ -20,9 +58,9 @@ judgment, with no numeric similarity threshold or membership ground truth.
 The candidate `family` field remains a discovery bucket, not a fixture family or
 an expected cluster. Only `images/` is comparison input.
 
-## Review and provenance
+### Review and provenance
 
-`candidates.jsonl` is canonical; CSV uses the union of its fields. Stable IDs,
+`provenance/intake/candidates.jsonl` is canonical; CSV uses the union of its fields. Stable IDs,
 original titles, discovery URLs and all supplied fields are retained. Initial
 `candidate_basis` text records discovery-era uncertainty; current decisions are
 in `screening_status`, `visual_reason` and the review log. Visual acceptance and
@@ -49,13 +87,13 @@ an unscaled original outside that bound. The
 [identity audit](provenance/identity-audit.json) found no exact reuse in the five
 prior local inventories; possible capture relationships were reviewed separately.
 
-## Contents and checks
+### Contents and checks
 
 - `images/` contains opaque flat filenames, byte-identical to the preserved
   downloads in `sources/`. No local cropping, resizing or re-encoding is applied.
 - `manifest.json`, `manifest.csv`, `sources.csv`, `SHA256SUMS.txt` record source
   mapping, actual decoded dimensions and every source/input byte hash.
-- `prompt.json` retains the intent and counts; `batches/batch-1.txt` lists all
+- `provenance/intake/prompt.json` retains the intent and counts; `batches/batch-1.txt` lists all
   inputs. `probes.csv` is header-only and `selections.json` has no expected pairs.
 - `previews/tiles/` and `previews/contact-NN.jpg` retain candidate evidence;
   `previews/selected-NN.jpg` shows the final acquired inputs.
@@ -70,9 +108,9 @@ prior local inventories; possible capture relationships were reviewed separately
 From the repository root, using Python with the pinned Pillow dependency:
 
 ```sh
-python3 -m pip install -r Fixtures/Heaps/Similarity/PS01/requirements.txt
-python3 Fixtures/Heaps/Similarity/PS01/tools/integrate.py check
-python3 -m unittest discover -s Fixtures/Heaps/Similarity/PS01/tools -p 'test_*.py'
+.venv/bin/python -m pip install -r Fixtures/Heaps/Similarity/PS01/tools/requirements.txt
+.venv/bin/python Fixtures/Heaps/Similarity/PS01/tools/integrate.py check
+.venv/bin/python -m unittest discover -s Fixtures/Heaps/Similarity/PS01/tools -p 'test_*.py'
 ```
 
 The offline checker verifies source/input and preview hashes, measured dimensions,
@@ -82,7 +120,7 @@ visibly. The existing experiment's pair-fixture checker does not support
 `prompt_heap`; this fixture uses its local checker. `tools/audit.py` refreshes the
 cross-fixture identity audit when prior inventories are locally available.
 
-## Acquisition behavior
+### Acquisition behavior
 
 Acquisition begins with one small preview, then paced serial chunks of twelve;
 source acquisition begins with its own one-image pilot after review. Requests use
@@ -112,9 +150,9 @@ For deliberately resumed work, the supplied commands remain available:
 
 ```sh
 export HAZY_USER_AGENT='HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib'
-python3 Fixtures/Heaps/Similarity/PS01/tools/acquire.py --stage preview --limit 12
-python3 Fixtures/Heaps/Similarity/PS01/tools/acquire.py --stage source --limit 12
-python3 Fixtures/Heaps/Similarity/PS01/tools/status.py
+.venv/bin/python Fixtures/Heaps/Similarity/PS01/tools/acquire.py --stage preview --limit 12
+.venv/bin/python Fixtures/Heaps/Similarity/PS01/tools/acquire.py --stage source --limit 12
+.venv/bin/python Fixtures/Heaps/Similarity/PS01/tools/status.py
 ```
 
 Valid cached files are reused. Acquisition and review share a local lock to avoid

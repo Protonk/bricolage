@@ -52,7 +52,7 @@ class AcquireTests(unittest.TestCase):
     def test_catalog_csv_matches_union_of_fields(self):
         acquire.save_records([{'candidate_id':'sf-0001'},{'candidate_id':'sf-0002','license':'CC0'}])
         import csv
-        with (self.root/'candidates.csv').open() as f:rows=list(csv.DictReader(f))
+        with (self.root/'provenance/intake/candidates.csv').open() as f:rows=list(csv.DictReader(f))
         self.assertEqual(rows[0]['license'],'');self.assertEqual(rows[1]['license'],'CC0')
 
 if __name__=='__main__':unittest.main()

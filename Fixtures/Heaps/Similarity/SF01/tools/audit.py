@@ -49,7 +49,7 @@ def main():
             for r in json.loads((evidence_path(root, 'source-manifest.json')).read_text())['sources']:
                 add('title',r['upstream_title'],name+'/'+r['file'])
                 add('original_sha1',hashlib.sha1((root/r['file']).read_bytes()).hexdigest(),name+'/'+r['file'])
-    candidates=jsonlines(ROOT/'candidates.jsonl');seen={key:{} for key in previous};collisions=[];within=[]
+    candidates=jsonlines(ROOT/'provenance/intake/candidates.jsonl');seen={key:{} for key in previous};collisions=[];within=[]
     for r in candidates:
         values=dict(title=r.get('commons_api_title',r['commons_title']),pageid=r.get('commons_pageid'),original_sha1=r.get('original_sha1'),byte_sha256=r.get('acquired_sha256'))
         for kind,value in values.items():

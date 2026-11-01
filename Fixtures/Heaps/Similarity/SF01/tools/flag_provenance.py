@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """One-time annotations for conspicuous possible source relationships; no similarity labels."""
 from acquire import ROOT, jsonlines, save_records
-records=jsonlines(ROOT/'candidates.jsonl')
+records=jsonlines(ROOT/'provenance/intake/candidates.jsonl')
 notes={
   "Amish Country Byway - Bales of Hay in Field - NARA - 7716994.jpg":"Possibly from the same NARA Amish Country Byway photographic series as sf candidate with 'Marshmallow Hay Bales'; do not accept both without capture independence check.",
   "Amish Country Byway - Marshmallow Hay Bales in Field - NARA - 7716912.jpg":"Possibly from the same NARA Amish Country Byway photographic series as sf candidate with 'Bales of Hay in Field'; do not accept both without capture independence check.",

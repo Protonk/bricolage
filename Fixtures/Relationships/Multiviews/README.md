@@ -1,5 +1,43 @@
 # hazy multiview fixture v1
 
+## Purpose and basis
+
+Twenty independent captures in eight scene/sequence groups; scene_id is not a similarity score or alignment guarantee.
+Fixture ID: `hazy-multiview-v1`; kind: `multiview`.
+
+## Completeness
+
+The published manifest contains **20 inputs**. The detailed record below
+retains the original selection counts, pending cases and acquisition limitations.
+The layout migration changes no membership or completion status.
+
+## Contents
+
+This leaf follows the [shared fixture format](../../FORMAT.md).
+`images/`, `sources/`, `previews/` and `batches/` retain their roles. Live commands
+and dependencies are in `tools/`; the [evidence index](provenance/README.md)
+locates intake/construction records, receipts and preserved packages.
+
+## Validation
+
+From the repository root, using Python 3.14.x:
+
+```sh
+.venv/bin/python -m pip install -r Fixtures/Relationships/Multiviews/tools/requirements.txt
+.venv/bin/python Fixtures/Relationships/Multiviews/tools/check.py
+```
+
+The check is offline and includes the shared layout check and the existing
+specialized validators. `--metadata-only` omits media and specialized checks.
+
+## Limitations
+
+Selection and source relationships retain their recorded scope; they are not
+similarity scores or additional matching assertions. Technical/provenance
+uncertainties and partial acquisitions remain documented below.
+
+## Detailed record
+
 **20 separately captured images in eight scene or sequence groups:** the motorcycle
 pair, nine personal photographs, and nine Commons crowd photographs. Use only the
 flat `images/` directory as input. All supplied image bytes, including embedded
@@ -24,7 +62,7 @@ event and nearby surroundings, so different labels do not prove different physic
 scenes. Each of the 20 captures has its own source family; `scene_id` records the
 scene/sequence grouping separately.
 
-## Input and preparation
+### Input and preparation
 
 | Group | Stored dimensions | hazy's prepared dimensions |
 |---|---|---|
@@ -43,7 +81,7 @@ Their upstream reduction is recorded in `sources.csv`; hazy subsequently applies
 its normal ImageIO orientation/resizing and sRGB preparation. No resizing,
 re-encoding, or orientation change was applied to fixture bytes during ingestion.
 
-## Layout and selections
+### Layout and selections
 
 This set follows the [shared fixture schema](../../FORMAT.md). `sources/` keeps names
 as supplied; `images/` holds byte-identical copies under opaque names.
@@ -64,7 +102,7 @@ No additional image variants or expected transforms were created by hazy. Pixel
 hashes using the derivative set's Pillow convention are intentionally blank. Byte
 hashes cover all 20 inputs and their 20 preserved source assets.
 
-## Provenance and limits
+### Provenance and limits
 
 See [SOURCES.md](SOURCES.md) for the supplied Middlebury/scikit-image attribution,
 personal photographs' status, and Commons source pages and credits. The archived

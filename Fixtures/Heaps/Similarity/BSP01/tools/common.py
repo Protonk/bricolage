@@ -3,7 +3,7 @@ import csv, io, json, os
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
-CANON=ROOT/'candidates.jsonl'
+CANON=ROOT/'provenance/intake/candidates.jsonl'
 
 def local(name):
     p=ROOT/name
@@ -38,7 +38,7 @@ def save_records(records):
     writer=csv.DictWriter(buff,fieldnames=keys)
     writer.writeheader();writer.writerows(records)
     atomic_write(CANON,blob)
-    atomic_write(ROOT/'candidates.csv',buff.getvalue().encode('utf-8'))
+    atomic_write(ROOT/'provenance/intake/candidates.csv',buff.getvalue().encode('utf-8'))
 
 def append_jsonl(path,record):
     path=local(str(Path(path).relative_to(ROOT)));path.parent.mkdir(parents=True,exist_ok=True)

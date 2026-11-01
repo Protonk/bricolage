@@ -1,5 +1,43 @@
 # Hazy variants — meme fixtures v0
 
+## Purpose and basis
+
+Variants: six originals, thirty constructed edits, six unchanged description-mediated generations. Provenance is not a similarity verdict.
+Fixture ID: `hazy-meme-fixtures-v0`; kind: `derivatives`.
+
+## Completeness
+
+The published manifest contains **42 inputs**. The detailed record below
+retains the original selection counts, pending cases and acquisition limitations.
+The layout migration changes no membership or completion status.
+
+## Contents
+
+This leaf follows the [shared fixture format](../../FORMAT.md).
+`images/`, `sources/`, `previews/` and `batches/` retain their roles. Live commands
+and dependencies are in `tools/`; the [evidence index](provenance/README.md)
+locates intake/construction records, receipts and preserved packages.
+
+## Validation
+
+From the repository root, using Python 3.14.x:
+
+```sh
+.venv/bin/python -m pip install -r Fixtures/Relationships/Variants/tools/requirements.txt
+.venv/bin/python Fixtures/Relationships/Variants/tools/check.py
+```
+
+The check is offline and includes the shared layout check and the existing
+specialized validators. `--metadata-only` omits media and specialized checks.
+
+## Limitations
+
+Selection and source relationships retain their recorded scope; they are not
+similarity scores or additional matching assertions. Technical/provenance
+uncertainties and partial acquisitions remain documented below.
+
+## Detailed record
+
 Built and validated: **42 inputs** from six bundled sources: six unchanged source
 copies, 30 locally constructed variants, and six unchanged supplied generations.
 This completes the fixture trio of derivatives, multiviews, and variants. Its
@@ -20,9 +58,9 @@ Only the flat `images/` directory is comparison input. Sources, stages, masks,
 contact sheets and staging builds stay in Git-ignored asset directories. No
 source or supplied generation was re-encoded. No new image generation was used.
 
-## Provenance and interpretation
+### Provenance and interpretation
 
-[Sources and credits](SOURCES.md), [source manifest](source-manifest.json), six
+[Sources and credits](SOURCES.md), [source manifest](provenance/construction/source-manifest.json), six
 [prompts](provenance/prompts/README.md), and the
 [supplied generation mapping](provenance/v06-imports.json) remain as delivered.
 The source manifest's status describes the original kit; current completion is
@@ -56,16 +94,16 @@ contain just the six originals. Focus selects **15 pairs**; probes/full select
 v02/v03 pairs, six donor/composite pairs, and six shared-treatment comparisons
 between distinct sources. Known-shift families are empty.
 
-## Reproduce and check
+### Reproduce and check
 
 From the repository root, using an isolated environment:
 
 ```sh
-python3 -m venv /private/tmp/hazy-variants-env
-/private/tmp/hazy-variants-env/bin/pip install -r Fixtures/Relationships/Variants/provenance/requirements.txt
-/private/tmp/hazy-variants-env/bin/python Fixtures/Relationships/Variants/provenance/build.py build --stage another-run
-/private/tmp/hazy-variants-env/bin/python Fixtures/Relationships/Variants/provenance/build.py check --stage another-run
-python3 Experiments/AppleVisionTranslation/Tools/fixtures.py check --fixtures Fixtures/Relationships/Variants
+.venv/bin/python -m venv /private/tmp/hazy-variants-env
+/private/tmp/hazy-variants-env/bin/pip install -r Fixtures/Relationships/Variants/tools/requirements.txt
+/private/tmp/hazy-variants-env/bin/python Fixtures/Relationships/Variants/tools/build.py build --stage another-run
+/private/tmp/hazy-variants-env/bin/python Fixtures/Relationships/Variants/tools/build.py check --stage another-run
+.venv/bin/python Experiments/AppleVisionTranslation/Tools/fixtures.py check --fixtures Fixtures/Relationships/Variants
 ```
 
 Each build requires a fresh stage name and writes under `previews/build-NAME/`.
@@ -87,6 +125,6 @@ all 30 constructed variants and relevant stage sheets were visually reviewed.
 The six generations and prompts matched supplied hashes. Local review sheets
 are in `previews/review/`. Comparison experiments were not required or run.
 
-The original [kit README](provenance/supplied-README.md) and [build specification](BUILD.md)
+The original [kit README](provenance/supplied-README.md) and [build specification](provenance/construction/BUILD.md)
 retain the supplied construction intent. These fixtures exercise changed
 composition and representation; they do not establish retrieval quality.

@@ -1,5 +1,43 @@
 # CR01 — Cool, repetitive rectangles
 
+## Purpose and basis
+
+CR01 cool, repetitive rectangles: photographs dominated by repeated rectangular cells, panels, frames or modules. Visual curation, no pair or membership ground truth.
+Fixture ID: `hazy-cr01-v1`; kind: `prompt_heap`.
+
+## Completeness
+
+The published manifest contains **57 inputs**. The detailed record below
+retains the original selection counts, pending cases and acquisition limitations.
+The layout migration changes no membership or completion status.
+
+## Contents
+
+This leaf follows the [shared fixture format](../../../FORMAT.md).
+`images/`, `sources/`, `previews/` and `batches/` retain their roles. Live commands
+and dependencies are in `tools/`; the [evidence index](provenance/README.md)
+locates intake/construction records, receipts and preserved packages.
+
+## Validation
+
+From the repository root, using Python 3.14.x:
+
+```sh
+.venv/bin/python -m pip install -r Fixtures/Heaps/Similarity/CR01/tools/requirements.txt
+.venv/bin/python Fixtures/Heaps/Similarity/CR01/tools/check.py
+```
+
+The check is offline and includes the shared layout check and the existing
+specialized validators. `--metadata-only` omits media and specialized checks.
+
+## Limitations
+
+Selection and source relationships retain their recorded scope; they are not
+similarity scores or additional matching assertions. Technical/provenance
+uncertainties and partial acquisitions remain documented below.
+
+## Detailed record
+
 Integrated: **57 inputs from 168 supplied leads**. All 168 acquired previews were
 inspected: 57 accepted, 109 rejected and two deferred for possible source
 relationships. All accepted sources were acquired; none remain pending. This is
@@ -17,9 +55,9 @@ grids are excluded. Selection uses actual thumbnail appearance and written
 judgment. Discovery buckets are search aids, not expected clusters or pair
 correctness labels. Only `images/` belongs to the comparison input pool.
 
-## Review and provenance
+### Review and provenance
 
-`candidates.jsonl` is canonical; CSV contains the union of its fields. Stable
+`provenance/intake/candidates.jsonl` is canonical; CSV contains the union of its fields. Stable
 candidate IDs, original titles, discovery URLs and supplied fields are retained.
 Initial `candidate_basis` text records discovery-era uncertainty; current
 judgments live in `screening_status`, `visual_reason` and the review log. Visual
@@ -50,13 +88,13 @@ responses, no transport failures and no automatic retries. All 57 sources used
 the nominal 1600px request: 50 API-returned renditions and seven API-reported
 unscaled originals within the bound. No smaller-rendition requests were needed.
 
-## Files and checks
+### Files and checks
 
 - `images/` has opaque flat filenames, byte-identical to the preserved downloads
   in `sources/`. No local cropping, resizing or re-encoding is applied.
 - Manifests, `sources.csv` and `SHA256SUMS.txt` record source mapping, decoded
   dimensions and source/input hashes. `batches/batch-1.txt` lists every input.
-- `prompt.json` records intent and counts. `probes.csv` is header-only and
+- `provenance/intake/prompt.json` records intent and counts. `probes.csv` is header-only and
   `selections.json` has no expected pairs.
 - `previews/tiles/` and nine `previews/contact-NN.jpg` sheets retain all candidate
   evidence. Three `previews/selected-NN.jpg` sheets show acquired inputs.
@@ -69,10 +107,10 @@ unscaled originals within the bound. No smaller-rendition requests were needed.
 From the repository root, using Python with the pinned Pillow dependency:
 
 ```sh
-python3 -m pip install -r Fixtures/Heaps/Similarity/CR01/requirements.txt
-python3 Fixtures/Heaps/Similarity/CR01/tools/integrate.py check
-python3 Fixtures/Heaps/Similarity/CR01/tools/check_pack.py
-python3 -m unittest discover -s Fixtures/Heaps/Similarity/CR01/tools -p 'test_*.py'
+.venv/bin/python -m pip install -r Fixtures/Heaps/Similarity/CR01/tools/requirements.txt
+.venv/bin/python Fixtures/Heaps/Similarity/CR01/tools/integrate.py check
+.venv/bin/python Fixtures/Heaps/Similarity/CR01/tools/check_pack.py
+.venv/bin/python -m unittest discover -s Fixtures/Heaps/Similarity/CR01/tools -p 'test_*.py'
 ```
 
 The integration checker verifies hashes, decoded sizes, CSV/JSON agreement,
@@ -83,7 +121,7 @@ are historical. The experiment's pair-fixture checker does not support
 `prompt_heap`; CR01 uses its local checker. `tools/audit.py` refreshes the identity
 audit when the six prior fixture inventories are available.
 
-## Acquisition tools
+### Acquisition tools
 
 Seven generic helpers were copied from active [PS01 tools](../PS01/tools/acquire.py),
 verified against the Git blob hashes pinned in `provenance/baseline.json`.

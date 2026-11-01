@@ -1,5 +1,43 @@
 # TG01 — Tangles of growth
 
+## Purpose and basis
+
+TG01 tangles of growth: dense, irregular, interlaced plant growth selected by actual thumbnail appearance. No pair or membership ground truth.
+Fixture ID: `hazy-tg01-v1`; kind: `prompt_heap`.
+
+## Completeness
+
+The published manifest contains **31 inputs**. The detailed record below
+retains the original selection counts, pending cases and acquisition limitations.
+The layout migration changes no membership or completion status.
+
+## Contents
+
+This leaf follows the [shared fixture format](../../../FORMAT.md).
+`images/`, `sources/`, `previews/` and `batches/` retain their roles. Live commands
+and dependencies are in `tools/`; the [evidence index](provenance/README.md)
+locates intake/construction records, receipts and preserved packages.
+
+## Validation
+
+From the repository root, using Python 3.14.x:
+
+```sh
+.venv/bin/python -m pip install -r Fixtures/Heaps/Similarity/TG01/tools/requirements.txt
+.venv/bin/python Fixtures/Heaps/Similarity/TG01/tools/check.py
+```
+
+The check is offline and includes the shared layout check and the existing
+specialized validators. `--metadata-only` omits media and specialized checks.
+
+## Limitations
+
+Selection and source relationships retain their recorded scope; they are not
+similarity scores or additional matching assertions. Technical/provenance
+uncertainties and partial acquisitions remain documented below.
+
+## Detailed record
+
 **Complete: 31 acquired and validated inputs from 152 supplied Commons leads; no pending downloads.**
 All previews have been inspected. There were 32 visual fits, followed by one
 conservative exclusion for a probable related subject: **31 accepted, 121 rejected,
@@ -17,12 +55,12 @@ not semantic groups, matching labels or expected router results. The existing
 `prompt_heap` kind, leaf-local paths and empty pair expectations apply. No router
 or comparison experiment was run.
 
-## Review and provenance
+### Review and provenance
 
 The unchanged 19-file setup handoff is preserved in `provenance/supplied/`, with
 its original package checksums. `provenance/intake.json` records the copy hashes
 and setup-folder disposal. The handoff's zero-review counts are historical.
-Active `candidates.jsonl` and its union-column CSV retain all supplied identities,
+Active `provenance/intake/candidates.jsonl` and its union-column CSV retain all supplied identities,
 discovery fields, actual API replies, review decisions and acquisition fields.
 
 Actual previews were inspected, first as a pilot and then on saved contact sheets.
@@ -52,7 +90,7 @@ it credits Andrew McMillan and public-domain-image.com but supplies no license U
 location or capture date. Those fields remain unknown. Credits and license evidence
 for every acquired input are in `SOURCES.md`, `sources.csv`, and the raw API replies.
 
-## Acquisition and local assets
+### Acquisition and local assets
 
 The tools derive from the pinned active PS01 baseline, with TG01-specific audit,
 integration and floor checks. `prepare.py --check-only` verifies the pinned source
@@ -88,16 +126,16 @@ integration staging and `previews/hazy-tg01-v1.zip` remain local and Git-ignored
 The ZIP contains the source/input bytes and textual evidence; its checksum is in
 `provenance/archive.json`. A checkout alone contains no media.
 
-## Offline checks
+### Offline checks
 
 From the repository root, with the pinned Pillow requirement installed:
 
 ```sh
-python3 Fixtures/Heaps/Similarity/TG01/tools/check_pack.py
-python3 Fixtures/Heaps/Similarity/TG01/tools/prepare.py --check-only
-python3 Fixtures/Heaps/Similarity/TG01/tools/integrate.py check
-python3 Fixtures/Heaps/Similarity/TG01/tools/minimum_gate.py --strict-publish
-python3 -m unittest discover -s Fixtures/Heaps/Similarity/TG01/tools -p 'test_*.py'
+.venv/bin/python Fixtures/Heaps/Similarity/TG01/tools/check_pack.py
+.venv/bin/python Fixtures/Heaps/Similarity/TG01/tools/prepare.py --check-only
+.venv/bin/python Fixtures/Heaps/Similarity/TG01/tools/integrate.py check
+.venv/bin/python Fixtures/Heaps/Similarity/TG01/tools/minimum_gate.py --strict-publish
+.venv/bin/python -m unittest discover -s Fixtures/Heaps/Similarity/TG01/tools -p 'test_*.py'
 ```
 
 The integration check verifies the publication floor, unchanged source/input hashes,

@@ -1,5 +1,43 @@
 # BSP01 — Blotches, stains, and spreading patches
 
+## Purpose and basis
+
+BSP01 blotches, stains and spreading patches: irregular merging or fragmenting regions across surfaces selected by actual thumbnail appearance. No pair or membership ground truth.
+Fixture ID: `hazy-bsp01-v1`; kind: `prompt_heap`.
+
+## Completeness
+
+The published manifest contains **68 inputs**. The detailed record below
+retains the original selection counts, pending cases and acquisition limitations.
+The layout migration changes no membership or completion status.
+
+## Contents
+
+This leaf follows the [shared fixture format](../../../FORMAT.md).
+`images/`, `sources/`, `previews/` and `batches/` retain their roles. Live commands
+and dependencies are in `tools/`; the [evidence index](provenance/README.md)
+locates intake/construction records, receipts and preserved packages.
+
+## Validation
+
+From the repository root, using Python 3.14.x:
+
+```sh
+.venv/bin/python -m pip install -r Fixtures/Heaps/Similarity/BSP01/tools/requirements.txt
+.venv/bin/python Fixtures/Heaps/Similarity/BSP01/tools/check.py
+```
+
+The check is offline and includes the shared layout check and the existing
+specialized validators. `--metadata-only` omits media and specialized checks.
+
+## Limitations
+
+Selection and source relationships retain their recorded scope; they are not
+similarity scores or additional matching assertions. Technical/provenance
+uncertainties and partial acquisitions remain documented below.
+
+## Detailed record
+
 **Complete: 68 acquired and validated inputs from 185 supplied Commons leads; no pending downloads.**
 All 185 previews were inspected. Of 77 visual fits, seven were excluded as known
 or probable related captures and two for unresolved rights: **68 selected,
@@ -11,17 +49,17 @@ was 65. The prompt was not relaxed or balanced by discovery category.
 > fragment, bleed, peel, or dissolve across a surface or field.
 
 This contributes to the existing [Similarity heap](../README.md). The complete
-prompt, exclusions and allowable variation remain in `prompt.json` and
-`HEAP_INSTRUCTIONS.md`. Discovery categories are sourcing aids. Membership records
+prompt, exclusions and allowable variation remain in `provenance/intake/prompt.json` and
+`provenance/intake/HEAP_INSTRUCTIONS.md`. Discovery categories are sourcing aids. Membership records
 visual selection intent, with no expected pairs, semantic groups, matching labels
 or router correctness assertions. No router or comparison experiment was run.
 
-## Review and provenance
+### Review and provenance
 
 The unchanged 19-file setup handoff is preserved in `provenance/supplied/`, including
 its original checksums. `provenance/intake.json` records those hashes and disposal
 of `Fixtures/hazy_bsp01/` after verification. Supplied zero-review counts and the
-original DNS probe are historical. Active `candidates.jsonl` and its union-column
+original DNS probe are historical. Active `provenance/intake/candidates.jsonl` and its union-column
 CSV preserve all supplied identities and discovery fields alongside review and
 acquisition records.
 
@@ -60,7 +98,7 @@ bsp-0105) remain unknown; agency credits are identified as reported organization
 Unreported capture dates and locations remain unknown, including several imported
 public-domain textures. Normal upstream processing is retained as received.
 
-## Acquisition and local assets
+### Acquisition and local assets
 
 Tools derive from the pinned active PS01 baseline, with deliberate TG01 preview-size,
 minimum-floor and evidence checks, plus BSP01-specific identities and credit review.
@@ -93,16 +131,16 @@ integration staging and `previews/hazy-bsp01-v1.zip` remain local and Git-ignore
 The ZIP includes source/input bytes and textual evidence; its checksum is in
 `provenance/archive.json`. A checkout alone contains no media.
 
-## Offline checks
+### Offline checks
 
 From the repository root, with the pinned Pillow requirement installed:
 
 ```sh
-python3 Fixtures/Heaps/Similarity/BSP01/tools/check_pack.py
-python3 Fixtures/Heaps/Similarity/BSP01/tools/prepare.py --check-only
-python3 Fixtures/Heaps/Similarity/BSP01/tools/integrate.py check
-python3 Fixtures/Heaps/Similarity/BSP01/tools/minimum_gate.py --strict-publish
-python3 -m unittest discover -s Fixtures/Heaps/Similarity/BSP01/tools -p 'test_*.py'
+.venv/bin/python Fixtures/Heaps/Similarity/BSP01/tools/check_pack.py
+.venv/bin/python Fixtures/Heaps/Similarity/BSP01/tools/prepare.py --check-only
+.venv/bin/python Fixtures/Heaps/Similarity/BSP01/tools/integrate.py check
+.venv/bin/python Fixtures/Heaps/Similarity/BSP01/tools/minimum_gate.py --strict-publish
+.venv/bin/python -m unittest discover -s Fixtures/Heaps/Similarity/BSP01/tools -p 'test_*.py'
 ```
 
 The integration validator checks the publication floor, source/input hashes,

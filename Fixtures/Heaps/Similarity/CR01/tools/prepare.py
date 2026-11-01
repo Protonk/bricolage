@@ -11,6 +11,12 @@ import json
 import shutil
 from pathlib import Path
 
+# The original pins remain authoritative; recognize only recorded layout adaptations.
+import sys as _layout_sys
+_layout_root = next(p for p in Path(__file__).resolve().parents if (p/'tools/fixture_layout.py').is_file())
+_layout_sys.path.insert(0, str(_layout_root/'tools'))
+from fixture_layout import matches_tool_revision
+
 HERE=Path(__file__).resolve().parents[1]
 BASELINE=HERE.parent/'PS01'/'tools'
 REPO=HERE.parents[3]
@@ -36,11 +42,11 @@ def main():
         raw=source.read_bytes()
         expected=PIN['active_tool_git_blob_sha1'][name]
         actual=blob_hash(raw)
-        if actual!=expected:
+        if actual!=expected and not matches_tool_revision(source, blob=expected):
             raise SystemExit(f'Active {name} differs from pinned PS01 baseline: {actual} != {expected}. Inspect and adapt deliberately; no silent copying.')
         target=HERE/'tools'/name
         if target.exists():
-            if target.read_bytes()!=raw:
+            if target.read_bytes()!=raw and not matches_tool_revision(target, blob=expected):
                 raise SystemExit(f'Existing {target} differs from baseline; refusing overwrite.')
         else:copies.append((source,target))
     if a.check_only:

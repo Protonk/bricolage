@@ -49,12 +49,12 @@ def dimensions(p):
 
 
 def check_evidence(root, check_imports=True):
-    candidates=jsonlines(safe(root,'candidates.jsonl'))
+    candidates=jsonlines(safe(root,'provenance/intake/candidates.jsonl'))
     original=jsonlines(safe(root,'provenance/supplied/candidates.jsonl'))
     require(len(candidates)==len(original),'Candidate count changed')
     require(len({r['candidate_id'] for r in candidates})==len(candidates),'Duplicate candidate ID')
     supplied={r['candidate_id']:r for r in original}
-    with (root/'candidates.csv').open(newline='') as f:
+    with (root/'provenance/intake/candidates.csv').open(newline='') as f:
         reader=csv.DictReader(f);fields=reader.fieldnames
         expected=[{k:'' if r.get(k) is None else str(r[k]) for k in fields} for r in candidates]
         require(list(reader)==expected,'Candidate CSV/JSONL differ')
@@ -160,7 +160,7 @@ def check_evidence(root, check_imports=True):
     else:require(receipt['status']=='complete' and not (root/'provenance/last_transport_error.json').exists(),'Unresolved transport failure')
     imports=json.loads((root/'provenance/import-map.json').read_text()) if check_imports and (root/'provenance/import-map.json').exists() else None
     if imports is not None:
-        prompt=json.loads((root/'prompt.json').read_text())
+        prompt=json.loads((root/'provenance/intake/prompt.json').read_text())
         require(prompt['visually_accepted']==visual_fits and prompt['eligible_selected']==len(selected),'Prompt selection axes differ')
         imported={r['candidate_id']:r for r in imports}
         require(set(imported)=={r['candidate_id'] for r in acquired},'Imported candidates differ')
@@ -204,7 +204,7 @@ def check(root):
     selection=json.loads((root/'selections.json').read_text())
     require(selection['pairs']==[] and selection['known_shift_families']==[],'Unexpected pair or shift labels')
     with (root/'probes.csv').open(newline='') as f:require(list(csv.DictReader(f))==[],'Unexpected probes')
-    prompt=json.loads((root/'prompt.json').read_text())
+    prompt=json.loads((root/'provenance/intake/prompt.json').read_text())
     require(all(prompt[k]==len(rows) for k in ('actual_count','acquired','acquired_count')),'Prompt count mismatch')
     require(prompt['minimum_viable_final_input_count']==30,'BSP01 floor changed')
     return dict(status='passed',kind='prompt_heap',images=len(rows),sources=len(sources),assets=len(sums),pairs=0)
@@ -216,7 +216,7 @@ def check_state(root):
         return dict(fixture=check(root),evidence=check_evidence(root))
     require(not any((root/name).exists() for name in ['manifest.json','manifest.csv','images','sources.csv','SHA256SUMS.txt','provenance/import-map.json']),'Abandoned contribution has published outputs')
     evidence=check_evidence(root)
-    prompt=json.loads((root/'prompt.json').read_text())
+    prompt=json.loads((root/'provenance/intake/prompt.json').read_text())
     require(prompt['actual_count']==0 and prompt['minimum_viable_final_input_count']==30 and prompt['acquisition_status']=='abandoned_below_floor','Abandoned prompt status differs')
     return dict(status='passed',disposition='abandoned_below_floor',published_inputs=0,evidence=evidence)
 
@@ -240,7 +240,7 @@ def build(name):
     check_evidence(ROOT,check_imports=False)
     stage=local('previews/integration-'+name);stage.mkdir()
     try:
-        candidates=jsonlines(ROOT/'candidates.jsonl');selected=[r for r in candidates if r['screening_status']=='accept' and r['image_downloaded']]
+        candidates=jsonlines(ROOT/'provenance/intake/candidates.jsonl');selected=[r for r in candidates if r['screening_status']=='accept' and r['image_downloaded']]
         pending=[r['candidate_id'] for r in candidates if r['screening_status']=='accept' and not r['image_downloaded']]
         require(all(r['screening_status'] in ('accept','reject','defer') for r in candidates),'Unreviewed candidates remain')
         require(len(selected)>=30,'BSP01 below 30 acquired inputs; preserve evidence without publication')
@@ -265,7 +265,7 @@ def build(name):
         dump(stage/'provenance/import-map.json',imports);(stage/'SOURCES.md').write_text('\n'.join(credits).rstrip()+'\n')
         prompt=json.loads((ROOT/'provenance/supplied/prompt.json').read_text())
         prompt.update(status=json.loads((ROOT/'provenance/acquisition.json').read_text())['status'], acquired_count=len(rows), visual_decisions_count=len(candidates), actual_count=len(rows),acquired=len(rows),visually_accepted=sum(r['visually_accepted'] is True for r in candidates),eligible_selected=sum(r['screening_status']=='accept' for r in candidates),visual_review_status='complete',acquisition_status=json.loads((ROOT/'provenance/acquisition.json').read_text())['status'],pending_acquisition=pending,selection_counts={state:sum(r['screening_status']==state for r in candidates) for state in ['accept','reject','defer']})
-        dump(stage/'prompt.json',prompt)
+        dump(stage/'provenance/intake/prompt.json',prompt)
         csv_write(stage/'probes.csv',[],'file_a file_b relation interpretation'.split())
         dump(stage/'selections.json',dict(description='No predetermined pairs for this prompt-led heap element.',pairs=[],known_shift_families=[]))
         (stage/'batches').mkdir();(stage/'batches/batch-1.txt').write_text(''.join(r['file']+'\n' for r in rows))
@@ -279,7 +279,7 @@ def publish(name):
     require(re.fullmatch(r'[a-zA-Z0-9_-]+',name),'Use a simple stage name')
     check_evidence(ROOT,check_imports=False)
     stage=local('previews/integration-'+name);validation=check(stage)
-    names=['images','manifest.json','manifest.csv','sources.csv','SOURCES.md','prompt.json','probes.csv','selections.json','batches','SHA256SUMS.txt','provenance/import-map.json']
+    names=['images','manifest.json','manifest.csv','sources.csv','SOURCES.md','provenance/intake/prompt.json','probes.csv','selections.json','batches','SHA256SUMS.txt','provenance/import-map.json']
     names += [str(p.relative_to(stage)) for p in sorted((stage/'previews').glob('selected-*.jpg'))]
     for name in names:require(not local(name).exists(),f'Output already exists: {name}')
     created=[]

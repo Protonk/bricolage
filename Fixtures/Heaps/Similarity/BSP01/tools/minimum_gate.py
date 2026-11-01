@@ -27,7 +27,7 @@ def classify(rows, root, minimum=30):
 def main():
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('--strict-publish',action='store_true',help='exit nonzero unless verified acquired count >=30 and review closed')
     a=p.parse_args()
-    rows=[json.loads(l) for l in (ROOT/'candidates.jsonl').read_text().splitlines() if l.strip()]
+    rows=[json.loads(l) for l in (ROOT/'provenance/intake/candidates.jsonl').read_text().splitlines() if l.strip()]
     result=classify(rows,ROOT)
     print(json.dumps(result,indent=2))
     if a.strict_publish and result['status']!='count_gate_met_full_review_still_required':return 2

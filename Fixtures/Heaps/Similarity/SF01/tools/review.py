@@ -9,7 +9,7 @@ def main():
     ap.add_argument('--template',action='store_true',help='create blank review worksheet (default)')
     ap.add_argument('--apply',type=Path,help='apply filled CSV decisions; never infer labels')
     args=ap.parse_args()
-    records=jsonlines(ROOT/'candidates.jsonl')
+    records=jsonlines(ROOT/'provenance/intake/candidates.jsonl')
     if args.apply:
         rows=list(csv.DictReader(args.apply.open(encoding='utf-8-sig',newline='')))
         ids={r['candidate_id']:r for r in records}

@@ -285,10 +285,10 @@ for i,r in enumerate(rows,1):
 # Reorder with original RG01 keys first and new keys afterward.
 old_keys=['family','commons_filename','discovery','discovery_url','candidate_basis','priority','accent_color','candidate_id','commons_title','file_page','screening_status','image_downloaded','visually_accepted','source_independence_confirmed','contains_people','creator','license','license_url','original_width','original_height','acquired_url','acquired_width','acquired_height','acquired_sha256']
 new_keys=list(dict.fromkeys(old_keys + [k for row in rows for k in row.keys()]))
-path=ROOT/'candidates.jsonl'
+path=ROOT/'provenance/intake/candidates.jsonl'
 with path.open('w',encoding='utf-8') as f:
     for r in rows:f.write(json.dumps({k:r.get(k) for k in new_keys},ensure_ascii=False)+'\n')
-with (ROOT/'candidates.csv').open('w',encoding='utf-8',newline='') as f:
+with (ROOT/'provenance/intake/candidates.csv').open('w',encoding='utf-8',newline='') as f:
     w=csv.DictWriter(f,fieldnames=new_keys);w.writeheader();w.writerows(rows)
 print('Wrote',len(rows),'candidates in',len({r['family'] for r in rows}),'discovery buckets')
 from collections import Counter

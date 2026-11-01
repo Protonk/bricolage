@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "migration": "Fixtures/provenance/layout-2026-11",
+  "baseline_commit": "fd04a3ed21a6cb706a486418997dc6e4ba1e7ff2",
+  "relocations": {
+    "BUILD.md": "provenance/construction/BUILD.md",
+    "SOURCE_SHA256SUMS.txt": "provenance/construction/SOURCE_SHA256SUMS.txt",
+    "V06_SHA256SUMS.txt": "provenance/construction/V06_SHA256SUMS.txt",
+    "source-manifest.json": "provenance/construction/source-manifest.json",
+    "provenance/build.py": "tools/build.py",
+    "provenance/requirements.txt": "tools/requirements.txt"
+  }
+}

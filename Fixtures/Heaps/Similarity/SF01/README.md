@@ -1,5 +1,43 @@
 # SF01 — Speckled Fields
 
+## Purpose and basis
+
+SF01 speckled-fields: photographs with many small separated marks/objects over a continuous visual field. Visual curation, no pair or membership ground truth.
+Fixture ID: `hazy-sf01-v1`; kind: `prompt_heap`.
+
+## Completeness
+
+The published manifest contains **48 inputs**. The detailed record below
+retains the original selection counts, pending cases and acquisition limitations.
+The layout migration changes no membership or completion status.
+
+## Contents
+
+This leaf follows the [shared fixture format](../../../FORMAT.md).
+`images/`, `sources/`, `previews/` and `batches/` retain their roles. Live commands
+and dependencies are in `tools/`; the [evidence index](provenance/README.md)
+locates intake/construction records, receipts and preserved packages.
+
+## Validation
+
+From the repository root, using Python 3.14.x:
+
+```sh
+.venv/bin/python -m pip install -r Fixtures/Heaps/Similarity/SF01/tools/requirements.txt
+.venv/bin/python Fixtures/Heaps/Similarity/SF01/tools/check.py
+```
+
+The check is offline and includes the shared layout check and the existing
+specialized validators. `--metadata-only` omits media and specialized checks.
+
+## Limitations
+
+Selection and source relationships retain their recorded scope; they are not
+similarity scores or additional matching assertions. Technical/provenance
+uncertainties and partial acquisitions remain documented below.
+
+## Detailed record
+
 **48 acquired photographs are integrated**, from **59 visual selections** among
 142 supplied Commons leads (**59 accept, 82 reject, 1 defer**). All 142 previews
 were inspected and have written decisions. **11 selected images await acquisition.**
@@ -32,11 +70,11 @@ foreground object. No numerical similarity score was used. The inherited
 candidate `family` field is a **discovery bucket**, not a source family or an
 expected cluster; opaque manifest family IDs identify individual acquired sources.
 
-## What was reviewed
+### What was reviewed
 
 All 142 actual preview files were inspected on contact sheets. Decisions and
 short reasons are in `provenance/visual-review.json`, `provenance/reviews.csv`,
-and the canonical `candidates.jsonl`; `candidates.csv` is generated from JSONL.
+and the canonical `provenance/intake/candidates.jsonl`; `provenance/intake/candidates.csv` is generated from JSONL.
 The catalog retains every supplied field. Discovery-era `candidate_basis` text
 is historical; current decisions live in `screening_status` and `visual_reason`.
 
@@ -54,13 +92,13 @@ remains null. Credits and rights come from each file's preserved Commons metadat
 with terms links where supplied, in [SOURCES.md](SOURCES.md). Unknown creators stay
 null. The collection assigns no new license.
 
-## Local contents and validation
+### Local contents and validation
 
 - `images/`: opaque, flat comparison inputs, byte-identical to their `sources/`
   downloads (36 renditions and 12 API-reported unscaled originals). They are not locally resized, cropped or re-encoded.
 - `manifest.json`, `manifest.csv`, `sources.csv`, `SHA256SUMS.txt`: the shared
   fixture columns, source mapping, actual decoded dimensions and byte checksums.
-- `prompt.json`, `batches/batch-1.txt`: the prompt and one complete input batch.
+- `provenance/intake/prompt.json`, `batches/batch-1.txt`: the prompt and one complete input batch.
   `probes.csv` is header-only; `selections.json` has no expected pairs.
 - `previews/tiles/`, `previews/contact-NN.jpg`: all candidate preview evidence.
   `previews/selected-NN.jpg` shows the final acquired inputs.
@@ -76,9 +114,9 @@ null. The collection assigns no new license.
 From the repository root, with Pillow installed in the chosen Python environment:
 
 ```sh
-python3 -m pip install -r Fixtures/Heaps/Similarity/SF01/requirements.txt
-python3 Fixtures/Heaps/Similarity/SF01/tools/integrate.py check
-python3 -m unittest discover -s Fixtures/Heaps/Similarity/SF01/tools -p 'test_*.py'
+.venv/bin/python -m pip install -r Fixtures/Heaps/Similarity/SF01/tools/requirements.txt
+.venv/bin/python Fixtures/Heaps/Similarity/SF01/tools/integrate.py check
+.venv/bin/python -m unittest discover -s Fixtures/Heaps/Similarity/SF01/tools -p 'test_*.py'
 ```
 
 The check is offline. It verifies all source/input hashes, dimensions, CSV/JSON
@@ -89,7 +127,7 @@ agree with the preserved stop receipt; they are never treated as acquired inputs
 Missing or changed acquired assets fail visibly. `tools/audit.py` refreshes the separate cross-fixture identity audit when
 all four prior inventories are locally available; it performs no downloads.
 
-## Acquisition record and resumption
+### Acquisition record and resumption
 
 The supplied discovery pack had no media bytes and recorded a DNS failure in its
 own environment. Its original README, instructions, catalog and scripts remain
@@ -124,8 +162,8 @@ the existing commands are (from the repository root):
 
 ```sh
 export HAZY_USER_AGENT='HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib'
-python3 Fixtures/Heaps/Similarity/SF01/tools/acquire.py --stage preview --limit 12
-python3 Fixtures/Heaps/Similarity/SF01/tools/acquire.py --stage image --limit 12
+.venv/bin/python Fixtures/Heaps/Similarity/SF01/tools/acquire.py --stage preview --limit 12
+.venv/bin/python Fixtures/Heaps/Similarity/SF01/tools/acquire.py --stage image --limit 12
 ```
 
 The current failure latch intentionally prevents both commands from issuing
@@ -136,9 +174,9 @@ Do not rerun `seed.py` or `flag_provenance.py` over this reviewed catalog: they
 are retained one-time discovery recipes. Rebuilding uses a fresh staging name:
 `tools/integrate.py build --stage NAME`; publication refuses existing outputs.
 
-## Guidance for another addition
+### Guidance for another addition
 
-The supplied [HEAP_INSTRUCTIONS.md](HEAP_INSTRUCTIONS.md) made the handoff clear:
+The supplied [provenance/intake/HEAP_INSTRUCTIONS.md](provenance/intake/HEAP_INSTRUCTIONS.md) made the handoff clear:
 keep stable IDs, exact Commons titles, canonical JSONL, explicit unknowns, and
 honest separation between leads and viewed selections. Continue that contract.
 

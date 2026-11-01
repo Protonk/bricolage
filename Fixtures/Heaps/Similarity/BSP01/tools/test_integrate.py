@@ -23,7 +23,8 @@ class PublicationFloorTests(unittest.TestCase):
             root = Path(directory).resolve()
             rows = [dict(candidate_id=f'bsp-{i:04d}', screening_status='accept', image_downloaded=True)
                     for i in range(29)]
-            (root / 'candidates.jsonl').write_text(''.join(json.dumps(r) + '\n' for r in rows))
+            (root / 'provenance/intake').mkdir(parents=True)
+            (root / 'provenance/intake/candidates.jsonl').write_text(''.join(json.dumps(r) + '\n' for r in rows))
             (root / 'previews').mkdir()
             with patch.object(integrate, 'ROOT', root), patch.object(integrate, 'local', side_effect=lambda p: root / p), patch.object(integrate, 'check_evidence'):
                 with self.assertRaisesRegex(ValueError, 'below 30'):

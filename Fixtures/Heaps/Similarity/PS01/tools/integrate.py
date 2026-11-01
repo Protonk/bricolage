@@ -49,12 +49,12 @@ def dimensions(p):
 
 
 def check_evidence(root, check_imports=True):
-    candidates=jsonlines(safe(root,'candidates.jsonl'))
+    candidates=jsonlines(safe(root,'provenance/intake/candidates.jsonl'))
     original=jsonlines(safe(root,'provenance/supplied/candidates.jsonl'))
     require(len(candidates)==len(original),'Candidate count changed')
     require(len({r['candidate_id'] for r in candidates})==len(candidates),'Duplicate candidate ID')
     supplied={r['candidate_id']:r for r in original}
-    with (root/'candidates.csv').open(newline='') as f:
+    with (root/'provenance/intake/candidates.csv').open(newline='') as f:
         reader=csv.DictReader(f);fields=reader.fieldnames
         expected=[{k:'' if r.get(k) is None else str(r[k]) for k in fields} for r in candidates]
         require(list(reader)==expected,'Candidate CSV/JSONL differ')
@@ -158,7 +158,7 @@ def check(root):
     require((root/'batches/batch-1.txt').read_text().splitlines()==[r['file'] for r in rows],'Batch mismatch')
     require(json.loads((root/'selections.json').read_text())['pairs']==[],'Unexpected pair labels')
     with (root/'probes.csv').open(newline='') as f:require(list(csv.DictReader(f))==[],'Unexpected probes')
-    require(json.loads((root/'prompt.json').read_text())['actual_count']==len(rows),'Prompt count mismatch')
+    require(json.loads((root/'provenance/intake/prompt.json').read_text())['actual_count']==len(rows),'Prompt count mismatch')
     return dict(status='passed',kind='prompt_heap',images=len(rows),sources=len(sources),assets=len(sums),pairs=0)
 
 
@@ -182,7 +182,7 @@ def build(name):
     check_evidence(ROOT,check_imports=False)
     stage=local('previews/integration-'+name);stage.mkdir()
     try:
-        candidates=jsonlines(ROOT/'candidates.jsonl');selected=[r for r in candidates if r['screening_status']=='accept' and r['image_downloaded']]
+        candidates=jsonlines(ROOT/'provenance/intake/candidates.jsonl');selected=[r for r in candidates if r['screening_status']=='accept' and r['image_downloaded']]
         pending=[r['candidate_id'] for r in candidates if r['screening_status']=='accept' and not r['image_downloaded']]
         require(all(r['screening_status'] in ('accept','reject','defer') for r in candidates),'Unreviewed candidates remain')
         rows=[];sources=[];imports=[];credits=['# PS01 acquired sources','','Commons renditions and API-reported unscaled originals, preserved byte-for-byte. Licenses below come from file-specific metadata; the collection assigns no new license.','']
@@ -204,7 +204,7 @@ def build(name):
         dump(stage/'manifest.json',dict(schema_version=1,fixture_id='hazy-ps01-v1',kind='prompt_heap',description='PS01 pale skies and dark lower halves: photographs with a pale quiet upper sky and a darker, detailed lower region. Visual curation, no pair or membership ground truth.',images=rows))
         csv_write(stage/'manifest.csv',rows,IMAGE_FIELDS);csv_write(stage/'sources.csv',sources,SOURCE_FIELDS)
         dump(stage/'provenance/import-map.json',imports);(stage/'SOURCES.md').write_text('\n'.join(credits)+'\n')
-        dump(stage/'prompt.json',dict(element='pale-skies-dark-lower-halves',prompt='Photographs with a comparatively pale, broadly continuous sky occupying a substantial upper region and a darker, more detailed or silhouetted lower region.',looseness='Horizon height, boundary sharpness, fog density, foreground texture and subject matter may vary; slightly blue or pink-gray skies are allowed.',exclusions='Known derivatives, crops, related captures/sequences, synthetic imagery, dominant close-up subjects, saturated sunsets, and fog/cloud subjects without the light-upper/dark-lower composition.',interpretation='Visual curation only. Discovery buckets and source identities are not similarity labels or expected clusters.',target_count=65,acceptable_range=[50,80],actual_count=len(rows),acquisition_status=json.loads((ROOT/'provenance/acquisition.json').read_text())['status'],pending_acquisition=pending,candidate_count=len(candidates),selection_counts={s:sum(r['screening_status']==s for r in candidates) for s in ['accept','reject','defer']}))
+        dump(stage/'provenance/intake/prompt.json',dict(element='pale-skies-dark-lower-halves',prompt='Photographs with a comparatively pale, broadly continuous sky occupying a substantial upper region and a darker, more detailed or silhouetted lower region.',looseness='Horizon height, boundary sharpness, fog density, foreground texture and subject matter may vary; slightly blue or pink-gray skies are allowed.',exclusions='Known derivatives, crops, related captures/sequences, synthetic imagery, dominant close-up subjects, saturated sunsets, and fog/cloud subjects without the light-upper/dark-lower composition.',interpretation='Visual curation only. Discovery buckets and source identities are not similarity labels or expected clusters.',target_count=65,acceptable_range=[50,80],actual_count=len(rows),acquisition_status=json.loads((ROOT/'provenance/acquisition.json').read_text())['status'],pending_acquisition=pending,candidate_count=len(candidates),selection_counts={s:sum(r['screening_status']==s for r in candidates) for s in ['accept','reject','defer']}))
         csv_write(stage/'probes.csv',[],'file_a file_b relation interpretation'.split())
         dump(stage/'selections.json',dict(description='No predetermined pairs for this prompt-led heap element.',pairs=[],known_shift_families=[]))
         (stage/'batches').mkdir();(stage/'batches/batch-1.txt').write_text(''.join(r['file']+'\n' for r in rows))
@@ -218,7 +218,7 @@ def publish(name):
     require(re.fullmatch(r'[a-zA-Z0-9_-]+',name),'Use a simple stage name')
     check_evidence(ROOT,check_imports=False)
     stage=local('previews/integration-'+name);validation=check(stage)
-    names=['images','manifest.json','manifest.csv','sources.csv','SOURCES.md','prompt.json','probes.csv','selections.json','batches','SHA256SUMS.txt','provenance/import-map.json']
+    names=['images','manifest.json','manifest.csv','sources.csv','SOURCES.md','provenance/intake/prompt.json','probes.csv','selections.json','batches','SHA256SUMS.txt','provenance/import-map.json']
     names += [str(p.relative_to(stage)) for p in sorted((stage/'previews').glob('selected-*.jpg'))]
     for name in names:require(not local(name).exists(),f'Output already exists: {name}')
     created=[]

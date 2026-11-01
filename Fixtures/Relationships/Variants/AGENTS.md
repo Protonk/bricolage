@@ -1,13 +1,13 @@
 # Operating in this fixture folder
 
-Your task is to build the five local variants described in `BUILD.md` for each of the six supplied sources, retain the specified stages, import the six supplied `v06` generations unchanged, and integrate the resulting 42-input fixture with the local Hazy checkout.
+This is a completed 42-input fixture. When explicitly asked to rebuild it, preserve the five local variants and six supplied `v06` generations according to the construction instructions below. Routine validation and structural maintenance do not authorize regenerating images.
 
 ## Read and locate
 
-1. Read this folder's `README.md`, `BUILD.md`, `SOURCES.md`, source manifest, and `provenance/v06-imports.json`.
+1. Read this folder's `README.md`, `provenance/construction/BUILD.md`, `SOURCES.md`, source manifest, and `provenance/v06-imports.json`.
 2. Identify the actual Hazy repository root. Read its current `AGENTS.md`, `README.md`, `Fixtures/README.md`, and any applicable directory instructions. Inspect the working tree before editing. Repository guidance may have changed since this kit was assembled.
 3. Use the repository's current fixture conventions. The suggested destination is `Fixtures/Relationships/Variants/`; resolve it from the discovered checkout. Do not overwrite another fixture set, replace unrelated guidance, or assume that an existing destination belongs to this run.
-4. Verify `SOURCE_SHA256SUMS.txt` and `V06_SHA256SUMS.txt` before decoding or generating anything. Keep the six originals, six supplied generations, and six prompts intact; preserve a supplied copy of metadata if normalization requires edits.
+4. Verify `provenance/construction/SOURCE_SHA256SUMS.txt` and `provenance/construction/V06_SHA256SUMS.txt` before decoding or generating anything. Keep the six originals, six supplied generations, and six prompts intact; preserve a supplied copy of metadata if normalization requires edits.
 
 ## Scope
 
@@ -19,7 +19,7 @@ Your task is to build the five local variants described in `BUILD.md` for each o
 
 ## Paths, assets, and reruns
 
-- Keep comparison inputs in a flat `images/` directory, using stable opaque filenames. Keep the six upstream assets in flat `sources/`. Keep all prepared images, masks, cutouts, stage renders, and contact sheets under `previews/`, with subdirectories as needed. Textual recipes, records, and generation code belong under `provenance/`.
+- Keep comparison inputs in a flat `images/` directory, using stable opaque filenames. Keep the six upstream assets in flat `sources/`. Keep all prepared images, masks, cutouts, stage renders, and contact sheets under `previews/`, with subdirectories as needed. Textual recipes and records belong under `provenance/`; live generation code belongs under `tools/`.
 - Check the current ignore rules before staging files. Hazy currently ignores all contents of fixture `images/`, `sources/`, and `previews/` directories. Do not force-add image bytes or put a binary asset in a tracked metadata folder.
 - Store portable paths relative to the fixture root. Resolve script paths from their own location or explicit arguments, not an assumed shell directory. Reject path traversal, unexpected symlinks, and destinations outside the chosen set.
 - Build into a fresh named staging directory under `previews/`. Validate there, then publish completed inputs and metadata coherently. Reuse stable IDs on reruns; do not reshuffle filenames or mutate a completed fixture silently.
@@ -36,4 +36,4 @@ Your task is to build the five local variants described in `BUILD.md` for each o
 
 ## Finish
 
-Complete and validate all 42 comparison inputs, including six byte-identical `v06` imports and their source-to-generation pairs. Report the set path, counts of originals/constructed variants/imported generations, reproduction command, checks performed, and any limitations. Do not implement unrelated changes to make a fixture checker accept this set; follow the compatibility procedure in `BUILD.md`.
+Complete and validate all 42 comparison inputs, including six byte-identical `v06` imports and their source-to-generation pairs. Report the set path, counts of originals/constructed variants/imported generations, reproduction command, checks performed, and any limitations. Do not implement unrelated changes to make a fixture checker accept this set; follow the compatibility procedure in `provenance/construction/BUILD.md`.

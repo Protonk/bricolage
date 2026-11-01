@@ -16,7 +16,7 @@ for n in range(a.chunks):
     if (ROOT/'provenance/last_transport_error.json').exists():raise SystemExit('Recorded failure: no new request')
     result=subprocess.run([sys.executable,str(ROOT/'tools/acquire.py'),'--stage',a.stage,'--limit','12','--user-agent','HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib'])
     if result.returncode:raise SystemExit(result.returncode)
-    records=[json.loads(l) for l in (ROOT/'candidates.jsonl').read_text().splitlines()]
+    records=[json.loads(l) for l in (ROOT/'provenance/intake/candidates.jsonl').read_text().splitlines()]
     key='preview_path' if a.stage=='preview' else 'acquired_path'
     pending=[r for r in records if not r.get(key) and (a.stage=='preview' or r['screening_status']=='accept')]
     print(f'Completed chunk {n+1}; {len(pending)} candidates still without {a.stage} files.',flush=True)

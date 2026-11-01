@@ -75,8 +75,8 @@ def shared_check(root):
 
 
 def verify(root):
-    checksum_file(root, 'SOURCE_SHA256SUMS.txt')
-    checksum_file(root, 'V06_SHA256SUMS.txt')
+    checksum_file(root, 'provenance/construction/SOURCE_SHA256SUMS.txt')
+    checksum_file(root, 'provenance/construction/V06_SHA256SUMS.txt')
     rows, probes, summary = shared_check(root)
     require(len(rows) == 42 and len(probes) == 54, 'Expected 42 images and 54 probes')
     record = json.loads(safe(root, 'provenance/construction.json').read_text())
@@ -117,7 +117,7 @@ class Builder:
         font = self.recipe['font']
         require(digest(Path(font['path'])) == font['sha256'], 'Font hash differs; no fallback')
         require(features.version('pil') == '12.0.0', 'Use pinned Pillow 12.0.0')
-        self.sources = json.loads((ROOT / 'source-manifest.json').read_text())['sources']
+        self.sources = json.loads((ROOT / 'provenance/construction/source-manifest.json').read_text())['sources']
         self.imports = json.loads((ROOT / 'provenance/v06-imports.json').read_text())['items']
         self.artifacts = []; self.finals = []; self.rows = []; self.prepared = {}; self.mapping = {}
         self.record = dict(schema_version=1, fixture_id=FIXTURE, recipes='provenance/recipes.json',
@@ -380,11 +380,11 @@ class Builder:
 
 def build(name):
     require(re.fullmatch(r'[a-zA-Z0-9_-]+',name),'Use a simple stage name')
-    checksum_file(ROOT,'SOURCE_SHA256SUMS.txt'); checksum_file(ROOT,'V06_SHA256SUMS.txt')
+    checksum_file(ROOT,'provenance/construction/SOURCE_SHA256SUMS.txt'); checksum_file(ROOT,'provenance/construction/V06_SHA256SUMS.txt')
     stage=safe(ROOT,'previews/build-'+name); require(not stage.exists(),'Stage exists; choose a fresh name'); stage.mkdir()
     try:
         b=Builder(stage)
-        copy_names=['SOURCE_SHA256SUMS.txt','V06_SHA256SUMS.txt','sources.csv','SOURCES.md','source-manifest.json','provenance/v06-imports.json','provenance/recipes.json']
+        copy_names=['provenance/construction/SOURCE_SHA256SUMS.txt','provenance/construction/V06_SHA256SUMS.txt','sources.csv','SOURCES.md','provenance/construction/source-manifest.json','provenance/v06-imports.json','provenance/recipes.json']
         copy_names += [s['file'] for s in b.sources]
         copy_names += [i[k] for i in b.imports for k in ('supplied_image_file','prompt_file')]
         for file in copy_names:
