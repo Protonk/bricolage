@@ -5,6 +5,7 @@ import hashlib
 import io
 import itertools
 import json
+import os
 from pathlib import Path
 import shutil
 import subprocess
@@ -120,7 +121,7 @@ class SamplerTests(unittest.TestCase):
         p.symlink_to(Path(self.temp.name) / 'outside.png')
         inv = self.inventory()
         self.assertEqual(inv['population']['counts']['eligible'], 3)
-        with self.assertRaisesRegex(ValueError, 'Unsafe fixture path'):
+        with self.assertRaisesRegex(s.SamplerError, 'unsafe fixture path'):
             s.fixture_path(self.repo, 'Fixtures/../secret')
 
     def test_requested_size_bounds_no_replacement_and_zero_draw(self):
@@ -128,12 +129,15 @@ class SamplerTests(unittest.TestCase):
         self.assertEqual(s.sample_ids(inv, 0, 's'), [])
         self.assertEqual(set(s.sample_ids(inv, 4, 's')), {i['image_id'] for i in inv['population']['images']})
         for n in (-1, 5, True):
-            with self.assertRaises(ValueError):
+            with self.assertRaises(s.SamplerError):
                 s.sample_ids(inv, n, 's')
         r = self.cli('draw', '5')
         self.assertEqual(r.returncode, 2)
         self.assertIn('eligible population is 4', r.stderr)
-        self.assertEqual(s.list_draws(self.store), [])
+        error = json.loads(r.stdout)['error']
+        self.assertEqual(error['code'], 'usage')
+        self.assertIn('eligible population is 4', error['message'])
+        self.assertEqual(s.list_draws(self.store)['draws'], [])
 
     def test_uniform_sampling_all_equiprobable_small_draw_paths(self):
         # 4 * 3 equally likely index paths: every ordered pair occurs exactly once.
@@ -170,7 +174,10 @@ class SamplerTests(unittest.TestCase):
         self.assertEqual(again['image_ids'], draw['image_ids'])
         self.assertNotEqual(again['sample_id'], draw['sample_id'])
         self.assertEqual(len(list((self.store / 'inventories').glob('*.json'))), 1)
-        self.assertEqual(len(s.list_draws(self.store)), 2)
+        listed = s.list_draws(self.store)
+        self.assertEqual(len(listed['draws']), 2)
+        self.assertEqual({d['status'] for d in listed['draws']}, {'ok'})
+        self.assertEqual(listed['problems'], [])
 
     def test_changes_do_not_rewrite_old_draw_or_replace_missing_images(self):
         draw = self.draw(4)
@@ -181,6 +188,7 @@ class SamplerTests(unittest.TestCase):
         self.assertTrue(report['original_draw_reproduced'])
         self.assertEqual(report['images_available'], 3)
         self.assertFalse(report['ok'])
+        self.assertEqual([p['kind'] for p in report['problems']], ['image-unavailable'])
         self.assertEqual(self.cli('verify', draw['sample_id']).returncode, 1)
         self.assertEqual(self.cli('show', draw['sample_id']).returncode, 0)
         self.assertNotEqual(self.inventory()['inventory_id'], draw['inventory_id'])
@@ -194,8 +202,9 @@ class SamplerTests(unittest.TestCase):
         self.assertEqual(before, after)
         result = s.verify_draw(self.store, draw['sample_id'], self.repo)
         self.assertEqual(result['images_available'], 4)
-        self.assertEqual(len(result['fixture_metadata_issues']), 1)
-        self.assertEqual(result['fixture_metadata_issues'][0]['status'], 'changed')
+        self.assertEqual(len(result['problems']), 1)
+        self.assertEqual(result['problems'][0]['kind'], 'metadata-changed')
+        self.assertEqual(result['problems'][0]['status'], 'changed')
 
     def test_records_and_fixture_paths_survive_checkout_relocation(self):
         draw = self.draw()
@@ -204,7 +213,7 @@ class SamplerTests(unittest.TestCase):
         store = relocated / 'Fixtures/Sampler/records'
         result = s.verify_draw(store, draw['sample_id'], relocated)
         self.assertTrue(result['ok'])
-        shown = s.inspect_draw(store, draw['sample_id'], relocated, True)
+        shown = s.inspect_draw(store, draw['sample_id'], relocated, True)['images']
         self.assertTrue(all(Path(r['available_path']).is_relative_to(relocated) for r in shown))
 
     def test_annotations_round_trip_revisions_deletions_and_metadata_separation(self):
@@ -223,7 +232,7 @@ class SamplerTests(unittest.TestCase):
         self.assertEqual((s.sample_dir(self.store, sid) / 'draw.json').read_bytes(), original)
         self.assertEqual(self.inventory()['population'], before)
         self.assertEqual(s.sample_ids(self.inventory(), 3, draw['seed']), draw['image_ids'])
-        with self.assertRaises(ValueError):
+        with self.assertRaises(s.SamplerError):
             s.annotate(self.store, sid, 'review', 'bad', image_id='not-in-draw')
 
     def test_cli_stdin_json_null_and_reload(self):
@@ -232,7 +241,7 @@ class SamplerTests(unittest.TestCase):
         self.assertEqual(result.returncode, 0, result.stderr)
         result = self.cli('show', draw['sample_id'])
         self.assertIsNone(json.loads(result.stdout)['annotations']['sample']['whatever'])
-        self.assertEqual(len(json.loads(self.cli('show', draw['sample_id'], '--paths').stdout)), 3)
+        self.assertEqual(len(json.loads(self.cli('show', draw['sample_id'], '--paths').stdout)['images']), 3)
 
     def test_public_engine_returns_persistent_draw_and_paths_from_another_cwd(self):
         store = self.repo / 'records with spaces'
@@ -290,11 +299,11 @@ class SamplerTests(unittest.TestCase):
         sentinel.write_bytes(b'previous')
         self.assertEqual(self.cli('5').returncode, 2)
         draw = self.draw()
-        images = s.inspect_draw(self.store, draw['sample_id'], self.repo, paths_only=True)
+        images = s.inspect_draw(self.store, draw['sample_id'], self.repo, paths_only=True)['images']
         def corrupt_copy(source, destination):
             destination.write_bytes(b'incomplete copy')
         with patch.object(s.shutil, 'copyfile', side_effect=corrupt_copy):
-            with self.assertRaisesRegex(ValueError, 'checksum differs'):
+            with self.assertRaisesRegex(s.SamplerError, 'checksum differs'):
                 s.publish_sample(self.repo, self.store, images)
         self.assertEqual(sentinel.read_bytes(), b'previous')
         self.assertEqual(list(sampled.parent.iterdir()), [sampled])
@@ -325,11 +334,11 @@ class SamplerTests(unittest.TestCase):
         sampled.mkdir()
         self.assertEqual(self.cli('--store', str(sampled / 'records'), '1').returncode, 2)
         self.assertEqual((outside / 'keep').read_bytes(), b'keep')
-        self.assertEqual(s.list_draws(self.store), [])
+        self.assertEqual(s.list_draws(self.store)['draws'], [])
 
     def test_concurrent_publications_leave_one_complete_sample(self):
         draws = [self.draw(2, 'first'), self.draw(3, 'second')]
-        images = [s.inspect_draw(self.store, d['sample_id'], self.repo, True) for d in draws]
+        images = [s.inspect_draw(self.store, d['sample_id'], self.repo, True)['images'] for d in draws]
         with concurrent.futures.ThreadPoolExecutor(max_workers=2) as pool:
             published = list(pool.map(lambda rows: s.publish_sample(self.repo, self.store, rows), images))
         actual = {p.name for p in (self.repo / 'output/sampled').iterdir()}
@@ -340,7 +349,7 @@ class SamplerTests(unittest.TestCase):
             result = self.cli(size)
             self.assertEqual(result.returncode, 2)
             self.assertIn('sampler:', result.stderr)
-        self.assertEqual(s.list_draws(self.store), [])
+        self.assertEqual(s.list_draws(self.store)['draws'], [])
         result = self.cli('--repo=' + str(self.repo), '--store=' + str(self.store),
                           '2', '--seed', 'same')
         self.assertEqual(result.returncode, 0, result.stderr)
@@ -382,15 +391,112 @@ class SamplerTests(unittest.TestCase):
         draw = self.draw()
         path = s.sample_dir(self.store, draw['sample_id']) / 'annotations.jsonl'
         path.write_text('{"partial":')
-        with self.assertRaisesRegex(ValueError, 'Incomplete annotation'):
+        with self.assertRaisesRegex(s.SamplerError, 'ends mid-line'):
             s.annotate(self.store, draw['sample_id'], 'note', 'new')
         self.assertEqual(path.read_text(), '{"partial":')
+        shown = s.inspect_draw(self.store, draw['sample_id'], self.repo)
+        self.assertEqual([p['kind'] for p in shown['problems']], ['annotations-unreadable'])
+        self.assertEqual(shown['draw'], draw)
         invpath = s.inventory_file(self.store, draw['inventory_id'])
-        inventory = s.read_json(invpath)
+        inventory = s.read_json(invpath, 'test')
         inventory['population']['images'].pop()
         invpath.write_text(json.dumps(inventory))
-        with self.assertRaisesRegex(ValueError, 'checksum'):
+        with self.assertRaisesRegex(s.SamplerError, 'checksum') as caught:
             s.load_draw(self.store, draw['sample_id'])
+        self.assertEqual(caught.exception.code, 'record-damaged')
+
+    def test_malformed_leaves_are_named_with_their_field(self):
+        manifest = self.heap / 'manifest.json'
+        cases = [
+            (lambda m: m.pop('kind'), 'lacks the field "kind"'),
+            (lambda m: m['images'][0].pop('byte_sha256'), 'images\\[0\\] lacks the field "byte_sha256"'),
+            (lambda m: m['images'][0].__setitem__('file', 'sources/0.png'), 'must be inside images/'),
+            (lambda m: m.__setitem__('schema_version', 2), 'unsupported schema_version'),
+        ]
+        original = manifest.read_text()
+        for mutate, expected in cases:
+            value = json.loads(original)
+            mutate(value)
+            manifest.write_text(json.dumps(value))
+            with self.assertRaisesRegex(s.SamplerError, 'Fixture leaf Fixtures/Heaps/Curatorial/Nested/Leaf: .*' + expected) as caught:
+                self.inventory()
+            self.assertEqual(caught.exception.code, 'fixture')
+            self.assertEqual(caught.exception.details['leaf'], 'Fixtures/Heaps/Curatorial/Nested/Leaf')
+        manifest.write_text(original)
+        sources = self.heap / 'sources.csv'
+        sources.unlink()
+        with self.assertRaisesRegex(s.SamplerError, 'sources.csv is missing'):
+            self.inventory()
+        sources.write_text('source_filename,credit\nx,y\n')
+        with self.assertRaisesRegex(s.SamplerError, 'family_id column'):
+            self.inventory()
+        result = self.cli('1')
+        self.assertEqual(result.returncode, 2)
+        error = json.loads(result.stdout)['error']
+        self.assertEqual((error['code'], error['leaf']), ('fixture', 'Fixtures/Heaps/Curatorial/Nested/Leaf'))
+        self.assertIn('family_id column', result.stderr)
+
+    def test_argument_mistakes_are_json_errors_too(self):
+        result = self.cli('nonsense')
+        self.assertEqual(result.returncode, 2)
+        self.assertEqual(json.loads(result.stdout)['error']['code'], 'usage')
+        result = self.cli('show', 'draw-short')
+        self.assertEqual(result.returncode, 2)
+        self.assertIn('full sample ID', json.loads(result.stdout)['error']['message'])
+        draw = self.draw()
+        result = self.cli('annotate', draw['sample_id'], '--key', 'k', '--json', '{not json')
+        self.assertEqual(result.returncode, 2)
+        self.assertIn('not valid JSON', json.loads(result.stdout)['error']['message'])
+
+    def test_list_reports_damaged_and_snapshotless_draws_without_hiding_the_rest(self):
+        good, damaged, orphan = self.draw(1, 'good'), self.draw(1, 'damaged'), self.draw(1, 'orphan')
+        (s.sample_dir(self.store, damaged['sample_id']) / 'draw.json').write_text('{"broken": true}')
+        s.inventory_file(self.store, orphan['inventory_id']).unlink()
+        result = self.cli('list')
+        self.assertEqual(result.returncode, 1, result.stderr)
+        listed = json.loads(result.stdout)
+        status = {d['sample_id']: d['status'] for d in listed['draws']}
+        self.assertEqual(status, {good['sample_id']: 'snapshot-missing', damaged['sample_id']: 'damaged',
+                                  orphan['sample_id']: 'snapshot-missing'})
+        broken = next(d for d in listed['draws'] if d['status'] == 'damaged')
+        self.assertEqual(broken['error']['code'], 'record-invalid')
+        self.assertIn('lacks the field', broken['error']['message'])
+        self.assertEqual(len(listed['problems']), 3)
+
+    def test_show_and_verify_degrade_when_the_snapshot_is_missing(self):
+        draw = self.draw(2)
+        s.inventory_file(self.store, draw['inventory_id']).unlink()
+        result = self.cli('show', draw['sample_id'])
+        self.assertEqual(result.returncode, 1, result.stderr)
+        shown = json.loads(result.stdout)
+        self.assertEqual(shown['draw'], draw)
+        self.assertFalse(shown['snapshot_available'])
+        self.assertEqual([p['kind'] for p in shown['problems']], ['snapshot-unavailable'])
+        self.assertEqual(shown['problems'][0]['code'], 'record-missing')
+        self.assertEqual([i['image_id'] for i in shown['current_locations']], draw['image_ids'])
+        self.assertTrue(all(i['available_path'] is None for i in shown['current_locations']))
+        verified = s.verify_draw(self.store, draw['sample_id'], self.repo)
+        self.assertFalse(verified['original_draw_reproduced'])
+        self.assertFalse(verified['ok'])
+        with self.assertRaises(s.SamplerError):
+            s.annotate(self.store, draw['sample_id'], 'k', 'v')
+
+    def test_inventory_exit_code_reports_fixture_problems(self):
+        self.assertEqual(self.cli('inventory').returncode, 0)
+        (self.heap / 'images/0.png').unlink()
+        (self.heap / 'images/extra.png').write_bytes(b'extra')
+        result = self.cli('inventory')
+        self.assertEqual(result.returncode, 1)
+        kinds = sorted(p['kind'] for p in json.loads(result.stdout)['problems'])
+        self.assertEqual(kinds, ['alias-unavailable', 'unlisted-input'])
+
+    def test_records_follow_the_umask(self):
+        previous = os.umask(0o022)
+        self.addCleanup(os.umask, previous)
+        draw = self.draw()
+        mode = (s.sample_dir(self.store, draw['sample_id']) / 'draw.json').stat().st_mode & 0o777
+        self.assertEqual(mode, 0o644)
+        self.assertEqual(s.inventory_file(self.store, draw['inventory_id']).stat().st_mode & 0o777, 0o644)
 
 
 if __name__ == '__main__':

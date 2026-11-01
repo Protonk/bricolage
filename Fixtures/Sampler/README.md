@@ -64,11 +64,13 @@ Fixtures/sample annotate SAMPLE_ID --image IMAGE_ID --key review --json '{"decis
 Fixtures/sample annotate SAMPLE_ID --image IMAGE_ID --key review --delete
 ```
 
-`SAMPLE_ID` and `IMAGE_ID` above are placeholders. `show --paths` returns ordered
-image IDs, an available absolute path per image (or null), and every alias's
-current status. Open those paths with the local viewer of your choice. `show`
-also returns the original draw, frozen fixture/source metadata, current
+`SAMPLE_ID` and `IMAGE_ID` above are placeholders. `show --paths` returns an
+`images` list in draw order: image ID, an available absolute path (or null), and
+every alias's current status. Open those paths with the local viewer of your choice.
+`show` also returns the original draw, frozen fixture/source metadata, current
 annotations and the complete annotation history, even if image files are missing.
+If the draw's snapshot is missing or damaged, `show` still returns the draw record
+and its image IDs, with the gap listed under `problems`.
 
 Annotation keys and JSON values are arbitrary. The example words have no special
 meaning to the sampler. A value can be an object, array, string, number, Boolean
@@ -99,6 +101,7 @@ Draw responses have `schema_version: 1` and these fields:
 | `images` | Draw order; each item has `position`, `image_id`, `sampled_path` for its disposable copy, `available_path` for its fixture original, and all alias `locations` with current statuses |
 | `current_check` | Record reproduction and current file/metadata verification |
 | `output` | Absolute `directory`, `published` Boolean, and `error` if copying or publication failed |
+| `problems` | Every problem found, each with a `kind`; empty when the exit code is 0 |
 
 An agent or program can call the engine and use the returned paths immediately:
 
@@ -115,15 +118,26 @@ sample_id = sample["draw"]["sample_id"]
 image_paths = [item["sampled_path"] for item in sample["images"]]
 ```
 
-All successful commands output JSON. Exit codes are 0 for success, 1 for a
-`draw` or `verify` report with current file/metadata or publication problems, and 2 for invalid
-arguments, damaged records or I/O errors. On exit 1, stdout still contains the
-JSON report and saved sample ID. `draw` persists the original selection before
-checking current availability; a missing file never causes a replacement draw.
-An oversized request is rejected before creating a sample.
-On a failed publication, `sampled_path` values are null; the saved draw remains
-available. `show` and `verify` inspect fixture originals and durable records,
-without changing or relying on disposable output.
+Every command writes JSON to stdout, including failures. Exit code 0 means the
+report lists no problems. Exit code 1 means the command completed and its report
+has a nonempty `problems` list: unavailable or unlisted fixture files, a publication
+failure, a damaged or snapshotless draw in `list`, or a missing snapshot in `show`
+and `verify`. Read `problems` before deciding whether the result is usable; a draw
+with `output.published` true is complete even when the population reports problems
+elsewhere. Exit code 2 means the command could not complete. Its stdout is
+`{"schema_version": 1, "error": {"code": ..., "message": ...}}` with the same
+one-line message on stderr. Codes are `usage` (arguments or request), `fixture`
+(a leaf's metadata, with its `leaf` path), `record-missing`, `record-invalid`,
+`record-damaged` (a checksum differs), `output` (the disposable directory) and `io`.
+Nothing is repaired on failure; fix the fixture or record the message names.
+
+`draw` persists the original selection before checking current availability; a
+missing file never causes a replacement draw. An oversized request is rejected
+before creating a sample. On a failed publication, `sampled_path` values are null;
+the saved draw remains available. `show` and `verify` inspect fixture originals and
+durable records, without changing or relying on disposable output. `list` reports
+every draw directory; a damaged record appears with status `damaged` and its error
+rather than hiding the others.
 
 Global `--repo CHECKOUT` and `--store DIRECTORY` options go **before** the command.
 The checkout and default store resolve from the engine; custom relative option

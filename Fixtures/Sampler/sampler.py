@@ -27,11 +27,41 @@ PROCEDURE = 'sha256-counter-rejection-partial-fisher-yates-v1'
 POLICY = 'active-manifest-inputs; exact-byte-sha256-aliases; one-ticket-per-hash-v1'
 SKIP_DIRS = {'images', 'sources', 'previews', 'provenance', '__pycache__', '.git'}
 HEX = re.compile(r'[0-9a-f]{64}\Z')
+DRAW_FIELDS = (('schema_version', int), ('sample_id', str), ('created_at', str),
+               ('inventory_id', str), ('inventory_file', str), ('procedure', str),
+               ('seed', str), ('requested_size', int), ('eligible_count', int),
+               ('image_ids', list), ('draw_sha256', str))
 
 
-def require(condition, message):
+class SamplerError(Exception):
+    """A reported failure with a known cause. Nothing is repaired on the way out.
+
+    Codes: usage (arguments or request), fixture (fixture metadata or layout),
+    record-missing, record-invalid, record-damaged (a checksum differs), output
+    (the disposable output directory) and io (the operating system refused).
+    """
+    def __init__(self, code, message, **details):
+        super().__init__(message)
+        self.code = code
+        self.details = details
+
+    def report(self):
+        return dict(code=self.code, message=str(self), **self.details)
+
+
+def require(condition, code, message, **details):
     if not condition:
-        raise ValueError(message)
+        raise SamplerError(code, message, **details)
+
+
+def field(record, key, kinds, what, code='record-invalid'):
+    """Read one typed field, naming the record and field when it is absent or wrong."""
+    require(isinstance(record, dict), code, f'{what} is not a JSON object')
+    require(key in record, code, f'{what} lacks the field "{key}"')
+    value = record[key]
+    require(isinstance(value, kinds) and not (kinds is int and isinstance(value, bool)), code,
+            f'{what} field "{key}" has the wrong type')
+    return value
 
 
 def utc():
@@ -39,8 +69,11 @@ def utc():
 
 
 def canonical(value):
-    return json.dumps(value, sort_keys=True, ensure_ascii=False, allow_nan=False,
-                      separators=(',', ':')).encode('utf-8')
+    try:
+        return json.dumps(value, sort_keys=True, ensure_ascii=False, allow_nan=False,
+                          separators=(',', ':')).encode('utf-8')
+    except (ValueError, TypeError) as error:
+        raise SamplerError('usage', f'Value is not exact JSON: {error}') from None
 
 
 def digest(value):
@@ -55,9 +88,23 @@ def file_hash(path):
     return h.hexdigest()
 
 
-def read_json(path):
-    with path.open(encoding='utf-8') as stream:
-        return json.load(stream)
+def read_json(path, what, code='record-invalid'):
+    try:
+        with path.open(encoding='utf-8') as stream:
+            return json.load(stream)
+    except FileNotFoundError:
+        raise SamplerError('record-missing' if code == 'record-invalid' else code,
+                           f'{what} is missing: {path}', path=str(path)) from None
+    except UnicodeDecodeError:
+        raise SamplerError(code, f'{what} is not UTF-8 text: {path}', path=str(path)) from None
+    except json.JSONDecodeError as error:
+        raise SamplerError(code, f'{what} is not valid JSON: {path} ({error})', path=str(path)) from None
+
+
+def current_umask():
+    value = os.umask(0)
+    os.umask(value)
+    return value
 
 
 def new_json(path, value):
@@ -70,25 +117,26 @@ def new_json(path, value):
             stream.write(data)
             stream.flush()
             os.fsync(stream.fileno())
+        os.chmod(name, 0o666 & ~current_umask())  # Records are ordinary files, not private ones.
         os.link(name, path)  # Exclusive publication, also safe against concurrent writers.
     finally:
         Path(name).unlink()
 
 
-def relative_path(value):
-    require(isinstance(value, str) and value, 'Expected a nonempty relative path')
+def relative_path(value, what):
+    require(isinstance(value, str) and value, 'fixture', f'{what} is not a nonempty relative path')
     p = PurePosixPath(value)
     require(not p.is_absolute() and '..' not in p.parts and '\\' not in value,
-            'Unsafe fixture path: ' + value)
+            'fixture', f'{what} is an unsafe fixture path: {value}')
     return p
 
 
 def fixture_path(repo, value):
-    p = relative_path(value)
-    require(p.parts[0] == 'Fixtures', 'Path is outside Fixtures: ' + value)
+    p = relative_path(value, 'Recorded location')
+    require(p.parts[0] == 'Fixtures', 'fixture', 'Recorded location is outside Fixtures: ' + value)
     path = repo.joinpath(*p.parts)
     require(path.resolve().is_relative_to((repo / 'Fixtures').resolve()),
-            'Resolved path is outside Fixtures: ' + value)
+            'fixture', 'Recorded location resolves outside Fixtures: ' + value)
     return path
 
 
@@ -101,7 +149,7 @@ def location_status(repo, value, expected):
                     observed_sha256=observed)
     except FileNotFoundError:
         return dict(status='missing', observed_sha256=None)
-    except (OSError, ValueError) as error:
+    except (OSError, SamplerError) as error:
         return dict(status='inaccessible', observed_sha256=None,
                     error=f'{type(error).__name__}: {error}')
 
@@ -112,72 +160,109 @@ def manifests(repo):
     found = []
     for area in ('Heaps', 'Relationships'):
         root = repo / 'Fixtures' / area
-        require(root.is_dir(), 'Missing fixture area: ' + str(root))
+        require(root.is_dir(), 'fixture', f'Fixture area is missing: {root}', path=str(root))
         for parent, dirs, files in os.walk(root, followlinks=False):
             dirs[:] = sorted(d for d in dirs if d not in SKIP_DIRS and not d.startswith('.'))
             if 'manifest.json' in files:
                 found.append(Path(parent) / 'manifest.json')
-    require(found, 'No active fixture manifests found')
+    require(found, 'fixture', 'No active fixture manifests found under Fixtures/Heaps or Fixtures/Relationships')
     return sorted(found)
+
+
+def read_leaf(repo, manifest_path):
+    """Read and validate one leaf's metadata. Raises SamplerError naming the leaf."""
+    leaf = manifest_path.parent
+    rel = leaf.relative_to(repo).as_posix()
+    files = []
+
+    def metadata_bytes(path, what, required=True):
+        try:
+            data = path.read_bytes()
+        except FileNotFoundError:
+            if not required:
+                return None
+            raise SamplerError('fixture', f'{what} is missing', path=path.relative_to(repo).as_posix()) from None
+        files.append(dict(path=path.relative_to(repo).as_posix(),
+                          sha256=hashlib.sha256(data).hexdigest()))
+        return data
+
+    def parse_json(data, what):
+        try:
+            return json.loads(data.decode('utf-8'))
+        except (UnicodeDecodeError, json.JSONDecodeError) as error:
+            raise SamplerError('fixture', f'{what} is not valid UTF-8 JSON: {error}') from None
+
+    try:
+        manifest = parse_json(metadata_bytes(manifest_path, 'manifest.json'), 'manifest.json')
+        what = 'manifest.json'
+        require(field(manifest, 'schema_version', int, what, 'fixture') == 1, 'fixture',
+                'manifest.json has an unsupported schema_version')
+        fixture_id = field(manifest, 'fixture_id', str, what, 'fixture')
+        kind = field(manifest, 'kind', str, what, 'fixture')
+        rows = field(manifest, 'images', list, what, 'fixture')
+        raw = metadata_bytes(leaf / 'sources.csv', 'sources.csv')
+        try:
+            sources = list(csv.DictReader(io.StringIO(raw.decode('utf-8'))))
+        except (UnicodeDecodeError, csv.Error) as error:
+            raise SamplerError('fixture', f'sources.csv is unreadable: {error}') from None
+        require(sources and 'family_id' in sources[0], 'fixture',
+                'sources.csv needs a header with a family_id column and at least one row')
+        mapping_data = metadata_bytes(leaf / 'provenance/import-map.json', 'import-map.json', required=False)
+        mappings = parse_json(mapping_data, 'provenance/import-map.json') if mapping_data else []
+        require(isinstance(mappings, list), 'fixture', 'provenance/import-map.json is not a list')
+        mapped = {}
+        for row in mappings:
+            key = row.get('final_file') if isinstance(row, dict) else None
+            if key:
+                require(key not in mapped, 'fixture', f'provenance/import-map.json lists {key} twice')
+                mapped[key] = row
+        # Exact rows are embedded below; also retain the readable credit context's hash.
+        metadata_bytes(leaf / 'SOURCES.md', 'SOURCES.md', required=False)
+        images, seen = [], set()
+        for n, row in enumerate(rows):
+            what = f'manifest.json images[{n}]'
+            name = field(row, 'file', str, what, 'fixture')
+            local = relative_path(name, what)
+            require(local.parts[0] == 'images' and len(local.parts) > 1, 'fixture',
+                    f'{what} must be inside images/: {name}')
+            require(name not in seen, 'fixture', f'manifest.json lists {name} twice')
+            seen.add(name)
+            expected = field(row, 'byte_sha256', str, what, 'fixture')
+            require(HEX.fullmatch(expected), 'fixture', f'{what} byte_sha256 is not 64 lowercase hex digits')
+            families = set(filter(None, str(row.get('parents', '')).split('|')))
+            if row.get('family_id'):
+                families.add(row['family_id'])
+            images.append(dict(name=name, expected=expected, record=row,
+                               source_records=[s for s in sources if s.get('family_id') in families],
+                               import_record=mapped.get(name)))
+        unlisted = [p.relative_to(repo).as_posix() for p in sorted((leaf / 'images').rglob('*'))
+                    if p.is_file() and p.relative_to(leaf).as_posix() not in seen]
+    except SamplerError as error:
+        raise SamplerError('fixture', f'Fixture leaf {rel}: {error}', leaf=rel, **error.details) from None
+    return dict(leaf=leaf, fixture_path=rel, fixture_id=fixture_id, kind=kind, images=images,
+                metadata_files=files, unlisted_inputs=unlisted)
 
 
 def build_inventory(repo):
     repo = Path(repo).resolve()
     tickets, metadata_files, unlisted = {}, [], []
-    leaves = manifests(repo)
+    leaves = [read_leaf(repo, manifest_path) for manifest_path in manifests(repo)]
     occurrences = 0
-
-    def metadata_bytes(path):
-        data = path.read_bytes()
-        metadata_files.append(dict(path=path.relative_to(repo).as_posix(),
-                                   sha256=hashlib.sha256(data).hexdigest()))
-        return data
-
-    for manifest_path in leaves:
-        leaf = manifest_path.parent
-        manifest = json.loads(metadata_bytes(manifest_path))
-        require(manifest.get('schema_version') == 1, 'Unsupported fixture manifest schema')
-        require(isinstance(manifest.get('fixture_id'), str), 'Missing fixture ID')
-        source_path = leaf / 'sources.csv'
-        sources = list(csv.DictReader(io.StringIO(metadata_bytes(source_path).decode('utf-8'))))
-        mapping_path = leaf / 'provenance/import-map.json'
-        mappings = json.loads(metadata_bytes(mapping_path)) if mapping_path.exists() else []
-        mapped = {}
-        for row in mappings:
-            key = row.get('final_file')
-            if key:
-                require(key not in mapped, 'Duplicate import-map input: ' + key)
-                mapped[key] = row
-        # Exact rows are embedded below; also retain the readable credit context's hash.
-        if (leaf / 'SOURCES.md').is_file():
-            metadata_bytes(leaf / 'SOURCES.md')
-        seen = set()
-        for row in manifest['images']:
-            name = row['file']
-            local = relative_path(name)
-            require(local.parts[0] == 'images' and len(local.parts) > 1,
-                    'Manifest input must be inside images/: ' + name)
-            require(name not in seen, 'Duplicate path in manifest: ' + name)
-            seen.add(name)
-            expected = row['byte_sha256']
-            require(isinstance(expected, str) and HEX.fullmatch(expected), 'Invalid input SHA-256')
-            image_id = 'sha256:' + expected
-            path = (leaf / local).relative_to(repo).as_posix()
-            families = set(filter(None, row.get('parents', '').split('|')))
-            if row.get('family_id'):
-                families.add(row['family_id'])
-            alias = dict(path=path, fixture_path=leaf.relative_to(repo).as_posix(),
-                         fixture_id=manifest['fixture_id'], kind=manifest['kind'],
-                         manifest_record=row,
-                         source_records=[s for s in sources if s['family_id'] in families],
-                         import_record=mapped.get(name),
-                         availability=location_status(repo, path, expected))
-            tickets.setdefault(image_id, dict(image_id=image_id, byte_sha256=expected,
+    for leaf in leaves:
+        metadata_files.extend(leaf['metadata_files'])
+        unlisted.extend(leaf['unlisted_inputs'])
+        for image in leaf['images']:
+            image_id = 'sha256:' + image['expected']
+            path = (leaf['leaf'] / image['name']).relative_to(repo).as_posix()
+            alias = dict(path=path, fixture_path=leaf['fixture_path'],
+                         fixture_id=leaf['fixture_id'], kind=leaf['kind'],
+                         manifest_record=image['record'],
+                         source_records=image['source_records'],
+                         import_record=image['import_record'],
+                         availability=location_status(repo, path, image['expected']))
+            tickets.setdefault(image_id, dict(image_id=image_id, byte_sha256=image['expected'],
                                               aliases=[]))['aliases'].append(alias)
             occurrences += 1
-        for path in sorted((leaf / 'images').rglob('*')):
-            if path.is_file() and path.relative_to(leaf).as_posix() not in seen:
-                unlisted.append(path.relative_to(repo).as_posix())
     images = []
     for image_id in sorted(tickets):
         item = tickets[image_id]
@@ -195,21 +280,30 @@ def build_inventory(repo):
 
 
 def validate_inventory(inventory):
-    pop = inventory['population']
-    require(inventory['inventory_id'] == digest(pop), 'Inventory snapshot checksum differs')
-    require(pop['schema_version'] == 1 and pop['policy'] == POLICY, 'Unsupported inventory policy')
-    ids = [i['image_id'] for i in pop['images']]
-    require(ids == sorted(set(ids)), 'Inventory tickets must be unique and sorted')
-    for item in pop['images']:
-        require(HEX.fullmatch(item['byte_sha256']) and item['image_id'] == 'sha256:' + item['byte_sha256'],
-                'Invalid image identity')
-        require(item['aliases'] and item['eligible'] == any(
-            a['availability']['status'] == 'ok' for a in item['aliases']), 'Invalid eligibility')
+    what = 'Inventory record'
+    pop = field(inventory, 'population', dict, what)
+    inventory_id = field(inventory, 'inventory_id', str, what)
+    require(inventory_id == digest(pop), 'record-damaged', f'{what} {inventory_id}: checksum differs from its contents')
+    require(field(pop, 'schema_version', int, what) == 1 and pop.get('policy') == POLICY,
+            'record-invalid', f'{what} {inventory_id}: unsupported population schema or policy')
+    images = field(pop, 'images', list, what)
+    ids = [field(i, 'image_id', str, what) for i in images]
+    require(ids == sorted(set(ids)), 'record-invalid', f'{what} {inventory_id}: tickets must be unique and sorted')
+    for item in images:
+        sha = field(item, 'byte_sha256', str, what)
+        require(HEX.fullmatch(sha) and item['image_id'] == 'sha256:' + sha,
+                'record-invalid', f'{what} {inventory_id}: invalid image identity {item["image_id"]}')
+        aliases = field(item, 'aliases', list, what)
+        require(aliases and field(item, 'eligible', bool, what) == any(
+            a['availability']['status'] == 'ok' for a in aliases),
+            'record-invalid', f'{what} {inventory_id}: invalid eligibility for {item["image_id"]}')
+    field(pop, 'counts', dict, what)
     return inventory
 
 
 def inventory_file(store, inventory_id):
-    require(HEX.fullmatch(inventory_id), 'Expected a full inventory ID')
+    require(isinstance(inventory_id, str) and HEX.fullmatch(inventory_id), 'usage',
+            f'Expected a full 64-hex inventory ID, got {inventory_id!r}')
     return Path(store) / 'inventories' / (inventory_id + '.json')
 
 
@@ -219,15 +313,18 @@ def save_inventory(store, inventory):
     try:
         new_json(path, inventory)
     except FileExistsError:
-        existing = validate_inventory(read_json(path))
-        require(existing['population'] == inventory['population'], 'Existing snapshot differs')
+        existing = validate_inventory(read_json(path, 'Inventory record'))
+        require(existing['population'] == inventory['population'], 'record-damaged',
+                f'Existing inventory {path} does not match the population it claims')
         return existing
     return inventory
 
 
 def load_inventory(store, inventory_id):
-    value = validate_inventory(read_json(inventory_file(store, inventory_id)))
-    require(value['inventory_id'] == inventory_id, 'Inventory filename/identity differs')
+    path = inventory_file(store, inventory_id)
+    value = validate_inventory(read_json(path, 'Inventory record'))
+    require(value['inventory_id'] == inventory_id, 'record-invalid',
+            f'Inventory file {path} holds a different inventory ID')
     return value
 
 
@@ -244,7 +341,7 @@ class RandomStream:
         return int.from_bytes(value, 'big')
 
     def randbelow(self, bound):
-        require(0 < bound <= 2**256, 'Invalid random bound')
+        require(0 < bound <= 2**256, 'usage', 'Invalid random bound')
         limit = 2**256 - (2**256 % bound)
         while True:
             word = self.word()
@@ -254,9 +351,9 @@ class RandomStream:
 
 def sample_ids(inventory, size, seed):
     validate_inventory(inventory)
-    require(type(size) is int and size >= 0, 'Sample size must be a nonnegative integer')
+    require(type(size) is int and size >= 0, 'usage', 'Sample size must be a nonnegative integer')
     pool = [i['image_id'] for i in inventory['population']['images'] if i['eligible']]
-    require(size <= len(pool), f'Requested {size} images; eligible population is {len(pool)}')
+    require(size <= len(pool), 'usage', f'Requested {size} images; eligible population is {len(pool)}')
     rng = RandomStream(seed)
     for i in range(size):
         j = i + rng.randbelow(len(pool) - i)
@@ -265,13 +362,14 @@ def sample_ids(inventory, size, seed):
 
 
 def sample_dir(store, sample_id):
-    require(re.fullmatch(r'draw-[0-9a-f]{32}', sample_id), 'Expected a full sample ID')
+    require(isinstance(sample_id, str) and re.fullmatch(r'draw-[0-9a-f]{32}', sample_id), 'usage',
+            f'Expected a full sample ID like draw-<32 hex digits>, got {sample_id!r}')
     return Path(store) / 'draws' / sample_id
 
 
 def create_draw(store, inventory, size, seed=None):
     seed = secrets.token_hex(32) if seed is None else seed
-    require(isinstance(seed, str), 'Seed must be a string')
+    require(isinstance(seed, str), 'usage', 'Seed must be a string')
     ids = sample_ids(inventory, size, seed)
     inventory = save_inventory(store, inventory)
     draw = dict(schema_version=1, sample_id='draw-' + uuid.uuid4().hex, created_at=utc(),
@@ -284,37 +382,75 @@ def create_draw(store, inventory, size, seed=None):
     return draw
 
 
-def load_draw(store, sample_id):
-    draw = read_json(sample_dir(store, sample_id) / 'draw.json')
+def read_draw(store, sample_id):
+    """Read a draw record and check it against itself. The inventory is not consulted."""
+    path = sample_dir(store, sample_id) / 'draw.json'
+    draw = read_json(path, 'Draw record')
+    what = f'Draw record {sample_id}'
+    for key, kinds in DRAW_FIELDS:
+        field(draw, key, kinds, what)
     payload = {k: v for k, v in draw.items() if k != 'draw_sha256'}
-    require(draw['draw_sha256'] == digest(payload), 'Original draw checksum differs')
-    require(draw['schema_version'] == 1 and draw['sample_id'] == sample_id,
-            'Draw identity/schema differs')
-    require(draw['procedure'] == PROCEDURE, 'Unsupported sampling procedure')
+    require(draw['draw_sha256'] == digest(payload), 'record-damaged',
+            f'{what}: checksum differs from its contents', path=str(path))
+    require(draw['schema_version'] == 1 and draw['sample_id'] == sample_id, 'record-invalid',
+            f'{what}: schema or sample ID differs from its location')
+    require(draw['procedure'] == PROCEDURE, 'record-invalid',
+            f'{what}: unsupported sampling procedure {draw["procedure"]}')
+    require(HEX.fullmatch(draw['inventory_id']) and
+            draw['inventory_file'] == 'inventories/' + draw['inventory_id'] + '.json',
+            'record-invalid', f'{what}: snapshot reference differs')
+    return draw
+
+
+def replay_draw(store, draw):
+    """Load the draw's snapshot and reproduce the original selection from it."""
     inventory = load_inventory(store, draw['inventory_id'])
-    require(draw['inventory_file'] == 'inventories/' + draw['inventory_id'] + '.json',
-            'Snapshot reference differs')
+    what = f'Draw record {draw["sample_id"]}'
     require(draw['eligible_count'] == inventory['population']['counts']['eligible'],
-            'Eligible count differs')
+            'record-damaged', f'{what}: eligible count differs from its snapshot')
     require(draw['image_ids'] == sample_ids(inventory, draw['requested_size'], draw['seed']),
-            'Original draw does not reproduce')
-    return draw, inventory
+            'record-damaged', f'{what}: original draw does not reproduce from its snapshot')
+    return inventory
+
+
+def load_draw(store, sample_id):
+    draw = read_draw(store, sample_id)
+    return draw, replay_draw(store, draw)
+
+
+def resolve_inventory(store, draw):
+    """Replay for inspection: a missing or damaged snapshot is a problem, not a stop."""
+    try:
+        return replay_draw(store, draw), []
+    except SamplerError as error:
+        return None, [dict(kind='snapshot-unavailable', **error.report())]
 
 
 def parse_events(text, draw):
-    require(not text or text.endswith('\n'), 'Incomplete annotation log; preserve it for repair')
-    events = [json.loads(line) for line in text.splitlines()]
-    for sequence, event in enumerate(events, 1):
-        require(event['schema_version'] == 1 and event['sequence'] == sequence,
-                'Annotation schema/sequence differs')
-        require(event['sample_id'] == draw['sample_id'] and
-                event['draw_sha256'] == draw['draw_sha256'], 'Annotation belongs to another draw')
-        require(event['image_id'] is None or event['image_id'] in draw['image_ids'],
-                'Annotation image is not in the original draw')
-        require(isinstance(event['key'], str) and event['key'], 'Empty annotation key')
-        require(event['operation'] in ('set', 'delete'), 'Unsupported annotation operation')
-        require(('value' in event) == (event['operation'] == 'set'), 'Annotation value differs')
+    what = f'Annotation log for {draw["sample_id"]}'
+    require(not text or text.endswith('\n'), 'record-damaged',
+            f'{what} ends mid-line; preserve it for repair')
+    events = []
+    for sequence, line in enumerate(text.splitlines(), 1):
+        try:
+            event = json.loads(line)
+        except json.JSONDecodeError as error:
+            raise SamplerError('record-damaged', f'{what} line {sequence} is not JSON: {error}') from None
+        where = f'{what} event {sequence}'
+        require(field(event, 'schema_version', int, where) == 1 and
+                field(event, 'sequence', int, where) == sequence,
+                'record-damaged', f'{where}: schema or sequence differs')
+        require(field(event, 'sample_id', str, where) == draw['sample_id'] and
+                field(event, 'draw_sha256', str, where) == draw['draw_sha256'],
+                'record-damaged', f'{where} belongs to another draw')
+        require('image_id' in event and (event['image_id'] is None or event['image_id'] in draw['image_ids']),
+                'record-damaged', f'{where} names an image outside the original draw')
+        require(isinstance(event.get('key'), str) and event['key'], 'record-damaged', f'{where}: empty key')
+        require(event.get('operation') in ('set', 'delete'), 'record-damaged', f'{where}: unsupported operation')
+        require(('value' in event) == (event['operation'] == 'set'), 'record-damaged',
+                f'{where}: value presence does not match its operation')
         canonical(event)  # Reject non-JSON values such as NaN, also on reload.
+        events.append(event)
     return events
 
 
@@ -330,8 +466,9 @@ def read_events(store, draw):
 
 def annotate(store, sample_id, key, value=None, image_id=None, delete=False, author=None):
     draw, _ = load_draw(store, sample_id)
-    require(isinstance(key, str) and key, 'Annotation key must be a nonempty string')
-    require(image_id is None or image_id in draw['image_ids'], 'Image is not in this draw')
+    require(isinstance(key, str) and key, 'usage', 'Annotation key must be a nonempty string')
+    require(image_id is None or image_id in draw['image_ids'], 'usage',
+            f'Image {image_id} is not in draw {sample_id}')
     canonical(value)
     path = sample_dir(store, sample_id) / 'annotations.jsonl'
     with path.open('a+', encoding='utf-8') as stream:
@@ -373,68 +510,109 @@ def current_locations(repo, item):
     return dict(image_id=item['image_id'], available_path=available, locations=locations)
 
 
+def current_images(repo, draw, inventory):
+    """Draw-ordered current locations; without a snapshot only identities are known."""
+    indexed = {r['image_id']: r for r in inventory['population']['images']} if inventory else {}
+    rows = []
+    for n, image_id in enumerate(draw['image_ids'], 1):
+        if image_id in indexed:
+            rows.append(dict(position=n, **current_locations(repo, indexed[image_id])))
+        else:
+            rows.append(dict(position=n, image_id=image_id, available_path=None, locations=[]))
+    return rows
+
+
 def inspect_draw(store, sample_id, repo, paths_only=False):
-    draw, inventory = load_draw(store, sample_id)
-    indexed = {r['image_id']: r for r in inventory['population']['images']}
-    current = [dict(position=n, **current_locations(repo, indexed[image_id]))
-               for n, image_id in enumerate(draw['image_ids'], 1)]
+    draw = read_draw(store, sample_id)
+    inventory, problems = resolve_inventory(store, draw)
+    current = current_images(repo, draw, inventory)
     if paths_only:
-        return current
-    events = read_events(store, draw)
-    return dict(draw=draw, images=[indexed[i] for i in draw['image_ids']],
+        return dict(schema_version=1, sample_id=sample_id, images=current, problems=problems)
+    try:
+        events = read_events(store, draw)
+    except SamplerError as error:
+        events = []
+        problems.append(dict(kind='annotations-unreadable', **error.report()))
+    indexed = {r['image_id']: r for r in inventory['population']['images']} if inventory else {}
+    return dict(schema_version=1, draw=draw,
+                snapshot_available=inventory is not None,
+                images=[indexed.get(i, dict(image_id=i)) for i in draw['image_ids']],
                 current_locations=current, annotations=annotation_state(events),
-                annotation_history=events)
+                annotation_history=events, problems=problems)
 
 
 def verify_draw(store, sample_id, repo):
-    draw, inventory = load_draw(store, sample_id)
-    read_events(store, draw)
-    indexed = {r['image_id']: r for r in inventory['population']['images']}
-    selected = [indexed[i] for i in draw['image_ids']]
-    current = [current_locations(repo, item) for item in selected]
-    issues = [dict(image_id=r['image_id'], **location) for r in current
-              for location in r['locations'] if location['status'] != 'ok']
-    leaf_paths = {a['fixture_path'] for item in selected for a in item['aliases']}
-    metadata_issues = []
-    for record in inventory['population']['metadata_files']:
-        if any(record['path'].startswith(leaf + '/') for leaf in leaf_paths):
-            status = location_status(repo, record['path'], record['sha256'])
-            if status['status'] != 'ok':
-                metadata_issues.append(dict(path=record['path'], **status))
-    return dict(sample_id=sample_id, record_valid=True, original_draw_reproduced=True,
+    draw = read_draw(store, sample_id)
+    inventory, problems = resolve_inventory(store, draw)
+    try:
+        read_events(store, draw)
+    except SamplerError as error:
+        problems.append(dict(kind='annotations-unreadable', **error.report()))
+    current = current_images(repo, draw, inventory)
+    for row in current:
+        for location in row['locations']:
+            if location['status'] != 'ok':
+                problems.append(dict(kind='image-unavailable', image_id=row['image_id'],
+                                     **{k: v for k, v in location.items() if k != 'absolute_path'}))
+    if inventory:
+        selected = [i for i in inventory['population']['images'] if i['image_id'] in set(draw['image_ids'])]
+        leaf_paths = {a['fixture_path'] for item in selected for a in item['aliases']}
+        for record in inventory['population']['metadata_files']:
+            if any(record['path'].startswith(leaf + '/') for leaf in leaf_paths):
+                status = location_status(repo, record['path'], record['sha256'])
+                if status['status'] != 'ok':
+                    problems.append(dict(kind='metadata-changed', path=record['path'], **status))
+    return dict(schema_version=1, sample_id=sample_id, record_valid=True,
+                original_draw_reproduced=inventory is not None,
                 requested_size=draw['requested_size'],
                 images_available=sum(r['available_path'] is not None for r in current),
-                alias_issues=issues, fixture_metadata_issues=metadata_issues,
-                ok=not issues and not metadata_issues)
+                problems=problems, ok=not problems)
 
 
 def list_draws(store):
-    result = []
+    """Every draw directory is listed; a damaged record is reported, not skipped."""
+    draws, problems = [], []
     for path in sorted((Path(store) / 'draws').glob('draw-*/draw.json')):
-        draw, _ = load_draw(store, path.parent.name)
-        result.append({k: draw[k] for k in ('sample_id', 'created_at', 'requested_size',
-                                           'inventory_id', 'seed')})
-    return sorted(result, key=lambda r: (r['created_at'], r['sample_id']))
+        sample_id = path.parent.name
+        try:
+            draw = read_draw(store, sample_id)
+            entry = {k: draw[k] for k in ('sample_id', 'created_at', 'requested_size',
+                                          'inventory_id', 'seed')}
+            entry['snapshot_present'] = inventory_file(store, draw['inventory_id']).is_file()
+            entry['status'] = 'ok' if entry['snapshot_present'] else 'snapshot-missing'
+        except SamplerError as error:
+            entry = dict(sample_id=sample_id, created_at=None, status='damaged', error=error.report())
+        if entry['status'] != 'ok':
+            problems.append(dict(kind='draw-' + entry['status'], sample_id=sample_id))
+        draws.append(entry)
+    draws.sort(key=lambda r: (r['created_at'] or '', r['sample_id']))
+    return dict(schema_version=1, draws=draws, problems=problems)
+
+
+def population_problems(inventory):
+    pop = inventory['population']
+    problems = [dict(kind='alias-unavailable', image_id=i['image_id'], path=a['path'], **a['availability'])
+                for i in pop['images'] for a in i['aliases'] if a['availability']['status'] != 'ok']
+    problems.extend(dict(kind='unlisted-input', path=p) for p in pop['unlisted_inputs'])
+    return problems
 
 
 def inventory_report(inventory, store):
     pop = inventory['population']
-    return dict(inventory_id=inventory['inventory_id'],
+    return dict(schema_version=1, inventory_id=inventory['inventory_id'],
                 file=str(inventory_file(store, inventory['inventory_id']).resolve()),
                 counts=pop['counts'], unlisted_inputs=pop['unlisted_inputs'],
-                alias_issues=[dict(image_id=i['image_id'], path=a['path'], **a['availability'])
-                              for i in pop['images'] for a in i['aliases']
-                              if a['availability']['status'] != 'ok'])
+                problems=population_problems(inventory))
 
 
 def sample_output(repo, store):
     """Only this fixed scratch directory may be replaced by a draw."""
     output = Path(repo).resolve() / 'output'
     target = output / 'sampled'
-    require(not output.is_symlink() and not target.is_symlink(),
-            'output/ and output/sampled/ must not be symlinks')
-    require(not Path(store).resolve().is_relative_to(target),
-            'Sample records must be stored outside output/sampled/')
+    require(not output.is_symlink() and not target.is_symlink(), 'output',
+            f'{output} and {target} must not be symlinks')
+    require(not Path(store).resolve().is_relative_to(target), 'output',
+            f'Sample records must be stored outside {target}')
     return target
 
 
@@ -451,13 +629,15 @@ def publish_sample(repo, store, images):
             staged = Path(temporary)
             copied = []
             for image in images:
-                require(image['available_path'] is not None, 'Selected image is unavailable')
+                require(image['available_path'] is not None, 'output',
+                        f'Selected image {image["image_id"]} is unavailable; nothing was published')
                 source = Path(image['available_path'])
                 sha256 = image['image_id'].removeprefix('sha256:')
                 name = f"{image['position']:04d}-{sha256}{source.suffix}"
                 destination = staged / name
                 shutil.copyfile(source, destination)
-                require(file_hash(destination) == sha256, 'Copied image checksum differs: ' + name)
+                require(file_hash(destination) == sha256, 'output',
+                        f'Copied image checksum differs: {name}; nothing was published')
                 copied.append(dict(image, sampled_path=str(target / name)))
             if target.is_dir():
                 shutil.rmtree(target)
@@ -467,6 +647,73 @@ def publish_sample(repo, store, images):
         return copied
     finally:
         os.close(lock)
+
+
+def draw_command(args):
+    target = sample_output(args.repo, args.store)
+    inventory = (load_inventory(args.store, args.inventory) if args.inventory
+                 else build_inventory(args.repo))
+    drawn = create_draw(args.store, inventory, args.size, args.seed)
+    check = verify_draw(args.store, drawn['sample_id'], args.repo)
+    images = inspect_draw(args.store, drawn['sample_id'], args.repo, paths_only=True)['images']
+    for image in images:
+        image['sampled_path'] = None
+    result = dict(schema_version=1, draw=drawn, population=inventory_report(inventory, args.store),
+                  images=images, current_check=check,
+                  output=dict(directory=str(target), published=False), problems=[])
+    if check['ok']:
+        try:
+            result['images'] = publish_sample(args.repo, args.store, result['images'])
+            result['output']['published'] = True
+        except (OSError, SamplerError) as error:
+            result['output']['error'] = f'{type(error).__name__}: {error}'
+    if not result['output']['published']:
+        result['problems'].append(dict(kind='not-published', error=result['output'].get(
+            'error', 'selected images or metadata failed the current check')))
+    result['problems'].extend(check['problems'])
+    result['problems'].extend(result['population']['problems'])
+    return result
+
+
+def annotation_value(args):
+    if args.delete:
+        return None
+    try:
+        if args.json is not None:
+            return json.loads(args.json)
+        if args.value_file == '-':
+            return json.load(sys.stdin)
+        return read_json(Path(args.value_file), 'Annotation value file', code='usage')
+    except json.JSONDecodeError as error:
+        raise SamplerError('usage', f'Annotation value is not valid JSON: {error}') from None
+
+
+def run(args):
+    if args.command == 'inventory':
+        return inventory_report(save_inventory(args.store, build_inventory(args.repo)), args.store)
+    if args.command == 'draw':
+        return draw_command(args)
+    if args.command == 'list':
+        return list_draws(args.store)
+    if args.command == 'show':
+        return inspect_draw(args.store, args.sample_id, args.repo, args.paths)
+    if args.command == 'verify':
+        return verify_draw(args.store, args.sample_id, args.repo)
+    return annotate(args.store, args.sample_id, args.key, annotation_value(args), args.image,
+                    args.delete, args.author)
+
+
+class Parser(argparse.ArgumentParser):
+    """Argument mistakes are reported like every other failure: JSON on stdout, exit 2."""
+    def error(self, message):
+        self.print_usage(sys.stderr)
+        emit_error(SamplerError('usage', message))
+        raise SystemExit(2)
+
+
+def emit_error(error):
+    print(json.dumps(dict(schema_version=1, error=error.report()), ensure_ascii=False, indent=2))
+    print(f'sampler: {error}', file=sys.stderr)
 
 
 def main(argv=None):
@@ -487,7 +734,7 @@ def main(argv=None):
             if re.fullmatch(r'[+-]?[0-9]+', argument):
                 argv.insert(index, 'draw')
             break
-    parser = argparse.ArgumentParser(
+    parser = Parser(
         prog='Fixtures/sample', description=__doc__, allow_abbrev=False,
         epilog='Quick draw: Fixtures/sample N [--seed TEXT]. Replaces output/sampled/ with image copies; JSON paths are in images[].sampled_path.')
     parser.add_argument('--repo', type=Path, default=REPO, help='Checkout containing Fixtures/')
@@ -498,7 +745,7 @@ def main(argv=None):
     draw.add_argument('size', type=int)
     draw.add_argument('--seed', help='Exact UTF-8 seed text; generated and recorded if omitted')
     draw.add_argument('--inventory', help='Use this saved snapshot instead of rescanning fixtures')
-    commands.add_parser('list', help='List persistent draws')
+    commands.add_parser('list', help='List persistent draws, including damaged ones')
     show = commands.add_parser('show', help='Original draw, frozen metadata, current locations and annotations')
     show.add_argument('sample_id')
     show.add_argument('--paths', action='store_true', help='Only current image locations/statuses as JSON')
@@ -515,47 +762,15 @@ def main(argv=None):
     data.add_argument('--delete', action='store_true', help='Remove current value while retaining history')
     args = parser.parse_args(argv)
     try:
-        if args.command == 'inventory':
-            result = inventory_report(save_inventory(args.store, build_inventory(args.repo)), args.store)
-        elif args.command == 'draw':
-            target = sample_output(args.repo, args.store)
-            inventory = (load_inventory(args.store, args.inventory) if args.inventory
-                         else build_inventory(args.repo))
-            drawn = create_draw(args.store, inventory, args.size, args.seed)
-            result = dict(schema_version=1, draw=drawn, population=inventory_report(inventory, args.store),
-                          images=inspect_draw(args.store, drawn['sample_id'], args.repo, paths_only=True),
-                          current_check=verify_draw(args.store, drawn['sample_id'], args.repo),
-                          output=dict(directory=str(target), published=False))
-            for image in result['images']:
-                image['sampled_path'] = None
-            if result['current_check']['ok']:
-                try:
-                    result['images'] = publish_sample(args.repo, args.store, result['images'])
-                    result['output']['published'] = True
-                except (OSError, ValueError) as error:
-                    result['output']['error'] = f'{type(error).__name__}: {error}'
-        elif args.command == 'list':
-            result = list_draws(args.store)
-        elif args.command == 'show':
-            result = inspect_draw(args.store, args.sample_id, args.repo, args.paths)
-        elif args.command == 'verify':
-            result = verify_draw(args.store, args.sample_id, args.repo)
-        else:
-            value = None
-            if args.json is not None:
-                value = json.loads(args.json)
-            elif args.value_file:
-                value = json.load(sys.stdin) if args.value_file == '-' else read_json(Path(args.value_file))
-            result = annotate(args.store, args.sample_id, args.key, value, args.image,
-                              args.delete, args.author)
-        print(json.dumps(result, ensure_ascii=False, allow_nan=False, indent=2))
-        if ((args.command == 'verify' and not result['ok']) or
-                (args.command == 'draw' and not result['output']['published'])):
-            return 1
-        return 0
-    except (ValueError, OSError, KeyError, TypeError) as error:
-        print(f'sampler: {error}', file=sys.stderr)
+        result = run(args)
+    except SamplerError as error:
+        emit_error(error)
         return 2
+    except OSError as error:
+        emit_error(SamplerError('io', f'{type(error).__name__}: {error}'))
+        return 2
+    print(json.dumps(result, ensure_ascii=False, allow_nan=False, indent=2))
+    return 1 if result.get('problems') else 0
 
 
 if __name__ == '__main__':
