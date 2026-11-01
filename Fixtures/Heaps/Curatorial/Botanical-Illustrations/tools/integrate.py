@@ -227,7 +227,7 @@ def check(artifacts=None):
     output = artifacts or root
     require(root.name == 'Botanical-Illustrations' and root.parent.name == 'Curatorial', 'Wrong leaf placement')
     require(not [p for p in root.glob('*/manifest.json') if p.parent.name not in ('provenance', 'previews')], 'Unexpected child fixture')
-    require(not (root / 'prompt.json').exists(), 'Curatorial leaf must not have a visual prompt')
+    require(not (root / 'prompt.json').exists() and not (root / 'provenance/intake/prompt.json').exists(), 'Curatorial leaf must not have a visual prompt')
     population.check(root)
     check_diagnostics(root)
     chosen = botanical.selection()

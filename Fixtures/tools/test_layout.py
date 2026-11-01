@@ -1,4 +1,5 @@
 import hashlib
+import importlib.util
 import json
 from pathlib import Path
 import tempfile
@@ -89,6 +90,24 @@ class LayoutTests(unittest.TestCase):
             self.assertTrue(layout.matches_tool_revision(script,blob=pin))
             script.write_bytes(b'unrecorded change')
             self.assertFalse(layout.matches_tool_revision(script,blob=pin))
+
+    def test_live_candidate_writers_use_intake_directory(self):
+        # Exercise actual publication helpers against fresh scratch roots: they
+        # must create nested metadata paths without restoring old root files.
+        for slug in ('PS01', 'CR01', 'TG01', 'BSP01'):
+            path = layout.FIXTURES/'Heaps/Similarity'/slug/'tools/common.py'
+            spec = importlib.util.spec_from_file_location('writer_' + slug, path)
+            module = importlib.util.module_from_spec(spec)
+            spec.loader.exec_module(module)
+            root = Path(self.temp.name)/slug
+            root.mkdir()
+            rows = [dict(candidate_id='example', screening_status='defer')]
+            with patch.multiple(module, ROOT=root.resolve(),
+                                CANON=root.resolve()/'provenance/intake/candidates.jsonl'):
+                module.save_records(rows)
+                self.assertEqual(module.load_records(), rows)
+            self.assertTrue((root/'provenance/intake/candidates.csv').is_file())
+            self.assertFalse((root/'candidates.jsonl').exists())
 
 
 if __name__ == '__main__':

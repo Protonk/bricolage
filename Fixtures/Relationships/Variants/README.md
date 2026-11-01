@@ -99,10 +99,9 @@ between distinct sources. Known-shift families are empty.
 From the repository root, using an isolated environment:
 
 ```sh
-.venv/bin/python -m venv /private/tmp/hazy-variants-env
-/private/tmp/hazy-variants-env/bin/pip install -r Fixtures/Relationships/Variants/tools/requirements.txt
-/private/tmp/hazy-variants-env/bin/python Fixtures/Relationships/Variants/tools/build.py build --stage another-run
-/private/tmp/hazy-variants-env/bin/python Fixtures/Relationships/Variants/tools/build.py check --stage another-run
+.venv/bin/python -m pip install -r Fixtures/Relationships/Variants/tools/requirements.txt
+.venv/bin/python Fixtures/Relationships/Variants/tools/build.py build --stage another-run
+.venv/bin/python Fixtures/Relationships/Variants/tools/build.py check --stage another-run
 .venv/bin/python Experiments/AppleVisionTranslation/Tools/fixtures.py check --fixtures Fixtures/Relationships/Variants
 ```
 

@@ -220,7 +220,7 @@ def check(root):
     rows, sources = records(imported)
     manifest = read(root / 'manifest.json')
     require(manifest['schema_version'] == 1 and manifest['kind'] == 'curatorial_heap', 'Kind/schema differ')
-    require(not (root / 'prompt.json').exists(), 'Curatorial selection must not acquire a visual prompt')
+    require(not (root / 'prompt.json').exists() and not (root / 'provenance/intake/prompt.json').exists(), 'Curatorial selection must not acquire a visual prompt')
     require(manifest['images'] == rows, 'Manifest/import mismatch')
     require(read_csv(root / 'manifest.csv') == [{k: str(v) for k, v in row.items()} for row in rows], 'Manifest CSV differs')
     require(read_csv(root / 'sources.csv') == [{k: str(v) for k, v in row.items()} for row in sources], 'Source CSV differs')

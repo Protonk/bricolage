@@ -1,0 +1,216 @@
+{
+  "python": "3.14.9 (main, Oct 21 2026, 06:02:15) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "total_tests": 210,
+  "suites": [
+    {
+      "command": [
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "Fixtures/Heaps/Curatorial/Botanical-Illustrations/tools",
+        "-p",
+        "test_*.py"
+      ],
+      "exit_code": 0,
+      "tests": 33,
+      "stdout": "",
+      "stderr": ".................................\n----------------------------------------------------------------------\nRan 33 tests in 0.097s\n\nOK\n"
+    },
+    {
+      "command": [
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "Fixtures/Heaps/Curatorial/Evan-Amos-Uploads/tools",
+        "-p",
+        "test_*.py"
+      ],
+      "exit_code": 0,
+      "tests": 24,
+      "stdout": "",
+      "stderr": "........................\n----------------------------------------------------------------------\nRan 24 tests in 0.081s\n\nOK\n"
+    },
+    {
+      "command": [
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "Fixtures/Heaps/Curatorial/POTY/tools",
+        "-p",
+        "test_*.py"
+      ],
+      "exit_code": 0,
+      "tests": 10,
+      "stdout": "",
+      "stderr": "..........\n----------------------------------------------------------------------\nRan 10 tests in 0.037s\n\nOK\n"
+    },
+    {
+      "command": [
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "Fixtures/Heaps/Curatorial/US-Army-SSI/tools",
+        "-p",
+        "test_*.py"
+      ],
+      "exit_code": 0,
+      "tests": 24,
+      "stdout": "",
+      "stderr": "........................\n----------------------------------------------------------------------\nRan 24 tests in 0.066s\n\nOK\n"
+    },
+    {
+      "command": [
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "Fixtures/Heaps/Curatorial/tools",
+        "-p",
+        "test_*.py"
+      ],
+      "exit_code": 0,
+      "tests": 19,
+      "stdout": "",
+      "stderr": "...................\n----------------------------------------------------------------------\nRan 19 tests in 0.054s\n\nOK\n"
+    },
+    {
+      "command": [
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "Fixtures/Heaps/Similarity/BSP01/tools",
+        "-p",
+        "test_*.py"
+      ],
+      "exit_code": 0,
+      "tests": 18,
+      "stdout": "",
+      "stderr": ".............../opt/homebrew/Cellar/python@3.14/3.14.9/Frameworks/Python.framework/Versions/3.14/lib/python3.14/tempfile.py:538: ResourceWarning: Implicitly cleaning up <HTTPError 429: 'limited'>\n  _warnings.warn(self.warn_message, ResourceWarning)\n...\n----------------------------------------------------------------------\nRan 18 tests in 0.035s\n\nOK\n"
+    },
+    {
+      "command": [
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "Fixtures/Heaps/Similarity/CR01/tools",
+        "-p",
+        "test_*.py"
+      ],
+      "exit_code": 0,
+      "tests": 6,
+      "stdout": "",
+      "stderr": "......\n----------------------------------------------------------------------\nRan 6 tests in 0.020s\n\nOK\n"
+    },
+    {
+      "command": [
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "Fixtures/Heaps/Similarity/PS01/tools",
+        "-p",
+        "test_*.py"
+      ],
+      "exit_code": 0,
+      "tests": 6,
+      "stdout": "",
+      "stderr": "......\n----------------------------------------------------------------------\nRan 6 tests in 0.020s\n\nOK\n"
+    },
+    {
+      "command": [
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "Fixtures/Heaps/Similarity/RG01/tools",
+        "-p",
+        "test_*.py"
+      ],
+      "exit_code": 0,
+      "tests": 5,
+      "stdout": "",
+      "stderr": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.019s\n\nOK\n"
+    },
+    {
+      "command": [
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "Fixtures/Heaps/Similarity/SF01/tools",
+        "-p",
+        "test_*.py"
+      ],
+      "exit_code": 0,
+      "tests": 6,
+      "stdout": "",
+      "stderr": "......\n----------------------------------------------------------------------\nRan 6 tests in 0.019s\n\nOK\n"
+    },
+    {
+      "command": [
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "Fixtures/Heaps/Similarity/TG01/tools",
+        "-p",
+        "test_*.py"
+      ],
+      "exit_code": 0,
+      "tests": 17,
+      "stdout": "",
+      "stderr": ".............../opt/homebrew/Cellar/python@3.14/3.14.9/Frameworks/Python.framework/Versions/3.14/lib/python3.14/tempfile.py:538: ResourceWarning: Implicitly cleaning up <HTTPError 429: 'limited'>\n  _warnings.warn(self.warn_message, ResourceWarning)\n..\n----------------------------------------------------------------------\nRan 17 tests in 0.034s\n\nOK\n"
+    },
+    {
+      "command": [
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "Fixtures/Sampler",
+        "-p",
+        "test_*.py"
+      ],
+      "exit_code": 0,
+      "tests": 27,
+      "stdout": "",
+      "stderr": "...........................\n----------------------------------------------------------------------\nRan 27 tests in 1.296s\n\nOK\n"
+    },
+    {
+      "command": [
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "Fixtures/tools",
+        "-p",
+        "test_*.py"
+      ],
+      "exit_code": 0,
+      "tests": 8,
+      "stdout": "",
+      "stderr": "........\n----------------------------------------------------------------------\nRan 8 tests in 0.032s\n\nOK\n"
+    },
+    {
+      "command": [
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "Experiments/AppleVisionTranslation/Tools",
+        "-p",
+        "test_*.py"
+      ],
+      "exit_code": 0,
+      "tests": 7,
+      "stdout": "",
+      "stderr": ".......\n----------------------------------------------------------------------\nRan 7 tests in 0.360s\n\nOK\n"
+    }
+  ]
+}

@@ -6,7 +6,7 @@ organization is separate from the existing manifest schema and fixture IDs.
 The [single leaf template](Template/README.md) defines the common root layout,
 intake/construction evidence locations and `tools/check.py` entry point for new
 sets. The [November 2026 migration](provenance/layout-2026-11/README.md) records
-the baseline and staged adoption by existing leaves. Schema version 1 and all
+the baseline and completed adoption by all 18 existing leaves. Schema version 1 and all
 fixture identities remain unchanged.
 
 Only each leaf set's `images/` directory is comparison input. Integrated sets use:
@@ -15,8 +15,10 @@ Only each leaf set's `images/` directory is comparison input. Integrated sets us
 images/             Flat input files with opaque names
 sources/            Preserved supplied/acquired bytes; original names in sources.csv
 batches/            batch-*.txt partition inputs; smoke.txt and medium.txt are subsets
-previews/           Optional local contact sheets, outside the comparison inputs
-provenance/         Supplied metadata and set-specific supporting material
+previews/           Local contact sheets/intermediates, outside comparison inputs
+tools/              Live tools, check.py, requirements.txt
+provenance/         Indexed supporting material; README.md explains each record
+provenance/intake/  Selection basis, candidates, inventory/order/selection records
 manifest.json       Versioned description plus image records
 manifest.csv        The same image records, in the same column order
 sources.csv         Source identities, original names, credits and processing history
@@ -26,6 +28,20 @@ selections.json     Focused pairs and optional controlled-shift source families
 SHA256SUMS.txt      SHA-256 for every file in images/ and sources/
 README.md           Contents, selection policy and limitations
 ```
+
+Construction-only manifests, instructions and supplemental checksums live in
+`provenance/construction/`; preserved original packages use `provenance/supplied/`.
+Only applicable evidence sections are required. `provenance/import-map.json`
+and other hash-bound historical records retain their original paths and bytes.
+`selections.json` at the leaf root describes relationship probes; the singular
+`provenance/intake/selection.json` records a Curatorial selection. Their meanings
+remain distinct. Live code belongs in `tools/`, including generators.
+
+Run `.venv/bin/python <leaf>/tools/check.py` for common and specialized offline
+validation, or `.venv/bin/python Fixtures/tools/check_layout.py --full` for all
+leaves. `--metadata-only` checks structure/catalogs without local media; it is
+not full provenance validation. Empty ignored media directories may be absent in
+a fresh checkout; restore them and the recorded assets before full checks.
 
 The original image bytes were not re-encoded during normalization. The derivative
 set retains its filenames, probes and batch lists. Original manifests and README
@@ -122,7 +138,8 @@ population, followed by documented mechanical selection and provenance exclusion
 It does not require `prompt.json` or visual acceptance judgments. A contribution
 may add documented thumbnail scope checks to reject obvious category outliers;
 those fallible decisions do not assert visual similarity or category ground truth.
-POTY leaves use `inventory.json`, `ordering.json` and `selection.json` for the full eligible
+POTY leaves use `inventory.json`, `ordering.json` and `selection.json` inside
+`provenance/intake/` for the full eligible
 population, seeded ordering and per-candidate decisions. File-specific evidence,
 original-creator identity decisions, explicit exceptions, acquisition receipts,
 and POTY year/category mappings are in `provenance/`. Each leaf has its own

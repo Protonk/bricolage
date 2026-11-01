@@ -133,7 +133,7 @@ The supplied discovery pack had no media bytes and recorded a DNS failure in its
 own environment. Its original README, instructions, catalog and scripts remain
 under `provenance/supplied/`; `provenance/transport_probe.json` retains that earlier
 failure. Current local request outcomes are recorded separately in `http_log.jsonl`.
-The supplied `acquired/` directory is a legacy placeholder. Downloads now go to
+The original `acquired/` placeholder is preserved only in `provenance/supplied/`. Downloads go to
 `sources/`, and temporary media stays under `previews/`, as required by hazy.
 
 Local acquisition started with one preview, then serial chunks of twelve. After

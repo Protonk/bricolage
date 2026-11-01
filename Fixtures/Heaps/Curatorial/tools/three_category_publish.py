@@ -121,7 +121,7 @@ def check(artifacts=None):
    if stage=='source':
     reviewed=e.evidence()[r['candidate_id']]['page'];require(ii['sha1']==reviewed['imageinfo'][0]['sha1']and ii['extmetadata']==reviewed['imageinfo'][0]['extmetadata'],'Identity/rights changed after review')
  imported=imports();images,sources=records(imported);manifest=read(out/'manifest.json');require(manifest['schema_version']==1 and manifest['kind']=='curatorial_heap'and manifest['images']==images,'Manifest differs')
- require(not(out/'prompt.json').exists(),'Unexpected visual prompt');require(csv_read(out/'manifest.csv')==[{k:str(v)for k,v in r.items()}for r in images],'Manifest CSV differs');require(csv_read(out/'sources.csv')==[{k:str(v)for k,v in r.items()}for r in sources],'Source CSV differs')
+ require(not(out/'prompt.json').exists()and not(out/'provenance/intake/prompt.json').exists(),'Unexpected visual prompt');require(csv_read(out/'manifest.csv')==[{k:str(v)for k,v in r.items()}for r in images],'Manifest CSV differs');require(csv_read(out/'sources.csv')==[{k:str(v)for k,v in r.items()}for r in sources],'Source CSV differs')
  require(read(out/'provenance/import-map.json')==imported,'Import mapping differs');require((out/'SOURCES.md').read_text()==credits(imported),'Credits differ')
  require({str(p.relative_to(out))for p in(out/'images').iterdir()}=={r['final_file']for r in imported},'Image set differs');require({str(p.relative_to(root))for p in(root/'sources').iterdir()}=={r['source_path']for r in imported},'Source set differs')
  for r in imported:require(sha(out/r['final_file'])==sha(root/r['source_path'])==r['sha256'],'Source/input copies differ')

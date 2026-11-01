@@ -52,6 +52,7 @@ def evidence_path(root, name):
 
 def matches_tool_revision(path, *, blob=None, sha256=None):
     """Recognize an explicitly recorded migration of a historically pinned tool."""
+    require(blob is not None or sha256 is not None, 'A historical tool hash is required')
     path = Path(path).resolve()
     raw = path.read_bytes()
     current_sha = hashlib.sha256(raw).hexdigest()

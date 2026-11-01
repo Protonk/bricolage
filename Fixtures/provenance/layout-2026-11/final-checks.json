@@ -1,0 +1,436 @@
+{
+  "schema_version": 1,
+  "preservation_counts": {
+    "documentation": 18,
+    "record": 4115,
+    "local asset": 5927,
+    "code": 102
+  },
+  "preservation_failures": [],
+  "checks": [
+    {
+      "command": [
+        "Fixtures/tools/check_layout.py",
+        "--full"
+      ],
+      "exit_code": 0,
+      "results": [
+        {
+          "path": "/Users/raccoon/Desktop/Experiments/hazy/Fixtures/Heaps/Curatorial/Botanical-Illustrations",
+          "fixture_id": "hazy-botanical-illustrations-v1",
+          "kind": "curatorial_heap",
+          "images": 149,
+          "layout": "passed",
+          "assets_checked": true,
+          "specialized_checks": [
+            {
+              "command": [
+                "Fixtures/Heaps/Curatorial/Botanical-Illustrations/tools/integrate.py",
+                "check"
+              ],
+              "exit_code": 0,
+              "stdout": "{\n  \"validation\": \"passed\",\n  \"kind\": \"curatorial_heap\",\n  \"pairs\": 0,\n  \"status\": \"partial\",\n  \"target\": 150,\n  \"raw_listings\": 709,\n  \"unique_file_identities\": 709,\n  \"metadata_entries\": 200,\n  \"resolved_file_identities\": 200,\n  \"redirected_candidates\": 0,\n  \"selection_cutoff_rank\": 170,\n  \"target_acquired\": false,\n  \"provisional_selected\": 143,\n  \"reviewed_entries\": 176,\n  \"selected\": 150,\n  \"acquired\": 149,\n  \"excluded\": 6,\n  \"reserve\": 539,\n  \"pending_selection\": 14,\n  \"unreviewed_entries\": 533,\n  \"reviewed_decisions\": {\n    \"eligible\": 156,\n    \"pending\": 16,\n    \"exclude\": 4\n  },\n  \"pending_acquisition\": 1,\n  \"pending_acquisition_ids\": [\n    \"897acaf03d038f9ffe06\"\n  ],\n  \"exclusions_by_reason\": {\n    \"museum_display_photograph\": 2,\n    \"plant_photograph_not_illustration\": 1,\n    \"decorative_frontispiece\": 1,\n    \"work_already_selected\": 2\n  },\n  \"unresolved_review_ids\": [\n    \"701faa59d4cedc071119\",\n    \"a4b25832f8f732d78d08\",\n    \"be91fba9e94219fd5aba\",\n    \"c0cd0bd496692331e397\",\n    \"e7deabce5492b03af7a7\",\n    \"99368f407015d5c40938\",\n    \"7e8a5c57bd94174be015\",\n    \"3de67c57765de3eb56cd\",\n    \"7460716d3b8d44ab7bbc\",\n    \"31d01d41ee331252240b\",\n    \"b8d3b3da9d1eb7e36d02\",\n    \"09c7777633cd4578dc35\",\n    \"29eafc5e8aaee68adc71\",\n    \"63a1832bbab9adc41a7c\",\n    \"b39b9ec7589545b3d291\",\n    \"36b14530cd24f8c0b2d1\"\n  ],\n  \"exhausted_population_shortfall\": null,\n  \"transport_failures\": 1,\n  \"post_transfer_validation_stops\": 3,\n  \"automatic_retries\": 0,\n  \"unavailable_rendition_attempts\": {\n    \"source\": 14,\n    \"preview\": 4\n  },\n  \"selected_unavailable_pending\": [],\n  \"unique_selected_works\": 150,\n  \"source_work_concentration\": {\n    \"Elements of Botany / \\u690d\\u7269\\u5b78 (1857 translation)\": 10,\n    \"unknown\": 14,\n    \"Flora Graeca drawings and watercolours, MS Sherard 244\": 46,\n    \"Flowers from Hill and Dale (1883)\": 2,\n    \"Topolya SSSR (1934)\": 1,\n    \"Botanique cryptogamique pharmaco-medicale\": 1,\n    \"Historie van Indien (1646; plate reworked from 1598)\": 1,\n    \"Gartenflora, volume 6 (1857)\": 2,\n    \"American Fern Journal 7(1) (1917)\": 1,\n    \"Histoire generale des voyages, volume 11\": 1,\n    \"Larousse du XXeme siecle (1932)\": 3,\n    \"Wellcome Iconographic Collections\": 1,\n    \"Deyrolle teaching plates, Artois digital collection\": 2,\n    \"Te Papa collection: Sarah Featon watercolours\": 1,\n    \"A Curious Herbal (1782 reprint)\": 1,\n    \"Weekly Times, 6 October 1934\": 1,\n    \"Icones of Japanese Algae\": 1,\n    \"Spolia botanica (1729)\": 1,\n    \"Naturgeschichte der Bataten (1797)\": 1,\n    \"World Book, volume 4 (1918)\": 1,\n    \"Kvetiny letni (1888)\": 2,\n    \"Bryologia / Linnean Society Journal Botany VIII (1864)\": 1,\n    \"Froger, Relation of a voyage (1698)\": 3,\n    \"New Gardeners Dictionary (1769)\": 3,\n    \"Z naszej przyrody (1915)\": 2,\n    \"Flora Brasiliensis 6(1) (1860)\": 1,\n    \"Natural History of Plants, volume 2 (1902)\": 1,\n    \"Auckland Museum Paintings and Drawings Collection\": 1,\n    \"Gart der Gesundheit (1485)\": 2,\n    \"New Improvements of Planting and Gardening (1719)\": 1,\n    \"All Round the World (1870)\": 1,\n    \"Die Musci der Flora von Buitenzorg, volume 3\": 1,\n    \"Temple of Flora (1807)\": 1,\n    \"Denkschriften, volume 22 (1864)\": 1,\n    \"Beautiful Monstrosities, Once a Week (1862)\": 1,\n    \"Nouveau Larousse illustre, volume 4\": 1,\n    \"St Nicholas, volume 32, part 2\": 1,\n    \"Synopsis of Natural History (1839)\": 1,\n    \"Meyers Konversations-Lexikon, volume 17 (1897)\": 1,\n    \"Transactions of the Linnean Society, Botany (1904)\": 1,\n    \"Historja naturalna (1906)\": 1,\n    \"Jacobi Petiveri Opera / Gazophylacium (1764)\": 3,\n    \"Canadian Wild Flowers Worth Knowing (1917)\": 1,\n    \"Krauterbuch (1586)\": 1,\n    \"Annales des sciences naturelles, series 7, Botanique 18\": 1,\n    \"Historia Medicinal (1574)\": 1,\n    \"Annales des sciences naturelles, series 6, Botanique 8\": 1,\n    \"A Description of Greenland (1745)\": 1,\n    \"Complete Body of Planting and Gardening (1770)\": 1,\n    \"Textbook of Elementary Botany (1910)\": 1,\n    \"Archives Strasbourg, 77Z2\": 1,\n    \"A Flora of Manila (1912)\": 1,\n    \"Library of Congress Prints and Photographs collection\": 1,\n    \"Blumenbuch (1692)\": 1,\n    \"Compleat Body of Husbandry (1757/1758 editions)\": 2,\n    \"Botanologia (1710)\": 2,\n    \"Flora Britanica (1760)\": 1,\n    \"Compleat Herbal (1787)\": 1,\n    \"Conversations on Botany (1817, first edition)\": 1,\n    \"Wanderings South and East (1882)\": 1,\n    \"Monographieen afrikanischer Pflanzen-Familien und -Gattungen, volume 6 (1901)\": 1,\n    \"American Educator, volume 5 (1919)\": 1,\n    \"Botany of the Antarctic Voyage\": 1,\n    \"Smithsonian Archives: Friendship Revealed and Revived\": 1,\n    \"Osterreichische botanische Zeitschrift (1878)\": 1,\n    \"Musee de l\\u2019Ecole de Nancy collection\": 1,\n    \"Dr Hope\\u2019s Elementa Botanici manuscript\": 1\n  },\n  \"concentration\": {\n    \"original_artist\": {\n      \"unknown\": 67,\n      \"Jean Capieux\": 1,\n      \"Ferdinand Bauer\": 46,\n      \"Susie Barstow Skelding\": 2,\n      \"Bassocantaro\": 1,\n      \"Una Leonora Forster\": 1,\n      \"\\u00c9mile Deyrolle (reported attribution)\": 2,\n      \"Sarah Featon\": 1,\n      \"Elizabeth Blackwell\": 1,\n      \"Malcolm Ian Howie\": 1,\n      \"Jenny Schermaul\": 2,\n      \"Duncan R Slater\": 1,\n      \"Borgetti N.; Isocrono D. (DISAFA)\": 8,\n      \"Sydney Parkinson\": 1,\n      \"Erhard Reuwich\": 2,\n      \"Philip Reinagle (flower); Abraham Pether (background)\": 1,\n      \"Henry Noel Humphreys\": 1,\n      \"Dpaczesniak\": 1,\n      \"Adolphe Millot\": 1,\n      \"Helen Adelaide Wood\": 1,\n      \"Winifred Boys-Smith\": 1,\n      \"Jean-Fr\\u00e9d\\u00e9ric Oberlin (card assembly/coloring attribution; underlying print artist unknown)\": 1,\n      \"James Ackerman\": 1,\n      \"Magdalena Rosina Funck\": 1,\n      \"Thomas Milton (as attributed in source)\": 1,\n      \"Adelia Sarah Gates\": 1,\n      \"Henri Berg\\u00e9\": 1,\n      \"Fiverr user @meow777\": 1\n    },\n    \"engraver_lithographer\": {\n      \"unknown\": 147,\n      \"James Ackerman\": 1,\n      \"Thomas Milton\": 1,\n      \"G. Bartusch\": 1\n    },\n    \"publisher\": {\n      \"unknown\": 112,\n      \"J. Janssonius (1646 edition); Cornelis Claes (1598 original edition)\": 1,\n      \"Didot, Paris\": 1,\n      \"\\u00c9ditions Larousse\": 3,\n      \"C. Nourse\": 1,\n      \"Kazamashobo, Tokyo\": 1,\n      \"Schaumburg, Wien\": 1,\n      \"Hanson-Roach-Fowler, Chicago\": 1,\n      \"Francis Blyth; T. Evans; J. Coote\": 3,\n      \"M. Arct\": 2,\n      \"Blackie, London\": 1,\n      \"W. Mears\": 1,\n      \"W. Collins, London/Glasgow\": 1,\n      \"E. J. Brill, Leiden\": 1,\n      \"Robert John Thornton\": 1,\n      \"Kaiserlich-K\\u00f6nigliche Hof- und Staatsdruckerei, Wien\": 1,\n      \"Larousse\": 1,\n      \"Scribner & Co., New York\": 1,\n      \"T. Wardle, Philadelphia\": 1,\n      \"Bibliographisches Institut, Leipzig\": 1,\n      \"M. Arct, Warszawa\": 1,\n      \"John Millan\": 3,\n      \"Musson, Toronto\": 1,\n      \"William Hanbury (for author); Edward and Charles Dilly (booksellers)\": 1,\n      \"Bureau of Printing, Manila\": 1,\n      \"P. Wilson; J. Exshaw\": 1,\n      \"Jacobi Waugh (as reported: impensis Jacobi Waugh)\": 1,\n      \"Longman, Hurst, Rees, Orme, and Brown\": 1,\n      \"Sampson Low, Marston, Searle & Rivington\": 1,\n      \"Tho. Osborne; Tho. Trye; S. Crowder and Co.\": 1,\n      \"Ralph Durham Co., Chicago\": 1,\n      \"Reeve Brothers, London\": 1\n    },\n    \"digitizer\": {\n      \"unknown\": 31,\n      \"Bodleian Libraries, University of Oxford\": 46,\n      \"Biodiversity Heritage Library / New York Botanical Garden collection\": 1,\n      \"Rijksmuseum\": 1,\n      \"Biodiversity Heritage Library / Smithsonian Institution Libraries\": 1,\n      \"Internet Archive / Boston Public Library collection\": 1,\n      \"EN NOIR & BLANC (reported digital source account)\": 3,\n      \"Wellcome Images\": 1,\n      \"Biblioth\\u00e8que Num\\u00e9rique de l\\u2019Universit\\u00e9 d\\u2019Artois\": 2,\n      \"Museum of New Zealand Te Papa Tongarewa\": 1,\n      \"Cambridge University Library Fleuron\": 13,\n      \"National Library of Australia\": 1,\n      \"Biodiversity Heritage Library\": 6,\n      \"Linnean Society digital collection\": 1,\n      \"University of Vienna Phaidra\": 1,\n      \"Internet Archive\": 5,\n      \"National Library of the Czech Republic\": 2,\n      \"Internet Archive / New York Botanical Garden collection\": 2,\n      \"Library of Congress\": 4,\n      \"Polona / National Library of Poland\": 4,\n      \"Internet Archive / NCSU Libraries collection\": 1,\n      \"Auckland Museum Collections\": 1,\n      \"Bayerische Staatsbibliothek digital collections\": 2,\n      \"Travelogues digital collection\": 1,\n      \"New York Public Library\": 1,\n      \"Internet Archive / Harvard Ernst Mayr Library collection\": 1,\n      \"raremaps.com digital source\": 1,\n      \"Internet Archive / University of North Carolina collection\": 1,\n      \"Internet Archive / Smithsonian Libraries / BHL\": 1,\n      \"plantillustrations.org digital source\": 1,\n      \"Internet Archive / Canadiana collection\": 1,\n      \"Internet Archive / Natural History Museum Library, London\": 2,\n      \"Ji-Elle (reproduction photograph)\": 1,\n      \"Internet Archive / Cornell University Library collection\": 1,\n      \"Harvard Library digital collections\": 1,\n      \"Science History Institute\": 1,\n      \"British Library\": 1,\n      \"Smithsonian Institution Archives digital source\": 1,\n      \"Internet Archive / University of Illinois collection\": 1,\n      \"D. Boyer / Mus\\u00e9e de l\\u2019\\u00c9cole de Nancy (reproduction photograph)\": 1,\n      \"Internet Archive / Royal Botanic Garden Edinburgh collection\": 1\n    },\n    \"uploader_current_file_revision\": {\n      \"\\u82cd\\u7a79\\u4e00\\u7c9f\": 10,\n      \"Notafly\": 1,\n      \"Transgenderoriole\": 46,\n      \"Alafarge\": 2,\n      \"Chan\": 1,\n      \"F\\u00e6\": 35,\n      \"Mr.Nostalgic\": 1,\n      \"Bassocantaro\": 1,\n      \"Drechmeria-RBGV\": 2,\n      \"Wolfmann\": 3,\n      \"Als33120\": 2,\n      \"Avocadobabygirl\": 1,\n      \"Awkwafaba\": 2,\n      \"Pigsonthewing\": 1,\n      \"Petermichaelgenner\": 1,\n      \"Skot\": 2,\n      \"Shyamal\": 2,\n      \"Duncan R Slater\": 1,\n      \"Borgetti N., Isocrono D. (DISAFA)\": 8,\n      \"Gcopenhaver1\": 2,\n      \"Pixeltoo\": 1,\n      \"Prosperosity\": 1,\n      \"JohannBotanik\": 2,\n      \"Gts-tg\": 1,\n      \"Spida-tarbell\": 1,\n      \"Levana Taylor\": 1,\n      \"Dpaczesniak\": 1,\n      \"Dianakc\": 1,\n      \"Balkanique\": 1,\n      \"Polona Upload\": 2,\n      \"Ahouser02\": 1,\n      \"Michael Eyl\": 1,\n      \"Gpcantu\": 1,\n      \"SpikeShroom\": 1,\n      \"DrThneed\": 1,\n      \"Ji-Elle\": 1,\n      \"CobaltSteel\": 1,\n      \"Kevin Moln\\u00e1r\": 2,\n      \"Mary Mark Ockerbloom\": 1,\n      \"Artix Kreiger 2\": 1,\n      \"GennadyL\": 1,\n      \"ClaireC67\": 1,\n      \"JarroNevsbaru\": 1\n    }\n  }\n}\n",
+              "stderr": ""
+            }
+          ]
+        },
+        {
+          "path": "/Users/raccoon/Desktop/Experiments/hazy/Fixtures/Heaps/Curatorial/Evan-Amos-Uploads",
+          "fixture_id": "hazy-evan-amos-uploads-v1",
+          "kind": "curatorial_heap",
+          "images": 133,
+          "layout": "passed",
+          "assets_checked": true,
+          "specialized_checks": [
+            {
+              "command": [
+                "Fixtures/Heaps/Curatorial/Evan-Amos-Uploads/tools/integrate.py",
+                "check"
+              ],
+              "exit_code": 0,
+              "stdout": "{\n  \"validation\": \"passed\",\n  \"kind\": \"curatorial_heap\",\n  \"expected_pairs\": 0,\n  \"status\": \"complete\",\n  \"category\": \"Category:Media uploaded by Evan Amos\",\n  \"members\": 136,\n  \"included\": 133,\n  \"excluded_by_user\": 3,\n  \"absent_exclusion_titles\": [],\n  \"metadata_entries\": 136,\n  \"resolved_page_ids\": 136,\n  \"identity_discrepancies\": [],\n  \"acquired\": 133,\n  \"pending\": 0,\n  \"pending_by_cause\": {},\n  \"pending_items\": [],\n  \"active_stop_latch\": false,\n  \"failed_transfers\": 0,\n  \"post_transfer_validation_stops\": 0,\n  \"automatic_retries\": 0,\n  \"acquired_formats\": {\n    \"JPEG\": 126,\n    \"PNG\": 7\n  },\n  \"requested_edges\": {\n    \"1600\": 133\n  },\n  \"alpha_inputs\": 7,\n  \"roles\": {\n    \"original_creator\": {\n      \"Evan-Amos\": 133\n    },\n    \"digital_modifier\": {\n      \"unknown\": 131,\n      \"Gunnar.offel\": 2\n    },\n    \"copyright_holder\": {\n      \"unknown\": 133\n    },\n    \"uploader_current_file_revision\": {\n      \"Evan-Amos\": 127,\n      \"Gunnar.offel\": 2,\n      \"David Fuchs\": 1,\n      \"Renamed user e16667ca7f2b1131113425a583e5647f\": 2,\n      \"Predazord Gaohunter Silver\": 1\n    }\n  }\n}\n",
+              "stderr": ""
+            }
+          ]
+        },
+        {
+          "path": "/Users/raccoon/Desktop/Experiments/hazy/Fixtures/Heaps/Curatorial/Ex-Libris",
+          "fixture_id": "hazy-ex-libris-v1",
+          "kind": "curatorial_heap",
+          "images": 50,
+          "layout": "passed",
+          "assets_checked": true,
+          "specialized_checks": [
+            {
+              "command": [
+                "Fixtures/Heaps/Curatorial/Ex-Libris/tools/intake.py",
+                "check"
+              ],
+              "exit_code": 0,
+              "stdout": "{\n  \"validation\": \"passed\",\n  \"kind\": \"curatorial_heap\",\n  \"expected_pairs\": 0,\n  \"status\": \"complete_acquisition\",\n  \"selection_status\": \"provisional\",\n  \"unique_enumerated\": 440,\n  \"technical_rejects\": 0,\n  \"reviewed_previews\": 80,\n  \"scope_rejects\": 10,\n  \"provenance_or_rights_rejects\": 1,\n  \"deferred_reviews\": 8,\n  \"visually_eligible\": 70,\n  \"selected\": 50,\n  \"acquired\": 50,\n  \"pending_acquisition\": 0,\n  \"pending_candidate_ids\": [],\n  \"selection_exclusions\": 7,\n  \"pending_selection\": 8,\n  \"unreviewed\": 360,\n  \"unused_reserve\": 375,\n  \"target\": 50,\n  \"provisional_selected\": 40,\n  \"transport_stops\": 1,\n  \"automatic_retries\": 0\n}\n",
+              "stderr": ""
+            }
+          ]
+        },
+        {
+          "path": "/Users/raccoon/Desktop/Experiments/hazy/Fixtures/Heaps/Curatorial/POTY/Arthropods",
+          "fixture_id": "hazy-poty-arthropods-v1",
+          "kind": "curatorial_heap",
+          "images": 43,
+          "layout": "passed",
+          "assets_checked": true,
+          "specialized_checks": [
+            {
+              "command": [
+                "Fixtures/Heaps/Curatorial/POTY/tools/integrate.py",
+                "check",
+                "--category",
+                "Arthropods"
+              ],
+              "exit_code": 0,
+              "stdout": "{\"validation\": \"passed\", \"kind\": \"curatorial_heap\", \"pairs\": 0, \"status\": \"complete\", \"official_category\": \"Arthropods\", \"eligible\": 237, \"by_year\": {\"2023\": 47, \"2024\": 86, \"2025\": 104}, \"selected\": 43, \"acquired\": 43, \"excluded\": 194, \"pending_review\": 0, \"pending_acquisition\": 0, \"reserve\": 0, \"target\": 50, \"completed_http_responses\": 76, \"failed_http_transfers\": 0, \"post_transfer_validation_stops\": 1, \"automatic_retries\": 0, \"shortfall\": 7, \"selected_unknown_creators\": 0, \"published_uploader_counts\": {\"Charlesjsharp\": 1, \"Janeklass\": 1, \"Ermell\": 1, \"Poco a poco\": 1, \"Sven Damerow\": 1, \"Anitava Roy\": 1, \"Archaeodontosaurus\": 1, \"Johannes Robalotoff\": 1, \"MaheshBaruahwildlife\": 1, \"Basile Morin\": 1, \"Rhododendrites\": 1, \"Cvmontuy\": 1, \"Atanu Bose Photography\": 1, \"Iifar\": 2, \"Ankit0908\": 1, \"Lviatour\": 1, \"SVKMBFLY\": 1, \"Alexander Klepnev\": 1, \"FlocciNivis\": 1, \"Tagooty\": 1, \"Maurizio Carlini\": 1, \"Stephan Sprinz\": 1, \"Enno Merivee\": 1, \"Fedaro\": 1, \"El Golli Mohamed\": 1, \"Carsten Siegel\": 1, \"Thamblyok\": 1, \"Gribkov\": 1, \"Jacopo Werther\": 1, \"Ivan ideia\": 1, \"Prasan Shrestha\": 1, \"Skander zarrad\": 1, \"Wilfredor\": 1, \"Shapomacro\": 1, \"Subhendukhan\": 1, \"Tiouraren\": 1, \"Sumanbhowmik1992\": 1, \"Dunpharlain\": 1, \"Alvesgaspar\": 1, \"MathKnight\": 1, \"L\u00e9o Mer\u00e7on\": 1, \"Julesvernex2\": 1}, \"latest_revision_uploader_counts\": {\"Charlesjsharp\": 1, \"Janeklass\": 1, \"Ermell\": 1, \"Poco a poco\": 1, \"Sven Damerow\": 1, \"Anitava Roy\": 1, \"Archaeodontosaurus\": 1, \"Johannes Robalotoff\": 1, \"MaheshBaruahwildlife\": 1, \"Basile Morin\": 1, \"Rhododendrites\": 1, \"Cvmontuy\": 1, \"Atanu Bose Photography\": 1, \"Iifar\": 2, \"Ankit0908\": 1, \"Lviatour\": 1, \"SVKMBFLY\": 1, \"Alexander Klepnev\": 1, \"FlocciNivis\": 1, \"Tagooty\": 1, \"Maurizio Carlini\": 1, \"Stephan Sprinz\": 1, \"Enno Merivee\": 1, \"Fedaro\": 1, \"El Golli Mohamed\": 1, \"Carsten Siegel\": 1, \"Thamblyok\": 1, \"Gribkov\": 1, \"Jacopo Werther\": 1, \"Ivan ideia\": 1, \"Prasan Shrestha\": 1, \"Skander zarrad\": 1, \"Wilfredor\": 1, \"Shapomacro\": 1, \"Subhendukhan\": 1, \"Tiouraren\": 1, \"Sumanbhowmik1992\": 1, \"Dunpharlain\": 1, \"Alvesgaspar\": 1, \"MathKnight\": 1, \"L\u00e9o Mer\u00e7on\": 1, \"Julesvernex2\": 1}, \"pending_candidate_ids\": []}\n",
+              "stderr": ""
+            }
+          ]
+        },
+        {
+          "path": "/Users/raccoon/Desktop/Experiments/hazy/Fixtures/Heaps/Curatorial/POTY/Constructions-and-buildings",
+          "fixture_id": "hazy-poty-constructions-and-buildings-v1",
+          "kind": "curatorial_heap",
+          "images": 50,
+          "layout": "passed",
+          "assets_checked": true,
+          "specialized_checks": [
+            {
+              "command": [
+                "Fixtures/Heaps/Curatorial/POTY/tools/integrate.py",
+                "check",
+                "--category",
+                "Constructions and buildings"
+              ],
+              "exit_code": 0,
+              "stdout": "{\"validation\": \"passed\", \"kind\": \"curatorial_heap\", \"pairs\": 0, \"status\": \"complete\", \"official_category\": \"Constructions and buildings\", \"eligible\": 248, \"by_year\": {\"2023\": 41, \"2024\": 78, \"2025\": 129}, \"selected\": 50, \"acquired\": 50, \"excluded\": 40, \"pending_review\": 0, \"pending_acquisition\": 0, \"reserve\": 158, \"target\": 50, \"completed_http_responses\": 75, \"failed_http_transfers\": 0, \"post_transfer_validation_stops\": 0, \"automatic_retries\": 0, \"shortfall\": 0, \"selected_unknown_creators\": 0, \"published_uploader_counts\": {\"Tuxyso\": 1, \"Llez\": 1, \"XRay\": 1, \"Rhododendrites\": 1, \"Agnes Monkelbaan\": 1, \"Poco a poco\": 1, \"Alexander-93\": 1, \"Mike Peel\": 1, \"Tournasol7\": 1, \"Ser Amantio di Nicolao\": 1, \"Frank Schulenburg\": 1, \"Afsalgado\": 1, \"Theklan\": 1, \"Kiril Simeonovski\": 1, \"Der Wolf im Wald\": 1, \"Zvonimir Stamenov\": 1, \"Roy Egloff\": 1, \"Palauenc05\": 1, \"Aristeas\": 1, \"PetarM\": 1, \"Plozessor\": 1, \"MrPanyGoff\": 1, \"Wilfredor\": 1, \"FlocciNivis\": 1, \"Terragio67\": 1, \"\u042e\u0440\u0438\u0439 \u0414.\u041a.\": 2, \"Acroterion\": 1, \"ArildV\": 1, \"UnpetitproleX\": 1, \"W.carter\": 1, \"Julian Lupyan\": 1, \"Adam Cuerden\": 1, \"\u041d\u0438\u043a\u043e\u043d\u0438\u043a\u043e962\": 1, \"The Cosmonaut\": 1, \"\u041a\u0440\u0430\u0441\u043d\u044b\u0439\": 1, \"Skander zarrad\": 1, \"A. \u00d6ztas\": 1, \"Crisco 1492\": 1, \"Radomianin\": 1, \"\u0418\u0433\u043e\u0440\u044c \u0413\u043e\u0440\u0434\u0435\u0435\u0432\": 1, \"Dllu\": 1, \"A.Savin\": 1, \"PaestumPaestum\": 1, \"Gzen92\": 1, \"Imehling\": 1, \"Milseburg\": 1, \"IM3847\": 1, \"Ig0r\": 1, \"Falc\u00e3o Alado\": 1}, \"latest_revision_uploader_counts\": {\"Tuxyso\": 1, \"Llez\": 1, \"XRay\": 1, \"Rhododendrites\": 1, \"Agnes Monkelbaan\": 1, \"Poco a poco\": 1, \"Alexander-93\": 1, \"Mike Peel\": 1, \"Tournasol7\": 1, \"Ser Amantio di Nicolao\": 1, \"Frank Schulenburg\": 1, \"Afsalgado\": 1, \"Theklan\": 1, \"Kiril Simeonovski\": 1, \"Der Wolf im Wald\": 1, \"Zvonimir Stamenov\": 1, \"Roy Egloff\": 1, \"Palauenc05\": 1, \"Aristeas\": 1, \"PetarM\": 1, \"Plozessor\": 1, \"MrPanyGoff\": 1, \"Wilfredor\": 1, \"FlocciNivis\": 1, \"Terragio67\": 1, \"\u042e\u0440\u0438\u0439 \u0414.\u041a.\": 2, \"Acroterion\": 1, \"ArildV\": 1, \"UnpetitproleX\": 1, \"W.carter\": 1, \"Julian Lupyan\": 1, \"Adam Cuerden\": 1, \"\u041d\u0438\u043a\u043e\u043d\u0438\u043a\u043e962\": 1, \"The Cosmonaut\": 1, \"\u041a\u0440\u0430\u0441\u043d\u044b\u0439\": 1, \"Skander zarrad\": 1, \"A. \u00d6ztas\": 1, \"Crisco 1492\": 1, \"Radomianin\": 1, \"\u0418\u0433\u043e\u0440\u044c \u0413\u043e\u0440\u0434\u0435\u0435\u0432\": 1, \"Dllu\": 1, \"A.Savin\": 1, \"PaestumPaestum\": 1, \"Gzen92\": 1, \"Imehling\": 1, \"Milseburg\": 1, \"I.Mahesh\": 1, \"Ig0r\": 1, \"Falc\u00e3o Alado\": 1}, \"pending_candidate_ids\": []}\n",
+              "stderr": ""
+            }
+          ]
+        },
+        {
+          "path": "/Users/raccoon/Desktop/Experiments/hazy/Fixtures/Heaps/Curatorial/POTY/People-and-human-activity",
+          "fixture_id": "hazy-poty-people-and-human-activity-v1",
+          "kind": "curatorial_heap",
+          "images": 50,
+          "layout": "passed",
+          "assets_checked": true,
+          "specialized_checks": [
+            {
+              "command": [
+                "Fixtures/Heaps/Curatorial/POTY/tools/integrate.py",
+                "check",
+                "--category",
+                "People and human activity"
+              ],
+              "exit_code": 0,
+              "stdout": "{\"validation\": \"passed\", \"kind\": \"curatorial_heap\", \"pairs\": 0, \"status\": \"complete\", \"official_category\": \"People and human activity\", \"eligible\": 238, \"by_year\": {\"2023\": 54, \"2024\": 92, \"2025\": 92}, \"selected\": 50, \"acquired\": 50, \"excluded\": 25, \"pending_review\": 0, \"pending_acquisition\": 0, \"reserve\": 163, \"target\": 50, \"completed_http_responses\": 75, \"failed_http_transfers\": 0, \"post_transfer_validation_stops\": 0, \"automatic_retries\": 0, \"shortfall\": 0, \"selected_unknown_creators\": 3, \"published_uploader_counts\": {\"Herbertkikoy\": 1, \"Fawzi Demmane\": 1, \"DanielTahar\": 1, \"Summering2018\": 1, \"I.Mahesh\": 1, \"Poco a poco\": 1, \"FBilula\": 1, \"Salah Eddine Demmane\": 1, \"Frank Schulenburg\": 1, \"Crisco 1492\": 1, \"Aristeas\": 1, \"Svema\": 1, \"Mohamed Khalil90\": 1, \"ArildV\": 1, \"W.carter\": 1, \"Stepro\": 1, \"Julian Herzog\": 1, \"Royal Society uploader\": 1, \"Julesvernex2\": 1, \"Bijay Chaurasia\": 1, \"Rusho127\": 1, \"Shonagon\": 1, \"Jakubhal\": 1, \"Tm\": 2, \"Roy Egloff\": 1, \"Cmichel67\": 1, \"Yann\": 4, \"Subsidiary account\": 1, \"Mattijohannes\": 1, \"PetarM\": 1, \"Mpamidimarthi\": 1, \"Salahuddinrazu\": 1, \"Giles Laurent\": 1, \"Wilfredor\": 1, \"Elshad Iman (El\u015fad \u0130man)\": 1, \"Sandro Halank\": 1, \"Nayeem01771031233\": 1, \"Schierbecker\": 1, \"Granada\": 1, \"Shougissime\": 1, \"EMMAN A. FORONDA\": 1, \"Rotadefterim\": 1, \"Ermell\": 1, \"Kallerna\": 1, \"Basile Morin\": 1, \"Simobati1978\": 1}, \"latest_revision_uploader_counts\": {\"Herbertkikoy\": 1, \"Fawzi Demmane\": 1, \"DanielTahar\": 1, \"Summering2018\": 1, \"I.Mahesh\": 1, \"Poco a poco\": 1, \"FBilula\": 1, \"Salah Eddine Demmane\": 1, \"Frank Schulenburg\": 1, \"Crisco 1492\": 1, \"Aristeas\": 1, \"Svema\": 1, \"Mohamed Khalil90\": 1, \"ArildV\": 1, \"\u5929\u7136\u30ac\u30b9\": 1, \"Stepro\": 1, \"Julian Herzog\": 1, \"Royal Society uploader\": 1, \"Julesvernex2\": 1, \"Bijay Chaurasia\": 1, \"Rusho127\": 1, \"Shonagon\": 1, \"Jakubhal\": 1, \"Tm\": 2, \"Roy Egloff\": 1, \"Cmichel67\": 1, \"Yann\": 4, \"Subsidiary account\": 1, \"Mattijohannes\": 1, \"PetarM\": 1, \"Mpamidimarthi\": 1, \"Salahuddinrazu\": 1, \"Giles Laurent\": 1, \"Wilfredor\": 1, \"Elshad Iman (El\u015fad \u0130man)\": 1, \"Sandro Halank\": 1, \"Radomianin\": 1, \"Schierbecker\": 1, \"Granada\": 1, \"Shougissime\": 1, \"EMMAN A. FORONDA\": 1, \"Rotadefterim\": 1, \"Ermell\": 1, \"Kallerna\": 1, \"Basile Morin\": 1, \"Simobati1978\": 1}, \"pending_candidate_ids\": []}\n",
+              "stderr": ""
+            }
+          ]
+        },
+        {
+          "path": "/Users/raccoon/Desktop/Experiments/hazy/Fixtures/Heaps/Curatorial/Rocks-in-Thin-Section",
+          "fixture_id": "hazy-rocks-in-thin-section-v1",
+          "kind": "curatorial_heap",
+          "images": 50,
+          "layout": "passed",
+          "assets_checked": true,
+          "specialized_checks": [
+            {
+              "command": [
+                "Fixtures/Heaps/Curatorial/Rocks-in-Thin-Section/tools/intake.py",
+                "check"
+              ],
+              "exit_code": 0,
+              "stdout": "{\n  \"validation\": \"passed\",\n  \"kind\": \"curatorial_heap\",\n  \"expected_pairs\": 0,\n  \"status\": \"complete_acquisition\",\n  \"selection_status\": \"provisional\",\n  \"unique_enumerated\": 530,\n  \"technical_rejects\": 1,\n  \"reviewed_previews\": 59,\n  \"scope_rejects\": 2,\n  \"provenance_or_rights_rejects\": 2,\n  \"deferred_reviews\": 1,\n  \"visually_eligible\": 57,\n  \"selected\": 50,\n  \"acquired\": 50,\n  \"pending_acquisition\": 0,\n  \"pending_candidate_ids\": [],\n  \"selection_exclusions\": 4,\n  \"pending_selection\": 1,\n  \"unreviewed\": 471,\n  \"unused_reserve\": 475,\n  \"target\": 50,\n  \"provisional_selected\": 35,\n  \"transport_stops\": 0,\n  \"automatic_retries\": 0\n}\n",
+              "stderr": ""
+            }
+          ]
+        },
+        {
+          "path": "/Users/raccoon/Desktop/Experiments/hazy/Fixtures/Heaps/Curatorial/Stone-Hand-Axes",
+          "fixture_id": "hazy-stone-hand-axes-v1",
+          "kind": "curatorial_heap",
+          "images": 50,
+          "layout": "passed",
+          "assets_checked": true,
+          "specialized_checks": [
+            {
+              "command": [
+                "Fixtures/Heaps/Curatorial/Stone-Hand-Axes/tools/intake.py",
+                "check"
+              ],
+              "exit_code": 0,
+              "stdout": "{\n  \"validation\": \"passed\",\n  \"kind\": \"curatorial_heap\",\n  \"expected_pairs\": 0,\n  \"status\": \"complete_acquisition\",\n  \"selection_status\": \"provisional\",\n  \"unique_enumerated\": 268,\n  \"technical_rejects\": 1,\n  \"reviewed_previews\": 79,\n  \"scope_rejects\": 15,\n  \"provenance_or_rights_rejects\": 6,\n  \"deferred_reviews\": 4,\n  \"visually_eligible\": 64,\n  \"selected\": 50,\n  \"acquired\": 50,\n  \"pending_acquisition\": 0,\n  \"pending_candidate_ids\": [],\n  \"selection_exclusions\": 18,\n  \"pending_selection\": 3,\n  \"unreviewed\": 189,\n  \"unused_reserve\": 197,\n  \"target\": 50,\n  \"provisional_selected\": 33,\n  \"transport_stops\": 3,\n  \"automatic_retries\": 0\n}\n",
+              "stderr": ""
+            }
+          ]
+        },
+        {
+          "path": "/Users/raccoon/Desktop/Experiments/hazy/Fixtures/Heaps/Curatorial/US-Army-SSI",
+          "fixture_id": "hazy-us-army-ssi-v1",
+          "kind": "curatorial_heap",
+          "images": 150,
+          "layout": "passed",
+          "assets_checked": true,
+          "specialized_checks": [
+            {
+              "command": [
+                "Fixtures/Heaps/Curatorial/US-Army-SSI/tools/integrate.py",
+                "check"
+              ],
+              "exit_code": 0,
+              "stdout": "{\n  \"validation\": \"passed\",\n  \"kind\": \"curatorial_heap\",\n  \"pairs\": 0,\n  \"status\": \"provisional\",\n  \"target\": 150,\n  \"raw_listings\": 1641,\n  \"unique_file_identities\": 1641,\n  \"target_acquired\": true,\n  \"provisional_selected\": 121,\n  \"reviewed_entries\": 199,\n  \"selected\": 150,\n  \"acquired\": 150,\n  \"excluded\": 35,\n  \"reserve\": 1448,\n  \"pending_selection\": 8,\n  \"unreviewed_entries\": 1442,\n  \"reviewed_decisions\": {\n    \"eligible\": 170,\n    \"exclude\": 20,\n    \"pending\": 9\n  },\n  \"pending_acquisition\": 0,\n  \"pending_acquisition_ids\": [],\n  \"exclusions_by_reason\": {\n    \"out_of_scope_event_photograph\": 4,\n    \"out_of_scope_qualification_tab\": 1,\n    \"out_of_scope_award_tab\": 1,\n    \"out_of_scope_standalone_tab\": 1,\n    \"out_of_scope_unofficial_badge\": 1,\n    \"out_of_scope_multiple_design_composite\": 1,\n    \"design_already_selected\": 15,\n    \"standalone_award_tab\": 1,\n    \"standalone_auxiliary_tab\": 1,\n    \"coat_of_arms_not_ssi\": 2,\n    \"distinctive_unit_insignia_not_ssi\": 1,\n    \"standalone_qualification_tab\": 1,\n    \"multiple_design_display\": 1,\n    \"shoulder_loop_not_ssi\": 1,\n    \"event_photograph\": 1,\n    \"air_force_not_us_army_ssi\": 1,\n    \"unit_flag_not_ssi\": 1\n  },\n  \"unresolved_review_ids\": [\n    \"3e5dc0967d0f1e22350f\",\n    \"2dc3a3681e15c0baae18\",\n    \"fb61c9a3292fda67af2d\",\n    \"c2e85fdd2fea6afa70b9\",\n    \"811d2a4a275d264c3d1e\",\n    \"161f61e6cd24554919d5\",\n    \"d7ebb3b1b75855252f56\",\n    \"242024b2cf313a7e0e27\",\n    \"23ee412d21f34ab99380\"\n  ],\n  \"exhausted_population_shortfall\": null,\n  \"transport_failures\": 1,\n  \"post_transfer_validation_stops\": 2,\n  \"automatic_retries\": 0,\n  \"concentration\": {\n    \"original_creator\": {\n      \"United States Army Institute of Heraldry\": 6,\n      \"US Army Cyber Command (ARCYBER)\": 1,\n      \"U.S. Army\": 21,\n      \"US Army\": 22,\n      \"United States Army\": 22,\n      \"unknown\": 68,\n      \"U.S. Army Center Of Military History\": 1,\n      \"The Institute of Heraldry\": 2,\n      \"Noclador (base raster depiction)\": 5,\n      \"US Army Institute of Heraldry\": 2\n    },\n    \"designer\": {\n      \"unknown\": 150\n    },\n    \"digital_renderer\": {\n      \"Fvasconcellos\": 4,\n      \"unknown\": 112,\n      \"KCope91\": 1,\n      \"Futurhit12\": 1,\n      \"Noclador\": 4,\n      \"Icodeswift\": 2,\n      \"Snubcube\": 5,\n      \"McSush\": 1,\n      \"Fred the Oyster\": 3,\n      \"Life of Riley\": 4,\n      \"SPC Michael Danikan\": 1,\n      \"Ed!\": 2,\n      \"Steven Williamson\": 1,\n      \"TexasBob85\": 1,\n      \"Connormah\": 1,\n      \"Bassoonstuff (Bobby C. Hawkins)\": 1,\n      \"Asiela\": 1,\n      \"Lancaster\": 1,\n      \"Completefailure\": 1,\n      \"Jkwchui\": 1,\n      \"MDragunov\": 1,\n      \"Wgabrie\": 1\n    },\n    \"uploader_current_file_revision\": {\n      \"Fvasconcellos\": 3,\n      \"Tsubasa-Minoru\": 1,\n      \"File Upload Bot (Magnus Manske)\": 17,\n      \"Nobunaga24\": 11,\n      \"MGA73bot2\": 2,\n      \"Thadius856\": 3,\n      \"Jsbikehike\": 1,\n      \"KCope91\": 1,\n      \"Iazyges\": 1,\n      \"Erwin Lindemann\": 10,\n      \"Sonaz\": 1,\n      \"Kwasura\": 2,\n      \"Hawkeye7\": 2,\n      \"Coldstreamer20\": 9,\n      \"Monkeybait\": 5,\n      \"Futurhit12\": 1,\n      \"EclecticArkie\": 1,\n      \"SGT141\": 7,\n      \"Noclador\": 7,\n      \"Don.H.40\": 2,\n      \"McChizzle\": 4,\n      \"FastilyClone\": 1,\n      \"AlbertoDV\": 1,\n      \"Icodeswift\": 2,\n      \"Abovfold\": 1,\n      \"Mikeofv\": 1,\n      \"Snubcube\": 4,\n      \"McSush\": 2,\n      \"Fred the Oyster\": 3,\n      \"Life of Riley\": 4,\n      \"King of Hearts\": 1,\n      \"EpicDream86\": 3,\n      \"Rukia8492\": 1,\n      \"GifTagger\": 8,\n      \"Ed!\": 2,\n      \"Illegitimate Barrister\": 1,\n      \"Artem Karimov\": 1,\n      \"Ken~commonswiki\": 1,\n      \"New123321\": 1,\n      \"Kges1901\": 1,\n      \"TexasBob85\": 1,\n      \"General125~commonswiki\": 1,\n      \"Raymondstaley\": 1,\n      \"Dooleydragon\": 1,\n      \"Bassoonstuff\": 1,\n      \"Trilotat\": 1,\n      \"DPLA bot\": 1,\n      \"HungNguyen19181945\": 1,\n      \"Asiela\": 1,\n      \"Lancaster\": 1,\n      \"Completefailure\": 1,\n      \"CORNELIUSSEON\": 3,\n      \"Jkwchui\": 1,\n      \"Canute\": 1,\n      \"Mbms1029\": 1,\n      \"MDragunov\": 1,\n      \"Beao\": 1,\n      \"Ajs471\": 1\n    }\n  }\n}\n",
+              "stderr": ""
+            }
+          ]
+        },
+        {
+          "path": "/Users/raccoon/Desktop/Experiments/hazy/Fixtures/Heaps/Similarity/BSP01",
+          "fixture_id": "hazy-bsp01-v1",
+          "kind": "prompt_heap",
+          "images": 68,
+          "layout": "passed",
+          "assets_checked": true,
+          "specialized_checks": [
+            {
+              "command": [
+                "Fixtures/Heaps/Similarity/BSP01/tools/integrate.py",
+                "check"
+              ],
+              "exit_code": 0,
+              "stdout": "{\n  \"fixture\": {\n    \"status\": \"passed\",\n    \"kind\": \"prompt_heap\",\n    \"images\": 68,\n    \"sources\": 68,\n    \"assets\": 136,\n    \"pairs\": 0\n  },\n  \"evidence\": {\n    \"previews\": 185,\n    \"initial_visual_fits\": 77,\n    \"visually_selected\": 68,\n    \"acquired\": 68,\n    \"pending\": 0,\n    \"acquisition_status\": \"complete\",\n    \"status\": \"passed\"\n  }\n}\n",
+              "stderr": ""
+            },
+            {
+              "command": [
+                "Fixtures/Heaps/Similarity/BSP01/tools/check_pack.py"
+              ],
+              "exit_code": 0,
+              "stdout": "Preserved supplied BSP01 pack OK: 185 unseen Commons leads; 30-image floor; 18 verified text/evidence files.\n",
+              "stderr": ""
+            },
+            {
+              "command": [
+                "Fixtures/Heaps/Similarity/BSP01/tools/prepare.py",
+                "--check-only"
+              ],
+              "exit_code": 0,
+              "stdout": "7 pinned PS01 source scripts verified (local adaptations checked separately); 0 not yet copied.\n",
+              "stderr": ""
+            }
+          ]
+        },
+        {
+          "path": "/Users/raccoon/Desktop/Experiments/hazy/Fixtures/Heaps/Similarity/CR01",
+          "fixture_id": "hazy-cr01-v1",
+          "kind": "prompt_heap",
+          "images": 57,
+          "layout": "passed",
+          "assets_checked": true,
+          "specialized_checks": [
+            {
+              "command": [
+                "Fixtures/Heaps/Similarity/CR01/tools/integrate.py",
+                "check"
+              ],
+              "exit_code": 0,
+              "stdout": "{\n  \"fixture\": {\n    \"status\": \"passed\",\n    \"kind\": \"prompt_heap\",\n    \"images\": 57,\n    \"sources\": 57,\n    \"assets\": 114,\n    \"pairs\": 0\n  },\n  \"evidence\": {\n    \"previews\": 168,\n    \"visually_selected\": 57,\n    \"acquired\": 57,\n    \"pending\": 0,\n    \"acquisition_status\": \"complete\",\n    \"status\": \"passed\"\n  }\n}\n",
+              "stderr": ""
+            },
+            {
+              "command": [
+                "Fixtures/Heaps/Similarity/CR01/tools/check_pack.py"
+              ],
+              "exit_code": 0,
+              "stdout": "Preserved CR01 sourcing pack passed: 168 title-level leads; zero viewed/acquired media in that original handoff; 16 checksummed evidence files. Current integration is checked separately by tools/integrate.py.\n",
+              "stderr": ""
+            },
+            {
+              "command": [
+                "Fixtures/Heaps/Similarity/CR01/tools/prepare.py",
+                "--check-only"
+              ],
+              "exit_code": 0,
+              "stdout": "7 matching PS01 source scripts verified; 0 not yet copied.\n",
+              "stderr": ""
+            }
+          ]
+        },
+        {
+          "path": "/Users/raccoon/Desktop/Experiments/hazy/Fixtures/Heaps/Similarity/PS01",
+          "fixture_id": "hazy-ps01-v1",
+          "kind": "prompt_heap",
+          "images": 58,
+          "layout": "passed",
+          "assets_checked": true,
+          "specialized_checks": [
+            {
+              "command": [
+                "Fixtures/Heaps/Similarity/PS01/tools/integrate.py",
+                "check"
+              ],
+              "exit_code": 0,
+              "stdout": "{\n  \"fixture\": {\n    \"status\": \"passed\",\n    \"kind\": \"prompt_heap\",\n    \"images\": 58,\n    \"sources\": 58,\n    \"assets\": 116,\n    \"pairs\": 0\n  },\n  \"evidence\": {\n    \"previews\": 145,\n    \"visually_selected\": 58,\n    \"acquired\": 58,\n    \"pending\": 0,\n    \"acquisition_status\": \"complete\",\n    \"status\": \"passed\"\n  }\n}\n",
+              "stderr": ""
+            }
+          ]
+        },
+        {
+          "path": "/Users/raccoon/Desktop/Experiments/hazy/Fixtures/Heaps/Similarity/RG01",
+          "fixture_id": "hazy-rg01-v1",
+          "kind": "prompt_heap",
+          "images": 31,
+          "layout": "passed",
+          "assets_checked": true,
+          "specialized_checks": [
+            {
+              "command": [
+                "Fixtures/Heaps/Similarity/RG01/tools/heap.py",
+                "check"
+              ],
+              "exit_code": 0,
+              "stdout": "{\n  \"images\": 31,\n  \"sources\": 31,\n  \"pairs\": 0,\n  \"assets\": 62,\n  \"kind\": \"prompt_heap\"\n}\n",
+              "stderr": ""
+            }
+          ]
+        },
+        {
+          "path": "/Users/raccoon/Desktop/Experiments/hazy/Fixtures/Heaps/Similarity/SF01",
+          "fixture_id": "hazy-sf01-v1",
+          "kind": "prompt_heap",
+          "images": 48,
+          "layout": "passed",
+          "assets_checked": true,
+          "specialized_checks": [
+            {
+              "command": [
+                "Fixtures/Heaps/Similarity/SF01/tools/integrate.py",
+                "check"
+              ],
+              "exit_code": 0,
+              "stdout": "{\n  \"fixture\": {\n    \"status\": \"passed\",\n    \"kind\": \"prompt_heap\",\n    \"images\": 48,\n    \"sources\": 48,\n    \"assets\": 96,\n    \"pairs\": 0\n  },\n  \"evidence\": {\n    \"previews\": 142,\n    \"visually_selected\": 59,\n    \"acquired\": 48,\n    \"pending\": 11,\n    \"acquisition_status\": \"stopped\",\n    \"status\": \"passed\"\n  }\n}\n",
+              "stderr": ""
+            }
+          ]
+        },
+        {
+          "path": "/Users/raccoon/Desktop/Experiments/hazy/Fixtures/Heaps/Similarity/TG01",
+          "fixture_id": "hazy-tg01-v1",
+          "kind": "prompt_heap",
+          "images": 31,
+          "layout": "passed",
+          "assets_checked": true,
+          "specialized_checks": [
+            {
+              "command": [
+                "Fixtures/Heaps/Similarity/TG01/tools/integrate.py",
+                "check"
+              ],
+              "exit_code": 0,
+              "stdout": "{\n  \"fixture\": {\n    \"status\": \"passed\",\n    \"kind\": \"prompt_heap\",\n    \"images\": 31,\n    \"sources\": 31,\n    \"assets\": 62,\n    \"pairs\": 0\n  },\n  \"evidence\": {\n    \"previews\": 152,\n    \"visually_selected\": 31,\n    \"acquired\": 31,\n    \"pending\": 0,\n    \"acquisition_status\": \"complete\",\n    \"status\": \"passed\"\n  }\n}\n",
+              "stderr": ""
+            },
+            {
+              "command": [
+                "Fixtures/Heaps/Similarity/TG01/tools/check_pack.py"
+              ],
+              "exit_code": 0,
+              "stdout": "Preserved supplied TG01 pack OK: 152 unviewed Commons leads, 30-image floor, 18 text/evidence files verified.\n",
+              "stderr": ""
+            },
+            {
+              "command": [
+                "Fixtures/Heaps/Similarity/TG01/tools/prepare.py",
+                "--check-only"
+              ],
+              "exit_code": 0,
+              "stdout": "7 pinned PS01 source scripts verified (local adaptations checked separately); 0 not yet copied.\n",
+              "stderr": ""
+            }
+          ]
+        },
+        {
+          "path": "/Users/raccoon/Desktop/Experiments/hazy/Fixtures/Relationships/Derivatives",
+          "fixture_id": "hazy-derivatives-v1",
+          "kind": "derivatives",
+          "images": 183,
+          "layout": "passed",
+          "assets_checked": true,
+          "specialized_checks": [
+            {
+              "command": [
+                "Experiments/AppleVisionTranslation/Tools/fixtures.py",
+                "check",
+                "--fixtures",
+                "Fixtures/Relationships/Derivatives"
+              ],
+              "exit_code": 0,
+              "stdout": "{\n  \"fixture_id\": \"hazy-derivatives-v1\",\n  \"schema_version\": 1,\n  \"kind\": \"derivatives\",\n  \"images\": 183,\n  \"assets\": 198,\n  \"sources\": 15,\n  \"scenes\": 0,\n  \"probes\": 115,\n  \"metadata_sha256\": {\n    \"manifest.json\": \"6141c7fde28f1e2809bb1ca4df207a1ebe0788db4daaf1f489e79421fb1c038d\",\n    \"manifest.csv\": \"099d335fd6e64bf1cf99366a27b9c4e19468f718ffc596860c3249948712bc35\",\n    \"sources.csv\": \"e43c7abfdefd193c19ea40c0e8436c6a377c91c6c6f1887550d074bfb5a4517c\",\n    \"SHA256SUMS.txt\": \"672dac913dc17801dc1914f9a559a265a54ec22faba9c2bd1ebc1f6b87fd487d\",\n    \"probes.csv\": \"8b6c06a76212eca0d49478cc6d9f6afdb002ccb14ef4e367ea757fd5c90d9433\",\n    \"selections.json\": \"ff90035046fa4f1caee457b7dfe5e51827257be93901c0bf876fc35f92cbb7d8\",\n    \"batches/batch-1.txt\": \"fb2b351244423b466cd14debea9a6e70f030c27f3f8540acad06d8836efc7951\",\n    \"batches/batch-2.txt\": \"5dcae5ffb855845f5d20eb8d8b968f51dd5ae65d84914f01f7c060c1ba42cad8\",\n    \"batches/batch-3.txt\": \"04d4c8fbeeefd6a19e562867034ce59886f0953f4cf484203e5231569727aaa3\",\n    \"batches/batch-4.txt\": \"1c1886b2e697f51d04349f95da0acb13bd561d1b1e4656cfba512c0bdfa033f6\",\n    \"batches/medium.txt\": \"bc26b5c72bfad2c46856a8af6c3598162ad8c8772dc360ed27b0dd401cd45a08\",\n    \"batches/smoke.txt\": \"ae993f934589ab4bc36f7af8fa694d53cab237cb029850641f3f119b21058077\"\n  }\n}\n",
+              "stderr": ""
+            }
+          ]
+        },
+        {
+          "path": "/Users/raccoon/Desktop/Experiments/hazy/Fixtures/Relationships/Multiviews",
+          "fixture_id": "hazy-multiview-v1",
+          "kind": "multiview",
+          "images": 20,
+          "layout": "passed",
+          "assets_checked": true,
+          "specialized_checks": [
+            {
+              "command": [
+                "Experiments/AppleVisionTranslation/Tools/fixtures.py",
+                "check",
+                "--fixtures",
+                "Fixtures/Relationships/Multiviews"
+              ],
+              "exit_code": 0,
+              "stdout": "{\n  \"fixture_id\": \"hazy-multiview-v1\",\n  \"schema_version\": 1,\n  \"kind\": \"multiview\",\n  \"images\": 20,\n  \"assets\": 40,\n  \"sources\": 20,\n  \"scenes\": 8,\n  \"probes\": 44,\n  \"metadata_sha256\": {\n    \"manifest.json\": \"2b77fb179dc6b3a2b537fa631f8fad528fdb2e44660a8f3e918e41a09fce5b63\",\n    \"manifest.csv\": \"f6d50766b94cbcb71c8620a99742b1ffb75d88ffc13d5a8f8a60203ea22df027\",\n    \"sources.csv\": \"c123fc2c8a85f546f8aaa04a0aee85d056abf225ea1d5a0f0243fddf64e5e594\",\n    \"SHA256SUMS.txt\": \"098f7ee1a8512ed384d1130fa8eca60bbe14b67ebbfcdfdcce093676ef7ad92c\",\n    \"probes.csv\": \"4b5b61719c9f4ff731c27d638b5caf5cb9f30fb0102f4197fd67114aa37e2bfb\",\n    \"selections.json\": \"6ada7f296a93018ce4120190f00af3ef9dbe01fb4a666bbd2361b6f863861ffd\",\n    \"batches/batch-1.txt\": \"a1494deba15ab78579469df1929bb006c4de3552f77f9a31384e2de271517a5a\",\n    \"batches/batch-2.txt\": \"0818835310d7f3702521574e71b3d4d949de87efb0fc3b7419ebbc0f78b1dc26\",\n    \"batches/batch-3.txt\": \"1626a6eae4ec2cf510c1bb8db16fa56c942a04d49542390c976f02e574784964\",\n    \"batches/batch-4.txt\": \"2acd63002f5b47bac6b4698aa747129fff79d4701ea6d284a4b9b0460ccaa06d\",\n    \"batches/batch-5.txt\": \"a8660c01249146ad193c765f46781c4b841ce6ea04b4666416be8c443868300a\",\n    \"batches/batch-6.txt\": \"a2b365763a5b682e94ad157954d0d83e6dcf0a3af35e1bd4a909f895b04ead44\",\n    \"batches/batch-7.txt\": \"77f82a071628aeb968088fe8f53dd236df6dabbe2ab8a6bb04a76c2f0cba7b4d\",\n    \"batches/batch-8.txt\": \"eabd350775afbceef74f8f1efd07d0d6a838f64f830d77842425b442a4cb42d0\",\n    \"batches/medium.txt\": \"8f6544b52b429a24d372b3529783a1f823a5f0f0e962efeaadf19111e3f7c803\",\n    \"batches/smoke.txt\": \"a1494deba15ab78579469df1929bb006c4de3552f77f9a31384e2de271517a5a\"\n  }\n}\n",
+              "stderr": ""
+            }
+          ]
+        },
+        {
+          "path": "/Users/raccoon/Desktop/Experiments/hazy/Fixtures/Relationships/Variants",
+          "fixture_id": "hazy-meme-fixtures-v0",
+          "kind": "derivatives",
+          "images": 42,
+          "layout": "passed",
+          "assets_checked": true,
+          "specialized_checks": [
+            {
+              "command": [
+                "Experiments/AppleVisionTranslation/Tools/fixtures.py",
+                "check",
+                "--fixtures",
+                "Fixtures/Relationships/Variants"
+              ],
+              "exit_code": 0,
+              "stdout": "{\n  \"fixture_id\": \"hazy-meme-fixtures-v0\",\n  \"schema_version\": 1,\n  \"kind\": \"derivatives\",\n  \"images\": 42,\n  \"assets\": 48,\n  \"sources\": 6,\n  \"scenes\": 0,\n  \"probes\": 54,\n  \"metadata_sha256\": {\n    \"manifest.json\": \"8d0fd98dd2e435661ef6d77b458050b131ed488b172204659023f080a85111df\",\n    \"manifest.csv\": \"2b09192b166c35da72792ab8cb5dc3356f71f878a620004bfb4a45fbae31e1d6\",\n    \"sources.csv\": \"9ce08683d44dc925062232d7887629b3a5bfff1b50cabeda32a8e31b5074a67e\",\n    \"SHA256SUMS.txt\": \"808eeb0b775ae8a0e219dac6cd13d7f6ee5194a32a9ac9b120494ad46c8018f1\",\n    \"probes.csv\": \"273244086dd88966a899e2b79346f20f588f313f9273c10c8b7125d4a860f9f5\",\n    \"selections.json\": \"7ec389d93843be38c4a268208b4b3e30b17e846c3fd666c51fe59bcc566d5933\",\n    \"batches/batch-1.txt\": \"e49fce8102f831fb6878f15fd12be57d47e948b972e48c00ce5ad24daf82fc2d\",\n    \"batches/medium.txt\": \"cb21fcb4005c5abc4c1acd7014ebb89754f25cdc2217233c8cabfd768dd84fff\",\n    \"batches/smoke.txt\": \"cb21fcb4005c5abc4c1acd7014ebb89754f25cdc2217233c8cabfd768dd84fff\"\n  }\n}\n",
+              "stderr": ""
+            },
+            {
+              "command": [
+                "Fixtures/Relationships/Variants/tools/build.py",
+                "check"
+              ],
+              "exit_code": 0,
+              "stdout": "{\n  \"images\": 42,\n  \"sources\": 6,\n  \"local_variants\": 30,\n  \"supplied_generations\": 6,\n  \"probes\": 54,\n  \"retained_artifacts\": 242,\n  \"outside_mask_checks\": 6\n}\n",
+              "stderr": ""
+            }
+          ]
+        }
+      ],
+      "stderr": ""
+    }
+  ]
+}

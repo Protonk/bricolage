@@ -131,10 +131,9 @@ Use an isolated Python environment with Pillow 12.0.0; it is the only third-part
 dependency. From the repository root:
 
 ```sh
-.venv/bin/python -m venv /private/tmp/hazy-rg01-env
-/private/tmp/hazy-rg01-env/bin/pip install -r Fixtures/Heaps/Similarity/RG01/tools/requirements.txt
-/private/tmp/hazy-rg01-env/bin/python Fixtures/Heaps/Similarity/RG01/tools/heap.py check
-/private/tmp/hazy-rg01-env/bin/python -m unittest discover -s Fixtures/Heaps/Similarity/RG01/provenance -p test_commons.py
+.venv/bin/python -m pip install -r Fixtures/Heaps/Similarity/RG01/tools/requirements.txt
+.venv/bin/python Fixtures/Heaps/Similarity/RG01/tools/heap.py check
+.venv/bin/python -m unittest discover -s Fixtures/Heaps/Similarity/RG01/tools -p test_commons.py
 ```
 
 `commons.py previews --limit 1` and `commons.py acquire --limit 1` default to a

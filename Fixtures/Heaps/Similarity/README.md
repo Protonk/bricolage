@@ -31,7 +31,7 @@ the [shared fixture format](../../FORMAT.md). Their local validators check files
 and evidence; the experiment's pair-fixture checker does not support this kind.
 
 For acquisition and review, use the active [PS01 tools](PS01/tools/acquire.py)
-and its [handoff contract](PS01/HEAP_INSTRUCTIONS.md) as the current baseline,
+and its [handoff contract](PS01/provenance/intake/HEAP_INSTRUCTIONS.md) as the current baseline,
 adapting contribution-specific identifiers and prompts. Archived tools under
 `provenance/supplied/` record older handoffs. No acquisition or similarity
 measurement is implied merely by a folder being listed here.

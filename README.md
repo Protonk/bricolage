@@ -116,6 +116,9 @@ and unknown or absent extensions. Keep future image assets in those locations.
 Disposable sampler copies are also allowed in `output/sampled/`.
 The manifests, source catalogs, checksums, and textual provenance remain versionable.
 See [Fixtures/README.md](Fixtures/README.md) for the format and local checks.
+All leaf sets follow the [single fixture template](Fixtures/Template/README.md).
+Each exposes `tools/check.py`; `.venv/bin/python Fixtures/tools/check_layout.py --full`
+checks every active leaf and its specialized evidence offline.
 
 [AGENTS.md](AGENTS.md) gives working guidance. Work on the task explicitly selected
 in the conversation; the research documents are not an instruction to implement

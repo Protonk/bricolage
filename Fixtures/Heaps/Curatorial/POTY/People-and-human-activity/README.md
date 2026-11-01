@@ -71,7 +71,7 @@ reported separately in [the acquisition receipt](provenance/acquisition.json). C
 and capture independence beyond the available metadata is not proven. Rights statements
 are taken from individual file evidence; no new collection license is assigned.
 
-From the repository root, with Pillow from `../requirements.txt` installed:
+From the repository root, with Pillow from `tools/requirements.txt` installed:
 
 ```sh
 .venv/bin/python Fixtures/Heaps/Curatorial/POTY/tools/integrate.py check --category "People and human activity"

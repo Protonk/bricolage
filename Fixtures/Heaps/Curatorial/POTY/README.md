@@ -60,8 +60,8 @@ identities and raw-response hashes make the acquired snapshot explicit.
 4. Accept at most one image per identified original creator in each contribution. Preserve explicit original/derivative/restorer roles, resolve documented aliases, and never use uploader identity as an author substitute. A named institutional attribution is capped as an institution without inventing an individual photographer. The People selection has three unknown original photographers, explicitly recorded; its painting reproduction counts both the identified painter and photographer.
 5. Creator and relationship decisions are reproducible from cached file text, API Artist evidence, small explicit overrides and alias mappings. The source evidence is not a proof that all unreported aliases or capture relationships have been discovered. No photograph was inspected to judge quality, similarity, typicality or variety.
 
-`inventory.json` preserves every eligible candidate and published field. `ordering.json`
-records the seed/order; `selection.json` records each rank, decision, exclusion reason
+`provenance/intake/inventory.json` preserves every eligible candidate and published field. `provenance/intake/ordering.json`
+records the seed/order; `provenance/intake/selection.json` records each rank, decision, exclusion reason
 and conflicting prior selection. `provenance/source-evidence.json`,
 `creator-aliases.json`, `review-overrides.json`, `creator-alias-evidence.json`, and
 `provenance-review.json` preserve the source review. Known other-version links are
@@ -123,11 +123,11 @@ families are empty.
 From the repository root:
 
 ```sh
-python3 -m pip install -r Fixtures/Heaps/Curatorial/POTY/requirements.txt
-python3 Fixtures/Heaps/Curatorial/POTY/tools/integrate.py list
-python3 Fixtures/Heaps/Curatorial/POTY/tools/integrate.py check
-python3 Fixtures/Heaps/Curatorial/POTY/tools/integrate.py check --category "People and human activity"
-python3 -m unittest discover -s Fixtures/Heaps/Curatorial/POTY/tools -p 'test_*.py'
+.venv/bin/python -m pip install -r Fixtures/Heaps/Curatorial/POTY/requirements.txt
+.venv/bin/python Fixtures/Heaps/Curatorial/POTY/tools/integrate.py list
+.venv/bin/python Fixtures/Heaps/Curatorial/POTY/tools/integrate.py check
+.venv/bin/python Fixtures/Heaps/Curatorial/POTY/tools/integrate.py check --category "People and human activity"
+.venv/bin/python -m unittest discover -s Fixtures/Heaps/Curatorial/POTY/tools -p 'test_*.py'
 ```
 
 The checker reconstructs category/year membership from raw published revisions, replays

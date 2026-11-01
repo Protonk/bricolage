@@ -37,7 +37,7 @@ See [the fixture index](../README.md) for intake locations and
 
 ## Visual tour
 
-The locally generated [heap picture book](../../output/pdf/hazy-heaps-tour.pdf)
+The rebuildable heap picture book at `output/pdf/hazy-heaps-tour.pdf`
 is a 36-page tour with large plates, contact sheets and linked image credits.
 Its frozen October 2026 edition samples 144 images from the 868 acquired inputs
 in its original 12 leaf collections. Later additions are outside that edition.
@@ -54,9 +54,9 @@ artist roles left unknown.
 To rebuild on macOS with the acquired local assets present:
 
 ```sh
-python3 -m venv /tmp/hazy-tour-env
-/tmp/hazy-tour-env/bin/pip install -r Fixtures/Heaps/tools/tour-requirements.txt
-/tmp/hazy-tour-env/bin/python Fixtures/Heaps/tools/build_tour.py
+make setup-python
+.venv/bin/python -m pip install -r Fixtures/Heaps/tools/tour-requirements.txt
+.venv/bin/python Fixtures/Heaps/tools/build_tour.py
 ```
 
 The builder checks the edition's recorded leaf roster and counts, the selected input hashes

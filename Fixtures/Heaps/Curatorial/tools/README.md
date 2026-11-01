@@ -20,7 +20,8 @@ retrying a request. Oversized unscaled API originals are recorded as unavailable
 before any media request; a different nominal size needs a separate explicit
 metadata request. All distinct size-specific responses remain cached.
 
-Typical bounded commands, using one leaf's entry point:
+Activate the repository Python 3.14.x `.venv` first (`source .venv/bin/activate`
+from the repository root). Typical bounded commands, using one leaf's entry point:
 
 ```sh
 python3 tools/intake.py metadata --start 1 --end 20

@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "status": "complete",
+  "leaves": 18,
+  "common_root_entries": [
+    "README.md",
+    "SHA256SUMS.txt",
+    "SOURCES.md",
+    "batches",
+    "images",
+    "manifest.csv",
+    "manifest.json",
+    "previews",
+    "probes.csv",
+    "provenance",
+    "selections.json",
+    "sources",
+    "sources.csv",
+    "tools"
+  ],
+  "optional_root_entries": [
+    "AGENTS.md"
+  ],
+  "relocated_files": 71,
+  "removed_obsolete_placeholders": 1,
+  "unchanged_local_assets": 5927,
+  "surviving_record_files": 4115,
+  "record_exception": "Variants/AGENTS.md was updated as current guidance; its original bytes are preserved in provenance/supplied/AGENTS-before-layout.md.",
+  "full_leaf_checks": 18,
+  "specialized_commands": 25,
+  "python": "3.14.9 (main, Oct 21 2026, 06:02:15) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "unit_tests": 210,
+  "active_readmes_checked": 27,
+  "broken_local_readme_links": [],
+  "sampler_inventory_id": "6473b2e79edcf91f610c6675d8c5719791adff015e40dadbd5ab3ab5dc29ae14",
+  "sampler_counts": {
+    "leaves": 18,
+    "manifest_records": 1263,
+    "distinct_images": 1251,
+    "eligible": 1251,
+    "alias_records": 12
+  },
+  "historical_draw": {
+    "sample_id": "draw-74427fcd61234647bc46613f73deeecd",
+    "record_valid": true,
+    "original_draw_reproduced": true,
+    "requested_size": 12,
+    "images_available": 12,
+    "alias_issues": [],
+    "fixture_metadata_issues": [],
+    "ok": true
+  },
+  "original_draw_and_annotations_unchanged": true,
+  "output_unchanged": true,
+  "image_acquisitions": 0,
+  "image_regenerations": 0,
+  "comparison_runs": 0
+}

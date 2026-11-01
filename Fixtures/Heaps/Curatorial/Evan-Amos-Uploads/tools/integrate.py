@@ -137,7 +137,7 @@ def diagnostic_check():
 def check(output=None):
     root=e.ROOT;output=output or root
     require(root.name=='Evan-Amos-Uploads'and root.parent.name=='Curatorial','Wrong leaf placement')
-    require(not(root/'prompt.json').exists()and not[p for p in root.glob('*/manifest.json')if p.parent.name not in('provenance','previews')],'Unexpected prompt or child fixture')
+    require(not(root/'prompt.json').exists()and not(root/'provenance/intake/prompt.json').exists()and not[p for p in root.glob('*/manifest.json')if p.parent.name not in('provenance','previews')],'Unexpected prompt or child fixture')
     population.check();diagnostic_check();chosen=e.selection();reviews=read(root/'provenance/rights-review.json');metadata=e.evidence()
     require(reviews==review.records(),'Rights/identity review does not replay')
     # Validate every size-specific cache, including unneeded historical attempts.
