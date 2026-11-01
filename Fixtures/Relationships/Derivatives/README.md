@@ -119,8 +119,9 @@ The generator's small-batch writer has been corrected to recreate `smoke.txt` an
 was checked against the supplied lists without rerunning the image encoders.
 
 From the repository root, `Fixtures/.venv/bin/python Fixtures/tools/relationship_fixtures.py check` validates this
-package without Pillow. See the [experiment README](../../../Experiments/AppleVisionTranslation/README.md#fixture-checks-and-exploration)
-for the focused comparison runner and tests. The manifest's pixel hashes describe
+package without Pillow. See the [shared tools guide](../../tools/README.md)
+for tests and the optional comparison runner, which requires an explicit world
+and experiment binary. The manifest's pixel hashes describe
 Pillow's decoded RGB representation, not hazy's Apple-prepared working pixels.
 
 ### Scope limitation

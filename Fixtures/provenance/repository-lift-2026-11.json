@@ -15,10 +15,11 @@
     "verification": "Source and destination inventories match path, type, size and SHA-256, including empty directories.",
     "inventory_hash_format": "SHA-256 of json.dumps(rows, sort_keys=True, separators=(comma, colon), ensure_ascii=True), without final LF. Rows sorted by path. File fields: path,type=file,size,sha256. Directory fields: path,type=directory."
   },
-  "tracked_fixture_files_unchanged": 4361,
+  "tracked_fixture_files_unchanged": 4360,
   "reviewed_documentation_changes": [
     "Fixtures/FORMAT.md",
     "Fixtures/README.md",
+    "Fixtures/Relationships/Derivatives/README.md",
     "Fixtures/Relationships/Variants/AGENTS.md",
     "Fixtures/Sampler/README.md"
   ],
