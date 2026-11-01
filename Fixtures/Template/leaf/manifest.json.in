@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "fixture_id": "{{FIXTURE_ID}}",
+  "kind": "{{KIND}}",
+  "description": "Unpublished fixture; complete evidence and inputs before use.",
+  "images": []
+}

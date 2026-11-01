@@ -83,6 +83,8 @@ Each leaf separates complete acquisition from earlier deferred selection cases.
 
 ## Working with the fixtures
 
+- Start new leaves from the [single fixture template](Template/README.md).
+  It covers heaps and relationship sets, with kind-specific evidence requirements.
 - Use `Fixtures/sample N` to draw equal tickets across active Heaps and
   Relationships inputs and preserve separate arbitrary annotations.
 - Open the relevant role or heap README, then the leaf set's README for its

@@ -1,0 +1,6 @@
+# Evidence index
+
+Record the purpose and authority of each evidence file. Intake evidence belongs
+in `intake/`; construction-specific inputs in `construction/`; original handoffs
+in `supplied/`. Preserve immutable receipts and their original recorded paths.
+No evidence has been recorded for this unpublished scaffold.

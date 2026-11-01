@@ -1,0 +1,26 @@
+# {{FIXTURE_ID}}
+
+## Purpose and basis
+
+Describe why these images belong here and the selection or construction basis.
+Kind: `{{KIND}}`. Preserve unknown provenance explicitly.
+
+## Completeness
+
+Unpublished: no images acquired or integrated. Record eligible, selected, acquired,
+excluded and pending counts where applicable; distinguish missing from rejected.
+
+## Contents
+
+See [provenance/README.md](provenance/README.md) and the shared fixture format.
+Only `images/` supplies comparison inputs. All media remains Git-ignored.
+
+## Validation
+
+Use the repository Python 3.14.x `.venv` and this leaf's `tools/requirements.txt`.
+Run `tools/check.py` using that interpreter. Add the applicable source-specific
+offline validator to its `checks` list before publication.
+
+## Limitations
+
+Record technical/provenance uncertainty and limits on relationship assertions.

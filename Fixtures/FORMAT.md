@@ -3,6 +3,12 @@
 See the [fixture index](README.md) for roles and current locations. Directory
 organization is separate from the existing manifest schema and fixture IDs.
 
+The [single leaf template](Template/README.md) defines the common root layout,
+intake/construction evidence locations and `tools/check.py` entry point for new
+sets. The [November 2026 migration](provenance/layout-2026-11/README.md) records
+the baseline and staged adoption by existing leaves. Schema version 1 and all
+fixture identities remain unchanged.
+
 Only each leaf set's `images/` directory is comparison input. Integrated sets use:
 
 ```text

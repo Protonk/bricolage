@@ -1,0 +1,437 @@
+{
+  "schema_version": 1,
+  "moves": [
+    {
+      "old": "Fixtures/Heaps/Curatorial/Botanical-Illustrations/inventory.json",
+      "new": "Fixtures/Heaps/Curatorial/Botanical-Illustrations/provenance/intake/inventory.json",
+      "sha256": "842988542834155e6530f832a3bef1f711fd8cdaed4993c1073ebd2c54dbcbe0",
+      "purpose": "evidence"
+    },
+    {
+      "old": "Fixtures/Heaps/Curatorial/Botanical-Illustrations/ordering.json",
+      "new": "Fixtures/Heaps/Curatorial/Botanical-Illustrations/provenance/intake/ordering.json",
+      "sha256": "ce23e5a417f86e9f9e04461d33d386aed9e5b54c1db3fd3f070fdf6f507865d2",
+      "purpose": "evidence"
+    },
+    {
+      "old": "Fixtures/Heaps/Curatorial/Botanical-Illustrations/selection.json",
+      "new": "Fixtures/Heaps/Curatorial/Botanical-Illustrations/provenance/intake/selection.json",
+      "sha256": "eaf547dacc90f44c233648d436d403b1b3110fa027d47d0f657e291706254be8",
+      "purpose": "evidence"
+    },
+    {
+      "old": "Fixtures/Heaps/Curatorial/Botanical-Illustrations/requirements.txt",
+      "new": "Fixtures/Heaps/Curatorial/Botanical-Illustrations/tools/requirements.txt",
+      "sha256": "2fb67a89f878a64338707b683cfa2718066c7003c1d217571fddc3bcf6cf248d",
+      "purpose": "dependency"
+    },
+    {
+      "old": "Fixtures/Heaps/Curatorial/Evan-Amos-Uploads/EXCLUSIONS.txt",
+      "new": "Fixtures/Heaps/Curatorial/Evan-Amos-Uploads/provenance/intake/EXCLUSIONS.txt",
+      "sha256": "3daaa251e193113be3dc3c6efde8d196dfe3faa09455441db8ef8295be273ce6",
+      "purpose": "evidence"
+    },
+    {
+      "old": "Fixtures/Heaps/Curatorial/Evan-Amos-Uploads/inventory.json",
+      "new": "Fixtures/Heaps/Curatorial/Evan-Amos-Uploads/provenance/intake/inventory.json",
+      "sha256": "54e77f2a57e265860073a84dbc95a641dcb280ae2166a0f5be0ebe247f888dbe",
+      "purpose": "evidence"
+    },
+    {
+      "old": "Fixtures/Heaps/Curatorial/Evan-Amos-Uploads/ordering.json",
+      "new": "Fixtures/Heaps/Curatorial/Evan-Amos-Uploads/provenance/intake/ordering.json",
+      "sha256": "6d8521500beb7621372e5232dad0311ede4f82d7043f3644368b86fdd50670b6",
+      "purpose": "evidence"
+    },
+    {
+      "old": "Fixtures/Heaps/Curatorial/Evan-Amos-Uploads/selection.json",
+      "new": "Fixtures/Heaps/Curatorial/Evan-Amos-Uploads/provenance/intake/selection.json",
+      "sha256": "0ef598f5a13dbbb1a2944ebc6a0d5656838d1685b1e559b331a3ef6389c12886",
+      "purpose": "evidence"
+    },
+    {
+      "old": "Fixtures/Heaps/Curatorial/Evan-Amos-Uploads/requirements.txt",
+      "new": "Fixtures/Heaps/Curatorial/Evan-Amos-Uploads/tools/requirements.txt",
+      "sha256": "2fb67a89f878a64338707b683cfa2718066c7003c1d217571fddc3bcf6cf248d",
+      "purpose": "dependency"
+    },
+    {
+      "old": "Fixtures/Heaps/Curatorial/Ex-Libris/inventory.json",
+      "new": "Fixtures/Heaps/Curatorial/Ex-Libris/provenance/intake/inventory.json",
+      "sha256": "fdb3bda670dc71cbeedaef96a0976a4824ab0edc4623eed00854dc8e560e4122",
+      "purpose": "evidence"
+    },
+    {
+      "old": "Fixtures/Heaps/Curatorial/Ex-Libris/ordering.json",
+      "new": "Fixtures/Heaps/Curatorial/Ex-Libris/provenance/intake/ordering.json",
+      "sha256": "2cbb71d4c8ed3418a7656a7d825ae4c5771f259e306f97fda0d2d501cc2f0c67",
+      "purpose": "evidence"
+    },
+    {
+      "old": "Fixtures/Heaps/Curatorial/Ex-Libris/selection.json",
+      "new": "Fixtures/Heaps/Curatorial/Ex-Libris/provenance/intake/selection.json",
+      "sha256": "969062e02f653cdbb4c0107bba15fc0d9fa0d06fc7014999aa4f5726cc56d14a",
+      "purpose": "evidence"
+    },
+    {
+      "old": "Fixtures/Heaps/Curatorial/POTY/Arthropods/inventory.json",
+      "new": "Fixtures/Heaps/Curatorial/POTY/Arthropods/provenance/intake/inventory.json",
+      "sha256": "11e35b727ed653ec3a0320558a4d544338c72f541be6735710101b07496ed635",
+      "purpose": "evidence"
+    },
+    {
+      "old": "Fixtures/Heaps/Curatorial/POTY/Arthropods/ordering.json",
+      "new": "Fixtures/Heaps/Curatorial/POTY/Arthropods/provenance/intake/ordering.json",
+      "sha256": "bbb5673f71ee5908af6005fdf40c5df44291f109abbbc2b4e3183b10dbde2513",
+      "purpose": "evidence"
+    },
+    {
+      "old": "Fixtures/Heaps/Curatorial/POTY/Arthropods/selection.json",
+      "new": "Fixtures/Heaps/Curatorial/POTY/Arthropods/provenance/intake/selection.json",
+      "sha256": "3110c46950974b3a2234f182389ca906b297e0caf5f84851b323dcc30000f797",
+      "purpose": "evidence"
+    },
+    {
+      "old": "Fixtures/Heaps/Curatorial/POTY/Constructions-and-buildings/inventory.json",
+      "new": "Fixtures/Heaps/Curatorial/POTY/Constructions-and-buildings/provenance/intake/inventory.json",
+      "sha256": "9e5809b924822ca684dbd9e47ddc2fd402a7fdf0ed336cef8f776befa3d2e02b",
+      "purpose": "evidence"
+    },
+    {
+      "old": "Fixtures/Heaps/Curatorial/POTY/Constructions-and-buildings/ordering.json",
+      "new": "Fixtures/Heaps/Curatorial/POTY/Constructions-and-buildings/provenance/intake/ordering.json",
+      "sha256": "861c2eb600d2f76afa906d52f86fbc2cc589c6f023993f126c8c40949a41eeaf",
+      "purpose": "evidence"
+    },
+    {
+      "old": "Fixtures/Heaps/Curatorial/POTY/Constructions-and-buildings/selection.json",
+      "new": "Fixtures/Heaps/Curatorial/POTY/Constructions-and-buildings/provenance/intake/selection.json",
+      "sha256": "79c30c3025dad4c9243f1c8a1d2dcc25f78baeb256d03ee2317dd4399eb33a72",
+      "purpose": "evidence"
+    },
+    {
+      "old": "Fixtures/Heaps/Curatorial/POTY/People-and-human-activity/inventory.json",
+      "new": "Fixtures/Heaps/Curatorial/POTY/People-and-human-activity/provenance/intake/inventory.json",
+      "sha256": "91808b71ee2250a10261997c69ee3bba61783ccb4f9365e085aca666062da5d6",
+      "purpose": "evidence"
+    },
+    {
+      "old": "Fixtures/Heaps/Curatorial/POTY/People-and-human-activity/ordering.json",
+      "new": "Fixtures/Heaps/Curatorial/POTY/People-and-human-activity/provenance/intake/ordering.json",
+      "sha256": "a924b572c5a4add43beb85882149da20dd71dc0bf8e0addb5cb556f4768f7f6f",
+      "purpose": "evidence"
+    },
+    {
+      "old": "Fixtures/Heaps/Curatorial/POTY/People-and-human-activity/selection.json",
+      "new": "Fixtures/Heaps/Curatorial/POTY/People-and-human-activity/provenance/intake/selection.json",
+      "sha256": "280467748ea6b81081e4de1d8359c9c0c1ea0ecf06520a7a3b460fe5d1d7debf",
+      "purpose": "evidence"
+    },
+    {
+      "old": "Fixtures/Heaps/Curatorial/Rocks-in-Thin-Section/inventory.json",
+      "new": "Fixtures/Heaps/Curatorial/Rocks-in-Thin-Section/provenance/intake/inventory.json",
+      "sha256": "40c857f4597bde3c208ef63c28cefd3378686932a859e7cd13f80744a1ea829e",
+      "purpose": "evidence"
+    },
+    {
+      "old": "Fixtures/Heaps/Curatorial/Rocks-in-Thin-Section/ordering.json",
+      "new": "Fixtures/Heaps/Curatorial/Rocks-in-Thin-Section/provenance/intake/ordering.json",
+      "sha256": "6efd80134bd8df56510a53a1873443308326f0f10d47b0f7807166557f2748a8",
+      "purpose": "evidence"
+    },
+    {
+      "old": "Fixtures/Heaps/Curatorial/Rocks-in-Thin-Section/selection.json",
+      "new": "Fixtures/Heaps/Curatorial/Rocks-in-Thin-Section/provenance/intake/selection.json",
+      "sha256": "61cea2c9496a8329ba7aa23b7dca6da39cb6dd1797bfed35d1d535553486adf0",
+      "purpose": "evidence"
+    },
+    {
+      "old": "Fixtures/Heaps/Curatorial/Stone-Hand-Axes/inventory.json",
+      "new": "Fixtures/Heaps/Curatorial/Stone-Hand-Axes/provenance/intake/inventory.json",
+      "sha256": "c43283b4262b5f16ac46d2c3d548a94e25ac8adfb47f19ab55b3cea664136948",
+      "purpose": "evidence"
+    },
+    {
+      "old": "Fixtures/Heaps/Curatorial/Stone-Hand-Axes/ordering.json",
+      "new": "Fixtures/Heaps/Curatorial/Stone-Hand-Axes/provenance/intake/ordering.json",
+      "sha256": "d96edb3e93a3c0c21fd4c42b6c998d453d681e7ba8be6df2ff2a50495a6b29fc",
+      "purpose": "evidence"
+    },
+    {
+      "old": "Fixtures/Heaps/Curatorial/Stone-Hand-Axes/selection.json",
+      "new": "Fixtures/Heaps/Curatorial/Stone-Hand-Axes/provenance/intake/selection.json",
+      "sha256": "5a9db0f24bf2268d28ac52a06f05040e2f5af0f5978ec351fa546fff5bfefc12",
+      "purpose": "evidence"
+    },
+    {
+      "old": "Fixtures/Heaps/Curatorial/US-Army-SSI/inventory.json",
+      "new": "Fixtures/Heaps/Curatorial/US-Army-SSI/provenance/intake/inventory.json",
+      "sha256": "a5f417616b37ed33a64f3182fa296a8bc9ae8f7b64c876517445171fa84906e8",
+      "purpose": "evidence"
+    },
+    {
+      "old": "Fixtures/Heaps/Curatorial/US-Army-SSI/ordering.json",
+      "new": "Fixtures/Heaps/Curatorial/US-Army-SSI/provenance/intake/ordering.json",
+      "sha256": "c20d8ba7eeb763207f2a63983a7fc4f0f536818cbbfbdf97acd8c0e3c171fa73",
+      "purpose": "evidence"
+    },
+    {
+      "old": "Fixtures/Heaps/Curatorial/US-Army-SSI/selection.json",
+      "new": "Fixtures/Heaps/Curatorial/US-Army-SSI/provenance/intake/selection.json",
+      "sha256": "6611f1e6e376f971eb0a10fe2a9d3b3559598b92f7bc9b5e64a0e08390fccd85",
+      "purpose": "evidence"
+    },
+    {
+      "old": "Fixtures/Heaps/Curatorial/US-Army-SSI/requirements.txt",
+      "new": "Fixtures/Heaps/Curatorial/US-Army-SSI/tools/requirements.txt",
+      "sha256": "2fb67a89f878a64338707b683cfa2718066c7003c1d217571fddc3bcf6cf248d",
+      "purpose": "dependency"
+    },
+    {
+      "old": "Fixtures/Heaps/Similarity/BSP01/HEAP_INSTRUCTIONS.md",
+      "new": "Fixtures/Heaps/Similarity/BSP01/provenance/intake/HEAP_INSTRUCTIONS.md",
+      "sha256": "b48e4f618287fec5d01880ff0023843116bff7b52a3c39dfb88f010175711f7a",
+      "purpose": "evidence"
+    },
+    {
+      "old": "Fixtures/Heaps/Similarity/BSP01/candidates.csv",
+      "new": "Fixtures/Heaps/Similarity/BSP01/provenance/intake/candidates.csv",
+      "sha256": "4a8e67605d506d34442aed05272234c688b2f891384840f8a1180e588a7cb363",
+      "purpose": "evidence"
+    },
+    {
+      "old": "Fixtures/Heaps/Similarity/BSP01/candidates.jsonl",
+      "new": "Fixtures/Heaps/Similarity/BSP01/provenance/intake/candidates.jsonl",
+      "sha256": "2c36b5909e4f7c0344303d8299cec019a965fb055d9f2b90a348c0711872ec89",
+      "purpose": "evidence"
+    },
+    {
+      "old": "Fixtures/Heaps/Similarity/BSP01/prompt.json",
+      "new": "Fixtures/Heaps/Similarity/BSP01/provenance/intake/prompt.json",
+      "sha256": "f5af2ae17fdd2cf2e594265c45eb8f0c59055e5205dff5b663d92a045793b63d",
+      "purpose": "evidence"
+    },
+    {
+      "old": "Fixtures/Heaps/Similarity/BSP01/requirements.txt",
+      "new": "Fixtures/Heaps/Similarity/BSP01/tools/requirements.txt",
+      "sha256": "2fb67a89f878a64338707b683cfa2718066c7003c1d217571fddc3bcf6cf248d",
+      "purpose": "dependency"
+    },
+    {
+      "old": "Fixtures/Heaps/Similarity/CR01/HEAP_INSTRUCTIONS.md",
+      "new": "Fixtures/Heaps/Similarity/CR01/provenance/intake/HEAP_INSTRUCTIONS.md",
+      "sha256": "0b77ff1515d0913e9bbf1ba094bf2b7d819e955fbd3ec3eb991fc56c0f6eb0cf",
+      "purpose": "evidence"
+    },
+    {
+      "old": "Fixtures/Heaps/Similarity/CR01/candidates.csv",
+      "new": "Fixtures/Heaps/Similarity/CR01/provenance/intake/candidates.csv",
+      "sha256": "f7fa23194a6299d7013b1a9e6a09543ce35d780981ffffbcdf23e155c546c6a9",
+      "purpose": "evidence"
+    },
+    {
+      "old": "Fixtures/Heaps/Similarity/CR01/candidates.jsonl",
+      "new": "Fixtures/Heaps/Similarity/CR01/provenance/intake/candidates.jsonl",
+      "sha256": "123a0276e0e1e9dac8f77d978859df6840259790231cf9d3f2bb84f7d73099b5",
+      "purpose": "evidence"
+    },
+    {
+      "old": "Fixtures/Heaps/Similarity/CR01/prompt.json",
+      "new": "Fixtures/Heaps/Similarity/CR01/provenance/intake/prompt.json",
+      "sha256": "ec243ecda818db6a36f1230cac155bd91b11b530350d685a886b4559e8019ece",
+      "purpose": "evidence"
+    },
+    {
+      "old": "Fixtures/Heaps/Similarity/CR01/requirements.txt",
+      "new": "Fixtures/Heaps/Similarity/CR01/tools/requirements.txt",
+      "sha256": "2fb67a89f878a64338707b683cfa2718066c7003c1d217571fddc3bcf6cf248d",
+      "purpose": "dependency"
+    },
+    {
+      "old": "Fixtures/Heaps/Similarity/PS01/HEAP_INSTRUCTIONS.md",
+      "new": "Fixtures/Heaps/Similarity/PS01/provenance/intake/HEAP_INSTRUCTIONS.md",
+      "sha256": "ca2b2c66a47a7d340253ea9e6c9bfe71f2b146fabfd47987f7f84073dff969dd",
+      "purpose": "evidence"
+    },
+    {
+      "old": "Fixtures/Heaps/Similarity/PS01/candidates.csv",
+      "new": "Fixtures/Heaps/Similarity/PS01/provenance/intake/candidates.csv",
+      "sha256": "1f8e90e2ef67f86678863406c7a0230ff3be98d7558692fc664a27cb4162224d",
+      "purpose": "evidence"
+    },
+    {
+      "old": "Fixtures/Heaps/Similarity/PS01/candidates.jsonl",
+      "new": "Fixtures/Heaps/Similarity/PS01/provenance/intake/candidates.jsonl",
+      "sha256": "45a5007ab343de1619fb48be8f3362fbb0e9797602f31c240018f023fb2e3c79",
+      "purpose": "evidence"
+    },
+    {
+      "old": "Fixtures/Heaps/Similarity/PS01/prompt.json",
+      "new": "Fixtures/Heaps/Similarity/PS01/provenance/intake/prompt.json",
+      "sha256": "7208b7fc17ffe57f273e8b264364f37af91e9b26a745bd8e2a03d6a1664dcce5",
+      "purpose": "evidence"
+    },
+    {
+      "old": "Fixtures/Heaps/Similarity/PS01/requirements.txt",
+      "new": "Fixtures/Heaps/Similarity/PS01/tools/requirements.txt",
+      "sha256": "2fb67a89f878a64338707b683cfa2718066c7003c1d217571fddc3bcf6cf248d",
+      "purpose": "dependency"
+    },
+    {
+      "old": "Fixtures/Heaps/Similarity/RG01/candidates.csv",
+      "new": "Fixtures/Heaps/Similarity/RG01/provenance/intake/candidates.csv",
+      "sha256": "e6be113a8580b7e47fdba83e5ff86aad66b95383f5886245987d527b8e213daf",
+      "purpose": "evidence"
+    },
+    {
+      "old": "Fixtures/Heaps/Similarity/RG01/candidates.jsonl",
+      "new": "Fixtures/Heaps/Similarity/RG01/provenance/intake/candidates.jsonl",
+      "sha256": "f56a2cd395c0a6e6a932c8905387315d96c70237924f95bc700b8a13a5b55403",
+      "purpose": "evidence"
+    },
+    {
+      "old": "Fixtures/Heaps/Similarity/RG01/prompt.json",
+      "new": "Fixtures/Heaps/Similarity/RG01/provenance/intake/prompt.json",
+      "sha256": "ccc9ee5be27a0c49fadea1e4e2a7333c3c15bf5652b6fedcc6ac26325fc7e80e",
+      "purpose": "evidence"
+    },
+    {
+      "old": "Fixtures/Heaps/Similarity/RG01/provenance/commons.py",
+      "new": "Fixtures/Heaps/Similarity/RG01/tools/commons.py",
+      "sha256": "49abbdf7cacb45e24c755bba801342e0c8b37bec825eea93bf8ea1a416e86a49",
+      "purpose": "active tool"
+    },
+    {
+      "old": "Fixtures/Heaps/Similarity/RG01/provenance/contact_sheets.py",
+      "new": "Fixtures/Heaps/Similarity/RG01/tools/contact_sheets.py",
+      "sha256": "efb28afc9d8bb06fa9f623e87622dea498025e95f44543a3626a71a6adf0c929",
+      "purpose": "active tool"
+    },
+    {
+      "old": "Fixtures/Heaps/Similarity/RG01/provenance/heap.py",
+      "new": "Fixtures/Heaps/Similarity/RG01/tools/heap.py",
+      "sha256": "2090345e3702b760a4aa4c294746d2b70dce202bbe3eef5183fca89026410b96",
+      "purpose": "active tool"
+    },
+    {
+      "old": "Fixtures/Heaps/Similarity/RG01/provenance/requirements.txt",
+      "new": "Fixtures/Heaps/Similarity/RG01/tools/requirements.txt",
+      "sha256": "2fb67a89f878a64338707b683cfa2718066c7003c1d217571fddc3bcf6cf248d",
+      "purpose": "dependency"
+    },
+    {
+      "old": "Fixtures/Heaps/Similarity/RG01/provenance/test_commons.py",
+      "new": "Fixtures/Heaps/Similarity/RG01/tools/test_commons.py",
+      "sha256": "08978a17bd30109d910e4a1f1aab4324a15124e05a7a8a0c6692f1a51b63db88",
+      "purpose": "active tool"
+    },
+    {
+      "old": "Fixtures/Heaps/Similarity/SF01/HEAP_INSTRUCTIONS.md",
+      "new": "Fixtures/Heaps/Similarity/SF01/provenance/intake/HEAP_INSTRUCTIONS.md",
+      "sha256": "a9e02524bccb5bd87cfe9c2278805a8833f13baf5ec0d075e82db1646b9e2ff1",
+      "purpose": "evidence"
+    },
+    {
+      "old": "Fixtures/Heaps/Similarity/SF01/candidates.csv",
+      "new": "Fixtures/Heaps/Similarity/SF01/provenance/intake/candidates.csv",
+      "sha256": "121f0198f1ca360bcd802ccb2182a3f859d454aebe9fc3b21e05b4bb9fc8bc1d",
+      "purpose": "evidence"
+    },
+    {
+      "old": "Fixtures/Heaps/Similarity/SF01/candidates.jsonl",
+      "new": "Fixtures/Heaps/Similarity/SF01/provenance/intake/candidates.jsonl",
+      "sha256": "106c03b1005e39df00cc17583eb328b74c6e138a52ed241a786a7af789e5d54f",
+      "purpose": "evidence"
+    },
+    {
+      "old": "Fixtures/Heaps/Similarity/SF01/prompt.json",
+      "new": "Fixtures/Heaps/Similarity/SF01/provenance/intake/prompt.json",
+      "sha256": "44bc9c148f263e73e69e8fac091579baa8b9ed550f1c06ef53758d3e9348cda6",
+      "purpose": "evidence"
+    },
+    {
+      "old": "Fixtures/Heaps/Similarity/SF01/requirements.txt",
+      "new": "Fixtures/Heaps/Similarity/SF01/tools/requirements.txt",
+      "sha256": "2fb67a89f878a64338707b683cfa2718066c7003c1d217571fddc3bcf6cf248d",
+      "purpose": "dependency"
+    },
+    {
+      "old": "Fixtures/Heaps/Similarity/TG01/HEAP_INSTRUCTIONS.md",
+      "new": "Fixtures/Heaps/Similarity/TG01/provenance/intake/HEAP_INSTRUCTIONS.md",
+      "sha256": "344a27728850c2786ddab388426ff95bca137fd850a07a67fb5f1560c1bee117",
+      "purpose": "evidence"
+    },
+    {
+      "old": "Fixtures/Heaps/Similarity/TG01/candidates.csv",
+      "new": "Fixtures/Heaps/Similarity/TG01/provenance/intake/candidates.csv",
+      "sha256": "0e1c1b6ad2223344677503569ddfec5b47c023325f2e520fd31634b87e8016f7",
+      "purpose": "evidence"
+    },
+    {
+      "old": "Fixtures/Heaps/Similarity/TG01/candidates.jsonl",
+      "new": "Fixtures/Heaps/Similarity/TG01/provenance/intake/candidates.jsonl",
+      "sha256": "24c3bd0d6e8b93a46455afb4eaaeb6b529a5e3cd3083da45fae15cdcdb023279",
+      "purpose": "evidence"
+    },
+    {
+      "old": "Fixtures/Heaps/Similarity/TG01/prompt.json",
+      "new": "Fixtures/Heaps/Similarity/TG01/provenance/intake/prompt.json",
+      "sha256": "96b822b32ac311893814e0305f92f28e64c11cd95b0682f4df695712bdf1e442",
+      "purpose": "evidence"
+    },
+    {
+      "old": "Fixtures/Heaps/Similarity/TG01/requirements.txt",
+      "new": "Fixtures/Heaps/Similarity/TG01/tools/requirements.txt",
+      "sha256": "2fb67a89f878a64338707b683cfa2718066c7003c1d217571fddc3bcf6cf248d",
+      "purpose": "dependency"
+    },
+    {
+      "old": "Fixtures/Relationships/Derivatives/provenance/generate.py",
+      "new": "Fixtures/Relationships/Derivatives/tools/generate.py",
+      "sha256": "bbc92742d6b0308d20a4dbd4c04c1010fee7bf16ed3bdcd454fa2bf2cc64fe0d",
+      "purpose": "active tool"
+    },
+    {
+      "old": "Fixtures/Relationships/Variants/BUILD.md",
+      "new": "Fixtures/Relationships/Variants/provenance/construction/BUILD.md",
+      "sha256": "49ae0261e070551cfc310e9ea89b30a780817e69b5bdca096741c06bc9c303a5",
+      "purpose": "evidence"
+    },
+    {
+      "old": "Fixtures/Relationships/Variants/SOURCE_SHA256SUMS.txt",
+      "new": "Fixtures/Relationships/Variants/provenance/construction/SOURCE_SHA256SUMS.txt",
+      "sha256": "b06913db3ac76cb706e7badcfb9e328bcee91a610b26724b32c464af8f080da4",
+      "purpose": "evidence"
+    },
+    {
+      "old": "Fixtures/Relationships/Variants/V06_SHA256SUMS.txt",
+      "new": "Fixtures/Relationships/Variants/provenance/construction/V06_SHA256SUMS.txt",
+      "sha256": "96b488303f5a9c0123e7268a6099b76fe5bc4c10863bef4c75c8102c19ba1567",
+      "purpose": "evidence"
+    },
+    {
+      "old": "Fixtures/Relationships/Variants/source-manifest.json",
+      "new": "Fixtures/Relationships/Variants/provenance/construction/source-manifest.json",
+      "sha256": "aa50cfc091c9ff7027b8f7f81b03af8f4020240cfa52b9370c96a45cb8f71b80",
+      "purpose": "evidence"
+    },
+    {
+      "old": "Fixtures/Relationships/Variants/provenance/build.py",
+      "new": "Fixtures/Relationships/Variants/tools/build.py",
+      "sha256": "cb56d567cf71d1e2f6906c52b2a15284336964d569b9c83df9d3913e7987f07f",
+      "purpose": "active tool"
+    },
+    {
+      "old": "Fixtures/Relationships/Variants/provenance/requirements.txt",
+      "new": "Fixtures/Relationships/Variants/tools/requirements.txt",
+      "sha256": "2fb67a89f878a64338707b683cfa2718066c7003c1d217571fddc3bcf6cf248d",
+      "purpose": "dependency"
+    }
+  ],
+  "remove": [
+    {
+      "path": "Fixtures/Heaps/Similarity/SF01/acquired/README.md",
+      "reason": "Obsolete placeholder; original retained in provenance/supplied/acquired/README.md"
+    }
+  ]
+}
