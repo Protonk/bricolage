@@ -2,7 +2,7 @@
 
 The path is:
 
-**two files → prepared images → translation request → result → overlay and report**
+**world + two image IDs → validated bytes → prepared images → translation request → result → report**
 
 [ComparePair.swift](Sources/AppleVisionTranslationExperiment/ComparePair.swift) connects the stages.
 [main.swift](Sources/VisionTranslationCLI/main.swift) handles command-line arguments and exit codes.
@@ -12,7 +12,15 @@ This is a useful channel example, not the router architecture. The router's
 [design intent](../../Research/Router/BACKWARDS-INDUCTION.md) leave its structure open. The preparation
 and result conventions below describe the current implementation only.
 
-## 1. Prepare the images
+## 1. Validate the world and prepare the images
+
+[World.swift](Sources/AppleVisionTranslationExperiment/World.swift) reads the public
+manifest, checks schema, unique identities, flat regular files, exact coverage and
+SHA-256 hashes, then resolves two explicitly requested image IDs. CryptoKit hashes
+bytes; Foundation reads the manifest and files. Unknown additive fields are ignored.
+The world ID is opaque. No producer records or fixture metadata are read. Output
+containment resolves its existing parent, including symlinks, before any write.
+
 
 [ImagePreparation.swift](Sources/AppleVisionTranslationExperiment/Apple/ImagePreparation.swift) asks ImageIO
 for the file's image count, stored dimensions, and EXIF orientation. This first
@@ -26,7 +34,7 @@ it opaque. Color conversion, reduced bit depth, and alpha flattening are part of
 this working representation; it is not intended for exact source-pixel equality
 or HDR preservation.
 
-The report records stored dimensions, EXIF orientation, oriented dimensions,
+The report records the world ID and image IDs, never source paths, along with stored dimensions, EXIF orientation, oriented dimensions,
 prepared dimensions, and row stride. Orientation values 5–8 swap the width and
 height. From an upright source image to the prepared image, x and y scale by
 `prepared width / oriented width` and `prepared height / oriented height`.
@@ -95,100 +103,30 @@ can decide what an eventual shared macOS/Linux API should promise. It has no Lin
 implementation or backend registry. Its current types and policies are not that
 future API.
 
-## Checks and fixture evidence
+## Checks and world evidence
 
-`swift test --package-path Experiments/AppleVisionTranslation` generates patterns to check identity, a known translation and its
+[ComparisonTests.swift](Tests/AppleVisionTranslationExperimentTests/ComparisonTests.swift)
+retains seven self-contained mechanics cases: identity, a known translation and
 rendered overlay, EXIF orientation, resizing and alpha treatment, unequal sizes,
-and input/output failures. It also checks that sources remain unchanged.
-These cases establish mechanics only.
+and input/output failures. Source preservation is checked as well.
 
-[FixtureTests.swift](Tests/AppleVisionTranslationExperimentTests/FixtureTests.swift) additionally prepares
-all 183 derivative-set inputs, checks their stored dimensions against the manifest,
-checks all 12 byte-copy pairs for near-zero translation, and checks the nine
-PNG-source re-encodes for identical prepared pixels. It exercises a real crop
-that must remain `notRun` because of unequal prepared dimensions.
+[WorldTests.swift](Tests/AppleVisionTranslationExperimentTests/WorldTests.swift)
+checks identity/schema validation, additive fields, empty worlds, path safety,
+missing or altered bytes, symlinks, extra files, report identities and output
+containment. A hash-valid but undecodable image produces an ordinary input error
+naming its world and image ID; it does not become an alignment result.
 
-It also prepares the 20 multiview captures and checks their eight scene/sequence
-groups and orientation. The three playground JPEGs store 4032×3024 with EXIF orientation 6:
-ImageIO applies that orientation once, giving hazy 768×1024 working images. The
-other personal groups prepare to 1024×768; the motorcycle views remain 741×500.
-The nine Commons inputs were downloaded as thumbnails: the Kumbh pair stores
-1280×851 and prepares to 1024×681; four landscape Budapest images store 1280×720
-and prepare to 1024×576; three portrait images store 960×1706 and prepare to
-576×1024. Their identity was verified by exact SHA-256 matches to the named Commons
-thumbnails. This upstream resizing precedes hazy's own decoding and preparation.
-No expected Vision translation or matching judgment is attached to a scene label.
+`HAZY_WORLD=/path/to/world swift test --package-path Experiments/AppleVisionTranslation`
+also exercises a supplied world. It assumes neither image count nor relationships,
+format support or numerical transforms. Without the variable, that external-input
+check explicitly skips while self-contained cases run. The CLI's real-world
+acceptance check additionally verifies reports and unchanged source hashes from a
+checkout with no producer code or records.
 
-The [derivative focused selection](../../Fixtures/Relationships/Derivatives/selections.json) uses astronaut,
-grass, and retina for distinctive structure, repetitive texture, and downsampling.
-The tests prepare each original, write temporary working PNGs, and move content
-17 pixels right and 9 down on a same-size white canvas. Expected alignment is
-x = -17, y = +9, within 0.5 working pixels. The shift happens after preparation:
-retina's original 1411×1411 image becomes 1024×1024 before we move it. These are
-controlled transformations, not independent photographs of the same scene.
-
-[Fixtures/tools/relationship_fixtures.py](../../Fixtures/tools/relationship_fixtures.py) validates asset hashes, agreement of
-CSV/JSON manifests, source copies, probe references and identity labels, and batch
-membership for the three provenance-led [fixture sets](../../Fixtures/README.md), using one shared schema.
-It does not recompute the supplied Pillow pixel hashes; multiview pixel-hash fields
-are empty because none were computed under that convention. Its optional runner
-passes only file paths to the existing CLI; family and scene labels are joined
-to the returned report outside the Apple implementation. The default derivative
-selection runs 14 comparisons; `probes` runs 115; `full` runs 190 and covers all
-derivative inputs, including each composite against both parents. The multiview
-selection runs 16 within-group pairs; probes/full add 28 comparisons between group
-representatives, for 44 total. Three of those compare Budapest sequences from the
-same event and nearby surroundings; they carry the neutral `diagnostic` relation.
-The other 25 carry `distinct_scene`, which describes labels, not proven non-matches.
-Each capture has a different `family_id`, even when `scene_id` is shared. The
-motorcycle pair's supplied rectification/downsampling, the Commons thumbnails,
-and the personal photos' unknown prior processing history are recorded in the
-source catalog. These are
-properties of the inputs, before hazy's preparation and Apple's requests.
-The runner writes an incremental
-`run.json`, per-pair output, diagnostics, and environment/fixture identities to a
-new output directory. Request failures cause a nonzero exit but do not hide other
-pairs. An interrupted run retains completed results with `complete: false`.
-
-The complete multiview run on 2026-10-29 returned 18 estimates: all 16 within-group
-pairs and two comparisons between group representatives. The other 26 comparisons
-stopped at hazy's unequal-dimensions guard; no requests failed. All 44 produced
-reports, with overlays only for estimates. This checks the input-to-report path,
-not the quality of those estimated alignments.
-
-The initial review on Swift 6.4 / macOS 26.7.1 illustrates three boundaries:
-
-- The corpus's `pixels_rgb_sha256` hashes describe Pillow's orientation-adjusted
-  RGB decoding, including width and height. They do not describe hazy's sRGB RGBA
-  preparation, white alpha treatment, or resizing. The galaxies, retina, and rocket
-  JPEG-to-PNG pairs differ slightly in Apple's prepared pixels despite identical
-  supplied RGB hashes. Byte identity, decoder-specific pixel identity, and visual
-  relationship are separate properties.
-- Equal prepared dimensions do not guarantee equal content scale. Retina and
-  its center crop both become 1024×1024; the request runs, but translation cannot
-  undo the scale difference. Conversely, most other crops stop at hazy's dimension
-  guard before any Vision request is performed.
-- All three dimension-compatible different-origin probes returned estimates.
-  For grass versus gravel, the returned shift was x = 194, y = 382. This is evidence
-  that the API returned an alignment, not that the images match. These diagnostic
-  transforms are exploratory results, not numerical snapshots asserted by tests.
-
-Keep v1's image bytes and provenance meanings fixed. The derivative set was renamed
-from `hazy-fixtures-v1` to `hazy-derivatives-v1`; both sets now use the documented
-schema. Original metadata is retained in each set's `provenance/` directory.
-`tools/generate.py` in the derivative set is an optional Pillow tool, not a
-build/test dependency; its small-batch writer was corrected to recreate
-`smoke.txt` and `medium.txt`, without regenerating this corpus. Most related inputs
-remain synthetic edits of one exposure, and the four batches share source families.
-They support repeatable import experiments, not independent evaluation sets.
-The multiview set adds real scene motion, crowd repetition, occlusion, and framing
-changes. Its personal groups were identified by visual inspection and the user's
-grouping description; its Commons sequence labels retain the supplied grouping.
-These are not calibrated camera views. Fixture collection is complete for the
-current preparation and translation scope; a concrete failure or new capability
-can motivate a focused addition later. The usefulness of overlays when people and
-objects move within the scene remains a matter for inspection. No similarity
-threshold or grouping policy follows from these small sets.
+These checks establish mechanics and the consumer boundary. Neither a returned
+transform nor shared dimensions establishes visual correspondence. Upstream image
+processing is unknown unless visible in the bytes. The experiment's preparation
+and Apple's registration remain distinct from any producer's selection decisions.
 
 Apple references: [ImageIO](https://developer.apple.com/documentation/imageio)
 and [Aligning Similar Images](https://developer.apple.com/documentation/vision/aligning-similar-images).

@@ -14,6 +14,8 @@ import sys
 REPO = Path(__file__).resolve().parents[2]
 CORPUS = REPO / "Fixtures/Relationships/Derivatives"
 MULTIVIEW = REPO / "Fixtures/Relationships/Multiviews"
+sys.path.insert(0, str(REPO / 'Fixtures/Sampler'))
+import sampler
 
 
 def require(condition, message):
@@ -195,18 +197,49 @@ def select_pairs(rows, probes, selection, root=CORPUS):
     return pairs
 
 
-def run(root, binary, output, selection):
+def load_world(world, store):
+    """Validate the supplied world and join its ID to a saved draw on this side only."""
+    require(not (world / 'world.json').is_symlink(), 'World manifest must be a regular local file')
+    manifest = sampler.read_json(world / 'world.json', 'World manifest')
+    require(isinstance(manifest, dict), 'World manifest must be an object')
+    require(type(manifest.get('schema_version')) is int and manifest['schema_version'] == 1,
+            'Unsupported world schema')
+    draw, _ = sampler.load_draw(store, manifest.get('world_id'))
+    entries = manifest.get('images')
+    require(isinstance(entries, list), 'World images must be a list')
+    images, files = {}, set()
+    for entry in entries:
+        require(isinstance(entry, dict), 'World image entry must be an object')
+        image_id, name = entry.get('id'), entry.get('file')
+        require(isinstance(image_id, str) and image_id in draw['image_ids'], 'World has an image outside its saved draw')
+        require(isinstance(name, str) and '/' not in name and '\\' not in name and '\0' not in name
+                and Path(name).stem == image_id.removeprefix('sha256:'), 'Unsafe or non-hash world filename')
+        require(image_id not in images and name not in files, 'Duplicate world image ID or file')
+        path = world / name
+        require(path.is_file() and not path.is_symlink(), 'World image must be a regular local file: ' + image_id)
+        require('sha256:' + digest(path) == image_id, 'World image checksum differs: ' + image_id)
+        images[image_id] = name
+        files.add(name)
+    require(set(images) == set(draw['image_ids']), 'World image membership differs from its saved draw')
+    require(list(images.values()) == sorted(files), 'World images must be sorted by filename')
+    require({p.name for p in world.iterdir()} == files | {'world.json'}, 'World file coverage differs')
+    return manifest['world_id'], images
+
+
+def run(root, binary, output, selection, world, store=sampler.DEFAULT_STORE):
     rows, probes, identity = validate(root)
     pairs = select_pairs(rows, probes, selection, root)
     require(binary.is_file(), f"Build hazy first; binary not found: {binary}")
     require(not output.is_relative_to(root), "Output must be outside the fixture corpus")
+    require(not output.resolve().is_relative_to(world.resolve()), "Output must be outside the world")
     require(not output.exists(), f"Output already exists: {output}")
+    world_id, world_images = load_world(world, store)
     # Fail before creating output if Swift is unavailable; it is part of this developer workflow.
     swift = subprocess.run(["swift", "--version"], capture_output=True, text=True, check=True).stdout.strip()
     output.mkdir()  # As with hazy, the parent must already exist.
     (output / "pairs").mkdir()
     summary = dict(
-        corpus=identity, selection=selection, started_utc=datetime.now(timezone.utc).isoformat(),
+        corpus=identity, selection=selection, world_id=world_id, started_utc=datetime.now(timezone.utc).isoformat(),
         system=platform.platform(), swift=swift, binary_sha256=digest(binary),
         runner_sha256=digest(Path(__file__)),
         interpretation="Outcomes describe alignment, not matching accuracy; notRun is not a failed request.",
@@ -222,15 +255,28 @@ def run(root, binary, output, selection):
         destination = output / "pairs" / f"{index:03d}"
         result = dict(probe, output=str(destination.relative_to(output)),
                       reference=by_file[probe["file_a"]], floating=by_file[probe["file_b"]])
+        reference_id = 'sha256:' + result['reference']['byte_sha256']
+        floating_id = 'sha256:' + result['floating']['byte_sha256']
+        missing = sorted({reference_id, floating_id} - world_images.keys())
+        if missing:
+            result.update(status='skipped', output=None, reason='probe endpoints absent from the supplied world',
+                          missing_image_ids=missing)
+            summary['results'].append(result)
+            save()
+            print(f"{index}/{len(pairs)} {probe['relation']}: skipped (endpoints absent)", flush=True)
+            continue
         try:
-            process = subprocess.run([str(binary), "compare", str(asset(root, probe["file_a"])),
-                                      str(asset(root, probe["file_b"])), "--output", str(destination)],
+            process = subprocess.run([str(binary), 'compare', '--world', str(world),
+                                      '--reference', reference_id, '--floating', floating_id, '--output', str(destination)],
                                      capture_output=True, text=True, timeout=60)
             result.update(exit_code=process.returncode, stdout=process.stdout, stderr=process.stderr)
             report = destination / "comparison.json"
             result["status"] = "error"
             if report.exists():
                 result["report"] = json.loads(report.read_text())
+                require(result['report'].get('worldID') == world_id
+                        and result['report']['reference']['id'] == reference_id
+                        and result['report']['floating']['id'] == floating_id, 'Report world/image identities disagree')
                 status = result["report"]["alignment"]["status"]
                 expected_exit = 0 if status == "estimated" else 2
                 require(status in ("estimated", "notRun", "failed", "noObservation")
@@ -263,6 +309,8 @@ def main():
     parser.add_argument("--selection", choices=("focus", "probes", "full"), default="focus")
     parser.add_argument("--binary", type=Path, help="Explicit path to the hazy-vision-translation executable (required for run)")
     parser.add_argument("--output", type=Path)
+    parser.add_argument('--world', type=Path, help='Sampler-published world (required for run)')
+    parser.add_argument('--store', type=Path, default=sampler.DEFAULT_STORE, help='Saved draw record store')
     args = parser.parse_args()
     try:
         if args.command == "check":
@@ -271,8 +319,10 @@ def main():
             return 0
         require(args.output is not None, "run requires --output NEW_DIRECTORY")
         require(args.binary is not None, "run requires --binary PATH_TO_HAZY_VISION_TRANSLATION")
-        return run(args.fixtures.resolve(), args.binary.resolve(), args.output.resolve(), args.selection)
-    except (OSError, ValueError, KeyError, subprocess.SubprocessError) as error:
+        require(args.world is not None, 'run requires --world WORLD_DIRECTORY')
+        return run(args.fixtures.resolve(), args.binary.resolve(), args.output.resolve(), args.selection,
+                   args.world.resolve(), args.store.resolve())
+    except (OSError, ValueError, KeyError, sampler.SamplerError, subprocess.SubprocessError) as error:
         print(f"fixtures: {error}", file=sys.stderr)
         return 1
 

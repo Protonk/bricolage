@@ -10,11 +10,17 @@ implementation. All port dispositions remain **investigate**.
 
 | Capability | hazy owns in the experiment | Delegated work | Evidence and portability question |
 |---|---|---|---|
+| World intake and identity | Validate schema, unique hash identities, flat regular files, exact coverage and bytes; resolve explicit IDs; keep output outside the world; expose world/image IDs without source paths | Foundation file/JSON operations and CryptoKit SHA-256 | World tests cover malformed/altered inputs, additive fields, opaque IDs and symlinked output parents. This byte/identity contract is separate from decoding and requires no producer records. |
 | Input decoding and orientation | Accept one decodable image; reject invalid dimensions or orientation; default missing orientation to upright; report stored and oriented dimensions | ImageIO decoding, metadata extraction, and application of EXIF orientation | Mechanics check orientation once and reject invalid or multi-image input. Which input formats, metadata defaults, and error cases will the shared API promise? |
 | Working image preparation | Longest side limited to 1,024; preserve aspect ratio; request 8-bit sRGB RGBA and flatten onto white; record actual prepared dimensions | ImageIO thumbnail resampling and Core Graphics color conversion and drawing | Resizing and transparency checks cover mechanics; supplied fixtures expose decoder differences. What rounding, color handling, alpha treatment, and pixel representation must be preserved? |
 | Translation request | Fixed reference/floating roles; equal-prepared-dimension policy; revision 1; full image; finite translation validation; offsets map floating into reference, positive right/up | Vision chooses and executes the alignment algorithm and compute device | Known shifts and identity checks establish the current direction and units. Real-image estimates are observations, not matching truth. Can an alternative preserve the question and units while returning different estimates or no result? |
 | Overlay rendering | Move floating by the estimated offset; show it at 50% opacity over reference; clip to reference bounds | Core Image translation, compositing, and rasterization | Mechanics test that the returned transform improves a controlled overlay. Which interpolation, boundary, and color differences are acceptable for an explanatory artifact? |
 | Output and failure reporting | Read-only sources; new output directory; structured preparation and alignment report; distinct estimated, absent, failed, and unperformed analysis | ImageIO PNG encoding; Foundation serialization and filesystem operations | Round-trip report and overwrite checks cover current mechanics. The future API needs portable result meanings and explicit unsupported capabilities without adopting this experiment's schema unchanged. |
+
+The world boundary added on 2026-11-01 leaves the ImageIO, Core Graphics, Core Image
+and Vision handoffs unchanged. CLI reports now carry world/image IDs instead of
+source paths. An external-world check uses `HAZY_WORLD`; the current application
+requires no producer source tree or records.
 
 ## Reading the evidence
 
@@ -23,7 +29,7 @@ The public comparison result uses plain values, but includes a Vision method nam
 and request revision as evidence. Those facts are useful inputs to API research;
 they are not a completed abstraction or a compatibility promise.
 
-The seven self-contained mechanics tests and the local fixture checks exercise
+The seven self-contained mechanics tests and the world boundary checks exercise
 this macOS implementation. They do not establish behavior on every declared
 macOS version, algorithm parity on Linux, universal image similarity, or a useful
 threshold. Unknowns must stay unknown until an experiment supplies evidence.

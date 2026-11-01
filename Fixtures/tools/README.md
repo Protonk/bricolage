@@ -38,7 +38,10 @@ implementation directly. `test-relationships` needs the local relationship media
 `test-fixture-layout` uses temporary mechanics fixtures only.
 
 `relationship_fixtures.py run --fixtures LEAF --binary /path/to/hazy-vision-translation
---output /path/to/new-run` drives the existing pair CLI and records all outcomes,
+--world /path/to/published-world --output /path/to/new-run` drives the existing pair CLI and records all outcomes,
 including failures. `--selection focus|probes|full` chooses the fixture's explicit
-pairs. The binary path is required; no sibling checkout or application build is
-assumed. The output parent must exist and the output directory must be new.
+pairs. Both `--world` and `--binary` are required; no sibling checkout or application
+build is assumed. `--store` selects the sampler records (default `Sampler/records`).
+The runner verifies the world against its saved draw, maps probes to hash IDs and
+passes only those IDs and the world to the binary. Absent endpoints are recorded
+as skipped, never replaced. Exact-byte aliases can become self-comparisons. The output parent must exist and the output directory must be new.

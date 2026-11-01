@@ -6,7 +6,7 @@ public struct PixelSize: Codable, Equatable, Sendable {
 }
 
 public struct ImageDescription: Codable, Sendable {
-    public let path: String
+    public let id: String
     public let storedSize: PixelSize
     public let exifOrientation: UInt32
     public let orientedSize: PixelSize
@@ -41,6 +41,7 @@ public struct AlignmentResult: Codable, Sendable {
 }
 
 public struct ComparisonReport: Codable, Sendable {
+    public let worldID: String?
     public let reference: ImageDescription
     public let floating: ImageDescription
     public let alignment: AlignmentResult
@@ -51,11 +52,12 @@ public struct ComparisonReport: Codable, Sendable {
 
     public var summary: String {
         func describe(_ label: String, _ image: ImageDescription) -> String {
-            "\(label): \(image.path)\n"
+            "\(label): \(image.id)\n"
             + "  stored \(image.storedSize.width)×\(image.storedSize.height), EXIF orientation \(image.exifOrientation)"
             + " → prepared \(image.preparedSize.width)×\(image.preparedSize.height)"
         }
         var lines = [
+            "World: \(worldID ?? "mechanics test")",
             describe("Reference", reference),
             describe("Floating", floating),
             "Preparation: \(pixelFormat); longest side at most \(maximumDimension) pixels.",

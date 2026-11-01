@@ -140,16 +140,22 @@ class FixtureToolTests(unittest.TestCase):
             destination.mkdir()
             status = next(statuses)
             (destination / "comparison.json").write_text(json.dumps({
+                'worldID': 'test-world', 'reference': {'id': arguments[5]}, 'floating': {'id': arguments[7]},
                 "alignment": {"status": status, "explanation": "Test unavailable alignment"}}))
+            self.assertEqual(arguments[1:4], ['compare', '--world', str(Path(temporary) / 'world')])
+            self.assertNotIn(str(fixtures.CORPUS), ' '.join(arguments))
             return subprocess.CompletedProcess(arguments, 2, status, "diagnostic")
 
         with tempfile.TemporaryDirectory() as temporary:
             output = Path(temporary) / "run"
+            world = Path(temporary) / 'world'
+            ids = {'sha256:' + row['byte_sha256']: row['file'] for row in fixtures.validate(fixtures.CORPUS)[0]}
             with patch.object(fixtures, "select_pairs", return_value=probes[:2]), \
+                    patch.object(fixtures, 'load_world', return_value=('test-world', ids)), \
                     patch.object(fixtures.subprocess, "run", side_effect=invoke), \
                     patch.object(fixtures.platform, "platform", return_value="test platform"), \
                     redirect_stdout(io.StringIO()):
-                code = fixtures.run(fixtures.CORPUS, Path(__file__), output, "focus")
+                code = fixtures.run(fixtures.CORPUS, Path(__file__), output, "focus", world)
             summary = json.loads((output / "run.json").read_text())
             self.assertEqual(code, 1)
             self.assertTrue(summary["complete"])
@@ -157,7 +163,39 @@ class FixtureToolTests(unittest.TestCase):
             self.assertEqual(summary["counts"], {"failed": 1, "noObservation": 1})
             self.assertEqual(summary["results"][0]["stderr"], "diagnostic")
             with self.assertRaisesRegex(ValueError, "Output already exists"):
-                fixtures.run(fixtures.CORPUS, Path(__file__), output, "focus")
+                fixtures.run(fixtures.CORPUS, Path(__file__), output, "focus", world)
+
+    def testRunnerSkipsAbsentEndpointsWithoutCallingTheBinary(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            output = Path(temporary) / 'run'
+            with patch.object(fixtures, 'load_world', return_value=('empty-world', {})), \
+                    patch.object(fixtures.platform, 'platform', return_value='test platform'), \
+                    patch.object(fixtures.subprocess, 'run', return_value=subprocess.CompletedProcess([], 0, 'test Swift', '')) as invoke, \
+                    redirect_stdout(io.StringIO()):
+                code = fixtures.run(fixtures.CORPUS, Path(__file__), output, 'focus', Path(temporary) / 'world')
+            self.assertEqual(code, 0)
+            self.assertEqual(invoke.call_count, 1)  # Swift version only, no comparison.
+            report = json.loads((output / 'run.json').read_text())
+            self.assertEqual(report['counts'], {'skipped': 14})
+            self.assertTrue(all(r['missing_image_ids'] and r['output'] is None for r in report['results']))
+
+    def testPublishedWorldResolvesSavedDrawAndRejectsTampering(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            store = root / 'records'
+            world = root / 'world'
+            shutil.copytree(fixtures.sampler.DEFAULT_STORE, store)
+            sample_id = 'draw-82acd83c6cd540a6bf4e29610ff5dc2d'
+            result = subprocess.run([str(fixtures.REPO / 'Fixtures/sample'), '--store', str(store),
+                                     'publish', sample_id, '--world', str(world)], capture_output=True, text=True)
+            self.assertEqual(result.returncode, 0, result.stderr)
+            world_id, images = fixtures.load_world(world, store)
+            self.assertEqual(world_id, sample_id)
+            self.assertEqual(len(images), 12)
+            path = world / next(iter(images.values()))
+            path.write_bytes(b'changed')
+            with self.assertRaisesRegex(ValueError, 'checksum differs'):
+                fixtures.load_world(world, store)
 
 
 if __name__ == "__main__":

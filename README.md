@@ -53,7 +53,7 @@ From the repository root on macOS:
 ```sh
 swift build --package-path Experiments/AppleVisionTranslation
 mkdir -p output
-swift run --package-path Experiments/AppleVisionTranslation hazy-vision-translation compare /path/to/reference.png /path/to/floating.png --output output/example
+swift run --package-path Experiments/AppleVisionTranslation hazy-vision-translation compare --world /path/to/world --reference sha256:REFERENCE_HASH --floating sha256:FLOATING_HASH --output output/example
 swift test --package-path Experiments/AppleVisionTranslation
 ```
 
@@ -64,8 +64,8 @@ frameworks and has no third-party package dependencies.
 The [experiment README](Experiments/AppleVisionTranslation/README.md) describes
 reports, fixture checks, and limitations. Its
 [image journey](Experiments/AppleVisionTranslation/IMAGE-JOURNEY.md) traces the
-actual implementation. Tests using real fixtures require the local image assets;
-a fresh checkout contains only their descriptions and checksums. The seven
+actual implementation. The consumer accepts only a [world](WORLD.md) and two image IDs. Set `HAZY_WORLD`
+when running the external-world test; it explicitly skips otherwise. The seven
 self-contained mechanics tests can run with `--filter ComparisonTests`.
 
 ## Local fixture assets

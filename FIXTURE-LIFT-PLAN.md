@@ -73,7 +73,14 @@ unchanged. The Linux directory-exchange path has not been exercised here.
 
 ## 1. Implement and prove hazy's world boundary
 
-Do this in hazy while Fixtures remains available. This task is still pending.
+Completed in hazy on 2026-11-01 while Fixtures remains available. The isolated
+consumer built and passed all 14 Swift tests with HAZY_WORLD set (no skips), emitted
+only world/image identities, rejected unknown IDs and altered bytes, and preserved
+its inputs. The runner executed 14 focus probes against a full-population world
+(all estimated) and explicitly skipped 14 absent-endpoint probes against the
+demonstration. The independent Fixtures checkout passed 47 sampler, 8 layout and
+10 runner/relationship tests plus all 18 leaf validators. Temporary record stores
+kept the original demonstration history unchanged. Tasks 2 and 3 remain pending.
 
 - Give the experiment's pair CLI this explicit interface:
   `hazy-vision-translation compare --world WORLD --reference IMAGE_ID --floating IMAGE_ID --output DIRECTORY`.
