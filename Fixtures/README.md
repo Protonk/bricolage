@@ -83,6 +83,9 @@ Each leaf separates complete acquisition from earlier deferred selection cases.
 
 ## Working with the fixtures
 
+- Share the [short web-agent guide](WEB-AGENT-GUIDE.md) with a partner helping
+  source a new fixture. A clear brief and traceable leads are sufficient for a
+  local handoff; the partner does not need to reproduce our repository machinery.
 - Start new leaves from the [single fixture template](Template/README.md).
   It covers heaps and relationship sets, with kind-specific evidence requirements.
 - Every leaf exposes `tools/check.py` and `tools/requirements.txt`. Run

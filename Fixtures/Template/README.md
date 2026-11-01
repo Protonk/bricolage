@@ -4,6 +4,13 @@ Use this template for every Similarity or Curatorial contribution and every
 relationship set. Collection/group directories are indexes; only leaves have
 manifests. Arbitrary nesting under Heaps or Relationships is supported.
 
+For help from a web partner, use the [short handoff guide](../WEB-AGENT-GUIDE.md).
+The local integrator preserves the supplied brief and exports unchanged under
+`provenance/supplied/`, then records the agreed scope and current evidence under
+`provenance/intake/` or `provenance/construction/` as appropriate. Source-specific
+verification belongs in the local tools; incomplete scouting remains explicitly
+incomplete until those checks have been performed.
+
 The template deliberately uses `.in` filenames and lives outside both population
 roots, so neither the sampler nor legacy audit discovery can mistake it for a set.
 Run `../../.venv/bin/python ../tools/new_fixture.py --help` from this directory,
