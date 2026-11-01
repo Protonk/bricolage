@@ -95,6 +95,10 @@ and unknown or absent extensions. Keep future image assets in those locations.
 The manifests, source catalogs, checksums, and textual provenance remain versionable.
 See [Fixtures/README.md](Fixtures/README.md) for the format and local checks.
 
+The [fixture sampler](Fixtures/Sampler/README.md) draws uniformly from local
+Heaps and Relationships inputs, with exact-byte aliases sharing one ticket.
+Its CLI keeps reproducible draw records and separate annotations in plain JSON.
+
 [AGENTS.md](AGENTS.md) gives working guidance. Work on the task explicitly selected
 in the conversation; the research documents are not an instruction to implement
 all possible directions.

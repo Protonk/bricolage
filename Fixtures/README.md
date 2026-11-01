@@ -63,6 +63,9 @@ Each leaf separates complete acquisition from earlier deferred selection cases.
 
 ## Working with the fixtures
 
+- Use the [fixture sampler](Sampler/README.md) to draw N equal tickets across
+  active Heaps and Relationships inputs. It preserves a population snapshot,
+  seed, original draw and separate arbitrary annotations without changing fixtures.
 - Open the relevant role or heap README, then the leaf set's README for its
   prompt or relationship, status, provenance and check command.
 - Put a new contribution inside its intended heap. A new contribution to
