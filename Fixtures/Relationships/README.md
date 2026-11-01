@@ -23,5 +23,6 @@ Fixtures/.venv/bin/python Fixtures/Relationships/Variants/tools/check.py
 ```
 
 Derivatives remains the default. Use the individual README files for generation
-checks, image-preservation limits and the existing experiment's comparison commands.
+checks and image-preservation limits; the [shared tools](../tools/README.md) run
+probe comparisons against a published world.
 The [Similarity heap](../Heaps/Similarity/README.md) has a separate selection basis.

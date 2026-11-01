@@ -116,7 +116,7 @@ Fixtures/.venv/bin/python -m unittest discover -s Fixtures/Heaps/Similarity/PS01
 The offline checker verifies source/input and preview hashes, measured dimensions,
 CSV/JSON agreement, review and license evidence, preserved supplied fields, batch
 coverage and empty pair expectations. Missing or changed acquired files fail
-visibly. The existing experiment's pair-fixture checker does not support
+visibly. The shared relationship checker does not support
 `prompt_heap`; this fixture uses its local checker. `tools/audit.py` refreshes the
 cross-fixture identity audit when prior inventories are locally available.
 

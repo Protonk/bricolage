@@ -39,7 +39,7 @@ byte-identical copies of the selected images named `<image-sha256>.<original-ext
 beside a `world.json` that lists the world ID and the files, sorted by name.
 The world is what the consuming program receives, and it carries nothing else:
 no draw order, no leaf names, no provenance rows. The world ID is the sample ID,
-so every world leads back to its draw record here. The hazy-facing contract is
+so every world leads back to its draw record here. The consumer-facing contract is
 written once in [WORLD.md](../../WORLD.md); this guide describes the Fixtures side.
 
 The default world directory is `Fixtures/output/sampled/`; `--world DIR` writes
@@ -54,8 +54,11 @@ Unsupported platforms/filesystems fail without deleting the previous world; a ne
 destination can still be published by rename. Invalid requests, unavailable selected
 bytes, and copy/checksum or installation failures leave the previous world intact.
 A successful zero-image draw leaves only `world.json`. The engine
-replaces a directory only when it is empty or already a world (it contains
-`world.json`); any other nonempty destination, a symlinked destination, a
+replaces a directory only when it is empty or already a world: it holds a valid
+`world.json` and nothing beside the files that manifest lists, except a Finder
+`.DS_Store`, which is removed with the old world. Any other unlisted entry is refused
+by name; so is a directory that merely contains a file called `world.json`. Any
+other nonempty destination, a symlinked destination, a
 destination among the fixtures, or one containing or inside the record store is
 refused before a draw is made. Concurrent publications to one directory serialize;
 the last one published occupies it. Consumers must finish reading before a directory
@@ -293,7 +296,9 @@ Python's random-library implementation:
    text; numeric-looking strings are still strings. An omitted seed is 32 random
    bytes from the operating system, encoded as 64 lowercase hex characters.
 2. Prefix = ASCII `hazy-fixture-sampler-v1`, one zero byte, the seed byte length as
-   an unsigned 8-byte big-endian integer, then the seed bytes.
+   an unsigned 8-byte big-endian integer, then the seed bytes. The `hazy-` prefix is a
+   frozen hash domain from the sampler's origin; renaming it would change every recorded
+   draw's reproduction, so it does not follow the application's name.
 3. For counter 0, 1, ... hash prefix plus the counter as an unsigned 16-byte
    big-endian integer. Interpret each SHA-256 digest as an unsigned big-endian
    256-bit integer `x`.

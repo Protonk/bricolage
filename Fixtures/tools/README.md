@@ -43,5 +43,6 @@ including failures. `--selection focus|probes|full` chooses the fixture's explic
 pairs. Both `--world` and `--binary` are required; no sibling checkout or application
 build is assumed. `--store` selects the sampler records (default `Sampler/records`).
 The runner verifies the world against its saved draw, maps probes to hash IDs and
-passes only those IDs and the world to the binary. Absent endpoints are recorded
-as skipped, never replaced. Exact-byte aliases can become self-comparisons. The output parent must exist and the output directory must be new.
+passes only those IDs and the world to the binary. Only that executable is required;
+the Swift toolchain version is recorded in `run.json` when one is on `PATH`. Absent
+endpoints are recorded as skipped, never replaced. Exact-byte aliases can become self-comparisons. The output parent must exist and the output directory must be new.

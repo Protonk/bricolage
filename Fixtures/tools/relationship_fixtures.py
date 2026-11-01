@@ -222,21 +222,27 @@ def load_world(world, store):
         files.add(name)
     require(set(images) == set(draw['image_ids']), 'World image membership differs from its saved draw')
     require(list(images.values()) == sorted(files), 'World images must be sorted by filename')
-    require({p.name for p in world.iterdir()} == files | {'world.json'}, 'World file coverage differs')
+    present, expected = {p.name for p in world.iterdir()}, files | {'world.json'}
+    require(present == expected, 'World file coverage differs; unexpected entries: '
+            + (', '.join(sorted(present - expected)) or 'none') + '; missing entries: '
+            + (', '.join(sorted(expected - present)) or 'none'))
     return manifest['world_id'], images
 
 
 def run(root, binary, output, selection, world, store=sampler.DEFAULT_STORE):
     rows, probes, identity = validate(root)
     pairs = select_pairs(rows, probes, selection, root)
-    require(binary.is_file(), f"Build hazy first; binary not found: {binary}")
-    require(not output.is_relative_to(root), "Output must be outside the fixture corpus")
-    require(not output.resolve().is_relative_to(world.resolve()), "Output must be outside the world")
+    require(binary.is_file(), f"Comparison executable not found: {binary}")
+    require(not sampler.within(output, root), "Output must be outside the fixture corpus")
+    require(not sampler.within(output, world), "Output must be outside the world")
     require(not output.exists(), f"Output already exists: {output}")
     world_id, world_images = load_world(world, store)
-    # Fail before creating output if Swift is unavailable; it is part of this developer workflow.
-    swift = subprocess.run(["swift", "--version"], capture_output=True, text=True, check=True).stdout.strip()
-    output.mkdir()  # As with hazy, the parent must already exist.
+    # Record the Swift toolchain when one is on PATH. Only the executable is required.
+    try:
+        swift = subprocess.run(["swift", "--version"], capture_output=True, text=True, check=True).stdout.strip()
+    except (OSError, subprocess.CalledProcessError):
+        swift = None
+    output.mkdir()  # The parent must already exist, as for the consumer's own output.
     (output / "pairs").mkdir()
     summary = dict(
         corpus=identity, selection=selection, world_id=world_id, started_utc=datetime.now(timezone.utc).isoformat(),

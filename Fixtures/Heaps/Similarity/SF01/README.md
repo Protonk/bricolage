@@ -55,7 +55,7 @@ additional visual rejections.
 
 This adds `speckled-fields` to the existing `prompt_heap` fixture type. It is a
 curated input heap, with no expected pairs, membership truth or semantic cluster
-labels. Only `images/` is comparison input. The experiment's pair-fixture checker
+labels. Only `images/` is comparison input. The shared relationship checker
 does not support `prompt_heap`; use the fixture-local checker below.
 
 > Photographs filled with many small, separated marks or objects distributed

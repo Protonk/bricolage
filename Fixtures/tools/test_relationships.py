@@ -192,6 +192,11 @@ class FixtureToolTests(unittest.TestCase):
             world_id, images = fixtures.load_world(world, store)
             self.assertEqual(world_id, sample_id)
             self.assertEqual(len(images), 12)
+            stray = world / '.DS_Store'
+            stray.write_bytes(b'')
+            with self.assertRaisesRegex(ValueError, r'unexpected entries: \.DS_Store; missing entries: none'):
+                fixtures.load_world(world, store)
+            stray.unlink()
             path = world / next(iter(images.values()))
             path.write_bytes(b'changed')
             with self.assertRaisesRegex(ValueError, 'checksum differs'):

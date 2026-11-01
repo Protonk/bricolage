@@ -5,6 +5,7 @@ import hashlib
 import io
 import itertools
 import json
+import stat
 import os
 from pathlib import Path
 import shutil
@@ -360,9 +361,20 @@ class SamplerTests(unittest.TestCase):
         (sampled / 'old/subdir').mkdir(parents=True)
         (sampled / 'old/subdir/stale').write_bytes(b'stale')
         (sampled / 'external-link').symlink_to(self.heap, target_is_directory=True)
+        (sampled / '.DS_Store').write_bytes(b'finder')
         (output / 'AGENTS.md').write_text('Keep this')
         (output / 'other-output').write_bytes(b'Keep this too')
-        first = json.loads(self.cli('3', '--seed', 'first').stdout)
+        # A manifest alone does not make a directory a world: unlisted entries are refused by name, not deleted.
+        refused = self.cli('3', '--seed', 'first')
+        self.assertEqual(refused.returncode, 2, refused.stderr)
+        self.assertIn('does not list: external-link, old', json.loads(refused.stdout)['error']['message'])
+        self.assertEqual((sampled / 'old/subdir/stale').read_bytes(), b'stale')
+        self.assertTrue((sampled / 'external-link').is_symlink())
+        (sampled / 'external-link').unlink()
+        shutil.rmtree(sampled / 'old')
+        first = json.loads(self.cli('3', '--seed', 'first').stdout)  # Only .DS_Store is tolerated and removed.
+        self.assertFalse((sampled / '.DS_Store').exists())
+        self.assertEqual(stat.S_IMODE(sampled.stat().st_mode), 0o777 & ~s.current_umask())
         self.assertEqual(len(list(sampled.iterdir())), 4)  # Three copies and world.json.
         image = first['images'][0]
         Path(image['sampled_path']).write_bytes(b'edited copy')
@@ -383,8 +395,10 @@ class SamplerTests(unittest.TestCase):
     def test_invalid_draw_and_failed_copy_preserve_previous_world(self):
         sampled = self.repo / 'Fixtures/output/sampled'
         sampled.mkdir(parents=True)
-        (sampled / 'world.json').write_text('{"schema_version": 1, "world_id": "draw-old", "images": []}')
-        sentinel = sampled / 'previous'
+        stem = '0' * 64  # A listed file name is enough to count as a previous world; bytes are not rehashed.
+        (sampled / 'world.json').write_text(json.dumps(dict(
+            schema_version=1, world_id='draw-old', images=[dict(id='sha256:' + stem, file=stem + '.bin')])))
+        sentinel = sampled / (stem + '.bin')
         sentinel.write_bytes(b'previous')
         self.assertEqual(self.cli('5').returncode, 2)
         draw = self.draw()
@@ -518,14 +532,19 @@ class SamplerTests(unittest.TestCase):
             'store inside the world': ['--store', str(outside / 'records'), '--world', str(outside)],
             'world containing the store': ['--world', str(self.repo / 'Fixtures/Sampler')],
             'a file': ['--world', str(outside / 'keep')],
+            'a manifest-shaped file among other data': ['--world', str(outside)],
         }
+        (outside / 'world.json').write_text('{"name": "not a world"}')
+        if (self.repo / 'FIXTURES').exists():  # Case-insensitive filesystem: another spelling of the same directory.
+            cases['inside the fixtures, spelled differently'] = ['--world', str(self.repo / 'FIXTURES/Heaps/world')]
+            cases['store spelled differently'] = ['--world', str(self.repo / 'fixtures/Sampler/records/world')]
         for name, extra in cases.items():
             globals_, rest = (extra[:2], extra[2:]) if extra[0] == '--store' else ([], extra)
             result = self.cli(*globals_, '1', *rest)
             self.assertEqual(result.returncode, 2, name)
             self.assertEqual(json.loads(result.stdout)['error']['code'], 'output', name)
         self.assertEqual((outside / 'keep').read_bytes(), b'keep')
-        self.assertEqual(sorted(p.name for p in outside.iterdir()), ['keep'])
+        self.assertEqual(sorted(p.name for p in outside.iterdir()), ['keep', 'world.json'])
         self.assertEqual(s.list_draws(self.store)['draws'], [])  # Refused before any record was created.
 
     def test_concurrent_publications_leave_one_complete_world(self):
@@ -571,6 +590,14 @@ class SamplerTests(unittest.TestCase):
         with patch.object(s.sys, 'version_info', (3, 13)), contextlib.redirect_stderr(stderr):
             self.assertEqual(s.main(['1']), 2)
         self.assertIn('Python 3.14.x', stderr.getvalue())
+
+    def test_annotation_values_with_unicode_line_separators_stay_readable(self):
+        draw = self.draw(1, 'separators')
+        value = dict(note='line\u2028separator\u2029and\u0085next', directory='/tmp/w\u2028sep')
+        s.annotate(self.store, draw['sample_id'], 'purpose', value)
+        shown = s.inspect_draw(self.store, draw['sample_id'], self.repo)
+        self.assertEqual(shown['annotations']['sample']['purpose'], value)
+        self.assertEqual(s.verify_draw(self.store, draw['sample_id'], self.repo)['problems'], [])
 
     def test_concurrent_annotation_appends_preserve_every_event(self):
         draw = self.draw()

@@ -8,7 +8,8 @@ Git-ignored.
 `sampled/` is the default world directory: hash-named, byte-identical copies
 from the latest successful `Fixtures/sample N` draw beside a `world.json`
 naming the world ID and its files. Each successful draw replaces the previous
-world. It is safe to edit these copies; original fixture images remain separate.
+world. Treat a published world as read-only and republish rather than edit it;
+original fixture images remain separate.
 `--world DIR` writes a world elsewhere instead.
 
 Persistent sample inventories, original draws, annotations and publication

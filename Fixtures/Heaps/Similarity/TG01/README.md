@@ -144,5 +144,5 @@ inspected sheets, rights evidence, API/HTTP receipts, retained failure evidence,
 manifest/import consistency, batch coverage and empty pair expectations. The count
 report alone is not a publication validator. `audit.py` refreshes the exact identity
 audit against local prior inventories without network access. Existing Similarity
-validators were also checked. The experiment's relationship checker does not accept
+validators were also checked. The shared relationship checker does not accept
 `prompt_heap`; use TG01's local checker.

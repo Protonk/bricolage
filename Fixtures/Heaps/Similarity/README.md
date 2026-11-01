@@ -28,7 +28,7 @@ listed in a contribution's manifest belong to the current comparison pool.
 
 Integrated contributions retain `kind=prompt_heap`, empty pair expectations and
 the [shared fixture format](../../FORMAT.md). Their local validators check files
-and evidence; the experiment's pair-fixture checker does not support this kind.
+and evidence; the shared relationship checker does not support this kind.
 
 For acquisition and review, use the active [PS01 tools](PS01/tools/acquire.py)
 and its [handoff contract](PS01/provenance/intake/HEAP_INSTRUCTIONS.md) as the current baseline,

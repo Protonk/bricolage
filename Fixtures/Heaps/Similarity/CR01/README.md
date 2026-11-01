@@ -117,7 +117,7 @@ The integration checker verifies hashes, decoded sizes, CSV/JSON agreement,
 review and rights evidence, supplied fields, transfer receipts, batch coverage
 and empty pair expectations. Missing or changed acquired files fail visibly.
 `check_pack.py` separately verifies the unchanged original handoff, whose counts
-are historical. The experiment's pair-fixture checker does not support
+are historical. The shared relationship checker does not support
 `prompt_heap`; CR01 uses its local checker. `tools/audit.py` refreshes the identity
 audit when the six prior fixture inventories are available.
 

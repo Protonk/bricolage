@@ -42,7 +42,9 @@ WORLD/
 
 - Refer to images by their ID, never by path. Name the world ID in anything emitted
   about the world.
-- Treat the directory as read-only and expect no other files in it.
+- Treat the directory as read-only and expect no other files in it. Any stray entry,
+  such as a `.DS_Store` written by browsing the world in Finder, makes the world
+  invalid until its producer republishes it.
 - Finish consuming a world before its publisher reuses that directory, or use a
   separate publication directory. Atomic replacement switches whole directories;
   it does not pin one version across a reader's separate file opens.

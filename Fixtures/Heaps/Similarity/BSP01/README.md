@@ -149,5 +149,5 @@ initial visual fits, full review coverage, inspected-sheet hashes, rights and
 relationship evidence, HTTP/API receipts, retained failure evidence, batch coverage
 and empty pair expectations. `audit.py` refreshes the exact identity audit offline.
 All 18 local tests and the five existing Similarity validators passed. The count
-gate alone is not a publication validator. The experiment's relationship checker
+gate alone is not a publication validator. The shared relationship checker
 does not accept `prompt_heap`; use BSP01's local checker.

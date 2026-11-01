@@ -61,7 +61,7 @@ No source is one of your own images. These originals come from the public-domain
 
 | File/folder | Purpose |
 |---|---|
-| `images/` | **Only folder to give hazy** (183 files) |
+| `images/` | Fixture inputs (183 files); consumers receive them only through a published world |
 | `manifest.csv` / `manifest.json` | Image filename, provenance family, transformation, dimensions, hash, and assigned batch |
 | `probes.csv` | Selected pairs: byte identity, equal decoded pixels, derivation, and potential false friends |
 | `batches/batch-1.txt` through `batch-4.txt` | Four ordered lists of *relative paths* for repeatable separate imports |

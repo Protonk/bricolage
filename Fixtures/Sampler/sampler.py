@@ -488,7 +488,8 @@ def parse_events(text, draw):
     require(not text or text.endswith('\n'), 'record-damaged',
             f'{what} ends mid-line; preserve it for repair')
     events = []
-    for sequence, line in enumerate(text.splitlines(), 1):
+    # Split on LF only: str.splitlines also breaks on U+2028/U+2029/U+0085, which a JSON string may contain.
+    for sequence, line in enumerate(text.split('\n')[:-1], 1):
         try:
             event = json.loads(line)
         except json.JSONDecodeError as error:
@@ -779,21 +780,65 @@ def inventory_report(inventory, store):
                 problems=population_problems(inventory))
 
 
+def within(path, root):
+    """Whether path is root or inside it, judged by the identity of its nearest existing ancestor.
+
+    Comparing resolved paths alone misses case-insensitive filesystems and firmlinks,
+    where two spellings name one directory.
+    """
+    path, root = Path(path), Path(root)
+    try:
+        anchor = os.stat(root)
+    except OSError:
+        return path.resolve().is_relative_to(root.resolve())
+    for candidate in (path, *path.parents):
+        try:
+            if os.path.samestat(os.stat(candidate), anchor):
+                return True
+        except OSError:
+            continue
+    return False
+
+
+def previous_world_strays(target):
+    """Entries that stop a directory from counting as a previous world, or None if it is not one at all.
+
+    A previous world has a parseable schema-1 manifest and nothing beside the files it
+    lists. A Finder `.DS_Store` is tolerated: replacing the world removes it and loses nothing.
+    """
+    manifest_path = target / WORLD_MANIFEST
+    if not manifest_path.is_file() or manifest_path.is_symlink():
+        return None
+    try:
+        manifest = json.loads(manifest_path.read_text(encoding='utf-8'))
+        listed = {entry['file'] for entry in manifest['images']}
+        if manifest['schema_version'] != 1 or not isinstance(manifest['world_id'], str) \
+                or not all(isinstance(name, str) for name in listed):
+            return None
+    except (OSError, ValueError, TypeError, KeyError):
+        return None
+    return sorted(p.name for p in target.iterdir()
+                  if p.name not in listed | {WORLD_MANIFEST, '.DS_Store'} or p.is_symlink() or not p.is_file())
+
+
 def world_target(repo, store, world=None):
     """Where a world may be written. Only an empty directory or a previous world is replaced."""
     repo = Path(repo).resolve()
     target = (Path(world) if world is not None else repo / 'Fixtures/output/sampled')
     target = target.parent.resolve() / target.name
     require(not target.is_symlink(), 'output', f'World directory must not be a symlink: {target}')
-    require(not target.is_relative_to(repo / 'Fixtures') or target.is_relative_to(repo / 'Fixtures/output'),
+    require(not within(target, repo / 'Fixtures') or within(target, repo / 'Fixtures/output'),
             'output', f'A world may not be written among the fixtures: {target}')
-    require(not Path(store).resolve().is_relative_to(target) and not target.is_relative_to(Path(store).resolve()),
+    require(not within(store, target) and not within(target, store),
             'output', f'Sample records and the world directory must not contain each other: {target}')
     if target.exists():
         require(target.is_dir(), 'output', f'World destination is not a directory: {target}')
-        contents = list(target.iterdir())
-        require(not contents or (target / WORLD_MANIFEST).is_file(), 'output',
-                f'Refusing to replace {target}: it is neither empty nor a previous world (no {WORLD_MANIFEST})')
+        if any(target.iterdir()):
+            strays = previous_world_strays(target)
+            require(strays is not None, 'output',
+                    f'Refusing to replace {target}: it is neither empty nor a previous world (no valid {WORLD_MANIFEST})')
+            require(not strays, 'output', f'Refusing to replace {target}: a previous world holding entries its manifest '
+                    f'does not list: {", ".join(strays)}; remove them or use a new directory')
     return target
 
 
@@ -857,6 +902,7 @@ def publish_world(repo, store, draw, images, world=None):
         fcntl.flock(lock, fcntl.LOCK_EX)
         world_target(repo, store, target)
         staged = Path(tempfile.mkdtemp(prefix='.world-', dir=target.parent))
+        os.chmod(staged, 0o777 & ~current_umask())  # A published world is an ordinary directory, not a private one.
         try:
             copied = []
             for image in images:
@@ -875,9 +921,9 @@ def publish_world(repo, store, draw, images, world=None):
                 exchange_directories(staged, target)  # Old world is now at staged.
             else:
                 staged.rename(target)
-        except (OSError, SamplerError) as error:
+        except BaseException as error:  # Interrupts and signals must not leave a hidden stage either.
             cleanup = cleanup_world_stage(staged)
-            if cleanup:
+            if cleanup and isinstance(error, (OSError, SamplerError)):
                 raise SamplerError('output', f'{error}; staged files remain at {staged}: {cleanup[0]["error"]}',
                                    cleanup_path=str(staged)) from None
             raise

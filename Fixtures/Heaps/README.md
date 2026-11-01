@@ -37,7 +37,7 @@ See [the fixture index](../README.md) for intake locations and
 
 ## Visual tour
 
-The rebuildable heap picture book at `output/pdf/hazy-heaps-tour.pdf`
+The rebuildable heap picture book at `Fixtures/output/pdf/hazy-heaps-tour.pdf`
 is a 36-page tour with large plates, contact sheets and linked image credits.
 Its frozen October 2026 edition samples 144 images from the 868 acquired inputs
 in its original 12 leaf collections. Later additions are outside that edition.
@@ -61,7 +61,7 @@ Fixtures/.venv/bin/python Fixtures/Heaps/tools/build_tour.py
 
 The builder checks the edition's recorded leaf roster and counts, the selected input hashes
 and decoded dimensions, and the contact-sheet ordering before writing
-`output/pdf/hazy-heaps-tour.pdf`. It makes no network requests and changes no
+`Fixtures/output/pdf/hazy-heaps-tour.pdf`. It makes no network requests and changes no
 fixture assets. PDF display copies retain full framing and use up to 180 dpi;
 source and input bytes remain untouched. The script uses Georgia, Arial and
 Arial Unicode from macOS; `--font-dir` can point to another directory containing

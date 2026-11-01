@@ -22,7 +22,6 @@ from reportlab.platypus import Paragraph
 
 
 HEAPS = Path(__file__).resolve().parents[1]
-ROOT = HEAPS.parents[1]
 W, H, M = 648, 792, 36
 PAPER, INK = '#F4F1EA', '#202522'
 MUTED, ACCENT = '#677068', '#9B4435'
@@ -343,7 +342,7 @@ class Book:
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--output', type=Path, default=ROOT / 'output/pdf/hazy-heaps-tour.pdf')
+    parser.add_argument('--output', type=Path, default=HEAPS.parent / 'output/pdf/hazy-heaps-tour.pdf')
     parser.add_argument('--font-dir', type=Path, default=Path('/System/Library/Fonts/Supplemental'))
     args = parser.parse_args()
     for name, filename in [('Serif', 'Georgia.ttf'), ('SerifItalic', 'Georgia Italic.ttf'),
