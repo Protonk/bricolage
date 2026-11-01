@@ -10,9 +10,13 @@ draw N images uniformly from all available Heaps and Relationships inputs.
 Optional `--seed TEXT` makes a draw repeatable. The command saves the original
 draw and inventory, and returns JSON with `draw.sample_id`,
 `population.counts.eligible` (M), and ordered `images[].sampled_path` values.
-Each successful draw replaces `output/sampled/` with byte-identical image copies.
+Each successful draw replaces `output/sampled/` with byte-identical image copies
+and a `sample.json` sidecar naming each copy's fixture origin and provenance rows.
 The originals stay in their fixtures, and durable records stay in `Sampler/records/`.
-Exact-byte aliases share one ticket. An oversized request fails explicitly.
+Exact-byte aliases share one ticket. An oversized request fails explicitly. Exit
+code 1 with a `problems` list means a fixture or record needs attention; the JSON
+still says whether the draw itself was published. A leaf whose metadata fails
+validation is excluded and named, and the draw proceeds over the rest.
 
 The engine uses the root `.venv` with Python 3.14.x. On a new checkout, run
 `make setup-python` at the repository root once. Run `Fixtures/sample --help`

@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "sample_id": "draw-74427fcd61234647bc46613f73deeecd",
-  "created_at": "2026-11-01T00:52:45.817292+00:00",
-  "inventory_id": "6473b2e79edcf91f610c6675d8c5719791adff015e40dadbd5ab3ab5dc29ae14",
-  "inventory_file": "inventories/6473b2e79edcf91f610c6675d8c5719791adff015e40dadbd5ab3ab5dc29ae14.json",
+  "sample_id": "draw-82acd83c6cd540a6bf4e29610ff5dc2d",
+  "created_at": "2026-11-01T16:42:49.346393+00:00",
+  "inventory_id": "8851e81e9d13b27904631d9c776f5d7514b39427c9fd7a71f85ea3efaf7fa6fb",
+  "inventory_file": "inventories/8851e81e9d13b27904631d9c776f5d7514b39427c9fd7a71f85ea3efaf7fa6fb.json",
   "procedure": "sha256-counter-rejection-partial-fisher-yates-v1",
   "seed": "fixture-sampler-demo-2026-11-01",
   "requested_size": 12,
@@ -22,5 +22,5 @@
     "sha256:c66402a65082fe0c986fb0030b58fa4759544f083948d4f995bda534f92476d2",
     "sha256:e8f9ea6d62d079f059fd9e3a461cf8b4959abb328922b622ca2f0588b8586ad3"
   ],
-  "draw_sha256": "c76972ca747ea5a3f185699fc380fee556f148266f0a000d42e038af630d9422"
+  "draw_sha256": "24317356aed5547eb0cb4fd9b10b93578d4339509809af2cfcde880a74edb22d"
 }

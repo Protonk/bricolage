@@ -28,6 +28,7 @@ PROCEDURE = 'sha256-counter-rejection-partial-fisher-yates-v1'
 POLICY = 'active-manifest-inputs; exact-byte-sha256-aliases; one-ticket-per-hash-v1'
 POPULATION_SCHEMAS = (1, 2)  # 1 embedded metadata rows; 2 pins metadata files by hash only.
 SKIP_DIRS = {'images', 'sources', 'previews', 'provenance', '__pycache__', '.git'}
+SIDECAR = 'sample.json'  # Written beside the copies in output/sampled/; derived, disposable.
 HEX = re.compile(r'[0-9a-f]{64}\Z')
 DRAW_FIELDS = (('schema_version', int), ('sample_id', str), ('created_at', str),
                ('inventory_id', str), ('inventory_file', str), ('procedure', str),
@@ -90,13 +91,12 @@ def file_hash(path):
     return h.hexdigest()
 
 
-def read_json(path, what, code='record-invalid'):
+def read_json(path, what, code='record-invalid', missing='record-missing'):
     try:
         with path.open(encoding='utf-8') as stream:
             return json.load(stream)
     except FileNotFoundError:
-        raise SamplerError('record-missing' if code == 'record-invalid' else code,
-                           f'{what} is missing: {path}', path=str(path)) from None
+        raise SamplerError(missing, f'{what} is missing: {path}', path=str(path)) from None
     except UnicodeDecodeError:
         raise SamplerError(code, f'{what} is not UTF-8 text: {path}', path=str(path)) from None
     except json.JSONDecodeError as error:
@@ -218,7 +218,7 @@ def read_leaf(repo, manifest_path):
             if key:
                 require(key not in mapped, 'fixture', f'provenance/import-map.json lists {key} twice')
                 mapped[key] = row
-        # Exact rows are embedded below; also retain the readable credit context's hash.
+        # Pin the readable credit context too, so a changed SOURCES.md is reported.
         metadata_bytes(leaf / 'SOURCES.md', 'SOURCES.md', required=False)
         images, seen = [], set()
         for n, row in enumerate(rows):
@@ -766,7 +766,43 @@ def sample_output(repo, store):
     return target
 
 
-def publish_sample(repo, store, images):
+def copy_name(image):
+    sha256 = image['image_id'].removeprefix('sha256:')
+    return f"{image['position']:04d}-{sha256}{Path(image['available_path']).suffix}"
+
+
+def store_reference(repo, store):
+    """The record store as the sidecar names it: checkout-relative when inside, else absolute."""
+    repo, store = Path(repo).resolve(), Path(store).resolve()
+    return store.relative_to(repo).as_posix() if store.is_relative_to(repo) else str(store)
+
+
+def sample_sidecar(repo, store, draw, inventory, images):
+    """What sits beside the copies: a derived description, never a record of truth.
+
+    Each entry names the copy, the fixture original it came from, its leaf and the
+    provenance rows resolved for that original at publication time.
+    """
+    provenance = Provenance(repo, inventory)
+    indexed = {r['image_id']: r for r in inventory['population']['images']}
+    entries = []
+    for image in images:
+        aliases = indexed[image['image_id']]['aliases']
+        source = next((a for a in aliases if str(Path(repo).resolve() / a['path']) == image['available_path']),
+                      aliases[0])
+        rows = provenance.alias(source)
+        entries.append(dict(position=image['position'], image_id=image['image_id'],
+                            file=copy_name(image), source_path=source['path'],
+                            fixture_path=source['fixture_path'], fixture_id=source['fixture_id'],
+                            kind=source['kind'], provenance_status=rows['status'],
+                            manifest_record=rows['manifest_record'], source_records=rows['source_records']))
+    return dict(schema_version=1, sample_id=draw['sample_id'], inventory_id=draw['inventory_id'],
+                seed=draw['seed'], requested_size=draw['requested_size'], created_at=draw['created_at'],
+                published_at=utc(), records=store_reference(repo, store),
+                summary=dict(by_leaf=leaf_summary(selected_items(draw, inventory))), images=entries)
+
+
+def publish_sample(repo, store, images, sidecar=None):
     """Verify independent copies before replacing the previous disposable output."""
     target = sample_output(repo, store)
     target.parent.mkdir(parents=True, exist_ok=True)
@@ -783,12 +819,15 @@ def publish_sample(repo, store, images):
                         f'Selected image {image["image_id"]} is unavailable; nothing was published')
                 source = Path(image['available_path'])
                 sha256 = image['image_id'].removeprefix('sha256:')
-                name = f"{image['position']:04d}-{sha256}{source.suffix}"
+                name = copy_name(image)
                 destination = staged / name
                 shutil.copyfile(source, destination)
                 require(file_hash(destination) == sha256, 'output',
                         f'Copied image checksum differs: {name}; nothing was published')
                 copied.append(dict(image, sampled_path=str(target / name)))
+            if sidecar is not None:
+                (staged / SIDECAR).write_text(
+                    json.dumps(sidecar, ensure_ascii=False, allow_nan=False, indent=2) + '\n', encoding='utf-8')
             if target.is_dir():
                 shutil.rmtree(target)
             elif target.exists():
@@ -811,11 +850,12 @@ def draw_command(args):
     result = dict(schema_version=1, draw=drawn, population=inventory_report(inventory, args.store),
                   summary=dict(by_leaf=leaf_summary(selected_items(drawn, inventory))),
                   images=images, current_check=check,
-                  output=dict(directory=str(target), published=False), problems=[])
+                  output=dict(directory=str(target), sidecar=None, published=False), problems=[])
     if check['ok']:
         try:
-            result['images'] = publish_sample(args.repo, args.store, result['images'])
-            result['output']['published'] = True
+            sidecar = sample_sidecar(args.repo, args.store, drawn, inventory, result['images'])
+            result['images'] = publish_sample(args.repo, args.store, result['images'], sidecar)
+            result['output'].update(published=True, sidecar=str(target / SIDECAR))
         except (OSError, SamplerError) as error:
             result['output']['error'] = f'{type(error).__name__}: {error}'
     if not result['output']['published']:
@@ -834,7 +874,7 @@ def annotation_value(args):
             return json.loads(args.json)
         if args.value_file == '-':
             return json.load(sys.stdin)
-        return read_json(Path(args.value_file), 'Annotation value file', code='usage')
+        return read_json(Path(args.value_file), 'Annotation value file', code='usage', missing='usage')
     except json.JSONDecodeError as error:
         raise SamplerError('usage', f'Annotation value is not valid JSON: {error}') from None
 
@@ -897,7 +937,7 @@ def main(argv=None):
     draw.add_argument('--seed', help='Exact UTF-8 seed text; generated and recorded if omitted')
     draw.add_argument('--inventory', help='Use this saved snapshot instead of rescanning fixtures')
     commands.add_parser('list', help='List persistent draws, including damaged ones')
-    show = commands.add_parser('show', help='Original draw, frozen metadata, current locations and annotations')
+    show = commands.add_parser('show', help='Original draw, pinned provenance rows, current locations and annotations')
     show.add_argument('sample_id')
     show.add_argument('--paths', action='store_true', help='Only current image locations/statuses as JSON')
     check = commands.add_parser('verify', help='Replay original selection and report current file problems')

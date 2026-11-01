@@ -82,7 +82,8 @@ Python tools and tests target **Python 3.14.x only**, using the Git-ignored root
 `.venv`. The sampler needs no third-party packages. Other fixture tools retain
 their own dependency files; use `.venv/bin/python` when running their checks.
 The sampling command replaces `output/sampled/` with byte-identical image copies
-and returns JSON with a saved sample ID, population size and ordered copy paths.
+plus a `sample.json` sidecar naming each copy's fixture origin, and returns JSON
+with a saved sample ID, population size, ordered copy paths and any problems found.
 `output/` is disposable; its tracked [AGENTS.md](output/AGENTS.md) describes cleanup.
 Durable sample records stay in `Fixtures/Sampler/records/`. Omit the seed to generate one. See the
 [sampling engine guide](Fixtures/Sampler/README.md) for inspection and annotations.

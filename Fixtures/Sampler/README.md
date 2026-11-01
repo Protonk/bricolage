@@ -38,6 +38,11 @@ Each successful draw replaces the entire contents of the checkout's
 `output/sampled/` with independent, byte-identical copies of its selected images.
 Files are named `0001-<image-sha256>.<original-extension>` in draw order. The copies
 are Git-ignored and disposable; editing them cannot change the fixture originals.
+`sample.json` sits beside them: the sample ID, seed, per-leaf summary and, for each
+copy, its image ID, the fixture original it was copied from, that leaf's path, ID
+and kind, and the manifest and source-catalog rows resolved at publication. It is
+derived from the records and the checkout and is not itself a record. Read it
+instead of parsing the command's output when the copies are all you need.
 Copies are verified before the previous output is removed. Invalid requests,
 unavailable inputs, and copy/checksum failures leave the previous output intact.
 A successful zero-image draw empties `sampled/`. Other output paths, including
@@ -103,8 +108,13 @@ Draw responses have `schema_version: 1` and these fields:
 | `summary.by_leaf` | How many selected images each leaf contributed |
 | `images` | Draw order; each item has `position`, `image_id`, `sampled_path` for its disposable copy, `available_path` for its fixture original, and all alias `locations` with current statuses |
 | `current_check` | Record reproduction and current file/metadata verification |
-| `output` | Absolute `directory`, `published` Boolean, and `error` if copying or publication failed |
+| `output` | Absolute `directory`, `sidecar` path, `published` Boolean, and `error` if copying or publication failed |
 | `problems` | Every problem found, each with a `kind`; empty when the exit code is 0 |
+
+Responses, records and the sidecar keep their `schema_version` while changes are
+additive: fields may be added, never removed or retyped, and readers ignore fields
+they do not know. A removal or retyping raises the version, and loaders keep
+accepting earlier versions, as the population schema does.
 
 An agent or program can call the engine and use the returned paths immediately:
 
@@ -214,8 +224,9 @@ Inventory IDs hash the `population` object, excluding its creation timestamp and
 checkout hint. Identical rescans reuse one snapshot. Population schema 2 pins
 metadata by hash; schema 1 snapshots, which embedded metadata rows per alias, still
 load, replay and show. The hint is where the scan happened as Git saw it; the
-file pins remain the authority, so a scan outside Git or in a dirty tree is valid. A draw's checksum covers all its fields
-except `draw_sha256`. Canonical JSON for these hashes is UTF-8, sorted object keys,
+file pins remain the authority, so a scan outside Git or in a dirty tree is valid.
+
+A draw's checksum covers all its fields except `draw_sha256`. Canonical JSON for these hashes is UTF-8, sorted object keys,
 no ASCII escaping, separators `,` and `:`, and no NaN/infinities. These checks detect
 accidental changes; they are not signatures or authentication.
 
@@ -259,21 +270,23 @@ reproduction. Tests run only under the repository's Python 3.14.x environment.
 
 ## Demonstration and checks
 
-The committed [demonstration draw](records/draws/draw-74427fcd61234647bc46613f73deeecd/draw.json)
+The committed [demonstration draw](records/draws/draw-82acd83c6cd540a6bf4e29610ff5dc2d/draw.json)
 contains 12 images drawn once with seed `fixture-sampler-demo-2026-11-01` from
 1,251 eligible byte identities: 1,263 manifest records across 18 leaves, with 12
-redundant byte-identical aliases. All input hashes passed; none were unavailable
-or unlisted. No strata, quota or reroll was used.
+redundant byte-identical aliases and no excluded leaves. All input hashes passed;
+none were unavailable or unlisted. No strata, quota or reroll was used. The same
+seed selected the same twelve identities under the first release's schema 1
+snapshot, which stored metadata rows; its schema 2 snapshot pins them instead.
 
-All twelve local images were opened for inspection. Eight example annotation
-events include sample notes, image notes/roles, a revised value, a deleted value
-and an artifact reference. Their [history](records/draws/draw-74427fcd61234647bc46613f73deeecd/annotations.jsonl)
-preserves the prior values. [demo-checks.json](demo-checks.json) records the reload,
-original draw byte equality and current-file verification. The examples are
-investigation annotations, not fixture judgments or eligibility changes.
+Six example annotation events include sample notes, an image note, a revised value
+and a deleted value. Their [history](records/draws/draw-82acd83c6cd540a6bf4e29610ff5dc2d/annotations.jsonl)
+preserves the prior values. They are investigation annotations, not fixture
+judgments or eligibility changes. The copies were hash-verified at publication;
+the demonstration did not review them visually. `verify` is the reproducible check
+of this record against the checkout; there is no separate hand-written check file.
 
 ```sh
-Fixtures/sample show draw-74427fcd61234647bc46613f73deeecd --paths
-Fixtures/sample verify draw-74427fcd61234647bc46613f73deeecd
+Fixtures/sample show draw-82acd83c6cd540a6bf4e29610ff5dc2d --paths
+Fixtures/sample verify draw-82acd83c6cd540a6bf4e29610ff5dc2d
 make test-sampler
 ```

@@ -293,6 +293,18 @@ class SamplerTests(unittest.TestCase):
             self.assertEqual('sha256:' + s.file_hash(copied), image['image_id'])
         self.assertTrue(response['output']['published'])
         self.assertEqual(s.load_draw(store, draw['sample_id'])[0], draw)
+        sidecar = json.loads(Path(response['output']['sidecar']).read_text())
+        self.assertEqual(Path(response['output']['sidecar']).name, 'sample.json')
+        self.assertEqual(sidecar['sample_id'], draw['sample_id'])
+        self.assertEqual([e['file'] for e in sidecar['images']],
+                         [Path(i['sampled_path']).name for i in response['images']])
+        self.assertEqual([e['image_id'] for e in sidecar['images']], draw['image_ids'])
+        self.assertEqual({e['provenance_status'] for e in sidecar['images']}, {'frozen'})
+        self.assertTrue(all(e['manifest_record']['file'] == e['source_path'].rsplit('/', 2)[-2] + '/' +
+                            e['source_path'].rsplit('/', 1)[-1] for e in sidecar['images']))
+        self.assertTrue(all(e['source_records'][0]['credit_status'] == 'Example credit' for e in sidecar['images']))
+        self.assertEqual(sum(sidecar['summary']['by_leaf'].values()), 3)
+        self.assertEqual(sidecar['records'], 'records with spaces')  # Store named relative to the checkout.
         old_syntax = subprocess.run([*command, 'draw', '3', '--seed', 'public engine'],
                                     cwd=self.temp.name, capture_output=True, text=True, check=True)
         self.assertEqual(json.loads(old_syntax.stdout)['draw']['image_ids'], draw['image_ids'])
@@ -307,19 +319,22 @@ class SamplerTests(unittest.TestCase):
         (output / 'AGENTS.md').write_text('Keep this')
         (output / 'other-output').write_bytes(b'Keep this too')
         first = json.loads(self.cli('3', '--seed', 'first').stdout)
-        self.assertEqual(len(list(sampled.iterdir())), 3)
+        self.assertEqual(len(list(sampled.iterdir())), 4)  # Three copies and sample.json.
         image = first['images'][0]
         Path(image['sampled_path']).write_bytes(b'edited copy')
         self.assertEqual('sha256:' + s.file_hash(Path(image['available_path'])), image['image_id'])
         second = self.cli('1', '--seed', 'second')
         self.assertEqual(second.returncode, 0, second.stderr)
-        self.assertEqual(len(list(sampled.iterdir())), 1)
+        self.assertEqual(len(list(sampled.iterdir())), 2)
+        self.assertEqual(json.loads((sampled / 'sample.json').read_text())['sample_id'],
+                         json.loads(second.stdout)['draw']['sample_id'])
         self.assertEqual((output / 'AGENTS.md').read_text(), 'Keep this')
         self.assertEqual((output / 'other-output').read_bytes(), b'Keep this too')
         self.assertTrue(self.heap.is_dir())
         self.assertEqual(s.load_draw(self.store, first['draw']['sample_id'])[0], first['draw'])
         self.assertEqual(self.cli('0').returncode, 0)
-        self.assertEqual(list(sampled.iterdir()), [])
+        self.assertEqual([p.name for p in sampled.iterdir()], ['sample.json'])
+        self.assertEqual(json.loads((sampled / 'sample.json').read_text())['images'], [])
 
     def test_invalid_draw_and_failed_copy_preserve_previous_output(self):
         sampled = self.repo / 'output/sampled'
