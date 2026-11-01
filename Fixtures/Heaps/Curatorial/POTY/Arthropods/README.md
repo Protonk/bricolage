@@ -4,7 +4,9 @@ A seeded selection from the 2023–2025 Commons Picture of the Year Round 1
 Arthropods lists.
 
 Fixture ID: `hazy-poty-arthropods-v1`; kind: `curatorial_heap`.
-The manifest lists **43 inputs**.
+<!-- collection-totals:start -->
+The manifest lists **43 active inputs**. [All collection totals](../../../../COLLECTIONS.md).
+<!-- collection-totals:end -->
 
 Use the [shared fixture format](../../../../FORMAT.md) for the directory layout and the
 [provenance index](provenance/README.md) for source and selection records.
@@ -21,7 +23,7 @@ Fixtures/.venv/bin/python Fixtures/Heaps/Curatorial/POTY/Arthropods/tools/check.
 The check is offline. `--metadata-only` checks layout and catalogs without
 media or the specialized validators.
 
-## Images and records
+## Original publication and acquisition records
 
 **Complete: 43 acquired / 43 selected / 237 eligible entries.** Target: 50. Excluded in
 the processed ordering: 194; unused reserve: 0; pending acquisition: 0; pending

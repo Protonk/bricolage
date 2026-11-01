@@ -118,6 +118,7 @@ def sheets(root, imported):
 
 
 def build(root):
+    require_unremoved(root)
     require(read(root / 'provenance/intake/selection.json') == choose(root), 'Selection changed; explicitly select first')
     imported = imports(root)
     rows, sources = records(imported)
@@ -174,6 +175,15 @@ def check_api(root, relative):
     return receipt
 
 
+
+# Active catalogs are checked separately from the preserved publication.
+from pathlib import Path as _RemovalPath
+import sys as _removal_sys
+_removal_tools = next(p / 'tools' for p in _RemovalPath(__file__).resolve().parents if (p / 'tools/fixture_layout.py').is_file())
+_removal_sys.path.insert(0, str(_removal_tools))
+from fixture_removal import publication_check, require_unremoved
+
+@publication_check
 def check(root):
     inv = read(root / 'provenance/intake/inventory.json')
     category = inv['official_category']

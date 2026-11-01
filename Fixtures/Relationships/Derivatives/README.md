@@ -3,7 +3,9 @@
 Crops, re-encodings, edits and composites made from known source images.
 
 Fixture ID: `hazy-derivatives-v1`; kind: `derivatives`.
-The manifest lists **183 inputs**.
+<!-- collection-totals:start -->
+The manifest lists **183 active inputs**. [All collection totals](../../COLLECTIONS.md).
+<!-- collection-totals:end -->
 
 Use the [shared fixture format](../../FORMAT.md) for the directory layout and the
 [provenance index](provenance/README.md) for source and selection records.
@@ -20,7 +22,7 @@ Fixtures/.venv/bin/python Fixtures/Relationships/Derivatives/tools/check.py
 The check is offline. `--metadata-only` checks layout and catalogs without
 media or the specialized validators.
 
-## Images and records
+## Original publication and acquisition records
 
 A fixed batch of **183 images** intended to exercise coarse image-similarity grouping without using anyone's personal photo library.
 

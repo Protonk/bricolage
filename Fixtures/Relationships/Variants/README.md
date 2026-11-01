@@ -4,7 +4,9 @@ Six originals, thirty constructed edits and six supplied images generated from
 descriptions of the originals.
 
 Fixture ID: `hazy-meme-fixtures-v0`; kind: `derivatives`.
-The manifest lists **42 inputs**.
+<!-- collection-totals:start -->
+The manifest lists **42 active inputs**. [All collection totals](../../COLLECTIONS.md).
+<!-- collection-totals:end -->
 
 Use the [shared fixture format](../../FORMAT.md) for the directory layout and the
 [provenance index](provenance/README.md) for source and selection records.
@@ -21,7 +23,7 @@ Fixtures/.venv/bin/python Fixtures/Relationships/Variants/tools/check.py
 The check is offline. `--metadata-only` checks layout and catalogs without
 media or the specialized validators.
 
-## Images and records
+## Original publication and acquisition records
 
 Built and validated: **42 inputs** from six bundled sources: six unchanged source
 copies, 30 locally constructed variants, and six unchanged supplied generations.

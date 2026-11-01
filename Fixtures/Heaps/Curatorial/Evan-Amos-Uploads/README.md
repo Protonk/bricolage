@@ -4,7 +4,9 @@ All files in the saved list of the Commons category “Media uploaded by Evan Am
 except three supplied exclusions. Related views and formats remain included.
 
 Fixture ID: `hazy-evan-amos-uploads-v1`; kind: `curatorial_heap`.
-The manifest lists **133 inputs**.
+<!-- collection-totals:start -->
+The manifest lists **133 active inputs**. [All collection totals](../../../COLLECTIONS.md).
+<!-- collection-totals:end -->
 
 Use the [shared fixture format](../../../FORMAT.md) for the directory layout and the
 [provenance index](provenance/README.md) for source and selection records.
@@ -21,7 +23,7 @@ Fixtures/.venv/bin/python Fixtures/Heaps/Curatorial/Evan-Amos-Uploads/tools/chec
 The check is offline. `--metadata-only` checks layout and catalogs without
 media or the specialized validators.
 
-## Images and records
+## Original publication and acquisition records
 
 One leaf of the [Curatorial heap](../README.md): **every frozen direct File
 member** of [Media uploaded by Evan Amos](https://commons.wikimedia.org/wiki/Category:Media_uploaded_by_Evan_Amos),

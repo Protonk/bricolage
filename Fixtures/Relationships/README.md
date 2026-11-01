@@ -4,7 +4,10 @@ These sets contain images with recorded connections: edits of a common source,
 separate photographs of a scene, and images generated from source descriptions.
 They let a test examine how an image algorithm handles each relationship.
 
-| Set | Fixture ID | Inputs | Relationship | Focus / probes / full |
+Current membership is in the [generated collection totals](../COLLECTIONS.md).
+The counts below describe the original publications.
+
+| Set | Fixture ID | Original inputs | Relationship | Original focus / probes / full |
 |---|---|---:|---|---:|
 | [Derivatives](Derivatives/README.md) | `hazy-derivatives-v1` | 183 | Recorded transformations and composites from source images | 14 / 115 / 190 pairs |
 | [Multiviews](Multiviews/README.md) | `hazy-multiview-v1` | 20 | Separate captures of scenes and short sequences | 16 / 44 / 44 pairs |

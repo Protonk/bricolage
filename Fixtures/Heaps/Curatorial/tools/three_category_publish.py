@@ -86,6 +86,15 @@ def check_reviews():
   require(all(x in e.order()and x!=cid for x in r['conflicts_with']),'Invalid related candidate')
 
 
+
+# Active catalogs are checked separately from the preserved publication.
+from pathlib import Path as _RemovalPath
+import sys as _removal_sys
+_removal_tools = next(p / 'tools' for p in _RemovalPath(__file__).resolve().parents if (p / 'tools/fixture_layout.py').is_file())
+_removal_sys.path.insert(0, str(_removal_tools))
+from fixture_removal import publication_artifacts
+
+@publication_artifacts(lambda: e.ROOT)
 def check(artifacts=None):
  root=e.ROOT;out=artifacts or root;require(read(root/'provenance/intake/inventory.json')==e.population(),'Population replay differs')
  conf=e.config();ordering=read(root/'provenance/intake/ordering.json');require(ordering['seed']==conf['seed']and ordering['candidate_ids']==e.ordered(read(root/'provenance/intake/inventory.json')['candidates'],conf['seed']),'Ordering differs')
@@ -132,7 +141,7 @@ def check(artifacts=None):
  for r in contacts:
   require(sha(safe(out,r['path']))==r['sha256'],'Contact sheet changed')
   with Image.open(out/r['path'])as im:im.load();require(im.size==(r['width'],r['height']),'Contact dimensions differ')
- prior=read(out/'provenance/identity-audit.json');require(prior==audit.audit([r['fixture']for r in prior['inventories']]),'Prior-identity audit differs');require(read(out/'provenance/related-file-evidence.json')==related_evidence(),'Related-file evidence differs');require(read(out/'provenance/acquisition.json')==summary(),'Acquisition status differs')
+ prior=read(out/'provenance/identity-audit.json');require(prior==audit.audit([r['fixture']for r in prior['inventories']], recorded_inventories=prior['inventories']),'Prior-identity audit differs');require(read(out/'provenance/related-file-evidence.json')==related_evidence(),'Related-file evidence differs');require(read(out/'provenance/acquisition.json')==summary(),'Acquisition status differs')
  return dict(validation='passed',kind='curatorial_heap',expected_pairs=0,**summary())
 
 def build():

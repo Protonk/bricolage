@@ -55,6 +55,17 @@ batches and eight multiview batches.
 
 ## Local assets and Git
 
+Use `Fixtures/collection remove INPUT --reason "Reason"` to remove active
+membership. It preserves prior catalogs in `provenance/removals/NNNN/` and image
+bytes under `previews/removed/`. Source and acquisition records remain historical
+evidence. Validators replay the removal chain against the active catalogs before
+checking the preserved publication. See the [tools guide](tools/README.md).
+
+Current counts come from [generated collection totals](COLLECTIONS.md) and the
+marked blocks in leaf READMEs. Regenerate with `Fixtures/collection totals`;
+do not hand-edit those blocks. Acquisition counts and supplied targets retain
+their historical meaning.
+
 All files under any set's `images/`, `sources/`, and optional `previews/` directories
 are Git-ignored, including nested paths, new formats, and files with no extension.
 Keep all future image assets in these locations. Metadata, checksums, textual

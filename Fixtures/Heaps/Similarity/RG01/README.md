@@ -3,7 +3,9 @@
 Photographs with small red accents in predominantly green outdoor scenes.
 
 Fixture ID: `hazy-rg01-v1`; kind: `prompt_heap`.
-The manifest lists **31 inputs**.
+<!-- collection-totals:start -->
+The manifest lists **31 active inputs**. [All collection totals](../../../COLLECTIONS.md).
+<!-- collection-totals:end -->
 
 Use the [shared fixture format](../../../FORMAT.md) for the directory layout and the
 [provenance index](provenance/README.md) for source and selection records.
@@ -20,7 +22,7 @@ Fixtures/.venv/bin/python Fixtures/Heaps/Similarity/RG01/tools/check.py
 The check is offline. `--metadata-only` checks layout and catalogs without
 media or the specialized validators.
 
-## Images and records
+## Original publication and acquisition records
 
 **Status: 31-image starter heap acquired and checked.** All 107 supplied Commons
 leads were reviewed at thumbnail scale: 31 selected, 69 rejected, and seven

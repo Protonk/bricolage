@@ -4,7 +4,9 @@ Botanical plates and artworks selected from a saved Commons category list,
 using a seeded order and recorded exclusions.
 
 Fixture ID: `hazy-botanical-illustrations-v1`; kind: `curatorial_heap`.
-The manifest lists **149 inputs**.
+<!-- collection-totals:start -->
+The manifest lists **149 active inputs**. [All collection totals](../../../COLLECTIONS.md).
+<!-- collection-totals:end -->
 
 Use the [shared fixture format](../../../FORMAT.md) for the directory layout and the
 [provenance index](provenance/README.md) for source and selection records.
@@ -21,7 +23,7 @@ Fixtures/.venv/bin/python Fixtures/Heaps/Curatorial/Botanical-Illustrations/tool
 The check is offline. `--metadata-only` checks layout and catalogs without
 media or the specialized validators.
 
-## Images and records
+## Original publication and acquisition records
 
 **150 distinct works selected; 149 acquired, one transfer pending. Acquisition
 remains partial and selection remains provisional around 14 earlier cases.**

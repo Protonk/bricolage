@@ -3,7 +3,9 @@
 Photographs with pale, quiet skies above darker, detailed lower regions.
 
 Fixture ID: `hazy-ps01-v1`; kind: `prompt_heap`.
-The manifest lists **58 inputs**.
+<!-- collection-totals:start -->
+The manifest lists **58 active inputs**. [All collection totals](../../../COLLECTIONS.md).
+<!-- collection-totals:end -->
 
 Use the [shared fixture format](../../../FORMAT.md) for the directory layout and the
 [provenance index](provenance/README.md) for source and selection records.
@@ -20,7 +22,7 @@ Fixtures/.venv/bin/python Fixtures/Heaps/Similarity/PS01/tools/check.py
 The check is offline. `--metadata-only` checks layout and catalogs without
 media or the specialized validators.
 
-## Images and records
+## Original publication and acquisition records
 
 Integrated: **58 inputs from 145 supplied leads**. All 145 previews were inspected:
 58 accepted, 85 rejected and two deferred for possible source relationships.

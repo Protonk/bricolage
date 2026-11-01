@@ -4,7 +4,9 @@ A seeded selection from the 2023–2025 Commons Picture of the Year Round 1
 Constructions and buildings lists.
 
 Fixture ID: `hazy-poty-constructions-and-buildings-v1`; kind: `curatorial_heap`.
-The manifest lists **50 inputs**.
+<!-- collection-totals:start -->
+The manifest lists **50 active inputs**. [All collection totals](../../../../COLLECTIONS.md).
+<!-- collection-totals:end -->
 
 Use the [shared fixture format](../../../../FORMAT.md) for the directory layout and the
 [provenance index](provenance/README.md) for source and selection records.
@@ -21,7 +23,7 @@ Fixtures/.venv/bin/python Fixtures/Heaps/Curatorial/POTY/Constructions-and-build
 The check is offline. `--metadata-only` checks layout and catalogs without
 media or the specialized validators.
 
-## Images and records
+## Original publication and acquisition records
 
 **Complete: 50 acquired / 50 selected / 248 eligible entries.** Target: 50. Excluded in
 the processed ordering: 40; unused reserve: 158; pending acquisition: 0; pending

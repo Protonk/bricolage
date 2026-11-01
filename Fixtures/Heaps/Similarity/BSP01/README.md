@@ -4,7 +4,9 @@ Photographs of irregular patches that merge or fragment across surfaces,
 selected by thumbnail appearance.
 
 Fixture ID: `hazy-bsp01-v1`; kind: `prompt_heap`.
-The manifest lists **68 inputs**.
+<!-- collection-totals:start -->
+The manifest lists **68 active inputs**. [All collection totals](../../../COLLECTIONS.md).
+<!-- collection-totals:end -->
 
 Use the [shared fixture format](../../../FORMAT.md) for the directory layout and the
 [provenance index](provenance/README.md) for source and selection records.
@@ -21,7 +23,7 @@ Fixtures/.venv/bin/python Fixtures/Heaps/Similarity/BSP01/tools/check.py
 The check is offline. `--metadata-only` checks layout and catalogs without
 media or the specialized validators.
 
-## Images and records
+## Original publication and acquisition records
 
 **Complete: 68 acquired and validated inputs from 185 supplied Commons leads; no pending downloads.**
 All 185 previews were inspected. Of 77 visual fits, seven were excluded as known

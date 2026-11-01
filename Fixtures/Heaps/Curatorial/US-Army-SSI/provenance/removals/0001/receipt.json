@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "removed_at": "2026-11-01",
+  "reason": "User requested removal of the supplied insignia image.",
+  "original_removal_commit": "7ebe7fb",
+  "image": {
+    "file": "images/53dc0bc0d00e5d7e985d.jpg",
+    "batch": "batch-1",
+    "family_id": "ssi-53dc0bc0d00e5d7e985d",
+    "scene_id": "",
+    "parents": "ssi-53dc0bc0d00e5d7e985d",
+    "transformation": "source",
+    "relation_kind": "curatorial_selected",
+    "origin_count": 1,
+    "width": 360,
+    "height": 361,
+    "exif_orientation": 1,
+    "format": "JPEG",
+    "byte_sha256": "3ab98c94c911b87d9c29e230e061aebe6427b84590ff91627e9ac82ca94a051e",
+    "pixels_rgb_sha256": ""
+  },
+  "preserved_image": "previews/removed/3ab98c94c911b87d9c29e230e061aebe6427b84590ff91627e9ac82ca94a051e.jpg",
+  "before_sha256": {
+    "manifest.json": "515abd34be4ee7405678d771c477c8a6c72caa04d01671090533ddaacda934e6",
+    "manifest.csv": "b6da032ab9a3d112cfa76e1ecef5eaff592b7cb150a65fb5b2534e9c61599d72",
+    "SHA256SUMS.txt": "715b5d79152b4aa53e86e660a4cc4f9a52d4fac1348cc74186758558617285ab",
+    "probes.csv": "934d1c8a60d8d714d3854a938d9dc87c13f1d7be65c935f9de0f3ca937e2e9d9",
+    "selections.json": "f802df790c97a86b0dad7eb42a3f3b69537af88068088c5ad4acc67d2c754162",
+    "batches/batch-1.txt": "05e8bb057e838fc9e2ccc4eb64f2016c64f4a7e8c2c4f02b053540224fc44309",
+    "batches/medium.txt": "b84349eaa25f46e32f883e49ad58c27aba0d7e0db36ddfed92652bbb1d903e78",
+    "batches/smoke.txt": "a57e3ca2b2b285cd48d025b546ac6657d10cb36ba899eb5432726a27c1c9659c"
+  },
+  "after_sha256": {
+    "manifest.json": "c906702f2fcc2e2487295fe3620756c7f71e0548087203abf8ac61ad9651912c",
+    "manifest.csv": "386ab81408951d889764c4b5e4569acc1d309dbacdffb15e2f342825d959f2f6",
+    "SHA256SUMS.txt": "7b7a718339d8fdbc8d4383052ba13491ff8ff0fab73e24c7ea72eb896bc7f1b5",
+    "probes.csv": "934d1c8a60d8d714d3854a938d9dc87c13f1d7be65c935f9de0f3ca937e2e9d9",
+    "selections.json": "f802df790c97a86b0dad7eb42a3f3b69537af88068088c5ad4acc67d2c754162",
+    "batches/batch-1.txt": "5f61c5c1066392edf5f4c1750a74530c7ba29d7a10a8268f1bdf25b92aa2d889",
+    "batches/medium.txt": "b84349eaa25f46e32f883e49ad58c27aba0d7e0db36ddfed92652bbb1d903e78",
+    "batches/smoke.txt": "a57e3ca2b2b285cd48d025b546ac6657d10cb36ba899eb5432726a27c1c9659c"
+  }
+}

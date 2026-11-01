@@ -22,6 +22,8 @@ Fixtures/.venv/bin/python Fixtures/tools/new_fixture.py Fixtures/Heaps/Curatoria
 The destination must be new. The scaffold contains empty catalogs and media
 directories; it does not invent prompts, candidate evidence, credits or results.
 Complete its README, source catalog and provenance records as part of intake.
+Keep its `collection-totals` markers; `Fixtures/collection totals` fills that
+block from the manifest and updates the central collection table.
 Heap kinds require their real intake evidence before validation can pass. Add
 the source-specific offline check command to `tools/check.py` before publication.
 `check.py --metadata-only` checks structure/catalogs without decoding or requiring

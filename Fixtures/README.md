@@ -28,7 +28,7 @@ explains saved inventories, annotations, output paths and errors.
 | Location | What it contains |
 |---|---|
 | [Relationships](Relationships/README.md) | Derivatives of known sources, separate captures of scenes, and constructed or generated variants |
-| [Heaps / Similarity](Heaps/Similarity/README.md) | Six collections chosen by visual prompts: red accents in green surroundings, speckled fields, pale skies, repeated rectangles, tangled growth, and spreading patches |
+| [Heaps / Similarity](Heaps/Similarity/README.md) | Collections chosen by visual prompts: red accents in green surroundings, speckled fields, pale skies, repeated rectangles, tangled growth, and spreading patches |
 | [Heaps / Curatorial](Heaps/Curatorial/README.md) | Selections from published collections: Commons POTY categories, insignia, botanical illustrations, Evan Amos uploads, rocks, hand axes and bookplates |
 
 The relationship sets record how images are connected. The heaps record why
@@ -38,9 +38,10 @@ image matcher should return.
 The [heap guide](Heaps/README.md) also describes the local picture book of
 selected images and how to rebuild it.
 
-Current catalogs list 1,262 inputs across 18 leaves, representing 1,250 distinct
-byte hashes. Acquisition is incomplete in SF01 (11 accepted images pending) and
-Botanical Illustrations (one transfer pending). POTY Arthropods has 43 inputs
+The [collection totals](COLLECTIONS.md) are generated from active manifests,
+including the current input count and distinct byte hashes for every leaf.
+Acquisition is incomplete in SF01 (11 accepted images pending) and
+Botanical Illustrations (one transfer pending). POTY Arthropods acquired 43 inputs
 against a target of 50. Some Curatorial selections also have earlier unresolved
 review cases; their later selections remain provisional. Each collection's README
 and records give the details.
@@ -50,6 +51,7 @@ and records give the details.
 | Path | Contents |
 |---|---|
 | `sample` | Public sampler command |
+| `collection` | Remove an input or regenerate collection totals |
 | [Sampler/](Sampler/README.md) | Sampler code, tests and versioned records |
 | [tools/](tools/README.md) | Layout checks, fixture creation and the optional comparison runner |
 | [Template/](Template/README.md) | Starting files for a new leaf |
@@ -67,6 +69,15 @@ Read [AGENTS.md](AGENTS.md), the collection's README and
 [template](Template/README.md); the [handoff guide](WEB-AGENT-GUIDE.md) describes
 what a sourcing partner can supply. Put new contributions alongside the existing
 collections with the same selection basis.
+
+Remove one active input by its SHA-256 or file path with
+`Fixtures/collection remove INPUT --reason "Reason for removal"`.
+The command retains source bytes and publication evidence, updates active
+catalogs, and regenerates totals. Use `--dry-run` to inspect the proposed change.
+The [tools guide](tools/README.md) describes removal records and validation.
+
+After other catalog changes, run `make -C Fixtures collection-totals`.
+`test-fixture-layout` checks that the generated totals are current.
 
 Every leaf has `tools/check.py` and `tools/requirements.txt`. From the repository
 root, install the shared validator dependency and check all leaves:

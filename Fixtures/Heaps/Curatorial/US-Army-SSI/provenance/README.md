@@ -24,6 +24,7 @@ not change selection decisions, acquisition status or provenance assertions.
 | [preview-receipts/](preview-receipts) | Preserved supporting evidence; historical fields and recorded paths retain their original meaning. |
 | [preview-size-diagnosis.json](preview-size-diagnosis.json) | Preserved supporting evidence; historical fields and recorded paths retain their original meaning. |
 | [publications/](publications) | Preserved supporting evidence; historical fields and recorded paths retain their original meaning. |
+| [removals/](removals/) | Active-input removals, reasons, and hash-bound prior catalogs; original acquisition records remain unchanged. |
 | [resumption.json](resumption.json) | Preserved supporting evidence; historical fields and recorded paths retain their original meaning. |
 | [scope-questions.json](scope-questions.json) | Preserved supporting evidence; historical fields and recorded paths retain their original meaning. |
 | [source-receipts/](source-receipts) | Preserved supporting evidence; historical fields and recorded paths retain their original meaning. |

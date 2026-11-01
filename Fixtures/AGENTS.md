@@ -22,6 +22,10 @@ preserve supplied records. Follow [output/AGENTS.md](output/AGENTS.md) for
 scratch files. Fix a catalog problem in the collection that owns the catalog,
 with its validator, so tools and records continue to describe the same files.
 
+Use `Fixtures/collection remove INPUT --reason "Reason"` for active input removal.
+After other catalog changes, run `make -C Fixtures collection-totals`; current
+totals and marked README blocks are generated, not maintained by hand.
+
 Run the checks relevant to the change, from the repository root:
 
 ```sh

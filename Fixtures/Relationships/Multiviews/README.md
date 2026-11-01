@@ -3,7 +3,9 @@
 Twenty separate captures in eight scene or sequence groups.
 
 Fixture ID: `hazy-multiview-v1`; kind: `multiview`.
-The manifest lists **20 inputs**.
+<!-- collection-totals:start -->
+The manifest lists **20 active inputs**. [All collection totals](../../COLLECTIONS.md).
+<!-- collection-totals:end -->
 
 Use the [shared fixture format](../../FORMAT.md) for the directory layout and the
 [provenance index](provenance/README.md) for source and selection records.
@@ -20,7 +22,7 @@ Fixtures/.venv/bin/python Fixtures/Relationships/Multiviews/tools/check.py
 The check is offline. `--metadata-only` checks layout and catalogs without
 media or the specialized validators.
 
-## Images and records
+## Original publication and acquisition records
 
 **20 separately captured images in eight scene or sequence groups:** the motorcycle
 pair, nine personal photographs, and nine Commons crowd photographs. Use only the

@@ -7,6 +7,7 @@ import sys as _layout_sys
 _layout_root = next(p for p in _LayoutPath(__file__).resolve().parents if (p/'tools/fixture_layout.py').is_file())
 _layout_sys.path.insert(0, str(_layout_root/'tools'))
 from fixture_layout import evidence_path
+from fixture_removal import historical_manifest
 
 import csv
 import hashlib
@@ -21,7 +22,7 @@ def normalized(value):
     return unquote(value).removeprefix('File:').replace('_', ' ').casefold().strip()
 
 
-def audit(fixture_names=None):
+def audit(fixture_names=None, recorded_inventories=None):
     root = botanical.ROOT
     fixtures = root.parents[2]
     previous = {k: {} for k in ('title', 'pageid', 'original_sha1', 'byte_sha256')}
@@ -42,6 +43,9 @@ def audit(fixture_names=None):
         name = str(leaf.relative_to(fixtures))
         if fixture_names is not None and name not in fixture_names:
             continue
+        if recorded_inventories is not None:
+            pinned = next(r for r in recorded_inventories if r['fixture'] == name)
+            path = historical_manifest(leaf, pinned['manifest_sha256'])
         manifest = botanical.read(path)
         with (leaf / 'sources.csv').open(newline='') as stream:
             sources = list(csv.DictReader(stream))

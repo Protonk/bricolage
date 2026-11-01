@@ -4,7 +4,9 @@ Rock thin sections selected from three Commons categories, using a fixed order,
 thumbnail review and recorded specimen exclusions.
 
 Fixture ID: `hazy-rocks-in-thin-section-v1`; kind: `curatorial_heap`.
-The manifest lists **50 inputs**.
+<!-- collection-totals:start -->
+The manifest lists **50 active inputs**. [All collection totals](../../../COLLECTIONS.md).
+<!-- collection-totals:end -->
 
 Use the [shared fixture format](../../../FORMAT.md) for the directory layout and the
 [provenance index](provenance/README.md) for source and selection records.
@@ -21,7 +23,7 @@ Fixtures/.venv/bin/python Fixtures/Heaps/Curatorial/Rocks-in-Thin-Section/tools/
 The check is offline. `--metadata-only` checks layout and catalogs without
 media or the specialized validators.
 
-## Images and records
+## Original publication and acquisition records
 
 **50 selected images, all 50 acquired and validated. Selection remains provisional
 around one earlier deferred rights case.** This is one leaf of the Curatorial

@@ -3,7 +3,9 @@
 Photographs with many small, separated marks or objects across a continuous field.
 
 Fixture ID: `hazy-sf01-v1`; kind: `prompt_heap`.
-The manifest lists **48 inputs**.
+<!-- collection-totals:start -->
+The manifest lists **48 active inputs**. [All collection totals](../../../COLLECTIONS.md).
+<!-- collection-totals:end -->
 
 Use the [shared fixture format](../../../FORMAT.md) for the directory layout and the
 [provenance index](provenance/README.md) for source and selection records.
@@ -20,7 +22,7 @@ Fixtures/.venv/bin/python Fixtures/Heaps/Similarity/SF01/tools/check.py
 The check is offline. `--metadata-only` checks layout and catalogs without
 media or the specialized validators.
 
-## Images and records
+## Original publication and acquisition records
 
 **48 acquired photographs are integrated**, from **59 visual selections** among
 142 supplied Commons leads (**59 accept, 82 reject, 1 defer**). All 142 previews

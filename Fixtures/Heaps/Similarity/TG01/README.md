@@ -3,7 +3,9 @@
 Photographs of dense, interlaced plant growth, selected by thumbnail appearance.
 
 Fixture ID: `hazy-tg01-v1`; kind: `prompt_heap`.
-The manifest lists **31 inputs**.
+<!-- collection-totals:start -->
+The manifest lists **31 active inputs**. [All collection totals](../../../COLLECTIONS.md).
+<!-- collection-totals:end -->
 
 Use the [shared fixture format](../../../FORMAT.md) for the directory layout and the
 [provenance index](provenance/README.md) for source and selection records.
@@ -20,7 +22,7 @@ Fixtures/.venv/bin/python Fixtures/Heaps/Similarity/TG01/tools/check.py
 The check is offline. `--metadata-only` checks layout and catalogs without
 media or the specialized validators.
 
-## Images and records
+## Original publication and acquisition records
 
 **Complete: 31 acquired and validated inputs from 152 supplied Commons leads; no pending downloads.**
 All previews have been inspected. There were 32 visual fits, followed by one

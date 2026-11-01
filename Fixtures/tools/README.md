@@ -1,5 +1,53 @@
 # Shared fixture tools
 
+## Removing an input and updating totals
+
+From the repository root:
+
+```sh
+Fixtures/collection remove SHA256 --reason "Reason for removal" --dry-run
+Fixtures/collection remove SHA256 --reason "Reason for removal"
+Fixtures/collection totals
+Fixtures/collection totals --check
+```
+
+`SHA256` is a placeholder for an input's byte hash (with or without `sha256:`).
+An input file path also works. For ambiguous hashes or leaf-relative `images/`
+paths, use `--leaf Fixtures/Heaps/Curatorial/US-Army-SSI`. Ambiguous matches and
+removing a leaf's last input are rejected before changes. Repeating a recorded
+removal reports `already_removed`. The command makes no acquisition or draw.
+
+Removal updates the JSON/CSV manifests, every batch containing the input, its
+input checksum, and probe/focused-pair entries that refer to it. Source catalogs,
+source files, acquisition records and sampler records remain unchanged. The
+removed image is preserved under `previews/removed/`, outside the sampling pool.
+Each `provenance/removals/NNNN/` contains the prior catalogs and a receipt with
+the exact image row, reason and before/after hashes. Later removals extend this
+chain. Failed writes roll back the active catalogs and media; an interrupted
+operation's incomplete record is reported by name for recovery.
+
+Common validation replays every removal and verifies current catalogs, remaining
+inputs and preserved image bytes. Existing specialized validators check a
+temporary reconstruction of the original publication under `Fixtures/output/`;
+they still verify its sources, selection and acquisition evidence. Historical
+cross-collection audits resolve their manifest hashes through checked removal
+snapshots. New audits use active manifests. Other changed metadata, missing
+snapshots and missing media still fail. Saved sampler inventories retain their
+original pins and continue to report changes; removal does not rewrite history.
+The existing acquisition builders cannot reconcile removals into a new
+publication; rebuilding a leaf with removal history is rejected before replacing
+its active inputs. Ordinary removal and validation need no rebuild.
+
+The removal command also regenerates [collection totals](../COLLECTIONS.md) and
+marked total blocks in every leaf README. After other catalog changes, run
+`make -C Fixtures collection-totals`. `make -C Fixtures check-collection-totals`
+is read-only and fails on stale output; `test-fixture-layout` includes this check
+and removal regression tests. Counts come from manifests, so they can be generated
+without local media and do not claim that those files are present. Historical
+acquisition counts, targets and frozen editions are not current input totals.
+
+## Validation and other tools
+
 Use the Python 3.14.x `Fixtures/.venv`. Layout and relationship validation are
 offline. The optional relationship runner invokes an explicitly supplied
 experiment binary; it does not implement a comparator or download images.

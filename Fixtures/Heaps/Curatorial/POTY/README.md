@@ -6,7 +6,9 @@ activity** category populations for 2023, 2024 and 2025, then samples each poole
 population mechanically. It is fixture acquisition, with no image-similarity experiment
 or visual selection judgments.
 
-## Current state
+Current membership is in the [generated collection totals](../../../COLLECTIONS.md).
+
+## Original acquisition record
 
 | Contribution | Eligible entries | Selected | Acquired | Excluded in selection | Unused reserve | Pending acquisition |
 |---|---:|---:|---:|---:|---:|---:|

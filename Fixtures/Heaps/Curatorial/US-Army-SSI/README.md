@@ -4,7 +4,9 @@ US Army shoulder-sleeve insignia selected from a saved Commons category list,
 with one selection per identified design.
 
 Fixture ID: `hazy-us-army-ssi-v1`; kind: `curatorial_heap`.
-The manifest lists **149 inputs**.
+<!-- collection-totals:start -->
+The manifest lists **149 active inputs**. [All collection totals](../../../COLLECTIONS.md).
+<!-- collection-totals:end -->
 
 Use the [shared fixture format](../../../FORMAT.md) for the directory layout and the
 [provenance index](provenance/README.md) for source and selection records.
@@ -21,17 +23,19 @@ Fixtures/.venv/bin/python Fixtures/Heaps/Curatorial/US-Army-SSI/tools/check.py
 The check is offline. `--metadata-only` checks layout and catalogs without
 media or the specialized validators.
 
-After the 2026-11-01 removal, all 91 sampler, layout, relationship and SSI unit
-tests pass, as do basic layout/input checks for all 18 leaves. Full validation
-passes 12 leaves and fails six (all 18 passed before removal): SSI reports
-`Manifest records differ`; Botanical-Illustrations reports `Cross-fixture audit
-differs`; Evan-Amos-Uploads reports `Prior-fixture overlap audit differs`;
-Ex-Libris, Rocks-in-Thin-Section and Stone-Hand-Axes report `Prior-identity audit
-differs`. SSI reconstructs the original acquisition, and the other five checks
-compare their historical audits with the changed SSI manifest. These failures
-remain visible; their historical records have not been rewritten.
+The initial manual removal on 2026-11-01 passed all 91 sampler, layout,
+relationship and SSI unit tests and basic checks for all 18 leaves. Full
+validation then failed six leaves (all 18 had passed before removal): SSI reported
+`Manifest records differ`; Botanical-Illustrations reported `Cross-fixture audit
+differs`; Evan-Amos-Uploads reported `Prior-fixture overlap audit differs`;
+Ex-Libris, Rocks-in-Thin-Section and Stone-Hand-Axes reported `Prior-identity audit
+differs`. The removal command now records this change in
+[provenance/removals/0001/receipt.json](provenance/removals/0001/receipt.json).
+Validation checks active membership separately and resolves historical manifest
+pins through the preserved catalogs. All 18 full checks now pass, with the
+original acquisition and audit records unchanged.
 
-## Images and records
+## Original publication and acquisition records
 
 On 2026-11-01, the user requested removal of
 `images/53dc0bc0d00e5d7e985d.jpg` (`File:45th INFANTRY DIVISION swastika.jpg`,
@@ -153,7 +157,7 @@ publication audits all current prior leaves.
 
 ### Local files and checks
 
-Only the 149 manifest-listed `images/` files are comparison inputs. Each is a
+Only the manifest-listed `images/` files are comparison inputs. Each is a
 byte-identical copy of its preserved `sources/` rendition. `previews/` contains
 218 acquired review previews, inspection sheets, selected contact sheets,
 and diagnostic bodies. The bounded preview run extended to rank 220; reserve

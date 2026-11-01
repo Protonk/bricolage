@@ -167,6 +167,15 @@ def check_api(relative):
     return params
 
 
+
+# Active catalogs are checked separately from the preserved publication.
+from pathlib import Path as _RemovalPath
+import sys as _removal_sys
+_removal_tools = next(p / 'tools' for p in _RemovalPath(__file__).resolve().parents if (p / 'tools/fixture_layout.py').is_file())
+_removal_sys.path.insert(0, str(_removal_tools))
+from fixture_removal import publication_artifacts, require_unremoved
+
+@publication_artifacts(lambda: ssi.ROOT)
 def check(artifacts=None):
     root = ssi.ROOT
     output = artifacts or root
@@ -203,7 +212,7 @@ def check(artifacts=None):
     require(read(output / 'provenance/import-map.json') == imported, 'Import snapshot differs')
     require(read(output / 'provenance/acquisition.json') == summary(), 'Acquisition summary differs')
     recorded_audit = read(output / 'provenance/identity-audit.json')
-    identity_audit = audit.audit(fixture_names=[r['fixture'] for r in recorded_audit['inventories']])
+    identity_audit = audit.audit(fixture_names=[r['fixture'] for r in recorded_audit['inventories']], recorded_inventories=recorded_audit['inventories'])
     require(identity_audit['status'] == 'passed', 'Prior identity collision unresolved')
     require(read(output / 'provenance/identity-audit.json') == identity_audit, 'Cross-fixture audit differs')
     rows, sources = records(imported)
@@ -270,6 +279,7 @@ def check(artifacts=None):
 
 def replacement_snapshot(expected_sha, preserved):
     root = ssi.ROOT
+    require_unremoved(root)
     require(expected_sha and preserved, 'Published set already exists; explicit manifest hash and preserved publication required')
     require(sha(root / 'manifest.json') == expected_sha, 'Published manifest changed')
     backup = safe(root, preserved)

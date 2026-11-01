@@ -5,7 +5,7 @@ prompts. Selection is based on observed composition and visual impression across
 subjects. Provenance is checked to exclude known duplicates or related captures;
 it does not define visual similarity here.
 
-| Contribution | Acquired inputs / supplied leads | Selection prompt | Status |
+| Contribution | Originally acquired / supplied leads | Selection prompt | Status |
 |---|---:|---|---|
 | [RG01](RG01/README.md) | 31 / 107 | Small red accents in predominantly green outdoor photographs | Reviewed; selected sources acquired |
 | [SF01](SF01/README.md) | 48 / 142 | Small separated marks or objects across a continuous field | 59 visual accepts; 11 downloads pending after a recorded timeout |
@@ -14,8 +14,8 @@ it does not define visual similarity here.
 | [TG01](TG01/README.md) | 31 / 152 | Dense interlaced, overlapping plant growth | Reviewed; selected sources acquired |
 | [BSP01](BSP01/README.md) | 68 / 185 | Irregular spreading, merging or fragmenting surface regions | Reviewed; selected sources acquired |
 
-The six integrated contributions currently provide 293 inputs. Each new
-contribution belongs to this same heap and retains its short prompt, exclusions,
+Current membership is in the [generated collection totals](../../COLLECTIONS.md).
+Each new contribution belongs to this same heap and retains its short prompt, exclusions,
 acceptable looseness, source evidence and per-image decisions. Counts are targets,
 not quotas; TG01 and BSP01 additionally enforce their supplied 30-input publication minimum.
 Download failures do not change visual acceptances.

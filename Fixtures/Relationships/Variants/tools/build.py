@@ -74,6 +74,15 @@ def shared_check(root):
     return module.validate(root)
 
 
+
+# Active catalogs are checked separately from the preserved publication.
+from pathlib import Path as _RemovalPath
+import sys as _removal_sys
+_removal_tools = next(p / 'tools' for p in _RemovalPath(__file__).resolve().parents if (p / 'tools/fixture_layout.py').is_file())
+_removal_sys.path.insert(0, str(_removal_tools))
+from fixture_removal import publication_check
+
+@publication_check
 def verify(root):
     checksum_file(root, 'provenance/construction/SOURCE_SHA256SUMS.txt')
     checksum_file(root, 'provenance/construction/V06_SHA256SUMS.txt')

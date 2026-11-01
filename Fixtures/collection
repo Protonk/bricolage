@@ -1,0 +1,10 @@
+#!/bin/sh
+# Resolve the checkout independently of the caller's cwd.
+set -eu
+fixture_root=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+collection_python="$fixture_root/.venv/bin/python"
+if [ ! -x "$collection_python" ]; then
+    echo "collection: Run make -C Fixtures setup-python (Python 3.14.x required)." >&2
+    exit 2
+fi
+exec "$collection_python" "$fixture_root/tools/collection.py" "$@"

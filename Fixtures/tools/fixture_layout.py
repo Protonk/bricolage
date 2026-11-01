@@ -68,10 +68,11 @@ def matches_tool_revision(path, *, blob=None, sha256=None):
                 and (sha256 is None or row['before_sha256'] == sha256))
 
 
-def discover():
+def discover(fixtures=None):
+    fixtures = FIXTURES if fixtures is None else Path(fixtures)
     return sorted(p.parent for area in ('Heaps', 'Relationships')
-                  for p in (FIXTURES / area).rglob('manifest.json')
-                  if not set(p.relative_to(FIXTURES).parts[:-1]) &
+                  for p in (fixtures / area).rglob('manifest.json')
+                  if not set(p.relative_to(fixtures).parts[:-1]) &
                   {'images', 'sources', 'previews', 'provenance', '__pycache__'})
 
 
@@ -122,7 +123,9 @@ def check_layout(root, *, assets=True):
         require(set(names) == actual, 'Manifest/input file coverage differs')
         for row in rows:
             require(sha(root / row['file']) == row['byte_sha256'], 'Input hash differs: ' + row['file'])
-    return dict(fixture_id=manifest['fixture_id'], kind=manifest['kind'], images=len(rows), layout='passed', assets_checked=assets)
+    from fixture_removal import history
+    removals = history(root, assets=assets)
+    return dict(removed_inputs=len(removals), fixture_id=manifest['fixture_id'], kind=manifest['kind'], images=len(rows), layout='passed', assets_checked=assets)
 
 
 def check_leaf(script, checks):
@@ -135,6 +138,7 @@ def check_leaf(script, checks):
         require(sys.version_info[:2] == (3, 14), 'Use the Python 3.14.x Fixtures/.venv')
         root = Path(script).resolve().parents[1]
         result = check_layout(root, assets=not args.metadata_only)
+        result['specialized_scope'] = 'original_publication' if result['removed_inputs'] else 'current_publication'
         result['specialized_checks'] = []
         if not args.metadata_only:
             for command in checks:
