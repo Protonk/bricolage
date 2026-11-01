@@ -61,9 +61,9 @@ Reviewable stages:
 Recheck the current structure and fixture evidence from the repository root:
 
 ```sh
-.venv/bin/python Fixtures/tools/check_layout.py --full
-make test-fixture-layout
-make test-sampler
+Fixtures/.venv/bin/python Fixtures/tools/check_layout.py --full
+make -C Fixtures test-fixture-layout
+make -C Fixtures test-sampler
 ```
 
 Original shortfalls and pending acquisition/provenance cases are unchanged.

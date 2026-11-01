@@ -73,14 +73,14 @@ self-contained mechanics tests can run with `--filter ComparisonTests`.
 Ask the engine at the fixture root for N images:
 
 ```sh
-make setup-python                  # Once: uses installed python3.14 to create .venv
+make -C Fixtures setup-python      # Once: uses installed python3.14 to create Fixtures/.venv
 Fixtures/sample 12 --seed my-investigation
-make test-sampler
+make -C Fixtures test-sampler
 ```
 
-Python tools and tests target **Python 3.14.x only**, using the Git-ignored root
-`.venv`. The sampler needs no third-party packages. Other fixture tools retain
-their own dependency files; use `.venv/bin/python` when running their checks.
+Python tools and tests target **Python 3.14.x only**, using the Git-ignored
+`Fixtures/.venv`. The sampler needs no third-party packages. Other fixture tools retain
+their own dependency files; use `Fixtures/.venv/bin/python` when running their checks.
 The sampling command publishes a world, by default under `Fixtures/output/sampled/`:
 hash-named, byte-identical image copies beside a `world.json`, and nothing about
 where they came from. It returns JSON with a saved sample ID, population size,
@@ -120,7 +120,7 @@ Disposable sampler worlds are also allowed under `Fixtures/output/`.
 The manifests, source catalogs, checksums, and textual provenance remain versionable.
 See [Fixtures/README.md](Fixtures/README.md) for the format and local checks.
 All leaf sets follow the [single fixture template](Fixtures/Template/README.md).
-Each exposes `tools/check.py`; `.venv/bin/python Fixtures/tools/check_layout.py --full`
+Each exposes `tools/check.py`; `Fixtures/.venv/bin/python Fixtures/tools/check_layout.py --full`
 checks every active leaf and its specialized evidence offline.
 
 [AGENTS.md](AGENTS.md) gives working guidance. Work on the task explicitly selected

@@ -23,8 +23,8 @@ locates intake/construction records, receipts and preserved packages.
 From the repository root, using Python 3.14.x:
 
 ```sh
-.venv/bin/python -m pip install -r Fixtures/Relationships/Multiviews/tools/requirements.txt
-.venv/bin/python Fixtures/Relationships/Multiviews/tools/check.py
+Fixtures/.venv/bin/python -m pip install -r Fixtures/Relationships/Multiviews/tools/requirements.txt
+Fixtures/.venv/bin/python Fixtures/Relationships/Multiviews/tools/check.py
 ```
 
 The check is offline and includes the shared layout check and the existing

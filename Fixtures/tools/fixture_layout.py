@@ -132,7 +132,7 @@ def check_leaf(script, checks):
     parser.add_argument('--metadata-only', action='store_true', help='Layout/catalog checks without local media or specialized validation')
     args = parser.parse_args()
     try:
-        require(sys.version_info[:2] == (3, 14), 'Use the repository Python 3.14.x .venv')
+        require(sys.version_info[:2] == (3, 14), 'Use the Python 3.14.x Fixtures/.venv')
         root = Path(script).resolve().parents[1]
         result = check_layout(root, assets=not args.metadata_only)
         result['specialized_checks'] = []

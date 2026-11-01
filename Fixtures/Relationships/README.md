@@ -17,9 +17,9 @@ and source-family labels remain distinct. Neither is a similarity score.
 From the repository root:
 
 ```sh
-.venv/bin/python Fixtures/Relationships/Derivatives/tools/check.py
-.venv/bin/python Fixtures/Relationships/Multiviews/tools/check.py
-.venv/bin/python Fixtures/Relationships/Variants/tools/check.py
+Fixtures/.venv/bin/python Fixtures/Relationships/Derivatives/tools/check.py
+Fixtures/.venv/bin/python Fixtures/Relationships/Multiviews/tools/check.py
+Fixtures/.venv/bin/python Fixtures/Relationships/Variants/tools/check.py
 ```
 
 Derivatives remains the default. Use the individual README files for generation

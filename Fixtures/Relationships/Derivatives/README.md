@@ -23,8 +23,8 @@ locates intake/construction records, receipts and preserved packages.
 From the repository root, using Python 3.14.x:
 
 ```sh
-.venv/bin/python -m pip install -r Fixtures/Relationships/Derivatives/tools/requirements.txt
-.venv/bin/python Fixtures/Relationships/Derivatives/tools/check.py
+Fixtures/.venv/bin/python -m pip install -r Fixtures/Relationships/Derivatives/tools/requirements.txt
+Fixtures/.venv/bin/python Fixtures/Relationships/Derivatives/tools/check.py
 ```
 
 The check is offline and includes the shared layout check and the existing
@@ -103,8 +103,8 @@ shasum -a 256 -c SHA256SUMS.txt
 To regenerate derivatives (changes the current `images/` directory), install Pillow and run:
 
 ```sh
-.venv/bin/python -m pip install 'Pillow==12.3.0'
-.venv/bin/python tools/generate.py
+Fixtures/.venv/bin/python -m pip install 'Pillow==12.3.0'
+Fixtures/.venv/bin/python Fixtures/Relationships/Derivatives/tools/generate.py
 ```
 
 The supplied image bytes are canonical fixture v1; do not silently regenerate
@@ -118,7 +118,7 @@ The generator's small-batch writer has been corrected to recreate `smoke.txt` an
 `medium.txt`; those lists previously disappeared on regeneration. The correction
 was checked against the supplied lists without rerunning the image encoders.
 
-From the repository root, `.venv/bin/python Experiments/AppleVisionTranslation/Tools/fixtures.py check` validates this
+From the repository root, `Fixtures/.venv/bin/python Experiments/AppleVisionTranslation/Tools/fixtures.py check` validates this
 package without Pillow. See the [experiment README](../../../Experiments/AppleVisionTranslation/README.md#fixture-checks-and-exploration)
 for the focused comparison runner and tests. The manifest's pixel hashes describe
 Pillow's decoded RGB representation, not hazy's Apple-prepared working pixels.

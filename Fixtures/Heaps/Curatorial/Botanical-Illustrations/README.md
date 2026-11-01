@@ -23,8 +23,8 @@ locates intake/construction records, receipts and preserved packages.
 From the repository root, using Python 3.14.x:
 
 ```sh
-.venv/bin/python -m pip install -r Fixtures/Heaps/Curatorial/Botanical-Illustrations/tools/requirements.txt
-.venv/bin/python Fixtures/Heaps/Curatorial/Botanical-Illustrations/tools/check.py
+Fixtures/.venv/bin/python -m pip install -r Fixtures/Heaps/Curatorial/Botanical-Illustrations/tools/requirements.txt
+Fixtures/.venv/bin/python Fixtures/Heaps/Curatorial/Botanical-Illustrations/tools/check.py
 ```
 
 The check is offline and includes the shared layout check and the existing
@@ -214,10 +214,10 @@ and refuses silent overwrites before publishing.
 From the repository root, with Pillow installed from the pinned requirements:
 
 ```sh
-.venv/bin/python Fixtures/Heaps/Curatorial/Botanical-Illustrations/tools/population.py
-.venv/bin/python Fixtures/Heaps/Curatorial/Botanical-Illustrations/tools/integrate.py list
-.venv/bin/python Fixtures/Heaps/Curatorial/Botanical-Illustrations/tools/integrate.py check
-.venv/bin/python -m unittest discover -s Fixtures/Heaps/Curatorial/Botanical-Illustrations/tools -p 'test_*.py'
+Fixtures/.venv/bin/python Fixtures/Heaps/Curatorial/Botanical-Illustrations/tools/population.py
+Fixtures/.venv/bin/python Fixtures/Heaps/Curatorial/Botanical-Illustrations/tools/integrate.py list
+Fixtures/.venv/bin/python Fixtures/Heaps/Curatorial/Botanical-Illustrations/tools/integrate.py check
+Fixtures/.venv/bin/python -m unittest discover -s Fixtures/Heaps/Curatorial/Botanical-Illustrations/tools -p 'test_*.py'
 ```
 
 The checker replays population IDs, ordering, decisions and provisional selection;

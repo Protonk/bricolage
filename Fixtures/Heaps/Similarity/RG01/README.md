@@ -23,8 +23,8 @@ locates intake/construction records, receipts and preserved packages.
 From the repository root, using Python 3.14.x:
 
 ```sh
-.venv/bin/python -m pip install -r Fixtures/Heaps/Similarity/RG01/tools/requirements.txt
-.venv/bin/python Fixtures/Heaps/Similarity/RG01/tools/check.py
+Fixtures/.venv/bin/python -m pip install -r Fixtures/Heaps/Similarity/RG01/tools/requirements.txt
+Fixtures/.venv/bin/python Fixtures/Heaps/Similarity/RG01/tools/check.py
 ```
 
 The check is offline and includes the shared layout check and the existing
@@ -131,9 +131,9 @@ Use an isolated Python environment with Pillow 12.0.0; it is the only third-part
 dependency. From the repository root:
 
 ```sh
-.venv/bin/python -m pip install -r Fixtures/Heaps/Similarity/RG01/tools/requirements.txt
-.venv/bin/python Fixtures/Heaps/Similarity/RG01/tools/heap.py check
-.venv/bin/python -m unittest discover -s Fixtures/Heaps/Similarity/RG01/tools -p test_commons.py
+Fixtures/.venv/bin/python -m pip install -r Fixtures/Heaps/Similarity/RG01/tools/requirements.txt
+Fixtures/.venv/bin/python Fixtures/Heaps/Similarity/RG01/tools/heap.py check
+Fixtures/.venv/bin/python -m unittest discover -s Fixtures/Heaps/Similarity/RG01/tools -p test_commons.py
 ```
 
 `commons.py previews --limit 1` and `commons.py acquire --limit 1` default to a

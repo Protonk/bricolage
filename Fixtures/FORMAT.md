@@ -37,8 +37,8 @@ and other hash-bound historical records retain their original paths and bytes.
 `provenance/intake/selection.json` records a Curatorial selection. Their meanings
 remain distinct. Live code belongs in `tools/`, including generators.
 
-Run `.venv/bin/python <leaf>/tools/check.py` for common and specialized offline
-validation, or `.venv/bin/python Fixtures/tools/check_layout.py --full` for all
+Run `Fixtures/.venv/bin/python <leaf>/tools/check.py` for common and specialized offline
+validation, or `Fixtures/.venv/bin/python Fixtures/tools/check_layout.py --full` for all
 leaves. `--metadata-only` checks structure/catalogs without local media; it is
 not full provenance validation. Empty ignored media directories may be absent in
 a fresh checkout; restore them and the recorded assets before full checks.

@@ -13,11 +13,11 @@ incomplete until those checks have been performed.
 
 The template deliberately uses `.in` filenames and lives outside both population
 roots, so neither the sampler nor legacy audit discovery can mistake it for a set.
-Run `../../.venv/bin/python ../tools/new_fixture.py --help` from this directory,
+Run `../.venv/bin/python ../tools/new_fixture.py --help` from this directory,
 or use the repository-root command below:
 
 ```sh
-.venv/bin/python Fixtures/tools/new_fixture.py Fixtures/Heaps/Curatorial/My-Set --id my-set-v1 --kind curatorial_heap
+Fixtures/.venv/bin/python Fixtures/tools/new_fixture.py Fixtures/Heaps/Curatorial/My-Set --id my-set-v1 --kind curatorial_heap
 ```
 
 The destination must be new. The scaffold contains empty catalogs and media
@@ -59,7 +59,7 @@ Keep image/source IDs, paths and bytes stable during organizational changes.
 Selection bases are different from relationship assertions. Do not invent a
 visual prompt for a curatorial set or expected matching pairs for a heap.
 
-Use Python 3.14.x in the root `.venv`. Install the leaf's `tools/requirements.txt`
+Use Python 3.14.x in `Fixtures/.venv`. Install the leaf's `tools/requirements.txt`
 there when its tools need dependencies. Run its `tools/check.py` for the common
 checks plus its specialized validator. A shared implementation may serve several
 leaves, with a small entry point per leaf.

@@ -123,11 +123,11 @@ families are empty.
 From the repository root:
 
 ```sh
-.venv/bin/python -m pip install -r Fixtures/Heaps/Curatorial/POTY/requirements.txt
-.venv/bin/python Fixtures/Heaps/Curatorial/POTY/tools/integrate.py list
-.venv/bin/python Fixtures/Heaps/Curatorial/POTY/tools/integrate.py check
-.venv/bin/python Fixtures/Heaps/Curatorial/POTY/tools/integrate.py check --category "People and human activity"
-.venv/bin/python -m unittest discover -s Fixtures/Heaps/Curatorial/POTY/tools -p 'test_*.py'
+Fixtures/.venv/bin/python -m pip install -r Fixtures/Heaps/Curatorial/POTY/requirements.txt
+Fixtures/.venv/bin/python Fixtures/Heaps/Curatorial/POTY/tools/integrate.py list
+Fixtures/.venv/bin/python Fixtures/Heaps/Curatorial/POTY/tools/integrate.py check
+Fixtures/.venv/bin/python Fixtures/Heaps/Curatorial/POTY/tools/integrate.py check --category "People and human activity"
+Fixtures/.venv/bin/python -m unittest discover -s Fixtures/Heaps/Curatorial/POTY/tools -p 'test_*.py'
 ```
 
 The checker reconstructs category/year membership from raw published revisions, replays

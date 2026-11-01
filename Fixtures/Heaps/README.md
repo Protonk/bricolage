@@ -54,9 +54,9 @@ artist roles left unknown.
 To rebuild on macOS with the acquired local assets present:
 
 ```sh
-make setup-python
-.venv/bin/python -m pip install -r Fixtures/Heaps/tools/tour-requirements.txt
-.venv/bin/python Fixtures/Heaps/tools/build_tour.py
+make -C Fixtures setup-python
+Fixtures/.venv/bin/python -m pip install -r Fixtures/Heaps/tools/tour-requirements.txt
+Fixtures/.venv/bin/python Fixtures/Heaps/tools/build_tour.py
 ```
 
 The builder checks the edition's recorded leaf roster and counts, the selected input hashes

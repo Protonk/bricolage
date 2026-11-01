@@ -23,8 +23,8 @@ locates intake/construction records, receipts and preserved packages.
 From the repository root, using Python 3.14.x:
 
 ```sh
-.venv/bin/python -m pip install -r Fixtures/Heaps/Similarity/PS01/tools/requirements.txt
-.venv/bin/python Fixtures/Heaps/Similarity/PS01/tools/check.py
+Fixtures/.venv/bin/python -m pip install -r Fixtures/Heaps/Similarity/PS01/tools/requirements.txt
+Fixtures/.venv/bin/python Fixtures/Heaps/Similarity/PS01/tools/check.py
 ```
 
 The check is offline and includes the shared layout check and the existing
@@ -108,9 +108,9 @@ prior local inventories; possible capture relationships were reviewed separately
 From the repository root, using Python with the pinned Pillow dependency:
 
 ```sh
-.venv/bin/python -m pip install -r Fixtures/Heaps/Similarity/PS01/tools/requirements.txt
-.venv/bin/python Fixtures/Heaps/Similarity/PS01/tools/integrate.py check
-.venv/bin/python -m unittest discover -s Fixtures/Heaps/Similarity/PS01/tools -p 'test_*.py'
+Fixtures/.venv/bin/python -m pip install -r Fixtures/Heaps/Similarity/PS01/tools/requirements.txt
+Fixtures/.venv/bin/python Fixtures/Heaps/Similarity/PS01/tools/integrate.py check
+Fixtures/.venv/bin/python -m unittest discover -s Fixtures/Heaps/Similarity/PS01/tools -p 'test_*.py'
 ```
 
 The offline checker verifies source/input and preview hashes, measured dimensions,
@@ -150,9 +150,9 @@ For deliberately resumed work, the supplied commands remain available:
 
 ```sh
 export HAZY_USER_AGENT='HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib'
-.venv/bin/python Fixtures/Heaps/Similarity/PS01/tools/acquire.py --stage preview --limit 12
-.venv/bin/python Fixtures/Heaps/Similarity/PS01/tools/acquire.py --stage source --limit 12
-.venv/bin/python Fixtures/Heaps/Similarity/PS01/tools/status.py
+Fixtures/.venv/bin/python Fixtures/Heaps/Similarity/PS01/tools/acquire.py --stage preview --limit 12
+Fixtures/.venv/bin/python Fixtures/Heaps/Similarity/PS01/tools/acquire.py --stage source --limit 12
+Fixtures/.venv/bin/python Fixtures/Heaps/Similarity/PS01/tools/status.py
 ```
 
 Valid cached files are reused. Acquisition and review share a local lock to avoid

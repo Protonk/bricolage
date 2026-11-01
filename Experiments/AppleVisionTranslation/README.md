@@ -74,7 +74,7 @@ fixture checker; it is not part of the fixed Swift test inventory. Its varied
 compositions do not imply that translation registration is applicable.
 
 The developer tools target Python 3.14.x with no third-party packages. Use the
-repository's `.venv` (`make setup-python`, then `source .venv/bin/activate`
+repository's `.venv` (`make -C Fixtures setup-python`, then `source Fixtures/.venv/bin/activate`
 from the repository root) for Python commands and tests below. Build the
 experiment before running comparisons. The default binary is
 `Experiments/AppleVisionTranslation/.build/debug/hazy-vision-translation`;

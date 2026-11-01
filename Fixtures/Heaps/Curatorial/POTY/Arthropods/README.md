@@ -23,8 +23,8 @@ locates intake/construction records, receipts and preserved packages.
 From the repository root, using Python 3.14.x:
 
 ```sh
-.venv/bin/python -m pip install -r Fixtures/Heaps/Curatorial/POTY/Arthropods/tools/requirements.txt
-.venv/bin/python Fixtures/Heaps/Curatorial/POTY/Arthropods/tools/check.py
+Fixtures/.venv/bin/python -m pip install -r Fixtures/Heaps/Curatorial/POTY/Arthropods/tools/requirements.txt
+Fixtures/.venv/bin/python Fixtures/Heaps/Curatorial/POTY/Arthropods/tools/check.py
 ```
 
 The check is offline and includes the shared layout check and the existing
@@ -75,7 +75,7 @@ are taken from individual file evidence; no new collection license is assigned.
 From the repository root, with Pillow from `tools/requirements.txt` installed:
 
 ```sh
-.venv/bin/python Fixtures/Heaps/Curatorial/POTY/tools/integrate.py check --category "Arthropods"
+Fixtures/.venv/bin/python Fixtures/Heaps/Curatorial/POTY/tools/integrate.py check --category "Arthropods"
 ```
 
 This check is offline and needs only this contribution’s evidence and local media. It

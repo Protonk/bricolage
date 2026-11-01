@@ -23,8 +23,8 @@ locates intake/construction records, receipts and preserved packages.
 From the repository root, using Python 3.14.x:
 
 ```sh
-.venv/bin/python -m pip install -r Fixtures/Heaps/Curatorial/Evan-Amos-Uploads/tools/requirements.txt
-.venv/bin/python Fixtures/Heaps/Curatorial/Evan-Amos-Uploads/tools/check.py
+Fixtures/.venv/bin/python -m pip install -r Fixtures/Heaps/Curatorial/Evan-Amos-Uploads/tools/requirements.txt
+Fixtures/.venv/bin/python Fixtures/Heaps/Curatorial/Evan-Amos-Uploads/tools/check.py
 ```
 
 The check is offline and includes the shared layout check and the existing
@@ -159,10 +159,10 @@ manifest-kind, nesting, shared discovery or router change is required.
 From the repository root, with Pillow installed from the pinned requirements:
 
 ```sh
-.venv/bin/python Fixtures/Heaps/Curatorial/Evan-Amos-Uploads/tools/population.py
-.venv/bin/python Fixtures/Heaps/Curatorial/Evan-Amos-Uploads/tools/integrate.py list
-.venv/bin/python Fixtures/Heaps/Curatorial/Evan-Amos-Uploads/tools/integrate.py check
-.venv/bin/python -m unittest discover -s Fixtures/Heaps/Curatorial/Evan-Amos-Uploads/tools -p 'test_*.py'
+Fixtures/.venv/bin/python Fixtures/Heaps/Curatorial/Evan-Amos-Uploads/tools/population.py
+Fixtures/.venv/bin/python Fixtures/Heaps/Curatorial/Evan-Amos-Uploads/tools/integrate.py list
+Fixtures/.venv/bin/python Fixtures/Heaps/Curatorial/Evan-Amos-Uploads/tools/integrate.py check
+Fixtures/.venv/bin/python -m unittest discover -s Fixtures/Heaps/Curatorial/Evan-Amos-Uploads/tools -p 'test_*.py'
 ```
 
 The checker replays the raw category inventory, complete ordering and exact

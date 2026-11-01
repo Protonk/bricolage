@@ -18,7 +18,7 @@ import sampler as s
 
 
 if sys.version_info[:2] != (3, 14):
-    raise RuntimeError('Sampler tests target Python 3.14.x only; run make test-sampler')
+    raise RuntimeError('Sampler tests target Python 3.14.x only; run make -C Fixtures test-sampler')
 
 
 class SamplerTests(unittest.TestCase):

@@ -23,8 +23,8 @@ locates intake/construction records, receipts and preserved packages.
 From the repository root, using Python 3.14.x:
 
 ```sh
-.venv/bin/python -m pip install -r Fixtures/Heaps/Similarity/BSP01/tools/requirements.txt
-.venv/bin/python Fixtures/Heaps/Similarity/BSP01/tools/check.py
+Fixtures/.venv/bin/python -m pip install -r Fixtures/Heaps/Similarity/BSP01/tools/requirements.txt
+Fixtures/.venv/bin/python Fixtures/Heaps/Similarity/BSP01/tools/check.py
 ```
 
 The check is offline and includes the shared layout check and the existing
@@ -136,11 +136,11 @@ The ZIP includes source/input bytes and textual evidence; its checksum is in
 From the repository root, with the pinned Pillow requirement installed:
 
 ```sh
-.venv/bin/python Fixtures/Heaps/Similarity/BSP01/tools/check_pack.py
-.venv/bin/python Fixtures/Heaps/Similarity/BSP01/tools/prepare.py --check-only
-.venv/bin/python Fixtures/Heaps/Similarity/BSP01/tools/integrate.py check
-.venv/bin/python Fixtures/Heaps/Similarity/BSP01/tools/minimum_gate.py --strict-publish
-.venv/bin/python -m unittest discover -s Fixtures/Heaps/Similarity/BSP01/tools -p 'test_*.py'
+Fixtures/.venv/bin/python Fixtures/Heaps/Similarity/BSP01/tools/check_pack.py
+Fixtures/.venv/bin/python Fixtures/Heaps/Similarity/BSP01/tools/prepare.py --check-only
+Fixtures/.venv/bin/python Fixtures/Heaps/Similarity/BSP01/tools/integrate.py check
+Fixtures/.venv/bin/python Fixtures/Heaps/Similarity/BSP01/tools/minimum_gate.py --strict-publish
+Fixtures/.venv/bin/python -m unittest discover -s Fixtures/Heaps/Similarity/BSP01/tools -p 'test_*.py'
 ```
 
 The integration validator checks the publication floor, source/input hashes,

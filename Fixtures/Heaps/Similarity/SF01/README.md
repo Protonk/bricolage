@@ -23,8 +23,8 @@ locates intake/construction records, receipts and preserved packages.
 From the repository root, using Python 3.14.x:
 
 ```sh
-.venv/bin/python -m pip install -r Fixtures/Heaps/Similarity/SF01/tools/requirements.txt
-.venv/bin/python Fixtures/Heaps/Similarity/SF01/tools/check.py
+Fixtures/.venv/bin/python -m pip install -r Fixtures/Heaps/Similarity/SF01/tools/requirements.txt
+Fixtures/.venv/bin/python Fixtures/Heaps/Similarity/SF01/tools/check.py
 ```
 
 The check is offline and includes the shared layout check and the existing
@@ -114,9 +114,9 @@ null. The collection assigns no new license.
 From the repository root, with Pillow installed in the chosen Python environment:
 
 ```sh
-.venv/bin/python -m pip install -r Fixtures/Heaps/Similarity/SF01/tools/requirements.txt
-.venv/bin/python Fixtures/Heaps/Similarity/SF01/tools/integrate.py check
-.venv/bin/python -m unittest discover -s Fixtures/Heaps/Similarity/SF01/tools -p 'test_*.py'
+Fixtures/.venv/bin/python -m pip install -r Fixtures/Heaps/Similarity/SF01/tools/requirements.txt
+Fixtures/.venv/bin/python Fixtures/Heaps/Similarity/SF01/tools/integrate.py check
+Fixtures/.venv/bin/python -m unittest discover -s Fixtures/Heaps/Similarity/SF01/tools -p 'test_*.py'
 ```
 
 The check is offline. It verifies all source/input hashes, dimensions, CSV/JSON
@@ -162,8 +162,8 @@ the existing commands are (from the repository root):
 
 ```sh
 export HAZY_USER_AGENT='HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib'
-.venv/bin/python Fixtures/Heaps/Similarity/SF01/tools/acquire.py --stage preview --limit 12
-.venv/bin/python Fixtures/Heaps/Similarity/SF01/tools/acquire.py --stage image --limit 12
+Fixtures/.venv/bin/python Fixtures/Heaps/Similarity/SF01/tools/acquire.py --stage preview --limit 12
+Fixtures/.venv/bin/python Fixtures/Heaps/Similarity/SF01/tools/acquire.py --stage image --limit 12
 ```
 
 The current failure latch intentionally prevents both commands from issuing

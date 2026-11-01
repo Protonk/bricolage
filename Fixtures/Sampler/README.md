@@ -7,18 +7,18 @@ no network access, image transformation, comparator or activity-specific logic.
 ## Use
 
 The public executable is [`Fixtures/sample`](../sample), at the fixture root.
-It selects the repository's `.venv` regardless of the caller's working directory
+It selects `Fixtures/.venv` regardless of the caller's working directory
 or activated environment. Python 3.14.x is the only runtime and test target.
 
 From the repository root, set up once using an installed Python 3.14.x:
 
 ```sh
-make setup-python
+make -C Fixtures setup-python
 ```
 
-The Git-ignored `.venv` needs no pip packages for sampling or these tests. Setup
+The Git-ignored `Fixtures/.venv` needs no pip packages for sampling or these tests. Setup
 performs no downloads. If Python 3.14 is installed at a different path, use
-`make setup-python PYTHON314=/path/to/python3.14`. A missing environment or a
+`make -C Fixtures setup-python PYTHON314=/path/to/python3.14`. A missing environment or a
 wrong Python minor version produces an actionable error.
 
 Ask for N images directly:
@@ -302,5 +302,5 @@ of this record against the checkout; there is no separate hand-written check fil
 Fixtures/sample show draw-82acd83c6cd540a6bf4e29610ff5dc2d --paths
 Fixtures/sample verify draw-82acd83c6cd540a6bf4e29610ff5dc2d
 Fixtures/sample publish draw-82acd83c6cd540a6bf4e29610ff5dc2d
-make test-sampler
+make -C Fixtures test-sampler
 ```

@@ -23,8 +23,8 @@ locates intake/construction records, receipts and preserved packages.
 From the repository root, using Python 3.14.x:
 
 ```sh
-.venv/bin/python -m pip install -r Fixtures/Heaps/Curatorial/Ex-Libris/tools/requirements.txt
-.venv/bin/python Fixtures/Heaps/Curatorial/Ex-Libris/tools/check.py
+Fixtures/.venv/bin/python -m pip install -r Fixtures/Heaps/Curatorial/Ex-Libris/tools/requirements.txt
+Fixtures/.venv/bin/python Fixtures/Heaps/Curatorial/Ex-Libris/tools/check.py
 ```
 
 The check is offline and includes the shared layout check and the existing
@@ -139,8 +139,8 @@ comparison experiment was run.
 From the repository root, with Pillow 12.0.0 installed:
 
 ```sh
-.venv/bin/python Fixtures/Heaps/Curatorial/Ex-Libris/tools/intake.py check
-.venv/bin/python -m unittest discover -s Fixtures/Heaps/Curatorial/tools -p 'test_*.py'
+Fixtures/.venv/bin/python Fixtures/Heaps/Curatorial/Ex-Libris/tools/intake.py check
+Fixtures/.venv/bin/python -m unittest discover -s Fixtures/Heaps/Curatorial/tools -p 'test_*.py'
 ```
 
 The offline check replays population, order and decisions; verifies raw API and

@@ -19,17 +19,20 @@ code 1 with a `problems` list means a fixture or record needs attention; the JSO
 still says whether the draw itself was published. A leaf whose metadata fails
 validation is excluded and named, and the draw proceeds over the rest.
 
-The engine uses the root `.venv` with Python 3.14.x. On a new checkout, run
-`make setup-python` at the repository root once. Run `Fixtures/sample --help`
+The engine uses `Fixtures/.venv` with Python 3.14.x. On a new checkout, run
+`make -C Fixtures setup-python` at the repository root once. Run `Fixtures/sample --help`
 for commands, or read the [engine guide](Sampler/README.md) to inspect saved
-samples and attach annotations. `make test-sampler` runs the focused tests.
+samples and attach annotations. `make -C Fixtures test-sampler` runs the focused tests.
 
 ## Collections
 
 ```text
 Fixtures/
+  AGENTS.md               # Working guidance for this directory
+  Makefile                # Python 3.14 venv and test targets; run as make -C Fixtures
   sample                  # Public sampling engine
   Sampler/                # Implementation, tests and persistent JSON records
+  output/                 # Disposable worlds; sampled/ is the default
   Relationships/
     Derivatives/
     Multiviews/
@@ -94,7 +97,7 @@ Each leaf separates complete acquisition from earlier deferred selection cases.
 - Start new leaves from the [single fixture template](Template/README.md).
   It covers heaps and relationship sets, with kind-specific evidence requirements.
 - Every leaf exposes `tools/check.py` and `tools/requirements.txt`. Run
-  `.venv/bin/python Fixtures/tools/check_layout.py --full` from the repository root
+  `Fixtures/.venv/bin/python Fixtures/tools/check_layout.py --full` from the repository root
   to check all 18 leaves, including their specialized offline validators.
 - Use `Fixtures/sample N` to draw equal tickets across active Heaps and
   Relationships inputs and preserve separate arbitrary annotations.

@@ -23,8 +23,8 @@ locates intake/construction records, receipts and preserved packages.
 From the repository root, using Python 3.14.x:
 
 ```sh
-.venv/bin/python -m pip install -r Fixtures/Relationships/Variants/tools/requirements.txt
-.venv/bin/python Fixtures/Relationships/Variants/tools/check.py
+Fixtures/.venv/bin/python -m pip install -r Fixtures/Relationships/Variants/tools/requirements.txt
+Fixtures/.venv/bin/python Fixtures/Relationships/Variants/tools/check.py
 ```
 
 The check is offline and includes the shared layout check and the existing
@@ -99,10 +99,10 @@ between distinct sources. Known-shift families are empty.
 From the repository root, using an isolated environment:
 
 ```sh
-.venv/bin/python -m pip install -r Fixtures/Relationships/Variants/tools/requirements.txt
-.venv/bin/python Fixtures/Relationships/Variants/tools/build.py build --stage another-run
-.venv/bin/python Fixtures/Relationships/Variants/tools/build.py check --stage another-run
-.venv/bin/python Experiments/AppleVisionTranslation/Tools/fixtures.py check --fixtures Fixtures/Relationships/Variants
+Fixtures/.venv/bin/python -m pip install -r Fixtures/Relationships/Variants/tools/requirements.txt
+Fixtures/.venv/bin/python Fixtures/Relationships/Variants/tools/build.py build --stage another-run
+Fixtures/.venv/bin/python Fixtures/Relationships/Variants/tools/build.py check --stage another-run
+Fixtures/.venv/bin/python Experiments/AppleVisionTranslation/Tools/fixtures.py check --fixtures Fixtures/Relationships/Variants
 ```
 
 Each build requires a fresh stage name and writes under `previews/build-NAME/`.

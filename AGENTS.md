@@ -2,7 +2,8 @@
 
 Read [README.md](README.md) before substantial work. Follow the relevant track:
 
-- Fixture design, organization and intake: [Fixtures](Fixtures/README.md).
+- Fixtures, sampling and worlds: [Fixtures/AGENTS.md](Fixtures/AGENTS.md). What hazy
+  may assume about a world it receives: [WORLD.md](WORLD.md).
 - Router: [Horizontal Gene Transfer](Research/Router/HORIZONTAL-GENE-TRANSFER.md)
   and [Backwards Induction](Research/Router/BACKWARDS-INDUCTION.md).
 - Framework boundary and portability: [Research/Portability](Research/Portability/README.md)
@@ -23,22 +24,18 @@ It is not the router architecture or the future portable API.
   can rely on. Update the portability ledger when that handoff changes.
 - Keep experiment documentation consistent with code. Report meaningful changes,
   focused checks, and remaining uncertainty in plain language.
-- Target Python 3.14.x only for Python tools and tests. Use the repository's
-  `.venv` (`make setup-python`); do not run a Python version matrix. For fixture
-  samples, use `Fixtures/sample N` rather than assembling a draw by hand. See
-  [the sampling engine](Fixtures/Sampler/README.md) for records and annotations.
+- Target Python 3.14.x only for Python tools and tests. The Python toolchain is
+  Fixtures' and lives in `Fixtures/.venv` (`make -C Fixtures setup-python`); do not
+  run a Python version matrix. For fixture samples, use `Fixtures/sample N` rather
+  than assembling a draw by hand; it publishes a world as [WORLD.md](WORLD.md) describes.
 - Handle local Git logistics. When requested work reaches a completed, checked
   stopping point, stage and commit its changes on the current appropriate branch;
   `main` is fine when no separate branch is needed. Preserve unrelated work and
   do not leave completed task changes uncommitted. Leave pushing to the user
   unless explicitly asked to push.
-- Use the supplied fixtures. Do not search for or acquire a corpus. Put image
-  assets only in a fixture set's `images/`, `sources/`, or `previews/` directory;
-  all contents of those directories are Git-ignored regardless of type. Do not
-  force-add them. Generated patterns check mechanics, not usefulness on real images.
-  The sampler also writes disposable worlds, by default to `Fixtures/output/sampled/`,
-  replacing that directory on each successful draw. Keep original fixture assets and
-  durable sample records outside any `output/`; see [output guidance](Fixtures/output/AGENTS.md).
+- Use the supplied fixtures. Do not search for or acquire a corpus. Image assets,
+  worlds and sample records follow the rules in [Fixtures/AGENTS.md](Fixtures/AGENTS.md).
+  Experiment output under the root `output/` is disposable; see its [guidance](output/AGENTS.md).
 
 Router work must preserve scratch lineage for each call. Neighborhoods are
 provisional and batch-relative; semantic cluster names are an enduring anti-goal.

@@ -23,8 +23,8 @@ locates intake/construction records, receipts and preserved packages.
 From the repository root, using Python 3.14.x:
 
 ```sh
-.venv/bin/python -m pip install -r Fixtures/Heaps/Similarity/CR01/tools/requirements.txt
-.venv/bin/python Fixtures/Heaps/Similarity/CR01/tools/check.py
+Fixtures/.venv/bin/python -m pip install -r Fixtures/Heaps/Similarity/CR01/tools/requirements.txt
+Fixtures/.venv/bin/python Fixtures/Heaps/Similarity/CR01/tools/check.py
 ```
 
 The check is offline and includes the shared layout check and the existing
@@ -107,10 +107,10 @@ unscaled originals within the bound. No smaller-rendition requests were needed.
 From the repository root, using Python with the pinned Pillow dependency:
 
 ```sh
-.venv/bin/python -m pip install -r Fixtures/Heaps/Similarity/CR01/tools/requirements.txt
-.venv/bin/python Fixtures/Heaps/Similarity/CR01/tools/integrate.py check
-.venv/bin/python Fixtures/Heaps/Similarity/CR01/tools/check_pack.py
-.venv/bin/python -m unittest discover -s Fixtures/Heaps/Similarity/CR01/tools -p 'test_*.py'
+Fixtures/.venv/bin/python -m pip install -r Fixtures/Heaps/Similarity/CR01/tools/requirements.txt
+Fixtures/.venv/bin/python Fixtures/Heaps/Similarity/CR01/tools/integrate.py check
+Fixtures/.venv/bin/python Fixtures/Heaps/Similarity/CR01/tools/check_pack.py
+Fixtures/.venv/bin/python -m unittest discover -s Fixtures/Heaps/Similarity/CR01/tools -p 'test_*.py'
 ```
 
 The integration checker verifies hashes, decoded sizes, CSV/JSON agreement,

@@ -1,13 +1,13 @@
 # Shared fixture layout tools
 
-Use the repository Python 3.14.x `.venv`. These tools never download images,
+Use the Python 3.14.x `Fixtures/.venv`. These tools never download images,
 generate variants, repair evidence, or run similarity comparisons.
 
 ```sh
-make setup-python
-.venv/bin/python -m pip install -r Fixtures/tools/requirements.txt
-.venv/bin/python Fixtures/tools/check_layout.py --full
-make test-fixture-layout
+make -C Fixtures setup-python
+Fixtures/.venv/bin/python -m pip install -r Fixtures/tools/requirements.txt
+Fixtures/.venv/bin/python Fixtures/tools/check_layout.py --full
+make -C Fixtures test-fixture-layout
 ```
 
 `check_layout.py` discovers only active leaves under Heaps and Relationships at
