@@ -1,5 +1,13 @@
 #!/usr/bin/env python3
 """Compare CR01 source identities with the other local fixture inventories; no network."""
+
+# Resolve relocated evidence while preserving historical audit identifiers.
+from pathlib import Path as _LayoutPath
+import sys as _layout_sys
+_layout_root = next(p for p in _LayoutPath(__file__).resolve().parents if (p/'tools/fixture_layout.py').is_file())
+_layout_sys.path.insert(0, str(_layout_root/'tools'))
+from fixture_layout import evidence_path
+
 import csv
 import hashlib
 import json
@@ -40,7 +48,7 @@ def main():
                 add('pageid',r.get('pageid') or r.get('commons_pageid'),where)
                 add('original_sha1',r.get('original_sha1'),where)
         if name=='hazy-meme-fixtures-v0':
-            for r in json.loads((root/'source-manifest.json').read_text())['sources']:
+            for r in json.loads((evidence_path(root, 'source-manifest.json')).read_text())['sources']:
                 add('title',r['upstream_title'],name+'/'+r['file'])
                 add('original_sha1',hashlib.sha1((root/r['file']).read_bytes()).hexdigest(),name+'/'+r['file'])
     candidates=load_records();seen={key:{} for key in previous};collisions=[];within=[]

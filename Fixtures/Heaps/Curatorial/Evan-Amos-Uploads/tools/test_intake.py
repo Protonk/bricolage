@@ -26,7 +26,7 @@ def member(n,title):return dict(pageid=n,ns=6,title=title,timestamp='2026-10-31T
 class PopulationTests(unittest.TestCase):
     def test_exact_three_rejects_and_all_related_formats_are_included(self):
         with tempfile.TemporaryDirectory()as temp:
-            root=Path(temp);(root/'EXCLUSIONS.txt').write_text('\n'.join(REJECTS)+'\n')
+            root=Path(temp);(root/'provenance/intake').mkdir(parents=True);(root/'provenance/intake/EXCLUSIONS.txt').write_text('\n'.join(REJECTS)+'\n')
             rows=[member(i,t)for i,t in enumerate(REJECTS+['File:Device-FL.jpg','File:Device-FL.png','File:Device-FR.jpg','File:Reject A.jpg crop.png'],1)]
             with patch.object(p,'ROOT',root):result=p.selection(dict(candidates=p.candidates(rows)))
             self.assertEqual(result['counts'],{'included':4,'excluded_by_user':3})
@@ -36,7 +36,7 @@ class PopulationTests(unittest.TestCase):
 
     def test_changed_population_and_absent_reject_are_reported_without_a_cap(self):
         with tempfile.TemporaryDirectory()as temp:
-            root=Path(temp);(root/'EXCLUSIONS.txt').write_text('\n'.join(REJECTS)+'\n')
+            root=Path(temp);(root/'provenance/intake').mkdir(parents=True);(root/'provenance/intake/EXCLUSIONS.txt').write_text('\n'.join(REJECTS)+'\n')
             rows=[member(i,f'File:New-{i}.jpg')for i in range(200)]
             with patch.object(p,'ROOT',root):result=p.selection(dict(candidates=p.candidates(rows)))
             self.assertEqual(len(result['included']),200)

@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "baseline_commit": "fd04a3ed21a6cb706a486418997dc6e4ba1e7ff2",
+  "purpose": "Explicit source adaptations for the shared fixture layout; historical pins remain unchanged.",
+  "files": {
+    "Fixtures/Heaps/Curatorial/Botanical-Illustrations/tools/audit.py": {
+      "before_path": "Fixtures/Heaps/Curatorial/Botanical-Illustrations/tools/audit.py",
+      "before_sha256": "c409395d295e85584136c5d16ed2a09c371f43339e0823d5c8cea2344c0bc68f",
+      "before_git_blob_sha1": "2a93e97de5e8bcf4c0c5ab860db7d0d46ce95566",
+      "after_sha256": "bb693e29fc15aa33ce23a7a957bf1ac67be9c710f2b2737ae6718213438f7f8e"
+    },
+    "Fixtures/Heaps/Curatorial/Evan-Amos-Uploads/tools/audit.py": {
+      "before_path": "Fixtures/Heaps/Curatorial/Evan-Amos-Uploads/tools/audit.py",
+      "before_sha256": "ac8cfa92675025bc44febf719a6a786238b36c64a3618a1909f2777df32747b9",
+      "before_git_blob_sha1": "caf5520d0e538e2c3ca191fb7983f9a2e294428c",
+      "after_sha256": "12f2d2b6547be08fee7b6802213a2b31a23585a7b7e242511c04956dd2e63d38"
+    },
+    "Fixtures/Heaps/Curatorial/Evan-Amos-Uploads/tools/evan.py": {
+      "before_path": "Fixtures/Heaps/Curatorial/Evan-Amos-Uploads/tools/evan.py",
+      "before_sha256": "28a9c5ea63201e272eecdad28767de0098b4df1e79b524eee24a96714ce8c74a",
+      "before_git_blob_sha1": "a73c4c413ae6b6134893bb76a75b8ee136a698dd",
+      "after_sha256": "ed0b8d08efa7d611778c4eaa93457b2f28ed1af1f34b6f7ded59bf5d6ace3ae5"
+    },
+    "Fixtures/Heaps/Curatorial/Evan-Amos-Uploads/tools/population.py": {
+      "before_path": "Fixtures/Heaps/Curatorial/Evan-Amos-Uploads/tools/population.py",
+      "before_sha256": "12665f6635d1983263cf662bcb482b011dcd6bab6274f1c89c541e8e04875d62",
+      "before_git_blob_sha1": "468e82dd461fae74d40af55e78c4ae1eb5eab1a6",
+      "after_sha256": "11dbfaa8be05549a6173b49985b14152c1dce006f69d1ed7aa191491aaf635c9"
+    },
+    "Fixtures/Heaps/Curatorial/Evan-Amos-Uploads/tools/test_intake.py": {
+      "before_path": "Fixtures/Heaps/Curatorial/Evan-Amos-Uploads/tools/test_intake.py",
+      "before_sha256": "5665e50dedc0230345ab10d2549c129cd9c789d9ef085421095770560ceb29e4",
+      "before_git_blob_sha1": "cec528e9a1d5564138e97d352215c7abd38a3eb6",
+      "after_sha256": "b7994e640969f35b7c669c2a857a805925d2deae81693aec6d2470aa7fa8108c"
+    },
+    "Fixtures/Heaps/Curatorial/US-Army-SSI/tools/audit.py": {
+      "before_path": "Fixtures/Heaps/Curatorial/US-Army-SSI/tools/audit.py",
+      "before_sha256": "f9d25678e4822689f821f4594b708cf1d7cb0b35a8373d8c112cdd2e2751388c",
+      "before_git_blob_sha1": "23db9e26f2fc435c0c8a5f8619e9934a3f16cfc1",
+      "after_sha256": "5298283e834cac274b985e0af57be503a2bd5c68c6de6c3d67cbccf4ff2804ac"
+    },
+    "Fixtures/Heaps/Similarity/BSP01/tools/audit.py": {
+      "before_path": "Fixtures/Heaps/Similarity/BSP01/tools/audit.py",
+      "before_sha256": "6ecb17812b8dc43aa900ab86bd1b072e8622eac39848a2139c83e7c6a8a3aedc",
+      "before_git_blob_sha1": "987efe9db40e5d6d59183f9973487883097bba14",
+      "after_sha256": "2e54be567d7e5d698c4460167b27c42213f2dd575397480e6e94ae5192e7dee2"
+    },
+    "Fixtures/Heaps/Similarity/CR01/tools/audit.py": {
+      "before_path": "Fixtures/Heaps/Similarity/CR01/tools/audit.py",
+      "before_sha256": "ca7c1c496806fe79d4534a5a361bc69b036606028bff4c4b7295fe822e3c4fb0",
+      "before_git_blob_sha1": "5cde364e05723c712d42f60101caa7798dd3210a",
+      "after_sha256": "0f2b20073bab76b2e9434b430c3adb6f124ec5689656b40a70574681aa32aaf2"
+    },
+    "Fixtures/Heaps/Similarity/PS01/tools/audit.py": {
+      "before_path": "Fixtures/Heaps/Similarity/PS01/tools/audit.py",
+      "before_sha256": "edc4f592f77d9c25ec19cd92524f2047fc433adfe5c123dfc9f813ba34cea200",
+      "before_git_blob_sha1": "fbce087963731c93c174878284650d3db42985c0",
+      "after_sha256": "73595695159bb10b78bbbdb37a8923aabdd519284da2522380fd67b6fcac9bef"
+    },
+    "Fixtures/Heaps/Similarity/RG01/tools/commons.py": {
+      "before_path": "Fixtures/Heaps/Similarity/RG01/provenance/commons.py",
+      "before_sha256": "49abbdf7cacb45e24c755bba801342e0c8b37bec825eea93bf8ea1a416e86a49",
+      "before_git_blob_sha1": "b41f2418d3750f9a66cac9a88f72edd060098773",
+      "after_sha256": "5f2b00357f4343c0ac2115d39e75e6bc8b1d634d044c07ec2d77ac085e3b59c2"
+    },
+    "Fixtures/Heaps/Similarity/RG01/tools/heap.py": {
+      "before_path": "Fixtures/Heaps/Similarity/RG01/provenance/heap.py",
+      "before_sha256": "2090345e3702b760a4aa4c294746d2b70dce202bbe3eef5183fca89026410b96",
+      "before_git_blob_sha1": "f762cc7691c5c71550542de590f416da965bdd91",
+      "after_sha256": "b4b4cdac038689e73229106bee53df9ac3309b1c1acf13658e482e9892071bc5"
+    },
+    "Fixtures/Heaps/Similarity/SF01/tools/audit.py": {
+      "before_path": "Fixtures/Heaps/Similarity/SF01/tools/audit.py",
+      "before_sha256": "0ad836aadea61bdd606db63ee9583f8f99f255ab63470e5051f69d1cf37cc93b",
+      "before_git_blob_sha1": "25d25717013180d7f6b01c7fef89777fff438862",
+      "after_sha256": "a55d5b1fdd2c719732423603e586d6725b57a86732a38b91b6308cb3cd35ecff"
+    },
+    "Fixtures/Heaps/Similarity/TG01/tools/audit.py": {
+      "before_path": "Fixtures/Heaps/Similarity/TG01/tools/audit.py",
+      "before_sha256": "373d84f91fe9c052f0cd5f26e2472cc9d9d281470a6b170e8f42cb2c7d55c14e",
+      "before_git_blob_sha1": "ce43cf33778860bfc563f78cb96c5aeeea06ff62",
+      "after_sha256": "21acce874cb118cb31231a3a3a4d8b452ded9adf6803a0ecfebd0f5dc44afe5f"
+    }
+  }
+}

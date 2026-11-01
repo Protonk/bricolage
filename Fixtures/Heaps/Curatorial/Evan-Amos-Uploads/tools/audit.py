@@ -1,5 +1,13 @@
 #!/usr/bin/env python3
 """Offline exact-identity audit against the other integrated fixture leaves."""
+
+# Resolve relocated evidence while preserving historical audit identifiers.
+from pathlib import Path as _LayoutPath
+import sys as _layout_sys
+_layout_root = next(p for p in _LayoutPath(__file__).resolve().parents if (p/'tools/fixture_layout.py').is_file())
+_layout_sys.path.insert(0, str(_layout_root/'tools'))
+from fixture_layout import evidence_path
+
 import csv
 import hashlib
 import json
@@ -63,7 +71,7 @@ def audit(fixture_names=None):
                 add('pageid', row.get('pageid') or row.get('commons_pageid'), where)
                 add('original_sha1', row.get('original_sha1'), where)
         if leaf.name == 'Variants':
-            source_manifest = leaf / 'source-manifest.json'
+            source_manifest = evidence_path(leaf, 'source-manifest.json')
             record['source_manifest_sha256'] = sha(source_manifest)
             for row in e.read(source_manifest)['sources']:
                 add('title', row['upstream_title'], name + '/' + row['file'])

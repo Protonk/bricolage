@@ -186,7 +186,7 @@ def main():
     args = parser.parse_args()
     if not 1 <= args.limit <= 107:
         parser.error('limit must be 1..107')
-    candidates = [json.loads(line) for line in path('candidates.jsonl').read_text().splitlines()]
+    candidates = [json.loads(line) for line in path('provenance/intake/candidates.jsonl').read_text().splitlines()]
     if args.mode == 'acquire':
         reviews = json.loads(path('provenance/reviews.json').read_text())
         accepted = {r['candidate_id'] for r in reviews if r['decision'] == 'accept'

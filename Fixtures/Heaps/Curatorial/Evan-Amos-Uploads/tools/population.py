@@ -32,7 +32,7 @@ def candidates(rows):
 
 
 def selection(inventory):
-    excluded = (ROOT / 'EXCLUSIONS.txt').read_text().splitlines()
+    excluded = (ROOT / 'provenance/intake/EXCLUSIONS.txt').read_text().splitlines()
     require(len(excluded) == 3 and len(set(excluded)) == 3, 'Expected three exact exclusions')
     rows = inventory['candidates']
     ordered = sorted(rows, key=lambda r: (r['frozen_title'], r['category_pageid']))
@@ -83,7 +83,7 @@ def reconstruct():
 
 
 def freeze():
-    require(not (ROOT/'inventory.json').exists(), 'Population already frozen; use offline check')
+    require(not (ROOT/'provenance/intake/inventory.json').exists(), 'Population already frozen; use offline check')
     client=Client(ROOT);continuation={};seen=set();n=1
     try:
         while True:
@@ -95,9 +95,9 @@ def freeze():
         inventory=reconstruct()
     except ValueError as error:
         client.stop(dict(utc=utc(),kind='population-validation',error=str(error),metadata_path=f'provenance/api/category-{n:04d}.json'))
-    dump(ROOT/'inventory.json',inventory)
-    chosen=selection(inventory);dump(ROOT/'selection.json',chosen)
-    dump(ROOT/'ordering.json',dict(algorithm='Ascending exact frozen Unicode title, then numeric category page ID; enumeration only, no random seed or cutoff.',
+    dump(ROOT/'provenance/intake/inventory.json',inventory)
+    chosen=selection(inventory);dump(ROOT/'provenance/intake/selection.json',chosen)
+    dump(ROOT/'provenance/intake/ordering.json',dict(algorithm='Ascending exact frozen Unicode title, then numeric category page ID; enumeration only, no random seed or cutoff.',
                                    candidate_ids=[r['candidate_id'] for r in chosen['decisions']]))
     print(check())
 
@@ -105,10 +105,10 @@ def freeze():
 def check():
     intake=read(ROOT/'provenance/intake.json')
     for name,digest in intake['source_files'].items():require(sha(ROOT/'provenance/supplied'/name)==digest,'Changed handoff')
-    require((ROOT/'EXCLUSIONS.txt').read_bytes()==(ROOT/'provenance/supplied/EXCLUSIONS.txt').read_bytes(),'Changed supplied exclusions')
-    inventory=reconstruct();require(read(ROOT/'inventory.json')==inventory,'Inventory does not replay')
-    chosen=selection(inventory);require(read(ROOT/'selection.json')==chosen,'Selection does not replay')
-    require(read(ROOT/'ordering.json')['candidate_ids']==[r['candidate_id'] for r in chosen['decisions']],'Order differs')
+    require((ROOT/'provenance/intake/EXCLUSIONS.txt').read_bytes()==(ROOT/'provenance/supplied/EXCLUSIONS.txt').read_bytes(),'Changed supplied exclusions')
+    inventory=reconstruct();require(read(ROOT/'provenance/intake/inventory.json')==inventory,'Inventory does not replay')
+    chosen=selection(inventory);require(read(ROOT/'provenance/intake/selection.json')==chosen,'Selection does not replay')
+    require(read(ROOT/'provenance/intake/ordering.json')['candidate_ids']==[r['candidate_id'] for r in chosen['decisions']],'Order differs')
     return dict(status='passed',members=inventory['actual_count'],**chosen['counts'],absent_exclusion_titles=chosen['absent_exclusion_titles'])
 
 

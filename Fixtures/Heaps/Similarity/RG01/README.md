@@ -1,5 +1,43 @@
 # RG01 — Small warm-colored things in big green places
 
+## Purpose and basis
+
+31 photographs selected by the red-accent / green-outdoor prompt. No similarity or membership ground truth.
+Fixture ID: `hazy-rg01-v1`; kind: `prompt_heap`.
+
+## Completeness
+
+The published manifest contains **31 inputs**. The detailed record below
+retains the original selection counts, pending cases and acquisition limitations.
+The layout migration changes no membership or completion status.
+
+## Contents
+
+This leaf follows the [shared fixture format](../../../FORMAT.md).
+`images/`, `sources/`, `previews/` and `batches/` retain their roles. Live commands
+and dependencies are in `tools/`; the [evidence index](provenance/README.md)
+locates intake/construction records, receipts and preserved packages.
+
+## Validation
+
+From the repository root, using Python 3.14.x:
+
+```sh
+.venv/bin/python -m pip install -r Fixtures/Heaps/Similarity/RG01/tools/requirements.txt
+.venv/bin/python Fixtures/Heaps/Similarity/RG01/tools/check.py
+```
+
+The check is offline and includes the shared layout check and the existing
+specialized validators. `--metadata-only` omits media and specialized checks.
+
+## Limitations
+
+Selection and source relationships retain their recorded scope; they are not
+similarity scores or additional matching assertions. Technical/provenance
+uncertainties and partial acquisitions remain documented below.
+
+## Detailed record
+
 **Status: 31-image starter heap acquired and checked.** All 107 supplied Commons
 leads were reviewed at thumbnail scale: 31 selected, 69 rejected, and seven
 warm-color fallbacks deferred. The original target was roughly 70 photographs
@@ -12,7 +50,7 @@ provenance-based similarity, ground-truth pairs, or a semantic router cluster.
 Original framing and colors are retained. Some selected images have large accents,
 muted reds, paths, sky or buildings; per-image choices remain inspectable judgments.
 
-## Contents and lineage
+### Contents and lineage
 
 - `images/`: 31 flat, opaque comparison inputs, copied unchanged from acquired bytes.
 - `sources/`: 31 preserved Commons renditions, named by their original candidate IDs.
@@ -20,7 +58,7 @@ muted reds, paths, sky or buildings; per-image choices remain inspectable judgme
   EXIF orientation, format and byte hashes are measured from the actual downloads.
 - [SOURCES.md](SOURCES.md) / `sources.csv`: file-specific attribution, licenses,
   source pages, acquired URLs and processing notes.
-- [prompt.json](prompt.json): selection intent, actual count and shortfall.
+- [provenance/intake/prompt.json](provenance/intake/prompt.json): selection intent, actual count and shortfall.
 - [provenance/reviews.json](provenance/reviews.json): every decision, visual reason,
   preview hash, creator/license evidence and limits of the independence review.
 - [provenance/import-map.json](provenance/import-map.json): candidate → Commons
@@ -32,13 +70,13 @@ muted reds, paths, sky or buildings; per-image choices remain inspectable judgme
 - `previews/hazy-rg01-v1.zip`: local package with inputs, preserved renditions,
   manifests, credits, textual provenance and selected contact sheets.
 
-`candidates.csv` and `candidates.jsonl` contain the updated screening/acquisition
+`provenance/intake/candidates.csv` and `provenance/intake/candidates.jsonl` contain the updated screening/acquisition
 state. Their supplied versions and the original source index/README are retained
 under `provenance/supplied-*`. Candidate IDs identify lead rows. Stable input
 identities derive from Commons page ID and original file SHA-1, not a subject label.
 All image assets and the ZIP remain in Git-ignored asset directories.
 
-## Similarity and compatibility
+### Similarity and compatibility
 
 The image/source columns follow the other fixtures, but `kind=prompt_heap` is
 explicit. Each image has its own source identity; `scene_id` is empty. Source
@@ -58,7 +96,7 @@ not proven by a URL, differing hashes or this limited audit, so
 `source_independence_confirmed` remains null. Licenses are recorded from Commons'
 file-specific metadata, with the raw evidence retained.
 
-## Commons acquisition
+### Commons acquisition
 
 The downloader identifies itself as
 `HazyFixtureBot/0.1 (https://github.com/Protonk/hazy) Python-urllib`. It uses the
@@ -87,15 +125,15 @@ response-body bytes (metadata, 107 previews and 31 selected renditions). There
 were no retries or access/rate-limit failures. This is a record of this run, not
 a promised rate entitlement.
 
-## Local checks and reproduction
+### Local checks and reproduction
 
 Use an isolated Python environment with Pillow 12.0.0; it is the only third-party
 dependency. From the repository root:
 
 ```sh
-python3 -m venv /private/tmp/hazy-rg01-env
-/private/tmp/hazy-rg01-env/bin/pip install -r Fixtures/Heaps/Similarity/RG01/provenance/requirements.txt
-/private/tmp/hazy-rg01-env/bin/python Fixtures/Heaps/Similarity/RG01/provenance/heap.py check
+.venv/bin/python -m venv /private/tmp/hazy-rg01-env
+/private/tmp/hazy-rg01-env/bin/pip install -r Fixtures/Heaps/Similarity/RG01/tools/requirements.txt
+/private/tmp/hazy-rg01-env/bin/python Fixtures/Heaps/Similarity/RG01/tools/heap.py check
 /private/tmp/hazy-rg01-env/bin/python -m unittest discover -s Fixtures/Heaps/Similarity/RG01/provenance -p test_commons.py
 ```
 

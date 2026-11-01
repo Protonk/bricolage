@@ -1,5 +1,43 @@
 # hazy derivatives fixture v1
 
+## Purpose and basis
+
+Synthetic derivatives with source provenance; family_id is not an asserted matching cluster.
+Fixture ID: `hazy-derivatives-v1`; kind: `derivatives`.
+
+## Completeness
+
+The published manifest contains **183 inputs**. The detailed record below
+retains the original selection counts, pending cases and acquisition limitations.
+The layout migration changes no membership or completion status.
+
+## Contents
+
+This leaf follows the [shared fixture format](../../FORMAT.md).
+`images/`, `sources/`, `previews/` and `batches/` retain their roles. Live commands
+and dependencies are in `tools/`; the [evidence index](provenance/README.md)
+locates intake/construction records, receipts and preserved packages.
+
+## Validation
+
+From the repository root, using Python 3.14.x:
+
+```sh
+.venv/bin/python -m pip install -r Fixtures/Relationships/Derivatives/tools/requirements.txt
+.venv/bin/python Fixtures/Relationships/Derivatives/tools/check.py
+```
+
+The check is offline and includes the shared layout check and the existing
+specialized validators. `--metadata-only` omits media and specialized checks.
+
+## Limitations
+
+Selection and source relationships retain their recorded scope; they are not
+similarity scores or additional matching assertions. Technical/provenance
+uncertainties and partial acquisitions remain documented below.
+
+## Detailed record
+
 A fixed batch of **183 images** intended to exercise coarse image-similarity grouping without using anyone's personal photo library.
 
 This is the originally supplied `hazy-fixtures-v1`, renamed to distinguish it
@@ -10,7 +48,7 @@ The manifests now add schema identity, stored EXIF orientation, and an empty
 
 **Use `images/` as the input set.** It is a single flat directory with opaque filenames so the expected group membership is not conveyed by names or directories. The answer key and provenance are separate.
 
-## What's in the corpus
+### What's in the corpus
 
 - **12 source families**, with **14 images each**: an untouched source, byte-for-byte copy, pixel-preserving PNG re-encode, two JPEG compressions, half-scale image, two crops, a 90° rotation, mirror, color shift, letterbox, mock interface overlay, and blur.
 - **3 singleton photographs**, with no deliberate variants in `images/`.
@@ -19,7 +57,7 @@ The manifests now add schema identity, stored EXIF orientation, and an empty
 
 No source is one of your own images. These originals come from the public-domain and CC0 sample data distributed with scikit-image. See `SOURCES.md` and `sources.csv` for provenance.
 
-## Contents
+### Contents
 
 | File/folder | Purpose |
 |---|---|
@@ -32,11 +70,11 @@ No source is one of your own images. These originals come from the public-domain
 | `sources/`, `sources.csv`, `SOURCES.md` | Unaltered source assets with credits and source hashes (not part of input set) |
 | `SHA256SUMS.txt` | Expected raw hashes for all `images/` and `sources/` assets |
 | `selections.json` | Focused comparison pairs and sources for controlled-shift tests |
-| `provenance/generate.py` | Rebuilds variants from bundled originals; Pillow 12.3.0 was used for this release |
+| `tools/generate.py` | Rebuilds variants from bundled originals; Pillow 12.3.0 was used for this release |
 | `previews/preview.jpg` | Original source contact sheet; *not* part of input set |
 | `provenance/supplied-*` | Original metadata before schema normalization |
 
-## What the labels mean
+### What the labels mean
 
 `family_id` means **derived from the same original bytes**, not "the correct Apple Vision cluster." Deliberate crops, rotation, and composites are useful precisely because visual similarity under these operations may vary considerably. The ground-truth assertions here are limited to provenance, byte identity, and pixel identity; no image similarity scores were computed and no threshold has been prescribed.
 
@@ -48,13 +86,13 @@ No source is one of your own images. These originals come from the public-domain
 
 `probes.csv` lists explicit comparison pairs, including different-origin images that might resemble one another in feature space. The `interpretation` field avoids pretending the supplied labels are Vision's answers.
 
-## Batches
+### Batches
 
 `batch-1.txt` to `batch-4.txt` together partition all 183 `images/` files. They do not partition by source family: copies of one image are spread across batches. Lists are stable and relative to the corpus root.
 
 For a short trial, use the 24 files in `batches/smoke.txt`. For the full trial, import the four lists independently, or import `images/` in one pass. The same files and manifest can be used for every subsequent revision.
 
-## Reproduction and checks
+### Reproduction and checks
 
 To confirm unchanged input bytes on a Mac, run from the corpus root:
 
@@ -65,8 +103,8 @@ shasum -a 256 -c SHA256SUMS.txt
 To regenerate derivatives (changes the current `images/` directory), install Pillow and run:
 
 ```sh
-python3 -m pip install 'Pillow==12.3.0'
-python3 provenance/generate.py
+.venv/bin/python -m pip install 'Pillow==12.3.0'
+.venv/bin/python tools/generate.py
 ```
 
 The supplied image bytes are canonical fixture v1; do not silently regenerate
@@ -80,15 +118,15 @@ The generator's small-batch writer has been corrected to recreate `smoke.txt` an
 `medium.txt`; those lists previously disappeared on regeneration. The correction
 was checked against the supplied lists without rerunning the image encoders.
 
-From the repository root, `python3 Experiments/AppleVisionTranslation/Tools/fixtures.py check` validates this
+From the repository root, `.venv/bin/python Experiments/AppleVisionTranslation/Tools/fixtures.py check` validates this
 package without Pillow. See the [experiment README](../../../Experiments/AppleVisionTranslation/README.md#fixture-checks-and-exploration)
 for the focused comparison runner and tests. The manifest's pixel hashes describe
 Pillow's decoded RGB representation, not hazy's Apple-prepared working pixels.
 
-## Scope limitation
+### Scope limitation
 
 Almost all related images here are **synthetic transformations of a single exposure**. This is suitable for duplicate families and repeatable import behavior but not sufficient for real multi-view retrieval. The external **INRIA Holidays** corpus (1,491 images in 500 scene groups) complements it with genuine photographs of the same scenes; **INRIA Copydays** offers a larger collection of established copy-detection transformations. The external datasets are not included in this zip. Their rights and redistribution terms are theirs, not this corpus's.
 
-## Redistribution
+### Redistribution
 
 The bundled upstream samples are identified in `SOURCES.md`, and are documented by scikit-image as public-domain or CC0, except for one museum image described as having *no known copyright restrictions*. The source/credit claims are taken from scikit-image's image documentation, rather than a separate legal assessment. The generated variants and manifest can be reproduced and revised freely subject to any rights in the originals.

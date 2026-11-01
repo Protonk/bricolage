@@ -101,7 +101,7 @@ class FixtureToolTests(unittest.TestCase):
 
     def testGeneratorRestoresExactSmallBatchListsWithoutRegeneratingImages(self):
         # Execute only the dependency-free batch writer, not main or Pillow's encoders.
-        source = fixtures.CORPUS / "provenance/generate.py"
+        source = fixtures.CORPUS / "tools/generate.py"
         tree = ast.parse(source.read_text())
         function = next(node for node in tree.body if isinstance(node, ast.FunctionDef)
                         and node.name == "write_small_batches")

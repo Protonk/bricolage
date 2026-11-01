@@ -176,7 +176,7 @@ The initial review on Swift 6.4 / macOS 26.7.1 illustrates three boundaries:
 Keep v1's image bytes and provenance meanings fixed. The derivative set was renamed
 from `hazy-fixtures-v1` to `hazy-derivatives-v1`; both sets now use the documented
 schema. Original metadata is retained in each set's `provenance/` directory.
-`provenance/generate.py` in the derivative set is an optional Pillow tool, not a
+`tools/generate.py` in the derivative set is an optional Pillow tool, not a
 build/test dependency; its small-batch writer was corrected to recreate
 `smoke.txt` and `medium.txt`, without regenerating this corpus. Most related inputs
 remain synthetic edits of one exposure, and the four batches share source families.

@@ -25,9 +25,9 @@ def clean(value):
 
 
 def norm(title):return title.replace('_',' ').removeprefix('File:')
-def candidates():return {r['candidate_id']:r for r in read(ROOT/'inventory.json')['candidates']}
-def order():return read(ROOT/'ordering.json')['candidate_ids']
-def selection():return population.selection(read(ROOT/'inventory.json'))
+def candidates():return {r['candidate_id']:r for r in read(ROOT/'provenance/intake/inventory.json')['candidates']}
+def order():return read(ROOT/'provenance/intake/ordering.json')['candidate_ids']
+def selection():return population.selection(read(ROOT/'provenance/intake/inventory.json'))
 
 
 def current_metadata(data):

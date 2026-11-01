@@ -1,5 +1,43 @@
 # Evan-Amos category uploads
 
+## Purpose and basis
+
+Every frozen direct File member of Media uploaded by Evan Amos except three exact user exclusions; no sampling, deduplication or expected matches.
+Fixture ID: `hazy-evan-amos-uploads-v1`; kind: `curatorial_heap`.
+
+## Completeness
+
+The published manifest contains **133 inputs**. The detailed record below
+retains the original selection counts, pending cases and acquisition limitations.
+The layout migration changes no membership or completion status.
+
+## Contents
+
+This leaf follows the [shared fixture format](../../../FORMAT.md).
+`images/`, `sources/`, `previews/` and `batches/` retain their roles. Live commands
+and dependencies are in `tools/`; the [evidence index](provenance/README.md)
+locates intake/construction records, receipts and preserved packages.
+
+## Validation
+
+From the repository root, using Python 3.14.x:
+
+```sh
+.venv/bin/python -m pip install -r Fixtures/Heaps/Curatorial/Evan-Amos-Uploads/tools/requirements.txt
+.venv/bin/python Fixtures/Heaps/Curatorial/Evan-Amos-Uploads/tools/check.py
+```
+
+The check is offline and includes the shared layout check and the existing
+specialized validators. `--metadata-only` omits media and specialized checks.
+
+## Limitations
+
+Selection and source relationships retain their recorded scope; they are not
+similarity scores or additional matching assertions. Technical/provenance
+uncertainties and partial acquisitions remain documented below.
+
+## Detailed record
+
 One leaf of the [Curatorial heap](../README.md): **every frozen direct File
 member** of [Media uploaded by Evan Amos](https://commons.wikimedia.org/wiki/Category:Media_uploaded_by_Evan_Amos),
 minus exactly three supplied exclusions. **Complete: all 133 included File pages
@@ -27,9 +65,9 @@ sample, creator cap, object-level deduplication, aesthetic review, replacement
 selection or minimum-size floor. Technical or rights problems keep the affected
 included identity pending or blocked; they do not change membership.
 
-## Population and provenance
+### Population and provenance
 
-`inventory.json` reconstructs the complete direct category from the raw
+`provenance/intake/inventory.json` reconstructs the complete direct category from the raw
 `list=categorymembers` response in `provenance/api/`. The query uses the exact
 category, `cmtype=file`, `cmprop=ids|title|timestamp`, `cmlimit=max`, `formatversion=2`
 and `maxlag=5`. The category request began at 2026-10-31 23:00:52 UTC. Its response contains
@@ -41,7 +79,7 @@ query was used. Safari was not needed.
 Candidate IDs are the first 20 hex characters of SHA-256 over UTF-8
 `hazy-evan-amos-file-v1` + LF + frozen page ID + LF + exact category-member title.
 The complete order is ascending exact Unicode title, then numeric page ID; it is
-an enumeration order, not a sample. `selection.json` assigns each member exactly
+an enumeration order, not a sample. `provenance/intake/selection.json` assigns each member exactly
 one `included` or `excluded_by_user` outcome. Category membership timestamps are
 preserved as such, not treated as capture dates.
 
@@ -72,11 +110,11 @@ independence. Historical audit coverage stays fixed when later leaves are added.
 
 The five supplied handoff files are preserved byte-identically under
 `provenance/supplied/`, with their hashes and original location in
-`provenance/intake.json`. The leaf's `EXCLUSIONS.txt` is also byte-identical to the
+`provenance/intake.json`. The leaf's `provenance/intake/EXCLUSIONS.txt` is also byte-identical to the
 supplied file. The redundant setup folder was removed after verifying all five files against
 these preserved copies and hashes; the intake record includes the cleanup receipt.
 
-## Acquisition and fixture records
+### Acquisition and fixture records
 
 The transport adapts the active POTY/SSI workflow: truthful HazyFixtureBot
 identification, at least three seconds between serial requests, ten-title metadata
@@ -116,15 +154,15 @@ and checks again. The builder refuses an existing publication so a subsequent
 repair must preserve old output before an explicit replacement. No existing
 manifest-kind, nesting, shared discovery or router change is required.
 
-## Offline checks
+### Offline checks
 
 From the repository root, with Pillow installed from the pinned requirements:
 
 ```sh
-python3 Fixtures/Heaps/Curatorial/Evan-Amos-Uploads/tools/population.py
-python3 Fixtures/Heaps/Curatorial/Evan-Amos-Uploads/tools/integrate.py list
-python3 Fixtures/Heaps/Curatorial/Evan-Amos-Uploads/tools/integrate.py check
-python3 -m unittest discover -s Fixtures/Heaps/Curatorial/Evan-Amos-Uploads/tools -p 'test_*.py'
+.venv/bin/python Fixtures/Heaps/Curatorial/Evan-Amos-Uploads/tools/population.py
+.venv/bin/python Fixtures/Heaps/Curatorial/Evan-Amos-Uploads/tools/integrate.py list
+.venv/bin/python Fixtures/Heaps/Curatorial/Evan-Amos-Uploads/tools/integrate.py check
+.venv/bin/python -m unittest discover -s Fixtures/Heaps/Curatorial/Evan-Amos-Uploads/tools -p 'test_*.py'
 ```
 
 The checker replays the raw category inventory, complete ordering and exact

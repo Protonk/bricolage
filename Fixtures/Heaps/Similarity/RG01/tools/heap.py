@@ -109,7 +109,7 @@ def assemble():
         manifest=dict(schema_version=1,fixture_id='hazy-rg01-v1',kind='prompt_heap',description='31 photographs selected by the red-accent / green-outdoor prompt. No similarity or membership ground truth.',images=rows)
         dump(stage/'manifest.json',manifest); csv_write(stage/'manifest.csv',rows,FIELDS); csv_write(stage/'sources.csv',sources,SOURCE_FIELDS)
         dump(stage/'provenance/import-map.json',imports); (stage/'SOURCES.md').write_text('\n'.join(credits)+'\n')
-        dump(stage/'prompt.json',dict(prompt='A salient red object within a predominantly green outdoor environment.',scale='Small warm-colored things in big green places.',human_presence='Incidental people allowed; people should not be primary subjects.',selection='Visual impression, retaining original framing and colors. No semantic core/border/outlier labels.',source_independence='Duplicate and shared-capture screening is an exclusion check, not a guide to similarity; independence is not proven.',requested_count='approximately 70, potentially 50–80',actual_count=31,shortfall='The supplied 107 leads yielded 31 visual selections, 69 rejections and 7 deferred warm-color fallbacks. No additional search was performed.'))
+        dump(stage/'provenance/intake/prompt.json',dict(prompt='A salient red object within a predominantly green outdoor environment.',scale='Small warm-colored things in big green places.',human_presence='Incidental people allowed; people should not be primary subjects.',selection='Visual impression, retaining original framing and colors. No semantic core/border/outlier labels.',source_independence='Duplicate and shared-capture screening is an exclusion check, not a guide to similarity; independence is not proven.',requested_count='approximately 70, potentially 50–80',actual_count=31,shortfall='The supplied 107 leads yielded 31 visual selections, 69 rejections and 7 deferred warm-color fallbacks. No additional search was performed.'))
         csv_write(stage/'probes.csv',[],'file_a file_b relation interpretation'.split())
         dump(stage/'selections.json',dict(description='No predetermined pair judgments for this prompt-led heap.',pairs=[],known_shift_families=[]))
         (stage/'batches').mkdir(); (stage/'batches/batch-1.txt').write_text(''.join(r['file']+'\n' for r in rows))
@@ -122,7 +122,7 @@ def assemble():
 
 def publish():
     stage=ROOT/'previews/heap-build-v1'; check(stage)
-    names=['images','manifest.json','manifest.csv','sources.csv','SOURCES.md','prompt.json','probes.csv','selections.json','batches','SHA256SUMS.txt','provenance/import-map.json','previews/selected-01.jpg','previews/selected-02.jpg']
+    names=['images','manifest.json','manifest.csv','sources.csv','SOURCES.md','provenance/intake/prompt.json','probes.csv','selections.json','batches','SHA256SUMS.txt','provenance/import-map.json','previews/selected-01.jpg','previews/selected-02.jpg']
     for name in names:assert not safe(ROOT,name).exists(),f'Refusing existing output: {name}'
     for name in names:
         src=safe(stage,name); dest=safe(ROOT,name); dest.parent.mkdir(parents=True,exist_ok=True)
