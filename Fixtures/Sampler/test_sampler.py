@@ -556,6 +556,32 @@ class SamplerTests(unittest.TestCase):
         actual = {p.name for p in (self.repo / 'Fixtures/output/sampled').iterdir()}
         self.assertIn(actual, [{Path(row['sampled_path']).name for row in rows} | {'world.json'} for rows in published])
 
+    def test_default_store_is_scratch_seeded_once_and_keep_names_the_durable_store(self):
+        durable = self.repo / 'Fixtures/Sampler/records'
+        kept = self.draw(1, 'kept')  # self.store is the durable location in this checkout.
+        base = [sys.executable, str(Path(s.__file__)), '--repo', str(self.repo)]
+        run = lambda *a: subprocess.run([*base, *a], text=True, capture_output=True)
+        result = run('2', '--seed', 'scratch')
+        self.assertEqual(result.returncode, 0, result.stderr)
+        response = json.loads(result.stdout)
+        scratch = self.repo / 'Fixtures/output/records'
+        self.assertEqual(Path(response['store']), scratch.resolve())
+        self.assertEqual([e.name for e in (self.repo / 'Fixtures/output').iterdir() if e.name.startswith('.')], [])
+        self.assertEqual(sorted(p.name for p in durable.joinpath('draws').iterdir()), [kept['sample_id']])
+        self.assertEqual(s.load_draw(scratch, kept['sample_id'])[0], kept)  # Seeded copy of the durable draw.
+        self.assertEqual(json.loads(run('show', kept['sample_id']).stdout)['draw'], kept)
+        self.assertEqual(json.loads(run('list').stdout)['store'], str(scratch.resolve()))
+        kept_again = json.loads(run('--keep', '1', '--seed', 'kept again').stdout)
+        self.assertEqual(Path(kept_again['store']), durable.resolve())
+        self.assertIn(kept_again['draw']['sample_id'], [p.name for p in durable.joinpath('draws').iterdir()])
+        self.assertNotIn(kept_again['draw']['sample_id'], [p.name for p in scratch.joinpath('draws').iterdir()])
+        both = run('--keep', '--store', str(scratch), 'list')
+        self.assertEqual(both.returncode, 2)
+        self.assertEqual(json.loads(both.stdout)['error']['code'], 'usage')
+        shutil.rmtree(scratch)  # Seeding happens again only when the scratch store is absent.
+        self.assertEqual(sorted(p.name for p in Path(json.loads(run('list').stdout)['store']).joinpath('draws').iterdir()),
+                         sorted([kept['sample_id'], kept_again['draw']['sample_id']]))
+
     def test_shorthand_bounds_and_global_options(self):
         for size in ('-1', '5'):
             result = self.cli(size)

@@ -24,7 +24,6 @@ import uuid
 
 
 REPO = Path(__file__).resolve().parents[2]
-DEFAULT_STORE = Path(__file__).resolve().parent / 'records'
 PROCEDURE = 'sha256-counter-rejection-partial-fisher-yates-v1'
 POLICY = 'active-manifest-inputs; exact-byte-sha256-aliases; one-ticket-per-hash-v1'
 POPULATION_SCHEMAS = (1, 2)  # 1 embedded metadata rows; 2 pins metadata files by hash only.
@@ -821,6 +820,40 @@ def previous_world_strays(target):
                   if p.name not in listed | {WORLD_MANIFEST, '.DS_Store'} or p.is_symlink() or not p.is_file())
 
 
+def durable_store(repo):
+    """The versioned record store. Writing here is a deliberate act (`--keep`)."""
+    return Path(repo) / 'Fixtures/Sampler/records'
+
+
+def scratch_store(repo):
+    """The default record store: disposable, under output/, so ordinary draws leave no diff."""
+    return Path(repo) / 'Fixtures/output/records'
+
+
+def resolve_store(repo, store=None, keep=False):
+    """An explicit --store wins; --keep names the durable store; otherwise the scratch store.
+
+    A missing scratch store is seeded once with a copy of the durable records, so the
+    committed draws can be shown, verified and republished without any option. Later
+    durable changes are not mirrored; delete the scratch store to seed it again.
+    """
+    require(store is None or not keep, 'usage', '--store and --keep name different stores; give one')
+    if store is not None:
+        return Path(store)
+    if keep:
+        return durable_store(repo)
+    scratch, durable = scratch_store(repo), durable_store(repo)
+    if not scratch.exists() and durable.is_dir():
+        staged = scratch.with_name(f'.{scratch.name}-seeding-{uuid.uuid4().hex}')
+        shutil.copytree(durable, staged, ignore=shutil.ignore_patterns('.DS_Store'))
+        try:
+            staged.rename(scratch)
+        except OSError:
+            shutil.rmtree(staged, ignore_errors=True)  # Another process seeded first; its copy stands.
+            require(scratch.is_dir(), 'io', f'Cannot create the scratch record store at {scratch}')
+    return scratch
+
+
 def world_target(repo, store, world=None):
     """Where a world may be written. Only an empty directory or a previous world is replaced."""
     repo = Path(repo).resolve()
@@ -1048,7 +1081,7 @@ def main(argv=None):
         argument = argv[index]
         if argument in ('--repo', '--store'):
             index += 2
-        elif argument.startswith(('--repo=', '--store=')):
+        elif argument.startswith(('--repo=', '--store=')) or argument == '--keep':
             index += 1
         else:
             if re.fullmatch(r'[+-]?[0-9]+', argument):
@@ -1058,7 +1091,9 @@ def main(argv=None):
         prog='Fixtures/sample', description=__doc__, allow_abbrev=False,
         epilog='Quick draw: Fixtures/sample N [--seed TEXT] [--world DIR]. Writes a world: hash-named image copies plus world.json; copy paths are in images[].sampled_path.')
     parser.add_argument('--repo', type=Path, default=REPO, help='Checkout containing Fixtures/')
-    parser.add_argument('--store', type=Path, default=DEFAULT_STORE, help='JSON record directory')
+    parser.add_argument('--store', type=Path, help='JSON record directory; default Fixtures/output/records (disposable)')
+    parser.add_argument('--keep', action='store_true',
+                        help='Use the versioned store Fixtures/Sampler/records: a draw meant to be committed')
     commands = parser.add_subparsers(dest='command', required=True)
     commands.add_parser('inventory', help='Refresh and save an immutable population snapshot')
     draw = commands.add_parser('draw', help='Draw N equal tickets and publish them as a world; refresh inventory by default')
@@ -1086,7 +1121,10 @@ def main(argv=None):
     data.add_argument('--delete', action='store_true', help='Remove current value while retaining history')
     args = parser.parse_args(argv)
     try:
+        args.store = resolve_store(args.repo, args.store, args.keep)
         result = run(args)
+        # Every response names the store it read or wrote, so a scratch draw cannot pass for a kept one.
+        result = dict(schema_version=result.pop('schema_version'), store=str(args.store.resolve()), **result)
     except SamplerError as error:
         emit_error(error)
         return 2

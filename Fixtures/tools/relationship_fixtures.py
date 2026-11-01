@@ -229,7 +229,8 @@ def load_world(world, store):
     return manifest['world_id'], images
 
 
-def run(root, binary, output, selection, world, store=sampler.DEFAULT_STORE):
+def run(root, binary, output, selection, world, store=None):
+    store = sampler.resolve_store(REPO) if store is None else store
     rows, probes, identity = validate(root)
     pairs = select_pairs(rows, probes, selection, root)
     require(binary.is_file(), f"Comparison executable not found: {binary}")
@@ -316,7 +317,7 @@ def main():
     parser.add_argument("--binary", type=Path, help="Explicit path to the hazy-vision-translation executable (required for run)")
     parser.add_argument("--output", type=Path)
     parser.add_argument('--world', type=Path, help='Sampler-published world (required for run)')
-    parser.add_argument('--store', type=Path, default=sampler.DEFAULT_STORE, help='Saved draw record store')
+    parser.add_argument('--store', type=Path, help='Saved draw record store; default the sampler\'s scratch store')
     args = parser.parse_args()
     try:
         if args.command == "check":
@@ -327,7 +328,7 @@ def main():
         require(args.binary is not None, "run requires --binary PATH_TO_HAZY_VISION_TRANSLATION")
         require(args.world is not None, 'run requires --world WORLD_DIRECTORY')
         return run(args.fixtures.resolve(), args.binary.resolve(), args.output.resolve(), args.selection,
-                   args.world.resolve(), args.store.resolve())
+                   args.world.resolve(), args.store.resolve() if args.store else None)
     except (OSError, ValueError, KeyError, sampler.SamplerError, subprocess.SubprocessError) as error:
         print(f"fixtures: {error}", file=sys.stderr)
         return 1

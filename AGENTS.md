@@ -10,11 +10,13 @@ relevant fixture or sampler guide. bricolage's application lives in `Fixtures/`.
   records, source bytes, IDs and metadata pins. Report errors and missing results
   explicitly; provenance and measured alignments are not matching judgments.
 - Use Python 3.14.x only, with `Fixtures/.venv` and `make -C Fixtures setup-python`.
-  For samples use `Fixtures/sample N`, which records the draw and publishes a world.
-  Do not construct an undocumented sample or acquire another corpus.
+  For samples use `Fixtures/sample N`, which records the draw in the disposable scratch
+  store and publishes a world. A draw meant to be committed is made with `--keep`
+  before the command. Do not construct an undocumented sample or acquire another corpus.
 - Keep all media under a leaf's `images/`, `sources/` or `previews/`, and disposable
-  worlds under `Fixtures/output/`. Never force-add ignored image assets. Durable
-  sampler records stay in `Fixtures/Sampler/records/` and are versioned.
+  worlds and scratch records under `Fixtures/output/`. Never force-add ignored image
+  assets. Durable sampler records stay in `Fixtures/Sampler/records/`, are versioned,
+  and change only through `--keep`.
 - Consumers receive a world, never fixture origins. Any provenance lookup, probe
   selection or interpretation belongs here. The optional runner requires an explicit
   executable and world; no consumer source tree is a dependency.

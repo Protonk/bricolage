@@ -16,7 +16,8 @@ Rules of work:
   the layout tools need no third-party packages; leaf tools keep their own
   `tools/requirements.txt`.
 - For fixture samples, use `Fixtures/sample N` rather than assembling a draw by
-  hand. A draw publishes a world; `show SAMPLE_ID` is the key that maps a world back
+  hand. Records go to the scratch store under `output/records/` unless `--keep`
+  precedes the command. A draw publishes a world; `show SAMPLE_ID` is the key that maps a world back
   to leaves and rows. Worlds carry no fixture structure, and nothing in this
   directory should start to assume they do.
 - Use the supplied fixtures. Do not search for or acquire a corpus. Put image
@@ -24,9 +25,10 @@ Rules of work:
   contents of those directories are Git-ignored regardless of type. Do not
   force-add them. Generated patterns check mechanics, not usefulness on real images.
 - The sampler writes disposable worlds, by default to `output/sampled/` here,
-  replacing that directory on each successful draw. Keep original fixture assets
-  and durable records outside any `output/`; see [output guidance](output/AGENTS.md).
-  Durable sample records live in `Sampler/records/` and are versioned.
+  replacing that directory on each successful draw, and scratch records to
+  `output/records/`. Keep original fixture assets outside any `output/`; see
+  [output guidance](output/AGENTS.md). Durable sample records live in
+  `Sampler/records/`, are versioned, and are written only with `--keep`.
 - Preserve supplied records and source bytes. Make errors and missing results
   visible; a fixture problem is reported by name and fixed at the fixture, never
   patched around in the tools. Distinguish provenance facts from visual judgments.

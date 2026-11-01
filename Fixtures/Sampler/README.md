@@ -63,8 +63,8 @@ destination among the fixtures, or one containing or inside the record store is
 refused before a draw is made. Concurrent publications to one directory serialize;
 the last one published occupies it. Consumers must finish reading before a directory
 is reused, or receive a separate publication directory: atomic replacement does not
-give a reader a snapshot across separate file opens. Persistent records remain in
-`Fixtures/Sampler/records/`, independently of worlds.
+give a reader a snapshot across separate file opens. Records live in the store the
+command names, independently of worlds; see [Stores](#stores).
 
 After installing a world, publication appends one annotation event to the draw, key `publication`,
 author `Fixtures/sample`, recording the directory, manifest path, time and image
@@ -137,6 +137,7 @@ Draw responses have `schema_version: 1` and these fields:
 
 | Field | Use |
 |---|---|
+| `store` | Absolute path of the record store this command read or wrote; present on every command's response |
 | `draw` | Original persistent record, including `sample_id`, `image_ids`, seed and inventory ID |
 | `population` | Snapshot ID and file, `counts`, every leaf with its status, the `checkout` hint and population `problems` |
 | `population.counts.eligible` | M, the number of eligible distinct images in this draw's snapshot |
@@ -188,13 +189,27 @@ on any world. `show` is the key: it joins a world's IDs back to leaves and rows.
 every draw directory; a damaged record appears with status `damaged` and its error
 rather than hiding the others.
 
-Global `--repo CHECKOUT` and `--store DIRECTORY` options go **before** the command.
-The checkout and default store resolve from the engine; custom relative option
-paths resolve from the caller's working directory.
-The default store is [records/](records/). It contains versionable text only;
-original image bytes remain at their fixture locations. Custom stores under
-`output/` are disposable too, so keep durable stores elsewhere. Back up or version
-the whole store, including inventories.
+## Stores
+
+Global `--repo CHECKOUT`, `--store DIRECTORY` and `--keep` options go **before** the
+command. The checkout resolves from the engine; custom relative option paths resolve
+from the caller's working directory. Two stores matter:
+
+| Store | Location | Use |
+|---|---|---|
+| Scratch (default) | `Fixtures/output/records/` | Every draw, publish and annotation unless told otherwise. Disposable and Git-ignored, so exploration, tests and agents leave no diff |
+| Durable (`--keep`) | [records/](records/) | Draws meant to outlive the session. Versioned text only; commit it after a `--keep` draw |
+
+The first command that needs the scratch store seeds it with a copy of the durable
+records, so the committed draws can be shown, verified and republished with no option.
+Later durable changes are not mirrored into an existing scratch store; delete
+`Fixtures/output/records/` to seed it again. Every response carries a `store` field
+naming the store it used, so a draw that was meant to be kept but landed in scratch is
+visible in the output already being read. A scratch world is only as durable as its
+store: clearing `output/` removes both. `--store` names any other directory; stores
+under `output/` are disposable too, and `--store` with `--keep` is a usage error.
+Original image bytes remain at their fixture locations in every case. Back up or
+version a durable store whole, including inventories.
 
 ## Population and identity
 
@@ -316,6 +331,7 @@ reproduction. Tests run only under the repository's Python 3.14.x environment.
 ## Demonstration and checks
 
 The committed [demonstration draw](records/draws/draw-82acd83c6cd540a6bf4e29610ff5dc2d/draw.json)
+lives in the durable store, where a `--keep` draw would put it today, and
 contains 12 images drawn once with seed `fixture-sampler-demo-2026-11-01` from
 1,251 eligible byte identities: 1,263 manifest records across 18 leaves, with 12
 redundant byte-identical aliases and no excluded leaves. All input hashes passed;

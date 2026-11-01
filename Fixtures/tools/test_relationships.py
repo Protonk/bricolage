@@ -184,7 +184,7 @@ class FixtureToolTests(unittest.TestCase):
             root = Path(temporary)
             store = root / 'records'
             world = root / 'world'
-            shutil.copytree(fixtures.sampler.DEFAULT_STORE, store)
+            shutil.copytree(fixtures.sampler.durable_store(fixtures.REPO), store)
             sample_id = 'draw-82acd83c6cd540a6bf4e29610ff5dc2d'
             result = subprocess.run([str(fixtures.REPO / 'Fixtures/sample'), '--store', str(store),
                                      'publish', sample_id, '--world', str(world)], capture_output=True, text=True)

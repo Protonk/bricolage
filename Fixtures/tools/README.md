@@ -41,7 +41,8 @@ implementation directly. `test-relationships` needs the local relationship media
 --world /path/to/published-world --output /path/to/new-run` drives the existing pair CLI and records all outcomes,
 including failures. `--selection focus|probes|full` chooses the fixture's explicit
 pairs. Both `--world` and `--binary` are required; no sibling checkout or application
-build is assumed. `--store` selects the sampler records (default `Sampler/records`).
+build is assumed. `--store` selects the sampler records; the default is the sampler's
+scratch store, so a world drawn with `--keep` needs `--store Fixtures/Sampler/records`.
 The runner verifies the world against its saved draw, maps probes to hash IDs and
 passes only those IDs and the world to the binary. Only that executable is required;
 the Swift toolchain version is recorded in `run.json` when one is on `PATH`. Absent

@@ -12,7 +12,8 @@ world. Treat a published world as read-only and republish rather than edit it;
 original fixture images remain separate.
 `--world DIR` writes a world elsewhere instead.
 
-Persistent sample inventories, original draws, annotations and publication
-receipts live in `Fixtures/Sampler/records/` by default. Use those records to
-recover identities or republish a world after output is cleared. The sampler
-creates `sampled/` when needed; an empty checkout directory need not be tracked.
+`records/` is the scratch record store: the default home of inventories, draws,
+annotations and publication receipts, seeded from the versioned
+`Fixtures/Sampler/records/` on first use. Clearing it discards every draw not made
+with `--keep`, and with it the only key to the worlds those draws published. The
+sampler creates `sampled/` and `records/` when needed; neither needs tracking.

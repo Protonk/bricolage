@@ -28,8 +28,11 @@ groups or provenance enter the world manifest. World IDs identify saved draws;
 republishing a draw preserves its ID, while repeating its seed creates a new draw
 with the same selection. Finish consuming a directory before replacing its world.
 
-Durable snapshots, draws and annotations live in `Fixtures/Sampler/records/`.
-Use `Fixtures/sample show SAMPLE_ID` to map identities back to their provenance,
+By default a draw's snapshot, record and annotations go to the disposable scratch store
+`Fixtures/output/records/`, seeded from the committed records on first use, so
+exploration leaves no diff. Pass `--keep` before the command to write the versioned
+store `Fixtures/Sampler/records/` instead, then commit it. Every response names its
+`store`. Use `Fixtures/sample show SAMPLE_ID` to map identities back to their provenance,
 `verify SAMPLE_ID` to check a record, and `publish SAMPLE_ID --world DIR` to publish
 it again. Receipt and cleanup failures are explicit even if installation succeeded;
 read the command's `problems`, `output.published` and `output.receipt_recorded` fields.
