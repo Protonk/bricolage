@@ -31,8 +31,9 @@ WORLD/
 - No two files share bytes. The list is sorted by file name and carries no order.
 - `world.json` is written last, inside the staged directory. If it is present, the
   world is complete. The directory contains the manifest and the files, nothing else.
-- The world ID is opaque and stable. The same seed and population reproduce the same
-  world under the same ID.
+- The world ID is the opaque ID of a saved draw. Republishing that draw preserves
+  its world ID. Repeating a draw with the same size, seed and population reproduces
+  the image selection but creates a new draw and world ID.
 - Fields are only added within a schema version, never removed or retyped. Readers
   ignore fields they do not know. A later per-image public attribute would appear as
   an optional key on the image object.
@@ -42,6 +43,9 @@ WORLD/
 - Refer to images by their ID, never by path. Name the world ID in anything emitted
   about the world.
 - Treat the directory as read-only and expect no other files in it.
+- Finish consuming a world before its publisher reuses that directory, or use a
+  separate publication directory. Atomic replacement switches whole directories;
+  it does not pin one version across a reader's separate file opens.
 - Handle an undecodable file as an ordinary error. The sampler verifies bytes, not
   that an image decodes.
 

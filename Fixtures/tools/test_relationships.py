@@ -1,4 +1,4 @@
-"""Developer-tool checks; run with python3 -m unittest discover -s Experiments/AppleVisionTranslation/Tools."""
+"""Relationship validation and runner checks; make -C Fixtures test-relationships."""
 import ast
 import csv
 from collections import defaultdict
@@ -8,14 +8,25 @@ import json
 from pathlib import Path
 import shutil
 import subprocess
+import sys
 import tempfile
 import unittest
 from unittest.mock import patch
 
-import fixtures
+import relationship_fixtures as fixtures
 
 
 class FixtureToolTests(unittest.TestCase):
+    def testRunnerRequiresAnExplicitBinaryWithoutCreatingOutput(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            output = Path(temporary) / 'run'
+            result = subprocess.run([sys.executable, str(Path(fixtures.__file__).resolve()),
+                                     'run', '--output', str(output)],
+                                    cwd=temporary, capture_output=True, text=True)
+            self.assertEqual(result.returncode, 1)
+            self.assertIn('run requires --binary', result.stderr)
+            self.assertFalse(output.exists())
+
     def testBothSetsUseTheSameSchemaAndMultiviewKeepsIndependentSources(self):
         derivative_rows, _, _ = fixtures.validate(fixtures.CORPUS)
         rows, probes, identity = fixtures.validate(fixtures.MULTIVIEW)

@@ -6,6 +6,7 @@ The JSON format and byte-exact sampling procedure are documented in README.md.
 """
 import argparse
 import csv
+import ctypes
 import fcntl
 import hashlib
 import io
@@ -129,7 +130,7 @@ def new_json(path, value):
 def relative_path(value, what):
     require(isinstance(value, str) and value, 'fixture', f'{what} is not a nonempty relative path')
     p = PurePosixPath(value)
-    require(not p.is_absolute() and '..' not in p.parts and '\\' not in value,
+    require(p.parts and not p.is_absolute() and '..' not in p.parts and '\\' not in value and '\0' not in value,
             'fixture', f'{what} is an unsafe fixture path: {value}')
     return p
 
@@ -215,8 +216,10 @@ def read_leaf(repo, manifest_path):
         require(isinstance(mappings, list), 'fixture', 'provenance/import-map.json is not a list')
         mapped = {}
         for row in mappings:
-            key = row.get('final_file') if isinstance(row, dict) else None
+            require(isinstance(row, dict), 'fixture', 'provenance/import-map.json contains a non-object row')
+            key = row.get('final_file')
             if key:
+                require(isinstance(key, str), 'fixture', 'provenance/import-map.json final_file must be text')
                 require(key not in mapped, 'fixture', f'provenance/import-map.json lists {key} twice')
                 mapped[key] = row
         # Pin the readable credit context too, so a changed SOURCES.md is reported.
@@ -232,9 +235,10 @@ def read_leaf(repo, manifest_path):
             seen.add(name)
             expected = field(row, 'byte_sha256', str, what, 'fixture')
             require(HEX.fullmatch(expected), 'fixture', f'{what} byte_sha256 is not 64 lowercase hex digits')
-            families = set(filter(None, str(row.get('parents', '')).split('|')))
-            if row.get('family_id'):
-                families.add(row['family_id'])
+            families = set(filter(None, field(row, 'parents', str, what, 'fixture').split('|')))
+            family = field(row, 'family_id', str, what, 'fixture')
+            if family:
+                families.add(family)
             images.append(dict(name=name, expected=expected, record=row,
                                source_records=[s for s in sources if s.get('family_id') in families],
                                import_record=mapped.get(name)))
@@ -242,6 +246,8 @@ def read_leaf(repo, manifest_path):
                     if p.is_file() and p.relative_to(leaf).as_posix() not in seen]
     except SamplerError as error:
         raise SamplerError('fixture', f'Fixture leaf {rel}: {error}', leaf=rel, **error.details) from None
+    except OSError as error:
+        raise SamplerError('fixture', f'Fixture leaf {rel}: {error}', leaf=rel) from None
     return dict(leaf=leaf, fixture_path=rel, fixture_id=fixture_id, kind=kind, images=images,
                 metadata_files=files, unlisted_inputs=unlisted)
 
@@ -505,14 +511,25 @@ def parse_events(text, draw):
     return events
 
 
+def events_from_stream(stream, draw):
+    try:
+        return parse_events(stream.read(), draw)
+    except UnicodeDecodeError:
+        raise SamplerError('record-damaged', f'Annotation log for {draw["sample_id"]} is not UTF-8 text',
+                           path=str(stream.name)) from None
+
+
 def read_events(store, draw):
     path = sample_dir(store, draw['sample_id']) / 'annotations.jsonl'
     try:
         with path.open(encoding='utf-8') as stream:
             fcntl.flock(stream, fcntl.LOCK_SH)
-            return parse_events(stream.read(), draw)
+            return events_from_stream(stream, draw)
     except FileNotFoundError:
         return []
+    except OSError as error:
+        raise SamplerError('io', f'Cannot read annotation log for {draw["sample_id"]}: {error}',
+                           path=str(path)) from None
 
 
 def annotate(store, sample_id, key, value=None, image_id=None, delete=False, author=None):
@@ -525,7 +542,7 @@ def annotate(store, sample_id, key, value=None, image_id=None, delete=False, aut
     with path.open('a+', encoding='utf-8') as stream:
         fcntl.flock(stream, fcntl.LOCK_EX)
         stream.seek(0)
-        events = parse_events(stream.read(), draw)
+        events = events_from_stream(stream, draw)
         event = dict(schema_version=1, sequence=len(events)+1, event_id=uuid.uuid4().hex,
                      created_at=utc(), sample_id=sample_id, draw_sha256=draw['draw_sha256'],
                      image_id=image_id, author=author, key=key,
@@ -710,18 +727,24 @@ def verify_draw(store, sample_id, repo):
         problems.extend(dict(kind='metadata-changed', **record)
                         for record in pinned_metadata(repo, inventory, leaf_paths)
                         if record['status'] != 'frozen')
+    # Missing redundant aliases remain problems, but one verified copy per identity
+    # is sufficient to publish. Record, metadata and annotation failures still block.
+    publication_ready = (inventory is not None and all(r['available_path'] is not None for r in current)
+                         and all(p['kind'] == 'image-unavailable' for p in problems))
     return dict(schema_version=1, sample_id=sample_id, record_valid=True,
                 original_draw_reproduced=inventory is not None,
                 requested_size=draw['requested_size'],
                 images_available=sum(r['available_path'] is not None for r in current),
-                problems=problems, ok=not problems)
+                problems=problems, ok=not problems, publication_ready=publication_ready)
 
 
 def list_draws(store):
     """Every draw directory is listed; a damaged record is reported, not skipped."""
     draws, problems = [], []
-    for path in sorted((Path(store) / 'draws').glob('draw-*/draw.json')):
-        sample_id = path.parent.name
+    for path in sorted((Path(store) / 'draws').glob('draw-*')):
+        if not path.is_dir():
+            continue
+        sample_id = path.name
         try:
             draw = read_draw(store, sample_id)
             entry = {k: draw[k] for k in ('sample_id', 'created_at', 'requested_size',
@@ -785,11 +808,46 @@ def world_manifest(draw, images):
     return dict(schema_version=1, world_id=draw['sample_id'], images=entries)
 
 
+def exchange_directories(staged, target):
+    """Swap two existing directories in one filesystem operation, or change neither.
+
+    Python has no directory-exchange wrapper. These libc calls support nonempty
+    directories on macOS and Linux. Never fall back to deleting the old world.
+    """
+    libc = ctypes.CDLL(None, use_errno=True)
+    if sys.platform == 'darwin' and hasattr(libc, 'renamex_np'):
+        exchange = libc.renamex_np
+        exchange.argtypes = [ctypes.c_char_p, ctypes.c_char_p, ctypes.c_uint]
+        arguments = (os.fsencode(staged), os.fsencode(target), 2)  # RENAME_SWAP
+    elif sys.platform == 'linux' and hasattr(libc, 'renameat2'):
+        exchange = libc.renameat2
+        exchange.argtypes = [ctypes.c_int, ctypes.c_char_p, ctypes.c_int, ctypes.c_char_p, ctypes.c_uint]
+        arguments = (-100, os.fsencode(staged), -100, os.fsencode(target), 2)  # AT_FDCWD, RENAME_EXCHANGE
+    else:
+        raise SamplerError('output', 'Atomic world replacement is unavailable on this platform; use a new directory')
+    exchange.restype = ctypes.c_int
+    if exchange(*arguments) != 0:
+        number = ctypes.get_errno()
+        raise OSError(number, 'Atomic world replacement failed: ' + os.strerror(number), str(target))
+
+
+def cleanup_world_stage(staged):
+    """Report leftover disposable files without misreporting an installed world."""
+    try:
+        shutil.rmtree(staged)
+    except FileNotFoundError:
+        pass  # A new destination consumed the staged directory via rename.
+    except OSError as error:
+        return [dict(kind='world-cleanup-failed', path=str(staged), error=str(error))]
+    return []
+
+
 def publish_world(repo, store, draw, images, world=None):
     """Verify independent copies, then replace the previous world atomically.
 
     The manifest is written inside the staged directory, so a visible world is complete.
-    Returns the images with `sampled_path` set and the target directory.
+    Returns the copied images, target directory, and any post-publication cleanup
+    problems. A failed installation leaves the old world intact.
     """
     target = world_target(repo, store, world)
     target.parent.mkdir(parents=True, exist_ok=True)
@@ -798,8 +856,8 @@ def publish_world(repo, store, draw, images, world=None):
     try:
         fcntl.flock(lock, fcntl.LOCK_EX)
         world_target(repo, store, target)
-        with tempfile.TemporaryDirectory(prefix='.world-', dir=target.parent) as temporary:
-            staged = Path(temporary)
+        staged = Path(tempfile.mkdtemp(prefix='.world-', dir=target.parent))
+        try:
             copied = []
             for image in images:
                 require(image['available_path'] is not None, 'output',
@@ -814,9 +872,16 @@ def publish_world(repo, store, draw, images, world=None):
             (staged / WORLD_MANIFEST).write_text(
                 json.dumps(manifest, ensure_ascii=False, allow_nan=False, indent=2) + '\n', encoding='utf-8')
             if target.is_dir():
-                shutil.rmtree(target)
-            staged.rename(target)
-        return copied, target
+                exchange_directories(staged, target)  # Old world is now at staged.
+            else:
+                staged.rename(target)
+        except (OSError, SamplerError) as error:
+            cleanup = cleanup_world_stage(staged)
+            if cleanup:
+                raise SamplerError('output', f'{error}; staged files remain at {staged}: {cleanup[0]["error"]}',
+                                   cleanup_path=str(staged)) from None
+            raise
+        return copied, target, cleanup_world_stage(staged)
     finally:
         os.close(lock)
 
@@ -830,16 +895,25 @@ def publish_receipt(store, draw, target, count):
 
 def publish_command(store, repo, draw, images, check, world):
     """Shared by draw and publish: copies, manifest, receipt, and a problems list."""
-    result = dict(images=images, output=dict(directory=None, manifest=None, published=False), problems=[])
+    result = dict(images=images, output=dict(directory=None, manifest=None, published=False,
+                                           receipt_recorded=False), problems=[])
     for image in images:
         image['sampled_path'] = None
-    if check['ok']:
+    if check['publication_ready']:
         try:
-            result['images'], target = publish_world(repo, store, draw, images, world)
+            result['images'], target, cleanup = publish_world(repo, store, draw, images, world)
             result['output'].update(directory=str(target), manifest=str(target / WORLD_MANIFEST), published=True)
-            publish_receipt(store, draw, target, len(images))
+            result['problems'].extend(cleanup)
         except (OSError, SamplerError) as error:
             result['output']['error'] = f'{type(error).__name__}: {error}'
+        if result['output']['published']:
+            try:
+                publish_receipt(store, draw, target, len(images))
+                result['output']['receipt_recorded'] = True
+            except (OSError, SamplerError) as error:
+                result['output']['error'] = f'{type(error).__name__}: {error}'
+                result['problems'].append(dict(kind='publication-receipt-failed',
+                                               error=result['output']['error']))
     if not result['output']['published']:
         result['problems'].append(dict(kind='not-published', error=result['output'].get(
             'error', 'selected images or metadata failed the current check')))

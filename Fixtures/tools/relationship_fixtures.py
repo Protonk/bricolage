@@ -11,8 +11,7 @@ import platform
 import subprocess
 import sys
 
-EXPERIMENT = Path(__file__).resolve().parents[1]
-REPO = EXPERIMENT.parents[1]
+REPO = Path(__file__).resolve().parents[2]
 CORPUS = REPO / "Fixtures/Relationships/Derivatives"
 MULTIVIEW = REPO / "Fixtures/Relationships/Multiviews"
 
@@ -262,7 +261,7 @@ def main():
     parser.add_argument("command", choices=("check", "run"))
     parser.add_argument("--fixtures", type=Path, default=CORPUS)
     parser.add_argument("--selection", choices=("focus", "probes", "full"), default="focus")
-    parser.add_argument("--binary", type=Path, default=EXPERIMENT / ".build/debug/hazy-vision-translation")
+    parser.add_argument("--binary", type=Path, help="Explicit path to the hazy-vision-translation executable (required for run)")
     parser.add_argument("--output", type=Path)
     args = parser.parse_args()
     try:
@@ -271,6 +270,7 @@ def main():
             print(json.dumps(identity, indent=2))
             return 0
         require(args.output is not None, "run requires --output NEW_DIRECTORY")
+        require(args.binary is not None, "run requires --binary PATH_TO_HAZY_VISION_TRANSLATION")
         return run(args.fixtures.resolve(), args.binary.resolve(), args.output.resolve(), args.selection)
     except (OSError, ValueError, KeyError, subprocess.SubprocessError) as error:
         print(f"fixtures: {error}", file=sys.stderr)

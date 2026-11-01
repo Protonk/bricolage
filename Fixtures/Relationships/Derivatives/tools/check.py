@@ -7,4 +7,4 @@ sys.path.insert(0, str(FIXTURES/'tools'))
 from fixture_layout import check_leaf
 
 if __name__ == '__main__':
-    check_leaf(__file__, checks=[['Experiments/AppleVisionTranslation/Tools/fixtures.py', 'check', '--fixtures', 'Fixtures/Relationships/Derivatives']])
+    check_leaf(__file__, checks=[['Fixtures/tools/relationship_fixtures.py', 'check', '--fixtures', 'Fixtures/Relationships/Derivatives']])

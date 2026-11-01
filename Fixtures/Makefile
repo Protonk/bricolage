@@ -1,4 +1,4 @@
-.PHONY: setup-python test-sampler test-fixture-layout
+.PHONY: setup-python test-sampler test-fixture-layout test-relationships
 
 # Fixtures' Python toolchain. Run from the repository root as `make -C Fixtures <target>`,
 # or from this directory as `make <target>`. One supported Python minor version;
@@ -17,4 +17,8 @@ test-sampler:
 
 test-fixture-layout:
 	$(VENV) $(CHECK)
-	$(VENV) -m unittest discover -s tools -p 'test_*.py'
+	$(VENV) -m unittest discover -s tools -p 'test_layout.py'
+
+test-relationships:
+	$(VENV) $(CHECK)
+	$(VENV) -m unittest discover -s tools -p 'test_relationships.py'

@@ -408,6 +408,101 @@ class SamplerTests(unittest.TestCase):
         self.assertEqual(sentinel.read_bytes(), b'previous')
         self.assertEqual(s.read_events(self.store, result['draw']), [])  # No receipt without a publication.
 
+    def test_failed_directory_exchange_preserves_the_previous_world(self):
+        first = json.loads(self.cli('2').stdout)
+        target = Path(first['output']['directory'])
+        before = {p.name: p.read_bytes() for p in target.iterdir()}
+        stdout = io.StringIO()
+        with patch.object(s, 'exchange_directories', side_effect=OSError('exchange unavailable')), \
+                contextlib.redirect_stdout(stdout):
+            code = s.main(['--repo', str(self.repo), '--store', str(self.store), '3'])
+        report = json.loads(stdout.getvalue())
+        self.assertEqual(code, 1)
+        self.assertFalse(report['output']['published'])
+        self.assertFalse(report['output']['receipt_recorded'])
+        self.assertIn('exchange unavailable', report['output']['error'])
+        self.assertEqual({p.name: p.read_bytes() for p in target.iterdir()}, before)
+        self.assertEqual(list(target.parent.iterdir()), [target])
+        self.assertEqual(s.read_events(self.store, report['draw']), [])
+
+    def test_first_install_failure_leaves_no_visible_or_partial_world(self):
+        stdout = io.StringIO()
+        with patch.object(Path, 'rename', side_effect=OSError('rename failed')), contextlib.redirect_stdout(stdout):
+            code = s.main(['--repo', str(self.repo), '--store', str(self.store), '3'])
+        report = json.loads(stdout.getvalue())
+        self.assertEqual(code, 1)
+        self.assertFalse(report['output']['published'])
+        self.assertEqual(list((self.repo / 'Fixtures/output').iterdir()), [])
+
+    def test_exchange_installs_complete_world_before_cleaning_old_directory(self):
+        first = json.loads(self.cli('2').stdout)
+        target = Path(first['output']['directory'])
+        old_manifest = (target / 'world.json').read_bytes()
+        draw = self.draw(3)
+        images = s.inspect_draw(self.store, draw['sample_id'], self.repo, True)['images']
+        original_cleanup = s.cleanup_world_stage
+
+        def inspect_cleanup(staged):
+            self.assertNotEqual(staged, target)
+            self.assertEqual((staged / 'world.json').read_bytes(), old_manifest)
+            new = json.loads((target / 'world.json').read_text())
+            self.assertEqual(new['world_id'], draw['sample_id'])
+            for row in new['images']:
+                self.assertEqual('sha256:' + s.file_hash(target / row['file']), row['id'])
+            return original_cleanup(staged)
+
+        with patch.object(s, 'cleanup_world_stage', side_effect=inspect_cleanup) as cleanup:
+            _, _, problems = s.publish_world(self.repo, self.store, draw, images)
+        self.assertEqual(cleanup.call_count, 1)
+        self.assertEqual(problems, [])
+
+    def test_cleanup_failure_reports_installed_world_and_still_records_receipt(self):
+        self.assertEqual(self.cli('2').returncode, 0)
+        stdout = io.StringIO()
+        with patch.object(s.shutil, 'rmtree', side_effect=OSError('cleanup denied')), contextlib.redirect_stdout(stdout):
+            code = s.main(['--repo', str(self.repo), '--store', str(self.store), '3'])
+        report = json.loads(stdout.getvalue())
+        self.assertEqual(code, 1)
+        self.assertTrue(report['output']['published'])
+        self.assertTrue(report['output']['receipt_recorded'])
+        self.assertEqual([p['kind'] for p in report['problems']], ['world-cleanup-failed'])
+        self.assertTrue(Path(report['problems'][0]['path']).is_dir())
+        self.assertEqual(json.loads(Path(report['output']['manifest']).read_text())['world_id'],
+                         report['draw']['sample_id'])
+        self.assertEqual(len(s.read_events(self.store, report['draw'])), 1)
+
+    def test_receipt_failure_is_nonzero_and_republication_can_record_a_new_receipt(self):
+        stdout = io.StringIO()
+        with patch.object(s, 'publish_receipt', side_effect=OSError('receipt denied')), contextlib.redirect_stdout(stdout):
+            code = s.main(['--repo', str(self.repo), '--store', str(self.store), '2'])
+        report = json.loads(stdout.getvalue())
+        self.assertEqual(code, 1)
+        self.assertTrue(report['output']['published'])
+        self.assertFalse(report['output']['receipt_recorded'])
+        self.assertEqual([p['kind'] for p in report['problems']], ['publication-receipt-failed'])
+        manifest = Path(report['output']['manifest']).read_bytes()
+        self.assertEqual(s.read_events(self.store, report['draw']), [])
+        again = self.cli('publish', report['draw']['sample_id'])
+        self.assertEqual(again.returncode, 0, again.stderr)
+        self.assertTrue(json.loads(again.stdout)['output']['receipt_recorded'])
+        self.assertEqual(Path(report['output']['manifest']).read_bytes(), manifest)
+        self.assertEqual(len(s.read_events(self.store, report['draw'])), 1)
+
+    def test_missing_redundant_alias_is_reported_but_does_not_block_publication(self):
+        extra = self.make_leaf('Heaps/Alias', [b'one'])
+        (extra / 'images/0.png').unlink()
+        run = self.cli('4')
+        report = json.loads(run.stdout)
+        self.assertEqual(run.returncode, 1)
+        self.assertEqual(report['population']['counts']['eligible'], 4)
+        self.assertEqual(report['current_check']['images_available'], 4)
+        self.assertFalse(report['current_check']['ok'])
+        self.assertTrue(report['current_check']['publication_ready'])
+        self.assertTrue(report['output']['published'])
+        self.assertTrue(report['output']['receipt_recorded'])
+        self.assertEqual({p['kind'] for p in report['problems']}, {'image-unavailable', 'alias-unavailable'})
+        self.assertEqual(self.cli('publish', report['draw']['sample_id']).returncode, 1)
+
     def test_unsafe_world_destinations_are_refused_before_drawing(self):
         outside = Path(self.temp.name) / 'outside'
         outside.mkdir()
@@ -551,6 +646,51 @@ class SamplerTests(unittest.TestCase):
         self.assertNotEqual(self.inventory()['inventory_id'], inv['inventory_id'])
         self.assertEqual(self.inventory()['population']['counts']['eligible'], 4)
 
+    def test_bad_leaf_field_types_and_paths_are_named_json_problems(self):
+        path = self.heap / 'manifest.json'
+        original = path.read_text()
+        for key, value in [('family_id', ['wrong']), ('parents', {}), ('file', '.'), ('file', 'images/\0bad')]:
+            with self.subTest(key=key, value=value):
+                data = json.loads(original)
+                data['images'][0][key] = value
+                path.write_text(json.dumps(data))
+                run = self.cli('inventory')
+                self.assertEqual(run.returncode, 1, run.stderr)
+                report = json.loads(run.stdout)
+                self.assertEqual(report['counts']['eligible'], 2)
+                self.assertEqual([p['kind'] for p in report['problems']], ['leaf-excluded'])
+                self.assertIn('Fixtures/Heaps/Curatorial/Nested/Leaf', report['problems'][0]['message'])
+                self.assertNotIn('Traceback', run.stderr)
+
+    def test_unreadable_leaf_is_excluded_without_hiding_the_remaining_population(self):
+        original_read = Path.read_bytes
+
+        def read(path):
+            if path == (self.heap / 'sources.csv').resolve():
+                raise PermissionError('catalog denied')
+            return original_read(path)
+
+        with patch.object(Path, 'read_bytes', read):
+            inventory = self.inventory()
+        self.assertEqual(inventory['population']['counts']['eligible'], 2)
+        self.assertIn('catalog denied', s.excluded_leaves(inventory)[0]['error']['message'])
+
+    def test_non_utf8_annotations_are_reported_without_modifying_the_log(self):
+        draw = self.draw()
+        path = s.sample_dir(self.store, draw['sample_id']) / 'annotations.jsonl'
+        damaged = b'\xff\n'
+        path.write_bytes(damaged)
+        for command in ('show', 'verify'):
+            run = self.cli(command, draw['sample_id'])
+            self.assertEqual(run.returncode, 1, run.stderr)
+            report = json.loads(run.stdout)
+            self.assertEqual([p['kind'] for p in report['problems']], ['annotations-unreadable'])
+            self.assertEqual(report['problems'][0]['code'], 'record-damaged')
+        run = self.cli('annotate', draw['sample_id'], '--key', 'note', '--json', 'null')
+        self.assertEqual(run.returncode, 2, run.stderr)
+        self.assertEqual(json.loads(run.stdout)['error']['code'], 'record-damaged')
+        self.assertEqual(path.read_bytes(), damaged)
+
     def legacy_inventory(self):
         """A schema 1 snapshot as the first sampler release wrote it: rows embedded per alias."""
         current = self.inventory()
@@ -627,6 +767,18 @@ class SamplerTests(unittest.TestCase):
         self.assertFalse(verified['ok'])
         with self.assertRaises(s.SamplerError):
             s.annotate(self.store, draw['sample_id'], 'k', 'v')
+
+    def test_list_reports_draw_directories_whose_draw_json_is_missing(self):
+        good, damaged = self.draw(1), self.draw(2)
+        (s.sample_dir(self.store, damaged['sample_id']) / 'draw.json').unlink()
+        run = self.cli('list')
+        self.assertEqual(run.returncode, 1, run.stderr)
+        report = json.loads(run.stdout)
+        entries = {entry['sample_id']: entry for entry in report['draws']}
+        self.assertEqual(entries[good['sample_id']]['status'], 'ok')
+        self.assertEqual(entries[damaged['sample_id']]['status'], 'damaged')
+        self.assertEqual(entries[damaged['sample_id']]['error']['code'], 'record-missing')
+        self.assertEqual([p['kind'] for p in report['problems']], ['draw-damaged'])
 
     def test_inventory_exit_code_reports_fixture_problems(self):
         self.assertEqual(self.cli('inventory').returncode, 0)

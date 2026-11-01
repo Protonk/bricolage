@@ -46,21 +46,43 @@ The default world directory is `Fixtures/output/sampled/`; `--world DIR` writes
 elsewhere. The copies are Git-ignored and disposable; editing them cannot change
 the fixture originals. Copies are verified and the manifest written in a staged
 directory before the previous world is replaced, so a visible world is complete.
-Invalid requests, unavailable inputs, and copy/checksum failures leave the previous
-world intact. A successful zero-image draw leaves only `world.json`. The engine
+Existing directories are exchanged atomically using the operating system's
+directory-swap operation; the old directory is cleaned up only after the switch.
+The standard-library `ctypes` wrapper uses macOS `renamex_np(RENAME_SWAP)` or Linux
+`renameat2(RENAME_EXCHANGE)`; there is no delete-then-rename fallback.
+Unsupported platforms/filesystems fail without deleting the previous world; a new
+destination can still be published by rename. Invalid requests, unavailable selected
+bytes, and copy/checksum or installation failures leave the previous world intact.
+A successful zero-image draw leaves only `world.json`. The engine
 replaces a directory only when it is empty or already a world (it contains
 `world.json`); any other nonempty destination, a symlinked destination, a
 destination among the fixtures, or one containing or inside the record store is
 refused before a draw is made. Concurrent publications to one directory serialize;
-the last one published occupies it. Persistent records remain in
+the last one published occupies it. Consumers must finish reading before a directory
+is reused, or receive a separate publication directory: atomic replacement does not
+give a reader a snapshot across separate file opens. Persistent records remain in
 `Fixtures/Sampler/records/`, independently of worlds.
 
-Each publication appends one annotation event to the draw, key `publication`,
+After installing a world, publication appends one annotation event to the draw, key `publication`,
 author `Fixtures/sample`, recording the directory, manifest path, time and image
 count. That receipt is the sampler's only trace of a publication; whether to keep
 anything a consumer produced from the world is a separate, human decision.
 `publish SAMPLE_ID [--world DIR]` materializes an existing draw as a world again
 under the same world ID, appending another receipt.
+
+Installation and receipt append are separate operations. `output.published` says
+whether the world was installed; `output.receipt_recorded` says whether its receipt
+append completed. A receipt failure returns exit 1 and a `publication-receipt-failed`
+problem even though the world remains usable. Preserve the response and inspect
+the annotation log: a failed append may have written some or all of an event before
+failing. Repair a damaged log explicitly, then `publish SAMPLE_ID` to make a new
+publication with a new receipt. Do not blindly retry an annotation or claim the
+failed publication has a durable receipt. A process interruption between the two
+operations has the same recovery limit; this is not a transaction across both files.
+
+A failure cleaning up the old directory returns exit 1 with `world-cleanup-failed`
+and the leftover staging path. The new world remains published and its receipt is
+still attempted. Only that named disposable staging directory needs cleanup.
 
 `draw` refreshes the inventory by default and returns a persistent `sample_id`.
 Omit `--seed` to generate and record a seed. N may be zero; negative N or N larger
@@ -117,8 +139,8 @@ Draw responses have `schema_version: 1` and these fields:
 | `population.counts.eligible` | M, the number of eligible distinct images in this draw's snapshot |
 | `summary.by_leaf` | How many selected images each leaf contributed |
 | `images` | Draw order; each item has `position`, `image_id`, `sampled_path` for its copy in the world, `available_path` for its fixture original, and all alias `locations` with current statuses |
-| `current_check` | Record reproduction and current file/metadata verification |
-| `output` | Absolute world `directory` and `manifest` path, `published` Boolean, and `error` if copying or publication failed |
+| `current_check` | Record reproduction and current file/metadata verification; `ok` means no problems, while `publication_ready` means records/metadata/logs are valid and at least one copy of every selected image is available |
+| `output` | Absolute world `directory` and `manifest` path, `published` and `receipt_recorded` Booleans, and `error` if installation or receipt writing failed |
 | `problems` | Every problem found, each with a `kind`; empty when the exit code is 0 |
 
 Responses, records and the world manifest keep their `schema_version` while changes are
@@ -187,6 +209,10 @@ deduplication is attempted, and no relationship groups are preserved during draw
 
 Inventory creation reads and hashes every manifest input. An identity is eligible
 when at least one recorded input alias is readable and matches its expected hash.
+Publication uses that same availability rule. A missing redundant alias remains
+a problem and causes exit 1, but does not prevent publishing the verified available
+copy. Missing all copies of a selected image, invalid records or annotations, and
+changed pinned metadata prevent publication; nothing is redrawn or substituted.
 Missing, changed and inaccessible aliases stay in the inventory with their status;
 changed bytes are not silently assigned a new identity. Unexpected unlisted input
 files are reported for catalog reconciliation, not silently added. Out-of-tree
@@ -248,6 +274,9 @@ current annotations, start with empty sample/image maps; set or delete each even
 key on its target in order. The whole value is replaced, not recursively merged.
 An incomplete or malformed log is reported and left intact for explicit repair.
 Use the CLI for concurrent writes; local file locks are not a distributed service.
+
+Directory-exchange API references: [Apple's declarations](https://github.com/apple-oss-distributions/xnu/blob/main/bsd/sys/stdio.h)
+and the [Linux rename manual](https://man7.org/linux/man-pages/man2/rename.2.html).
 
 `verify` checks snapshot/draw integrity, replays the original selection, validates
 annotation history, and rehashes all selected aliases and their pinned fixture

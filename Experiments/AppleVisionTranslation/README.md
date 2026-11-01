@@ -73,23 +73,22 @@ The variants set has its own build/validation command and passes the shared Pyth
 fixture checker; it is not part of the fixed Swift test inventory. Its varied
 compositions do not imply that translation registration is applicable.
 
-The developer tools target Python 3.14.x with no third-party packages. Use the
-repository's `.venv` (`make -C Fixtures setup-python`, then `source Fixtures/.venv/bin/activate`
+The developer tools target Python 3.14.x with no third-party packages. Use
+`Fixtures/.venv` (`make -C Fixtures setup-python`, then `source Fixtures/.venv/bin/activate`
 from the repository root) for Python commands and tests below. Build the
-experiment before running comparisons. The default binary is
-`Experiments/AppleVisionTranslation/.build/debug/hazy-vision-translation`;
-`--binary` can select another build. Each run needs a new output directory with
-an existing parent.
+experiment before running comparisons. The fixture-owned runner requires `--binary`
+to name the experiment build explicitly; validation does not need a binary. Each
+run needs a new output directory with an existing parent.
 
 ```sh
-python3 Experiments/AppleVisionTranslation/Tools/fixtures.py check
-python3 Experiments/AppleVisionTranslation/Tools/fixtures.py check --fixtures Fixtures/Relationships/Multiviews
+python3 Fixtures/tools/relationship_fixtures.py check
+python3 Fixtures/tools/relationship_fixtures.py check --fixtures Fixtures/Relationships/Multiviews
 swift build --package-path Experiments/AppleVisionTranslation
 mkdir -p output
-python3 Experiments/AppleVisionTranslation/Tools/fixtures.py run --output output/fixture-focus
-python3 Experiments/AppleVisionTranslation/Tools/fixtures.py run --selection full --output output/fixture-full
-python3 Experiments/AppleVisionTranslation/Tools/fixtures.py run --fixtures Fixtures/Relationships/Multiviews --output output/multiview-focus
-python3 -m unittest discover -s Experiments/AppleVisionTranslation/Tools
+python3 Fixtures/tools/relationship_fixtures.py run --binary Experiments/AppleVisionTranslation/.build/debug/hazy-vision-translation --output output/fixture-focus
+python3 Fixtures/tools/relationship_fixtures.py run --binary Experiments/AppleVisionTranslation/.build/debug/hazy-vision-translation --selection full --output output/fixture-full
+python3 Fixtures/tools/relationship_fixtures.py run --binary Experiments/AppleVisionTranslation/.build/debug/hazy-vision-translation --fixtures Fixtures/Relationships/Multiviews --output output/multiview-focus
+make -C Fixtures test-relationships
 ```
 
 The default [focused selection](../../Fixtures/Relationships/Derivatives/selections.json) uses astronaut,

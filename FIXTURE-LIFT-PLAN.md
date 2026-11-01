@@ -1,100 +1,226 @@
-# Lifting Fixtures out of hazy
+# Lift Fixtures into bricolage
 
-This is a handoff for the agent who performs the lift. The decisions below are
-made; the tasks are what remains. Read [WORLD.md](WORLD.md), [Fixtures/AGENTS.md](Fixtures/AGENTS.md)
-and the [sampling engine guide](Fixtures/Sampler/README.md) first.
+This is the execution handoff for making Fixtures the main application in
+`~/Desktop/Experiments/bricolage`, currently empty. The preparation repairs are
+complete in hazy; the lift itself has not started. Read [WORLD.md](WORLD.md),
+[Fixtures/AGENTS.md](Fixtures/AGENTS.md) and the [sampler guide](Fixtures/Sampler/README.md).
 
-## Decisions already made
+## Decisions and boundaries
 
-- hazy receives a **world** and nothing else. The contract is [WORLD.md](WORLD.md):
-  hash-named files, a `world.json` with a world ID and the file list, no order, no
-  origin. The world ID is the sample ID.
-- Mapping a world back to fixtures is a Fixtures activity. The key is `Fixtures/sample
-  show SAMPLE_ID`, computed on demand from the records. Nothing is stored for it.
-- Each publication appends one `publication` annotation event to its draw. Whether
-  anything hazy produces from a world is kept is a human decision made case by
-  case; there is no scorer, no evaluation loop and no receipt schema beyond that.
-- Separation is physical, not adversarial. An agent in the hazy checkout could read
-  old history to learn fixture structure; that is accepted. Flattening hazy's
-  history is a later, optional move.
-- The new Fixtures repository keeps `Fixtures/` as a top-level directory, with
-  `Fixtures/Makefile`, `Fixtures/.venv` and `Fixtures/output` beside the sets. Every
-  recorded path and metadata pin starts with `Fixtures/`, so nothing in the records
-  needs rewriting.
-- Images are Git-ignored. The local `images/`, `sources/` and `previews/` directories
-  must be moved with the checkout or restored into the new one; the records
-  report what is missing.
+- bricolage owns the fixture collections, intake tools, sampler, durable records,
+  and optional probe-pair runner. Keep `Fixtures/` as a top-level directory so
+  recorded paths and metadata pins remain valid. The root README and guidance
+  present these as bricolage's application, with `Fixtures/sample` as its entry point.
+- hazy consumes a world and receives no fixture provenance. The world ID is a saved
+  draw's ID. Repeating a draw reproduces the selection, not the ID; republishing
+  the saved draw preserves the ID. `Fixtures/sample show SAMPLE_ID` resolves the
+  provenance on the bricolage side, on demand.
+- World installation and publication receipts are separate operations. A successful
+  command installs the world and appends one `publication` annotation. Receipt or
+  cleanup failure returns a named problem and exit 1 while accurately reporting
+  whether the world was installed. Follow the sampler guide's recovery instructions;
+  do not mistake a nonzero exit for proof that no publication happened.
+- Keep the existing probe runner, as requested. Its fixture validation is independent
+  of hazy, and comparisons require an explicit binary path. Adapt its invocation to
+  the world CLI in task 1; provenance and probe selection stay on the Fixtures side.
+  There is no scorer, evaluation loop or automatic consumer-result retention.
+- Preserve original image bytes, metadata pins, draw records and annotation history.
+  Images remain Git-ignored. No acquisition, regeneration, ID rewrite or reroll is
+  part of the lift. Existing acquisition shortfalls remain documented as they are.
+- Preserve the original Git commit IDs by making a full local clone and pruning
+  unrelated files at the new tip. Historical hazy files remain in bricolage's history;
+  physical separation is sufficient. Do not use subtree split or history filtering:
+  the former strips the required prefix, and both rewrite provenance commit IDs.
+  There is no shared object store or continuing remote dependency after the clone.
+- Do not push. Flattening hazy's history is outside this plan and requires a separate
+  explicit request. No subsequent research pathway is selected here.
 
-## Already done in this repository
+## Preparation completed in hazy
 
-- The sampler publishes worlds (`--world DIR`, default `Fixtures/output/sampled/`),
-  republishes an existing draw under its world ID, refuses unsafe destinations and
-  writes a receipt per publication. Snapshots pin metadata by hash. Failures are
-  named JSON errors. Tests: `make -C Fixtures test-sampler`.
-- Fixtures is self-contained: Python venv, Makefile, output directory, guidance and
-  tests all live under `Fixtures/`. Root guidance points there.
-- `WORLD.md` exists at the hazy root and is linked from the README and `AGENTS.md`.
-- `Research/` contains no reference to fixture collections or paths (checked by
-  grep on 2026-11-01). Only `Experiments/` and the root README do.
+- Shared relationship validation, its tests and the optional runner are now
+  `Fixtures/tools/relationship_fixtures.py` and `test_relationships.py`. All three leaf
+  entry points and Variants' builder use them. The runner requires `--binary`.
+- Publication exchanges whole directories atomically; unsupported replacement fails
+  without deleting the previous world. Cleanup and receipt failures stay visible.
+- An unavailable redundant alias remains a reported problem but does not prevent
+  publishing an available verified copy of the selected identity.
+- Malformed leaf fields, unreadable metadata and non-UTF-8 annotations are reported
+  through the JSON error/problem interface. `list` includes draw directories whose
+  `draw.json` is missing. Regression tests cover these failure paths.
+- `WORLD.md` now distinguishes repeatable selections from stable saved-draw IDs and
+  documents the reader's need to finish before the publication directory is reused.
 
-## Remaining tasks
+Recheck this preparation before task 1:
 
-### 1. Make the experiment consume a world
+```sh
+make -C Fixtures test-sampler
+make -C Fixtures test-fixture-layout
+make -C Fixtures test-relationships
+Fixtures/.venv/bin/python Fixtures/tools/check_layout.py --full
+Fixtures/sample verify draw-82acd83c6cd540a6bf4e29610ff5dc2d
+```
 
-The Apple Vision experiment is the only hazy code that reaches into `Fixtures/`.
+The supplied media currently passes all 18 leaf validators and the demonstration
+has all 12 selected images available. New missing media or failed checks must be
+resolved, not waived as an expected consequence of moving repositories.
 
-- `Experiments/AppleVisionTranslation/Tests/AppleVisionTranslationExperimentTests/FixtureTests.swift`
-  resolves `../../Fixtures` from its own path and reads
-  `Relationships/Derivatives/manifest.json` and `selections.json`
-  (`known_shift_families`). Rewire it to a world directory named by an environment
-  variable, reading `world.json` and the files. Anything that needs provenance
-  (shift families, probes, expected pairs) cannot be a hazy test under the world
-  contract; it moves to the Fixtures side or is dropped. The seven mechanics tests
-  (`--filter ComparisonTests`) already need no fixtures and stay.
-- `Experiments/AppleVisionTranslation/Tools/fixtures.py` hard-codes
-  `Fixtures/Relationships/Derivatives` and `Multiviews`. Its `check` mode validates
-  fixture sets, which every leaf's `tools/check.py` now also does; its `run` mode
-  drives the binary over probe pairs. Both are Fixtures-side activities. Ask the
-  user whether `run` moves to Fixtures as a tool that drives the hazy binary, or is
-  retired; `check` is redundant with the leaf validators.
-- `Experiments/AppleVisionTranslation/Tools/test_fixtures.py` follows `fixtures.py`.
-- `Experiments/AppleVisionTranslation/README.md` (fixture sets, focused selection,
-  `fixtures.py` commands, the `Fixtures/.venv` note) and `IMAGE-JOURNEY.md`
-  (section "Checks and fixture evidence", links into `../../Fixtures/`) describe the
-  current coupling and must describe the world instead.
-- Proof of completion: with `Fixtures/` absent from the checkout and a world
-  directory supplied, `swift build` and `swift test` pass.
+Preparation was checked on macOS with Python 3.14.9: 47 sampler tests, 8 layout
+tests and 8 relationship-tool tests passed. A temporary standalone checkout with
+no Experiments directory passed all 18 leaf validators (25 specialized checks),
+verified and republished the demonstration, and retained identical copies of all
+5,971 asset files and 213 asset directories. The original durable records were
+unchanged. The Linux directory-exchange path has not been exercised here.
 
-### 2. Move the fixture text out of hazy's documents
+## 1. Implement and prove hazy's world boundary
 
-- Root `README.md`: the "Local fixture assets" section (sampling engine and
-  collections) moves to the Fixtures repository's README. The project map row for
-  Fixtures becomes a pointer to the Fixtures repository and to `WORLD.md`.
-- Root `AGENTS.md`: the Fixtures track line and the fixtures bullet go; the
-  `WORLD.md` pointer and the Python note about `Fixtures/.venv` go with them, since
-  hazy will have no Python toolchain.
-- `.gitignore`: the three `/Fixtures/**` media rules and the `/Fixtures/output`
-  rules go with Fixtures.
-- `WORLD.md` is shared text. Keep an identical copy in both repositories and note
-  the counterpart in each; a change to one is a change to both.
+Do this in hazy while Fixtures remains available. This task is still pending.
 
-### 3. Perform the move
+- Give the experiment's pair CLI this explicit interface:
+  `hazy-vision-translation compare --world WORLD --reference IMAGE_ID --floating IMAGE_ID --output DIRECTORY`.
+  Read `world.json`, validate its supported schema, unique IDs/files, safe flat
+  paths, file coverage and byte hashes, and resolve the two supplied IDs. Ignore
+  unknown additive fields. Never infer pairs or expected results from fixture
+  structure. The internal comparison implementation may still use file URLs.
+- Reports and readable summaries identify the world and both image IDs rather than
+  source paths. Include those identities in world-related errors when available.
+  Keep world inputs read-only and require outputs outside the world. Preserve the
+  existing distinction between estimated, unavailable, notRun and failed outcomes.
+  Treat undecodable bytes as an ordinary input error, not a bad sampling decision.
+- Replace `FixtureTests.swift`'s manifest, family, scene and known-shift assumptions
+  with world-based checks selected by `HAZY_WORLD`. Do not bake the demonstration's
+  IDs, image counts or successful decode/alignment assumptions into general world
+  tests. Retain the seven self-contained mechanics cases and add focused world
+  parsing, identity, output and failure checks. Provenance assertions belong to
+  Fixtures; remove them from hazy without inventing a new evaluation system.
+- Adapt `Fixtures/tools/relationship_fixtures.py run` and its tests to require `--world` as
+  well as `--binary`. Resolve that world's saved draw using the local sampler store,
+  map the explicit fixture probes to byte IDs, and pass only the world and those IDs
+  to hazy. Report probe endpoints absent from the world as skipped with a reason;
+  never replace them or assemble an unrecorded world. Exact-byte aliases may map a
+  probe to a self-comparison. Keep `check` independent of any world or binary.
+- Update the experiment README and IMAGE-JOURNEY for the implemented interface and
+  actual checks. Remove active fixture-path instructions from hazy's experiment
+  docs. Keep current fixture-side commands in Fixtures' docs. Update the portability
+  ledger if any framework handoff or caller-visible convention changes.
 
-- Create the Fixtures repository from this one preserving history for `Fixtures/`
-  (for example `git subtree split` or `git filter-repo` keeping `Fixtures/`,
-  `WORLD.md` and the `.gitignore` rules). Fixture provenance history is worth
-  keeping; the sets' intake records refer to it.
-- Move or restore the Git-ignored media at the same relative paths, then run
-  `make -C Fixtures test-sampler`, `make -C Fixtures test-fixture-layout`,
-  `Fixtures/.venv/bin/python Fixtures/tools/check_layout.py --full`,
-  `Fixtures/sample verify draw-82acd83c6cd540a6bf4e29610ff5dc2d` and
-  `Fixtures/sample publish draw-82acd83c6cd540a6bf4e29610ff5dc2d` in the new
-  checkout. All must pass or report only the media you know to be absent.
-- In hazy, delete `Fixtures/`, apply task 2, and run the proof from task 1.
-- Then, if the user chooses, flatten hazy's history into a fresh repository.
+Acceptance requires a real consumer exercise, not just rewritten tests:
 
-## Order
+1. Publish the saved demonstration to a new disposable world via `Fixtures/sample
+   publish`, using a temporary copy of the record store for this proof so the durable
+   demonstration's annotation history is unchanged.
+2. Copy the updated tracked hazy application sources into a temporary checkout with
+   **no Fixtures directory**. With `HAZY_WORLD` pointing at the world outside that
+   checkout, `swift build` and `swift test` pass. Missing `HAZY_WORLD` must not prevent
+   the self-contained mechanics tests from running; the acceptance run must show
+   that the real-world checks actually ran, not merely skipped.
+3. Invoke the built CLI on two IDs from the supplied world, with a fresh output
+   directory outside it. An estimated or unavailable alignment is acceptable;
+   verify the report has the exact world/image IDs, no origin paths or provenance,
+   and that the world bytes are unchanged. Also exercise an unknown image ID and
+   an altered copy of a world; both fail visibly without writing into the world.
+4. Run the adapted runner against a sampler-published world containing its probe
+   endpoints and an explicit binary in the temporary hazy checkout. A full-population
+   draw through `Fixtures/sample N` may be used for coverage; keep its store/output
+   temporary. Check executed and missing-endpoint outcomes without treating an
+   alignment estimate as a match judgment.
+5. Independently check a temporary Fixtures-only checkout, with media, Python
+   dependencies, WORLD.md and standalone root AGENTS.md, but no `Experiments/`,
+   using every preparation command above. Three source-tool pin checks use the
+   root AGENTS.md as their checkout-location marker; they do not read hazy guidance.
 
-Task 1 first, in hazy, while `Fixtures/` is still present to compare against. Task
-2 next. Task 3 last, and only after task 1's proof passes. Each task is a checked
-stopping point to commit.
+Commit task 1 and its docs after these checks. Keep media-ignore rules and the
+fixture directory in hazy throughout this task.
+
+## 2. Establish and verify bricolage
+
+Start from task 1's clean, committed hazy revision. Capture the branch and full
+commit ID for the lift record. Confirm the destination remains empty; preserve
+any unexpected contents instead of overwriting them.
+
+From hazy's root, use task-specific shell variables:
+
+```sh
+lift_source=$(pwd -P)
+lift_destination="$HOME/Desktop/Experiments/bricolage"
+lift_branch=$(git branch --show-current)
+lift_commit=$(git rev-parse HEAD)
+git clone --no-hardlinks --single-branch --branch "$lift_branch" "$lift_source" "$lift_destination"
+git -C "$lift_destination" remote remove origin
+```
+
+This retains every ancestor of the source branch with its original ID and avoids
+Git alternates/hard links. Record `lift_commit` in a new textual provenance receipt
+under `Fixtures/provenance/`; do not change historical pins or commit references.
+Verify representative historical references with `git cat-file -e COMMIT^{commit}`,
+including `fd04a3ed21a6cb706a486418997dc6e4ba1e7ff2` and
+`6f789b0c36246aaa697dbee800e9c1e6c82d56f0`.
+
+In bricolage only:
+
+- Remove the tracked `Experiments/`, `Research/`, root `output/`, `VERSION` and
+  `FIXTURE-LIFT-PLAN.md` from the new tip. Keep Fixtures, WORLD.md and the media-ignore
+  rules. Replace the root README and AGENTS with standalone bricolage guidance,
+  including setup, sampling, records, fixture validation, the optional runner and
+  local commit/no-push rules. Remove obsolete root Swift/output ignore exceptions;
+  retain `.venv`, cache and whole-directory media/output ignores needed by Fixtures.
+- Copy the ignored media before touching hazy's copy. For example, with the captured
+  variables still set, copy the fixture tree while excluding only its disposable
+  top-level environment/output and Python caches:
+
+  ```sh
+  rsync -a --checksum --exclude='/.venv/' --exclude='/output/' --exclude='__pycache__/' "$lift_source/Fixtures/" "$lift_destination/Fixtures/"
+  ```
+
+  Inventory every file beneath each leaf's `images/`, `sources/` and `previews/`,
+  including nested files and empty directories. Compare relative paths, sizes and
+  SHA-256 hashes before and after. Record counts and inventory digests in the lift
+  receipt. The clone's existing tracked records must remain byte-identical except
+  for explicitly reviewed documentation changes and the new receipt.
+- Create a fresh environment; do not transfer or reuse hazy's venv:
+
+  ```sh
+  make -C Fixtures setup-python
+  Fixtures/.venv/bin/python -m pip install -r Fixtures/tools/requirements.txt
+  ```
+
+  Python 3.14.x and Pillow 12.0.0 cover the current offline validators. Optional
+  tools keep their separate requirements. Do not acquire any fixture images.
+- Keep WORLD.md identical in both repositories. Add the same counterpart note to
+  both copies, linking `../hazy/WORLD.md` and `../bricolage/WORLD.md`. Keep the contract
+  pointer in hazy's root guidance after the fixture-specific guidance is removed.
+- Run all five preparation commands in bricolage. Publish the saved demonstration
+  through bricolage's launcher to a new disposable world and require exit 0,
+  `published: true`, `receipt_recorded: true`, verified hashes and the original world
+  ID. This real publication appends a new durable receipt; keep it and update the
+  demonstration's current annotation-count documentation. Exercise inventory and
+  show to check that live paths resolve into bricolage and snapshot pins still match.
+- Check that all media is still ignored, no binary assets are staged, the repository
+  has no remote, and its Git object store has no alternates. Commit the standalone
+  bricolage application and its lift receipt after verification.
+
+Keep hazy's Fixtures and ignore rules intact until bricolage has passed all gates.
+A failed transfer, pin check or validator stops the cutover.
+
+## 3. Cut over hazy
+
+Only after the verified bricolage commit exists:
+
+- Move hazy's remaining local Fixtures directory to a named backup outside both
+  checkouts; keep it for rollback. Stage the tracked Fixtures deletion. Do not leave
+  the ignored media behind in hazy after removing its ignore rules.
+- In the **same commit**, remove hazy's fixture media/output ignore rules and Python
+  toolchain instructions. Move the root README's fixture-specific introduction to
+  bricolage's README as needed, replace its project-map row with a bricolage pointer,
+  and keep WORLD.md prominently linked. Remove the completed lift-plan file and its
+  links from hazy's README/AGENTS; record the completed boundary in current guidance.
+- Build/test hazy with Fixtures absent, run the real CLI against a world published by
+  bricolage, verify world/image IDs and input preservation, and rerun bricolage's
+  fixture checks. Check the two WORLD.md files are byte-identical. No live command or
+  implementation in either repository may depend on the other repository's source
+  tree. Explicit binary/world arguments and cross-repository documentation pointers
+  are the intended connections. Historical provenance paths remain historical.
+- Commit hazy's cutover. Report both commit IDs, checks, the backup location and any
+  existing acquisition shortfalls. Leave both repositories unpushed.
+
+These three tasks are separate checked stopping points. Do not perform the
+cutover merely because a clone exists or the mechanics tests pass.

@@ -39,5 +39,6 @@ Checks from the repository root:
 ```sh
 make -C Fixtures test-sampler
 make -C Fixtures test-fixture-layout
+make -C Fixtures test-relationships
 Fixtures/.venv/bin/python Fixtures/tools/check_layout.py --full
 ```

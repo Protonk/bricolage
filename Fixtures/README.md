@@ -99,6 +99,10 @@ Each leaf separates complete acquisition from earlier deferred selection cases.
 - Every leaf exposes `tools/check.py` and `tools/requirements.txt`. Run
   `Fixtures/.venv/bin/python Fixtures/tools/check_layout.py --full` from the repository root
   to check all 18 leaves, including their specialized offline validators.
+- Shared relationship validation and the optional probe runner live in
+  [tools/relationship_fixtures.py](tools/relationship_fixtures.py). Run `make -C Fixtures
+  test-relationships` for their checks. The runner requires an explicit experiment
+  binary; fixture validation has no dependency on the experiment checkout.
 - Use `Fixtures/sample N` to draw equal tickets across active Heaps and
   Relationships inputs and preserve separate arbitrary annotations.
 - Open the relevant role or heap README, then the leaf set's README for its
@@ -116,8 +120,8 @@ Each leaf separates complete acquisition from earlier deferred selection cases.
   distinction between provenance and visual judgments. Existing fixture IDs and
   manifest kinds are unchanged by this organization.
 
-The current experiment still defaults to Derivatives and uses its existing
-comparison workflow. Heap collections use their fixture-local validators and
+The optional comparison runner defaults to Derivatives and uses an explicitly
+supplied experiment binary. Heap collections use their fixture-local validators and
 have no expected pairs. A repository checkout contains the text records and
 tools; restore local media before running checks that need it.
 

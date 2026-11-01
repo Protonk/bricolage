@@ -127,7 +127,7 @@ x = -17, y = +9, within 0.5 working pixels. The shift happens after preparation:
 retina's original 1411×1411 image becomes 1024×1024 before we move it. These are
 controlled transformations, not independent photographs of the same scene.
 
-[Tools/fixtures.py](Tools/fixtures.py) validates asset hashes, agreement of
+[Fixtures/tools/relationship_fixtures.py](../../Fixtures/tools/relationship_fixtures.py) validates asset hashes, agreement of
 CSV/JSON manifests, source copies, probe references and identity labels, and batch
 membership for the three provenance-led [fixture sets](../../Fixtures/README.md), using one shared schema.
 It does not recompute the supplied Pillow pixel hashes; multiview pixel-hash fields

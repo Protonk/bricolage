@@ -118,7 +118,7 @@ The generator's small-batch writer has been corrected to recreate `smoke.txt` an
 `medium.txt`; those lists previously disappeared on regeneration. The correction
 was checked against the supplied lists without rerunning the image encoders.
 
-From the repository root, `Fixtures/.venv/bin/python Experiments/AppleVisionTranslation/Tools/fixtures.py check` validates this
+From the repository root, `Fixtures/.venv/bin/python Fixtures/tools/relationship_fixtures.py check` validates this
 package without Pillow. See the [experiment README](../../../Experiments/AppleVisionTranslation/README.md#fixture-checks-and-exploration)
 for the focused comparison runner and tests. The manifest's pixel hashes describe
 Pillow's decoded RGB representation, not hazy's Apple-prepared working pixels.

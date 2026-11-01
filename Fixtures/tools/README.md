@@ -1,13 +1,15 @@
-# Shared fixture layout tools
+# Shared fixture tools
 
-Use the Python 3.14.x `Fixtures/.venv`. These tools never download images,
-generate variants, repair evidence, or run similarity comparisons.
+Use the Python 3.14.x `Fixtures/.venv`. Layout and relationship validation are
+offline. The optional relationship runner invokes an explicitly supplied
+experiment binary; it does not implement a comparator or download images.
 
 ```sh
 make -C Fixtures setup-python
 Fixtures/.venv/bin/python -m pip install -r Fixtures/tools/requirements.txt
 Fixtures/.venv/bin/python Fixtures/tools/check_layout.py --full
 make -C Fixtures test-fixture-layout
+make -C Fixtures test-relationships
 ```
 
 `check_layout.py` discovers only active leaves under Heaps and Relationships at
@@ -28,3 +30,15 @@ rejects ambiguous duplicate locations. Historical audit identifiers are not
 rewritten. The migration's `tool-changes.json` records exact before/after hashes
 for intentionally adapted tools, allowing existing source pins to remain intact
 while rejecting unrecorded edits.
+
+`relationship_fixtures.py check --fixtures LEAF` validates the three relationship sets:
+hashes, source copies, CSV/JSON agreement, parent and scene identities, probes,
+and batch coverage. Their leaf entry points and the Variants builder use this
+implementation directly. `test-relationships` needs the local relationship media;
+`test-fixture-layout` uses temporary mechanics fixtures only.
+
+`relationship_fixtures.py run --fixtures LEAF --binary /path/to/hazy-vision-translation
+--output /path/to/new-run` drives the existing pair CLI and records all outcomes,
+including failures. `--selection focus|probes|full` chooses the fixture's explicit
+pairs. The binary path is required; no sibling checkout or application build is
+assumed. The output parent must exist and the output directory must be new.
