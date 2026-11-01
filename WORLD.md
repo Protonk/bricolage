@@ -1,7 +1,7 @@
 # The world hazy receives
 
-hazy does not read fixtures. It receives a **world**: one directory produced by
-the Fixtures sampler, containing image files and a manifest. This document is the
+hazy receives a **world**: an independently produced directory containing image
+files and a manifest. It does not read the producer's records or source tree. This document is the
 whole of what hazy may assume about a world, and the whole of what it owes back.
 
 ## Layout
@@ -57,6 +57,9 @@ came from the images.
 
 ## The other side
 
-Mapping a world ID and its image IDs back to where the images came from is a
-Fixtures activity. Fixtures keeps the records that make that possible and decides,
+Mapping a world ID and its image IDs back to where the images came from is an
+activity of the world's producer. The producer keeps the records that make that possible and decides,
 case by case, whether anything hazy produced from a world is worth keeping.
+
+This contract is shared by [hazy](../hazy/WORLD.md) and
+[bricolage](../bricolage/WORLD.md). Keep both copies identical when changing it.

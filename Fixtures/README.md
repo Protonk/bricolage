@@ -1,4 +1,4 @@
-# hazy fixtures
+# bricolage fixtures
 
 Fixtures are organized by why their images were chosen. The provenance
 relationship sets and the selected image heaps have different evidential roles.

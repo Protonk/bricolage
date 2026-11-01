@@ -1,18 +1,12 @@
 *.DS_Store
-.build/
-.swiftpm/
+__pycache__/
+.venv/
 output/
-!/output/
-/output/*
-!/output/AGENTS.md
 !/Fixtures/output/
 /Fixtures/output/*
 !/Fixtures/output/AGENTS.md
-__pycache__/
-.venv/
 
-# Local fixture assets: ignore whole directories, regardless of file format.
-# Applies to current and future fixture sets, including nested asset files.
+# Preserve source/media bytes locally, outside Git, at every nesting depth.
 /Fixtures/**/images/
 /Fixtures/**/sources/
 /Fixtures/**/previews/

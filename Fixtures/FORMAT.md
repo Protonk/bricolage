@@ -128,7 +128,7 @@ pixel edits. Legacy smoke/medium lists select only its six originals.
 Heap contributions may be nested below a source collection, for example
 `Heaps/Curatorial/POTY/Arthropods/`. A manifest identifies a leaf fixture set;
 its paths remain relative to that leaf, irrespective of directory depth. Existing
-Similarity tools are contribution-specific, and the experiment's relationship
+Similarity tools are contribution-specific, and the shared relationship
 checker deliberately does not validate either heap kind. There is no shared
 fixed-depth heap traversal to change. The fixture indexes identify contributions
 and their check commands.

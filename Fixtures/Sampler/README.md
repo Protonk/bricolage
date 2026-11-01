@@ -1,6 +1,6 @@
 # Fixture sampling engine
 
-Draw equal tickets from hazy's local fixture inputs and keep a record that other
+Draw equal tickets from bricolage's local fixture inputs and keep a record that other
 programs can read. Python 3.14.x on macOS or Linux; standard library only. There is
 no network access, image transformation, comparator or activity-specific logic.
 
@@ -318,9 +318,10 @@ none were unavailable or unlisted. No strata, quota or reroll was used. The same
 seed selected the same twelve identities under the first release's schema 1
 snapshot, which stored metadata rows; its schema 2 snapshot pins them instead.
 
-Seven annotation events follow: six examples with sample notes, an image note, a
-revised value and a deleted value, then one `publication` receipt from
-`Fixtures/sample publish` writing the default world. Their
+Eight annotation events follow: six examples with sample notes, an image note, a
+revised value and a deleted value, then two `publication` receipts. The original
+receipt records the earlier default world; the repository lift appended a receipt
+for `Fixtures/output/lift-world` in bricolage. Their
 [history](records/draws/draw-82acd83c6cd540a6bf4e29610ff5dc2d/annotations.jsonl)
 preserves the prior values. The examples are investigation annotations, not fixture
 judgments or eligibility changes. The copies were hash-verified at publication;
