@@ -34,24 +34,33 @@ engine and records. From inside Fixtures, use `./sample N`; from elsewhere, use
 the executable's absolute path. No inventory preparation or internal Python
 imports are required.
 
-Each successful draw replaces the entire contents of the checkout's
-`output/sampled/` with independent, byte-identical copies of its selected images.
-Files are named `0001-<image-sha256>.<original-extension>` in draw order. The copies
-are Git-ignored and disposable; editing them cannot change the fixture originals.
-`sample.json` sits beside them: the sample ID, seed, per-leaf summary and, for each
-copy, its image ID, the fixture original it was copied from, that leaf's path, ID
-and kind, and the manifest and source-catalog rows resolved at publication. It is
-derived from the records and the checkout and is not itself a record. Read it
-instead of parsing the command's output when the copies are all you need.
-Copies are verified before the previous output is removed. Invalid requests,
-unavailable inputs, and copy/checksum failures leave the previous output intact.
-A successful zero-image draw empties `sampled/`. Other output paths, including
-the tracked [`output/AGENTS.md`](../../output/AGENTS.md), are left alone.
+Each successful draw publishes a **world**: a directory holding independent,
+byte-identical copies of the selected images named `<image-sha256>.<original-extension>`,
+beside a `world.json` that lists the world ID and the files, sorted by name.
+The world is what the consuming program receives, and it carries nothing else:
+no draw order, no leaf names, no provenance rows. The world ID is the sample ID,
+so every world leads back to its draw record here. The hazy-facing contract is
+written once in [WORLD.md](../../WORLD.md); this guide describes the Fixtures side.
 
-The engine recreates `sampled/` if absent. It refuses symlinked output directories
-and record stores inside `output/sampled/`. Concurrent draws serialize publication;
-the last published draw occupies this shared scratch directory. Persistent records
-remain in `Fixtures/Sampler/records/`, independently of these disposable copies.
+The default world directory is `Fixtures/output/sampled/`; `--world DIR` writes
+elsewhere. The copies are Git-ignored and disposable; editing them cannot change
+the fixture originals. Copies are verified and the manifest written in a staged
+directory before the previous world is replaced, so a visible world is complete.
+Invalid requests, unavailable inputs, and copy/checksum failures leave the previous
+world intact. A successful zero-image draw leaves only `world.json`. The engine
+replaces a directory only when it is empty or already a world (it contains
+`world.json`); any other nonempty destination, a symlinked destination, a
+destination among the fixtures, or one containing or inside the record store is
+refused before a draw is made. Concurrent publications to one directory serialize;
+the last one published occupies it. Persistent records remain in
+`Fixtures/Sampler/records/`, independently of worlds.
+
+Each publication appends one annotation event to the draw, key `publication`,
+author `Fixtures/sample`, recording the directory, manifest path, time and image
+count. That receipt is the sampler's only trace of a publication; whether to keep
+anything a consumer produced from the world is a separate, human decision.
+`publish SAMPLE_ID [--world DIR]` materializes an existing draw as a world again
+under the same world ID, appending another receipt.
 
 `draw` refreshes the inventory by default and returns a persistent `sample_id`.
 Omit `--seed` to generate and record a seed. N may be zero; negative N or N larger
@@ -63,6 +72,7 @@ Use the returned full identifiers in these commands:
 Fixtures/sample show SAMPLE_ID --paths
 Fixtures/sample show SAMPLE_ID
 Fixtures/sample verify SAMPLE_ID
+Fixtures/sample publish SAMPLE_ID --world /path/to/world
 Fixtures/sample annotate SAMPLE_ID --key purpose --json '"Notebook study"'
 Fixtures/sample annotate SAMPLE_ID --image IMAGE_ID --key review --json '{"decision":"accepted","tags":["reference"],"note":"My observation"}'
 Fixtures/sample annotate SAMPLE_ID --image IMAGE_ID --key review --json '{"decision":"revisit","note":"Revised observation"}'
@@ -106,12 +116,12 @@ Draw responses have `schema_version: 1` and these fields:
 | `population` | Snapshot ID and file, `counts`, every leaf with its status, the `checkout` hint and population `problems` |
 | `population.counts.eligible` | M, the number of eligible distinct images in this draw's snapshot |
 | `summary.by_leaf` | How many selected images each leaf contributed |
-| `images` | Draw order; each item has `position`, `image_id`, `sampled_path` for its disposable copy, `available_path` for its fixture original, and all alias `locations` with current statuses |
+| `images` | Draw order; each item has `position`, `image_id`, `sampled_path` for its copy in the world, `available_path` for its fixture original, and all alias `locations` with current statuses |
 | `current_check` | Record reproduction and current file/metadata verification |
-| `output` | Absolute `directory`, `sidecar` path, `published` Boolean, and `error` if copying or publication failed |
+| `output` | Absolute world `directory` and `manifest` path, `published` Boolean, and `error` if copying or publication failed |
 | `problems` | Every problem found, each with a `kind`; empty when the exit code is 0 |
 
-Responses, records and the sidecar keep their `schema_version` while changes are
+Responses, records and the world manifest keep their `schema_version` while changes are
 additive: fields may be added, never removed or retyped, and readers ignore fields
 they do not know. A removal or retyping raises the version, and loaders keep
 accepting earlier versions, as the population schema does.
@@ -147,8 +157,9 @@ Nothing is repaired on failure; fix the fixture or record the message names.
 `draw` persists the original selection before checking current availability; a
 missing file never causes a replacement draw. An oversized request is rejected
 before creating a sample. On a failed publication, `sampled_path` values are null;
-the saved draw remains available. `show` and `verify` inspect fixture originals and
-durable records, without changing or relying on disposable output. `list` reports
+the saved draw remains available and `publish` can materialize it later. `show` and
+`verify` inspect fixture originals and durable records, without changing or relying
+on any world. `show` is the key: it joins a world's IDs back to leaves and rows. `list` reports
 every draw directory; a damaged record appears with status `damaged` and its error
 rather than hiding the others.
 
@@ -218,7 +229,7 @@ Upstream metadata is retained as supplied and may itself contain historical path
 | Inventory | `inventory_id`, `created_at`, a `checkout` hint (Git commit and dirty flag, or null) and a `population` object with schema/policy, `leaves` with status, sorted `images`, metadata-file pins, counts and unlisted inputs |
 | Inventory image | `image_id`, `byte_sha256`, frozen `eligible`, and `aliases`; each alias has its path, leaf path, fixture ID, kind and observed availability |
 | Draw | Schema, sample ID, timestamp, inventory ID/store-relative reference, versioned procedure, exact seed text, requested size, eligible count, ordered `image_ids`, draw checksum |
-| Annotation event | Schema, sequence, event ID, timestamp, sample ID/draw checksum, nullable `image_id` (null means sample), optional author, arbitrary key, `set`/`delete`, and a value for `set` |
+| Annotation event | Schema, sequence, event ID, timestamp, sample ID/draw checksum, nullable `image_id` (null means sample), optional author, arbitrary key, `set`/`delete`, and a value for `set`. Publication receipts are ordinary events with key `publication` |
 
 Inventory IDs hash the `population` object, excluding its creation timestamp and
 checkout hint. Identical rescans reuse one snapshot. Population schema 2 pins
@@ -278,9 +289,11 @@ none were unavailable or unlisted. No strata, quota or reroll was used. The same
 seed selected the same twelve identities under the first release's schema 1
 snapshot, which stored metadata rows; its schema 2 snapshot pins them instead.
 
-Six example annotation events include sample notes, an image note, a revised value
-and a deleted value. Their [history](records/draws/draw-82acd83c6cd540a6bf4e29610ff5dc2d/annotations.jsonl)
-preserves the prior values. They are investigation annotations, not fixture
+Seven annotation events follow: six examples with sample notes, an image note, a
+revised value and a deleted value, then one `publication` receipt from
+`Fixtures/sample publish` writing the default world. Their
+[history](records/draws/draw-82acd83c6cd540a6bf4e29610ff5dc2d/annotations.jsonl)
+preserves the prior values. The examples are investigation annotations, not fixture
 judgments or eligibility changes. The copies were hash-verified at publication;
 the demonstration did not review them visually. `verify` is the reproducible check
 of this record against the checkout; there is no separate hand-written check file.
@@ -288,5 +301,6 @@ of this record against the checkout; there is no separate hand-written check fil
 ```sh
 Fixtures/sample show draw-82acd83c6cd540a6bf4e29610ff5dc2d --paths
 Fixtures/sample verify draw-82acd83c6cd540a6bf4e29610ff5dc2d
+Fixtures/sample publish draw-82acd83c6cd540a6bf4e29610ff5dc2d
 make test-sampler
 ```

@@ -28,7 +28,8 @@ PROCEDURE = 'sha256-counter-rejection-partial-fisher-yates-v1'
 POLICY = 'active-manifest-inputs; exact-byte-sha256-aliases; one-ticket-per-hash-v1'
 POPULATION_SCHEMAS = (1, 2)  # 1 embedded metadata rows; 2 pins metadata files by hash only.
 SKIP_DIRS = {'images', 'sources', 'previews', 'provenance', '__pycache__', '.git'}
-SIDECAR = 'sample.json'  # Written beside the copies in output/sampled/; derived, disposable.
+WORLD_MANIFEST = 'world.json'  # Beside the copies in a world directory: identities only.
+RECEIPT_AUTHOR = 'Fixtures/sample'  # Author of the one annotation event each publication appends.
 HEX = re.compile(r'[0-9a-f]{64}\Z')
 DRAW_FIELDS = (('schema_version', int), ('sample_id', str), ('created_at', str),
                ('inventory_id', str), ('inventory_file', str), ('procedure', str),
@@ -755,115 +756,121 @@ def inventory_report(inventory, store):
                 problems=population_problems(inventory))
 
 
-def sample_output(repo, store):
-    """Only this fixed scratch directory may be replaced by a draw."""
-    output = Path(repo).resolve() / 'output'
-    target = output / 'sampled'
-    require(not output.is_symlink() and not target.is_symlink(), 'output',
-            f'{output} and {target} must not be symlinks')
-    require(not Path(store).resolve().is_relative_to(target), 'output',
-            f'Sample records must be stored outside {target}')
+def world_target(repo, store, world=None):
+    """Where a world may be written. Only an empty directory or a previous world is replaced."""
+    repo = Path(repo).resolve()
+    target = (Path(world) if world is not None else repo / 'Fixtures/output/sampled')
+    target = target.parent.resolve() / target.name
+    require(not target.is_symlink(), 'output', f'World directory must not be a symlink: {target}')
+    require(not target.is_relative_to(repo / 'Fixtures') or target.is_relative_to(repo / 'Fixtures/output'),
+            'output', f'A world may not be written among the fixtures: {target}')
+    require(not Path(store).resolve().is_relative_to(target) and not target.is_relative_to(Path(store).resolve()),
+            'output', f'Sample records and the world directory must not contain each other: {target}')
+    if target.exists():
+        require(target.is_dir(), 'output', f'World destination is not a directory: {target}')
+        contents = list(target.iterdir())
+        require(not contents or (target / WORLD_MANIFEST).is_file(), 'output',
+                f'Refusing to replace {target}: it is neither empty nor a previous world (no {WORLD_MANIFEST})')
     return target
 
 
 def copy_name(image):
-    sha256 = image['image_id'].removeprefix('sha256:')
-    return f"{image['position']:04d}-{sha256}{Path(image['available_path']).suffix}"
+    """The file name is the identity: the byte hash plus the original extension."""
+    return image['image_id'].removeprefix('sha256:') + Path(image['available_path']).suffix
 
 
-def store_reference(repo, store):
-    """The record store as the sidecar names it: checkout-relative when inside, else absolute."""
-    repo, store = Path(repo).resolve(), Path(store).resolve()
-    return store.relative_to(repo).as_posix() if store.is_relative_to(repo) else str(store)
+def world_manifest(draw, images):
+    """What hazy receives beside the files: identities only, sorted by name, no order or origin."""
+    entries = sorted((dict(id=i['image_id'], file=copy_name(i)) for i in images), key=lambda e: e['file'])
+    return dict(schema_version=1, world_id=draw['sample_id'], images=entries)
 
 
-def sample_sidecar(repo, store, draw, inventory, images):
-    """What sits beside the copies: a derived description, never a record of truth.
+def publish_world(repo, store, draw, images, world=None):
+    """Verify independent copies, then replace the previous world atomically.
 
-    Each entry names the copy, the fixture original it came from, its leaf and the
-    provenance rows resolved for that original at publication time.
+    The manifest is written inside the staged directory, so a visible world is complete.
+    Returns the images with `sampled_path` set and the target directory.
     """
-    provenance = Provenance(repo, inventory)
-    indexed = {r['image_id']: r for r in inventory['population']['images']}
-    entries = []
-    for image in images:
-        aliases = indexed[image['image_id']]['aliases']
-        source = next((a for a in aliases if str(Path(repo).resolve() / a['path']) == image['available_path']),
-                      aliases[0])
-        rows = provenance.alias(source)
-        entries.append(dict(position=image['position'], image_id=image['image_id'],
-                            file=copy_name(image), source_path=source['path'],
-                            fixture_path=source['fixture_path'], fixture_id=source['fixture_id'],
-                            kind=source['kind'], provenance_status=rows['status'],
-                            manifest_record=rows['manifest_record'], source_records=rows['source_records']))
-    return dict(schema_version=1, sample_id=draw['sample_id'], inventory_id=draw['inventory_id'],
-                seed=draw['seed'], requested_size=draw['requested_size'], created_at=draw['created_at'],
-                published_at=utc(), records=store_reference(repo, store),
-                summary=dict(by_leaf=leaf_summary(selected_items(draw, inventory))), images=entries)
-
-
-def publish_sample(repo, store, images, sidecar=None):
-    """Verify independent copies before replacing the previous disposable output."""
-    target = sample_output(repo, store)
+    target = world_target(repo, store, world)
     target.parent.mkdir(parents=True, exist_ok=True)
-    # Lock the parent directory itself: no persistent lock file in output/.
+    # Lock the parent directory itself: no persistent lock file beside the world.
     lock = os.open(target.parent, os.O_RDONLY)
     try:
         fcntl.flock(lock, fcntl.LOCK_EX)
-        sample_output(repo, store)
-        with tempfile.TemporaryDirectory(prefix='.sampled-', dir=target.parent) as temporary:
+        world_target(repo, store, target)
+        with tempfile.TemporaryDirectory(prefix='.world-', dir=target.parent) as temporary:
             staged = Path(temporary)
             copied = []
             for image in images:
                 require(image['available_path'] is not None, 'output',
                         f'Selected image {image["image_id"]} is unavailable; nothing was published')
-                source = Path(image['available_path'])
-                sha256 = image['image_id'].removeprefix('sha256:')
                 name = copy_name(image)
                 destination = staged / name
-                shutil.copyfile(source, destination)
-                require(file_hash(destination) == sha256, 'output',
+                shutil.copyfile(image['available_path'], destination)
+                require('sha256:' + file_hash(destination) == image['image_id'], 'output',
                         f'Copied image checksum differs: {name}; nothing was published')
                 copied.append(dict(image, sampled_path=str(target / name)))
-            if sidecar is not None:
-                (staged / SIDECAR).write_text(
-                    json.dumps(sidecar, ensure_ascii=False, allow_nan=False, indent=2) + '\n', encoding='utf-8')
+            manifest = world_manifest(draw, images)
+            (staged / WORLD_MANIFEST).write_text(
+                json.dumps(manifest, ensure_ascii=False, allow_nan=False, indent=2) + '\n', encoding='utf-8')
             if target.is_dir():
                 shutil.rmtree(target)
-            elif target.exists():
-                target.unlink()
             staged.rename(target)
-        return copied
+        return copied, target
     finally:
         os.close(lock)
 
 
-def draw_command(args):
-    target = sample_output(args.repo, args.store)
-    inventory = (load_inventory(args.store, args.inventory) if args.inventory
-                 else build_inventory(args.repo))
-    drawn = create_draw(args.store, inventory, args.size, args.seed)
-    check = verify_draw(args.store, drawn['sample_id'], args.repo)
-    images = inspect_draw(args.store, drawn['sample_id'], args.repo, paths_only=True)['images']
+def publish_receipt(store, draw, target, count):
+    """One sampler-authored annotation event per publication; the clerk decides what else to keep."""
+    value = dict(directory=str(target), manifest=str(target / WORLD_MANIFEST),
+                 published_at=utc(), image_count=count)
+    return annotate(store, draw['sample_id'], 'publication', value, author=RECEIPT_AUTHOR)
+
+
+def publish_command(store, repo, draw, images, check, world):
+    """Shared by draw and publish: copies, manifest, receipt, and a problems list."""
+    result = dict(images=images, output=dict(directory=None, manifest=None, published=False), problems=[])
     for image in images:
         image['sampled_path'] = None
-    result = dict(schema_version=1, draw=drawn, population=inventory_report(inventory, args.store),
-                  summary=dict(by_leaf=leaf_summary(selected_items(drawn, inventory))),
-                  images=images, current_check=check,
-                  output=dict(directory=str(target), sidecar=None, published=False), problems=[])
     if check['ok']:
         try:
-            sidecar = sample_sidecar(args.repo, args.store, drawn, inventory, result['images'])
-            result['images'] = publish_sample(args.repo, args.store, result['images'], sidecar)
-            result['output'].update(published=True, sidecar=str(target / SIDECAR))
+            result['images'], target = publish_world(repo, store, draw, images, world)
+            result['output'].update(directory=str(target), manifest=str(target / WORLD_MANIFEST), published=True)
+            publish_receipt(store, draw, target, len(images))
         except (OSError, SamplerError) as error:
             result['output']['error'] = f'{type(error).__name__}: {error}'
     if not result['output']['published']:
         result['problems'].append(dict(kind='not-published', error=result['output'].get(
             'error', 'selected images or metadata failed the current check')))
     result['problems'].extend(check['problems'])
-    result['problems'].extend(result['population']['problems'])
     return result
+
+
+def draw_command(args):
+    world_target(args.repo, args.store, args.world)  # Refuse a bad destination before drawing.
+    inventory = (load_inventory(args.store, args.inventory) if args.inventory
+                 else build_inventory(args.repo))
+    drawn = create_draw(args.store, inventory, args.size, args.seed)
+    check = verify_draw(args.store, drawn['sample_id'], args.repo)
+    images = inspect_draw(args.store, drawn['sample_id'], args.repo, paths_only=True)['images']
+    published = publish_command(args.store, args.repo, drawn, images, check, args.world)
+    result = dict(schema_version=1, draw=drawn, population=inventory_report(inventory, args.store),
+                  summary=dict(by_leaf=leaf_summary(selected_items(drawn, inventory))),
+                  images=published['images'], current_check=check, output=published['output'],
+                  problems=published['problems'] + inventory_report(inventory, args.store)['problems'])
+    return result
+
+
+def republish_command(args):
+    """Materialize an existing draw as a world again, under the same world ID."""
+    world_target(args.repo, args.store, args.world)
+    draw, _ = load_draw(args.store, args.sample_id)
+    check = verify_draw(args.store, args.sample_id, args.repo)
+    images = inspect_draw(args.store, args.sample_id, args.repo, paths_only=True)['images']
+    published = publish_command(args.store, args.repo, draw, images, check, args.world)
+    return dict(schema_version=1, sample_id=args.sample_id, images=published['images'],
+                current_check=check, output=published['output'], problems=published['problems'])
 
 
 def annotation_value(args):
@@ -884,6 +891,8 @@ def run(args):
         return inventory_report(save_inventory(args.store, build_inventory(args.repo)), args.store)
     if args.command == 'draw':
         return draw_command(args)
+    if args.command == 'publish':
+        return republish_command(args)
     if args.command == 'list':
         return list_draws(args.store)
     if args.command == 'show':
@@ -909,7 +918,7 @@ def emit_error(error):
 
 def main(argv=None):
     if sys.version_info[:2] != (3, 14):
-        print('sampler: Python 3.14.x is required; run make setup-python and use Fixtures/sample.',
+        print('sampler: Python 3.14.x is required; run make -C Fixtures setup-python and use Fixtures/sample.',
               file=sys.stderr)
         return 2
     argv = list(sys.argv[1:] if argv is None else argv)
@@ -927,15 +936,19 @@ def main(argv=None):
             break
     parser = Parser(
         prog='Fixtures/sample', description=__doc__, allow_abbrev=False,
-        epilog='Quick draw: Fixtures/sample N [--seed TEXT]. Replaces output/sampled/ with image copies; JSON paths are in images[].sampled_path.')
+        epilog='Quick draw: Fixtures/sample N [--seed TEXT] [--world DIR]. Writes a world: hash-named image copies plus world.json; copy paths are in images[].sampled_path.')
     parser.add_argument('--repo', type=Path, default=REPO, help='Checkout containing Fixtures/')
     parser.add_argument('--store', type=Path, default=DEFAULT_STORE, help='JSON record directory')
     commands = parser.add_subparsers(dest='command', required=True)
     commands.add_parser('inventory', help='Refresh and save an immutable population snapshot')
-    draw = commands.add_parser('draw', help='Draw N equal tickets; refresh inventory by default')
+    draw = commands.add_parser('draw', help='Draw N equal tickets and publish them as a world; refresh inventory by default')
     draw.add_argument('size', type=int)
     draw.add_argument('--seed', help='Exact UTF-8 seed text; generated and recorded if omitted')
     draw.add_argument('--inventory', help='Use this saved snapshot instead of rescanning fixtures')
+    draw.add_argument('--world', type=Path, help='World directory to replace; default Fixtures/output/sampled')
+    publish = commands.add_parser('publish', help='Materialize an existing draw as a world again')
+    publish.add_argument('sample_id')
+    publish.add_argument('--world', type=Path, help='World directory to replace; default Fixtures/output/sampled')
     commands.add_parser('list', help='List persistent draws, including damaged ones')
     show = commands.add_parser('show', help='Original draw, pinned provenance rows, current locations and annotations')
     show.add_argument('sample_id')

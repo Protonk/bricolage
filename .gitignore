@@ -5,6 +5,9 @@ output/
 !/output/
 /output/*
 !/output/AGENTS.md
+!/Fixtures/output/
+/Fixtures/output/*
+!/Fixtures/output/AGENTS.md
 __pycache__/
 .venv/
 

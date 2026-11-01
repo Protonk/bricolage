@@ -289,56 +289,101 @@ class SamplerTests(unittest.TestCase):
         for image in response['images']:
             self.assertEqual('sha256:' + s.file_hash(Path(image['available_path'])), image['image_id'])
             copied = Path(image['sampled_path'])
-            self.assertEqual(copied.parent, (self.repo / 'output/sampled').resolve())
+            self.assertEqual(copied.parent, (self.repo / 'Fixtures/output/sampled').resolve())
             self.assertEqual('sha256:' + s.file_hash(copied), image['image_id'])
+            self.assertEqual(copied.stem, image['image_id'].removeprefix('sha256:'))  # No position prefix.
         self.assertTrue(response['output']['published'])
+        self.assertEqual(response['output']['directory'], str(copied.parent))
         self.assertEqual(s.load_draw(store, draw['sample_id'])[0], draw)
-        sidecar = json.loads(Path(response['output']['sidecar']).read_text())
-        self.assertEqual(Path(response['output']['sidecar']).name, 'sample.json')
-        self.assertEqual(sidecar['sample_id'], draw['sample_id'])
-        self.assertEqual([e['file'] for e in sidecar['images']],
-                         [Path(i['sampled_path']).name for i in response['images']])
-        self.assertEqual([e['image_id'] for e in sidecar['images']], draw['image_ids'])
-        self.assertEqual({e['provenance_status'] for e in sidecar['images']}, {'frozen'})
-        self.assertTrue(all(e['manifest_record']['file'] == e['source_path'].rsplit('/', 2)[-2] + '/' +
-                            e['source_path'].rsplit('/', 1)[-1] for e in sidecar['images']))
-        self.assertTrue(all(e['source_records'][0]['credit_status'] == 'Example credit' for e in sidecar['images']))
-        self.assertEqual(sum(sidecar['summary']['by_leaf'].values()), 3)
-        self.assertEqual(sidecar['records'], 'records with spaces')  # Store named relative to the checkout.
         old_syntax = subprocess.run([*command, 'draw', '3', '--seed', 'public engine'],
                                     cwd=self.temp.name, capture_output=True, text=True, check=True)
         self.assertEqual(json.loads(old_syntax.stdout)['draw']['image_ids'], draw['image_ids'])
 
-    def test_next_draw_replaces_only_sampled_and_copies_are_independent(self):
-        output = self.repo / 'output'
+    def test_world_is_relocatable_opaque_and_receipted(self):
+        world = (Path(self.temp.name) / 'elsewhere' / 'world one').resolve()
+        result = self.cli('3', '--seed', 'opaque', '--world', str(world))
+        self.assertEqual(result.returncode, 0, result.stderr)
+        response = json.loads(result.stdout)
+        manifest_path = Path(response['output']['manifest'])
+        self.assertEqual(manifest_path, world / 'world.json')
+        manifest = json.loads(manifest_path.read_text())
+        self.assertEqual(sorted(manifest), ['images', 'schema_version', 'world_id'])
+        self.assertEqual(manifest['world_id'], response['draw']['sample_id'])
+        self.assertEqual([e['file'] for e in manifest['images']], sorted(e['file'] for e in manifest['images']))
+        self.assertEqual({e['id'] for e in manifest['images']}, set(response['draw']['image_ids']))
+        self.assertEqual(sorted(p.name for p in world.iterdir()), sorted([e['file'] for e in manifest['images']] + ['world.json']))
+        for entry in manifest['images']:
+            self.assertEqual(sorted(entry), ['file', 'id'])
+            self.assertEqual('sha256:' + s.file_hash(world / entry['file']), entry['id'])
+            self.assertEqual(Path(entry['file']).stem, entry['id'].removeprefix('sha256:'))
+        text = manifest_path.read_text()
+        for leak in ('Fixtures', 'Heaps', 'Relationships', 'position', 'seed', str(self.repo)):
+            self.assertNotIn(leak, text)
+        shown = s.inspect_draw(self.store, response['draw']['sample_id'], self.repo)
+        receipt = shown['annotations']['sample']['publication']
+        self.assertEqual((receipt['directory'], receipt['manifest'], receipt['image_count']),
+                         (str(world), str(world / 'world.json'), 3))
+        self.assertEqual([e['author'] for e in shown['annotation_history']], ['Fixtures/sample'])
+        self.assertEqual(shown['problems'], [])
+
+    def test_publish_rematerializes_a_draw_under_the_same_world_id(self):
+        first = json.loads(self.cli('2', '--seed', 'again').stdout)
+        sample_id = first['draw']['sample_id']
+        other = (Path(self.temp.name) / 'other-world').resolve()
+        result = self.cli('publish', sample_id, '--world', str(other))
+        self.assertEqual(result.returncode, 0, result.stderr)
+        response = json.loads(result.stdout)
+        self.assertEqual(response['sample_id'], sample_id)
+        self.assertTrue(response['output']['published'])
+        manifests = [json.loads((Path(d) / 'world.json').read_text())
+                     for d in (first['output']['directory'], other)]
+        self.assertEqual(manifests[0], manifests[1])
+        self.assertEqual(manifests[0]['world_id'], sample_id)
+        shown = s.inspect_draw(self.store, sample_id, self.repo)
+        self.assertEqual([e['key'] for e in shown['annotation_history']], ['publication', 'publication'])
+        self.assertEqual(shown['annotations']['sample']['publication']['directory'], str(other))
+        (self.heap / 'images/0.png').unlink()
+        (self.related / 'images/0.png').unlink()
+        result = self.cli('publish', sample_id, '--world', str(other))
+        self.assertEqual(result.returncode, 1, result.stderr)
+        response = json.loads(result.stdout)
+        self.assertFalse(response['output']['published'])
+        self.assertIn('not-published', [p['kind'] for p in response['problems']])
+        self.assertEqual(json.loads((other / 'world.json').read_text()), manifests[1])  # Previous world intact.
+        self.assertEqual(len(s.inspect_draw(self.store, sample_id, self.repo)['annotation_history']), 2)
+
+    def test_next_draw_replaces_only_a_previous_world_and_copies_are_independent(self):
+        output = self.repo / 'Fixtures/output'
         sampled = output / 'sampled'
         sampled.mkdir(parents=True)
+        (sampled / 'world.json').write_text('{"schema_version": 1, "world_id": "draw-old", "images": []}')
         (sampled / 'old/subdir').mkdir(parents=True)
         (sampled / 'old/subdir/stale').write_bytes(b'stale')
         (sampled / 'external-link').symlink_to(self.heap, target_is_directory=True)
         (output / 'AGENTS.md').write_text('Keep this')
         (output / 'other-output').write_bytes(b'Keep this too')
         first = json.loads(self.cli('3', '--seed', 'first').stdout)
-        self.assertEqual(len(list(sampled.iterdir())), 4)  # Three copies and sample.json.
+        self.assertEqual(len(list(sampled.iterdir())), 4)  # Three copies and world.json.
         image = first['images'][0]
         Path(image['sampled_path']).write_bytes(b'edited copy')
         self.assertEqual('sha256:' + s.file_hash(Path(image['available_path'])), image['image_id'])
         second = self.cli('1', '--seed', 'second')
         self.assertEqual(second.returncode, 0, second.stderr)
         self.assertEqual(len(list(sampled.iterdir())), 2)
-        self.assertEqual(json.loads((sampled / 'sample.json').read_text())['sample_id'],
+        self.assertEqual(json.loads((sampled / 'world.json').read_text())['world_id'],
                          json.loads(second.stdout)['draw']['sample_id'])
         self.assertEqual((output / 'AGENTS.md').read_text(), 'Keep this')
         self.assertEqual((output / 'other-output').read_bytes(), b'Keep this too')
         self.assertTrue(self.heap.is_dir())
         self.assertEqual(s.load_draw(self.store, first['draw']['sample_id'])[0], first['draw'])
         self.assertEqual(self.cli('0').returncode, 0)
-        self.assertEqual([p.name for p in sampled.iterdir()], ['sample.json'])
-        self.assertEqual(json.loads((sampled / 'sample.json').read_text())['images'], [])
+        self.assertEqual([p.name for p in sampled.iterdir()], ['world.json'])
+        self.assertEqual(json.loads((sampled / 'world.json').read_text())['images'], [])
 
-    def test_invalid_draw_and_failed_copy_preserve_previous_output(self):
-        sampled = self.repo / 'output/sampled'
+    def test_invalid_draw_and_failed_copy_preserve_previous_world(self):
+        sampled = self.repo / 'Fixtures/output/sampled'
         sampled.mkdir(parents=True)
+        (sampled / 'world.json').write_text('{"schema_version": 1, "world_id": "draw-old", "images": []}')
         sentinel = sampled / 'previous'
         sentinel.write_bytes(b'previous')
         self.assertEqual(self.cli('5').returncode, 2)
@@ -348,7 +393,7 @@ class SamplerTests(unittest.TestCase):
             destination.write_bytes(b'incomplete copy')
         with patch.object(s.shutil, 'copyfile', side_effect=corrupt_copy):
             with self.assertRaisesRegex(s.SamplerError, 'checksum differs'):
-                s.publish_sample(self.repo, self.store, images)
+                s.publish_world(self.repo, self.store, draw, images)
         self.assertEqual(sentinel.read_bytes(), b'previous')
         self.assertEqual(list(sampled.parent.iterdir()), [sampled])
         stdout = io.StringIO()
@@ -361,32 +406,41 @@ class SamplerTests(unittest.TestCase):
         self.assertTrue(all(i['sampled_path'] is None for i in result['images']))
         self.assertEqual(s.load_draw(self.store, result['draw']['sample_id'])[0], result['draw'])
         self.assertEqual(sentinel.read_bytes(), b'previous')
+        self.assertEqual(s.read_events(self.store, result['draw']), [])  # No receipt without a publication.
 
-    def test_output_symlinks_and_records_inside_sampled_are_rejected(self):
+    def test_unsafe_world_destinations_are_refused_before_drawing(self):
         outside = Path(self.temp.name) / 'outside'
         outside.mkdir()
         (outside / 'keep').write_bytes(b'keep')
-        output = self.repo / 'output'
-        output.symlink_to(outside, target_is_directory=True)
+        link = self.repo / 'Fixtures/output/sampled'
+        link.parent.mkdir(parents=True)
+        link.symlink_to(outside, target_is_directory=True)
         self.assertEqual(self.cli('1').returncode, 2)
-        output.unlink()
-        output.mkdir()
-        sampled = output / 'sampled'
-        sampled.symlink_to(outside, target_is_directory=True)
-        self.assertEqual(self.cli('1').returncode, 2)
-        sampled.unlink()
-        sampled.mkdir()
-        self.assertEqual(self.cli('--store', str(sampled / 'records'), '1').returncode, 2)
+        link.unlink()
+        cases = {
+            'non-world directory': ['--world', str(outside)],
+            'inside the fixtures': ['--world', str(self.repo / 'Fixtures/Heaps/world')],
+            'store inside the world': ['--store', str(outside / 'records'), '--world', str(outside)],
+            'world containing the store': ['--world', str(self.repo / 'Fixtures/Sampler')],
+            'a file': ['--world', str(outside / 'keep')],
+        }
+        for name, extra in cases.items():
+            globals_, rest = (extra[:2], extra[2:]) if extra[0] == '--store' else ([], extra)
+            result = self.cli(*globals_, '1', *rest)
+            self.assertEqual(result.returncode, 2, name)
+            self.assertEqual(json.loads(result.stdout)['error']['code'], 'output', name)
         self.assertEqual((outside / 'keep').read_bytes(), b'keep')
-        self.assertEqual(s.list_draws(self.store)['draws'], [])
+        self.assertEqual(sorted(p.name for p in outside.iterdir()), ['keep'])
+        self.assertEqual(s.list_draws(self.store)['draws'], [])  # Refused before any record was created.
 
-    def test_concurrent_publications_leave_one_complete_sample(self):
+    def test_concurrent_publications_leave_one_complete_world(self):
         draws = [self.draw(2, 'first'), self.draw(3, 'second')]
         images = [s.inspect_draw(self.store, d['sample_id'], self.repo, True)['images'] for d in draws]
         with concurrent.futures.ThreadPoolExecutor(max_workers=2) as pool:
-            published = list(pool.map(lambda rows: s.publish_sample(self.repo, self.store, rows), images))
-        actual = {p.name for p in (self.repo / 'output/sampled').iterdir()}
-        self.assertIn(actual, [{Path(row['sampled_path']).name for row in rows} for rows in published])
+            published = list(pool.map(lambda pair: s.publish_world(self.repo, self.store, *pair)[0],
+                                      zip(draws, images)))
+        actual = {p.name for p in (self.repo / 'Fixtures/output/sampled').iterdir()}
+        self.assertIn(actual, [{Path(row['sampled_path']).name for row in rows} | {'world.json'} for rows in published])
 
     def test_shorthand_bounds_and_global_options(self):
         for size in ('-1', '5'):
@@ -409,7 +463,7 @@ class SamplerTests(unittest.TestCase):
         self.assertEqual(sum(i['available_path'] is None for i in response['images']), 1)
         self.assertFalse(response['current_check']['ok'])
         self.assertFalse(response['output']['published'])
-        self.assertFalse((self.repo / 'output/sampled').exists())
+        self.assertFalse((self.repo / 'Fixtures/output/sampled').exists())
         self.assertEqual(s.load_draw(self.store, response['draw']['sample_id'])[0], response['draw'])
 
     def test_launcher_reports_missing_environment_and_runtime_rejects_other_minor_versions(self):

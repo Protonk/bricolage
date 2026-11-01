@@ -81,10 +81,12 @@ make test-sampler
 Python tools and tests target **Python 3.14.x only**, using the Git-ignored root
 `.venv`. The sampler needs no third-party packages. Other fixture tools retain
 their own dependency files; use `.venv/bin/python` when running their checks.
-The sampling command replaces `output/sampled/` with byte-identical image copies
-plus a `sample.json` sidecar naming each copy's fixture origin, and returns JSON
-with a saved sample ID, population size, ordered copy paths and any problems found.
-`output/` is disposable; its tracked [AGENTS.md](output/AGENTS.md) describes cleanup.
+The sampling command publishes a world, by default under `Fixtures/output/sampled/`:
+hash-named, byte-identical image copies beside a `world.json`, and nothing about
+where they came from. It returns JSON with a saved sample ID, population size,
+ordered copy paths and any problems found. [WORLD.md](WORLD.md) is the contract
+hazy may rely on when it receives a world. Output directories are disposable;
+their tracked `AGENTS.md` files describe cleanup.
 Durable sample records stay in `Fixtures/Sampler/records/`. Omit the seed to generate one. See the
 [sampling engine guide](Fixtures/Sampler/README.md) for inspection and annotations.
 
@@ -114,7 +116,7 @@ Fixture sets use `images/` for comparison inputs and `sources/` for preserved
 source bytes. Optional `previews/` contains contact sheets, outside the input set.
 Git ignores these entire directories for every fixture set, including nested files
 and unknown or absent extensions. Keep future image assets in those locations.
-Disposable sampler copies are also allowed in `output/sampled/`.
+Disposable sampler worlds are also allowed under `Fixtures/output/`.
 The manifests, source catalogs, checksums, and textual provenance remain versionable.
 See [Fixtures/README.md](Fixtures/README.md) for the format and local checks.
 All leaf sets follow the [single fixture template](Fixtures/Template/README.md).
