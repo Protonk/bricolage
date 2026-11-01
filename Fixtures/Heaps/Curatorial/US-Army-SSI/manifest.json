@@ -1077,22 +1077,6 @@
       "pixels_rgb_sha256": ""
     },
     {
-      "file": "images/53dc0bc0d00e5d7e985d.jpg",
-      "batch": "batch-1",
-      "family_id": "ssi-53dc0bc0d00e5d7e985d",
-      "scene_id": "",
-      "parents": "ssi-53dc0bc0d00e5d7e985d",
-      "transformation": "source",
-      "relation_kind": "curatorial_selected",
-      "origin_count": 1,
-      "width": 360,
-      "height": 361,
-      "exif_orientation": 1,
-      "format": "JPEG",
-      "byte_sha256": "3ab98c94c911b87d9c29e230e061aebe6427b84590ff91627e9ac82ca94a051e",
-      "pixels_rgb_sha256": ""
-    },
-    {
       "file": "images/729876e2d2dc8acdfeed.gif",
       "batch": "batch-1",
       "family_id": "ssi-729876e2d2dc8acdfeed",

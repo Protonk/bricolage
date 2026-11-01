@@ -65,7 +65,6 @@ images/51c6e139ca5a3b25f505.gif
 images/4c5e93d451f342473566.jpg
 images/c826b99f0367201c66de.png
 images/95494d0747e2b70420ba.png
-images/53dc0bc0d00e5d7e985d.jpg
 images/729876e2d2dc8acdfeed.gif
 images/aaead9ae2984ab44e139.png
 images/9c7f86764157f04626fd.png

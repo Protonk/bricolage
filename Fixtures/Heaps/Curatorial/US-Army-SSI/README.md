@@ -4,7 +4,7 @@ US Army shoulder-sleeve insignia selected from a saved Commons category list,
 with one selection per identified design.
 
 Fixture ID: `hazy-us-army-ssi-v1`; kind: `curatorial_heap`.
-The manifest lists **150 inputs**.
+The manifest lists **149 inputs**.
 
 Use the [shared fixture format](../../../FORMAT.md) for the directory layout and the
 [provenance index](provenance/README.md) for source and selection records.
@@ -21,10 +21,28 @@ Fixtures/.venv/bin/python Fixtures/Heaps/Curatorial/US-Army-SSI/tools/check.py
 The check is offline. `--metadata-only` checks layout and catalogs without
 media or the specialized validators.
 
+After the 2026-11-01 removal, all 91 sampler, layout, relationship and SSI unit
+tests pass, as do basic layout/input checks for all 18 leaves. Full validation
+passes 12 leaves and fails six (all 18 passed before removal): SSI reports
+`Manifest records differ`; Botanical-Illustrations reports `Cross-fixture audit
+differs`; Evan-Amos-Uploads reports `Prior-fixture overlap audit differs`;
+Ex-Libris, Rocks-in-Thin-Section and Stone-Hand-Axes report `Prior-identity audit
+differs`. SSI reconstructs the original acquisition, and the other five checks
+compare their historical audits with the changed SSI manifest. These failures
+remain visible; their historical records have not been rewritten.
+
 ## Images and records
 
-**Target reached: 150 selected and acquired inputs. Selection remains provisional
-around eight unresolved earlier candidates.** This is one leaf of the
+On 2026-11-01, the user requested removal of
+`images/53dc0bc0d00e5d7e985d.jpg` (`File:45th INFANTRY DIVISION swastika.jpg`,
+SHA-256 `3ab98c94c911b87d9c29e230e061aebe6427b84590ff91627e9ac82ca94a051e`).
+The input file, manifest entry, batch entry and input checksum were removed
+in place, with no replacement. Its source bytes and acquisition records remain
+preserved. The selection counts, import map and contact sheets below describe
+the original publication, before this removal.
+
+**Original publication: 150 selected and acquired inputs. Selection remains
+provisional around eight unresolved earlier candidates.** This is one leaf of the
 [Curatorial heap](../README.md), beside POTY, with no sub-heaps. The selection basis
 is Commons category membership, not an award or visual prompt.
 
@@ -135,7 +153,7 @@ publication audits all current prior leaves.
 
 ### Local files and checks
 
-Only the 150 manifest-listed `images/` files are comparison inputs. Each is a
+Only the 149 manifest-listed `images/` files are comparison inputs. Each is a
 byte-identical copy of its preserved `sources/` rendition. `previews/` contains
 218 acquired review previews, inspection sheets, selected contact sheets,
 and diagnostic bodies. The bounded preview run extended to rank 220; reserve

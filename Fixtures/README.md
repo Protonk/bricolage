@@ -38,7 +38,7 @@ image matcher should return.
 The [heap guide](Heaps/README.md) also describes the local picture book of
 selected images and how to rebuild it.
 
-Current catalogs list 1,263 inputs across 18 leaves, representing 1,251 distinct
+Current catalogs list 1,262 inputs across 18 leaves, representing 1,250 distinct
 byte hashes. Acquisition is incomplete in SF01 (11 accepted images pending) and
 Botanical Illustrations (one transfer pending). POTY Arthropods has 43 inputs
 against a target of 50. Some Curatorial selections also have earlier unresolved

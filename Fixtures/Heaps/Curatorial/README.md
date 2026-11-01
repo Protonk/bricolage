@@ -9,7 +9,7 @@ those decisions and any unfinished reviews or downloads.
 | Source collection | Contributions | Current selection |
 |---|---|---|
 | [Wikimedia Commons POTY](POTY/README.md) | Arthropods; Constructions and buildings; People and human activity | Complete acquisition: 43 / 50 / 50 inputs from the full 2023–2025 Round 1 category lists; Arthropods has a seven-image shortfall |
-| [US Army shoulder-sleeve insignia](US-Army-SSI/README.md) | One leaf, no sub-heaps; Commons category membership via PetScan depth 5 | Target reached: 150 selected and acquired from 1,641 frozen File identities; eight earlier cases remain pending, with later selections provisional |
+| [US Army shoulder-sleeve insignia](US-Army-SSI/README.md) | One leaf, no sub-heaps; Commons category membership via PetScan depth 5 | 149 active inputs after one user-requested removal from the original 150 acquisitions; eight earlier cases remain pending, with later selections provisional |
 | [Botanical Illustrations](Botanical-Illustrations/README.md) | One leaf, no sub-heaps; direct Commons category membership via PetScan depth 0 | Partial acquisition: 149 of 150 selected works acquired from 709 frozen File entries; one transfer pending, 14 earlier selection cases unresolved |
 | [Evan-Amos category uploads](Evan-Amos-Uploads/README.md) | One exhaustive leaf; direct File members minus three exact user exclusions | Complete: 136 frozen members, exactly three user exclusions, all 133 included files acquired; zero pending |
 | [Rocks in Thin Section](Rocks-in-Thin-Section/README.md) | Three direct category lists, one leaf; fixed order and thumbnail scope review | 50 selected and acquired; one earlier rights case deferred |
