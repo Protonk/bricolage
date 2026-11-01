@@ -9,7 +9,9 @@ Run `Fixtures/sample N` from the repository root (or `./sample N` from here) to
 draw N images uniformly from all available Heaps and Relationships inputs.
 Optional `--seed TEXT` makes a draw repeatable. The command saves the original
 draw and inventory, and returns JSON with `draw.sample_id`,
-`population.counts.eligible` (M), and ordered `images[].available_path` values.
+`population.counts.eligible` (M), and ordered `images[].sampled_path` values.
+Each successful draw replaces `output/sampled/` with byte-identical image copies.
+The originals stay in their fixtures, and durable records stay in `Sampler/records/`.
 Exact-byte aliases share one ticket. An oversized request fails explicitly.
 
 The engine uses the root `.venv` with Python 3.14.x. On a new checkout, run
@@ -93,6 +95,7 @@ Each leaf separates complete acquisition from earlier deferred selection cases.
 - Preserve supplied records and source bytes. All media, intermediate images and
   archives stay in the leaf set's `images/`, `sources/` or `previews/` directories.
   These directories remain Git-ignored at every depth.
+  Disposable sampler copies go in `output/sampled/` and are replaced on each draw.
 - Read [FORMAT.md](FORMAT.md) for manifests, source records, checksums and the
   distinction between provenance and visual judgments. Existing fixture IDs and
   manifest kinds are unchanged by this organization.

@@ -81,8 +81,10 @@ make test-sampler
 Python tools and tests target **Python 3.14.x only**, using the Git-ignored root
 `.venv`. The sampler needs no third-party packages. Other fixture tools retain
 their own dependency files; use `.venv/bin/python` when running their checks.
-The sampling command returns JSON with a saved sample ID, population size and
-ordered image paths. Omit the seed to generate one. See the
+The sampling command replaces `output/sampled/` with byte-identical image copies
+and returns JSON with a saved sample ID, population size and ordered copy paths.
+`output/` is disposable; its tracked [AGENTS.md](output/AGENTS.md) describes cleanup.
+Durable sample records stay in `Fixtures/Sampler/records/`. Omit the seed to generate one. See the
 [sampling engine guide](Fixtures/Sampler/README.md) for inspection and annotations.
 
 ### Collections
@@ -111,6 +113,7 @@ Fixture sets use `images/` for comparison inputs and `sources/` for preserved
 source bytes. Optional `previews/` contains contact sheets, outside the input set.
 Git ignores these entire directories for every fixture set, including nested files
 and unknown or absent extensions. Keep future image assets in those locations.
+Disposable sampler copies are also allowed in `output/sampled/`.
 The manifests, source catalogs, checksums, and textual provenance remain versionable.
 See [Fixtures/README.md](Fixtures/README.md) for the format and local checks.
 

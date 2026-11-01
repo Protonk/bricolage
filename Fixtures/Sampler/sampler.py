@@ -14,6 +14,7 @@ import os
 from pathlib import Path, PurePosixPath
 import re
 import secrets
+import shutil
 import sys
 import tempfile
 from datetime import datetime, timezone
@@ -426,6 +427,48 @@ def inventory_report(inventory, store):
                               if a['availability']['status'] != 'ok'])
 
 
+def sample_output(repo, store):
+    """Only this fixed scratch directory may be replaced by a draw."""
+    output = Path(repo).resolve() / 'output'
+    target = output / 'sampled'
+    require(not output.is_symlink() and not target.is_symlink(),
+            'output/ and output/sampled/ must not be symlinks')
+    require(not Path(store).resolve().is_relative_to(target),
+            'Sample records must be stored outside output/sampled/')
+    return target
+
+
+def publish_sample(repo, store, images):
+    """Verify independent copies before replacing the previous disposable output."""
+    target = sample_output(repo, store)
+    target.parent.mkdir(parents=True, exist_ok=True)
+    # Lock the parent directory itself: no persistent lock file in output/.
+    lock = os.open(target.parent, os.O_RDONLY)
+    try:
+        fcntl.flock(lock, fcntl.LOCK_EX)
+        sample_output(repo, store)
+        with tempfile.TemporaryDirectory(prefix='.sampled-', dir=target.parent) as temporary:
+            staged = Path(temporary)
+            copied = []
+            for image in images:
+                require(image['available_path'] is not None, 'Selected image is unavailable')
+                source = Path(image['available_path'])
+                sha256 = image['image_id'].removeprefix('sha256:')
+                name = f"{image['position']:04d}-{sha256}{source.suffix}"
+                destination = staged / name
+                shutil.copyfile(source, destination)
+                require(file_hash(destination) == sha256, 'Copied image checksum differs: ' + name)
+                copied.append(dict(image, sampled_path=str(target / name)))
+            if target.is_dir():
+                shutil.rmtree(target)
+            elif target.exists():
+                target.unlink()
+            staged.rename(target)
+        return copied
+    finally:
+        os.close(lock)
+
+
 def main(argv=None):
     if sys.version_info[:2] != (3, 14):
         print('sampler: Python 3.14.x is required; run make setup-python and use Fixtures/sample.',
@@ -446,7 +489,7 @@ def main(argv=None):
             break
     parser = argparse.ArgumentParser(
         prog='Fixtures/sample', description=__doc__, allow_abbrev=False,
-        epilog='Quick draw: Fixtures/sample N [--seed TEXT]. Output is JSON; image paths are in images[].available_path.')
+        epilog='Quick draw: Fixtures/sample N [--seed TEXT]. Replaces output/sampled/ with image copies; JSON paths are in images[].sampled_path.')
     parser.add_argument('--repo', type=Path, default=REPO, help='Checkout containing Fixtures/')
     parser.add_argument('--store', type=Path, default=DEFAULT_STORE, help='JSON record directory')
     commands = parser.add_subparsers(dest='command', required=True)
@@ -475,12 +518,22 @@ def main(argv=None):
         if args.command == 'inventory':
             result = inventory_report(save_inventory(args.store, build_inventory(args.repo)), args.store)
         elif args.command == 'draw':
+            target = sample_output(args.repo, args.store)
             inventory = (load_inventory(args.store, args.inventory) if args.inventory
                          else build_inventory(args.repo))
             drawn = create_draw(args.store, inventory, args.size, args.seed)
             result = dict(schema_version=1, draw=drawn, population=inventory_report(inventory, args.store),
                           images=inspect_draw(args.store, drawn['sample_id'], args.repo, paths_only=True),
-                          current_check=verify_draw(args.store, drawn['sample_id'], args.repo))
+                          current_check=verify_draw(args.store, drawn['sample_id'], args.repo),
+                          output=dict(directory=str(target), published=False))
+            for image in result['images']:
+                image['sampled_path'] = None
+            if result['current_check']['ok']:
+                try:
+                    result['images'] = publish_sample(args.repo, args.store, result['images'])
+                    result['output']['published'] = True
+                except (OSError, ValueError) as error:
+                    result['output']['error'] = f'{type(error).__name__}: {error}'
         elif args.command == 'list':
             result = list_draws(args.store)
         elif args.command == 'show':
@@ -497,7 +550,7 @@ def main(argv=None):
                               args.delete, args.author)
         print(json.dumps(result, ensure_ascii=False, allow_nan=False, indent=2))
         if ((args.command == 'verify' and not result['ok']) or
-                (args.command == 'draw' and not result['current_check']['ok'])):
+                (args.command == 'draw' and not result['output']['published'])):
             return 1
         return 0
     except (ValueError, OSError, KeyError, TypeError) as error:

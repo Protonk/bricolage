@@ -36,6 +36,9 @@ It is not the router architecture or the future portable API.
   assets only in a fixture set's `images/`, `sources/`, or `previews/` directory;
   all contents of those directories are Git-ignored regardless of type. Do not
   force-add them. Generated patterns check mechanics, not usefulness on real images.
+  The sampler also writes disposable byte copies to `output/sampled/`, replacing
+  that directory on each successful draw. Keep original fixture assets and durable
+  sample records outside `output/`; see [output guidance](output/AGENTS.md).
 
 Router work must preserve scratch lineage for each call. Neighborhoods are
 provisional and batch-relative; semantic cluster names are an enduring anti-goal.

@@ -250,10 +250,90 @@ class SamplerTests(unittest.TestCase):
         self.assertEqual([i['position'] for i in response['images']], [1, 2, 3])
         for image in response['images']:
             self.assertEqual('sha256:' + s.file_hash(Path(image['available_path'])), image['image_id'])
+            copied = Path(image['sampled_path'])
+            self.assertEqual(copied.parent, (self.repo / 'output/sampled').resolve())
+            self.assertEqual('sha256:' + s.file_hash(copied), image['image_id'])
+        self.assertTrue(response['output']['published'])
         self.assertEqual(s.load_draw(store, draw['sample_id'])[0], draw)
         old_syntax = subprocess.run([*command, 'draw', '3', '--seed', 'public engine'],
                                     cwd=self.temp.name, capture_output=True, text=True, check=True)
         self.assertEqual(json.loads(old_syntax.stdout)['draw']['image_ids'], draw['image_ids'])
+
+    def test_next_draw_replaces_only_sampled_and_copies_are_independent(self):
+        output = self.repo / 'output'
+        sampled = output / 'sampled'
+        sampled.mkdir(parents=True)
+        (sampled / 'old/subdir').mkdir(parents=True)
+        (sampled / 'old/subdir/stale').write_bytes(b'stale')
+        (sampled / 'external-link').symlink_to(self.heap, target_is_directory=True)
+        (output / 'AGENTS.md').write_text('Keep this')
+        (output / 'other-output').write_bytes(b'Keep this too')
+        first = json.loads(self.cli('3', '--seed', 'first').stdout)
+        self.assertEqual(len(list(sampled.iterdir())), 3)
+        image = first['images'][0]
+        Path(image['sampled_path']).write_bytes(b'edited copy')
+        self.assertEqual('sha256:' + s.file_hash(Path(image['available_path'])), image['image_id'])
+        second = self.cli('1', '--seed', 'second')
+        self.assertEqual(second.returncode, 0, second.stderr)
+        self.assertEqual(len(list(sampled.iterdir())), 1)
+        self.assertEqual((output / 'AGENTS.md').read_text(), 'Keep this')
+        self.assertEqual((output / 'other-output').read_bytes(), b'Keep this too')
+        self.assertTrue(self.heap.is_dir())
+        self.assertEqual(s.load_draw(self.store, first['draw']['sample_id'])[0], first['draw'])
+        self.assertEqual(self.cli('0').returncode, 0)
+        self.assertEqual(list(sampled.iterdir()), [])
+
+    def test_invalid_draw_and_failed_copy_preserve_previous_output(self):
+        sampled = self.repo / 'output/sampled'
+        sampled.mkdir(parents=True)
+        sentinel = sampled / 'previous'
+        sentinel.write_bytes(b'previous')
+        self.assertEqual(self.cli('5').returncode, 2)
+        draw = self.draw()
+        images = s.inspect_draw(self.store, draw['sample_id'], self.repo, paths_only=True)
+        def corrupt_copy(source, destination):
+            destination.write_bytes(b'incomplete copy')
+        with patch.object(s.shutil, 'copyfile', side_effect=corrupt_copy):
+            with self.assertRaisesRegex(ValueError, 'checksum differs'):
+                s.publish_sample(self.repo, self.store, images)
+        self.assertEqual(sentinel.read_bytes(), b'previous')
+        self.assertEqual(list(sampled.parent.iterdir()), [sampled])
+        stdout = io.StringIO()
+        with patch.object(s.shutil, 'copyfile', side_effect=OSError('disk full')), contextlib.redirect_stdout(stdout):
+            status = s.main(['--repo', str(self.repo), '--store', str(self.store), '2'])
+        self.assertEqual(status, 1)
+        result = json.loads(stdout.getvalue())
+        self.assertIn('disk full', result['output']['error'])
+        self.assertFalse(result['output']['published'])
+        self.assertTrue(all(i['sampled_path'] is None for i in result['images']))
+        self.assertEqual(s.load_draw(self.store, result['draw']['sample_id'])[0], result['draw'])
+        self.assertEqual(sentinel.read_bytes(), b'previous')
+
+    def test_output_symlinks_and_records_inside_sampled_are_rejected(self):
+        outside = Path(self.temp.name) / 'outside'
+        outside.mkdir()
+        (outside / 'keep').write_bytes(b'keep')
+        output = self.repo / 'output'
+        output.symlink_to(outside, target_is_directory=True)
+        self.assertEqual(self.cli('1').returncode, 2)
+        output.unlink()
+        output.mkdir()
+        sampled = output / 'sampled'
+        sampled.symlink_to(outside, target_is_directory=True)
+        self.assertEqual(self.cli('1').returncode, 2)
+        sampled.unlink()
+        sampled.mkdir()
+        self.assertEqual(self.cli('--store', str(sampled / 'records'), '1').returncode, 2)
+        self.assertEqual((outside / 'keep').read_bytes(), b'keep')
+        self.assertEqual(s.list_draws(self.store), [])
+
+    def test_concurrent_publications_leave_one_complete_sample(self):
+        draws = [self.draw(2, 'first'), self.draw(3, 'second')]
+        images = [s.inspect_draw(self.store, d['sample_id'], self.repo, True) for d in draws]
+        with concurrent.futures.ThreadPoolExecutor(max_workers=2) as pool:
+            published = list(pool.map(lambda rows: s.publish_sample(self.repo, self.store, rows), images))
+        actual = {p.name for p in (self.repo / 'output/sampled').iterdir()}
+        self.assertIn(actual, [{Path(row['sampled_path']).name for row in rows} for rows in published])
 
     def test_shorthand_bounds_and_global_options(self):
         for size in ('-1', '5'):
@@ -275,6 +355,8 @@ class SamplerTests(unittest.TestCase):
         self.assertEqual(len(response['draw']['image_ids']), 4)
         self.assertEqual(sum(i['available_path'] is None for i in response['images']), 1)
         self.assertFalse(response['current_check']['ok'])
+        self.assertFalse(response['output']['published'])
+        self.assertFalse((self.repo / 'output/sampled').exists())
         self.assertEqual(s.load_draw(self.store, response['draw']['sample_id'])[0], response['draw'])
 
     def test_launcher_reports_missing_environment_and_runtime_rejects_other_minor_versions(self):

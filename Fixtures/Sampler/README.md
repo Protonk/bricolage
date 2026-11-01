@@ -34,6 +34,20 @@ engine and records. From inside Fixtures, use `./sample N`; from elsewhere, use
 the executable's absolute path. No inventory preparation or internal Python
 imports are required.
 
+Each successful draw replaces the entire contents of the checkout's
+`output/sampled/` with independent, byte-identical copies of its selected images.
+Files are named `0001-<image-sha256>.<original-extension>` in draw order. The copies
+are Git-ignored and disposable; editing them cannot change the fixture originals.
+Copies are verified before the previous output is removed. Invalid requests,
+unavailable inputs, and copy/checksum failures leave the previous output intact.
+A successful zero-image draw empties `sampled/`. Other output paths, including
+the tracked [`output/AGENTS.md`](../../output/AGENTS.md), are left alone.
+
+The engine recreates `sampled/` if absent. It refuses symlinked output directories
+and record stores inside `output/sampled/`. Concurrent draws serialize publication;
+the last published draw occupies this shared scratch directory. Persistent records
+remain in `Fixtures/Sampler/records/`, independently of these disposable copies.
+
 `draw` refreshes the inventory by default and returns a persistent `sample_id`.
 Omit `--seed` to generate and record a seed. N may be zero; negative N or N larger
 than the eligible population is an error. There is no replacement or size adjustment.
@@ -82,8 +96,9 @@ Draw responses have `schema_version: 1` and these fields:
 |---|---|
 | `draw` | Original persistent record, including `sample_id`, `image_ids`, seed and inventory ID |
 | `population.counts.eligible` | M, the number of eligible distinct images in this draw's snapshot |
-| `images` | Draw order; each item has `position`, `image_id`, `available_path` and all alias `locations` with current statuses |
+| `images` | Draw order; each item has `position`, `image_id`, `sampled_path` for its disposable copy, `available_path` for its fixture original, and all alias `locations` with current statuses |
 | `current_check` | Record reproduction and current file/metadata verification |
+| `output` | Absolute `directory`, `published` Boolean, and `error` if copying or publication failed |
 
 An agent or program can call the engine and use the returned paths immediately:
 
@@ -97,22 +112,26 @@ result = subprocess.run(
 )
 sample = json.loads(result.stdout)
 sample_id = sample["draw"]["sample_id"]
-image_paths = [item["available_path"] for item in sample["images"]]
+image_paths = [item["sampled_path"] for item in sample["images"]]
 ```
 
 All successful commands output JSON. Exit codes are 0 for success, 1 for a
-`draw` or `verify` report with current file/metadata problems, and 2 for invalid
+`draw` or `verify` report with current file/metadata or publication problems, and 2 for invalid
 arguments, damaged records or I/O errors. On exit 1, stdout still contains the
 JSON report and saved sample ID. `draw` persists the original selection before
 checking current availability; a missing file never causes a replacement draw.
 An oversized request is rejected before creating a sample.
+On a failed publication, `sampled_path` values are null; the saved draw remains
+available. `show` and `verify` inspect fixture originals and durable records,
+without changing or relying on disposable output.
 
 Global `--repo CHECKOUT` and `--store DIRECTORY` options go **before** the command.
 The checkout and default store resolve from the engine; custom relative option
 paths resolve from the caller's working directory.
 The default store is [records/](records/). It contains versionable text only;
-image bytes remain at their fixture locations. Use `--store output/samples` for
-a local Git-ignored store. Back up or version the whole store, including inventories.
+original image bytes remain at their fixture locations. Custom stores under
+`output/` are disposable too, so keep durable stores elsewhere. Back up or version
+the whole store, including inventories.
 
 ## Population and identity
 
