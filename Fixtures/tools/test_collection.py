@@ -11,6 +11,7 @@ from unittest.mock import patch
 
 import collection
 import collection_totals
+import source_index
 import fixture_layout as layout
 import fixture_removal as removal
 from new_fixture import create
@@ -186,6 +187,42 @@ class CollectionTests(unittest.TestCase):
         (other / 'manifest.csv').write_bytes(removal.csv_bytes((other / 'manifest.csv').read_bytes(), m['images']))
         text = collection_totals.render(self.fixtures)
         self.assertIn('4 active inputs · 2 collections · 3 distinct byte hashes', text)
+
+    def test_index_lists_every_input_with_recovery_and_cross_leaf_sharing(self):
+        other = self.fixtures / 'Heaps/Other'
+        create(other, 'other-v1', 'prompt_heap', self.fixtures)
+        (other / 'provenance/intake').mkdir()
+        for name in ('prompt.json', 'candidates.jsonl', 'candidates.csv'):
+            (other / 'provenance/intake' / name).write_text('{}' if name.endswith('.json') else '')
+        m = json.loads((other / 'manifest.json').read_text()); m['images'] = [self.rows[1]]
+        (other / 'manifest.json').write_bytes(removal.encode(m))
+        (other / 'manifest.csv').write_bytes(removal.csv_bytes((other / 'manifest.csv').read_bytes(), m['images']))
+        (other / 'sources.csv').write_text((other / 'sources.csv').read_text()
+            + '1,1.png,,File:One.jpg,Someone; CC0,%s,1,1,1,https://commons.wikimedia.org/?curid=7,,,,One.jpg\n' % self.rows[1]['byte_sha256'])
+        (other / 'provenance/import-map.json').write_text(json.dumps([dict(
+            final_file='images/1.png', commons_pageid=7, original_sha1='abc', acquired_url='https://upload.wikimedia.org/x.png',
+            source_requested_max_edge=1600, acquired_rendition_kind='api_returned_rendition', license='CC0', license_url='u',
+            commons_title='File:One.jpg')]))
+        rows = list(csv.DictReader(io.StringIO(source_index.render(self.fixtures))))
+        self.assertEqual([r['leaf'] for r in rows], ['Heaps/Other'] + ['Relationships/Example'] * 3)
+        commons = rows[0]
+        self.assertEqual((commons['origin'], commons['recovery'], commons['page_id'], commons['original_sha1'], commons['requested_edge']),
+                         ('commons', 'commons-api', '7', 'abc', '1600'))
+        self.assertEqual(commons['shared_with'], 'Relationships/Example:images/1.png')
+        example = {r['file']: r for r in rows[1:]}
+        self.assertEqual(example['images/1.png']['shared_with'], 'Heaps/Other:images/1.png')
+        self.assertEqual(example['images/0.png']['shared_with'], '')
+        self.assertEqual((example['images/0.png']['origin'], example['images/0.png']['recovery']), ('unknown', 'none'))
+        self.assertEqual(list(rows[0]), source_index.COLUMNS)
+        result = source_index.update(self.fixtures)
+        self.assertEqual((result['inputs'], result['leaves'], result['shared']), (4, 2, 2))
+        self.assertEqual(source_index.update(self.fixtures, check=True)['changed'], [])
+        self.remove()
+        with self.assertRaisesRegex(ValueError, 'Stale source index'):
+            source_index.update(self.fixtures, check=True)
+        # Totals regenerate the index too, so one command and one check cover both.
+        collection_totals.update(self.fixtures)
+        self.assertEqual(source_index.update(self.fixtures, check=True)['inputs'], 3)
 
     def test_unknown_audit_pin_and_rebuild_are_rejected(self):
         self.remove()

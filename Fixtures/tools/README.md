@@ -38,13 +38,26 @@ The existing acquisition builders cannot reconcile removals into a new
 publication; rebuilding a leaf with removal history is rejected before replacing
 its active inputs. Ordinary removal and validation need no rebuild.
 
-The removal command also regenerates [collection totals](../COLLECTIONS.md) and
-marked total blocks in every leaf README. After other catalog changes, run
+The removal command also regenerates [collection totals](../COLLECTIONS.md), the
+[source index](../INDEX.csv) and marked total blocks in every leaf README. After other catalog changes, run
 `make -C Fixtures collection-totals`. `make -C Fixtures check-collection-totals`
 is read-only and fails on stale output; `test-fixture-layout` includes this check
 and removal regression tests. Counts come from manifests, so they can be generated
 without local media and do not claim that those files are present. Historical
 acquisition counts, targets and frozen editions are not current input totals.
+
+## The source index
+
+`Fixtures/collection index` regenerates `Fixtures/INDEX.csv` from active
+manifests, source catalogs and import maps; `--check` fails on a stale file.
+`Fixtures/collection totals` regenerates it too, so one command and one check
+cover both. The index names the leaf, bytes, decoded size and upstream identity
+of every active input, classifies how each could be fetched again, and lists
+other leaves holding the same bytes or upstream file. `source_index.py` reads the
+three existing import-map spellings through one adapter; a new leaf that writes
+the common keys needs no adapter change. The index is read by a new
+contribution's identity audit and by whoever recovers ignored media; it is
+never used to re-validate an older leaf.
 
 ## Validation and other tools
 

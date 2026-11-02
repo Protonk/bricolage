@@ -38,8 +38,9 @@ image matcher should return.
 The [heap guide](Heaps/README.md) also describes the local picture book of
 selected images and how to rebuild it.
 
-The [collection totals](COLLECTIONS.md) are generated from active manifests,
-including the current input count and distinct byte hashes for every leaf.
+The [collection totals](COLLECTIONS.md) and the [source index](INDEX.csv) are
+generated from active manifests: the current input count and distinct byte
+hashes for every leaf, and one row per input with its source identity.
 Acquisition is incomplete in Speckled-Fields (11 accepted images pending) and
 Botanical Illustrations (one transfer pending). POTY Arthropods acquired 43 inputs
 against a target of 50. Some Curatorial selections also have earlier unresolved
@@ -51,7 +52,7 @@ and records give the details.
 | Path | Contents |
 |---|---|
 | `sample` | Public sampler command |
-| `collection` | Remove an input or regenerate collection totals |
+| `collection` | Remove an input, or regenerate collection totals and the source index |
 | [Sampler/](Sampler/README.md) | Sampler code, tests and versioned records |
 | [tools/](tools/README.md) | Layout checks, fixture creation and the optional comparison runner |
 | [Template/](Template/README.md) | Starting files for a new leaf |

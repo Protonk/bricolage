@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Maintain active fixture membership and generated collection totals."""
+"""Maintain active fixture membership, generated collection totals and the source index."""
 import argparse
 import fcntl
 import json
@@ -9,6 +9,7 @@ import sys
 from fixture_layout import FIXTURES, discover, require
 from fixture_removal import history, remove
 import collection_totals
+import source_index
 
 
 def resolve(selector, leaf=None, fixtures=FIXTURES):
@@ -42,6 +43,8 @@ def main(fixtures=FIXTURES):
     removal.add_argument('--dry-run', action='store_true')
     totals = commands.add_parser('totals', help='Regenerate manifest totals and marked README sections')
     totals.add_argument('--check', action='store_true', help='Fail if generated totals are stale; write nothing')
+    index = commands.add_parser('index', help='Regenerate the flat source index of every active input')
+    index.add_argument('--check', action='store_true', help='Fail if the index is stale; write nothing')
     args = parser.parse_args()
     try:
         require(sys.version_info[:2] == (3, 14), 'Use the Python 3.14.x Fixtures/.venv')
@@ -51,6 +54,8 @@ def main(fixtures=FIXTURES):
             fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
             if args.command == 'totals':
                 result = collection_totals.update(fixtures, check=args.check)
+            elif args.command == 'index':
+                result = source_index.update(fixtures, check=args.check)
             else:
                 root, row, already = resolve(args.input, args.leaf, fixtures)
                 # Check every generation target before mutating the collection.

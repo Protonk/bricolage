@@ -32,7 +32,8 @@ current starting point for a handoff of Commons leads.
 
 Use `Fixtures/collection remove INPUT --reason "Reason"` for active input removal.
 After other catalog changes, run `make -C Fixtures collection-totals`; current
-totals and marked README blocks are generated, not maintained by hand.
+totals, the source index `INDEX.csv` and marked README blocks are generated,
+not maintained by hand.
 
 Run the checks relevant to the change, from the repository root:
 

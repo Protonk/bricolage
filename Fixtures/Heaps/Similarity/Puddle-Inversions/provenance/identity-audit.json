@@ -1,144 +1,109 @@
 {
   "status": "passed",
+  "index": "Fixtures/INDEX.csv",
   "inventories": [
     {
-      "fixture": "hazy-botanical-illustrations-v1",
       "leaf": "Heaps/Curatorial/Botanical-Illustrations",
-      "inputs": 149,
-      "sources": 149,
-      "manifest_sha256": "0ff8e4fe91aa98f2143fa7c34203bd5e0e0a7978e0b7fa8cb0bd53ac0f54f713"
+      "fixture": "hazy-botanical-illustrations-v1",
+      "inputs": 149
     },
     {
-      "fixture": "hazy-evan-amos-uploads-v1",
       "leaf": "Heaps/Curatorial/Evan-Amos-Uploads",
-      "inputs": 133,
-      "sources": 133,
-      "manifest_sha256": "f455ec4ed947c7fec4aa168b43afa303e562b7c8230b9d9cd7cd775d4fce81c9"
+      "fixture": "hazy-evan-amos-uploads-v1",
+      "inputs": 133
     },
     {
-      "fixture": "hazy-ex-libris-v1",
       "leaf": "Heaps/Curatorial/Ex-Libris",
-      "inputs": 50,
-      "sources": 50,
-      "manifest_sha256": "3ede4aa37ce205592e1821ffb256a35edf4970819db48182268ee7c4911d0d37"
+      "fixture": "hazy-ex-libris-v1",
+      "inputs": 50
     },
     {
-      "fixture": "hazy-poty-arthropods-v1",
       "leaf": "Heaps/Curatorial/POTY/Arthropods",
-      "inputs": 43,
-      "sources": 43,
-      "manifest_sha256": "7ebd088010f0652629a6b37d79100f5a3eb1edc2a1bc62768509abc1357f0ef2"
+      "fixture": "hazy-poty-arthropods-v1",
+      "inputs": 43
     },
     {
-      "fixture": "hazy-poty-constructions-and-buildings-v1",
       "leaf": "Heaps/Curatorial/POTY/Constructions-and-buildings",
-      "inputs": 50,
-      "sources": 50,
-      "manifest_sha256": "42523610eee11c7d6193b865a5edc86c6c2e0b7ffce999b1093c9e0f2f0284e9"
+      "fixture": "hazy-poty-constructions-and-buildings-v1",
+      "inputs": 50
     },
     {
-      "fixture": "hazy-poty-people-and-human-activity-v1",
       "leaf": "Heaps/Curatorial/POTY/People-and-human-activity",
-      "inputs": 50,
-      "sources": 50,
-      "manifest_sha256": "1db0e952023b49cd6d75c4d7822c776a13da9bf90305974b85451191cb7aa4fd"
+      "fixture": "hazy-poty-people-and-human-activity-v1",
+      "inputs": 50
     },
     {
-      "fixture": "hazy-rocks-in-thin-section-v1",
       "leaf": "Heaps/Curatorial/Rocks-in-Thin-Section",
-      "inputs": 50,
-      "sources": 50,
-      "manifest_sha256": "ffad8f195ab15821241f354f5b915ab04c474652c15d673fc3511a6d7630d3c8"
+      "fixture": "hazy-rocks-in-thin-section-v1",
+      "inputs": 50
     },
     {
-      "fixture": "hazy-stone-hand-axes-v1",
       "leaf": "Heaps/Curatorial/Stone-Hand-Axes",
-      "inputs": 50,
-      "sources": 50,
-      "manifest_sha256": "d2eddde595a5fb48fbb796d9f5c642f2d048fb9120d776340ead38e11b78d062"
+      "fixture": "hazy-stone-hand-axes-v1",
+      "inputs": 50
     },
     {
-      "fixture": "hazy-us-army-ssi-v1",
       "leaf": "Heaps/Curatorial/US-Army-SSI",
-      "inputs": 149,
-      "sources": 150,
-      "manifest_sha256": "c906702f2fcc2e2487295fe3620756c7f71e0548087203abf8ac61ad9651912c"
+      "fixture": "hazy-us-army-ssi-v1",
+      "inputs": 149
     },
     {
-      "fixture": "hazy-ps01-v1",
       "leaf": "Heaps/Similarity/Pale-Skies-Dark-Ground",
-      "inputs": 58,
-      "sources": 58,
-      "manifest_sha256": "f87e09e932310784fce7096fa34e0addbcbfdf1dda0219232d2136011f6782d3"
+      "fixture": "hazy-ps01-v1",
+      "inputs": 58
     },
     {
-      "fixture": "hazy-rg01-v1",
       "leaf": "Heaps/Similarity/Red-Accents-in-Green",
-      "inputs": 31,
-      "sources": 31,
-      "manifest_sha256": "8c11d19a70ae73c0a526ee05e7f9fb2c904ab39e977788395c201b94aa9d3a0c"
+      "fixture": "hazy-rg01-v1",
+      "inputs": 31
     },
     {
-      "fixture": "hazy-cr01-v1",
       "leaf": "Heaps/Similarity/Repeated-Rectangles",
-      "inputs": 57,
-      "sources": 57,
-      "manifest_sha256": "df695b27cd27fa082088f5dc86cc553c158da00390aa908dfaf76a3b3448912f"
+      "fixture": "hazy-cr01-v1",
+      "inputs": 57
     },
     {
-      "fixture": "hazy-sf01-v1",
       "leaf": "Heaps/Similarity/Speckled-Fields",
-      "inputs": 48,
-      "sources": 48,
-      "manifest_sha256": "29b006215f26a49b6eb774bcfeb8d29e761fd31f224bcc278b4868acbe3ca026"
+      "fixture": "hazy-sf01-v1",
+      "inputs": 48
     },
     {
-      "fixture": "hazy-bsp01-v1",
       "leaf": "Heaps/Similarity/Spreading-Patches",
-      "inputs": 68,
-      "sources": 68,
-      "manifest_sha256": "7eb43cbd99438215076cb09f618eb47c544ac4b4e63769a265739e818545a812"
+      "fixture": "hazy-bsp01-v1",
+      "inputs": 68
     },
     {
-      "fixture": "hazy-tg01-v1",
       "leaf": "Heaps/Similarity/Tangled-Growth",
-      "inputs": 31,
-      "sources": 31,
-      "manifest_sha256": "d1c8c6361e8f7d25e6c68af8f87aac9c9b8b42f31688a9324f7ad6da53ec0365"
+      "fixture": "hazy-tg01-v1",
+      "inputs": 31
     },
     {
-      "fixture": "hazy-derivatives-v1",
       "leaf": "Relationships/Derivatives",
-      "inputs": 183,
-      "sources": 15,
-      "manifest_sha256": "6141c7fde28f1e2809bb1ca4df207a1ebe0788db4daaf1f489e79421fb1c038d"
+      "fixture": "hazy-derivatives-v1",
+      "inputs": 183
     },
     {
-      "fixture": "hazy-multiview-v1",
       "leaf": "Relationships/Multiviews",
-      "inputs": 20,
-      "sources": 20,
-      "manifest_sha256": "2b77fb179dc6b3a2b537fa631f8fad528fdb2e44660a8f3e918e41a09fce5b63"
+      "fixture": "hazy-multiview-v1",
+      "inputs": 20
     },
     {
-      "fixture": "hazy-meme-fixtures-v0",
       "leaf": "Relationships/Variants",
-      "inputs": 42,
-      "sources": 6,
-      "manifest_sha256": "8d0fd98dd2e435661ef6d77b458050b131ed488b172204659023f080a85111df"
+      "fixture": "hazy-meme-fixtures-v0",
+      "inputs": 42
     }
   ],
   "candidates": 45,
   "accepted": 43,
   "acquired": 43,
   "available_previous_identities": {
-    "title": 1033,
-    "pageid": 1018,
-    "original_sha1": 1024,
-    "byte_sha256": 1251
+    "title": 1023,
+    "pageid": 1017,
+    "original_sha1": 1017,
+    "byte_sha256": 1250
   },
   "collisions_with_previous": [],
   "duplicate_candidate_identities": [],
   "blocking_collisions": [],
-  "limitations": "Exact identity checks only. Different titles, hashes, dates or creators do not establish capture independence. Prior upstream SHA-1/page IDs are compared where locally available; no claim of complete upstream inventories. Visual and possible-sequence review is recorded separately in provenance/source-review.json."
+  "limitations": "Exact identity checks only, against the source index as generated when this audit ran. Different titles, hashes, dates or creators do not establish capture independence. Visual and possible-sequence review is recorded separately in provenance/source-review.json."
 }

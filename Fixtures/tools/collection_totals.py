@@ -5,6 +5,7 @@ from pathlib import Path
 from urllib.parse import quote
 
 from fixture_layout import FIXTURES, discover, check_layout, require
+import source_index
 
 
 def render(fixtures=FIXTURES, leaves=None):
@@ -33,9 +34,9 @@ def render(fixtures=FIXTURES, leaves=None):
 
 
 def generated_files(fixtures=FIXTURES):
-    """One central table plus marked totals in each leaf's guide."""
+    """One central table, the source index, and marked totals in each leaf's guide."""
     leaves = discover(fixtures)
-    files = {fixtures / 'COLLECTIONS.md': render(fixtures, leaves)}
+    files = {fixtures / 'COLLECTIONS.md': render(fixtures, leaves), fixtures / 'INDEX.csv': source_index.render(fixtures, leaves)}
     for leaf in leaves:
         path = leaf / 'README.md'
         text = path.read_text()

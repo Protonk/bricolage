@@ -66,6 +66,16 @@ marked blocks in leaf READMEs. Regenerate with `Fixtures/collection totals`;
 do not hand-edit those blocks. Acquisition counts and supplied targets retain
 their historical meaning.
 
+The [source index](INDEX.csv) is generated with the totals: one row per active
+input across every leaf, with its leaf path, byte hash, decoded size, family and
+source file, upstream origin, page ID, upstream SHA-1, the URL fetched, requested
+edge, rendition kind, license, a `recovery` class (`commons-api`, `source-url`,
+`regenerate` or `none`) with a note, and `shared_with` naming other leaves that
+hold the same bytes or upstream file. It reads the existing import maps through
+one adapter and rewrites none of them. It is a flat membership table and the
+recovery contract in [RECOVERY.md](RECOVERY.md); a sub-heap is only a longer
+leaf path, and sharing is information, not a failure.
+
 All files under any set's `images/`, `sources/`, and optional `previews/` directories
 are Git-ignored, including nested paths, new formats, and files with no extension.
 Keep all future image assets in these locations. Metadata, checksums, textual
