@@ -55,11 +55,19 @@ batches and eight multiview batches.
 
 ## Local assets and Git
 
-Use `Fixtures/collection remove INPUT --reason "Reason"` to remove active
-membership. It preserves prior catalogs in `provenance/removals/NNNN/` and image
-bytes under `previews/removed/`. Source and acquisition records remain historical
-evidence. Validators replay the removal chain against the active catalogs before
-checking the preserved publication. See the [tools guide](tools/README.md).
+A published leaf changes in two recorded ways. `Fixtures/collection remove
+INPUT --reason "Reason"` removes active membership, preserving the prior
+catalogs in `provenance/removals/NNNN/` and the image under `previews/removed/`.
+`Fixtures/collection repin INPUT --from FILE --reason "Reason"` replaces an
+input's bytes with a file that decodes to the recorded size, orientation and
+format, preserving the prior catalogs in `provenance/repins/NNNN/` and any bytes
+that were there under `previews/repinned/`; when the input is a byte copy of
+its source file, the source bytes and catalog hash follow. Each receipt holds
+the exact row, the reason and before/after hashes, and the receipts form one
+chain that must end at the live catalogs. Source and acquisition records stay
+as published. A leaf's specialized validator describes that publication and is
+not re-run after a recorded change; the shared layout check describes the live
+leaf. See the [tools guide](tools/README.md) and [RECOVERY.md](RECOVERY.md).
 
 Current counts come from [generated collection totals](COLLECTIONS.md) and the
 marked blocks in leaf READMEs. Regenerate with `Fixtures/collection totals`;
@@ -195,10 +203,11 @@ media exclusions do not fabricate visual reviews. Known repeated objects or
 printed works are excluded, unknown identities remain null, and neither artist
 caps nor category quotas apply. Acquisition failures never replace selections.
 
-Cross-fixture identity audits record the prior leaves they covered and their
-manifest/catalog hashes. An offline recheck uses that recorded coverage so a new
-contribution does not invalidate an older historical audit; missing or changed
-covered evidence still fails. A new publication audits all current prior leaves.
+Cross-fixture identity audits are written once, at publication, and read as
+frozen evidence afterward; no validator recomputes them or re-resolves the
+leaves they named. A new publication audits every current leaf through the
+[source index](INDEX.csv), whose `shared_with` column lists exact byte or
+upstream-file sharing between leaves as information, not failure.
 
 The common image/source columns are retained. `relation_kind=curatorial_selected`
 records selection basis only. A unique `family_id` and its single `parents`

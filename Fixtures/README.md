@@ -52,7 +52,7 @@ and records give the details.
 | Path | Contents |
 |---|---|
 | `sample` | Public sampler command |
-| `collection` | Remove an input, or regenerate collection totals and the source index |
+| `collection` | Remove or re-pin an input, or regenerate collection totals and the source index |
 | [Sampler/](Sampler/README.md) | Sampler code, tests and versioned records |
 | [tools/](tools/README.md) | Layout checks, fixture creation and the optional comparison runner |
 | [Template/](Template/README.md) | Starting files for a new leaf |

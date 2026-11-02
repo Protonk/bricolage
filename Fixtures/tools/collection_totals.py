@@ -57,7 +57,7 @@ def update(fixtures=FIXTURES, *, check=False):
     if check:
         require(not changed, 'Stale collection totals; run Fixtures/collection totals: ' + ', '.join(str(p) for p in changed))
     else:
-        from fixture_removal import atomic_write
+        from fixture_history import atomic_write
         for path in changed:
             atomic_write(path, files[path].encode())
     return dict(status='current' if check else 'generated', changed=[str(p) for p in changed])

@@ -52,26 +52,6 @@ def evidence_path(root, name):
     return new if new.exists() or (root / 'provenance/layout.json').exists() else old
 
 
-def former_leaf_names(fixtures=None):
-    """Current Fixtures-relative leaf name -> its recorded former names, oldest last."""
-    fixtures = (FIXTURES if fixtures is None else Path(fixtures)).resolve()
-    former = {}
-    for old, new in sampler.leaf_relocations(fixtures.parent).items():
-        former.setdefault(new.removeprefix('Fixtures/'), []).append(old.removeprefix('Fixtures/'))
-    return former
-
-
-def recorded_leaf_name(leaf, names, fixtures=None):
-    """The name a historical record uses for this leaf: its current Fixtures-relative
-    path, or a recorded former one. None when the record does not include the leaf."""
-    fixtures = (FIXTURES if fixtures is None else Path(fixtures)).resolve()
-    current = Path(leaf).resolve().relative_to(fixtures).as_posix()
-    for candidate in [current, *former_leaf_names(fixtures).get(current, [])]:
-        if candidate in names:
-            return candidate
-    return None
-
-
 def former_repo_paths(relative):
     """Repo-relative paths a file had before recorded leaf renames, nearest first."""
     former = []
@@ -150,19 +130,38 @@ def check_layout(root, *, assets=True):
         with (root / 'probes.csv').open(newline='') as stream:
             require(not list(csv.DictReader(stream)) and not selection['pairs']
                     and not selection['known_shift_families'], 'Heap asserts pair expectations')
+    sums = {}
+    for line in (root / 'SHA256SUMS.txt').read_text().splitlines():
+        if not line.strip():
+            continue
+        expected, name = line.split('  ', 1)
+        require(name not in sums, 'Duplicate checksum line: ' + name)
+        sums[name] = expected
+    for row in rows:
+        require(sums.get(row['file']) == row['byte_sha256'], 'Checksum line differs from manifest: ' + row['file'])
+    for batch in sorted((root / 'batches').glob('*.txt')):
+        require(set(batch.read_text().split()) <= set(names), 'Batch names an input outside the manifest: ' + batch.name)
+    with (root / 'sources.csv').open(newline='') as stream:
+        for source in csv.DictReader(stream):
+            if source['source_filename']:
+                require(sums.get('sources/' + source['source_filename']) == source['source_sha256'],
+                        'Source checksum differs from catalog: ' + source['source_filename'])
     if assets:
         require(rows, 'Empty fixture has no acquired inputs')
         actual = {p.relative_to(root).as_posix() for p in (root / 'images').iterdir() if p.name != '.DS_Store'}
         require(set(names) == actual, 'Manifest/input file coverage differs')
         for row in rows:
             require(sha(root / row['file']) == row['byte_sha256'], 'Input hash differs: ' + row['file'])
-    from fixture_removal import history
-    removals = history(root, assets=assets)
-    return dict(removed_inputs=len(removals), fixture_id=manifest['fixture_id'], kind=manifest['kind'], images=len(rows), layout='passed', assets_checked=assets)
+        for name, expected in sums.items():
+            if name.startswith('sources/'):
+                require(sha(root / name) == expected, 'Source hash differs: ' + name)
+    from fixture_history import history
+    changes = history(root, assets=assets)
+    return dict(recorded_changes=len(changes), fixture_id=manifest['fixture_id'], kind=manifest['kind'], images=len(rows), layout='passed', assets_checked=assets)
 
 
 def check_leaf(script, checks):
-    """Common entry point; specialized checks remain explicit and read-only."""
+    """Common entry point; specialized checks remain explicit, read-only and publication-scoped."""
     import argparse
     parser = argparse.ArgumentParser(description='Check this fixture offline; never builds or downloads.')
     parser.add_argument('--metadata-only', action='store_true', help='Layout/catalog checks without local media or specialized validation')
@@ -171,9 +170,13 @@ def check_leaf(script, checks):
         require(sys.version_info[:2] == (3, 14), 'Use the Python 3.14.x Fixtures/.venv')
         root = Path(script).resolve().parents[1]
         result = check_layout(root, assets=not args.metadata_only)
-        result['specialized_scope'] = 'original_publication' if result['removed_inputs'] else 'current_publication'
+        changes = result['recorded_changes']
+        # A publication validator describes the leaf as published. After a recorded
+        # change it is historical; the layout check above describes the live leaf.
+        result['specialized_scope'] = ('current_publication' if not changes else
+                                       f'historical: {changes} recorded change(s); the publication validator is not re-run')
         result['specialized_checks'] = []
-        if not args.metadata_only:
+        if not args.metadata_only and not changes:
             for command in checks:
                 run = subprocess.run([sys.executable, str(REPO / command[0]), *command[1:]],
                                      cwd=REPO, text=True, capture_output=True)

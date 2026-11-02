@@ -6,8 +6,7 @@ from pathlib import Path as _LayoutPath
 import sys as _layout_sys
 _layout_root = next(p for p in _LayoutPath(__file__).resolve().parents if (p/'tools/fixture_layout.py').is_file())
 _layout_sys.path.insert(0, str(_layout_root/'tools'))
-from fixture_layout import evidence_path, recorded_leaf_name
-from fixture_removal import historical_manifest
+from fixture_layout import evidence_path
 
 import csv
 import hashlib
@@ -22,7 +21,7 @@ def normalized(value):
     return unquote(value).removeprefix('File:').replace('_', ' ').casefold().strip()
 
 
-def audit(fixture_names=None, recorded_inventories=None):
+def audit():
     root = e.ROOT
     fixtures = root.parents[2]
     previous = {k: {} for k in ('title', 'pageid', 'original_sha1', 'byte_sha256')}
@@ -41,14 +40,6 @@ def audit(fixture_names=None, recorded_inventories=None):
         if not (leaf / 'sources.csv').is_file():
             continue
         name = str(leaf.relative_to(fixtures))
-        if fixture_names is not None:
-            # Records name a leaf by the path it had when written; a recorded rename keeps it.
-            name = recorded_leaf_name(leaf, fixture_names, fixtures)
-            if name is None:
-                continue
-        if recorded_inventories is not None:
-            pinned = next(r for r in recorded_inventories if r['fixture'] == name)
-            path = historical_manifest(leaf, pinned['manifest_sha256'])
         manifest = e.read(path)
         with (leaf / 'sources.csv').open(newline='') as stream:
             sources = list(csv.DictReader(stream))
@@ -84,12 +75,6 @@ def audit(fixture_names=None, recorded_inventories=None):
                 add('title', row['upstream_title'], name + '/' + row['file'])
                 add('original_sha1', hashlib.sha1((leaf / row['file']).read_bytes()).hexdigest(), name + '/' + row['file'])
         inventories.append(record)
-
-    if fixture_names is not None:
-        # Keep the record's own order; renamed leaves no longer sort where they did.
-        order = {n: i for i, n in enumerate(fixture_names)}
-        inventories.sort(key=lambda r: order.get(r['fixture'], len(order)))
-        e.require({r['fixture'] for r in inventories} == set(fixture_names), 'Recorded audit fixture is missing')
 
     included = set(e.selection()['included'])
     collisions = []

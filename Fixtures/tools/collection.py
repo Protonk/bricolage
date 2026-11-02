@@ -7,7 +7,7 @@ from pathlib import Path
 import sys
 
 from fixture_layout import FIXTURES, discover, require
-from fixture_removal import history, remove
+from fixture_history import history, remove, repin
 import collection_totals
 import source_index
 
@@ -26,7 +26,8 @@ def resolve(selector, leaf=None, fixtures=FIXTURES):
                     or Path(selector).resolve() == root / row['file'])
         manifest = json.loads((root / 'manifest.json').read_text())
         matches.extend((root, row) for row in manifest['images'] if matches_row(row))
-        removed.extend((root, receipt['image']) for _, receipt, _ in history(root) if matches_row(receipt['image']))
+        removed.extend((root, record['receipt']['image']) for record in history(root)
+                       if record['kind'] == 'removal' and matches_row(record['receipt']['image']))
     candidates = matches or removed
     require(candidates, f'No input matches: {selector}')
     require(len(candidates) == 1, 'Ambiguous input; use --leaf and an images/ path: ' + ', '.join(str(root / row['file']) for root, row in candidates))
@@ -41,6 +42,12 @@ def main(fixtures=FIXTURES):
     removal.add_argument('--leaf', type=Path, help='Limit the match to this collection directory')
     removal.add_argument('--reason', required=True)
     removal.add_argument('--dry-run', action='store_true')
+    pin = commands.add_parser('repin', help='Replace one active input with equivalent bytes and record why; no network')
+    pin.add_argument('input')
+    pin.add_argument('--from', dest='replacement', required=True, type=Path, help='Replacement file outside the leaf')
+    pin.add_argument('--leaf', type=Path, help='Limit the match to this collection directory')
+    pin.add_argument('--reason', required=True)
+    pin.add_argument('--dry-run', action='store_true')
     totals = commands.add_parser('totals', help='Regenerate manifest totals and marked README sections')
     totals.add_argument('--check', action='store_true', help='Fail if generated totals are stale; write nothing')
     index = commands.add_parser('index', help='Regenerate the flat source index of every active input')
@@ -60,13 +67,17 @@ def main(fixtures=FIXTURES):
                 root, row, already = resolve(args.input, args.leaf, fixtures)
                 # Check every generation target before mutating the collection.
                 collection_totals.generated_files(fixtures)
-                result = (dict(status='already_removed', fixture=str(root), file=row['file']) if already
-                          else remove(root, row, args.reason, dry_run=args.dry_run))
-                if not args.dry_run:
+                if args.command == 'repin':
+                    require(not already, f'Not an active input: {row["file"]}')
+                    result = repin(root, row, args.replacement, args.reason, dry_run=args.dry_run)
+                else:
+                    result = (dict(status='already_removed', fixture=str(root), file=row['file']) if already
+                              else remove(root, row, args.reason, dry_run=args.dry_run))
+                if not args.dry_run and result['status'] in ('removed', 'repinned'):
                     try:
                         result['totals'] = collection_totals.update(fixtures)
                     except (ValueError, OSError) as error:
-                        raise ValueError(f'Input removal is recorded; totals generation failed: {error}. Run Fixtures/collection totals.') from error
+                        raise ValueError(f'The change is recorded; totals generation failed: {error}. Run Fixtures/collection totals.') from error
         print(json.dumps(result, indent=2))
     except (ValueError, OSError, KeyError) as error:
         parser.exit(1, f'collection: {error}\n')

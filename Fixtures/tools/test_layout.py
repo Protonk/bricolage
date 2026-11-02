@@ -116,9 +116,9 @@ class LayoutTests(unittest.TestCase):
             self.assertTrue((root/'provenance/intake/candidates.csv').is_file())
             self.assertFalse((root/'candidates.jsonl').exists())
 
-    def test_recorded_leaf_rename_resolves_audits_tool_pins_and_sampler_locations(self):
+    def test_recorded_leaf_rename_resolves_tool_pins_and_sampler_locations(self):
         # A leaf renamed with a relocation record stays reachable from records that
-        # name its old path: audit names, migration tool pins and sampler snapshots.
+        # name its old path: migration tool pins and sampler snapshots.
         repo = Path(self.temp.name)
         old = self.leaf()
         (old/'images').mkdir(exist_ok=True)
@@ -133,13 +133,6 @@ class LayoutTests(unittest.TestCase):
         record.write_text(json.dumps({'moves': [{'old': 'Fixtures/Relationships/derivatives',
                                                  'new': 'Fixtures/Relationships/Renamed-Leaf',
                                                  'purpose': 'leaf-rename'}]}))
-        self.assertEqual(layout.former_leaf_names(self.fixtures),
-                         {'Relationships/Renamed-Leaf': ['Relationships/derivatives']})
-        self.assertEqual(layout.recorded_leaf_name(new, {'Relationships/derivatives'}, self.fixtures),
-                         'Relationships/derivatives')
-        self.assertEqual(layout.recorded_leaf_name(new, {'Relationships/Renamed-Leaf'}, self.fixtures),
-                         'Relationships/Renamed-Leaf')
-        self.assertIsNone(layout.recorded_leaf_name(new, {'Relationships/other'}, self.fixtures))
         status = layout.sampler.location_status(repo, 'Fixtures/Relationships/derivatives/images/a.jpg', digest)
         self.assertEqual(status, dict(status='ok', observed_sha256=digest,
                                       current_path='Fixtures/Relationships/Renamed-Leaf/images/a.jpg'))

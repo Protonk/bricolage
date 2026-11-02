@@ -150,10 +150,10 @@ The exact-identity audit covers the 12 prior integrated sets (681 inputs), check
 available supplied/canonical titles, page IDs, curid URLs, upstream SHA-1s and
 acquired SHA-256s. No exact conflicts were found. Coverage and snapshot hashes are
 in `provenance/identity-audit.json`; this does not prove complete provenance
-independence or identify undocumented design relationships. Offline rechecks use
-that recorded set of 12 prior leaves; adding a newer contribution does not expand
-this historical audit. Missing or changed covered evidence still fails. A fresh
-publication audits all current prior leaves.
+independence or identify undocumented design relationships. The audit is frozen
+evidence from publication time and is not recomputed. Since the November 2026
+removal, this leaf's publication validator is historical: the shared layout
+check verifies the live catalogs, the removal receipt and the preserved image.
 
 ### Local files and checks
 

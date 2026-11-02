@@ -1,12 +1,13 @@
 # Shared fixture tools
 
-## Removing an input and updating totals
+## Removing or re-pinning an input and updating totals
 
 From the repository root:
 
 ```sh
 Fixtures/collection remove SHA256 --reason "Reason for removal" --dry-run
 Fixtures/collection remove SHA256 --reason "Reason for removal"
+Fixtures/collection repin SHA256 --from /path/to/replacement.jpg --reason "Reason"
 Fixtures/collection totals
 Fixtures/collection totals --check
 ```
@@ -26,17 +27,28 @@ the exact image row, reason and before/after hashes. Later removals extend this
 chain. Failed writes roll back the active catalogs and media; an interrupted
 operation's incomplete record is reported by name for recovery.
 
-Common validation replays every removal and verifies current catalogs, remaining
-inputs and preserved image bytes. Existing specialized validators check a
-temporary reconstruction of the original publication under `Fixtures/output/`;
-they still verify its sources, selection and acquisition evidence. Historical
-cross-collection audits resolve their manifest hashes through checked removal
-snapshots. New audits use active manifests. Other changed metadata, missing
-snapshots and missing media still fail. Saved sampler inventories retain their
-original pins and continue to report changes; removal does not rewrite history.
-The existing acquisition builders cannot reconcile removals into a new
-publication; rebuilding a leaf with removal history is rejected before replacing
-its active inputs. Ordinary removal and validation need no rebuild.
+Re-pinning replaces one active input's bytes and records why. The replacement
+must be a regular file outside the leaf that decodes to the recorded width,
+height, orientation and format; identical bytes are a no-op. The input's path
+keeps its name and its hash changes in the manifests, checksum list and, when
+the input is a byte copy of its source file, the source file and source catalog.
+Whatever bytes were present go under `previews/repinned/`; a missing input is
+recorded as missing. `provenance/repins/NNNN/` holds the prior catalogs and the
+receipt. Re-pinning serves recovery of lost media and deliberate replacement
+alike; the reason distinguishes them. See [RECOVERY.md](../RECOVERY.md).
+
+Removals and re-pins form one chain, ordered by time, that the layout check
+replays against the live catalogs. The check also verifies every manifest
+hash against the checksum list, every batch entry against the manifest, the
+source catalog against the checksum list, and preserved bytes against their
+receipts. A leaf's specialized validator describes its publication; once a
+leaf has a recorded change, `tools/check.py` reports that validator as
+historical and does not run it, because the publication it describes is no
+longer the live leaf and nothing reconstructs it. Saved sampler inventories
+retain their original pins and continue to report changes; a re-pinned input
+makes draws that selected it unrepeatable for that image. Acquisition builders
+cannot fold recorded changes into a new publication; rebuilding a changed leaf
+is rejected.
 
 The removal command also regenerates [collection totals](../COLLECTIONS.md), the
 [source index](../INDEX.csv) and marked total blocks in every leaf README. After other catalog changes, run

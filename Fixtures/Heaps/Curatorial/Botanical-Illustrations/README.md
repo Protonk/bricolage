@@ -216,7 +216,7 @@ passed, as did the Botanical/SSI offline checks, three POTY leaves and all six
 Similarity validators. `provenance/checks.json` records the commands and results.
 
 Existing leaf discovery, fixture-local paths, asset ignore rules and curatorial
-kind semantics already support this depth. The only existing-tool change makes
-SSI's historical audit recheck its recorded prior leaves, rejecting changed or
-missing evidence without absorbing newly added contributions. No router or
-comparison experiment was run.
+kind semantics already support this depth. At the time, the only existing-tool
+change made SSI's historical audit recheck its recorded prior leaves; identity
+audits have since become frozen records that no validator recomputes. No router
+or comparison experiment was run.

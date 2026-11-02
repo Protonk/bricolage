@@ -154,6 +154,6 @@ def update(fixtures=FIXTURES, *, check=False):
     if check:
         require(not stale, 'Stale source index; run Fixtures/collection index: ' + str(path))
     elif stale:
-        from fixture_removal import atomic_write
+        from fixture_history import atomic_write
         atomic_write(path, text.encode())
     return dict(status='current' if check else 'generated', changed=[str(path)] if stale and not check else [], **summary(text))

@@ -141,14 +141,7 @@ def check_evidence(root, check_imports=True):
 
 
 
-# Active catalogs are checked separately from the preserved publication.
-from pathlib import Path as _RemovalPath
-import sys as _removal_sys
-_removal_tools = next(p / 'tools' for p in _RemovalPath(__file__).resolve().parents if (p / 'tools/fixture_layout.py').is_file())
-_removal_sys.path.insert(0, str(_removal_tools))
-from fixture_removal import publication_check
 
-@publication_check
 def check(root):
     manifest=json.loads(safe(root,'manifest.json').read_text());rows=manifest['images']
     require(manifest['kind']=='prompt_heap' and manifest['schema_version']==1 and manifest['fixture_id']==FIXTURE_ID,'Unsupported kind/schema/identity')
