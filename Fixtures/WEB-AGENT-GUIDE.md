@@ -21,18 +21,33 @@ when readily available; no special data format is required. If access or export
 is blocked, describe the limitation and pass on the usable leads.
 
 When supplying individual candidates, retain their source-page URLs and exact
-titles or identifiers. Include credit and reuse information you encountered,
-with links to its evidence. Say what you actually checked: search results, source
-pages, thumbnails or downloaded files. Apply only the review criteria in the
-brief, and give a short reason for any proposed rejection. Leave unseen images
-unreviewed and unknown facts unknown. Note evident duplicates or related captures;
-their treatment depends on the fixture's purpose.
+titles or identifiers. A table with these six columns, in any order and with any
+extras you find useful, lets the local agent load your leads without remapping:
+a stable candidate ID, the exact file title, the file-page URL, the URL where
+you found it, a one-line reason for the lead, and what you checked for it
+(listing, page text, thumbnail or downloaded file). Apply only the review
+criteria in the brief, and give a short reason for any proposed rejection.
+Previews are inspected locally, so a reason drawn from a title alone is fine
+when labeled as such. Leave unseen images unreviewed and unknown facts unknown.
+
+Rights are re-read locally from each file's metadata, so transcribing license
+names is not needed. What helps is the unusual case you can see on the page and
+we cannot cheaply: an institutional "no known restrictions" statement, a file
+licensed only under GFDL, or an attribution request written by the author.
+Record those as page observations with a link.
+
+List evident duplicates, crops and same-site series as a table of exact titles
+with the reason each was withheld or kept; their treatment depends on the
+fixture's purpose, and the list keeps the local relationship review short. The
+repository's public [source index](INDEX.csv) names every input we already
+hold, with its file title and page ID; flag any lead that matches it.
 
 Deliver a short prose brief with the source links, any available original exports,
-your observations and unresolved questions. Distinguish suggestions from verified
-findings, and describe the material supplied as leads, reviewed candidates or
-acquired files as appropriate. Report a shortfall rather than widening the brief
-to meet a count.
+your observations and unresolved questions, as a single folder of text files
+with a checksum list and a copy of this guide as you read it. Distinguish
+suggestions from verified findings, and describe the material supplied as leads,
+reviewed candidates or acquired files as appropriate. Report a shortfall rather
+than widening the brief to meet a count.
 
 The local agent preserves your handoff, records the candidate population, applies
 the agreed selection method, verifies individual source identities and rights
