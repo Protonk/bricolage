@@ -72,10 +72,12 @@ what a sourcing partner can supply. Put new contributions alongside the existing
 collections with the same selection basis.
 
 Remove one active input by its SHA-256 or file path with
-`Fixtures/collection remove INPUT --reason "Reason for removal"`.
-The command retains source bytes and publication evidence, updates active
-catalogs, and regenerates totals. Use `--dry-run` to inspect the proposed change.
-The [tools guide](tools/README.md) describes removal records and validation.
+`Fixtures/collection remove INPUT --reason "Reason for removal"`, or replace its
+bytes with `Fixtures/collection repin INPUT --from FILE --reason "Reason"`.
+Both retain source bytes and publication evidence, write a receipt, update
+active catalogs, and regenerate totals and the index. Use `--dry-run` to inspect
+the proposed change. The [tools guide](tools/README.md) describes the records
+and validation; [RECOVERY.md](RECOVERY.md) covers lost media.
 
 After other catalog changes, run `make -C Fixtures collection-totals`.
 `test-fixture-layout` checks that the generated totals are current.

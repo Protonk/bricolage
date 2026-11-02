@@ -6,8 +6,9 @@ describes fixture design and how the documentation fits together.
 
 - Work on the task in the conversation. Do not invent a next research direction
   or add speculative roadmaps, rankings or architectures.
-- Preserve supplied records, source bytes, IDs and metadata hashes. Keep changes
-  small enough to follow from input to output. Report missing files and failed
+- Preserve supplied records, source bytes, IDs and metadata hashes; change a
+  published leaf's membership or bytes only through `Fixtures/collection`, which
+  writes receipts. Keep changes small enough to follow from input to output. Report missing files and failed
   operations by name. A source relationship or measured alignment does not by
   itself establish a visual match.
 - Use Python 3.14.x in `Fixtures/.venv`, created by `make -C Fixtures setup-python`.

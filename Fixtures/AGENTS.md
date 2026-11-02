@@ -30,9 +30,15 @@ because that is what their acquisitions used. The newest Similarity intake,
 [Puddle-Inversions](Heaps/Similarity/Puddle-Inversions/README.md), is the
 current starting point for a handoff of Commons leads.
 
-Use `Fixtures/collection remove INPUT --reason "Reason"` for active input removal
-and `Fixtures/collection repin INPUT --from FILE --reason "Reason"` to replace an
-input's bytes; recovery of ignored media follows [RECOVERY.md](RECOVERY.md).
+The archive is additive and flat. A leaf is published once; afterwards its
+membership and bytes change only through `Fixtures/collection remove INPUT
+--reason "Reason"` and `Fixtures/collection repin INPUT --from FILE --reason
+"Reason"`, which write receipts. The generated [source index](INDEX.csv) is the
+membership table and the recovery contract described in [RECOVERY.md](RECOVERY.md);
+there is no category structure and no restore pipeline. Identity audits are
+written at publication and never recomputed, and a leaf's specialized validator
+describes its publication rather than a changed leaf. A new leaf reads the
+index and changes nothing elsewhere.
 After other catalog changes, run `make -C Fixtures collection-totals`; current
 totals, the source index `INDEX.csv` and marked README blocks are generated,
 not maintained by hand.

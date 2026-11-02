@@ -86,9 +86,11 @@ make -C Fixtures test-relationships
 ```
 
 `check_layout.py` discovers only active leaves under Heaps and Relationships at
-arbitrary depth. It checks common layout and input hashes by default. `--full`
-runs each leaf's `tools/check.py`, including its existing specialized validator;
-an explicit leaf path limits either mode. `--metadata-only` requires no local
+arbitrary depth. By default it checks common layout, input hashes, the checksum
+list, batches, the source catalog and the chain of recorded changes. `--full`
+runs each leaf's `tools/check.py`, which adds the specialized publication
+validator while the leaf has no recorded change; an explicit leaf path limits
+either mode. `--metadata-only` requires no local
 media and omits specialized checks. All modes are offline and failures exit
 nonzero. Reports are JSON on stdout; redirect them outside fixture inputs.
 
@@ -107,10 +109,9 @@ while rejecting unrecorded edits.
 A leaf rename is recorded as a `leaf-rename` move in a
 `Fixtures/provenance/*/relocations.json`, as in the
 [Similarity rename record](../provenance/similarity-names-2026-11/README.md).
-`fixture_layout.former_leaf_names` and `recorded_leaf_name` let the Curatorial
-identity audits match a recorded fixture name to its current leaf, tool pins
-keyed by a former path still resolve, and the sampler reads snapshot aliases at
-their current path. Records keep their original path strings and hashes.
+Tool pins keyed by a former path still resolve, and the sampler reads snapshot
+aliases at their current path. Records keep their original path strings and
+hashes; identity audits name leaves as they were and are not resolved again.
 
 `check_layout.py` prints one JSON object: the number of discovered `leaves`, how
 many `passed`, the `failed` paths and every per-leaf result. It exits 1 when any
