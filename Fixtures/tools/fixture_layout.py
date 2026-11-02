@@ -12,6 +12,8 @@ import sys
 FIXTURES = Path(__file__).resolve().parents[1]
 REPO = FIXTURES.parent
 MIGRATION = FIXTURES / 'provenance/layout-2026-11'
+sys.path.insert(0, str(FIXTURES / 'Sampler'))
+import sampler  # noqa: E402  Relocation records are read by the sampler's standard-library reader.
 CORE_FILES = {'README.md', 'SOURCES.md', 'manifest.json', 'manifest.csv',
               'sources.csv', 'SHA256SUMS.txt', 'probes.csv', 'selections.json'}
 CORE_DIRS = {'images', 'sources', 'previews', 'batches', 'provenance', 'tools'}
@@ -50,6 +52,35 @@ def evidence_path(root, name):
     return new if new.exists() or (root / 'provenance/layout.json').exists() else old
 
 
+def former_leaf_names(fixtures=None):
+    """Current Fixtures-relative leaf name -> its recorded former names, oldest last."""
+    fixtures = (FIXTURES if fixtures is None else Path(fixtures)).resolve()
+    former = {}
+    for old, new in sampler.leaf_relocations(fixtures.parent).items():
+        former.setdefault(new.removeprefix('Fixtures/'), []).append(old.removeprefix('Fixtures/'))
+    return former
+
+
+def recorded_leaf_name(leaf, names, fixtures=None):
+    """The name a historical record uses for this leaf: its current Fixtures-relative
+    path, or a recorded former one. None when the record does not include the leaf."""
+    fixtures = (FIXTURES if fixtures is None else Path(fixtures)).resolve()
+    current = Path(leaf).resolve().relative_to(fixtures).as_posix()
+    for candidate in [current, *former_leaf_names(fixtures).get(current, [])]:
+        if candidate in names:
+            return candidate
+    return None
+
+
+def former_repo_paths(relative):
+    """Repo-relative paths a file had before recorded leaf renames, nearest first."""
+    former = []
+    for old, new in sampler.leaf_relocations(REPO).items():
+        if relative == new or relative.startswith(new + '/'):
+            former.append(old + relative[len(new):])
+    return former
+
+
 def matches_tool_revision(path, *, blob=None, sha256=None):
     """Recognize an explicitly recorded migration of a historically pinned tool."""
     require(blob is not None or sha256 is not None, 'A historical tool hash is required')
@@ -62,7 +93,9 @@ def matches_tool_revision(path, *, blob=None, sha256=None):
     receipt = MIGRATION / 'tool-changes.json'
     if not receipt.exists() or not path.is_relative_to(REPO):
         return False
-    row = json.loads(receipt.read_text())['files'].get(path.relative_to(REPO).as_posix())
+    files = json.loads(receipt.read_text())['files']
+    relative = path.relative_to(REPO).as_posix()
+    row = next((files[p] for p in [relative, *former_repo_paths(relative)] if p in files), None)
     return bool(row and row['after_sha256'] == current_sha
                 and (blob is None or row['before_git_blob_sha1'] == blob)
                 and (sha256 is None or row['before_sha256'] == sha256))

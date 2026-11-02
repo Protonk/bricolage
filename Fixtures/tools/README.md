@@ -79,6 +79,20 @@ rewritten. The migration's `tool-changes.json` records exact before/after hashes
 for intentionally adapted tools, allowing existing source pins to remain intact
 while rejecting unrecorded edits.
 
+A leaf rename is recorded as a `leaf-rename` move in a
+`Fixtures/provenance/*/relocations.json`, as in the
+[Similarity rename record](../provenance/similarity-names-2026-11/README.md).
+`fixture_layout.former_leaf_names` and `recorded_leaf_name` let the Curatorial
+identity audits match a recorded fixture name to its current leaf, tool pins
+keyed by a former path still resolve, and the sampler reads snapshot aliases at
+their current path. Records keep their original path strings and hashes.
+
+`check_layout.py` prints one JSON object: the number of discovered `leaves`, how
+many `passed`, the `failed` paths and every per-leaf result. It exits 1 when any
+leaf fails or a discovered leaf has no result. `test-fixture-layout` also checks
+that live guides, tools and catalogs name only existing fixture paths; historical
+records under `provenance/`, tests and the template are outside that scan.
+
 `relationship_fixtures.py check --fixtures LEAF` validates the three relationship sets:
 hashes, source copies, CSV/JSON agreement, parent and scene identities, probes,
 and batch coverage. Their leaf entry points and the Variants builder use this

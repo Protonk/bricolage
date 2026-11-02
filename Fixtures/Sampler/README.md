@@ -256,7 +256,10 @@ a problem and causes exit 1, but does not prevent publishing the verified availa
 copy. Missing all copies of a selected image, invalid records or annotations, and
 changed pinned metadata prevent publication; nothing is redrawn or substituted.
 Missing, changed and inaccessible aliases stay in the inventory with their status;
-changed bytes are not silently assigned a new identity. Unexpected unlisted input
+changed bytes are not silently assigned a new identity. When a recorded alias lies
+in a leaf that a `leaf-rename` move in `Fixtures/provenance/*/relocations.json`
+has since renamed, the file is read at its current path, reported as
+`current_path` beside the recorded `path`, and must still match the recorded hash. Unexpected unlisted input
 files are reported for catalog reconciliation, not silently added. Out-of-tree
 symlinks are reported as inaccessible. Filesystem observations occur during the
 scan; they are not a lock on the whole checkout. The sampler checks bytes against

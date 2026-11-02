@@ -24,8 +24,9 @@ See [the fixture index](../README.md) for intake locations and
 
 The rebuildable heap picture book at `Fixtures/output/pdf/hazy-heaps-tour.pdf`
 is a 36-page tour with large plates, contact sheets and linked image credits.
-Its frozen October 2026 edition samples 144 images from the 868 acquired inputs
-in its original 12 leaf collections. Later additions are outside that edition.
+Its October 2026 edition samples 144 images from the 867 acquired inputs in
+its original 12 leaf collections, re-pinned in November 2026 after one insignia
+was removed from US-Army-SSI. Later additions are outside that edition.
 Only the overall image and collection counts appear in the
 tour; acquisition details remain in the contribution records.
 

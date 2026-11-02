@@ -1,11 +1,14 @@
 import hashlib
 import importlib.util
+import io
 import json
 from pathlib import Path
+import re
 import tempfile
 import unittest
 from unittest.mock import patch
 
+import check_layout
 import fixture_layout as layout
 from new_fixture import create
 
@@ -94,8 +97,12 @@ class LayoutTests(unittest.TestCase):
     def test_live_candidate_writers_use_intake_directory(self):
         # Exercise actual publication helpers against fresh scratch roots: they
         # must create nested metadata paths without restoring old root files.
-        for slug in ('Pale-Skies-Dark-Ground', 'Repeated-Rectangles', 'Tangled-Growth', 'Spreading-Patches'):
-            path = layout.FIXTURES/'Heaps/Similarity'/slug/'tools/common.py'
+        writers = [leaf for leaf in layout.discover() if (leaf/'tools/common.py').is_file()
+                   and 'def save_records' in (leaf/'tools/common.py').read_text()]
+        self.assertGreaterEqual(len(writers), 1, 'No leaf ships the candidate writer')
+        for leaf in writers:
+            slug = leaf.name
+            path = leaf/'tools/common.py'
             spec = importlib.util.spec_from_file_location('writer_' + slug, path)
             module = importlib.util.module_from_spec(spec)
             spec.loader.exec_module(module)
@@ -108,6 +115,94 @@ class LayoutTests(unittest.TestCase):
                 self.assertEqual(module.load_records(), rows)
             self.assertTrue((root/'provenance/intake/candidates.csv').is_file())
             self.assertFalse((root/'candidates.jsonl').exists())
+
+    def test_recorded_leaf_rename_resolves_audits_tool_pins_and_sampler_locations(self):
+        # A leaf renamed with a relocation record stays reachable from records that
+        # name its old path: audit names, migration tool pins and sampler snapshots.
+        repo = Path(self.temp.name)
+        old = self.leaf()
+        (old/'images').mkdir(exist_ok=True)
+        (old/'images/a.jpg').write_bytes(b'picture')
+        digest = hashlib.sha256(b'picture').hexdigest()
+        (old/'tools/common.py').write_bytes(b'adapted')
+        new = old.with_name('Renamed-Leaf')
+        old.rename(new)
+        tool = new/'tools/common.py'
+        record = self.fixtures/'provenance/rename/relocations.json'
+        record.parent.mkdir(parents=True)
+        record.write_text(json.dumps({'moves': [{'old': 'Fixtures/Relationships/derivatives',
+                                                 'new': 'Fixtures/Relationships/Renamed-Leaf',
+                                                 'purpose': 'leaf-rename'}]}))
+        self.assertEqual(layout.former_leaf_names(self.fixtures),
+                         {'Relationships/Renamed-Leaf': ['Relationships/derivatives']})
+        self.assertEqual(layout.recorded_leaf_name(new, {'Relationships/derivatives'}, self.fixtures),
+                         'Relationships/derivatives')
+        self.assertEqual(layout.recorded_leaf_name(new, {'Relationships/Renamed-Leaf'}, self.fixtures),
+                         'Relationships/Renamed-Leaf')
+        self.assertIsNone(layout.recorded_leaf_name(new, {'Relationships/other'}, self.fixtures))
+        status = layout.sampler.location_status(repo, 'Fixtures/Relationships/derivatives/images/a.jpg', digest)
+        self.assertEqual(status, dict(status='ok', observed_sha256=digest,
+                                      current_path='Fixtures/Relationships/Renamed-Leaf/images/a.jpg'))
+        self.assertEqual(layout.sampler.location_status(
+            repo, 'Fixtures/Relationships/derivatives/images/a.jpg', 'other')['status'], 'changed')
+        self.assertEqual(layout.sampler.location_status(
+            repo, 'Fixtures/Relationships/derivatives/images/b.jpg', digest)['status'], 'missing')
+        self.assertEqual(layout.sampler.location_status(
+            repo, 'Fixtures/Relationships/Renamed-Leaf/images/a.jpg', digest),
+            dict(status='ok', observed_sha256=digest))
+        receipt = self.fixtures/'migration'
+        receipt.mkdir()
+        (receipt/'tool-changes.json').write_text(json.dumps({'files': {
+            'Fixtures/Relationships/derivatives/tools/common.py': {
+                'before_git_blob_sha1': 'pin', 'before_sha256': 'before',
+                'after_sha256': hashlib.sha256(b'adapted').hexdigest()}}}))
+        with patch.object(layout, 'MIGRATION', receipt), patch.object(layout, 'REPO', repo.resolve()):
+            self.assertTrue(layout.matches_tool_revision(tool, blob='pin'))
+            tool.write_bytes(b'unrecorded change')
+            self.assertFalse(layout.matches_tool_revision(tool, blob='pin'))
+
+    def test_live_files_reference_only_existing_fixture_paths(self):
+        # Guides, tools and catalogs outside the historical records must not name a
+        # leaf path that no longer exists; provenance and media keep their old strings.
+        pattern = re.compile(r'(?<![\w/.-])(?:Fixtures/)?(?:Heaps|Relationships)/[\w.-]+(?:/[\w.-]+)*')
+        # Tests build scratch trees and the template shows example paths; both are skipped.
+        skip = {'provenance', 'previews', 'images', 'sources', 'output', 'records', 'Template',
+                '__pycache__', '.venv', '.git'}
+        suffixes = {'.md', '.py', '.json', '.txt', '.csv', '.cfg', '.toml', ''}
+        files = [layout.REPO/name for name in ('README.md', 'AGENTS.md', 'CONTRIBUTING.md', 'WORLD.md')]
+        files += [p for p in layout.FIXTURES.rglob('*') if p.is_file() and p.suffix in suffixes
+                  and not p.name.startswith('test_')
+                  and not skip & set(p.relative_to(layout.FIXTURES).parts[:-1])]
+        stale = []
+        for file in files:
+            try:
+                text = file.read_text(encoding='utf-8')
+            except (OSError, UnicodeDecodeError):
+                continue
+            for match in pattern.findall(text):
+                target = match.rstrip('.')
+                if '{' in target or '<' in target:
+                    continue
+                base = layout.REPO if target.startswith('Fixtures/') else layout.FIXTURES
+                if not (base/target).exists():
+                    stale.append(f'{file.relative_to(layout.REPO)}: {target}')
+        self.assertEqual(stale, [])
+
+    def test_check_layout_script_reports_every_discovered_leaf_and_failures(self):
+        self.leaf()
+        self.leaf('multiview')
+        out = io.StringIO()
+        code = check_layout.main(['--metadata-only'], fixtures=self.fixtures, stdout=out)
+        report = json.loads(out.getvalue())
+        self.assertEqual((code, report['leaves'], report['passed'], report['failed']), (0, 2, 2, []))
+        self.assertEqual(len(report['results']), 2)
+        (self.fixtures/'Relationships/derivatives/stray.txt').write_text('x')
+        out = io.StringIO()
+        code = check_layout.main(['--metadata-only'], fixtures=self.fixtures, stdout=out)
+        report = json.loads(out.getvalue())
+        self.assertEqual((code, report['leaves'], report['passed']), (1, 2, 1))
+        self.assertEqual(report['failed'], [str(self.fixtures/'Relationships/derivatives')])
+        self.assertEqual(len(report['results']), 2)
 
 
 if __name__ == '__main__':

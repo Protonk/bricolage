@@ -143,13 +143,57 @@ def fixture_path(repo, value):
     return path
 
 
+def leaf_relocations(repo):
+    """Recorded leaf renames as former -> current repo-relative leaf paths.
+
+    Read from every `Fixtures/provenance/*/relocations.json` move whose purpose is
+    `leaf-rename`. An unreadable record is skipped here; the layout checks report it.
+    """
+    mapping = {}
+    for record in sorted((Path(repo).resolve() / 'Fixtures/provenance').glob('*/relocations.json')):
+        try:
+            moves = json.loads(record.read_text(encoding='utf-8')).get('moves', [])
+        except (OSError, ValueError):
+            continue
+        for move in moves:
+            if (isinstance(move, dict) and move.get('purpose') == 'leaf-rename'
+                    and isinstance(move.get('old'), str) and isinstance(move.get('new'), str)):
+                mapping[move['old']] = move['new']
+    return mapping
+
+
+def relocated(repo, value):
+    """The current repo-relative path for a recorded one inside a renamed leaf, or None."""
+    mapping = leaf_relocations(repo)
+    current, moved = value, False
+    for _ in range(len(mapping) + 1):
+        hit = next((old for old in mapping if current == old or current.startswith(old + '/')), None)
+        if hit is None:
+            break
+        current, moved = mapping[hit] + current[len(hit):], True
+    return current if moved and current != value else None
+
+
 def location_status(repo, value, expected):
-    """Do not turn changed bytes into a new identity or silently repair an alias."""
+    """Do not turn changed bytes into a new identity or silently repair an alias.
+
+    A location inside a recorded leaf rename is read at its current path, which is
+    reported as `current_path`; the bytes must still match the recorded hash.
+    """
     try:
         path = fixture_path(repo, value)
-        observed = file_hash(path)
-        return dict(status='ok' if observed == expected else 'changed',
-                    observed_sha256=observed)
+        current = None
+        try:
+            observed = file_hash(path)
+        except FileNotFoundError:
+            current = relocated(repo, value)
+            if current is None:
+                raise
+            observed = file_hash(fixture_path(repo, current))
+        result = dict(status='ok' if observed == expected else 'changed', observed_sha256=observed)
+        if current is not None:
+            result['current_path'] = current
+        return result
     except FileNotFoundError:
         return dict(status='missing', observed_sha256=None)
     except (OSError, SamplerError) as error:
@@ -572,8 +616,9 @@ def current_locations(repo, item):
     locations = []
     for alias in item['aliases']:
         path = alias['path']
-        locations.append(dict(path=path, absolute_path=str(Path(repo).resolve() / path),
-                              **location_status(repo, path, item['byte_sha256'])))
+        status = location_status(repo, path, item['byte_sha256'])
+        locations.append(dict(path=path, absolute_path=str(Path(repo).resolve() / status.get('current_path', path)),
+                              **status))
     available = next((r['absolute_path'] for r in locations if r['status'] == 'ok'), None)
     return dict(image_id=item['image_id'], available_path=available, locations=locations)
 
@@ -631,12 +676,15 @@ class Provenance:
         if leaf_path not in self.leaves:
             pins = pinned_metadata(self.repo, self.inventory, [leaf_path])
             try:
-                data = read_leaf(self.repo, fixture_path(self.repo, leaf_path) / 'manifest.json')
+                leaf_dir = fixture_path(self.repo, leaf_path)
+                if not leaf_dir.is_dir() and relocated(self.repo, leaf_path):
+                    leaf_dir = fixture_path(self.repo, relocated(self.repo, leaf_path))
+                data = read_leaf(self.repo, leaf_dir / 'manifest.json')
                 error = None
             except SamplerError as failure:
                 data, error = None, failure.report()
             if data is not None:
-                pinned = {r['path'] for r in pins}
+                pinned = {relocated(self.repo, r['path']) or r['path'] for r in pins}
                 pins.extend(dict(path=r['path'], pinned_sha256=None, status='unpinned', observed_sha256=r['sha256'])
                             for r in data['metadata_files'] if r['path'] not in pinned)
             frozen = error is None and all(r['status'] == 'frozen' for r in pins)

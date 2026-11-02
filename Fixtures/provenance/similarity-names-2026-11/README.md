@@ -24,32 +24,30 @@ this table. Live references were updated: each leaf's README commands,
 paths, the Similarity index, the heap tour guide's `leaf` fields, the layout test
 and the generated collection totals.
 
-## Checks that key on the old paths
+## Checks that keyed on the old paths
 
-After the rename, `Fixtures/tools/check_layout.py --full` fails for nine leaves
-while the layout, catalog and media checks of all 18 leaves pass. Both failure
-classes compare a historical record keyed by leaf path with the live tree:
+Immediately after the move, `Fixtures/tools/check_layout.py --full` failed for
+nine leaves while the layout, catalog and media checks of all 18 passed. Both
+failure classes compared a historical record keyed by leaf path with the live tree:
 
 - Six Curatorial leaves (Botanical-Illustrations, Evan-Amos-Uploads, Ex-Libris,
   Rocks-in-Thin-Section, Stone-Hand-Axes, US-Army-SSI) recompute their recorded
   `provenance/identity-audit.json` and require equality. The record names prior
-  fixtures by path (`Heaps/Similarity/RG01`), so the recomputation stops with
-  `Recorded audit fixture is missing`. The manifests those records pin are
-  unchanged and still found by hash.
+  fixtures by path (`Heaps/Similarity/RG01`), so recomputation stopped with
+  `Recorded audit fixture is missing`.
 - Three Similarity leaves (Repeated-Rectangles, Tangled-Growth, Spreading-Patches)
-  run `prepare.py --check-only`, which pins the shared `common.py` of
-  Pale-Skies-Dark-Ground by Git blob and accepts its layout-migration adaptation
-  through `layout-2026-11/tool-changes.json`, keyed by the old path
-  `Fixtures/Heaps/Similarity/PS01/tools/common.py`. The lookup by the new path
-  misses, so the check reports the file as an unrecorded change.
+  run `prepare.py --check-only`, which accepts the shared helper's layout-migration
+  adaptation through `layout-2026-11/tool-changes.json`, keyed by the old path
+  `Fixtures/Heaps/Similarity/PS01/tools/common.py`.
 
-These are open as of this record. Resolving them is a separate decision.
+The same day, the audits, the tool-revision resolver and the sampler were taught
+to read this record's `leaf-rename` moves: a recorded name or path resolves to the
+current leaf, hashes are still required to match, and recomputed audits keep the
+record's order. The records themselves were not edited. All 18 leaf checks pass.
 
 The sampler records a leaf's path in every inventory snapshot. Snapshots taken
-before this rename still name the old paths, so `verify` and `publish` of those
-draws report their Similarity images as missing at the recorded locations. For the
-committed demonstration draw this is one of its twelve images, from `SF01`, plus
-that leaf's four pinned metadata files; `verify` exits 1 and the relationships test
-that republishes the draw fails for the same reason. The images are present under
-the new paths with the same byte hashes, and a new draw with the same seed selects
-the same images from a new inventory. Resolving this is a separate decision.
+before this rename still name the old paths. The committed demonstration draw has
+one such image, from `SF01`, plus that leaf's four pinned metadata files. `verify`,
+`show` and `publish` now read them at the current path and report it as
+`current_path`; the recorded hashes must still match. A new draw with the same
+seed selects the same images from a new inventory.
