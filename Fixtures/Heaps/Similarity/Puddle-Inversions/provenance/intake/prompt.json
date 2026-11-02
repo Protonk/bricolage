@@ -1,0 +1,22 @@
+{
+  "element": "puddle-inversions",
+  "prompt": "Still photographs in which a puddle or similarly small, localized rain- or surface-water accumulation reflects some part of the scene, offering inverted, duplicated, displaced or fragmented scenery inside the picture.",
+  "looseness": "The reflection need not dominate. Architecture, vehicles, people, plants, animals, roads, distant skies, incidental puddles, poor light, unusual orientation, low resolution and everyday compositions are all welcome; rough edges are kept rather than smoothed toward near-symmetrical photographs.",
+  "exclusions": "Animated or motion media, frame extracts, graphics posing as photographs, images with no genuinely visible puddle or reflection on inspection, and clearly redundant variants of one capture when they crowd out other scenes. Siblings the sourcing partner withheld are listed in provenance/supplied/preselected-rejects.md.",
+  "interpretation": "Visual curation only. Commons category membership was the discovery method, not the definition of the heap; membership is not a similarity label, expected cluster or matching result.",
+  "target_count": null,
+  "acceptable_range": [
+    35,
+    50
+  ],
+  "supplied_leads": 45,
+  "actual_count": 43,
+  "acquisition_status": "complete",
+  "pending_acquisition": [],
+  "candidate_count": 45,
+  "selection_counts": {
+    "accept": 43,
+    "reject": 2,
+    "defer": 0
+  }
+}

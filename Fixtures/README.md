@@ -28,7 +28,7 @@ explains saved inventories, annotations, output paths and errors.
 | Location | What it contains |
 |---|---|
 | [Relationships](Relationships/README.md) | Derivatives of known sources, separate captures of scenes, and constructed or generated variants |
-| [Heaps / Similarity](Heaps/Similarity/README.md) | Collections chosen by visual prompts: red accents in green surroundings, speckled fields, pale skies, repeated rectangles, tangled growth, and spreading patches |
+| [Heaps / Similarity](Heaps/Similarity/README.md) | Collections chosen by visual prompts: red accents in green surroundings, speckled fields, pale skies, repeated rectangles, tangled growth, spreading patches, and puddle reflections |
 | [Heaps / Curatorial](Heaps/Curatorial/README.md) | Selections from published collections: Commons POTY categories, insignia, botanical illustrations, Evan Amos uploads, rocks, hand axes and bookplates |
 
 The relationship sets record how images are connected. The heaps record why

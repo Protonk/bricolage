@@ -13,10 +13,13 @@ it does not define visual similarity here.
 | [Repeated-Rectangles](Repeated-Rectangles/README.md) (CR01) | 57 / 168 | Cool, repetitive rectangular cells, panels or frames | Reviewed; selected sources acquired |
 | [Tangled-Growth](Tangled-Growth/README.md) (TG01) | 31 / 152 | Dense interlaced, overlapping plant growth | Reviewed; selected sources acquired |
 | [Spreading-Patches](Spreading-Patches/README.md) (BSP01) | 68 / 185 | Irregular spreading, merging or fragmenting surface regions | Reviewed; selected sources acquired |
+| [Puddle-Inversions](Puddle-Inversions/README.md) (PI01) | 43 / 45 | Puddles or small surface water reflecting part of the scene | Reviewed; selected sources acquired |
 
 Current membership is in the [generated collection totals](../../COLLECTIONS.md).
 Each folder is named for its prompt; the short code in parentheses was the folder
 name until November 2026 and remains in fixture IDs, candidate IDs and records.
+Puddle-Inversions was added in November 2026 under its prompt name, with `PI01`
+as its code from the start and `bricolage-pi01-v1` as its fixture ID.
 The [rename record](../../provenance/similarity-names-2026-11/README.md) maps old
 paths to new ones.
 Each new contribution belongs to this same heap and retains its short prompt, exclusions,

@@ -1,0 +1,40 @@
+{
+  "status": "complete",
+  "candidate_count": 45,
+  "preview_count": 45,
+  "visually_selected": 43,
+  "acquired_count": 43,
+  "pending_candidate_ids": [],
+  "pending_statuses": {},
+  "request_attempts": 179,
+  "complete_responses": 179,
+  "automatic_retries": 0,
+  "media_bytes": 31287726,
+  "rendition_kinds": {
+    "api_returned_rendition": 34,
+    "api_reported_unscaled_original": 9
+  },
+  "resolution_adjustments": [
+    {
+      "candidate_id": "PI-04",
+      "initial_metadata_path": "provenance/api/PI-04-source.json",
+      "acquired_metadata_path": "provenance/api/PI-04-source-1280.json",
+      "requested_max_edge": 1280,
+      "reason": "Explicit smaller API rendition request after the nominal 1600 request offered an unscaled original outside the bound."
+    },
+    {
+      "candidate_id": "PI-13",
+      "initial_metadata_path": "provenance/api/PI-13-source.json",
+      "acquired_metadata_path": "provenance/api/PI-13-source-1280.json",
+      "requested_max_edge": 1280,
+      "reason": "Explicit smaller API rendition request after the nominal 1600 request offered an unscaled original outside the bound."
+    },
+    {
+      "candidate_id": "PI-19",
+      "initial_metadata_path": "provenance/api/PI-19-source.json",
+      "acquired_metadata_path": "provenance/api/PI-19-source-1280.json",
+      "requested_max_edge": 1280,
+      "reason": "Explicit smaller API rendition request after the nominal 1600 request offered an unscaled original outside the bound."
+    }
+  ]
+}

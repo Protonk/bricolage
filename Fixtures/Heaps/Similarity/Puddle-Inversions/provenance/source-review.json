@@ -1,0 +1,571 @@
+{
+  "review_basis": "Actual acquired previews, file-specific Commons imageinfo/extmetadata for each accepted candidate, the supplied handoff notes, and the cross-leaf identity audit. Visual selection is distinct from source identity and rights checking.",
+  "relationship_reviews": [
+    {
+      "candidates": [
+        "PI-01",
+        "PI-02",
+        "PI-14"
+      ],
+      "finding": "Same photographer (Acabashi); three different places in Lincolnshire and Essex. Different scenes; no capture relationship seen. Photographer reuse alone is not an exclusion.",
+      "defer": []
+    },
+    {
+      "candidates": [
+        "PI-18",
+        "PI-26",
+        "PI-39"
+      ],
+      "finding": "Same photographer (julesvernex2); an aircraft at Brooklands, a child in Lisbon and an olive tree at Ponte de Sor. Different scenes; no capture relationship seen. The handoff withheld the '-2' sibling of PI-26.",
+      "defer": []
+    },
+    {
+      "candidates": [
+        "PI-05",
+        "PI-16"
+      ],
+      "finding": "Both Seattle; an alley in Pioneer Square and a carousel in Westlake Park by different uploaders. Different scenes.",
+      "defer": []
+    },
+    {
+      "candidates": [
+        "PI-45"
+      ],
+      "finding": "The handoff excluded the documented cropped derivative 'Puddle Hopping-cropped.jpg'; only the original is a candidate.",
+      "defer": []
+    },
+    {
+      "candidates": [
+        "PI-37"
+      ],
+      "finding": "The handoff withheld 'Trekvlietplein (06)' from the same numbered series; only '(01)' is a candidate.",
+      "defer": []
+    }
+  ],
+  "license_reviews": [
+    {
+      "candidate_id": "PI-01",
+      "metadata_path": "provenance/api/PI-01-preview.json",
+      "metadata_sha256": "d23f151399e79d33405d700de07efccdd9d54dd38158d5843c240d0a24f652a2",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "Acabashi",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "attribution_text": null,
+      "basis": "Creative Commons attribution license as reported by Commons",
+      "attribution_request": "Handoff note: the author adds reuse notes on the file page."
+    },
+    {
+      "candidate_id": "PI-02",
+      "metadata_path": "provenance/api/PI-02-preview.json",
+      "metadata_sha256": "844f68243b794af2c74842874fc62ecc92fc5eefea33cfe1cd149d0e084e6be5",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "Acabashi",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "attribution_text": null,
+      "basis": "Creative Commons attribution license as reported by Commons",
+      "attribution_request": "Handoff note: the author adds reuse notes on the file page."
+    },
+    {
+      "candidate_id": "PI-03",
+      "metadata_path": "provenance/api/PI-03-preview.json",
+      "metadata_sha256": "c310d6795fac58dfe3e69f0c28fa2af34096767e9eac5efa3c8da0b2b3f4b631",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "Krigore",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "attribution_text": null,
+      "basis": "Creative Commons attribution license as reported by Commons"
+    },
+    {
+      "candidate_id": "PI-04",
+      "metadata_path": "provenance/api/PI-04-preview.json",
+      "metadata_sha256": "af9c48f4b80c3134ad527b52357a78ef5c7703ec9cfafd2cd0b8bd3900d83c3e",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0",
+      "creator": "Dr. Matthias Ripp",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "attribution_text": null,
+      "basis": "Creative Commons attribution license as reported by Commons"
+    },
+    {
+      "candidate_id": "PI-05",
+      "metadata_path": "provenance/api/PI-05-preview.json",
+      "metadata_sha256": "c5b822e77910bc70a226e8bf1217ce2b4772d11a08708f82a6aeaa0e89f80985",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "Seattleron",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "attribution_text": null,
+      "basis": "Creative Commons attribution license as reported by Commons"
+    },
+    {
+      "candidate_id": "PI-06",
+      "metadata_path": "provenance/api/PI-06-preview.json",
+      "metadata_sha256": "f8d6e12bc3322a9881d6a84121959ab68421571430c6d6b7606b6871e97693ad",
+      "license": "CC BY-SA 3.0",
+      "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "creator": null,
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "attribution_text": null,
+      "basis": "Creative Commons attribution license as reported by Commons"
+    },
+    {
+      "candidate_id": "PI-07",
+      "metadata_path": "provenance/api/PI-07-preview.json",
+      "metadata_sha256": "008e0f1d6f4233c9b85c52aa99998fdf5ea3e0bab59ccc43a174fe3ebf536489",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "creator": "Tanvi.bikhchandani",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "attribution_text": null,
+      "basis": "Creative Commons attribution license as reported by Commons"
+    },
+    {
+      "candidate_id": "PI-08",
+      "metadata_path": "provenance/api/PI-08-preview.json",
+      "metadata_sha256": "ff2ac0892673e3776a203b2e6c8c706fbcad7b2b6a746bd27b69426d2b336dc2",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0",
+      "creator": "roma.wem",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "attribution_text": "roma.wem",
+      "basis": "Creative Commons attribution license as reported by Commons"
+    },
+    {
+      "candidate_id": "PI-09",
+      "metadata_path": "provenance/api/PI-09-preview.json",
+      "metadata_sha256": "e2a5531833dd82f07def268af4dd84c26abcdbfbe4295d3283b05f098835aafe",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0",
+      "creator": "torbakhopper",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "attribution_text": null,
+      "basis": "Creative Commons attribution license as reported by Commons"
+    },
+    {
+      "candidate_id": "PI-10",
+      "metadata_path": "provenance/api/PI-10-preview.json",
+      "metadata_sha256": "79bcaee73f3f13130fcc995319925d5e2e8423ad1ad7e72f2396c713507bb3c5",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "creator": "Chris Downer",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "attribution_text": "Chris Downer",
+      "basis": "Creative Commons attribution license as reported by Commons"
+    },
+    {
+      "candidate_id": "PI-11",
+      "metadata_path": "provenance/api/PI-11-preview.json",
+      "metadata_sha256": "b296137441f100fe2bccebe55f9f6e0c24b6d64fddf85cb866b4933345e627b5",
+      "license": "CC BY 3.0 de",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/de/deed.en",
+      "creator": "Ansgar Koreng",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "attribution_text": "Ansgar Koreng / CC BY 3.0 (DE)",
+      "basis": "Creative Commons attribution license as reported by Commons"
+    },
+    {
+      "candidate_id": "PI-12",
+      "metadata_path": "provenance/api/PI-12-preview.json",
+      "metadata_sha256": "ec9c129b7dd444b189f877215f03aa34bb5698d8ac6a38ddcc217e5024dd2ff9",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0",
+      "creator": "Charles Knowles from Meridian Idaho, USA",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "attribution_text": null,
+      "basis": "Creative Commons attribution license as reported by Commons"
+    },
+    {
+      "candidate_id": "PI-13",
+      "metadata_path": "provenance/api/PI-13-preview.json",
+      "metadata_sha256": "e176d0ecfa844305ddbaeb0de4fd360e56331e17b6853a6b0c93cf581d29912a",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "creator": "Tomascastelazo",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "attribution_text": "In order to comply with the use and licensing terms of this image, the following text must must be included with the image when published in any medium, failure to do so constitutes a violation of the licensing terms and copyright infringement: © Tomas Castelazo, www.tomascastelazo.com / Wikimedia Commons",
+      "basis": "Creative Commons attribution license as reported by Commons",
+      "attribution_request": "Handoff note from the file page: the author specifies additional requested attribution text on the page. Not re-read locally; see the file page before reuse."
+    },
+    {
+      "candidate_id": "PI-14",
+      "metadata_path": "provenance/api/PI-14-preview.json",
+      "metadata_sha256": "15fa0a750115de71984b2f8f78fb667f52636f0de5d2fa51b2173c5baf39b0bb",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "Acabashi",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "attribution_text": null,
+      "basis": "Creative Commons attribution license as reported by Commons",
+      "attribution_request": "Handoff note: the author has detailed attribution and reuse notes on the file page."
+    },
+    {
+      "candidate_id": "PI-15",
+      "metadata_path": "provenance/api/PI-15-preview.json",
+      "metadata_sha256": "77d9abdfa7e6ce9ef3b122d2c1c1e97b866d69cc879aa9d5fa434850d1c40314",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "creator": "John Fielding",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "attribution_text": "John Fielding",
+      "basis": "Creative Commons attribution license as reported by Commons"
+    },
+    {
+      "candidate_id": "PI-16",
+      "metadata_path": "provenance/api/PI-16-preview.json",
+      "metadata_sha256": "e69403a9a317670ca34a518d7875c276eaa554e8a27cf26e7fca0d11a2e06b7c",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0",
+      "creator": "Seattle Municipal Archives from Seattle, WA",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "attribution_text": null,
+      "basis": "Creative Commons attribution license as reported by Commons"
+    },
+    {
+      "candidate_id": "PI-17",
+      "metadata_path": "provenance/api/PI-17-preview.json",
+      "metadata_sha256": "7a6a95239a88439bb5dbc42bcb5b6d38c2edff7027a387d707dbd41c1f12ffe7",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "Robot8A",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "attribution_text": null,
+      "basis": "Creative Commons attribution license as reported by Commons"
+    },
+    {
+      "candidate_id": "PI-18",
+      "metadata_path": "provenance/api/PI-18-preview.json",
+      "metadata_sha256": "98dff3b43ee73113d1d5b35ce60b167c0e418b0b52c9a02a1b5f02ce23ef811c",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "Jules Verne Times Two",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "attribution_text": null,
+      "basis": "Creative Commons attribution license as reported by Commons"
+    },
+    {
+      "candidate_id": "PI-19",
+      "metadata_path": "provenance/api/PI-19-preview.json",
+      "metadata_sha256": "e6ec0181a28c1a1f7c1608ae3decdb865d6db03242d47eccdd0d74fb138e62d6",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "Scott",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "attribution_text": null,
+      "basis": "Creative Commons attribution license as reported by Commons"
+    },
+    {
+      "candidate_id": "PI-20",
+      "metadata_path": "provenance/api/PI-20-preview.json",
+      "metadata_sha256": "5486f82792fb302955fe0043c4eb7c80edd96e15f4ff81f8a9c493cfbe2081ea",
+      "license": "No restrictions",
+      "license_url": "https://www.flickr.com/commons/usage/",
+      "creator": "National Media Museum from UK",
+      "copyrighted": "True",
+      "attribution_required": "false",
+      "attribution_text": null,
+      "basis": "Institutional 'no known copyright restrictions' statement; not an independent public-domain determination"
+    },
+    {
+      "candidate_id": "PI-21",
+      "metadata_path": "provenance/api/PI-21-preview.json",
+      "metadata_sha256": "88dcdc94e00531d54dcfb91be8debb4eb8187525201d065c8862d068df405045",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "creator": "Maersk Line",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "attribution_text": null,
+      "basis": "Creative Commons attribution license as reported by Commons"
+    },
+    {
+      "candidate_id": "PI-23",
+      "metadata_path": "provenance/api/PI-23-preview.json",
+      "metadata_sha256": "e2947a82544a9a9a7c4cea514da051daa150e70881caaa135be3146fa9a624ac",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "creator": "www.Pixel.la Free Stock Photos",
+      "copyrighted": "True",
+      "attribution_required": "false",
+      "attribution_text": null,
+      "basis": "CC0 public-domain dedication as reported by Commons"
+    },
+    {
+      "candidate_id": "PI-24",
+      "metadata_path": "provenance/api/PI-24-preview.json",
+      "metadata_sha256": "9c8dadb28be8debdcd3d2f149f149c0e80250b3873f70e3bbc604609c624eec5",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "creator": "Dror Feitelson",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "attribution_text": null,
+      "basis": "Creative Commons attribution license as reported by Commons"
+    },
+    {
+      "candidate_id": "PI-25",
+      "metadata_path": "provenance/api/PI-25-preview.json",
+      "metadata_sha256": "b784f6eb5753e6a25f56db2b1626a495d108a3b470bc3aa2f8b59712c4d23848",
+      "license": "Public domain",
+      "license_url": null,
+      "creator": "FOTO:Fortepan — ID 10463: Adományozó/Donor: Unknown.",
+      "copyrighted": "False",
+      "attribution_required": "false",
+      "attribution_text": null,
+      "basis": "Commons public-domain statement; the collection does not independently establish term expiry"
+    },
+    {
+      "candidate_id": "PI-26",
+      "metadata_path": "provenance/api/PI-26-preview.json",
+      "metadata_sha256": "c2053924ddb5e62c88650bc613410f9cab57970dad19259a55555af14470b204",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "Jules Verne Times Two",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "attribution_text": null,
+      "basis": "Creative Commons attribution license as reported by Commons"
+    },
+    {
+      "candidate_id": "PI-27",
+      "metadata_path": "provenance/api/PI-27-preview.json",
+      "metadata_sha256": "c4c9e2d0f4a3ab7d68a0e3846a901865a37c14ca016db9c4ffaa1375908b8450",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0",
+      "creator": "andressolo",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "attribution_text": null,
+      "basis": "Creative Commons attribution license as reported by Commons"
+    },
+    {
+      "candidate_id": "PI-28",
+      "metadata_path": "provenance/api/PI-28-preview.json",
+      "metadata_sha256": "7b827b88ff911c3cd33bfa5886ef5f5d91a5d31df2e3ecd3f130121ea1967640",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0",
+      "creator": "torbakhopper",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "attribution_text": null,
+      "basis": "Creative Commons attribution license as reported by Commons"
+    },
+    {
+      "candidate_id": "PI-29",
+      "metadata_path": "provenance/api/PI-29-preview.json",
+      "metadata_sha256": "bddc06a171b3fd9e0279c36c3b27de084414ec79264518b86d097e7ce783b297",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "Albarubescens",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "attribution_text": null,
+      "basis": "Creative Commons attribution license as reported by Commons"
+    },
+    {
+      "candidate_id": "PI-30",
+      "metadata_path": "provenance/api/PI-30-preview.json",
+      "metadata_sha256": "192d4ac3bad4374562517912d65f3a29fdc2cb3c5c39c2b752339e0654fe2e1d",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "Yair Haklai",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "attribution_text": null,
+      "basis": "Creative Commons attribution license as reported by Commons"
+    },
+    {
+      "candidate_id": "PI-31",
+      "metadata_path": "provenance/api/PI-31-preview.json",
+      "metadata_sha256": "a7f8a5ce55fb0f17e2e2e0f7fd82f9b106e58d26c56a4986361ebe08d819217c",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "Andrzej Otrębski",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "attribution_text": null,
+      "basis": "Creative Commons attribution license as reported by Commons"
+    },
+    {
+      "candidate_id": "PI-32",
+      "metadata_path": "provenance/api/PI-32-preview.json",
+      "metadata_sha256": "3978d69fa9abc6a0dab72b77684f0b9ff35b80a6b9b2018d36d4c21db056d18a",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "Avjoska",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "attribution_text": null,
+      "basis": "Creative Commons attribution license as reported by Commons"
+    },
+    {
+      "candidate_id": "PI-33",
+      "metadata_path": "provenance/api/PI-33-preview.json",
+      "metadata_sha256": "ec6b908a84dc9c1995b0ddf4b7513c543d60e872781c56fb5e21429f7bd44186",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "creator": "Luc Viatour",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "attribution_text": null,
+      "basis": "Creative Commons attribution license as reported by Commons"
+    },
+    {
+      "candidate_id": "PI-34",
+      "metadata_path": "provenance/api/PI-34-preview.json",
+      "metadata_sha256": "a0382d772c00e08adea9760141b5b0a0555f84639bdfb9e3d0c155569a9c185a",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "Gallftree008",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "attribution_text": null,
+      "basis": "Creative Commons attribution license as reported by Commons"
+    },
+    {
+      "candidate_id": "PI-36",
+      "metadata_path": "provenance/api/PI-36-preview.json",
+      "metadata_sha256": "cae20a5cd77ea10b3b7b49526f4b8c4cc862ba429a65822076d9e1d4defe819d",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "creator": "Floris Serra.G",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "attribution_text": null,
+      "basis": "Creative Commons attribution license as reported by Commons"
+    },
+    {
+      "candidate_id": "PI-37",
+      "metadata_path": "provenance/api/PI-37-preview.json",
+      "metadata_sha256": "20e4c1dd8f6b580ea97e30b5ca3418eb0f42fc34a3e72cdfafc0a2a1809f8f2b",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "Vincent van Zeijst",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "attribution_text": null,
+      "basis": "Creative Commons attribution license as reported by Commons"
+    },
+    {
+      "candidate_id": "PI-38",
+      "metadata_path": "provenance/api/PI-38-preview.json",
+      "metadata_sha256": "1f786a84e92645266ba15d9d8d3b94dae07a1d2e2a2c90a8b5952018292e6caa",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "NigerTZai",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "attribution_text": null,
+      "basis": "Creative Commons attribution license as reported by Commons"
+    },
+    {
+      "candidate_id": "PI-39",
+      "metadata_path": "provenance/api/PI-39-preview.json",
+      "metadata_sha256": "a0c61ddf861278c6d7962747160a4d8ea0d9503eba467030270c2ce677f64be5",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "Jules Verne Times Two",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "attribution_text": null,
+      "basis": "Creative Commons attribution license as reported by Commons",
+      "attribution_request": "Handoff note from the file page: the author requests visible, particular on-image credit. Not re-read locally; see the file page before reuse."
+    },
+    {
+      "candidate_id": "PI-40",
+      "metadata_path": "provenance/api/PI-40-preview.json",
+      "metadata_sha256": "e817c440ee3f0c4447c2dcc800574049f3758b909a8a50b6d7bef6124fa0794f",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "creator": "Geoff Evans",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "attribution_text": "Geoff Evans",
+      "basis": "Creative Commons attribution license as reported by Commons"
+    },
+    {
+      "candidate_id": "PI-41",
+      "metadata_path": "provenance/api/PI-41-preview.json",
+      "metadata_sha256": "d03c2ab6a3b1bf038d620f5527da91789d534f6c72d255377c7dcc514fe66296",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0",
+      "creator": "Esin Üstün from Istanbul, Turkey",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "attribution_text": null,
+      "basis": "Creative Commons attribution license as reported by Commons"
+    },
+    {
+      "candidate_id": "PI-42",
+      "metadata_path": "provenance/api/PI-42-preview.json",
+      "metadata_sha256": "a8c1f7d965702526b3f101167a97292a59ce67c931b21f1048b0f29c14080771",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "GFreihalter",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "attribution_text": null,
+      "basis": "Creative Commons attribution license as reported by Commons"
+    },
+    {
+      "candidate_id": "PI-43",
+      "metadata_path": "provenance/api/PI-43-preview.json",
+      "metadata_sha256": "5065b76b1b5461ce4daf73af41516fa0c10be4233c56458c3db6c55b0326b22a",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "creator": "Devux",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "attribution_text": null,
+      "basis": "Creative Commons attribution license as reported by Commons"
+    },
+    {
+      "candidate_id": "PI-44",
+      "metadata_path": "provenance/api/PI-44-preview.json",
+      "metadata_sha256": "402b09d6af6ee5ecf0c9b3b3d099a731b712f6d3831660cb87167db8b25b3090",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0",
+      "creator": "Yannick Bammert",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "attribution_text": null,
+      "basis": "Creative Commons attribution license as reported by Commons"
+    },
+    {
+      "candidate_id": "PI-45",
+      "metadata_path": "provenance/api/PI-45-preview.json",
+      "metadata_sha256": "79e591cc20b71524d6cc46583462095f1e35eb9ed20c49d845ffb5c3e08a0e1f",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0",
+      "creator": "T. Keller (Eden Keller)",
+      "copyrighted": "True",
+      "attribution_required": "true",
+      "attribution_text": null,
+      "basis": "Creative Commons attribution license as reported by Commons"
+    }
+  ],
+  "unresolved": [],
+  "source_independence_confirmed": null,
+  "limitations": "Commons license short names are recorded as reported; attribution requests on file pages are quoted where the handoff or metadata noted them. No claim of complete upstream capture-series investigation."
+}

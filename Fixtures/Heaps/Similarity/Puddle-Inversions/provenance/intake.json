@@ -1,0 +1,20 @@
+{
+  "source_directory": "Puddle-Inversions-candidate-handoff-2026-11-02",
+  "preserved_directory": "provenance/supplied",
+  "files": {
+    "README.md": "a922ffe3aacc35f6566d0d3b0783221ae54242302378eee09da0b75b4ae31add",
+    "candidates.csv": "3a2b538c6d08d7521ab0ab6ce24d09e789400370ced0da7c6352ee1e977a91ed",
+    "candidates.md": "283c563a4e1d1e57a568add72357a72775e2db2b1172587ecf9fd6b680267f77",
+    "checksums.sha256": "db8edb70b815fa889a89be9aaff40abd80d207062ce332988bb210e5765cd212",
+    "preselected-rejects.md": "c9a2f82c5fac5e57f14c5e89ffc535623db9f98b9d3864eff465bf08a8468724",
+    "reference/WEB-AGENT-GUIDE.md": "570cb7b3a3e0229af4de57086ec36ca20daf3e89979fa111e14dcdd1f2128f8b",
+    "source-recovery.md": "18cc48e414af2290906dfed841bc7ce1cb6dc296bf0e9c65f31214f17bd5852b"
+  },
+  "supplied_checksum_file": "checksums.sha256",
+  "supplied_checksums_verified": true,
+  "setup_disposed": true,
+  "started_at": "2026-11-02T17:08:21.509956+00:00",
+  "note": "Handoff copied byte-for-byte; the repository-root folder is removed after the preserved copy is verified again at publication.",
+  "disposed_at": "2026-11-02T17:33:26.074626+00:00",
+  "disposal_basis": "All seven original files rechecked against the intake SHA-256 hashes and the unchanged preserved copies after validated integration; only the redundant repository-root folder was removed."
+}

@@ -1,0 +1,21 @@
+{
+  "status": "inspected",
+  "reviewed_at": "2026-11-02T17:32:24.349887+00:00",
+  "scope": "All 43 published inputs inspected at contact-sheet scale from the sheets rendered in the integration stage; each matched its reviewed preview. Published sheet bytes match the staged sheets.",
+  "input_count": 43,
+  "sheets": [
+    {
+      "path": "previews/selected-01.jpg",
+      "sha256": "c24c5944b618c49e13f906149f50c4873f58bb66cbc75fc1bdedfed9de2f567d"
+    },
+    {
+      "path": "previews/selected-02.jpg",
+      "sha256": "d5821c8bb40cc15388c1576cc8d14928bff0296fe08e71cfeaf8a212691a5c89"
+    },
+    {
+      "path": "previews/selected-03.jpg",
+      "sha256": "febc1a6b65bc801d3e8279160f612b40e2975f09b18227145341f22f3972d7ef"
+    }
+  ],
+  "manifest_sha256": "021454634271901b37ad2e590f5b28ff07721bdc0038f3268abd1fdc7e060a07"
+}

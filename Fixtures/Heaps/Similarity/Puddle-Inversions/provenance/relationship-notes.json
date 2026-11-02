@@ -1,0 +1,17 @@
+{
+  "basis": "Acquired 320px previews compared by eye across all 45 leads for shared scenes, series or derivatives, with the handoff's withheld siblings noted; creator names from the Commons metadata.",
+  "relationship_reviews": [
+    {"candidates": ["PI-01", "PI-02", "PI-14"], "finding": "Same photographer (Acabashi); three different places in Lincolnshire and Essex. Different scenes; no capture relationship seen. Photographer reuse alone is not an exclusion.", "defer": []},
+    {"candidates": ["PI-18", "PI-26", "PI-39"], "finding": "Same photographer (julesvernex2); an aircraft at Brooklands, a child in Lisbon and an olive tree at Ponte de Sor. Different scenes; no capture relationship seen. The handoff withheld the '-2' sibling of PI-26.", "defer": []},
+    {"candidates": ["PI-05", "PI-16"], "finding": "Both Seattle; an alley in Pioneer Square and a carousel in Westlake Park by different uploaders. Different scenes.", "defer": []},
+    {"candidates": ["PI-45"], "finding": "The handoff excluded the documented cropped derivative 'Puddle Hopping-cropped.jpg'; only the original is a candidate.", "defer": []},
+    {"candidates": ["PI-37"], "finding": "The handoff withheld 'Trekvlietplein (06)' from the same numbered series; only '(01)' is a candidate.", "defer": []}
+  ],
+  "attribution_requests": {
+    "PI-13": "Handoff note from the file page: the author specifies additional requested attribution text on the page. Not re-read locally; see the file page before reuse.",
+    "PI-39": "Handoff note from the file page: the author requests visible, particular on-image credit. Not re-read locally; see the file page before reuse.",
+    "PI-01": "Handoff note: the author adds reuse notes on the file page.",
+    "PI-02": "Handoff note: the author adds reuse notes on the file page.",
+    "PI-14": "Handoff note: the author has detailed attribution and reuse notes on the file page."
+  }
+}

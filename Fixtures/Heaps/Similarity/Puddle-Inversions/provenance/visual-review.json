@@ -1,0 +1,272 @@
+[
+  {
+    "candidate_id": "PI-01",
+    "decision": "accept",
+    "visually_accepted": true,
+    "visual_reason": "Small puddles along a farm track reflect the sky beside a rapeseed field; the reflection is incidental to a wide rural view."
+  },
+  {
+    "candidate_id": "PI-02",
+    "decision": "accept",
+    "visually_accepted": true,
+    "visual_reason": "Bare trees reflected in a puddle fill the frame; the real ground is almost absent."
+  },
+  {
+    "candidate_id": "PI-03",
+    "decision": "accept",
+    "visually_accepted": true,
+    "visual_reason": "A neon shop sign and lit facade reflected in a small pavement puddle on a night street."
+  },
+  {
+    "candidate_id": "PI-04",
+    "decision": "accept",
+    "visually_accepted": true,
+    "visual_reason": "A lit shopfront, palm and parked car doubled in a dark street puddle at dusk."
+  },
+  {
+    "candidate_id": "PI-05",
+    "decision": "accept",
+    "visually_accepted": true,
+    "visual_reason": "Brick alley buildings reflected in a puddle on rough paving; the scene and its inversion share the frame."
+  },
+  {
+    "candidate_id": "PI-06",
+    "decision": "accept",
+    "visually_accepted": true,
+    "visual_reason": "The Arc de Triomphe and pedestrians reflected in a foreground puddle on a wet avenue."
+  },
+  {
+    "candidate_id": "PI-07",
+    "decision": "accept",
+    "visually_accepted": true,
+    "visual_reason": "Red sandstone arches repeated upside down in a puddle directly below them."
+  },
+  {
+    "candidate_id": "PI-08",
+    "decision": "accept",
+    "visually_accepted": true,
+    "visual_reason": "A derelict snowbound building reflected in meltwater pooled across the foreground."
+  },
+  {
+    "candidate_id": "PI-09",
+    "decision": "accept",
+    "visually_accepted": true,
+    "visual_reason": "A street with cars and poles seen almost entirely as an inverted puddle reflection."
+  },
+  {
+    "candidate_id": "PI-10",
+    "decision": "accept",
+    "visually_accepted": true,
+    "visual_reason": "Red bicycle stands reflected in a sheet of rainwater on a plaza."
+  },
+  {
+    "candidate_id": "PI-11",
+    "decision": "accept",
+    "visually_accepted": true,
+    "visual_reason": "A basketball hoop and surrounding flats reflected in a puddle on the court."
+  },
+  {
+    "candidate_id": "PI-12",
+    "decision": "accept",
+    "visually_accepted": true,
+    "visual_reason": "Peaks and conifers mirrored in still water; the waterbody is a small mountain lake rather than a puddle, kept under the loose brief."
+  },
+  {
+    "candidate_id": "PI-13",
+    "decision": "accept",
+    "visually_accepted": true,
+    "visual_reason": "A cyclist's silhouette reflected in wet pavement, monochrome."
+  },
+  {
+    "candidate_id": "PI-14",
+    "decision": "accept",
+    "visually_accepted": true,
+    "visual_reason": "Muddy bridleway puddles reflect bare winter trees and sky."
+  },
+  {
+    "candidate_id": "PI-15",
+    "decision": "accept",
+    "visually_accepted": true,
+    "visual_reason": "Fells reflected in a foreground sheet of standing water; the water reads larger than a puddle, kept under the loose brief."
+  },
+  {
+    "candidate_id": "PI-16",
+    "decision": "accept",
+    "visually_accepted": true,
+    "visual_reason": "Carousel lights and crowds reflected in wet plaza paving at night; a continuous wet surface rather than a bounded puddle."
+  },
+  {
+    "candidate_id": "PI-17",
+    "decision": "accept",
+    "visually_accepted": true,
+    "visual_reason": "A yellow tram faintly doubled in wet tracks and a puddle in the foreground."
+  },
+  {
+    "candidate_id": "PI-18",
+    "decision": "accept",
+    "visually_accepted": true,
+    "visual_reason": "Concorde on its stand mirrored clearly in a rain puddle, name reversed in the water."
+  },
+  {
+    "candidate_id": "PI-19",
+    "decision": "accept",
+    "visually_accepted": true,
+    "visual_reason": "Wet highwalk paving carries a faint reflection of a crane and building; the inversion is slight but visible."
+  },
+  {
+    "candidate_id": "PI-20",
+    "decision": "accept",
+    "visually_accepted": true,
+    "visual_reason": "Three 1948 runners reflected in a wet cinder track, monochrome."
+  },
+  {
+    "candidate_id": "PI-21",
+    "decision": "accept",
+    "visually_accepted": true,
+    "visual_reason": "A container ship's bow mirrored in a quay puddle with cranes behind."
+  },
+  {
+    "candidate_id": "PI-22",
+    "decision": "reject",
+    "visually_accepted": false,
+    "visual_reason": "Night street with wet cobbles and lamp glare; no legible puddle reflection at preview scale."
+  },
+  {
+    "candidate_id": "PI-23",
+    "decision": "accept",
+    "visually_accepted": true,
+    "visual_reason": "Looking down past the photographer's shoes: leaf litter and a dark puddle reflecting bare branches overhead; the reflection is faint."
+  },
+  {
+    "candidate_id": "PI-24",
+    "decision": "accept",
+    "visually_accepted": true,
+    "visual_reason": "A photographer crouches on flagstones awash with rainwater that reflects a patterned cathedral facade."
+  },
+  {
+    "candidate_id": "PI-25",
+    "decision": "accept",
+    "visually_accepted": true,
+    "visual_reason": "A goalkeeper's legs and a goal net reflected in a pitch puddle, monochrome."
+  },
+  {
+    "candidate_id": "PI-26",
+    "decision": "accept",
+    "visually_accepted": true,
+    "visual_reason": "A child in a yellow raincoat mirrored in wet paving before an office block."
+  },
+  {
+    "candidate_id": "PI-27",
+    "decision": "accept",
+    "visually_accepted": true,
+    "visual_reason": "Houses, lamp posts and dramatic clouds seen inverted in a puddle that fills the frame."
+  },
+  {
+    "candidate_id": "PI-28",
+    "decision": "accept",
+    "visually_accepted": true,
+    "visual_reason": "Fallen oak leaves float on a puddle reflecting sky and branches."
+  },
+  {
+    "candidate_id": "PI-29",
+    "decision": "accept",
+    "visually_accepted": true,
+    "visual_reason": "A horse-chestnut tree reflected in a leaf-ringed puddle on gravel."
+  },
+  {
+    "candidate_id": "PI-30",
+    "decision": "accept",
+    "visually_accepted": true,
+    "visual_reason": "A gull stands at the edge of a puddle that reflects it and the paving pattern."
+  },
+  {
+    "candidate_id": "PI-31",
+    "decision": "accept",
+    "visually_accepted": true,
+    "visual_reason": "A mural doubled in a car-park puddle beneath it."
+  },
+  {
+    "candidate_id": "PI-32",
+    "decision": "accept",
+    "visually_accepted": true,
+    "visual_reason": "A small puddle on asphalt with a pale, barely consequential reflection; kept as an ordinary scene."
+  },
+  {
+    "candidate_id": "PI-33",
+    "decision": "accept",
+    "visually_accepted": true,
+    "visual_reason": "A night facade and lamps reflected in a puddle across dark paving."
+  },
+  {
+    "candidate_id": "PI-34",
+    "decision": "accept",
+    "visually_accepted": true,
+    "visual_reason": "A castle and bare trees reflected in a flat sheet of water at the edge of a lawn."
+  },
+  {
+    "candidate_id": "PI-35",
+    "decision": "reject",
+    "visually_accepted": false,
+    "visual_reason": "Cruise ship on a wet quay at night; no puddle reflection is discernible at preview scale."
+  },
+  {
+    "candidate_id": "PI-36",
+    "decision": "accept",
+    "visually_accepted": true,
+    "visual_reason": "A tower reflected upside down in a puddle on a muddy path."
+  },
+  {
+    "candidate_id": "PI-37",
+    "decision": "accept",
+    "visually_accepted": true,
+    "visual_reason": "A graffiti wall reflected in a puddle across a yard."
+  },
+  {
+    "candidate_id": "PI-38",
+    "decision": "accept",
+    "visually_accepted": true,
+    "visual_reason": "A flooded orange street reflects trees, wires and sky; a localized rain accumulation larger than a puddle."
+  },
+  {
+    "candidate_id": "PI-39",
+    "decision": "accept",
+    "visually_accepted": true,
+    "visual_reason": "An olive tree and dirt road reflected in a puddle on the track."
+  },
+  {
+    "candidate_id": "PI-40",
+    "decision": "accept",
+    "visually_accepted": true,
+    "visual_reason": "A field gate and cloudy sky reflected in puddles on a rutted muddy track."
+  },
+  {
+    "candidate_id": "PI-41",
+    "decision": "accept",
+    "visually_accepted": true,
+    "visual_reason": "Pagoda roofs and a spire reflected in a wet courtyard, seen mainly as inversion."
+  },
+  {
+    "candidate_id": "PI-42",
+    "decision": "accept",
+    "visually_accepted": true,
+    "visual_reason": "A building facade reflected in a small bounded puddle on tarmac."
+  },
+  {
+    "candidate_id": "PI-43",
+    "decision": "accept",
+    "visually_accepted": true,
+    "visual_reason": "Seedlings stand in rainwater that reflects foliage and a wall; weak but visible inversion."
+  },
+  {
+    "candidate_id": "PI-44",
+    "decision": "accept",
+    "visually_accepted": true,
+    "visual_reason": "Iron railings reflected in a puddle on a gravel path."
+  },
+  {
+    "candidate_id": "PI-45",
+    "decision": "accept",
+    "visually_accepted": true,
+    "visual_reason": "Shoes at a puddle's edge with an umbrella reflected inverted in it; a signature watermark is visible."
+  }
+]
