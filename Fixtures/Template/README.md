@@ -16,11 +16,14 @@ Run `../.venv/bin/python ../tools/new_fixture.py --help` from this directory,
 or use the repository-root command below:
 
 ```sh
-Fixtures/.venv/bin/python Fixtures/tools/new_fixture.py Fixtures/Heaps/Curatorial/My-Set --id my-set-v1 --kind curatorial_heap
+Fixtures/.venv/bin/python Fixtures/tools/new_fixture.py Fixtures/Heaps/Curatorial/My-Set --id bricolage-my-set-v1 --kind curatorial_heap
 ```
 
-The destination must be new. The scaffold contains empty catalogs and media
-directories; it does not invent prompts, candidate evidence, credits or results.
+The destination must be new, and the ID follows `bricolage-<code>-v1`. The
+scaffold contains empty catalogs and media directories; it does not invent
+prompts, candidate evidence, credits or results. A leaf's publication step
+replaces those placeholder catalogs and refuses published ones, as
+`Heaps/Similarity/Puddle-Inversions/tools/integrate.py` shows.
 Complete its README, source catalog and provenance records as part of intake.
 Keep its `collection-totals` markers; `Fixtures/collection totals` fills that
 block from the manifest and updates the central collection table.

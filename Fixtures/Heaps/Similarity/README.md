@@ -36,7 +36,10 @@ Integrated contributions retain `kind=prompt_heap`, empty pair expectations and
 the [shared fixture format](../../FORMAT.md). Their local validators check files
 and evidence; the shared relationship checker does not support this kind.
 
-For acquisition and review, use the active [Pale-Skies-Dark-Ground tools](Pale-Skies-Dark-Ground/tools/acquire.py)
-and its [sourcing instructions](Pale-Skies-Dark-Ground/provenance/intake/HEAP_INSTRUCTIONS.md) as a starting point,
-adapting contribution-specific identifiers and prompts. Archived tools under
+For acquisition and review, start from the [Puddle-Inversions tools](Puddle-Inversions/tools/),
+which adapt [Pale-Skies-Dark-Ground's](Pale-Skies-Dark-Ground/tools/acquire.py)
+[sourcing contract](Pale-Skies-Dark-Ground/provenance/intake/HEAP_INSTRUCTIONS.md)
+to a CSV handoff, discover prior leaves for the identity audit from their
+manifests, and identify as BricolageFixtureBot. Change the contribution's
+identifiers, prompt and immutable supplied fields. Archived tools under
 `provenance/supplied/` record older handoffs.

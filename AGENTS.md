@@ -12,7 +12,9 @@ describes fixture design and how the documentation fits together.
   itself establish a visual match.
 - Use Python 3.14.x in `Fixtures/.venv`, created by `make -C Fixtures setup-python`.
   Use `Fixtures/sample N` for samples. Put `--keep` before the command for draws
-  meant to be committed. Do not assemble unrecorded samples or acquire another corpus.
+  meant to be committed. Do not assemble unrecorded samples or acquire another
+  corpus for sampling; fixture intake from a recorded handoff follows
+  [Fixtures/AGENTS.md](Fixtures/AGENTS.md).
 - Keep media under a collection leaf's `images/`, `sources/` or `previews/`.
   Never force-add ignored media. Put disposable worlds and scratch records under
   `Fixtures/output/`. Change versioned sampler records in `Fixtures/Sampler/records/`

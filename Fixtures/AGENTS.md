@@ -22,6 +22,14 @@ preserve supplied records. Follow [output/AGENTS.md](output/AGENTS.md) for
 scratch files. Fix a catalog problem in the collection that owns the catalog,
 with its validator, so tools and records continue to describe the same files.
 
+Name a new leaf's fixture ID `bricolage-<code>-v1`, as in `bricolage-pi01-v1`;
+leaves lifted from hazy keep their `hazy-` IDs and are not renamed. Identify
+Commons requests as `BricolageFixtureBot/0.1 (https://github.com/Protonk/bricolage) Python-urllib`.
+Older leaf records and READMEs name `HazyFixtureBot` and the hazy repository
+because that is what their acquisitions used. The newest Similarity intake,
+[Puddle-Inversions](Heaps/Similarity/Puddle-Inversions/README.md), is the
+current starting point for a handoff of Commons leads.
+
 Use `Fixtures/collection remove INPUT --reason "Reason"` for active input removal.
 After other catalog changes, run `make -C Fixtures collection-totals`; current
 totals and marked README blocks are generated, not maintained by hand.

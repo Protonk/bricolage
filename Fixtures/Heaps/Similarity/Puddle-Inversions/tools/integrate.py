@@ -247,17 +247,28 @@ def build(name):
         dump(stage/'FAILED.json',dict(status='incomplete',error=str(error)));raise
 
 
+def scaffold_placeholder(name):
+    """True for the template scaffold's empty catalogs and media directories, never for published inputs or catalogs.
+
+    A heap's probes.csv stays header-only and its selections.json has no pairs, so for
+    those two the scaffold and the published file are the same content."""
+    p=local(name)
+    if p.is_dir():return not any(p.iterdir())
+    if name=='manifest.json':return json.loads(p.read_text())['images']==[]
+    if name in ('manifest.csv','sources.csv','probes.csv'):return len(p.read_text().splitlines())<=1
+    if name=='selections.json':return json.loads(p.read_text())['pairs']==[]
+    if name=='SHA256SUMS.txt':return p.read_text().strip()==''
+    if name=='SOURCES.md':return 'No source images recorded yet' in p.read_text()
+    return False
+
+
 def publish(name):
     require(re.fullmatch(r'[a-zA-Z0-9_-]+',name),'Use a simple stage name')
     check_evidence(ROOT,check_imports=False)
     stage=local('previews/integration-'+name);validation=check(stage)
     names=['images','manifest.json','manifest.csv','sources.csv','SOURCES.md','probes.csv','selections.json','batches','SHA256SUMS.txt','provenance/import-map.json']
     names += [str(p.relative_to(stage)) for p in sorted((stage/'previews').glob('selected-*.jpg'))]
-    for name in names:
-        existing=local(name)
-        # The scaffold's empty catalogs and media directories are replaced; any published content is not.
-        if existing.is_dir():require(not any(existing.iterdir()),f'Output already exists: {name}')
-        elif existing.exists():require(name in ('manifest.json','manifest.csv','sources.csv','SOURCES.md','probes.csv','selections.json','SHA256SUMS.txt') and json.loads(existing.read_text())['images']==[] if name=='manifest.json' else existing.stat().st_size<2048,f'Output already exists: {name}')
+    for name in names:require(not local(name).exists() or scaffold_placeholder(name),f'Output already exists: {name}')
     staged_prompt=json.loads((stage/'provenance/intake/prompt.json').read_text())
     require({k:staged_prompt[k] for k in BRIEF_FIELDS}=={k:brief()[k] for k in BRIEF_FIELDS},'Intake brief changed during integration')
     created=[]
