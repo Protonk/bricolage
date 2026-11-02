@@ -4,7 +4,7 @@
   "scope": "Heaps only. Book selections are editorial presentation choices and do not alter fixture membership or assert matches.",
   "collections": [
     {
-      "leaf": "Similarity/RG01",
+      "leaf": "Similarity/Red-Accents-in-Green",
       "count": 31,
       "files": [
         "images/568f01a94b51453a.jpg",
@@ -41,7 +41,7 @@
       "layout": "landscape"
     },
     {
-      "leaf": "Similarity/SF01",
+      "leaf": "Similarity/Speckled-Fields",
       "count": 48,
       "files": [
         "images/8c4a58abcf99ef70.jpg",
@@ -78,7 +78,7 @@
       "layout": "landscape"
     },
     {
-      "leaf": "Similarity/PS01",
+      "leaf": "Similarity/Pale-Skies-Dark-Ground",
       "count": 58,
       "files": [
         "images/d628571924be25d8.jpg",
@@ -115,7 +115,7 @@
       "layout": "landscape"
     },
     {
-      "leaf": "Similarity/CR01",
+      "leaf": "Similarity/Repeated-Rectangles",
       "count": 57,
       "files": [
         "images/d3b12dfca4513d49.jpg",
@@ -152,7 +152,7 @@
       "layout": "landscape"
     },
     {
-      "leaf": "Similarity/TG01",
+      "leaf": "Similarity/Tangled-Growth",
       "count": 31,
       "files": [
         "images/c9b64f2e37498def.jpg",
@@ -189,7 +189,7 @@
       "layout": "portrait"
     },
     {
-      "leaf": "Similarity/BSP01",
+      "leaf": "Similarity/Spreading-Patches",
       "count": 68,
       "files": [
         "images/b93cf0520cddfa7c.jpg",

@@ -40,7 +40,7 @@ selected images and how to rebuild it.
 
 The [collection totals](COLLECTIONS.md) are generated from active manifests,
 including the current input count and distinct byte hashes for every leaf.
-Acquisition is incomplete in SF01 (11 accepted images pending) and
+Acquisition is incomplete in Speckled-Fields (11 accepted images pending) and
 Botanical Illustrations (one transfer pending). POTY Arthropods acquired 43 inputs
 against a target of 50. Some Curatorial selections also have earlier unresolved
 review cases; their later selections remain provisional. Each collection's README
@@ -93,5 +93,7 @@ checks and the test targets. The optional comparison runner needs a published
 world and an executable supplied by the caller.
 
 Older paths and supplied instructions remain in the provenance records. The
-[layout record](provenance/layout-2026-11/README.md) describes the directory move;
+[layout record](provenance/layout-2026-11/README.md) describes the directory move
+and the [rename record](provenance/similarity-names-2026-11/README.md) maps the
+Similarity leaves' former short-code folders to their prompt names;
 current commands use the locations above. Fixture IDs and media bytes were kept.

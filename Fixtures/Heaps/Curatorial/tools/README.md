@@ -8,7 +8,7 @@ The authoritative category names and fixed seeds are the preserved handoff's
 
 The transport, metadata batching, media acquisition, contact sheets, source
 catalogs and staged publication adapt the active Botanical-Illustrations and
-Evan-Amos-Uploads tools, which in turn adapt POTY/PS01. Existing contributions'
+Evan-Amos-Uploads tools, which in turn adapt POTY/Pale-Skies-Dark-Ground (then named PS01). Existing contributions'
 tools are unchanged. No router or comparison code is invoked.
 
 Network commands (`freeze`, `metadata`, `media`) use a shared intake lock, serial

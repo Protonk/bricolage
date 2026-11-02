@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-02",
+  "reason": "Name each Similarity leaf folder for its selection prompt, as the Curatorial leaves are, so the collection totals read at a glance.",
+  "unchanged": [
+    "fixture_id",
+    "manifest.json bytes",
+    "candidate IDs and their short-code prefixes",
+    "images/, sources/ and previews/ contents",
+    "provenance/ records, including historical path strings"
+  ],
+  "moves": [
+    {
+      "old": "Fixtures/Heaps/Similarity/RG01",
+      "new": "Fixtures/Heaps/Similarity/Red-Accents-in-Green",
+      "fixture_id": "hazy-rg01-v1",
+      "kind": "prompt_heap",
+      "active_inputs": 31,
+      "tracked_files": 442,
+      "manifest_sha256": "8c11d19a70ae73c0a526ee05e7f9fb2c904ab39e977788395c201b94aa9d3a0c",
+      "local_media_files": {
+        "images": 31,
+        "sources": 31,
+        "previews": 192
+      },
+      "purpose": "leaf-rename"
+    },
+    {
+      "old": "Fixtures/Heaps/Similarity/SF01",
+      "new": "Fixtures/Heaps/Similarity/Speckled-Fields",
+      "fixture_id": "hazy-sf01-v1",
+      "kind": "prompt_heap",
+      "active_inputs": 48,
+      "tracked_files": 241,
+      "manifest_sha256": "29b006215f26a49b6eb774bcfeb8d29e761fd31f224bcc278b4868acbe3ca026",
+      "local_media_files": {
+        "images": 48,
+        "sources": 48,
+        "previews": 267
+      },
+      "purpose": "leaf-rename"
+    },
+    {
+      "old": "Fixtures/Heaps/Similarity/PS01",
+      "new": "Fixtures/Heaps/Similarity/Pale-Skies-Dark-Ground",
+      "fixture_id": "hazy-ps01-v1",
+      "kind": "prompt_heap",
+      "active_inputs": 58,
+      "tracked_files": 266,
+      "manifest_sha256": "f87e09e932310784fce7096fa34e0addbcbfdf1dda0219232d2136011f6782d3",
+      "local_media_files": {
+        "images": 58,
+        "sources": 58,
+        "previews": 289
+      },
+      "purpose": "leaf-rename"
+    },
+    {
+      "old": "Fixtures/Heaps/Similarity/CR01",
+      "new": "Fixtures/Heaps/Similarity/Repeated-Rectangles",
+      "fixture_id": "hazy-cr01-v1",
+      "kind": "prompt_heap",
+      "active_inputs": 57,
+      "tracked_files": 289,
+      "manifest_sha256": "df695b27cd27fa082088f5dc86cc553c158da00390aa908dfaf76a3b3448912f",
+      "local_media_files": {
+        "images": 57,
+        "sources": 57,
+        "previews": 313
+      },
+      "purpose": "leaf-rename"
+    },
+    {
+      "old": "Fixtures/Heaps/Similarity/TG01",
+      "new": "Fixtures/Heaps/Similarity/Tangled-Growth",
+      "fixture_id": "hazy-tg01-v1",
+      "kind": "prompt_heap",
+      "active_inputs": 31,
+      "tracked_files": 268,
+      "manifest_sha256": "d1c8c6361e8f7d25e6c68af8f87aac9c9b8b42f31688a9324f7ad6da53ec0365",
+      "local_media_files": {
+        "images": 31,
+        "sources": 31,
+        "previews": 256
+      },
+      "purpose": "leaf-rename"
+    },
+    {
+      "old": "Fixtures/Heaps/Similarity/BSP01",
+      "new": "Fixtures/Heaps/Similarity/Spreading-Patches",
+      "fixture_id": "hazy-bsp01-v1",
+      "kind": "prompt_heap",
+      "active_inputs": 68,
+      "tracked_files": 337,
+      "manifest_sha256": "7eb43cbd99438215076cb09f618eb47c544ac4b4e63769a265739e818545a812",
+      "local_media_files": {
+        "images": 68,
+        "sources": 68,
+        "previews": 368
+      },
+      "purpose": "leaf-rename"
+    }
+  ]
+}

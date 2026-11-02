@@ -94,7 +94,7 @@ class LayoutTests(unittest.TestCase):
     def test_live_candidate_writers_use_intake_directory(self):
         # Exercise actual publication helpers against fresh scratch roots: they
         # must create nested metadata paths without restoring old root files.
-        for slug in ('PS01', 'CR01', 'TG01', 'BSP01'):
+        for slug in ('Pale-Skies-Dark-Ground', 'Repeated-Rectangles', 'Tangled-Growth', 'Spreading-Patches'):
             path = layout.FIXTURES/'Heaps/Similarity'/slug/'tools/common.py'
             spec = importlib.util.spec_from_file_location('writer_' + slug, path)
             module = importlib.util.module_from_spec(spec)
