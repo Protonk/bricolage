@@ -114,9 +114,10 @@ previews 480 pixels apart from that explicit adjustment.
 
 Only manifest-listed `images/` files are comparison inputs. Sources, 185 preview
 tiles, inspected sheets, final selected contact sheets, diagnostic bodies,
-integration staging and `previews/hazy-bsp01-v1.zip` remain local and Git-ignored.
-The ZIP includes source/input bytes and textual evidence; its checksum is in
-`provenance/archive.json`. A checkout alone contains no media.
+and integration staging remain local and Git-ignored. A checkout alone contains
+no media. The optional `previews/hazy-bsp01-v1.zip` was removed after its media
+matched the unpacked files. Its original checksum remains in `provenance/archive.json`;
+the [cleanup record](../../../provenance/zip-cleanup-2026-11.json) records the checks.
 
 ### Offline checks
 

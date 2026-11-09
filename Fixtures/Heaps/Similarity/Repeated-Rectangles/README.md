@@ -86,9 +86,12 @@ unscaled originals within the bound. No smaller-rendition requests were needed.
   evidence. Three `previews/selected-NN.jpg` sheets show acquired inputs.
 - `provenance/` holds transport logs, reviews, the identity audit, import map,
   final visual review and integration receipt.
-- `previews/hazy-cr01-v1.zip` is the local archive of inputs, sources, preview
-  evidence, metadata, credits and tools. Media and archives remain Git-ignored;
-  a checkout alone does not contain them.
+- The optional `previews/hazy-cr01-v1.zip` and its older copy under
+  `previews/archive-before-credits-formatting/` were removed after their media
+  matched the unpacked files. Both receipts remain; the older credits and tool
+  bytes are preserved in [archive history](provenance/archive-history/README.md).
+  The [cleanup record](../../../provenance/zip-cleanup-2026-11.json) records the checks.
+  Media remains Git-ignored; a checkout alone does not contain it.
 
 From the repository root, using Python with the pinned Pillow dependency:
 

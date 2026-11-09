@@ -59,3 +59,8 @@ No script restores a tree. Nothing here handles rate limits, API changes or
 partial downloads. The zips under `previews/` and any other local copies are
 not part of the contract. A recovery can end with inputs still missing, and the
 records are honest about that.
+
+The eight optional Similarity handoff ZIPs were removed in the
+[November 2026 cleanup](provenance/zip-cleanup-2026-11.json), after every archived
+media file matched an unpacked copy. Archive receipts and four historical text
+versions were preserved; the cleanup record lists their paths and hashes.

@@ -1,0 +1,259 @@
+{
+  "schema_version": 1,
+  "action": "remove_optional_zip_archives",
+  "status": "complete",
+  "reason": "User-authorized cleanup of redundant local handoff ZIPs after preserving historical text and receipts.",
+  "prepared_at": "2026-11-09T23:50:20.359339+00:00",
+  "audited_git_head": "eff3fe4814a1d8b5d7998dbde36a5fd2f2675702",
+  "path_base": "repository root",
+  "verification": "Every ZIP member passed CRC validation. All media matched unpacked leaf files by SHA-256. Other members matched unpacked leaf bytes, reachable Git blobs, or the preserved snapshots listed here.",
+  "total_archive_bytes": 647951011,
+  "archives": [
+    {
+      "path": "Fixtures/Heaps/Similarity/Pale-Skies-Dark-Ground/previews/hazy-ps01-v1.zip",
+      "sha256": "cc282a810af28a03ec5153537bc191b27914573904f1ed90d2f95adf3938c57b",
+      "size_bytes": 53870972,
+      "archive_receipt": "Fixtures/Heaps/Similarity/Pale-Skies-Dark-Ground/provenance/archive.json",
+      "archive_receipt_sha256": "55b102462bf7dc6fca7a4d5743642e88f12e4af9d4a6e02ff22fa2b668806ec2",
+      "verified": {
+        "members_matching_unpacked_bytes": 529,
+        "file_members": 534,
+        "text_members_in_git_history": 5,
+        "media_members_matching_unpacked_bytes": 272
+      },
+      "historical_git_blobs": {
+        "hazy-ps01-v1/README.md": "56ee889a44f09023e132d12d4adc86cc6fda8ab4",
+        "hazy-ps01-v1/tools/audit.py": "696b6aabc7b92ee47a45c4cf823f382dafae2879",
+        "hazy-ps01-v1/tools/chunks.py": "64039f199ca6fe46dcd6a3d7f05624e4b77502e3",
+        "hazy-ps01-v1/tools/common.py": "256352467528a5ad5b8b00724e73e877965f0ffa",
+        "hazy-ps01-v1/tools/integrate.py": "8fd9ecda9bc041436a8dc9331089be259cdaab22"
+      },
+      "preserved_members": [],
+      "removed": true,
+      "removed_at": "2026-11-09T23:51:23.185201+00:00"
+    },
+    {
+      "path": "Fixtures/Heaps/Similarity/Puddle-Inversions/previews/bricolage-pi01-v1.zip",
+      "sha256": "cc2d0589e1c900fc2255b480ea594a41aea506f31d827878e0f6819e8c82abcd",
+      "size_bytes": 66715162,
+      "archive_receipt": "Fixtures/Heaps/Similarity/Puddle-Inversions/provenance/archive.json",
+      "archive_receipt_sha256": "105fa7123a41a369edcdd5fc0ccfe91abb7bc3df26b369e6b39ae61e7c343b6f",
+      "verified": {
+        "text_members_preserved": 2,
+        "file_members": 274,
+        "members_matching_unpacked_bytes": 269,
+        "media_members_matching_unpacked_bytes": 137,
+        "text_members_in_git_history": 3
+      },
+      "historical_git_blobs": {
+        "bricolage-pi01-v1/provenance/identity-audit.json": "0b3514cd830b8f75dc5164a27cf391ec57306dfb",
+        "bricolage-pi01-v1/tools/audit.py": "2e372ed0113b54132dfe47f7644d7f8681a29638",
+        "bricolage-pi01-v1/tools/integrate.py": "3115ab3167e708cc9eba52f44dc43ef11a24b4fb"
+      },
+      "preserved_members": [
+        {
+          "member": "bricolage-pi01-v1/README.md",
+          "path": "Fixtures/Heaps/Similarity/Puddle-Inversions/provenance/archive-history/initial-handoff/README.md",
+          "sha256": "3c6482edcc1d02e4d8f9835029246a05923a118402ca511952a34245534588d3",
+          "size_bytes": 7757
+        },
+        {
+          "member": "bricolage-pi01-v1/provenance/intake.json",
+          "path": "Fixtures/Heaps/Similarity/Puddle-Inversions/provenance/archive-history/initial-handoff/provenance/intake.json",
+          "sha256": "54d055839ca26d9a7e79d64ad9a7b38031105b9c351c1cc2a696b18630812009",
+          "size_bytes": 1098
+        }
+      ],
+      "removed": true,
+      "removed_at": "2026-11-09T23:51:23.186719+00:00"
+    },
+    {
+      "path": "Fixtures/Heaps/Similarity/Red-Accents-in-Green/previews/hazy-rg01-v1.zip",
+      "sha256": "84760933498e62b2ff58e141251a33651fc64f48188245921a86c6491eca52d2",
+      "size_bytes": 36082610,
+      "archive_receipt": "Fixtures/Heaps/Similarity/Red-Accents-in-Green/provenance/archive.json",
+      "archive_receipt_sha256": "a91644ce32ad4b814c1e41a1b8342bbc975b8dfa7e8f718f5d3ce7ca4bf59fb2",
+      "verified": {
+        "text_members_in_git_history": 3,
+        "file_members": 502,
+        "members_matching_unpacked_bytes": 499,
+        "media_members_matching_unpacked_bytes": 64
+      },
+      "historical_git_blobs": {
+        "hazy-rg01-v1/README.md": "efcf6be08e59f36a122578ead41ccbad455d9e67",
+        "hazy-rg01-v1/provenance/commons.py": "b41f2418d3750f9a66cac9a88f72edd060098773",
+        "hazy-rg01-v1/provenance/heap.py": "f762cc7691c5c71550542de590f416da965bdd91"
+      },
+      "preserved_members": [],
+      "removed": true,
+      "removed_at": "2026-11-09T23:51:23.188337+00:00"
+    },
+    {
+      "path": "Fixtures/Heaps/Similarity/Repeated-Rectangles/previews/archive-before-credits-formatting/hazy-cr01-v1.zip",
+      "sha256": "88e8f4bae807317a1c4f414c721ac9abedd0047e34cf8898ddeeca3f80f4bdad",
+      "size_bytes": 77538246,
+      "archive_receipt": "Fixtures/Heaps/Similarity/Repeated-Rectangles/previews/archive-before-credits-formatting/archive.json",
+      "archive_receipt_sha256": "d6b97996b38cbfd14f90cb5a27156893edf6545cf7d83169c3b32724d8624b0c",
+      "verified": {
+        "members_matching_unpacked_bytes": 572,
+        "file_members": 579,
+        "text_members_in_git_history": 5,
+        "text_members_preserved": 2,
+        "media_members_matching_unpacked_bytes": 294
+      },
+      "historical_git_blobs": {
+        "hazy-cr01-v1/README.md": "f354c05fcfaf37911ed633cb7ccc30feb16274f9",
+        "hazy-cr01-v1/tools/audit.py": "5cde364e05723c712d42f60101caa7798dd3210a",
+        "hazy-cr01-v1/tools/chunks.py": "64039f199ca6fe46dcd6a3d7f05624e4b77502e3",
+        "hazy-cr01-v1/tools/common.py": "256352467528a5ad5b8b00724e73e877965f0ffa",
+        "hazy-cr01-v1/tools/prepare.py": "8f48648c0a1deb42d33d27a712b3ffa1a38e0062"
+      },
+      "preserved_members": [
+        {
+          "member": "hazy-cr01-v1/SOURCES.md",
+          "path": "Fixtures/Heaps/Similarity/Repeated-Rectangles/provenance/archive-history/before-credits-formatting/SOURCES.md",
+          "sha256": "dc2374b1376116abcc9a6a0846b4b39d52c7fdf3da574175722b1143dd588512",
+          "size_bytes": 38684
+        },
+        {
+          "member": "hazy-cr01-v1/tools/integrate.py",
+          "path": "Fixtures/Heaps/Similarity/Repeated-Rectangles/provenance/archive-history/before-credits-formatting/tools/integrate.py",
+          "sha256": "88ee2b1b73cd4a9e33256ba833921033cd5b3c235e76ebeb7ef86edbdddd9d68",
+          "size_bytes": 21093
+        }
+      ],
+      "removed": true,
+      "preserved_receipt_copy": "Fixtures/Heaps/Similarity/Repeated-Rectangles/provenance/archive-history/before-credits-formatting/archive.json",
+      "removed_at": "2026-11-09T23:51:23.191253+00:00"
+    },
+    {
+      "path": "Fixtures/Heaps/Similarity/Repeated-Rectangles/previews/hazy-cr01-v1.zip",
+      "sha256": "e06b29e59518a39b355efeb61eb48631f6a6da031cceb228e6a6d72fe54b725a",
+      "size_bytes": 77538251,
+      "archive_receipt": "Fixtures/Heaps/Similarity/Repeated-Rectangles/provenance/archive.json",
+      "archive_receipt_sha256": "eab41157f7db8a08f720a4eebdb24216f6fdaaae14a5d469544b2434073999fc",
+      "verified": {
+        "members_matching_unpacked_bytes": 573,
+        "file_members": 579,
+        "text_members_in_git_history": 6,
+        "media_members_matching_unpacked_bytes": 294
+      },
+      "historical_git_blobs": {
+        "hazy-cr01-v1/README.md": "f354c05fcfaf37911ed633cb7ccc30feb16274f9",
+        "hazy-cr01-v1/tools/audit.py": "5cde364e05723c712d42f60101caa7798dd3210a",
+        "hazy-cr01-v1/tools/chunks.py": "64039f199ca6fe46dcd6a3d7f05624e4b77502e3",
+        "hazy-cr01-v1/tools/common.py": "256352467528a5ad5b8b00724e73e877965f0ffa",
+        "hazy-cr01-v1/tools/integrate.py": "aeb3c63b44b45992cc9501231d60ef93c890bb94",
+        "hazy-cr01-v1/tools/prepare.py": "8f48648c0a1deb42d33d27a712b3ffa1a38e0062"
+      },
+      "preserved_members": [],
+      "removed": true,
+      "removed_at": "2026-11-09T23:51:23.193579+00:00"
+    },
+    {
+      "path": "Fixtures/Heaps/Similarity/Speckled-Fields/previews/hazy-sf01-v1.zip",
+      "sha256": "0a9ce9fe570b6b7f9a923af110f18b11956d0c25425c14e4a490946275284a40",
+      "size_bytes": 85097629,
+      "archive_receipt": "Fixtures/Heaps/Similarity/Speckled-Fields/provenance/archive.json",
+      "archive_receipt_sha256": "43af44b3dbd1c7a130b35bc7082a99c16dbabab579fdcbb2d3878ada4b9db4d3",
+      "verified": {
+        "members_matching_unpacked_bytes": 479,
+        "file_members": 487,
+        "text_members_in_git_history": 8,
+        "media_members_matching_unpacked_bytes": 249
+      },
+      "historical_git_blobs": {
+        "hazy-sf01-v1/README.md": "91d15f155367c9ed1dbfa777e2d3a3bd47e2f6f5",
+        "hazy-sf01-v1/acquired/README.md": "61bab7772c60979ca878c9223c8d6b2f35451b78",
+        "hazy-sf01-v1/tools/acquire.py": "1670d7021a27469e8018413436b68b6fa9a091cb",
+        "hazy-sf01-v1/tools/audit.py": "eaa351e61b46665a6ae6a41e9c2c7a8af26b2bd7",
+        "hazy-sf01-v1/tools/chunks.py": "0d313227272f8ef512c8b47ca88dc3f4cf1775ea",
+        "hazy-sf01-v1/tools/integrate.py": "063550ff32f1cc47fef562e2a685061534ab918b",
+        "hazy-sf01-v1/tools/review.py": "e6f51df5abd19b2883f2c5d204a17686e8f66663",
+        "hazy-sf01-v1/tools/test_acquire.py": "272f7bb120117c41cb389932e845c43cf6b17f64"
+      },
+      "preserved_members": [],
+      "removed": true,
+      "removed_at": "2026-11-09T23:51:23.197323+00:00"
+    },
+    {
+      "path": "Fixtures/Heaps/Similarity/Spreading-Patches/previews/hazy-bsp01-v1.zip",
+      "sha256": "9dc851b2d590e7e30ab6bcf14c15a481ec50eb9195665d5e2bfa9ac3d57cdea6",
+      "size_bytes": 149208192,
+      "archive_receipt": "Fixtures/Heaps/Similarity/Spreading-Patches/provenance/archive.json",
+      "archive_receipt_sha256": "ea198a3a7b4ac9b6c23176bb48b6132983958c60d4ab1e1eac151be7a2da4dfd",
+      "verified": {
+        "members_matching_unpacked_bytes": 676,
+        "file_members": 683,
+        "text_members_in_git_history": 7,
+        "media_members_matching_unpacked_bytes": 350
+      },
+      "historical_git_blobs": {
+        "hazy-bsp01-v1/README.md": "13aa4dc5448757d68c5ad10ad497f32885e31835",
+        "hazy-bsp01-v1/tools/audit.py": "987efe9db40e5d6d59183f9973487883097bba14",
+        "hazy-bsp01-v1/tools/chunks.py": "8cc1483d97b576c32ec88d72b22b893a0fad39e9",
+        "hazy-bsp01-v1/tools/common.py": "256352467528a5ad5b8b00724e73e877965f0ffa",
+        "hazy-bsp01-v1/tools/integrate.py": "d0a9656483fdba2e9f42e46844548d84d7f9a2f3",
+        "hazy-bsp01-v1/tools/prepare.py": "6d862eaf16411f3083d0731d275ab723c28601cd",
+        "hazy-bsp01-v1/tools/test_integrate.py": "d399fa69e2bb9ad5536a4b9a45b948dded196bc7"
+      },
+      "preserved_members": [],
+      "removed": true,
+      "removed_at": "2026-11-09T23:51:23.203016+00:00"
+    },
+    {
+      "path": "Fixtures/Heaps/Similarity/Tangled-Growth/previews/hazy-tg01-v1.zip",
+      "sha256": "d1218706085104a7fffda9bbe65f7b61f7e705be753c3d1ea5f240c797c2a0e4",
+      "size_bytes": 101899949,
+      "archive_receipt": "Fixtures/Heaps/Similarity/Tangled-Growth/provenance/archive.json",
+      "archive_receipt_sha256": "13b29557270aa1d87cc5ab73780cfd431145d2a955b9ed6276401d796497f773",
+      "verified": {
+        "members_matching_unpacked_bytes": 497,
+        "file_members": 504,
+        "text_members_in_git_history": 7,
+        "media_members_matching_unpacked_bytes": 240
+      },
+      "historical_git_blobs": {
+        "hazy-tg01-v1/README.md": "29a4c10ca5c1e24f166d395ecd46d51b65aad01b",
+        "hazy-tg01-v1/tools/audit.py": "ce43cf33778860bfc563f78cb96c5aeeea06ff62",
+        "hazy-tg01-v1/tools/chunks.py": "5b9bcf941185e6a64a84c36e3b79ec4556daa335",
+        "hazy-tg01-v1/tools/common.py": "256352467528a5ad5b8b00724e73e877965f0ffa",
+        "hazy-tg01-v1/tools/integrate.py": "3f611e02734971b353a515d29629db56c956ad60",
+        "hazy-tg01-v1/tools/prepare.py": "f8d9e03b7be9baa0415eb3aad997da9b6ea54922",
+        "hazy-tg01-v1/tools/test_integrate.py": "b1b74b08d9302a544d80906bbdc6e82986650d78"
+      },
+      "preserved_members": [],
+      "removed": true,
+      "removed_at": "2026-11-09T23:51:23.206950+00:00"
+    }
+  ],
+  "completed_at": "2026-11-09T23:51:23.207042+00:00",
+  "post_removal_validation": [
+    {
+      "command": "make -C Fixtures test-sampler",
+      "status": "passed",
+      "tests": 49
+    },
+    {
+      "command": "make -C Fixtures test-fixture-layout",
+      "status": "passed",
+      "tests": 31,
+      "collection_totals": "current"
+    },
+    {
+      "command": "make -C Fixtures test-relationships",
+      "status": "passed",
+      "tests": 10
+    },
+    {
+      "command": "Fixtures/.venv/bin/python Fixtures/tools/check_layout.py --full",
+      "status": "passed",
+      "leaves": 19
+    },
+    {
+      "check": "ZIP inventory, preserved text, original archive receipts and recorded Git blobs",
+      "status": "passed",
+      "remaining_zip_files": 0
+    }
+  ]
+}

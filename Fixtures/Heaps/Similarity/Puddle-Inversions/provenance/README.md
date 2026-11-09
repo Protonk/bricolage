@@ -21,5 +21,6 @@ not change selection decisions, acquisition status or provenance assertions.
 | [import-map.json](import-map.json) | Published input/source mapping; bytes and paths preserved. |
 | [integration.json](integration.json) | Result of publishing the integration stage into this leaf. |
 | [final-review.json](final-review.json) | Inspection of the published contact sheets, with their hashes. |
-| [archive.json](archive.json) | Hash and size of the local handoff archive under `../previews/`. |
+| [archive.json](archive.json) | Original hash and size of the handoff ZIP removed in the [cleanup](../../../../provenance/zip-cleanup-2026-11.json). |
+| [archive-history/](archive-history/README.md) | Exact earlier README and intake-receipt bytes preserved before removing the ZIP. |
 | [partials/](partials) | Reserved for incomplete API bodies; empty. |

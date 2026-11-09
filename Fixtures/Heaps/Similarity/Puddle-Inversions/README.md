@@ -112,8 +112,12 @@ image was cropped, resized or re-encoded locally.
 - `provenance/api/` preserves the raw API replies; `http_log.jsonl`,
   `acquisition.json`, `identity-audit.json`, `import-map.json` and
   `integration.json` separate transport, review, source checks and integration.
-- `previews/bricolage-pi01-v1.zip` is the local handoff archive with media,
-  previews and records. Media and archives are ignored by Git.
+- The optional `previews/bricolage-pi01-v1.zip` handoff was removed after its media
+  matched the unpacked files. Its receipt remains in `provenance/archive.json`;
+  earlier README and intake-receipt bytes are preserved in
+  [archive history](provenance/archive-history/README.md). The
+  [cleanup record](../../../provenance/zip-cleanup-2026-11.json) records the checks.
+  Media remains Git-ignored.
 
 The offline checker (`tools/integrate.py check`, run by `tools/check.py`)
 verifies source/input and preview hashes, measured dimensions, CSV/JSON

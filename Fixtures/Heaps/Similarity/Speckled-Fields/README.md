@@ -92,10 +92,12 @@ null. The collection assigns no new license.
   receipts, including URLs, response status, headers, bytes and hashes.
 - `provenance/import-map.json`: the 48 acquired catalog snapshots with final
   input paths. `acquisition.json` records the stopped acquisition and 11 pending
-  selections; `integration.json` and `archive.json` validate the acquired subset.
-- `previews/hazy-sf01-v1.zip`: local handoff containing source/input bytes,
-  preview evidence, metadata, credits and tools. Image and archive files are
-  Git-ignored; a checkout alone does not contain them.
+  selections; `integration.json` records validation of the acquired subset and
+  `archive.json` retains the original handoff checksum.
+- The optional `previews/hazy-sf01-v1.zip` handoff was removed after its media
+  matched the unpacked files. The
+  [cleanup record](../../../provenance/zip-cleanup-2026-11.json) records the checks.
+  Media remains Git-ignored; a checkout alone does not contain it.
 
 From the repository root, with Pillow installed in the chosen Python environment:
 

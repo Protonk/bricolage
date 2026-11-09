@@ -9,6 +9,7 @@ not change selection decisions, acquisition status or provenance assertions.
 | [acquisition.json](acquisition.json) | Preserved supporting evidence; historical fields and recorded paths retain their original meaning. |
 | [api/](api) | Preserved supporting evidence; historical fields and recorded paths retain their original meaning. |
 | [archive.json](archive.json) | Preserved supporting evidence; historical fields and recorded paths retain their original meaning. |
+| [archive-history/](archive-history/README.md) | Earlier credits and integration tool, plus their ZIP receipt, preserved before the [ZIP cleanup](../../../../provenance/zip-cleanup-2026-11.json). |
 | [baseline.json](baseline.json) | Preserved supporting evidence; historical fields and recorded paths retain their original meaning. |
 | [discovery_seeds.txt](discovery_seeds.txt) | Preserved supporting evidence; historical fields and recorded paths retain their original meaning. |
 | [discovery_sources.json](discovery_sources.json) | Preserved supporting evidence; historical fields and recorded paths retain their original meaning. |

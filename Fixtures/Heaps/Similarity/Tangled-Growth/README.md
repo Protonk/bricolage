@@ -108,9 +108,10 @@ not downloaded. See `preview-size-diagnosis.json`,
 
 Only manifest-listed `images/` files are comparison inputs. Sources, all 152 preview
 tiles, inspected contact sheets, selected contact sheets, diagnostic bodies,
-integration staging and `previews/hazy-tg01-v1.zip` remain local and Git-ignored.
-The ZIP contains the source/input bytes and textual evidence; its checksum is in
-`provenance/archive.json`. A checkout alone contains no media.
+and integration staging remain local and Git-ignored. A checkout alone contains
+no media. The optional `previews/hazy-tg01-v1.zip` was removed after its media
+matched the unpacked files. Its original checksum remains in `provenance/archive.json`;
+the [cleanup record](../../../provenance/zip-cleanup-2026-11.json) records the checks.
 
 ### Offline checks
 

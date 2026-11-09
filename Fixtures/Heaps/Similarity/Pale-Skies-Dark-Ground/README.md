@@ -87,9 +87,10 @@ prior local inventories; possible capture relationships were reviewed separately
   `acquisition.json`, `identity-audit.json`, `import-map.json`, `final-review.json`
   and `integration.json`
   distinguish transport, review, source checks and local integration.
-- `previews/hazy-ps01-v1.zip` is the local handoff, including source/input bytes,
-  preview evidence, metadata, credits and tools. Media and archives are ignored
-  by Git; a checkout alone does not contain them.
+- The optional `previews/hazy-ps01-v1.zip` handoff was removed after its media
+  matched the unpacked files. Its original receipt remains in `provenance/archive.json`;
+  the [cleanup record](../../../provenance/zip-cleanup-2026-11.json) records the checks.
+  Media remains Git-ignored; a checkout alone does not contain it.
 
 From the repository root, using Python with the pinned Pillow dependency:
 

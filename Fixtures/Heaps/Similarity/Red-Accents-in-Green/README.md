@@ -53,14 +53,15 @@ muted reds, paths, sky or buildings; per-image choices remain inspectable judgme
   metadata, acquisition receipts and request history.
 - `previews/candidates/` and `previews/contact-sheets/`: all 107 small previews;
   `previews/selected-01.jpg` and `selected-02.jpg`: final selected contact sheets.
-- `previews/hazy-rg01-v1.zip`: local package with inputs, preserved renditions,
-  manifests, credits, textual provenance and selected contact sheets.
+- The optional `previews/hazy-rg01-v1.zip` package was removed after its media
+  matched the unpacked files. Its original receipt remains in `provenance/archive.json`;
+  the [cleanup record](../../../provenance/zip-cleanup-2026-11.json) records the checks.
 
 `provenance/intake/candidates.csv` and `provenance/intake/candidates.jsonl` contain the updated screening/acquisition
 state. Their supplied versions and the original source index/README are retained
 under `provenance/supplied-*`. Candidate IDs identify lead rows. Stable input
 identities derive from Commons page ID and original file SHA-1, not a subject label.
-All image assets and the ZIP remain in Git-ignored asset directories.
+All image assets remain in Git-ignored asset directories.
 
 ### Similarity and compatibility
 
