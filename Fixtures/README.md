@@ -66,7 +66,7 @@ and records give the details.
 |---|---|
 | `sample` | Public sampler command |
 | `sampleWithout` | Draw from current fixtures excluding a supplied world's exact image IDs |
-| `collection` | Remove or re-pin an input, or regenerate collection totals and the source index |
+| `collection` | Remove or re-pin an input, reconcile local media with recorded removals, or regenerate collection totals and the source index |
 | [Sampler/](Sampler/README.md) | Sampler code, tests and versioned records |
 | [tools/](tools/README.md) | Layout checks, fixture creation and the optional comparison runner |
 | [Template/](Template/README.md) | Starting files for a new leaf |

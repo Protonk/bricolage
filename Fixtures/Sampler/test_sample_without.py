@@ -163,6 +163,9 @@ class SampleWithoutTests(unittest.TestCase):
             broken = copy.deepcopy(good)
             broken['images'][0].update(changes)
             invalid.append(broken)
+        # One identity under two filenames passes the filename checks; the ID check must catch it.
+        stem = good['images'][0]['file'].rsplit('.', 1)[0]
+        invalid.append(dict(good, images=[dict(good['images'][0], file=stem + extension) for extension in ('.jpg', '.png')]))
         for manifest in invalid:
             with self.subTest(manifest=manifest):
                 path.write_text(json.dumps(manifest))

@@ -8,7 +8,7 @@ import sys
 
 from fixture_layout import FIXTURES, discover, require
 from fixture_history import history, repin
-from collection_removal import remove_and_commit
+from collection_removal import reconcile, remove_and_commit
 import collection_totals
 import source_index
 
@@ -35,11 +35,23 @@ def resolve(selector, leaf=None, fixtures=FIXTURES):
     return *candidates[0], not matches
 
 
+def reconcile_hint(fixtures):
+    """Name the repair when a refused removal coincides with unretired local copies."""
+    try:
+        pending = reconcile(fixtures, dry_run=True)
+    except (ValueError, OSError, KeyError):
+        return ''
+    count = len(pending['preserved']) + len(pending['deleted'])
+    return (f'. {count} local file(s) belong to removals already recorded here; run Fixtures/collection reconcile, then retry'
+            if count else '')
+
+
 def main(fixtures=FIXTURES):
     parser = argparse.ArgumentParser(description=__doc__,
         epilog='From a neighboring repository: ../bricolage/Fixtures/collection remove sha256:HASH '
                '--reason "Reason for removal". Hash removal covers all byte-identical active copies, '
-               'checks the resulting collection and commits its files. Read complete and commit in the JSON response.')
+               'checks the resulting collection and commits its files. Read complete and commit in the JSON response. '
+               'After receiving a removal commit made elsewhere, run reconcile to retire the local image copies.')
     commands = parser.add_subparsers(dest='command', required=True)
     removal = commands.add_parser('remove', help='Remove all copies of a SHA-256 (or one input path), validate and commit')
     removal.add_argument('input')
@@ -47,6 +59,8 @@ def main(fixtures=FIXTURES):
     removal.add_argument('--reason', required=True)
     removal.add_argument('--commit-message', help='Commit message; defaults to the recorded reason')
     removal.add_argument('--dry-run', action='store_true')
+    local = commands.add_parser('reconcile', help='Retire local copies of images that committed receipts record as removed; no commit')
+    local.add_argument('--dry-run', action='store_true')
     pin = commands.add_parser('repin', help='Replace one active input with equivalent bytes and record why; no network')
     pin.add_argument('input')
     pin.add_argument('--from', dest='replacement', required=True, type=Path, help='Replacement file outside the leaf')
@@ -63,14 +77,22 @@ def main(fixtures=FIXTURES):
         output = fixtures / 'output'
         output.mkdir(exist_ok=True)
         with (output / 'collection.lock').open('a') as lock:
-            fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
+            try:
+                fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
+            except BlockingIOError:
+                raise ValueError('Another Fixtures/collection command is running; retry when it finishes') from None
             if args.command == 'totals':
                 result = collection_totals.update(fixtures, check=args.check)
             elif args.command == 'index':
                 result = source_index.update(fixtures, check=args.check)
+            elif args.command == 'reconcile':
+                result = reconcile(fixtures, dry_run=args.dry_run)
             elif args.command == 'remove':
-                result = remove_and_commit(fixtures, args.input, args.reason, leaf=args.leaf,
-                                           commit_message=args.commit_message, dry_run=args.dry_run)
+                try:
+                    result = remove_and_commit(fixtures, args.input, args.reason, leaf=args.leaf,
+                                               commit_message=args.commit_message, dry_run=args.dry_run)
+                except ValueError as error:
+                    raise ValueError(str(error) + reconcile_hint(fixtures)) from error
             else:
                 root, row, already = resolve(args.input, args.leaf, fixtures)
                 # Check every generation target before mutating the collection.
@@ -85,6 +107,8 @@ def main(fixtures=FIXTURES):
         print(json.dumps(result, indent=2))
         if result.get('status') == 'incomplete':
             parser.exit(1, 'collection: Removal is incomplete; preserve the JSON report and follow next_step.\n')
+        if result.get('refused'):
+            parser.exit(1, 'collection: Some local files were not reconciled; see refused in the JSON report.\n')
     except (ValueError, OSError, KeyError) as error:
         print(json.dumps(dict(schema_version=1, status='error', complete=False, error=str(error)), indent=2))
         parser.exit(1, f'collection: {error}\n')

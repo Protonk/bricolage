@@ -1,5 +1,6 @@
 """An authorized neighboring agent can remove an exact image and leave a checked commit."""
 from contextlib import redirect_stderr, redirect_stdout
+import fcntl
 import io
 import json
 from pathlib import Path
@@ -39,16 +40,23 @@ class RemovalTests(unittest.TestCase):
             shutil.copy2(layout.FIXTURES / executable, self.fixtures / executable)
         (self.fixtures / '.venv').symlink_to(layout.FIXTURES / '.venv', target_is_directory=True)
 
-    def run_remove(self, *extra, selector=None, reason='Remove unsuitable fixture'):
+    def run_collection(self, *arguments, fixtures=None):
         stdout, stderr = io.StringIO(), io.StringIO()
         status = 0
-        with patch('sys.argv', ['collection', 'remove', selector or self.image_id, '--reason', reason, *extra]), \
-                redirect_stdout(stdout), redirect_stderr(stderr):
+        with patch('sys.argv', ['collection', *arguments]), redirect_stdout(stdout), redirect_stderr(stderr):
             try:
-                collection.main(self.fixtures)
+                collection.main(fixtures or self.fixtures)
             except SystemExit as error:
                 status = error.code
         return status, json.loads(stdout.getvalue())
+
+    def run_remove(self, *extra, selector=None, reason='Remove unsuitable fixture'):
+        return self.run_collection('remove', selector or self.image_id, '--reason', reason, *extra)
+
+    def commit_unrelated(self):
+        (self.repo / 'unrelated.txt').write_text('later work\n')
+        self.git('add', 'unrelated.txt')
+        self.git('commit', '-qm', 'Unrelated later work')
 
     def other_alias_leaf(self):
         other = self.fixtures / 'Heaps/Other'
@@ -180,6 +188,182 @@ class RemovalTests(unittest.TestCase):
         self.assertEqual(history.catalogs(self.root), self.before)
         self.assertEqual(self.git('rev-parse', 'HEAD'), self.original_commit)
 
+    def test_dry_run_lists_only_files_the_removal_would_change(self):
+        self.setup_git()
+        _, planned = self.run_remove('--dry-run')
+        status, report = self.run_remove()
+        self.assertEqual(status, 0, report)
+        # Each plan names its own operation record; every other path is the same.
+        operations = 'Fixtures/' + removal.OPERATIONS + '/'
+        self.assertTrue(planned['changed_files'][-1].startswith(operations))
+        self.assertTrue(report['changed_files'][-1].startswith(operations))
+        self.assertEqual(planned['changed_files'][:-1], report['changed_files'][:-1])
+        self.assertNotIn('Fixtures/Relationships/Example/sources.csv', planned['changed_files'])
+        self.assertIn('Fixtures/Relationships/Example/provenance/removals/0001/receipt.json', planned['changed_files'])
+
+    def test_hash_removal_limited_to_one_leaf_leaves_the_other_alias_active(self):
+        other = self.other_alias_leaf()
+        self.setup_git()
+        status, report = self.run_remove('--leaf', str(other))
+        self.assertEqual(status, 0, report)
+        self.assertEqual(report['scope']['leaf'], 'Fixtures/Heaps/Other')
+        self.assertEqual(report['receipts'], ['Fixtures/Heaps/Other/provenance/removals/0001/receipt.json'])
+        self.assertEqual(report['checks']['remaining_aliases'], 1)
+        self.assertFalse(report['checks']['excluded_from_sampling'])
+        self.assertEqual(history.history(self.root), [])
+        self.assertTrue((self.root / 'images/0.png').exists())
+        status, report = self.run_remove()
+        self.assertEqual(status, 0, report)
+        self.assertEqual(report['receipts'], ['Fixtures/Relationships/Example/provenance/removals/0001/receipt.json'])
+        self.assertTrue(report['checks']['excluded_from_sampling'])
+
+    def test_repeats_name_the_commit_that_holds_the_receipt(self):
+        self.setup_git()
+        status, by_path = self.run_remove(selector=str(self.root / 'images/0.png'))
+        self.assertEqual(status, 0, by_path)
+        # A receipt written before operation records existed: committed, with no operation.
+        history.remove(self.root, self.rows[1], 'Earlier tooling')
+        collection_totals.update(self.fixtures)
+        self.git('add', 'Fixtures')
+        self.git('commit', '-qm', 'Earlier removal')
+        earlier = self.git('rev-parse', 'HEAD')
+        self.commit_unrelated()
+        for selector, commit in ((self.image_id, by_path['commit']), (str(self.root / 'images/0.png'), by_path['commit']),
+                                 (self.rows[1]['byte_sha256'], earlier)):
+            with self.subTest(selector=selector):
+                status, repeat = self.run_remove(selector=selector)
+                self.assertEqual(status, 0, repeat)
+                self.assertEqual(repeat['status'], 'already_removed')
+                self.assertEqual(repeat['commit'], commit)
+        self.assertEqual(self.git('rev-list', '--count', 'HEAD'), '4')
+
+    def test_uncommitted_earlier_receipt_is_not_reported_as_a_completed_removal(self):
+        self.setup_git()
+        history.remove(self.root, self.rows[0], 'Earlier tooling')
+        collection_totals.update(self.fixtures)
+        status, report = self.run_remove()
+        self.assertEqual(status, 1)
+        self.assertFalse(report['complete'])
+        self.assertIn('provenance/removals/0001/receipt.json', report['error'])
+        self.assertEqual(self.git('rev-parse', 'HEAD'), self.original_commit)
+
+    def test_preflight_refusals_leave_no_operation_or_receipt(self):
+        self.setup_git()
+        def refused(message):
+            status, report = self.run_remove()
+            self.assertEqual(status, 1)
+            self.assertIn(message, report['error'])
+            self.assertFalse((self.fixtures / removal.OPERATIONS).exists())
+            self.assertEqual(history.catalogs(self.root), self.before)
+            self.assertEqual(self.git('rev-parse', 'HEAD'), self.original_commit)
+        with self.subTest('another collection command holds the lock'):
+            (self.fixtures / 'output').mkdir(exist_ok=True)
+            with (self.fixtures / 'output/collection.lock').open('a') as held:
+                fcntl.flock(held, fcntl.LOCK_EX)
+                refused('Another Fixtures/collection command is running')
+        with self.subTest('unfinished merge'):
+            marker = self.repo / '.git/MERGE_HEAD'
+            marker.write_text(self.original_commit + '\n')
+            refused('Finish the current Git operation first')
+            marker.unlink()
+        with self.subTest('committed totals are stale'):
+            totals = self.fixtures / 'COLLECTIONS.md'
+            totals.write_text(totals.read_text() + 'A hand edit.\n')
+            self.git('commit', '-qam', 'Stale totals')
+            self.original_commit = self.git('rev-parse', 'HEAD')
+            refused('Stale collection totals')
+
+    def test_leaf_the_sampler_excludes_fails_validation_until_its_metadata_is_repaired(self):
+        # The layout check does not read the import map; the sampler does.
+        mapping = self.root / 'provenance/import-map.json'
+        mapping.write_text('{}\n')
+        self.setup_git()
+        status, report = self.run_remove()
+        self.assertEqual(status, 1)
+        self.assertEqual(report['status'], 'incomplete')
+        self.assertIn('excluded from the sampler', report['error'])
+        self.assertIsNone(report['commit'])
+        self.assertEqual(len(history.history(self.root)), 1)
+        mapping.write_text('[]\n')
+        self.git('add', str(mapping))
+        self.git('commit', '-qm', 'Repair import map')
+        status, completed = self.run_remove()
+        self.assertEqual(status, 0, completed)
+        self.assertEqual(completed['status'], 'removed')
+        self.assertEqual(len(history.history(self.root)), 1)
+        self.assertEqual(self.git('status', '--porcelain'), '')
+
+    def test_sampler_failure_during_validation_is_reported_and_resumed(self):
+        self.setup_git()
+        import sampler
+        with patch.object(sampler, 'build_inventory', side_effect=sampler.SamplerError('fixture', 'injected sampler failure')):
+            status, report = self.run_remove()
+        self.assertEqual(status, 1)
+        self.assertEqual(report['status'], 'incomplete')
+        self.assertIn('injected sampler failure', report['error'])
+        self.assertIn('retry the same removal command', report['next_step'])
+        self.assertEqual(len(history.history(self.root)), 1)
+        status, completed = self.run_remove()
+        self.assertEqual(status, 0, completed)
+        self.assertEqual(len(history.history(self.root)), 1)
+
+    def test_checkout_that_receives_a_removal_commit_reconciles_its_local_media(self):
+        self.other_alias_leaf()
+        self.setup_git()
+        # A second checkout at the same commit, holding its own untracked media.
+        second = Path(self.temp.name) / 'second/bricolage'
+        shutil.copytree(self.repo, second)
+        fixtures, leaf = second / 'Fixtures', second / 'Fixtures/Relationships/Example'
+        status, report = self.run_remove()
+        self.assertEqual(status, 0, report)
+        subprocess.run(['git', '-C', str(second), 'pull', '-q', str(self.repo), 'HEAD'], check=True, capture_output=True)
+        import sampler
+        self.assertEqual(sampler.build_inventory(second)['population']['unlisted_inputs'],
+                         ['Fixtures/Heaps/Other/images/0.png', 'Fixtures/Relationships/Example/images/0.png'])
+        other_id = 'sha256:' + self.rows[1]['byte_sha256']
+        for selector in (self.image_id, other_id):
+            status, blocked = self.run_collection('remove', selector, '--reason', 'Blocked', fixtures=fixtures)
+            self.assertEqual(status, 1)
+            self.assertIn('2 local file(s) belong to removals already recorded here; run Fixtures/collection reconcile',
+                          blocked['error'])
+        # Bytes the receipt does not describe are named and left alone.
+        changed = second / 'Fixtures/Heaps/Other/images/0.png'
+        original = changed.read_bytes()
+        changed.write_bytes(b'other bytes')
+        status, planned = self.run_collection('reconcile', '--dry-run', fixtures=fixtures)
+        self.assertEqual((status, planned['status'], planned['complete']), (1, 'planned', False))
+        self.assertTrue((leaf / 'images/0.png').exists())
+        status, partial = self.run_collection('reconcile', fixtures=fixtures)
+        self.assertEqual(status, 1)
+        self.assertFalse(partial['complete'])
+        self.assertEqual(partial['preserved'], [dict(
+            file='Fixtures/Relationships/Example/images/0.png',
+            preserved_image=f'Fixtures/Relationships/Example/previews/removed/{self.rows[0]["byte_sha256"]}.png')])
+        self.assertEqual(partial['refused'], [dict(file='Fixtures/Heaps/Other/images/0.png',
+                                                   reason='Bytes differ from the removal receipt')])
+        self.assertEqual(changed.read_bytes(), b'other bytes')
+        self.assertEqual(history.sha(leaf / f'previews/removed/{self.rows[0]["byte_sha256"]}.png'), self.rows[0]['byte_sha256'])
+        changed.write_bytes(original)
+        status, done = self.run_collection('reconcile', fixtures=fixtures)
+        self.assertEqual((status, done['complete'], len(done['preserved']), done['refused']), (0, True, 1, []))
+        status, again = self.run_collection('reconcile', fixtures=fixtures)
+        self.assertEqual((status, again['complete'], again['preserved'], again['deleted']), (0, True, [], []))
+        self.assertEqual(sampler.build_inventory(second)['population']['unlisted_inputs'], [])
+        self.assertEqual(layout.check_layout(leaf)['images'], 2)
+        self.assertEqual(subprocess.run(['git', '-C', str(second), 'status', '--porcelain'],
+                                        capture_output=True, text=True).stdout, '')
+        status, repeat = self.run_collection('remove', self.image_id, '--reason', 'Repeat', fixtures=fixtures)
+        self.assertEqual((status, repeat['status'], repeat['commit']), (0, 'already_removed', report['commit']))
+        status, removed = self.run_collection('remove', other_id, '--reason', 'Remove another', fixtures=fixtures)
+        self.assertEqual((status, removed['status']), (0, 'removed'))
+        # A stray copy beside an intact preserved one is deleted, not preserved twice.
+        archive = leaf / f'previews/removed/{self.rows[1]["byte_sha256"]}.png'
+        shutil.copyfile(archive, leaf / 'images/1.png')
+        status, stray = self.run_collection('reconcile', fixtures=fixtures)
+        self.assertEqual((status, stray['deleted']), (0, ['Fixtures/Relationships/Example/images/1.png']))
+        self.assertFalse((leaf / 'images/1.png').exists())
+        self.assertEqual(history.sha(archive), self.rows[1]['byte_sha256'])
+
     def test_existing_staged_or_unstaged_target_edits_stop_before_removal(self):
         self.setup_git()
         for target in (self.root / 'README.md', self.root / 'sources.csv'):
@@ -214,10 +398,17 @@ class RemovalTests(unittest.TestCase):
         status, changed = self.run_remove(reason='A different reason')
         self.assertEqual(status, 1)
         self.assertIn('original reason', changed['error'])
+        status, changed = self.run_remove('--commit-message', 'A different message')
+        self.assertEqual(status, 1)
+        self.assertIn('original reason and commit message', changed['error'])
         hook.unlink()
         status, completed = self.run_remove()
         self.assertEqual(status, 0, completed)
         self.assertTrue(completed['complete'])
+        # The retry made the commit, so it is a removal, not a repeat of one.
+        self.assertEqual(completed['status'], 'removed')
+        self.assertEqual(completed['commit'], self.git('rev-parse', 'HEAD'))
+        self.assertIn('Fixtures/Relationships/Example/manifest.json', completed['changed_files'])
         self.assertEqual(len(history.history(self.root)), 1)
         self.assertEqual(self.git('status', '--porcelain'), '')
         self.assertEqual(self.git('log', '-1', '--format=%s'), 'Remove unsuitable fixture')

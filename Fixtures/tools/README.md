@@ -31,13 +31,13 @@ Read the JSON response:
 
 | Field | Meaning |
 |---|---|
-| `status` | `removed`, `already_removed`, `planned`, `incomplete` or `error` |
+| `status` | `removed` when this invocation committed the removal, including a retry that finishes one; `already_removed` for a repeat; `planned`, `incomplete` or `error` |
 | `complete` | True only after validation and a committed result; false for a preview or unfinished operation |
 | `image_id` | Exact byte identity being removed |
 | `checks` | Affected-collection validation, generated-file checks, and sampler check; `excluded_from_sampling` confirms no active alias remains anywhere |
-| `commit` | The resulting commit hash, or the existing commit on a completed repeat; null before completion |
+| `commit` | The resulting commit hash, or on a completed repeat the latest commit that holds its receipts; null before completion |
 | `receipts` | Repository-relative removal receipt paths |
-| `changed_files` | Repository-relative paths committed by this operation; planned paths on a preview |
+| `changed_files` | Repository-relative paths committed by this operation; on a preview, the paths it would create or change |
 | `operation` | Absolute path of the operation record, when one is planned or in progress |
 | `error`, `next_step` | Named failure and recovery instruction when completion fails |
 
@@ -78,7 +78,10 @@ named problem. The retry accepts only the operation's recorded intermediate
 states, finishes remaining aliases and bookkeeping, and creates no duplicate
 removal receipts. It retains the original reason and commit message. A different
 removal must wait until that pending operation is finished. Unexpected edits
-in an affected file or its index entry are named and left intact.
+in an affected file or its index entry are named and left intact. A sampler
+failure during validation is reported the same way. There is no abandon
+command: an operation whose problem cannot be resolved is undone by hand, by
+restoring its files from Git and its receipts' images from `previews/removed/`.
 
 Ordinary write failures within one leaf roll back that leaf's catalogs and media.
 Completed removals in other leaves remain recorded and are resumed. A process
@@ -88,6 +91,29 @@ The operation record does not promise a transaction across the filesystem and
 Git. Repeating a completed operation returns `already_removed` and its commit
 without creating another commit. Historical removals made before operation
 records existed must already be committed to be recognized as complete.
+
+## Reconciling local media with recorded removals
+
+```sh
+Fixtures/collection reconcile
+Fixtures/collection reconcile --dry-run
+```
+
+A removal commit carries catalogs and receipts. Media is untracked, so a
+checkout that receives the commit by pull, merge or checkout still holds the
+image under `images/`. The sampler then reports it as an `unlisted-input`
+problem on every draw, and the layout check refuses further removals in that
+leaf. A refused `remove` names this command when it applies.
+
+`reconcile` reads every leaf's removal receipts. A file at a removed input's
+path that is absent from the active manifest and has exactly the receipt's
+bytes moves to the receipt's `previews/removed/` path, or is deleted when that
+preserved copy already exists intact. Files with other bytes, and files beside
+a preserved copy with other bytes, are listed under `refused` and left alone.
+The response lists `preserved`, `deleted` and `refused`; `complete` is true
+when nothing was refused, and a refusal exits 1. Nothing tracked changes: it
+writes no receipts and makes no commit, and repeating it does nothing more.
+`--dry-run` reports the same lists without moving anything.
 
 ## Re-pinning an input and updating totals
 
@@ -137,7 +163,10 @@ The removal tests run in disposable `collection-test-*` checkouts under
 `Fixtures/output/`. They exercise the public neighboring-repository commands,
 exact aliases within and across leaves, an emptied population, scoped paths,
 unrelated staged/unstaged work, interrupted bookkeeping, rejected commits and
-safe retries. Their worlds, repositories and records are removed at teardown.
+safe retries. They also cover leaf-limited hash removal, the commit named by a
+repeat, preflight refusals (a held lock, an unfinished merge, stale committed
+totals), sampler failures during validation, and a second checkout that
+reconciles its media after receiving a removal commit. Their worlds, repositories and records are removed at teardown.
 
 ## The source index
 

@@ -11,6 +11,8 @@ world's `world.json` is needed, even after removing one of its images here.
 For an authorized image removal, follow the [removal fast path](../AGENTS.md#remove-an-image-you-are-authorized-to-remove).
 `collection remove HASH --reason TEXT` updates, validates and commits its files;
 an incomplete result must be preserved and resumed, not reported as a success.
+After receiving a removal commit made elsewhere, `collection reconcile` retires
+the local image copies its receipts name; it commits nothing.
 
 Before changing fixtures or tools, read [README.md](README.md), then the guide for the work:
 

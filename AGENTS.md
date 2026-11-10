@@ -64,6 +64,11 @@ refused before removal; unrelated staged and unstaged work is preserved.
 Removal keeps source evidence and existing worlds. Draw again for a clean world;
 do not edit a saved sample, its records or its manifest by hand.
 
+Media is untracked. In a checkout that received a removal commit rather than
+making it, run `../bricolage/Fixtures/collection reconcile` once: it retires
+the local copies named by the receipts and commits nothing. Draws report those
+copies as `unlisted-input` problems until then.
+
 ## Change this repository
 
 Read [README.md](README.md), then [Fixtures/AGENTS.md](Fixtures/AGENTS.md) and the

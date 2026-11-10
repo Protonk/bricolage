@@ -1203,6 +1203,9 @@ def request_from_args(args, inventory, source=None):
     """Translate either CLI's arguments and read world IDs into one draw request."""
     exclusion = match_exclusion(source, inventory) if source is not None else None
     if exclusion is not None:
+        # No match can also mean the world's images sit in a leaf the inventory excluded
+        # for unreadable metadata. This message does not say so; `Fixtures/sample inventory`
+        # names excluded leaves. Other indirect causes are likewise left to that report.
         require(exclusion['matched_count'] > 0, 'usage',
                 f'No image IDs in {Path(args.excluded_world) / WORLD_MANIFEST} match eligible fixtures', exclusion=exclusion)
         require(args.size <= exclusion['remaining_eligible'], 'usage',

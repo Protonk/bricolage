@@ -3,8 +3,13 @@
 An immutable operation record pins the scope and pre-change files. It lets a
 retry distinguish our unfinished edits from somebody else's work. Per-leaf
 receipts remain the authority for membership and preserved image bytes.
+
+A removal commit carries catalogs and receipts; media stays local. `reconcile`
+finishes the media half in a checkout that received the commit some other way.
 """
+import fcntl
 import json
+import os
 from pathlib import Path
 import re
 import subprocess
@@ -190,7 +195,11 @@ def validate_removal(fixtures, scope, leaves):
     collection_totals.update(fixtures, check=True)
     sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'Sampler'))
     import sampler
-    inventory = sampler.build_inventory(fixtures.parent)
+    try:
+        inventory = sampler.build_inventory(fixtures.parent)
+    except sampler.SamplerError as error:
+        # Report it like any other failed check, so a partial removal keeps its JSON report.
+        raise ValueError(f'The sampler could not read the fixtures: {error}') from error
     remaining = [alias for image in inventory['population']['images'] if image['image_id'] == scope['image_id']
                  for alias in image['aliases']]
     scoped = [alias for alias in remaining if (scope['leaf'] is None or alias['fixture_path'] == scope['leaf'])
@@ -224,12 +233,11 @@ def remove_and_commit(fixtures, selector, reason, *, leaf=None, commit_message=N
         checks = validate_removal(fixtures, scope, leaves)
         receipts = [(entry['entry'] / 'receipt.json').relative_to(git.repo).as_posix() for _, entry in removed]
         git.clean(receipts)
-        previous = [(path, plan) for path, plan in plans if plan['scope'] == scope]
-        for _, plan in previous:
-            git.clean(plan['before_sha256'])
-        commit = (git.run('log', '-1', '--format=%H', '--',
-                         *(path.relative_to(git.repo).as_posix() for path, _ in previous)).strip()
-                  if previous else git.run('rev-parse', 'HEAD').strip())
+        for _, plan in plans:
+            if plan['scope'] == scope:
+                git.clean(plan['before_sha256'])
+        # The receipts are committed with their removal, whichever scope or tool version made it.
+        commit = git.run('log', '-1', '--format=%H', '--', *receipts).strip()
         return dict(schema_version=1, status='already_removed', complete=True, image_id=scope['image_id'],
                     checks=checks, receipts=receipts, changed_files=[], commit=commit)
     else:
@@ -241,7 +249,11 @@ def remove_and_commit(fixtures, selector, reason, *, leaf=None, commit_message=N
                   receipts=[target['receipt'] for target in plan['targets']],
                   changed_files=[], checks=None, commit=None)
     if dry_run:
-        result['changed_files'] = sorted(plan['before_sha256'])
+        # Pinned files that stay as they are (a source catalog, say) are not changes.
+        result['changed_files'] = sorted(
+            name for name, old in plan['before_sha256'].items()
+            if old is None or len(plan['catalog_states'].get(name, ())) > 1
+            or plan['generated_after_sha256'].get(name, old) != old)
         return result
     try:
         if not path.exists():
@@ -265,7 +277,7 @@ def remove_and_commit(fixtures, selector, reason, *, leaf=None, commit_message=N
         result['commit'] = git.commit(paths, plan['commit_message'])
         for name in paths:
             require(git.blob_hash('HEAD', name) == file_hash(git.repo / name), f'Commit differs from checked file: {name}')
-        result.update(status='removed' if active else 'already_removed', complete=True)
+        result.update(status='removed', complete=True)  # Also when a retry finishes the operation.
     except (ValueError, OSError, KeyError) as error:
         result['error'] = str(error)
         result['changed_files'] = []
@@ -277,3 +289,49 @@ def remove_and_commit(fixtures, selector, reason, *, leaf=None, commit_message=N
                 result.setdefault('inspection_errors', []).append(f'{name}: {inspection_error}')
         result['next_step'] = f'Preserve this report and retry the same removal command to finish {path}.'
     return result
+
+
+def reconcile(fixtures, *, dry_run=False):
+    """Retire local copies of images that committed receipts already record as removed.
+
+    Receipts stay the authority: a file is touched only when it is absent from the
+    active manifest and has exactly the receipt's bytes. Nothing tracked changes, so
+    there are no new receipts and no commit. Other bytes are named and left alone.
+    """
+    fixtures = Path(fixtures).resolve()
+    repo = fixtures.parent
+    preserved, deleted, refused = [], [], []
+    for root in discover(fixtures):
+        removals = [entry['receipt'] for entry in history.history(root) if entry['kind'] == 'removal']
+        active = {row['file'] for row in json.loads((root / 'manifest.json').read_text())['images']}
+        stale = [receipt for receipt in removals if receipt['image']['file'] not in active
+                 and os.path.lexists(history.safe(root, receipt['image']['file']))]
+        if not stale:
+            continue
+        (root / 'previews').mkdir(exist_ok=True)
+        with (root / 'previews/change.lock').open('a') as lock:
+            fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
+            for receipt in stale:
+                row = receipt['image']
+                image, archive = root / row['file'], history.safe(root, receipt['preserved_image'])
+                name = image.relative_to(repo).as_posix()
+                require(Path(receipt['preserved_image']).parts[:2] == ('previews', 'removed'), 'Invalid preserved-image path')
+                if not os.path.lexists(image):
+                    continue  # An earlier receipt for the same path already retired it in this run.
+                if image.is_symlink() or not image.is_file():
+                    refused.append(dict(file=name, reason='Not a regular file'))
+                elif history.sha(image) != row['byte_sha256']:
+                    refused.append(dict(file=name, reason='Bytes differ from the removal receipt'))
+                elif archive.exists() and history.sha(archive) != row['byte_sha256']:
+                    refused.append(dict(file=name, reason=f'Preserved copy has other bytes: {archive.relative_to(repo).as_posix()}'))
+                elif archive.exists():
+                    deleted.append(name)
+                    if not dry_run:
+                        image.unlink()
+                else:
+                    preserved.append(dict(file=name, preserved_image=archive.relative_to(repo).as_posix()))
+                    if not dry_run:
+                        archive.parent.mkdir(parents=True, exist_ok=True)
+                        os.replace(image, archive)
+    return dict(schema_version=1, status='planned' if dry_run else 'reconciled', complete=not refused and not dry_run,
+                preserved=preserved, deleted=deleted, refused=refused)
