@@ -7,11 +7,24 @@ third-party packages or network access.
 
 ## Use
 
-The public executable is [`Fixtures/sample`](../sample), at the fixture root.
-It selects `Fixtures/.venv` regardless of the caller's working directory
-or activated environment. Python 3.14.x is the only runtime and test target.
+From a neighboring repository:
 
-From the repository root, set up once using an installed Python 3.14.x:
+```sh
+../bricolage/Fixtures/sample 100
+```
+
+Replace 100 with N. The public executable is [`Fixtures/sample`](../sample), at
+the fixture root. It selects `Fixtures/.venv` regardless of the caller's working
+directory or activated environment. Read `output` first in its JSON response:
+`published: true` means a complete world is ready at `directory`, identified by
+`world_id`, with `image_count` images. Give that directory to the consumer.
+Check `receipt_recorded` and `problems` too, including on exit 1. `next_steps`
+explains publication recovery when needed. No imports, inventory preparation or
+directory change are required.
+
+If the environment is missing, the launcher prints a setup command that works
+from any directory. Python 3.14.x is the only runtime and test target. From the
+repository root, set up once using an installed Python 3.14.x:
 
 ```sh
 make -C Fixtures setup-python
@@ -45,8 +58,16 @@ names and source records stay in this repository. The world ID is the sample ID,
 which connects it to the saved draw. [WORLD.md](../../WORLD.md) specifies what a
 consumer may rely on.
 
-The default world directory is `Fixtures/output/sampled/`; `--world DIR` writes
-elsewhere. The copies are Git-ignored and disposable; editing them cannot change
+The default world directory is `Fixtures/output/worlds/<sample_id>/`. Every new
+draw gets its own directory, including concurrent draws. Later draws leave
+earlier worlds intact. Default `publish SAMPLE_ID` reuses that draw's directory;
+`--world DIR` chooses a destination explicitly and replaces an existing world
+there. Relative paths resolve from the caller's working directory. Older worlds
+at `Fixtures/output/sampled/` remain untouched unless explicitly chosen with
+`--world`. Worlds accumulate; remove a world's directory once its consumers
+have finished, keeping its records if it needs to be republished.
+
+The copies are Git-ignored under `output/` and disposable; editing them cannot change
 the fixture originals. Copies are verified and the manifest written in a staged
 directory before the previous world is replaced, so a visible world is complete.
 Existing directories are exchanged atomically using the operating system's
@@ -141,19 +162,38 @@ draw. Use a fresh `inventory` or the default `draw` to reflect today's availabil
 
 ## JSON responses
 
-Draw responses have `schema_version: 1` and these fields:
+Draw responses have `schema_version: 1` and these fields. Draw and publish
+responses put `output` immediately after `schema_version` and `store` for easy
+inspection; programs should access JSON fields by name.
 
 | Field | Use |
 |---|---|
 | `store` | Absolute path of the record store this command read or wrote; absent from errors that prevent completion |
+| `output` | World handoff, described below; also returned by `publish` |
 | `draw` | Original persistent record, including `sample_id`, `image_ids`, seed and inventory ID |
 | `population` | Snapshot ID and file, `counts`, every leaf with its status, the `checkout` hint and population `problems` |
 | `population.counts.eligible` | M, the number of eligible distinct images in this draw's snapshot |
 | `summary.by_leaf` | How many selected images each leaf contributed |
 | `images` | Draw order; each item has `position`, `image_id`, `sampled_path` for its copy in the world, `available_path` for its fixture original, and all alias `locations` with current statuses |
 | `current_check` | Record reproduction and current file/metadata verification; `ok` means no problems, while `publication_ready` means records/metadata/logs are valid and at least one copy of every selected image is available |
-| `output` | Absolute world `directory` and `manifest` path, `published` and `receipt_recorded` Booleans, and `error` if installation or receipt writing failed |
 | `problems` | Every problem found, each with a `kind`; empty when the exit code is 0 |
+
+The `output` block contains:
+
+| Field | Use |
+|---|---|
+| `world_id` | Saved sample ID, also used in `world.json` when published |
+| `image_count` | Number of images published by this request; zero when nothing was published or for a successful zero-image draw |
+| `directory`, `manifest` | Absolute paths of the published world and its manifest; null if this request did not publish |
+| `published` | Whether this request installed a complete world ready for a consumer; distinguishes an empty world from a failed publication |
+| `receipt_recorded` | Whether the publication receipt was appended successfully |
+| `next_steps` | Publication recovery instructions, empty on success; failed publication retains the selection and gives a command to republish it, while receipt failure requires log inspection before retrying |
+| `error` | Present if installation or receipt writing failed |
+
+`published` describes byte verification and installation. It does not promise
+that every image decodes, or that the overall report has no problems. A failed
+request can leave a previous world at an explicit destination; the null paths
+and zero count describe this request, not that previous world's contents.
 
 Responses, records and the world manifest keep their `schema_version` while changes are
 additive: fields may be added, never removed or retyped, and readers ignore fields
@@ -175,8 +215,8 @@ sample = json.loads(result.stdout)
 if result.returncode:
     print(json.dumps(sample, indent=2), file=sys.stderr)
     raise SystemExit(result.returncode)
-sample_id = sample["draw"]["sample_id"]
-image_paths = [item["sampled_path"] for item in sample["images"]]
+world_directory = sample["output"]["directory"]
+world_id = sample["output"]["world_id"]
 ```
 
 This example stops on any problem. A caller can instead examine an exit-1
@@ -195,6 +235,9 @@ one-line message on stderr. Codes are `usage` (arguments or request), `fixture`
 (a leaf's metadata, with its `leaf` path), `record-missing`, `record-invalid`,
 `record-damaged` (a checksum differs), `output` (the disposable directory) and `io`.
 Nothing is repaired on failure; fix the fixture or record the message names.
+Destination errors include `error.next_step` with guidance to choose a new
+destination or resolve the named conflict. Missing-environment and wrong-version
+messages include a setup command that works from the caller's directory.
 
 `draw` persists the original selection before checking current availability; a
 missing file never causes a replacement draw. An oversized request is rejected
@@ -382,3 +425,11 @@ Fixtures/sample verify draw-82acd83c6cd540a6bf4e29610ff5dc2d
 Fixtures/sample publish draw-82acd83c6cd540a6bf4e29610ff5dc2d
 make -C Fixtures test-sampler
 ```
+
+The mechanics tests create temporary `sampler-test-*` directories under
+`Fixtures/output/` and remove them with their worlds and records on completion.
+The neighboring-repository test installs the launcher and engine in a temporary
+checkout, reuses the existing Python environment, and runs concurrent draws from
+a sibling directory with no configuration flags. It checks the handoff using
+only `output` and `world.json`, preserves earlier worlds, and republishes a saved
+draw. No real sibling repository or user folder is used for test output.

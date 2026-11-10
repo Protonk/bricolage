@@ -1,6 +1,10 @@
 # Working on Fixtures
 
-Read [README.md](README.md), then the guide for the work:
+For an ordinary draw, use `Fixtures/sample N` from the repository root and read
+the JSON `output` block. The [sampling fast path](../AGENTS.md#just-draw-images)
+also works from neighboring repositories; no further guide reading is required.
+
+Before changing fixtures or tools, read [README.md](README.md), then the guide for the work:
 
 - Collection files and intake: [FORMAT.md](FORMAT.md), the
   [template](Template/README.md), and the relevant leaf README.

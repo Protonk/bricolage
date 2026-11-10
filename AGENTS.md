@@ -1,5 +1,34 @@
 # Working on bricolage
 
+## Just draw images
+
+From a neighboring repository, run:
+
+```sh
+../bricolage/Fixtures/sample 100
+```
+
+Replace `100` with N. From this repository, use `Fixtures/sample N`; an absolute
+path to that executable also works. It uses its own Python environment and local
+images. No directory change, imports, inventory preparation or further guide
+reading is needed for an ordinary draw.
+
+Read the JSON `output` block first. `published: true` means the world is ready at
+`directory`; `world_id` identifies it and `image_count` counts its images.
+Give that directory to the consumer, which reads `world.json` and the image files.
+Check `receipt_recorded` and `problems` too; exit 1 may still have a usable world.
+Follow `output.next_steps` for publication failures. Exit 2 reports an `error`.
+
+Each draw gets its own directory under `Fixtures/output/worlds/`. Use `--world DIR`
+to choose a destination deliberately; an existing world there is replaced.
+Use `--seed TEXT` for a recorded seed and `--keep` **before** N only when its
+records should be committed. Ordinary draws use disposable scratch records.
+Do not assemble an unrecorded sample or substitute other images on failure.
+If the environment is missing, run the setup command printed by the launcher.
+See [WORLD.md](WORLD.md) when implementing a consumer.
+
+## Change this repository
+
 Read [README.md](README.md), then [Fixtures/AGENTS.md](Fixtures/AGENTS.md) and the
 guide for the sampler or collection being changed. [CONTRIBUTING.md](CONTRIBUTING.md)
 describes fixture design and how the documentation fits together.

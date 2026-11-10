@@ -10,24 +10,50 @@ and samples from published collections. Those choices help frame a test. A crop
 and its source have a known relationship; how well an image matcher connects
 them is still something to test.
 
-## Try a sample
+## Get N images
 
-With Python 3.14.x installed, run from the repository root:
+From a neighboring repository:
 
 ```sh
-make -C Fixtures setup-python
-Fixtures/sample 12 --seed first-look
+../bricolage/Fixtures/sample 100
 ```
 
-Sampling needs no third-party Python packages or network access. It does need
-the local images: Git stores the catalogs and tools, while media is ignored.
-On a fresh checkout, restore the supplied assets at their recorded paths.
+Replace `100` with N. From this repository, use `Fixtures/sample N`; an absolute
+path to the executable also works. It uses bricolage's Python environment,
+regardless of your working directory or activated environment. No imports or
+inventory preparation are needed.
 
-The command writes a **world** to `Fixtures/output/sampled/`: twelve image
-copies, named by their byte hashes, and a `world.json` listing them. The next
-successful draw replaces that directory. Use `--world Fixtures/output/NAME`
-to keep separate worlds. The JSON response includes the sample ID, selected
-images, record store and any problems.
+The JSON response starts with an `output` block after its schema and store:
+
+```json
+{
+  "world_id": "draw-<32 hex digits>",
+  "image_count": 100,
+  "directory": "/absolute/path/to/bricolage/Fixtures/output/worlds/draw-<32 hex digits>",
+  "manifest": "/absolute/path/to/bricolage/Fixtures/output/worlds/draw-<32 hex digits>/world.json",
+  "published": true,
+  "receipt_recorded": true,
+  "next_steps": []
+}
+```
+
+When `output.published` is true, give `output.directory` to the consumer. This
+**world** holds N image copies named by their byte hashes and a `world.json`
+listing them. Each draw has a separate directory, so later draws leave it intact.
+Use `--world DIR` to choose a destination; an existing world there is replaced.
+Use `--seed TEXT` to supply a seed; otherwise one is generated and recorded.
+
+Check `problems` and `output.receipt_recorded` too. Exit 0 means no problems;
+exit 1 can still leave a usable world, with publication recovery instructions in
+`output.next_steps`. Exit 2 reports an `error` and the command did not complete.
+The [sampler guide](Fixtures/Sampler/README.md) explains these outcomes.
+
+If the Python environment is missing, follow the launcher's setup instruction.
+With Python 3.14.x installed, setup from this repository is
+`make -C Fixtures setup-python`. Sampling needs no third-party packages or
+network access. It does need the local images: Git stores catalogs and tools,
+while media is ignored. On a fresh checkout, restore supplied assets at their
+recorded paths.
 
 Each distinct file hash has an equal chance of selection. Byte-identical copies
 share one place in the draw; crops and different encodings count separately.

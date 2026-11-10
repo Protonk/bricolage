@@ -8,6 +8,7 @@ import json
 import stat
 import os
 from pathlib import Path
+import shlex
 import shutil
 import subprocess
 import sys
@@ -24,9 +25,9 @@ if sys.version_info[:2] != (3, 14):
 
 class SamplerTests(unittest.TestCase):
     def setUp(self):
-        self.temp = tempfile.TemporaryDirectory()
+        self.temp = tempfile.TemporaryDirectory(prefix='sampler-test-', dir=s.REPO / 'Fixtures/output')
         self.addCleanup(self.temp.cleanup)
-        self.repo = Path(self.temp.name) / 'checkout'
+        self.repo = Path(self.temp.name) / 'bricolage'
         self.store = self.repo / 'Fixtures/Sampler/records'
         for area in ('Heaps', 'Relationships'):
             (self.repo / 'Fixtures' / area).mkdir(parents=True)
@@ -290,7 +291,7 @@ class SamplerTests(unittest.TestCase):
         for image in response['images']:
             self.assertEqual('sha256:' + s.file_hash(Path(image['available_path'])), image['image_id'])
             copied = Path(image['sampled_path'])
-            self.assertEqual(copied.parent, (self.repo / 'Fixtures/output/sampled').resolve())
+            self.assertEqual(copied.parent, (self.repo / 'Fixtures/output/worlds' / draw['sample_id']).resolve())
             self.assertEqual('sha256:' + s.file_hash(copied), image['image_id'])
             self.assertEqual(copied.stem, image['image_id'].removeprefix('sha256:'))  # No position prefix.
         self.assertTrue(response['output']['published'])
@@ -299,6 +300,99 @@ class SamplerTests(unittest.TestCase):
         old_syntax = subprocess.run([*command, 'draw', '3', '--seed', 'public engine'],
                                     cwd=self.temp.name, capture_output=True, text=True, check=True)
         self.assertEqual(json.loads(old_syntax.stdout)['draw']['image_ids'], draw['image_ids'])
+
+    def test_neighbor_can_draw_concurrently_and_republish_without_configuration(self):
+        # Exercise the actual documented entry point with its own checkout and runtime.
+        fixtures = self.repo / 'Fixtures'
+        (fixtures / 'Sampler').mkdir()
+        shutil.copy2(s.REPO / 'Fixtures/sample', fixtures / 'sample')
+        shutil.copy2(s.__file__, fixtures / 'Sampler/sampler.py')
+        (fixtures / '.venv').symlink_to(s.REPO / 'Fixtures/.venv', target_is_directory=True)
+        consumer = Path(self.temp.name) / 'neighbor with spaces'
+        consumer.mkdir()
+        legacy = fixtures / 'output/sampled'
+        legacy.mkdir(parents=True)
+        (legacy / 'world.json').write_text('{"schema_version":1,"world_id":"old","images":[]}')
+        legacy_bytes = (legacy / 'world.json').read_bytes()
+        environment = dict(os.environ, VIRTUAL_ENV=str(consumer / 'unrelated-environment'))
+
+        def run(*args):
+            return subprocess.run(['../bricolage/Fixtures/sample', *args], cwd=consumer,
+                                  env=environment, capture_output=True, text=True)
+
+        with concurrent.futures.ThreadPoolExecutor(max_workers=2) as pool:
+            runs = list(pool.map(run, ['2', '3']))
+        outputs = []
+        snapshots = {}
+        for size, result in zip((2, 3), runs):
+            self.assertEqual(result.returncode, 0, result.stderr)
+            report = json.loads(result.stdout)
+            self.assertEqual(list(report)[:3], ['schema_version', 'store', 'output'])
+            output = report['output']
+            outputs.append(output)
+            self.assertTrue(output['published'])
+            self.assertTrue(output['receipt_recorded'])
+            self.assertEqual(output['image_count'], size)
+            self.assertEqual(output['next_steps'], [])
+            world = Path(output['directory'])
+            self.assertTrue(world.is_absolute())
+            self.assertEqual(world, fixtures / 'output/worlds' / output['world_id'])
+            self.assertEqual(Path(output['manifest']), world / 'world.json')
+            manifest = json.loads(Path(output['manifest']).read_text())
+            self.assertEqual(manifest['world_id'], output['world_id'])
+            self.assertEqual(len(manifest['images']), size)
+            self.assertEqual({p.name for p in world.iterdir()},
+                             {'world.json'} | {entry['file'] for entry in manifest['images']})
+            for entry in manifest['images']:
+                self.assertEqual('sha256:' + s.file_hash(world / entry['file']), entry['id'])
+            snapshots[world] = {p.name: p.read_bytes() for p in world.iterdir()}
+        self.assertNotEqual(outputs[0]['directory'], outputs[1]['directory'])
+        self.assertEqual(run('1').returncode, 0)
+        repeated = run('publish', outputs[0]['world_id'])
+        self.assertEqual(repeated.returncode, 0, repeated.stderr)
+        self.assertEqual(json.loads(repeated.stdout)['output'], outputs[0])
+        for world, before in snapshots.items():
+            self.assertEqual({p.name: p.read_bytes() for p in world.iterdir()}, before)
+        self.assertEqual((legacy / 'world.json').read_bytes(), legacy_bytes)
+        self.assertEqual(list(consumer.iterdir()), [])
+        self.assertFalse((fixtures / 'Sampler/records').exists())
+        self.assertEqual(list(fixtures.rglob('.world-*')), [])
+
+    def test_failed_publication_recovery_command_reuses_the_saved_draw(self):
+        store = self.repo / 'Fixtures/output/records with spaces'
+        target = self.repo / 'Fixtures/output/world with spaces'
+        stdout = io.StringIO()
+        with patch.object(s.shutil, 'copyfile', side_effect=OSError('disk full')), contextlib.redirect_stdout(stdout):
+            status = s.main(['--repo', str(self.repo), '--store', str(store), '3', '--world', str(target)])
+        self.assertEqual(status, 1)
+        report = json.loads(stdout.getvalue())
+        output = report['output']
+        self.assertFalse(output['published'])
+        self.assertEqual(output['image_count'], 0)
+        self.assertIsNone(output['directory'])
+        self.assertIsNone(output['manifest'])
+        self.assertEqual(output['world_id'], report['draw']['sample_id'])
+        self.assertFalse(target.exists())
+        command = output['next_steps'][0].split('selection: ', 1)[1]
+        result = subprocess.run(shlex.split(command), cwd=self.temp.name, capture_output=True, text=True)
+        self.assertEqual(result.returncode, 0, result.stderr)
+        recovered = json.loads(result.stdout)
+        self.assertTrue(recovered['output']['published'])
+        self.assertEqual(recovered['output']['image_count'], 3)
+        self.assertEqual(recovered['output']['world_id'], output['world_id'])
+        self.assertEqual(recovered['output']['directory'], str(target))
+        self.assertEqual(recovered['store'], str(store))
+        self.assertEqual([image['image_id'] for image in recovered['images']], report['draw']['image_ids'])
+        self.assertEqual(len(s.list_draws(store)['draws']), 1)
+
+    def test_default_world_conflict_is_refused_before_records_are_created(self):
+        # A custom store occupying the default worlds root must be caught before drawing.
+        store = self.repo / 'Fixtures/output/worlds'
+        result = self.cli('--store', str(store), '2')
+        self.assertEqual(result.returncode, 2, result.stderr)
+        self.assertEqual(json.loads(result.stdout)['error']['code'], 'output')
+        self.assertFalse(store.exists())
+        self.assertEqual(s.list_draws(self.store)['draws'], [])
 
     def test_world_is_relocatable_opaque_and_receipted(self):
         world = (Path(self.temp.name) / 'elsewhere' / 'world one').resolve()
@@ -353,7 +447,7 @@ class SamplerTests(unittest.TestCase):
         self.assertEqual(json.loads((other / 'world.json').read_text()), manifests[1])  # Previous world intact.
         self.assertEqual(len(s.inspect_draw(self.store, sample_id, self.repo)['annotation_history']), 2)
 
-    def test_next_draw_replaces_only_a_previous_world_and_copies_are_independent(self):
+    def test_explicit_destination_replaces_only_a_previous_world_and_copies_are_independent(self):
         output = self.repo / 'Fixtures/output'
         sampled = output / 'sampled'
         sampled.mkdir(parents=True)
@@ -365,21 +459,21 @@ class SamplerTests(unittest.TestCase):
         (output / 'AGENTS.md').write_text('Keep this')
         (output / 'other-output').write_bytes(b'Keep this too')
         # A manifest alone does not make a directory a world: unlisted entries are refused by name, not deleted.
-        refused = self.cli('3', '--seed', 'first')
+        refused = self.cli('3', '--seed', 'first', '--world', str(sampled))
         self.assertEqual(refused.returncode, 2, refused.stderr)
         self.assertIn('does not list: external-link, old', json.loads(refused.stdout)['error']['message'])
         self.assertEqual((sampled / 'old/subdir/stale').read_bytes(), b'stale')
         self.assertTrue((sampled / 'external-link').is_symlink())
         (sampled / 'external-link').unlink()
         shutil.rmtree(sampled / 'old')
-        first = json.loads(self.cli('3', '--seed', 'first').stdout)  # Only .DS_Store is tolerated and removed.
+        first = json.loads(self.cli('3', '--seed', 'first', '--world', str(sampled)).stdout)
         self.assertFalse((sampled / '.DS_Store').exists())
         self.assertEqual(stat.S_IMODE(sampled.stat().st_mode), 0o777 & ~s.current_umask())
         self.assertEqual(len(list(sampled.iterdir())), 4)  # Three copies and world.json.
         image = first['images'][0]
         Path(image['sampled_path']).write_bytes(b'edited copy')
         self.assertEqual('sha256:' + s.file_hash(Path(image['available_path'])), image['image_id'])
-        second = self.cli('1', '--seed', 'second')
+        second = self.cli('1', '--seed', 'second', '--world', str(sampled))
         self.assertEqual(second.returncode, 0, second.stderr)
         self.assertEqual(len(list(sampled.iterdir())), 2)
         self.assertEqual(json.loads((sampled / 'world.json').read_text())['world_id'],
@@ -388,7 +482,10 @@ class SamplerTests(unittest.TestCase):
         self.assertEqual((output / 'other-output').read_bytes(), b'Keep this too')
         self.assertTrue(self.heap.is_dir())
         self.assertEqual(s.load_draw(self.store, first['draw']['sample_id'])[0], first['draw'])
-        self.assertEqual(self.cli('0').returncode, 0)
+        zero = self.cli('0', '--world', str(sampled))
+        self.assertEqual(zero.returncode, 0)
+        self.assertTrue(json.loads(zero.stdout)['output']['published'])
+        self.assertEqual(json.loads(zero.stdout)['output']['image_count'], 0)
         self.assertEqual([p.name for p in sampled.iterdir()], ['world.json'])
         self.assertEqual(json.loads((sampled / 'world.json').read_text())['images'], [])
 
@@ -400,19 +497,19 @@ class SamplerTests(unittest.TestCase):
             schema_version=1, world_id='draw-old', images=[dict(id='sha256:' + stem, file=stem + '.bin')])))
         sentinel = sampled / (stem + '.bin')
         sentinel.write_bytes(b'previous')
-        self.assertEqual(self.cli('5').returncode, 2)
+        self.assertEqual(self.cli('5', '--world', str(sampled)).returncode, 2)
         draw = self.draw()
         images = s.inspect_draw(self.store, draw['sample_id'], self.repo, paths_only=True)['images']
         def corrupt_copy(source, destination):
             destination.write_bytes(b'incomplete copy')
         with patch.object(s.shutil, 'copyfile', side_effect=corrupt_copy):
             with self.assertRaisesRegex(s.SamplerError, 'checksum differs'):
-                s.publish_world(self.repo, self.store, draw, images)
+                s.publish_world(self.repo, self.store, draw, images, sampled)
         self.assertEqual(sentinel.read_bytes(), b'previous')
         self.assertEqual(list(sampled.parent.iterdir()), [sampled])
         stdout = io.StringIO()
         with patch.object(s.shutil, 'copyfile', side_effect=OSError('disk full')), contextlib.redirect_stdout(stdout):
-            status = s.main(['--repo', str(self.repo), '--store', str(self.store), '2'])
+            status = s.main(['--repo', str(self.repo), '--store', str(self.store), '2', '--world', str(sampled)])
         self.assertEqual(status, 1)
         result = json.loads(stdout.getvalue())
         self.assertIn('disk full', result['output']['error'])
@@ -429,7 +526,7 @@ class SamplerTests(unittest.TestCase):
         stdout = io.StringIO()
         with patch.object(s, 'exchange_directories', side_effect=OSError('exchange unavailable')), \
                 contextlib.redirect_stdout(stdout):
-            code = s.main(['--repo', str(self.repo), '--store', str(self.store), '3'])
+            code = s.main(['--repo', str(self.repo), '--store', str(self.store), '3', '--world', str(target)])
         report = json.loads(stdout.getvalue())
         self.assertEqual(code, 1)
         self.assertFalse(report['output']['published'])
@@ -446,7 +543,7 @@ class SamplerTests(unittest.TestCase):
         report = json.loads(stdout.getvalue())
         self.assertEqual(code, 1)
         self.assertFalse(report['output']['published'])
-        self.assertEqual(list((self.repo / 'Fixtures/output').iterdir()), [])
+        self.assertEqual(list((self.repo / 'Fixtures/output/worlds').iterdir()), [])
 
     def test_exchange_installs_complete_world_before_cleaning_old_directory(self):
         first = json.loads(self.cli('2').stdout)
@@ -466,15 +563,16 @@ class SamplerTests(unittest.TestCase):
             return original_cleanup(staged)
 
         with patch.object(s, 'cleanup_world_stage', side_effect=inspect_cleanup) as cleanup:
-            _, _, problems = s.publish_world(self.repo, self.store, draw, images)
+            _, _, problems = s.publish_world(self.repo, self.store, draw, images, target)
         self.assertEqual(cleanup.call_count, 1)
         self.assertEqual(problems, [])
 
     def test_cleanup_failure_reports_installed_world_and_still_records_receipt(self):
-        self.assertEqual(self.cli('2').returncode, 0)
+        first = json.loads(self.cli('2').stdout)
+        target = first['output']['directory']
         stdout = io.StringIO()
         with patch.object(s.shutil, 'rmtree', side_effect=OSError('cleanup denied')), contextlib.redirect_stdout(stdout):
-            code = s.main(['--repo', str(self.repo), '--store', str(self.store), '3'])
+            code = s.main(['--repo', str(self.repo), '--store', str(self.store), '3', '--world', target])
         report = json.loads(stdout.getvalue())
         self.assertEqual(code, 1)
         self.assertTrue(report['output']['published'])
@@ -484,6 +582,9 @@ class SamplerTests(unittest.TestCase):
         self.assertEqual(json.loads(Path(report['output']['manifest']).read_text())['world_id'],
                          report['draw']['sample_id'])
         self.assertEqual(len(s.read_events(self.store, report['draw'])), 1)
+        self.assertEqual(report['output']['image_count'], 3)
+        self.assertIn(report['problems'][0]['path'], report['output']['next_steps'][0])
+        self.assertIn('Remove only', report['output']['next_steps'][0])
 
     def test_receipt_failure_is_nonzero_and_republication_can_record_a_new_receipt(self):
         stdout = io.StringIO()
@@ -494,6 +595,12 @@ class SamplerTests(unittest.TestCase):
         self.assertTrue(report['output']['published'])
         self.assertFalse(report['output']['receipt_recorded'])
         self.assertEqual([p['kind'] for p in report['problems']], ['publication-receipt-failed'])
+        self.assertEqual(report['output']['image_count'], 2)
+        instruction = report['output']['next_steps'][0]
+        self.assertIn('world is usable', instruction)
+        self.assertIn('may be partial', instruction)
+        self.assertIn(str(s.sample_dir(self.store, report['draw']['sample_id']) / 'annotations.jsonl'), instruction)
+        self.assertIn('--keep', instruction)  # Recovery preserves the durable store choice.
         manifest = Path(report['output']['manifest']).read_bytes()
         self.assertEqual(s.read_events(self.store, report['draw']), [])
         again = self.cli('publish', report['draw']['sample_id'])
@@ -514,6 +621,7 @@ class SamplerTests(unittest.TestCase):
         self.assertTrue(report['current_check']['publication_ready'])
         self.assertTrue(report['output']['published'])
         self.assertTrue(report['output']['receipt_recorded'])
+        self.assertEqual(report['output']['image_count'], 4)
         self.assertEqual({p['kind'] for p in report['problems']}, {'image-unavailable', 'alias-unavailable'})
         self.assertEqual(self.cli('publish', report['draw']['sample_id']).returncode, 1)
 
@@ -524,7 +632,10 @@ class SamplerTests(unittest.TestCase):
         link = self.repo / 'Fixtures/output/sampled'
         link.parent.mkdir(parents=True)
         link.symlink_to(outside, target_is_directory=True)
-        self.assertEqual(self.cli('1').returncode, 2)
+        refused = self.cli('1', '--world', str(link))
+        self.assertEqual(refused.returncode, 2)
+        self.assertIn('--world', json.loads(refused.stdout)['error']['next_step'])
+        self.assertIn(str(self.repo / 'Fixtures/output'), json.loads(refused.stdout)['error']['next_step'])
         link.unlink()
         cases = {
             'non-world directory': ['--world', str(outside)],
@@ -550,10 +661,11 @@ class SamplerTests(unittest.TestCase):
     def test_concurrent_publications_leave_one_complete_world(self):
         draws = [self.draw(2, 'first'), self.draw(3, 'second')]
         images = [s.inspect_draw(self.store, d['sample_id'], self.repo, True)['images'] for d in draws]
+        target = self.repo / 'Fixtures/output/shared'
         with concurrent.futures.ThreadPoolExecutor(max_workers=2) as pool:
-            published = list(pool.map(lambda pair: s.publish_world(self.repo, self.store, *pair)[0],
+            published = list(pool.map(lambda pair: s.publish_world(self.repo, self.store, *pair, target)[0],
                                       zip(draws, images)))
-        actual = {p.name for p in (self.repo / 'Fixtures/output/sampled').iterdir()}
+        actual = {p.name for p in target.iterdir()}
         self.assertIn(actual, [{Path(row['sampled_path']).name for row in rows} | {'world.json'} for rows in published])
 
     def test_default_store_is_scratch_seeded_once_and_keep_names_the_durable_store(self):
@@ -603,7 +715,10 @@ class SamplerTests(unittest.TestCase):
         self.assertEqual(sum(i['available_path'] is None for i in response['images']), 1)
         self.assertFalse(response['current_check']['ok'])
         self.assertFalse(response['output']['published'])
-        self.assertFalse((self.repo / 'Fixtures/output/sampled').exists())
+        self.assertEqual(response['output']['image_count'], 0)
+        self.assertIn('republish the saved selection', response['output']['next_steps'][0])
+        self.assertIn(response['draw']['sample_id'], response['output']['next_steps'][0])
+        self.assertFalse((self.repo / 'Fixtures/output/worlds').exists())
         self.assertEqual(s.load_draw(self.store, response['draw']['sample_id'])[0], response['draw'])
 
     def test_launcher_reports_missing_environment_and_runtime_rejects_other_minor_versions(self):
@@ -611,11 +726,24 @@ class SamplerTests(unittest.TestCase):
         shutil.copy2(Path(s.__file__).resolve().parent.parent / 'sample', engine)
         result = subprocess.run([str(engine), '1'], capture_output=True, text=True)
         self.assertEqual(result.returncode, 2)
-        self.assertIn('make setup-python', result.stderr)
+        setup = next(line.removeprefix('Run: ') for line in result.stderr.splitlines() if line.startswith('Run: '))
+        self.assertEqual(shlex.split(setup), ['make', '-C', str(engine.parent), 'setup-python'])
+        self.assertEqual(result.stdout, '')
         stderr = io.StringIO()
         with patch.object(s.sys, 'version_info', (3, 13)), contextlib.redirect_stderr(stderr):
             self.assertEqual(s.main(['1']), 2)
         self.assertIn('Python 3.14.x', stderr.getvalue())
+        self.assertIn(str(s.REPO / 'Fixtures'), stderr.getvalue())
+
+    def test_help_describes_the_neighbor_command_and_handoff(self):
+        help_text = ' '.join(self.cli('--help').stdout.split())
+        self.assertIn('../bricolage/Fixtures/sample 100', help_text)
+        self.assertIn('output first', help_text)
+        self.assertIn('Fixtures/output/worlds/<sample_id>/', help_text)
+        self.assertIn('existing world there is replaced', help_text)
+        for command in ('draw', 'publish'):
+            help_text = ' '.join(self.cli(command, '--help').stdout.split())
+            self.assertIn('default Fixtures/output/worlds/<sample_id>', help_text)
 
     def test_annotation_values_with_unicode_line_separators_stay_readable(self):
         draw = self.draw(1, 'separators')

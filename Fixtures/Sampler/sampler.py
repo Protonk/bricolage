@@ -15,6 +15,7 @@ import os
 from pathlib import Path, PurePosixPath
 import re
 import secrets
+import shlex
 import shutil
 import subprocess
 import sys
@@ -467,18 +468,20 @@ def sample_dir(store, sample_id):
     return Path(store) / 'draws' / sample_id
 
 
-def create_draw(store, inventory, size, seed=None):
+def create_draw(store, inventory, size, seed=None, *, sample_id=None):
     seed = secrets.token_hex(32) if seed is None else seed
     require(isinstance(seed, str), 'usage', 'Seed must be a string')
+    sample_id = sample_id if sample_id is not None else 'draw-' + uuid.uuid4().hex
+    directory = sample_dir(store, sample_id)
     ids = sample_ids(inventory, size, seed)
     inventory = save_inventory(store, inventory)
-    draw = dict(schema_version=1, sample_id='draw-' + uuid.uuid4().hex, created_at=utc(),
+    draw = dict(schema_version=1, sample_id=sample_id, created_at=utc(),
                 inventory_id=inventory['inventory_id'],
                 inventory_file='inventories/' + inventory['inventory_id'] + '.json',
                 procedure=PROCEDURE, seed=seed, requested_size=size,
                 eligible_count=inventory['population']['counts']['eligible'], image_ids=ids)
     draw['draw_sha256'] = digest(draw)
-    new_json(sample_dir(store, draw['sample_id']) / 'draw.json', draw)
+    new_json(directory / 'draw.json', draw)
     return draw
 
 
@@ -902,10 +905,13 @@ def resolve_store(repo, store=None, keep=False):
     return scratch
 
 
-def world_target(repo, store, world=None):
+def world_target(repo, store, world=None, *, sample_id=None):
     """Where a world may be written. Only an empty directory or a previous world is replaced."""
     repo = Path(repo).resolve()
-    target = (Path(world) if world is not None else repo / 'Fixtures/output/sampled')
+    if world is None:
+        sample_dir(store, sample_id)  # Validate the ID before using it as a directory name.
+        world = repo / 'Fixtures/output/worlds' / sample_id
+    target = Path(world)
     target = target.parent.resolve() / target.name
     require(not target.is_symlink(), 'output', f'World directory must not be a symlink: {target}')
     require(not within(target, repo / 'Fixtures') or within(target, repo / 'Fixtures/output'),
@@ -975,7 +981,7 @@ def publish_world(repo, store, draw, images, world=None):
     Returns the copied images, target directory, and any post-publication cleanup
     problems. A failed installation leaves the old world intact.
     """
-    target = world_target(repo, store, world)
+    target = world_target(repo, store, world, sample_id=draw['sample_id'])
     target.parent.mkdir(parents=True, exist_ok=True)
     # Lock the parent directory itself: no persistent lock file beside the world.
     lock = os.open(target.parent, os.O_RDONLY)
@@ -1022,14 +1028,16 @@ def publish_receipt(store, draw, target, count):
 
 def publish_command(store, repo, draw, images, check, world):
     """Shared by draw and publish: copies, manifest, receipt, and a problems list."""
-    result = dict(images=images, output=dict(directory=None, manifest=None, published=False,
-                                           receipt_recorded=False), problems=[])
+    result = dict(images=images, output=dict(world_id=draw['sample_id'], image_count=0,
+                                           directory=None, manifest=None, published=False,
+                                           receipt_recorded=False, next_steps=[]), problems=[])
     for image in images:
         image['sampled_path'] = None
     if check['publication_ready']:
         try:
             result['images'], target, cleanup = publish_world(repo, store, draw, images, world)
-            result['output'].update(directory=str(target), manifest=str(target / WORLD_MANIFEST), published=True)
+            result['output'].update(directory=str(target), manifest=str(target / WORLD_MANIFEST),
+                                    image_count=len(images), published=True)
             result['problems'].extend(cleanup)
         except (OSError, SamplerError) as error:
             result['output']['error'] = f'{type(error).__name__}: {error}'
@@ -1045,33 +1053,54 @@ def publish_command(store, repo, draw, images, check, world):
         result['problems'].append(dict(kind='not-published', error=result['output'].get(
             'error', 'selected images or metadata failed the current check')))
     result['problems'].extend(check['problems'])
+    # Keep recovery next to the handoff. A receipt failure must never suggest a blind retry.
+    record_options = (['--keep'] if Path(store).resolve() == durable_store(repo).resolve()
+                      else ['--store', str(Path(store).resolve())])
+    command = [str(REPO / 'Fixtures/sample'), '--repo', str(Path(repo).resolve()),
+               *record_options, 'publish', draw['sample_id']]
+    if world is not None:
+        command.extend(['--world', str(Path(world).absolute())])
+    retry = shlex.join(command)
+    steps = result['output']['next_steps']
+    if not result['output']['published']:
+        steps.append('No world was published for this draw. Resolve the named file, metadata, or output '
+                     'problems, then republish the saved selection: ' + retry)
+    elif not result['output']['receipt_recorded']:
+        log = sample_dir(store, draw['sample_id']).resolve() / 'annotations.jsonl'
+        steps.append(f'The world is usable. Preserve this response and inspect {log}; the receipt append '
+                     'may be partial. Repair a damaged log explicitly before publishing a new receipt: ' + retry)
+    for problem in result['problems']:
+        if problem['kind'] == 'world-cleanup-failed':
+            steps.append('The world is usable. Remove only the leftover staging directory: ' + problem['path'])
     return result
 
 
 def draw_command(args):
-    world_target(args.repo, args.store, args.world)  # Refuse a bad destination before drawing.
+    sample_id = 'draw-' + uuid.uuid4().hex
+    world_target(args.repo, args.store, args.world, sample_id=sample_id)  # Refuse before drawing.
     inventory = (load_inventory(args.store, args.inventory) if args.inventory
                  else build_inventory(args.repo))
-    drawn = create_draw(args.store, inventory, args.size, args.seed)
+    drawn = create_draw(args.store, inventory, args.size, args.seed, sample_id=sample_id)
     check = verify_draw(args.store, drawn['sample_id'], args.repo)
     images = inspect_draw(args.store, drawn['sample_id'], args.repo, paths_only=True)['images']
     published = publish_command(args.store, args.repo, drawn, images, check, args.world)
-    result = dict(schema_version=1, draw=drawn, population=inventory_report(inventory, args.store),
+    result = dict(schema_version=1, output=published['output'], draw=drawn,
+                  population=inventory_report(inventory, args.store),
                   summary=dict(by_leaf=leaf_summary(selected_items(drawn, inventory))),
-                  images=published['images'], current_check=check, output=published['output'],
+                  images=published['images'], current_check=check,
                   problems=published['problems'] + inventory_report(inventory, args.store)['problems'])
     return result
 
 
 def republish_command(args):
     """Materialize an existing draw as a world again, under the same world ID."""
-    world_target(args.repo, args.store, args.world)
+    world_target(args.repo, args.store, args.world, sample_id=args.sample_id)
     draw, _ = load_draw(args.store, args.sample_id)
     check = verify_draw(args.store, args.sample_id, args.repo)
     images = inspect_draw(args.store, args.sample_id, args.repo, paths_only=True)['images']
     published = publish_command(args.store, args.repo, draw, images, check, args.world)
-    return dict(schema_version=1, sample_id=args.sample_id, images=published['images'],
-                current_check=check, output=published['output'], problems=published['problems'])
+    return dict(schema_version=1, output=published['output'], sample_id=args.sample_id,
+                images=published['images'], current_check=check, problems=published['problems'])
 
 
 def annotation_value(args):
@@ -1112,14 +1141,20 @@ class Parser(argparse.ArgumentParser):
         raise SystemExit(2)
 
 
-def emit_error(error):
-    print(json.dumps(dict(schema_version=1, error=error.report()), ensure_ascii=False, indent=2))
+def emit_error(error, repo=REPO):
+    report = error.report()
+    if error.code == 'output':
+        directory = Path(repo).resolve() / 'Fixtures/output'
+        report['next_step'] = (f'Use --world with a new directory under {directory}, or resolve '
+                              'the named destination problem and retry the request.')
+    print(json.dumps(dict(schema_version=1, error=report), ensure_ascii=False, indent=2))
     print(f'sampler: {error}', file=sys.stderr)
 
 
 def main(argv=None):
     if sys.version_info[:2] != (3, 14):
-        print('sampler: Python 3.14.x is required; run make -C Fixtures setup-python and use Fixtures/sample.',
+        setup = shlex.join(['make', '-C', str(REPO / 'Fixtures'), 'setup-python'])
+        print(f'sampler: Python 3.14.x is required. Run {setup}, then use {REPO / "Fixtures/sample"}.',
               file=sys.stderr)
         return 2
     argv = list(sys.argv[1:] if argv is None else argv)
@@ -1137,7 +1172,12 @@ def main(argv=None):
             break
     parser = Parser(
         prog='Fixtures/sample', description=__doc__, allow_abbrev=False,
-        epilog='Quick draw: Fixtures/sample N [--seed TEXT] [--world DIR]. Writes a world: hash-named image copies plus world.json; copy paths are in images[].sampled_path.')
+        epilog='From a neighboring repository: ../bricolage/Fixtures/sample 100. '
+               'Uses its own Python environment; no directory change or imports needed. '
+               'Read output first: published says whether the world is ready, directory names it, '
+               'world_id identifies it, and image_count counts the published images. '
+               'Each draw gets Fixtures/output/worlds/<sample_id>/. '
+               'Use --world DIR to choose a destination; an existing world there is replaced.')
     parser.add_argument('--repo', type=Path, default=REPO, help='Checkout containing Fixtures/')
     parser.add_argument('--store', type=Path, help='JSON record directory; default Fixtures/output/records (disposable)')
     parser.add_argument('--keep', action='store_true',
@@ -1148,10 +1188,10 @@ def main(argv=None):
     draw.add_argument('size', type=int)
     draw.add_argument('--seed', help='Exact UTF-8 seed text; generated and recorded if omitted')
     draw.add_argument('--inventory', help='Use this saved snapshot instead of rescanning fixtures')
-    draw.add_argument('--world', type=Path, help='World directory to replace; default Fixtures/output/sampled')
+    draw.add_argument('--world', type=Path, help='World directory to replace; default Fixtures/output/worlds/<sample_id>')
     publish = commands.add_parser('publish', help='Materialize an existing draw as a world again')
     publish.add_argument('sample_id')
-    publish.add_argument('--world', type=Path, help='World directory to replace; default Fixtures/output/sampled')
+    publish.add_argument('--world', type=Path, help='World directory to replace; default Fixtures/output/worlds/<sample_id>')
     commands.add_parser('list', help='List persistent draws, including damaged ones')
     show = commands.add_parser('show', help='Original draw, pinned provenance rows, current locations and annotations')
     show.add_argument('sample_id')
@@ -1174,7 +1214,7 @@ def main(argv=None):
         # Every response names the store it read or wrote, so a scratch draw cannot pass for a kept one.
         result = dict(schema_version=result.pop('schema_version'), store=str(args.store.resolve()), **result)
     except SamplerError as error:
-        emit_error(error)
+        emit_error(error, args.repo)
         return 2
     except OSError as error:
         emit_error(SamplerError('io', f'{type(error).__name__}: {error}'))

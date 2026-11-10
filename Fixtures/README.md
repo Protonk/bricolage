@@ -9,14 +9,21 @@ checking and sampling them. A **leaf** is a collection directory with its own
 From the repository root:
 
 ```sh
-make -C Fixtures setup-python
 Fixtures/sample 12 --seed first-look
 ```
 
+From a neighboring repository, use `../bricolage/Fixtures/sample 100`, replacing
+100 with N. The launcher uses its own Python environment. If it is missing,
+follow the printed setup instruction (`make -C Fixtures setup-python` here).
+
 The sampler selects uniformly across available inputs in Heaps and Relationships.
 Exact byte copies count once. It saves the draw and inventory in the scratch store
-at `Fixtures/output/records/` and publishes image copies with `world.json` under
-`Fixtures/output/sampled/`. Put `--keep` before the command for records to commit.
+at `Fixtures/output/records/` and publishes image copies with `world.json` in a
+separate `Fixtures/output/worlds/<sample_id>/` directory for each draw. Read the
+JSON `output` block first: `published` indicates readiness, `directory` is the
+consumer's input, and `world_id` and `image_count` identify its contents. Inspect
+`problems` and `receipt_recorded` too; `next_steps` explains publication recovery.
+Put `--keep` before the command for records to commit.
 
 Use `show SAMPLE_ID` to inspect the selection and source records,
 `verify SAMPLE_ID` to check them, and `publish SAMPLE_ID` to reuse that draw.
