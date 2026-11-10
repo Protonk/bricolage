@@ -111,6 +111,20 @@ A failure cleaning up the old directory returns exit 1 with `world-cleanup-faile
 and the leftover staging path. The new world remains published and its receipt is
 still attempted. Only that named disposable staging directory needs cleanup.
 
+## Remove a sampled image
+
+For an authorized removal, pass the image ID from `world.json` to
+`../bricolage/Fixtures/collection remove sha256:HASH --reason "Reason for removal"`
+from a neighboring repository. The full hash identifies exact bytes. Removal
+updates every active alias, checks the catalogs and fresh sampler inventory,
+and commits its files. Read `complete` and `commit` in the response; see the
+[removal guide](../tools/README.md#removing-an-image) for retries and scoped paths.
+
+A new draw uses the updated population. Existing worlds, inventory snapshots,
+draws and annotations stay unchanged; old snapshots retain their original
+eligibility and changed metadata pins block republication. Removal never swaps
+another image into a saved sample. Draw again for a clean world.
+
 ## Saved samples
 
 `draw` refreshes the inventory by default and returns a saved `sample_id`.

@@ -65,7 +65,6 @@ def project_removal(before, row):
     name = row['file']
     manifest = json.loads(before['manifest.json'])
     require([r for r in manifest['images'] if r['file'] == name] == [row], f'Removal row differs: {name}')
-    require(len(manifest['images']) > 1, 'Removing the last input is unsupported; retire the collection explicitly')
     after = dict(before)
     manifest['images'] = [r for r in manifest['images'] if r['file'] != name]
     after['manifest.json'] = encode(manifest)
@@ -222,7 +221,7 @@ def discard(directory, pending):
         directory.rmdir()
 
 
-def remove(root, row, reason, *, dry_run=False):
+def remove(root, row, reason, *, dry_run=False, operation=None):
     root = Path(root).resolve()
     require(reason.strip(), 'A removal reason is required')
     from fixture_layout import check_layout
@@ -248,6 +247,8 @@ def remove(root, row, reason, *, dry_run=False):
                        before_sha256={n: digest(b) for n, b in before.items()},
                        after_sha256={n: digest(b) for n, b in after.items()})
         receipt['removed_at'] = receipt['changed_at']
+        if operation is not None:
+            receipt['operation'] = operation
         archived = archive.exists()
         pending = None
         try:
@@ -271,6 +272,7 @@ def remove(root, row, reason, *, dry_run=False):
                 discard(directory, pending)
             raise
         history(root, assets=True)
+        result['receipt'] = str(entry / 'receipt.json')
         return result
 
 

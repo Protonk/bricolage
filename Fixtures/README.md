@@ -78,12 +78,18 @@ Read [AGENTS.md](AGENTS.md), the collection's README and
 what a sourcing partner can supply. Put new contributions alongside the existing
 collections with the same selection basis.
 
-Remove one active input by its SHA-256 or file path with
-`Fixtures/collection remove INPUT --reason "Reason for removal"`, or replace its
+Remove every active copy of an image by its SHA-256 with
+`Fixtures/collection remove HASH --reason "Reason for removal"`. It updates and
+validates the catalogs, index and totals, then commits its files. The reason is
+the default commit message; `--commit-message TEXT` overrides it. JSON
+`complete: true` and `commit` confirm completion. A path selects just that input.
+Use `--dry-run` to preview, or follow the response to resume an incomplete removal.
+
+Replace an input's
 bytes with `Fixtures/collection repin INPUT --from FILE --reason "Reason"`.
 Both retain source bytes and publication evidence, write a receipt, update
-active catalogs, and regenerate totals and the index. Use `--dry-run` to inspect
-the proposed change. The [tools guide](tools/README.md) describes the records
+active catalogs, and regenerate totals and the index. Re-pinning does not commit.
+The [tools guide](tools/README.md) describes the records
 and validation; [RECOVERY.md](RECOVERY.md) covers lost media.
 
 After other catalog changes, run `make -C Fixtures collection-totals`.

@@ -27,6 +27,29 @@ Do not assemble an unrecorded sample or substitute other images on failure.
 If the environment is missing, run the setup command printed by the launcher.
 See [WORLD.md](WORLD.md) when implementing a consumer.
 
+## Remove an image you are authorized to remove
+
+Use its `sha256:...` ID from `world.json`, or the hash filename without its extension:
+
+```sh
+../bricolage/Fixtures/collection remove sha256:HASH --reason "Why this image should be removed"
+```
+
+Replace `sha256:HASH` with the full image ID. The command removes every active
+byte-identical copy, updates catalogs and generated files, validates the result,
+and commits only its changes. The reason is also the default commit message;
+`--commit-message TEXT` overrides that message. Read the JSON: `complete: true`
+and `commit` confirm completion. No further guide reading or confirmation is
+needed for an authorized removal. `--dry-run` previews it without removing or
+committing anything.
+
+If it reports `incomplete`, preserve the response and repeat the same command
+after resolving the named problem. The operation record lets the retry finish
+without duplicate receipts. Existing edits in files it needs to change are
+refused before removal; unrelated staged and unstaged work is preserved.
+Removal keeps source evidence and existing worlds. Draw again for a clean world;
+do not edit a saved sample, its records or its manifest by hand.
+
 ## Change this repository
 
 Read [README.md](README.md), then [Fixtures/AGENTS.md](Fixtures/AGENTS.md) and the

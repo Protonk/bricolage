@@ -1,22 +1,52 @@
 # Shared fixture tools
 
-## Removing or re-pinning an input and updating totals
+## Removing an image
 
-From the repository root:
+From a neighboring repository, using the image ID in `world.json`:
 
 ```sh
-Fixtures/collection remove SHA256 --reason "Reason for removal" --dry-run
-Fixtures/collection remove SHA256 --reason "Reason for removal"
-Fixtures/collection repin SHA256 --from /path/to/replacement.jpg --reason "Reason"
-Fixtures/collection totals
-Fixtures/collection totals --check
+../bricolage/Fixtures/collection remove sha256:HASH --reason "Reason for removal"
 ```
 
-`SHA256` is a placeholder for an input's byte hash (with or without `sha256:`).
-An input file path also works. For ambiguous hashes or leaf-relative `images/`
-paths, use `--leaf Fixtures/Heaps/Curatorial/US-Army-SSI`. Ambiguous matches and
-removing a leaf's last input are rejected before changes. Repeating a recorded
-removal reports `already_removed`. The command makes no acquisition or draw.
+Use the full 64-character lowercase hash, with or without `sha256:`. The filename
+stem of a world image is the same hash. From this repository, use
+`Fixtures/collection remove HASH --reason TEXT`. The launcher uses its own
+Python 3.14 environment, regardless of the caller's directory or environment.
+
+Hash removal selects every byte-identical active copy across all collections.
+It does not compare pixels or remove related images. A file path selects one
+input; `--leaf PATH` limits either form to that collection. Paths resolve from
+the caller's working directory. An ambiguous leaf-relative `images/` path is
+refused. Use the unrestricted hash form to exclude an identity from sampling.
+
+The command updates the records, validates affected collections and the fresh
+sampler inventory, and commits only its changes on the current branch. The
+required reason becomes both the receipt explanation and the default commit
+message. `--commit-message TEXT` changes only the commit message. `--dry-run`
+previews the operation without creating receipts or committing. Removal needs
+a Git checkout with a HEAD commit and configured author/committer identity.
+It neither acquires images nor draws a replacement sample, and never pushes.
+
+Read the JSON response:
+
+| Field | Meaning |
+|---|---|
+| `status` | `removed`, `already_removed`, `planned`, `incomplete` or `error` |
+| `complete` | True only after validation and a committed result; false for a preview or unfinished operation |
+| `image_id` | Exact byte identity being removed |
+| `checks` | Affected-collection validation, generated-file checks, and sampler check; `excluded_from_sampling` confirms no active alias remains anywhere |
+| `commit` | The resulting commit hash, or the existing commit on a completed repeat; null before completion |
+| `receipts` | Repository-relative removal receipt paths |
+| `changed_files` | Repository-relative paths committed by this operation; planned paths on a preview |
+| `operation` | Absolute path of the operation record, when one is planned or in progress |
+| `error`, `next_step` | Named failure and recovery instruction when completion fails |
+
+Exit 0 means a complete removal or a successful dry run. Exit 1 reports an
+incomplete operation or a preflight error. Argument mistakes use argparse's
+stderr help and exit 2; a missing environment also exits 2 on stderr.
+Scoped removals can complete with `excluded_from_sampling: false` and a count
+of aliases remaining elsewhere. Source evidence and existing worlds stay intact;
+draw again when a consumer needs a world without the removed image.
 
 Removal updates the JSON/CSV manifests, every batch containing the input, its
 input checksum, and probe/focused-pair entries that refer to it. Source catalogs,
@@ -24,8 +54,53 @@ source files, acquisition records and sampler records remain unchanged. The
 removed image is preserved under `previews/removed/`, outside the sampling pool.
 Each `provenance/removals/NNNN/` contains the prior catalogs and a receipt with
 the exact image row, reason and before/after hashes. Later removals extend this
-chain. Failed writes roll back the active catalogs and media; an interrupted
-operation's incomplete record is reported by name for recovery.
+chain. A collection can reach zero active inputs through recorded removals;
+it retains its fixture ID, source evidence and receipt history. An empty scaffold
+without a removal history still fails asset validation.
+
+## Removal recovery and Git ownership
+
+An immutable `Fixtures/provenance/removal-operations/remove-<id>.json` records the
+selected aliases, receipt destinations, reason, commit message, original file
+hashes and projected catalog and generated-file hashes. New leaf receipts name
+that operation; older receipts keep their original format. This record is committed with the
+catalog changes and is not scratch output.
+
+Before starting, the command checks every selected alias, requires current
+generated totals, and refuses existing staged or unstaged edits in files it
+will change or preserve in receipt snapshots. Unrelated staged and unstaged work
+stays intact. The commit uses an explicit file list and honors Git hooks. Re-pinning retains its existing
+behavior and does not create a Git commit.
+
+If removal succeeds but generating totals, validating, or committing fails,
+preserve the JSON response and repeat the same command after resolving the
+named problem. The retry accepts only the operation's recorded intermediate
+states, finishes remaining aliases and bookkeeping, and creates no duplicate
+removal receipts. It retains the original reason and commit message. A different
+removal must wait until that pending operation is finished. Unexpected edits
+in an affected file or its index entry are named and left intact.
+
+Ordinary write failures within one leaf roll back that leaf's catalogs and media.
+Completed removals in other leaves remain recorded and are resumed. A process
+interruption inside a leaf write can leave an incomplete receipt or inconsistent
+catalogs; the existing history checks name that state and require explicit repair.
+The operation record does not promise a transaction across the filesystem and
+Git. Repeating a completed operation returns `already_removed` and its commit
+without creating another commit. Historical removals made before operation
+records existed must already be committed to be recognized as complete.
+
+## Re-pinning an input and updating totals
+
+From the repository root:
+
+```sh
+Fixtures/collection repin INPUT --from /path/to/replacement.jpg --reason "Reason"
+Fixtures/collection totals
+Fixtures/collection totals --check
+```
+
+`INPUT` is a hash or input path. Re-pinning requires an unambiguous match;
+use `--leaf PATH` and an `images/` path when necessary. `--dry-run` previews it.
 
 Re-pinning replaces one active input's bytes and records why. The replacement
 must be a regular file outside the leaf that decodes to the recorded width,
@@ -57,6 +132,12 @@ is read-only and fails on stale output; `test-fixture-layout` includes this chec
 and removal regression tests. Counts come from manifests, so they can be generated
 without local media and do not claim that those files are present. Historical
 acquisition counts, targets and frozen editions are not current input totals.
+
+The removal tests run in disposable `collection-test-*` checkouts under
+`Fixtures/output/`. They exercise the public neighboring-repository commands,
+exact aliases within and across leaves, an emptied population, scoped paths,
+unrelated staged/unstaged work, interrupted bookkeeping, rejected commits and
+safe retries. Their worlds, repositories and records are removed at teardown.
 
 ## The source index
 

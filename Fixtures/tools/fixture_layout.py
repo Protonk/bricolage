@@ -147,9 +147,9 @@ def check_layout(root, *, assets=True):
                 require(sums.get('sources/' + source['source_filename']) == source['source_sha256'],
                         'Source checksum differs from catalog: ' + source['source_filename'])
     if assets:
-        require(rows, 'Empty fixture has no acquired inputs')
         actual = {p.relative_to(root).as_posix() for p in (root / 'images').iterdir() if p.name != '.DS_Store'}
-        require(set(names) == actual, 'Manifest/input file coverage differs')
+        require(set(names) == actual, 'Manifest/input file coverage differs: missing=' +
+                repr(sorted(set(names) - actual)) + ', unlisted=' + repr(sorted(actual - set(names))))
         for row in rows:
             require(sha(root / row['file']) == row['byte_sha256'], 'Input hash differs: ' + row['file'])
         for name, expected in sums.items():
@@ -157,6 +157,9 @@ def check_layout(root, *, assets=True):
                 require(sha(root / name) == expected, 'Source hash differs: ' + name)
     from fixture_history import history
     changes = history(root, assets=assets)
+    if assets:
+        require(rows or any(change['kind'] == 'removal' for change in changes),
+                'Empty fixture has no acquired inputs or recorded removals')
     return dict(recorded_changes=len(changes), fixture_id=manifest['fixture_id'], kind=manifest['kind'], images=len(rows), layout='passed', assets_checked=assets)
 
 

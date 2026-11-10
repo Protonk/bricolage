@@ -16,6 +16,10 @@ untouched unless explicitly chosen with `--world`.
 Worlds accumulate until their consumers are finished. Remove only the disposable
 worlds you no longer need. Sampler tests use temporary `sampler-test-*` directories
 here and remove them, including their worlds and scratch records, on completion.
+Collection tests similarly use `collection-test-*`, including temporary Git
+repositories, and remove them on completion. `collection.lock` serializes
+collection commands; it contains no recovery state. Removal operation records
+live outside this disposable directory, under `Fixtures/provenance/removal-operations/`.
 
 `records/` is the scratch record store: the default home of inventories, draws,
 annotations and publication receipts, seeded from the versioned

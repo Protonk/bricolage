@@ -79,10 +79,10 @@ def origin_of(url):
     return ORIGINS.get(host, 'url')
 
 
-def leaf_rows(leaf, fixtures=FIXTURES):
+def leaf_rows(leaf, fixtures=FIXTURES, manifest=None):
     leaf = Path(leaf)
     check_layout(leaf, assets=False)
-    manifest = json.loads((leaf / 'manifest.json').read_text())
+    manifest = manifest if manifest is not None else json.loads((leaf / 'manifest.json').read_text())
     sources = {row['family_id']: row for row in read_csv(leaf / 'sources.csv')}
     imports = import_records(leaf)
     construction = construction_sources(leaf)
@@ -117,10 +117,10 @@ def leaf_rows(leaf, fixtures=FIXTURES):
     return rows
 
 
-def render(fixtures=FIXTURES, leaves=None):
+def render(fixtures=FIXTURES, leaves=None, manifests=None):
     fixtures = Path(fixtures)
     leaves = discover(fixtures) if leaves is None else sorted(leaves)
-    rows = [row for leaf in leaves for row in leaf_rows(leaf, fixtures)]
+    rows = [row for leaf in leaves for row in leaf_rows(leaf, fixtures, (manifests or {}).get(leaf))]
     by_hash, by_upstream = {}, {}
     for row in rows:
         by_hash.setdefault(row['byte_sha256'], []).append(row)

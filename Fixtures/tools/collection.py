@@ -7,7 +7,8 @@ from pathlib import Path
 import sys
 
 from fixture_layout import FIXTURES, discover, require
-from fixture_history import history, remove, repin
+from fixture_history import history, repin
+from collection_removal import remove_and_commit
 import collection_totals
 import source_index
 
@@ -35,12 +36,16 @@ def resolve(selector, leaf=None, fixtures=FIXTURES):
 
 
 def main(fixtures=FIXTURES):
-    parser = argparse.ArgumentParser(description=__doc__)
+    parser = argparse.ArgumentParser(description=__doc__,
+        epilog='From a neighboring repository: ../bricolage/Fixtures/collection remove sha256:HASH '
+               '--reason "Reason for removal". Hash removal covers all byte-identical active copies, '
+               'checks the resulting collection and commits its files. Read complete and commit in the JSON response.')
     commands = parser.add_subparsers(dest='command', required=True)
-    removal = commands.add_parser('remove', help='Remove one active input by SHA-256 or path; retain publication evidence')
+    removal = commands.add_parser('remove', help='Remove all copies of a SHA-256 (or one input path), validate and commit')
     removal.add_argument('input')
     removal.add_argument('--leaf', type=Path, help='Limit the match to this collection directory')
     removal.add_argument('--reason', required=True)
+    removal.add_argument('--commit-message', help='Commit message; defaults to the recorded reason')
     removal.add_argument('--dry-run', action='store_true')
     pin = commands.add_parser('repin', help='Replace one active input with equivalent bytes and record why; no network')
     pin.add_argument('input')
@@ -63,23 +68,25 @@ def main(fixtures=FIXTURES):
                 result = collection_totals.update(fixtures, check=args.check)
             elif args.command == 'index':
                 result = source_index.update(fixtures, check=args.check)
+            elif args.command == 'remove':
+                result = remove_and_commit(fixtures, args.input, args.reason, leaf=args.leaf,
+                                           commit_message=args.commit_message, dry_run=args.dry_run)
             else:
                 root, row, already = resolve(args.input, args.leaf, fixtures)
                 # Check every generation target before mutating the collection.
                 collection_totals.generated_files(fixtures)
-                if args.command == 'repin':
-                    require(not already, f'Not an active input: {row["file"]}')
-                    result = repin(root, row, args.replacement, args.reason, dry_run=args.dry_run)
-                else:
-                    result = (dict(status='already_removed', fixture=str(root), file=row['file']) if already
-                              else remove(root, row, args.reason, dry_run=args.dry_run))
-                if not args.dry_run and result['status'] in ('removed', 'repinned'):
+                require(not already, f'Not an active input: {row["file"]}')
+                result = repin(root, row, args.replacement, args.reason, dry_run=args.dry_run)
+                if not args.dry_run and result['status'] == 'repinned':
                     try:
                         result['totals'] = collection_totals.update(fixtures)
                     except (ValueError, OSError) as error:
                         raise ValueError(f'The change is recorded; totals generation failed: {error}. Run Fixtures/collection totals.') from error
         print(json.dumps(result, indent=2))
+        if result.get('status') == 'incomplete':
+            parser.exit(1, 'collection: Removal is incomplete; preserve the JSON report and follow next_step.\n')
     except (ValueError, OSError, KeyError) as error:
+        print(json.dumps(dict(schema_version=1, status='error', complete=False, error=str(error)), indent=2))
         parser.exit(1, f'collection: {error}\n')
 
 

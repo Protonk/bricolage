@@ -6,6 +6,7 @@ import io
 import json
 from pathlib import Path
 import struct
+import subprocess
 import tempfile
 import unittest
 from unittest.mock import patch
@@ -31,9 +32,9 @@ def png(seed, width=1, height=1):
 
 class CollectionTests(unittest.TestCase):
     def setUp(self):
-        self.temp = tempfile.TemporaryDirectory()
+        self.temp = tempfile.TemporaryDirectory(prefix='collection-test-', dir=layout.FIXTURES / 'output')
         self.addCleanup(self.temp.cleanup)
-        self.fixtures = Path(self.temp.name).resolve() / 'Fixtures'
+        self.fixtures = Path(self.temp.name).resolve() / 'bricolage/Fixtures'
         self.root = self.fixtures / 'Relationships/Example'
         create(self.root, 'test-v1', 'derivatives', self.fixtures)
         self.rows, sources = [], []
@@ -80,6 +81,22 @@ class CollectionTests(unittest.TestCase):
     def sums(self):
         return dict(line.split('  ', 1)[::-1] for line in (self.root / 'SHA256SUMS.txt').read_text().splitlines())
 
+    def setup_git(self):
+        repo = self.fixtures.parent
+        (self.fixtures / 'Heaps').mkdir(exist_ok=True)
+        (repo / '.gitignore').write_text('**/images/\n**/sources/\n**/previews/\n**/.venv\n__pycache__/\nFixtures/output/\n')
+        collection_totals.update(self.fixtures)
+        def git(*args):
+            return subprocess.run(['git', '-C', str(repo), *args], check=True, capture_output=True, text=True).stdout.strip()
+        git('init', '-q')
+        git('config', 'user.name', 'Fixture test')
+        git('config', 'user.email', 'fixture@example.invalid')
+        git('config', 'commit.gpgsign', 'false')
+        git('config', 'core.hooksPath', str(repo / '.git/hooks'))
+        git('add', '.')
+        git('commit', '-qm', 'Test fixtures')
+        return git
+
     def test_removal_updates_active_membership_and_keeps_historical_bytes(self):
         self.remove()
         self.assertFalse((self.root / 'images/0.png').exists())
@@ -95,12 +112,15 @@ class CollectionTests(unittest.TestCase):
         self.assertEqual((record['kind'], record['before']), ('removal', self.before))
         self.assertEqual(layout.check_layout(self.root)['recorded_changes'], 1)
 
-    def test_second_removal_extends_the_chain_and_the_last_input_stays(self):
+    def test_removals_can_empty_a_collection_with_a_valid_history(self):
         self.remove()
         self.remove(1)
         self.assertEqual([r['receipt']['image']['file'] for r in history.history(self.root, assets=True)], ['images/0.png', 'images/1.png'])
-        with self.assertRaisesRegex(ValueError, 'last input'):
-            self.remove(2)
+        self.remove(2)
+        self.assertEqual(layout.check_layout(self.root)['images'], 0)
+        self.assertEqual(len(history.history(self.root, assets=True)), 3)
+        self.assertEqual(list((self.root / 'images').iterdir()), [])
+        self.assertEqual(history.sha(self.root / 'sources/0.png'), self.source_hash)
 
     def test_changed_snapshot_and_unrecorded_catalog_edits_fail(self):
         self.remove()
@@ -346,12 +366,15 @@ class CollectionTests(unittest.TestCase):
         self.assertEqual(source_index.update(self.fixtures, check=True)['inputs'], 3)
 
     def test_cli_removes_repins_regenerates_totals_and_repeats_without_another_record(self):
+        git = self.setup_git()
         arguments = ['collection', 'remove', self.rows[0]['byte_sha256'], '--reason', 'CLI regression']
         for expected in ('removed', 'already_removed'):
             output = io.StringIO()
             with patch('sys.argv', arguments), redirect_stdout(output):
                 collection.main(self.fixtures)
             self.assertEqual(json.loads(output.getvalue())['status'], expected)
+            self.assertTrue(json.loads(output.getvalue())['complete'])
+            self.assertEqual(json.loads(output.getvalue())['commit'], git('rev-parse', 'HEAD'))
             collection_totals.update(self.fixtures, check=True)
             self.assertEqual(len(history.history(self.root)), 1)
         output = io.StringIO()

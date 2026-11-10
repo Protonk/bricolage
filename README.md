@@ -59,6 +59,27 @@ Each distinct file hash has an equal chance of selection. Byte-identical copies
 share one place in the draw; crops and different encodings count separately.
 Sampling spans all available collections and does not keep related images together.
 
+## Remove an unsuitable image
+
+When authorized to remove an image, take its `sha256:...` ID from `world.json`
+(or its hash filename without the extension) and run:
+
+```sh
+../bricolage/Fixtures/collection remove sha256:HASH --reason "Why this image should be removed"
+```
+
+Replace `sha256:HASH` with the full ID. The command removes every active copy
+with those exact bytes, updates the manifests and index, validates the result,
+and commits its changes. The reason becomes the commit message; use
+`--commit-message TEXT` for a different message. Success returns `complete: true`
+and a `commit` hash. `--dry-run` previews the operation.
+
+Unrelated staged and unstaged work stays intact. If the operation is incomplete,
+its JSON report names the problem; resolve it and repeat the same command to
+finish. Source evidence and already-published worlds remain available. Draw
+again to get a world from the updated collection. The [removal guide](Fixtures/tools/README.md#removing-an-image)
+describes scope, checks and recovery.
+
 ## Use the same sample again
 
 Every draw saves its selection and the inventory it drew from. Use the returned

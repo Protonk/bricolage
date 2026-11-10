@@ -56,8 +56,15 @@ batches and eight multiview batches.
 ## Local assets and Git
 
 A published leaf changes in two recorded ways. `Fixtures/collection remove
-INPUT --reason "Reason"` removes active membership, preserving the prior
+INPUT --reason "Reason"` removes active membership (all byte-identical aliases
+for a hash, or one input for a path), preserving the prior
 catalogs in `provenance/removals/NNNN/` and the image under `previews/removed/`.
+The command validates the updated tree and commits its files. An immutable
+operation record under `Fixtures/provenance/removal-operations/` pins its scope,
+reason, commit message and file hashes for recovery; new removal receipts link
+to that operation. Earlier receipts remain valid without that link. A collection
+may reach zero inputs through recorded removals, keeping its identity, sources
+and history. A fresh empty scaffold still fails asset validation.
 `Fixtures/collection repin INPUT --from FILE --reason "Reason"` replaces an
 input's bytes with a file that decodes to the recorded size, orientation and
 format, preserving the prior catalogs in `provenance/repins/NNNN/` and any bytes

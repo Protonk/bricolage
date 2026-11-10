@@ -3,6 +3,9 @@
 For an ordinary draw, use `Fixtures/sample N` from the repository root and read
 the JSON `output` block. The [sampling fast path](../AGENTS.md#just-draw-images)
 also works from neighboring repositories; no further guide reading is required.
+For an authorized image removal, follow the [removal fast path](../AGENTS.md#remove-an-image-you-are-authorized-to-remove).
+`collection remove HASH --reason TEXT` updates, validates and commits its files;
+an incomplete result must be preserved and resumed, not reported as a success.
 
 Before changing fixtures or tools, read [README.md](README.md), then the guide for the work:
 

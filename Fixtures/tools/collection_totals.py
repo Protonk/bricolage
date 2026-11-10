@@ -8,13 +8,13 @@ from fixture_layout import FIXTURES, discover, check_layout, require
 import source_index
 
 
-def render(fixtures=FIXTURES, leaves=None):
+def render(fixtures=FIXTURES, leaves=None, manifests=None):
     fixtures = Path(fixtures)
     leaves = discover(fixtures) if leaves is None else sorted(leaves)
     rows, all_hashes, count = [], set(), 0
     for leaf in leaves:
         check_layout(leaf, assets=False)
-        manifest = json.loads((leaf / 'manifest.json').read_text())
+        manifest = manifests[leaf] if manifests and leaf in manifests else json.loads((leaf / 'manifest.json').read_text())
         hashes = {r['byte_sha256'] for r in manifest['images']}
         relative = leaf.relative_to(fixtures).as_posix()
         rows.append(f'| [{relative}]({quote(relative)}/README.md) | {len(manifest["images"]):,} | {len(hashes):,} |')
@@ -33,16 +33,18 @@ def render(fixtures=FIXTURES, leaves=None):
     ])
 
 
-def generated_files(fixtures=FIXTURES):
-    """One central table, the source index, and marked totals in each leaf's guide."""
+def generated_files(fixtures=FIXTURES, *, manifests=None):
+    """One central table, source index and leaf counts; optional manifest projections write nothing."""
     leaves = discover(fixtures)
-    files = {fixtures / 'COLLECTIONS.md': render(fixtures, leaves), fixtures / 'INDEX.csv': source_index.render(fixtures, leaves)}
+    files = {fixtures / 'COLLECTIONS.md': render(fixtures, leaves, manifests),
+             fixtures / 'INDEX.csv': source_index.render(fixtures, leaves, manifests)}
     for leaf in leaves:
         path = leaf / 'README.md'
         text = path.read_text()
         start, end = '<!-- collection-totals:start -->', '<!-- collection-totals:end -->'
         require(text.count(start) == text.count(end) == 1, f'Missing collection-total markers: {path}')
-        count = len(json.loads((leaf / 'manifest.json').read_text())['images'])
+        manifest = manifests[leaf] if manifests and leaf in manifests else json.loads((leaf / 'manifest.json').read_text())
+        count = len(manifest['images'])
         link = Path(os.path.relpath(fixtures / 'COLLECTIONS.md', leaf)).as_posix()
         body = f'\nThe manifest lists **{count:,} active inputs**. [All collection totals]({link}).\n'
         left, rest = text.split(start)

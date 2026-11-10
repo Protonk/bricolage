@@ -18,7 +18,7 @@ test-sampler:
 test-fixture-layout: check-collection-totals
 	$(VENV) $(CHECK)
 	$(VENV) -m unittest discover -s tools -p 'test_layout.py'
-	$(VENV) -m unittest discover -s tools -p 'test_collection.py'
+	$(VENV) -m unittest discover -s tools -p 'test_collection*.py'
 
 collection-totals:
 	./collection totals
