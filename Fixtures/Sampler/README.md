@@ -452,6 +452,35 @@ metadata files. A changed pin is reported with both hashes; recovering the recor
 bytes is a Git step, not a sampler one. New inventories and all later annotations
 leave an existing draw unchanged.
 
+## Selection code
+
+Both entry points use the same internal path in `sampler.py`:
+
+1. `request_from_args` translates arguments and the read exclusion manifest into
+   a `DrawRequest`: size, optional seed, resolved exclusion record, and procedure.
+   It resolves requested IDs against the inventory and reports no matches or
+   insufficient remaining images before creating a draw.
+2. `prepare_candidates` validates the snapshot and any resolved exclusions, then
+   returns a sorted tuple of eligible byte identities. Each hash appears once,
+   regardless of how many aliases it has. Preparation uses the supplied snapshot
+   without reading current files or consuming randomness.
+3. `select_ids` takes prepared candidates, size, seed and procedure. It checks
+   bounds and delegates to the algorithm identified by `sampling_procedure`.
+   The current algorithm is `uniform_sample_ids`, which copies the candidate
+   tuple before shuffling. It consults no inventories, paths or annotations.
+4. `create_draw` resolves an omitted seed once, prepares and selects, then saves
+   the inventory and draw. `DrawRequest.record_fields` writes the effective
+   selection inputs using the existing draw fields. Replay reconstructs the
+   request with `DrawRequest.from_record` and uses the same preparation and
+   selection functions. The recorded procedure chooses the algorithm; an
+   unknown procedure fails explicitly.
+
+Selection preferences belong to the request and candidate preparation, while
+the inventory records fixture facts. Resolved inputs needed for replay belong
+in the saved draw. The public commands, record formats and flat world handoff
+remain as documented above. These functions are internal Python interfaces;
+consumers use the public launchers.
+
 ## Sampling procedure, version 1
 
 `sha256-counter-rejection-partial-fisher-yates-v1` is specified independently of
@@ -519,3 +548,6 @@ Exclusion tests cover missing IDs and copies, malformed manifests, byte-identica
 aliases, pool bounds, uniform selection, and replay without the original world.
 The collection tests also exercise sampling, committed removal, and then
 `sampleWithout` using the unchanged old world from a temporary neighbor.
+Compatibility tests pin ordered selections and draw checksums captured before
+the selection refactor, replay the committed demonstration draw, and check
+candidate preparation after the temporary fixture files have disappeared.

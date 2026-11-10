@@ -7,6 +7,7 @@ The JSON format and byte-exact sampling procedure are documented in README.md.
 import argparse
 import csv
 import ctypes
+from dataclasses import dataclass, replace
 import fcntl
 import hashlib
 import io
@@ -25,7 +26,7 @@ import uuid
 
 
 REPO = Path(__file__).resolve().parents[2]
-PROCEDURE = 'sha256-counter-rejection-partial-fisher-yates-v1'
+UNIFORM_PROCEDURE = 'sha256-counter-rejection-partial-fisher-yates-v1'
 POLICY = 'active-manifest-inputs; exact-byte-sha256-aliases; one-ticket-per-hash-v1'
 POPULATION_SCHEMAS = (1, 2)  # 1 embedded metadata rows; 2 pins metadata files by hash only.
 SKIP_DIRS = {'images', 'sources', 'previews', 'provenance', '__pycache__', '.git'}
@@ -450,17 +451,65 @@ class RandomStream:
                 return word % bound
 
 
-def sample_ids(inventory, size, seed, excluded_ids=()):
+@dataclass(frozen=True)
+class DrawRequest:
+    """Selection inputs shared by both entry points and reconstructed for replay.
+
+    Exclusion is the resolved record, including its source and unmatched IDs.
+    Seed may be omitted for a new draw; creation resolves it before selection.
+    """
+    size: int
+    seed: str | None = None
+    exclusion: dict | None = None
+    procedure: str = UNIFORM_PROCEDURE
+
+    @classmethod
+    def from_record(cls, draw):
+        exclusion = field(draw, 'exclusion', dict, 'Draw record') if 'exclusion' in draw else None
+        return cls(draw['requested_size'], draw['seed'], exclusion, draw['procedure'])
+
+    def record_fields(self):
+        fields = dict(procedure=self.procedure, seed=self.seed, requested_size=self.size)
+        if self.exclusion is not None:
+            fields['exclusion'] = self.exclusion
+        return fields
+
+
+def prepare_candidates(inventory, exclusion=None):
+    """Resolve the snapshot to sorted byte identities, with one candidate per hash.
+
+    No randomness or file access: saved exclusions are checked against this
+    snapshot, and aliases stay in the inventory rather than becoming tickets.
+    """
     validate_inventory(inventory)
-    require(type(size) is int and size >= 0, 'usage', 'Sample size must be a nonnegative integer')
-    excluded = set(excluded_ids)
-    pool = [i['image_id'] for i in inventory['population']['images'] if i['eligible'] and i['image_id'] not in excluded]
-    require(size <= len(pool), 'usage', f'Requested {size} images; eligible population is {len(pool)}')
+    excluded = set(validate_exclusion(exclusion, inventory)) if exclusion is not None else set()
+    return tuple(i['image_id'] for i in inventory['population']['images']
+                 if i['eligible'] and i['image_id'] not in excluded)
+
+
+def uniform_sample_ids(candidates, size, seed):
+    """The original partial Fisher-Yates procedure; candidates are already prepared."""
+    pool = list(candidates)
     rng = RandomStream(seed)
     for i in range(size):
         j = i + rng.randbelow(len(pool) - i)
         pool[i], pool[j] = pool[j], pool[i]
     return pool[:size]
+
+
+def sampling_procedure(name, what='Draw request'):
+    """Resolve the recorded algorithm identity for new draws and old-record replay."""
+    require(name == UNIFORM_PROCEDURE, 'record-invalid', f'{what}: unsupported sampling procedure {name}')
+    return uniform_sample_ids
+
+
+def select_ids(candidates, size, seed, *, procedure=UNIFORM_PROCEDURE):
+    """Select from prepared candidates without consulting inventory, paths or records."""
+    algorithm = sampling_procedure(procedure)
+    require(type(size) is int and size >= 0, 'usage', 'Sample size must be a nonnegative integer')
+    require(isinstance(seed, str), 'usage', 'Seed must be a string')
+    require(size <= len(candidates), 'usage', f'Requested {size} images; eligible population is {len(candidates)}')
+    return algorithm(candidates, size, seed)
 
 
 def sample_dir(store, sample_id):
@@ -469,21 +518,19 @@ def sample_dir(store, sample_id):
     return Path(store) / 'draws' / sample_id
 
 
-def create_draw(store, inventory, size, seed=None, *, sample_id=None, exclusion=None):
-    seed = secrets.token_hex(32) if seed is None else seed
-    require(isinstance(seed, str), 'usage', 'Seed must be a string')
+def create_draw(store, inventory, request, *, sample_id=None):
+    if request.seed is None:
+        request = replace(request, seed=secrets.token_hex(32))
     sample_id = sample_id if sample_id is not None else 'draw-' + uuid.uuid4().hex
     directory = sample_dir(store, sample_id)
-    excluded = validate_exclusion(exclusion, inventory) if exclusion is not None else []
-    ids = sample_ids(inventory, size, seed, excluded)
+    candidates = prepare_candidates(inventory, request.exclusion)
+    ids = select_ids(candidates, request.size, request.seed, procedure=request.procedure)
     inventory = save_inventory(store, inventory)
     draw = dict(schema_version=1, sample_id=sample_id, created_at=utc(),
                 inventory_id=inventory['inventory_id'],
                 inventory_file='inventories/' + inventory['inventory_id'] + '.json',
-                procedure=PROCEDURE, seed=seed, requested_size=size,
+                **request.record_fields(),
                 eligible_count=inventory['population']['counts']['eligible'], image_ids=ids)
-    if exclusion is not None:
-        draw['exclusion'] = exclusion
     draw['draw_sha256'] = digest(draw)
     new_json(directory / 'draw.json', draw)
     return draw
@@ -501,8 +548,7 @@ def read_draw(store, sample_id):
             f'{what}: checksum differs from its contents', path=str(path))
     require(draw['schema_version'] == 1 and draw['sample_id'] == sample_id, 'record-invalid',
             f'{what}: schema or sample ID differs from its location')
-    require(draw['procedure'] == PROCEDURE, 'record-invalid',
-            f'{what}: unsupported sampling procedure {draw["procedure"]}')
+    sampling_procedure(draw['procedure'], what)
     require(HEX.fullmatch(draw['inventory_id']) and
             draw['inventory_file'] == 'inventories/' + draw['inventory_id'] + '.json',
             'record-invalid', f'{what}: snapshot reference differs')
@@ -515,8 +561,9 @@ def replay_draw(store, draw):
     what = f'Draw record {draw["sample_id"]}'
     require(draw['eligible_count'] == inventory['population']['counts']['eligible'],
             'record-damaged', f'{what}: eligible count differs from its snapshot')
-    excluded = validate_exclusion(draw['exclusion'], inventory) if 'exclusion' in draw else []
-    require(draw['image_ids'] == sample_ids(inventory, draw['requested_size'], draw['seed'], excluded),
+    request = DrawRequest.from_record(draw)
+    candidates = prepare_candidates(inventory, request.exclusion)
+    require(draw['image_ids'] == select_ids(candidates, request.size, request.seed, procedure=request.procedure),
             'record-damaged', f'{what}: original draw does not reproduce from its snapshot')
     return inventory
 
@@ -1152,6 +1199,18 @@ def protect_exclusion_world(source, destination):
             f'Exclusion world and output/record destinations must not overlap: {source}, {destination}')
 
 
+def request_from_args(args, inventory, source=None):
+    """Translate either CLI's arguments and read world IDs into one draw request."""
+    exclusion = match_exclusion(source, inventory) if source is not None else None
+    if exclusion is not None:
+        require(exclusion['matched_count'] > 0, 'usage',
+                f'No image IDs in {Path(args.excluded_world) / WORLD_MANIFEST} match eligible fixtures', exclusion=exclusion)
+        require(args.size <= exclusion['remaining_eligible'], 'usage',
+                f'Requested {args.size} images; {exclusion["remaining_eligible"]} eligible images remain after exclusion',
+                exclusion=exclusion)
+    return DrawRequest(size=args.size, seed=args.seed, exclusion=exclusion)
+
+
 def draw_command(args):
     sample_id = 'draw-' + uuid.uuid4().hex
     target = world_target(args.repo, args.store, args.world, sample_id=sample_id)  # Refuse before drawing.
@@ -1160,19 +1219,14 @@ def draw_command(args):
         protect_exclusion_world(args.excluded_world, target)
     inventory = (load_inventory(args.store, args.inventory) if args.inventory
                  else build_inventory(args.repo))
-    exclusion = match_exclusion(source, inventory) if source is not None else None
-    if exclusion is not None:
-        require(exclusion['matched_count'] > 0, 'usage',
-                f'No image IDs in {Path(args.excluded_world) / WORLD_MANIFEST} match eligible fixtures', exclusion=exclusion)
-        require(args.size <= exclusion['remaining_eligible'], 'usage',
-                f'Requested {args.size} images; {exclusion["remaining_eligible"]} eligible images remain after exclusion',
-                exclusion=exclusion)
-    drawn = create_draw(args.store, inventory, args.size, args.seed, sample_id=sample_id, exclusion=exclusion)
+    request = request_from_args(args, inventory, source)
+    drawn = create_draw(args.store, inventory, request, sample_id=sample_id)
     check = verify_draw(args.store, drawn['sample_id'], args.repo)
     images = inspect_draw(args.store, drawn['sample_id'], args.repo, paths_only=True)['images']
     published = publish_command(args.store, args.repo, drawn, images, check, args.world)
     population = inventory_report(inventory, args.store)
     warnings = []
+    exclusion = request.exclusion
     if exclusion is not None:
         unmatched = set(exclusion['unmatched_image_ids'])
         warnings = [dict(kind='exclusion-unmatched', image_id=i,

@@ -53,7 +53,7 @@ class SamplerTests(unittest.TestCase):
         return s.build_inventory(self.repo)
 
     def draw(self, n=3, seed='test'):
-        return s.create_draw(self.store, self.inventory(), n, seed)
+        return s.create_draw(self.store, self.inventory(), s.DrawRequest(n, seed))
 
     def cli(self, *args, input=None):
         return subprocess.run([sys.executable, str(Path(s.__file__)), '--repo', str(self.repo),
@@ -69,7 +69,7 @@ class SamplerTests(unittest.TestCase):
         self.assertNotIn('manifest_record', aliases[0])  # Rows are pinned by hash, not stored.
         self.assertEqual([l['status'] for l in inv['population']['leaves']], ['ok', 'ok'])
         self.assertIn('checkout', inv)
-        draw = s.create_draw(self.store, inv, 4, 'all')
+        draw = s.create_draw(self.store, inv, s.DrawRequest(4, 'all'))
         shown = s.inspect_draw(self.store, draw['sample_id'], self.repo)
         rows = [p for image in shown['images'] for p in image['provenance']]
         self.assertEqual({p['status'] for p in rows}, {'frozen'})
@@ -97,7 +97,7 @@ class SamplerTests(unittest.TestCase):
         self.assertEqual(inv['population']['counts']['eligible'], 4)
         original = next(i for i in inv['population']['images'] if i['byte_sha256'] == hashlib.sha256(b'one').hexdigest())
         self.assertEqual(len(original['aliases']), 3)
-        self.assertEqual(len(s.sample_ids(inv, 4, 'all')), 4)
+        self.assertEqual(len(s.select_ids(s.prepare_candidates(inv), 4, 'all')), 4)
 
     def test_population_and_draw_ignore_traversal_order(self):
         first = self.inventory()
@@ -105,7 +105,28 @@ class SamplerTests(unittest.TestCase):
             second = self.inventory()
         self.assertEqual(first['inventory_id'], second['inventory_id'])
         self.assertEqual(first['population'], second['population'])
-        self.assertEqual(s.sample_ids(first, 3, 'seed'), s.sample_ids(second, 3, 'seed'))
+        self.assertEqual(s.select_ids(s.prepare_candidates(first), 3, 'seed'),
+                         s.select_ids(s.prepare_candidates(second), 3, 'seed'))
+
+    def test_prepared_candidates_use_only_the_snapshot_without_mutating_inputs(self):
+        self.make_leaf('Heaps/Aliases', [b'one', b'one'])
+        (self.heap / 'images/1.png').unlink()
+        inventory = self.inventory()
+        excluded = 'sha256:' + hashlib.sha256(b'one').hexdigest()
+        source = dict(world_id='earlier-world', manifest_sha256='0' * 64,
+                      requested_image_ids=sorted([excluded, 'sha256:' + '0' * 64]))
+        exclusion = s.match_exclusion(source, inventory)
+        before = s.canonical(dict(inventory=inventory, exclusion=exclusion))
+        expected = tuple(sorted('sha256:' + hashlib.sha256(blob).hexdigest() for blob in (b'three', b'four')))
+        candidates = s.prepare_candidates(inventory, exclusion)
+        self.assertEqual(candidates, expected)
+        # Preparation and selection keep working after all temporary fixture files disappear.
+        shutil.rmtree(self.repo / 'Fixtures/Heaps')
+        shutil.rmtree(self.repo / 'Fixtures/Relationships')
+        self.assertEqual(s.prepare_candidates(inventory, exclusion), expected)
+        self.assertEqual(set(s.select_ids(candidates, 2, 'frozen')), set(expected))
+        self.assertEqual(candidates, expected)
+        self.assertEqual(s.canonical(dict(inventory=inventory, exclusion=exclusion)), before)
 
     def test_missing_changed_and_unlisted_files_are_visible(self):
         (self.heap / 'images/0.png').unlink()
@@ -138,11 +159,12 @@ class SamplerTests(unittest.TestCase):
 
     def test_requested_size_bounds_no_replacement_and_zero_draw(self):
         inv = self.inventory()
-        self.assertEqual(s.sample_ids(inv, 0, 's'), [])
-        self.assertEqual(set(s.sample_ids(inv, 4, 's')), {i['image_id'] for i in inv['population']['images']})
+        candidates = s.prepare_candidates(inv)
+        self.assertEqual(s.select_ids(candidates, 0, 's'), [])
+        self.assertEqual(set(s.select_ids(candidates, 4, 's')), {i['image_id'] for i in inv['population']['images']})
         for n in (-1, 5, True):
             with self.assertRaises(s.SamplerError):
-                s.sample_ids(inv, n, 's')
+                s.select_ids(candidates, n, 's')
         r = self.cli('draw', '5')
         self.assertEqual(r.returncode, 2)
         self.assertIn('eligible population is 4', r.stderr)
@@ -154,10 +176,11 @@ class SamplerTests(unittest.TestCase):
     def test_uniform_sampling_all_equiprobable_small_draw_paths(self):
         # 4 * 3 equally likely index paths: every ordered pair occurs exactly once.
         inv = self.inventory()
+        candidates = s.prepare_candidates(inv)
         results = []
         for first, second in itertools.product(range(4), range(3)):
             with patch.object(s.RandomStream, 'randbelow', side_effect=[first, second]):
-                results.append(tuple(s.sample_ids(inv, 2, 'unused')))
+                results.append(tuple(s.select_ids(candidates, 2, 'unused')))
         ids = [i['image_id'] for i in inv['population']['images']]
         self.assertCountEqual(results, list(itertools.permutations(ids, 2)))
         self.assertTrue(all(sum(i in pair for pair in results) == 6 for i in ids))
@@ -178,11 +201,13 @@ class SamplerTests(unittest.TestCase):
 
     def test_persistence_generated_seed_and_inventory_reuse(self):
         inv = self.inventory()
-        draw = s.create_draw(self.store, inv, 3)
+        request = s.DrawRequest(3)
+        draw = s.create_draw(self.store, inv, request)
+        self.assertIsNone(request.seed)
         loaded, snapshot = s.load_draw(self.store, draw['sample_id'])
         self.assertEqual(loaded, draw)
-        self.assertEqual(draw['image_ids'], s.sample_ids(snapshot, 3, draw['seed']))
-        again = s.create_draw(self.store, self.inventory(), 3, draw['seed'])
+        self.assertEqual(draw['image_ids'], s.select_ids(s.prepare_candidates(snapshot), 3, draw['seed']))
+        again = s.create_draw(self.store, self.inventory(), s.DrawRequest(3, draw['seed']))
         self.assertEqual(again['image_ids'], draw['image_ids'])
         self.assertNotEqual(again['sample_id'], draw['sample_id'])
         self.assertEqual(len(list((self.store / 'inventories').glob('*.json'))), 1)
@@ -190,6 +215,34 @@ class SamplerTests(unittest.TestCase):
         self.assertEqual(len(listed['draws']), 2)
         self.assertEqual({d['status'] for d in listed['draws']}, {'ok'})
         self.assertEqual(listed['problems'], [])
+
+    def test_draw_record_checksums_preserve_pre_refactor_inputs(self):
+        # Captured from 5b57c12 with the same synthetic inventory, fixed IDs and timestamp.
+        inventory = self.inventory()
+        exclusion = s.match_exclusion(dict(world_id='old-world', manifest_sha256='0' * 64,
+                                          requested_image_ids=sorted(['sha256:' + '0' * 64,
+                                                                      inventory['population']['images'][0]['image_id']])), inventory)
+        expected = ('7168aaf81d601ded63e613e3e552ce9ea5ccb6cbc26c530724fe9c344fb043be',
+                    'af3bf4394c05fcde730cff3232b1258bffa65348774a90017d327769ac0c4499')
+        for number, exclusions in enumerate((None, exclusion), 1):
+            with self.subTest(exclusion=exclusions), patch.object(s, 'utc', return_value='2026-11-10T00:00:00+00:00'):
+                request = s.DrawRequest(2, 'refactor-vector', exclusions)
+                draw = s.create_draw(self.store, inventory, request, sample_id='draw-' + str(number) * 32)
+                self.assertEqual(draw['draw_sha256'], expected[number - 1])
+                self.assertEqual(s.load_draw(self.store, draw['sample_id'])[0], draw)
+
+    def test_unknown_procedure_does_not_write_or_fall_back_to_uniform(self):
+        with self.assertRaisesRegex(s.SamplerError, 'unsupported sampling procedure unknown'):
+            s.create_draw(self.store, self.inventory(), s.DrawRequest(1, 'seed', procedure='unknown'))
+        self.assertFalse(self.store.exists())
+        draw = self.draw()
+        draw['procedure'] = 'unknown'
+        draw['draw_sha256'] = s.digest({key: value for key, value in draw.items() if key != 'draw_sha256'})
+        path = s.sample_dir(self.store, draw['sample_id']) / 'draw.json'
+        path.write_text(json.dumps(draw))
+        with self.assertRaisesRegex(s.SamplerError, draw['sample_id'] + ': unsupported sampling procedure unknown'):
+            s.load_draw(self.store, draw['sample_id'])
+        self.assertEqual(json.loads(path.read_text()), draw)
 
     def test_changes_do_not_rewrite_old_draw_or_replace_missing_images(self):
         draw = self.draw(4)
@@ -262,7 +315,7 @@ class SamplerTests(unittest.TestCase):
         self.assertEqual(got['annotation_history'][1]['value'], value)
         self.assertEqual((s.sample_dir(self.store, sid) / 'draw.json').read_bytes(), original)
         self.assertEqual(self.inventory()['population'], before)
-        self.assertEqual(s.sample_ids(self.inventory(), 3, draw['seed']), draw['image_ids'])
+        self.assertEqual(s.select_ids(s.prepare_candidates(self.inventory()), 3, draw['seed']), draw['image_ids'])
         with self.assertRaises(s.SamplerError):
             s.annotate(self.store, sid, 'review', 'bad', image_id='not-in-draw')
 
@@ -284,7 +337,7 @@ class SamplerTests(unittest.TestCase):
         response = json.loads(result.stdout)
         self.assertEqual(response['schema_version'], 1)
         draw = response['draw']
-        self.assertEqual(draw['image_ids'], s.sample_ids(self.inventory(), 3, 'public engine'))
+        self.assertEqual(draw['image_ids'], s.select_ids(s.prepare_candidates(self.inventory()), 3, 'public engine'))
         self.assertEqual(response['population']['counts']['eligible'], 4)
         self.assertEqual([i['image_id'] for i in response['images']], draw['image_ids'])
         self.assertEqual([i['position'] for i in response['images']], [1, 2, 3])
@@ -893,10 +946,10 @@ class SamplerTests(unittest.TestCase):
 
     def test_schema_1_snapshots_still_load_replay_and_show(self):
         legacy = s.save_inventory(self.store, self.legacy_inventory())
-        draw = s.create_draw(self.store, legacy, 3, 'legacy')
+        draw = s.create_draw(self.store, legacy, s.DrawRequest(3, 'legacy'))
         loaded, snapshot = s.load_draw(self.store, draw['sample_id'])
         self.assertEqual(snapshot['population']['schema_version'], 1)
-        self.assertEqual(loaded['image_ids'], s.sample_ids(self.inventory(), 3, 'legacy'))
+        self.assertEqual(loaded['image_ids'], s.select_ids(s.prepare_candidates(self.inventory()), 3, 'legacy'))
         shown = s.inspect_draw(self.store, draw['sample_id'], self.repo)
         self.assertEqual({p['status'] for image in shown['images'] for p in image['provenance']}, {'frozen'})
         self.assertEqual(shown['problems'], [])
@@ -977,6 +1030,40 @@ class SamplerTests(unittest.TestCase):
         mode = (s.sample_dir(self.store, draw['sample_id']) / 'draw.json').stat().st_mode & 0o777
         self.assertEqual(mode, 0o644)
         self.assertEqual(s.inventory_file(self.store, draw['inventory_id']).stat().st_mode & 0o777, 0o644)
+
+
+class SelectionTests(unittest.TestCase):
+    def test_original_seed_vectors_and_reusable_candidates(self):
+        # Ordered selections captured from 5b57c12, before separating preparation.
+        ids = {name: 'sha256:' + hashlib.sha256(name.encode()).hexdigest()
+               for name in ('one', 'two', 'three', 'four')}
+        cases = (
+            ('', False, ('three', 'two', 'four', 'one')),
+            ('', True, ('three', 'one', 'two')),
+            ('seed', False, ('two', 'four', 'one', 'three')),
+            ('seed', True, ('two', 'one', 'three')),
+            ('雪☃', False, ('three', 'four', 'two', 'one')),
+            ('雪☃', True, ('three', 'two', 'one')),
+        )
+        for seed, exclude_four, expected_names in cases:
+            with self.subTest(seed=seed, exclude_four=exclude_four):
+                candidates = tuple(sorted(value for name, value in ids.items() if not exclude_four or name != 'four'))
+                original = tuple(candidates)
+                expected = [ids[name] for name in expected_names]
+                for size in range(len(candidates) + 1):
+                    self.assertEqual(s.select_ids(candidates, size, seed), expected[:size])
+                    self.assertEqual(candidates, original)
+
+    def test_committed_draw_replays_with_its_recorded_procedure(self):
+        store = s.durable_store(s.REPO)
+        sample_id = 'draw-82acd83c6cd540a6bf4e29610ff5dc2d'
+        path = s.sample_dir(store, sample_id) / 'draw.json'
+        original = path.read_bytes()
+        draw, inventory = s.load_draw(store, sample_id)
+        self.assertEqual(draw['procedure'], 'sha256-counter-rejection-partial-fisher-yates-v1')
+        self.assertEqual(s.select_ids(s.prepare_candidates(inventory), draw['requested_size'], draw['seed'],
+                                     procedure=draw['procedure']), draw['image_ids'])
+        self.assertEqual(path.read_bytes(), original)
 
 
 if __name__ == '__main__':

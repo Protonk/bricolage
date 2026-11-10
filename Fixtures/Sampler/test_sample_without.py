@@ -194,23 +194,30 @@ class SampleWithoutTests(unittest.TestCase):
         report = json.loads(self.without(source['output']['directory'], 1).stdout)
         path = s.sample_dir(self.store, report['draw']['sample_id']) / 'draw.json'
         draw = json.loads(path.read_text())
-        draw['exclusion']['matched_count'] = 0
-        draw['draw_sha256'] = s.digest({key: value for key, value in draw.items() if key != 'draw_sha256'})
-        path.write_text(json.dumps(draw))
-        verified = self.cli('verify', draw['sample_id'])
-        self.assertEqual(verified.returncode, 1)
-        self.assertFalse(json.loads(verified.stdout)['original_draw_reproduced'])
-        self.assertIn('exclusions or counts differ', json.loads(verified.stdout)['problems'][0]['message'])
-        self.assertEqual(self.cli('publish', draw['sample_id']).returncode, 2)
+        invalid = ((dict(draw['exclusion'], matched_count=0), 'exclusions or counts differ'),
+                   (None, 'wrong type'))
+        for exclusion, message in invalid:
+            with self.subTest(exclusion=exclusion):
+                draw['exclusion'] = exclusion
+                draw['draw_sha256'] = s.digest({key: value for key, value in draw.items() if key != 'draw_sha256'})
+                path.write_text(json.dumps(draw))
+                verified = self.cli('verify', draw['sample_id'])
+                self.assertEqual(verified.returncode, 1)
+                self.assertFalse(json.loads(verified.stdout)['original_draw_reproduced'])
+                self.assertIn(message, json.loads(verified.stdout)['problems'][0]['message'])
+                self.assertEqual(self.cli('publish', draw['sample_id']).returncode, 2)
 
     def test_uniform_selection_from_the_remaining_pool(self):
         inventory = self.inventory()
         excluded = inventory['population']['images'][0]['image_id']
         remaining = [image['image_id'] for image in inventory['population']['images'] if image['image_id'] != excluded]
+        exclusion = s.match_exclusion(dict(world_id='uniform-test', manifest_sha256='0' * 64,
+                                          requested_image_ids=[excluded]), inventory)
+        candidates = s.prepare_candidates(inventory, exclusion)
         outcomes = []
         for first, second in itertools.product(range(3), range(2)):
             with patch.object(s.RandomStream, 'randbelow', side_effect=[first, second]):
-                outcomes.append(tuple(s.sample_ids(inventory, 2, 'unused', [excluded])))
+                outcomes.append(tuple(s.select_ids(candidates, 2, 'unused')))
         self.assertCountEqual(outcomes, list(itertools.permutations(remaining, 2)))
 
     def test_keep_and_help_use_the_public_entry_point(self):
