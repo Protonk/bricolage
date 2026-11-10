@@ -25,6 +25,12 @@ consumer's input, and `world_id` and `image_count` identify its contents. Inspec
 `problems` and `receipt_recorded` too; `next_steps` explains publication recovery.
 Put `--keep` before the command for records to commit.
 
+Use `Fixtures/sampleWithout WORLD_DIRECTORY N` to exclude the exact image IDs
+in an earlier world's `world.json`. IDs no longer eligible here warn and reduce
+the exclusion list; no matches, invalid JSON or too few remaining images fail
+before drawing. It returns the same world handoff, with `warnings` and `exclusion`
+counts. The earlier world's image copies and sampler records are not required.
+
 Use `show SAMPLE_ID` to inspect the selection and source records,
 `verify SAMPLE_ID` to check them, and `publish SAMPLE_ID` to reuse that draw.
 Use the same store option on those commands. The [sampler guide](Sampler/README.md)
@@ -59,6 +65,7 @@ and records give the details.
 | Path | Contents |
 |---|---|
 | `sample` | Public sampler command |
+| `sampleWithout` | Draw from current fixtures excluding a supplied world's exact image IDs |
 | `collection` | Remove or re-pin an input, or regenerate collection totals and the source index |
 | [Sampler/](Sampler/README.md) | Sampler code, tests and versioned records |
 | [tools/](tools/README.md) | Layout checks, fixture creation and the optional comparison runner |

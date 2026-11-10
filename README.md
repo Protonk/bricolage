@@ -59,6 +59,28 @@ Each distinct file hash has an equal chance of selection. Byte-identical copies
 share one place in the draw; crops and different encodings count separately.
 Sampling spans all available collections and does not keep related images together.
 
+## Sample without an earlier world
+
+```sh
+../bricolage/Fixtures/sampleWithout /path/to/world 100
+```
+
+This draws N images from today's eligible fixtures, excluding every byte identity
+listed in the supplied `world.json`. Exact copies share one exclusion; different
+bytes remain separate. The input world stays untouched, and only its manifest
+is needed. Its image copies and original sampler records can be gone.
+
+If an image has since been removed from bricolage, its ID appears in `warnings`
+and the smaller exclusion list is used. Read `exclusion` for requested, matched
+and remaining counts, then use the usual `output.directory` for the new world.
+No matching IDs, invalid world JSON, or fewer than N remaining images is an
+error before drawing. Missing exclusion IDs alone do not make the command fail.
+
+The usual `--seed TEXT` and `--world DIR` options work. Put `--keep` before the
+world argument for records to commit. Later `show`, `verify` and `publish` use
+`Fixtures/sample`; the saved draw includes its exclusions, so these commands do
+not need the earlier world. See the [sampler guide](Fixtures/Sampler/README.md#sample-without-a-world).
+
 ## Remove an unsuitable image
 
 When authorized to remove an image, take its `sha256:...` ID from `world.json`

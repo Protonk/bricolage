@@ -48,6 +48,68 @@ engine and records. From inside Fixtures, use `./sample N`; from elsewhere, use
 the executable's absolute path. No inventory preparation or internal Python
 imports are required.
 
+## Sample without a world
+
+```sh
+../bricolage/Fixtures/sampleWithout /path/to/world 12 --seed next-investigation
+```
+
+[`Fixtures/sampleWithout`](../sampleWithout) draws N distinct images from the
+current eligible fixtures minus the image IDs in a supplied world's `world.json`.
+It uses the same Python environment, draw records, publication and output fields
+as `sample`. Only exact bytes match: aliases of one hash share one exclusion,
+while crops and different encodings remain separate tickets.
+
+Pass a world directory, not a sample ID or a path to the manifest. The command
+reads the existing [published world format](../../WORLD.md): its world ID and
+sorted image entries with hash IDs and matching filenames. Unknown additive
+fields are ignored. There is no separate input format or format-selection option.
+Only `world.json` is read; image copies, other directory entries, and original
+sampler records are not consulted. Thus an old world still works after one of
+its images is removed from bricolage or its local image copies are discarded.
+
+Each requested ID absent from the current eligible population produces an
+`exclusion-unmatched` warning naming that ID, and the exclusion list shrinks.
+Unavailable fixture aliases belonging to those IDs are also reported as warnings
+with their paths. These warnings alone return exit 0. Other fixture and
+publication problems retain their usual error handling. The command never
+reduces N: insufficient remaining images is an error. A missing or malformed
+`world.json`, or no matching eligible IDs (including an empty input world), is
+also an error before saving a draw. N may be zero if at least one ID matches.
+
+The response includes `warnings` and an `exclusion` object:
+
+| Field | Meaning |
+|---|---|
+| `world_id`, `manifest_sha256` | Input world ID and SHA-256 of the manifest's exact bytes |
+| `requested_image_ids`, `requested_count` | All IDs read from the input manifest |
+| `matched_image_ids`, `matched_count` | Eligible IDs excluded from this draw |
+| `unmatched_image_ids` | IDs absent from the eligible population, named in warnings |
+| `remaining_eligible` | Pool size after exclusions; must be at least N |
+
+The same `exclusion` object is saved in the draw, covered by its checksum.
+`population.counts.eligible` and `draw.eligible_count` still describe the full
+inventory snapshot; `exclusion.remaining_eligible` describes the filtered pool.
+The inventory is always refreshed for this endpoint; there is no `--inventory`
+option. A fixed seed repeats the selection when the remaining pool is identical.
+
+The default output is a new world under `Fixtures/output/worlds/<sample_id>/`.
+Use `--world DIR` for an explicit output, or `--keep` before the input world
+argument for versioned records. Output and record destinations cannot overlap
+the input world. The input stays untouched. The returned world has the ordinary
+world format; exclusion details live in the saved draw and command response.
+Use the usual commands on the new sample ID, with the same store option:
+
+```sh
+Fixtures/sample show SAMPLE_ID
+Fixtures/sample verify SAMPLE_ID
+Fixtures/sample publish SAMPLE_ID
+```
+
+Replay uses the saved inventory and exclusions, so it works after the input
+world or its original draw is gone. Publication still checks current selected
+image bytes and metadata pins, just as for an ordinary saved draw.
+
 ## Worlds and publication
 
 Each successful draw publishes a **world**: a directory holding independent,
@@ -124,6 +186,8 @@ A new draw uses the updated population. Existing worlds, inventory snapshots,
 draws and annotations stay unchanged; old snapshots retain their original
 eligibility and changed metadata pins block republication. Removal never swaps
 another image into a saved sample. Draw again for a clean world.
+Use `sampleWithout OLD_WORLD N` when that new draw should also exclude the
+remaining images from an earlier world; the removed ID will be a warning.
 
 ## Saved samples
 
@@ -191,6 +255,7 @@ inspection; programs should access JSON fields by name.
 | `images` | Draw order; each item has `position`, `image_id`, `sampled_path` for its copy in the world, `available_path` for its fixture original, and all alias `locations` with current statuses |
 | `current_check` | Record reproduction and current file/metadata verification; `ok` means no problems, while `publication_ready` means records/metadata/logs are valid and at least one copy of every selected image is available |
 | `problems` | Every problem found, each with a `kind`; empty when the exit code is 0 |
+| `exclusion`, `warnings` | Present for `sampleWithout`; exclusion IDs and counts, and nonfatal missing-ID or alias reports |
 
 The `output` block contains:
 
@@ -265,8 +330,9 @@ rather than hiding the others.
 ## Stores
 
 Global `--repo CHECKOUT`, `--store DIRECTORY` and `--keep` options go **before** the
-command. The checkout resolves from the engine; custom relative option paths resolve
-from the caller's working directory. Two stores matter:
+command (before `WORLD_DIRECTORY` for `sampleWithout`). The checkout resolves from
+the engine; custom relative option paths resolve from the caller's working
+directory. Two stores matter:
 
 | Store | Location | Use |
 |---|---|---|
@@ -391,8 +457,10 @@ leave an existing draw unchanged.
 `sha256-counter-rejection-partial-fisher-yates-v1` is specified independently of
 Python's random-library implementation:
 
-1. Start with eligible image IDs sorted lexicographically. Seed is exact UTF-8
-   text; numeric-looking strings are still strings. An omitted seed is 32 random
+1. Start with eligible image IDs sorted lexicographically. For a draw with an
+   `exclusion` record, remove its matched IDs before shuffling; M is the remaining
+   pool size. Seed is exact UTF-8 text; numeric-looking strings are still strings.
+   An omitted seed is 32 random
    bytes from the operating system, encoded as 64 lowercase hex characters.
 2. Prefix = ASCII `hazy-fixture-sampler-v1`, one zero byte, the seed byte length as
    an unsigned 8-byte big-endian integer, then the seed bytes. The `hazy-` prefix is a
@@ -447,3 +515,7 @@ checkout, reuses the existing Python environment, and runs concurrent draws from
 a sibling directory with no configuration flags. It checks the handoff using
 only `output` and `world.json`, preserves earlier worlds, and republishes a saved
 draw. No real sibling repository or user folder is used for test output.
+Exclusion tests cover missing IDs and copies, malformed manifests, byte-identical
+aliases, pool bounds, uniform selection, and replay without the original world.
+The collection tests also exercise sampling, committed removal, and then
+`sampleWithout` using the unchanged old world from a temporary neighbor.

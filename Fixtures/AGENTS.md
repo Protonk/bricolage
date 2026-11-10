@@ -3,6 +3,11 @@
 For an ordinary draw, use `Fixtures/sample N` from the repository root and read
 the JSON `output` block. The [sampling fast path](../AGENTS.md#just-draw-images)
 also works from neighboring repositories; no further guide reading is required.
+To exclude an earlier world's exact image IDs, use
+`Fixtures/sampleWithout WORLD_DIRECTORY N`. Missing fixture IDs warn; no matches,
+invalid world JSON or too few remaining images fail before drawing. Read its
+`warnings` and `exclusion` fields alongside the usual handoff. Only the earlier
+world's `world.json` is needed, even after removing one of its images here.
 For an authorized image removal, follow the [removal fast path](../AGENTS.md#remove-an-image-you-are-authorized-to-remove).
 `collection remove HASH --reason TEXT` updates, validates and commits its files;
 an incomplete result must be preserved and resumed, not reported as a success.
@@ -23,6 +28,8 @@ Use `Fixtures/sample N` for draws. Scratch records go to `output/records/`;
 `--keep` selects the versioned `Sampler/records/` store. Use the same store for
 later `show`, `verify`, `publish` and `annotate` commands. Generated test patterns
 can check tool mechanics; use the supplied images to examine image behavior.
+`sampleWithout` uses those same stores and records; put `--keep` before its
+world argument and use `sample` for later commands on the saved draw.
 
 Keep original media in a leaf's `images/`, `sources/` or `previews/`, and
 preserve supplied records. Follow [output/AGENTS.md](output/AGENTS.md) for

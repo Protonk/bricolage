@@ -12,6 +12,8 @@ draw's world. Treat a published world as read-only and republish rather than edi
 it; original fixture images remain separate. `--world DIR` chooses a destination
 explicitly and replaces an existing world there. Older `sampled/` worlds remain
 untouched unless explicitly chosen with `--world`.
+`sampleWithout WORLD_DIRECTORY N` publishes here too, leaving its input world
+untouched. Saved exclusions let its draw be republished after that input is gone.
 
 Worlds accumulate until their consumers are finished. Remove only the disposable
 worlds you no longer need. Sampler tests use temporary `sampler-test-*` directories

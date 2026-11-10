@@ -27,6 +27,20 @@ Do not assemble an unrecorded sample or substitute other images on failure.
 If the environment is missing, run the setup command printed by the launcher.
 See [WORLD.md](WORLD.md) when implementing a consumer.
 
+To draw N images excluding an earlier world's exact bytes, run:
+
+```sh
+../bricolage/Fixtures/sampleWithout /path/to/world N
+```
+
+It reads `world.json`; the earlier world's image copies and sampler records are
+not needed. IDs absent from eligible fixtures warn and reduce the exclusion list,
+including images since removed through `collection remove`. Inspect `warnings`
+and `exclusion` as well as the usual `output` and `problems`. No matching IDs,
+invalid world JSON, or too few remaining images is an error. The input world
+stays untouched. Use `--seed TEXT`, `--world DIR`, and `--keep` before the world
+argument as needed; use `Fixtures/sample` for later `show`, `verify` or `publish`.
+
 ## Remove an image you are authorized to remove
 
 Use its `sha256:...` ID from `world.json`, or the hash filename without its extension:

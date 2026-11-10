@@ -450,10 +450,11 @@ class RandomStream:
                 return word % bound
 
 
-def sample_ids(inventory, size, seed):
+def sample_ids(inventory, size, seed, excluded_ids=()):
     validate_inventory(inventory)
     require(type(size) is int and size >= 0, 'usage', 'Sample size must be a nonnegative integer')
-    pool = [i['image_id'] for i in inventory['population']['images'] if i['eligible']]
+    excluded = set(excluded_ids)
+    pool = [i['image_id'] for i in inventory['population']['images'] if i['eligible'] and i['image_id'] not in excluded]
     require(size <= len(pool), 'usage', f'Requested {size} images; eligible population is {len(pool)}')
     rng = RandomStream(seed)
     for i in range(size):
@@ -468,18 +469,21 @@ def sample_dir(store, sample_id):
     return Path(store) / 'draws' / sample_id
 
 
-def create_draw(store, inventory, size, seed=None, *, sample_id=None):
+def create_draw(store, inventory, size, seed=None, *, sample_id=None, exclusion=None):
     seed = secrets.token_hex(32) if seed is None else seed
     require(isinstance(seed, str), 'usage', 'Seed must be a string')
     sample_id = sample_id if sample_id is not None else 'draw-' + uuid.uuid4().hex
     directory = sample_dir(store, sample_id)
-    ids = sample_ids(inventory, size, seed)
+    excluded = validate_exclusion(exclusion, inventory) if exclusion is not None else []
+    ids = sample_ids(inventory, size, seed, excluded)
     inventory = save_inventory(store, inventory)
     draw = dict(schema_version=1, sample_id=sample_id, created_at=utc(),
                 inventory_id=inventory['inventory_id'],
                 inventory_file='inventories/' + inventory['inventory_id'] + '.json',
                 procedure=PROCEDURE, seed=seed, requested_size=size,
                 eligible_count=inventory['population']['counts']['eligible'], image_ids=ids)
+    if exclusion is not None:
+        draw['exclusion'] = exclusion
     draw['draw_sha256'] = digest(draw)
     new_json(directory / 'draw.json', draw)
     return draw
@@ -511,7 +515,8 @@ def replay_draw(store, draw):
     what = f'Draw record {draw["sample_id"]}'
     require(draw['eligible_count'] == inventory['population']['counts']['eligible'],
             'record-damaged', f'{what}: eligible count differs from its snapshot')
-    require(draw['image_ids'] == sample_ids(inventory, draw['requested_size'], draw['seed']),
+    excluded = validate_exclusion(draw['exclusion'], inventory) if 'exclusion' in draw else []
+    require(draw['image_ids'] == sample_ids(inventory, draw['requested_size'], draw['seed'], excluded),
             'record-damaged', f'{what}: original draw does not reproduce from its snapshot')
     return inventory
 
@@ -1075,20 +1080,115 @@ def publish_command(store, repo, draw, images, check, world):
     return result
 
 
+def read_exclusion_world(directory):
+    """Read the published manifest only; the world's image copies are not required."""
+    path = Path(directory) / WORLD_MANIFEST
+    what = f'Exclusion world manifest {path}'
+
+    def object_pairs(pairs):
+        value = {}
+        for key, item in pairs:
+            require(key not in value, 'usage', f'{what}: duplicate JSON field {key!r}')
+            value[key] = item
+        return value
+
+    try:
+        raw = path.read_bytes()
+        manifest = json.loads(raw.decode('utf-8'), object_pairs_hook=object_pairs)
+        canonical(manifest)  # Reject non-JSON numbers and invalid Unicode even in extra fields.
+    except (OSError, ValueError, RecursionError, SamplerError) as error:
+        raise SamplerError('usage', f'Cannot read {what}: {error}', path=str(path)) from None
+    require(field(manifest, 'schema_version', int, what, 'usage') == 1,
+            'usage', f'{what}: expected the world.json format published by Fixtures/sample')
+    world_id = field(manifest, 'world_id', str, what, 'usage')
+    require(bool(world_id), 'usage', f'{what}: world_id must not be empty')
+    rows = field(manifest, 'images', list, what, 'usage')
+    ids, names = [], []
+    for position, row in enumerate(rows):
+        entry = f'{what} images[{position}]'
+        image_id = field(row, 'id', str, entry, 'usage')
+        require(re.fullmatch(r'sha256:[0-9a-f]{64}', image_id), 'usage', f'{entry}: invalid image ID {image_id!r}')
+        name = field(row, 'file', str, entry, 'usage')
+        require(name and PurePosixPath(name).name == name and '\\' not in name and '\0' not in name
+                and Path(name).stem == image_id.removeprefix('sha256:'),
+                'usage', f'{entry}: file must be the hash-named filename for its ID: {name!r}')
+        ids.append(image_id)
+        names.append(name)
+    require(len(set(ids)) == len(ids), 'usage', f'{what}: duplicate image IDs')
+    require(names == sorted(set(names)), 'usage', f'{what}: filenames must be unique and sorted')
+    return dict(world_id=world_id, manifest_sha256=hashlib.sha256(raw).hexdigest(), requested_image_ids=sorted(ids))
+
+
+def match_exclusion(source, inventory):
+    eligible = {image['image_id'] for image in inventory['population']['images'] if image['eligible']}
+    requested = set(source['requested_image_ids'])
+    matched = sorted(requested & eligible)
+    return dict(source, matched_image_ids=matched, unmatched_image_ids=sorted(requested - eligible),
+                requested_count=len(requested), matched_count=len(matched), remaining_eligible=len(eligible) - len(matched))
+
+
+def validate_exclusion(exclusion, inventory):
+    """Reconstruct the exact pool from the saved snapshot without reopening the source world."""
+    what = 'Draw exclusion'
+    world_id = field(exclusion, 'world_id', str, what)
+    sha = field(exclusion, 'manifest_sha256', str, what)
+    require(world_id and HEX.fullmatch(sha), 'record-invalid', f'{what}: invalid source world identity')
+    for key in ('requested_image_ids', 'matched_image_ids', 'unmatched_image_ids'):
+        ids = field(exclusion, key, list, what)
+        require(all(isinstance(i, str) and re.fullmatch(r'sha256:[0-9a-f]{64}', i) for i in ids),
+                'record-invalid', f'{what}: invalid image ID in {key}')
+        require(ids == sorted(set(ids)), 'record-invalid', f'{what}: {key} must be unique and sorted')
+    for key in ('requested_count', 'matched_count', 'remaining_eligible'):
+        field(exclusion, key, int, what)
+    expected = match_exclusion(dict(world_id=world_id, manifest_sha256=sha,
+                                    requested_image_ids=exclusion['requested_image_ids']), inventory)
+    require(expected['matched_image_ids'] and all(exclusion[key] == value for key, value in expected.items()),
+            'record-damaged', f'{what}: exclusions or counts differ from the saved population')
+    return exclusion['matched_image_ids']
+
+
+def protect_exclusion_world(source, destination):
+    require(not within(destination, source) and not within(source, destination), 'output',
+            f'Exclusion world and output/record destinations must not overlap: {source}, {destination}')
+
+
 def draw_command(args):
     sample_id = 'draw-' + uuid.uuid4().hex
-    world_target(args.repo, args.store, args.world, sample_id=sample_id)  # Refuse before drawing.
+    target = world_target(args.repo, args.store, args.world, sample_id=sample_id)  # Refuse before drawing.
+    source = read_exclusion_world(args.excluded_world) if getattr(args, 'excluded_world', None) is not None else None
+    if source is not None:
+        protect_exclusion_world(args.excluded_world, target)
     inventory = (load_inventory(args.store, args.inventory) if args.inventory
                  else build_inventory(args.repo))
-    drawn = create_draw(args.store, inventory, args.size, args.seed, sample_id=sample_id)
+    exclusion = match_exclusion(source, inventory) if source is not None else None
+    if exclusion is not None:
+        require(exclusion['matched_count'] > 0, 'usage',
+                f'No image IDs in {Path(args.excluded_world) / WORLD_MANIFEST} match eligible fixtures', exclusion=exclusion)
+        require(args.size <= exclusion['remaining_eligible'], 'usage',
+                f'Requested {args.size} images; {exclusion["remaining_eligible"]} eligible images remain after exclusion',
+                exclusion=exclusion)
+    drawn = create_draw(args.store, inventory, args.size, args.seed, sample_id=sample_id, exclusion=exclusion)
     check = verify_draw(args.store, drawn['sample_id'], args.repo)
     images = inspect_draw(args.store, drawn['sample_id'], args.repo, paths_only=True)['images']
     published = publish_command(args.store, args.repo, drawn, images, check, args.world)
-    result = dict(schema_version=1, output=published['output'], draw=drawn,
-                  population=inventory_report(inventory, args.store),
+    population = inventory_report(inventory, args.store)
+    warnings = []
+    if exclusion is not None:
+        unmatched = set(exclusion['unmatched_image_ids'])
+        warnings = [dict(kind='exclusion-unmatched', image_id=i,
+                         message='Image ID is absent from the eligible fixture population; not excluded')
+                    for i in exclusion['unmatched_image_ids']]
+        # Unavailable exclusion identities reduce the exclusion list. Retain their
+        # alias details as warnings; other population problems keep their usual status.
+        population['warnings'] = [p for p in population['problems'] if p.get('image_id') in unmatched]
+        population['problems'] = [p for p in population['problems'] if p.get('image_id') not in unmatched]
+        warnings.extend(population['warnings'])
+    result = dict(schema_version=1, output=published['output'], draw=drawn, population=population,
                   summary=dict(by_leaf=leaf_summary(selected_items(drawn, inventory))),
                   images=published['images'], current_check=check,
-                  problems=published['problems'] + inventory_report(inventory, args.store)['problems'])
+                  problems=published['problems'] + population['problems'])
+    if exclusion is not None:
+        result.update(exclusion=exclusion, warnings=warnings)
     return result
 
 
@@ -1151,27 +1251,12 @@ def emit_error(error, repo=REPO):
     print(f'sampler: {error}', file=sys.stderr)
 
 
-def main(argv=None):
-    if sys.version_info[:2] != (3, 14):
-        setup = shlex.join(['make', '-C', str(REPO / 'Fixtures'), 'setup-python'])
-        print(f'sampler: Python 3.14.x is required. Run {setup}, then use {REPO / "Fixtures/sample"}.',
-              file=sys.stderr)
-        return 2
-    argv = list(sys.argv[1:] if argv is None else argv)
-    # A leading N is shorthand for "draw N", after any global options.
-    index = 0
-    while index < len(argv):
-        argument = argv[index]
-        if argument in ('--repo', '--store'):
-            index += 2
-        elif argument.startswith(('--repo=', '--store=')) or argument == '--keep':
-            index += 1
-        else:
-            if re.fullmatch(r'[+-]?[0-9]+', argument):
-                argv.insert(index, 'draw')
-            break
+def argument_parser(without=False):
     parser = Parser(
-        prog='Fixtures/sample', description=__doc__, allow_abbrev=False,
+        prog='Fixtures/sampleWithout' if without else 'Fixtures/sample',
+        description=('Draw N images from eligible fixtures minus the IDs in a published world.json. '
+                     'Missing fixture IDs warn and reduce the exclusion list; source image copies are not read.'
+                     if without else __doc__), allow_abbrev=False,
         epilog='From a neighboring repository: ../bricolage/Fixtures/sample 100. '
                'Uses its own Python environment; no directory change or imports needed. '
                'Read output first: published says whether the world is ready, directory names it, '
@@ -1182,6 +1267,17 @@ def main(argv=None):
     parser.add_argument('--store', type=Path, help='JSON record directory; default Fixtures/output/records (disposable)')
     parser.add_argument('--keep', action='store_true',
                         help='Use the versioned store Fixtures/Sampler/records: a draw meant to be committed')
+    if without:
+        parser.epilog = ('From a neighboring repository: ../bricolage/Fixtures/sampleWithout WORLD_DIRECTORY N. '
+                         'Read output for the new world, exclusion for counts, and warnings for unmatched IDs. '
+                         'No matches, invalid world.json, or too few remaining images is an error. '
+                         'The input world stays untouched. Use Fixtures/sample to show, verify or publish the saved draw.')
+        parser.add_argument('excluded_world', type=Path, metavar='WORLD_DIRECTORY', help='Directory containing published world.json')
+        parser.add_argument('size', type=int, metavar='N')
+        parser.add_argument('--seed', help='Exact UTF-8 seed text; generated and recorded if omitted')
+        parser.add_argument('--world', type=Path, help='Output directory; default Fixtures/output/worlds/<sample_id>')
+        parser.set_defaults(command='draw', inventory=None)
+        return parser
     commands = parser.add_subparsers(dest='command', required=True)
     commands.add_parser('inventory', help='Refresh and save an immutable population snapshot')
     draw = commands.add_parser('draw', help='Draw N equal tickets and publish them as a world; refresh inventory by default')
@@ -1207,8 +1303,33 @@ def main(argv=None):
     data.add_argument('--json', help='A JSON value, including null, scalars, objects or arrays')
     data.add_argument('--value-file', help='Read JSON from this file, or - for stdin')
     data.add_argument('--delete', action='store_true', help='Remove current value while retaining history')
-    args = parser.parse_args(argv)
+    return parser
+
+
+def main(argv=None, *, without=False):
+    if sys.version_info[:2] != (3, 14):
+        setup = shlex.join(['make', '-C', str(REPO / 'Fixtures'), 'setup-python'])
+        entry = REPO / 'Fixtures' / ('sampleWithout' if without else 'sample')
+        print(f'sampler: Python 3.14.x is required. Run {setup}, then use {entry}.', file=sys.stderr)
+        return 2
+    argv = list(sys.argv[1:] if argv is None else argv)
+    # A leading N is shorthand for "draw N", after any global options.
+    index = 0
+    while not without and index < len(argv):
+        argument = argv[index]
+        if argument in ('--repo', '--store'):
+            index += 2
+        elif argument.startswith(('--repo=', '--store=')) or argument == '--keep':
+            index += 1
+        else:
+            if re.fullmatch(r'[+-]?[0-9]+', argument):
+                argv.insert(index, 'draw')
+            break
+    args = argument_parser(without).parse_args(argv)
     try:
+        if without:
+            requested_store = args.store if args.store is not None else (durable_store(args.repo) if args.keep else scratch_store(args.repo))
+            protect_exclusion_world(args.excluded_world, requested_store)
         args.store = resolve_store(args.repo, args.store, args.keep)
         result = run(args)
         # Every response names the store it read or wrote, so a scratch draw cannot pass for a kept one.

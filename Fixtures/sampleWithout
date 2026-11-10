@@ -1,0 +1,10 @@
+#!/bin/sh
+# Draw from the fixture population minus the image IDs in a published world.
+set -eu
+fixture_root=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+sampler_python="$fixture_root/.venv/bin/python"
+if [ ! -x "$sampler_python" ]; then
+    printf 'sampleWithout: Python environment missing (requires Python 3.14.x).\nRun: make -C "%s" setup-python\n' "$fixture_root" >&2
+    exit 2
+fi
+exec "$sampler_python" "$fixture_root/Sampler/sample_without.py" "$@"

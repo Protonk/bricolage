@@ -27,6 +27,18 @@ class RemovalTests(unittest.TestCase):
         self.git = mechanics.CollectionTests.setup_git(self)
         self.original_commit = self.git('rev-parse', 'HEAD')
 
+    def install_launchers(self):
+        # Install real launchers and code in the disposable checkout.
+        (self.fixtures / 'tools').mkdir()
+        (self.fixtures / 'Sampler').mkdir()
+        for script in (layout.FIXTURES / 'tools').glob('*.py'):
+            shutil.copy2(script, self.fixtures / 'tools' / script.name)
+        for script in ('sampler.py', 'sample_without.py'):
+            shutil.copy2(layout.FIXTURES / 'Sampler' / script, self.fixtures / 'Sampler' / script)
+        for executable in ('sample', 'sampleWithout', 'collection'):
+            shutil.copy2(layout.FIXTURES / executable, self.fixtures / executable)
+        (self.fixtures / '.venv').symlink_to(layout.FIXTURES / '.venv', target_is_directory=True)
+
     def run_remove(self, *extra, selector=None, reason='Remove unsuitable fixture'):
         stdout, stderr = io.StringIO(), io.StringIO()
         status = 0
@@ -65,15 +77,7 @@ class RemovalTests(unittest.TestCase):
             stream.write(f'{alias["byte_sha256"]}  {alias["file"]}\n')
         with (self.root / 'batches/batch-1.txt').open('a') as stream:
             stream.write(alias['file'] + '\n')
-        # Install real launchers and code in the disposable checkout.
-        (self.fixtures / 'tools').mkdir()
-        (self.fixtures / 'Sampler').mkdir()
-        for script in (layout.FIXTURES / 'tools').glob('*.py'):
-            shutil.copy2(script, self.fixtures / 'tools' / script.name)
-        shutil.copy2(layout.FIXTURES / 'Sampler/sampler.py', self.fixtures / 'Sampler/sampler.py')
-        for executable in ('sample', 'collection'):
-            shutil.copy2(layout.FIXTURES / executable, self.fixtures / executable)
-        (self.fixtures / '.venv').symlink_to(layout.FIXTURES / '.venv', target_is_directory=True)
+        self.install_launchers()
         for name in ('staged.txt', 'unstaged.txt'):
             (self.repo / name).write_text('original\n')
         self.setup_git()
@@ -124,6 +128,45 @@ class RemovalTests(unittest.TestCase):
         self.assertEqual(json.loads(again.stdout)['status'], 'already_removed')
         self.assertEqual(json.loads(again.stdout)['commit'], report['commit'])
         self.assertEqual(self.git('rev-list', '--count', 'HEAD'), '2')
+        self.assertEqual(list(consumer.iterdir()), [])
+
+    def test_neighbor_samples_without_an_old_world_after_removing_one_of_its_images(self):
+        self.install_launchers()
+        self.setup_git()
+        consumer = Path(self.temp.name) / 'neighbor with spaces'
+        consumer.mkdir()
+
+        def run(tool, *args):
+            return subprocess.run([f'../bricolage/Fixtures/{tool}', *args], cwd=consumer,
+                                  capture_output=True, text=True)
+
+        sampled = run('sample', '2')
+        self.assertEqual(sampled.returncode, 0, sampled.stderr)
+        original = json.loads(sampled.stdout)
+        world = Path(original['output']['directory'])
+        before = {p.name: p.read_bytes() for p in world.iterdir()}
+        removed_id = original['draw']['image_ids'][0]
+        removed = run('collection', 'remove', removed_id, '--reason', 'Remove sampled image')
+        self.assertEqual(removed.returncode, 0, removed.stderr + removed.stdout)
+        self.assertTrue(json.loads(removed.stdout)['complete'])
+
+        result = run('sampleWithout', str(world), '1')
+        self.assertEqual(result.returncode, 0, result.stderr + result.stdout)
+        report = json.loads(result.stdout)
+        self.assertTrue(report['output']['published'])
+        self.assertTrue(report['output']['receipt_recorded'])
+        self.assertEqual(report['output']['image_count'], 1)
+        self.assertEqual(report['exclusion']['requested_count'], 2)
+        self.assertEqual(report['exclusion']['matched_count'], 1)
+        self.assertEqual(report['exclusion']['remaining_eligible'], 1)
+        self.assertEqual(report['exclusion']['unmatched_image_ids'], [removed_id])
+        self.assertEqual([warning['image_id'] for warning in report['warnings']], [removed_id])
+        expected = {'sha256:' + row['byte_sha256'] for row in self.rows} - set(original['draw']['image_ids'])
+        self.assertEqual(set(report['draw']['image_ids']), expected)
+        self.assertEqual(report['problems'], [])
+        self.assertEqual({p.name: p.read_bytes() for p in world.iterdir()}, before)
+        self.assertEqual(run('sample', 'verify', report['draw']['sample_id']).returncode, 0)
+        self.assertEqual(self.git('status', '--porcelain'), '')
         self.assertEqual(list(consumer.iterdir()), [])
 
     def test_dry_run_does_not_create_receipts_or_commit(self):
