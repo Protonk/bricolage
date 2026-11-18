@@ -21,7 +21,7 @@ Follow `output.next_steps` for publication failures. Exit 2 reports an `error`.
 
 Every publication gets a fresh path. An explicit `--world DIR` must name a new
 directory. Use `--seed TEXT` for a recorded seed. Ordinary draws are disposable.
-Run `Fixtures/sample keep WORLD_ID` to retain a draw's history, then commit its records.
+Run `Fixtures/sample keep WORLD_ID` to retain a draw's history, then commit the `files` it lists.
 Do not assemble an unrecorded sample or substitute other images on failure.
 If the environment is missing, run the setup command printed by the launcher.
 See [WORLD.md](WORLD.md) when implementing a consumer.

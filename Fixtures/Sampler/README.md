@@ -274,13 +274,21 @@ Ordinary draws go to `Fixtures/output/records/`. To keep one after inspecting it
 Fixtures/sample keep WORLD_ID
 ```
 
-Commit the records under `Fixtures/Sampler/records/`. Keeping replays the draw
+Commit the records under `Fixtures/Sampler/records/`. The response's `files`
+lists them relative to the checkout: the draw, its annotation log and its
+inventory. Commit all three; a draw committed without its inventory cannot be
+replayed, explained or republished in another checkout. Keeping replays the draw
 and retains its inventory, selection and full annotation history, including
 publication receipts. It works without the world or the source images.
 Inventories share a file when their population hashes match. Its timestamp and
 checkout hint describe the scan that wrote that copy. Repeating `keep` is safe.
 
-`show`, `verify`, `annotate` and `publish` find the draw by ID. `list` includes
+`show`, `verify`, `annotate` and `publish` find the draw by ID. For a kept draw,
+`annotate` and `publish` therefore append to its versioned `annotations.jsonl`.
+A publication receipt records this machine's absolute world path, so each
+`publish` of a kept draw leaves an uncommitted line in a tracked file. Commit it
+if the publication is part of the record; otherwise discard it with
+`git restore`. Every response's `store` says which store was written. `list` includes
 both stores and names the store for each draw. When old scratch and kept copies
 exist, the sampler uses the longer compatible history and prefers the kept
 copy when both agree. If the histories diverge, it names both stores for
@@ -479,9 +487,13 @@ of this record against the checkout; there is no separate hand-written check fil
 ```sh
 Fixtures/sample show draw-82acd83c6cd540a6bf4e29610ff5dc2d --paths
 Fixtures/sample verify draw-82acd83c6cd540a6bf4e29610ff5dc2d
-Fixtures/sample publish draw-82acd83c6cd540a6bf4e29610ff5dc2d
 make -C Fixtures test-sampler
 ```
+
+These commands change no tracked file. `Fixtures/sample publish` of this draw
+also works, and appends a ninth event to the committed log, as
+[Stores](#stores) describes; restore the file afterwards unless the receipt is
+meant to be kept.
 
 The mechanics tests create temporary `sampler-test-*` directories under
 `Fixtures/output/` and remove them with their worlds and records on completion.

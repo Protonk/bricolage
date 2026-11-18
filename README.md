@@ -39,7 +39,7 @@ Fixtures/sample keep WORLD_ID
 For example, the [saved elbow draw](Fixtures/Sampler/records/draws/draw-4622e72641da4b64a3c6296f4942b565/draw.json)
 selected 12 of the 171 eligible Derivatives images. Later additions to the
 archive leave that denominator intact. Ordinary draws are disposable.
-If a draw becomes evidence, `keep` saves its records for you to commit.
+If a draw becomes evidence, `keep` saves its records and lists the `files` to commit.
 
 Browse the [fixture catalog](Fixtures/README.md), read the [consumer contract](WORLD.md),
 or use the [sampler guide](Fixtures/Sampler/README.md) for exclusion and replay.

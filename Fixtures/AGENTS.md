@@ -28,7 +28,8 @@ library; install a leaf's `tools/requirements.txt` when its tools need packages.
 
 Use `Fixtures/sample N` for draws. Pass the returned directory to the consumer.
 To retain an ordinary or exclusion draw, run `Fixtures/sample keep WORLD_ID`
-and commit its records. Later commands find the draw by ID. Generated test
+and commit the `files` it lists. Later commands find the draw by ID, so
+publishing or annotating a kept draw appends to its tracked log. Generated test
 patterns can check tool mechanics. Use the supplied images to examine image behavior.
 
 Keep original media in a leaf's `images/`, `sources/` or `previews/`, and

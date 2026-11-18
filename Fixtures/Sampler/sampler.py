@@ -1049,8 +1049,12 @@ def keep_draw(repo, source, sample_id):
                 shutil.copy2(origin / log.name, log)
                 log.replace(target / log.name)
         events = read_events(durable, draw)
+    # The draw directory alone is not the record: without its snapshot a committed draw
+    # replays nowhere else. Name every file, relative to the checkout, for `git add`.
+    records = [target / 'draw.json', target / 'annotations.jsonl', inventory_file(durable, draw['inventory_id'])]
+    files = [path.relative_to(repo).as_posix() for path in records if path.is_file()]
     return dict(schema_version=1, world_id=sample_id, kept=True, directory=str(target.resolve()),
-                inventory_id=draw['inventory_id'], annotation_count=len(events))
+                inventory_id=draw['inventory_id'], annotation_count=len(events), files=files)
 
 
 @contextmanager

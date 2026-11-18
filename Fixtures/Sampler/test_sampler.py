@@ -760,6 +760,12 @@ class SamplerTests(unittest.TestCase):
             kept = self.default_cli(*args)
             self.assertEqual(kept.returncode, 0, kept.stderr)
             self.assertEqual(json.loads(kept.stdout)['store'], str(self.store))
+        # The response names every file to commit; the draw directory alone lacks its snapshot.
+        records = 'Fixtures/Sampler/records/'
+        self.assertEqual(json.loads(kept.stdout)['files'],
+                         [f'{records}draws/{sid}/draw.json', f'{records}draws/{sid}/annotations.jsonl',
+                          records + first['draw']['inventory_file']])
+        self.assertTrue(all((self.repo / name).is_file() for name in json.loads(kept.stdout)['files']))
         directory = s.sample_dir(self.store, sid)
         for name in ('draw.json', 'annotations.jsonl'):
             self.assertEqual((directory / name).read_bytes(), (original / name).read_bytes())
