@@ -1260,18 +1260,44 @@ def protect_exclusion_world(source, destination):
             f'Exclusion world and output/record destinations must not overlap: {source}, {destination}')
 
 
+def population_shortfall(inventory, image_ids=None):
+    """What keeps recorded images out of the pool, for a request the pool cannot meet.
+
+    Counts identities with no verified local copy, limited to `image_ids` when given,
+    and leaves excluded for unreadable metadata, whose contents are unknown.
+    """
+    wanted = None if image_ids is None else set(image_ids)
+    unavailable = sum(not image['eligible'] for image in inventory['population']['images']
+                      if wanted is None or image['image_id'] in wanted)
+    excluded = [leaf['fixture_path'] for leaf in excluded_leaves(inventory)]
+    notes = []
+    if unavailable:
+        notes.append(f'{unavailable} {"of the requested" if wanted is not None else "recorded"} image(s) have no '
+                     'verified local copy; media is not in Git and Fixtures/RECOVERY.md describes its recovery')
+    if excluded:
+        notes.append(f'{len(excluded)} leaf(s) were excluded for unreadable metadata: {", ".join(excluded)}')
+    if notes:
+        notes.append('Fixtures/sample inventory lists each one')
+    return dict(note=''.join('. ' + note for note in notes),
+                details=dict(unavailable_images=unavailable, excluded_leaves=excluded))
+
+
 def request_from_args(args, inventory, source=None):
     """Translate either CLI's arguments and read world IDs into one draw request."""
     exclusion = match_exclusion(source, inventory) if source is not None else None
     if exclusion is not None:
-        # No match can also mean the world's images sit in a leaf the inventory excluded
-        # for unreadable metadata. This message does not say so; `Fixtures/sample inventory`
-        # names excluded leaves. Other indirect causes are likewise left to that report.
+        # An unmatched ID may be recorded here with no local copy, or sit in an excluded leaf.
+        unmatched = population_shortfall(inventory, exclusion['unmatched_image_ids'])
         require(exclusion['matched_count'] > 0, 'usage',
-                f'No image IDs in {Path(args.excluded_world) / WORLD_MANIFEST} match eligible fixtures', exclusion=exclusion)
-        require(args.size <= exclusion['remaining_eligible'], 'usage',
-                f'Requested {args.size} images; {exclusion["remaining_eligible"]} eligible images remain after exclusion',
-                exclusion=exclusion)
+                f'No image IDs in {Path(args.excluded_world) / WORLD_MANIFEST} match eligible fixtures'
+                + unmatched['note'], exclusion=exclusion, **unmatched['details'])
+    available = exclusion['remaining_eligible'] if exclusion is not None else inventory['population']['counts']['eligible']
+    if type(args.size) is int and args.size > available:
+        shortfall = population_shortfall(inventory)
+        message = (f'Requested {args.size} images; {available} eligible images remain after exclusion' if exclusion is not None
+                   else f'Requested {args.size} images; eligible population is {available}')
+        details = dict(shortfall['details'], **(dict(exclusion=exclusion) if exclusion is not None else {}))
+        raise SamplerError('usage', message + shortfall['note'], eligible=available, **details)
     return DrawRequest(size=args.size, seed=args.seed, exclusion=exclusion)
 
 

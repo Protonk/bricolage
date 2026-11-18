@@ -76,6 +76,8 @@ publication problems retain their usual error handling. The command never
 reduces N: insufficient remaining images is an error. A missing or malformed
 `world.json`, or no matching eligible IDs (including an empty input world), is
 also an error before saving a draw. N may be zero if at least one ID matches.
+The no-match error counts the requested images that are recorded here without
+a verified local copy and names any excluded leaf, whose images cannot match.
 
 The response includes `warnings` and an `exclusion` object:
 
@@ -116,6 +118,10 @@ For an unsuitable input, use the [collection removal guide](../tools/README.md#r
 `draw` refreshes the inventory by default and returns a saved `sample_id`.
 Omit `--seed` to generate and record a seed. N may be zero; negative N or N larger
 than the eligible population is an error. There is no replacement or size adjustment.
+When recorded images lack a verified local copy, or a leaf was excluded, that
+error says so and carries `eligible`, `unavailable_images` and `excluded_leaves`.
+A fresh clone has catalogs and no media, so every draw there fails this way
+until the media is restored as [RECOVERY.md](../RECOVERY.md) describes.
 
 Use the returned full identifiers in these commands:
 

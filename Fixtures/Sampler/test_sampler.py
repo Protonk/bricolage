@@ -171,7 +171,26 @@ class SamplerTests(unittest.TestCase):
         error = json.loads(r.stdout)['error']
         self.assertEqual(error['code'], 'usage')
         self.assertIn('eligible population is 4', error['message'])
+        self.assertNotIn('RECOVERY', error['message'])  # An intact population needs no explanation.
+        self.assertEqual((error['eligible'], error['unavailable_images'], error['excluded_leaves']), (4, 0, []))
         self.assertEqual(s.list_draws(self.store)['draws'], [])
+
+    def test_unmet_request_names_missing_media_and_excluded_leaves(self):
+        # A fresh clone has catalogs and no media: the request is fine and the pool is short.
+        (self.heap / 'images/0.png').unlink()
+        (self.related / 'manifest.json').write_text('{not json')
+        result = self.cli('3')
+        self.assertEqual(result.returncode, 2)
+        error = json.loads(result.stdout)['error']
+        self.assertEqual(error['code'], 'usage')
+        self.assertIn('eligible population is 1', error['message'])
+        self.assertIn('1 recorded image(s) have no verified local copy', error['message'])
+        self.assertIn('Fixtures/RECOVERY.md', error['message'])
+        self.assertIn('1 leaf(s) were excluded for unreadable metadata: Fixtures/Relationships/Variants', error['message'])
+        self.assertEqual((error['eligible'], error['unavailable_images'], error['excluded_leaves']),
+                         (1, 1, ['Fixtures/Relationships/Variants']))
+        self.assertEqual(s.list_draws(self.store)['draws'], [])
+        self.assertEqual(self.cli('1').returncode, 1)  # The remaining image still draws, with its problems listed.
 
     def test_every_supported_procedure_has_a_worked_example(self):
         examples = {s.UNIFORM_PROCEDURE: self.check_uniform_pairs}

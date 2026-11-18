@@ -152,7 +152,25 @@ class SampleWithoutTests(unittest.TestCase):
         self.assertIn('No image IDs', self.assert_rejected_without_drawing(empty_world, 0)['message'])
         manifest = dict(schema_version=1, world_id='a former world', images=[dict(id='sha256:' + '0' * 64, file='0' * 64 + '.png')])
         (directory / 'world.json').write_text(json.dumps(manifest))
-        self.assertIn('No image IDs', self.assert_rejected_without_drawing(directory, 1)['message'])
+        error = self.assert_rejected_without_drawing(directory, 1)
+        self.assertIn('No image IDs', error['message'])
+        self.assertNotIn('RECOVERY', error['message'])  # An ID unknown here has no local explanation.
+        self.assertEqual((error['unavailable_images'], error['excluded_leaves']), (0, []))
+
+    def test_no_match_names_requested_images_without_local_copies_and_excluded_leaves(self):
+        source = self.world(1)
+        directory = source['output']['directory']
+        Path(source['images'][0]['available_path']).unlink()
+        error = self.assert_rejected_without_drawing(directory, 1)
+        self.assertIn('No image IDs', error['message'])
+        self.assertIn('1 of the requested image(s) have no verified local copy', error['message'])
+        self.assertIn('Fixtures/RECOVERY.md', error['message'])
+        self.assertEqual((error['unavailable_images'], error['excluded_leaves']), (1, []))
+        # An excluded leaf's contents are unknown, so its images cannot match either.
+        (self.related / 'manifest.json').write_text('{not json')
+        error = self.assert_rejected_without_drawing(directory, 1)
+        self.assertIn('1 leaf(s) were excluded for unreadable metadata: Fixtures/Relationships/Variants', error['message'])
+        self.assertEqual(error['excluded_leaves'], ['Fixtures/Relationships/Variants'])
 
     def test_malformed_manifests_name_world_json_and_leave_no_draw(self):
         source = self.world(2)
