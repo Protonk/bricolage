@@ -1,12 +1,8 @@
-# bricolage 0.1.1
+# bricolage
 
 bricolage collects image fixtures and draws repeatable samples from them.
 A draw gives your program a directory of images. Its saved record tells you
 where those images came from and what else could have been chosen.
-
-Collections range from crops of a known source to unrelated photographs with
-pale skies over dark ground. A new collection records its selection, sources
-and image checksums using the [fixture template](Fixtures/Template/README.md).
 
 ## Draw a world
 
