@@ -20,8 +20,9 @@ that matter are `leaf`, `file`, `byte_sha256`, `width`, `height`, `format`,
   `acquired_url` show exactly what was fetched before.
 - `source-url`: only a page, dataset or download URL is recorded. Read the
   leaf's `sources.csv` and `SOURCES.md` and fetch by hand.
-- `regenerate`: a derived input. Restore its family's source first, then run the
-  leaf's generator (`tools/generate.py` or `tools/build.py`) as its README says.
+- `regenerate`: a derived input. Restore its family source before running the
+  leaf's generator. For a composite, split the index's `parents` on `|` and look
+  up each parent family in the leaf's `sources.csv` to restore all sources.
 - `none`: no upstream location is recorded. The preserved bytes were the only
   copy; a lost input of this kind is gone unless another local copy exists.
 

@@ -44,7 +44,9 @@ Commons requests as `BricolageFixtureBot/0.1 (https://github.com/Protonk/bricola
 Older leaf records and READMEs name `HazyFixtureBot` and the hazy repository
 because that is what their acquisitions used. The newest Similarity intake,
 [Puddle-Inversions](Heaps/Similarity/Puddle-Inversions/README.md), is the
-current starting point for a handoff of Commons leads.
+current starting point for a handoff of Commons leads. Its acquisition tool
+uses the [shared Commons transport](tools/commons_transport.py) for paced
+requests and receipts. Reuse it for comparable intakes.
 
 The archive is additive and flat. A leaf is published once; afterwards its
 membership and bytes change only through `Fixtures/collection remove INPUT
@@ -59,11 +61,12 @@ After other catalog changes, run `make -C Fixtures collection-totals`; current
 totals, the source index `INDEX.csv` and marked README blocks are generated,
 not maintained by hand.
 
-Run the checks relevant to the change, from the repository root:
+Run the standard check from the repository root with Python set up and
+`Fixtures/tools/requirements.txt` installed. It runs on pushes and pull
+requests and uses temporary inputs. The last two commands exercise local media.
 
 ```sh
-make -C Fixtures test-sampler
-make -C Fixtures test-fixture-layout
+make -C Fixtures check
 make -C Fixtures test-relationships
 Fixtures/.venv/bin/python Fixtures/tools/check_layout.py --full
 ```

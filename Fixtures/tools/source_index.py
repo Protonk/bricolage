@@ -16,7 +16,7 @@ from fixture_layout import FIXTURES, discover, check_layout, require
 
 COLUMNS = ('leaf fixture_id kind file byte_sha256 width height format transformation family_id '
            'source_filename origin source_url title page_id original_sha1 acquired_url requested_edge '
-           'rendition_kind license license_url credit recovery recovery_note shared_with').split()
+           'rendition_kind license license_url credit recovery recovery_note shared_with parents').split()
 
 ORIGINS = {'commons.wikimedia.org': 'commons', 'upload.wikimedia.org': 'commons',
            'scikit-image.org': 'scikit-image', 'vision.middlebury.edu': 'middlebury'}
@@ -89,14 +89,18 @@ def leaf_rows(leaf, fixtures=FIXTURES, manifest=None):
     relative = leaf.relative_to(fixtures).as_posix()
     rows = []
     for image in manifest['images']:
-        family = image['family_id'] or image['parents'].split('|')[0]
-        source = sources.get(family, {})
+        family = image['family_id']
+        parents = image['parents']
+        source_family = family or (parents if '|' not in parents else '')
+        source = sources.get(source_family, {}) if source_family else {}
         source_url = source.get('source_url', '')
         origin = origin_of(source_url)
         identity = imports.get(image['file']) or construction.get('sources/' + source.get('source_filename', '')) or {}
         derived = image['transformation'] not in COPIES
         if derived:
             recovery, note = 'regenerate', 'Derived input; rebuild from its family source with the leaf tools.'
+            if '|' in parents:
+                note = 'Derived input; restore each parent from sources.csv and rebuild with the leaf tools.'
         elif identity.get('page_id') and identity.get('original_sha1') and identity.get('acquired_url'):
             recovery, note = 'commons-api', ''
         elif identity.get('acquired_url'):
@@ -113,7 +117,8 @@ def leaf_rows(leaf, fixtures=FIXTURES, manifest=None):
             original_sha1=identity.get('original_sha1', ''), acquired_url=identity.get('acquired_url', ''),
             requested_edge=identity.get('requested_edge', ''), rendition_kind=identity.get('rendition_kind', ''),
             license=identity.get('license', ''), license_url=identity.get('license_url', ''),
-            credit=source.get('credit_status', ''), recovery=recovery, recovery_note=note, shared_with=''))
+            credit=source.get('credit_status', ''), recovery=recovery, recovery_note=note, shared_with='',
+            parents=parents))
     return rows
 
 

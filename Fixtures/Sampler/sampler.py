@@ -29,7 +29,8 @@ REPO = Path(__file__).resolve().parents[2]
 UNIFORM_PROCEDURE = 'sha256-counter-rejection-partial-fisher-yates-v1'
 POLICY = 'active-manifest-inputs; exact-byte-sha256-aliases; one-ticket-per-hash-v1'
 POPULATION_SCHEMAS = (1, 2)  # 1 embedded metadata rows; 2 pins metadata files by hash only.
-SKIP_DIRS = {'images', 'sources', 'previews', 'provenance', '__pycache__', '.git'}
+FIXTURE_AREAS = ('Heaps', 'Relationships')
+SKIP_DIRS = {'images', 'sources', 'previews', 'provenance', '__pycache__'}
 WORLD_MANIFEST = 'world.json'  # Beside the copies in a world directory: identities only.
 RECEIPT_AUTHOR = 'Fixtures/sample'  # Author of the one annotation event each publication appends.
 HEX = re.compile(r'[0-9a-f]{64}\Z')
@@ -203,19 +204,25 @@ def location_status(repo, value, expected):
                     error=f'{type(error).__name__}: {error}')
 
 
-def manifests(repo):
-    """Find active leaves at arbitrary depth, excluding archived/staged manifests."""
-    repo = Path(repo).resolve()
+def active_leaves(fixtures):
+    """Discover the same leaf directories for sampling, collection and validation."""
     found = []
-    for area in ('Heaps', 'Relationships'):
-        root = repo / 'Fixtures' / area
-        require(root.is_dir(), 'fixture', f'Fixture area is missing: {root}', path=str(root))
-        for parent, dirs, files in os.walk(root, followlinks=False):
-            dirs[:] = sorted(d for d in dirs if d not in SKIP_DIRS and not d.startswith('.'))
+    for area in FIXTURE_AREAS:
+        for parent, dirs, files in os.walk(fixtures / area, followlinks=False):
+            dirs[:] = [d for d in dirs if d not in SKIP_DIRS and not d.startswith('.')]
             if 'manifest.json' in files:
-                found.append(Path(parent) / 'manifest.json')
-    require(found, 'fixture', 'No active fixture manifests found under Fixtures/Heaps or Fixtures/Relationships')
+                found.append(Path(parent))
     return sorted(found)
+
+
+def manifests(repo):
+    fixtures = Path(repo).resolve() / 'Fixtures'
+    for area in FIXTURE_AREAS:
+        root = fixtures / area
+        require(root.is_dir(), 'fixture', f'Fixture area is missing: {root}', path=str(root))
+    found = [leaf / 'manifest.json' for leaf in active_leaves(fixtures)]
+    require(found, 'fixture', 'No active fixture manifests found under Fixtures/Heaps or Fixtures/Relationships')
+    return found
 
 
 def read_leaf(repo, manifest_path):
@@ -497,10 +504,14 @@ def uniform_sample_ids(candidates, size, seed):
     return pool[:size]
 
 
+SAMPLING_PROCEDURES = {UNIFORM_PROCEDURE: uniform_sample_ids}
+
+
 def sampling_procedure(name, what='Draw request'):
     """Resolve the recorded algorithm identity for new draws and old-record replay."""
-    require(name == UNIFORM_PROCEDURE, 'record-invalid', f'{what}: unsupported sampling procedure {name}')
-    return uniform_sample_ids
+    require(isinstance(name, str) and name in SAMPLING_PROCEDURES, 'record-invalid',
+            f'{what}: unsupported sampling procedure {name}')
+    return SAMPLING_PROCEDURES[name]
 
 
 def select_ids(candidates, size, seed, *, procedure=UNIFORM_PROCEDURE):
@@ -706,13 +717,38 @@ def pinned_metadata(repo, inventory, leaf_paths):
     return rows
 
 
-def leaf_summary(items):
-    """How many selected images each leaf contributed, counting every alias once per image."""
-    counts = {}
-    for item in items:
-        for leaf in sorted({a['fixture_path'] for a in item['aliases']}):
-            counts[leaf] = counts.get(leaf, 0) + 1
-    return dict(sorted(counts.items()))
+def draw_summary(draw, inventory):
+    """Membership of distinct selectable and selected byte IDs in the recorded tree."""
+    population = inventory['population']
+    candidates = set(prepare_candidates(inventory, draw.get('exclusion')))
+    selected = set(draw['image_ids'])
+    fixture_ids = {leaf['fixture_path']: leaf['fixture_id'] for leaf in population.get('leaves', [])
+                   if leaf['status'] == 'ok'}
+    members = {path: set() for path in fixture_ids}
+    for image in population['images']:
+        for alias in image['aliases']:
+            path = alias['fixture_path']
+            # Schema 1 recorded the leaf only on its aliases.
+            fixture_ids.setdefault(path, alias.get('fixture_id'))
+            ids = members.setdefault(path, set())
+            if image['image_id'] in candidates:
+                ids.add(image['image_id'])
+
+    def counts(ids):
+        return dict(eligible=len(ids), selected=len(selected.intersection(ids)))
+
+    leaves, by_leaf = [], {}
+    branch_members = {'Fixtures': set()}
+    for path, ids in sorted(members.items()):
+        row = dict(fixture_id=fixture_ids[path], fixture_path=path, **counts(ids))
+        leaves.append(row)
+        if row['selected']:
+            by_leaf[path] = row['selected']
+        for parent in PurePosixPath(path).parents:
+            if parent.parts:
+                branch_members.setdefault(str(parent), set()).update(ids)
+    branches = {path: counts(ids) for path, ids in sorted(branch_members.items())}
+    return dict(by_leaf=by_leaf, leaves=leaves, branches=branches)
 
 
 class Provenance:
@@ -793,7 +829,7 @@ def inspect_draw(store, sample_id, repo, paths_only=False):
     except SamplerError as error:
         events = []
         problems.append(dict(kind='annotations-unreadable', **error.report()))
-    images, summary, checkout = [], {}, None
+    images, summary, checkout = [], dict(by_leaf={}), None
     if inventory:
         provenance = Provenance(repo, inventory)
         indexed = {r['image_id']: r for r in inventory['population']['images']}
@@ -802,12 +838,12 @@ def inspect_draw(store, sample_id, repo, paths_only=False):
             images.append(dict(position=n, **item,
                                provenance=[provenance.alias(a) for a in item['aliases']]))
         problems.extend(metadata_problems(row for image in images for row in image['provenance']))
-        summary = leaf_summary(selected_items(draw, inventory))
+        summary = draw_summary(draw, inventory)
         checkout = inventory.get('checkout')
     else:
         images = [dict(position=n, image_id=i) for n, i in enumerate(draw['image_ids'], 1)]
     return dict(schema_version=1, draw=draw, snapshot_available=inventory is not None,
-                snapshot_checkout=checkout, summary=dict(by_leaf=summary), images=images,
+                snapshot_checkout=checkout, summary=summary, images=images,
                 current_locations=current, annotations=annotation_state(events),
                 annotation_history=events, problems=problems)
 
@@ -1241,7 +1277,7 @@ def draw_command(args):
         population['problems'] = [p for p in population['problems'] if p.get('image_id') not in unmatched]
         warnings.extend(population['warnings'])
     result = dict(schema_version=1, output=published['output'], draw=drawn, population=population,
-                  summary=dict(by_leaf=leaf_summary(selected_items(drawn, inventory))),
+                  summary=draw_summary(drawn, inventory),
                   images=published['images'], current_check=check,
                   problems=published['problems'] + population['problems'])
     if exclusion is not None:

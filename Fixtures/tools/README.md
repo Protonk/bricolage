@@ -181,6 +181,10 @@ the common keys needs no adapter change. The index is read by a new
 contribution's identity audit and by whoever recovers ignored media; it is
 never used to re-validate an older leaf.
 
+The index carries the manifest's `family_id` and pipe-separated `parents`.
+For a multi-parent composite, the family and single-source filename and credit
+stay empty. Each parent identifies a row in that leaf's `sources.csv`.
+
 ## Validation and other tools
 
 Use the Python 3.14.x `Fixtures/.venv`. Layout and relationship validation are
@@ -191,12 +195,18 @@ experiment binary; it does not implement a comparator or download images.
 make -C Fixtures setup-python
 Fixtures/.venv/bin/python -m pip install -r Fixtures/tools/requirements.txt
 Fixtures/.venv/bin/python Fixtures/tools/check_layout.py --full
-make -C Fixtures test-fixture-layout
+make -C Fixtures check
 make -C Fixtures test-relationships
 ```
 
-`check_layout.py` discovers only active leaves under Heaps and Relationships at
-arbitrary depth. By default it checks common layout, input hashes, the checksum
+`make -C Fixtures check` runs sampler compatibility, generated-index and
+layout checks, collection operations, and mocked Commons transport tests on a
+checkout without fixture media. The relationship and full layout checks use
+the local images.
+
+The sampler, index generator, scaffold and layout checker share discovery of
+active leaves under Heaps and Relationships. Hidden staging directories,
+provenance and media are skipped. By default `check_layout.py` checks common layout, input hashes, the checksum
 list, batches, the source catalog and the chain of recorded changes. `--full`
 runs each leaf's `tools/check.py`, which adds the specialized publication
 validator while the leaf has no recorded change; an explicit leaf path limits

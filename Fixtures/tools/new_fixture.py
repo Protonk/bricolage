@@ -4,7 +4,7 @@ import argparse
 import json
 from pathlib import Path
 import re
-from fixture_layout import FIXTURES, require
+from fixture_layout import FIXTURES, discover, require
 
 
 def create(destination, fixture_id, kind, fixtures=FIXTURES):
@@ -15,10 +15,9 @@ def create(destination, fixture_id, kind, fixtures=FIXTURES):
     area = fixtures / ('Heaps' if kind.endswith('_heap') else 'Relationships')
     require(destination.is_relative_to(area) and destination != area, 'Destination must be a leaf below ' + str(area))
     require(not destination.exists(), 'Destination already exists')
-    for manifest in fixtures.glob('**/manifest.json'):
-        if set(manifest.relative_to(fixtures).parts) & {'provenance', 'images', 'sources', 'previews'}:
-            continue
-        require(json.loads(manifest.read_text()).get('fixture_id') != fixture_id, 'Fixture ID already exists')
+    for leaf in discover(fixtures):
+        require(json.loads((leaf / 'manifest.json').read_text()).get('fixture_id') != fixture_id,
+                'Fixture ID already exists')
     template = FIXTURES / 'Template/leaf'
     destination.mkdir(parents=True)
     for source in sorted(template.rglob('*.in')):

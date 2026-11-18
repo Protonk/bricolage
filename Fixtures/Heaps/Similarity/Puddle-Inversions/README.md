@@ -133,6 +133,8 @@ behavior: one small pilot, serial chunks, cached metadata, hash-checked media,
 a stop on any transport error with `--acknowledge-error` for an explicit
 restart, and no automatic retries. The user agent is read from
 `BRICOLAGE_USER_AGENT` or `--user-agent`.
+The current caller uses the [shared Commons transport](../../../tools/commons_transport.py)
+to write HTTP receipts and retain partial responses under this leaf.
 
 ## Limitations
 

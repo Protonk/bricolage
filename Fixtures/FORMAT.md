@@ -82,7 +82,7 @@ do not hand-edit those blocks. Acquisition counts and supplied targets retain
 their historical meaning.
 
 The [source index](INDEX.csv) is generated with the totals: one row per active
-input across every leaf, with its leaf path, byte hash, decoded size, family and
+input across every leaf, with its leaf path, byte hash, decoded size, family, parents and
 source file, upstream origin, page ID, upstream SHA-1, the URL fetched, requested
 edge, rendition kind, license, a `recovery` class (`commons-api`, `source-url`,
 `regenerate` or `none`) with a note, and `shared_with` naming other leaves that

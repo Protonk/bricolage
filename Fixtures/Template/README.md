@@ -10,6 +10,14 @@ Keep the supplied brief and exports unchanged under
 `provenance/intake/` or `provenance/construction/`. Add checks for the source's
 particular requirements to the local tools, and record any work still needed.
 
+For a Commons intake, use the [shared HTTP client](../tools/commons_transport.py).
+Construct `CommonsClient(leaf_directory, user_agent, pace_seconds, timeout_seconds)`
+once per serial acquisition run. Its `fetch(url, kind, candidate_id, partial_path)`
+returns the completed path and headers and writes the HTTP receipt under the leaf.
+Use `api`, `preview` or `source` for the kind and a partial path under the leaf.
+The [Puddle-Inversions caller](../Heaps/Similarity/Puddle-Inversions/tools/acquire.py)
+shows how the leaf applies its review criteria, handles a stop and promotes completed bytes.
+
 The template uses `.in` filenames outside Heaps and Relationships, so the sampler
 and audit tools do not discover it as a collection.
 Run `../.venv/bin/python ../tools/new_fixture.py --help` from this directory,

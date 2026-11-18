@@ -138,6 +138,10 @@ Give the world directory to the image software being tested.
 Collection names, source paths and selection notes stay here; `sample show`
 connects a result's image IDs to those records.
 
+The full `show` report gives each leaf's draw-time eligible and selected
+counts. Branch totals count each distinct image once across their leaves.
+These counts come from the saved inventory, even after new heaps arrive.
+
 A command can publish a world and still report problems elsewhere in the
 collection. Check `problems`, `output.published` and `output.receipt_recorded`
 in its JSON response. The [sampler guide](Fixtures/Sampler/README.md) covers

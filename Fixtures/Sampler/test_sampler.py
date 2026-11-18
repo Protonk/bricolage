@@ -173,14 +173,21 @@ class SamplerTests(unittest.TestCase):
         self.assertIn('eligible population is 4', error['message'])
         self.assertEqual(s.list_draws(self.store)['draws'], [])
 
-    def test_uniform_sampling_all_equiprobable_small_draw_paths(self):
+    def test_every_supported_procedure_has_a_worked_example(self):
+        examples = {s.UNIFORM_PROCEDURE: self.check_uniform_pairs}
+        self.assertEqual(examples.keys(), s.SAMPLING_PROCEDURES.keys())
+        for procedure, check in examples.items():
+            with self.subTest(procedure=procedure):
+                check(procedure)
+
+    def check_uniform_pairs(self, procedure):
         # 4 * 3 equally likely index paths: every ordered pair occurs exactly once.
         inv = self.inventory()
         candidates = s.prepare_candidates(inv)
         results = []
         for first, second in itertools.product(range(4), range(3)):
             with patch.object(s.RandomStream, 'randbelow', side_effect=[first, second]):
-                results.append(tuple(s.select_ids(candidates, 2, 'unused')))
+                results.append(tuple(s.select_ids(candidates, 2, 'unused', procedure=procedure)))
         ids = [i['image_id'] for i in inv['population']['images']]
         self.assertCountEqual(results, list(itertools.permutations(ids, 2)))
         self.assertTrue(all(sum(i in pair for pair in results) == 6 for i in ids))
@@ -257,6 +264,36 @@ class SamplerTests(unittest.TestCase):
         self.assertEqual(self.cli('verify', draw['sample_id']).returncode, 1)
         self.assertEqual(self.cli('show', draw['sample_id']).returncode, 0)
         self.assertNotEqual(self.inventory()['inventory_id'], draw['inventory_id'])
+
+    def test_kept_memberships_and_denominators_survive_ten_new_heaps(self):
+        self.make_leaf('Heaps/Curatorial/Nested/Shared', [b'two', b'two', b'four'])
+        result = self.cli('2', '--seed', 'seed')
+        self.assertEqual(result.returncode, 0, result.stderr)
+        first = json.loads(result.stdout)
+        sid = first['output']['world_id']
+        before = json.loads(self.cli('show', sid).stdout)
+        self.assertEqual(first['summary'], before['summary'])
+        # The pinned seed draws "two" and "four". Both are in Shared, including
+        # a second alias for "two"; "four" is also in Relationships.
+        leaves = {r['fixture_id']: (r['eligible'], r['selected']) for r in first['summary']['leaves']}
+        self.assertEqual(leaves, {'Heaps/Curatorial/Nested/Leaf': (2, 1),
+                                  'Heaps/Curatorial/Nested/Shared': (2, 2),
+                                  'Relationships/Variants': (2, 1)})
+        branches = first['summary']['branches']
+        self.assertEqual(branches['Fixtures/Heaps/Curatorial/Nested'], dict(eligible=3, selected=2))
+        self.assertEqual(branches['Fixtures'], dict(eligible=4, selected=2))
+        for n in range(10):
+            blobs = [f'new-{n}'.encode()]
+            if n == 0:
+                blobs.append(b'two')
+            self.make_leaf(f'Heaps/Additional/Leaf{n}', blobs)
+        later = json.loads(self.cli('0').stdout)
+        self.assertEqual(later['summary']['branches']['Fixtures'], dict(eligible=14, selected=0))
+        self.assertEqual(later['summary']['by_leaf'], {})
+        self.assertEqual(json.loads(self.cli('show', sid).stdout), before)
+        checked = self.cli('verify', sid)
+        self.assertEqual(checked.returncode, 0, checked.stderr)
+        self.assertTrue(json.loads(checked.stdout)['original_draw_reproduced'])
 
     def test_changed_provenance_is_reported_against_its_pin_and_shown_as_current(self):
         draw = self.draw(4)
@@ -952,6 +989,7 @@ class SamplerTests(unittest.TestCase):
         self.assertEqual(loaded['image_ids'], s.select_ids(s.prepare_candidates(self.inventory()), 3, 'legacy'))
         shown = s.inspect_draw(self.store, draw['sample_id'], self.repo)
         self.assertEqual({p['status'] for image in shown['images'] for p in image['provenance']}, {'frozen'})
+        self.assertEqual(shown['summary']['branches']['Fixtures'], dict(eligible=4, selected=3))
         self.assertEqual(shown['problems'], [])
         self.assertTrue(s.verify_draw(self.store, draw['sample_id'], self.repo)['ok'])
         self.assertEqual(json.loads(self.cli('inventory').stdout)['counts']['excluded_leaves'], 0)

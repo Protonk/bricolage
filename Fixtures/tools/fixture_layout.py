@@ -82,11 +82,7 @@ def matches_tool_revision(path, *, blob=None, sha256=None):
 
 
 def discover(fixtures=None):
-    fixtures = FIXTURES if fixtures is None else Path(fixtures)
-    return sorted(p.parent for area in ('Heaps', 'Relationships')
-                  for p in (fixtures / area).rglob('manifest.json')
-                  if not set(p.relative_to(fixtures).parts[:-1]) &
-                  {'images', 'sources', 'previews', 'provenance', '__pycache__'})
+    return sampler.active_leaves(FIXTURES if fixtures is None else Path(fixtures))
 
 
 def check_layout(root, *, assets=True):

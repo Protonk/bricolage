@@ -60,6 +60,11 @@ class SampleWithoutTests(unittest.TestCase):
         self.assertEqual(report['exclusion']['requested_count'], 1)
         self.assertEqual(report['exclusion']['matched_count'], 1)
         self.assertEqual(report['exclusion']['remaining_eligible'], 3)
+        self.assertEqual(report['summary']['branches']['Fixtures'], dict(eligible=3, selected=3))
+        shown = json.loads(self.cli('show', report['draw']['sample_id']).stdout)
+        self.assertEqual(shown['summary'], report['summary'])
+        alias_leaf = next(row for row in shown['summary']['leaves'] if row['fixture_id'] == 'Heaps/Alias')
+        self.assertEqual((alias_leaf['eligible'], alias_leaf['selected']), (0, 0))
         self.assertEqual(report['exclusion']['manifest_sha256'], hashlib.sha256(original_manifest).hexdigest())
         self.assertEqual(report['exclusion']['world_id'], source['output']['world_id'])
         expected = {i['image_id'] for i in self.inventory()['population']['images']} - {image['image_id']}

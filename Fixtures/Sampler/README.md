@@ -212,7 +212,7 @@ Fixtures/sample annotate SAMPLE_ID --image IMAGE_ID --key review --delete
 `images` list in draw order: image ID, an available absolute path (or null), and
 every alias's current status. Open those paths with the local viewer of your choice.
 `show` also returns the original draw, each image's provenance rows read from the
-checkout and checked against the snapshot's pins, a per-leaf summary, current
+checkout and checked against the snapshot's pins, historical leaf and branch counts, current
 annotations and the complete annotation history, even if image files are missing.
 If the draw's snapshot is missing or damaged, `show` still returns the draw record
 and its image IDs, with the gap listed under `problems`.
@@ -251,11 +251,23 @@ inspection; programs should access JSON fields by name.
 | `draw` | Original persistent record, including `sample_id`, `image_ids`, seed and inventory ID |
 | `population` | Snapshot ID and file, `counts`, every leaf with its status, the `checkout` hint and population `problems` |
 | `population.counts.eligible` | M, the number of eligible distinct images in this draw's snapshot |
-| `summary.by_leaf` | How many selected images each leaf contributed |
+| `summary.by_leaf` | Selected distinct image IDs by recorded leaf path, omitting zero counts |
+| `summary.leaves` | Membership counts for each included leaf, with its stable `fixture_id`, recorded `fixture_path`, `eligible` and `selected` |
+| `summary.branches` | The same two counts by recorded ancestor path, including the whole `Fixtures` population |
 | `images` | Draw order; each item has `position`, `image_id`, `sampled_path` for its copy in the world, `available_path` for its fixture original, and all alias `locations` with current statuses |
 | `current_check` | Record reproduction and current file/metadata verification; `ok` means no problems, while `publication_ready` means records/metadata/logs are valid and at least one copy of every selected image is available |
 | `problems` | Every problem found, each with a `kind`; empty when the exit code is 0 |
 | `exclusion`, `warnings` | Present for `sampleWithout`; exclusion IDs and counts, and nonfatal missing-ID or alias reports |
+
+Draw and full `show` responses derive these counts from the saved inventory.
+`eligible` counts distinct byte identities available to this request after its
+exclusions. An identity with a verified copy anywhere counts in every leaf
+that recorded it. Each enclosing branch counts it once. For example, if two
+sibling leaves contain A,B and B,C and the draw selects B, each leaf reports
+one of two and their branch reports one of three. A later leaf containing B
+has no effect on this draw. Zero counts are included for known leaves. An
+excluded leaf has unknown contents and is listed in the population report.
+If the snapshot is unavailable, `show` omits `leaves` and `branches`.
 
 The `output` block contains:
 
@@ -480,6 +492,14 @@ the inventory records fixture facts. Resolved inputs needed for replay belong
 in the saved draw. The public commands, record formats and flat world handoff
 remain as documented above. These functions are internal Python interfaces;
 consumers use the public launchers.
+
+When introducing a procedure, include a small worked example with overlapping
+memberships in its compatibility test. For a procedure that chooses a leaf
+first, replay must recover that leaf choice. For one that combines memberships
+into image weights, replay must recover the effective weights from the recorded
+rule and frozen inputs. Retain any additional input used by the rule once and
+reference it from each draw that used it. A change in the odds needs its own
+procedure version so older draws retain their meaning.
 
 ## Sampling procedure, version 1
 

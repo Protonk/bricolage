@@ -1,0 +1,15 @@
+name: Fixture checks
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.14'
+      - run: make -C Fixtures setup-python
+      - run: Fixtures/.venv/bin/python -m pip install -r Fixtures/tools/requirements.txt
+      - run: make -C Fixtures check

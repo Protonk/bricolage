@@ -365,6 +365,20 @@ class CollectionTests(unittest.TestCase):
         collection_totals.update(self.fixtures)
         self.assertEqual(source_index.update(self.fixtures, check=True)['inputs'], 3)
 
+    def test_index_preserves_composite_parents_without_assigning_a_family(self):
+        manifest = json.loads((self.root / 'manifest.json').read_text())
+        composite = manifest['images'][0]
+        composite.update(family_id='', parents='1|2', transformation='composite', origin_count=2)
+        (self.root / 'manifest.json').write_bytes(history.encode(manifest))
+        (self.root / 'manifest.csv').write_bytes(history.csv_bytes((self.root / 'manifest.csv').read_bytes(),
+                                                                  manifest['images']))
+        rows = list(csv.DictReader(io.StringIO(source_index.render(self.fixtures))))
+        self.assertEqual((rows[0]['family_id'], rows[0]['parents'], rows[0]['recovery']),
+                         ('', '1|2', 'regenerate'))
+        self.assertEqual((rows[0]['source_filename'], rows[0]['credit']), ('', ''))
+        self.assertEqual((rows[1]['family_id'], rows[1]['parents'], rows[1]['source_filename']),
+                         ('1', '1', '1.png'))
+
     def test_cli_removes_repins_regenerates_totals_and_repeats_without_another_record(self):
         git = self.setup_git()
         arguments = ['collection', 'remove', self.rows[0]['byte_sha256'], '--reason', 'CLI regression']

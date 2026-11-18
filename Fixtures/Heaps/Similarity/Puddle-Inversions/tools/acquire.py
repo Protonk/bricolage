@@ -8,21 +8,20 @@ partials go in previews/. Unknown metadata is null, not guessed.
 A network exception *after HTTP 200 headers* retains the status 200 and
 records a failed/incomplete BODY read, with whatever partial bytes arrived.
 """
-import argparse, fcntl, hashlib, html, json, os, re, socket, sys, time
+import argparse, fcntl, hashlib, html, json, os, re, sys
 from datetime import datetime,timezone
-from email.message import Message
-from http.client import IncompleteRead
 from pathlib import Path
-from urllib.error import HTTPError,URLError
 from urllib.parse import urlencode,urlparse
-from urllib.request import Request,build_opener,HTTPRedirectHandler
 from PIL import Image,ImageDraw,ImageOps,ImageFile
 from common import ROOT,load_records,save_records,atomic_write,append_jsonl,local
 
+# The leaf owns review and publication. HTTP receipts and partials use the shared client.
+fixtures = next(p for p in Path(__file__).resolve().parents if (p / 'tools/commons_transport.py').is_file())
+sys.path.insert(0, str(fixtures / 'tools'))
+from commons_transport import CommonsClient, StopAcquisition
+
 API='https://commons.wikimedia.org/w/api.php'
 EXT={'JPEG':'jpg','PNG':'png','WEBP':'webp','GIF':'gif','TIFF':'tif'}
-RELEVANT_HEADERS={'content-type','content-length','retry-after','x-request-id','x-cache','server','etag','last-modified','cache-control','date'}
-MAX_BYTES={'api':4_000_000,'preview':12_000_000,'source':12_000_000}
 
 def iso():return datetime.now(timezone.utc).isoformat()
 def digest(b):return hashlib.sha256(b).hexdigest()
@@ -31,82 +30,13 @@ def html_plain(val):
     s=html.unescape(re.sub('<[^>]*>','',str(val))).strip()
     return s or None
 
-class StopAcquisition(Exception):pass
-
-class NoRedirect(HTTPRedirectHandler):
-    def redirect_request(self,req,fp,code,msg,headers,newurl):return None
-
 def same_media_url(a,b):
     a=urlparse(a or '');b=urlparse(b or '')
     return (a.scheme,a.hostname,a.path)==(b.scheme,b.hostname,b.path)
 
-class Client:
-    def __init__(self,agent,pace,timeout):
-        self.agent=agent;self.pace=pace;self.timeout=timeout;self.last=None
-        self.opener=build_opener(NoRedirect)
-    def fetch(self,url,kind,candidate_id,tmp_path):
-        parsed=urlparse(url)
-        if parsed.scheme!='https' or parsed.hostname not in ('commons.wikimedia.org','upload.wikimedia.org','thumb.wikimedia.org'):raise StopAcquisition('Unexpected Wikimedia URL')
-        local(str(Path(tmp_path).relative_to(ROOT)))
-        if self.last is not None:
-            delta=self.pace-(time.monotonic()-self.last)
-            if delta>0:time.sleep(delta)
-        self.last=time.monotonic()
-        req=Request(url,headers={'User-Agent':self.agent,'Accept':'application/json' if kind=='api' else 'image/*'})
-        headers={};status=None;received=0;hash_obj=hashlib.sha256()
-        tmp_path=Path(tmp_path);tmp_path.parent.mkdir(parents=True,exist_ok=True)
-        event={'utc':iso(),'candidate_id':candidate_id,'kind':kind,'url':url,'status':None,
-               'response_complete':False,'bytes_received':0,'headers':None,'partial_path':None,'user_agent':self.agent}
-        try:
-            with self.opener.open(req,timeout=self.timeout) as response:
-                status=response.status
-                headers={k.lower():v for k,v in response.headers.items() if k.lower() in RELEVANT_HEADERS}
-                event['status']=status;event['headers']=headers
-                content_type=response.headers.get_content_type()
-                if (kind=='api' and content_type!='application/json') or (kind!='api' and not content_type.startswith('image/')):raise StopAcquisition(f'Unexpected content type: {content_type}')
-                try:
-                    declared=int(headers.get('content-length','0'))
-                except ValueError:declared=0
-                if declared>MAX_BYTES[kind]:
-                    raise StopAcquisition(f'Content-Length {declared} exceeds conservative {kind} limit')
-                with tmp_path.open('wb') as fp:
-                    while True:
-                        try:
-                            chunk=response.read(64*1024)
-                        except IncompleteRead as e:
-                            # http.client may expose valid partial bytes.
-                            part=getattr(e,'partial',None)
-                            if part:fp.write(part);received+=len(part);hash_obj.update(part)
-                            raise
-                        if not chunk:break
-                        fp.write(chunk);received+=len(chunk);hash_obj.update(chunk)
-                        if received>MAX_BYTES[kind]:
-                            raise StopAcquisition(f'{kind} body exceeded conservative {MAX_BYTES[kind]} byte limit')
-                if declared and declared!=received:
-                    raise StopAcquisition(f'incomplete HTTP body: declared {declared}, received {received}')
-                event.update(response_complete=True,bytes_received=received,sha256=hash_obj.hexdigest())
-                append_jsonl(ROOT/'provenance/http_log.jsonl',event)
-                self.last=time.monotonic()
-                return tmp_path,headers
-        except HTTPError as e:
-            event['status']=e.code
-            event['headers']={k.lower():v for k,v in e.headers.items() if k.lower() in RELEVANT_HEADERS}
-            try:event['body_excerpt']=e.read(2048).decode('utf-8','replace')
-            except Exception as read_e:event['body_error']=str(read_e)
-            error=f'HTTP {e.code}'
-        except (socket.timeout,TimeoutError,IncompleteRead,URLError,OSError,StopAcquisition) as e:
-            # Crucial: status can be 200 if headers succeeded but BODY timed out.
-            error=f'{type(e).__name__}: {e}'
-        except Exception as e:
-            error=f'Unexpected {type(e).__name__}: {e}'
-        self.last=time.monotonic()
-        if tmp_path.exists():
-            received=tmp_path.stat().st_size
-            event['partial_path']=str(tmp_path.relative_to(ROOT))
-        event.update(response_complete=False,bytes_received=received,error=error)
-        append_jsonl(ROOT/'provenance/http_log.jsonl',event)
-        atomic_write(ROOT/'provenance/last_transport_error.json',json.dumps(event,ensure_ascii=False,indent=2).encode('utf-8'))
-        raise StopAcquisition(f'{candidate_id} {kind} stopped: {error}; no retry')
+class Client(CommonsClient):
+    def __init__(self, agent, pace, timeout):
+        super().__init__(ROOT, agent, pace, timeout)
 
 def metadata(client,row,stage,maxdim):
     cid=row['candidate_id']

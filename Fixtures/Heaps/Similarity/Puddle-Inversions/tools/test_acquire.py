@@ -1,5 +1,6 @@
 """Offline checks for transport stops, partial evidence, API errors and caching."""
 import io,json,tempfile,unittest
+import hashlib
 from pathlib import Path
 from email.message import Message
 from unittest.mock import MagicMock,Mock,patch
@@ -24,6 +25,20 @@ class AcquisitionTests(unittest.TestCase):
         self.assertEqual(event['status'],200);self.assertFalse(event['response_complete'])
         self.assertEqual(event['bytes_received'],11);self.assertEqual(p.read_bytes(),b'known bytes')
         self.assertEqual(c.opener.open.call_count,1)
+
+    def test_completed_body_and_receipt_belong_to_the_calling_leaf(self):
+        client = self.client()
+        response = self.response()
+        response.headers['Content-Length'] = '6'
+        response.read.side_effect = [b'abc', b'def', b'']
+        client.opener.open.return_value.__enter__.return_value = response
+        partial = self.root / 'previews/partials/example.part'
+        path, headers = client.fetch(acquire.API, 'preview', 'example', partial)
+        self.assertEqual((path.read_bytes(), headers['content-length']), (b'abcdef', '6'))
+        receipt = json.loads((self.root / 'provenance/http_log.jsonl').read_text())
+        self.assertEqual((receipt['response_complete'], receipt['bytes_received'], receipt['sha256']),
+                         (True, 6, hashlib.sha256(b'abcdef').hexdigest()))
+        self.assertFalse((self.root / 'provenance/last_transport_error.json').exists())
     def test_rate_limit_does_not_retry(self):
         c=self.client();headers=Message();headers['Retry-After']='120'
         c.opener.open.side_effect=HTTPError(acquire.API,429,'limited',headers,io.BytesIO(b'busy'))

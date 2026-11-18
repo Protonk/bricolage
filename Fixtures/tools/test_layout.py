@@ -75,11 +75,14 @@ class LayoutTests(unittest.TestCase):
 
     def test_template_and_archived_manifests_are_not_discovered(self):
         leaf = self.leaf()
-        for where in (leaf/'provenance/supplied', self.fixtures/'Template', leaf/'previews/stage'):
+        for where in (leaf/'provenance/supplied', self.fixtures/'Template', leaf/'previews/stage',
+                      self.fixtures/'Heaps/.stage/NewLeaf', self.fixtures/'output/scratch'):
             where.mkdir(parents=True, exist_ok=True)
-            (where/'manifest.json').write_text('{}')
+            (where/'manifest.json').write_text('{"fixture_id":"next-v1"}')
         with patch.object(layout, 'FIXTURES', self.fixtures):
             self.assertEqual(layout.discover(), [leaf])
+        self.assertEqual(layout.sampler.manifests(self.fixtures.parent), [leaf.resolve()/'manifest.json'])
+        create(self.fixtures/'Relationships/Next', 'next-v1', 'derivatives', self.fixtures)
 
     def test_dependency_pin_accepts_only_exact_recorded_tool_change(self):
         script = self.fixtures/'tool.py'; script.parent.mkdir(parents=True)
@@ -177,7 +180,12 @@ class LayoutTests(unittest.TestCase):
                 if '{' in target or '<' in target:
                     continue
                 base = layout.REPO if target.startswith('Fixtures/') else layout.FIXTURES
-                if not (base/target).exists():
+                # A clean checkout has no ignored media or optional preview outputs.
+                # Their owning collection or branch still has to exist.
+                parts = Path(target).parts
+                owner = next((i for i, part in enumerate(parts) if part in {'images', 'sources', 'previews'}),
+                             len(parts))
+                if not base.joinpath(*parts[:owner]).exists():
                     stale.append(f'{file.relative_to(layout.REPO)}: {target}')
         self.assertEqual(stale, [])
 
