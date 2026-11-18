@@ -4,6 +4,8 @@ import io
 import json
 from pathlib import Path
 import re
+import subprocess
+import sys
 import tempfile
 import unittest
 from unittest.mock import patch
@@ -83,6 +85,21 @@ class LayoutTests(unittest.TestCase):
             self.assertEqual(layout.discover(), [leaf])
         self.assertEqual(layout.sampler.manifests(self.fixtures.parent), [leaf.resolve()/'manifest.json'])
         create(self.fixtures/'Relationships/Next', 'next-v1', 'derivatives', self.fixtures)
+
+    def test_first_leaf_ends_discovery_only_on_its_branch(self):
+        host = self.leaf()
+        nested = host / 'tools/example'
+        (self.fixtures / 'tools').symlink_to(layout.FIXTURES / 'tools', target_is_directory=True)
+        recipe = layout.FIXTURES / 'Template/Byte-Identities/leaf/tools/materialize.py'
+        subprocess.run([sys.executable, '-S', recipe, nested], check=True, capture_output=True)
+        sibling = self.fixtures / 'Relationships/Group/tools/example'
+        create(sibling, 'beside-v1', 'derivatives', self.fixtures)
+        self.assertEqual(layout.discover(self.fixtures), sorted([host, sibling]))
+        result = subprocess.run([sys.executable, nested / 'tools/check.py'], capture_output=True, text=True)
+        self.assertEqual(result.returncode, 0, result.stderr)
+        checked = json.loads(result.stdout)
+        self.assertEqual((checked['fixture_id'], checked['images']), ('bricolage-by01-v1', 4))
+        self.assertTrue(checked['specialized_checks'])
 
     def test_dependency_pin_accepts_only_exact_recorded_tool_change(self):
         script = self.fixtures/'tool.py'; script.parent.mkdir(parents=True)

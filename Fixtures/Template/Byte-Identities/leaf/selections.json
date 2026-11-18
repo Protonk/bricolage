@@ -1,0 +1,24 @@
+{
+  "description": "Compare the original arrow with each constructed relative.",
+  "pairs": [
+    {
+      "file_a": "images/01.png",
+      "file_b": "images/02.png",
+      "relation": "same_bytes",
+      "interpretation": "Every PNG byte agrees."
+    },
+    {
+      "file_a": "images/01.png",
+      "file_b": "images/03.png",
+      "relation": "horizontal_reflection",
+      "interpretation": "Reversing each row of A gives the pixels in B."
+    },
+    {
+      "file_a": "images/01.png",
+      "file_b": "images/04.png",
+      "relation": "same_decoded_pixels",
+      "interpretation": "RGB pixels agree across two distinct PNG encodings."
+    }
+  ],
+  "known_shift_families": []
+}

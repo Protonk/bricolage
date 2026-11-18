@@ -1,0 +1,2 @@
+family_id,source_filename,scene_id,subject,credit_status,source_sha256,width,height,exif_orientation,source_url,preprocessing,view,exposure_id,original_path
+arrow,arrow.png,,Right-facing striped arrow,Original Bricolage test pattern,5c9d836c99b38f0b1b823e5a3650f58a002663cabeaca6362aa658137f5f457b,96,60,1,,Constructed from a 16 by 10 color grid at scale 6,,,tools/materialize.py

@@ -205,13 +205,15 @@ def location_status(repo, value, expected):
 
 
 def active_leaves(fixtures):
-    """Discover the same leaf directories for sampling, collection and validation."""
+    """Walk grouping directories under each area up to the first manifest per branch."""
     found = []
     for area in FIXTURE_AREAS:
         for parent, dirs, files in os.walk(fixtures / area, followlinks=False):
-            dirs[:] = [d for d in dirs if d not in SKIP_DIRS and not d.startswith('.')]
             if 'manifest.json' in files:
                 found.append(Path(parent))
+                dirs.clear()
+            else:
+                dirs[:] = [d for d in dirs if d not in SKIP_DIRS and not d.startswith('.')]
     return sorted(found)
 
 

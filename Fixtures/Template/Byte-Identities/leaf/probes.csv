@@ -1,0 +1,4 @@
+file_a,file_b,relation,interpretation
+images/01.png,images/02.png,same_bytes,Every PNG byte agrees.
+images/01.png,images/03.png,horizontal_reflection,Reversing each row of A gives the pixels in B.
+images/01.png,images/04.png,same_decoded_pixels,RGB pixels agree across two distinct PNG encodings.

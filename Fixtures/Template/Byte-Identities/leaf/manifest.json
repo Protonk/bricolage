@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "fixture_id": "bricolage-by01-v1",
+  "kind": "derivatives",
+  "description": "A generated arrow, a byte copy, a reflection and a second PNG encoding.",
+  "images": [
+    {
+      "file": "images/01.png",
+      "batch": "batch-1",
+      "family_id": "arrow",
+      "scene_id": "",
+      "parents": "arrow",
+      "transformation": "source",
+      "relation_kind": "identity",
+      "origin_count": 1,
+      "width": 96,
+      "height": 60,
+      "exif_orientation": 1,
+      "format": "PNG",
+      "byte_sha256": "5c9d836c99b38f0b1b823e5a3650f58a002663cabeaca6362aa658137f5f457b",
+      "pixels_rgb_sha256": "6a71cc1c4e13f6a34ea32d8963ca9f616bdc21ea9b269c1c79304717dfd0e7a5"
+    },
+    {
+      "file": "images/02.png",
+      "batch": "batch-1",
+      "family_id": "arrow",
+      "scene_id": "",
+      "parents": "arrow",
+      "transformation": "byte_copy",
+      "relation_kind": "identity",
+      "origin_count": 1,
+      "width": 96,
+      "height": 60,
+      "exif_orientation": 1,
+      "format": "PNG",
+      "byte_sha256": "5c9d836c99b38f0b1b823e5a3650f58a002663cabeaca6362aa658137f5f457b",
+      "pixels_rgb_sha256": "6a71cc1c4e13f6a34ea32d8963ca9f616bdc21ea9b269c1c79304717dfd0e7a5"
+    },
+    {
+      "file": "images/03.png",
+      "batch": "batch-1",
+      "family_id": "arrow",
+      "scene_id": "",
+      "parents": "arrow",
+      "transformation": "horizontal_reflection",
+      "relation_kind": "geometric",
+      "origin_count": 1,
+      "width": 96,
+      "height": 60,
+      "exif_orientation": 1,
+      "format": "PNG",
+      "byte_sha256": "8cff43a23811126fa78a3303b0a593886df30ecb280456657581ee69f0ed6b7e",
+      "pixels_rgb_sha256": "feeafce314465abe58db286229b497707e65fb0697328c15ec34c0b0be558802"
+    },
+    {
+      "file": "images/04.png",
+      "batch": "batch-1",
+      "family_id": "arrow",
+      "scene_id": "",
+      "parents": "arrow",
+      "transformation": "reencode_png",
+      "relation_kind": "identity_pixels",
+      "origin_count": 1,
+      "width": 96,
+      "height": 60,
+      "exif_orientation": 1,
+      "format": "PNG",
+      "byte_sha256": "39899b81a5b595e1e7bbd0f2a6842fbdff646722c3af0abb29db50b188c51405",
+      "pixels_rgb_sha256": "6a71cc1c4e13f6a34ea32d8963ca9f616bdc21ea9b269c1c79304717dfd0e7a5"
+    }
+  ]
+}

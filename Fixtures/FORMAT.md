@@ -9,6 +9,13 @@ sets. The [November 2026 migration](provenance/layout-2026-11/README.md) records
 the baseline and completed adoption by all 18 existing leaves. Schema version 1 and all
 fixture identities remain unchanged.
 
+Under `Heaps/` and `Relationships/`, discovery walks grouping directories until
+it reaches the first `manifest.json` on each branch. Sampling, archive-wide
+layout checks and collection commands use that leaf. Authors can ship a working
+fixture under a leaf's `tools/example/` and validate it directly with the
+example's own `tools/check.py`. The [byte identity specimen](Template/Byte-Identities/README.md)
+demonstrates both placements.
+
 Only each leaf set's `images/` directory is comparison input. Integrated sets use:
 
 ```text

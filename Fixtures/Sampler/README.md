@@ -302,7 +302,10 @@ directly. `--store DIR` selects a specific store, including the source for
 ## Population and identity
 
 The population is the active `manifest.json` inputs under both `Fixtures/Heaps/`
-and `Fixtures/Relationships/`, at any depth. This follows [FORMAT.md](../FORMAT.md):
+and `Fixtures/Relationships/`. Discovery walks grouping directories to any depth,
+then stops at the first manifest on each branch. A fixture in a leaf's
+`tools/example/` can be validated directly and contributes no tickets to the
+enclosing archive. This follows [FORMAT.md](../FORMAT.md):
 `images/` files are fixture inputs. Source copies, previews, archived manifests,
 candidate leads and staged publications are not extra fixture inputs. There is
 no test of collection kind, transformation, origin, source relationship or content.

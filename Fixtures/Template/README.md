@@ -1,8 +1,13 @@
 # Start a fixture collection
 
 Use this template for every Similarity or Curatorial contribution and every
-relationship set. Collection/group directories are indexes; only leaves have
-manifests. Arbitrary nesting under Heaps or Relationships is supported.
+relationship set. Grouping directories under Heaps or Relationships may be
+arbitrarily deep. Discovery stops at the first manifest on each branch. Only
+the enclosing leaf joins the archive population. To validate a working fixture
+shipped under a leaf's `tools/example/`, run the example's own `tools/check.py`.
+
+The [Byte identities example](Byte-Identities/README.md) builds a complete leaf
+offline and walks through sampling and removing its two byte-identical aliases.
 
 For help from a web partner, use the [short handoff guide](../WEB-AGENT-GUIDE.md).
 Keep the supplied brief and exports unchanged under
