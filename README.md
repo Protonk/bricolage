@@ -1,4 +1,4 @@
-# bricolage 0.1.0
+# bricolage 0.1.1
 
 bricolage collects image fixtures and draws repeatable samples from them.
 A draw gives your program a directory of images. Its saved record tells you
