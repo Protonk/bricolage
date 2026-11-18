@@ -26,12 +26,10 @@ Use Python 3.14.x in `Fixtures/.venv`. From the repository root, create it with
 `make -C Fixtures setup-python`. Sampling and layout checks use the standard
 library; install a leaf's `tools/requirements.txt` when its tools need packages.
 
-Use `Fixtures/sample N` for draws. Scratch records go to `output/records/`;
-`--keep` selects the versioned `Sampler/records/` store. Use the same store for
-later `show`, `verify`, `publish` and `annotate` commands. Generated test patterns
-can check tool mechanics; use the supplied images to examine image behavior.
-`sampleWithout` uses those same stores and records; put `--keep` before its
-world argument and use `sample` for later commands on the saved draw.
+Use `Fixtures/sample N` for draws. Pass the returned directory to the consumer.
+To retain an ordinary or exclusion draw, run `Fixtures/sample keep WORLD_ID`
+and commit its records. Later commands find the draw by ID. Generated test
+patterns can check tool mechanics. Use the supplied images to examine image behavior.
 
 Keep original media in a leaf's `images/`, `sources/` or `previews/`, and
 preserve supplied records. Follow [output/AGENTS.md](output/AGENTS.md) for

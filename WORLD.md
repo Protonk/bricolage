@@ -29,8 +29,8 @@ WORLD/
 
 - Every file's SHA-256 equals its stem. A world verifies itself without the manifest.
 - No two files share bytes. The list is sorted by file name and carries no order.
-- `world.json` is written last, inside the staged directory. If it is present, the
-  world is complete. The directory contains the manifest and the files, nothing else.
+- Each publication creates a fresh directory. The presence of `world.json`
+  means the image copies have been verified and the world is complete.
 - The world ID is the opaque ID of a saved draw. Republishing that draw preserves
   its world ID. Repeating a draw with the same size, seed and population reproduces
   the image selection but creates a new draw and world ID.
@@ -42,12 +42,9 @@ WORLD/
 
 - Refer to images by their ID, never by path. Name the world ID in anything emitted
   about the world.
-- Treat the directory as read-only and expect no other files in it. Any stray entry,
-  such as a `.DS_Store` written by browsing the world in Finder, makes the world
-  invalid until its producer republishes it.
-- Finish consuming a world before its publisher reuses that directory, or use a
-  separate publication directory. Atomic replacement switches whole directories;
-  it does not pin one version across a reader's separate file opens.
+- Open the directory the publisher hands back and treat it as read-only. It
+  contains exactly the manifest and its listed files. If a stray entry such as
+  `.DS_Store` makes it invalid, the producer can supply a fresh publication.
 - Handle an undecodable file as an ordinary error. The sampler verifies bytes, not
   that an image decodes.
 

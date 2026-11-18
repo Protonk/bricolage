@@ -140,7 +140,7 @@ class SampleWithoutTests(unittest.TestCase):
         directory = Path(source['output']['directory'])
         destination = Path(self.world(1)['output']['directory'])
         before = {p.name: p.read_bytes() for p in destination.iterdir()}
-        error = self.assert_rejected_without_drawing(directory, 2, '--world', str(destination))
+        error = self.assert_rejected_without_drawing(directory, 2)
         self.assertIn('1 eligible images remain', error['message'])
         self.assertEqual({p.name: p.read_bytes() for p in destination.iterdir()}, before)
         self.assert_rejected_without_drawing(directory, -1)

@@ -440,7 +440,10 @@ class SamplerTests(unittest.TestCase):
         self.assertEqual(run('1').returncode, 0)
         repeated = run('publish', outputs[0]['world_id'])
         self.assertEqual(repeated.returncode, 0, repeated.stderr)
-        self.assertEqual(json.loads(repeated.stdout)['output'], outputs[0])
+        republished = json.loads(repeated.stdout)['output']
+        self.assertEqual(republished['world_id'], outputs[0]['world_id'])
+        self.assertNotEqual(republished['directory'], outputs[0]['directory'])
+        self.assertEqual(Path(republished['manifest']).read_bytes(), Path(outputs[0]['manifest']).read_bytes())
         for world, before in snapshots.items():
             self.assertEqual({p.name: p.read_bytes() for p in world.iterdir()}, before)
         self.assertEqual((legacy / 'world.json').read_bytes(), legacy_bytes)
@@ -529,7 +532,7 @@ class SamplerTests(unittest.TestCase):
         self.assertEqual(shown['annotations']['sample']['publication']['directory'], str(other))
         (self.heap / 'images/0.png').unlink()
         (self.related / 'images/0.png').unlink()
-        result = self.cli('publish', sample_id, '--world', str(other))
+        result = self.cli('publish', sample_id)
         self.assertEqual(result.returncode, 1, result.stderr)
         response = json.loads(result.stdout)
         self.assertFalse(response['output']['published'])
@@ -537,94 +540,43 @@ class SamplerTests(unittest.TestCase):
         self.assertEqual(json.loads((other / 'world.json').read_text()), manifests[1])  # Previous world intact.
         self.assertEqual(len(s.inspect_draw(self.store, sample_id, self.repo)['annotation_history']), 2)
 
-    def test_explicit_destination_replaces_only_a_previous_world_and_copies_are_independent(self):
-        output = self.repo / 'Fixtures/output'
-        sampled = output / 'sampled'
-        sampled.mkdir(parents=True)
-        (sampled / 'world.json').write_text('{"schema_version": 1, "world_id": "draw-old", "images": []}')
-        (sampled / 'old/subdir').mkdir(parents=True)
-        (sampled / 'old/subdir/stale').write_bytes(b'stale')
-        (sampled / 'external-link').symlink_to(self.heap, target_is_directory=True)
-        (sampled / '.DS_Store').write_bytes(b'finder')
-        (output / 'AGENTS.md').write_text('Keep this')
-        (output / 'other-output').write_bytes(b'Keep this too')
-        # A manifest alone does not make a directory a world: unlisted entries are refused by name, not deleted.
-        refused = self.cli('3', '--seed', 'first', '--world', str(sampled))
-        self.assertEqual(refused.returncode, 2, refused.stderr)
-        self.assertIn('does not list: external-link, old', json.loads(refused.stdout)['error']['message'])
-        self.assertEqual((sampled / 'old/subdir/stale').read_bytes(), b'stale')
-        self.assertTrue((sampled / 'external-link').is_symlink())
-        (sampled / 'external-link').unlink()
-        shutil.rmtree(sampled / 'old')
-        first = json.loads(self.cli('3', '--seed', 'first', '--world', str(sampled)).stdout)
-        self.assertFalse((sampled / '.DS_Store').exists())
-        self.assertEqual(stat.S_IMODE(sampled.stat().st_mode), 0o777 & ~s.current_umask())
-        self.assertEqual(len(list(sampled.iterdir())), 4)  # Three copies and world.json.
+    def test_create_only_refuses_existing_empty_complete_or_stray_destinations(self):
+        target = self.repo / 'Fixtures/output/requested'
+        target.mkdir(parents=True)
+        self.assertEqual(self.cli('2', '--world', str(target)).returncode, 2)
+        self.assertEqual(list(target.iterdir()), [])
+        target.rmdir()
+        first = json.loads(self.cli('2', '--world', str(target)).stdout)
+        self.assertTrue(first['output']['published'])
+        manifest = (target / 'world.json').read_bytes()
+        for path in (target, target / 'child'):
+            self.assertEqual(self.cli('publish', first['draw']['sample_id'], '--world', str(path)).returncode, 2)
+        (target / '.DS_Store').write_bytes(b'stray')
+        self.assertEqual(self.cli('1', '--world', str(target)).returncode, 2)
+        self.assertEqual((target / '.DS_Store').read_bytes(), b'stray')
+        self.assertEqual((target / 'world.json').read_bytes(), manifest)
         image = first['images'][0]
         Path(image['sampled_path']).write_bytes(b'edited copy')
         self.assertEqual('sha256:' + s.file_hash(Path(image['available_path'])), image['image_id'])
-        second = self.cli('1', '--seed', 'second', '--world', str(sampled))
-        self.assertEqual(second.returncode, 0, second.stderr)
-        self.assertEqual(len(list(sampled.iterdir())), 2)
-        self.assertEqual(json.loads((sampled / 'world.json').read_text())['world_id'],
-                         json.loads(second.stdout)['draw']['sample_id'])
-        self.assertEqual((output / 'AGENTS.md').read_text(), 'Keep this')
-        self.assertEqual((output / 'other-output').read_bytes(), b'Keep this too')
-        self.assertTrue(self.heap.is_dir())
-        self.assertEqual(s.load_draw(self.store, first['draw']['sample_id'])[0], first['draw'])
-        zero = self.cli('0', '--world', str(sampled))
-        self.assertEqual(zero.returncode, 0)
-        self.assertTrue(json.loads(zero.stdout)['output']['published'])
-        self.assertEqual(json.loads(zero.stdout)['output']['image_count'], 0)
-        self.assertEqual([p.name for p in sampled.iterdir()], ['world.json'])
-        self.assertEqual(json.loads((sampled / 'world.json').read_text())['images'], [])
+        self.assertEqual(len(s.list_draws(self.store)['draws']), 1)
 
-    def test_invalid_draw_and_failed_copy_preserve_previous_world(self):
-        sampled = self.repo / 'Fixtures/output/sampled'
-        sampled.mkdir(parents=True)
-        stem = '0' * 64  # A listed file name is enough to count as a previous world; bytes are not rehashed.
-        (sampled / 'world.json').write_text(json.dumps(dict(
-            schema_version=1, world_id='draw-old', images=[dict(id='sha256:' + stem, file=stem + '.bin')])))
-        sentinel = sampled / (stem + '.bin')
-        sentinel.write_bytes(b'previous')
-        self.assertEqual(self.cli('5', '--world', str(sampled)).returncode, 2)
-        draw = self.draw()
-        images = s.inspect_draw(self.store, draw['sample_id'], self.repo, paths_only=True)['images']
-        def corrupt_copy(source, destination):
-            destination.write_bytes(b'incomplete copy')
-        with patch.object(s.shutil, 'copyfile', side_effect=corrupt_copy):
+    def test_corrupt_copy_and_destination_appearing_during_copy(self):
+        target = self.repo / 'Fixtures/output/requested'
+        draw = self.draw(1)
+        images = s.inspect_draw(self.store, draw['sample_id'], self.repo, True)['images']
+        with patch.object(s.shutil, 'copyfile', side_effect=lambda src, dst: dst.write_bytes(b'corrupt')):
             with self.assertRaisesRegex(s.SamplerError, 'checksum differs'):
-                s.publish_world(self.repo, self.store, draw, images, sampled)
-        self.assertEqual(sentinel.read_bytes(), b'previous')
-        self.assertEqual(list(sampled.parent.iterdir()), [sampled])
-        stdout = io.StringIO()
-        with patch.object(s.shutil, 'copyfile', side_effect=OSError('disk full')), contextlib.redirect_stdout(stdout):
-            status = s.main(['--repo', str(self.repo), '--store', str(self.store), '2', '--world', str(sampled)])
-        self.assertEqual(status, 1)
-        result = json.loads(stdout.getvalue())
-        self.assertIn('disk full', result['output']['error'])
-        self.assertFalse(result['output']['published'])
-        self.assertTrue(all(i['sampled_path'] is None for i in result['images']))
-        self.assertEqual(s.load_draw(self.store, result['draw']['sample_id'])[0], result['draw'])
-        self.assertEqual(sentinel.read_bytes(), b'previous')
-        self.assertEqual(s.read_events(self.store, result['draw']), [])  # No receipt without a publication.
-
-    def test_failed_directory_exchange_preserves_the_previous_world(self):
-        first = json.loads(self.cli('2').stdout)
-        target = Path(first['output']['directory'])
-        before = {p.name: p.read_bytes() for p in target.iterdir()}
-        stdout = io.StringIO()
-        with patch.object(s, 'exchange_directories', side_effect=OSError('exchange unavailable')), \
-                contextlib.redirect_stdout(stdout):
-            code = s.main(['--repo', str(self.repo), '--store', str(self.store), '3', '--world', str(target)])
-        report = json.loads(stdout.getvalue())
-        self.assertEqual(code, 1)
-        self.assertFalse(report['output']['published'])
-        self.assertFalse(report['output']['receipt_recorded'])
-        self.assertIn('exchange unavailable', report['output']['error'])
-        self.assertEqual({p.name: p.read_bytes() for p in target.iterdir()}, before)
+                s.publish_world(self.repo, self.store, draw, images, target)
+        self.assertFalse(target.exists())
+        copy = shutil.copyfile
+        def claim_target(src, dst):
+            target.mkdir()
+            return copy(src, dst)
+        with patch.object(s.shutil, 'copyfile', side_effect=claim_target):
+            with self.assertRaises(FileExistsError):
+                s.publish_world(self.repo, self.store, draw, images, target)
+        self.assertEqual(list(target.iterdir()), [])
         self.assertEqual(list(target.parent.iterdir()), [target])
-        self.assertEqual(s.read_events(self.store, report['draw']), [])
 
     def test_first_install_failure_leaves_no_visible_or_partial_world(self):
         stdout = io.StringIO()
@@ -634,47 +586,6 @@ class SamplerTests(unittest.TestCase):
         self.assertEqual(code, 1)
         self.assertFalse(report['output']['published'])
         self.assertEqual(list((self.repo / 'Fixtures/output/worlds').iterdir()), [])
-
-    def test_exchange_installs_complete_world_before_cleaning_old_directory(self):
-        first = json.loads(self.cli('2').stdout)
-        target = Path(first['output']['directory'])
-        old_manifest = (target / 'world.json').read_bytes()
-        draw = self.draw(3)
-        images = s.inspect_draw(self.store, draw['sample_id'], self.repo, True)['images']
-        original_cleanup = s.cleanup_world_stage
-
-        def inspect_cleanup(staged):
-            self.assertNotEqual(staged, target)
-            self.assertEqual((staged / 'world.json').read_bytes(), old_manifest)
-            new = json.loads((target / 'world.json').read_text())
-            self.assertEqual(new['world_id'], draw['sample_id'])
-            for row in new['images']:
-                self.assertEqual('sha256:' + s.file_hash(target / row['file']), row['id'])
-            return original_cleanup(staged)
-
-        with patch.object(s, 'cleanup_world_stage', side_effect=inspect_cleanup) as cleanup:
-            _, _, problems = s.publish_world(self.repo, self.store, draw, images, target)
-        self.assertEqual(cleanup.call_count, 1)
-        self.assertEqual(problems, [])
-
-    def test_cleanup_failure_reports_installed_world_and_still_records_receipt(self):
-        first = json.loads(self.cli('2').stdout)
-        target = first['output']['directory']
-        stdout = io.StringIO()
-        with patch.object(s.shutil, 'rmtree', side_effect=OSError('cleanup denied')), contextlib.redirect_stdout(stdout):
-            code = s.main(['--repo', str(self.repo), '--store', str(self.store), '3', '--world', target])
-        report = json.loads(stdout.getvalue())
-        self.assertEqual(code, 1)
-        self.assertTrue(report['output']['published'])
-        self.assertTrue(report['output']['receipt_recorded'])
-        self.assertEqual([p['kind'] for p in report['problems']], ['world-cleanup-failed'])
-        self.assertTrue(Path(report['problems'][0]['path']).is_dir())
-        self.assertEqual(json.loads(Path(report['output']['manifest']).read_text())['world_id'],
-                         report['draw']['sample_id'])
-        self.assertEqual(len(s.read_events(self.store, report['draw'])), 1)
-        self.assertEqual(report['output']['image_count'], 3)
-        self.assertIn(report['problems'][0]['path'], report['output']['next_steps'][0])
-        self.assertIn('Remove only', report['output']['next_steps'][0])
 
     def test_receipt_failure_is_nonzero_and_republication_can_record_a_new_receipt(self):
         stdout = io.StringIO()
@@ -748,41 +659,121 @@ class SamplerTests(unittest.TestCase):
         self.assertEqual(sorted(p.name for p in outside.iterdir()), ['keep', 'world.json'])
         self.assertEqual(s.list_draws(self.store)['draws'], [])  # Refused before any record was created.
 
-    def test_concurrent_publications_leave_one_complete_world(self):
+    def test_concurrent_publications_have_one_winner(self):
         draws = [self.draw(2, 'first'), self.draw(3, 'second')]
         images = [s.inspect_draw(self.store, d['sample_id'], self.repo, True)['images'] for d in draws]
         target = self.repo / 'Fixtures/output/shared'
         with concurrent.futures.ThreadPoolExecutor(max_workers=2) as pool:
-            published = list(pool.map(lambda pair: s.publish_world(self.repo, self.store, *pair, target)[0],
-                                      zip(draws, images)))
-        actual = {p.name for p in target.iterdir()}
-        self.assertIn(actual, [{Path(row['sampled_path']).name for row in rows} | {'world.json'} for rows in published])
+            attempts = [pool.submit(s.publish_world, self.repo, self.store, d, rows, target)
+                        for d, rows in zip(draws, images)]
+        winners = [draw for draw, attempt in zip(draws, attempts) if attempt.exception() is None]
+        self.assertEqual(len(winners), 1)
+        manifest = json.loads((target / 'world.json').read_text())
+        self.assertEqual(manifest['world_id'], winners[0]['sample_id'])
+        for row in manifest['images']:
+            self.assertEqual('sha256:' + s.file_hash(target / row['file']), row['id'])
 
-    def test_default_store_is_scratch_seeded_once_and_keep_names_the_durable_store(self):
-        durable = self.repo / 'Fixtures/Sampler/records'
-        kept = self.draw(1, 'kept')  # self.store is the durable location in this checkout.
-        base = [sys.executable, str(Path(s.__file__)), '--repo', str(self.repo)]
-        run = lambda *a: subprocess.run([*base, *a], text=True, capture_output=True)
-        result = run('2', '--seed', 'scratch')
-        self.assertEqual(result.returncode, 0, result.stderr)
-        response = json.loads(result.stdout)
-        scratch = self.repo / 'Fixtures/output/records'
-        self.assertEqual(Path(response['store']), scratch.resolve())
-        self.assertEqual([e.name for e in (self.repo / 'Fixtures/output').iterdir() if e.name.startswith('.')], [])
-        self.assertEqual(sorted(p.name for p in durable.joinpath('draws').iterdir()), [kept['sample_id']])
-        self.assertEqual(s.load_draw(scratch, kept['sample_id'])[0], kept)  # Seeded copy of the durable draw.
-        self.assertEqual(json.loads(run('show', kept['sample_id']).stdout)['draw'], kept)
-        self.assertEqual(json.loads(run('list').stdout)['store'], str(scratch.resolve()))
-        kept_again = json.loads(run('--keep', '1', '--seed', 'kept again').stdout)
-        self.assertEqual(Path(kept_again['store']), durable.resolve())
-        self.assertIn(kept_again['draw']['sample_id'], [p.name for p in durable.joinpath('draws').iterdir()])
-        self.assertNotIn(kept_again['draw']['sample_id'], [p.name for p in scratch.joinpath('draws').iterdir()])
-        both = run('--keep', '--store', str(scratch), 'list')
-        self.assertEqual(both.returncode, 2)
-        self.assertEqual(json.loads(both.stdout)['error']['code'], 'usage')
-        shutil.rmtree(scratch)  # Seeding happens again only when the scratch store is absent.
-        self.assertEqual(sorted(p.name for p in Path(json.loads(run('list').stdout)['store']).joinpath('draws').iterdir()),
-                         sorted([kept['sample_id'], kept_again['draw']['sample_id']]))
+    def default_cli(self, *args):
+        return subprocess.run([sys.executable, str(Path(s.__file__)), '--repo', str(self.repo), *args],
+                              text=True, capture_output=True)
+
+    def test_keep_promotes_exact_records_and_finds_both_stores_by_id(self):
+        legacy = self.draw(1)
+        self.make_leaf('Heaps/Addition', [b'new'])
+        first = json.loads(self.default_cli('3').stdout)
+        sid = first['draw']['sample_id']
+        scratch = s.scratch_store(self.repo)
+        self.assertFalse(s.sample_dir(scratch, legacy['sample_id']).exists())
+        self.assertEqual(json.loads(self.default_cli('show', legacy['sample_id']).stdout)['draw'], legacy)
+        self.assertEqual(self.default_cli('annotate', sid, '--key', 'note', '--json', '1').returncode, 0)
+        original = s.sample_dir(scratch, sid)
+        for args in [('keep', sid), ('keep', sid)]:
+            kept = self.default_cli(*args)
+            self.assertEqual(kept.returncode, 0, kept.stderr)
+            self.assertEqual(json.loads(kept.stdout)['store'], str(self.store))
+        directory = s.sample_dir(self.store, sid)
+        for name in ('draw.json', 'annotations.jsonl'):
+            self.assertEqual((directory / name).read_bytes(), (original / name).read_bytes())
+        inventory = first['draw']['inventory_file']
+        self.assertEqual((scratch / inventory).read_bytes(), (self.store / inventory).read_bytes())
+        self.assertEqual(self.default_cli('annotate', sid, '--key', 'later', '--json', '2').returncode, 0)
+        self.assertEqual(len(s.read_events(self.store, first['draw'])), 3)
+        self.assertEqual(len(s.read_events(scratch, first['draw'])), 2)
+        transient = json.loads(self.default_cli('0').stdout)['draw']['sample_id']
+        rows = json.loads(self.default_cli('list').stdout)['draws']
+        self.assertCountEqual([r['sample_id'] for r in rows], [legacy['sample_id'], sid, transient])
+        shutil.rmtree(scratch)
+        self.assertEqual(self.default_cli('verify', sid).returncode, 0)
+        self.assertEqual(self.default_cli('publish', sid).returncode, 0)
+        self.assertFalse(scratch.exists())
+        self.assertEqual(self.default_cli('1', '--inventory', first['draw']['inventory_id']).returncode, 0)
+        direct = self.default_cli('--keep', '1')
+        self.assertEqual(json.loads(direct.stdout)['store'], str(self.store))
+        self.assertEqual(self.default_cli('--keep', '--store', str(scratch), 'list').returncode, 2)
+
+    def test_keep_refuses_diverged_history_and_recovers_a_longer_legacy_copy(self):
+        draw = self.draw(1)
+        sid = draw['sample_id']
+        scratch = s.scratch_store(self.repo)
+        shutil.copytree(self.store, scratch)
+        s.annotate(scratch, sid, 'legacy', 1)
+        self.assertEqual(json.loads(self.default_cli('show', sid).stdout)['store'], str(scratch))
+        self.assertEqual(self.default_cli('keep', sid).returncode, 0)
+        s.annotate(scratch, sid, 'fork', 2)
+        s.annotate(self.store, sid, 'fork', 3)
+        for args in [('keep', sid), ('--store', str(scratch), 'keep', sid), ('show', sid)]:
+            result = self.default_cli(*args)
+            self.assertEqual(result.returncode, 2, result.stderr)
+            self.assertEqual(json.loads(result.stdout)['error']['code'], 'record-conflict')
+        self.assertEqual([s.read_events(store, draw)[-1]['value'] for store in (scratch, self.store)], [2, 3])
+
+    def test_keep_reuses_an_existing_snapshot_of_the_same_population(self):
+        saved = s.save_inventory(self.store, self.inventory())
+        inventory_path = s.inventory_file(self.store, saved['inventory_id'])
+        saved_bytes = inventory_path.read_bytes()
+        scratch = s.scratch_store(self.repo)
+        rescanned = dict(saved, created_at='2026-11-18T12:00:00+00:00')
+        draw = s.create_draw(scratch, rescanned, s.DrawRequest(2, 'repeat'))
+        original = s.draw_summary(draw, rescanned)
+        kept = self.default_cli('keep', draw['sample_id'])
+        self.assertEqual(kept.returncode, 0, kept.stderr)
+        self.assertEqual(inventory_path.read_bytes(), saved_bytes)
+        self.assertEqual(s.load_inventory(scratch, saved['inventory_id']), rescanned)
+        shown = json.loads(self.default_cli('show', draw['sample_id']).stdout)
+        self.assertEqual(shown['draw'], draw)
+        self.assertEqual(shown['summary'], original)
+
+    def test_keep_and_annotation_handoff_is_serialized(self):
+        first = json.loads(self.default_cli('1').stdout)
+        sid = first['draw']['sample_id']
+        with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
+            tasks = [pool.submit(self.default_cli, 'keep', sid)]
+            tasks.extend(pool.submit(self.default_cli, 'annotate', sid, '--key', str(n), '--json', 'true')
+                         for n in range(5))
+        for task in tasks:
+            self.assertEqual(task.result().returncode, 0, task.result().stderr)
+        self.assertCountEqual([e['key'] for e in s.read_events(self.store, first['draw'])],
+                              ['publication', '0', '1', '2', '3', '4'])
+
+    def test_keep_can_retry_a_failed_copy_without_publishing_a_partial_record(self):
+        first = json.loads(self.default_cli('1').stdout)
+        sid = first['draw']['sample_id']
+        scratch = s.scratch_store(self.repo)
+        source = s.sample_dir(scratch, sid)
+        target = s.sample_dir(self.store, sid)
+        with patch.object(shutil, 'copy2', side_effect=OSError('disk full')), self.assertRaises(OSError):
+            s.keep_draw(self.repo, scratch, sid)
+        self.assertFalse(target.exists())
+        log = source / 'annotations.jsonl'
+        data = log.read_bytes()
+        log.write_bytes(data + b'partial')
+        self.assertEqual(self.default_cli('keep', sid).returncode, 2)
+        self.assertFalse(target.exists())
+        log.write_bytes(data)
+        shutil.rmtree(self.heap)
+        shutil.rmtree(self.related)
+        self.assertEqual(self.default_cli('keep', sid).returncode, 0)
+        self.assertEqual((target / log.name).read_bytes(), data)
 
     def test_shorthand_bounds_and_global_options(self):
         for size in ('-1', '5'):
@@ -830,10 +821,10 @@ class SamplerTests(unittest.TestCase):
         self.assertIn('../bricolage/Fixtures/sample 100', help_text)
         self.assertIn('output first', help_text)
         self.assertIn('Fixtures/output/worlds/<sample_id>/', help_text)
-        self.assertIn('existing world there is replaced', help_text)
+        self.assertTrue(help_text.startswith('usage: Fixtures/sample N'))
         for command in ('draw', 'publish'):
             help_text = ' '.join(self.cli(command, '--help').stdout.split())
-            self.assertIn('default Fixtures/output/worlds/<sample_id>', help_text)
+            self.assertIn('New directory to create', help_text)
 
     def test_annotation_values_with_unicode_line_separators_stay_readable(self):
         draw = self.draw(1, 'separators')

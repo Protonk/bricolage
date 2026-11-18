@@ -206,6 +206,7 @@ def load_world(world, store):
     require(isinstance(manifest, dict), 'World manifest must be an object')
     require(type(manifest.get('schema_version')) is int and manifest['schema_version'] == 1,
             'Unsupported world schema')
+    store = sampler.resolve_store(REPO, store, sample_id=manifest.get('world_id'))
     draw, _ = sampler.load_draw(store, manifest.get('world_id'))
     entries = manifest.get('images')
     require(isinstance(entries, list), 'World images must be a list')
@@ -232,7 +233,6 @@ def load_world(world, store):
 
 
 def run(root, binary, output, selection, world, store=None):
-    store = sampler.resolve_store(REPO) if store is None else store
     rows, probes, identity = validate(root)
     pairs = select_pairs(rows, probes, selection, root)
     require(binary.is_file(), f"Comparison executable not found: {binary}")
@@ -319,7 +319,7 @@ def main():
     parser.add_argument("--binary", type=Path, help="Explicit path to the hazy-vision-translation executable (required for run)")
     parser.add_argument("--output", type=Path)
     parser.add_argument('--world', type=Path, help='Sampler-published world (required for run)')
-    parser.add_argument('--store', type=Path, help='Saved draw record store; default the sampler\'s scratch store')
+    parser.add_argument('--store', type=Path, help='Explicit draw record store; defaults to lookup by world ID')
     args = parser.parse_args()
     try:
         if args.command == "check":

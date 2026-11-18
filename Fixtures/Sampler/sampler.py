@@ -6,7 +6,7 @@ The JSON format and byte-exact sampling procedure are documented in README.md.
 """
 import argparse
 import csv
-import ctypes
+from contextlib import contextmanager
 from dataclasses import dataclass, replace
 import fcntl
 import hashlib
@@ -899,6 +899,26 @@ def list_draws(store):
     return dict(schema_version=1, draws=draws, problems=problems)
 
 
+def list_default_draws(repo):
+    stores = (scratch_store(repo), durable_store(repo))
+    rows, problems = {}, []
+    for store in stores:
+        report = list_draws(store)
+        problems.extend(report['problems'])
+        for row in report['draws']:
+            sid = row['sample_id']
+            if sid in rows:
+                try:
+                    if resolve_store(repo, sample_id=sid) != store:
+                        continue
+                except SamplerError as error:
+                    row = dict(row, status='conflict')
+                    problems.append(dict(kind='draw-conflict', sample_id=sid, error=error.report()))
+            rows[sid] = dict(row, store=str(store.resolve()))
+    return dict(schema_version=1, stores=[str(p.resolve()) for p in stores],
+                draws=sorted(rows.values(), key=lambda r: (r['created_at'] or '', r['sample_id'])), problems=problems)
+
+
 def population_problems(inventory):
     pop = inventory['population']
     problems = [dict(kind='leaf-excluded', fixture_path=leaf['fixture_path'], **leaf['error'])
@@ -938,29 +958,8 @@ def within(path, root):
     return False
 
 
-def previous_world_strays(target):
-    """Entries that stop a directory from counting as a previous world, or None if it is not one at all.
-
-    A previous world has a parseable schema-1 manifest and nothing beside the files it
-    lists. A Finder `.DS_Store` is tolerated: replacing the world removes it and loses nothing.
-    """
-    manifest_path = target / WORLD_MANIFEST
-    if not manifest_path.is_file() or manifest_path.is_symlink():
-        return None
-    try:
-        manifest = json.loads(manifest_path.read_text(encoding='utf-8'))
-        listed = {entry['file'] for entry in manifest['images']}
-        if manifest['schema_version'] != 1 or not isinstance(manifest['world_id'], str) \
-                or not all(isinstance(name, str) for name in listed):
-            return None
-    except (OSError, ValueError, TypeError, KeyError):
-        return None
-    return sorted(p.name for p in target.iterdir()
-                  if p.name not in listed | {WORLD_MANIFEST, '.DS_Store'} or p.is_symlink() or not p.is_file())
-
-
 def durable_store(repo):
-    """The versioned record store. Writing here is a deliberate act (`--keep`)."""
+    """The versioned store for retained draws."""
     return Path(repo) / 'Fixtures/Sampler/records'
 
 
@@ -969,32 +968,79 @@ def scratch_store(repo):
     return Path(repo) / 'Fixtures/output/records'
 
 
-def resolve_store(repo, store=None, keep=False):
-    """An explicit --store wins; --keep names the durable store; otherwise the scratch store.
-
-    A missing scratch store is seeded once with a copy of the durable records, so the
-    committed draws can be shown, verified and republished without any option. Later
-    durable changes are not mirrored; delete the scratch store to seed it again.
-    """
+def resolve_store(repo, store=None, keep=False, sample_id=None):
+    """Explicit stores take precedence. Otherwise find a world by its recorded ID."""
     require(store is None or not keep, 'usage', '--store and --keep name different stores; give one')
     if store is not None:
         return Path(store)
+    durable = durable_store(repo)
+    scratch = scratch_store(repo)
     if keep:
-        return durable_store(repo)
-    scratch, durable = scratch_store(repo), durable_store(repo)
-    if not scratch.exists() and durable.is_dir():
-        staged = scratch.with_name(f'.{scratch.name}-seeding-{uuid.uuid4().hex}')
-        shutil.copytree(durable, staged, ignore=shutil.ignore_patterns('.DS_Store'))
-        try:
-            staged.rename(scratch)
-        except OSError:
-            shutil.rmtree(staged, ignore_errors=True)  # Another process seeded first; its copy stands.
-            require(scratch.is_dir(), 'io', f'Cannot create the scratch record store at {scratch}')
-    return scratch
+        return durable
+    if sample_id is None or not sample_dir(durable, sample_id).exists():
+        return scratch
+    if sample_dir(scratch, sample_id).exists():
+        # Older checkouts can have annotated copies seeded into scratch.
+        if history_difference(scratch, durable, sample_id) > 0:
+            return scratch
+    return durable
+
+
+def history_difference(source, destination, sample_id):
+    """Signed event-count difference for compatible copies of a saved draw."""
+    original = read_draw(source, sample_id)
+    other = read_draw(destination, sample_id)
+    left, right = read_events(source, original), read_events(destination, other)
+    common = min(len(left), len(right))
+    require(original == other and left[:common] == right[:common], 'record-conflict',
+            f'Conflicting records for {sample_id} in {source} and {destination}; inspect each with --store')
+    return len(left) - len(right)
+
+
+def keep_draw(repo, source, sample_id):
+    """Publish a validated draw and its complete annotation history in the kept store."""
+    durable = durable_store(repo)
+    draw, inventory = load_draw(source, sample_id)
+    events = read_events(source, draw)
+    origin = sample_dir(source, sample_id)
+    target = sample_dir(durable, sample_id)
+    if not target.exists():
+        save_inventory(durable, inventory)
+        target.parent.mkdir(parents=True, exist_ok=True)
+        with tempfile.TemporaryDirectory(dir=target.parent, prefix='.keep-') as temp:
+            staged = Path(temp) / sample_id
+            staged.mkdir()
+            shutil.copy2(origin / 'draw.json', staged / 'draw.json')
+            if (origin / 'annotations.jsonl').exists():
+                shutil.copy2(origin / 'annotations.jsonl', staged / 'annotations.jsonl')
+            staged.rename(target)
+    elif origin.resolve() != target.resolve():
+        load_draw(durable, sample_id)
+        if history_difference(source, durable, sample_id) > 0:
+            # Older scratch copies may extend the kept history. Install the full log atomically.
+            with tempfile.TemporaryDirectory(dir=target, prefix='.keep-') as temp:
+                log = Path(temp) / 'annotations.jsonl'
+                shutil.copy2(origin / log.name, log)
+                log.replace(target / log.name)
+        events = read_events(durable, draw)
+    return dict(schema_version=1, world_id=sample_id, kept=True, directory=str(target.resolve()),
+                inventory_id=draw['inventory_id'], annotation_count=len(events))
+
+
+@contextmanager
+def record_operation(repo, keeping):
+    # Promotion changes the store that owns subsequent writes. Other CLI operations
+    # share the lock and can run concurrently; keep gets a consistent handoff.
+    fd = os.open(Path(repo) / 'Fixtures', os.O_RDONLY)
+    try:
+        fcntl.flock(fd, fcntl.LOCK_EX if keeping else fcntl.LOCK_SH)
+        yield
+    finally:
+        os.close(fd)
 
 
 def world_target(repo, store, world=None, *, sample_id=None):
-    """Where a world may be written. Only an empty directory or a previous world is replaced."""
+    """Resolve a new publication path without modifying the filesystem."""
     repo = Path(repo).resolve()
     if world is None:
         sample_dir(store, sample_id)  # Validate the ID before using it as a directory name.
@@ -1004,16 +1050,12 @@ def world_target(repo, store, world=None, *, sample_id=None):
     require(not target.is_symlink(), 'output', f'World directory must not be a symlink: {target}')
     require(not within(target, repo / 'Fixtures') or within(target, repo / 'Fixtures/output'),
             'output', f'A world may not be written among the fixtures: {target}')
-    require(not within(store, target) and not within(target, store),
+    require(all(not within(records, target) and not within(target, records)
+                for records in {Path(store), scratch_store(repo), durable_store(repo)}),
             'output', f'Sample records and the world directory must not contain each other: {target}')
-    if target.exists():
-        require(target.is_dir(), 'output', f'World destination is not a directory: {target}')
-        if any(target.iterdir()):
-            strays = previous_world_strays(target)
-            require(strays is not None, 'output',
-                    f'Refusing to replace {target}: it is neither empty nor a previous world (no valid {WORLD_MANIFEST})')
-            require(not strays, 'output', f'Refusing to replace {target}: a previous world holding entries its manifest '
-                    f'does not list: {", ".join(strays)}; remove them or use a new directory')
+    require(not target.exists(), 'output', f'World destination already exists: {target}')
+    require(not any((parent / WORLD_MANIFEST).is_file() for parent in target.parents),
+            'output', f'World destination is inside an existing world: {target}')
     return target
 
 
@@ -1028,83 +1070,40 @@ def world_manifest(draw, images):
     return dict(schema_version=1, world_id=draw['sample_id'], images=entries)
 
 
-def exchange_directories(staged, target):
-    """Swap two existing directories in one filesystem operation, or change neither.
-
-    Python has no directory-exchange wrapper. These libc calls support nonempty
-    directories on macOS and Linux. Never fall back to deleting the old world.
-    """
-    libc = ctypes.CDLL(None, use_errno=True)
-    if sys.platform == 'darwin' and hasattr(libc, 'renamex_np'):
-        exchange = libc.renamex_np
-        exchange.argtypes = [ctypes.c_char_p, ctypes.c_char_p, ctypes.c_uint]
-        arguments = (os.fsencode(staged), os.fsencode(target), 2)  # RENAME_SWAP
-    elif sys.platform == 'linux' and hasattr(libc, 'renameat2'):
-        exchange = libc.renameat2
-        exchange.argtypes = [ctypes.c_int, ctypes.c_char_p, ctypes.c_int, ctypes.c_char_p, ctypes.c_uint]
-        arguments = (-100, os.fsencode(staged), -100, os.fsencode(target), 2)  # AT_FDCWD, RENAME_EXCHANGE
-    else:
-        raise SamplerError('output', 'Atomic world replacement is unavailable on this platform; use a new directory')
-    exchange.restype = ctypes.c_int
-    if exchange(*arguments) != 0:
-        number = ctypes.get_errno()
-        raise OSError(number, 'Atomic world replacement failed: ' + os.strerror(number), str(target))
-
-
-def cleanup_world_stage(staged):
-    """Report leftover disposable files without misreporting an installed world."""
-    try:
-        shutil.rmtree(staged)
-    except FileNotFoundError:
-        pass  # A new destination consumed the staged directory via rename.
-    except OSError as error:
-        return [dict(kind='world-cleanup-failed', path=str(staged), error=str(error))]
-    return []
-
-
 def publish_world(repo, store, draw, images, world=None):
-    """Verify independent copies, then replace the previous world atomically.
-
-    The manifest is written inside the staged directory, so a visible world is complete.
-    Returns the copied images, target directory, and any post-publication cleanup
-    problems. A failed installation leaves the old world intact.
-    """
+    """Build a complete world, then install it into a directory reserved by this caller."""
     target = world_target(repo, store, world, sample_id=draw['sample_id'])
     target.parent.mkdir(parents=True, exist_ok=True)
-    # Lock the parent directory itself: no persistent lock file beside the world.
-    lock = os.open(target.parent, os.O_RDONLY)
+    staged = Path(tempfile.mkdtemp(prefix='.world-', dir=target.parent))
+    copied = []
     try:
-        fcntl.flock(lock, fcntl.LOCK_EX)
         world_target(repo, store, target)
-        staged = Path(tempfile.mkdtemp(prefix='.world-', dir=target.parent))
-        os.chmod(staged, 0o777 & ~current_umask())  # A published world is an ordinary directory, not a private one.
+        os.chmod(staged, 0o777 & ~current_umask())
+        for image in images:
+            require(image['available_path'] is not None, 'output',
+                    f'Selected image {image["image_id"]} is unavailable')
+            name = copy_name(image)
+            shutil.copyfile(image['available_path'], staged / name)
+            require('sha256:' + file_hash(staged / name) == image['image_id'], 'output',
+                    f'Copied image checksum differs: {name}')
+            copied.append(dict(image, sampled_path=str(target / name)))
+        (staged / WORLD_MANIFEST).write_text(json.dumps(world_manifest(draw, images),
+                                              ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+        # mkdir fails even for an existing empty directory. rename consumes only
+        # our own empty reservation; concurrent publishers cannot replace a world.
+        target.mkdir()
         try:
-            copied = []
-            for image in images:
-                require(image['available_path'] is not None, 'output',
-                        f'Selected image {image["image_id"]} is unavailable; nothing was published')
-                name = copy_name(image)
-                destination = staged / name
-                shutil.copyfile(image['available_path'], destination)
-                require('sha256:' + file_hash(destination) == image['image_id'], 'output',
-                        f'Copied image checksum differs: {name}; nothing was published')
-                copied.append(dict(image, sampled_path=str(target / name)))
-            manifest = world_manifest(draw, images)
-            (staged / WORLD_MANIFEST).write_text(
-                json.dumps(manifest, ensure_ascii=False, allow_nan=False, indent=2) + '\n', encoding='utf-8')
-            if target.is_dir():
-                exchange_directories(staged, target)  # Old world is now at staged.
-            else:
-                staged.rename(target)
-        except BaseException as error:  # Interrupts and signals must not leave a hidden stage either.
-            cleanup = cleanup_world_stage(staged)
-            if cleanup and isinstance(error, (OSError, SamplerError)):
-                raise SamplerError('output', f'{error}; staged files remain at {staged}: {cleanup[0]["error"]}',
-                                   cleanup_path=str(staged)) from None
+            staged.rename(target)
+        except BaseException:
+            target.rmdir()
             raise
-        return copied, target, cleanup_world_stage(staged)
-    finally:
-        os.close(lock)
+    except BaseException as error:
+        try:
+            shutil.rmtree(staged)
+        except OSError as cleanup:
+            raise SamplerError('output', f'{error}; staged files remain at {staged}: {cleanup}') from error
+        raise
+    return copied, target
 
 
 def publish_receipt(store, draw, target, count):
@@ -1123,10 +1122,9 @@ def publish_command(store, repo, draw, images, check, world):
         image['sampled_path'] = None
     if check['publication_ready']:
         try:
-            result['images'], target, cleanup = publish_world(repo, store, draw, images, world)
+            result['images'], target = publish_world(repo, store, draw, images, world)
             result['output'].update(directory=str(target), manifest=str(target / WORLD_MANIFEST),
                                     image_count=len(images), published=True)
-            result['problems'].extend(cleanup)
         except (OSError, SamplerError) as error:
             result['output']['error'] = f'{type(error).__name__}: {error}'
         if result['output']['published']:
@@ -1146,7 +1144,7 @@ def publish_command(store, repo, draw, images, check, world):
                       else ['--store', str(Path(store).resolve())])
     command = [str(REPO / 'Fixtures/sample'), '--repo', str(Path(repo).resolve()),
                *record_options, 'publish', draw['sample_id']]
-    if world is not None:
+    if world is not None and not os.path.lexists(world):
         command.extend(['--world', str(Path(world).absolute())])
     retry = shlex.join(command)
     steps = result['output']['next_steps']
@@ -1157,9 +1155,6 @@ def publish_command(store, repo, draw, images, check, world):
         log = sample_dir(store, draw['sample_id']).resolve() / 'annotations.jsonl'
         steps.append(f'The world is usable. Preserve this response and inspect {log}; the receipt append '
                      'may be partial. Repair a damaged log explicitly before publishing a new receipt: ' + retry)
-    for problem in result['problems']:
-        if problem['kind'] == 'world-cleanup-failed':
-            steps.append('The world is usable. Remove only the leftover staging directory: ' + problem['path'])
     return result
 
 
@@ -1256,8 +1251,13 @@ def draw_command(args):
     source = read_exclusion_world(args.excluded_world) if getattr(args, 'excluded_world', None) is not None else None
     if source is not None:
         protect_exclusion_world(args.excluded_world, target)
-    inventory = (load_inventory(args.store, args.inventory) if args.inventory
-                 else build_inventory(args.repo))
+    if args.inventory:
+        origin = args.store
+        if args.default_store and not inventory_file(origin, args.inventory).exists():
+            origin = durable_store(args.repo)
+        inventory = load_inventory(origin, args.inventory)
+    else:
+        inventory = build_inventory(args.repo)
     request = request_from_args(args, inventory, source)
     drawn = create_draw(args.store, inventory, request, sample_id=sample_id)
     check = verify_draw(args.store, drawn['sample_id'], args.repo)
@@ -1287,8 +1287,10 @@ def draw_command(args):
 
 def republish_command(args):
     """Materialize an existing draw as a world again, under the same world ID."""
-    world_target(args.repo, args.store, args.world, sample_id=args.sample_id)
     draw, _ = load_draw(args.store, args.sample_id)
+    if args.world is None:
+        args.world = args.repo / 'Fixtures/output/worlds' / (args.sample_id + '-' + uuid.uuid4().hex)
+    world_target(args.repo, args.store, args.world, sample_id=args.sample_id)
     check = verify_draw(args.store, args.sample_id, args.repo)
     images = inspect_draw(args.store, args.sample_id, args.repo, paths_only=True)['images']
     published = publish_command(args.store, args.repo, draw, images, check, args.world)
@@ -1310,6 +1312,8 @@ def annotation_value(args):
 
 
 def run(args):
+    if args.command == 'keep':
+        return keep_draw(args.repo, args.store, args.sample_id)
     if args.command == 'inventory':
         return inventory_report(save_inventory(args.store, build_inventory(args.repo)), args.store)
     if args.command == 'draw':
@@ -1317,7 +1321,7 @@ def run(args):
     if args.command == 'publish':
         return republish_command(args)
     if args.command == 'list':
-        return list_draws(args.store)
+        return list_default_draws(args.repo) if args.default_store else list_draws(args.store)
     if args.command == 'show':
         return inspect_draw(args.store, args.sample_id, args.repo, args.paths)
     if args.command == 'verify':
@@ -1347,6 +1351,7 @@ def emit_error(error, repo=REPO):
 def argument_parser(without=False):
     parser = Parser(
         prog='Fixtures/sampleWithout' if without else 'Fixtures/sample',
+        usage=None if without else 'Fixtures/sample N [--seed TEXT] [--world NEW_DIR]\n       Fixtures/sample [global options] COMMAND ...',
         description=('Draw N images from eligible fixtures minus the IDs in a published world.json. '
                      'Missing fixture IDs warn and reduce the exclusion list; source image copies are not read.'
                      if without else __doc__), allow_abbrev=False,
@@ -1355,9 +1360,9 @@ def argument_parser(without=False):
                'Read output first: published says whether the world is ready, directory names it, '
                'world_id identifies it, and image_count counts the published images. '
                'Each draw gets Fixtures/output/worlds/<sample_id>/. '
-               'Use --world DIR to choose a destination; an existing world there is replaced.')
+               'Use the returned directory, or choose a new path with --world DIR.')
     parser.add_argument('--repo', type=Path, default=REPO, help='Checkout containing Fixtures/')
-    parser.add_argument('--store', type=Path, help='JSON record directory; default Fixtures/output/records (disposable)')
+    parser.add_argument('--store', type=Path, help='Explicit record directory. Ordinary draws use scratch and saved draws are found by ID.')
     parser.add_argument('--keep', action='store_true',
                         help='Use the versioned store Fixtures/Sampler/records: a draw meant to be committed')
     if without:
@@ -1368,7 +1373,7 @@ def argument_parser(without=False):
         parser.add_argument('excluded_world', type=Path, metavar='WORLD_DIRECTORY', help='Directory containing published world.json')
         parser.add_argument('size', type=int, metavar='N')
         parser.add_argument('--seed', help='Exact UTF-8 seed text; generated and recorded if omitted')
-        parser.add_argument('--world', type=Path, help='Output directory; default Fixtures/output/worlds/<sample_id>')
+        parser.add_argument('--world', type=Path, help='New directory to create; default Fixtures/output/worlds/<sample_id>')
         parser.set_defaults(command='draw', inventory=None)
         return parser
     commands = parser.add_subparsers(dest='command', required=True)
@@ -1377,11 +1382,13 @@ def argument_parser(without=False):
     draw.add_argument('size', type=int)
     draw.add_argument('--seed', help='Exact UTF-8 seed text; generated and recorded if omitted')
     draw.add_argument('--inventory', help='Use this saved snapshot instead of rescanning fixtures')
-    draw.add_argument('--world', type=Path, help='World directory to replace; default Fixtures/output/worlds/<sample_id>')
+    draw.add_argument('--world', type=Path, help='New directory to create; default Fixtures/output/worlds/<sample_id>')
     publish = commands.add_parser('publish', help='Materialize an existing draw as a world again')
     publish.add_argument('sample_id')
-    publish.add_argument('--world', type=Path, help='World directory to replace; default Fixtures/output/worlds/<sample_id>')
-    commands.add_parser('list', help='List persistent draws, including damaged ones')
+    publish.add_argument('--world', type=Path, help='New directory to create; default is a fresh path under Fixtures/output/worlds/')
+    retain = commands.add_parser('keep', help='Save this draw, its inventory and annotation history for Git')
+    retain.add_argument('sample_id', metavar='WORLD_ID')
+    commands.add_parser('list', help='List scratch and kept draws, including damaged ones')
     show = commands.add_parser('show', help='Original draw, pinned provenance rows, current locations and annotations')
     show.add_argument('sample_id')
     show.add_argument('--paths', action='store_true', help='Only current image locations/statuses as JSON')
@@ -1423,8 +1430,12 @@ def main(argv=None, *, without=False):
         if without:
             requested_store = args.store if args.store is not None else (durable_store(args.repo) if args.keep else scratch_store(args.repo))
             protect_exclusion_world(args.excluded_world, requested_store)
-        args.store = resolve_store(args.repo, args.store, args.keep)
-        result = run(args)
+        args.default_store = args.store is None and not args.keep
+        with record_operation(args.repo, args.command == 'keep'):
+            args.store = resolve_store(args.repo, args.store, args.keep, getattr(args, 'sample_id', None))
+            result = run(args)
+            if args.command == 'keep':
+                args.store = durable_store(args.repo)
         # Every response names the store it read or wrote, so a scratch draw cannot pass for a kept one.
         result = dict(schema_version=result.pop('schema_version'), store=str(args.store.resolve()), **result)
     except SamplerError as error:

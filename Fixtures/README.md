@@ -4,38 +4,6 @@ This directory contains the image collections, their records, and the tools for
 checking and sampling them. A **leaf** is a collection directory with its own
 `manifest.json`; the directories above it group related collections.
 
-## Draw a sample
-
-From the repository root:
-
-```sh
-Fixtures/sample 12 --seed first-look
-```
-
-From a neighboring repository, use `../bricolage/Fixtures/sample 100`, replacing
-100 with N. The launcher uses its own Python environment. If it is missing,
-follow the printed setup instruction (`make -C Fixtures setup-python` here).
-
-The sampler selects uniformly across available inputs in Heaps and Relationships.
-Exact byte copies count once. It saves the draw and inventory in the scratch store
-at `Fixtures/output/records/` and publishes image copies with `world.json` in a
-separate `Fixtures/output/worlds/<sample_id>/` directory for each draw. Read the
-JSON `output` block first: `published` indicates readiness, `directory` is the
-consumer's input, and `world_id` and `image_count` identify its contents. Inspect
-`problems` and `receipt_recorded` too; `next_steps` explains publication recovery.
-Put `--keep` before the command for records to commit.
-
-Use `Fixtures/sampleWithout WORLD_DIRECTORY N` to exclude the exact image IDs
-in an earlier world's `world.json`. IDs no longer eligible here warn and reduce
-the exclusion list; no matches, invalid JSON or too few remaining images fail
-before drawing. It returns the same world handoff, with `warnings` and `exclusion`
-counts. The earlier world's image copies and sampler records are not required.
-
-Use `show SAMPLE_ID` to inspect the selection and source records,
-`verify SAMPLE_ID` to check them, and `publish SAMPLE_ID` to reuse that draw.
-Use the same store option on those commands. The [sampler guide](Sampler/README.md)
-explains saved inventories, annotations, output paths and errors.
-
 ## Collections
 
 | Location | What it contains |
@@ -60,63 +28,11 @@ against a target of 50. Some Curatorial selections also have earlier unresolved
 review cases; their later selections remain provisional. Each collection's README
 and records give the details.
 
-## Tools and records
+## Working with the archive
 
-| Path | Contents |
-|---|---|
-| `sample` | Public sampler command |
-| `sampleWithout` | Draw from current fixtures excluding a supplied world's exact image IDs |
-| `collection` | Remove or re-pin an input, reconcile local media with recorded removals, or regenerate collection totals and the source index |
-| [Sampler/](Sampler/README.md) | Sampler code, tests and versioned records |
-| [tools/](tools/README.md) | Layout checks, fixture creation and the optional comparison runner |
-| [Template/](Template/README.md) | Starting files for a new leaf |
-| [output/](output/AGENTS.md) | Disposable worlds, scratch records and check reports |
-
-Each leaf keeps inputs in `images/`, original assets in `sources/` and previews
-or intermediate images in `previews/`. These directories are ignored by Git.
-Text catalogs, checksums, source records and tools are versioned. Restore the
-supplied media at its recorded paths before running checks that need it.
-
-## Check or change a collection
-
-Read [AGENTS.md](AGENTS.md), the collection's README and
-[FORMAT.md](FORMAT.md) before changing its files. For a new leaf, use the
-[template](Template/README.md); the [handoff guide](WEB-AGENT-GUIDE.md) describes
-what a sourcing partner can supply. Put new contributions alongside the existing
-collections with the same selection basis.
-
-Remove every active copy of an image by its SHA-256 with
-`Fixtures/collection remove HASH --reason "Reason for removal"`. It updates and
-validates the catalogs, index and totals, then commits its files. The reason is
-the default commit message; `--commit-message TEXT` overrides it. JSON
-`complete: true` and `commit` confirm completion. A path selects just that input.
-Use `--dry-run` to preview, or follow the response to resume an incomplete removal.
-
-Replace an input's
-bytes with `Fixtures/collection repin INPUT --from FILE --reason "Reason"`.
-Both retain source bytes and publication evidence, write a receipt, update
-active catalogs, and regenerate totals and the index. Re-pinning does not commit.
-The [tools guide](tools/README.md) describes the records
-and validation; [RECOVERY.md](RECOVERY.md) covers lost media.
-
-After other catalog changes, run `make -C Fixtures collection-totals`.
-`test-fixture-layout` checks that the generated totals are current.
-
-Every leaf has `tools/check.py` and `tools/requirements.txt`. From the repository
-root, install the shared validator dependency and check all leaves:
-
-```sh
-Fixtures/.venv/bin/python -m pip install -r Fixtures/tools/requirements.txt
-Fixtures/.venv/bin/python Fixtures/tools/check_layout.py --full
-```
-
-`--metadata-only` checks layout and catalogs without local media; it omits the
-specialized validators. The [tools guide](tools/README.md) describes narrower
-checks and the test targets. The optional comparison runner needs a published
-world and an executable supplied by the caller.
-
-Older paths and supplied instructions remain in the provenance records. The
-[layout record](provenance/layout-2026-11/README.md) describes the directory move
-and the [rename record](provenance/similarity-names-2026-11/README.md) maps the
-Similarity leaves' former short-code folders to their prompt names;
-current commands use the locations above. Fixture IDs and media bytes were kept.
+Use the [root quick start](../README.md) to draw a world. For a new collection,
+start with the [fixture template](Template/README.md), [format](FORMAT.md) and
+[sourcing handoff](WEB-AGENT-GUIDE.md). Each leaf has a README describing its
+selection evidence and checks. The [collection tools](tools/README.md) cover
+removal, re-pinning and validation. [RECOVERY.md](RECOVERY.md) describes how
+to recover local media from its recorded sources.

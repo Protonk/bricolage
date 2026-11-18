@@ -1,161 +1,46 @@
-# bricolage
+# bricolage 0.1.0
 
-bricolage helps build image fixtures and draw repeatable test samples from them.
-It keeps the images, the reasons they were chosen, and the records needed to use
-them again. The code and collections live in [Fixtures/](Fixtures/README.md).
+bricolage collects image fixtures and draws repeatable samples from them.
+A draw gives your program a directory of images. Its saved record tells you
+where those images came from and what else could have been chosen.
 
-The collections offer different things to try: crops and edits of the same
-source, separate photographs of a scene, pictures selected for a visual motif,
-and samples from published collections. Those choices help frame a test. A crop
-and its source have a known relationship; how well an image matcher connects
-them is still something to test.
+Collections range from crops of a known source to unrelated photographs with
+pale skies over dark ground. A new collection records its selection, sources
+and image checksums using the [fixture template](Fixtures/Template/README.md).
 
-## Get N images
+## Draw a world
 
-From a neighboring repository:
+From a neighboring repository, ask for the number of images you need. The
+checkout needs local image files. Git holds the catalogs and sampling records.
 
 ```sh
 ../bricolage/Fixtures/sample 100
 ```
 
-Replace `100` with N. From this repository, use `Fixtures/sample N`; an absolute
-path to the executable also works. It uses bricolage's Python environment,
-regardless of your working directory or activated environment. No imports or
-inventory preparation are needed.
+From this repository, use `Fixtures/sample 100`. The launcher uses its own
+Python environment and prints the setup command if needed. Each distinct byte
+hash gets one ticket, even when several files contain the same image bytes.
 
-The JSON response starts with an `output` block after its schema and store:
+When `output.published` is true, pass `output.directory` directly to your
+program. Every publication gets a fresh directory. Treat it as read-only.
+Check `problems` and `output.receipt_recorded`, and follow `output.next_steps`
+if the sampler reports a problem.
 
-```json
-{
-  "world_id": "draw-<32 hex digits>",
-  "image_count": 100,
-  "directory": "/absolute/path/to/bricolage/Fixtures/output/worlds/draw-<32 hex digits>",
-  "manifest": "/absolute/path/to/bricolage/Fixtures/output/worlds/draw-<32 hex digits>/world.json",
-  "published": true,
-  "receipt_recorded": true,
-  "next_steps": []
-}
-```
+## Explain or keep a world
 
-When `output.published` is true, give `output.directory` to the consumer. This
-**world** holds N image copies named by their byte hashes and a `world.json`
-listing them. Each draw has a separate directory, so later draws leave it intact.
-Use `--world DIR` to choose a destination; an existing world there is replaced.
-Use `--seed TEXT` to supply a seed; otherwise one is generated and recorded.
-
-Check `problems` and `output.receipt_recorded` too. Exit 0 means no problems;
-exit 1 can still leave a usable world, with publication recovery instructions in
-`output.next_steps`. Exit 2 reports an `error` and the command did not complete.
-The [sampler guide](Fixtures/Sampler/README.md) explains these outcomes.
-
-If the Python environment is missing, follow the launcher's setup instruction.
-With Python 3.14.x installed, setup from this repository is
-`make -C Fixtures setup-python`. Sampling needs no third-party packages or
-network access. It does need the local images: Git stores catalogs and tools,
-while media is ignored. On a fresh checkout, restore supplied assets at their
-recorded paths.
-
-Each distinct file hash has an equal chance of selection. Byte-identical copies
-share one place in the draw; crops and different encodings count separately.
-Sampling spans all available collections and does not keep related images together.
-
-## Sample without an earlier world
+Use the returned `output.world_id` in place of `WORLD_ID`.
 
 ```sh
-../bricolage/Fixtures/sampleWithout /path/to/world 100
+Fixtures/sample show WORLD_ID
+Fixtures/sample keep WORLD_ID
 ```
 
-This draws N images from today's eligible fixtures, excluding every byte identity
-listed in the supplied `world.json`. Exact copies share one exclusion; different
-bytes remain separate. The input world stays untouched, and only its manifest
-is needed. Its image copies and original sampler records can be gone.
+`show` reports the images and their membership in the archive at draw time.
+For example, the [saved elbow draw](Fixtures/Sampler/records/draws/draw-4622e72641da4b64a3c6296f4942b565/draw.json)
+selected 12 of the 171 eligible Derivatives images. Later additions to the
+archive leave that denominator intact. Ordinary draws are disposable.
+If a draw becomes evidence, `keep` saves its records for you to commit.
 
-If an image has since been removed from bricolage, its ID appears in `warnings`
-and the smaller exclusion list is used. Read `exclusion` for requested, matched
-and remaining counts, then use the usual `output.directory` for the new world.
-No matching IDs, invalid world JSON, or fewer than N remaining images is an
-error before drawing. Missing exclusion IDs alone do not make the command fail.
-
-The usual `--seed TEXT` and `--world DIR` options work. Put `--keep` before the
-world argument for records to commit. Later `show`, `verify` and `publish` use
-`Fixtures/sample`; the saved draw includes its exclusions, so these commands do
-not need the earlier world. See the [sampler guide](Fixtures/Sampler/README.md#sample-without-a-world).
-
-## Remove an unsuitable image
-
-When authorized to remove an image, take its `sha256:...` ID from `world.json`
-(or its hash filename without the extension) and run:
-
-```sh
-../bricolage/Fixtures/collection remove sha256:HASH --reason "Why this image should be removed"
-```
-
-Replace `sha256:HASH` with the full ID. The command removes every active copy
-with those exact bytes, updates the manifests and index, validates the result,
-and commits its changes. The reason becomes the commit message; use
-`--commit-message TEXT` for a different message. Success returns `complete: true`
-and a `commit` hash. `--dry-run` previews the operation.
-
-Unrelated staged and unstaged work stays intact. If the operation is incomplete,
-its JSON report names the problem; resolve it and repeat the same command to
-finish. Source evidence and already-published worlds remain available. Draw
-again to get a world from the updated collection. The [removal guide](Fixtures/tools/README.md#removing-an-image)
-describes scope, checks and recovery.
-
-## Use the same sample again
-
-Every draw saves its selection and the inventory it drew from. Use the returned
-sample ID to inspect or republish it:
-
-```sh
-Fixtures/sample show SAMPLE_ID --paths
-Fixtures/sample verify SAMPLE_ID
-Fixtures/sample publish SAMPLE_ID --world Fixtures/output/repeat
-```
-
-`SAMPLE_ID` is a placeholder for `draw.sample_id` in the response. Republishing
-keeps both the selection and world ID. A new draw with the same seed repeats the
-selection only when the eligible population is the same; use
-`--inventory INVENTORY_ID` to select from the saved population.
-
-Ordinary draws live in `Fixtures/output/records/` and can be discarded. To keep a
-draw in Git, put `--keep` before the command and commit its records:
-
-```sh
-Fixtures/sample --keep 12 --seed regression-example
-Fixtures/sample --keep show SAMPLE_ID
-Fixtures/sample --keep publish SAMPLE_ID --world Fixtures/output/regression
-```
-
-Use `--keep` on later commands for that draw too. Scratch records are copied from
-the versioned store on first use and do not receive later updates automatically.
-Keeping records does not put the image bytes in Git.
-
-## Test with a world
-
-Give the world directory to the image software being tested.
-[WORLD.md](WORLD.md) specifies its files and the IDs a consumer reports back.
-Collection names, source paths and selection notes stay here; `sample show`
-connects a result's image IDs to those records.
-
-The full `show` report gives each leaf's draw-time eligible and selected
-counts. Branch totals count each distinct image once across their leaves.
-These counts come from the saved inventory, even after new heaps arrive.
-
-A command can publish a world and still report problems elsewhere in the
-collection. Check `problems`, `output.published` and `output.receipt_recorded`
-in its JSON response. The [sampler guide](Fixtures/Sampler/README.md) covers
-saved inventories, annotations, exit codes and publication failures. The optional
-[probe runner](Fixtures/tools/README.md) runs recorded comparison pairs using a
-world and an executable you supply.
-
-## Work on fixtures
-
-The [fixture index](Fixtures/README.md) lists the collections and their current
-gaps. [CONTRIBUTING.md](CONTRIBUTING.md) discusses choosing and changing fixtures;
-[AGENTS.md](AGENTS.md) gives the working rules and check commands.
-
-bricolage was lifted from hazy. Existing IDs and Git history are retained so
-older records can still be read. The
-[lift receipt](Fixtures/provenance/repository-lift-2026-11.json) records the source
-revision and asset checks.
+Browse the [fixture catalog](Fixtures/README.md), read the [consumer contract](WORLD.md),
+or use the [sampler guide](Fixtures/Sampler/README.md) for exclusion and replay.
+The [collection tools](Fixtures/tools/README.md) cover removal and recovery.

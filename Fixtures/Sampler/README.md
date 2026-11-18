@@ -93,101 +93,23 @@ inventory snapshot; `exclusion.remaining_eligible` describes the filtered pool.
 The inventory is always refreshed for this endpoint; there is no `--inventory`
 option. A fixed seed repeats the selection when the remaining pool is identical.
 
-The default output is a new world under `Fixtures/output/worlds/<sample_id>/`.
-Use `--world DIR` for an explicit output, or `--keep` before the input world
-argument for versioned records. Output and record destinations cannot overlap
-the input world. The input stays untouched. The returned world has the ordinary
-world format; exclusion details live in the saved draw and command response.
-Use the usual commands on the new sample ID, with the same store option:
-
-```sh
-Fixtures/sample show SAMPLE_ID
-Fixtures/sample verify SAMPLE_ID
-Fixtures/sample publish SAMPLE_ID
-```
-
-Replay uses the saved inventory and exclusions, so it works after the input
-world or its original draw is gone. Publication still checks current selected
-image bytes and metadata pins, just as for an ordinary saved draw.
+Replay uses the saved inventory and exclusions. The earlier world can be gone.
 
 ## Worlds and publication
 
-Each successful draw publishes a **world**: a directory holding independent,
-byte-identical copies of the selected images named `<image-sha256>.<original-extension>`,
-beside a `world.json` that lists the world ID and the files, sorted by name.
-The consuming program receives the images and their IDs. Draw order, collection
-names and source records stay in this repository. The world ID is the sample ID,
-which connects it to the saved draw. [WORLD.md](../../WORLD.md) specifies what a
-consumer may rely on.
+Pass the returned `output.directory` to the consumer. Each publication creates
+a fresh directory. With `--world DIR`, give a path that does not yet exist.
+The [world contract](../../WORLD.md) defines its manifest and hash-named image
+copies. Collection paths, relationships and draw order stay in the records.
 
-The default world directory is `Fixtures/output/worlds/<sample_id>/`. Every new
-draw gets its own directory, including concurrent draws. Later draws leave
-earlier worlds intact. Default `publish SAMPLE_ID` reuses that draw's directory;
-`--world DIR` chooses a destination explicitly and replaces an existing world
-there. Relative paths resolve from the caller's working directory. Older worlds
-at `Fixtures/output/sampled/` remain untouched unless explicitly chosen with
-`--world`. Worlds accumulate; remove a world's directory once its consumers
-have finished, keeping its records if it needs to be republished.
+`publish WORLD_ID` writes the saved selection to another fresh directory under
+`Fixtures/output/worlds/`, with the same world ID. The sampler verifies copies
+before installation, then appends a `publication` event. `output.published`
+reports installation and `output.receipt_recorded` reports the event. If a
+receipt fails, preserve the response and follow `output.next_steps` to inspect
+the log. A failed publication leaves the selection available for replay.
 
-The copies are Git-ignored under `output/` and disposable; editing them cannot change
-the fixture originals. Copies are verified and the manifest written in a staged
-directory before the previous world is replaced, so a visible world is complete.
-Existing directories are exchanged atomically using the operating system's
-directory-swap operation; the old directory is cleaned up only after the switch.
-The standard-library `ctypes` wrapper uses macOS `renamex_np(RENAME_SWAP)` or Linux
-`renameat2(RENAME_EXCHANGE)`; there is no delete-then-rename fallback.
-Unsupported platforms/filesystems fail without deleting the previous world; a new
-destination can still be published by rename. Invalid requests, unavailable selected
-bytes, and copy/checksum or installation failures leave the previous world intact.
-A successful zero-image draw leaves only `world.json`. The engine
-replaces a directory only when it is empty or already a world: it holds a valid
-`world.json` and nothing beside the files that manifest lists, except a Finder
-`.DS_Store`, which is removed with the old world. Any other unlisted entry is refused
-by name; so is a directory that merely contains a file called `world.json`. Any
-other nonempty destination, a symlinked destination, a
-destination among the fixtures, or one containing or inside the record store is
-refused before a draw is made. Concurrent publications to one directory serialize;
-the last one published occupies it. Consumers must finish reading before a directory
-is reused, or receive a separate publication directory: atomic replacement does not
-give a reader a snapshot across separate file opens. Records live in the store the
-command names, independently of worlds; see [Stores](#stores).
-
-After installing a world, publication appends one annotation event to the draw, key `publication`,
-author `Fixtures/sample`, recording the directory, manifest path, time and image
-count. That receipt is the sampler's only trace of a publication; whether to keep
-anything a consumer produced from the world is a separate, human decision.
-`publish SAMPLE_ID [--world DIR]` materializes an existing draw as a world again
-under the same world ID, appending another receipt.
-
-Installation and receipt append are separate operations. `output.published` says
-whether the world was installed; `output.receipt_recorded` says whether its receipt
-append completed. A receipt failure returns exit 1 and a `publication-receipt-failed`
-problem even though the world remains usable. Preserve the response and inspect
-the annotation log: a failed append may have written some or all of an event before
-failing. Repair a damaged log explicitly, then `publish SAMPLE_ID` to make a new
-publication with a new receipt. Do not blindly retry an annotation or claim the
-failed publication has a durable receipt. A process interruption between the two
-operations has the same recovery limit; this is not a transaction across both files.
-
-A failure cleaning up the old directory returns exit 1 with `world-cleanup-failed`
-and the leftover staging path. The new world remains published and its receipt is
-still attempted. Only that named disposable staging directory needs cleanup.
-
-## Remove a sampled image
-
-For an authorized removal, pass the image ID from `world.json` to
-`../bricolage/Fixtures/collection remove sha256:HASH --reason "Reason for removal"`
-from a neighboring repository. The full hash identifies exact bytes. Removal
-updates every active alias, checks the catalogs and fresh sampler inventory,
-and commits its files. Read `complete` and `commit` in the response; see the
-[removal guide](../tools/README.md#removing-an-image) for retries and scoped paths.
-
-A new draw uses the updated population. Existing worlds, inventory snapshots,
-draws and annotations stay unchanged; old snapshots retain their original
-eligibility and changed metadata pins block republication. Removal never swaps
-another image into a saved sample. Draw again for a clean world.
-Use `sampleWithout OLD_WORLD N` when that new draw should also exclude the
-remaining images from an earlier world; the removed ID will be a warning.
+For an unsuitable input, use the [collection removal guide](../tools/README.md#removing-an-image).
 
 ## Saved samples
 
@@ -201,7 +123,7 @@ Use the returned full identifiers in these commands:
 Fixtures/sample show SAMPLE_ID --paths
 Fixtures/sample show SAMPLE_ID
 Fixtures/sample verify SAMPLE_ID
-Fixtures/sample publish SAMPLE_ID --world Fixtures/output/repeat
+Fixtures/sample publish SAMPLE_ID
 Fixtures/sample annotate SAMPLE_ID --key purpose --json '"Notebook study"'
 Fixtures/sample annotate SAMPLE_ID --image IMAGE_ID --key review --json '{"decision":"accepted","tags":["reference"],"note":"My observation"}'
 Fixtures/sample annotate SAMPLE_ID --image IMAGE_ID --key review --json '{"decision":"revisit","note":"Revised observation"}'
@@ -246,7 +168,7 @@ inspection; programs should access JSON fields by name.
 
 | Field | Use |
 |---|---|
-| `store` | Absolute path of the record store this command read or wrote; absent from errors that prevent completion |
+| `store` | Record store used, or the destination for `keep`. Default `list` also reports both `stores` and the store for each row |
 | `output` | World handoff, described below; also returned by `publish` |
 | `draw` | Original persistent record, including `sample_id`, `image_ids`, seed and inventory ID |
 | `population` | Snapshot ID and file, `counts`, every leaf with its status, the `checkout` hint and population `problems` |
@@ -281,10 +203,9 @@ The `output` block contains:
 | `next_steps` | Publication recovery instructions, empty on success; failed publication retains the selection and gives a command to republish it, while receipt failure requires log inspection before retrying |
 | `error` | Present if installation or receipt writing failed |
 
-`published` describes byte verification and installation. It does not promise
-that every image decodes, or that the overall report has no problems. A failed
-request can leave a previous world at an explicit destination; the null paths
-and zero count describe this request, not that previous world's contents.
+`published` reports that the copies passed byte verification and the world
+was installed. Consumers handle image decoding. Check `problems` for issues
+elsewhere in the fixture collection.
 
 Responses, records and the world manifest keep their `schema_version` while changes are
 additive: fields may be added, never removed or retyped, and readers ignore fields
@@ -324,7 +245,7 @@ elsewhere. Exit code 2 means the command could not complete. Its stdout is
 `{"schema_version": 1, "error": {"code": ..., "message": ...}}` with the same
 one-line message on stderr. Codes are `usage` (arguments or request), `fixture`
 (a leaf's metadata, with its `leaf` path), `record-missing`, `record-invalid`,
-`record-damaged` (a checksum differs), `output` (the disposable directory) and `io`.
+`record-damaged` (integrity failure), `record-conflict` (divergent saved copies), `output` (the disposable directory) and `io`.
 Nothing is repaired on failure; fix the fixture or record the message names.
 Destination errors include `error.next_step` with guidance to choose a new
 destination or resolve the named conflict. Missing-environment and wrong-version
@@ -341,34 +262,28 @@ rather than hiding the others.
 
 ## Stores
 
-Global `--repo CHECKOUT`, `--store DIRECTORY` and `--keep` options go **before** the
-command (before `WORLD_DIRECTORY` for `sampleWithout`). The checkout resolves from
-the engine; custom relative option paths resolve from the caller's working
-directory. Two stores matter:
-
-| Store | Location | Use |
-|---|---|---|
-| Scratch (default) | `Fixtures/output/records/` | Default store for draws, publications and annotations. Disposable and Git-ignored |
-| Durable (`--keep`) | [records/](records/) | Draws meant to outlive the session. Versioned text only; commit it after a `--keep` draw |
-
-The first command that needs the scratch store seeds it with a copy of the durable
-records, so the committed draws can be shown, verified and republished with no option.
-Later changes in the versioned store are not copied into an existing scratch store.
-Use `--keep` for later commands on kept draws:
+Ordinary draws go to `Fixtures/output/records/`. To keep one after inspecting it:
 
 ```sh
-Fixtures/sample --keep show SAMPLE_ID
-Fixtures/sample --keep verify SAMPLE_ID
-Fixtures/sample --keep publish SAMPLE_ID --world Fixtures/output/repeat
+Fixtures/sample keep WORLD_ID
 ```
 
-Deleting `Fixtures/output/records/` makes the next command seed it again, losing
-any scratch draws and annotations. A completed report's `store` field names the
-store used. Clearing `output/` removes both scratch records and their worlds.
-`--store` names any other directory; stores
-under `output/` are disposable too, and `--store` with `--keep` is a usage error.
-Original image bytes remain at their fixture locations in every case. Back up or
-version a durable store whole, including inventories.
+Commit the records under `Fixtures/Sampler/records/`. Keeping replays the draw
+and retains its inventory, selection and full annotation history, including
+publication receipts. It works without the world or the source images.
+Inventories share a file when their population hashes match. Its timestamp and
+checkout hint describe the scan that wrote that copy. Repeating `keep` is safe.
+
+`show`, `verify`, `annotate` and `publish` find the draw by ID. `list` includes
+both stores and names the store for each draw. When old scratch and kept copies
+exist, the sampler uses the longer compatible history and prefers the kept
+copy when both agree. If the histories diverge, it names both stores for
+inspection with `--store DIR`. Clearing scratch discards draws still held only
+there. World directories and original image bytes are separate from the records.
+
+Global options precede the command. `--keep` still selects the versioned store
+directly. `--store DIR` selects a specific store, including the source for
+`keep`. Relative paths resolve from the caller's working directory.
 
 ## Population and identity
 
@@ -455,9 +370,6 @@ key on its target in order. The whole value is replaced, not recursively merged.
 An incomplete or malformed log is reported and left intact for explicit repair.
 Use the CLI for concurrent writes; local file locks are not a distributed service.
 
-Directory-exchange API references: [Apple's declarations](https://github.com/apple-oss-distributions/xnu/blob/main/bsd/sys/stdio.h)
-and the [Linux rename manual](https://man7.org/linux/man-pages/man2/rename.2.html).
-
 `verify` checks snapshot/draw integrity, replays the original selection, validates
 annotation history, and rehashes all selected aliases and their pinned fixture
 metadata files. A changed pin is reported with both hashes; recovering the recorded
@@ -532,7 +444,7 @@ reproduction. Tests run only under the repository's Python 3.14.x environment.
 ## Demonstration and checks
 
 The committed [demonstration draw](records/draws/draw-82acd83c6cd540a6bf4e29610ff5dc2d/draw.json)
-lives in the durable store, where a `--keep` draw would put it today, and
+lives in the durable store and
 contains 12 images drawn once with seed `fixture-sampler-demo-2026-11-01` from
 1,251 eligible byte identities: 1,263 manifest records across 18 leaves, with 12
 redundant byte-identical aliases and no excluded leaves. All input hashes passed;

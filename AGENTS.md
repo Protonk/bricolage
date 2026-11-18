@@ -19,10 +19,9 @@ Give that directory to the consumer, which reads `world.json` and the image file
 Check `receipt_recorded` and `problems` too; exit 1 may still have a usable world.
 Follow `output.next_steps` for publication failures. Exit 2 reports an `error`.
 
-Each draw gets its own directory under `Fixtures/output/worlds/`. Use `--world DIR`
-to choose a destination deliberately; an existing world there is replaced.
-Use `--seed TEXT` for a recorded seed and `--keep` **before** N only when its
-records should be committed. Ordinary draws use disposable scratch records.
+Every publication gets a fresh path. An explicit `--world DIR` must name a new
+directory. Use `--seed TEXT` for a recorded seed. Ordinary draws are disposable.
+Run `Fixtures/sample keep WORLD_ID` to retain a draw's history, then commit its records.
 Do not assemble an unrecorded sample or substitute other images on failure.
 If the environment is missing, run the setup command printed by the launcher.
 See [WORLD.md](WORLD.md) when implementing a consumer.
@@ -38,8 +37,7 @@ not needed. IDs absent from eligible fixtures warn and reduce the exclusion list
 including images since removed through `collection remove`. Inspect `warnings`
 and `exclusion` as well as the usual `output` and `problems`. No matching IDs,
 invalid world JSON, or too few remaining images is an error. The input world
-stays untouched. Use `--seed TEXT`, `--world DIR`, and `--keep` before the world
-argument as needed; use `Fixtures/sample` for later `show`, `verify` or `publish`.
+stays untouched. Use `Fixtures/sample` for later `show`, `keep`, `verify` or `publish` by world ID.
 
 ## Remove an image you are authorized to remove
 
@@ -83,14 +81,14 @@ describes fixture design and how the documentation fits together.
   operations by name. A source relationship or measured alignment does not by
   itself establish a visual match.
 - Use Python 3.14.x in `Fixtures/.venv`, created by `make -C Fixtures setup-python`.
-  Use `Fixtures/sample N` for samples. Put `--keep` before the command for draws
+  Use `Fixtures/sample N` for samples. Use `Fixtures/sample keep WORLD_ID` for draws
   meant to be committed. Do not assemble unrecorded samples or acquire another
   corpus for sampling; fixture intake from a recorded handoff follows
   [Fixtures/AGENTS.md](Fixtures/AGENTS.md).
 - Keep media under a collection leaf's `images/`, `sources/` or `previews/`.
   Never force-add ignored media. Put disposable worlds and scratch records under
   `Fixtures/output/`. Change versioned sampler records in `Fixtures/Sampler/records/`
-  only through `--keep`.
+  through the sampler.
 - Give consumers a world as specified in [WORLD.md](WORLD.md). Resolve provenance
   and choose probes here. The optional runner needs an explicit executable and
   world; it must not depend on a consumer's source tree.
