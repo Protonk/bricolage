@@ -848,6 +848,29 @@ def inspect_draw(store, sample_id, repo, paths_only=False):
                 annotation_history=events, problems=problems)
 
 
+def unlisted_images(repo, inventory, items, changed):
+    """Selected images that no leaf lists any longer, one problem each.
+
+    A leaf whose manifest still has its pinned bytes lists what it listed at the draw,
+    so only leaves with a changed manifest are read again. A removal elsewhere in a
+    leaf leaves the draw's own images listed. A removed or re-pinned image is named
+    here whether or not a copy of its bytes remains, as one does in a checkout that
+    has not run `collection reconcile`.
+    """
+    stale = {record['path'] for record in changed}
+    provenance = Provenance(repo, inventory)
+
+    def listed(item, alias):
+        if alias['fixture_path'] + '/manifest.json' not in stale:
+            return True
+        record = provenance.alias(alias)['manifest_record']
+        return record is not None and record.get('byte_sha256') == item['byte_sha256']
+
+    return [dict(kind='image-unlisted', image_id=item['image_id'], paths=[alias['path'] for alias in item['aliases']],
+                 message='No active manifest lists this image now; it was removed or replaced after the draw')
+            for item in items if not any(listed(item, alias) for alias in item['aliases'])]
+
+
 def verify_draw(store, sample_id, repo):
     draw = read_draw(store, sample_id)
     inventory, problems = resolve_inventory(store, draw)
@@ -862,14 +885,17 @@ def verify_draw(store, sample_id, repo):
                 problems.append(dict(kind='image-unavailable', image_id=row['image_id'],
                                      **{k: v for k, v in location.items() if k != 'absolute_path'}))
     if inventory:
-        leaf_paths = {a['fixture_path'] for item in selected_items(draw, inventory) for a in item['aliases']}
-        problems.extend(dict(kind='metadata-changed', **record)
-                        for record in pinned_metadata(repo, inventory, leaf_paths)
-                        if record['status'] != 'frozen')
-    # Missing redundant aliases remain problems, but one verified copy per identity
-    # is sufficient to publish. Record, metadata and annotation failures still block.
+        items = selected_items(draw, inventory)
+        leaf_paths = {a['fixture_path'] for item in items for a in item['aliases']}
+        changed = [record for record in pinned_metadata(repo, inventory, leaf_paths)
+                   if record['status'] != 'frozen']
+        problems.extend(dict(kind='metadata-changed', **record) for record in changed)
+        problems.extend(unlisted_images(repo, inventory, items, changed))
+    # Missing redundant aliases and changed catalogs remain problems, but one verified
+    # copy is sufficient to publish an identity that some leaf still lists. Record and
+    # annotation failures, and an image no leaf lists any longer, still block.
     publication_ready = (inventory is not None and all(r['available_path'] is not None for r in current)
-                         and all(p['kind'] == 'image-unavailable' for p in problems))
+                         and all(p['kind'] in ('image-unavailable', 'metadata-changed') for p in problems))
     return dict(schema_version=1, sample_id=sample_id, record_valid=True,
                 original_draw_reproduced=inventory is not None,
                 requested_size=draw['requested_size'],
@@ -1137,7 +1163,7 @@ def publish_command(store, repo, draw, images, check, world):
                                                error=result['output']['error']))
     if not result['output']['published']:
         result['problems'].append(dict(kind='not-published', error=result['output'].get(
-            'error', 'selected images or metadata failed the current check')))
+            'error', 'selected images or records failed the current check')))
     result['problems'].extend(check['problems'])
     # Keep recovery next to the handoff. A receipt failure must never suggest a blind retry.
     record_options = (['--keep'] if Path(store).resolve() == durable_store(repo).resolve()
@@ -1149,8 +1175,12 @@ def publish_command(store, repo, draw, images, check, world):
     retry = shlex.join(command)
     steps = result['output']['next_steps']
     if not result['output']['published']:
-        steps.append('No world was published for this draw. Resolve the named file, metadata, or output '
+        steps.append('No world was published for this draw. Resolve the named file, record, or output '
                      'problems, then republish the saved selection: ' + retry)
+        if any(problem['kind'] == 'image-unlisted' for problem in result['problems']):
+            # Nothing here can be resolved: the catalog change is the record. Do not suggest undoing it.
+            steps.append('An image-unlisted problem names an image removed or replaced since this draw. '
+                         'This selection cannot be republished from the current catalogs; draw again for a world without it.')
     elif not result['output']['receipt_recorded']:
         log = sample_dir(store, draw['sample_id']).resolve() / 'annotations.jsonl'
         steps.append(f'The world is usable. Preserve this response and inspect {log}; the receipt append '

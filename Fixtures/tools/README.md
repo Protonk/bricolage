@@ -46,7 +46,10 @@ incomplete operation or a preflight error. Argument mistakes use argparse's
 stderr help and exit 2; a missing environment also exits 2 on stderr.
 Scoped removals can complete with `excluded_from_sampling: false` and a count
 of aliases remaining elsewhere. Source evidence and existing worlds stay intact;
-draw again when a consumer needs a world without the removed image.
+draw again when a consumer needs a world without the removed image. Once no
+leaf lists the image, a saved draw that selected it can no longer be
+republished and reports it as `image-unlisted`. Other saved draws from the same
+leaf report the changed manifest as `metadata-changed`, exit 1, and still republish.
 
 Removal updates the JSON/CSV manifests, every batch containing the input, its
 input checksum, and probe/focused-pair entries that refer to it. Source catalogs,

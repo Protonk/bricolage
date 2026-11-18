@@ -60,7 +60,8 @@ after resolving the named problem. The operation record lets the retry finish
 without duplicate receipts. Existing edits in files it needs to change are
 refused before removal; unrelated staged and unstaged work is preserved.
 Removal keeps source evidence and existing worlds. Draw again for a clean world;
-do not edit a saved sample, its records or its manifest by hand.
+do not edit a saved sample, its records or its manifest by hand. A saved draw
+that selected the removed image can no longer be republished.
 
 Media is untracked. In a checkout that received a removal commit rather than
 making it, run `../bricolage/Fixtures/collection reconcile` once: it retires

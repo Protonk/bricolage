@@ -540,6 +540,56 @@ class SamplerTests(unittest.TestCase):
         self.assertEqual(json.loads((other / 'world.json').read_text()), manifests[1])  # Previous world intact.
         self.assertEqual(len(s.inspect_draw(self.store, sample_id, self.repo)['annotation_history']), 2)
 
+    def test_changed_catalog_blocks_publication_only_for_an_image_no_leaf_lists(self):
+        self.make_leaf('Heaps/Alias', [b'one'])
+        first = json.loads(self.cli('4', '--seed', 'kept').stdout)
+        sid = first['draw']['sample_id']
+        world = Path(first['output']['manifest']).read_bytes()
+        path = self.heap / 'manifest.json'
+        manifest = json.loads(path.read_text())
+
+        def publish():
+            result = self.cli('publish', sid)
+            self.assertEqual(result.returncode, 1, result.stderr)
+            return json.loads(result.stdout)
+
+        # A change elsewhere in the leaf, as a removal of another image makes: every selected image is still listed.
+        (self.heap / 'images/2.png').write_bytes(b'added')
+        manifest['images'].append(dict(manifest['images'][0], file='images/2.png',
+                                       byte_sha256=hashlib.sha256(b'added').hexdigest()))
+        path.write_text(json.dumps(manifest))
+        report = publish()
+        self.assertEqual([p['kind'] for p in report['problems']], ['metadata-changed'])
+        self.assertTrue(report['current_check']['publication_ready'])
+        self.assertTrue(report['output']['published'])
+        self.assertEqual(Path(report['output']['manifest']).read_bytes(), world)
+        # The leaf stops listing `one`, whose local copy stays. Another leaf still lists the same bytes.
+        del manifest['images'][0]
+        path.write_text(json.dumps(manifest))
+        report = publish()
+        self.assertEqual([p['kind'] for p in report['problems']], ['metadata-changed'])
+        self.assertEqual(Path(report['output']['manifest']).read_bytes(), world)
+        # Now `two` is listed nowhere. Its copy still verifies, as in a checkout that received a removal commit.
+        two = manifest['images'].pop(0)
+        path.write_text(json.dumps(manifest))
+        report = publish()
+        self.assertEqual([p['kind'] for p in report['problems']], ['not-published', 'metadata-changed', 'image-unlisted'])
+        self.assertEqual((report['problems'][2]['image_id'], report['problems'][2]['paths']),
+                         ('sha256:' + two['byte_sha256'], ['Fixtures/Heaps/Curatorial/Nested/Leaf/images/1.png']))
+        self.assertEqual(report['current_check']['images_available'], 4)
+        self.assertFalse(report['output']['published'])
+        self.assertIn('draw again', report['output']['next_steps'][1])
+        # The checkout that made the removal has no copy either; the report still says why, not only "missing".
+        (self.heap / 'images/1.png').unlink()
+        report = publish()
+        self.assertEqual([p['kind'] for p in report['problems']],
+                         ['not-published', 'image-unavailable', 'metadata-changed', 'image-unlisted'])
+        self.assertIn('draw again', report['output']['next_steps'][1])
+        # An unreadable manifest confirms nothing it listed.
+        path.write_text('{not json')
+        self.assertIn('image-unlisted', [p['kind'] for p in publish()['problems']])
+        self.assertEqual(len(s.read_events(self.store, first['draw'])), 3)  # One receipt per world published.
+
     def test_create_only_refuses_existing_empty_complete_or_stray_destinations(self):
         target = self.repo / 'Fixtures/output/requested'
         target.mkdir(parents=True)

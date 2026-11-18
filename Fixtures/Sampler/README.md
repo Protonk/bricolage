@@ -177,7 +177,7 @@ inspection; programs should access JSON fields by name.
 | `summary.leaves` | Membership counts for each included leaf, with its stable `fixture_id`, recorded `fixture_path`, `eligible` and `selected` |
 | `summary.branches` | The same two counts by recorded ancestor path, including the whole `Fixtures` population |
 | `images` | Draw order; each item has `position`, `image_id`, `sampled_path` for its copy in the world, `available_path` for its fixture original, and all alias `locations` with current statuses |
-| `current_check` | Record reproduction and current file/metadata verification; `ok` means no problems, while `publication_ready` means records/metadata/logs are valid and at least one copy of every selected image is available |
+| `current_check` | Record reproduction and current file/metadata verification; `ok` means no problems, while `publication_ready` means records and logs are valid, every selected image has a verified copy, and some leaf still lists it |
 | `problems` | Every problem found, each with a `kind`; empty when the exit code is 0 |
 | `exclusion`, `warnings` | Present for `sampleWithout`; exclusion IDs and counts, and nonfatal missing-ID or alias reports |
 
@@ -303,8 +303,16 @@ Inventory creation reads and hashes every manifest input. An identity is eligibl
 when at least one recorded input alias is readable and matches its expected hash.
 Publication uses that same availability rule. A missing redundant alias remains
 a problem and causes exit 1, but does not prevent publishing the verified available
-copy. Missing all copies of a selected image, invalid records or annotations, and
-changed pinned metadata prevent publication; nothing is redrawn or substituted.
+copy. A changed pinned metadata file is likewise reported as `metadata-changed`
+with exit 1 and does not by itself prevent publication: removing or re-pinning
+one image changes its leaf's manifest, and saved draws that selected other
+images from that leaf still republish. Missing all copies of a selected image,
+invalid records or annotations, and a selected image that no leaf lists any
+longer prevent publication; nothing is redrawn or substituted. That last case
+is an `image-unlisted` problem. It names an image removed or re-pinned after
+the draw, including one whose bytes are still on disk in a checkout that has
+not run `collection reconcile`. Such a selection cannot be republished from
+the current catalogs; draw again, or use `sampleWithout` with its old world.
 Missing, changed and inaccessible aliases stay in the inventory with their status;
 changed bytes are not silently assigned a new identity. When a recorded alias lies
 in a leaf that a `leaf-rename` move in `Fixtures/provenance/*/relocations.json`
@@ -476,6 +484,8 @@ checkout, reuses the existing Python environment, and runs concurrent draws from
 a sibling directory with no configuration flags. It checks the handoff using
 only `output` and `world.json`, preserves earlier worlds, and republishes a saved
 draw. No real sibling repository or user folder is used for test output.
+Publication tests change a leaf's manifest after a draw: the draw republishes
+while its images stay listed and is refused once one is listed nowhere.
 Exclusion tests cover missing IDs and copies, malformed manifests, byte-identical
 aliases, pool bounds, uniform selection, and replay without the original world.
 The collection tests also exercise sampling, committed removal, and then
